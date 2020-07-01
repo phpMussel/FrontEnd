@@ -1,0 +1,76 @@
+##\
+# This file is a part of the phpMussel\FrontEnd package.
+# Homepage: https://phpmussel.github.io/
+#
+# PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: Configuration defaults file (last modified: 2020.06.23).
+##/
+
+frontend:
+ frontend_log:
+  type: "string"
+  default: ""
+ max_login_attempts:
+  type: "int"
+  default: 5
+ numbers:
+  type: "string"
+  default: "Latin-1"
+  choices:
+   NoSep-1: "1234567.89"
+   NoSep-2: "1234567,89"
+   Latin-1: "1,234,567.89"
+   Latin-2: "1 234 567.89"
+   Latin-3: "1.234.567,89"
+   Latin-4: "1 234 567,89"
+   Latin-5: "1,234,567·89"
+   China-1: "123,4567.89"
+   India-1: "12,34,567.89"
+   India-2: "१२,३४,५६७.८९ (देवनागरी)"
+   India-3: "૧૨,૩૪,૫૬૭.૮૯ (ગુજરાતી)"
+   India-4: "੧੨,੩੪,੫੬੭.੮੯ (ਗੁਰਮੁਖੀ)"
+   India-5: "೧೨,೩೪,೫೬೭.೮೯ (ಕನ್ನಡ)"
+   India-6: "౧౨,౩౪,౫౬౭.౮౯ (తెలుగు)"
+   Arabic-1: "١٢٣٤٥٦٧٫٨٩"
+   Arabic-2: "١٬٢٣٤٬٥٦٧٫٨٩"
+   Arabic-3: "۱٬۲۳۴٬۵۶۷٫۸۹"
+   Arabic-4: "۱۲٬۳۴٬۵۶۷٫۸۹"
+   Bengali-1: "১২,৩৪,৫৬৭.৮৯ (বাংলা সংখ্যাসমূহ)"
+   Burmese-1: "၁၂၃၄၅၆၇.၈၉"
+   Khmer-1: "១.២៣៤.៥៦៧,៨៩"
+   Lao-1: "໑໒໓໔໕໖໗.໘໙"
+   Thai-1: "๑,๒๓๔,๕๖๗.๘๙"
+   Thai-2: "๑๒๓๔๕๖๗.๘๙"
+   Javanese: "꧑꧒꧓꧔꧕꧖꧗.꧘꧙"
+   Odia: "୧୨୩୪୫୬୭.୮୯"
+   Tibetan: "༡༢༣༤༥༦༧.༨༩"
+ default_algo:
+  type: "string"
+  default: "PASSWORD_DEFAULT"
+  choices:
+   PASSWORD_DEFAULT: "PASSWORD_DEFAULT"
+   PASSWORD_BCRYPT: "PASSWORD_BCRYPT"
+   PASSWORD_ARGON2I: "PASSWORD_ARGON2I (PHP >= 7.2.0)"
+   PASSWORD_ARGON2ID: "PASSWORD_ARGON2ID (PHP >= 7.3.0)"
+  choice_filter: "filterByDefined"
+ theme:
+  type: "string"
+  default: "default"
+  preview: "allow_other"
+  allow_other: true
+  choices:
+   default: "Default"
+   rbi: "Red-Blue Inverted"
+   slate: "Slate"
+   bluemetal: "Blue Metal"
+   moss: "Moss"
+   fullmoon: "Full Moon"
+  choice_filter: "filterTheme"
+ magnification:
+  type: "float"
+  step: "any"
+  default: 1

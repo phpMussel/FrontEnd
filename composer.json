@@ -6,19 +6,28 @@
     "license": "GPL-2.0-or-later",
     "support": {
         "chat": "https://gitter.im/phpMussel2/Lobby",
-        "issues": "https://github.com/phpMussel/phpMussel/issues",
-        "wiki": "https://github.com/phpMussel/phpMussel/wiki",
-        "source": "https://github.com/phpMussel/phpMussel",
+        "issues": "https://github.com/phpMussel/FrontEnd/issues",
+        "source": "https://github.com/phpMussel/FrontEnd",
         "docs": "https://github.com/phpMussel/Docs"
     },
     "require": {
         "php": ">=7.2.0",
-        "maikuolan/common": "^2.3",
+        "maikuolan/common": "^2.3.2",
         "phpmussel/core": "^3.0",
         "ext-pcre": "*"
     },
     "require-dev": {
         "codeception/codeception": "^2.3",
         "symfony/event-dispatcher": "3.4.28"
+    },
+    "autoload": {
+        "psr-4": {
+            "phpMussel\\FrontEnd\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "phpMussel\\FrontEnd\\Tests\\": "tests/"
+        }
     }
 }
