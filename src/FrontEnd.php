@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2020.07.01).
+ * This file: Front-end handler (last modified: 2020.07.02).
  */
 
 namespace phpMussel\FrontEnd;
@@ -145,8 +145,12 @@ class FrontEnd
             $this->Loader->YAML->process($Configuration, $Defaults);
             if (isset($Defaults)) {
                 $this->Loader->fallback($Defaults);
+                $this->Loader->ConfigurationDefaults = array_merge_recursive($this->Loader->ConfigurationDefaults, $Defaults);
             }
         }
+
+        /** Register log paths. */
+        $this->Loader->InstanceCache['LogPaths'][] = $this->Loader->Configuration['frontend']['frontend_log'];
 
         /** Load phpMussel front-end handler L10N data. */
         $this->Loader->loadL10N($this->L10NPath);
@@ -603,7 +607,7 @@ class FrontEnd
             } else {
                 /** Omit the log out and home links. */
                 $FE['bNav'] = '';
-                
+
                 /** Format error message. */
                 if (!empty($FE['state_msg'])) {
                     $FE['state_msg'] = '<div class="txtRd">' . $FE['state_msg'] . '<br /><br /></div>';
@@ -780,7 +784,6 @@ class FrontEnd
 
         /** Accounts. */
         if ($Page === 'accounts' && $this->Permissions === 1) {
-
             /** $_POST overrides for mobile display. */
             if (!empty($_POST['username']) && !empty($_POST['do_mob']) && (!empty($_POST['password_mob']) || $_POST['do_mob'] == 'delete-account')) {
                 $_POST['do'] = $_POST['do_mob'];
@@ -797,107 +800,59 @@ class FrontEnd
 
             /** A form has been submitted. */
             if ($FE['FormTarget'] === 'accounts' && !empty($_POST['do'])) {
-
                 /** Create a new account. */
                 if ($_POST['do'] === 'create-account' && !empty($_POST['username']) && !empty($_POST['password']) && !empty($_POST['permissions'])) {
-                    $FE['NewUser'] = $_POST['username'];
-                    $FE['NewPass'] = password_hash($_POST['password'], $this->DefaultAlgo);
-                    $FE['NewPerm'] = (int)$_POST['permissions'];
-                    $FE['NewUserB64'] = base64_encode($_POST['username']);
-                    if (strpos($FE['UserList'], "\n" . $FE['NewUserB64'] . ',') !== false) {
+                    $TryUser = $_POST['username'];
+                    $TryPath = 'user.' . $_POST['username'];
+                    $TryPass = password_hash($_POST['password'], $this->DefaultAlgo);
+                    $TryPermissions = (int)$_POST['permissions'];
+                    if (isset($this->Loader->Configuration[$TryPath])) {
                         $FE['state_msg'] = $this->Loader->L10N->getString('response_accounts_already_exists');
                     } else {
-                        $AccountsArray = [
-                            'Iterate' => 0,
-                            'Count' => 1,
-                            'ByName' => [$FE['NewUser'] =>
-                                $FE['NewUserB64'] . ',' .
-                                $FE['NewPass'] . ',' .
-                                $FE['NewPerm'] . "\n"
-                            ]
-                        ];
-                        $FE['NewLineOffset'] = 0;
-                        while (($FE['NewLinePos'] = strpos(
-                            $FE['UserList'], "\n", $FE['NewLineOffset'] + 1
-                        )) !== false) {
-                            $FE['NewLine'] = substr(
-                                $FE['UserList'],
-                                $FE['NewLineOffset'] + 1,
-                                $FE['NewLinePos'] - $FE['NewLineOffset']
-                            );
-                            $RowInfo = explode(',', $FE['NewLine'], 3);
-                            $RowInfo = base64_decode($RowInfo[0]);
-                            $AccountsArray['ByName'][$RowInfo] = $FE['NewLine'];
-                            $FE['NewLineOffset'] = $FE['NewLinePos'];
+                        $this->Loader->Configuration[$TryPath] = ['password' => $TryPass, 'permissions' => $TryPermissions];
+                        if ($this->Loader->updateConfiguration()) {
+                            $FE['state_msg'] = $this->Loader->L10N->getString('response_accounts_created');
+                        } else {
+                            $FE['state_msg'] = $this->Loader->L10N->getString('response_failed_to_create');
                         }
-                        ksort($AccountsArray['ByName']);
-                        $FE['UserList'] = "\n" . implode('', $AccountsArray['ByName']);
-                        unset($AccountsArray);
-                        $FE['state_msg'] = $this->Loader->L10N->getString('response_accounts_created');
                     }
                 }
 
                 /** Delete an account. */
                 if ($_POST['do'] === 'delete-account' && !empty($_POST['username'])) {
-                    $FE['User64'] = base64_encode($_POST['username']);
-                    $FE['UserLinePos'] = strpos($FE['UserList'], "\n" . $FE['User64'] . ',');
-                    if ($FE['UserLinePos'] === false) {
+                    $TryUser = $_POST['username'];
+                    $TryPath = 'user.' . $_POST['username'];
+                    if (!isset($this->Loader->Configuration[$TryPath])) {
                         $FE['state_msg'] = $this->Loader->L10N->getString('response_accounts_doesnt_exist');
                     } else {
-                        $FE['UserLineEndPos'] = strpos($FE['UserList'], "\n", $FE['UserLinePos'] + 1);
-                        if ($FE['UserLineEndPos'] !== false) {
-                            $FE['UserLine'] = substr(
-                                $FE['UserList'],
-                                $FE['UserLinePos'] + 1,
-                                $FE['UserLineEndPos'] - $FE['UserLinePos']
-                            );
-                            $FE['UserList'] = str_replace($FE['UserLine'], '', $FE['UserList']);
+                        unset($this->Loader->Configuration[$TryPath]);
+                        if ($this->Loader->updateConfiguration()) {
                             $FE['state_msg'] = $this->Loader->L10N->getString('response_accounts_deleted');
-                        }
-                    }
-                    $FE['UserLinePos'] = strpos($FE['SessionList'], "\n" . $FE['User64'] . ',');
-                    if ($FE['UserLinePos'] !== false) {
-                        $FE['UserLineEndPos'] = strpos($FE['SessionList'], "\n", $FE['UserLinePos'] + 1);
-                        if ($FE['UserLineEndPos'] !== false) {
-                            $FE['SessionLine'] = substr(
-                                $FE['SessionList'],
-                                $FE['UserLinePos'] + 1,
-                                $FE['UserLineEndPos'] - $FE['UserLinePos']
-                            );
-                            $FE['SessionList'] = str_replace($FE['SessionLine'], '', $FE['SessionList']);
+                        } else {
+                            $FE['state_msg'] = $this->Loader->L10N->getString('response_failed_to_delete');
                         }
                     }
                 }
 
                 /** Update an account password. */
                 if ($_POST['do'] === 'update-password' && !empty($_POST['username']) && !empty($_POST['password'])) {
-                    $FE['User64'] = base64_encode($_POST['username']);
-                    $FE['NewPass'] = password_hash($_POST['password'], $this->DefaultAlgo);
-                    $FE['UserLinePos'] = strpos($FE['UserList'], "\n" . $FE['User64'] . ',');
-                    if ($FE['UserLinePos'] === false) {
+                    $TryUser = $_POST['username'];
+                    $TryPath = 'user.' . $_POST['username'];
+                    $TryPass = password_hash($_POST['password'], $this->DefaultAlgo);
+                    if (!isset($this->Loader->Configuration[$TryPath])) {
                         $FE['state_msg'] = $this->Loader->L10N->getString('response_accounts_doesnt_exist');
                     } else {
-                        $FE['UserLineEndPos'] = strpos($FE['UserList'], "\n", $FE['UserLinePos'] + 1);
-                        if ($FE['UserLineEndPos'] !== false) {
-                            $FE['UserLine'] = substr(
-                                $FE['UserList'],
-                                $FE['UserLinePos'] + 1,
-                                $FE['UserLineEndPos'] - $FE['UserLinePos']
-                            );
-                            $FE['UserPerm'] = substr($FE['UserLine'], -2, 1);
-                            $FE['NewUserLine'] =
-                                $FE['User64'] . ',' .
-                                $FE['NewPass'] . ',' .
-                                $FE['UserPerm'] . "\n";
-                            $FE['UserList'] = str_replace($FE['UserLine'], $FE['NewUserLine'], $FE['UserList']);
+                        $this->Loader->Configuration[$TryPath]['password'] = $TryPass;
+                        if ($this->Loader->updateConfiguration()) {
                             $FE['state_msg'] = $this->Loader->L10N->getString('response_accounts_password_updated');
+                        } else {
+                            $FE['state_msg'] = $this->Loader->L10N->getString('response_failed_to_update');
                         }
                     }
                 }
             }
 
             if (!$FE['ASYNC']) {
-
                 /** Page initial prepwork. */
                 $this->initialPrepwork($FE, $this->Loader->L10N->getString('link_accounts'), $this->Loader->L10N->getString('tip_accounts'));
 
@@ -915,22 +870,20 @@ class FrontEnd
                     "w('stateMsg',"
                 );
 
-                $FE['AccountsRow'] = $this->Loader->readFileBlocks($this->getAssetPath('_accounts_row.html'));
+                $AccountsRow = $this->Loader->readFileBlocks($this->getAssetPath('_accounts_row.html'));
                 $FE['Accounts'] = '';
-                $FE['NewLineOffset'] = 0;
+                $NewLineOffSet = 0;
 
-                while (($FE['NewLinePos'] = strpos(
-                    $FE['UserList'], "\n", $FE['NewLineOffset'] + 1
-                )) !== false) {
-                    $FE['NewLine'] = substr(
-                        $FE['UserList'],
-                        $FE['NewLineOffset'] + 1,
-                        $FE['NewLinePos'] - $FE['NewLineOffset'] - 1
-                    );
-                    $RowInfo = ['DelPos' => strpos($FE['NewLine'], ','), 'AccWarnings' => ''];
-                    $RowInfo['AccUsername'] = substr($FE['NewLine'], 0, $RowInfo['DelPos']);
-                    $RowInfo['AccPassword'] = substr($FE['NewLine'], $RowInfo['DelPos'] + 1);
-                    $RowInfo['AccPermissions'] = (int)substr($RowInfo['AccPassword'], -1);
+                foreach ($this->Loader->Configuration as $CatKey => $CatValues) {
+                    if (substr($CatKey, 0, 5) !== 'user.' || !is_array($CatValues)) {
+                        continue;
+                    }
+                    $RowInfo = [
+                        'AccUsername' => substr($CatKey, 5),
+                        'AccPassword' => $CatValues['password'] ?? '',
+                        'AccPermissions' => (int)($CatValues['permissions'] ?? ''),
+                        'AccWarnings' => ''
+                    ];
                     if ($RowInfo['AccPermissions'] === 1) {
                         $RowInfo['AccPermissions'] = $this->Loader->L10N->getString('state_complete_access');
                     } elseif ($RowInfo['AccPermissions'] === 2) {
@@ -938,7 +891,6 @@ class FrontEnd
                     } else {
                         $RowInfo['AccPermissions'] = $this->Loader->L10N->getString('response_error');
                     }
-                    $RowInfo['AccPassword'] = substr($RowInfo['AccPassword'], 0, -2);
 
                     /** Account password warnings. */
                     if ($RowInfo['AccPassword'] === $this->DefaultPassword) {
@@ -960,16 +912,11 @@ class FrontEnd
                         $RowInfo['AccWarnings'] .= '<br /><div class="txtRd">' . $this->Loader->L10N->getString('state_password_not_valid') . '</div>';
                     }
 
-                    /** Logged in notice. */
-                    if (strrpos($FE['SessionList'], "\n" . $RowInfo['AccUsername'] . ',') !== false) {
-                        $RowInfo['AccWarnings'] .= '<br /><div class="txtGn">' . $this->Loader->L10N->getString('state_logged_in') . '</div>';
-                    }
-
                     $RowInfo['AccID'] = bin2hex($RowInfo['AccUsername']);
-                    $RowInfo['AccUsername'] = htmlentities(base64_decode($RowInfo['AccUsername']));
-                    $FE['NewLineOffset'] = $FE['NewLinePos'];
+                    $RowInfo['AccUsername'] = htmlentities($RowInfo['AccUsername']);
                     $FE['Accounts'] .= $this->Loader->parse(
-                        $this->Loader->L10N->Data + $RowInfo, $FE['AccountsRow']
+                        $this->Loader->L10N->Data,
+                        $this->Loader->parse($RowInfo, $AccountsRow)
                     );
                 }
                 unset($RowInfo);
@@ -979,7 +926,6 @@ class FrontEnd
                 /** Send output (async). */
                 echo $FE['state_msg'];
             } else {
-
                 /** Parse output. */
                 $FE['FE_Content'] = $this->Loader->parse(
                     $this->Loader->L10N->Data,
@@ -994,7 +940,6 @@ class FrontEnd
 
         /** Configuration. */
         if ($Page === 'config' && $this->Permissions === 1) {
-
             /** Page initial prepwork. */
             $this->initialPrepwork($FE, $this->Loader->L10N->getString('link_config'), $this->Loader->L10N->getString('tip_config'));
 
@@ -1002,43 +947,32 @@ class FrontEnd
             $FE['JS'] .= $this->numberJS() . "\n";
 
             /** Directive template. */
-            $FE['ConfigRow'] = $this->Loader->readFileBlocks($this->getAssetPath('_config_row.html'));
+            $ConfigurationRow = $this->Loader->readFileBlocks($this->getAssetPath('_config_row.html'));
+
+            /** Flag for modified configuration. */
+            $ConfigurationModified = false;
 
             $FE['Indexes'] = '<ul class="pieul">';
 
             /** Generate entries for display and regenerate configuration if any changes were submitted. */
             $FE['ConfigFields'] = sprintf(
                 '<style>.showlink::before,.hidelink::before{content:"➖";display:inline-block;margin-%1$s:6px}.hidelink::before{transform:rotate(%2$s)}</style>',
-                $FE['FE_Align_Reverse'],
-                $FE['45deg']
-            );
-            $RegenerateConfiguration = '';
-            $ConfigurationModified = (!empty($this->QueryVariables['updated']) && $this->QueryVariables['updated'] === 'true');
-            foreach ($this->Loader->Configuration['Config Defaults'] as $CatKey => $CatValue) {
+            $FE['FE_Align_Reverse'], $FE['45deg']);
+
+            /** Iterate through configuration defaults. */
+            foreach ($this->Loader->ConfigurationDefaults as $CatKey => $CatValue) {
                 if (!is_array($CatValue)) {
                     continue;
                 }
-                $RegenerateConfiguration .= '[' . $CatKey . ']';
-                if ($CatInfo = $this->Loader->L10N->getString('config_' . $CatKey) ?: (
-                    isset($this->Loader->Configuration['L10N']['config_' . $CatKey]) ? $this->Loader->Configuration['L10N']['config_' . $CatKey] : ''
-                )) {
+                if ($CatInfo = $this->Loader->L10N->getString('config_' . $CatKey)) {
                     $CatInfo = '<br /><em>' . $CatInfo . '</em>';
-                    $RegenerateConfiguration .= "\r\n; " . wordwrap(str_replace(
-                        ['&amp;', '&lt;', '&gt;'],
-                        ['&', '<', '>'],
-                        strip_tags($CatInfo)
-                    ), 77, "\r\n; ");
                 }
-                $RegenerateConfiguration .= "\r\n\r\n";
                 $FE['ConfigFields'] .= sprintf(
-                        '<table><tr><td class="ng2"><div id="%1$s-container" class="s">' .
-                        '<a class="showlink" id="%1$s-showlink" href="#%1$s-container" onclick="javascript:showid(\'%1$s-hidelink\');hideid(\'%1$s-showlink\');show(\'%1$s-row\')">%1$s</a>' .
-                        '<a class="hidelink" id="%1$s-hidelink" %2$s href="#" onclick="javascript:showid(\'%1$s-showlink\');hideid(\'%1$s-hidelink\');hide(\'%1$s-row\')">%1$s</a>' .
-                        "%3\$s</div></td></tr></table>\n<span class=\"%1\$s-row\" %2\$s><table>\n",
-                    $CatKey,
-                    'style="display:none"',
-                    $CatInfo
-                );
+                    '<table><tr><td class="ng2"><div id="%1$s-container" class="s">' .
+                    '<a class="showlink" id="%1$s-showlink" href="#%1$s-container" onclick="javascript:showid(\'%1$s-hidelink\');hideid(\'%1$s-showlink\');show(\'%1$s-row\')">%1$s</a>' .
+                    '<a class="hidelink" id="%1$s-hidelink" %2$s href="#" onclick="javascript:showid(\'%1$s-showlink\');hideid(\'%1$s-hidelink\');hide(\'%1$s-row\')">%1$s</a>' .
+                    "%3\$s</div></td></tr></table>\n<span class=\"%1\$s-row\" %2\$s><table>\n",
+                $CatKey, 'style="display:none"', $CatInfo);
                 $CatData = '';
                 foreach ($CatValue as $DirKey => $DirValue) {
                     $ThisDir = ['Preview' => '', 'Trigger' => '', 'FieldOut' => '', 'CatKey' => $CatKey];
@@ -1048,20 +982,13 @@ class FrontEnd
                     $ThisDir['DirLangKey'] = 'config_' . $CatKey . '_' . $DirKey;
                     $ThisDir['DirLangKeyOther'] = $ThisDir['DirLangKey'] . '_other';
                     $ThisDir['DirName'] = $this->ltrInRtf($CatKey . '➡' . $DirKey);
-                    $ThisDir['Friendly'] = $this->Loader->L10N->getString($ThisDir['DirLangKey'] . '_label') ?: (
-                        isset($this->Loader->Configuration['L10N'][$ThisDir['DirLangKey'] . '_label']) ? $this->Loader->Configuration['L10N'][$ThisDir['DirLangKey'] . '_label'] : ''
-                    ) ?: $DirKey;
+                    $ThisDir['Friendly'] = $this->Loader->L10N->getString($ThisDir['DirLangKey'] . '_label') ?: $DirKey;
                     $CatData .= sprintf(
                         '<li><a onclick="javascript:showid(\'%1$s-hidelink\');hideid(\'%1$s-showlink\');show(\'%1$s-row\')" href="#%2$s">%3$s</a></li>',
-                        $CatKey,
-                        $ThisDir['DirLangKey'],
-                        $ThisDir['Friendly']
-                    );
+                    $CatKey, $ThisDir['DirLangKey'], $ThisDir['Friendly']);
                     $ThisDir['DirLang'] =
                         $this->Loader->L10N->getString($ThisDir['DirLangKey']) ?:
                         $this->Loader->L10N->getString('config_' . $CatKey) ?:
-                        (isset($this->Loader->Configuration['L10N'][$ThisDir['DirLangKey']]) ? $this->Loader->Configuration['L10N'][$ThisDir['DirLangKey']] : '') ?:
-                        (isset($this->Loader->Configuration['L10N']['config_' . $CatKey]) ? $this->Loader->Configuration['L10N']['config_' . $CatKey] : '') ?:
                         $this->Loader->L10N->getString('response_error');
                     if (!empty($DirValue['experimental'])) {
                         $ThisDir['DirLang'] = '<code class="exp">' . $this->Loader->L10N->getString('config_experimental') . '</code> ' . $ThisDir['DirLang'];
@@ -1070,33 +997,26 @@ class FrontEnd
                         ' autocomplete="%s"',
                         $DirValue['autocomplete']
                     );
-                    $RegenerateConfiguration .= '; ' . wordwrap(str_replace(
-                        ['&amp;', '&lt;', '&gt;'],
-                        ['&', '<', '>'],
-                        strip_tags($ThisDir['DirLang'])
-                    ), 77, "\r\n; ") . "\r\n";
                     if (isset($_POST[$ThisDir['DirLangKey']])) {
                         if (in_array($DirValue['type'], ['bool', 'float', 'int', 'kb', 'string', 'timezone', 'email', 'url'], true)) {
-                            $this->autoType($_POST[$ThisDir['DirLangKey']], $DirValue['type']);
+                            $this->Loader->autoType($_POST[$ThisDir['DirLangKey']], $DirValue['type']);
                         }
                         if (!preg_match('/[^\x20-\xff"\']/', $_POST[$ThisDir['DirLangKey']]) && (
                             !isset($DirValue['choices']) ||
                             isset($DirValue['choices'][$_POST[$ThisDir['DirLangKey']]])
                         )) {
-                            $this->Loader->Configuration[$CatKey][$DirKey] = $_POST[$ThisDir['DirLangKey']];
                             $ConfigurationModified = true;
+                            $this->Loader->Configuration[$CatKey][$DirKey] = $_POST[$ThisDir['DirLangKey']];
                         } elseif (
                             !empty($DirValue['allow_other']) &&
                             $_POST[$ThisDir['DirLangKey']] === 'Other' &&
                             isset($_POST[$ThisDir['DirLangKeyOther']]) &&
                             !preg_match('/[^\x20-\xff"\']/', $_POST[$ThisDir['DirLangKeyOther']])
                         ) {
-                            $this->Loader->Configuration[$CatKey][$DirKey] = $_POST[$ThisDir['DirLangKeyOther']];
                             $ConfigurationModified = true;
+                            $this->Loader->Configuration[$CatKey][$DirKey] = $_POST[$ThisDir['DirLangKeyOther']];
                         }
                     } elseif (
-                        empty($this->QueryVariables['updated']) &&
-                        $ConfigurationModified &&
                         $DirValue['type'] === 'checkbox' &&
                         isset($DirValue['choices']) &&
                         is_array($DirValue['choices'])
@@ -1109,15 +1029,6 @@ class FrontEnd
                         }
                         $DirValue['Posts'] = implode(',', $DirValue['Posts']) ?: '';
                         $this->Loader->Configuration[$CatKey][$DirKey] = $DirValue['Posts'];
-                    }
-                    if ($this->Loader->Configuration[$CatKey][$DirKey] === true) {
-                        $RegenerateConfiguration .= $DirKey . "=true\r\n\r\n";
-                    } elseif ($this->Loader->Configuration[$CatKey][$DirKey] === false) {
-                        $RegenerateConfiguration .= $DirKey . "=false\r\n\r\n";
-                    } elseif (in_array($DirValue['type'], ['float', 'int'], true)) {
-                        $RegenerateConfiguration .= $DirKey . '=' . $this->Loader->Configuration[$CatKey][$DirKey] . "\r\n\r\n";
-                    } else {
-                        $RegenerateConfiguration .= $DirKey . '=\'' . $this->Loader->Configuration[$CatKey][$DirKey] . "'\r\n\r\n";
                     }
                     if (isset($DirValue['preview'])) {
                         $ThisDir['Preview'] = ($DirValue['preview'] === 'allow_other') ? '' : ' = <span id="' . $ThisDir['DirLangKey'] . '_preview"></span>';
@@ -1228,7 +1139,7 @@ class FrontEnd
                     }
                     if ($DirValue['type'] === 'timezone') {
                         $DirValue['choices'] = ['SYSTEM' => $this->Loader->L10N->getString('field_system_timezone')];
-                        foreach (array_unique(DateTimeZone::listIdentifiers()) as $DirValue['ChoiceValue']) {
+                        foreach (array_unique(\DateTimeZone::listIdentifiers()) as $DirValue['ChoiceValue']) {
                             $DirValue['choices'][$DirValue['ChoiceValue']] = $DirValue['ChoiceValue'];
                         }
                     }
@@ -1244,7 +1155,7 @@ class FrontEnd
                             if (isset($DirValue['choice_filter'])) {
                                 if (
                                     !is_string($ChoiceValue) ||
-                                    (method_exists($this, $DirValue['choice_filter']) && $this->{$DirValue['choice_filter']}($ChoiceKey, $ChoiceValue))
+                                    (method_exists($this, $DirValue['choice_filter']) && !$this->{$DirValue['choice_filter']}($ChoiceKey, $ChoiceValue))
                                 ) {
                                     continue;
                                 }
@@ -1328,30 +1239,24 @@ class FrontEnd
                     }
                     $ThisDir['FieldOut'] .= $ThisDir['Preview'];
                     $FE['ConfigFields'] .= $this->Loader->parse(
-                        $this->Loader->L10N->Data + $ThisDir, $FE['ConfigRow']
+                        $this->Loader->L10N->Data + $ThisDir, $ConfigurationRow
                     );
                 }
-                $CatKeyFriendly = $this->Loader->L10N->getString('config_' . $CatKey . '_label') ?: (
-                    isset($this->Loader->Configuration['L10N']['config_' . $CatKey . '_label']) ? $this->Loader->Configuration['L10N']['config_' . $CatKey . '_label'] : ''
-                ) ?: $CatKey;
+                $CatKeyFriendly = $this->Loader->L10N->getString('config_' . $CatKey . '_label') ?: $CatKey;
                 $FE['Indexes'] .= sprintf(
                     '<li><span class="comCat" style="cursor:pointer">%1$s</span><ul class="comSub">%2$s</ul></li>',
                     $CatKeyFriendly,
                     $CatData
                 );
                 $FE['ConfigFields'] .= "</table></span>\n";
-                $RegenerateConfiguration .= "\r\n";
             }
 
             /** Update the currently active configuration file if any changes were made. */
             if ($ConfigurationModified) {
-                $FE['state_msg'] = $this->Loader->L10N->getString('response_configuration_updated');
-                $Handle = fopen($FE['ActiveConfigFile'], 'wb');
-                fwrite($Handle, $RegenerateConfiguration);
-                fclose($Handle);
-                if (empty($this->QueryVariables['updated'])) {
-                    header('Location: ?phpmussel-page=config&updated=true');
-                    die;
+                if ($this->Loader->updateConfiguration()) {
+                    $FE['state_msg'] = $this->Loader->L10N->getString('response_configuration_updated');
+                } else {
+                    $FE['state_msg'] = $this->Loader->L10N->getString('response_failed_to_update');
                 }
             }
 
@@ -1370,12 +1275,10 @@ class FrontEnd
 
         /** Cache data. */
         if ($Page === 'cache-data' && $this->Permissions === 1) {
-
             /** Page initial prepwork. */
             $this->initialPrepwork($FE, $this->Loader->L10N->getString('link_cache_data'), $this->Loader->L10N->getString('tip_cache_data'));
 
             if ($FE['ASYNC']) {
-
                 /** Delete a cache entry. */
                 if (isset($_POST['do']) && $_POST['do'] === 'delete' && !empty($_POST['cdi'])) {
                     if ($_POST['cdi'] === '__') {
@@ -1385,7 +1288,6 @@ class FrontEnd
                     }
                 }
             } else {
-
                 /** Append async globals. */
                 $FE['JS'] .=
                     "function cdd(d,n){window.cdi=d,window.do='delete',$('POST','',['phpmusse" .
@@ -1415,14 +1317,12 @@ class FrontEnd
                     if (empty($CacheSourceData)) {
                         continue;
                     }
-                    $FE['CacheData'] .= '<div class="ng1" id="__Container"><span class="s">' . $CacheSourceName . ' – (<span style="cursor:pointer" onclick="javascript:' . (
-                        'cdd'
-                    ) . '(\'__\')"><code class="s">' . $this->Loader->L10N->getString('field_clear_all') . '</code></span>)</span><br /><br /><ul class="pieul">' . $this->arrayToClickableList(
-                        $CacheSourceData,
-                        'cdd',
-                        0,
-                        $CacheSourceName
-                    ) . '</ul></div>';
+                    $FE['CacheData'] .= sprintf(
+                        '<div class="ng1" id="__Container"><span class="s">%s – (<span style="cursor:pointer" onclick="javascript:cdd(\'__\')"><code class="s">%s</code></span>)</span><br /><br /><ul class="pieul">%s</ul></div>',
+                        $CacheSourceName,
+                        $this->Loader->L10N->getString('field_clear_all'),
+                        $this->arrayToClickableList($CacheSourceData, 'cdd', 0, $CacheSourceName)
+                    );
                 }
                 unset($CacheSourceData, $CacheSourceName, $CacheArray);
 
@@ -1445,7 +1345,6 @@ class FrontEnd
 
         /** Upload Test. */
         if ($Page === 'upload-test' && $this->Permissions === 1) {
-
             /** Page initial prepwork. */
             $this->initialPrepwork($FE, $this->Loader->L10N->getString('link_upload_test'), $this->Loader->L10N->getString('tip_upload_test'), false);
 
@@ -1474,7 +1373,6 @@ class FrontEnd
 
         /** Quarantine. */
         if ($Page === 'quarantine' && $this->Permissions === 1) {
-
             /** Page initial prepwork. */
             $this->initialPrepwork($FE, $this->Loader->L10N->getString('link_quarantine'), $this->Loader->L10N->getString('tip_quarantine'));
 
@@ -1496,12 +1394,11 @@ class FrontEnd
                 !is_dir($this->Loader->QuarantinePath . $_POST['qfu']) &&
                 is_readable($this->Loader->QuarantinePath . $_POST['qfu'])
             ) {
-
                 /** Delete a file. */
                 if ($_POST['do'] === 'delete-file') {
 
                     $FE['state_msg'] .= '<code>' . $_POST['qfu'] . '</code> ' . $this->Loader->L10N->getString(
-                        unlink($this->Loader->QuarantinePath . $_POST['qfu']) ? 'response_file_deleted' : 'response_delete_error'
+                        unlink($this->Loader->QuarantinePath . $_POST['qfu']) ? 'response_file_deleted' : 'response_failed_to_delete'
                     ) . '<br />';
 
                 /** Download or restore a file. */
@@ -1522,7 +1419,7 @@ class FrontEnd
                                 header('Content-Transfer-Encoding: Binary');
                                 header('Content-disposition: attachment; filename="' . basename($_POST['qfu']) . '.restored"');
                                 echo $Restored;
-                                die;
+                                return;
                             }
 
                             /** Restore the file. */
@@ -1552,7 +1449,7 @@ class FrontEnd
             $DeleteMode = !empty($_POST['DeleteAll']);
 
             /** Template for quarantine files row. */
-            $FE['QuarantineRow'] = $this->Loader->readFileBlocks($this->getAssetPath('_quarantine_row.html'));
+            $QuarantineRow = $this->Loader->readFileBlocks($this->getAssetPath('_quarantine_row.html'));
 
             /** Fetch quarantine data array. */
             $FilesInQuarantine = $this->quarantineRecursiveList($DeleteMode);
@@ -1570,14 +1467,15 @@ class FrontEnd
             $FE['FilesInQuarantine'] = '';
 
             /** Process quarantine files data. */
-            array_walk($FilesInQuarantine, function ($ThisFile) {
+            foreach ($FilesInQuarantine as $ThisFile) {
                 $FE['FilesInQuarantine'] .= $this->Loader->parse(
-                    $this->Loader->L10N->Data + $FE + $ThisFile, $FE['QuarantineRow']
+                    $this->Loader->L10N->Data,
+                    $this->Loader->parse($FE, $this->Loader->parse($ThisFile, $QuarantineRow))
                 );
-            });
+            }
 
             /** Cleanup. */
-            unset($FilesInQuarantineCount, $FilesInQuarantine);
+            unset($ThisFile, $FilesInQuarantineCount, $FilesInQuarantine);
 
             /** Parse output. */
             $FE['FE_Content'] = $this->Loader->parse(
@@ -1592,7 +1490,6 @@ class FrontEnd
 
         /** Signature information. */
         if ($Page === 'siginfo' && $this->Permissions === 1) {
-
             /** Page initial prepwork. */
             $this->initialPrepwork($FE, $this->Loader->L10N->getString('link_siginfo'), $this->Loader->L10N->getString('tip_siginfo'));
 
@@ -1600,7 +1497,7 @@ class FrontEnd
             $FE['JS'] .= $this->numberJS() . "\n";
 
             /** Template for range rows. */
-            $FE['InfoRow'] = $this->Loader->readFileBlocks($this->getAssetPath('_siginfo_row.html'));
+            $InfoRow = $this->Loader->readFileBlocks($this->getAssetPath('_siginfo_row.html'));
 
             /** Process signature files and fetch relevant values. */
             $FE['InfoRows'] = $this->signatureInformationHandler(
@@ -1627,7 +1524,6 @@ class FrontEnd
 
         /** Statistics. */
         if ($Page === 'statistics' && $this->Permissions === 1) {
-
             /** Page initial prepwork. */
             $this->initialPrepwork($FE, $this->Loader->L10N->getString('link_statistics'), $this->Loader->L10N->getString('tip_statistics'), false);
 
@@ -1675,7 +1571,7 @@ class FrontEnd
                 'API-Flagged'
             ] as $TheseStats) {
                 $FE[$TheseStats] = '<span class="s">' . $this->NumberFormatter->format(
-                    empty($this->Loader->InstanceCache['Statistics'][$TheseStats]) ? 0 : $this->Loader->InstanceCache['Statistics'][$TheseStats]
+                    $this->Loader->InstanceCache['Statistics'][$TheseStats] ?? 0
                 ) . '</span>';
             }
 
@@ -1700,13 +1596,12 @@ class FrontEnd
             echo $this->sendOutput($FE);
 
             /** Cleanup. */
-            unset($StatColour, $StatWorking, $this->Loader->InstanceCache['Statistics']);
+            unset($this->Loader->InstanceCache['Statistics']);
             return;
         }
 
         /** Logs. */
-        if ($Page === 'logs' && $this->Permissions > 0) {
-
+        if ($Page === 'logs' && ($this->Permissions === 1 || $this->Permissions === 2)) {
             /** Page initial prepwork. */
             $this->initialPrepwork($FE, $this->Loader->L10N->getString('link_logs'), $this->Loader->L10N->getString('tip_logs'), false);
 
@@ -1717,10 +1612,7 @@ class FrontEnd
             );
 
             /** Initialise array for fetching logs data. */
-            $FE['LogFiles'] = [
-                'Files' => $this->logsRecursiveList($this->AssetsPath),
-                'Out' => ''
-            ];
+            $FE['LogFiles'] = ['Files' => $this->logsRecursiveList($this->AssetsPath), 'Out' => ''];
 
             /** Text mode switch link base. */
             $FE['TextModeSwitchLink'] = '';
@@ -1728,10 +1620,10 @@ class FrontEnd
             /** How to display the log data? */
             if (empty($this->QueryVariables['text-mode']) || $this->QueryVariables['text-mode'] === 'false') {
                 $FE['TextModeLinks'] = 'false';
-                $FE['TextMode'] = false;
+                $TextMode = false;
             } else {
                 $FE['TextModeLinks'] = 'true';
-                $FE['TextMode'] = true;
+                $TextMode = true;
             }
 
             /** Define log data. */
@@ -1742,19 +1634,11 @@ class FrontEnd
             } else {
                 $FE['TextModeSwitchLink'] .= '?phpmussel-page=logs&logfile=' . $this->QueryVariables['logfile'] . '&text-mode=';
                 if (strtolower(substr($this->QueryVariables['logfile'], -3)) === '.gz') {
-                    $GZLogHandler = gzopen($this->AssetsPath . $this->QueryVariables['logfile'], 'rb');
-                    $FE['logfileData'] = '';
-                    if (is_resource($GZLogHandler)) {
-                        while (!gzeof($GZLogHandler)) {
-                            $FE['logfileData'] .= gzread($GZLogHandler, 131072);
-                        }
-                        gzclose($GZLogHandler);
-                    }
-                    unset($GZLogHandler);
+                    $FE['logfileData'] = $this->Loader->readFileBlocksGZ($this->QueryVariables['logfile']);
                 } else {
-                    $FE['logfileData'] = $this->Loader->readFileBlocks($this->AssetsPath . $this->QueryVariables['logfile']);
+                    $FE['logfileData'] = $this->Loader->readFileBlocks($this->QueryVariables['logfile']);
                 }
-                $FE['logfileData'] = $FE['TextMode'] ? str_replace(
+                $FE['logfileData'] = $TextMode ? str_replace(
                     ['<', '>', "\r", "\n"], ['&lt;', '&gt;', '', "<br />\n"], $FE['logfileData']
                 ) : str_replace(
                     ['<', '>', "\r"], ['&lt;', '&gt;', ''], $FE['logfileData']
@@ -1777,21 +1661,21 @@ class FrontEnd
             );
 
             /** Prepare log data formatting. */
-            if (!$FE['TextMode']) {
+            if (!$TextMode) {
                 $FE['logfileData'] = '<textarea readonly>' . $FE['logfileData'] . '</textarea>';
             } else {
                 $this->formatter($FE['logfileData']);
             }
 
-            /** Define logfile list. */
-            array_walk($FE['LogFiles']['Files'], function ($Arr) {
+            /** Process logs list. */
+            foreach ($FE['LogFiles']['Files'] as $Filename => $Filesize) {
                 $FE['LogFiles']['Out'] .= sprintf(
                     '      <a href="?phpmussel-page=logs&logfile=%1$s&text-mode=%3$s">%1$s</a> – %2$s<br />',
-                    $Arr['Filename'],
-                    $Arr['Filesize'],
-                    $FE['TextModeLinks']
+                    $Filename ?? '',
+                    $Filesize ?? '',
+                    $FE['TextModeLinks'] ?? ''
                 ) . "\n";
-            });
+            }
 
             /** Calculate page load time (useful for debugging). */
             $FE['ProcessTime'] = microtime(true) - $_SERVER['REQUEST_TIME_FLOAT'];
@@ -1807,26 +1691,6 @@ class FrontEnd
             echo $this->sendOutput($FE);
             return;
         }
-    }
-
-    /**
-     * Adds integer values; Returns zero if the sum total is negative or if any
-     * contained values aren't integers, and otherwise, returns the sum total.
-     *
-     * @param int $Values,... The integer values to add.
-     * @return int Zero or the total.
-     */
-    private function zeroMin(int ...$Values): int
-    {
-        $Sum = 0;
-        foreach ($Values as $Value) {
-            $IntValue = (int)$Value;
-            if ($IntValue !== $Value) {
-                return 0;
-            }
-            $Sum += $IntValue;
-        }
-        return $Sum < 0 ? 0 : $Sum;
     }
 
     /**
@@ -1850,26 +1714,31 @@ class FrontEnd
     }
 
     /**
-     * Used by the logs viewer to generate a list of the logfiles contained in a
-     * working directory (normally, the vault).
+     * Generates a list of all currently existing logs.
      *
-     * @param string $Base The path to the working directory.
-     * @return array A list of the logfiles contained in the working directory.
+     * @return array The logs list.
      */
-    private function logsRecursiveList(string $Base): array
+    public function logsRecursiveList(): array
     {
         $Arr = [];
-        $List = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($Base), \RecursiveIteratorIterator::SELF_FIRST);
-        foreach ($List as $Item => $List) {
-            $ThisName = str_replace("\\", '/', substr($Item, strlen($Base)));
-            if (!is_file($Item) || !is_readable($Item) || is_dir($Item) || !$this->isLogFile($ThisName)) {
+        foreach ($this->Loader->InstanceCache['LogPaths'] as $LogPath) {
+            if ((strpos($LogPath, '{') === false && strpos($LogPath, '}') === false)) {
+                if (is_file($LogPath) && is_readable($LogPath)) {
+                    $Arr[] = $LogPath;
+                }
                 continue;
             }
-            $Arr[$ThisName] = ['Filename' => $ThisName, 'Filesize' => filesize($Item)];
-            $this->formatFilesize($Arr[$ThisName]['Filesize']);
+            foreach ($this->Loader->resolvePaths($LogPath) as $Item) {
+                $Arr[] = $Item;
+            }
         }
-        ksort($Arr);
-        return $Arr;
+        $Items = [];
+        foreach ($Arr as $Item) {
+            $Items[$Item] = filesize($Item);
+            $this->formatFilesize($Items[$Item]);
+        }
+        ksort($Items);
+        return $Items;
     }
 
     /**
@@ -1881,8 +1750,7 @@ class FrontEnd
      */
     private function filterL10N(string $ChoiceKey): bool
     {
-        $Path = $this->Loader->L10NPath . 'lang.' . $ChoiceKey;
-        return is_readable($Path . '.yml');
+        return is_readable($this->L10NPath . $ChoiceKey . '.yml');
     }
 
     /**
@@ -2003,7 +1871,7 @@ class FrontEnd
             if ($DeleteMode) {
                 $DeleteMe = substr($Item, $Offset);
                 $FE['state_msg'] .= '<code>' . $DeleteMe . '</code> ' . $this->Loader->L10N->getString(
-                    unlink($this->Loader->QuarantinePath . $DeleteMe) ? 'response_file_deleted' : 'response_delete_error'
+                    unlink($this->Loader->QuarantinePath . $DeleteMe) ? 'response_file_deleted' : 'response_failed_to_delete'
                 ) . '<br />';
                 continue;
             }
@@ -2086,7 +1954,7 @@ class FrontEnd
         $Data = substr($Data, 32);
         $DataLen = strlen($Data);
         if ($Key < 128) {
-            $Key = $this->Scanner->hexSafe(hash('sha512', $Key) . hash('whirlpool', $Key));
+            $Key = $this->Loader->hexSafe(hash('sha512', $Key) . hash('whirlpool', $Key));
         }
         $KeyLen = strlen($Key);
         $Output = '';
@@ -2255,7 +2123,7 @@ class FrontEnd
                 } else {
                     $CellClass = 'r';
                 }
-                $ThisTable .= $this->Loader->parse(['x' => $CellClass, 'InfoType' => $Label, 'InfoNum' => $Total], $FE['InfoRow']);
+                $ThisTable .= $this->Loader->parse(['x' => $CellClass, 'InfoType' => $Label, 'InfoNum' => $Total], $InfoRow);
             }
             $Out .= $ThisTable . '</table></span>' . "\n";
         }
@@ -2304,47 +2172,6 @@ class FrontEnd
             $FE['JS'] = "\n<script type=\"text/javascript\">" . $FE['JS'] . '</script>';
         }
         return $this->Loader->parse($this->Loader->L10N->Data, $this->Loader->parse($FE, $FE['Template']));
-    }
-
-    /**
-     * Confirm whether a file is a logfile (used by the logs viewer).
-     *
-     * @param string $File The path/name of the file to be confirmed.
-     * @return bool True if it's a logfile; False if it isn't.
-     */
-    private function isLogFile(string $File): bool
-    {
-        static $Pattern_scan_log = false;
-        if (!$Pattern_scan_log && $this->Loader->Configuration['core']['scan_log']) {
-            $Pattern_scan_log = $this->Loader->buildLogPattern($this->Loader->Configuration['core']['scan_log'], true);
-        }
-        static $Pattern_scan_log_serialized = false;
-        if (!$Pattern_scan_log_serialized && $this->Loader->Configuration['core']['scan_log_serialized']) {
-            $Pattern_scan_log_serialized = $this->Loader->buildLogPattern($this->Loader->Configuration['core']['scan_log_serialized'], true);
-        }
-        static $Pattern_uploads_log = false;
-        if (!$Pattern_uploads_log && $this->Loader->Configuration['web']['uploads_log']) {
-            $Pattern_uploads_log = $this->Loader->buildLogPattern($this->Loader->Configuration['web']['uploads_log'], true);
-        }
-        static $Pattern_FrontEndLog = false;
-        if (!$Pattern_FrontEndLog && $this->Loader->Configuration['frontend']['frontend_log']) {
-            $Pattern_FrontEndLog = $this->Loader->buildLogPattern($this->Loader->Configuration['frontend']['frontend_log'], true);
-        }
-        static $Pattern_PHPMailer_EventLog = false;
-        if (!$Pattern_PHPMailer_EventLog && $this->Loader->Configuration['phpmailer']['event_log']) {
-            $Pattern_PHPMailer_EventLog = $this->Loader->buildLogPattern($this->Loader->Configuration['phpmailer']['event_log'], true);
-        }
-        return preg_match('~\.log(?:\.gz)?$~', strtolower($File)) || (
-            $this->Loader->Configuration['core']['scan_log'] && preg_match($Pattern_scan_log, $File)
-        ) || (
-            $this->Loader->Configuration['core']['scan_log_serialized'] && preg_match($Pattern_scan_log_serialized, $File)
-        ) || (
-            $this->Loader->Configuration['web']['uploads_log'] && preg_match($Pattern_uploads_log, $File)
-        ) || (
-            $this->Loader->Configuration['frontend']['frontend_log'] && preg_match($Pattern_FrontEndLog, $File)
-        ) || (
-            $this->Loader->Configuration['phpmailer']['event_log'] && preg_match($Pattern_PHPMailer_EventLog, $File)
-        );
     }
 
     /**
