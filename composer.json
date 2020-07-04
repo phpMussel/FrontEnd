@@ -16,18 +16,9 @@
         "phpmussel/core": "^3.0",
         "ext-pcre": "*"
     },
-    "require-dev": {
-        "codeception/codeception": "^2.3",
-        "symfony/event-dispatcher": "3.4.28"
-    },
     "autoload": {
         "psr-4": {
             "phpMussel\\FrontEnd\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "phpMussel\\FrontEnd\\Tests\\": "tests/"
         }
     }
 }
