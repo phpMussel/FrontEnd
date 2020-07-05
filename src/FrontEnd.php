@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2020.07.02).
+ * This file: Front-end handler (last modified: 2020.07.04).
  */
 
 namespace phpMussel\FrontEnd;
@@ -228,7 +228,7 @@ class FrontEnd
             'magnification' => $this->Loader->Configuration['frontend']['magnification'],
 
             /** Define active configuration file. */
-            'ActiveConfigFile' => $this->Loader->ConfigurationPath,
+            'ActiveConfigFile' => realpath($this->Loader->ConfigurationPath),
 
             /** Current time and date. */
             'DateTime' => $this->Loader->timeFormat($this->Loader->Time, $this->Loader->Configuration['core']['time_format']),
@@ -785,7 +785,7 @@ class FrontEnd
         /** Accounts. */
         if ($Page === 'accounts' && $this->Permissions === 1) {
             /** $_POST overrides for mobile display. */
-            if (!empty($_POST['username']) && !empty($_POST['do_mob']) && (!empty($_POST['password_mob']) || $_POST['do_mob'] == 'delete-account')) {
+            if (!empty($_POST['username']) && !empty($_POST['do_mob']) && (!empty($_POST['password_mob']) || $_POST['do_mob'] === 'delete-account')) {
                 $_POST['do'] = $_POST['do_mob'];
             }
             if (empty($_POST['username']) && !empty($_POST['username_mob'])) {
@@ -1028,7 +1028,13 @@ class FrontEnd
                             }
                         }
                         $DirValue['Posts'] = implode(',', $DirValue['Posts']) ?: '';
-                        $this->Loader->Configuration[$CatKey][$DirKey] = $DirValue['Posts'];
+                        if (
+                            !empty($_POST['updatingConfig']) &&
+                            $this->Loader->Configuration[$CatKey][$DirKey] !== $DirValue['Posts']
+                        ) {
+                            $ConfigurationModified = true;
+                            $this->Loader->Configuration[$CatKey][$DirKey] = $DirValue['Posts'];
+                        }
                     }
                     if (isset($DirValue['preview'])) {
                         $ThisDir['Preview'] = ($DirValue['preview'] === 'allow_other') ? '' : ' = <span id="' . $ThisDir['DirLangKey'] . '_preview"></span>';
@@ -1496,13 +1502,11 @@ class FrontEnd
             /** Append number localisation JS. */
             $FE['JS'] .= $this->numberJS() . "\n";
 
-            /** Template for range rows. */
-            $InfoRow = $this->Loader->readFileBlocks($this->getAssetPath('_siginfo_row.html'));
+            $FE['InfoRows'] = '';
+            $FE['SigInfoMenuOptions'] = '';
 
             /** Process signature files and fetch relevant values. */
-            $FE['InfoRows'] = $this->signatureInformationHandler(
-                array_unique(array_filter(explode(',', $this->Loader->Configuration['signatures']['active'])))
-            );
+            $this->signatureInformationHandler($FE['InfoRows'], $FE['SigInfoMenuOptions']);
 
             /** Calculate and append page load time, and append totals. */
             $FE['ProcTime'] = microtime(true) - $_SERVER['REQUEST_TIME_FLOAT'];
@@ -1579,7 +1583,9 @@ class FrontEnd
             if (empty($this->Loader->Configuration['signatures']['active'])) {
                 $FE['Other-Active'] = '<span class="txtRd">' . $this->NumberFormatter->format(0) . '</span>';
             } else {
-                $OtherActive = count(array_unique(array_filter(explode(',', $this->Loader->Configuration['signatures']['active']))));
+                $FE['Other-Active'] = count(array_unique(array_filter(explode(',', $this->Loader->Configuration['signatures']['active']), function ($Item) {
+                    return !empty($Item);
+                })));
                 $StatColour = $FE['Other-Active'] ? 'txtGn' : 'txtRd';
                 $FE['Other-Active'] = '<span class="' . $StatColour . '">' . $this->NumberFormatter->format(
                     $FE['Other-Active']
@@ -1867,6 +1873,7 @@ class FrontEnd
             if (!preg_match('~\.qfu$~i', $Item) || is_dir($Item) || !is_file($Item) || !is_readable($Item)) {
                 continue;
             }
+
             /** Deletes all files in quarantine. */
             if ($DeleteMode) {
                 $DeleteMe = substr($Item, $Offset);
@@ -1875,6 +1882,7 @@ class FrontEnd
                 ) . '<br />';
                 continue;
             }
+
             $Key++;
             $Arr[$Key] = [
                 'QFU-Name' => substr($Item, $Offset),
@@ -1970,7 +1978,7 @@ class FrontEnd
             }
         }
         $Output = gzinflate($Output);
-        if (empty($Output) || md5($Output) !== $UploadMD5) {
+        if (empty($Output) || hash('md5', $Output) !== $UploadMD5) {
             $this->InstanceCache['RestoreStatus'] = 3;
             return false;
         }
@@ -1993,20 +2001,24 @@ class FrontEnd
     /**
      * Signature information handler.
      *
-     * @param array $Active The currently active signature files.
-     * @return string Signature information as prepared HTML output.
+     * @param string $InfoRows Where to populate rows.
+     * @param string $SigInfoMenuOptions Where to populate menu options.
      */
-    private function signatureInformationHandler(array $Active): string
+    private function signatureInformationHandler(string &$InfoRows, string &$SigInfoMenuOptions)
     {
-        /** Check whether shorthand data has been fetched. If it hasn't, fetch it. */
-        if (!isset($this->Loader->InstanceCache['shorthand.yml'])) {
-            $this->Loader->InstanceCache['shorthand.yml'] = [];
-            $ShorthandData = $this->Loader->readFile($this->AssetsPath . 'shorthand.yml');
-            if (!$ShorthandData) {
-                return '<span class="s">' . $this->Loader->L10N->getString('response_error') . '</span>';
-            }
-            $this->Loader->YAML->process($ShorthandData, $this->Loader->InstanceCache['shorthand.yml']);
+        /** Guard. */
+        if (!$this->Loader->loadShorthandData()) {
+            $InfoRows = '<span class="s">' . $this->Loader->L10N->getString('response_error') . '</span>';
+            return;
         }
+
+        /** The currently active signature files. */
+        $Active = array_unique(array_filter(explode(',', $this->Loader->Configuration['signatures']['active']), function ($Item) {
+            return !empty($Item);
+        }));
+
+        /** Template for range rows. */
+        $InfoRow = $this->Loader->readFileBlocks($this->getAssetPath('_siginfo_row.html'));
 
         /** Get list of vendor search patterns and metadata search pattern partials. */
         $Arr = [
@@ -2094,17 +2106,11 @@ class FrontEnd
         /** Cleanup. */
         unset($SubTotal, $Other, $Data, $File, $Counts, $Arr);
 
-        /** To be populated by category menus. */
-        $FE['infoCatOptions'] = '';
-
-        /** To be populated by output tables. */
-        $Out = '';
-
         /** Process totals. */
         foreach ($Subs as $Sub) {
             $Label = $this->Loader->L10N->getString('siginfo_sub_' . $Sub) ?: $Sub;
             $Class = 'sigtype_' . strtolower($Sub);
-            $FE['infoCatOptions'] .= "\n      <option value=\"" . $Class . '">' . $Label . '</option>';
+            $SigInfoMenuOptions .= "\n      <option value=\"" . $Class . '">' . $Label . '</option>';
             $ThisTable = '<span style="display:none" class="' . $Class . '"><table><tr><td class="center h4f" colspan="2"><span class="s">' . $Label . '</span></td></tr>' . "\n";
             arsort($Totals[$Sub]);
             foreach ($Totals[$Sub] as $Key => &$Total) {
@@ -2125,11 +2131,8 @@ class FrontEnd
                 }
                 $ThisTable .= $this->Loader->parse(['x' => $CellClass, 'InfoType' => $Label, 'InfoNum' => $Total], $InfoRow);
             }
-            $Out .= $ThisTable . '</table></span>' . "\n";
+            $InfoRows .= $ThisTable . '</table></span>' . "\n";
         }
-
-        /** Return totals and exit closure. */
-        return $Out;
     }
 
     /**
@@ -2215,9 +2218,7 @@ class FrontEnd
         $Handle = fopen($File, $WriteMode);
         fwrite($Handle, $Data);
         fclose($Handle);
-        if ($WriteMode === 'wb') {
-            $this->Loader->logRotation($this->Loader->Configuration['frontend']['frontend_log']);
-        }
+        $this->Loader->logRotation($this->Loader->Configuration['frontend']['frontend_log']);
     }
 
     /**
