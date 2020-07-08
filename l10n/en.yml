@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2020.07.05).
+# This file: English language data (last modified: 2020.07.08).
 ##/
 
 config_core: "General configuration (any core configuration not belonging to other categories)."
@@ -26,7 +26,7 @@ config_core_scan_log_serialized: "Filename of file to log all scanning results t
 config_core_statistics: "Track phpMussel usage statistics? True = Yes; False = No [Default]."
 config_core_time_format: "The date/time notation format used by phpMussel. Additional options may be added upon request."
 config_core_time_offset: "Timezone offset in minutes."
-config_core_timezone: "Your timezone."
+config_core_timezone: "This is used to specify the timezone to use (e.g., Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, etc). Specify "SYSTEM" to let PHP handle this for you automatically."
 config_core_truncate: "Truncate logfiles when they reach a certain size? Value is the maximum size in B/KB/MB/GB/TB that a logfile may grow to before being truncated. The default value of 0KB disables truncation (logfiles can grow indefinitely). Note: Applies to individual logfiles! The size of logfiles is not considered collectively."
 config_experimental: "Unstable/Experimental!"
 config_files: "The specifics of how to handle files when scanning."
@@ -42,7 +42,7 @@ config_files_chameleon_to_archive: "Detect incorrect headers in archives and com
 config_files_chameleon_to_doc: "Search for office documents whose headers are incorrect (Supported: DOC, DOT, PPS, PPT, XLA, XLS, WIZ). False = Off; True = On."
 config_files_chameleon_to_img: "Search for images whose headers are incorrect (Supported: BMP, DIB, PNG, GIF, JPEG, JPG, XCF, PSD, PDD, WEBP). False = Off; True = On."
 config_files_chameleon_to_pdf: "Search for PDF files whose headers are incorrect. False = Off; True = On."
-config_files_check_archives: "Attempt to check the contents of archives? False = Don't check; True = Check [Default]."
+config_files_check_archives: "Attempt to check the contents of archives? False = Don't check; True = Check [Default]. Supported: Zip (requires libzip), Tar, Rar (requires the rar extension)."
 config_files_corrupted_exe: "Corrupted files and parse errors. False = Ignore; True = Block [Default]. Detect and block potentially corrupted PE (Portable Executable) files? Often (but not always), when certain aspects of a PE file are corrupted or can't be parsed correctly, it can be indicative of a viral infection. The processes used by most anti-virus programs to detect viruses in PE files require parsing those files in certain ways, which, if the programmer of a virus is aware of, will specifically try to prevent, in order to allow their virus to remain undetected."
 config_files_decode_threshold: "Threshold for the length of raw data within which decode commands should be detected (in case there are any noticeable performance issues while scanning). Default = 512KB. Zero or null disables the threshold (removing any such limitation based on filesize)."
 config_files_filesize_archives: "Carry over filesize blacklisting/whitelisting to the contents of archives? False = No (just greylist everything); True = Yes [Default]."
@@ -62,7 +62,7 @@ config_frontend_frontend_log: "File for logging front-end login attempts. Specif
 config_frontend_magnification: "Font magnification. Default = 1."
 config_frontend_max_login_attempts: "Maximum number of front-end login attempts. Default = 5."
 config_frontend_numbers: "How do you prefer numbers to be displayed? Select the example that looks the most correct to you."
-config_frontend_theme: "Default theme to use for phpMussel."
+config_frontend_theme: "The aesthetic to use for the phpMussel front-end."
 config_legal: "Configuration for legal requirements."
 config_legal_privacy_policy: "The address of a relevant privacy policy to be displayed in the footer of any generated pages. Specify a URL, or leave blank to disable."
 config_legal_pseudonymise_ip_addresses: "Pseudonymise IP addresses when logging? True = Yes [Default]; False = No."
@@ -72,7 +72,7 @@ config_quarantine_quarantine_max_files: "The maximum number of files that can ex
 config_quarantine_quarantine_max_filesize: "The maximum filesize allowed for files to be quarantined. Files larger than the value specified will NOT be quarantined. This directive is important as a means of making it more difficult for any potential attackers to flood your quarantine with unwanted data potentially causing run-away data usage on your hosting service. Default = 2MB."
 config_quarantine_quarantine_max_usage: "The maximum memory usage allowed for the quarantine. If the total memory used by the quarantine reaches this value, the oldest quarantined files will be deleted until the total memory used no longer reaches this value. This directive is important as a means of making it more difficult for any potential attackers to flood your quarantine with unwanted data potentially causing run-away data usage on your hosting service. Default = 64MB."
 config_signatures: "Configuration for signatures, signature files, etc."
-config_signatures_active: "A list of the active signature files, delimited by commas."
+config_signatures_active: "A list of the active signature files, delimited by commas. Note: Signature files must firstly be installed, before you can activate them. For the test files to work correctly, the signature files must be installed and activated."
 config_signatures_detect_adware: "Should phpMussel parse signatures for detecting adware? False = No; True = Yes [Default]."
 config_signatures_detect_deface: "Should phpMussel parse signatures for detecting defacements and defacers? False = No; True = Yes [Default]."
 config_signatures_detect_encryption: "Should phpMussel detect and block encrypted files? False = No; True = Yes [Default]."
@@ -187,6 +187,7 @@ label_sanity_check: "Sanity check: "
 label_sapi: "SAPI used:"
 label_scanned_objects: "Objects scanned"
 label_scanned_uploads: "Uploads scanned"
+label_see_also: "See also:"
 label_show: "Show"
 label_size_in_quarantine: "Size in quarantine: "
 label_stable: "Latest stable:"

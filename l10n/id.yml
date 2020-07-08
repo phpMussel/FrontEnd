@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2020.07.05).
+# This file: Indonesian language data (last modified: 2020.07.08).
 ##/
 
 config_core: "Konfigurasi umum (konfigurasi inti apapun yang bukan milik kategori lain)."
@@ -26,7 +26,7 @@ config_core_scan_log_serialized: "Nama dari file untuk mencatat semua hasil pemi
 config_core_statistics: "Lacak statistik penggunaan phpMussel? True = Ya; False = Tidak [Default]."
 config_core_time_format: "Format notasi tanggal/waktu yang digunakan oleh phpMussel. Opsi tambahan dapat ditambahkan atas permintaan."
 config_core_time_offset: "Offset zona waktu dalam hitungan menit."
-config_core_timezone: "Zona waktu Anda."
+config_core_timezone: "Ini digunakan untuk menentukan zona waktu yang akan digunakan (misalnya, Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, dll). Menentukan "SYSTEM" untuk membiarkan PHP menangani ini untuk Anda secara otomatis."
 config_core_truncate: "Memotong file log ketika mereka mencapai ukuran tertentu? Nilai adalah ukuran maksimum dalam B/KB/MB/GB/TB yang bisa ditambahkan untuk file log sebelum dipotong. Nilai default 0KB menonaktifkan pemotongan (file log dapat tumbuh tanpa batas waktu). Catat: Berlaku untuk file log individu! Ukuran file log tidak dianggap secara kolektif."
 config_experimental: "Tidak stabil / Eksperimental!"
 config_files: "Rincian cara menangani file saat memindai."
@@ -42,7 +42,7 @@ config_files_chameleon_to_archive: "Mendeteksi header yang salah dalam arsip dan
 config_files_chameleon_to_doc: "Cari dokumen office yang header nya tidak benar (Didukung: DOC, DOT, PPS, PPT, XLA, XLS, WIZ). False = Dinonaktifkan; True = Diaktifkan."
 config_files_chameleon_to_img: "Cari gambar yang header nya tidak benar (Didukung: BMP, DIB, PNG, GIF, JPEG, JPG, XCF, PSD, PDD, WEBP). False = Dinonaktifkan; True = Diaktifkan."
 config_files_chameleon_to_pdf: "Cari file PDF yang headernya tidak benar. False = Dinonaktifkan; True = Diaktifkan."
-config_files_check_archives: "Berusaha mencek isi file terkompress? False = Tidak (Tidak mencek); True = Ya (Mencek) [Default]."
+config_files_check_archives: "Berusaha mencek isi file terkompress? False = Tidak (Tidak mencek); True = Ya (Mencek) [Default]. Didukung: Zip (membutuhkan libzip), Tar, Rar (membutuhkan ekstensi rar)."
 config_files_corrupted_exe: "File korup dan diurai kesalahan. False = Mengabaikan; True = Memblokir [Default]. Mendeteksi dan memblokir file PE (Portable Executable) berpotensi korup? Sering (tapi tidak selalu), ketika aspek-aspek tertentu dari file PE yang korup atau tidak bisa diurai dengan benar, itu dapat menjadi indikasi dari infeksi virus. Proses yang digunakan oleh sebagian besar program anti-virus untuk mendeteksi virus dalam file PE memerlukan parsing file-file dengan cara tertentu, yang, jika programmer virus menyadari, secara khusus akan mencoba untuk mencegah, untuk memungkinkan virus mereka untuk tetap tidak terdeteksi."
 config_files_decode_threshold: "Ambang batas dengan panjang file mentah yang dalam decode perintah harus terdeteksi (dalam kasus ada masalah kinerja sementara pemindaian). Default = 512KB. Nol atau nilai null menonaktifkan ambang batas (menghapus apapun batasan berdasarkan ukuran file)."
 config_files_filesize_archives: "Memperlalaikan ukuran daftar hitam/putih dari isi file terkompress? False = Tidak (Bertanda abu-abu semua); True = Ya [Default]."
@@ -62,7 +62,7 @@ config_frontend_frontend_log: "File untuk mencatat upaya masuk bagian depan. Spe
 config_frontend_magnification: "Perbesaran font. Default = 1."
 config_frontend_max_login_attempts: "Jumlah maksimum upaya memasukkan ke bagian depan. Default = 5."
 config_frontend_numbers: "Cara apa yang kamu suka nomor menjadi ditampilkan? Pilih contoh yang paling sesuai untuk Anda."
-config_frontend_theme: "Tema default untuk phpMussel."
+config_frontend_theme: "Estetika yang digunakan untuk bagian depan phpMussel."
 config_legal: "Konfigurasi untuk persyaratan hukum."
 config_legal_privacy_policy: "Alamat dari kebijakan privasi yang relevan untuk ditampilkan di footer dari setiap halaman yang dihasilkan. Spesifikasikan URL, atau biarkan kosong untuk menonaktifkan."
 config_legal_pseudonymise_ip_addresses: "Pseudonymise alamat IP saat menulis file log? True = Ya [Default]; False = Tidak."
@@ -72,7 +72,7 @@ config_quarantine_quarantine_max_files: "Jumlah maksimum file yang dapat ada di 
 config_quarantine_quarantine_max_filesize: "Ukuran file maksimum yang diijinkan dari file yang akan dikarantina. File yang lebih besar dari nilai yang ditentukan dibawah ini TIDAK akan dikarantina. Direktif ini penting sebagai sarana untuk membuat lebih sulit bagi setiap penyerang potensial untuk banjir karantina Anda dengan file yang tidak diinginkan berpotensi menyebabkan penggunaan file kelebihan pada layanan hosting Anda. Default = 2MB."
 config_quarantine_quarantine_max_usage: "Penggunaan memori maksimal yang diijinkan untuk karantina. Jika total penggunaan memori oleh karantina mencapai nilai ini, file yang dikarantina tertua akan dihapus sampai total penggunaan memori tidak lagi mencapai nilai ini. Direktif ini penting sebagai sarana untuk membuat lebih sulit bagi setiap penyerang potensial untuk banjir karantina Anda dengan file yang tidak diinginkan berpotensi menyebabkan penggunaan file kelebihan pada layanan hosting Anda. Default = 64MB."
 config_signatures: "Konfigurasi untuk tanda tangan, file tanda tangan, dll."
-config_signatures_active: "Daftar file tanda tangan yang aktif, dipisahkan oleh koma."
+config_signatures_active: "Daftar file tanda tangan yang aktif, dipisahkan oleh koma. Catat: File tanda tangan harus diinstal pertama-tama, sebelum Anda dapat mengaktifkannya. Agar file test berfungsi dengan benar, file tanda tangan harus diinstal dan diaktifkan."
 config_signatures_detect_adware: "Harus phpMussel menggunakan tanda tangan untuk mendeteksi adware? False = Tidak; True = Ya [Default]."
 config_signatures_detect_deface: "Harus phpMussel menggunakan tanda tangan untuk mendeteksi perusakan dan perusak? False = Tidak; True = Ya [Default]."
 config_signatures_detect_encryption: "Harus phpMussel mendeteksi dan memblokir file terenkripsi? False = Tidak; True = Ya [Default]."
@@ -185,6 +185,7 @@ label_sanity_check: "Pemeriksaan kewarasan: "
 label_sapi: "SAPI digunakan:"
 label_scanned_objects: "Obyek dipindai"
 label_scanned_uploads: "Upload dipindai"
+label_see_also: "Lihat juga:"
 label_show: "Menunjukkan"
 label_size_in_quarantine: "Ukuran dalam karantina: "
 label_stable: "Terbaru stabil:"

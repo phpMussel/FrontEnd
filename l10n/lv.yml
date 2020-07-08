@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2020.07.05).
+# This file: Latvian language data (last modified: 2020.07.08).
 ##/
 
 config_core: "Vispārējā konfigurācija (jebkura pamata konfigurācija, kas nepieder citām kategorijām)."
@@ -26,7 +26,7 @@ config_core_scan_log_serialized: "Faila nosaukums, kurā reģistrēt visus sken�
 config_core_statistics: "Vai izsekot phpMussel lietošanas statistiku? True (Patiess) = Jā; False (Nepatiess) = Nē [Noklusējuma]."
 config_core_time_format: "phpMussel izmantotais datuma/laika apzīmējuma formāts. Pēc pieprasījuma var tikt pievienotas papildu iespējas."
 config_core_time_offset: "Laika joslas nobīde minūtēs."
-config_core_timezone: "Jūsu laika josla."
+config_core_timezone: "To izmanto, lai norādītu izmantojamo laika joslu (piemēram, Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, utt). Norādiet “SYSTEM”, lai PHP varētu rīkoties ar to automātiski."
 config_core_truncate: "Saīsināt logfailus, kad tie sasniedz noteiktu lielumu? Vērtība ir maksimālais lielums B/KB/MB/GB/TB, līdz logfailam var izaugt pirms saīsināšanas. Noklusējuma vērtība 0KB atspējo saīsināšanu (logfaili var pieaugt bezgalīgi). Piezīme: Attiecas uz indivīdiem logfailiem! Logfailu lielums netiek skaitīts kolektīvi."
 config_experimental: "Nestabils/Eksperimentāls!"
 config_files: "Skenēšanas failu apstrādes specifika."
@@ -42,7 +42,7 @@ config_files_chameleon_to_archive: "Atklājiet nepareizas galvenes arhīvos un s
 config_files_chameleon_to_doc: "Meklējiet biroja dokumentus, kuru galvenes nav pareizas (Atbalstītās: DOC, DOT, PPS, PPT, XLA, XLS, WIZ). False (Nepatiess) = Atspējots; True (Patiess) = Iespējots."
 config_files_chameleon_to_img: "Meklējiet attēlus, kuru galvenes nav pareizas (Atbalstītās: BMP, DIB, PNG, GIF, JPEG, JPG, XCF, PSD, PDD, WEBP). False (Nepatiess) = Atspējots; True (Patiess) = Iespējots."
 config_files_chameleon_to_pdf: "Meklējiet PDF failus, kuru galvenes nav pareizas. False (Nepatiess) = Atspējots; True (Patiess) = Iespējots."
-config_files_check_archives: "Mēģinājums pārbaudīt arhīvu saturu? False (Nepatiess) = Nepārbaudiet; True (Patiess) = Pārbaudiet [Noklusējuma]."
+config_files_check_archives: "Mēģinājums pārbaudīt arhīvu saturu? False (Nepatiess) = Nepārbaudiet; True (Patiess) = Pārbaudiet [Noklusējuma]. Atbalstītās: Zip (prasa libzip), Tar, Rar (prasa rar pagarinājumu)."
 config_files_corrupted_exe: "Corrupted files and parse errors. False (Nepatiess) = Ignore; True (Patiess) = Block [Noklusējuma]. Detect and block potentially corrupted PE (Portable Executable) files? Often (but not always), when certain aspects of a PE file are corrupted or can't be parsed correctly, it can be indicative of a viral infection. The processes used by most anti-virus programs to detect viruses in PE files require parsing those files in certain ways, which, if the programmer of a virus is aware of, will specifically try to prevent, in order to allow their virus to remain undetected."
 config_files_decode_threshold: "Neapstrādātu datu maksimālais garums, kurā jāatklāj dekodēšanas komandas (ja skenēšanas laikā rodas kādas pamanāmas veiktspējas problēmas). Noklusējuma = 512KB. Nulle atspējo limitu (tādējādi noņemot visus šādus ierobežojumus, kuru pamatā ir faila lielums)."
 config_files_filesize_archives: "Vai faila lielums melnajā/baltajā sarakstā būtu jāattiecina uz arhīvu saturu? False (Nepatiess) = Nē (visu tikai iekļauj pelēkajā sarakstā); True (Patiess) = Jā [Noklusējuma]."
@@ -62,7 +62,7 @@ config_frontend_frontend_log: "Fails ielogošanās mēģinājumu reģistrēšana
 config_frontend_magnification: "Fonta palielinājums. Noklusējuma = 1."
 config_frontend_max_login_attempts: "Maksimālais ielogošanās mēģinājumu skaits. Noklusējuma = 5."
 config_frontend_numbers: "Kā jūs izvēlaties skaitļu parādīšanu? Atlasiet piemēru, kas jums šķiet vispareizākais."
-config_frontend_theme: "Noklusējuma tēma, kas jāizmanto phpMussel."
+config_frontend_theme: "Estētika, ko izmantot phpMussel administratīvajai saskarnei."
 config_legal: "Juridisko prasību konfigurācija."
 config_legal_privacy_policy: "Attiecīgās privātuma politikas adrese, kas jāparāda visu ģenerēto lapu kājenē. Norādiet URL vai atstājiet tukšu lai to atspējotu."
 config_legal_pseudonymise_ip_addresses: "Pseidonimizēt IP adresi reģistrējoties? True (Patiess) = Jā [Noklusējuma]; False (Nepatiess) = Nē."
@@ -72,7 +72,7 @@ config_quarantine_quarantine_max_files: "Maksimālais failu skaits, kas var past
 config_quarantine_quarantine_max_filesize: "Maksimālais pieļaujamais failu lielums failiem var būt karantīnā. Faili, kas lielāki par norādīto vērtību, NETIKS ievietots karantīnā. Šī direktīva ir svarīga kā līdzeklis, kas potenciālajiem uzbrucējiem apgrūtina jūsu karantīnas pārpludināšanu ar nevēlamiem datiem, kas var izraisīt pārmērīgu datu izmantošanu jūsu mitināšanas pakalpojumā. Noklusējuma = 2MB."
 config_quarantine_quarantine_max_usage: "Karantīnā pieļaujamais maksimālais atmiņas apjoms. Ja kopējais karantīnā izmantotais atmiņas apjoms sasniedz šo vērtību, vecākie karantīnā esošie faili tiks izdzēsti, līdz kopējam karantīnā izmantotās atmiņas apjomam vairs nesasniegs šo vērtību. Šī direktīva ir svarīga kā līdzeklis, kas potenciālajiem uzbrucējiem apgrūtina jūsu karantīnas pārpludināšanu ar nevēlamiem datiem, kas var izraisīt pārmērīgu datu izmantošanu jūsu mitināšanas pakalpojumā. Noklusējuma = 64MB."
 config_signatures: "Parakstu, parakstu failu, utt konfigurācija."
-config_signatures_active: "Aktīvo paraksta failu saraksts, atdalīts ar komatiem."
+config_signatures_active: "Aktīvo paraksta failu saraksts, atdalīts ar komatiem. Piezīme: Lai varētu tos aktivizēt, vispirms ir jāinstalē paraksta faili. Lai testa faili darbotos pareizi, paraksta faili ir jāinstalē un jāaktivizē."
 config_signatures_detect_adware: "Vai phpMussel vajadzētu parsēt parakstus reklāmprogrammatūru noteikšanai? False (Nepatiess) = Nē; True (Patiess) = Jā [Noklusējuma]."
 config_signatures_detect_deface: "Vai phpMussel vajadzētu parsēt parakstus vietņu vandālismu un vandalnieku noteikšanai? False (Nepatiess) = Nē; True (Patiess) = Jā [Noklusējuma]."
 config_signatures_detect_encryption: "Vai phpMussel vajadzētu atklāt un bloķēt šifrētus failus? False (Nepatiess) = Nē; True (Patiess) = Jā [Noklusējuma]."
@@ -188,6 +188,7 @@ label_sanity_check: "Saprāta pārbaude: "
 label_sapi: "Izmantotā SAPI:"
 label_scanned_objects: "Skenēto objektu skaits"
 label_scanned_uploads: "Skenēto augšupielāžu skaits"
+label_see_also: "Skatīt arī:"
 label_show: "Parādiet"
 label_size_in_quarantine: "Izmērs karantīnā: "
 label_stable: "Jaunākā stabilā:"

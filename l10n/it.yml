@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2020.07.05).
+# This file: Italian language data (last modified: 2020.07.08).
 ##/
 
 config_core: "Configurazione generale (qualsiasi configurazione di base non appartenente ad altre categorie)."
@@ -26,7 +26,7 @@ config_core_scan_log_serialized: "Il nome del file per registrare tutti i risult
 config_core_statistics: "Monitorare le statistiche di utilizzo di phpMussel? True = Sì; False = No [Predefinito]."
 config_core_time_format: "Il formato della data/ora di notazione usata da phpMussel. Ulteriori opzioni possono essere aggiunti su richiesta."
 config_core_time_offset: "Fuso orario offset in minuti."
-config_core_timezone: "Il vostro fuso orario."
+config_core_timezone: "Questo è usato per specificare il fuso orario da usare (per esempio, Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, ecc). Specifica "SYSTEM" per consentire a PHP di gestirlo automaticamente."
 config_core_truncate: "Troncare i file di log quando raggiungono una determinata dimensione? Il valore è la dimensione massima in B/KB/MB/GB/TB che un file di log può crescere prima di essere troncato. Il valore predefinito di 0KB disattiva il troncamento (i file di log possono crescere indefinitamente). Nota: Si applica ai singoli file di log! La dimensione dei file di log non viene considerata collettivamente."
 config_experimental: "Instabile/Sperimentale!"
 config_files: "I dettagli su come gestire i file durante la scansione."
@@ -42,7 +42,7 @@ config_files_chameleon_to_archive: "Rileva le header errate negli archivi e nei 
 config_files_chameleon_to_doc: "Cercare per office documenti di cui non sono corrette (Supportato: DOC, DOT, PPS, PPT, XLA, XLS, WIZ). False = Disattivato; True = Attivato."
 config_files_chameleon_to_img: "Cercare per immagini file di cui non sono corrette (Supportato: BMP, DIB, PNG, GIF, JPEG, JPG, XCF, PSD, PDD, WEBP). False = Disattivato; True = Attivato."
 config_files_chameleon_to_pdf: "Cercare per PDF file di cui non sono corrette. False = Disattivato; True = Attivato."
-config_files_check_archives: "Tenta per verifica il contenuti degli archivi? False = No (no verifica); True = Sì (fare verifica) [Predefinito]."
+config_files_check_archives: "Tenta per verifica il contenuti degli archivi? False = No (no verifica); True = Sì (fare verifica) [Predefinito]. Supportato: Zip (richiede libzip), Tar, Rar (richiede l'estensione rar)."
 config_files_corrupted_exe: "Corrotto file e parsare errori. False = Ignorarli; True = Bloccarli [Predefinito]. Rilevare e bloccare i potenzialmente corrotti PE (portatile eseguibili) file? Spesso (ma non sempre), quando alcuni aspetti di un PE file sono corrotto o non può essere parsato correttamente, tale può essere indicativo di una virale infezione. I processi utilizzati dalla maggior parte dei antivirus programmi per rilevare i virus all'intero PE file richiedono parsare quei file in certi modi, di cui, se il programmatore di un virus è consapevole di, sarà specificamente provare di prevenire, al fine di abilita loro virus di rimanere inosservato."
 config_files_decode_threshold: "Soglia per la lunghezza dei grezzi dati dove decodificare comandi dovrebbe essere rilevati (nel caso in cui vi siano notevoli problemi di prestazioni durante la scansione). Predefinito = 512KB. Un zero o un nullo valore disabilita la soglia (rimuovere tale limitazione basata sulla dimensione dei file)."
 config_files_filesize_archives: "Eredita file dimensione limite blacklist/whitelist al contenuti degli archivi? False = No (appena greylist tutto); True = Sì [Predefinito]."
@@ -62,7 +62,7 @@ config_frontend_frontend_log: "File per la registrazione di l'accesso front-end 
 config_frontend_magnification: "Ingrandimento del carattere. Predefinito = 1."
 config_frontend_max_login_attempts: "Numero massimo di tentativi di accesso al front-end. Predefinito = 5."
 config_frontend_numbers: "Come preferisci che i numeri siano visualizzati? Seleziona l'esempio che ti sembra più corretto."
-config_frontend_theme: "Tema predefinito da utilizzare per phpMussel."
+config_frontend_theme: "L'estetica da utilizzare per il front-end phpMussel."
 config_legal: "Configurazione per requisiti legali."
 config_legal_privacy_policy: "L'indirizzo di una politica sulla privacy pertinente da visualizzare nel piè di pagina delle pagine generate. Specificare un URL, o lasciare vuoto per disabilitare."
 config_legal_pseudonymise_ip_addresses: "Pseudonimizzare gli indirizzi IP durante la scrivono i file di registro? True = Sì [Predefinito]; False = No."
@@ -72,7 +72,7 @@ config_quarantine_quarantine_max_files: "Il numero massimo di file che possono e
 config_quarantine_quarantine_max_filesize: "La massima permesso dimensione del file dei file essere quarantena. File di dimensioni superiori a questo valore NON verranno quarantena. Questa direttiva è importante per rendere più difficile per qualsiasi potenziali aggressori di inondare la vostra quarantena con indesiderati dati potenzialmente causare un eccessivo utilizzo dei dati sul vostro servizio di hosting. Predefinito = 2MB."
 config_quarantine_quarantine_max_usage: "La massima permesso utilizzo della memoria per la quarantena. Se la totale memoria utilizzata dalla quarantena raggiunge questo valore, i più vecchi file in quarantena vengono eliminati fino a quando la totale memoria utilizzata non raggiunge questo valore. Questa direttiva è importante per rendere più difficile per qualsiasi potenziali aggressori di inondare la tua quarantena con indesiderati dati potenzialmente causare un eccessivo utilizzo dei dati sul vostro servizio di hosting. Predefinito = 64MB."
 config_signatures: "Configurazione per firme, file di firma, ecc."
-config_signatures_active: "Un elenco dei file di firme attivi, delimitati da virgole."
+config_signatures_active: "Un elenco dei file di firme attivi, delimitati da virgole. Nota: Prima di poter essere attivati, è necessario installare i file delle firme. Affinché i file di test funzionino correttamente, i file delle firme devono essere installati e attivati."
 config_signatures_detect_adware: "Dovrebbe phpMussel utilizzare le firme per il rilevamento di adware? False = No; True = Sì [Predefinito]."
 config_signatures_detect_deface: "Dovrebbe phpMussel utilizzare le firme per il rilevamento di sfiguramenti e sfiguratori? False = No; True = Sì [Predefinito]."
 config_signatures_detect_encryption: "Dovrebbe phpMussel rilevare e bloccare i file crittografati? False = No; True = Sì [Predefinito]."
@@ -185,6 +185,7 @@ label_sanity_check: "Controllo sanitario: "
 label_sapi: "SAPI utilizzata:"
 label_scanned_objects: "Oggetti scansionati"
 label_scanned_uploads: "Caricamenti scansionati"
+label_see_also: "Guarda anche:"
 label_show: "Mostrare"
 label_size_in_quarantine: "Dimensione in quarantena: "
 label_stable: "Più recente stabile:"

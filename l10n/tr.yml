@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2020.07.05).
+# This file: Turkish language data (last modified: 2020.07.08).
 ##/
 
 config_core: "Genel yapılandırma (diğer kategorilere ait olmayan herhangi bir çekirdek yapılandırma)."
@@ -26,7 +26,7 @@ config_core_scan_log_serialized: "Tüm tarama sonuçlarını kaydetmek için dos
 config_core_statistics: "phpMussel kullanım istatistiklerini takip et? Doğru/True = Evet; Yanlış/False = Hayır [Varsayılan]."
 config_core_time_format: "phpMussel tarafından kullanılan tarih/saat gösterimi biçimi. İsteğe bağlı olarak ek seçenekler eklenebilir."
 config_core_time_offset: "Dakika cinsinden zaman dilimi farkı."
-config_core_timezone: "Zaman diliminiz."
+config_core_timezone: "Kullanılacak saat dilimini belirtir (örneğin, Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, vb). PHP'nin bunu sizin için otomatik olarak yapmasına izin vermek için "SYSTEM" i belirtin."
 config_core_truncate: "Belirli bir boyuta ulaştığında günlük dosyalarını kesin? Değer, bir günlük dosyasının kesilmeden önce büyüyebileceği B/KB/MB/GB/TB cinsinden maksimum boyuttur. Varsayılan 0KB değeri, kesmeyi devre dışı bırakır (günlük dosyaları sınırsız büyüyebilir). Not: Tek tek kayıt dosyaları için geçerlidir! Günlük dosyalarının boyutu toplam olarak alınmaz."
 config_experimental: "Kararsız/Deneysel!"
 config_files: "Tarama sırasında dosyaların nasıl kullanılacağına ilişkin ayrıntılı bilgi."
@@ -42,7 +42,7 @@ config_files_chameleon_to_archive: "Arşivlerde ve sıkıştırılmış dosyalar
 config_files_chameleon_to_doc: "Başlıkları yanlış olan ofis belgelerini arama (Desteklenen: DOC, DOT, PPS, PPT, XLA, XLS, WIZ). Yanlış/False = Kapalı; Doğru/True = Açık."
 config_files_chameleon_to_img: "Başlıkları yanlış olan resimleri arama (Desteklenen: BMP, DIB, PNG, GIF, JPEG, JPG, XCF, PSD, PDD, WEBP). Yanlış/False = Kapalı; Doğru/True = Açık."
 config_files_chameleon_to_pdf: "Başlıkları yanlış olan PDF dosyalarını arayın. Yanlış/False = Kapalı; Doğru/True = Açık."
-config_files_check_archives: "Arşiv içeriğini kontrol etmeye çalıştınız mı? Yanlış/False = Kontrol etmeyin; Doğru/True = Kontrol et [Varsayılan]."
+config_files_check_archives: "Arşiv içeriğini kontrol etmeye çalıştınız mı? Yanlış/False = Kontrol etmeyin; Doğru/True = Kontrol et [Varsayılan]. Desteklenen: Zip (libzip gerektirir), Tar, Rar (rar uzantısı gerektirir)."
 config_files_corrupted_exe: "Bozuk dosyalar ve işleme hataları. Yanlış/False = Aldırmamak; Doğru/True = Engelle [Varsayılan]. Potansiyel olarak bozuk PE (Portable Executable) dosyalarını algıla ve engelle? Genellikle (ama her zaman değil), bir PE dosyasının bazı kısımları bozulmuş veya doğru şekilde ayrıştırılamadığında, viral bir enfeksiyonun göstergesi olabilir. Çoğu anti-virüs programının PE dosyalarındaki virüsleri algılamak için kullandığı süreçler, dosyaların belirli yollarla işlenmesini gerektirir. Bir virüs yazarı bunun farkındaysa, virüslerinin tespit edilmemesine izin vermek için bu işlemi atlatmaya çalışacaklardır."
 config_files_decode_threshold: "Kod çözme komutlarını kontrol etmek için ham verinin maksimum uzunluğu (tarama sırasında belirgin bir performans sorunu olması durumunda). Varsayılan = 512KB. Sıfır veya null değer, sınırı devre dışı bırakır."
 config_files_filesize_archives: "Dosya boyutu kara/beyaz listeyi arşiv içeriğine mi aktarıyorsun? Yanlış/False = Hayır; Doğru/True = Evet [Varsayılan]."
@@ -62,7 +62,7 @@ config_frontend_frontend_log: "Ön uç giriş denemelerini kaydetmek için kulla
 config_frontend_magnification: "Yazı tipi büyütme. Varsayılan = 1."
 config_frontend_max_login_attempts: "Maksimum giriş denemesi sayısı. Varsayılan = 5."
 config_frontend_numbers: "Numaraların görüntülenmesini nasıl tercih edersiniz? Size en uygun görünen örneği seçin."
-config_frontend_theme: "phpMussel için kullanılacak varsayılan tema."
+config_frontend_theme: "phpMussel ön uç için kullanılacak estetik."
 config_legal: "Yasal gereklilikler için yapılandırma."
 config_legal_privacy_policy: "Oluşturulan sayfaların alt kısmında görüntülenecek ilgili gizlilik politikasının adresi. Bir URL belirtin veya devre dışı bırakmak için boş bırakın."
 config_legal_pseudonymise_ip_addresses: "Günlük dosyaları yazarken IP adresi "pseudonymize" edilir? Doğru/True = Evet [Varsayılan]; Yanlış/False = Hayır."
@@ -72,7 +72,7 @@ config_quarantine_quarantine_max_files: "Karantinada bulunabilecek maksimum dosy
 config_quarantine_quarantine_max_filesize: "Dosyaların karantinaya alınmasına izin verilen maksimum dosya boyutu. Belirtilen değerden büyük dosyalar karantinaya Alınmayacaktır. Bu yönerge olası herhangi bir saldırganın karantinaya istenmeyen verilerle sel baskını yapmasını zorlaştıran bir araç olarak önemlidir. Varsayılan = 2MB."
 config_quarantine_quarantine_max_usage: "Karantina için izin verilen maksimum bellek kullanımı. Karantina tarafından kullanılan toplam bellek bu değere ulaşırsa, kullanılan en büyük bellek artık bu değere ulaşıncaya kadar en eski karantinaya alınan dosyalar silinir. Bu yönerge olası herhangi bir saldırganın karantinaya istenmeyen verilerle sel baskını yapmasını zorlaştıran bir araç olarak önemlidir. Varsayılan = 64MB."
 config_signatures: "İmzalar, imza dosyaları, vb. için yapılandırma."
-config_signatures_active: "Aktif imza dosyalarının virgülle ayrılmış bir listesi."
+config_signatures_active: "Aktif imza dosyalarının virgülle ayrılmış bir listesi. Not: İmza dosyalarının etkinleştirilmesi için önce yüklenmiş olması gerekir. Test dosyalarının düzgün çalışması için imza dosyalarının kurulması ve etkinleştirilmesi gerekir."
 config_signatures_detect_adware: "phpMussel reklam yazılımlarını algılamak için imzaları işleyecek mi? Yanlış/False = Hayır; Doğru/True = Evet [Varsayılan]."
 config_signatures_detect_deface: "phpMussel bozulmalar ve defacement ları tespiti için imzaları işleyecek mi? Yanlış/False = Hayır; Doğru/True = Evet [Varsayılan]."
 config_signatures_detect_encryption: "phpMussel şifrelenmiş dosyaları algılayıp bloke etmeli mi? Yanlış/False = Hayır; Doğru/True = Evet [Varsayılan]."
@@ -185,6 +185,7 @@ label_sanity_check: "Güvenlik denetimi: "
 label_sapi: "Kullanılan SAPI:"
 label_scanned_objects: "Nesneler tarandı"
 label_scanned_uploads: "Yüklenenler tarandı"
+label_see_also: "Ayrıca bakınız:"
 label_show: "Göstermek"
 label_size_in_quarantine: "Karantinadaki boyutu: "
 label_stable: "En yeni kararlı:"

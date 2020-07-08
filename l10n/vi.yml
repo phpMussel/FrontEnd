@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2020.07.05).
+# This file: Vietnamese language data (last modified: 2020.07.08).
 ##/
 
 config_core: "Cấu hình chung (bất kỳ cấu hình cốt lõi nào không thuộc về các loại khác)."
@@ -26,7 +26,7 @@ config_core_scan_log_serialized: "Tên của tập tin để ghi lại tất c�
 config_core_statistics: "Giám sát thống kê sử dụng phpMussel? True = Vâng; False = Không [Mặc định]."
 config_core_time_format: "Định dạng ngày tháng sử dụng bởi phpMussel. Các tùy chọn bổ sung có thể được bổ sung theo yêu cầu."
 config_core_time_offset: "Múi giờ bù đắp trong phút."
-config_core_timezone: "Múi giờ của bạn."
+config_core_timezone: "Điều này được sử dụng để chỉ định múi giờ sử dụng (ví dụ, Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, vv). Chỉ định "SYSTEM" để cho phép PHP tự động xử lý việc này cho bạn."
 config_core_truncate: "Dọn dẹp các bản ghi khi họ được một kích thước nhất định? Giá trị là kích thước tối đa bằng B/KB/MB/GB/TB mà một tập tin bản ghi có thể tăng lên trước khi bị dọn dẹp. Giá trị mặc định 0KB sẽ vô hiệu hoá dọn dẹp (các bản ghi có thể tăng lên vô hạn). Lưu ý: Áp dụng cho tập tin riêng biệt! Kích thước tập tin bản ghi không được coi là tập thể."
 config_experimental: "Không ổn định / Thử nghiệm!"
 config_files: "Các chi tiết cụ thể về cách xử lý tập tin khi quét."
@@ -42,7 +42,7 @@ config_files_chameleon_to_archive: "Phát hiện tiêu đề không chính xác 
 config_files_chameleon_to_doc: "Tìm kiếm cho tài liệu văn phòng mà có định danh sai (Được hỗ trợ: DOC, DOT, PPS, PPT, XLA, XLS, WIZ). False = Tắt; True = Trên."
 config_files_chameleon_to_img: "Tìm kiếm cho hình ảnh mà có định danh sai (Được hỗ trợ: BMP, DIB, PNG, GIF, JPEG, JPG, XCF, PSD, PDD, WEBP). False = Tắt; True = Trên."
 config_files_chameleon_to_pdf: "Tìm kiếm cho tập tin PDF mà có định danh sai. False = Tắt; True = Trên."
-config_files_check_archives: "Cố gắng để kiểm tra nội dung của kho lưu trữ? False = Không kiểm tra; True = Kiểm tra [Mặc định]."
+config_files_check_archives: "Cố gắng để kiểm tra nội dung của kho lưu trữ? False = Không kiểm tra; True = Kiểm tra [Mặc định]. Được hỗ trợ: Zip (yêu cầu libzip), Tar, Rar (yêu cầu mở rộng rar)."
 config_files_corrupted_exe: "Tập tin bị hỏng và phân tích lỗi. False = Bỏ qua; True = Chặn [Mặc định]. Phát hiện và chặn khả thi tập tin PE (portable executable / thực thi di động) bị hỏng? Thường (nhưng không phải lúc nào), khi khía cạnh cụ thể của một tập tin PE đang bị hỏng hay không thể được phân tích chính xác, nó có thể chỉ ra một nhiễm vi rút. Các quy trình được sử dụng bởi hầu hết các chương trình chống vi rút để phát hiện vi rút trong các tập tin PE đòi hỏi phải phân tích những tập tin theo một cách mà, nếu các lập trình viên của một vi rút là nhận thức của, cụ thể sẽ cố gắng để ngăn chặn, để cho phép vi rút của mình để không bị phát hiện."
 config_files_decode_threshold: "Ngưỡng cho chiều dài của dữ liệu thô trong đó các lệnh giải mã nên được phát hiện (trong trường hợp có bất kỳ vấn đề hiệu suất đáng chú ý trong khi quét). Mặc định = 512KB. Số không hay số null vô hiệu hóa các ngưỡng (loại bỏ bất kỳ giới hạn dựa trên kích cỡ tập tin)."
 config_files_filesize_archives: "Thừa kế danh sách đen/trắng cho kích thước của tập tin trong kho lưu trữ? False = Không (chỉ danh sách xám mọi điều); True = Vâng [Mặc định]."
@@ -62,7 +62,7 @@ config_frontend_frontend_log: "Tập tin cho ghi cố gắng đăng nhập front
 config_frontend_magnification: "Phóng to chữ. Mặc định = 1."
 config_frontend_max_login_attempts: "Số lượng tối đa cố gắng đăng nhập front-end. Mặc định = 5."
 config_frontend_numbers: "Làm thế nào để bạn thích số được hiển thị? Chọn ví dụ có vẻ chính xác nhất cho bạn."
-config_frontend_theme: "Chủ đề mặc định để sử dụng cho phpMussel."
+config_frontend_theme: "Tính thẩm mỹ để sử dụng cho giao diện người dùng phpMussel."
 config_legal: "Cấu hình cho các yêu cầu pháp lý."
 config_legal_privacy_policy: "Địa chỉ của chính sách bảo mật liên quan được hiển thị ở chân trang của bất kỳ trang nào được tạo. Chỉ định URL, hoặc để trống để vô hiệu hóa."
 config_legal_pseudonymise_ip_addresses: "Pseudonymise địa chỉ IP khi viết các tập tin nhật ký? True = Vâng [Mặc định]; False = Không."
@@ -72,7 +72,7 @@ config_quarantine_quarantine_max_files: "Số lượng tập tin tối đa có t
 config_quarantine_quarantine_max_filesize: "Cho phép tối đa kích thước của tập tin để được kiểm dịch. Tập tin mà lớn hơn giá trị quy định sẽ KHÔNG được kiểm dịch. Tùy chọn này là rất quan trọng như là một phương tiện làm cho nó khó khăn hơn cho bất kỳ kẻ tấn công tiềm năng lũ kiểm dịch của bạn với các dữ liệu không mong muốn, có khả năng gây ra việc sử dụng quá mức dữ liệu trên dịch vụ kho lưu trữ của bạn. Mặc định = 2MB."
 config_quarantine_quarantine_max_usage: "Cho phép tối đa sử dụng bộ nhớ cho kiểm dịch. Nếu tổng số sử dụng bộ nhớ bởi các kiểm dịch đạt giá trị này, các tập tin trong kiểm dịch cho dài nhất sẽ bị xóa cho đến khi các tổng bộ nhớ sử dụng không còn đạt giá trị này. Tùy chọn này là rất quan trọng như là một phương tiện làm cho nó khó khăn hơn cho bất kỳ kẻ tấn công tiềm năng lũ kiểm dịch của bạn với các dữ liệu không mong muốn, có khả năng gây ra việc sử dụng quá mức dữ liệu trên dịch vụ kho lưu trữ của bạn. Mặc định = 64MB."
 config_signatures: "Cấu hình cho chữ ký, tập tin chữ ký, vv."
-config_signatures_active: "Một danh sách các kích hoạt tập tin chữ ký, giới hạn bởi dấu phẩy."
+config_signatures_active: "Một danh sách các kích hoạt tập tin chữ ký, giới hạn bởi dấu phẩy. Chú thích: Tập tin chữ ký trước tiên phải được cài đặt, trước khi bạn có thể kích hoạt chúng. Để các tập tin thử nghiệm có thể làm việc đúng, các tập tin chữ ký phải được cài đặt và kích hoạt."
 config_signatures_detect_adware: "phpMussel nên sử dụng chữ ký cho phát hiện adware? False = Không; True = Vâng [Mặc định]."
 config_signatures_detect_deface: "phpMussel nên sử dụng chữ ký cho phát hiện deface và công cụ làm xấu? False = Không; True = Vâng [Mặc định]."
 config_signatures_detect_encryption: "phpMussel nên phát hiện và chặn các tập tin mật mã? False = Không; True = Vâng [Mặc định]."
@@ -185,6 +185,7 @@ label_sanity_check: "Kiểm tra an toàn: "
 label_sapi: "SAPI đang được dùng:"
 label_scanned_objects: "Đối tượng được quét"
 label_scanned_uploads: "Tải lên được quét"
+label_see_also: "Xem thêm:"
 label_show: "Hiển thị"
 label_size_in_quarantine: "Kích thước trong kiểm dịch: "
 label_stable: "Ổn định mới nhất:"

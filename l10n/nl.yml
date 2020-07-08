@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2020.07.05).
+# This file: Dutch language data (last modified: 2020.07.08).
 ##/
 
 config_core: "Algemene configuratie (elke kernconfiguratie die niet tot andere categorieën behoort)."
@@ -26,7 +26,7 @@ config_core_scan_log_serialized: "Bestandsnaam van het bestand te opnemen alle s
 config_core_statistics: "Track phpMussel gebruiksstatistieken? True = Ja; False = Nee [Standaard]."
 config_core_time_format: "De datum notatie gebruikt door phpMussel. Extra opties kunnen worden toegevoegd op aanvraag."
 config_core_time_offset: "Tijdzone offset in minuten."
-config_core_timezone: "Uw tijdzone."
+config_core_timezone: "Dit wordt gebruikt om de te gebruiken tijdzone op te geven (b.v., Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, enz). Geef "SYSTEM" op om PHP dit automatisch voor u te laten afhandelen."
 config_core_truncate: "Trunceren logbestanden wanneer ze een bepaalde grootte bereiken? Waarde is de maximale grootte in B/KB/MB/GB/TB dat een logbestand kan groeien tot voordat het wordt getrunceerd. De standaardwaarde van 0KB schakelt truncatie uit (logbestanden kunnen onbepaald groeien). Notitie: Van toepassing op individuele logbestanden! De grootte van de logbestanden wordt niet collectief beschouwd."
 config_experimental: "Instabiel/Experimenteel!"
 config_files: "De details over het omgaan met bestanden tijdens het scannen."
@@ -42,7 +42,7 @@ config_files_chameleon_to_archive: "Detecteer onjuiste headers in archieven en g
 config_files_chameleon_to_doc: "Zoeken naar office documenten waarvan headers zijn onjuist (Ondersteunde: DOC, DOT, PPS, PPT, XLA, XLS, WIZ). False = Uitgeschakeld; True = Ingeschakeld."
 config_files_chameleon_to_img: "Zoeken naar beelden waarvan headers zijn onjuist (Ondersteunde: BMP, DIB, PNG, GIF, JPEG, JPG, XCF, PSD, PDD, WEBP). False = Uitgeschakeld; True = Ingeschakeld."
 config_files_chameleon_to_pdf: "Zoeken naar PDF-bestanden waarvan headers zijn onjuist. False = Uitgeschakeld; True = Ingeschakeld."
-config_files_check_archives: "Om de inhoud van archieven proberen te controleer? False = Nee (niet doen controleer); True = Ja (doen controleer) [Standaard]."
+config_files_check_archives: "Om de inhoud van archieven proberen te controleer? False = Nee (niet doen controleer); True = Ja (doen controleer) [Standaard]. Ondersteunde: Zip (vereist libzip), Tar, Rar (vereist de rar-extensie)."
 config_files_corrupted_exe: "Corrupte bestanden en verwerking fouten. False = Negeren; True = Blokkeren [Standaard]. Detecteren en blokkeren mogelijk beschadigd PE (Portable Executable) bestanden? Vaak (maar niet altijd), wanneer bepaalde aspecten van een PE-bestand zijn beschadigd of kan niet correct worden verwerkt, het kan wijzen op een virale infectie. De processen gebruikt door de meeste anti-virus programma's om virussen in PE-bestanden te detecteren vereisen de verwerking van die bestanden op bepaalde manieren, dat, als de programmeur van een virus kent, specifiek zal proberen te verhinderen, zodat haar virus onopgemerkt blijven."
 config_files_decode_threshold: "Drempelwaarde de lengte van onverwerkte gegevens waarbinnen decoderen commando's moeten gedetecteerd worden (in het geval er enige merkbare prestatieproblemen terwijl scannen). Standaard = 512KB. Zero of nulwaarde zal uitschakelen het drempelwaarde (het verwijderen van een dergelijke limiet gebaseerd op bestandsgrootte)."
 config_files_filesize_archives: "Erven het bestandsgrootte blacklist/whitelist staat om de inhoud van archieven? False = Nee (gewoon greylist alles); True = Ja [Standaard]."
@@ -62,7 +62,7 @@ config_frontend_frontend_log: "Bestand om de frontend login pogingen te loggen. 
 config_frontend_magnification: "Lettergrootte vergroting. Standaard = 1."
 config_frontend_max_login_attempts: "Maximum aantal frontend-inlogpogingen. Standaard = 5."
 config_frontend_numbers: "Hoe verkiest u nummers die worden weergegeven? Selecteer het voorbeeld dat het meest correct voor u lijkt."
-config_frontend_theme: "Standaard thema om te gebruiken voor phpMussel."
+config_frontend_theme: "De esthetiek voor de phpMussel frontend."
 config_legal: "Configuratie voor wettelijke vereisten."
 config_legal_privacy_policy: "Het adres van een relevant privacybeleid dat moet worden weergegeven in de voettekst van eventuele gegenereerde pagina's. Geef een URL, of laat leeg om uit te schakelen."
 config_legal_pseudonymise_ip_addresses: "Pseudonimiseren de IP-adressen bij het schrijven van logbestanden? True = Ja [Standaard]; False = Nee."
@@ -72,7 +72,7 @@ config_quarantine_quarantine_max_files: "Het maximale aantal bestanden dat in de
 config_quarantine_quarantine_max_filesize: "De maximaal toegestane bestandsgrootte van bestanden te worden in quarantaine plaatsen. Bestanden groter dan de opgegeven waarde zal NIET in quarantaine plaatsen. Dit richtlijn is belangrijk als een middel van maak het moeilijker voor potentiële aanvallers te overspoelen uw quarantaine met ongewenste gegevens potentieel veroorzaakt weggelopen gebruiksgegevens op uw hosting service. Standaard = 2MB."
 config_quarantine_quarantine_max_usage: "De maximale geheugengebruik toegestaan voor de quarantaine. Als de totale geheugengebruik van de quarantaine bereikt dit waarde, de oudste bestanden in quarantaine zullen worden verwijderd totdat het totale geheugengebruik niet meer bereikt dit waarde. Dit richtlijn is belangrijk als een middel van maak het moeilijker voor potentiële aanvallers te overspoelen uw quarantaine met ongewenste gegevens potentieel veroorzaakt weggelopen gebruiksgegevens op uw hosting service. Standaard = 64MB."
 config_signatures: "Configuratie voor signatures, signatuurbestanden, enz."
-config_signatures_active: "Een lijst van de actief signatuurbestanden, gescheiden door komma's."
+config_signatures_active: "Een lijst van de actief signatuurbestanden, gescheiden door komma's. Notitie: Signatuurbestanden moeten eerst worden geïnstalleerd voordat u ze kunt activeren. Om de testbestanden correct te laten werken, moeten de signatuurbestanden worden geïnstalleerd en geactiveerd."
 config_signatures_detect_adware: "Moet phpMussel verwerken signatures voor het detecteren van adware? False = Nee; True = Ja [Standaard]."
 config_signatures_detect_deface: "Moet phpMussel verwerken signatures voor het detecteren van schendingen/defacements en schenders/defacers? False = Nee; True = Ja [Standaard]."
 config_signatures_detect_encryption: "Moet phpMussel gecodeerde bestanden detecteren en blokkeren? False = Nee; True = Ja [Standaard]."
@@ -187,6 +187,7 @@ label_sanity_check: "Gezondheidscontrole: "
 label_sapi: "SAPI gebruikt:"
 label_scanned_objects: "Objecten gescand"
 label_scanned_uploads: "Uploads gescand"
+label_see_also: "Zie ook:"
 label_show: "Zien"
 label_size_in_quarantine: "Grootte in quarantaine: "
 label_stable: "Laatste stabiele:"

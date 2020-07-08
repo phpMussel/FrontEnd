@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2020.07.05).
+# This file: Polish language data (last modified: 2020.07.08).
 ##/
 
 config_core: "Ogólna konfiguracja (dowolna konfiguracja podstawowa nienależąca do innych kategorii)."
@@ -26,7 +26,7 @@ config_core_scan_log_serialized: "Nazwa pliku do rejestrowania wszystkich wynik�
 config_core_statistics: "Śledzić statystyki użytkowania phpMussel? True (Prawdziwe) = Tak; False (Fałszywy) = Nie [Domyślna]."
 config_core_time_format: "Format notacja daty/godziny używany przez phpMussel. Dodatkowe opcje mogą być dodane na życzenie."
 config_core_time_offset: "Przesunięcie strefy czasowej w minutach."
-config_core_timezone: "Twoja strefa czasowa."
+config_core_timezone: "Służy do określania używanej strefy czasowej (na przykład, Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, itp). Podaj „SYSTEM”, aby PHP mógł to zrobić automatycznie."
 config_core_truncate: "Obciąć pliki dziennika, gdy osiągną określony rozmiar? Wartość to maksymalny rozmiar w B/KB/MB/GB/TB, do którego plik dziennika może się powiększyć, zanim zostanie obcięty. Domyślna wartość 0KB wyłącza obcinanie (pliki dziennika mogą rosnąć w nieskończoność). Uwaga: Dotyczy pojedynczych plików dziennika! Rozmiar plików dziennika nie jest rozpatrywany łącznie."
 config_experimental: "Niestabilny/Eksperymentalny!"
 config_files: "Szczegóły dotyczące obsługi plików podczas skanowania."
@@ -42,7 +42,7 @@ config_files_chameleon_to_archive: "Wykryj nieprawidłowe nagłówki w archiwach
 config_files_chameleon_to_doc: "Wyszukaj dokumenty biurowe, których nagłówki są niepoprawne (Obsługiwane: DOC, DOT, PPS, PPT, XLA, XLS, WIZ). False (Fałszywy) = Wyłączony; True (Prawdziwe) = Włączony."
 config_files_chameleon_to_img: "Wyszukaj obrazy, których nagłówki są nieprawidłowe (Obsługiwane: BMP, DIB, PNG, GIF, JPEG, JPG, XCF, PSD, PDD, WEBP). False (Fałszywy) = Wyłączony; True (Prawdziwe) = Włączony."
 config_files_chameleon_to_pdf: "Wyszukaj pliki PDF, których nagłówki są niepoprawne. False (Fałszywy) = Wyłączony; True (Prawdziwe) = Włączony."
-config_files_check_archives: "Czy należy sprawdzić zawartość archiwów? False (Fałszywy) = Nie sprawdzaj; True (Prawdziwe) = Sprawdzaj [Domyślna]."
+config_files_check_archives: "Czy należy sprawdzić zawartość archiwów? False (Fałszywy) = Nie sprawdzaj; True (Prawdziwe) = Sprawdzaj [Domyślna]. Obsługiwane: Zip (wymaga libzip), Tar, Rar (wymaga rozszerzenia rar)."
 config_files_corrupted_exe: "Uszkodzone pliki i błędy analizy. False (Fałszywy) = Ignoruj; True (Prawdziwe) = Blokuj [Domyślna]. Wykrywać i blokować potencjalnie uszkodzone pliki PE (Portable Executable)? Często (ale nie zawsze), gdy pewne aspekty pliku PE są uszkodzone lub nie można ich poprawnie przeanalizować, może to wskazywać na infekcję wirusową. Procesy stosowane przez większość programów antywirusowych do wykrywania wirusów w plikach PE wymagają analizy tych plików w określony sposób, co, jeśli programista wirusa jest tego świadomy, w szczególności spróbuje temu zapobiec, aby wirus nie został wykryty."
 config_files_decode_threshold: "Próg długości nieprzetworzonych danych, w ramach którego powinny zostać wykryte polecenia dekodowania (w przypadku wystąpienia zauważalnych problemów z wydajnością podczas skanowania). Domyślna = 512KB. Zero lub null wyłącza próg (usuwa to wszelkie takie ograniczenia w oparciu o rozmiar pliku)."
 config_files_filesize_archives: "Czy zastosować zawartość czarnej/białej listy rozmiarów plików do zawartości archiwów? False (Fałszywy) = Nie (traktuj wszystko tak, jakby znajdowało się na szarej liście); True (Prawdziwe) = Tak [Domyślna]."
@@ -62,7 +62,7 @@ config_frontend_frontend_log: "Plik do logowania próbuje zalogować się do int
 config_frontend_magnification: "Powiększenie czcionki. Domyślna = 1."
 config_frontend_max_login_attempts: "Maksymalna liczba prób zalogowania się do interfejsu użytkownika. Domyślna = 5."
 config_frontend_numbers: "Jak wolisz wyświetlać liczby? Wybierz przykład, który wygląda najlepiej dla Ciebie."
-config_frontend_theme: "Domyślny motyw do użycia dla phpMussel."
+config_frontend_theme: "Estetyka do zastosowania w interfejsie phpMussel."
 config_legal: "Konfiguracja wymagań prawnych."
 config_legal_privacy_policy: "Adres odpowiedniej polityki prywatności, która ma być wyświetlana w stopce każdej wygenerowanej strony. Podaj adres URL, lub pozostaw puste, aby wyłączyć."
 config_legal_pseudonymise_ip_addresses: "Pseudonimizować adresy IP podczas logowania? True (Prawdziwe) = Tak [Domyślna]; False (Fałszywy) = Nie."
@@ -72,7 +72,7 @@ config_quarantine_quarantine_max_files: "Maksymalna liczba plików, które mogą
 config_quarantine_quarantine_max_filesize: "Maksymalny dozwolony rozmiar pliku dla plików podlegających kwarantannie. Pliki większe niż określona wartość NIE zostaną poddane kwarantannie. Ta dyrektywa jest ważna, ponieważ utrudnia potencjalnym atakującym zalanie kwarantanny niechcianymi danymi, potencjalnie powodując niekontrolowane wykorzystanie danych w twojej usłudze hostingowej. Domyślna = 2MB."
 config_quarantine_quarantine_max_usage: "Maksymalne użycie pamięci dozwolone dla kwarantanny. Jeśli łączna pamięć użyta przez kwarantannę osiągnie tę wartość, najstarsze pliki poddane kwarantannie zostaną usunięte, dopóki łączna pamięć nie osiągnie tej wartości. Ta dyrektywa jest ważna, ponieważ utrudnia potencjalnym atakującym zalanie kwarantanny niechcianymi danymi, potencjalnie powodując niekontrolowane wykorzystanie danych w twojej usłudze hostingowej. Domyślna = 64MB."
 config_signatures: "Konfiguracja podpisów, plików podpisów, itp."
-config_signatures_active: "Lista aktywnych plików sygnatur, oddzielonych przecinkami."
+config_signatures_active: "Lista aktywnych plików sygnatur, oddzielonych przecinkami. Uwaga: Pliki sygnatur należy najpierw zainstalować, zanim będzie można je aktywować. Aby pliki testowe działały poprawnie, pliki sygnatur muszą zostać zainstalowane i aktywowane."
 config_signatures_detect_adware: "Czy phpMussel powinien przetwarzać podpisy wykrywania adware? False (Fałszywy) = Nie; True (Prawdziwe) = Tak [Domyślna]."
 config_signatures_detect_deface: "Czy phpMussel powinien przetwarzać podpisy wykrywania zniekształcenie strony internetowej? False (Fałszywy) = Nie; True (Prawdziwe) = Tak [Domyślna]."
 config_signatures_detect_encryption: "Czy phpMussel powinien wykrywać i blokować zaszyfrowane pliki? False (Fałszywy) = Nie; True (Prawdziwe) = Tak [Domyślna]."
@@ -188,6 +188,7 @@ label_sanity_check: "Sprawdzanie poczytalności: "
 label_sapi: "SAPI w użyciu:"
 label_scanned_objects: "Skanowane obiekty"
 label_scanned_uploads: "Przesłane zeskanowane pliki"
+label_see_also: "Zobacz też:"
 label_show: "Pokaż"
 label_size_in_quarantine: "Rozmiar w kwarantannie: "
 label_stable: "Najnowsza stabilna:"

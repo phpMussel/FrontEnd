@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2020.07.04).
+ * This file: Front-end handler (last modified: 2020.07.08).
  */
 
 namespace phpMussel\FrontEnd;
@@ -32,12 +32,12 @@ class FrontEnd
     private $NumberFormatter;
 
     /**
-     * @var string The path to the core asset files.
+     * @var string The path to the front-end asset files.
      */
     private $AssetsPath = __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'assets' . DIRECTORY_SEPARATOR;
 
     /**
-     * @var string The path to the core L10N files.
+     * @var string The path to the front-end L10N files.
      */
     private $L10NPath = __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'l10n' . DIRECTORY_SEPARATOR;
 
@@ -1244,8 +1244,16 @@ class FrontEnd
                         );
                     }
                     $ThisDir['FieldOut'] .= $ThisDir['Preview'];
+                    if (!empty($DirValue['See also']) && is_array($DirValue['See also'])) {
+                        $ThisDir['FieldOut'] .= sprintf("\n<br /><br />%s<ul>\n", $this->Loader->L10N->getString('label_see_also'));
+                        foreach ($DirValue['See also'] as $RefKey => $RefLink) {
+                            $ThisDir['FieldOut'] .= sprintf('<li><a dir="ltr" href="%s">%s</a></li>', $RefLink, $RefKey);
+                        }
+                        $ThisDir['FieldOut'] .= "\n</ul>";
+                    }
                     $FE['ConfigFields'] .= $this->Loader->parse(
-                        $this->Loader->L10N->Data + $ThisDir, $ConfigurationRow
+                        $this->Loader->L10N->Data,
+                        $this->Loader->parse($ThisDir, $ConfigurationRow)
                     );
                 }
                 $CatKeyFriendly = $this->Loader->L10N->getString('config_' . $CatKey . '_label') ?: $CatKey;
