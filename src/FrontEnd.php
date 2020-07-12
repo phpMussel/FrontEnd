@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2020.07.08).
+ * This file: Front-end handler (last modified: 2020.07.12).
  */
 
 namespace phpMussel\FrontEnd;
@@ -444,7 +444,7 @@ class FrontEnd
                             ) {
                                 $TwoFactorState = ['Number' => $this->twoFactorNumber()];
                                 $TwoFactorState['Hash'] = password_hash($TwoFactorState['Number'], $this->DefaultAlgo);
-                                $this->Loader->Cache->setEntry('TwoFactorState:' . $Cookie, '0' . $TwoFactorState['Hash'], $this->Loader->Time + $this->TwoFactorTTL);
+                                $this->Loader->Cache->setEntry('TwoFactorState:' . $Cookie, '0' . $TwoFactorState['Hash'], $this->TwoFactorTTL);
                                 $TwoFactorState['Template'] = sprintf($TwoFactorMessage, $TryUser, $TwoFactorState['Number']);
                                 if (preg_match('~^[^<>]+<[^<>]+>$~', $TryUser)) {
                                     $TwoFactorState['Name'] = trim(preg_replace('~^([^<>]+)<[^<>]+>$~', '\1', $TryUser));
@@ -463,14 +463,16 @@ class FrontEnd
                                 $this->Loader->Events->fireEvent('sendMail', '', ...$EventData);
                                 $this->Permissions = 3;
                             } else {
-                                $this->Loader->Cache->setEntry($Cookie, $this->ThisSession, $this->Loader->Time + $this->SessionTTL);
                                 $this->Permissions = 1;
                             }
+                            $this->Loader->Cache->setEntry($Cookie, $this->ThisSession, $this->SessionTTL);
                         }
                     } else {
+                        $TryUser = $_POST['username'];
                         $FE['state_msg'] = $this->Loader->L10N->getString('response_login_invalid_password');
                     }
                 } else {
+                    $TryUser = $_POST['username'];
                     $FE['state_msg'] = $this->Loader->L10N->getString('response_login_invalid_username');
                 }
             }
@@ -479,7 +481,7 @@ class FrontEnd
                 if ($FE['state_msg']) {
                     $LoginAttempts++;
                     $TimeToAdd = ($LoginAttempts > 4) ? ($LoginAttempts - 4) * 86400 : 86400;
-                    $this->Loader->Cache->setEntry('LoginAttempts' . $_SERVER[$this->Loader->Configuration['core']['ipaddr']], $LoginAttempts, $this->Loader->Time + $TimeToAdd);
+                    $this->Loader->Cache->setEntry('LoginAttempts' . $_SERVER[$this->Loader->Configuration['core']['ipaddr']], $LoginAttempts, $TimeToAdd ?: 86400);
                     $LoggerMessage = $FE['state_msg'];
                 }
             } elseif ($this->Permissions === 3) {
@@ -489,8 +491,11 @@ class FrontEnd
                 $LoggerMessage = $this->Loader->L10N->getString('state_logged_in');
             }
 
+            /** Safer for the front-end logger. */
+            $TryUser = preg_replace('~[\x00-\x1f]~', '', $TryUser ?? $this->User);
+
             /** Handle front-end logging. */
-            $this->frontendLogger($_SERVER[$this->Loader->Configuration['core']['ipaddr']], $TryUser ?? $this->User, $LoggerMessage ?? '');
+            $this->frontendLogger($_SERVER[$this->Loader->Configuration['core']['ipaddr']], $TryUser, $LoggerMessage ?? '');
         }
 
         /** Determine whether the user has logged in. */
@@ -523,7 +528,7 @@ class FrontEnd
 
                             /** User has submitted a 2FA code. Attempt to verify it. */
                             if (password_verify($_POST['2fa'], substr($TwoFactorState, 1))) {
-                                $this->Loader->Cache->setEntry('TwoFactorState:' . $_COOKIE['PHPMUSSEL-ADMIN'], '1', $this->Loader->Time + $this->SessionTTL);
+                                $this->Loader->Cache->setEntry('TwoFactorState:' . $_COOKIE['PHPMUSSEL-ADMIN'], '1', $this->SessionTTL);
                                 $Try = 1;
                                 $this->Loader->Cache->deleteEntry('Failed2FA' . $_SERVER[$this->Loader->Configuration['core']['ipaddr']]);
                                 if ($this->Loader->Configuration['frontend']['frontend_log']) {
@@ -532,17 +537,17 @@ class FrontEnd
                             } else {
                                 $Failed2FA++;
                                 $TimeToAdd = ($Failed2FA > 4) ? ($Failed2FA - 4) * 86400 : 86400;
-                                $this->Loader->Cache->setEntry('Failed2FA' . $_SERVER[$this->Loader->Configuration['core']['ipaddr']], $Failed2FA, $this->Loader->Time + $TimeToAdd);
+                                $this->Loader->Cache->setEntry('Failed2FA' . $_SERVER[$this->Loader->Configuration['core']['ipaddr']], $Failed2FA, $TimeToAdd ?: 86400);
                                 if ($this->Loader->Configuration['frontend']['frontend_log']) {
                                     $this->frontendLogger($_SERVER[$this->Loader->Configuration['core']['ipaddr']], $SessionUser, $this->Loader->L10N->getString('response_2fa_invalid'));
                                 }
                                 $FE['state_msg'] = $this->Loader->L10N->getString('response_2fa_invalid');
                             }
+                        }
 
-                            /** Revert permissions if not authenticated. */
-                            if ($Try !== 1) {
-                                $this->Permissions = 3;
-                            }
+                        /** Revert permissions if not authenticated. */
+                        if ($Try !== 1) {
+                            $this->Permissions = 3;
                         }
                     }
                 }
@@ -598,6 +603,9 @@ class FrontEnd
             if ($this->Permissions === 3) {
                 /** Provide the option to log out (omit home link). */
                 $FE['bNav'] = sprintf('<a href="?phpmussel-page=logout">%s</a><br />', $this->Loader->L10N->getString('link_log_out'));
+
+                /** Aesthetic spacer. */
+                $FE['2fa_status_spacer'] = empty($FE['state_msg']) ? '' : '<br /><br />';
 
                 /** Show them the two-factor authentication page. */
                 $FE['FE_Content'] = $this->Loader->parse(
@@ -659,7 +667,7 @@ class FrontEnd
             /** Fetch remote phpMussel version information and cache it if necessary. */
             if (!($RemoteYAMLphpMussel = $this->Loader->Cache->getEntry('phpmussel-ver.yaml'))) {
                 $RemoteYAMLphpMussel = $this->Loader->request($RemoteVerPath . 'phpmussel-ver.yaml', [], 8);
-                $this->Loader->Cache->setEntry('phpmussel-ver.yaml', $RemoteYAMLphpMussel ?: '-', $this->Loader->Time + 86400);
+                $this->Loader->Cache->setEntry('phpmussel-ver.yaml', $RemoteYAMLphpMussel ?: '-', 86400);
             }
 
             /** Process remote phpMussel version information. */
@@ -699,7 +707,7 @@ class FrontEnd
             /** Fetch remote PHP version information and cache it if necessary. */
             if (!($RemoteYamlPHP = $this->Loader->Cache->getEntry('php-ver.yaml'))) {
                 $RemoteYamlPHP = $this->Loader->request($RemoteVerPath . 'php-ver.yaml', [], 8);
-                $this->Loader->Cache->setEntry('php-ver.yaml', $RemoteYamlPHP ?: '-', $this->Loader->Time + 86400);
+                $this->Loader->Cache->setEntry('php-ver.yaml', $RemoteYamlPHP ?: '-', 86400);
             }
 
             /** Process remote PHP version information. */
