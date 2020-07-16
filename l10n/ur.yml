@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Urdu language data (last modified: 2020.07.15).
+# This file: Urdu language data (last modified: 2020.07.16).
 ##/
 
 config_core: "عام ترتیبات (کنفیگریشن جس کا تعلق دوسری قسموں سے نہیں ہے)."
@@ -99,7 +99,6 @@ config_supplementary_cache_options_redis_timeout: "Redis کے لئے ٹائم آ
 config_urlscanner: "URL سکینر کی ترتیبات."
 config_urlscanner_cache_time: "کب تک (سیکنڈوں میں) API لک اپ کے نتائج کے لئے محفوظ ہو جائے چاہئے؟ پہلے سے طے شدہ 3600 سیکنڈ ہے (1 گھنٹہ)."
 config_urlscanner_google_api_key: "ضروری API کلید وضاحت کی گئی ہے جب گوگل محفوظ براؤزنگ API کو API لک اپ کو فعال کرتا ہے."
-config_urlscanner_lookup_hphosts: "درست پر سیٹ ہونے hpHosts API کو API لک اپ کو فعال کرتا ہے."
 config_urlscanner_maximum_api_lookups: "انفرادی اسکین iteration کے مطابق انجام دینے کے لئے API لک اپ کی زیادہ سے زیادہ قابل اجازت تعداد. ہر اضافی API لک اپ ہر ایک اسکین تکرار مکمل کرنے کی ضرورت کل وقت کا اضافہ کریں گے، لہذا آپ کو مجموعی طور پر اسکین کے عمل کو تیز کرنے کے لئے ایک حد مقرر کر سکتے ہیں. 0 مقرر کرتے وقت، کوئی ایسی زیادہ سے زیادہ قابل اجازت تعداد میں لاگو کیا جائے گا. پہلے سے طے شدہ کی طرف سے 10 سیٹ کریں."
 config_urlscanner_maximum_api_lookups_response: "API لک اپ کی زیادہ سے زیادہ قابل اجازت تعداد سے تجاوز کر جاتا ہے تو کیا کیا جائے؟ False (جھوٹی) = کچھ بھی نہیں (پروسیسنگ جاری رہے) [پہلے سے طے شدہ] ہو؛ True (سچے) = فلیگ / فائل بلاک."
 config_virustotal: "Virus Total انضمام کی ترتیبات."

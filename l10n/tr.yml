@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2020.07.15).
+# This file: Turkish language data (last modified: 2020.07.16).
 ##/
 
 config_core: "Genel yapılandırma (diğer kategorilere ait olmayan herhangi bir çekirdek yapılandırma)."
@@ -99,7 +99,6 @@ config_supplementary_cache_options_redis_timeout: "Redis zaman aşımı değeri.
 config_urlscanner: "URL tarayıcı için yapılandırma."
 config_urlscanner_cache_time: "API aramalarının sonuçları ne kadar süreyle (saniye olarak) önbelleğe alınır? Varsayılan değer 3600 saniyedir (1 saat)."
 config_urlscanner_google_api_key: "Gerekli API anahtarı tanımlandığında Google Güvenli Tarama API'sı için API aramalarını etkinleştirir."
-config_urlscanner_lookup_hphosts: "True olarak ayarlandığında hpHosts API'sine API aramalarını etkinleştirir."
 config_urlscanner_maximum_api_lookups: "Tek tek tarama yinelemeleri için izin verilen azami API arama sayısı. Eklenen her API araması, her tarama yinelemesinin tamamlanması için gereken toplam süreyi ekler ve bu nedenle, genel tarama sürecini hızlandırmak için bir sınırlama önermek isteyebilirsiniz. 0 olarak ayarlandığında hiçbir sınırlama uygulanmaz. Varsayılan olarak 10 olarak ayarlayın."
 config_urlscanner_maximum_api_lookups_response: "İzin verilen maksimum API arama sayısı aşıldığında ne yapılması gerekir? Yanlış/False = Hiçbir şey yapma (ışleme devam et) [Varsayılan]; Doğru/True = Dosyayı engelleyin."
 config_virustotal: "Virus Total entegrasyonu için yapılandırma."

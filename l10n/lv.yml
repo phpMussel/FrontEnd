@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2020.07.15).
+# This file: Latvian language data (last modified: 2020.07.16).
 ##/
 
 config_core: "Vispārējā konfigurācija (jebkura pamata konfigurācija, kas nepieder citām kategorijām)."
@@ -99,7 +99,6 @@ config_supplementary_cache_options_redis_timeout: "Redis taimauta vērtību. Nok
 config_urlscanner: "URL skeneru konfigurācija."
 config_urlscanner_cache_time: "Cik ilgi (sekundēs) ir jāglabā kešatmiņā API meklēšanas rezultāti? Noklusējums ir 3600 sekundes (1 stunda)."
 config_urlscanner_google_api_key: "Ļauj uzmeklēšanu Google Droša Pārlūkošana API, kad ir definēta nepieciešamā API atslēga."
-config_urlscanner_lookup_hphosts: "Ļauj uzmeklēšanu hpHosts API, ja tā ir iestatīta uz true/patiesu."
 config_urlscanner_maximum_api_lookups: "Maximum allowable number of API lookups to perform per individual scan iteration. Because each additional API lookup will add to the total time required to complete each scan iteration, you may wish to stipulate a limitation in order to expedite the overall scan process. When set to 0, no such maximum allowable number will be applied. Set to 10 by default."
 config_urlscanner_maximum_api_lookups_response: "Ko darīt, ja tiek pārsniegts maksimāli pieļaujamais API meklējumu skaits? False (Nepatiess) = Neko nedarīt (turpiniet apstrādi) [Noklusējuma]; True (Patiess) = Atzīmējiet/bloķējiet failu."
 config_virustotal: "Virus Total integrācijas konfigurācija."

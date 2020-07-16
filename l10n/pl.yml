@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2020.07.15).
+# This file: Polish language data (last modified: 2020.07.16).
 ##/
 
 config_core: "Ogólna konfiguracja (dowolna konfiguracja podstawowa nienależąca do innych kategorii)."
@@ -99,7 +99,6 @@ config_supplementary_cache_options_redis_timeout: "Wartość limitu czasu Redis.
 config_urlscanner: "Konfiguracja skanera URL."
 config_urlscanner_cache_time: "Jak długo (w sekundach) powinny być buforowane wyniki wyszukiwania API? Domyślnie 3600 sekund (1 godzina)."
 config_urlscanner_google_api_key: "Umożliwia wyszukiwanie w interfejsie API Bezpiecznego Przeglądania Google, gdy zdefiniowany jest niezbędny klucz API."
-config_urlscanner_lookup_hphosts: "Włącza wyszukiwanie w interfejsie API hpHosts, gdy jest ustawiony na wartość true."
 config_urlscanner_maximum_api_lookups: "Maksymalna dozwolona liczba wyszukiwań interfejsu API do wykonania dla pojedynczej iteracji skanu. Ponieważ każde dodatkowe wyszukiwanie interfejsu API wydłuża całkowity czas wymagany do ukończenia każdej iteracji skanowania, możesz określić ograniczenie w celu przyspieszenia całego procesu skanowania. Po ustawieniu na 0, nie będzie stosowana taka maksymalna dozwolona liczba. Domyślnie ustawiony na 10."
 config_urlscanner_maximum_api_lookups_response: "Co zrobić, jeśli maksymalna dozwolona liczba wyszukiwań interfejsu API zostanie przekroczona? False (Fałszywy) = Nic nie robić (kontynuować przetwarzanie) [Domyślna]; True (Prawdziwe) = Oflaguj/zablokuj plik."
 config_virustotal: "Konfiguracja integracji z Virus Total."

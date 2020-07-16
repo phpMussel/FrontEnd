@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2020.07.15).
+# This file: Korean language data (last modified: 2020.07.16).
 ##/
 
 config_core: "일반 설정 (다른 카테고리에 속하지 않는 설정)."
@@ -99,7 +99,6 @@ config_supplementary_cache_options_redis_timeout: "Redis 시간 초과 값. Defa
 config_urlscanner: "URL 스캐너 설정."
 config_urlscanner_cache_time: "API 조회의 결과를 얼마나 캐시할지 (초 단위)? 기본값은 3600 초 (한 시간)."
 config_urlscanner_google_api_key: "필요한 API 키가 정의되면, API는 Google Safe Browsing API 조회가 활성화됩니다."
-config_urlscanner_lookup_hphosts: "True로하면 API를 hpHosts 조회가 활성화됩니다."
 config_urlscanner_maximum_api_lookups: "스캔 반복의 API 조회의 최대 수입니다. API 조회 때마다 스캔 반복의 시간이 쌓여 버리므로, 스캔 처리 속도 향상을 위해 제한을두고 싶다고 생각할지도 모릅니다. 0은 제한 없음을 의미합니다. 기본값은 10입니다."
 config_urlscanner_maximum_api_lookups_response: "API 조회 횟수 제한을 초과했을 때의 대응입니다. <code>false</code> = 아무것도 / 처리를 계속한다 (Default / 기본 설정); <code>true</code> = 파일에 플래그를 지정 / 차단한다."
 config_virustotal: "Virus Total 통합 설정."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2020.07.15).
+# This file: Vietnamese language data (last modified: 2020.07.16).
 ##/
 
 config_core: "Cấu hình chung (bất kỳ cấu hình cốt lõi nào không thuộc về các loại khác)."
@@ -99,7 +99,6 @@ config_supplementary_cache_options_redis_timeout: "Giá trị thời gian chờ 
 config_urlscanner: "Cấu hình cho trình quét URL."
 config_urlscanner_cache_time: "Kết quả tra cứu API nên được lưu trữ trong (trong giây) bao lâu? Mặc định là 3600 giây (1 giờ)."
 config_urlscanner_google_api_key: "Cho phép tra cứu API đến API của Google Safe Browsing khi khóa API cần thiết được xác định."
-config_urlscanner_lookup_hphosts: "Cho phép tra cứu API đến API của hpHosts khi xác định như true."
 config_urlscanner_maximum_api_lookups: "Số lượng tối đa cho phép của tra cứu API để thực hiện mỗi quét lặp cá nhân. Bởi vì mỗi tra cứu API thêm sẽ thêm vào tổng thời gian cần thiết để hoàn thành mỗi quét lặp, bạn có thể muốn để quy định một giới hạn để đẩy nhanh các quá trình quét tổng thể. Khi thiết lập để 0, không số lượng tối đa cho phép sẽ được áp dụng. Đặt 10 theo mặc định."
 config_urlscanner_maximum_api_lookups_response: "Phải làm gì nếu số lượng tối đa cho phép của tra cứu API được vượt quá? False = Không làm gì cả (tiếp tục chế biến) [Mặc định]; True = Dấu/Chặn các tập tin."
 config_virustotal: "Cấu hình cho hội nhập Virus Total."

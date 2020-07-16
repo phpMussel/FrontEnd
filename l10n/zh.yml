@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (simplified) language data (last modified: 2020.07.15).
+# This file: Chinese (simplified) language data (last modified: 2020.07.16).
 ##/
 
 config_core: "基本配置（任何不属于其他类别的核心配置）。"
@@ -99,7 +99,6 @@ config_supplementary_cache_options_redis_timeout: "Redis超时值。​标准 = 
 config_urlscanner: "URL扫描程序的配置。"
 config_urlscanner_cache_time: "多长时间（以秒为单位）应API结果被缓存？​默认是3600秒（1小时）。"
 config_urlscanner_google_api_key: "激活Google Safe Browsing API当API密钥是设置。"
-config_urlscanner_lookup_hphosts: "激活hpHosts API当设置<code>true</code>。"
 config_urlscanner_maximum_api_lookups: "最大数值API请求来执行每个扫描迭代。​额外API请求将增加的总要求完成时间每扫描迭代，​所以，​您可能想来规定一个限以加快全扫描过程。​当设置<code>0</code>，​没有最大数值将会应用的。​设置<code>10</code>作为默认。"
 config_urlscanner_maximum_api_lookups_response: "该什么办如果最大数值API请求已超过？​False（假）=没做任何事（继续处理）【默认】；True（真）=标志/受阻文件。"
 config_virustotal: "Virus Total整合的配置。"

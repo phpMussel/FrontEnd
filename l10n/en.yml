@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2020.07.15).
+# This file: English language data (last modified: 2020.07.16).
 ##/
 
 config_core: "General configuration (any core configuration not belonging to other categories)."
@@ -99,7 +99,6 @@ config_supplementary_cache_options_redis_timeout: "Redis timeout value. Default 
 config_urlscanner: "Configuration for the URL scanner."
 config_urlscanner_cache_time: "How long (in seconds) should the results of API lookups be cached for? Default is 3600 seconds (1 hour)."
 config_urlscanner_google_api_key: "Enables API lookups to the Google Safe Browsing API when the necessary API key is defined."
-config_urlscanner_lookup_hphosts: "Enables API lookups to the hpHosts API when set to true."
 config_urlscanner_maximum_api_lookups: "Maximum allowable number of API lookups to perform per individual scan iteration. Because each additional API lookup will add to the total time required to complete each scan iteration, you may wish to stipulate a limitation in order to expedite the overall scan process. When set to 0, no such maximum allowable number will be applied. Set to 10 by default."
 config_urlscanner_maximum_api_lookups_response: "What to do if the maximum allowable number of API lookups is exceeded? False = Do nothing (continue processing) [Default]; True = Flag/block the file."
 config_virustotal: "Configuration for Virus Total integration."

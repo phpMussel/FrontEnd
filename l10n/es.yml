@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2020.07.15).
+# This file: Spanish language data (last modified: 2020.07.16).
 ##/
 
 config_core: "Configuración general (cualquier configuración que no pertenezca a otras categorías)."
@@ -99,7 +99,6 @@ config_supplementary_cache_options_redis_timeout: "Valor de tiempo de espera de 
 config_urlscanner: "Configuración para el escáner de URL."
 config_urlscanner_cache_time: "Por cuánto tiempo (en segundos) debe los resultados de las API búsquedas ser almacenan en caché? Predefinido es 3600 segundos (1 horas)."
 config_urlscanner_google_api_key: "Permite API búsquedas al Google Safe Browsing API cuando la necesario API clave es define."
-config_urlscanner_lookup_hphosts: "Permite API búsquedas al hpHosts API cuando se define como true."
 config_urlscanner_maximum_api_lookups: "Máximo número permitido de API búsquedas para llevar a cabo por individuo escaneando iteración. Debido a que cada adicional API búsqueda se sumará al total tiempo requerido para completar cada escaneando iteración, es posible que usted desee estipular una limitación a fin de acelerar el proceso de escaneando. Cuando se define en 0, no tal máximo número permitido se aplicará. Se define como 10 por predefinido."
 config_urlscanner_maximum_api_lookups_response: "Qué hacer si el máximo número de API búsquedas permitido es superadas? False = Hacer nada (continuar procesando) [Predefinido]; True = Marcar/bloquear el archivo."
 config_virustotal: "Configuración para la integración de Virus Total."

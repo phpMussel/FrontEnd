@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2020.07.15).
+# This file: Arabic language data (last modified: 2020.07.16).
 ##/
 
 config_core: "التكوين العام (أي التكوين الأساسي لا ينتمي إلى فئات أخرى)."
@@ -99,7 +99,6 @@ config_supplementary_cache_options_redis_timeout: "Redis قيمة المهلة. 
 config_urlscanner: "التكوين من الماسح الضوئي URL."
 config_urlscanner_cache_time: "متى (بالثواني) يجب التوصل إلى نتائج عمليات بحث API؟ الافتراضي هو 3600 ثانية (1 ساعة)."
 config_urlscanner_google_api_key: "العدد الأقصى المسموح به من عمليات بحث واجهة برمجة التطبيقات لأداء في تكرار المسح الفردية."
-config_urlscanner_lookup_hphosts: "تمكين عمليات بحث API إلى API hpHosts."
 config_urlscanner_maximum_api_lookups: "العدد الأقصى المسموح به من عمليات بحث واجهة برمجة التطبيقات لأداء في تكرار المسح الفردية. لأن كل بحث API إضافية سوف يضيف إلى الوقت الإجمالي المطلوب لإكمال كل تكرار المسح، قد ترغب في اشتراط وجود قيود من أجل الإسراع في عملية المسح الشاملة. عند تعيينها إلى 0، سيتم تطبيق الحد الأقصى لا هذا العدد المسموح به. تعيين إلى 10 افتراضيا."
 config_urlscanner_maximum_api_lookups_response: "ماذا تفعل إذا تم تجاوز الحد الأقصى المسموح به من عمليات بحث API؟ = كاذبة لا تفعل شيئا (متابعة المعالجة) [افتراضي]. صحيح/True = تحديد الملف."
 config_virustotal: "التكوين من أجل Virus Total."

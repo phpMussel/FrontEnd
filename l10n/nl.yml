@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2020.07.15).
+# This file: Dutch language data (last modified: 2020.07.16).
 ##/
 
 config_core: "Algemene configuratie (elke kernconfiguratie die niet tot andere categorieën behoort)."
@@ -99,7 +99,6 @@ config_supplementary_cache_options_redis_timeout: "Redis timeoutwaarde. Standaar
 config_urlscanner: "Configuratie voor de URL-scanner."
 config_urlscanner_cache_time: "Hoe lang (in seconden) moeten de resultaten van de API verzoeken worden gecached voor? Standaard is 3600 seconden (1 uur)."
 config_urlscanner_google_api_key: "Inschakelt gebruik van de Google Safe Browsing API wanneer de noodzakelijke API sleutel wordt gedefinieerd."
-config_urlscanner_lookup_hphosts: "Inschakelt gebruik van de hpHosts API wanneer zet op true."
 config_urlscanner_maximum_api_lookups: "Maximaal toelaatbaar aantal van de API verzoeken te voeren per individuele scan iteratie. Omdat elke extra API verzoek zullen toevoegen aan de totale tijd die nodig te voltooien elke scan iteratie, u kunt wensen om een beperking te specificeren teneinde versnellen het algehele scanproces. Wanneer ingesteld op 0, geen dergelijk maximaal toelaatbaar aantal wordt toegepast. Ingesteld op 10 standaard."
 config_urlscanner_maximum_api_lookups_response: "Wat te doen als het maximaal toelaatbaar aantal van API verzoeken wordt overschreden? False = Niets doen (voortzetten de verwerking) [Standaard]; True = Merken/blokkeren het bestand."
 config_virustotal: "Configuratie voor Virus Totale integratie."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2020.07.15).
+# This file: Japanese language data (last modified: 2020.07.16).
 ##/
 
 config_core: "全般的な設定（他のカテゴリに属さないの設定）。"
@@ -99,7 +99,6 @@ config_supplementary_cache_options_redis_timeout: "Redisのタイムアウト値
 config_urlscanner: "URLスキャナーの設定。"
 config_urlscanner_cache_time: "ＡＰＩルックアップの結果をどれくらいキャッシュするか（秒単位です）？​デフォルトは３６００秒（一時間）。"
 config_urlscanner_google_api_key: "必要なＡＰＩ鍵が定義されれば、​ＡＰＩのGoogle Safe Browsing APIルックアップが有効になります。"
-config_urlscanner_lookup_hphosts: "Trueにすると、​APIのhpHostsルックアップが有効になります。"
 config_urlscanner_maximum_api_lookups: "スキャン反復におけるAPIルックアップの最大回数。​APIルックアップの度にスキャン反復の時間が積み重なってしまうので、​スキャン処理の速度向上のため、​制限を設けたいと考えるかもしれません。​０は制限なしを意味します。​デフォルトは１０です。"
 config_urlscanner_maximum_api_lookups_response: "APIルックアップの回数制限を超えた時の対応です。​<code>false</code>（偽） = 何もしない/処理を継続する（Default/デフォルト）；​<code>true</code>（真） = ファイルにフラグを付ける/ブロックする。"
 config_virustotal: "Virus Total統合の設定。"

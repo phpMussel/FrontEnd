@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese language data (last modified: 2020.07.15).
+# This file: Portuguese language data (last modified: 2020.07.16).
 ##/
 
 config_core: "Configuração geral (qualquer configuração principal que não pertença a outras categorias)."
@@ -99,7 +99,6 @@ config_supplementary_cache_options_redis_timeout: "Valor de tempo limite do Redi
 config_urlscanner: "Configuração para o analisador de URL."
 config_urlscanner_cache_time: "Quanto tempo (em segundos) devem os resultados da API ser armazenados em cache? Padrão é 3600 segundos (1 hora)."
 config_urlscanner_google_api_key: "Permite o uso do Google Safe Browsing API quando a API chave necessária está definida."
-config_urlscanner_lookup_hphosts: "Permite o uso do hpHosts API quando definido para true."
 config_urlscanner_maximum_api_lookups: "Número máximo admissível de API solicitações para executar por cada iteração de análise. Porque cada API solicitação adicional irá acrescentar ao tempo total necessário para completar cada iteração de análise, você pode querer estipular uma limitação a fim de acelerar o processo de análise. Quando definido para 0, nenhuma número máximo admissível será aplicada. Definido para 10 por padrão."
 config_urlscanner_maximum_api_lookups_response: "Que fazer se o número máximo admissível de API solicitações está ultrapassado? False = Fazer nada (continuar o processamento) [Padrão]; True = Marcar/bloquear o arquivo."
 config_virustotal: "Configuração para integração do Virus Total."

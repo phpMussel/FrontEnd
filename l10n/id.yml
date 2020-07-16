@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2020.07.15).
+# This file: Indonesian language data (last modified: 2020.07.16).
 ##/
 
 config_core: "Konfigurasi umum (konfigurasi inti apapun yang bukan milik kategori lain)."
@@ -99,7 +99,6 @@ config_supplementary_cache_options_redis_timeout: "Nilai batas waktu Redis. Defa
 config_urlscanner: "Konfigurasi untuk pemindai URL."
 config_urlscanner_cache_time: "Berapa lama (dalam detik) harus hasil API untuk disimpan dalam cache? Default adalah 3600 detik (1 jam)."
 config_urlscanner_google_api_key: "Memungkinkan pemeriksaan API ke Google Safe Browsing API ketika kunci API diperlukan didefinisikan."
-config_urlscanner_lookup_hphosts: "Memungkinkan pemeriksaan API ke hpHosts API ketika diset untuk true."
 config_urlscanner_maximum_api_lookups: "Jumlah maksimum pemeriksaan API melakukan per iterasi memindai individual. Karena setiap API pemeriksaan akan menambah tambahan waktu total dibutuhkan untuk menyelesaikan setiap iterasi pemindaian, Anda mungkin ingin menetapkan batasan untuk mempercepat proses pemindaian secara keseluruhan. Bila diset untuk 0, sejumlah maksimum tidak akan diterapkan. Diset untuk 10 secara default."
 config_urlscanner_maximum_api_lookups_response: "Apa yang harus dilakukan jika jumlah maksimal pemeriksaan API dilampaui? False = Tidak melakukan apa-apa (melanjutkan pemrosesan) [Default]; True = Memblokir file."
 config_virustotal: "Konfigurasi untuk integrasi Virus Total."

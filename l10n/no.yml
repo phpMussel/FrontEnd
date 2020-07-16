@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2020.07.15).
+# This file: Norwegian language data (last modified: 2020.07.16).
 ##/
 
 config_core: "Generell konfigurasjon (enhver kjernekonfigurasjon som ikke tilhører andre kategorier)."
@@ -99,7 +99,6 @@ config_supplementary_cache_options_redis_timeout: "Redis timeout-verdi. Standard
 config_urlscanner: "Konfigurasjon for URL-skanneren."
 config_urlscanner_cache_time: "Hvor lang tid (i sekunder) bør resultatene fra API-oppslag bufres for? Standard er 3600 sekunder (1 time)."
 config_urlscanner_google_api_key: "Aktiverer API-oppslag til Google Safe Browsing API når nødvendig API-nøkkel er definert."
-config_urlscanner_lookup_hphosts: "Aktiverer API-oppslag til hpHosts API når den er satt til true."
 config_urlscanner_maximum_api_lookups: "Maksimalt tillatt antall API-oppslag for å utføre per individuell skanne-iterasjon. Fordi hvert ekstra API-oppslag vil legge til den totale tiden som kreves for å fullføre hver skanne-iterasjon, kan det være lurt å stille en begrensning for å fremskynde den totale skanneprosessen. Når det er satt til 0, vil ikke et slikt maksimalt tillatt antall bli brukt. Satt til 10 som standard."
 config_urlscanner_maximum_api_lookups_response: "Hva å gjøre hvis det maksimalt tillatte antallet API-oppslag overskrides? False = Gjør ingenting (fortsett å behandle) [Standardverdi]; True = Flagger/blokker filen."
 config_virustotal: "Konfigurasjon for Virus Total-integrasjon."

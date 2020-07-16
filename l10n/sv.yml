@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2020.07.15).
+# This file: Swedish language data (last modified: 2020.07.16).
 ##/
 
 config_core: "Allmän konfiguration (alla kärnkonfigurationer som inte tillhör andra kategorier)."
@@ -99,7 +99,6 @@ config_supplementary_cache_options_redis_timeout: "Redis timeout-värde. Standar
 config_urlscanner: "Konfiguration för URL-skannern."
 config_urlscanner_cache_time: "Hur länge (i sekunder) ska resultaten av API-sökningar cachas för? Standard är 3600 sekunder (1 timme)."
 config_urlscanner_google_api_key: "Aktiverar API-sökningar till Googles Safe Browsing API när den nödvändiga API-nyckeln är definierad."
-config_urlscanner_lookup_hphosts: "Aktiverar API-sökningar till hpHosts API när det är true."
 config_urlscanner_maximum_api_lookups: "Maximalt antal tillåtna API-sökningar att utföra per enskild skanna iteration. Eftersom varje ytterligare API-sökning kommer att lägga till den totala tiden som krävs för att slutföra varje skanning-iteration, kanske du vill ange en begränsning för att påskynda den totala skanningsprocessen. När den är inställd på 0 kommer inget sådant maximalt tillåtet nummer att tillämpas. Ställ in på 10 som standard."
 config_urlscanner_maximum_api_lookups_response: "Vad gör man om det högsta tillåtna antalet API-sökningar överskrids? False = Gör ingenting (fortsätt att bearbeta) [Standard]; True = Flagga/blockera filen."
 config_virustotal: "Konfiguration för Virus Total integration."
