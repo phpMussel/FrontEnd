@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2020.07.08).
+# This file: Arabic language data (last modified: 2020.07.15).
 ##/
 
 config_core: "التكوين العام (أي التكوين الأساسي لا ينتمي إلى فئات أخرى)."
@@ -110,35 +110,24 @@ config_virustotal_vt_suspicion_level: "افتراضيا، سوف يقوم phpMus
 config_virustotal_vt_weighting: "هل phpMussel يطبق نتائج المسح باستخدام الفيروسات مجموع API كما المكتشفة أو الممكن كشفها؟ يوجد هذا التوجيه لأنه على الرغم من أن مسح ملف باستخدام محركات متعددة (كما فايروس توتال لا) ينبغي أن يؤدي في معدل اكتشاف زيادة (وبالتالي في عدد أكبر من الملفات الخبيثة الوقوع)، فإنه يمكن أن يؤدي أيضا إلى ارتفاع عدد كاذبة الإيجابيات، وبالتالي، في بعض الظروف، فإن نتائج المسح يمكن الاستفادة بشكل أفضل كما على درجة الثقة بدلا من أن تكون نتيجة محددة. إذا تم استخدام قيمة 0، سيتم تطبيق نتائج المسح باستخدام الفيروسات مجموع API كما المكتشفة و بالتالي إذا أي محرك تستخدم من قبل الفيروسات مجموع أعلام الملف تم مسحها ضوئيا بأنها خبيثة، وphpMussel النظر في الملف إلى تكون ضارة. إذا تم استخدام أي قيمة أخرى، سيتم تطبيق نتائج المسح باستخدام الفيروسات مجموع API كما الترجيح الكشف و بالتالي فإن عدد من المحركات المستخدمة من قبل الفيروسات إجمالي هذا العلم الملف تم مسحها ضوئيا بأنها خبيثة سيكون بمثابة نتيجة الثقة (أو الترجيح الكشف) عن ما إذا كان ملف تم مسحها ضوئيا ينبغي النظر الخبيثة التي كتبها phpMussel (القيمة المستخدمة سيمثل الحد الأدنى من الثقة يسجل أو الوزن المطلوب من أجل أن تعتبر ضارة). يتم استخدام قيمة 0 افتراضيا."
 confirm_action: "هل أنت متأكد من أنك تريد "%s"؟"
 field_2fa: "كود 2FA"
-field_activate: "جعله نشطة"
 field_clear_all: "امسح الكل"
-field_component: "وحدة"
 field_confirm: "تؤكد"
 field_create_new_account: "إنشاء حساب جديد"
-field_deactivate: "جعلها غير نشطة"
 field_delete_account: "حذف حساب"
 field_delete_all: "حذف الكل"
 field_delete_file: "حذف"
 field_download_file: "تحميل"
-field_edit_file: "تحرير"
 field_false: "False (خاطئة)"
 field_file: "ملف"
-field_filename: "اسم الملف: "
-field_filetype_unknown: "غير معروف"
-field_install: "تثبيت"
 field_latest_version: "احدث اصدار"
 field_log_in: "تسجيل الدخول"
 field_more_fields: "المزيد من الحقول"
-field_new_name: "اسم جديد:"
 field_ok: "حسنا"
 field_options: "خيارات"
 field_password: "كلمه السر"
 field_permissions: "أذونات"
 field_quarantine_key: "الحجر الصحي مفتاح"
 field_rename_file: "إعادة تسمية"
-field_repair: "إصلاح"
-field_repair_all: "إصلاح الكل"
-field_reset: "إعادة تعيين"
 field_restore_file: "استعادة"
 field_set_new_password: "تحديد جديد كلمه السر"
 field_size: "الحجم الإجمالي: "
@@ -147,31 +136,22 @@ field_size_KB: "KB"
 field_size_MB: "MB"
 field_size_TB: "TB"
 field_size_bytes: "بايت"
-field_status: "الحالة"
 field_system_timezone: "استخدام المنطقة الزمنية الافتراضية للنظام."
 field_true: "True (صحيح)"
-field_uninstall: "الغاء التثبيت"
 field_update: "تحديث"
-field_update_all: "تحديث الجميع"
 field_update_signatures_files: "تحديث ملفات التوقيع"
-field_upload_file: "تحميل ملف جديد"
 field_username: "اسم المستخدم"
-field_verify: "التحقق"
-field_verify_all: "التحقق من الكل"
 field_your_version: "الإصدار الخاص بك"
 header_login: "الرجاء تسجيل الدخول للمتابعة."
 label_active_config_file: "ملف التكوين النشط: "
-label_actual: "فعلي"
 label_backup_location: "مواقع النسخ الاحتياطي مستودع (في حالة الطوارئ، أو إذا فشل كل شيء آخر):"
 label_blocked: "تم حظر التحميلات"
 label_branch: "فرع أحدث مستقرة:"
 label_clientinfo: "معلومات المستخدممعلومات المستخدم:"
 label_events: "مسح الأحداث"
-label_expected: "متوقع"
 label_expires: "تنتهي: "
 label_extension: "التمديد"
 label_flagged: "تم الإبلاغ عن الكائنات"
-label_hide: "إخفائه"
 label_installed_available: "المثبتة/متاح"
 label_never: "أبدا"
 label_os: "نظام التشغيل المستخدمة:"
@@ -181,12 +161,10 @@ label_other: "آخر"
 label_php: "النسخة PHP المستخدمة:"
 label_phpmussel: "النسخة phpMussel المستخدمة:"
 label_quarantined: "تم عزل وحدات التحميل"
-label_sanity_check: "التحقق من التعقل: "
 label_sapi: "SAPI المستخدمة:"
 label_scanned_objects: "الكائنات التي الممسوحة ضوئيا"
 label_scanned_uploads: "التحميلات الممسوحة ضوئيا"
 label_see_also: "أنظر أيضا:"
-label_show: "اظهره"
 label_size_in_quarantine: "الحجر الصحي بحجم: "
 label_stable: "أحدث مستقرة:"
 label_sysinfo: "معلومات النظام:"
@@ -214,8 +192,6 @@ logs_logfile_doesnt_exist: "هذا سجل غير موجود!"
 logs_no_logfile_selected: "لا سجلات مختار."
 logs_no_logfiles_available: "لا سجلات متاح."
 max_login_attempts_exceeded: "تجاوز الحد الأقصى لعدد محاولات تسجيل الدخول؛ تم رفض الوصول."
-notice_click_here: "انقر هنا للمزيد من المعلومات."
-notice_new_major_version: "تنويه: %s متاح الآن (كنت تستخدم %s). تستوفي الحد الأدنى لمتطلبات PHP لهذا الإصدار. ومع ذلك، بعض الخطوات اليدوية مطلوبة للتحديث."
 previewer_days: "أيام"
 previewer_hours: "ساعات"
 previewer_minutes: "الدقائق"
@@ -230,44 +206,23 @@ response_accounts_created: "تم انشاء الحساب بنجاح!"
 response_accounts_deleted: "تم حذف الحساب بنجاح!"
 response_accounts_doesnt_exist: "حساب غير موجود."
 response_accounts_password_updated: "تم تحديث كلمه السر بنجاح!"
-response_activated: "نجحت في جعل نشطة"
-response_activation_failed: "فشلت في جعله نشطة!"
-response_checksum_error: "خطأ أختباري! تم رفض الملف!"
-response_component_successfully_installed: "تم تثبيت الوحدة بنجاح"
-response_component_successfully_uninstalled: "تم الغاء تثبيت الوحدة بنجاح"
-response_component_successfully_updated: "تم تحديث الوحدة بنجاح"
-response_component_uninstall_error: "حدث خطأ أثناء محاولة إلغاء تثبيت الوحدة."
 response_configuration_updated: "تم تحديث التكوين بنجاح"
-response_deactivated: "نجحت في جعل غير نشطة"
-response_deactivation_failed: "فشلت في جعله غير نشطة!"
-response_error: "خطأ"
 response_failed: "فشل"
 response_failed_to_create: "فشل في انشاء!"
 response_failed_to_delete: "فشلت في حذف!"
-response_failed_to_install: "فشل التثبيت!"
 response_failed_to_update: "فشل التحديث!"
 response_file_deleted: "ملف حذف بنجاح!"
-response_file_edited: "ملف تعديل بنجاح!"
-response_file_renamed: "ملف إعادة تسمية بنجاح!"
 response_file_restored: "تمت استعادة الملف بنجاح!"
-response_file_uploaded: "ملف تحميلها بنجاح!"
 response_login_invalid_password: "فشل تسجيل الدخول! كلمة السر غير صالحة!"
 response_login_invalid_username: "فشل تسجيل الدخول! اسم المستخدم غير موجود!"
 response_login_password_field_empty: "كلمه السر حقل فارغ!"
 response_login_username_field_empty: "اسم المستخدم حقل فارغ!"
 response_login_wrong_endpoint: "نقطة نهاية خاطئة!"
 response_no: "لا"
-response_passed: "إجتاز"
-response_possible_problem_found: "تم العثور على مشكلة محتملة."
-response_rename_error: "فشل في إعادة تسمية!"
 response_restore_error_1: "أخفق الاستعادة! ملف معطوب!"
 response_restore_error_2: "أخفق الاستعادة! الحجر الصحي مفتاح غير صحيح!"
-response_repair_process_completed: "اكتملت عملية الإصلاح."
-response_repair_process_failed: "فشلت عملية الإصلاح."
 response_statistics_cleared: "تم مسح الإحصاءات."
-response_upload_error: "فشل لتحميل!"
 response_yes: "نعم"
-security_warning: "حدثت مشكلة غير متوقعة أثناء معالجة طلبك. حاول مرة اخرى. إذا استمرت المشاكل، فاتصل بالدعم."
 siginfo_key_CVE: "التوقيعات التي تتعامل مع CVE (نقاط الضعف والتعرض الشائعة)."
 siginfo_key_Chameleon: "التوقيعات التي تتعامل مع "هجمات الحرباء"."
 siginfo_key_FN: "التوقيعات تعمل مع أسماء الملفات (على عكس محتويات الملف)."
@@ -292,7 +247,6 @@ state_async_deny: "أذونات غير كافية لأداء طلبات غير �
 state_cache_is_empty: "ذاكرة التخزين المؤقت فارغة."
 state_complete_access: "الوصول كامل"
 state_default_password: "تحذير: يستخدم الافتراضي كلمه السر!"
-state_email_sent: "تم إرسال البريد الإلكتروني بنجاح إلى "%s"."
 state_loading: "جار التحميل..."
 state_loadtime: "اكتمل طلب الصفحة خلال <span class="txtRd">%s</span> ثوان."
 state_logged_in: "حاليا على."
@@ -335,6 +289,7 @@ info_some_useful_links: |
            <li><a dir="ltr" href="https://github.com/phpMussel/SigTool" hreflang="en" rel="noopener noreferrer external">phpMussel SigTool</a> – ينشئ ملفات توقيع phpMussel باستخدام قاعدة بيانات توقيعات ClamAV.</li>
            <li><a dir="ltr" href="https://github.com/phpMussel/extras" hreflang="en" rel="noopener noreferrer external">phpMussel/extras</a> – إضافات مختلفة.</li>
          </ul>
+       </li>
        <li><span class="comCat" style="cursor:pointer">الأدوات، الموارد، إلخ لـ ClamAV.</span>
          <ul class="comSub">
            <li><a dir="ltr" href="https://www.clamav.net/" hreflang="en" rel="noopener noreferrer external">ClamavNet</a> – الرئيسية ClamAV (ClamAV® هو محرك مكافحة الفيروسات مفتوحة المصدر للكشف عن أحصنة طروادة والفيروسات، والبرمجيات الخبيثة وغيرها من التهديدات الخبيثة).</li>
@@ -348,6 +303,7 @@ info_some_useful_links: |
            <li><a dir="ltr" href="https://www.facebook.com/groups/2204685680/" rel="noopener noreferrer external">PHP.earth@Facebook</a> – PHP مصادر التعلم والمناقشة.</li>
            <li><a dir="ltr" href="https://malwaretips.com/" hreflang="en" rel="noopener noreferrer external">MalwareTips</a> – مفيدة البرمجيات الخبيثة المنتديات مناقشة مركزة.</li>
          </ul>
+       </li>
        <li><span class="comCat" style="cursor:pointer">الأدوات، الموارد، الخدمات، إلخ مفيدة أخرى.</span>
          <ul class="comSub">
            <li><a dir="ltr" href="https://www.phishtank.com/" hreflang="en" rel="noopener noreferrer external">PhishTank</a> – التصيد قاعدة البيانات التي تستخدمها URL الماسح الضوئي phpMussel.</li>

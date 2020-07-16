@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Urdu language data (last modified: 2020.07.08).
+# This file: Urdu language data (last modified: 2020.07.15).
 ##/
 
 config_core: "عام ترتیبات (کنفیگریشن جس کا تعلق دوسری قسموں سے نہیں ہے)."
@@ -110,35 +110,24 @@ config_virustotal_vt_suspicion_level: "بطور ڈیفالٹ، phpMussel جس ف
 config_virustotal_vt_weighting: "phpMussel detections کر کے طور پر یا پتہ لگانے weighting کے طور وائرس کل API کا استعمال کرتے ہوئے سکیننگ کے نتائج کو درخواست دینی چاہیے؟ (اور بدنیتی پر مبنی فائلوں کی ایک بڑی تعداد پکڑے جانے لہذا میں) ایک سے زیادہ کے انجن کو استعمال کرتے ہوئے (جیسا وائرس کل کرتا ہے) ایک فائل کو سکین ایک اضافہ کا پتہ لگانے کی شرح کے نتیجے چاہئے، اگرچہ، یہ بھی جھوٹے کی زیادہ تعداد کے نتیجے کر سکتے ہیں، کیونکہ یہ ہدایت موجود ہے، مثبت ہے، اور اس وجہ سے، کچھ حالات میں، سکیننگ کے نتائج بہتر ایک حتمی نتیجے پر اس اعتماد کا سکور کے طور پر کی بجائے استعمال کیا جا سکتا ہے. 0 کی قدر استعمال کیا جاتا ہے تو، وائرس کل API کا استعمال کرتے ہوئے سکیننگ کے نتائج کسی بھی انجن وائرس کل پرچم فائل کو بدنیتی پر مبنی ہونے کے طور پر سکین کیا جا رہا ہے کی طرف سے استعمال کیا جاتا ہے تو، detections کر کے طور پر لاگو کیا جائے گا، اور اس وجہ سے، phpMussel بدنیتی پر مبنی ہونے کے لئے فائل پر غور کریں گے. کسی دوسرے کی قدر استعمال کیا جاتا ہے تو، وائرس کل API کا استعمال کرتے ہوئے سکیننگ کے نتائج کا پتہ لگانے weighting کے طور پر لاگو کیا جائے گا، اور اس وجہ سے، فائل پرچم کہ وائرس کل کی طرف سے استعمال کے انجن کی تعداد سکین کیا جا رہا ہے درنساوناپورن ہونے (ایک اعتماد سکور کے طور پر کام کرے گا کے طور پر یا پتہ لگانے weighting کے) کے لئے ہے یا نہیں کی فائل کو سکین کیا جا رہا phpMussel طرف بدنیتی پر مبنی سمجھا جانا چاہئے (استعمال کیا کم از کم اعتماد کی نمائندگی کریں گے ویلیو سکور یا ترتیب میں کی ضرورت وزن بدنیتی پر مبنی سمجھا جائے). 0 کی قدر سے طے شدہ کی طرف سے استعمال کیا جاتا ہے."
 confirm_action: "کیا آپ واقعی "%s" کرنا چاہتے ہیں؟"
 field_2fa: "2FA کوڈ"
-field_activate: "فعال کریں"
 field_clear_all: "تمام کو صاف کریں"
-field_component: "اجزاء"
 field_confirm: "تصدیق کریں"
 field_create_new_account: "نیا اکاؤنٹ بنانے"
-field_deactivate: "بے عمل"
 field_delete_account: "کھاتہ مٹا دو"
 field_delete_all: "تمام حذف کریں"
 field_delete_file: "حذف کریں"
 field_download_file: "نیچے بوجھ"
-field_edit_file: "میں ترمیم کریں"
 field_false: "False (غلط)"
 field_file: "فائل"
-field_filename: "فائل کا نام: "
-field_filetype_unknown: "نامعلوم"
-field_install: "انسٹال کریں"
 field_latest_version: "تازہ ترین ورژن"
 field_log_in: "لاگ ان"
 field_more_fields: "مزید قطعات"
-field_new_name: "نیا نام:"
 field_ok: "ٹھیک ہے"
 field_options: "اختیارات"
 field_password: "پاس ورڈ"
 field_permissions: "اجازتیں"
 field_quarantine_key: "قرنطین کلید"
 field_rename_file: "نام تبدیل کریں"
-field_repair: "مرمت"
-field_repair_all: "سب کی مرمت کرو"
-field_reset: "پھر سیٹ کریں"
 field_restore_file: "بحال"
 field_set_new_password: "نیا پاس ورڈ مقرر"
 field_size: "کل سائز: "
@@ -147,31 +136,22 @@ field_size_KB: "KB"
 field_size_MB: "MB"
 field_size_TB: "TB"
 field_size_bytes: "بائٹس"
-field_status: "سٹیٹس"
 field_system_timezone: "نظام کو پہلے سے طے شدہ ٹائم زون کا استعمال کریں."
 field_true: "True (سچ)"
-field_uninstall: "غیر انسٹال"
 field_update: "اپ ڈیٹ"
-field_update_all: "تمام تجدید کریں"
 field_update_signatures_files: "دستخط فائلوں کو اپ ڈیٹ کریں"
-field_upload_file: "نئی فائل اپ لوڈ کریں"
 field_username: "صارف کا نام"
-field_verify: "تصدیق کریں"
-field_verify_all: "سب کی توثیق کریں"
 field_your_version: "آپ کے ورژن"
 header_login: "جاری رکھنے کے لیے لاگ ان کریں."
 label_active_config_file: "فعال کنفیگریشن فائل: "
-label_actual: "اس وقت"
 label_backup_location: "مخزن بیک اپ مقامات (ہنگامی حالت میں، یا اگر سب کچھ ناکام ہوجاتا ہے):"
 label_blocked: "بلاک اپ لوڈ"
 label_branch: "شاخ تازہ ترین مستحکم:"
 label_clientinfo: "کلائنٹ کی معلومات:"
 label_events: "واقعات اسکین کریں"
-label_expected: "متوقع"
 label_expires: "ختم ہو جاتی ہے: "
 label_extension: "کی توسیع"
 label_flagged: "نشان لگا دیا گیا آبجیکٹ"
-label_hide: "چھپائیں"
 label_installed_available: "انسٹال/دستیاب ہے"
 label_never: "کبھی نہیں"
 label_os: "آپریٹنگ سسٹم استعمال کیا:"
@@ -181,12 +161,10 @@ label_other: "دیگر"
 label_php: "PHP ورژن استعمال کیا:"
 label_phpmussel: "phpMussel ورژن استعمال کیا:"
 label_quarantined: "قرنطین میں اپ لوڈ"
-label_sanity_check: "حفاظت کی جانچ: "
 label_sapi: "SAPI استعمال کیا:"
 label_scanned_objects: "سکین کیا آبجیکٹ"
 label_scanned_uploads: "سکین کیا اپ لوڈ"
 label_see_also: "بھی دیکھو:"
-label_show: "دکھائیں"
 label_size_in_quarantine: "قرنطین میں سائز: "
 label_stable: "تازہ ترین مستحکم:"
 label_sysinfo: "سسٹم کی معلومات:"
@@ -214,8 +192,6 @@ logs_logfile_doesnt_exist: "منتخب شدہ لاگ فائل موجود نہی�
 logs_no_logfile_selected: "کوئی لاگ فائل کو منتخب کیا."
 logs_no_logfiles_available: "کوئی لاگ مسلیں دستیاب."
 max_login_attempts_exceeded: "لاگ ان کوششوں کی زیادہ سے زیادہ تعداد سے تجاوز کر گئی. رسائی مسترد کر دی."
-notice_click_here: "مزید معلومات کے لئے یہاں کلک کریں."
-notice_new_major_version: "نوٹس: %s اب دستیاب ہے (آپ %s استعمال کر رہے ہیں). آپ اس ورژن کی کم از کم PHP کی ضرورت کو پورا کرتے ہیں. البتہ، کچھ دستی کام کو اپ ڈیٹ کرنے کی ضرورت ہے."
 previewer_days: "دن"
 previewer_hours: "گھنٹے"
 previewer_minutes: "منٹس"
@@ -230,44 +206,23 @@ response_accounts_created: "اکاؤنٹ کامیابی سے تشکیل!"
 response_accounts_deleted: "اکاؤنٹ کامیابی سے خارج!"
 response_accounts_doesnt_exist: "اس اکاؤنٹ کا کوئی وجود نہیں."
 response_accounts_password_updated: "پاس ورڈ کامیابی سے اپ ڈیٹ!"
-response_activated: "کامیابی کے ساتھ فعال."
-response_activation_failed: "چالو کرنے میں ناکام!"
-response_checksum_error: "حیض کی خرابی! فائل کو مسترد کر دیا!"
-response_component_successfully_installed: "اجزاء کامیابی سے نصب."
-response_component_successfully_uninstalled: "اجزاء کامیابی سے ان انسٹال."
-response_component_successfully_updated: "اجزاء کامیابی سے اپ ڈیٹ."
-response_component_uninstall_error: "جزو انسٹال کرنے کی کوشش کرتے ہوئے ایک خرابی واقع ہوئی."
 response_configuration_updated: "کنفگریشن کامیابی سے اپ ڈیٹ."
-response_deactivated: "کامیابی کے ساتھ غیر فعال."
-response_deactivation_failed: "غیر فعال کرنے میں ناکام ہو گیا!"
-response_error: "خرابی"
 response_failed: "ناکامی"
 response_failed_to_create: "بنانے میں ناکام!"
 response_failed_to_delete: "حذف کرنے میں ناکام!"
-response_failed_to_install: "انسٹال کرنے میں ناکام"
 response_failed_to_update: "اپ ڈیٹ کرنے میں ناکام"
 response_file_deleted: "کامیابی خارج کر دیا فائل!"
-response_file_edited: "کامیابی نظر ثانی شدہ فائل!"
-response_file_renamed: "کامیابی کا نام دے دیا فائل!"
 response_file_restored: "فائل کو کامیابی سے بحال!"
-response_file_uploaded: "کامیابی اپ لوڈ کردہ فائل!"
 response_login_invalid_password: "لاگ ان ناکامی! غلط پاسورڈ!"
 response_login_invalid_username: "لاگ ان ناکامی! صارف کا نام موجود نہیں ہے!"
 response_login_password_field_empty: "پاس ورڈ میدان خالی!"
 response_login_username_field_empty: "صارف کا نام فیلڈ کو خالی!"
 response_login_wrong_endpoint: "غلط رسائی پوائنٹ!"
 response_no: "نہیں"
-response_passed: "کامیابی"
-response_possible_problem_found: "ممکنہ مسئلہ پایا."
-response_rename_error: "نام تبدیل کرنے میں ناکام!"
 response_restore_error_1: "بحال کرنے میں ناکام! خراب فائل!"
 response_restore_error_2: "بحال کرنے میں ناکام! غلط قرنطین کلید!"
-response_repair_process_completed: "مرمت کا عمل مکمل ہوگیا."
-response_repair_process_failed: "مرمت کا عمل ناکام ہوگیا."
 response_statistics_cleared: "اعداد و شمار صاف ہوگئے."
-response_upload_error: "اپ لوڈ کرنے میں ناکام ہو گیا!"
 response_yes: "جی ہاں"
-security_warning: "آپ کی درخواست پر عمل کرتے ہوئے ایک غیر متوقع مسئلہ پیش آیا. دوبارہ کوشش کریں. اگر مسائل جاری رہیں تو، معاون سے رابطہ کریں."
 siginfo_key_CVE: "دستخط CVE سے نمٹنے کے."
 siginfo_key_Chameleon: "دستخط جو "chameleon حملوں" سے نمٹنے کے لئے ہے."
 siginfo_key_FN: "دستخط جن فائل نام کے ساتھ کام کرتے ہیں (فائل کا مواد کے بجائے)."
@@ -292,7 +247,6 @@ state_async_deny: "اجازت غیر عارضی درخواستوں کو انجا
 state_cache_is_empty: "کیش خالی ہے."
 state_complete_access: "مکمل رسائی"
 state_default_password: "انتباہ: ڈیفالٹ پاس ورڈ کو استعمال کرتے ہوئے!"
-state_email_sent: "ای میل کامیابی سے "%s" پر بھیجا گیا."
 state_loading: "لوڈ کر رہا ہے ..."
 state_loadtime: "<span class="txtRd">%s</span> سیکنڈ میں مکمل ہونے والی درخواست کی درخواست."
 state_logged_in: "لاگ ان."
@@ -329,6 +283,7 @@ info_some_useful_links: |
            <li><a dir="ltr" href="https://github.com/phpMussel/SigTool" hreflang="en" rel="noopener noreferrer external">phpMussel SigTool</a> – ClamAV دستخط ڈیٹا بیس کا استعمال کرتے ہوئے phpMussel دستخط فائلوں کی تخلیق کرتا ہے.</li>
            <li><a dir="ltr" href="https://github.com/phpMussel/extras" hreflang="en" rel="noopener noreferrer external">phpMussel/extras</a> – مختلف اضافی.</li>
          </ul>
+       </li>
        <li><span class="comCat" style="cursor:pointer">ClamAV کے لئے اوزار، وسائل، وغیرہ.</span>
          <ul class="comSub">
            <li><a dir="ltr" href="https://www.clamav.net/" hreflang="en" rel="noopener noreferrer external">ClamavNet</a> – ClamAV مرکزی صفحہ (ClamAV® ٹروجن، وائرس، مالویئر اور کا پتہ لگانے کے لئے ایک اوپن سورس ینٹیوائرس انجن ہے دیگر درنساوناپورن خطرات).</li>
@@ -342,6 +297,7 @@ info_some_useful_links: |
            <li><a dir="ltr" href="https://www.facebook.com/groups/2204685680/" rel="noopener noreferrer external">PHP.earth@Facebook</a> – PHP سیکھنے کے وسائل اور بحث.</li>
            <li><a dir="ltr" href="https://malwaretips.com/" hreflang="en" rel="noopener noreferrer external">MalwareTips</a> – مفید میلویئر مرکوز مباحثے فورمس.</li>
          </ul>
+       </li>
        <li><span class="comCat" style="cursor:pointer">دیگر مفید اوزار، وسائل، خدمات، وغیرہ.</span>
          <ul class="comSub">
            <li><a dir="ltr" href="https://www.phishtank.com/" hreflang="en" rel="noopener noreferrer external">PhishTank</a> – جعل سازی ڈیٹا بیس phpMussel URL سکینر کی طرف سے استعمال کیا.</li>

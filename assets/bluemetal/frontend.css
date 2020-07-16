@@ -1,11 +1,11 @@
 *{vertical-align:text-top}
-body,input,select,textarea,.idx{font-size:calc(12px * {magnification});background-repeat:no-repeat}
+body,input,select,textarea,.idx{font-size:calc(12px * {magnification})}
 body{font-family:'Merriweather','PT Serif',sans-serif,'Lucida Grande',Tahoma,Verdana,Arial;letter-spacing:1px;text-decoration:none;border-style:none;margin:0;padding:0;white-space:normal;background-color:#333;color:#222;background-image:url(data:image/gif;base64,R0lGODdhAwADAIACADMzM1VicCwAAAAAAwADAAACBIQRBwUAOw==);background-attachment:fixed}
 code{font-family:monospace;background-color:#555;color:#111}
 hr{border-style:solid none none;border-width:1px;margin:5px 2px 0;padding:2px;color:#89b}
 img.ico{width:16px;height:16px;border:0;filter:hue-rotate(180deg) brightness(0.8)}
 input,select,textarea{background-color:#345;border:1px solid #89b;color:#ccc;margin:2px;padding:2px}
-input,select{width:150px;background-position:top {FE_Align_Reverse}}
+input,select{width:150px;background-repeat:no-repeat;background-position:top {FE_Align_Reverse}}
 input.auto,select.auto{width:auto;padding-left:10px;padding-right:10px}
 input[type=image]{width:inherit;border:inherit}
 input[type=password]{background-image:url(data:image/gif;base64,{PIP_Key_64})}

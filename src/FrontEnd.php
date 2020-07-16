@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2020.07.12).
+ * This file: Front-end handler (last modified: 2020.07.15).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1785,22 +1785,6 @@ class FrontEnd
     private function filterByDefined(string $ChoiceKey)
     {
         return defined($ChoiceKey);
-    }
-
-    /**
-     * Filter the available theme options provided by the configuration page on
-     * the basis of their availability.
-     *
-     * @param string $ChoiceKey Theme ID.
-     * @return bool Valid/Invalid.
-     */
-    private function filterTheme(string $ChoiceKey): bool
-    {
-        if ($ChoiceKey === 'default') {
-            return true;
-        }
-        $Path = $this->AssetsPath . 'fe_assets' . DIRECTORY_SEPARATOR . $ChoiceKey . '/';
-        return (file_exists($Path . 'frontend.css') || file_exists($this->AssetsPath . 'template_' . $ChoiceKey . '.html'));
     }
 
     /**
