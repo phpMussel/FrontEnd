@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2020.07.15).
+ * This file: Front-end handler (last modified: 2020.07.19).
  */
 
 namespace phpMussel\FrontEnd;
@@ -352,7 +352,7 @@ class FrontEnd
         /** Cleanup. */
         unset($Pips, $PipsData, $PipsPath);
 
-        /** Fire event: "frontend_before". */
+        /** Fire event: "frontend_before_page". */
         $this->Loader->Events->fireEvent('frontend_before_page', '', $FE);
 
         /** A simple passthru for non-private theme images and related data. */

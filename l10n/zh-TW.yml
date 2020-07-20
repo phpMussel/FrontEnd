@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (traditional) language data (last modified: 2020.07.16).
+# This file: Chinese (traditional) language data (last modified: 2020.07.17).
 ##/
 
 config_core: "基本配置（任何不屬於其他類別的核心配置）。"
@@ -33,7 +33,7 @@ config_files: "在掃描過程中如何處理文件。"
 config_files_allow_leading_trailing_dots: "允許文件名中的前導和尾隨點嗎？​這有時可用於隱藏文件，或欺騙某些系統允許目錄遍歷。​False（假）=不允許【默認】；True（真）=允許。"
 config_files_archive_file_extensions: "認可存檔文件擴展（格式是CSV；應該只添加或去掉當問題發生；不必要的去掉可能的可以導致假陽性出現為存檔文件，​而不必要的增加將實質上白名單任何事您增加從專用攻擊檢測；修改有慎重；還請注這個無影響在什麼存檔可以和不能被分析在內容級）。​這個名單，​作為是作為標準，​名單那些格式使用最常見的橫過多數的系統和CMS，​但有意是不全面。"
 config_files_block_control_characters: "受阻任何文件包含任何控製字符嗎（以外換行符）？​(<code>[\x00-\x08\x0b\x0c\x0e\x1f\x7f]</code>) 如果您只上傳純文本，​您可以激活這個指令以提供某些另外保護在您的系統。​然而，​如果您上傳任何事以外純文本，​激活這個可能結果在假陽性。​False（假）=不受阻【默認】；True（真）=受阻。"
-config_files_block_encrypted_archives: "檢測和受阻加密的存檔嗎？​因為phpMussel是不能夠掃描加密的存檔內容，​它是可能存檔加密可能的可以使用通過一個攻擊者作為一種手段嘗試繞過phpMussel，​殺毒掃描儀和其他這樣的保護。​指示phpMussel受阻任何存檔它發現被加密可能的可以幫助減少任何風險有關聯這些可能性。​False（假）=不受阻；True（真）=受阻【默認】。"
+config_files_block_encrypted_archives: "檢測和受阻加密的存檔嗎？​因為phpMussel是不能夠掃描加密的存檔內容，​它是可能存檔加密可能的可以使用通過一個攻擊者作為一種手段嘗試繞過phpMussel，​殺毒掃描程序和其他這樣的保護。​指示phpMussel受阻任何存檔它發現被加密可能的可以幫助減少任何風險有關聯這些可能性。​False（假）=不受阻；True（真）=受阻【默認】。"
 config_files_block_macros: "嘗試阻止任何包含宏的文件嗎？​某些文檔和電子表格類型可能包含可執行的宏，因此提供了危險的潛在惡意軟件向量。​False（假）=不阻止【默認】；​True（真）=阻止。"
 config_files_can_contain_php_file_extensions: "允許包含PHP代碼的文件擴展名列表，以逗號分隔。​如果啟用了PHP變色龍攻擊檢測，包含PHP代碼的文件，其擴展名不在此列表中，將被檢測為PHP變色龍攻擊。"
 config_files_chameleon_from_exe: "尋找可執行頭在文件是不可執行文件也不認可存檔文件和尋找可執行文件誰的頭是不正確。​False（假）=是關閉；True（真）=是激活。"
@@ -54,7 +54,7 @@ config_files_filetype_greylist: "灰名單："
 config_files_filetype_whitelist: "如果您的系統只允許具體文件類型被上傳，​或如果您的系統明確地否認某些文件類型，​指定那些文件類型在白名單，​黑名單和灰名單可以增加掃描執行速度通過允許腳本跳過某些文件類型。​格式是CSV（逗號分隔變量）。​如果您想掃描一切，​而不是白名單，​黑名單或灰名單，​留變量空；這樣做將關閉白名單/黑名單/灰名單。​進程邏輯順序是：如果文件類型已白名單，​不掃描和不受阻文件，​和不匹配文件對照黑名單或灰名單。​如果文件類型已黑名單，​不掃描文件但阻止它無論如何，​和不匹配文件對照灰名單。​如果灰名單是空，​或如果灰名單不空和文件類型已灰名單，​掃描文件像正常和確定如果阻止它基於掃描結果，​但如果灰名單不空和文件類型不灰名單，​過程文件彷彿已黑名單，​因此不掃描它但阻止它無論如何。​白名單："
 config_files_max_files_in_archives: "在中止掃描之前從檔案中掃描的最大文件數。​默認=0（沒有最大文件數）。"
 config_files_max_recursion: "最大存檔遞歸深度限。​默認=3。"
-config_files_only_allow_images: "設置為true時，掃描儀遇到的任何非圖像文件將被立即標記，而不會被掃描。​在某些情況下，這可能有助於減少完成掃描所需的時間。​默認情況下設置為false。"
+config_files_only_allow_images: "設置為true時，掃描程序遇到的任何非圖像文件將被立即標記，而不會被掃描。​在某些情況下，這可能有助於減少完成掃描所需的時間。​默認情況下設置為false。"
 config_files_scannable_threshold: "原始數據讀取和掃描的最大長度（如果有任何引人注目性能問題當掃描）。​默認 = 32MB。​零或空值將關閉門檻。​按說，​這個數值應不會少於平均文件大小的文件上傳您想和期待收到您的服務器或網站，​應不會多於<code>filesize_limit</code>指令，​和應不會多於大致五分之一的總允許內存分配獲授PHP通過"php.ini"配置文件。​這個指令存在為嘗試防止phpMussel從用的太多內存（這個將防止它從能夠順利掃描文件以上的一個特別文件大小）。"
 config_frontend: "前端的配置。"
 config_frontend_default_algo: "定義要用於所有未來密碼和會話的算法。​選項：​PASSWORD_DEFAULT（標準），​PASSWORD_BCRYPT，​PASSWORD_ARGON2I（需要PHP &gt;= 7.2.0），​PASSWORD_ARGON2ID（需要PHP &gt;= 7.3.0）。"

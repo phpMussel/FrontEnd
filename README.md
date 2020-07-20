@@ -6,7 +6,7 @@
 
 ## **What is phpMussel?**
 
-An ideal solution for shared hosting environments, where it's often not possible to utilise or install conventional anti-virus protection solutions, phpMussel is a PHP script designed to **detect trojans, viruses, malware and other threats** within files uploaded to your system wherever the script is hooked, based on the signatures of [ClamAV](https://www.clamav.net/) and others. For information regarding *HOW TO INSTALL* {2A+2B} and *HOW TO USE* {3A+3B} phpMussel, please refer either to the [Wiki](https://github.com/phpMussel/phpMussel/wiki) or to the [documentation](https://github.com/phpMussel/Docs/tree/master) (direct links to that documentation included under the "Documentation" header below this paragraph).
+An ideal solution for shared hosting environments, where it's often not possible to utilise or install conventional anti-virus protection solutions, phpMussel is a PHP script designed to **detect trojans, viruses, malware and other threats** within files uploaded to your system wherever the script is hooked, based on the signatures of [ClamAV](https://www.clamav.net/) and others. For information regarding *HOW TO INSTALL* and *HOW TO USE* phpMussel, please refer either to the [Wiki](https://github.com/phpMussel/phpMussel/wiki) or to the [documentation](https://github.com/phpMussel/Docs/tree/master) (direct links to that documentation included under the "Documentation" header below this paragraph).
 
 ---
 
@@ -33,10 +33,18 @@ $Loader = new \phpMussel\Core\Loader();
 $Scanner = new \phpMussel\Core\Scanner($Loader);
 $FrontEnd = new \phpMussel\FrontEnd\FrontEnd($Loader, $Scanner);
 $Web = new \phpMussel\Web\Web($Loader, $Scanner);
+$Loader->Events->addHandler('sendMail', new \phpMussel\PHPMailer\Linker($Loader));
 
+// Scans file uploads (execution terminates here if the scan finds anything).
 $Web->scan();
+
+// Fixes possible corrupted file upload names (Warning: modifies the content of $_FILES).
+$Web->demojibakefier();
+
+// Load the front-end.
 $FrontEnd->view();
 
+// Cleanup.
 unset($Web, $FrontEnd, $Scanner, $Loader);
 ```
 
@@ -56,4 +64,4 @@ __*Screenshot:*__
 ---
 
 
-Last Updated: 6 July 2020 (2020.07.06).
+Last Updated: 20 July 2020 (2020.07.20).
