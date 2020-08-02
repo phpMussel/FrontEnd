@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2020.07.16).
+# This file: Japanese language data (last modified: 2020.08.02).
 ##/
 
 config_core: "全般的な設定（他のカテゴリに属さないの設定）。"
@@ -57,7 +57,7 @@ config_files_max_recursion: "アーカイブに対する最大再帰深さです
 config_files_only_allow_images: "Trueに設定した場合、スキャナーで検出された非画像ファイルには、スキャンされずに、直ちにマークされます。​これは、場合によっては、スキャンの完了に必要な時間を短縮するのに役立ちます。​デフォルトではfalseに設定されています。"
 config_files_scannable_threshold: "phpMusselが読みスキャンしてよい生データの長さの制限（スキャニング中に顕著な問題がある場合に必要に応じて設定）。​デフォルト＝３２ＭＢ。​ゼロあるいは値なし（null）はしきい値を無効化します。​値は、​サーバーやウェブサイトでアップロードされるファイルの平均ファイルサイズより大きく、​filesize_limitディレクティブより小さく設定すべきです。​また"php.ini"設定によってPHPに割り当てられたメモリーのおおよそ5分の１を超えるべきではありません。​このディレクティブはphpMusselがメモリーを使い過ぎないようにするためのものです。​（一定のサイズ以上のファイルはスキャンできなくなることもあります）。"
 config_frontend: "フロントエンドの設定。"
-config_frontend_default_algo: "将来のすべてのパスワードとセッションに使用するアルゴリズムを定義します。​オプション：​PASSWORD_DEFAULT（Default/デフォルルト）、​PASSWORD_BCRYPT、​PASSWORD_ARGON2I ​（ＰＨＰ &gt;= 7.2.0 が必要）、​PASSWORD_ARGON2ID ​（ＰＨＰ &gt;= 7.3.0 が必要）。"
+config_frontend_default_algo: "将来のすべてのパスワードとセッションに使用するアルゴリズムを定義します。​オプション：​PASSWORD_DEFAULT（Default/デフォルルト）、​PASSWORD_BCRYPT、​PASSWORD_ARGON2I （ＰＨＰ &gt;= 7.2.0 が必要）、​PASSWORD_ARGON2ID （ＰＨＰ &gt;= 7.3.0 が必要）。"
 config_frontend_frontend_log: "フロントエンド・ログインの試みを記録するためのファイル。​ファイル名指定するか、​無効にしたい場合は空白のままにして下さい。"
 config_frontend_magnification: "フォントの倍率。​Default/デフォルルト = １。"
 config_frontend_max_login_attempts: "ログイン試行の最大回数（フロントエンド）。​Default（デフォルト設定） = ５。"
@@ -67,8 +67,8 @@ config_legal: "法的要件の設定。"
 config_legal_privacy_policy: "生成されたページのフッターに表示される関連プライバシー・ポリシーのアドレス。​ＵＲＬを指定するか、無効にしたい場合は空白のままにして下さい。"
 config_legal_pseudonymise_ip_addresses: "ログ・ファイルを書き込むときにＩＰアドレス偽名化するか「プセユードニマイズ」？ True = はい（Default/デフォルルト）。 False = いいえ。"
 config_quarantine: "検疫の設定。"
-config_quarantine_quarantine_key: "phpMusselは、​必要とあれば、ブロックされたファイルのアップロードを隔離することができます。​一般的なphpMusselのユーザーは、​ウェブサイトやホスティング環境の保護ができれば充分と考えており、​フラグ付のようなものにさらなる分析を加えようまでの要求はないようですので、​無効で構いません。​ですが詳細に分析してマルウェアに備えたいユーザーは有効にすると良いでしょう。​フラグ付ファイルのアップロードの検疫は誤検出のデバッグに役立つことがあります。​検疫機能を無効にするには、​<code>quarantine_key</code>ディレクティブを空にしておくか、​空でない場合はディレクティブ内のコンテンツを消去して下さい。​有効にするには、​デイレクティブに何らかの値を入れて下さい。​<code>quarantine_key</code>は検疫機能における重要なセキュリティー要素であり、​検疫機能内に保存されたデータの執行を各種の攻撃から守っています。​<code>quarantine_key</code>はパスワードと同様に考えて下さい。​長い方がより安全と言えます。​最も効果的な使用法は<code>delete_on_sight</code>との併用です。"
-config_quarantine_quarantine_max_files: "検疫に存在できるファイルの最大数。​隔離ファイルに新しいファイルが追加されると、この数を超えた場合、残りのファイルがこの数を超えなくなるまで古いファイルが削除されます。​デフォルト設定は１００です。"
+config_quarantine_quarantine_key: "phpMusselは、​必要とあれば、ブロックされたファイルのアップロードを検疫することができます。​一般的なphpMusselのユーザーは、​ウェブサイトやホスティング環境の保護ができれば充分と考えており、​フラグ付のようなものにさらなる分析を加えようまでの要求はないようですので、​無効で構いません。​ですが詳細に分析してマルウェアに備えたいユーザーは有効にすると良いでしょう。​フラグ付ファイルのアップロードの検疫は誤検出のデバッグに役立つことがあります。​検疫機能を無効にするには、​<code>quarantine_key</code>ディレクティブを空にしておくか、​空でない場合はディレクティブ内のコンテンツを消去して下さい。​有効にするには、​デイレクティブに何らかの値を入れて下さい。​<code>quarantine_key</code>は検疫機能における重要なセキュリティー要素であり、​検疫機能内に保存されたデータの執行を各種の攻撃から守っています。​<code>quarantine_key</code>はパスワードと同様に考えて下さい。​長い方がより安全と言えます。​最も効果的な使用法は<code>delete_on_sight</code>との併用です。"
+config_quarantine_quarantine_max_files: "検疫に存在できるファイルの最大数。​検疫ファイルに新しいファイルが追加されると、この数を超えた場合、残りのファイルがこの数を超えなくなるまで古いファイルが削除されます。​デフォルト設定は１００です。"
 config_quarantine_quarantine_max_filesize: "検疫されるファイルサイズの上限。​この値より大きなファイルは検疫されません。​クオランティンの容量を超える異常に大きなファイルサイズによる攻撃で、​メモリーが無駄に消費されるのを防ぐ意味で重要です。​デフォルト設定は２ＭＢです。"
 config_quarantine_quarantine_max_usage: "検疫のために利用する最大メモリー量。​全メモリー量が使用されると、​この範囲内に収まるよう古いファイルが削除の対象となります。​クオランティンの容量を超える異常に大きなファイルサイズによる攻撃で、​メモリーが無駄に消費されるのを防ぐ意味で重要です。​デフォルト設定は６４ＭＢです。"
 config_signatures: "シグネチャ、シグネチャ・ファイル、などの設定。"

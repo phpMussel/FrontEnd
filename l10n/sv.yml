@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2020.07.16).
+# This file: Swedish language data (last modified: 2020.08.02).
 ##/
 
 config_core: "Allmän konfiguration (alla kärnkonfigurationer som inte tillhör andra kategorier)."
@@ -55,7 +55,7 @@ config_files_filetype_whitelist: "Om ditt system endast tillåter att specifika 
 config_files_max_files_in_archives: "Maximalt antal filer att skanna inifrån arkiv innan avbryta skanningen. Standard = 0 (inget max)."
 config_files_max_recursion: "Maximal rekursionsdjupgräns för arkiv. Standard = 3."
 config_files_only_allow_images: "När den är true, alla icke-bildfiler som skannern stöter på kommer att markeras omedelbart utan att skannas. Detta kan hjälpa till att minska den tid som krävs för att slutföra en skanning i vissa fall. Ställ in som false som standard."
-config_files_scannable_threshold: "Tröskel till längden på rå data som phpMussel får läsa och skanna (om det finns några märkbara prestandaproblem när du skannar). Standard = 32MB. Noll eller null inaktiverar tröskeln. I allmänhet bör detta värde inte vara mindre än det genomsnittliga filstorleken för filuppladdningar som du vill och förväntar dig att få till din server eller webbplats, bör inte vara mer än filesize_limit direktivet, och bör inte vara mer än ungefär en femtedel av den totala tillåtna minnesallokering som beviljats ​​till PHP via konfigurationsfilen "php.ini". Detta direktiv finns för att försöka förhindra phpMussel från att använda upp för mycket minne (som skulle förhindra att det lyckas skanna filer över ett visst filstorlek)."
+config_files_scannable_threshold: "Tröskel till längden på rå data som phpMussel får läsa och skanna (om det finns några märkbara prestandaproblem när du skannar). Standard = 32MB. Noll eller null inaktiverar tröskeln. I allmänhet bör detta värde inte vara mindre än det genomsnittliga filstorleken för filuppladdningar som du vill och förväntar dig att få till din server eller webbplats, bör inte vara mer än filesize_limit direktivet, och bör inte vara mer än ungefär en femtedel av den totala tillåtna minnesallokering som beviljats till PHP via konfigurationsfilen "php.ini". Detta direktiv finns för att försöka förhindra phpMussel från att använda upp för mycket minne (som skulle förhindra att det lyckas skanna filer över ett visst filstorlek)."
 config_frontend: "Konfiguration för front-end."
 config_frontend_default_algo: "Definierar vilken algoritm som ska användas för alla framtida lösenord och sessioner. Alternativ: PASSWORD_DEFAULT (standard), PASSWORD_BCRYPT, PASSWORD_ARGON2I (kräver PHP &gt;= 7.2.0), PASSWORD_ARGON2ID (kräver PHP &gt;= 7.3.0)."
 config_frontend_frontend_log: "Fil för att logga in alla försök till inloggningar på front-end. Ange ett filnamn, eller lämna tomt för att inaktivera."
