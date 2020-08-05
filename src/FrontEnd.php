@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2020.08.04).
+ * This file: Front-end handler (last modified: 2020.08.05).
  */
 
 namespace phpMussel\FrontEnd;
@@ -346,8 +346,6 @@ class FrontEnd
             $this->Loader->YAML->process($PipsData, $Pips);
             $FE['PIP_Key'] = $Pips['Key'];
             $FE['PIP_Key_64'] = base64_encode($Pips['Key']);
-            $FE['PIP_Key2'] = $Pips['Key2'];
-            $FE['PIP_Key2_64'] = base64_encode($Pips['Key2']);
         }
 
         /** A fix for correctly displaying LTR/RTL text. */
