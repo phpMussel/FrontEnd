@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2020.07.31).
+ * This file: Front-end handler (last modified: 2020.08.04).
  */
 
 namespace phpMussel\FrontEnd;
@@ -98,6 +98,11 @@ class FrontEnd
     private $Host = '';
 
     /**
+     * @var string Optional post-derived override for HTTP_HOST-derived values.
+     */
+    private $HostnameOverride = '';
+
+    /**
      * @var int User permissions.
      *      -1 = Attempted to log in; Login failed (i.e., bad credentials).
      *       0 = Not logged in.
@@ -185,6 +190,9 @@ class FrontEnd
         $this->Host = empty($_SERVER['HTTP_HOST']) ? '' : (
             strpos($_SERVER['HTTP_HOST'], ':') === false ? $_SERVER['HTTP_HOST'] : substr($_SERVER['HTTP_HOST'], 0, strpos($_SERVER['HTTP_HOST'], ':'))
         );
+
+        /** Allow post override of HTTP_HOST (assists with proxied front-end pages). */
+        $this->HostnameOverride = $_POST['hostname'] ?? '';
     }
 
     /**
@@ -254,14 +262,18 @@ class FrontEnd
             /** Will be populated by messages reflecting the current request state. */
             'state_msg' => '',
 
-            /**
-             * Populated by [Home | Log Out] by default;
-             * Replaced by [Log Out] for some specific pages (e.g., the homepage).
-             */
-            'bNav' => sprintf(
-                '<a href="?">%s</a> | <a href="?phpmussel-page=logout">%s</a>',
-                $this->Loader->L10N->getString('link_home'),
+            /** Used to log out. */
+            'LogoutButton' => sprintf(
+                '<form action="?phpmussel-page=logout" method="POST" style="display:inline">%s%s<input type="submit" id="logoutbutton" value="%s" class="auto" /></form>',
+                '<input name="hostname" id="hostnameoverride" type="hidden" value="" />',
+                '<script type="text/javascript">document.getElementById(\'hostnameoverride\').value=window.location.hostname;</script>',
                 $this->Loader->L10N->getString('link_log_out')
+            ),
+
+            /** Used to return home. */
+            'HomeButton' => sprintf(
+                '<form action="?" method="GET" style="display:inline"><input type="submit" id="homebutton" value="%s" class="auto" /></form>',
+                $this->Loader->L10N->getString('link_home')
             ),
 
             /** The user agent of the current request. */
@@ -292,6 +304,9 @@ class FrontEnd
             /** Set the current request's form target. */
             'FormTarget' => $_POST['phpmussel-form-target'] ?? ''
         ];
+
+        /** Populated by [Home | Log Out] by default; Replaced by [Log Out] for some specific pages (e.g., the homepage). */
+        $FE['bNav'] = $FE['HomeButton'] . ' ' . $FE['LogoutButton'];
 
         /** Append "@ Gitter" to the chat link text. */
         if (isset($this->Loader->L10N->Data['link_chat'])) {
@@ -438,7 +453,7 @@ class FrontEnd
                             $TryUser = $_POST['username'];
                             $SessionKey = hash('sha256', $this->generateSalt());
                             $Cookie = $_POST['username'] . $SessionKey;
-                            setcookie('PHPMUSSEL-ADMIN', $Cookie, $this->Loader->Time + $this->SessionTTL, '/', $this->Host, false, true);
+                            setcookie('PHPMUSSEL-ADMIN', $Cookie, $this->Loader->Time + $this->SessionTTL, '/', $this->HostnameOverride ?: $this->Host, false, true);
                             $this->ThisSession = $TryUser . ',' . password_hash($SessionKey, $this->DefaultAlgo);
 
                             /** Prepare 2FA email. */
@@ -579,7 +594,7 @@ class FrontEnd
                 $this->ThisSession = '';
                 $this->User = '';
                 $this->Permissions = 0;
-                setcookie('PHPMUSSEL-ADMIN', '', -1, '/', $this->Host, false, true);
+                setcookie('PHPMUSSEL-ADMIN', '', -1, '/', $this->HostnameOverride ?: $this->Host, false, true);
                 $this->frontendLogger($_SERVER[$this->Loader->Configuration['core']['ipaddr']], $SessionUser, $this->Loader->L10N->getString('state_logged_out'));
             }
 
@@ -608,7 +623,7 @@ class FrontEnd
 
             if ($this->Permissions === 3) {
                 /** Provide the option to log out (omit home link). */
-                $FE['bNav'] = sprintf('<a href="?phpmussel-page=logout">%s</a><br />', $this->Loader->L10N->getString('link_log_out'));
+                $FE['bNav'] = $FE['LogoutButton'];
 
                 /** Aesthetic spacer. */
                 $FE['2fa_status_spacer'] = empty($FE['state_msg']) ? '' : '<br /><br />';
@@ -658,8 +673,8 @@ class FrontEnd
             /** Operating system used. */
             $FE['info_os'] = php_uname();
 
-            /** Provide the log out and home links. */
-            $FE['bNav'] = sprintf('<a href="?phpmussel-page=logout">%s</a>', $this->Loader->L10N->getString('link_log_out'));
+            /** Provide the option to log out (omit home link). */
+            $FE['bNav'] = $FE['LogoutButton'];
 
             /** Build repository backup locations information. */
             $FE['BackupLocations'] = implode(' | ', [
