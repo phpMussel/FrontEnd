@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2020.08.05).
+ * This file: Front-end handler (last modified: 2020.08.22).
  */
 
 namespace phpMussel\FrontEnd;
@@ -306,7 +306,7 @@ class FrontEnd
         ];
 
         /** Populated by [Home | Log Out] by default; Replaced by [Log Out] for some specific pages (e.g., the homepage). */
-        $FE['bNav'] = $FE['HomeButton'] . ' ' . $FE['LogoutButton'];
+        $FE['bNav'] = $FE['HomeButton'] . $FE['LogoutButton'];
 
         /** Append "@ Gitter" to the chat link text. */
         if (isset($this->Loader->L10N->Data['link_chat'])) {
