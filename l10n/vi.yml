@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2020.07.16).
+# This file: Vietnamese language data (last modified: 2020.10.06).
 ##/
 
 config_core: "Cấu hình chung (bất kỳ cấu hình cốt lõi nào không thuộc về các loại khác)."
@@ -178,6 +178,7 @@ link_accounts: "Tài Khoản"
 link_cache_data: "Dữ liệu cache"
 link_chat: "Chat"
 link_config: "Cấu Hình"
+link_copy_to_clipboard: "Sao chép vào clipboard"
 link_documentation: "Tài liệu"
 link_home: "Trang chủ"
 link_log_out: "Đăng xuất"

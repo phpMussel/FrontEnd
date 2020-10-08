@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Tamil language data (last modified: 2020.08.02).
+# This file: Tamil language data (last modified: 2020.10.06).
 ##/
 
 config_core: "பொதுவான உள்ளமைவு (மற்ற வகைகளுக்கு சொந்தமில்லாத உள்ளமைவு)."
@@ -180,6 +180,7 @@ link_accounts: "கணக்குகள்"
 link_cache_data: "தற்காலிக சேமிப்பின் தரவு"
 link_chat: "அரட்டை"
 link_config: "உள்ளமைவு"
+link_copy_to_clipboard: "கிளிப்போர்டுக்கு நகலெடுக்கவும்"
 link_documentation: "ஆவணப்படுத்தல்"
 link_home: "முகப்பு"
 link_log_out: "வெளியேறு"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2020.07.16).
+# This file: Turkish language data (last modified: 2020.10.06).
 ##/
 
 config_core: "Genel yapılandırma (diğer kategorilere ait olmayan herhangi bir çekirdek yapılandırma)."
@@ -178,6 +178,7 @@ link_accounts: "Hesaplar"
 link_cache_data: "Önbellek Verileri"
 link_chat: "Sohbet"
 link_config: "Yapılandırma"
+link_copy_to_clipboard: "Panoya kopyala"
 link_documentation: "Belgeler"
 link_home: "Ana Sayfa"
 link_log_out: "Çıkış"

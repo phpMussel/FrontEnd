@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2020.07.16).
+# This file: Latvian language data (last modified: 2020.10.06).
 ##/
 
 config_core: "Vispārējā konfigurācija (jebkura pamata konfigurācija, kas nepieder citām kategorijām)."
@@ -181,6 +181,7 @@ link_accounts: "Konti"
 link_cache_data: "Kešatmiņas Dati"
 link_chat: "Tērzēšanas"
 link_config: "Konfigurācija"
+link_copy_to_clipboard: "Kopēt starpliktuvē"
 link_documentation: "Dokumentācija"
 link_home: "Mājas"
 link_log_out: "Izlogoties"

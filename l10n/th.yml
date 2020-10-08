@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Thai language data (last modified: 2020.07.16).
+# This file: Thai language data (last modified: 2020.10.06).
 ##/
 
 config_core: "การกำหนดค่าทั่วไป (การกำหนดค่าใด ๆ ที่ไม่ได้อยู่ในหมวดหมู่อื่น)."
@@ -178,6 +178,7 @@ link_accounts: "บัญชี"
 link_cache_data: "ข้อมูลแคช"
 link_chat: "แชท"
 link_config: "การกำหนดค่า"
+link_copy_to_clipboard: "คัดลอกไปที่คลิปบอร์ด"
 link_documentation: "เอกสาร"
 link_home: "โฮมเพจ"
 link_log_out: "ออกจากระบบ"

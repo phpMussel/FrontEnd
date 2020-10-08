@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2020.08.02).
+# This file: Swedish language data (last modified: 2020.10.06).
 ##/
 
 config_core: "Allmän konfiguration (alla kärnkonfigurationer som inte tillhör andra kategorier)."
@@ -178,6 +178,7 @@ link_accounts: "Konton"
 link_cache_data: "Cacherdata"
 link_chat: "Chattrum"
 link_config: "Konfiguration"
+link_copy_to_clipboard: "Kopiera till urklipp"
 link_documentation: "Dokumentation"
 link_home: "Hem"
 link_log_out: "Logga Ut"

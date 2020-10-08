@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2020.07.16).
+# This file: English language data (last modified: 2020.10.06).
 ##/
 
 config_core: "General configuration (any core configuration not belonging to other categories)."
@@ -180,6 +180,7 @@ link_accounts: "Accounts"
 link_cache_data: "Cache Data"
 link_chat: "Chat"
 link_config: "Configuration"
+link_copy_to_clipboard: "Copy to clipboard"
 link_documentation: "Documentation"
 link_home: "Home"
 link_log_out: "Log Out"

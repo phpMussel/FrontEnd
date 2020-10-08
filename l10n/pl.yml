@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2020.08.02).
+# This file: Polish language data (last modified: 2020.10.06).
 ##/
 
 config_core: "Ogólna konfiguracja (dowolna konfiguracja podstawowa nienależąca do innych kategorii)."
@@ -181,6 +181,7 @@ link_accounts: "Konta"
 link_cache_data: "Dane z pamięci podręcznej"
 link_chat: "Czat"
 link_config: "Konfiguracja"
+link_copy_to_clipboard: "Skopiuj do schowka"
 link_documentation: "Dokumentacja"
 link_home: "Główna"
 link_log_out: "Wyloguj się"

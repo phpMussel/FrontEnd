@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2020.08.22).
+ * This file: Front-end handler (last modified: 2020.10.08).
  */
 
 namespace phpMussel\FrontEnd;
@@ -766,6 +766,7 @@ class FrontEnd
 
             /** Extension availability. */
             $FE['Extensions'] = [];
+            $FE['ExtensionsCopyData'] = '';
             foreach ([
                 ['Lib' => 'pcre', 'Name' => 'PCRE'],
                 ['Lib' => 'curl', 'Name' => 'cURL'],
@@ -780,12 +781,18 @@ class FrontEnd
             ] as $ThisExtension) {
                 if (extension_loaded($ThisExtension['Lib'])) {
                     $ExtensionVersion = (new \ReflectionExtension($ThisExtension['Lib']))->getVersion();
-                    $ThisResponse = '<span class="txtGn">' . $this->Loader->L10N->getString('response_yes') . ' (' . $ExtensionVersion . ')';
+                    $ThisResponse = $this->Loader->L10N->getString('response_yes') . ' (' . $ExtensionVersion . ')';
                     if (!empty($ThisExtension['Drivers'])) {
                         $ThisResponse .= ', {' . implode(', ', $ThisExtension['Drivers']) . '}';
                     }
-                    $ThisResponse .= '</span>';
+                    $FE['ExtensionsCopyData'] .= $this->ltrInRtf(
+                        sprintf('- %1$s➡%2$s\n', $ThisExtension['Name'], $ThisResponse)
+                    );
+                    $ThisResponse = '<span class="txtGn">' . $ThisResponse . '</span>';
                 } else {
+                    $FE['ExtensionsCopyData'] .= $this->ltrInRtf(
+                        sprintf('- %1$s➡%2$s\n', $ThisExtension['Name'], $this->Loader->L10N->getString('response_no'))
+                    );
                     $ThisResponse = '<span class="txtRd">' . $this->Loader->L10N->getString('response_no') . '</span>';
                 }
                 $FE['Extensions'][] = '    <li><small>' . $this->ltrInRtf(sprintf(
@@ -797,6 +804,29 @@ class FrontEnd
             $FE['Extensions'] = implode("\n", $FE['Extensions']);
             $FE['ExtensionIsAvailable'] = $this->ltrInRtf($this->Loader->L10N->getString('label_extension') . '➡' . $this->Loader->L10N->getString('label_installed_available'));
             unset($ExtensionVersion, $ThisResponse, $ThisExtension);
+
+            /** Build clipboard data. */
+            $FE['HomeCopyData'] = sprintf(
+                '%1$s\n\n- %2$s %3$s\n- %4$s %5$s\n- %6$s %7$s\n- %8$s %9$s\n\n- %10$s %11$s\n- %4$s %12$s\n- %6$s %13$s\n- %8$s %14$s\n- %15$s %16$s\n\n%17$s\n%18$s',
+                $this->Loader->L10N->getString('label_sysinfo'),
+                $this->Loader->L10N->getString('label_phpmussel'),
+                $FE['ScriptVersion'],
+                $this->Loader->L10N->getString('label_branch'),
+                $FE['info_phpmussel_branch'],
+                $this->Loader->L10N->getString('label_stable'),
+                $FE['info_phpmussel_stable'],
+                $this->Loader->L10N->getString('label_unstable'),
+                $FE['info_phpmussel_unstable'],
+                $this->Loader->L10N->getString('label_php'),
+                $FE['info_php'],
+                $FE['info_php_branch'],
+                $FE['info_php_stable'],
+                $FE['info_php_unstable'],
+                $this->Loader->L10N->getString('label_sapi'),
+                $FE['info_sapi'],
+                $FE['ExtensionIsAvailable'],
+                $FE['ExtensionsCopyData']
+            );
 
             /** Parse output. */
             $FE['FE_Content'] = $this->Loader->parse(
@@ -1589,12 +1619,10 @@ class FrontEnd
             }
 
             /** Statistics have been counted since... */
-            $FE['Other-Since'] = '<span class="s">' . (
-                empty($this->Loader->InstanceCache['Statistics']['Other-Since']) ? '-' : $this->Loader->timeFormat(
-                    $this->Loader->InstanceCache['Statistics']['Other-Since'],
-                    $this->Loader->Configuration['core']['time_format']
-                )
-            ) . '</span>';
+            $FE['Other-Since'] = empty($this->Loader->InstanceCache['Statistics']['Other-Since']) ? '-' : $this->Loader->timeFormat(
+                $this->Loader->InstanceCache['Statistics']['Other-Since'],
+                $this->Loader->Configuration['core']['time_format']
+            );
 
             /** Fetch and process various statistics. */
             foreach ([
@@ -1609,22 +1637,21 @@ class FrontEnd
                 'API-Scanned',
                 'API-Flagged'
             ] as $TheseStats) {
-                $FE[$TheseStats] = '<span class="s">' . $this->NumberFormatter->format(
+                $FE[$TheseStats] = $this->NumberFormatter->format(
                     $this->Loader->InstanceCache['Statistics'][$TheseStats] ?? 0
-                ) . '</span>';
+                );
             }
 
             /** Active signature files. */
             if (empty($this->Loader->Configuration['signatures']['active'])) {
-                $FE['Other-Active'] = '<span class="txtRd">' . $this->NumberFormatter->format(0) . '</span>';
+                $FE['Other-Active'] = $this->NumberFormatter->format(0);
+                $FE['Class-Active'] = 'txtRd';
             } else {
                 $FE['Other-Active'] = count(array_unique(array_filter(explode(',', $this->Loader->Configuration['signatures']['active']), function ($Item) {
                     return !empty($Item);
                 })));
-                $StatColour = $FE['Other-Active'] ? 'txtGn' : 'txtRd';
-                $FE['Other-Active'] = '<span class="' . $StatColour . '">' . $this->NumberFormatter->format(
-                    $FE['Other-Active']
-                ) . '</span>';
+                $FE['Other-Active'] = $this->NumberFormatter->format($FE['Other-Active']);
+                $FE['Class-Active'] = $FE['Other-Active'] ? 'txtGn' : 'txtRd';
             }
 
             /** Parse output. */

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bangla language data (last modified: 2020.07.16).
+# This file: Bangla language data (last modified: 2020.10.06).
 ##/
 
 config_core: "সাধারণ কনফিগারেশন (অন্য কোনও বিভাগের অন্তর্ভুক্ত নয় এমন কোনও কনফিগারেশন)।"
@@ -178,6 +178,7 @@ link_accounts: "অ্যাকাউন্ট"
 link_cache_data: "ক্যাশ ডেটা"
 link_chat: "চ্যাট"
 link_config: "কনফিগারেশন"
+link_copy_to_clipboard: "ক্লিপবোর্ডে অনুলিপি করুন"
 link_documentation: "ডকুমেন্টেশনটি"
 link_home: "হোম পেজ"
 link_log_out: "প্রস্থান"

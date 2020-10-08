@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data (last modified: 2020.07.16).
+# This file: German language data (last modified: 2020.10.06).
 ##/
 
 config_core: "Allgemeine Konfiguration (jede Kernkonfiguration, die nicht zu anderen Kategorien gehört)."
@@ -180,6 +180,7 @@ link_accounts: "Konten"
 link_cache_data: "Datencache"
 link_chat: "Chat"
 link_config: "Konfiguration"
+link_copy_to_clipboard: "In die Zwischenablage kopieren"
 link_documentation: "Dokumentation"
 link_home: "Startseite"
 link_log_out: "Ausloggen"

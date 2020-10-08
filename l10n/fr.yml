@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2020.07.16).
+# This file: French language data (last modified: 2020.10.06).
 ##/
 
 config_core: "Configuration générale (toute configuration de base n'appartenant pas à d'autres catégories)."
@@ -180,6 +180,7 @@ link_accounts: "Comptes"
 link_cache_data: "Données de Cache"
 link_chat: "Tchat"
 link_config: "Configuration"
+link_copy_to_clipboard: "Copier dans le presse-papier"
 link_documentation: "Documentation"
 link_home: "Page d'Accueil"
 link_log_out: "Déconnecter"

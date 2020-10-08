@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2020.07.16).
+# This file: Italian language data (last modified: 2020.10.06).
 ##/
 
 config_core: "Configurazione generale (qualsiasi configurazione di base non appartenente ad altre categorie)."
@@ -178,6 +178,7 @@ link_accounts: "Utenti"
 link_cache_data: "Dati della Cache"
 link_chat: "Chat"
 link_config: "Configurazione"
+link_copy_to_clipboard: "Copia negli appunti"
 link_documentation: "Documentazione"
 link_home: "Pagina Principale"
 link_log_out: "Disconnettersi"

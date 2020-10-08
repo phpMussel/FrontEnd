@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Russian language data (last modified: 2020.07.18).
+# This file: Russian language data (last modified: 2020.10.06).
 ##/
 
 config_core: "Общая конфигурация (любая конфигурация ядра, не относящаяся к другим категориям)."
@@ -181,6 +181,7 @@ link_accounts: "Аккаунта"
 link_cache_data: "Данные Кэша"
 link_chat: "Чат"
 link_config: "Конфигурация"
+link_copy_to_clipboard: "Скопировать в буфер обмена"
 link_documentation: "Документация"
 link_home: "Домашняя Страница"
 link_log_out: "Выйдите"

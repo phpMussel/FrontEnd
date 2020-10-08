@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese language data (last modified: 2020.07.16).
+# This file: Portuguese language data (last modified: 2020.10.06).
 ##/
 
 config_core: "Configuração geral (qualquer configuração principal que não pertença a outras categorias)."
@@ -180,6 +180,7 @@ link_accounts: "Contas"
 link_cache_data: "Dados de Cache"
 link_chat: "Bate-papo"
 link_config: "Configuração"
+link_copy_to_clipboard: "Copiar para área de transferência"
 link_documentation: "Documentação"
 link_home: "Página Principal"
 link_log_out: "Sair"
