@@ -11,3 +11,5 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 [2020.08.04; Maikuolan]: Addressed a potential compatibility problem with installations where PHP has its output proxied through to a different host. Also slightly improved the aesthetics of the front-end, and changed the logout link to a logout button.
 
 [2020.10.08; Maikuolan]: Added some 'copy to clipboard' buttons to the homepage and statistics page.
+
+[2020.10.09; Maikuolan]: Aesthetic patch + added a new theme.
