@@ -9,12 +9,12 @@ code{font-family:SFMono-Regular,Consolas,"Liberation Mono",Menlo,monospace;font-
 img.ico{width:16px;height:16px;border:0}
 label{font-weight:600}
 table,.spanner{width:100%}
-textarea.half{height:75px}
 textarea{height:150px}
+textarea.half{height:75px}
 a:link,a:visited,a:active,a:focus{color:#fc0;text-decoration:none}
 a:hover{color:#fc0;text-decoration:underline}
 .ng2 a,.h2 a,.h2f a,.h4 a,.h4f a{filter:brightness(.5)}
-.cat,.exp,.bNav,.gen,.nav,.s,.tip,.txtGn,.txtOe,.txtRd,.spanner,a,textarea{font-weight:700}
+.cat,.exp,.bNav,.gen,.nav,.s,.tip,.txtGn,.txtOe,.txtRd,.spanner,a{font-weight:700}
 .bNav,.gen,.spanner{text-align:{FE_Align_Reverse}}
 .bNav{height:64px}
 .ci,.co,.gen,.center{margin:auto}
@@ -45,6 +45,9 @@ code{background-color:rgba(255,153,102,0.3)}
 .txtGn{color:#595}
 .txtOe{color:#f95}
 .txtRd{color:#955}
+code.txtGn{color:#7c7}
+code.txtOe{color:#fc7}
+code.txtRd{color:#c77}
 .ufts{width:220px}
 @keyframes idxAn{0%{background:rgba(255,153,102,1)}100%{background:rgba(255,153,102,0.5)}}
 @keyframes UplT{0%{opacity:0.0}100%{opacity:1.0}}

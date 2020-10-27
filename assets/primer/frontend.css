@@ -8,14 +8,14 @@ code{font-family:SFMono-Regular,Consolas,"Liberation Mono",Menlo,monospace;font-
 img.ico{width:16px;height:16px;border:0}
 label{font-weight:600}
 table,.spanner{width:100%}
-textarea.half{height:75px}
 textarea{height:150px}
+textarea.half{height:75px}
 a:active,a:hover{outline-width:0}
 a:link,a:visited{color:#0366d6;text-decoration:none}
 a:hover{text-decoration:underline;color:#f64}
 a:active,a:focus{color:#cb2431}
 .ng2 a,.h2 a,.h2f a,.h4 a,.h4f a{filter:brightness(.5)}
-.cat,.exp,.bNav,.gen,.nav,.s,.tip,.txtGn,.txtOe,.txtRd,.spanner,a,textarea{font-weight:700}
+.cat,.exp,.bNav,.gen,.nav,.s,.tip,.txtGn,.txtOe,.txtRd,.spanner,a{font-weight:700}
 .bNav,.gen,.spanner{text-align:{FE_Align_Reverse}}
 .bNav{height:64px}
 .ci,.co,.gen,.center{margin:auto}
