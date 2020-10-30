@@ -13,3 +13,7 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 [2020.10.08; Maikuolan]: Added some 'copy to clipboard' buttons to the homepage and statistics page.
 
 [2020.10.09; Maikuolan]: Aesthetic patch + added a new theme.
+
+### v3.1.0
+
+[2020.10.30; Maikuolan]: Redesigned the login pips and refactored some CSS.
