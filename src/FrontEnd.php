@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2020.10.26).
+ * This file: Front-end handler (last modified: 2020.10.30).
  */
 
 namespace phpMussel\FrontEnd;
@@ -35,6 +35,11 @@ class FrontEnd
      * @var string The path to the front-end asset files.
      */
     private $AssetsPath = __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'assets' . DIRECTORY_SEPARATOR;
+
+    /**
+     * @var string A path for any custom front-end asset files.
+     */
+    public $CustomAssetsPath = '';
 
     /**
      * @var string The path to the front-end L10N files.
@@ -131,6 +136,7 @@ class FrontEnd
      * Construct the loader.
      *
      * @param \phpMussel\Core\Loader $Loader The instantiated loader object, passed by reference.
+     * @param \phpMussel\Core\Scanner $Scanner The instantiated scanner object, passed by reference.
      */
     public function __construct(\phpMussel\Core\Loader &$Loader, \phpMussel\Core\Scanner &$Scanner)
     {
@@ -1680,7 +1686,7 @@ class FrontEnd
             );
 
             /** Initialise array for fetching logs data. */
-            $FE['LogFiles'] = ['Files' => $this->logsRecursiveList($this->AssetsPath), 'Out' => ''];
+            $FE['LogFiles'] = ['Files' => $this->logsRecursiveList(), 'Out' => ''];
 
             /** Text mode switch link base. */
             $FE['TextModeSwitchLink'] = '';
@@ -1846,6 +1852,14 @@ class FrontEnd
         /** Guard against unsafe paths. */
         if (preg_match('~[^\da-z._]~i', $Asset)) {
             return '';
+        }
+
+        /** Custom assets. */
+        if ($this->CustomAssetsPath) {
+            $Try = $this->Loader->buildPath($this->CustomAssetsPath . DIRECTORY_SEPARATOR . $Asset);
+            if (is_readable($Try)) {
+                return $Try;
+            }
         }
 
         /** Non-default assets. */
