@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2020.11.20).
+ * This file: Front-end handler (last modified: 2020.11.27).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1020,7 +1020,9 @@ class FrontEnd
             /** Generate entries for display and regenerate configuration if any changes were submitted. */
             $FE['ConfigFields'] = sprintf(
                 '<style>.showlink::before,.hidelink::before{content:"➖";display:inline-block;margin-%1$s:6px}.hidelink::before{transform:rotate(%2$s)}</style>',
-            $FE['FE_Align_Reverse'], $FE['45deg']);
+                $FE['FE_Align_Reverse'],
+                $FE['45deg']
+            );
 
             /** Iterate through configuration defaults. */
             foreach ($this->Loader->ConfigurationDefaults as $CatKey => $CatValue) {
@@ -1035,7 +1037,10 @@ class FrontEnd
                     '<a class="showlink" id="%1$s-showlink" href="#%1$s-container" onclick="javascript:showid(\'%1$s-hidelink\');hideid(\'%1$s-showlink\');show(\'%1$s-row\')">%1$s</a>' .
                     '<a class="hidelink" id="%1$s-hidelink" %2$s href="#" onclick="javascript:showid(\'%1$s-showlink\');hideid(\'%1$s-hidelink\');hide(\'%1$s-row\')">%1$s</a>' .
                     "%3\$s</div></td></tr></table>\n<span class=\"%1\$s-row\" %2\$s><table>\n",
-                $CatKey, 'style="display:none"', $CatInfo);
+                    $CatKey,
+                    'style="display:none"',
+                    $CatInfo
+                );
                 $CatData = '';
                 foreach ($CatValue as $DirKey => $DirValue) {
                     $ThisDir = ['Preview' => '', 'Trigger' => '', 'FieldOut' => '', 'CatKey' => $CatKey];
@@ -1048,7 +1053,10 @@ class FrontEnd
                     $ThisDir['Friendly'] = $this->Loader->L10N->getString($ThisDir['DirLangKey'] . '_label') ?: $DirKey;
                     $CatData .= sprintf(
                         '<li><a onclick="javascript:showid(\'%1$s-hidelink\');hideid(\'%1$s-showlink\');show(\'%1$s-row\')" href="#%2$s">%3$s</a></li>',
-                    $CatKey, $ThisDir['DirLangKey'], $ThisDir['Friendly']);
+                        $CatKey,
+                        $ThisDir['DirLangKey'],
+                        $ThisDir['Friendly']
+                    );
                     $ThisDir['DirLang'] =
                         $this->Loader->L10N->getString($ThisDir['DirLangKey']) ?:
                         $this->Loader->L10N->getString('config_' . $CatKey) ?:
@@ -1104,7 +1112,7 @@ class FrontEnd
                         $ThisDir['Trigger'] = ' onchange="javascript:' . $ThisDir['DirLangKey'] . '_function();" onkeyup="javascript:' . $ThisDir['DirLangKey'] . '_function();"';
                         if ($DirValue['preview'] === 'kb') {
                             $ThisDir['Preview'] .= sprintf(
-                                    '<script type="text/javascript">function %1$s_function(){var e=%7$s?%7$s(' .
+                                '<script type="text/javascript">function %1$s_function(){var e=%7$s?%7$s(' .
                                     '\'%1$s_field\').value:%8$s&&!%7$s?%8$s.%1$s_field.value:\'\',z=e.replace' .
                                     '(/o$/i,\'b\').substr(-2).toLowerCase(),y=\'kb\'==z?1:\'mb\'==z?1024:\'gb' .
                                     '\'==z?1048576:\'tb\'==z?1073741824:\'b\'==e.substr(-1)?.0009765625:1,e=e' .
@@ -1125,7 +1133,7 @@ class FrontEnd
                             );
                         } elseif ($DirValue['preview'] === 'seconds') {
                             $ThisDir['Preview'] .= sprintf(
-                                    '<script type="text/javascript">function %1$s_function(){var t=%9$s?%9$s(' .
+                                '<script type="text/javascript">function %1$s_function(){var t=%9$s?%9$s(' .
                                     '\'%1$s_field\').value:%10$s&&!%9$s?%10$s.%1$s_field.value:\'\',e=isNaN(t' .
                                     ')?0:0>t?t*-1:t,n=e?Math.floor(e/31536e3):0,e=e?e-31536e3*n:0,o=e?Math.fl' .
                                     'oor(e/2592e3):0,e=e-2592e3*o,l=e?Math.floor(e/604800):0,e=e-604800*l,r=e' .
@@ -1149,7 +1157,7 @@ class FrontEnd
                             );
                         } elseif ($DirValue['preview'] === 'minutes') {
                             $ThisDir['Preview'] .= sprintf(
-                                    '<script type="text/javascript">function %1$s_function(){var t=%9$s?%9$s(' .
+                                '<script type="text/javascript">function %1$s_function(){var t=%9$s?%9$s(' .
                                     '\'%1$s_field\').value:%10$s&&!%9$s?%10$s.%1$s_field.value:\'\',e=isNaN(t' .
                                     ')?0:0>t?t*-1:t,n=e?Math.floor(e/525600):0,e=e?e-525600*n:0,o=e?Math.floo' .
                                     'r(e/43200):0,e=e-43200*o,l=e?Math.floor(e/10080):0,e=e-10080*l,r=e?Math.' .
@@ -1173,7 +1181,7 @@ class FrontEnd
                             );
                         } elseif ($DirValue['preview'] === 'hours') {
                             $ThisDir['Preview'] .= sprintf(
-                                    '<script type="text/javascript">function %1$s_function(){var t=%9$s?%9$s(' .
+                                '<script type="text/javascript">function %1$s_function(){var t=%9$s?%9$s(' .
                                     '\'%1$s_field\').value:%10$s&&!%9$s?%10$s.%1$s_field.value:\'\',e=isNaN(t' .
                                     ')?0:0>t?t*-1:t,n=e?Math.floor(e/8760):0,e=e?e-8760*n:0,o=e?Math.floor(e/' .
                                     '720):0,e=e-720*o,l=e?Math.floor(e/168):0,e=e-168*l,r=e?Math.floor(e/24):' .
@@ -1196,7 +1204,7 @@ class FrontEnd
                             );
                         } elseif ($DirValue['preview'] === 'allow_other') {
                             $ThisDir['Preview'] .= sprintf(
-                                    '<script type="text/javascript">function %1$s_function(){var e=%2$s?%2$s(' .
+                                '<script type="text/javascript">function %1$s_function(){var e=%2$s?%2$s(' .
                                     '\'%1$s_field\').value:%3$s&&!%2$s?%3$s.%1$s_field.value:\'\';e==\'Other\'' .
                                     '?showid(\'%4$s_field\'):hideid(\'%4$s_field\')};%1$s_function();</script>',
                                 $ThisDir['DirLangKey'],
@@ -1268,7 +1276,7 @@ class FrontEnd
                         }
                     } elseif ($DirValue['type'] === 'bool') {
                         $ThisDir['FieldOut'] = sprintf(
-                                '<select class="auto" name="%1$s" id="%1$s_field"%2$s>' .
+                            '<select class="auto" name="%1$s" id="%1$s_field"%2$s>' .
                                 '<option value="true"%5$s>%3$s</option><option value="false"%6$s>%4$s</option>' .
                                 '</select>',
                             $ThisDir['DirLangKey'],
@@ -1473,14 +1481,12 @@ class FrontEnd
             ) {
                 /** Delete a file. */
                 if ($_POST['do'] === 'delete-file') {
-
                     $FE['state_msg'] .= '<code>' . $_POST['qfu'] . '</code> ' . $this->Loader->L10N->getString(
                         unlink($this->Loader->QuarantinePath . $_POST['qfu']) ? 'response_file_deleted' : 'response_failed_to_delete'
                     ) . '<br />';
 
                 /** Download or restore a file. */
                 } elseif ($_POST['do'] === 'download-file' || $_POST['do'] === 'restore-file') {
-
                     if (empty($_POST['qkey'])) {
                         $FE['state_msg'] .= '<code>' . $_POST['qfu'] . '</code> ' . $this->Loader->L10N->getString('response_restore_error_2') . '<br />';
                     } else {
@@ -1713,9 +1719,13 @@ class FrontEnd
                     $FE['logfileData'] = $this->Loader->readFileBlocks($this->QueryVariables['logfile']);
                 }
                 $FE['logfileData'] = $TextMode ? str_replace(
-                    ['<', '>', "\r", "\n"], ['&lt;', '&gt;', '', "<br />\n"], $FE['logfileData']
+                    ['<', '>', "\r", "\n"],
+                    ['&lt;', '&gt;', '', "<br />\n"],
+                    $FE['logfileData']
                 ) : str_replace(
-                    ['<', '>', "\r"], ['&lt;', '&gt;', ''], $FE['logfileData']
+                    ['<', '>', "\r"],
+                    ['&lt;', '&gt;', ''],
+                    $FE['logfileData']
                 );
                 $FE['mod_class_nav'] = ' big';
                 $FE['mod_class_right'] = ' extend';
