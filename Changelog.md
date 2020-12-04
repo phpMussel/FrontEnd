@@ -21,3 +21,5 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 [2020.10.30; New Feature; Maikuolan]: Added the ability to specify a custom assets path to the instantiated FrontEnd object.
 
 [2020.11.27; Maikuolan]: Some minor code-style cleanup.
+
+[2020.12.04; Maikuolan]: Maintenance release (dependencies update, repository cleanup, etc).
