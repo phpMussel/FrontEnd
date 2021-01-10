@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2020.12.03).
+ * This file: Front-end handler (last modified: 2021.01.10).
  */
 
 namespace phpMussel\FrontEnd;
@@ -691,7 +691,7 @@ class FrontEnd
 
             /** Fetch remote phpMussel version information and cache it if necessary. */
             if (!($RemoteYAMLphpMussel = $this->Loader->Cache->getEntry('phpmussel-ver.yaml'))) {
-                $RemoteYAMLphpMussel = $this->Loader->request($RemoteVerPath . 'phpmussel-ver.yaml', [], 8);
+                $RemoteYAMLphpMussel = $this->Loader->Request->request($RemoteVerPath . 'phpmussel-ver.yaml', [], 8);
                 $this->Loader->Cache->setEntry('phpmussel-ver.yaml', $RemoteYAMLphpMussel ?: '-', 86400);
             }
 
@@ -731,7 +731,7 @@ class FrontEnd
 
             /** Fetch remote PHP version information and cache it if necessary. */
             if (!($RemoteYamlPHP = $this->Loader->Cache->getEntry('php-ver.yaml'))) {
-                $RemoteYamlPHP = $this->Loader->request($RemoteVerPath . 'php-ver.yaml', [], 8);
+                $RemoteYamlPHP = $this->Loader->Request->request($RemoteVerPath . 'php-ver.yaml', [], 8);
                 $this->Loader->Cache->setEntry('php-ver.yaml', $RemoteYamlPHP ?: '-', 86400);
             }
 
@@ -1245,7 +1245,7 @@ class FrontEnd
                                 $ThisDir['FieldOut'] .= sprintf(
                                     '<input type="checkbox" class="auto" name="%1$s" id="%1$s"%2$s /><label for="%1$s" class="s">%3$s</label><br />',
                                     $ThisDir['DirLangKey'] . '_' . $ChoiceKey,
-                                    $this->Loader->inCsv($ChoiceKey, $this->Loader->Configuration[$CatKey][$DirKey]) ? ' checked' : '',
+                                    $this->Loader->Request->inCsv($ChoiceKey, $this->Loader->Configuration[$CatKey][$DirKey]) ? ' checked' : '',
                                     $ChoiceValue
                                 );
                             } else {
