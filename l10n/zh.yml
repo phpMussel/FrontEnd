@@ -7,10 +7,11 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (simplified) language data (last modified: 2020.10.06).
+# This file: Chinese (simplified) language data (last modified: 2021.02.05).
 ##/
 
 config_core: "基本配置（任何不属于其他类别的核心配置）。"
+config_core_default_timeout: "用于外部请求的默认超时？ 标准 = 12秒。"
 config_core_delete_on_sight: "激活的这个指令将指示脚本马上删除任何扫描文件上传匹配任何检测标准，​是否通过签名或任何事其他。​文件已确定是清洁将会忽略。​如果是存档，​全存档将会删除，​不管如果违规文件是只有一个的几个文件包含在存档。​为文件上传扫描，​按说，​它不必要为您激活这个指令，​因为按说，​PHP将自动清洗内容的它的缓存当执行是完，​意思它将按说删除任何文件上传从它向服务器如果不已移动，​复制或删除。​这个指令是添加这里为额外安全为任何人谁的PHP副本可能不始终表现在预期方式。​False【假/负】：之后扫描，​忽略文件【标准】，​True【真/正】：之后扫描，​如果不清洁，​马上删除。"
 config_core_disabled_channels: "这可用于防止phpMussel在发送请求时使用特定通道（例如，在更新时，在获取组件元数据时，等等）。"
 config_core_error_log: "用于记录检测到的任何非致命错误的文件。​指定一个文件名，​或留空以禁用。"

@@ -7,10 +7,11 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2020.10.06).
+# This file: Latvian language data (last modified: 2021.02.05).
 ##/
 
 config_core: "Vispārējā konfigurācija (jebkura pamata konfigurācija, kas nepieder citām kategorijām)."
+config_core_default_timeout: "Kādu noklusējuma taimautu izmantot ārējiem pieprasījumiem? Noklusējuma = 12 sekundes."
 config_core_delete_on_sight: "Enabling this directive will instruct the script to attempt to immediately delete any scanned attempted file upload matching any detection criteria, whether via signatures or otherwise. Files determined to be "clean" won't be touched. In the case of archives, the entire archive will be deleted, regardless of whether or not the offending file is only one of several files contained within the archive. For the case of file upload scanning, usually, it isn't necessary to enable this directive, because usually, PHP will automatically purge the contents of its cache when execution has finished, meaning it'll usually delete any files uploaded through it to the server unless they've been moved, copied or deleted already. This directive is added here as an extra measure of security for those whose copies of PHP mightn't always behave in the manner expected. False (Nepatiess) = After scanning, leave the file alone [Noklusējuma]; True (Patiess) = After scanning, if not clean, delete immediately."
 config_core_disabled_channels: "To var izmantot, lai neļautu phpMussel izmantot noteiktus kanālus nosūtot pieprasījumus (piemēram, atjauninot, ienesot komponentu metadatus, utt)."
 config_core_error_log: "Fails reģistrēšanai visas atklātās kļūdas, kas nav fatālas. Norādiet faila nosaukumu, vai atstājiet tukšu, lai to atspējotu."
