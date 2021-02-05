@@ -98,3 +98,4 @@ input:not([type=submit]):not([type=reset]):not([type=button]){border:none;height
 textarea{border:none}
 select,input[type=submit],input[type=reset],input[type=button]{height:20px;padding-top:0;padding-bottom:0}
 #pgrad{width:16px;height:16px;display:inline-block;border-radius:16px;filter:blur(2px)}
+td code~input{vertical-align:middle}
