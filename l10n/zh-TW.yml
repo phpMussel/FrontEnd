@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (traditional) language data (last modified: 2021.02.05).
+# This file: Chinese (traditional) language data (last modified: 2021.02.07).
 ##/
 
 config_core: "基本配置（任何不屬於其他類別的核心配置）。"
@@ -15,6 +15,7 @@ config_core_default_timeout: "用於外部請求的默認超時？ 標準 = 12�
 config_core_delete_on_sight: "激活的這個指令將指示腳本馬上刪除任何掃描文件上傳匹配任何檢測標準，​是否通過簽名或任何事其他。​文件已確定是清潔將會忽略。​如果是存檔，​全存檔將會刪除，​不管如果違規文件是只有一個的幾個文件包含在存檔。​為文件上傳掃描，​按說，​它不必要為您激活這個指令，​因為按說，​PHP將自動清洗內容的它的緩存當執行是完，​意思它將按說刪除任何文件上傳從它向服務器如果不已移動，​複製或刪除。​這個指令是添加這里為額外安全為任何人誰的PHP副本可能不始終表現在預期方式。​False【假/負】：之後掃描，​忽略文件【標準】，​True【真/正】：之後掃描，​如果不清潔，​馬上刪除。"
 config_core_disabled_channels: "這可用於防止phpMussel在發送請求時使用特定通道（例如，在更新時，在獲取組件元數據時，等等）。"
 config_core_error_log: "用於記錄檢測到的任何非致命錯誤的文件。​指定一個文件名，​或留空以禁用。"
+config_core_hide_version: "從日誌和頁面輸出中隱藏版本信息嗎？​True（真）=關閉；False（假）=不關閉【標準】。"
 config_core_ipaddr: "在哪裡可以找到連接請求IP地址？​（可以使用為服務例如Cloudflare和類似）。​標準 = REMOTE_ADDR。​警告：不要修改此除非您知道什麼您做著！"
 config_core_lang: "指定標準phpMussel語言。"
 config_core_lang_override: "盡可能根據HTTP_ACCEPT_LANGUAGE進行本地化？True（真）=進行本地化【標準】；False（假）=不要本地化。"

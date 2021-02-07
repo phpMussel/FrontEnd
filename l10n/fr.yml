@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2021.02.05).
+# This file: French language data (last modified: 2021.02.07).
 ##/
 
 config_core: "Configuration générale (toute configuration de base n'appartenant pas à d'autres catégories)."
@@ -15,6 +15,7 @@ config_core_default_timeout: "Délai d'attente par défaut à utiliser pour les 
 config_core_delete_on_sight: "Mise en cette option sera instruire le script à tenter immédiatement supprimer tout fichiers elle constate au cours de son analyse correspondant à des critères de détection, que ce soit via des signatures ou autrement. Fichiers jugées propre ne seront pas touchés. Dans le cas des archives, l'ensemble d'archive sera supprimé (indépendamment de si le incriminé fichier est que l'un de plusieurs fichiers contenus dans l'archive). Pour le cas d'analyse de fichiers téléchargement, généralement, il n'est pas nécessaire d'activer cette option sur, parce généralement, PHP faire purger automatiquement les contenus de son cache lorsque l'exécution est terminée, ce qui signifie que il va généralement supprimer tous les fichiers téléchargés à travers elle au serveur sauf qu'ils ont déménagé, copié ou supprimé déjà. L'option est ajoutée ici comme une supplémentaire mesure de sécurité pour ceux dont copies de PHP peut pas toujours se comporter de la manière attendu. False = Après l'analyse, laissez le fichier tel quel [Défaut] ; True = Après l'analyse, si pas propre, supprimer immédiatement."
 config_core_disabled_channels: "Ceci peut être utilisé pour empêcher phpMussel d'utiliser des canaux particuliers lors de l'envoi de requêtes (par exemple, lors de la mise à jour, lors de l'extraction de métadonnées de composant, etc)."
 config_core_error_log: "Un fichier pour l'enregistrement des erreurs non fatales détectées. Spécifier un fichier, ou laisser vide à désactiver."
+config_core_hide_version: "Masquer les informations de version à partir des journaux et de la sortie de la page ? True = Oui ; False = Non [Défaut]."
 config_core_ipaddr: "Où trouver l'adresse IP de requêtes ? (Utile pour services tels que Cloudflare et similaires) Par Défaut = REMOTE_ADDR. AVERTISSEMENT : Ne pas changer si vous ne sais pas ce que vous faites !"
 config_core_lang: "Spécifiez la langue défaut pour phpMussel."
 config_core_lang_override: "Localiser selon HTTP_ACCEPT_LANGUAGE autant que possible ? True = Oui [Défaut] ; False = Non."

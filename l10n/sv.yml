@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2021.02.05).
+# This file: Swedish language data (last modified: 2021.02.07).
 ##/
 
 config_core: "Allmän konfiguration (alla kärnkonfigurationer som inte tillhör andra kategorier)."
@@ -15,6 +15,7 @@ config_core_default_timeout: "Standard timeout att använda för externa förfr�
 config_core_delete_on_sight: "Aktivering av detta direktiv kommer att instruera skriptet att omedelbart ta bort alla skannade filuppladdningar som överensstämmer med upptäcktskriterier, oavsett om det är signaturer eller på annat sätt. Filer som fastställts för att vara "rena" kommer inte att beröras. När det gäller arkiv kommer hela arkivet att raderas, oavsett om den kränkande filen endast är en av flera filer som finns i arkivet. För skanning av filuppladdning är det vanligtvis inte nödvändigt att aktivera detta direktiv, för vanligtvis PHP rensar automatiskt innehållet i sin cache när körningen är klar, vilket betyder att det vanligtvis raderar alla filer som laddats upp via den till servern om de inte redan har flyttats, kopierats eller raderats. Detta direktiv läggs till här som ett extra mått på säkerhet för dem vars kopior av PHP inte alltid kan bete sig på det förväntade sättet. False = Efter skanning, lämnar filen ensam [Standard]; True = Ta bort omedelbart efter skanning, om inte ren."
 config_core_disabled_channels: "Detta kan användas för att förhindra att phpMussel använder särskilda kanaler när man skickar förfrågningar (t.ex., när man uppdaterar, när man hämtar komponentmetadata, osv)."
 config_core_error_log: "En fil för att logga eventuella icke-dödliga fel som upptäcks. Ange ett filnamn, eller lämna tomt för att inaktivera."
+config_core_hide_version: "Dölj versionsinformation från loggar och sidoutgång? True = Ja; False = Nej [Standard]."
 config_core_ipaddr: "Var hittar du IP-adressen för anslutningsförfrågningar? (Användbar för tjänster som Cloudflare och liknande). Standard = REMOTE_ADDR. VARNING: Ändra inte detta om du inte vet vad du gör!"
 config_core_lang: "Ange standardspråk för phpMussel."
 config_core_lang_override: "Lokalisera enligt HTTP_ACCEPT_LANGUAGE när det är möjligt? True = Ja [Standard]; False = Nej."
