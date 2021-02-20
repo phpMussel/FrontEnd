@@ -33,3 +33,5 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 [2021.02.05; Maikuolan]: The preview text next to the input fields on the configuration page didn't quite align properly; Fixed.
 
 [2021.02.07; Maikuolan]: Added the ability to hide the phpMussel version used.
+
+[2021.02.20; Maikuolan]: Sync common classes package.
