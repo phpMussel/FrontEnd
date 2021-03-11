@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2021.01.10).
+ * This file: Front-end handler (last modified: 2021.03.11).
  */
 
 namespace phpMussel\FrontEnd;
@@ -206,8 +206,9 @@ class FrontEnd
      *
      * @param string $Page Which page to use (defers to that defined by the
      *      query when not supplied by the call).
+     * @return void
      */
-    public function view(string $Page = '')
+    public function view(string $Page = ''): void
     {
         /** Brute-force protection. */
         if ((
@@ -1781,8 +1782,9 @@ class FrontEnd
      * Format filesize information.
      *
      * @param int $Filesize
+     * @return void
      */
-    private function formatFilesize(int &$Filesize)
+    private function formatFilesize(int &$Filesize): void
     {
         $Scale = ['field_size_bytes', 'field_size_KB', 'field_size_MB', 'field_size_GB', 'field_size_TB'];
         $Iterate = 0;
@@ -1844,7 +1846,7 @@ class FrontEnd
      * @param string $ChoiceKey Hash algorithm.
      * @return bool Available/Unavailable.
      */
-    private function filterByDefined(string $ChoiceKey)
+    private function filterByDefined(string $ChoiceKey): bool
     {
         return defined($ChoiceKey);
     }
@@ -2005,8 +2007,9 @@ class FrontEnd
      * @param string $File Path to the file to be restored.
      * @param string $Key The quarantine key used to quarantine the file.
      * @return string|bool The content of the restored file, or false on failure.
+     * @return void
      */
-    private function quarantineRestore(string $File, string $Key)
+    private function quarantineRestore(string $File, string $Key): void
     {
         /** Set default value. */
         $this->InstanceCache['RestoreStatus'] = 1;
@@ -2060,8 +2063,9 @@ class FrontEnd
      * Normalise linebreaks.
      *
      * @param string $Data The data to normalise.
+     * @return void
      */
-    private function normaliseLinebreaks(string &$Data)
+    private function normaliseLinebreaks(string &$Data): void
     {
         if (strpos($Data, "\r")) {
             $Data = (strpos($Data, "\r\n") !== false) ? str_replace("\r", '', $Data) : str_replace("\r", "\n", $Data);
@@ -2073,8 +2077,9 @@ class FrontEnd
      *
      * @param string $InfoRows Where to populate rows.
      * @param string $SigInfoMenuOptions Where to populate menu options.
+     * @return void
      */
-    private function signatureInformationHandler(string &$InfoRows, string &$SigInfoMenuOptions)
+    private function signatureInformationHandler(string &$InfoRows, string &$SigInfoMenuOptions): void
     {
         /** Guard. */
         if (!$this->Loader->loadShorthandData()) {
@@ -2212,8 +2217,9 @@ class FrontEnd
      * @param string $Title The page title.
      * @param string $Tips The page "tip" to include ("Hello username! Here you can...").
      * @param bool $JS Whether to include the standard front-end JavaScript boilerplate.
+     * @return void
      */
-    private function initialPrepwork(array &$FE, string $Title = '', string $Tips = '', bool $JS = true)
+    private function initialPrepwork(array &$FE, string $Title = '', string $Tips = '', bool $JS = true): void
     {
         /** Set page title. */
         $FE['FE_Title'] = 'phpMussel – ' . $Title;
@@ -2266,8 +2272,9 @@ class FrontEnd
      * @param string $IPAddr The IP address triggering the log event.
      * @param string $User The user triggering the log event.
      * @param string $Message The message to be logged.
+     * @return void
      */
-    private function frontendLogger(string $IPAddr, string $User, string $Message)
+    private function frontendLogger(string $IPAddr, string $User, string $Message): void
     {
         /** Guard. */
         if (
@@ -2390,8 +2397,9 @@ class FrontEnd
      * Attempt to perform some simple formatting for the log data.
      *
      * @param string $In The log data to be formatted.
+     * @return void
      */
-    private function formatter(string &$In)
+    private function formatter(string &$In): void
     {
         if (strpos($In, "<br />\n") === false) {
             $In = '<div class="fW">' . $In . '</div>';
