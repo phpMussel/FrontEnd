@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2021.02.07).
+# This file: Italian language data (last modified: 2021.03.12).
 ##/
 
 config_core: "Configurazione generale (qualsiasi configurazione di base non appartenente ad altre categorie)."
@@ -60,7 +60,7 @@ config_files_only_allow_images: "Se impostato su true, tutti i file rilevati dal
 config_files_scannable_threshold: "Soglia per la lunghezza dei dati grezzi dove phpMussel è permesso di leggere e scansione (nel caso in cui vi siano notevoli problemi di prestazioni durante la scansione). Predefinito = 32MB. Un zero o un nullo valore disabilita la soglia. In generale, questo valore non dovrebbe essere meno quella media dimensione dei file che si desidera e si aspettano di ricevere al vostro server o al vostro web sito, non dovrebbe essere più di la filesize_limit direttiva, e non dovrebbe essere più di circa un quinto del totale ammissibile allocazione della memoria concesso al PHP tramite il file di configurazione "php.ini". Questa direttiva esiste per tenta di evitare avendo phpMussel utilizzare troppa memoria (di cui sarebbe impedirebbe di essere capace di completare la file scansione correttamente per i file piú d'una certa dimensione)."
 config_frontend: "Configurazione per il front-end."
 config_frontend_default_algo: "Definisce quale algoritmo da utilizzare per tutte le password e le sessioni in futuro. Opzioni: PASSWORD_DEFAULT (predefinito), PASSWORD_BCRYPT, PASSWORD_ARGON2I (richiede PHP &gt;= 7.2.0), PASSWORD_ARGON2ID (richiede PHP &gt;= 7.3.0)."
-config_frontend_frontend_log: "File per la registrazione di l'accesso front-end tentativi di accesso. Specificare un nome di file, o lasciare vuoto per disabilitare."
+config_frontend_frontend_log: "File per la registrazione di tentativi di accesso al front-end. Specificare un nome di file, o lasciare vuoto per disabilitare."
 config_frontend_magnification: "Ingrandimento del carattere. Predefinito = 1."
 config_frontend_max_login_attempts: "Numero massimo di tentativi di accesso al front-end. Predefinito = 5."
 config_frontend_numbers: "Come preferisci che i numeri siano visualizzati? Seleziona l'esempio che ti sembra più corretto."

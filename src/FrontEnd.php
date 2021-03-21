@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2021.03.11).
+ * This file: Front-end handler (last modified: 2021.03.19).
  */
 
 namespace phpMussel\FrontEnd;
@@ -2006,17 +2006,16 @@ class FrontEnd
      *
      * @param string $File Path to the file to be restored.
      * @param string $Key The quarantine key used to quarantine the file.
-     * @return string|bool The content of the restored file, or false on failure.
-     * @return void
+     * @return string The content of the restored file, or an empty string on failure.
      */
-    private function quarantineRestore(string $File, string $Key): void
+    private function quarantineRestore(string $File, string $Key): string
     {
         /** Set default value. */
         $this->InstanceCache['RestoreStatus'] = 1;
 
         /** Guard. */
         if (!$File || !$Key) {
-            return false;
+            return '';
         }
 
         /** Fetch data. */
@@ -2025,7 +2024,7 @@ class FrontEnd
         /** Fetch headers. */
         if (($HeadPos = strpos($Data, "\xa1phpMussel\x21")) === false || (substr($Data, $HeadPos + 31, 1) !== "\1")) {
             $this->InstanceCache['RestoreStatus'] = 2;
-            return false;
+            return '';
         }
 
         $Data = substr($Data, $HeadPos);
@@ -2053,10 +2052,10 @@ class FrontEnd
         $Output = gzinflate($Output);
         if (empty($Output) || hash('md5', $Output) !== $UploadMD5) {
             $this->InstanceCache['RestoreStatus'] = 3;
-            return false;
+            return '';
         }
         $this->InstanceCache['RestoreStatus'] = 0;
-        return $Output;
+        return (string)$Output;
     }
 
     /**
