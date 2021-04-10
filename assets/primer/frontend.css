@@ -60,7 +60,7 @@ select:hover,textarea:hover,input:hover{transition-duration:.1s;text-decoration:
 select,option,textarea,input{color:#000;background-color:#fff}
 input[type=button],input[type=submit]{color:#fff;background-color:#22863a}
 input[type=reset]{color:#fff;background-color:#cb2431}
-.big,.h1f,.h2f,.h3f,.h4f,.rf{white-space:nowrap}
+.h1f,.h2f,.h3f,.h4f,.rf{white-space:nowrap}
 @media only all and (max-width:640px) {
   .big,.dt{display:none}
   .mob{display:block}

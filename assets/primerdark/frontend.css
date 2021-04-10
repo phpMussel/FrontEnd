@@ -63,7 +63,7 @@ select:hover,textarea:hover,input:hover{transition-duration:.1s;text-decoration:
 select,option,textarea,input{color:#fff;background-color:#585960}
 input[type=button],input[type=submit]{color:#fff;background-color:#595}
 input[type=reset]{color:#fff;background-color:#955}
-.big,.h1f,.h2f,.h3f,.h4f,.rf{white-space:nowrap}
+.h1f,.h2f,.h3f,.h4f,.rf{white-space:nowrap}
 @media only all and (max-width:640px) {
   .big,.dt{display:none}
   .mob{display:block}
