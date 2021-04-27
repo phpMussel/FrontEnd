@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2021.02.07).
+# This file: Polish language data (last modified: 2021.04.27).
 ##/
 
 config_core: "Ogólna konfiguracja (dowolna konfiguracja podstawowa nienależąca do innych kategorii)."
@@ -270,7 +270,6 @@ tip_cache_data: "Witaj, {username}.<br />Tutaj możesz przejrzeć zawartość pa
 tip_config: "Witaj, {username}.<br />Strona konfiguracji pozwala modyfikować konfigurację phpMussel z interfejsu użytkownika."
 tip_fe_cookie_warning: "Uwaga: phpMussel wykorzystuje plik cookie do uwierzytelnienia logowania. Logując się, wyrażasz zgodę na utworzenie i przechowywanie plików cookie przez przeglądarkę."
 tip_home: "Witaj, {username}.<br />To jest strona główna interfejsu użytkownika phpMussel. Wybierz link z menu nawigacyjnego po lewej stronie, aby kontynuować."
-tip_login: "Domyślna nazwa użytkownika: <span class="txtRd">admin</span> – Domyślne hasło: <span class="txtRd">password</span>"
 tip_logs: "Witaj, {username}.<br />Wybierz plik dziennika z poniższej listy, aby wyświetlić zawartość tego pliku dziennika."
 tip_quarantine: "Witaj, {username}.<br />Ta strona zawiera listę wszystkich plików znajdujących się obecnie w kwarantannie i ułatwia zarządzanie tymi plikami."
 tip_quarantine_disabled: "Uwaga: Kwarantanna jest obecnie wyłączona, ale można ją włączyć za pomocą strony konfiguracji."

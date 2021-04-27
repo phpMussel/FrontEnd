@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2021.03.19).
+ * This file: Front-end handler (last modified: 2021.04.27).
  */
 
 namespace phpMussel\FrontEnd;
@@ -624,7 +624,7 @@ class FrontEnd
         /** The user hasn't logged in, or hasn't authenticated yet. */
         if ($this->Permissions < 1 || $this->Permissions === 3) {
             /** Page initial prepwork. */
-            $this->initialPrepwork($FE, $this->Loader->L10N->getString('title_login'), $this->Loader->L10N->getString('tip_login'), false);
+            $this->initialPrepwork($FE, $this->Loader->L10N->getString('title_login'), '', false);
 
             if ($this->Permissions === 3) {
                 /** Provide the option to log out (omit home link). */
@@ -2249,7 +2249,27 @@ class FrontEnd
         if ($FE['JS']) {
             $FE['JS'] = "\n<script type=\"text/javascript\">" . $FE['JS'] . '</script>';
         }
-        return $this->Loader->parse($this->Loader->L10N->Data, $this->Loader->parse($FE, $FE['Template']));
+        $Template = $FE['Template'];
+        $Labels = [];
+        $Segments = [];
+        if ($this->Permissions === 1 || $this->Permissions === 2) {
+            $Labels[] = 'Logged In';
+            $Segments[] = 'Logged Out';
+        } else {
+            $Labels[] = 'Logged Out';
+            $Segments[] = 'Logged In';
+        }
+        foreach ($Labels as $Label) {
+            $Template = str_replace(['<!-- ' . $Label . ' Begin -->', '<!-- ' . $Label . ' End -->'], '', $Template);
+        }
+        foreach ($Segments as $Segment) {
+            $BPos = strpos($Template, '<!-- ' . $Segment . ' Begin -->');
+            $EPos = strpos($Template, '<!-- ' . $Segment . ' End -->');
+            if ($BPos !== false && $EPos !== false) {
+                $Template = substr($Template, 0, $BPos) . substr($Template, $EPos + strlen($Segment) + 13);
+            }
+        }
+        return $this->Loader->parse($this->Loader->L10N->Data, $this->Loader->parse($FE, $Template));
     }
 
     /**

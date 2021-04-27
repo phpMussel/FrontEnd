@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (traditional) language data (last modified: 2021.02.07).
+# This file: Chinese (traditional) language data (last modified: 2021.04.27).
 ##/
 
 config_core: "基本配置（任何不屬於其他類別的核心配置）。"
@@ -264,7 +264,6 @@ tip_cache_data: "你好，​{username}。<br />在這裡您可以查看緩存�
 tip_config: "你好，​{username}。​<br />配置頁面允許您修改phpMussel配置從前端。"
 tip_fe_cookie_warning: "注意：phpMussel使用cookie來驗證登錄。​通過登錄，您同意您的瀏覽器創建和存儲cookie。"
 tip_home: "你好，​{username}。​<br />這是phpMussel的前端主頁。​從左側的導航菜單中選擇一個鏈接以繼續。"
-tip_login: "標準用戶名：<span class="txtRd">admin</span> – 標準密碼：<span class="txtRd">password</span>"
 tip_logs: "你好，​{username}。​<br />選擇一個日誌從下面的列表以查看那個日誌的內容。"
 tip_quarantine: "你好，​{username}。​<br />此頁面列出當前在隔離中的所有文件，並可以用來管理這些文件。"
 tip_quarantine_disabled: "注意：隔離目前禁用，但可以通過配置頁面啟用。"

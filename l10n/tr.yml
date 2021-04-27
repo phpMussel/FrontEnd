@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2021.02.07).
+# This file: Turkish language data (last modified: 2021.04.27).
 ##/
 
 config_core: "Genel yapılandırma (diğer kategorilere ait olmayan herhangi bir çekirdek yapılandırma)."
@@ -266,7 +266,6 @@ tip_cache_data: "Merhaba, {username}.<br />Burada önbellek içeriğini inceleye
 tip_config: "Merhaba, {username}.<br />Yapılandırma sayfası, phpMussel için yapılandırmayı ön uçtan değiştirmenizi mümkün kılar."
 tip_fe_cookie_warning: "Not: phpMussel, oturum açma kimlik doğrulamasında çerez kullanır. Oturum açarak, tarayıcınız tarafından oluşturulacak ve saklanacak bir çerez için onayınızı verirsiniz."
 tip_home: "Merhaba, {username}.<br />Bu, phpMussel ön uçunun ana sayfasıdır. Devam etmek için soldaki gezinme menüsünden bir bağlantı seçin."
-tip_login: "Varsayılan kullanıcı adı: <span class="txtRd">admin</span> – Varsayılan şifre: <span class="txtRd">password</span>"
 tip_logs: "Merhaba, {username}.<br />Bu günlük dosyasının içeriğini görüntülemek için aşağıdaki listeden bir günlük dosyası seçin."
 tip_quarantine: "Merhaba, {username}.<br />Bu sayfada, şu anda karantinadaki tüm dosyaları listeler ve bu dosyaların yönetimini kolaylaştırır."
 tip_quarantine_disabled: "Not: Karantina şu anda devre dışıdır, ancak yapılandırma sayfası aracılığıyla etkinleştirilebilir."
