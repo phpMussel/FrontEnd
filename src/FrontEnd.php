@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2021.04.27).
+ * This file: Front-end handler (last modified: 2021.05.01).
  */
 
 namespace phpMussel\FrontEnd;
@@ -2306,11 +2306,8 @@ class FrontEnd
         $Data = $this->Loader->Configuration['legal']['pseudonymise_ip_addresses'] ? $this->Loader->pseudonymiseIP($IPAddr) : $IPAddr;
         $Data .= ' - ' . $this->Loader->timeFormat($this->Loader->Time, $this->Loader->Configuration['core']['time_format']) . ' - "' . $User . '" - ' . $Message . "\n";
 
-        $WriteMode = (!file_exists($File) || (
-            $this->Loader->Configuration['core']['truncate'] > 0 &&
-            filesize($File) >= $this->Loader->readBytes($this->Loader->Configuration['core']['truncate'])
-        )) ? 'wb' : 'ab';
-
+        $Truncate = $this->Loader->readBytes($this->Loader->Configuration['core']['truncate']);
+        $WriteMode = (!file_exists($File) || ($Truncate > 0 && filesize($File) >= $Truncate)) ? 'wb' : 'ab';
         $Handle = fopen($File, $WriteMode);
         fwrite($Handle, $Data);
         fclose($Handle);

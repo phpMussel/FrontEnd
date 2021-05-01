@@ -41,3 +41,5 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 [2021.03.11; Maikuolan]: Added some missing return type declarations.
 
 [2021.04.27; Maikuolan]: Removed the default username/password tip from the front-end login page.
+
+[2021.05.01; Bug-fix; Maikuolan]: Log truncation not being calculated properly; Fixed.
