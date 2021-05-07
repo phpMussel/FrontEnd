@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2021.04.27).
+# This file: Vietnamese language data (last modified: 2021.05.07).
 ##/
 
 config_core: "Cấu hình chung (bất kỳ cấu hình cốt lõi nào không thuộc về các loại khác)."
@@ -149,6 +149,7 @@ label_backup_location: "Vị trí sao lưu kho lưu trữ (trong trường hợp
 label_blocked: "Tải lên bị chặn"
 label_branch: "Chi nhánh ổn định mới nhất:"
 label_clientinfo: "Thông tin người dùng:"
+label_default: "Mặc định"
 label_events: "Sự kiện quét"
 label_expires: "Hết hạn: "
 label_extension: "Phần mở rộng"

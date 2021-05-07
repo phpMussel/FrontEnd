@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2021.04.27).
+# This file: Swedish language data (last modified: 2021.05.07).
 ##/
 
 config_core: "Allmän konfiguration (alla kärnkonfigurationer som inte tillhör andra kategorier)."
@@ -149,6 +149,7 @@ label_backup_location: "Repository backup platser (i nödfall, eller om allt ann
 label_blocked: "Uppladdningar blockerade"
 label_branch: "Branch senaste stabila:"
 label_clientinfo: "Klientinformation:"
+label_default: "Standard"
 label_events: "Skanna händelser"
 label_expires: "Utgår: "
 label_extension: "Förlängning"

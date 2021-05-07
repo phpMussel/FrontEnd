@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2021.04.27).
+# This file: Latvian language data (last modified: 2021.05.07).
 ##/
 
 config_core: "Vispārējā konfigurācija (jebkura pamata konfigurācija, kas nepieder citām kategorijām)."
@@ -152,6 +152,7 @@ label_backup_location: "Repozitorija rezerves vietas (ārkārtas gadījumā vai 
 label_blocked: "Bloķēto augšupielāžu skaits"
 label_branch: "Jaunākā stabilā (uz šīs "branch"):"
 label_clientinfo: "Informācija par klientu:"
+label_default: "Noklusējuma"
 label_events: "Skenēšanas notikumu skaits"
 label_expires: "Derīguma termiņš: "
 label_extension: "Paplašinājums"

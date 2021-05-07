@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2021.04.27).
+# This file: Norwegian language data (last modified: 2021.05.07).
 ##/
 
 config_core: "Generell konfigurasjon (enhver kjernekonfigurasjon som ikke tilhører andre kategorier)."
@@ -149,6 +149,7 @@ label_backup_location: "Repository backup steder (i nødstilfelle, eller hvis al
 label_blocked: "Opplastinger blokkert"
 label_branch: "Branch siste stabile:"
 label_clientinfo: "Klientinformasjon:"
+label_default: "Standardverdi"
 label_events: "Skann hendelser"
 label_expires: "Utgår: "
 label_extension: "Forlengelse"

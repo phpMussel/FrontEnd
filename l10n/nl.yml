@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2021.04.27).
+# This file: Dutch language data (last modified: 2021.05.07).
 ##/
 
 config_core: "Algemene configuratie (elke kernconfiguratie die niet tot andere categorieën behoort)."
@@ -151,6 +151,7 @@ label_backup_location: "Repository backup locaties (in geval van nood, of als al
 label_blocked: "Uploads geblokkeerd"
 label_branch: "Branch laatste stabiele:"
 label_clientinfo: "Gebruikers informatie:"
+label_default: "Standaard"
 label_events: "Scan gebeurtenissen"
 label_expires: "Verloopt: "
 label_extension: "Extensie"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2021.04.27).
+# This file: English language data (last modified: 2021.05.07).
 ##/
 
 config_core: "General configuration (any core configuration not belonging to other categories)."
@@ -151,6 +151,7 @@ label_backup_location: "Repository backup locations (in case of emergency, or if
 label_blocked: "Uploads blocked"
 label_branch: "Branch latest stable:"
 label_clientinfo: "Client information:"
+label_default: "Default"
 label_events: "Scan events"
 label_expires: "Expires: "
 label_extension: "Extension"

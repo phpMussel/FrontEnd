@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hindi language data (last modified: 2021.04.27).
+# This file: Hindi language data (last modified: 2021.05.07).
 ##/
 
 config_core: "सामान्य कॉन्फ़िगरेशन (कॉन्फ़िगरेशन जो अन्य श्रेणियों से संबंधित नहीं है)।"
@@ -151,6 +151,7 @@ label_backup_location: "रिपोजिटरी बैकअप स्था
 label_blocked: "अपलोड अवरुद्ध"
 label_branch: "शाखा नवीनतम स्थिर:"
 label_clientinfo: "क्लाइंट की सूचना:"
+label_default: "डिफ़ॉल्ट"
 label_events: "स्कैन घटनाओं"
 label_expires: "समय समाप्ति: "
 label_extension: "विस्तार"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2021.04.27).
+# This file: Japanese language data (last modified: 2021.05.07).
 ##/
 
 config_core: "全般的な設定（他のカテゴリに属さないの設定）。"
@@ -149,6 +149,7 @@ label_backup_location: "リポジトリ・バックアップの場所（緊急�
 label_blocked: "ブロックされたアップロード"
 label_branch: "ブランチ最新安定："
 label_clientinfo: "クライアント情報："
+label_default: "デフォルト"
 label_events: "スキャンイベント"
 label_expires: "有効期限： "
 label_extension: "エクステンション"

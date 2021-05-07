@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Urdu language data (last modified: 2021.04.27).
+# This file: Urdu language data (last modified: 2021.05.07).
 ##/
 
 config_core: "عام ترتیبات (کنفیگریشن جس کا تعلق دوسری قسموں سے نہیں ہے)."
@@ -149,6 +149,7 @@ label_backup_location: "مخزن بیک اپ مقامات (ہنگامی حالت
 label_blocked: "بلاک اپ لوڈ"
 label_branch: "شاخ تازہ ترین مستحکم:"
 label_clientinfo: "کلائنٹ کی معلومات:"
+label_default: "پہلے سے طے شدہ"
 label_events: "واقعات اسکین کریں"
 label_expires: "ختم ہو جاتی ہے: "
 label_extension: "کی توسیع"

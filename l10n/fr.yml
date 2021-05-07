@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2021.04.27).
+# This file: French language data (last modified: 2021.05.07).
 ##/
 
 config_core: "Configuration générale (toute configuration de base n'appartenant pas à d'autres catégories)."
@@ -151,6 +151,7 @@ label_backup_location: "Emplacements de sauvegarde du référentiel (en cas d'ur
 label_blocked: "Téléchargements bloqués"
 label_branch: "Dernier stable de branche :"
 label_clientinfo: "Informations sur le client :"
+label_default: "Défaut"
 label_events: "événements d'analyse"
 label_expires: "Expire : "
 label_extension: "Extension"

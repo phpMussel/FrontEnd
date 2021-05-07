@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data (last modified: 2021.04.27).
+# This file: German language data (last modified: 2021.05.07).
 ##/
 
 config_core: "Allgemeine Konfiguration (jede Kernkonfiguration, die nicht zu anderen Kategorien gehört)."
@@ -151,6 +151,7 @@ label_backup_location: "Repository-Sicherungsspeicherorte (im Notfall, oder wenn
 label_blocked: "Uploads blockiert"
 label_branch: "Branch neueste stabil:"
 label_clientinfo: "Client Information:"
+label_default: "Standardeinstellung"
 label_events: "Scan-Veranstaltungen"
 label_expires: "Läuft ab: "
 label_extension: "Erweiterung"

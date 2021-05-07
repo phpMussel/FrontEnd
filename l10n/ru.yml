@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Russian language data (last modified: 2021.04.27).
+# This file: Russian language data (last modified: 2021.05.07).
 ##/
 
 config_core: "Общая конфигурация (любая конфигурация ядра, не относящаяся к другим категориям)."
@@ -152,6 +152,7 @@ label_backup_location: "Расположение резервных хранил
 label_blocked: "Загружает блокировки"
 label_branch: "Ветвь последние стабильный:"
 label_clientinfo: "Информация о клиенте:"
+label_default: "Стандарт"
 label_events: "События сканирования"
 label_expires: "Истекает: "
 label_extension: "Расширение"

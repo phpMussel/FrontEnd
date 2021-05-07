@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2021.04.27).
+# This file: Polish language data (last modified: 2021.05.07).
 ##/
 
 config_core: "Ogólna konfiguracja (dowolna konfiguracja podstawowa nienależąca do innych kategorii)."
@@ -152,6 +152,7 @@ label_backup_location: "Lokalizacje kopii zapasowych repozytorium (w nagłym wyp
 label_blocked: "Przesyłanie zablokowane"
 label_branch: "Oddział najnowsza stabilna:"
 label_clientinfo: "Informacja klientów:"
+label_default: "Domyślna"
 label_events: "Zdarzenia skanowania"
 label_expires: "Wygasa: "
 label_extension: "Rozszerzenie"

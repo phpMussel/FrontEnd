@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (traditional) language data (last modified: 2021.04.27).
+# This file: Chinese (traditional) language data (last modified: 2021.05.07).
 ##/
 
 config_core: "基本配置（任何不屬於其他類別的核心配置）。"
@@ -149,6 +149,7 @@ label_backup_location: "存儲庫備份位置（在緊急情況下，或如果�
 label_blocked: "上傳已阻止"
 label_branch: "分支最新穩定："
 label_clientinfo: "客戶信息："
+label_default: "標準"
 label_events: "掃描事件"
 label_expires: "過期： "
 label_extension: "擴展"

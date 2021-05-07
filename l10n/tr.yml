@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2021.04.27).
+# This file: Turkish language data (last modified: 2021.05.07).
 ##/
 
 config_core: "Genel yapılandırma (diğer kategorilere ait olmayan herhangi bir çekirdek yapılandırma)."
@@ -149,6 +149,7 @@ label_backup_location: "Repository yedek konumları (acil bir durumda, ya da her
 label_blocked: "Yüklemeler engellendi"
 label_branch: "Branşı en yeni kararlı:"
 label_clientinfo: "Kullanıcı bilgisi:"
+label_default: "Varsayılan"
 label_events: "Tara olayları"
 label_expires: "Son Geçerlilik Tarihi: "
 label_extension: "Uzantısı"

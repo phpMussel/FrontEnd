@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2021.04.27).
+# This file: Korean language data (last modified: 2021.05.07).
 ##/
 
 config_core: "일반 설정 (다른 카테고리에 속하지 않는 설정)."
@@ -149,6 +149,7 @@ label_backup_location: "저장소 백업 위치 (비상 사태의 경우, 또는
 label_blocked: "차단 된 업로드"
 label_branch: "분기 최신 안정 :"
 label_clientinfo: "사용자 정보 :"
+label_default: "기본값"
 label_events: "스캔 이벤트"
 label_expires: "만료일 : "
 label_extension: "확장"
