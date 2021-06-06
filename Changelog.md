@@ -45,3 +45,5 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 [2021.05.01; Bug-fix; Maikuolan]: Log truncation not being calculated properly; Fixed.
 
 [2021.05.07; Maikuolan]: Very slightly reworked/improved the front-end CSS.
+
+[2021.06.06; Maikuolan]: Reworked checkbox support for the front-end configuration page in preparation for some future configuration directives.

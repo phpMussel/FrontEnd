@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2021.05.01).
+ * This file: Front-end handler (last modified: 2021.06.06).
  */
 
 namespace phpMussel\FrontEnd;
@@ -360,6 +360,7 @@ class FrontEnd
             $this->Loader->L10N->Data['Text Direction'] = 'ltr';
             $FE['FE_Align'] = 'left';
             $FE['FE_Align_Reverse'] = 'right';
+            $FE['FE_Align_Mode'] = 'lr';
             $FE['PIP_Input'] = $Pips['Right'];
             $FE['PIP_Input_64'] = base64_encode($Pips['Right']);
             $FE['Gradient_Degree'] = 90;
@@ -368,6 +369,7 @@ class FrontEnd
         } else {
             $FE['FE_Align'] = 'right';
             $FE['FE_Align_Reverse'] = 'left';
+            $FE['FE_Align_Mode'] = 'rl';
             $FE['PIP_Input'] = $Pips['Left'];
             $FE['PIP_Input_64'] = base64_encode($Pips['Left']);
             $FE['Gradient_Degree'] = 270;
@@ -1095,8 +1097,16 @@ class FrontEnd
                     ) {
                         $DirValue['Posts'] = [];
                         foreach ($DirValue['choices'] as $DirValue['ThisChoiceKey'] => $DirValue['ThisChoice']) {
-                            if (!empty($_POST[$ThisDir['DirLangKey'] . '_' . $DirValue['ThisChoiceKey']])) {
-                                $DirValue['Posts'][] = $DirValue['ThisChoiceKey'];
+                            if (isset($DirValue['labels']) && is_array($DirValue['labels'])) {
+                                foreach ($DirValue['labels'] as $DirValue['ThisLabelKey'] => $DirValue['ThisLabel']) {
+                                    if (!empty($_POST[$ThisDir['DirLangKey'] . '_' . $DirValue['ThisChoiceKey'] . '_' . $DirValue['ThisLabelKey']])) {
+                                        $DirValue['Posts'][] = $DirValue['ThisChoiceKey'] . ':' . $DirValue['ThisLabelKey'];
+                                    }
+                                }
+                            } else {
+                                if (!empty($_POST[$ThisDir['DirLangKey'] . '_' . $DirValue['ThisChoiceKey']])) {
+                                    $DirValue['Posts'][] = $DirValue['ThisChoiceKey'];
+                                }
                             }
                         }
                         $DirValue['Posts'] = implode(',', $DirValue['Posts']) ?: '';
@@ -1109,7 +1119,10 @@ class FrontEnd
                         }
                     }
                     if (isset($DirValue['preview'])) {
-                        $ThisDir['Preview'] = ($DirValue['preview'] === 'allow_other') ? '' : ' = <span id="' . $ThisDir['DirLangKey'] . '_preview"></span>';
+                        $ThisDir['Preview'] = ($DirValue['preview'] === 'allow_other') ? '' : sprintf(
+                            $DirValue['preview_default_fill'] ?? ' = <span id="%s_preview"></span>',
+                            $ThisDir['DirLangKey']
+                        );
                         $ThisDir['Trigger'] = ' onchange="javascript:' . $ThisDir['DirLangKey'] . '_function();" onkeyup="javascript:' . $ThisDir['DirLangKey'] . '_function();"';
                         if ($DirValue['preview'] === 'kb') {
                             $ThisDir['Preview'] .= sprintf(
@@ -1213,6 +1226,11 @@ class FrontEnd
                                 'document.all',
                                 $ThisDir['DirLangKeyOther']
                             );
+                        } elseif (substr($DirValue['preview'], 0, 3) === 'js:') {
+                            $ThisDir['Preview'] .= '<script type="text/javascript">' . sprintf(
+                                substr($DirValue['preview'], 3),
+                                $ThisDir['DirLangKey']
+                            ) . '</script>';
                         }
                     }
                     if ($DirValue['type'] === 'timezone') {
@@ -1222,7 +1240,36 @@ class FrontEnd
                         }
                     }
                     if (isset($DirValue['choices'])) {
-                        if ($DirValue['type'] !== 'checkbox') {
+                        if ($DirValue['type'] === 'checkbox') {
+                            if (isset($DirValue['labels']) && is_array($DirValue['labels'])) {
+                                $ThisDir['FieldOut'] = sprintf(
+                                    '<div style="display:grid;grid-template-columns:%s;text-align:%s">',
+                                    str_repeat('18px ', count($DirValue['labels'])) . 'auto',
+                                    $FE['FE_Align']
+                                );
+                                $DirValue['HasLabels'] = true;
+                                foreach ($DirValue['labels'] as $DirValue['ThisLabel']) {
+                                    foreach (['response_', 'label_', 'field_'] as $LabelPrefix) {
+                                        if (array_key_exists($LabelPrefix . $DirValue['ThisLabel'], $this->Loader->L10N->Data)) {
+                                            $DirValue['ThisLabel'] = $this->Loader->L10N->getString($LabelPrefix . $DirValue['ThisLabel']);
+                                            break;
+                                        }
+                                    }
+                                    $ThisDir['FieldOut'] .= sprintf(
+                                        '<div class="gridboxitem" style="text-align:right;writing-mode:vertical-%s;height:auto;line-height:18px"><span class="s">%s</span></div>',
+                                        $FE['FE_Align_Mode'],
+                                        $DirValue['ThisLabel']
+                                    );
+                                }
+                                $ThisDir['FieldOut'] .= '<div class="gridboxitem"></div>';
+                            } else {
+                                $ThisDir['FieldOut'] = sprintf(
+                                    '<div style="display:grid;grid-template-columns:18px auto;text-align:%s">',
+                                    $FE['FE_Align']
+                                );
+                                $DirValue['HasLabels'] = false;
+                            }
+                        } else {
                             $ThisDir['FieldOut'] = sprintf(
                                 '<select class="auto" style="text-transform:capitalize" name="%1$s" id="%1$s_field"%2$s>',
                                 $ThisDir['DirLangKey'],
@@ -1243,12 +1290,31 @@ class FrontEnd
                                 $ChoiceValue = $this->Loader->parse($this->Loader->L10N->Data, $ChoiceValue);
                             }
                             if ($DirValue['type'] === 'checkbox') {
-                                $ThisDir['FieldOut'] .= sprintf(
-                                    '<input type="checkbox" class="auto" name="%1$s" id="%1$s"%2$s /><label for="%1$s" class="s">%3$s</label><br />',
-                                    $ThisDir['DirLangKey'] . '_' . $ChoiceKey,
-                                    $this->Loader->Request->inCsv($ChoiceKey, $this->Loader->Configuration[$CatKey][$DirKey]) ? ' checked' : '',
-                                    $ChoiceValue
-                                );
+                                if ($DirValue['HasLabels']) {
+                                    foreach ($DirValue['labels'] as $DirValue['ThisLabelKey'] => $DirValue['ThisLabel']) {
+                                        $ThisDir['FieldOut'] .= sprintf(
+                                            '<div class="gridboxitem" style="text-align:center;vertical-align:middle"><input%3$s type="checkbox" class="auto" name="%1$s" id="%1$s"%2$s /></div>',
+                                            $ThisDir['DirLangKey'] . '_' . $ChoiceKey . '_' . $DirValue['ThisLabelKey'],
+                                            $this->Loader->Request->inCsv(
+                                                $ChoiceKey . ':' . $DirValue['ThisLabelKey'],
+                                                $this->Loader->Configuration[$CatKey][$DirKey]
+                                            ) ? ' checked' : '',
+                                            $ThisDir['Trigger']
+                                        );
+                                    }
+                                    $ThisDir['FieldOut'] .= sprintf('<div class="gridboxitem"><span class="s">%s</span></div>', $ChoiceValue);
+                                } else {
+                                    $ThisDir['FieldOut'] .= sprintf(
+                                        '<div class="gridboxitem" style="text-align:center;vertical-align:middle"><input%4$s type="checkbox" class="auto" name="%1$s" id="%1$s"%2$s /></div><div class="gridboxitem"><label for="%1$s" class="s" style="cursor:pointer">%3$s</label></div>',
+                                        $ThisDir['DirLangKey'] . '_' . $ChoiceKey,
+                                        $this->Loader->Request->inCsv(
+                                            $ChoiceKey,
+                                            $this->Loader->Configuration[$CatKey][$DirKey]
+                                        ) ? ' checked' : '',
+                                        $ChoiceValue,
+                                        $ThisDir['Trigger']
+                                    );
+                                }
                             } else {
                                 foreach (['response_', 'label_', 'field_'] as $ChoicePrefix) {
                                     if (array_key_exists($ChoicePrefix . $ChoiceValue, $this->Loader->L10N->Data)) {
@@ -1264,7 +1330,9 @@ class FrontEnd
                                 );
                             }
                         }
-                        if ($DirValue['type'] !== 'checkbox') {
+                        if ($DirValue['type'] === 'checkbox') {
+                            $ThisDir['FieldOut'] .= '</div>';
+                        } else {
                             $ThisDir['SelectOther'] = !isset($DirValue['choices'][$this->Loader->Configuration[$CatKey][$DirKey]]);
                             $ThisDir['FieldOut'] .= empty($DirValue['allow_other']) ? '</select>' : sprintf(
                                 '<option value="Other"%1$s>%2$s</option></select> <input type="text"%3$s class="auto" name="%4$s" id="%4$s_field" value="%5$s" />',
@@ -1277,7 +1345,7 @@ class FrontEnd
                         }
                     } elseif ($DirValue['type'] === 'bool') {
                         $ThisDir['FieldOut'] = sprintf(
-                            '<select class="auto" name="%1$s" id="%1$s_field"%2$s>' .
+                                '<select class="auto" name="%1$s" id="%1$s_field"%2$s>' .
                                 '<option value="true"%5$s>%3$s</option><option value="false"%6$s>%4$s</option>' .
                                 '</select>',
                             $ThisDir['DirLangKey'],
