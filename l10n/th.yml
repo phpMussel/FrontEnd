@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Thai language data (last modified: 2021.05.07).
+# This file: Thai language data (last modified: 2021.06.07).
 ##/
 
 config_core: "การกำหนดค่าทั่วไป (การกำหนดค่าใด ๆ ที่ไม่ได้อยู่ในหมวดหมู่อื่น)."
@@ -145,7 +145,6 @@ field_username: "ชื่อผู้ใช้"
 field_your_version: "เวอร์ชั่นของคุณ"
 header_login: "เข้าสู่ระบบเพื่อดำเนินการต่อ."
 label_active_config_file: "ไฟล์การกำหนดค่าที่ใช้งานอยู่: "
-label_backup_location: "Repository สถานที่สำรอง (ในกรณีฉุกเฉิน หรือถ้าทุกอย่างล้มเหลว):"
 label_blocked: "อัปโหลดถูกบล็อก"
 label_branch: "สาขาเสถียรล่าสุด:"
 label_clientinfo: "ข้อมูลผู้ใช้:"

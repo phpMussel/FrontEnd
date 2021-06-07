@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2021.06.06).
+ * This file: Front-end handler (last modified: 2021.06.07).
  */
 
 namespace phpMussel\FrontEnd;
@@ -682,12 +682,6 @@ class FrontEnd
 
             /** Provide the option to log out (omit home link). */
             $FE['bNav'] = $FE['LogoutButton'];
-
-            /** Build repository backup locations information. */
-            $FE['BackupLocations'] = implode(' | ', [
-                '<a href="https://bitbucket.org/Maikuolan/phpmussel" hreflang="en-US" target="_blank" rel="noopener external">phpMussel@Bitbucket</a>',
-                '<a href="https://sourceforge.net/projects/phpmussel/" hreflang="en-US" target="_blank" rel="noopener external">phpMussel@SourceForge</a>'
-            ]);
 
             /** Where to find remote version information? */
             $RemoteVerPath = 'https://raw.githubusercontent.com/Maikuolan/Compatibility-Charts/gh-pages/';

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2021.05.07).
+# This file: French language data (last modified: 2021.06.07).
 ##/
 
 config_core: "Configuration générale (toute configuration de base n'appartenant pas à d'autres catégories)."
@@ -147,7 +147,6 @@ field_username: "Nom d'Utilisateur"
 field_your_version: "Votre Version"
 header_login: "Merci de vous connecter pour continuer."
 label_active_config_file: "Fichier de configuration active : "
-label_backup_location: "Emplacements de sauvegarde du référentiel (en cas d'urgence, ou si tout le reste échoue) :"
 label_blocked: "Téléchargements bloqués"
 label_branch: "Dernier stable de branche :"
 label_clientinfo: "Informations sur le client :"

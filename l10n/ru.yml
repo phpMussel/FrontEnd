@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Russian language data (last modified: 2021.05.07).
+# This file: Russian language data (last modified: 2021.06.07).
 ##/
 
 config_core: "Общая конфигурация (любая конфигурация ядра, не относящаяся к другим категориям)."
@@ -148,7 +148,6 @@ field_username: "Имя Пользователя"
 field_your_version: "Ваша Версия"
 header_login: "Пожалуйста войдите чтобы продолжить."
 label_active_config_file: "Активный файл конфигурации: "
-label_backup_location: "Расположение резервных хранилищ (в случае чрезвычайной ситуации, или если все остальное не работает):"
 label_blocked: "Загружает блокировки"
 label_branch: "Ветвь последние стабильный:"
 label_clientinfo: "Информация о клиенте:"

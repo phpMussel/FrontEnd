@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2021.05.07).
+# This file: Indonesian language data (last modified: 2021.06.07).
 ##/
 
 config_core: "Konfigurasi umum (konfigurasi inti apapun yang bukan milik kategori lain)."
@@ -145,7 +145,6 @@ field_username: "Nama Pengguna"
 field_your_version: "Versi Anda"
 header_login: "Silahkan masuk untuk melanjutkan."
 label_active_config_file: "File konfigurasi aktif: "
-label_backup_location: "Lokasi cadangan repositori (dalam keadaan darurat, atau jika semuanya gagal):"
 label_blocked: "Upload diblokir"
 label_branch: "Cabang terbaru stabil:"
 label_clientinfo: "Informasi klien:"

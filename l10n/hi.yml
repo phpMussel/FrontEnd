@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hindi language data (last modified: 2021.05.07).
+# This file: Hindi language data (last modified: 2021.06.07).
 ##/
 
 config_core: "सामान्य कॉन्फ़िगरेशन (कॉन्फ़िगरेशन जो अन्य श्रेणियों से संबंधित नहीं है)।"
@@ -147,7 +147,6 @@ field_username: "उपयोगकर्ता नाम"
 field_your_version: "आपका संस्करण"
 header_login: "जारी रखने के लिए कृपया लॉग इन करें।"
 label_active_config_file: "सक्रिय कॉन्फ़िगरेशन फाइल: "
-label_backup_location: "रिपोजिटरी बैकअप स्थानों (आपात स्थिति के मामले में, या यदि सब कुछ विफल रहता है):"
 label_blocked: "अपलोड अवरुद्ध"
 label_branch: "शाखा नवीनतम स्थिर:"
 label_clientinfo: "क्लाइंट की सूचना:"

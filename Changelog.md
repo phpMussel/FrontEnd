@@ -47,3 +47,7 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 [2021.05.07; Maikuolan]: Very slightly reworked/improved the front-end CSS.
 
 [2021.06.06; Maikuolan]: Reworked checkbox support for the front-end configuration page in preparation for some future configuration directives.
+
+### v3.2.0
+
+[2021.06.07; Maikuolan]: Since v3, the "repository backup locations" are kind of useless (not linked up with Composer, and only providing metapackage data, rather than all the attached repositories/packages). Removed those links from the front-end home page and v3 documentation accordingly.

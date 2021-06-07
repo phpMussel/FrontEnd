@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Tamil language data (last modified: 2021.05.07).
+# This file: Tamil language data (last modified: 2021.06.07).
 ##/
 
 config_core: "பொதுவான உள்ளமைவு (மற்ற வகைகளுக்கு சொந்தமில்லாத உள்ளமைவு)."
@@ -147,7 +147,6 @@ field_username: "பயனர்பெயர்"
 field_your_version: "உங்கள் பதிப்பு"
 header_login: "தொடர உள்நுழைக."
 label_active_config_file: "செயலில் உள்ளமைவு கோப்பு: "
-label_backup_location: "களஞ்சிய காப்பு இருப்பிடங்கள் (அவசர காலங்களில், அல்லது மற்ற அனைத்தும் தோல்வியுற்றால்):"
 label_blocked: "பதிவேற்றங்கள் தடுக்கப்பட்டன"
 label_branch: "கிளை சமீபத்திய நிலையானது:"
 label_clientinfo: "வாடிக்கையாளர் தகவல்:"

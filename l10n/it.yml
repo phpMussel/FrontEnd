@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2021.05.07).
+# This file: Italian language data (last modified: 2021.06.07).
 ##/
 
 config_core: "Configurazione generale (qualsiasi configurazione di base non appartenente ad altre categorie)."
@@ -145,7 +145,6 @@ field_username: "Nome Utente"
 field_your_version: "La Vostra Versione"
 header_login: "Per favore accedi per continuare."
 label_active_config_file: "File di configurazione attivo: "
-label_backup_location: "Posizioni di backup del repository (in caso di emergenza, o se tutto il resto fallisce):"
 label_blocked: "Caricamenti bloccati"
 label_branch: "Branch più recente stabile:"
 label_clientinfo: "Informazioni sul cliente:"

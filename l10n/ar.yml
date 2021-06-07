@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2021.05.07).
+# This file: Arabic language data (last modified: 2021.06.07).
 ##/
 
 config_core: "التكوين العام (أي التكوين الأساسي لا ينتمي إلى فئات أخرى)."
@@ -145,7 +145,6 @@ field_username: "اسم المستخدم"
 field_your_version: "الإصدار الخاص بك"
 header_login: "الرجاء تسجيل الدخول للمتابعة."
 label_active_config_file: "ملف التكوين النشط: "
-label_backup_location: "مواقع النسخ الاحتياطي مستودع (في حالة الطوارئ، أو إذا فشل كل شيء آخر):"
 label_blocked: "تم حظر التحميلات"
 label_branch: "فرع أحدث مستقرة:"
 label_clientinfo: "معلومات المستخدممعلومات المستخدم:"

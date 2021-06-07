@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data (last modified: 2021.05.07).
+# This file: German language data (last modified: 2021.06.07).
 ##/
 
 config_core: "Allgemeine Konfiguration (jede Kernkonfiguration, die nicht zu anderen Kategorien gehört)."
@@ -147,7 +147,6 @@ field_username: "Benutzername"
 field_your_version: "Ihre Version"
 header_login: "Bitte einloggen zum Fortfahren."
 label_active_config_file: "Aktive Konfigurationsdatei: "
-label_backup_location: "Repository-Sicherungsspeicherorte (im Notfall, oder wenn alles andere fehlschlägt):"
 label_blocked: "Uploads blockiert"
 label_branch: "Branch neueste stabil:"
 label_clientinfo: "Client Information:"

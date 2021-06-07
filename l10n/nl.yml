@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2021.05.07).
+# This file: Dutch language data (last modified: 2021.06.07).
 ##/
 
 config_core: "Algemene configuratie (elke kernconfiguratie die niet tot andere categorieën behoort)."
@@ -147,7 +147,6 @@ field_username: "Gebruikersnaam"
 field_your_version: "Uw Versie"
 header_login: "Inloggen om verder te gaan."
 label_active_config_file: "Actief configuratiebestand: "
-label_backup_location: "Repository backup locaties (in geval van nood, of als al het andere faalt):"
 label_blocked: "Uploads geblokkeerd"
 label_branch: "Branch laatste stabiele:"
 label_clientinfo: "Gebruikers informatie:"

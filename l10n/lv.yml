@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2021.05.07).
+# This file: Latvian language data (last modified: 2021.06.07).
 ##/
 
 config_core: "Vispārējā konfigurācija (jebkura pamata konfigurācija, kas nepieder citām kategorijām)."
@@ -148,7 +148,6 @@ field_username: "Lietotājvārds"
 field_your_version: "Jūsu Versija"
 header_login: "Lūdzu, ielogoties, lai turpinātu."
 label_active_config_file: "Aktīvs konfigurācijas fails: "
-label_backup_location: "Repozitorija rezerves vietas (ārkārtas gadījumā vai ja viss cits neizdodas):"
 label_blocked: "Bloķēto augšupielāžu skaits"
 label_branch: "Jaunākā stabilā (uz šīs "branch"):"
 label_clientinfo: "Informācija par klientu:"

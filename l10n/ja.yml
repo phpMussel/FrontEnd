@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2021.05.07).
+# This file: Japanese language data (last modified: 2021.06.07).
 ##/
 
 config_core: "全般的な設定（他のカテゴリに属さないの設定）。"
@@ -145,7 +145,6 @@ field_username: "ユーザー名"
 field_your_version: "お使いのバージョン"
 header_login: "継続するには、​ログインしてください。"
 label_active_config_file: "アクティブ・コンフィグレーション・ファイル："
-label_backup_location: "リポジトリ・バックアップの場所（緊急の場合、または他のすべてが失敗した場合）："
 label_blocked: "ブロックされたアップロード"
 label_branch: "ブランチ最新安定："
 label_clientinfo: "クライアント情報："

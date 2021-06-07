@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Urdu language data (last modified: 2021.05.07).
+# This file: Urdu language data (last modified: 2021.06.07).
 ##/
 
 config_core: "عام ترتیبات (کنفیگریشن جس کا تعلق دوسری قسموں سے نہیں ہے)."
@@ -145,7 +145,6 @@ field_username: "صارف کا نام"
 field_your_version: "آپ کے ورژن"
 header_login: "جاری رکھنے کے لیے لاگ ان کریں."
 label_active_config_file: "فعال کنفیگریشن فائل: "
-label_backup_location: "مخزن بیک اپ مقامات (ہنگامی حالت میں، یا اگر سب کچھ ناکام ہوجاتا ہے):"
 label_blocked: "بلاک اپ لوڈ"
 label_branch: "شاخ تازہ ترین مستحکم:"
 label_clientinfo: "کلائنٹ کی معلومات:"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2021.05.07).
+# This file: Turkish language data (last modified: 2021.06.07).
 ##/
 
 config_core: "Genel yapılandırma (diğer kategorilere ait olmayan herhangi bir çekirdek yapılandırma)."
@@ -145,7 +145,6 @@ field_username: "Kullanıcı adı"
 field_your_version: "Sürümünüz"
 header_login: "Devam etmek için lütfen giriş yapınız."
 label_active_config_file: "Etkin yapılandırma dosyası: "
-label_backup_location: "Repository yedek konumları (acil bir durumda, ya da her şey başarısız olursa):"
 label_blocked: "Yüklemeler engellendi"
 label_branch: "Branşı en yeni kararlı:"
 label_clientinfo: "Kullanıcı bilgisi:"

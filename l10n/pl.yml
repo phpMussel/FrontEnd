@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2021.05.07).
+# This file: Polish language data (last modified: 2021.06.07).
 ##/
 
 config_core: "Ogólna konfiguracja (dowolna konfiguracja podstawowa nienależąca do innych kategorii)."
@@ -148,7 +148,6 @@ field_username: "Nazwa Użytkownika"
 field_your_version: "Twoja Wersja"
 header_login: "Proszę się zalogować, aby kontynuować."
 label_active_config_file: "Aktywny plik konfiguracyjny: "
-label_backup_location: "Lokalizacje kopii zapasowych repozytorium (w nagłym wypadku lub jeśli wszystko inne zawiedzie):"
 label_blocked: "Przesyłanie zablokowane"
 label_branch: "Oddział najnowsza stabilna:"
 label_clientinfo: "Informacja klientów:"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2021.05.07).
+# This file: Vietnamese language data (last modified: 2021.06.07).
 ##/
 
 config_core: "Cấu hình chung (bất kỳ cấu hình cốt lõi nào không thuộc về các loại khác)."
@@ -145,7 +145,6 @@ field_username: "Tên Người Dùng"
 field_your_version: "Phiên bản của bạn"
 header_login: "Vui lòng đăng nhập để tiếp tục."
 label_active_config_file: "Tập tin cấu hình kích hoạt: "
-label_backup_location: "Vị trí sao lưu kho lưu trữ (trong trường hợp khẩn cấp, hay nếu mọi thứ thất bại):"
 label_blocked: "Tải lên bị chặn"
 label_branch: "Chi nhánh ổn định mới nhất:"
 label_clientinfo: "Thông tin người dùng:"
