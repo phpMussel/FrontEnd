@@ -49,7 +49,7 @@ code,.nav{font-family:'Courier New',Courier,'Lucida Grande',Arial}
 .ufts{width:220px}
 @keyframes idxAn{0%{background:rgba(120,89,92,0.5)}100%{background:rgba(86,89,92,0.5)}}
 @keyframes UplT{0%{opacity:0}100%{opacity:1}}
-.comSub,.mob{display:none}
+.mob{display:none}
 input[id=logoutbutton]{border-top-{FE_Align}-radius:0;border-bottom-{FE_Align}-radius:0;padding-{FE_Align}:18px;margin-{FE_Align}:-1px;background-position:center {FE_Align} 4px;background-image:url('?phpmussel-asset=lock_wt_o.png&theme={theme}')}
 input[id=logoutbutton]:hover,input[id=logoutbutton]:active,input[id=logoutbutton]:focus{background-image:url('?phpmussel-asset=lock_wt_c.png&theme={theme}')}
 input[id=homebutton]{border-top-{FE_Align_Reverse}-radius:0;border-bottom-{FE_Align_Reverse}-radius:0;margin-{FE_Align_Reverse}:0}
@@ -70,10 +70,16 @@ input[id=homebutton]{border-top-{FE_Align_Reverse}-radius:0;border-bottom-{FE_Al
 .comCat::before{content:"➖";display:inline-block;margin-{FE_Align_Reverse}:6px}
 .caret-down::before{animation:forRotate .2s linear 1;animation-fill-mode:both}
 .caret-up::before{animation:revRotate .2s linear 1;animation-fill-mode:both}
-.active{display:block}
+.comSub{overflow:hidden;transform:scaleY(0);transform-origin:top;opacity:0;max-height:0;transition:all .5s ease-out}
+.active{transform:scaleY(1);transform-origin:top;opacity:1;max-height:99999px;transition:all .3s ease-in}
+blockquote.comSub{margin:-2px 0 0 0;padding:0 0 0 0}
 @keyframes forRotate{0%{transform:rotate(0)}100%{transform:rotate({45deg})}}
 @keyframes revRotate{0%{transform:rotate({45deg})}100%{transform:rotate(0)}}
 select+input[type=submit],select+input[type=button]{height:20px;margin-{FE_Align}:-3px;border-bottom-{FE_Align}-radius:0;border-top-{FE_Align}-radius:0;padding-{FE_Align}:3px}
 select,input[type=submit],input[type=reset],input[type=button],input[type=text],input[type=password],input[type=number],button{box-sizing:border-box;height:20px;padding-top:0;padding-bottom:0}
 #pgrad{width:16px;height:16px;display:inline-block;border-radius:16px;filter:blur(2px)}
 td code~input,td code~select{vertical-align:middle}
+.trEase{transition:all 0.5s ease-out}
+.trEase>div{display:inline-block;transition:inherit}
+.pipCntrs{display:inline-block;position:relative;left:0;width:12px;height:12px;transition:inherit}
+.pipCntrs>img{display:inline-block;position:absolute;left:0;transition:inherit}

@@ -51,3 +51,5 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 ### v3.2.0
 
 [2021.06.07; Maikuolan]: Since v3, the "repository backup locations" are kind of useless (not linked up with Composer, and only providing metapackage data, rather than all the attached repositories/packages). Removed those links from the front-end home page and v3 documentation accordingly.
+
+[2021.06.08; Maikuolan]: Subtle aesthetic patch.

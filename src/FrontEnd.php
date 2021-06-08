@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2021.06.07).
+ * This file: Front-end handler (last modified: 2021.06.08).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1339,9 +1339,7 @@ class FrontEnd
                         }
                     } elseif ($DirValue['type'] === 'bool') {
                         $ThisDir['FieldOut'] = sprintf(
-                                '<select class="auto" name="%1$s" id="%1$s_field"%2$s>' .
-                                '<option value="true"%5$s>%3$s</option><option value="false"%6$s>%4$s</option>' .
-                                '</select>',
+                            '<select class="auto" name="%1$s" id="%1$s_field"%2$s><option value="true"%5$s>%3$s</option><option value="false"%6$s>%4$s</option></select>',
                             $ThisDir['DirLangKey'],
                             $ThisDir['Trigger'],
                             $this->Loader->L10N->getString('field_true'),
