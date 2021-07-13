@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2021.07.10).
+ * This file: Front-end handler (last modified: 2021.07.13).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1590,14 +1590,11 @@ class FrontEnd
                 }
             }
 
-            /** Delete all files in quarantine. */
-            $DeleteMode = !empty($_POST['DeleteAll']);
-
             /** Template for quarantine files row. */
             $QuarantineRow = $this->Loader->readFileBlocks($this->getAssetPath('_quarantine_row.html'));
 
             /** Fetch quarantine data array. */
-            $FilesInQuarantine = $this->quarantineRecursiveList($DeleteMode);
+            $FilesInQuarantine = $this->quarantineRecursiveList();
 
             /** Number of files in quarantine. */
             $FilesInQuarantineCount = count($FilesInQuarantine);
@@ -1987,10 +1984,9 @@ class FrontEnd
     /**
      * Quarantined file list generator (returns an array of quarantined files).
      *
-     * @param bool $DeleteMode Whether to delete quarantined files when checking.
      * @return array An array of quarantined files.
      */
-    private function quarantineRecursiveList(bool $DeleteMode = false): array
+    private function quarantineRecursiveList(): array
     {
         /** Guard against missing or unwritable quarantine directory. */
         if (!$this->Loader->QuarantinePath) {
@@ -2008,7 +2004,7 @@ class FrontEnd
             }
 
             /** Deletes all files in quarantine. */
-            if ($DeleteMode) {
+            if (!empty($_POST['DeleteAll'])) {
                 $DeleteMe = substr($Item, $Offset);
                 $FE['state_msg'] .= '<code>' . $DeleteMe . '</code> ' . $this->Loader->L10N->getString(
                     unlink($this->Loader->QuarantinePath . $DeleteMe) ? 'response_file_deleted' : 'response_failed_to_delete'
