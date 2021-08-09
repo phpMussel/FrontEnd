@@ -1,7 +1,7 @@
 *{vertical-align:text-top}
 body,input,select,textarea,.idx{font-size:calc(12px * {magnification})}
-body{font-family:'Merriweather','PT Serif',sans-serif,'Lucida Grande',Tahoma,Verdana,Arial;letter-spacing:1px;text-decoration:none;border-style:none;margin:0;padding:0;white-space:normal;background-color:#333;color:#89a;background-image:url(data:image/gif;base64,R0lGODdhAwADAIACADMzM1VicCwAAAAAAwADAAACBIQRBwUAOw==);background-attachment:fixed}
-code{font-family:monospace;background-color:rgba(85,85,85,.5);color:#111}
+body{font-family:'Merriweather','PT Serif',sans-serif,'Lucida Grande',Tahoma,Verdana,Arial;letter-spacing:1px;text-decoration:none;border-style:none;margin:0;padding:0;white-space:normal;background-color:#333;color:#cde;background-image:url(data:image/gif;base64,R0lGODdhAwADAIACADMzM1VicCwAAAAAAwADAAACBIQRBwUAOw==);background-attachment:fixed}
+code{font-family:monospace;background-color:rgba(85,85,85,.5);color:#111;vertical-align:middle}
 hr{border-style:solid none none;border-width:1px;margin:5px 2px 0;padding:2px;color:#89b}
 img.ico{width:16px;height:16px;border:0;filter:hue-rotate(180deg) brightness(0.8)}
 input,select,textarea{background-color:#345;border:none;color:#ccc;margin:2px;padding:2px}
@@ -13,19 +13,20 @@ input[type=text]{background-image:url(data:image/gif;base64,{PIP_Input_64})}
 input{border-radius:0}
 input[type=button],input[type=submit],input[type=reset]{border-radius:18px}
 select,option,input,textarea{filter:grayscale(.1) brightness(.94)}
-select:active,textarea:active,input:active{filter:grayscale(0) brightness(1)}
+select:active,textarea:active:not([readonly]),input:active{filter:grayscale(0) brightness(1)}
 select:disabled,textarea:disabled,input:disabled{filter:grayscale(1) brightness(.5)}
-select:focus,textarea:focus,input:focus,select:hover,textarea:hover,input:hover{filter:grayscale(0) brightness(1)}
+select:focus,textarea:focus,input:focus,select:hover,textarea:hover:not([readonly]),input:hover{filter:grayscale(0) brightness(1)}
 table,.spanner{width:100%}
 textarea{height:150px}
 textarea.half{height:75px}
-a:link,a:visited{color:#ccc}
-a:hover,a:active,a:focus{color:#fca}
+textarea{width:calc(100% - 10px)}
+a:link,a:visited{color:#def}
+a:hover,a:active,a:focus,.txtRd{color:#fca}
 .cat,.exp,.bNav,.gen,.nav,.s,.tip,.txtGn,.txtOe,.txtRd,.spanner,a,input,select,textarea{font-weight:700}
 .bNav,.gen,.spanner{text-align:{FE_Align_Reverse}}
 .bNav{height:64px}
 .ci,.co,.gen,.center{margin:auto}
-.ci,.co,.ng1,.ng2,textarea{width:98%}
+.ci,.co,.ng1,.ng2{width:98%}
 .ci{background-color:rgba(102,119,136,0.5);text-align:{FE_Align};padding:12px;border-top-right-radius:24px}
 .co,body,.center{text-align:center}
 .co{padding:12}
@@ -48,7 +49,6 @@ a:hover,a:active,a:focus{color:#fca}
 .txtBl{color:#111}
 .txtGn{color:#9c7}
 .txtOe{color:#f96}
-.txtRd{color:#f88}
 .ufts{width:220px}
 .vr{float:{FE_Align};width:1px;height:inherit;background-color:#89b}
 @keyframes idxAn{0%{background:#603}100%{background:#ddd}}
@@ -97,3 +97,4 @@ td code~input,td code~select{vertical-align:middle}
 .trEase>div{display:inline-block;transition:inherit}
 .pipCntrs{display:inline-block;position:relative;left:0;width:12px;height:12px;transition:inherit}
 .pipCntrs>img{display:inline-block;position:absolute;left:0;transition:inherit}
+input[type=checkbox]+label,input[type=radio]+label,.gridboxitem>label,.gridboxitem input+strong{vertical-align:-2px;cursor:pointer}

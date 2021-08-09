@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2021.07.13).
+ * This file: Front-end handler (last modified: 2021.07.21).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1846,11 +1846,10 @@ class FrontEnd
     {
         $Scale = ['field_size_bytes', 'field_size_KB', 'field_size_MB', 'field_size_GB', 'field_size_TB'];
         $Iterate = 0;
-        $Filesize = (int)$Filesize;
         while ($Filesize > 1024) {
-            $Filesize = $Filesize / 1024;
+            $Filesize /= 1024;
             $Iterate++;
-            if ($Iterate > 4) {
+            if ($Iterate > 3) {
                 break;
             }
         }
