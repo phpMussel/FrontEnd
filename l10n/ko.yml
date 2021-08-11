@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2021.06.10).
+# This file: Korean language data (last modified: 2021.08.10).
 ##/
 
 config_core: "일반 설정 (다른 카테고리에 속하지 않는 설정)."
@@ -250,7 +250,7 @@ state_cache_is_empty: "캐시가 비어 있습니다."
 state_complete_access: "전체 액세스"
 state_default_password: "경고 : 기본 암호를 사용하여!"
 state_loading: "로드 중 ..."
-state_loadtime: "페이지 요청이 <span class="txtRd">%s</span> 초 후에 완료되었습니다."
+state_loadtime: "페이지 요청이 %s 초 후에 완료되었습니다."
 state_logged_in: "로그인 했습니다."
 state_logged_in_2fa_pending: "로그인 했습니다 + 2FA를 기다리는 중."
 state_logged_out: "로그 아웃했습니다."

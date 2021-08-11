@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Thai language data (last modified: 2021.06.07).
+# This file: Thai language data (last modified: 2021.08.10).
 ##/
 
 config_core: "การกำหนดค่าทั่วไป (การกำหนดค่าใด ๆ ที่ไม่ได้อยู่ในหมวดหมู่อื่น)."
@@ -250,7 +250,7 @@ state_cache_is_empty: "แคชว่างเปล่า."
 state_complete_access: "เข้าถึงได้อย่างสมบูรณ์"
 state_default_password: "คำเตือน: ใช้ค่าเริ่มต้นรหัสผ่าน!"
 state_loading: "กำลังโหลด ..."
-state_loadtime: "คำขอหน้าเสร็จสิ้นภายใน <span class="txtRd">%s</span> วินาที."
+state_loadtime: "คำขอหน้าเสร็จสิ้นภายใน %s วินาที."
 state_logged_in: "เข้าสู่ระบบ."
 state_logged_in_2fa_pending: "เข้าสู่ระบบ + รอดำเนินการ 2FA."
 state_logged_out: "ออกจากระบบ."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2021.06.07).
+# This file: Latvian language data (last modified: 2021.08.10).
 ##/
 
 config_core: "Vispārējā konfigurācija (jebkura pamata konfigurācija, kas nepieder citām kategorijām)."
@@ -253,7 +253,7 @@ state_cache_is_empty: "Kešatmiņa ir tukša."
 state_complete_access: "Pilnīga piekļuve"
 state_default_password: "Brīdinājums: Izmantojot noklusējuma paroli!"
 state_loading: "Ielādēta..."
-state_loadtime: "Lapas pieprasījums ir pabeigts <span class="txtRd">%s</span> sekundēs."
+state_loadtime: "Lapas pieprasījums ir pabeigts %s sekundēs."
 state_logged_in: "Ielogojies."
 state_logged_in_2fa_pending: "Ielogojies + Gaidu 2FA."
 state_logged_out: "Izlogojies."

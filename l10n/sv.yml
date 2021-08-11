@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2021.06.07).
+# This file: Swedish language data (last modified: 2021.08.10).
 ##/
 
 config_core: "Allmän konfiguration (alla kärnkonfigurationer som inte tillhör andra kategorier)."
@@ -250,7 +250,7 @@ state_cache_is_empty: "Cacheminnet är tomt."
 state_complete_access: "Fullständig tillgång"
 state_default_password: "Varning: Använder standardlösenordet!"
 state_loading: "Laddar..."
-state_loadtime: "Sidförfrågan färdigställd om <span class="txtRd">%s</span> sekunder."
+state_loadtime: "Sidförfrågan färdigställd om %s sekunder."
 state_logged_in: "Inloggad."
 state_logged_in_2fa_pending: "Inloggad + 2FA väntar."
 state_logged_out: "Utloggad."

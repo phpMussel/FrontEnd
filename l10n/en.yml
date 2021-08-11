@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2021.06.07).
+# This file: English language data (last modified: 2021.08.10).
 ##/
 
 config_core: "General configuration (any core configuration not belonging to other categories)."
@@ -252,7 +252,7 @@ state_cache_is_empty: "The cache is empty."
 state_complete_access: "Complete access"
 state_default_password: "Warning: Using default password!"
 state_loading: "Loading..."
-state_loadtime: "Page request completed in <span class="txtRd">%s</span> seconds."
+state_loadtime: "Page request completed in %s seconds."
 state_logged_in: "Logged in."
 state_logged_in_2fa_pending: "Logged in + 2FA pending."
 state_logged_out: "Logged out."

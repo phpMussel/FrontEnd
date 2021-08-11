@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2021.06.07).
+# This file: Polish language data (last modified: 2021.08.10).
 ##/
 
 config_core: "Ogólna konfiguracja (dowolna konfiguracja podstawowa nienależąca do innych kategorii)."
@@ -253,7 +253,7 @@ state_cache_is_empty: "Pamięć podręczna jest pusta."
 state_complete_access: "Pełny dostęp"
 state_default_password: "Ostrzeżenie: Używanie domyślnego hasła!"
 state_loading: "Ładowanie..."
-state_loadtime: "Żądanie strony zakończone w <span class="txtRd">%s</span> sekundy."
+state_loadtime: "Żądanie strony zakończone w %s sekundy."
 state_logged_in: "Zalogowany."
 state_logged_in_2fa_pending: "Zalogowany + Oczekuje na potwierdzenie 2FA."
 state_logged_out: "Wylogowano."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2021.06.07).
+# This file: Arabic language data (last modified: 2021.08.10).
 ##/
 
 config_core: "التكوين العام (أي التكوين الأساسي لا ينتمي إلى فئات أخرى)."
@@ -250,7 +250,7 @@ state_cache_is_empty: "ذاكرة التخزين المؤقت فارغة."
 state_complete_access: "الوصول كامل"
 state_default_password: "تحذير: يستخدم الافتراضي كلمه السر!"
 state_loading: "جار التحميل..."
-state_loadtime: "اكتمل طلب الصفحة خلال <span class="txtRd">%s</span> ثوان."
+state_loadtime: "اكتمل طلب الصفحة خلال %s ثوان."
 state_logged_in: "حاليا على."
 state_logged_in_2fa_pending: "حاليا على + 2FA معلقة."
 state_logged_out: "تسجيل الخروج."

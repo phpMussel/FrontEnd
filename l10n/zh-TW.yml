@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (traditional) language data (last modified: 2021.06.07).
+# This file: Chinese (traditional) language data (last modified: 2021.08.10).
 ##/
 
 config_core: "基本配置（任何不屬於其他類別的核心配置）。"
@@ -250,7 +250,7 @@ state_cache_is_empty: "緩存是空的。"
 state_complete_access: "完全訪問"
 state_default_password: "警告：它使用標準密碼！"
 state_loading: "載入中..."
-state_loadtime: "頁面請求在<span class="txtRd">%s</span>秒內完成。"
+state_loadtime: "頁面請求在%s秒內完成。"
 state_logged_in: "已登錄。"
 state_logged_in_2fa_pending: "已登錄，2FA待定。"
 state_logged_out: "已登出。"

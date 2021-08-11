@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Urdu language data (last modified: 2021.06.07).
+# This file: Urdu language data (last modified: 2021.08.10).
 ##/
 
 config_core: "عام ترتیبات (کنفیگریشن جس کا تعلق دوسری قسموں سے نہیں ہے)."
@@ -250,7 +250,7 @@ state_cache_is_empty: "کیش خالی ہے."
 state_complete_access: "مکمل رسائی"
 state_default_password: "انتباہ: ڈیفالٹ پاس ورڈ کو استعمال کرتے ہوئے!"
 state_loading: "لوڈ کر رہا ہے ..."
-state_loadtime: "<span class="txtRd">%s</span> سیکنڈ میں مکمل ہونے والی درخواست کی درخواست."
+state_loadtime: "%s سیکنڈ میں مکمل ہونے والی درخواست کی درخواست."
 state_logged_in: "لاگ ان."
 state_logged_in_2fa_pending: "لاگ ان + 2FA زیر التواء."
 state_logged_out: "لاگ آؤٹ."

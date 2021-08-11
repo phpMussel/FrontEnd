@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2021.06.07).
+# This file: Dutch language data (last modified: 2021.08.10).
 ##/
 
 config_core: "Algemene configuratie (elke kernconfiguratie die niet tot andere categorieën behoort)."
@@ -252,7 +252,7 @@ state_cache_is_empty: "De cache is leeg."
 state_complete_access: "Volledige toegang"
 state_default_password: "Waarschuwing: Gebruikt de standaard wachtwoord!"
 state_loading: "Bezig met laden..."
-state_loadtime: "Paginaverzoek voltooid in <span class="txtRd">%s</span> seconden."
+state_loadtime: "Paginaverzoek voltooid in %s seconden."
 state_logged_in: "Ingelogd."
 state_logged_in_2fa_pending: "Ingelogd + wachten op 2FA."
 state_logged_out: "Uitgelogd."

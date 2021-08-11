@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2021.07.21).
+ * This file: Front-end handler (last modified: 2021.08.10).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1648,7 +1648,7 @@ class FrontEnd
             $FE['ProcTime'] = microtime(true) - $_SERVER['REQUEST_TIME_FLOAT'];
             $FE['ProcTime'] = '<div class="s">' . sprintf(
                 $this->Loader->L10N->getPlural($FE['ProcTime'], 'state_loadtime'),
-                $this->NumberFormatter->format($FE['ProcTime'], 3)
+                '<span class="txtRd">' . $this->NumberFormatter->format($FE['ProcTime'], 3) . '</span>'
             ) . '</div>';
 
             /** Parse output. */
@@ -1824,7 +1824,7 @@ class FrontEnd
             $FE['ProcessTime'] = microtime(true) - $_SERVER['REQUEST_TIME_FLOAT'];
             $FE['ProcessTime'] = '<br />' . sprintf(
                 $this->Loader->L10N->getPlural($FE['ProcessTime'], 'state_loadtime'),
-                $this->NumberFormatter->format($FE['ProcessTime'], 3)
+                '<span class="txtRd">' . $this->NumberFormatter->format($FE['ProcessTime'], 3) . '</span>'
             );
 
             /** Set logfile list or no logfiles available message. */

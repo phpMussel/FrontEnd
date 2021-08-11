@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Russian language data (last modified: 2021.06.07).
+# This file: Russian language data (last modified: 2021.08.10).
 ##/
 
 config_core: "Общая конфигурация (любая конфигурация ядра, не относящаяся к другим категориям)."
@@ -253,7 +253,7 @@ state_cache_is_empty: "Кэш пуст."
 state_complete_access: "Полный доступ"
 state_default_password: "Предупреждение: Использует стандартный пароль!"
 state_loading: "В ходе выполнения..."
-state_loadtime: "Запрос страницы завершен через <span class="txtRd">%s</span> секунд."
+state_loadtime: "Запрос страницы завершен через %s секунд."
 state_logged_in: "Вошли в систему."
 state_logged_in_2fa_pending: "Вошли в систему + Ожидается 2FA."
 state_logged_out: "Вышел из системы."

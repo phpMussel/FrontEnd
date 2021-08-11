@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2021.06.10).
+# This file: Japanese language data (last modified: 2021.08.10).
 ##/
 
 config_core: "全般的な設定（他のカテゴリに属さないの設定）。"
@@ -250,7 +250,7 @@ state_cache_is_empty: "キャッシュは空です。"
 state_complete_access: "完全なアクセス"
 state_default_password: "警告：デフォルトのパスワードを使用して！"
 state_loading: "読み込んでいます..."
-state_loadtime: "ページ要求は<span class="txtRd">%s</span>秒後に完了しました。"
+state_loadtime: "ページ要求は%s秒後に完了しました。"
 state_logged_in: "ログインしました。"
 state_logged_in_2fa_pending: "ログインしました＋２ＦＡを待っています。"
 state_logged_out: "ログアウトしました。"

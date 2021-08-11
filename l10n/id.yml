@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2021.06.07).
+# This file: Indonesian language data (last modified: 2021.08.10).
 ##/
 
 config_core: "Konfigurasi umum (konfigurasi inti apapun yang bukan milik kategori lain)."
@@ -250,7 +250,7 @@ state_cache_is_empty: "Cache kosong."
 state_complete_access: "Akses lengkap"
 state_default_password: "Peringatan: Menggunakan kata sandi standar!"
 state_loading: "Pemuatan..."
-state_loadtime: "Permintaan halaman selesai dalam <span class="txtRd">%s</span> detik."
+state_loadtime: "Permintaan halaman selesai dalam %s detik."
 state_logged_in: "Dimasuk."
 state_logged_in_2fa_pending: "Dimasuk + 2FA sedang menunggu."
 state_logged_out: "Dikeluar."

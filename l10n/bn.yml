@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bangla language data (last modified: 2021.06.07).
+# This file: Bangla language data (last modified: 2021.08.10).
 ##/
 
 config_core: "সাধারণ কনফিগারেশন (অন্য কোনও বিভাগের অন্তর্ভুক্ত নয় এমন কোনও কনফিগারেশন)।"
@@ -250,7 +250,7 @@ state_cache_is_empty: "ক্যাশ খালি আছে।"
 state_complete_access: "সম্পূর্ণ প্রবেশাধিকার"
 state_default_password: "সতর্কতা: ডিফল্ট পাসওয়ার্ড ব্যবহার করে!"
 state_loading: "লোড হচ্ছে ..."
-state_loadtime: "পৃষ্ঠা অনুরোধ সম্পন্ন <span class="txtRd">%s</span> সেকেন্ড।"
+state_loadtime: "পৃষ্ঠা অনুরোধ সম্পন্ন %s সেকেন্ড।"
 state_logged_in: "লগ ইন হয়।"
 state_logged_in_2fa_pending: "লগ ইন হয় + 2FA মুলতুবি।"
 state_logged_out: "লগ আউট হয়।"

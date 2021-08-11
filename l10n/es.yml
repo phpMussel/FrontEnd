@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2021.06.07).
+# This file: Spanish language data (last modified: 2021.08.10).
 ##/
 
 config_core: "Configuración general (cualquier configuración que no pertenezca a otras categorías)."
@@ -252,7 +252,7 @@ state_cache_is_empty: "El caché está vacío."
 state_complete_access: "Acceso completo"
 state_default_password: "¡Advertencia: Usando la contraseña estándar!"
 state_loading: "Cargando..."
-state_loadtime: "Solicitud de página completada en <span class="txtRd">%s</span> segundos."
+state_loadtime: "Solicitud de página completada en %s segundos."
 state_logged_in: "Conectado."
 state_logged_in_2fa_pending: "Conectado + 2FA pendiente."
 state_logged_out: "Desconectado."

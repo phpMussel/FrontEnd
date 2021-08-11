@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2021.06.07).
+# This file: Turkish language data (last modified: 2021.08.10).
 ##/
 
 config_core: "Genel yapılandırma (diğer kategorilere ait olmayan herhangi bir çekirdek yapılandırma)."
@@ -250,7 +250,7 @@ state_cache_is_empty: "Önbellek boş."
 state_complete_access: "Tam erişim"
 state_default_password: "Uyarı: Varsayılan şifreyi kullanıyor!"
 state_loading: "Yükleniyor..."
-state_loadtime: "Sayfa isteği <span class="txtRd">%s</span> saniye içinde tamamlandı."
+state_loadtime: "Sayfa isteği %s saniye içinde tamamlandı."
 state_logged_in: "Giriş yapıldı."
 state_logged_in_2fa_pending: "Giriş yapıldı + 2FA beklemede."
 state_logged_out: "Çıkış yapıldı."

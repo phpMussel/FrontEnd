@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2021.06.07).
+# This file: Italian language data (last modified: 2021.08.10).
 ##/
 
 config_core: "Configurazione generale (qualsiasi configurazione di base non appartenente ad altre categorie)."
@@ -250,7 +250,7 @@ state_cache_is_empty: "La cache è vuota."
 state_complete_access: "Accesso completo"
 state_default_password: "Avvertimento: Utilizzando la password predefinita!"
 state_loading: "Caricamento in corso..."
-state_loadtime: "Richiesta di pagina completata in <span class="txtRd">%s</span> secondi."
+state_loadtime: "Richiesta di pagina completata in %s secondi."
 state_logged_in: "Connesso."
 state_logged_in_2fa_pending: "Connesso + 2FA in sospeso."
 state_logged_out: "Disconnesso."

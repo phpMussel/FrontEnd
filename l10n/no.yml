@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2021.06.07).
+# This file: Norwegian language data (last modified: 2021.08.10).
 ##/
 
 config_core: "Generell konfigurasjon (enhver kjernekonfigurasjon som ikke tilhører andre kategorier)."
@@ -250,7 +250,7 @@ state_cache_is_empty: "Cachen er tom."
 state_complete_access: "Komplett tilgang"
 state_default_password: "Advarsel: Bruker standard passordet"
 state_loading: "Laster ..."
-state_loadtime: "Sideforespørsel avsluttet om <span class="txtRd">%s</span> sekunder."
+state_loadtime: "Sideforespørsel avsluttet om %s sekunder."
 state_logged_in: "Logget inn."
 state_logged_in_2fa_pending: "Logget inn + 2FA venter."
 state_logged_out: "Logget ut."
