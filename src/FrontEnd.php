@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2021.08.10).
+ * This file: Front-end handler (last modified: 2021.08.25).
  */
 
 namespace phpMussel\FrontEnd;
@@ -154,7 +154,7 @@ class FrontEnd
             $Configuration = $this->Loader->readFile($this->AssetsPath . 'config.yml')
         ) {
             $Defaults = [];
-            $this->Loader->YAML->process($Configuration, $Defaults);
+            $this->Loader->YAML->process($Configuration, $Defaults, 0, true);
             if (isset($Defaults)) {
                 $this->Loader->fallback($Defaults);
                 $this->Loader->ConfigurationDefaults = array_merge_recursive($this->Loader->ConfigurationDefaults, $Defaults);
@@ -2457,7 +2457,7 @@ class FrontEnd
                     $Value = $this->Loader->timeFormat($Value, $this->Loader->Configuration['core']['time_format']);
                 }
                 $Class = ($Key === $this->Loader->L10N->getString('field_size') || $Key === $this->Loader->L10N->getString('label_expires')) ? 'txtRd' : 's';
-                $Text = ($Count === 1 && $Key === 0) ? $Value : $Key . ($Class === 's' ? ' => ' : '') . $Value;
+                $Text = ($Count === 1 && $Key === 0) ? $Value : $Key . ($Class === 's' ? ' => ' : ' ') . $Value;
                 $Output .= '<code class="' . $Class . '" style="word-wrap:break-word;word-break:break-all">' . str_replace(['<', '>'], ['&lt;', '&gt;'], $Text) . '</code>' . $Delete;
             }
             $Output .= '</li>' . ($Depth === 0 ? '<br /></span>' : '');

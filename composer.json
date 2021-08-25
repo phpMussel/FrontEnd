@@ -13,7 +13,7 @@
     },
     "require": {
         "php": ">=7.2.0",
-        "maikuolan/common": "^2.5",
+        "maikuolan/common": "^2.7",
         "phpmussel/core": "^3.2",
         "ext-pcre": "*"
     },
