@@ -1,9 +1,9 @@
 *{vertical-align:text-top}
-body,input,select,textarea{font-size:calc(12px * {magnification});background-repeat:no-repeat}
-body{font-family:'Lucida Grande',Tahoma,Verdana,Arial;letter-spacing:1px;text-decoration:none;border-style:none;margin:0;padding:0;white-space:normal;background-color:#36393b;color:#c5bc8e;background-image:url('?phpmussel-asset=moon.jpg&theme={theme}');background-attachment:fixed;background-position:center center}
+body,input,select,textarea{font-size:calc((12px * {magnification}) + .03vw);background-repeat:no-repeat}
+body{font-family:'Lucida Grande',Tahoma,Verdana,Arial;letter-spacing:1px;text-decoration:none;border-style:none;margin:0;white-space:normal;background-color:#36393b;color:#c5bc8e;background-image:url('?phpmussel-asset=moon.jpg&theme={theme}');background-attachment:fixed;background-position:center center}
 hr{border-style:solid none none;border-width:1px;margin:5px 2px 0;padding:2px;color:#aaa}
 img.ico{width:16px;height:16px;border:0}
-input,select,textarea{background-color:rgba(54,57,59,0.7);border:1px solid #aaa;color:#c5bc8e;margin:2px;padding:2px}
+input,select,textarea{background-color:rgba(54,57,59,.7);border:1px solid #aaa;color:#c5bc8e;margin:2px;padding:2px}
 input,select{width:150px;background-repeat:no-repeat;background-position:top {FE_Align_Reverse}}
 input.auto,select.auto{width:auto;padding-left:10px;padding-right:10px}
 input[type=image]{width:inherit;border:inherit}
@@ -22,33 +22,37 @@ textarea{width:calc(100% - 10px)}
 a:link,a:visited{color:#eee6ab}
 a:hover,a:active,a:focus{color:#fff7bc}
 .cat,.exp,.gen,.nav,.s,.txtGn,.txtOe,.txtRd,.spanner,a,input,select,textarea{font-weight:700}
-.gen,.spanner{text-align:{FE_Align_Reverse}}
 .ci,.co,.gen,.center{margin:auto}
-.ci,.co,.ng1,.ng2{width:98%}
-.ci{background-color:rgba(69,84,75,0.5);border-style:solid;border-width:1px;border-color:#aaa;text-align:{FE_Align};padding:12px;border-top-right-radius:24px}
+.ci,.co,.ng1,.ng2{width:calc(100% - 32px)}
+.ci{background-color:rgba(69,84,75,.5);border-style:solid;border-width:1px;border-color:#aaa;text-align:{FE_Align};border-top-right-radius:24px}
+.ci{padding:12px}
 .co,body,.nav,.center{text-align:center}
-.co{padding:12}
+.co,body{padding:0}
 .dt,.s,.txtBl,.txtGn,.txtOe,.txtRd{display:inline}
 .dt{float:{FE_Align};text-align:{FE_Align};width:80%}
+.gen,.spanner{text-align:{FE_Align_Reverse}}
 .gen,input,select,textarea{font-family:Verdana,Arial,Helvetica}
 .gen{letter-spacing:0;white-space:nowrap}
 .h1,.h1f,.h2,.h2f,.h3,.h3f,.h4,.h4f,.ng1,.ng2,.r,.rf,.spanner{margin:0;padding:4px;border-style:{Half_Border};border-width:1px;border-color:#999}
 .h1,.h1f,.h2,.h2f,.r,.rf{width:25%}
-.h1,.h3,.spanner{background-color:rgba(103,106,109,0.5)}
-.h2,.h4,code{background-color:rgba(86,89,92,0.5)}
+.h1,.h3,.spanner{background-color:rgba(103,106,109,.5)}
+.h2,.h4,code{background-color:rgba(86,89,92,.5)}
 .h3,.h3f,.h4,.h4f{width:50%}
 code,.nav{font-family:'Courier New',Courier,'Lucida Grande',Arial}
-.ng1,.h1f,.h3f{background:linear-gradient({Gradient_Degree}deg,rgba(103,106,109,0.5),#555)}
-.ng2,.h2f,.h4f{background:linear-gradient({Gradient_Degree}deg,rgba(86,89,92,0.5),#444)}
-.hFd:hover,.r{background-color:rgba(120,89,92,0.5)}
-.rf{background:linear-gradient({Gradient_Degree}deg,rgba(120,89,92,0.5),#644)}
+.ng1,.h1f,.h3f{background:linear-gradient({Gradient_Degree}deg,rgba(103,106,109,.5),#555)}
+.ng2,.h2f,.h4f{background:linear-gradient({Gradient_Degree}deg,rgba(86,89,92,.5),#444)}
+.hFd:hover,.r{background-color:rgba(120,89,92,.5)}
+.rf{background:linear-gradient({Gradient_Degree}deg,rgba(120,89,92,.5),#644)}
 .branchline{border-style:none none solid none;border-width:1px;border-color:#aaa}
 .txtBl{color:#000}
 .txtGn{color:#b4de7d}
 .txtOe{color:#e7de6c}
 .txtRd{color:#e7ab7d}
 .ufts{width:220px}
-@keyframes idxAn{0%{background:rgba(120,89,92,0.5)}100%{background:rgba(86,89,92,0.5)}}
+@media only all and (max-width:230px) {
+  .ufts{width:calc(100% - 10px)}
+}
+@keyframes idxAn{0%{background:rgba(120,89,92,.5)}100%{background:rgba(86,89,92,.5)}}
 @keyframes UplT{0%{opacity:0}100%{opacity:1}}
 .mob{display:none}
 input[id=logoutbutton],input[id=homebutton]{transition:all .3s ease-out}
@@ -56,16 +60,15 @@ input[id=logoutbutton]{border-top-{FE_Align}-radius:0;border-bottom-{FE_Align}-r
 input[id=logoutbutton]:hover,input[id=logoutbutton]:active,input[id=logoutbutton]:focus{background-position:top 3px {FE_Align} 4px,top 1px {FE_Align} 4px}
 input[id=homebutton]{border-top-{FE_Align_Reverse}-radius:0;border-bottom-{FE_Align_Reverse}-radius:0;margin-{FE_Align_Reverse}:0}
 .h1f,.h2f,.h3f,.h4f,.rf{white-space:nowrap}
-@media only all and (max-width:640px) {
+@media only all and (max-width:968px) {
   .big,.dt{display:none}
   .mob{display:block}
   .gen{float:none;height:auto;text-align:center}
-  .ufts{width:auto}
   .h1,.h1f,.h2,.h2f,.r,.rf{width:50%}
   .extend{width:100%}
 }
-.hB{background-color:rgba(0,0,0,0.125)}
-.hW{background-color:rgba(255,255,255,0.125)}
+.hB{background-color:rgba(0,0,0,.125)}
+.hW{background-color:rgba(255,255,255,.125)}
 .fW{word-break:break-all}
 .exp{color:#ff0;background-color:#f00}
 .pieul{list-style-type:none;margin:0;padding:0}
@@ -81,7 +84,7 @@ select+input[type=submit],select+input[type=button]{height:20px;margin-{FE_Align
 select,input[type=submit],input[type=reset],input[type=button],input[type=text],input[type=password],input[type=number],button{box-sizing:border-box;height:20px;padding-top:0;padding-bottom:0}
 #pgrad{width:16px;height:16px;display:inline-block;border-radius:16px;filter:blur(2px)}
 td code~input,td code~select{vertical-align:middle}
-.trEase{transition:all 0.5s ease-out}
+.trEase{transition:all .5s ease-out}
 .trEase>div{display:inline-block;transition:inherit}
 .pipCntrs{display:inline-block;position:relative;left:0;width:12px;height:12px;transition:inherit}
 .pipCntrs>img{display:inline-block;position:absolute;left:0;transition:inherit}

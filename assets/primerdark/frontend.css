@@ -1,8 +1,8 @@
 *{vertical-align:text-top}
-body,input,select,textarea,.idx{font-size:calc(12px * {magnification})}
-body,input,select{font-family:BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";letter-spacing:1px;text-decoration:none;border-style:none;margin:0;padding:0;white-space:normal;color:#e4e6eb}
+body,input,select,textarea,code,.idx{font-size:calc((12px * {magnification}) + .03vw)}
+body,input,select{font-family:BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;letter-spacing:1px;text-decoration:none;border-style:none;margin:0;white-space:normal;color:#e4e6eb}
 body{background-color:#18191a}
-code{font-family:SFMono-Regular,Consolas,"Liberation Mono",Menlo,monospace;font-size:12px;background-color:rgba(255,153,102,0.3);vertical-align:middle}
+code{font-family:SFMono-Regular,Consolas,"Liberation Mono",monospace;background-color:rgba(255,153,102,.3);vertical-align:0;display:inline-block;height:calc(1em + 2px)}
 .branchline,hr{box-sizing:content-box;height:0;overflow:visible;height:0;margin:15px 0;overflow:hidden;background:0 0;border:0;border-bottom:1px solid #3a3b3c}
 .branchline,hr::after{display:table;clear:both;content:""}
 .branchline,hr::before{display:table;content:""}
@@ -14,27 +14,28 @@ textarea.half{height:75px}
 textarea{width:calc(100% - 20px)}
 a:link,a:visited,a:active,a:focus{color:#fc0;text-decoration:none}
 a:hover{color:#fc0;text-decoration:underline}
-.cat,.exp,.bNav,.gen,.nav,.s,.tip,.txtGn,.txtOe,.txtRd,.spanner,a{font-weight:700}
 .bNav,.gen,.spanner{text-align:{FE_Align_Reverse}}
 .bNav{height:64px}
+.cat,.exp,.bNav,.gen,.nav,.s,.tip,.txtGn,.txtOe,.txtRd,.spanner,a{font-weight:700}
 .ci,.co,.gen,.center{margin:auto}
-.ci,.co,.ng1,.ng2,.ci>.bNav:first-child{width:98%}
-.ci{text-align:{FE_Align};padding:12px}
+.ci,.co,.ng1,.ng2,.ci>.bNav:first-child{width:calc(100% - 32px)}
+.ci{padding:12px}
+.ci{text-align:{FE_Align}}
 .co,body,.center{text-align:center}
-.co{padding:12}
+.co,body,input,select{padding:0}
 .dt,.s,.tip,.txtBl,.txtGn,.txtOe,.txtRd{display:inline}
 .dt,.tip{float:{FE_Align};text-align:{FE_Align};width:80%}
 .gen{font-family:inherit;letter-spacing:0;white-space:nowrap}
 .h1,.h1f,.h2,.h2f,.h3,.h3f,.h4,.h4f,.ng1,.ng2,.r,.rf,.spanner{margin:0;padding:4px;border-style:none}
 .h1,.h1f,.h2,.h2f,.r,.rf{width:25%}
-.h1,.h3,.spanner{background-color:rgba(255,255,255,0.1)}
-.h2,.h4{background-color:rgba(255,255,255,0.2)}
+.h1,.h3,.spanner{background-color:rgba(255,255,255,.1)}
+.h2,.h4{background-color:rgba(255,255,255,.2)}
 .h3,.h3f,.h4,.h4f{width:50%}
-.nav{font-size:calc(14px * {magnification});width:20%}
-.ng1,.h1f,.h3f{background:linear-gradient({Gradient_Degree}deg,rgba(255,255,255,0.1),rgba(255,255,255,0.3))}
-.ng2,.h2f,.h4f{background:linear-gradient({Gradient_Degree}deg,rgba(255,255,255,0.2),rgba(255,255,255,0.4))}
-.hFd:hover,.r{background-color:rgba(255,102,0,0.3)}
-.rf{background:linear-gradient({Gradient_Degree}deg,rgba(255,102,0,0.3),rgba(255,102,0,0.5))}
+.nav{font-size:calc((14px * {magnification}) + .03vw);width:20%}
+.ng1,.h1f,.h3f{background:linear-gradient({Gradient_Degree}deg,rgba(255,255,255,.1),rgba(255,255,255,.3))}
+.ng2,.h2f,.h4f{background:linear-gradient({Gradient_Degree}deg,rgba(255,255,255,.2),rgba(255,255,255,.4))}
+.hFd:hover,.r{background-color:rgba(255,102,0,.3)}
+.rf{background:linear-gradient({Gradient_Degree}deg,rgba(255,102,0,.3),rgba(255,102,0,.5))}
 .right,.ci>.bNav:first-child{background-color:#242526;border:none;border-radius:6px;padding:12px}
 .right{text-align:{FE_Align};padding:12px;width:80%}
 .txtBl{color:#fff}
@@ -45,8 +46,11 @@ code.txtGn{color:#7c7}
 code.txtOe{color:#fc7}
 code.txtRd{color:#c77}
 .ufts{width:220px}
-@keyframes idxAn{0%{background:rgba(255,153,102,0.9)}100%{background:rgba(255,153,102,0.3)}}
-@keyframes UplT{0%{opacity:0.0}100%{opacity:1.0}}
+@media only all and (max-width:230px) {
+  .ufts{width:calc(100% - 10px)}
+}
+@keyframes idxAn{0%{background:rgba(255,153,102,.9)}100%{background:rgba(255,153,102,.3)}}
+@keyframes UplT{0%{opacity:.0}100%{opacity:1.0}}
 .mob{display:none}
 input,textarea,select,option{background-color:#3a3b3c}
 input,textarea{padding:0 8px 0 8px;font-weight:600}
@@ -62,16 +66,15 @@ input[type=button],input[type=submit]{color:#fff;background-color:#595}
 input[type=reset]{color:#fff;background-color:#955}
 .h1f,.h2f,.h3f,.h4f,.rf{white-space:nowrap}
 input[type=radio]{box-shadow:unset}
-@media only all and (max-width:640px) {
+@media only all and (max-width:968px) {
   .big,.dt{display:none}
   .mob{display:block}
   .tip,.bNav,.gen{float:none;height:auto;text-align:center}
-  .ufts{width:auto}
   .h1,.h1f,.h2,.h2f,.r,.rf{width:50%}
   .extend{width:100%}
 }
 .hB{background-color:rgba(255,255,255.125)}
-.hW{background-color:rgba(0,0,0,0,0.125)}
+.hW{background-color:rgba(0,0,0,0,.125)}
 .fW{word-break:break-all}
 .exp{color:#ff0;background-color:#f00}
 .pieul{list-style-type:none;margin:0;padding:0}
@@ -93,15 +96,15 @@ blockquote.comSub{margin:-2px 0 0 0;padding:0 0 0 0}
 #statnavlink::before{content:"🗠"}
 #testnavlink::before{content:"🔬"}
 p{margin-top:0;margin-bottom:10px}
-small{font-size:90%}
-sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+small{font-size:.9em}
+sub,sup{font-size:.7em;line-height:0;position:relative;vertical-align:baseline}
 .auto{width:auto;padding-left:8px;padding-right:8px}
 input:not([type=submit]):not([type=reset]):not([type=button]){border:none;height:20px}
 textarea{border:none}
 select,input[type=submit],input[type=reset],input[type=button],input[type=text],input[type=password],input[type=number],button{box-sizing:border-box;height:20px;padding-top:0;padding-bottom:0}
 #pgrad{width:16px;height:16px;display:inline-block;border-radius:16px;filter:blur(2px)}
 td code~input,td code~select{vertical-align:middle}
-.trEase{transition:all 0.5s ease-out}
+.trEase{transition:all .5s ease-out}
 .trEase>div{display:inline-block;transition:inherit}
 .pipCntrs{display:inline-block;position:relative;left:0;width:12px;height:12px;transition:inherit}
 .pipCntrs>img{display:inline-block;position:absolute;left:0;transition:inherit}
