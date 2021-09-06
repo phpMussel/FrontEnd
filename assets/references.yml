@@ -1,0 +1,32 @@
+##\
+# This file is a part of the phpMussel\FrontEnd package.
+# Homepage: https://phpmussel.github.io/
+#
+# PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: YAML references file (last modified: 2021.09.05).
+##/
+
+Links:
+ ClamavNet: "<a href="https://www.clamav.net/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external">ClamavNet</a>"
+ Hybrid Analysis: "<a href="https://www.hybrid-analysis.com/" dir="ltr" hreflang="en" rel="noopener noreferrer external">Hybrid Analysis</a>"
+ Malware Expert: "<a href="https://malware.expert/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external">Malware.Expert</a>"
+ MalwareTips: "<a href="https://malwaretips.com/" dir="ltr" hreflang="en" rel="noopener noreferrer external">MalwareTips</a>"
+ Malwarebytes: "<a href="https://www.malwarebytes.com/" dir="ltr" hreflang="en" rel="noopener noreferrer external">Malwarebytes</a>"
+ OSChina: "<a href="https://www.oschina.net/p/phpMussel" dir="ltr" hreflang="zh-CN" rel="noopener noreferrer external">phpMussel＠开源中国社区</a>"
+ Payload Security: "<a href="https://www.payload-security.com/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external">Payload Security</a>"
+ PhishTank: "<a href="https://www.phishtank.com/" dir="ltr" hreflang="en" rel="noopener noreferrer external">PhishTank</a>"
+ PHP:
+  Earth:
+   Facebook: "<a href="https://www.facebook.com/groups/2204685680/" dir="ltr" rel="noopener noreferrer external">PHP.earth@Facebook</a>"
+   Website: "<a href="https://php.earth/" dir="ltr" hreflang="en" rel="noopener noreferrer external">PHP.earth</a>"
+ phpMussel:
+  Extras: "<a href="https://github.com/phpMussel/extras" dir="ltr" hreflang="en" rel="noopener noreferrer external">phpMussel/extras</a>"
+  Issues: "<a href="https://github.com/phpMussel/phpMussel/issues" dir="ltr" hreflang="en" rel="noopener noreferrer external">phpMussel/phpMussel/issues</a>"
+  SigTool: "<a href="https://github.com/phpMussel/SigTool" dir="ltr" hreflang="en" rel="noopener noreferrer external">phpMussel/SigTool</a>"
+ Sanesecurity: "<a href="https://sanesecurity.com/usage/signatures/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external">Sanesecurity</a>"
+ SecuriteInfo: "<a href="https://www.securiteinfo.com/" dir="ltr" hreflang="fr-FR" rel="noopener noreferrer external">SecuriteInfo.com</a>"
+ VirusTotal: "<a href="https://www.virustotal.com/" dir="ltr" rel="noopener noreferrer external">VirusTotal</a>"

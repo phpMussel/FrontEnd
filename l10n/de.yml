@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data (last modified: 2021.08.25).
+# This file: German language data (last modified: 2021.09.05).
 ##/
 
 config_core: "Allgemeine Konfiguration (jede Kernkonfiguration, die nicht zu anderen Kategorien gehört)."
@@ -284,36 +284,36 @@ info_some_useful_links: |
      <ul class="pieul">
        <li><span class="comCat" style="cursor:pointer">Werkzeuge, Ressourcen, u.s.w. für phpMussel.</span>
          <ul class="comSub">
-           <li><a href="https://github.com/phpMussel/phpMussel/issues" hreflang="en" rel="noopener noreferrer external">phpMussel/phpMussel/issues</a> – Problemseite für phpMussel (Unterstützung, u.s.w.).</li>
-           <li><a href="https://github.com/phpMussel/SigTool" hreflang="en" rel="noopener noreferrer external">phpMussel SigTool</a> – Erstellt phpMussel-Signaturdateien mit der ClamAV-Signaturdatenbank.</li>
-           <li><a href="https://github.com/phpMussel/extras" hreflang="en" rel="noopener noreferrer external">phpMussel/extras</a> – Sonstiges Extras.</li>
+           <li>{{Links.phpMussel.Issues}} – Problemseite für phpMussel (Unterstützung, u.s.w.).</li>
+           <li>{{Links.phpMussel.SigTool}} – Erstellt phpMussel-Signaturdateien mit der ClamAV-Signaturdatenbank.</li>
+           <li>{{Links.phpMussel.Extras}} – Sonstiges Extras.</li>
          </ul>
        </li>
        <li><span class="comCat" style="cursor:pointer">Werkzeuge, Ressourcen, u.s.w. für ClamAV.</span>
          <ul class="comSub">
-           <li><a href="https://www.clamav.net/" hreflang="en" rel="noopener noreferrer external">ClamavNet</a> – ClamAV Startseite (ClamAV® ClamAV ist ein Open-Source-Antivirus-Modul für die Erkennung von Trojanern, Viren, Malware und anderen bösartigen Bedrohungen).</li>
-           <li><a href="https://www.securiteinfo.com/" hreflang="en" rel="noopener noreferrer external">SecuriteInfo.com</a> – Computer Security Unternehmen, das ergänzende Signaturen für ClamAV bietet.</li>
-           <li><a href="https://sanesecurity.com/usage/signatures/" hreflang="en" rel="noopener noreferrer external">Sanesecurity</a> – Computer Security Unternehmen, das ergänzende Signaturen für ClamAV bietet.</li>
-           <li><a href="https://malware.expert/" hreflang="en" rel="noopener noreferrer external">Malware.Expert</a> – Bietet zusätzliche Signaturen für ClamAV und zusätzliche Regeln für ModSecurity.</li>
+           <li>{{Links.ClamavNet}} – ClamAV Startseite (ClamAV® ClamAV ist ein Open-Source-Antivirus-Modul für die Erkennung von Trojanern, Viren, Malware und anderen bösartigen Bedrohungen).</li>
+           <li>{{Links.SecuriteInfo}} – Computer Security Unternehmen, das ergänzende Signaturen für ClamAV bietet.</li>
+           <li>{{Links.Sanesecurity}} – Computer Security Unternehmen, das ergänzende Signaturen für ClamAV bietet.</li>
+           <li>{{Links.Malware Expert}} – Bietet zusätzliche Signaturen für ClamAV und zusätzliche Regeln für ModSecurity.</li>
          </ul>
        </li>
        <li><span class="comCat" style="cursor:pointer">Gruppen, Foren, Gemeinschaften, u.s.w.</span>
          <ul class="comSub">
-           <li><a href="https://www.facebook.com/groups/2204685680/" rel="noopener noreferrer external">PHP.earth@Facebook</a> – PHP Lernressourcen und Diskussion.</li>
-           <li><a href="https://malwaretips.com/" hreflang="en" rel="noopener noreferrer external">MalwareTips</a> – Nützliche Malware konzentrierte Diskussionsforen.</li>
+           <li>{{Links.PHP.Earth.Facebook}} – PHP Lernressourcen und Diskussion.</li>
+           <li>{{Links.MalwareTips}} – Nützliche Malware konzentrierte Diskussionsforen.</li>
          </ul>
        </li>
        <li><span class="comCat" style="cursor:pointer">Andere nützliche Werkzeuge, Ressourcen, Dienste, u.s.w.</span>
          <ul class="comSub">
-           <li><a href="https://www.phishtank.com/" hreflang="en" rel="noopener noreferrer external">PhishTank</a> – Phishing-Datenbank, die vom phpMussel-URL-Scanner verwendet wird.</li>
-           <li><a href="https://www.virustotal.com/" rel="noopener noreferrer external">VirusTotal</a> – VirusTotal ist ein kostenloser Dienst zur Analyse verdächtiger Dateien und URLs.</li>
-           <li><a href="https://www.hybrid-analysis.com/" rel="noopener noreferrer external">Hybrid Analysis</a> – Hybrid Analysis ist ein kostenloser Malware-Analyse-Service von <a href="https://www.payload-security.com/" hreflang="en" rel="noopener noreferrer external">Payload Security</a> zur Verfügung gestellt.</li>
-           <li><a href="https://www.malwarebytes.com/" hreflang="en" rel="noopener noreferrer external">Malwarebytes</a> – Computer-Anti-Malware-Spezialisten.</li>
+           <li>{{Links.PhishTank}} – Phishing-Datenbank, die vom phpMussel-URL-Scanner verwendet wird.</li>
+           <li>{{Links.VirusTotal}} – VirusTotal ist ein kostenloser Dienst zur Analyse verdächtiger Dateien und URLs.</li>
+           <li>{{Links.Hybrid Analysis}} – Hybrid Analysis ist ein kostenloser Malware-Analyse-Service von {{Links.Payload Security}} zur Verfügung gestellt.</li>
+           <li>{{Links.Malwarebytes}} – Computer-Anti-Malware-Spezialisten.</li>
          </ul>
        </li>
        <li><span class="comCat" style="cursor:pointer">Informations und Lernressourcen.</span>
          <ul class="comSub">
-           <li><a href="https://php.earth/" hreflang="en" rel="noopener noreferrer external">PHP.earth</a> – PHP Lernressourcen und Diskussion.</li>
+           <li>{{Links.PHP.Earth.Website}} – PHP Lernressourcen und Diskussion.</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Sicherheitskarten</a> – Listet sichere/unsichere Versionen verschiedener Pakete auf (PHP, HHVM, u.s.w.).</li>
            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Kompatibilitätskarten</a> – Listet Kompatibilitätsinformationen für verschiedene Pakete auf (CIDRAM, phpMussel, u.s.w.).</li>
          </ul>

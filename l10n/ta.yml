@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Tamil language data (last modified: 2021.08.25).
+# This file: Tamil language data (last modified: 2021.09.05).
 ##/
 
 config_core: "பொதுவான உள்ளமைவு (மற்ற வகைகளுக்கு சொந்தமில்லாத உள்ளமைவு)."
@@ -284,36 +284,36 @@ info_some_useful_links: |
      <ul class="pieul">
        <li><span class="comCat" style="cursor:pointer">phpMussel க்கான கருவிகள், வளங்கள், போன்றவை.</span>
          <ul class="comSub">
-           <li><a href="https://github.com/phpMussel/phpMussel/issues" hreflang="en" rel="noopener noreferrer external">phpMussel/phpMussel/issues</a> – phpMussel க்கான சிக்கல்கள் பக்கம் (ஆதரவு, உதவி, போன்றவை).</li>
-           <li><a href="https://github.com/phpMussel/SigTool" hreflang="en" rel="noopener noreferrer external">phpMussel SigTool</a> – ClamAV கையொப்பங்கள் தரவுத்தளத்தைப் பயன்படுத்தி phpMussel கையொப்பக் கோப்புகளை உருவாக்குகிறது.</li>
-           <li><a href="https://github.com/phpMussel/extras" hreflang="en" rel="noopener noreferrer external">phpMussel/extras</a> – பல்வேறு கூடுதல் விஷயங்கள்.</li>
+           <li>{{Links.phpMussel.Issues}} – phpMussel க்கான சிக்கல்கள் பக்கம் (ஆதரவு, உதவி, போன்றவை).</li>
+           <li>{{Links.phpMussel.SigTool}} – ClamAV கையொப்பங்கள் தரவுத்தளத்தைப் பயன்படுத்தி phpMussel கையொப்பக் கோப்புகளை உருவாக்குகிறது.</li>
+           <li>{{Links.phpMussel.Extras}} – பல்வேறு கூடுதல் விஷயங்கள்.</li>
          </ul>
        </li>
        <li><span class="comCat" style="cursor:pointer">ClamAV க்கான கருவிகள், வளங்கள், போன்றவை.</span>
          <ul class="comSub">
-           <li><a href="https://www.clamav.net/" hreflang="en" rel="noopener noreferrer external">ClamavNet</a> – ClamAV முகப்புப்பக்கம் (ClamAV® என்பது ட்ரோஜான்கள், வைரஸ்கள், தீம்பொருள் மற்றும் பிற தீங்கிழைக்கும் அச்சுறுத்தல்களைக் கண்டறிய ஒரு திறந்த மூல வைரஸ் தடுப்பு இயந்திரமாகும்).</li>
-           <li><a href="https://www.securiteinfo.com/" hreflang="en" rel="noopener noreferrer external">SecuriteInfo.com</a> – ClamAV க்கான துணை கையொப்பங்களை வழங்கும் கணினி பாதுகாப்பு நிறுவனம்.</li>
-           <li><a href="https://sanesecurity.com/usage/signatures/" hreflang="en" rel="noopener noreferrer external">Sanesecurity</a> – ClamAV க்கான துணை கையொப்பங்களை வழங்கும் கணினி பாதுகாப்பு நிறுவனம்.</li>
-           <li><a href="https://malware.expert/" hreflang="en" rel="noopener noreferrer external">Malware.Expert</a> – ClamAV க்கான துணை கையொப்பங்களையும், ModSecurity க்கான துணை விதிகளையும் வழங்குகிறது.</li>
+           <li>{{Links.ClamavNet}} – ClamAV முகப்புப்பக்கம் (ClamAV® என்பது ட்ரோஜான்கள், வைரஸ்கள், தீம்பொருள் மற்றும் பிற தீங்கிழைக்கும் அச்சுறுத்தல்களைக் கண்டறிய ஒரு திறந்த மூல வைரஸ் தடுப்பு இயந்திரமாகும்).</li>
+           <li>{{Links.SecuriteInfo}} – ClamAV க்கான துணை கையொப்பங்களை வழங்கும் கணினி பாதுகாப்பு நிறுவனம்.</li>
+           <li>{{Links.Sanesecurity}} – ClamAV க்கான துணை கையொப்பங்களை வழங்கும் கணினி பாதுகாப்பு நிறுவனம்.</li>
+           <li>{{Links.Malware Expert}} – ClamAV க்கான துணை கையொப்பங்களையும், ModSecurity க்கான துணை விதிகளையும் வழங்குகிறது.</li>
          </ul>
        </li>
        <li><span class="comCat" style="cursor:pointer">குழுக்கள், மன்றங்கள், சமூகங்கள், போன்றவை.</span>
          <ul class="comSub">
-           <li><a href="https://www.facebook.com/groups/2204685680/" rel="noopener noreferrer external">PHP.earth@Facebook</a> – PHP கற்றல் வளங்கள் மற்றும் விவாதம்.</li>
-           <li><a href="https://malwaretips.com/" hreflang="en" rel="noopener noreferrer external">MalwareTips</a> – பயனுள்ள தீம்பொருள் மையப்படுத்தப்பட்ட விவாத மன்றங்கள்.</li>
+           <li>{{Links.PHP.Earth.Facebook}} – PHP கற்றல் வளங்கள் மற்றும் விவாதம்.</li>
+           <li>{{Links.MalwareTips}} – பயனுள்ள தீம்பொருள் மையப்படுத்தப்பட்ட விவாத மன்றங்கள்.</li>
          </ul>
        </li>
        <li><span class="comCat" style="cursor:pointer">பிற பயனுள்ள கருவிகள், வளங்கள், சேவைகள், போன்றவை.</span>
          <ul class="comSub">
-           <li><a href="https://www.phishtank.com/" hreflang="en" rel="noopener noreferrer external">PhishTank</a> – Phishing தரவுத்தளம் phpMussel URL ஸ்கேனரால் பயன்படுத்தப்படுகிறது.</li>
-           <li><a href="https://www.virustotal.com/" rel="noopener noreferrer external">VirusTotal</a> – VirusTotal என்பது சந்தேகத்திற்கிடமான கோப்புகள் மற்றும் URL களை பகுப்பாய்வு செய்வதற்கான இலவச சேவையாகும்.</li>
-           <li><a href="https://www.hybrid-analysis.com/" rel="noopener noreferrer external">Hybrid Analysis</a> – Hybrid Analysis என்பது <a href="https://www.payload-security.com/" hreflang="en" rel="noopener noreferrer external">Payload Security</a> வழங்கிய இலவச தீம்பொருள் பகுப்பாய்வு சேவையாகும்.</li>
-           <li><a href="https://www.malwarebytes.com/" hreflang="en" rel="noopener noreferrer external">Malwarebytes</a> – கணினி தீம்பொருள் எதிர்ப்பு நிபுணர்கள்.</li>
+           <li>{{Links.PhishTank}} – Phishing தரவுத்தளம் phpMussel URL ஸ்கேனரால் பயன்படுத்தப்படுகிறது.</li>
+           <li>{{Links.VirusTotal}} – VirusTotal என்பது சந்தேகத்திற்கிடமான கோப்புகள் மற்றும் URL களை பகுப்பாய்வு செய்வதற்கான இலவச சேவையாகும்.</li>
+           <li>{{Links.Hybrid Analysis}} – Hybrid Analysis என்பது {{Links.Payload Security}} வழங்கிய இலவச தீம்பொருள் பகுப்பாய்வு சேவையாகும்.</li>
+           <li>{{Links.Malwarebytes}} – கணினி தீம்பொருள் எதிர்ப்பு நிபுணர்கள்.</li>
          </ul>
        </li>
        <li><span class="comCat" style="cursor:pointer">தகவல் மற்றும் கற்றல் வளங்கள்.</span>
          <ul class="comSub">
-           <li><a href="https://php.earth/" hreflang="en" rel="noopener noreferrer external">PHP.earth</a> – PHP கற்றல் வளங்கள் மற்றும் விவாதம்.</li>
+           <li>{{Links.PHP.Earth.Website}} – PHP கற்றல் வளங்கள் மற்றும் விவாதம்.</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">பாதிப்பு விளக்கப்படங்கள்</a> – பல்வேறு தொகுப்புகளுக்கான பாதுகாப்பான/பாதுகாப்பற்ற பதிப்புகளை பட்டியலிடுகிறது (HHVM, PHP, phpMyAdmin, Python, போன்றவை).</li>
            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">பொருந்தக்கூடிய விளக்கப்படங்கள்</a> – பல்வேறு தொகுப்புகளுக்கான பொருந்தக்கூடிய தகவலை பட்டியலிடுகிறது (CIDRAM, phpMussel, போன்றவை).</li>
          </ul>

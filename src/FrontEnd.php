@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2021.08.25).
+ * This file: Front-end handler (last modified: 2021.09.05).
  */
 
 namespace phpMussel\FrontEnd;
@@ -154,11 +154,20 @@ class FrontEnd
             $Configuration = $this->Loader->readFile($this->AssetsPath . 'config.yml')
         ) {
             $Defaults = [];
-            $this->Loader->YAML->process($Configuration, $Defaults, 0, true);
-            if (isset($Defaults)) {
-                $this->Loader->fallback($Defaults);
-                $this->Loader->ConfigurationDefaults = array_merge_recursive($this->Loader->ConfigurationDefaults, $Defaults);
-            }
+            $this->Loader->YAML->process($Configuration, $Defaults);
+            $this->Loader->fallback($Defaults);
+            $this->Loader->ConfigurationDefaults = array_merge_recursive($this->Loader->ConfigurationDefaults, $Defaults);
+        }
+
+        /** Load YAML references. */
+        if (
+            is_readable($this->AssetsPath . 'references.yml') &&
+            $References = $this->Loader->readFile($this->AssetsPath . 'references.yml')
+        ) {
+            $ReferencesArray = [];
+            $this->Loader->YAML->process($References, $ReferencesArray);
+            $this->Loader->YAML->Refs = $ReferencesArray;
+            $this->Loader->YAML->Refs['Config Defaults'] = &$this->Loader->ConfigurationDefaults;
         }
 
         /** Register log paths. */
