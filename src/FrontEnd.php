@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2021.09.05).
+ * This file: Front-end handler (last modified: 2021.09.09).
  */
 
 namespace phpMussel\FrontEnd;
@@ -2210,9 +2210,9 @@ class FrontEnd
                 continue;
             }
             $Class = substr($Data, 9, 1);
-            $Nibbles = $this->Scanner->splitNibble($Class);
-            $Class = !isset($Classes[$Nibbles[0]]) ? [] : $Classes[$Nibbles[0]];
-            $Totals['Files'][$File] = empty($Class[1]) ? substr_count($Data, ',') + 1 : preg_match_all('/' . $Class[1] . '\S+/', $Data);
+            $Nibbles = strlen($Class) ? $this->Scanner->splitNibble($Class) : [-1, -1];
+            $Class = $Classes[$Nibbles[0]] ?? [];
+            $Totals['Files'][$File] = empty($Class[1]) ? 0 : preg_match_all('/' . $Class[1] . '\S+/', $Data);
             if (isset($Class[1])) {
                 $Totals['Classes'][$Class[0]] = isset($Totals['Classes'][$Class[0]]) ? $Totals['Classes'][$Class[0]] + $Totals['Files'][$File] : $Totals['Files'][$File];
             }
@@ -2223,7 +2223,7 @@ class FrontEnd
             if (!empty($Class[1])) {
                 foreach (['Vendors', 'SigTypes', 'Targets', 'MalwareTypes'] as $Sub) {
                     foreach ($Arr[$Sub] as $Key => $Pattern) {
-                        $Counts = preg_match_all('/' . $Class[1] . $Pattern . '\S+/', $Data);
+                        $Counts = preg_match_all('/' . $Class[1] . '(?:' . $Pattern . ')\S+/', $Data);
                         $Totals[$Sub][$Key] = isset($Totals[$Sub][$Key]) ? $Totals[$Sub][$Key] + $Counts : $Counts;
                     }
                 }
