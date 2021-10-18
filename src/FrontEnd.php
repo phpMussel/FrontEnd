@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2021.09.09).
+ * This file: Front-end handler (last modified: 2021.10.18).
  */
 
 namespace phpMussel\FrontEnd;
@@ -713,7 +713,8 @@ class FrontEnd
                 /** phpMussel branch latest stable. */
                 $FE['info_phpmussel_branch'] = $this->Loader->L10N->getString('response_error');
             } else {
-                $RemoteYAMLphpMusselArray = (new \Maikuolan\Common\YAML($RemoteYAMLphpMussel))->Data;
+                $RemoteYAMLphpMusselArray = [];
+                $this->Loader->YAML->process($RemoteYAMLphpMussel, $RemoteYAMLphpMusselArray);
 
                 /** phpMussel latest stable. */
                 $FE['info_phpmussel_stable'] = empty($RemoteYAMLphpMusselArray['Stable']) ?
@@ -753,7 +754,8 @@ class FrontEnd
                 /** PHP branch latest stable. */
                 $FE['info_php_branch'] = $this->Loader->L10N->getString('response_error');
             } else {
-                $RemoteYamlPhpArray = (new \Maikuolan\Common\YAML($RemoteYamlPHP))->Data;
+                $RemoteYamlPhpArray = [];
+                $this->Loader->YAML->process($RemoteYamlPHP, $RemoteYamlPhpArray);
 
                 /** PHP latest stable. */
                 $FE['info_php_stable'] = empty($RemoteYamlPhpArray['Stable']) ?
