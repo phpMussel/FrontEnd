@@ -2382,20 +2382,6 @@ class FrontEnd
     }
 
     /**
-     * Wrapper for PHPMailer functionality.
-     *
-     * @param array $Recipients An array of recipients to send to.
-     * @param string $Subject The subject line of the email.
-     * @param string $Body The HTML content of the email.
-     * @param string $AltBody The alternative plain-text content of the email.
-     * @param array $Attachments An optional array of attachments.
-     * @return bool Operation failed (false) or succeeded (true).
-     */
-    private function sendEmail(array $Recipients = [], string $Subject = '', string $Body = '', string $AltBody = '', array $Attachments = []): bool
-    {
-    }
-
-    /**
      * Generates very simple 8-digit numbers used for 2FA.
      *
      * @return int An 8-digit number.

@@ -57,3 +57,5 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 [2021.09.09; Bug-fix; Maikuolan]: The front-end signature information page reported the wrong counts for unidentified or other under the signature vendor or source counts; Fixed.
 
 [2021.10.30; Maikuolan]: Code-style cleanup: Public before private properties, magic before public before private methods.
+
+[2021.10.30; Maikuolan]: Removed a useless method (sendEmail, did nothing, used nowhere).
