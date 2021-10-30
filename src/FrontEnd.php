@@ -8,13 +8,23 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2021.10.18).
+ * This file: Front-end handler (last modified: 2021.10.30).
  */
 
 namespace phpMussel\FrontEnd;
 
 class FrontEnd
 {
+    /**
+     * @var string A path for any custom front-end asset files.
+     */
+    public $CustomAssetsPath = '';
+
+    /**
+     * @var array The query parts (needed for determining which view to select).
+     */
+    public $QueryVariables = [];
+
     /**
      * @var \phpMussel\Core\Loader The instantiated loader object.
      */
@@ -35,11 +45,6 @@ class FrontEnd
      * @var string The path to the front-end asset files.
      */
     private $AssetsPath = __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'assets' . DIRECTORY_SEPARATOR;
-
-    /**
-     * @var string A path for any custom front-end asset files.
-     */
-    public $CustomAssetsPath = '';
 
     /**
      * @var string The path to the front-end L10N files.
@@ -85,11 +90,6 @@ class FrontEnd
      * @var int How many seconds until a two-factor authentication codes expire.
      */
     private $TwoFactorTTL = 600;
-
-    /**
-     * @var array The query parts (needed for determining which view to select).
-     */
-    public $QueryVariables = [];
 
     /**
      * @var string|int The default hash algorithm to use (int for PHP < 7.4;
@@ -1848,26 +1848,6 @@ class FrontEnd
     }
 
     /**
-     * Format filesize information.
-     *
-     * @param int $Filesize
-     * @return void
-     */
-    private function formatFilesize(int &$Filesize): void
-    {
-        $Scale = ['field_size_bytes', 'field_size_KB', 'field_size_MB', 'field_size_GB', 'field_size_TB'];
-        $Iterate = 0;
-        while ($Filesize > 1024) {
-            $Filesize /= 1024;
-            $Iterate++;
-            if ($Iterate > 3) {
-                break;
-            }
-        }
-        $Filesize = $this->NumberFormatter->format($Filesize, ($Iterate === 0) ? 0 : 2) . ' ' . $this->Loader->L10N->getPlural($Filesize, $Scale[$Iterate]);
-    }
-
-    /**
      * Generates a list of all currently existing logs.
      *
      * @return array The logs list.
@@ -1893,6 +1873,26 @@ class FrontEnd
         }
         ksort($Items);
         return $Items;
+    }
+
+    /**
+     * Format filesize information.
+     *
+     * @param int $Filesize
+     * @return void
+     */
+    private function formatFilesize(int &$Filesize): void
+    {
+        $Scale = ['field_size_bytes', 'field_size_KB', 'field_size_MB', 'field_size_GB', 'field_size_TB'];
+        $Iterate = 0;
+        while ($Filesize > 1024) {
+            $Filesize /= 1024;
+            $Iterate++;
+            if ($Iterate > 3) {
+                break;
+            }
+        }
+        $Filesize = $this->NumberFormatter->format($Filesize, ($Iterate === 0) ? 0 : 2) . ' ' . $this->Loader->L10N->getPlural($Filesize, $Scale[$Iterate]);
     }
 
     /**
