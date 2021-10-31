@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Thai language data (last modified: 2021.09.05).
+# This file: Thai language data (last modified: 2021.10.30).
 ##/
 
 config_core: "การกำหนดค่าทั่วไป (การกำหนดค่าใด ๆ ที่ไม่ได้อยู่ในหมวดหมู่อื่น)."
@@ -85,7 +85,7 @@ config_signatures_detect_shell: "ควร phpMussel แยกวิเครา
 config_signatures_fail_extensions_silently: "ควร phpMussel รายงานเมื่อไม่มีส่วนขยายหรือไม่? ถ้า <code>fail_extensions_silently</code> ถูกปิดใช้งาน ส่วนขยายที่ขาดหายไปจะมีการรายงานเมื่อทำการสแกน และถ้า <code>fail_extensions_silently</code> เปิดใช้งาน ส่วนขยายที่ขาดหายไปจะถูกละเลย และจะมีรายงานว่าไม่มีปัญหา. การปิดใช้งานคำสั่งนี้อาจเพิ่มความปลอดภัยของคุณ แต่ยังอาจนำไปสู่การเพิ่มขึ้น false positive. False = เปิดใช้งาน; True = เปิดใช้งาน [ค่าเริ่มต้น]."
 config_signatures_fail_silently: "ควร phpMussel รายงานเมื่อไฟล์ลายเซ็นสูญหายหรือเสียหายหรือไม่? ถ้า <code>fail_silently</code> ถูกปิดใช้งาน ไฟล์ที่ขาดหายไปและเสียหายจะรายงานเมื่อทำการสแกน และถ้า <code>fail_silently</code> เปิดใช้งาน ไฟล์ที่ขาดหายไปและเสียหายจะถูกละเลย และจะมีรายงานว่าไม่มีปัญหา. โดยทั่วไปแล้วควรทิ้งไว้ตามลำพังจนกว่าคุณจะประสบปัญหา. False = ปิดใช้งาน; True = เปิดใช้งาน [ค่าเริ่มต้น]."
 config_signatures_heuristic_threshold: "ลายเซ็น phpMussel บางตัวมีจุดมุ่งหมายเพื่อระบุลักษณะที่น่าสงสัยและอาจเป็นอันตรายในไฟล์ที่อัปโหลดไม่มีในตัวเองระบุไฟล์ที่อัปโหลดโดยเฉพาะอย่างยิ่งที่เป็นอันตราย. ค่านี้ "threshold" บอก phpMussel น้ำหนักรวมสูงสุดสำหรับคุณภาพที่น่าสงสัยและอาจเป็นอันตรายสำหรับไฟล์ที่อัปโหลดก่อนที่จะถูกระบุว่าเป็นอันตราย. ความหมายของน้ำหนักในบริบทนี้คือจำนวนรวมของคุณลักษณะที่น่าสงสัยและอาจเป็นอันตรายที่ระบุ. โดยค่าเริ่มต้น, ค่านี้จะถูกกำหนดเป็น 3. โดยทั่วไป, ค่าที่ต่ำกว่าจะส่งผลให้เกิดขึ้นมากขึ้น false positive แต่มีการระบุไฟล์ที่เป็นอันตรายจำนวนมากขึ้น, ในขณะที่ค่าที่สูงขึ้นโดยทั่วไปจะทำให้เกิดเหตุการณ์ที่ต่ำลงของ false positive แต่เป็นตัวเลขที่ต่ำกว่าของไฟล์ที่เป็นอันตรายถูกระบุ. เป็นการดีที่สุดที่จะปล่อยให้ค่านี้เป็นค่าเริ่มต้นจนกว่าคุณจะประสบปัญหา."
-config_supplementary_cache_options: "ตัวเลือกแคชเสริม."
+config_supplementary_cache_options: "ตัวเลือกแคชเสริม. หมายเหตุ: การเปลี่ยนแปลงค่าเหล่านี้อาจทำให้คุณออกจากระบบได้."
 config_supplementary_cache_options_enable_apcu: "สิ่งนี้ระบุว่าจะใช้ APCu สำหรับการแคชหรือไม่. ค่าเริ่มต้น = False."
 config_supplementary_cache_options_enable_memcached: "สิ่งนี้ระบุว่าจะใช้ Memcached สำหรับการแคชหรือไม่. ค่าเริ่มต้น = False."
 config_supplementary_cache_options_enable_pdo: "สิ่งนี้ระบุว่าจะใช้ PDO สำหรับการแคชหรือไม่. ค่าเริ่มต้น = False."
@@ -95,6 +95,7 @@ config_supplementary_cache_options_memcached_port: "ค่าพอร์ต Mem
 config_supplementary_cache_options_pdo_dsn: "ค่า DSN PDO. ค่าเริ่มต้น = "mysql:dbname=phpmussel;host=localhost;port=3306"."
 config_supplementary_cache_options_pdo_password: "รหัสผ่าน PDO."
 config_supplementary_cache_options_pdo_username: "ชื่อผู้ใช้ PDO."
+config_supplementary_cache_options_prefix: "ค่าที่ระบุในที่นี้จะถูกเติมไว้ข้างหน้าคีย์รายการแคชทั้งหมด. ว่างเปล่าโดยค่าเริ่มต้น. เมื่อมีการติดตั้งหลายรายการในเซิร์ฟเวอร์เดียวกัน การทำเช่นนี้อาจเป็นประโยชน์ในการแยกแคชออกจากกัน."
 config_supplementary_cache_options_redis_host: "ค่าโฮสต์ Redis. ค่าเริ่มต้น = "localhost"."
 config_supplementary_cache_options_redis_port: "ค่าพอร์ต Redis. ค่าเริ่มต้น = "6379"."
 config_supplementary_cache_options_redis_timeout: "ค่าการหมดเวลา Redis. ค่าเริ่มต้น = "2.5"."

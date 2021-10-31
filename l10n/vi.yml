@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2021.09.05).
+# This file: Vietnamese language data (last modified: 2021.10.30).
 ##/
 
 config_core: "Cấu hình chung (bất kỳ cấu hình cốt lõi nào không thuộc về các loại khác)."
@@ -85,7 +85,7 @@ config_signatures_detect_shell: "phpMussel nên sử dụng chữ ký cho phát 
 config_signatures_fail_extensions_silently: "phpMussel nên báo cáo khi mở rộng bị mất? Nếu <code>fail_extensions_silently</code> được vô hiệu hóa, mở rộng bị mất sẽ được báo cáo khi quét, và nếu <code>fail_extensions_silently</code> được kích hoạt, mở rộng bị mất hay bị hỏng sẽ bị bỏ qua, với báo cáo quét cho những tập tin mà không có bất kỳ vấn đề. Vô hiệu hóa tùy chọn này có khả năng có thể làm tăng bảo mật của bạn, nhưng cũng có thể dẫn đến sự gia tăng giả tích cực. False = Không cho phép; True = Cho phép [Mặc định]."
 config_signatures_fail_silently: "phpMussel nên báo cáo khi tập tin chữ ký bị mất hay bị hỏng? Nếu <code>fail_silently</code> được vô hiệu hóa, tập tin bị mất hay bị hỏng sẽ được báo cáo khi quét, và nếu <code>fail_silently</code> được kích hoạt, tập tin bị mất hay bị hỏng sẽ bị bỏ qua, với báo cáo quét cho những tập tin mà không có bất kỳ vấn đề. Điều này thường cần được ở một mình trừ khi bạn gặp sự cố hay vấn đề tương tự. False = Không cho phép; True = Cho phép [Mặc định]."
 config_signatures_heuristic_threshold: "Có một số chữ ký của phpMussel mà được dự định để xác định đáng ngờ và phẩm chất của các tập tin khả năng độc hại từ đang được tải lên mà không có trong tự xác định các tập tin đang được tải lên cụ thể như là độc hại. Giá trị "threshold" này nói với phpMussel tổng trọng lượng tối đa của đáng ngờ và phẩm chất của các tập tin khả năng độc hại đang được tải lên đó là phép trước những tập tin đang được gắn cờ là độc hại. Định nghĩa về trọng lượng trong bối cảnh này là tổng số đáng ngờ và phẩm chất tiềm ẩn độc hại được xác định. Theo mặc định, giá trị này sẽ được thiết lập để 3. Một giá trị thấp hơn nói chung sẽ cho kết quả trong một sự xuất hiện cao hơn của sai tích cực nhưng một số cao hơn các tập tin độc hại được gắn cờ, trong khi một giá trị cao hơn nói chung sẽ cho kết quả trong một sự xuất hiện thấp hơn của sai tích cực nhưng một số thấp hơn các tập tin độc hại được gắn cờ. Nói chung, nó là tốt nhất để có giá trị này tại mặc định của nó trừ khi bạn đang gặp phải các vấn đề liên quan đến nó."
-config_supplementary_cache_options: "Tùy chọn bộ nhớ cache bổ sung."
+config_supplementary_cache_options: "Tùy chọn bộ nhớ cache bổ sung. Lưu ý: Việc thay đổi các giá trị này có thể khiến bạn bị đăng xuất."
 config_supplementary_cache_options_enable_apcu: "Điều này xác định có nên thử sử dụng APCu để lưu trữ không. Mặc định = False."
 config_supplementary_cache_options_enable_memcached: "Điều này xác định có nên thử sử dụng Memcached để lưu trữ không. Mặc định = False."
 config_supplementary_cache_options_enable_pdo: "Điều này xác định có nên thử sử dụng PDO để lưu trữ không. Mặc định = False."
@@ -95,6 +95,7 @@ config_supplementary_cache_options_memcached_port: "Giá trị cổng Memcached.
 config_supplementary_cache_options_pdo_dsn: "Giá trị DSN PDO. Mặc định = "mysql:dbname=phpmussel;host=localhost;port=3306"."
 config_supplementary_cache_options_pdo_password: "Mật khẩu PDO."
 config_supplementary_cache_options_pdo_username: "Tên người dùng PDO."
+config_supplementary_cache_options_prefix: "Giá trị được chỉ định ở đây sẽ được thêm vào trước tất cả các khóa mục nhập bộ nhớ cache. Trống theo mặc định. Khi nhiều bản cài đặt tồn tại trên cùng một máy chủ, điều này có thể hữu ích để giữ các bộ nhớ cache của chúng tách biệt với nhau."
 config_supplementary_cache_options_redis_host: "Giá trị máy chủ Redis. Mặc định = "localhost"."
 config_supplementary_cache_options_redis_port: "Giá trị cổng Redis. Mặc định = "6379"."
 config_supplementary_cache_options_redis_timeout: "Giá trị thời gian chờ Redis. Mặc định = "2.5"."

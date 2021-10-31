@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2021.09.05).
+# This file: English language data (last modified: 2021.10.30).
 ##/
 
 config_core: "General configuration (any core configuration not belonging to other categories)."
@@ -85,7 +85,7 @@ config_signatures_detect_shell: "Should phpMussel parse signatures for detecting
 config_signatures_fail_extensions_silently: "Should phpMussel report when extensions are missing? If <code>fail_extensions_silently</code> is disabled, missing extensions will be reported on scanning, and if <code>fail_extensions_silently</code> is enabled, missing extensions will be ignored, with scanning reporting for those files that there aren't any problems. Disabling this directive may potentially increase your security, but may also lead to an increase of false positives. False = Disabled; True = Enabled [Default]."
 config_signatures_fail_silently: "Should phpMussel report when signatures files are missing or corrupted? If <code>fail_silently</code> is disabled, missing and corrupted files will be reported on scanning, and if <code>fail_silently</code> is enabled, missing and corrupted files will be ignored, with scanning reporting for those files that there aren't any problems. This should generally be left alone unless you're experiencing crashes or similar problems. False = Disabled; True = Enabled [Default]."
 config_signatures_heuristic_threshold: "Some phpMussel signatures are intended to identify suspicious and potentially malicious indicators in files, without in themselves identifying those files as being malicious directly. This "threshold" value tells phpMussel the maximum weight allowed before flagging those files as malicious. The definition of weight in this context is the total number of suspicious and potentially malicious indicators identified. By default, this value will be set to 3. A lower value generally will result in a higher occurrence of false positives but a higher number of malicious files being flagged, whereas a higher value generally will result in a lower occurrence of false positives but a lower number of malicious files being flagged. It's generally best to leave this value at its default unless you're experiencing problems related to it."
-config_supplementary_cache_options: "Supplementary cache options."
+config_supplementary_cache_options: "Supplementary cache options. Note: Changing these values may potentially log you out."
 config_supplementary_cache_options_enable_apcu: "Specifies whether to try using APCu for caching. Default = False."
 config_supplementary_cache_options_enable_memcached: "Specifies whether to try using Memcached for caching. Default = False."
 config_supplementary_cache_options_enable_pdo: "Specifies whether to try using PDO for caching. Default = False."
@@ -95,6 +95,7 @@ config_supplementary_cache_options_memcached_port: "Memcached port value. Defaul
 config_supplementary_cache_options_pdo_dsn: "PDO DSN value. Default = "mysql:dbname=phpmussel;host=localhost;port=3306"."
 config_supplementary_cache_options_pdo_password: "PDO password."
 config_supplementary_cache_options_pdo_username: "PDO username."
+config_supplementary_cache_options_prefix: "The value specified here will be prepended to all cache entry keys. Empty by default. When multiple installations exist at the same server, this can be useful for keeping their caches separate from each other."
 config_supplementary_cache_options_redis_host: "Redis host value. Default = "localhost"."
 config_supplementary_cache_options_redis_port: "Redis port value. Default = "6379"."
 config_supplementary_cache_options_redis_timeout: "Redis timeout value. Default = "2.5"."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese language data (last modified: 2021.09.05).
+# This file: Portuguese language data (last modified: 2021.10.30).
 ##/
 
 config_core: "Configuração geral (qualquer configuração principal que não pertença a outras categorias)."
@@ -85,7 +85,7 @@ config_signatures_detect_shell: "Deve phpMussel usam assinaturas para detectar s
 config_signatures_fail_extensions_silently: "Deve phpMussel reportar quando extensões não estão disponíveis? Se <code>fail_extensions_silently</code> está desativado, extensões indisponíveis serão reportado durante análise, e se <code>fail_extensions_silently</code> está ativado, extensões indisponíveis serão ignoradas, com a análise reportando por estes arquivos em que não há problemas. Desativando dessa directiva pode potencialmente aumentar a sua segurança, mas também pode levar a um aumento de falsos positivos. False = Desativado; True = Ativado [Padrão]."
 config_signatures_fail_silently: "Deve phpMussel reportar quando os assinaturas arquivos estão perdido ou corrompido? Se <code>fail_silently</code> está desativado, perdidos e corrompidos arquivos serão reportado durante análise, e se <code>fail_silently</code> está ativado, perdidos e corrompidos arquivos serão ignoradas, com a análise reportando por estes arquivos em que não há problemas. Isso geralmente deve ser deixado sozinho a menos que você está experimentando PHP falhas ou semelhantes problemas. False = Desativado; True = Ativado [Padrão]."
 config_signatures_heuristic_threshold: "Existem assinaturas específicas de phpMussel para identificando suspeitas e qualidades potencialmente maliciosos dos arquivos que estão sendo carregados sem por si só identificando aqueles arquivos que estão sendo carregados especificamente como sendo maliciosos. Este "threshold" (limiar) valor instrui phpMussel o que o total máximo peso de suspeitas e qualidades potencialmente maliciosos dos arquivos que estão sendo carregados que é permitida é antes que esses arquivos devem ser sinalizada como maliciosos. A definição de peso neste contexto é o número total de suspeitas e qualidades potencialmente maliciosos identificado. Por padrão, este valor será definido como 3. Um menor valor geralmente resultará numa maior ocorrência de falsos positivos mas um maior número de arquivos maliciosos sendo sinalizado, enquanto um maior valor geralmente resultará numa menor ocorrência de falsos positivos mas um menor número de arquivos maliciosos sendo sinalizado. É geralmente melhor a deixar esse valor em seu padrão a menos que você está enfrentando problemas relacionados a ela."
-config_supplementary_cache_options: "Opções de cache suplementares."
+config_supplementary_cache_options: "Opções de cache suplementares. Nota: Alterar estes valores podem potencialmente fazer você ser estar desconectado."
 config_supplementary_cache_options_enable_apcu: "Especifica se deve tentar usar o APCu para armazenamento em cache. Padrão = False."
 config_supplementary_cache_options_enable_memcached: "Especifica se deve tentar usar o Memcached para armazenamento em cache. Padrão = False."
 config_supplementary_cache_options_enable_pdo: "Especifica se deve tentar usar o PDO para armazenamento em cache. Padrão = False."
@@ -95,6 +95,7 @@ config_supplementary_cache_options_memcached_port: "Valor da porta do Memcached.
 config_supplementary_cache_options_pdo_dsn: "Valor DSN do PDO. Padrão = "mysql:dbname=phpmussel;host=localhost;port=3306"."
 config_supplementary_cache_options_pdo_password: "A senha do PDO."
 config_supplementary_cache_options_pdo_username: "O nome de usuário do PDO."
+config_supplementary_cache_options_prefix: "O valor especificado aqui será adicionado ao começo das chaves para todas as entradas de cache. Vazio por padrão. Quando existem várias instalações no mesmo servidor, isso pode ser útil para manter seus caches separados uns dos outros."
 config_supplementary_cache_options_redis_host: "Valor da host do Redis. Padrão = "localhost"."
 config_supplementary_cache_options_redis_port: "Valor da porta do Redis. Padrão = "6379"."
 config_supplementary_cache_options_redis_timeout: "Valor de tempo limite do Redis. Padrão = "2.5"."

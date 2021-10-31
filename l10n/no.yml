@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2021.09.05).
+# This file: Norwegian language data (last modified: 2021.10.30).
 ##/
 
 config_core: "Generell konfigurasjon (enhver kjernekonfigurasjon som ikke tilhører andre kategorier)."
@@ -85,7 +85,7 @@ config_signatures_detect_shell: "Bør phpMussel behandle signaturer for å oppda
 config_signatures_fail_extensions_silently: "Bør phpMussel rapportere når utvidelser mangler? Hvis <code>fail_extensions_silently</code> er deaktivert, manglende utvidelser vil bli rapportert ved skanning, og hvis <code>fail_extensions_silently</code> er aktivert, vil manglende utvidelser bli ignorert, med skanningen rapporterer for filene som det ikke er noen problemer. Deaktivering av dette direktivet kan potensielt øke sikkerheten din, men kan også føre til en økning av falske positiver. False = Deaktivert; True = Aktivert [Standardverdi]."
 config_signatures_fail_silently: "Bør phpMussel rapportere når signaturfiler mangler eller er ødelagt? Hvis <code>fail_silently</code> er deaktivert, manglende og ødelagte filer vil bli rapportert ved skanning, og hvis <code>fail_silently</code> er aktivert, manglende og ødelagte filer blir ignorert, med skanningen rapporterer for filene som det ikke er noen problemer. Dette bør generelt sett være i fred, med mindre du opplever krasj eller lignende problemer. False = Deaktivert; True = Aktivert [Standardverdi]."
 config_signatures_heuristic_threshold: "Noen phpMussel-signaturer er ment å identifisere mistenkelige og potensielt skadelige indikatorer i filer, uten i seg selv å identifisere disse filene som direkte skadelige. Denne terskelverdien forteller phpMussel den maksimale tillatte vekten før du flagger disse filene som skadelig. Definisjonen av vekt i denne sammenhengen er det totale antallet mistenkelige og potensielt skadelige indikatorer som er identifisert. Som standard blir denne verdien satt til 3. En lavere verdi vil generelt resultere i en høyere forekomst av falske positiver, men et høyere antall skadelige filer blir flagget, mens en høyere verdi generelt vil føre til en lavere forekomst av falske positiver, men at et lavere antall skadelige filer blir flagget. Det er vanligvis best å forlate denne verdien som standard med mindre du opplever problemer relatert til den."
-config_supplementary_cache_options: "Tilleggsvalg for cache."
+config_supplementary_cache_options: "Tilleggsvalg for cache. Merk: Endring av disse verdiene kan potensielt logge deg ut."
 config_supplementary_cache_options_enable_apcu: "Dette angir om skal bruke APCu for caching. Standardverdi = False."
 config_supplementary_cache_options_enable_memcached: "Dette angir om skal bruke Memcached for caching. Standardverdi = False."
 config_supplementary_cache_options_enable_pdo: "Dette angir om skal bruke PDO for caching. Standardverdi = False."
@@ -95,6 +95,7 @@ config_supplementary_cache_options_memcached_port: "Memcached portsverdi. Standa
 config_supplementary_cache_options_pdo_dsn: "PDO DSN-verdi. Standardverdi = "mysql:dbname=phpmussel;host=localhost;port=3306"."
 config_supplementary_cache_options_pdo_password: "PDO passord."
 config_supplementary_cache_options_pdo_username: "PDO brukernavn."
+config_supplementary_cache_options_prefix: "Verdien som er spesifisert her vil bli lagt foran alle cache-oppføringsnøkler. Tom som standard. Når flere installasjoner eksisterer på samme server, dette kan være nyttig for å holde cachen deres atskilt fra hverandre."
 config_supplementary_cache_options_redis_host: "Redis vertsverdi. Standardverdi = "localhost"."
 config_supplementary_cache_options_redis_port: "Redis portsverdi. Standardverdi = "6379"."
 config_supplementary_cache_options_redis_timeout: "Redis timeout-verdi. Standardverdi = "2.5"."

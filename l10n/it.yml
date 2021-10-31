@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2021.09.05).
+# This file: Italian language data (last modified: 2021.10.30).
 ##/
 
 config_core: "Configurazione generale (qualsiasi configurazione di base non appartenente ad altre categorie)."
@@ -85,7 +85,7 @@ config_signatures_detect_shell: "Dovrebbe phpMussel utilizzare le firme per il r
 config_signatures_fail_extensions_silently: "Dovrebbe phpMussel rapporto quando le estensioni sono mancanti? Se <code>fail_extensions_silently</code> è disattivato, mancanti estensioni saranno riportato sulla scansione, e se <code>fail_extensions_silently</code> è abilitato, mancanti estensioni saranno ignorato, con scansione riportando per quei file che non ha sono problemi. La disattivazione di questa direttiva potrebbe potenzialmente aumentare la sicurezza, ma può anche portare ad un aumento di falsi positivi. False = Disattivato; True = Attivato [Predefinito]."
 config_signatures_fail_silently: "Dovrebbe phpMussel rapporto quando le file di firme sono mancanti o danneggiati? Se <code>fail_silently</code> è disattivato, mancanti e danneggiati file saranno riportato sulla scansione, e se <code>fail_silently</code> è abilitato, mancanti e danneggiati file saranno ignorato, con scansione riportando per quei file che non ha sono problemi. Questo dovrebbe essere generalmente lasciata sola a meno che sperimentando inaspettate terminazioni o simili problemi. False = Disattivato; True = Attivato [Predefinito]."
 config_signatures_heuristic_threshold: "Ci sono particolare firme di phpMussel che sono destinato a identificare sospetti e potenzialmente maligno qualità dei file che vengono essere caricati senza in sé identificando i file che vengono essere caricati in particolare ad essere maligno. Questo "threshold" (soglia) valore dice phpMussel cosa che il totale massimo peso di sospetti e potenzialmente maligno qualità dei file che vengono essere caricati che è ammissibile è prima che quei file devono essere contrassegnati come maligno. La definizione di peso in questo contesto è il totale numero di sospetti e potenzialmente maligno qualità identificato. Per predefinito, questo valore viene impostato su 3. Un inferiore valore generalmente sarà risultare di una maggiore presenza di falsi positivi ma una maggior numero di file essere contrassegnato come maligno, mentre una maggiore valore generalmente sarà risultare di un inferiore presenza di falsi positivi ma un inferiore numero di file essere contrassegnato come maligno. È generalmente meglio di lasciare questo valore a suo predefinito a meno che si incontrare problemi ad esso correlati."
-config_supplementary_cache_options: "Opzioni di cache supplementari."
+config_supplementary_cache_options: "Opzioni di cache supplementari. Nota: La modifica di questi valori potrebbe potenzialmente disconnettersi."
 config_supplementary_cache_options_enable_apcu: "Specifica se provare a utilizzare APCu per la memorizzazione nella cache. Predefinito = False."
 config_supplementary_cache_options_enable_memcached: "Specifica se provare a utilizzare Memcached per la memorizzazione nella cache. Predefinito = False."
 config_supplementary_cache_options_enable_pdo: "Specifica se provare a utilizzare PDO per la memorizzazione nella cache. Predefinito = False."
@@ -95,6 +95,7 @@ config_supplementary_cache_options_memcached_port: "Il valore della porta Memcac
 config_supplementary_cache_options_pdo_dsn: "Il valore della DSN per PDO. Predefinito = "mysql:dbname=phpmussel;host=localhost;port=3306"."
 config_supplementary_cache_options_pdo_password: "La password per PDO."
 config_supplementary_cache_options_pdo_username: "Il nome utente per PDO."
+config_supplementary_cache_options_prefix: "Il valore specificato qui verrà anteposto a tutte le chiavi di ingresso della cache. Vuoto per impostazione predefinita. Quando esistono più installazioni sullo stesso server, questo può essere utile per mantenere le loro cache separate l'una dall'altra."
 config_supplementary_cache_options_redis_host: "Il valore dell'host Redis. Predefinito = "localhost"."
 config_supplementary_cache_options_redis_port: "Il valore della porta Redis. Predefinito = "6379"."
 config_supplementary_cache_options_redis_timeout: "Il valore del tempo scaduto per Redis. Predefinito = "2.5"."

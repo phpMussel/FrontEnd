@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (simplified) language data (last modified: 2021.09.05).
+# This file: Chinese (simplified) language data (last modified: 2021.10.30).
 ##/
 
 config_core: "基本配置（任何不属于其他类别的核心配置）。"
@@ -85,7 +85,7 @@ config_signatures_detect_shell: "phpMussel应该使用签名为webshell脚本检
 config_signatures_fail_extensions_silently: "phpMussel应该报告当扩展是失踪吗？​如果<code>fail_extensions_silently</code>是关闭，​失踪扩展将会报告当扫描，​和如果<code>fail_extensions_silently</code>是激活，​失踪扩展将会忽略，​有扫描报告为那些文件哪里没有任何问题。​关闭的这个指令可能的可以增加您的安全，​但可能还导致一个增加的假阳性。​False（假）=是关闭；True（真）=是激活【默认】。"
 config_signatures_fail_silently: "phpMussel应该报告当签名文件是失踪或损坏吗？​如果<code>fail_silently</code>是关闭，​失踪和损坏文件将会报告当扫描，​和如果<code>fail_silently</code>是激活，​失踪和损坏文件将会忽略，​有扫描报告为那些文件哪里没有问题。​这个应该按说被留下除非您遇到失败或有其他类似问题。​False（假）=是关闭；True（真）=是激活【默认】。"
 config_signatures_heuristic_threshold: "有某些签名的phpMussel意味为确定可疑和可能恶意文件零件被上传有不在他们自己确定那些文件被上传特别是作为恶意。​这个“threshold”数值告诉phpMussel什么是最大总重量的可疑和潜在恶意文件零件被上传允许之前那些文件是被识别作为恶意。​定义的重量在这个上下文是总数值的可疑和可能恶意文件零件确定。​作为默认，​这个数值将会设置作为3。​一个较低的值通常将结果在一个更高的发生的假阳性但一个更高的发生的恶意文件被确定，​而一个更高的数值将通常结果在一个较低的发生的假阳性但一个较低的数值的恶意文件被确定。​它是通常最好忽略这个数值除非您遇到关联问题。"
-config_supplementary_cache_options: "补充缓存选项。"
+config_supplementary_cache_options: "补充缓存选项。​注意：更改这些值可能会使您注销。"
 config_supplementary_cache_options_enable_apcu: "指定是否尝试使用APCu进行缓存。​标准 = False。"
 config_supplementary_cache_options_enable_memcached: "指定是否尝试使用Memcached进行缓存。​标准 = False。"
 config_supplementary_cache_options_enable_pdo: "指定是否尝试使用PDO进行缓存。​标准 = False。"
@@ -95,6 +95,7 @@ config_supplementary_cache_options_memcached_port: "Memcached端口值。​标�
 config_supplementary_cache_options_pdo_dsn: "PDO DSN值。​标准 = “mysql:dbname=phpmussel;host=localhost;port=3306”。"
 config_supplementary_cache_options_pdo_password: "PDO密码。"
 config_supplementary_cache_options_pdo_username: "PDO用户名。"
+config_supplementary_cache_options_prefix: "该值将附加到所有缓存条目的键的开头。​默认值为空。​当同一服务器上存在多个安装时，这对于将它们的缓存彼此分开非常有用。"
 config_supplementary_cache_options_redis_host: "Redis主机值。​标准 = “localhost”。"
 config_supplementary_cache_options_redis_port: "Redis端口值。​标准 = “6379”。"
 config_supplementary_cache_options_redis_timeout: "Redis超时值。​标准 = “2.5”。"

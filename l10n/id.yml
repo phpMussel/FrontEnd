@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2021.09.05).
+# This file: Indonesian language data (last modified: 2021.10.30).
 ##/
 
 config_core: "Konfigurasi umum (konfigurasi inti apapun yang bukan milik kategori lain)."
@@ -85,7 +85,7 @@ config_signatures_detect_shell: "Harus phpMussel menggunakan tanda tangan untuk 
 config_signatures_fail_extensions_silently: "Seharusnya laporan phpMussel ketika ekstensi hilang? Jika <code>fail_extensions_silently</code> dinonaktifkan, ekstensi hilang akan dilaporkan ketika pemindaian, dan jika <code>fail_extensions_silently</code> diaktifkan, ekstensi hilang akan diabaikan, dengan pemindaian melaporkan untuk file-file ini bahwa tidak ada masalah. Menonaktifkan direktif ini berpotensi dapat meningkatkan keamanan Anda, tapi juga dapat menyebabkan peningkatan positif palsu. False = Dinonaktifkan; True = Diaktifkan [Default]."
 config_signatures_fail_silently: "Seharusnya laporan phpMussel ketika file tanda tangan hilang atau dikorup? Jika <code>fail_silently</code> dinonaktifkan, file dikorup dan hilang akan dilaporkan ketika pemindaian, dan jika <code>fail_silently</code> diaktifkan, file dikorup dan hilang akan diabaikan, dengan pemindaian melaporkan untuk file-file ini bahwa tidak ada masalah. Harus ini dibiarkan sendirian jika Anda pernah mengalami crash atau masalah lain. False = Dinonaktifkan; True = Diaktifkan [Default]."
 config_signatures_heuristic_threshold: "Ada tanda tangan tertentu dari phpMussel yang dimaksudkan untuk mengidentifikasi kualitas yang mencurigakan dan berpotensi berbahaya pada file-file yang di-upload tanpa di diri mereka mengidentifikasi file-file yang di-upload spesifik sebagai berbahaya. Ini "threshold" nilai memberitahu phpMussel apa total berat maksimum untuk kualitas yang mencurigakan dan berpotensi berbahaya pada file-file yang di-upload yang diijinkan adalah sebelum file-file yang akan diidentifikasi sebagai berbahaya. Definisi berat dalam konteks ini adalah jumlah total kualitas mencurigakan dan berpotensi berbahaya diidentifikasi. Secara default, nilai ini akan ditetapkan sebagai 3. Sebuah nilai lebih rendah umumnya akan menghasilkan sebagai lebih tinggi positif palsu kejadian tapi sebuah jumlah lebih tinggi file berbahaya diidentifikasi, sedangkan sebuah nilai lebih tinggi umumnya akan menghasilkan sebagai lebih rendah positif palsu kejadian tapi sebuah jumlah lebih rendah pada file berbahaya yang diidentifikasi. Ini umumnya terbaik untuk meninggalkan nilai ini di default kecuali jika Anda mengalami masalah berhubungan dengan itu."
-config_supplementary_cache_options: "Opsi cache tambahan."
+config_supplementary_cache_options: "Opsi cache tambahan. Catatan: Mengubah nilai ini berpotensi membuat Anda keluar."
 config_supplementary_cache_options_enable_apcu: "Menentukan apakah akan mencoba menggunakan APCu untuk cache. Default = False."
 config_supplementary_cache_options_enable_memcached: "Menentukan apakah akan mencoba menggunakan Memcached untuk cache. Default = False."
 config_supplementary_cache_options_enable_pdo: "Menentukan apakah akan mencoba menggunakan PDO untuk cache. Default = False."
@@ -95,6 +95,7 @@ config_supplementary_cache_options_memcached_port: "Nilai port Memcached. Defaul
 config_supplementary_cache_options_pdo_dsn: "Nilai DSN PDO. Default = "mysql:dbname=phpmussel;host=localhost;port=3306"."
 config_supplementary_cache_options_pdo_password: "Kata sandi PDO."
 config_supplementary_cache_options_pdo_username: "Nama pengguna PDO."
+config_supplementary_cache_options_prefix: "Nilai yang ditentukan disini akan ditambahkan ke awal kunci untuk semua entri di cache. Kosong secara default. Ketika beberapa instalasi ada di server, ini dapat berguna untuk menjaga cache mereka terpisah."
 config_supplementary_cache_options_redis_host: "Nilai host Redis. Default = "localhost"."
 config_supplementary_cache_options_redis_port: "Nilai port Redis. Default = "6379"."
 config_supplementary_cache_options_redis_timeout: "Nilai batas waktu Redis. Default = "2.5"."

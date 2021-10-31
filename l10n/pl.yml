@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2021.09.05).
+# This file: Polish language data (last modified: 2021.10.30).
 ##/
 
 config_core: "Ogólna konfiguracja (dowolna konfiguracja podstawowa nienależąca do innych kategorii)."
@@ -85,7 +85,7 @@ config_signatures_detect_shell: "Czy phpMussel powinien przetwarzać podpisy wyk
 config_signatures_fail_extensions_silently: "Czy phpMussel powinien zgłaszać brakujące rozszerzenia? Jeśli <code>fail_extensions_silently</code> jest wyłączone, brakujące rozszerzenia będą zgłaszane podczas skanowania, a jeśli <code>fail_extensions_silently</code> jest włączony, brakujące rozszerzenia będą ignorowane, z raportem ze skanowania dla tych plików że nie żadnych problemów nie są wytwarzane. Wyłączenie tej dyrektywy może potencjalnie zwiększyć twoje bezpieczeństwo, ale może również prowadzić do wzrostu liczby fałszywych pozytywnów. False (Fałszywy) = Wyłączone; True (Prawdziwe) = Włączony [Domyślna]."
 config_signatures_fail_silently: "Czy phpMussel powinien zgłaszać brakujące lub uszkodzone pliki podpisów? Jeśli <code>fail_silently</code> jest wyłączone, brakujące i uszkodzone pliki będą zgłaszane podczas skanowania, a jeśli <code>fail_silently</code> jest włączony, brakujące i uszkodzone pliki będą ignorowane, z raportem ze skanowania dla tych plików że nie żadnych problemów nie są wytwarzane. Zasadniczo należy to pozostawić w spokoju, chyba że występują awarie lub podobne problemy. False (Fałszywy) = Wyłączone; True (Prawdziwe) = Włączony [Domyślna]."
 config_signatures_heuristic_threshold: "Niektóre podpisy phpMussel mają na celu identyfikację podejrzanych i potencjalnie złośliwych wskaźników w plikach, same w sobie nie identyfikując tych plików jako złośliwe. Ta wartość informuje phpMussel o maksymalnej dopuszczalnej wadze przed oznaczeniem tych plików jako złośliwych. Definicja wadze w tym kontekście to całkowita liczba podejrzanych i potencjalnie złośliwych wskaźników. Domyślnie ta wartość zostanie ustawiona na 3. Niższa wartość generalnie spowoduje częstsze występowanie wyników fałszywie pozytywne ale oflagowana jest większa liczba złośliwych plików, podczas gdy wyższa wartość generalnie spowoduje mniejsze występowanie wyników fałszywie pozytywne ale oflagowana jest mniejsza liczba złośliwych plików. Na ogół najlepiej jest zmieniać tę wartość tylko w przypadku problemów."
-config_supplementary_cache_options: "Dodatkowe opcje pamięci podręcznej."
+config_supplementary_cache_options: "Dodatkowe opcje pamięci podręcznej. Uwaga: Zmiana tych wartości może potencjalnie spowodować wylogowanie."
 config_supplementary_cache_options_enable_apcu: "Określa, czy spróbować użyć APCu do pamięci podręcznej. Domyślna = False."
 config_supplementary_cache_options_enable_memcached: "Określa, czy spróbować użyć Memcached do pamięci podręcznej. Domyślna = False."
 config_supplementary_cache_options_enable_pdo: "Określa, czy spróbować użyć PDO do pamięci podręcznej. Domyślna = False."
@@ -95,6 +95,7 @@ config_supplementary_cache_options_memcached_port: "Wartość portu Memcached. D
 config_supplementary_cache_options_pdo_dsn: "Wartość DSN PDO. Domyślna = „mysql:dbname=phpmussel;host=localhost;port=3306”."
 config_supplementary_cache_options_pdo_password: "Hasło PDO."
 config_supplementary_cache_options_pdo_username: "Nazwa użytkownika PDO."
+config_supplementary_cache_options_prefix: "Ta wartość zostanie dodana na początku kluczy dla wszystkich wpisów w pamięci podręcznej. Domyślnie puste. Gdy na tym samym serwerze istnieje wiele instalacji, to może być przydatne do przechowywania ich pamięci podręcznych oddzielnie od siebie."
 config_supplementary_cache_options_redis_host: "Wartość hosta Redis. Domyślna = „localhost”."
 config_supplementary_cache_options_redis_port: "Wartość portu Redis. Domyślna = „6379”."
 config_supplementary_cache_options_redis_timeout: "Wartość limitu czasu Redis. Domyślna = „2.5”."
