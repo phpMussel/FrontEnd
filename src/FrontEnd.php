@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2021.10.30).
+ * This file: Front-end handler (last modified: 2021.11.20).
  */
 
 namespace phpMussel\FrontEnd;
@@ -817,7 +817,9 @@ class FrontEnd
                 )) . '</small></li>';
             }
             $FE['Extensions'] = implode("\n", $FE['Extensions']);
-            $FE['ExtensionIsAvailable'] = $this->ltrInRtf($this->Loader->L10N->getString('label_extension') . '➡' . $this->Loader->L10N->getString('label_installed_available'));
+            $FE['ExtensionIsAvailable'] = $this->ltrInRtf(
+                $this->Loader->L10N->getString('label_extension') . '➡' . $this->Loader->L10N->getString('label_installed_available')
+            );
             unset($ExtensionVersion, $ThisResponse, $ThisExtension);
 
             /** Build clipboard data. */
@@ -1058,7 +1060,7 @@ class FrontEnd
                     }
                     $ThisDir['DirLangKey'] = 'config_' . $CatKey . '_' . $DirKey;
                     $ThisDir['DirLangKeyOther'] = $ThisDir['DirLangKey'] . '_other';
-                    $ThisDir['DirName'] = $this->ltrInRtf($CatKey . '➡' . $DirKey);
+                    $ThisDir['DirName'] = '<span class="normalHeight">' . $this->ltrInRtf($CatKey . '➡' . $DirKey) . '</span>';
                     $ThisDir['Friendly'] = $this->Loader->L10N->getString($ThisDir['DirLangKey'] . '_label') ?: $DirKey;
                     $CatData .= sprintf(
                         '<li><a onclick="javascript:showid(\'%1$s-hidelink\');hideid(\'%1$s-showlink\');show(\'%1$s-row\')" href="#%2$s">%3$s</a></li>',
@@ -1311,7 +1313,7 @@ class FrontEnd
                                     $ThisDir['FieldOut'] .= sprintf('<div class="gridboxitem"><span class="s">%s</span></div>', $ChoiceValue);
                                 } else {
                                     $ThisDir['FieldOut'] .= sprintf(
-                                        '<div class="gridboxitem" style="text-align:center;vertical-align:middle"><input%4$s type="checkbox" class="auto" name="%1$s" id="%1$s"%2$s /></div><div class="gridboxitem"><label for="%1$s" class="s" style="cursor:pointer">%3$s</label></div>',
+                                        '<div class="gridboxitem" style="text-align:center;vertical-align:middle"><input%4$s type="checkbox" class="auto" name="%1$s" id="%1$s"%2$s /></div><div class="gridboxitem"><label for="%1$s" class="s">%3$s</label></div>',
                                         $ThisDir['DirLangKey'] . '_' . $ChoiceKey,
                                         $this->Loader->Request->inCsv(
                                             $ChoiceKey,
@@ -1402,7 +1404,7 @@ class FrontEnd
                 }
                 $CatKeyFriendly = $this->Loader->L10N->getString('config_' . $CatKey . '_label') ?: $CatKey;
                 $FE['Indexes'] .= sprintf(
-                    '<li><span class="comCat" style="cursor:pointer">%1$s</span><ul class="comSub">%2$s</ul></li>',
+                    '<li><span class="comCat">%1$s</span><ul class="comSub">%2$s</ul></li>',
                     $CatKeyFriendly,
                     $CatData
                 );
@@ -1508,13 +1510,13 @@ class FrontEnd
 
             /** Append upload test JS. */
             $FE['JS'] .=
-                'var x=1,a=\'<input type="file" name="upload_test[]" value="" />\',more=f' .
-                "unction(){var e='field'+x,t=document.createElement('div');t.setAttribute" .
-                "('class','spanner'),t.setAttribute('id',e),t.setAttribute('style','opaci" .
-                "ty:0.0;animation:UplT 2.0s ease 0s 1 normal'),document.getElementById('u" .
-                "pload_fields').appendChild(t),document.getElementById(e).innerHTML=a,set" .
-                "Timeout(function(){document.getElementById(e).style.opacity='1.0'},1999)" .
-                ',x++};';
+                "var x=1;more=function(){var t='field'+x,e=document.createElement('div');" .
+                "e.setAttribute('class','spanner'),e.setAttribute('id',t),e.setAttribute(" .
+                "'style','opacity:0;animation:UplT 2s ease 0s 1 normal'),(z=document.crea" .
+                "teElement('input')).setAttribute('name','upload_test[]'),z.setAttribute(" .
+                "'type','file'),e.appendChild(z),document.getElementById('upload_fields')" .
+                ".appendChild(e),setTimeout(function(){document.getElementById(t).style.o" .
+                "pacity='1'},1999),x++};";
 
             $FE['MaxFilesize'] = $this->Loader->readBytes($this->Loader->Configuration['files']['filesize_limit']);
 
@@ -2445,7 +2447,7 @@ class FrontEnd
                         $Value[$SizeField] = $Size;
                     }
                 }
-                $Output .= '<span class="comCat" style="cursor:pointer"><code class="s">' . str_replace(['<', '>'], ['&lt;', '&gt;'], $Key) . '</code></span>' . $Delete . '<ul class="comSub">';
+                $Output .= '<span class="comCat"><code class="s">' . str_replace(['<', '>'], ['&lt;', '&gt;'], $Key) . '</code></span>' . $Delete . '<ul class="comSub">';
                 $Output .= $this->arrayToClickableList($Value, $DeleteKey, $Depth + 1, $Key);
                 $Output .= '</ul>';
             } else {
