@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2021.11.20).
+# This file: Turkish language data (last modified: 2021.11.27).
 ##/
 
 config_core: "Genel yapılandırma (diğer kategorilere ait olmayan herhangi bir çekirdek yapılandırma)."
@@ -155,6 +155,9 @@ label_expires: "Son Geçerlilik Tarihi:"
 label_extension: "Uzantısı"
 label_flagged: "İşaretlenen nesneler"
 label_installed_available: "Yüklü/Mevcut"
+label_is_available: "%s mevcuttur (%s)."
+label_is_available_class: "%s mevcuttur."
+label_is_not_available: "%s mevcut değil."
 label_never: "Asla"
 label_os: "Kullanılan işletim sistemi:"
 label_other-Active: "Etkin imza dosyaları"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2021.11.20).
+# This file: Japanese language data (last modified: 2021.11.27).
 ##/
 
 config_core: "全般的な設定（他のカテゴリに属さないの設定）。"
@@ -155,6 +155,9 @@ label_expires: "有効期限："
 label_extension: "エクステンション"
 label_flagged: "フラグされたオブジェクト"
 label_installed_available: "インストールされている/利用可能です"
+label_is_available: "%s は使用できます（%s）。"
+label_is_available_class: "%s は使用できます。"
+label_is_not_available: "%s は使用できません。"
 label_never: "決して"
 label_os: "使用されたオペレーティングシステム："
 label_other-Active: "アクティブなシグネチャ・ファイル"

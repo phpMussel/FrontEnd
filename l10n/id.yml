@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2021.11.20).
+# This file: Indonesian language data (last modified: 2021.11.27).
 ##/
 
 config_core: "Konfigurasi umum (konfigurasi inti apapun yang bukan milik kategori lain)."
@@ -155,6 +155,9 @@ label_expires: "Kedaluwarsa:"
 label_extension: "Ekstensi"
 label_flagged: "Obyek ditandai"
 label_installed_available: "Diinstal/Tersedia"
+label_is_available: "%s tersedia (%s)."
+label_is_available_class: "%s tersedia."
+label_is_not_available: "%s tidak tersedia."
 label_never: "Tak pernah"
 label_os: "Sistem operasi digunakan:"
 label_other-Active: "File tanda tangan aktif"

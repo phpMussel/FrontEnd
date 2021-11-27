@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2021.11.20).
+# This file: Italian language data (last modified: 2021.11.27).
 ##/
 
 config_core: "Configurazione generale (qualsiasi configurazione di base non appartenente ad altre categorie)."
@@ -155,6 +155,9 @@ label_expires: "Scade:"
 label_extension: "Estensione"
 label_flagged: "Oggetti contrassegnati"
 label_installed_available: "Installato/Disponibile"
+label_is_available: "%s è disponibile (%s)."
+label_is_available_class: "%s è disponibile."
+label_is_not_available: "%s non è disponibile."
 label_never: "Mai"
 label_os: "Sistema operativo utilizzata:"
 label_other-Active: "File di firme attivi"

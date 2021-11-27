@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2021.11.20).
+# This file: French language data (last modified: 2021.11.27).
 ##/
 
 config_core: "Configuration générale (toute configuration de base n'appartenant pas à d'autres catégories)."
@@ -157,6 +157,9 @@ label_expires: "Expire :"
 label_extension: "Extension"
 label_flagged: "Objets marqués"
 label_installed_available: "Installé/Disponible"
+label_is_available: "%s est disponible (%s)."
+label_is_available_class: "%s est disponible."
+label_is_not_available: "%s n'est pas disponible."
 label_never: "Jamais"
 label_os: "Système opérateur utilisée :"
 label_other-Active: "Fichiers de signatures actifs"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2021.11.20).
+# This file: Polish language data (last modified: 2021.11.27).
 ##/
 
 config_core: "Ogólna konfiguracja (dowolna konfiguracja podstawowa nienależąca do innych kategorii)."
@@ -158,6 +158,9 @@ label_expires: "Wygasa:"
 label_extension: "Rozszerzenie"
 label_flagged: "Obiekty oflagowane"
 label_installed_available: "Zainstalowano/Dostępny"
+label_is_available: "%s jest dostępny (%s)."
+label_is_available_class: "%s jest dostępny."
+label_is_not_available: "%s nie jest dostępny."
 label_never: "Nigdy"
 label_os: "Używany system operacyjny:"
 label_other-Active: "Aktywne pliki podpisów"

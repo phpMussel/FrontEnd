@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2021.11.20).
+ * This file: Front-end handler (last modified: 2021.11.27).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1035,6 +1035,9 @@ class FrontEnd
                 $FE['45deg']
             );
 
+            /** For required extensions, classes, etc. */
+            $ReqsLookupCache = [];
+
             /** Iterate through configuration defaults. */
             foreach ($this->Loader->ConfigurationDefaults as $CatKey => $CatValue) {
                 if (!is_array($CatValue)) {
@@ -1390,6 +1393,38 @@ class FrontEnd
                         );
                     }
                     $ThisDir['FieldOut'] .= $ThisDir['Preview'];
+
+                    /** Check extension and class requirements. */
+                    if (!empty($DirValue['required'])) {
+                        $ThisDir['FieldOut'] .= '<small>';
+                        foreach ($DirValue['required'] as $DirValue['Requirement'] => $DirValue['Friendly']) {
+                            if (isset($ReqsLookupCache[$DirValue['Requirement']])) {
+                                $ThisDir['FieldOut'] .= $ReqsLookupCache[$DirValue['Requirement']];
+                                continue;
+                            }
+                            if (substr($DirValue['Requirement'], 0, 1) === "\\") {
+                                $ReqsLookupCache[$DirValue['Requirement']] = '<br /><span class="txtGn">✔️ ' . sprintf(
+                                    $this->Loader->L10N->getString('label_is_available_class'),
+                                    $DirValue['Friendly']
+                                ) . '</span>';
+                            } elseif (extension_loaded($DirValue['Requirement'])) {
+                                $DirValue['ReqVersion'] = (new \ReflectionExtension($DirValue['Requirement']))->getVersion();
+                                $ReqsLookupCache[$DirValue['Requirement']] = '<br /><span class="txtGn">✔️ ' . sprintf(
+                                    $this->Loader->L10N->getString('label_is_available'),
+                                    $DirValue['Friendly'],
+                                    $DirValue['ReqVersion']
+                                ) . '</span>';
+                            } else {
+                                $ReqsLookupCache[$DirValue['Requirement']] = '<br /><span class="txtRd">❌ ' . sprintf(
+                                    $this->Loader->L10N->getString('label_is_not_available'),
+                                    $DirValue['Friendly']
+                                ) . '</span>';
+                            }
+                            $ThisDir['FieldOut'] .= $ReqsLookupCache[$DirValue['Requirement']];
+                        }
+                        $ThisDir['FieldOut'] .= '</small>';
+                    }
+
                     if (!empty($DirValue['See also']) && is_array($DirValue['See also'])) {
                         $ThisDir['FieldOut'] .= sprintf("\n<br /><br />%s<ul>\n", $this->Loader->L10N->getString('label_see_also'));
                         foreach ($DirValue['See also'] as $RefKey => $RefLink) {
@@ -1410,6 +1445,9 @@ class FrontEnd
                 );
                 $FE['ConfigFields'] .= "</table></span>\n";
             }
+
+            /** Cleanup. */
+            unset($ReqsLookupCache);
 
             /** Update the currently active configuration file if any changes were made. */
             if ($ConfigurationModified) {

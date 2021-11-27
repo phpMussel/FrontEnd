@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (traditional) language data (last modified: 2021.11.20).
+# This file: Chinese (traditional) language data (last modified: 2021.11.27).
 ##/
 
 config_core: "基本配置（任何不屬於其他類別的核心配置）。"
@@ -155,6 +155,9 @@ label_expires: "過期："
 label_extension: "擴展"
 label_flagged: "對像已標記"
 label_installed_available: "已安裝/可用"
+label_is_available: "%s可用（%s）。"
+label_is_available_class: "%s可用。"
+label_is_not_available: "%s不可用。"
 label_never: "決不"
 label_os: "目前使用操作系統："
 label_other-Active: "活動簽名文件"

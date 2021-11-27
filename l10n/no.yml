@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2021.11.20).
+# This file: Norwegian language data (last modified: 2021.11.27).
 ##/
 
 config_core: "Generell konfigurasjon (enhver kjernekonfigurasjon som ikke tilhører andre kategorier)."
@@ -155,6 +155,9 @@ label_expires: "Utgår:"
 label_extension: "Forlengelse"
 label_flagged: "Objekter flagget"
 label_installed_available: "Installert/Tilgjengelig"
+label_is_available: "%s er tilgjengelig (%s)."
+label_is_available_class: "%s er tilgjengelig."
+label_is_not_available: "%s er ikke tilgjengelig."
 label_never: "Aldri"
 label_os: "Operativsystem brukt:"
 label_other-Active: "Aktive signaturfiler"

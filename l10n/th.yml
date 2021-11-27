@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Thai language data (last modified: 2021.11.20).
+# This file: Thai language data (last modified: 2021.11.27).
 ##/
 
 config_core: "การกำหนดค่าทั่วไป (การกำหนดค่าใด ๆ ที่ไม่ได้อยู่ในหมวดหมู่อื่น)."
@@ -155,6 +155,9 @@ label_expires: "หมดอายุ:"
 label_extension: "ส่วนขยาย"
 label_flagged: "วัตถุที่ถูกตั้งค่าสถานะ"
 label_installed_available: "การติดตั้ง/ที่มีจำหน่าย"
+label_is_available: "%s สามารถใช้ได้ (%s)."
+label_is_available_class: "%s สามารถใช้ได้."
+label_is_not_available: "%s ไม่สามารถใช้ได้."
 label_never: "ไม่เคย"
 label_os: "ระบบปฏิบัติการในการใช้งาน:"
 label_other-Active: "ไฟล์ลายเซ็นที่ใช้งานอยู่"
