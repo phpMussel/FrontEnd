@@ -64,4 +64,4 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 
 ### v3.2.1
 
-[2021.11.27; Maikuolan]: At the front-end configuration page, configuration directives relying on specific extensions (specifically, at this time, the supplementary cache options) will now include a notice as to whether the extension relied upon is available.
+[2021.11.27; Maikuolan]: At the front-end configuration page, configuration directives relying on specific extensions (specifically, at this time, the supplementary cache options) will now include a notice as to whether the extensions relied upon are available.

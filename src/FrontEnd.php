@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2021.11.27).
+ * This file: Front-end handler (last modified: 2021.11.30).
  */
 
 namespace phpMussel\FrontEnd;
@@ -373,6 +373,10 @@ class FrontEnd
             $FE['FE_Align_Mode'] = 'lr';
             $FE['PIP_Input'] = $Pips['Right'];
             $FE['PIP_Input_64'] = base64_encode($Pips['Right']);
+            $FE['PIP_Input_Valid'] = $Pips['Right Valid'];
+            $FE['PIP_Input_Valid_64'] = base64_encode($Pips['Right Valid']);
+            $FE['PIP_Input_Invalid'] = $Pips['Right Invalid'];
+            $FE['PIP_Input_Invalid_64'] = base64_encode($Pips['Right Invalid']);
             $FE['Gradient_Degree'] = 90;
             $FE['Half_Border'] = 'solid solid none none';
             $FE['45deg'] = '45deg';
@@ -382,6 +386,10 @@ class FrontEnd
             $FE['FE_Align_Mode'] = 'rl';
             $FE['PIP_Input'] = $Pips['Left'];
             $FE['PIP_Input_64'] = base64_encode($Pips['Left']);
+            $FE['PIP_Input_Valid'] = $Pips['Left Valid'];
+            $FE['PIP_Input_Valid_64'] = base64_encode($Pips['Left Valid']);
+            $FE['PIP_Input_Invalid'] = $Pips['Left Invalid'];
+            $FE['PIP_Input_Invalid_64'] = base64_encode($Pips['Left Invalid']);
             $FE['Gradient_Degree'] = 270;
             $FE['Half_Border'] = 'solid none none solid';
             $FE['45deg'] = '-45deg';
