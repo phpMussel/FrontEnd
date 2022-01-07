@@ -3,7 +3,7 @@ body,input,select,textarea{font-size:calc((12px * {magnification}) + .03vw);back
 body{font-family:'Lucida Grande',Tahoma,Verdana,Arial;letter-spacing:1px;text-decoration:none;border-style:none;margin:0;white-space:normal;background-color:#36393b;color:#c5bc8e;background-image:url('?phpmussel-asset=moon.jpg&theme={theme}');background-attachment:fixed;background-position:center center}
 hr{border-style:solid none none;border-width:1px;margin:5px 2px 0;padding:2px;color:#aaa}
 img.ico{width:16px;height:16px;border:0}
-input,select,textarea{background-color:rgba(54,57,59,.7);border:1px solid #aaa;color:#c5bc8e;margin:2px;padding:2px}
+input,select,option,textarea{background-color:rgba(54,57,59,.7);border:1px solid #aaa;color:#c5bc8e;margin:2px;padding:2px}
 input,select{width:150px;background-repeat:no-repeat;background-position:top {FE_Align_Reverse}}
 input.auto,select.auto{width:auto;padding-left:10px;padding-right:10px}
 input[type=image]{width:inherit;border:inherit}
@@ -85,7 +85,7 @@ blockquote.comSub{margin:-2px 0 0 0;padding:0 0 0 0}
 @keyframes forRotate{0%{transform:rotate(0)}100%{transform:rotate({45deg})}}
 @keyframes revRotate{0%{transform:rotate({45deg})}100%{transform:rotate(0)}}
 select+input[type=submit],select+input[type=button]{height:20px;margin-{FE_Align}:-3px;border-bottom-{FE_Align}-radius:0;border-top-{FE_Align}-radius:0;padding-{FE_Align}:3px}
-select,input[type=submit],input[type=reset],input[type=button],input[type=text],input[type=password],input[type=number],button{box-sizing:border-box;height:20px;padding-top:0;padding-bottom:0}
+select,input[type=submit],input[type=reset],input[type=button],input[type=text],input[type=password],input[type=number],input[type=date],input[type=time],button{box-sizing:border-box;height:20px;padding-top:0;padding-bottom:0}
 #pgrad{width:16px;height:16px;display:inline-block;border-radius:16px;filter:blur(2px)}
 td code~input,td code~select{vertical-align:middle}
 .trEase{transition:all .5s ease-out}

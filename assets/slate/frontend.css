@@ -1,10 +1,11 @@
 *{vertical-align:text-top}
 body,input,select,textarea,.idx{font-size:calc((12px * {magnification}) + .03vw);background-repeat:no-repeat}
-body{font-family:'Merriweather','PT Serif',sans-serif,'Lucida Grande',Tahoma,Verdana,Arial;letter-spacing:1px;text-decoration:none;border-style:none;margin:0;white-space:normal;background-color:#212121;color:#ddd}
+body{font-family:sans-serif,'Lucida Grande',Tahoma,Verdana,Arial;letter-spacing:1px;text-decoration:none;border-style:none;margin:0;white-space:normal;background-color:#212121;color:#ddd}
 code{font-family:monospace;vertical-align:0;display:inline-block;height:calc(1em + 2px)}
 hr{border-style:solid none none;border-width:1px;margin:5px 2px 0;padding:2px;color:#999}
 img.ico{width:16px;height:16px;border:0;filter:grayscale(60%) hue-rotate(45deg) brightness(.8)}
-input,select,textarea{background-color:#2f2f2f;border:1px solid #999;color:#ccc;margin:2px;padding:2px}
+select,input,textarea{background:linear-gradient({45deg},rgba(47,47,47,1),rgba(255,255,255,.1));border:1px solid #999;color:#ccc;margin:2px;padding:2px;transition:all .3s ease-out}
+option{background-color:#2f2f2f}
 input,select{width:150px;background-repeat:no-repeat;background-position:top {FE_Align_Reverse}}
 input.auto,select.auto{width:auto;padding-left:10px;padding-right:10px}
 input[type=image]{width:inherit;border:inherit}
@@ -14,10 +15,10 @@ input[type=text][pattern]:valid:not(input[type=text]:placeholder-shown){backgrou
 input[type=text][pattern]:invalid:not(input[type=text]:placeholder-shown){background-image:url(data:image/gif;base64,{PIP_Input_Invalid_64})}
 input{border-radius:0}
 input[type=button],input[type=submit],input[type=reset]{border-radius:18px}
-select,option,input,textarea{filter:grayscale(.1) brightness(.94)}
-select:active,textarea:active:not([readonly]),input:active{filter:grayscale(0) brightness(1)}
-select:disabled,textarea:disabled,input:disabled{filter:grayscale(1) brightness(.5)}
-select:focus,textarea:focus,input:focus,select:hover,textarea:hover:not([readonly]),input:hover{filter:grayscale(0) brightness(1)}
+select,option,textarea,input{filter:brightness(.94)}
+select:active,textarea:active:not([readonly]),input:active{filter:brightness(1)}
+select:disabled,textarea:disabled,input:disabled{filter:brightness(.5)}
+select:focus,textarea:focus,input:focus,select:hover,textarea:hover:not([readonly]),input:hover{filter:brightness(1.3)}
 table,.spanner{width:100%}
 textarea{height:150px}
 textarea.half{height:75px}
@@ -35,7 +36,7 @@ a:hover,a:active,a:focus{color:#fc6}
 .co,body{padding:0}
 .dt,.s,.tip,.txtBl,.txtGn,.txtOe,.txtRd{display:inline}
 .dt,.tip{float:{FE_Align};text-align:{FE_Align};width:80%}
-.gen,input,select,textarea{font-family:'Merriweather','PT Serif',Verdana,Arial,Helvetica,sans-serif}
+.gen,input,select,textarea{font-family:Verdana,Arial,Helvetica,sans-serif}
 .gen{letter-spacing:0;white-space:nowrap}
 .h1,.h1f,.h2,.h2f,.h3,.h3f,.h4,.h4f,.ng1,.ng2,.r,.rf,.spanner{margin:0;padding:4px;border-style:{Half_Border};border-width:1px;border-color:#555}
 .h1,.h1f,.h2,.h2f,.r,.rf{width:25%}
@@ -62,7 +63,6 @@ a:hover,a:active,a:focus{color:#fc6}
 @keyframes idxAn{0%{background:#603}100%{background:#ddd}}
 @keyframes UplT{0%{opacity:0}100%{opacity:1}}
 .mob{display:none}
-input[id=logoutbutton],input[id=homebutton]{transition:all .3s ease-out}
 input[id=logoutbutton]{border-top-{FE_Align}-radius:0;border-bottom-{FE_Align}-radius:0;padding-{FE_Align}:18px;margin-{FE_Align}:-1px;background-position:top 1px {FE_Align} 4px,top 1px {FE_Align} 4px;background-image:url('?phpmussel-asset=lock_wt_o.png&theme={theme}'),url('?phpmussel-asset=lock_wt_c.png&theme={theme}')}
 input[id=logoutbutton]:hover,input[id=logoutbutton]:active,input[id=logoutbutton]:focus{background-position:top 3px {FE_Align} 4px,top 1px {FE_Align} 4px}
 input[id=homebutton]{border-top-{FE_Align_Reverse}-radius:0;border-bottom-{FE_Align_Reverse}-radius:0;margin-{FE_Align_Reverse}:0}
@@ -98,7 +98,7 @@ blockquote.comSub{margin:-2px 0 0 0;padding:0 0 0 0}
 #statnavlink::before{content:"🗠"}
 #testnavlink::before{content:"🔬"}
 select+input[type=submit],select+input[type=button]{margin-{FE_Align}:-3px;border-bottom-{FE_Align}-radius:0;border-top-{FE_Align}-radius:0;padding-{FE_Align}:3px}
-select,input[type=submit],input[type=reset],input[type=button],input[type=text],input[type=password],input[type=number],button{box-sizing:border-box;height:20px;padding-top:0;padding-bottom:0}
+select,input[type=submit],input[type=reset],input[type=button],input[type=text],input[type=password],input[type=number],input[type=date],input[type=time],button{box-sizing:border-box;height:20px;padding-top:0;padding-bottom:0}
 #pgrad{width:16px;height:16px;display:inline-block;border-radius:16px;filter:blur(2px)}
 td code~input,td code~select{vertical-align:middle}
 .trEase{transition:all .5s ease-out}

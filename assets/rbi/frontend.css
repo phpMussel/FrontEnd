@@ -2,9 +2,9 @@
 body,input,select,textarea,.idx{font-size:calc((12px * {magnification}) + .03vw)}
 body{font-family:'Open Sans',sans-serif,'Lucida Grande',Tahoma,Verdana,Arial,MingLiU;letter-spacing:1px;text-decoration:none;border-style:none;margin:0;white-space:normal;background-color:#ccc;color:#330}
 code{font-family:'Space Mono',monospace;vertical-align:0;display:inline-block;height:calc(1em + 2px)}
-hr{border-style:solid none none;border-width:1px;margin:5px 2px 0;padding:2px;color:#009}
+hr{border-style:solid none none;border-width:1px;margin:5px 2px 0;padding:2px;color:rgba(0,0,153,.2)}
 img.ico{width:16px;height:16px;border:0}
-input,select,textarea{background-color:#eff;border:1px solid #009;color:#330;margin:2px;padding:2px}
+input,select,option,textarea{background-color:#eff;border:1px solid rgba(0,0,153,.2);color:#330;margin:2px;padding:2px}
 input,select{width:150px;background-repeat:no-repeat;background-position:top {FE_Align_Reverse}}
 input.auto,select.auto{width:auto;padding-left:10px;padding-right:10px}
 input[type=image]{width:inherit;border:inherit}
@@ -51,7 +51,7 @@ a:active,a:focus{color:red}
 .hFd:hover,.r{background-color:#fda}
 .rf{background:linear-gradient({Gradient_Degree}deg,#fda,#fa6)}
 .right{padding:20px;width:80%}
-.branchline{border-style:none none solid none;border-width:1px;border-color:#009}
+.branchline{border-style:none none solid none;border-width:1px;border-color:rgba(0,0,153,.2)}
 .txtBl{color:#000}
 .txtGn{color:#090}
 .txtOe{color:#f60}
@@ -61,7 +61,7 @@ a:active,a:focus{color:red}
 @media only all and (max-width:230px) {
   .ufts{width:calc(100% - 10px)}
 }
-.vr{float:{FE_Align};width:1px;height:inherit;background-color:#009}
+.vr{float:{FE_Align};width:1px;height:inherit;background-color:rgba(0,0,153,.2)}
 @keyframes idxAn{0%{background:#6af}100%{background:#ddd}}
 @keyframes UplT{0%{opacity:0}100%{opacity:1}}
 .mob{display:none}
@@ -101,7 +101,7 @@ blockquote.comSub{margin:-2px 0 0 0;padding:0 0 0 0}
 #statnavlink::before{content:"🗠"}
 #testnavlink::before{content:"🔬"}
 select+input[type=submit],select+input[type=button]{margin-{FE_Align}:-3px;border-bottom-{FE_Align}-radius:0;border-top-{FE_Align}-radius:0;padding-{FE_Align}:3px}
-select,input[type=submit],input[type=reset],input[type=button],input[type=text],input[type=password],input[type=number],button{box-sizing:border-box;height:20px;padding-top:0;padding-bottom:0}
+select,input[type=submit],input[type=reset],input[type=button],input[type=text],input[type=password],input[type=number],input[type=date],input[type=time],button{box-sizing:border-box;height:20px;padding-top:0;padding-bottom:0}
 #pgrad{width:16px;height:16px;display:inline-block;border-radius:16px;filter:blur(2px)}
 td code~input,td code~select{vertical-align:middle}
 .trEase{transition:all .5s ease-out}
