@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2021.11.27).
+# This file: English language data (last modified: 2022.01.22).
 ##/
 
 config_core: "General configuration (any core configuration not belonging to other categories)."
@@ -184,9 +184,9 @@ label_your_ip: "Your IP:"
 label_your_ua: "Your UA:"
 link_accounts: "Accounts"
 link_cache_data: "Cache Data"
-link_chat: "Chat"
 link_config: "Configuration"
 link_copy_to_clipboard: "Copy to clipboard"
+link_discussions: "Discussions"
 link_documentation: "Documentation"
 link_home: "Home"
 link_log_out: "Log Out"

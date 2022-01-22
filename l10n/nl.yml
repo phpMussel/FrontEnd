@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2021.11.27).
+# This file: Dutch language data (last modified: 2022.01.22).
 ##/
 
 config_core: "Algemene configuratie (elke kernconfiguratie die niet tot andere categorieën behoort)."
@@ -184,9 +184,9 @@ label_your_ip: "Je IP:"
 label_your_ua: "Je UA:"
 link_accounts: "Accounts"
 link_cache_data: "Cachegegevens"
-link_chat: "Chat"
 link_config: "Configuratie"
 link_copy_to_clipboard: "Kopieer naar klembord"
+link_discussions: "Discussies"
 link_documentation: "Documentatie"
 link_home: "Startpagina"
 link_log_out: "Uitloggen"

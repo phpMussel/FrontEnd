@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hindi language data (last modified: 2021.11.27).
+# This file: Hindi language data (last modified: 2022.01.22).
 ##/
 
 config_core: "सामान्य कॉन्फ़िगरेशन (कॉन्फ़िगरेशन जो अन्य श्रेणियों से संबंधित नहीं है)।"
@@ -184,9 +184,9 @@ label_your_ip: "तुम्हारी IP:"
 label_your_ua: "तुम्हारी UA:"
 link_accounts: "खातों"
 link_cache_data: "कैश डेटा"
-link_chat: "चैट"
 link_config: "कॉन्फ़िगरेशन"
 link_copy_to_clipboard: "क्लिपबोर्ड पर कॉपी करें"
+link_discussions: "चर्चाएँ"
 link_documentation: "डॉक्यूमेंटेशन"
 link_home: "होमपेज"
 link_log_out: "लोग आउट"

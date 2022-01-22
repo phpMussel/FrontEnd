@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2021.11.27).
+# This file: Indonesian language data (last modified: 2022.01.22).
 ##/
 
 config_core: "Konfigurasi umum (konfigurasi inti apapun yang bukan milik kategori lain)."
@@ -182,9 +182,9 @@ label_your_ip: "IP Anda:"
 label_your_ua: "UA Anda:"
 link_accounts: "Akun"
 link_cache_data: "Data Cache"
-link_chat: "Obrolan"
 link_config: "Konfigurasi"
 link_copy_to_clipboard: "Menyalin ke clipboard"
+link_discussions: "Diskusi"
 link_documentation: "Dokumentasi"
 link_home: "Halaman Utama"
 link_log_out: "Keluar"

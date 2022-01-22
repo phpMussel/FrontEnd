@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2021.11.27).
+# This file: Turkish language data (last modified: 2022.01.22).
 ##/
 
 config_core: "Genel yapılandırma (diğer kategorilere ait olmayan herhangi bir çekirdek yapılandırma)."
@@ -182,9 +182,9 @@ label_your_ip: "Senin IP:"
 label_your_ua: "Senin UA:"
 link_accounts: "Hesaplar"
 link_cache_data: "Önbellek Verileri"
-link_chat: "Sohbet"
 link_config: "Yapılandırma"
 link_copy_to_clipboard: "Panoya kopyala"
+link_discussions: "Tartışmalar"
 link_documentation: "Belgeler"
 link_home: "Ana Sayfa"
 link_log_out: "Çıkış"
@@ -198,13 +198,13 @@ logs_logfile_doesnt_exist: "Seçilen günlük dosyası yok!"
 logs_no_logfile_selected: "Hiçbir günlük dosyası seçilmedi."
 logs_no_logfiles_available: "Günlük dosyası yok."
 max_login_attempts_exceeded: "Maksimum giriş denemesi aşıldı; Erişim reddedildi."
-previewer_days: "Günler"
-previewer_hours: "Saatler"
-previewer_minutes: "Dakikalar"
-previewer_months: "Aylar"
-previewer_seconds: "Saniyeler"
-previewer_weeks: "Haftalar"
-previewer_years: "Yıllar"
+previewer_days: "Gün"
+previewer_hours: "Saat"
+previewer_minutes: "Dakika"
+previewer_months: "Ay"
+previewer_seconds: "Saniye"
+previewer_weeks: "Hafta"
+previewer_years: "Yıl"
 response_2fa_invalid: "Yanlış 2FA kodu girildi. Kimlik doğrulama başarısız oldu."
 response_2fa_valid: "Başarıyla doğrulandı."
 response_accounts_already_exists: "Bu kullanıcı adıyla bir hesap zaten var!"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (traditional) language data (last modified: 2021.11.27).
+# This file: Chinese (traditional) language data (last modified: 2022.01.22).
 ##/
 
 config_core: "基本配置（任何不屬於其他類別的核心配置）。"
@@ -182,9 +182,9 @@ label_your_ip: "您的IP："
 label_your_ua: "您的UA："
 link_accounts: "帳戶"
 link_cache_data: "緩存數據"
-link_chat: "聊天室"
 link_config: "配置"
 link_copy_to_clipboard: "複製到剪貼板"
+link_discussions: "討論"
 link_documentation: "文檔"
 link_home: "主頁"
 link_log_out: "登出"

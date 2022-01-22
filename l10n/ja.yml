@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2021.11.27).
+# This file: Japanese language data (last modified: 2022.01.22).
 ##/
 
 config_core: "全般的な設定（他のカテゴリに属さないの設定）。"
@@ -182,9 +182,9 @@ label_your_ip: "あなたのＩＰ："
 label_your_ua: "あなたのＵＡ："
 link_accounts: "アカウント"
 link_cache_data: "キャッシュ・データ"
-link_chat: "チャット"
 link_config: "コンフィギュレーション"
 link_copy_to_clipboard: "クリップボードにコピー"
+link_discussions: "ディスカッション"
 link_documentation: "ドキュメンテーション"
 link_home: "ホーム"
 link_log_out: "ログアウト"
