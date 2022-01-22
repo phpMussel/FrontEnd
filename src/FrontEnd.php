@@ -307,8 +307,8 @@ class FrontEnd
 
             /** Make some of the link references available to the main front-end array. */
             'Links.Discussions' => $this->Loader->YAML->Refs['Links']['Discussions'],
-            'URL-Documentation' => 'https://phpmussel.github.io/#documentation',
-            'URL-Website' => 'https://phpmussel.github.io/',
+            'Links.Documentation' => $this->Loader->YAML->Refs['Links']['Documentation'],
+            'Links.Website' => $this->Loader->YAML->Refs['Links']['Website'],
 
             /** To be populated by warnings. */
             'Warnings' => [],
@@ -319,9 +319,6 @@ class FrontEnd
 
         /** Populated by [Home | Log Out] by default; Replaced by [Log Out] for some specific pages (e.g., the homepage). */
         $FE['bNav'] = $FE['HomeButton'] . $FE['LogoutButton'];
-
-        /** Assign website link text. */
-        $this->Loader->L10N->Data['link_website'] = 'phpMussel@GitHub';
 
         /** Warns if maintenance mode is enabled. */
         if ($this->Loader->Configuration['core']['maintenance_mode']) {
