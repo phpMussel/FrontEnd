@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.01.22).
+ * This file: Front-end handler (last modified: 2022.02.01).
  */
 
 namespace phpMussel\FrontEnd;
@@ -222,10 +222,10 @@ class FrontEnd
     {
         /** Brute-force protection. */
         if ((
-            ($LoginAttempts = (int)$this->Loader->Cache->getEntry('LoginAttempts' . $_SERVER[$this->Loader->Configuration['core']['ipaddr']])) &&
+            ($LoginAttempts = (int)$this->Loader->Cache->getEntry('LoginAttempts' . $this->IPAddr)) &&
             ($LoginAttempts >= $this->Loader->Configuration['frontend']['max_login_attempts'])
         ) || (
-            ($Failed2FA = (int)$this->Loader->Cache->getEntry('Failed2FA' . $_SERVER[$this->Loader->Configuration['core']['ipaddr']])) &&
+            ($Failed2FA = (int)$this->Loader->Cache->getEntry('Failed2FA' . $this->IPAddr)) &&
             ($Failed2FA >= $this->Loader->Configuration['frontend']['max_login_attempts'])
         )) {
             header('Content-Type: text/plain');
@@ -294,10 +294,10 @@ class FrontEnd
             ),
 
             /** The user agent of the current request. */
-            'UA' => empty($_SERVER['HTTP_USER_AGENT']) ? '' : $_SERVER['HTTP_USER_AGENT'],
+            'UA' => $_SERVER['HTTP_USER_AGENT'] ?? '',
 
             /** The IP address of the current request. */
-            'YourIP' => empty($_SERVER[$this->Loader->Configuration['core']['ipaddr']]) ? '' : $_SERVER[$this->Loader->Configuration['core']['ipaddr']],
+            'YourIP' => $this->IPAddr,
 
             /** Asynchronous mode. */
             'ASYNC' => !empty($_POST['ASYNC']),
@@ -455,7 +455,7 @@ class FrontEnd
                     !empty($this->Loader->Configuration[$ConfigUserPath]['permissions'])
                 ) {
                     if (password_verify($_POST['password'], $this->Loader->Configuration[$ConfigUserPath]['password'])) {
-                        $this->Loader->Cache->deleteEntry('LoginAttempts' . $_SERVER[$this->Loader->Configuration['core']['ipaddr']]);
+                        $this->Loader->Cache->deleteEntry('LoginAttempts' . $this->IPAddr);
                         $Permissions = (int)$this->Loader->Configuration[$ConfigUserPath]['permissions'];
                         if ($Permissions !== 1 && $Permissions !== 2) {
                             $FE['state_msg'] = $this->Loader->L10N->getString('response_login_wrong_endpoint');
@@ -512,7 +512,7 @@ class FrontEnd
                 if ($FE['state_msg']) {
                     $LoginAttempts++;
                     $TimeToAdd = ($LoginAttempts > 4) ? ($LoginAttempts - 4) * 86400 : 86400;
-                    $this->Loader->Cache->setEntry('LoginAttempts' . $_SERVER[$this->Loader->Configuration['core']['ipaddr']], $LoginAttempts, $TimeToAdd ?: 86400);
+                    $this->Loader->Cache->setEntry('LoginAttempts' . $this->IPAddr, $LoginAttempts, $TimeToAdd ?: 86400);
                     $LoggerMessage = $FE['state_msg'];
                 }
             } elseif ($this->Permissions === 3) {
@@ -523,10 +523,10 @@ class FrontEnd
             }
 
             /** Safer for the front-end logger. */
-            $TryUser = preg_replace('~[\x00-\x1f]~', '', $TryUser ?? $this->User);
+            $TryUser = preg_replace('~[\x00-\x1F]~', '', $TryUser ?? $this->User);
 
             /** Handle front-end logging. */
-            $this->frontendLogger($_SERVER[$this->Loader->Configuration['core']['ipaddr']], $TryUser, $LoggerMessage ?? '');
+            $this->frontendLogger($this->IPAddr, $TryUser, $LoggerMessage ?? '');
         }
 
         /** Determine whether the user has logged in. */
@@ -561,16 +561,16 @@ class FrontEnd
                             if (password_verify($_POST['2fa'], substr($TwoFactorState, 1))) {
                                 $this->Loader->Cache->setEntry('TwoFactorState:' . $_COOKIE['PHPMUSSEL-ADMIN'], '1', $this->SessionTTL);
                                 $Try = 1;
-                                $this->Loader->Cache->deleteEntry('Failed2FA' . $_SERVER[$this->Loader->Configuration['core']['ipaddr']]);
+                                $this->Loader->Cache->deleteEntry('Failed2FA' . $this->IPAddr);
                                 if ($this->Loader->Configuration['frontend']['frontend_log']) {
-                                    $this->frontendLogger($_SERVER[$this->Loader->Configuration['core']['ipaddr']], $SessionUser, $this->Loader->L10N->getString('response_2fa_valid'));
+                                    $this->frontendLogger($this->IPAddr, $SessionUser, $this->Loader->L10N->getString('response_2fa_valid'));
                                 }
                             } else {
                                 $Failed2FA++;
                                 $TimeToAdd = ($Failed2FA > 4) ? ($Failed2FA - 4) * 86400 : 86400;
-                                $this->Loader->Cache->setEntry('Failed2FA' . $_SERVER[$this->Loader->Configuration['core']['ipaddr']], $Failed2FA, $TimeToAdd ?: 86400);
+                                $this->Loader->Cache->setEntry('Failed2FA' . $this->IPAddr, $Failed2FA, $TimeToAdd ?: 86400);
                                 if ($this->Loader->Configuration['frontend']['frontend_log']) {
-                                    $this->frontendLogger($_SERVER[$this->Loader->Configuration['core']['ipaddr']], $SessionUser, $this->Loader->L10N->getString('response_2fa_invalid'));
+                                    $this->frontendLogger($this->IPAddr, $SessionUser, $this->Loader->L10N->getString('response_2fa_invalid'));
                                 }
                                 $FE['state_msg'] = $this->Loader->L10N->getString('response_2fa_invalid');
                             }
@@ -605,7 +605,7 @@ class FrontEnd
                 $this->User = '';
                 $this->Permissions = 0;
                 setcookie('PHPMUSSEL-ADMIN', '', -1, '/', $this->HostnameOverride ?: $this->Host, false, true);
-                $this->frontendLogger($_SERVER[$this->Loader->Configuration['core']['ipaddr']], $SessionUser, $this->Loader->L10N->getString('state_logged_out'));
+                $this->frontendLogger($this->IPAddr, $SessionUser, $this->Loader->L10N->getString('state_logged_out'));
             }
 
             if ($this->Permissions === 1) {
@@ -1079,7 +1079,7 @@ class FrontEnd
                         if (in_array($DirValue['type'], ['bool', 'float', 'int', 'kb', 'string', 'timezone', 'email', 'url'], true)) {
                             $this->Loader->autoType($_POST[$ThisDir['DirLangKey']], $DirValue['type']);
                         }
-                        if (!preg_match('/[^\x20-\xff"\']/', $_POST[$ThisDir['DirLangKey']]) && (
+                        if (!preg_match('/[^\x20-\xFF"\']/', $_POST[$ThisDir['DirLangKey']]) && (
                             !isset($DirValue['choices']) ||
                             isset($DirValue['choices'][$_POST[$ThisDir['DirLangKey']]])
                         )) {
@@ -1089,7 +1089,7 @@ class FrontEnd
                             !empty($DirValue['allow_other']) &&
                             $_POST[$ThisDir['DirLangKey']] === 'Other' &&
                             isset($_POST[$ThisDir['DirLangKeyOther']]) &&
-                            !preg_match('/[^\x20-\xff"\']/', $_POST[$ThisDir['DirLangKeyOther']])
+                            !preg_match('/[^\x20-\xFF"\']/', $_POST[$ThisDir['DirLangKeyOther']])
                         ) {
                             $ConfigurationModified = true;
                             $this->Loader->Configuration[$CatKey][$DirKey] = $_POST[$ThisDir['DirLangKeyOther']];
@@ -2079,7 +2079,7 @@ class FrontEnd
             ) ? substr($Head, $OriginStartPos + 15, $OriginEndPos - $OriginStartPos - 15) : $this->Loader->L10N->getString('field_filetype_unknown');
 
             /** If the phpMussel QFU (Quarantined File Upload) header isn't found, it probably isn't a quarantined file. */
-            if (($HeadPos = strpos($Head, "\xa1phpMussel\x21")) !== false && (substr($Head, $HeadPos + 31, 1) === "\1")) {
+            if (($HeadPos = strpos($Head, "\xA1phpMussel\x21")) !== false && (substr($Head, $HeadPos + 31, 1) === "\1")) {
                 $Head = substr($Head, $HeadPos);
                 $Arr[$Key]['Upload-MD5'] = bin2hex(substr($Head, 11, 16));
                 $Arr[$Key]['Upload-Size'] = $this->Loader->unpackSafe('l*', substr($Head, 27, 4));
@@ -2122,7 +2122,7 @@ class FrontEnd
         $Data = $this->Loader->readFileBlocks($File);
 
         /** Fetch headers. */
-        if (($HeadPos = strpos($Data, "\xa1phpMussel\x21")) === false || (substr($Data, $HeadPos + 31, 1) !== "\1")) {
+        if (($HeadPos = strpos($Data, "\xA1phpMussel\x21")) === false || (substr($Data, $HeadPos + 31, 1) !== "\1")) {
             $this->InstanceCache['RestoreStatus'] = 2;
             return '';
         }
@@ -2203,7 +2203,7 @@ class FrontEnd
         /** Expand patterns for signature metadata. */
         foreach ($Arr['SigTypes'] as &$Type) {
             $Type = sprintf(
-                '\x1a(?![\x80-\x8f])[\x0%1$s\x1%1$s\x2%1$s\x3%1$s\x4%1$s\x5%1$s\x6%1$s\x7%1$s\x8%1$s\x9%1$s\xa%1$s\xb%1$s\xc%1$s\xd%1$s\xe%1$s\ef%1$s].',
+                '\x1A(?![\x80-\x8F])[\x0%1$s\x1%1$s\x2%1$s\x3%1$s\x4%1$s\x5%1$s\x6%1$s\x7%1$s\x8%1$s\x9%1$s\xa%1$s\xb%1$s\xc%1$s\xd%1$s\xe%1$s\ef%1$s].',
                 $Type
             );
         }
