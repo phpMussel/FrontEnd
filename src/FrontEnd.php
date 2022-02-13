@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.02.01).
+ * This file: Front-end handler (last modified: 2022.02.13).
  */
 
 namespace phpMussel\FrontEnd;
@@ -222,10 +222,10 @@ class FrontEnd
     {
         /** Brute-force protection. */
         if ((
-            ($LoginAttempts = (int)$this->Loader->Cache->getEntry('LoginAttempts' . $this->IPAddr)) &&
+            ($LoginAttempts = (int)$this->Loader->Cache->getEntry('LoginAttempts' . $this->Loader->IPAddr)) &&
             ($LoginAttempts >= $this->Loader->Configuration['frontend']['max_login_attempts'])
         ) || (
-            ($Failed2FA = (int)$this->Loader->Cache->getEntry('Failed2FA' . $this->IPAddr)) &&
+            ($Failed2FA = (int)$this->Loader->Cache->getEntry('Failed2FA' . $this->Loader->IPAddr)) &&
             ($Failed2FA >= $this->Loader->Configuration['frontend']['max_login_attempts'])
         )) {
             header('Content-Type: text/plain');
@@ -297,7 +297,7 @@ class FrontEnd
             'UA' => $_SERVER['HTTP_USER_AGENT'] ?? '',
 
             /** The IP address of the current request. */
-            'YourIP' => $this->IPAddr,
+            'YourIP' => $this->Loader->IPAddr,
 
             /** Asynchronous mode. */
             'ASYNC' => !empty($_POST['ASYNC']),
@@ -455,7 +455,7 @@ class FrontEnd
                     !empty($this->Loader->Configuration[$ConfigUserPath]['permissions'])
                 ) {
                     if (password_verify($_POST['password'], $this->Loader->Configuration[$ConfigUserPath]['password'])) {
-                        $this->Loader->Cache->deleteEntry('LoginAttempts' . $this->IPAddr);
+                        $this->Loader->Cache->deleteEntry('LoginAttempts' . $this->Loader->IPAddr);
                         $Permissions = (int)$this->Loader->Configuration[$ConfigUserPath]['permissions'];
                         if ($Permissions !== 1 && $Permissions !== 2) {
                             $FE['state_msg'] = $this->Loader->L10N->getString('response_login_wrong_endpoint');
@@ -512,7 +512,7 @@ class FrontEnd
                 if ($FE['state_msg']) {
                     $LoginAttempts++;
                     $TimeToAdd = ($LoginAttempts > 4) ? ($LoginAttempts - 4) * 86400 : 86400;
-                    $this->Loader->Cache->setEntry('LoginAttempts' . $this->IPAddr, $LoginAttempts, $TimeToAdd ?: 86400);
+                    $this->Loader->Cache->setEntry('LoginAttempts' . $this->Loader->IPAddr, $LoginAttempts, $TimeToAdd ?: 86400);
                     $LoggerMessage = $FE['state_msg'];
                 }
             } elseif ($this->Permissions === 3) {
@@ -526,7 +526,7 @@ class FrontEnd
             $TryUser = preg_replace('~[\x00-\x1F]~', '', $TryUser ?? $this->User);
 
             /** Handle front-end logging. */
-            $this->frontendLogger($this->IPAddr, $TryUser, $LoggerMessage ?? '');
+            $this->frontendLogger($this->Loader->IPAddr, $TryUser, $LoggerMessage ?? '');
         }
 
         /** Determine whether the user has logged in. */
@@ -561,16 +561,16 @@ class FrontEnd
                             if (password_verify($_POST['2fa'], substr($TwoFactorState, 1))) {
                                 $this->Loader->Cache->setEntry('TwoFactorState:' . $_COOKIE['PHPMUSSEL-ADMIN'], '1', $this->SessionTTL);
                                 $Try = 1;
-                                $this->Loader->Cache->deleteEntry('Failed2FA' . $this->IPAddr);
+                                $this->Loader->Cache->deleteEntry('Failed2FA' . $this->Loader->IPAddr);
                                 if ($this->Loader->Configuration['frontend']['frontend_log']) {
-                                    $this->frontendLogger($this->IPAddr, $SessionUser, $this->Loader->L10N->getString('response_2fa_valid'));
+                                    $this->frontendLogger($this->Loader->IPAddr, $SessionUser, $this->Loader->L10N->getString('response_2fa_valid'));
                                 }
                             } else {
                                 $Failed2FA++;
                                 $TimeToAdd = ($Failed2FA > 4) ? ($Failed2FA - 4) * 86400 : 86400;
-                                $this->Loader->Cache->setEntry('Failed2FA' . $this->IPAddr, $Failed2FA, $TimeToAdd ?: 86400);
+                                $this->Loader->Cache->setEntry('Failed2FA' . $this->Loader->IPAddr, $Failed2FA, $TimeToAdd ?: 86400);
                                 if ($this->Loader->Configuration['frontend']['frontend_log']) {
-                                    $this->frontendLogger($this->IPAddr, $SessionUser, $this->Loader->L10N->getString('response_2fa_invalid'));
+                                    $this->frontendLogger($this->Loader->IPAddr, $SessionUser, $this->Loader->L10N->getString('response_2fa_invalid'));
                                 }
                                 $FE['state_msg'] = $this->Loader->L10N->getString('response_2fa_invalid');
                             }
@@ -605,7 +605,7 @@ class FrontEnd
                 $this->User = '';
                 $this->Permissions = 0;
                 setcookie('PHPMUSSEL-ADMIN', '', -1, '/', $this->HostnameOverride ?: $this->Host, false, true);
-                $this->frontendLogger($this->IPAddr, $SessionUser, $this->Loader->L10N->getString('state_logged_out'));
+                $this->frontendLogger($this->Loader->IPAddr, $SessionUser, $this->Loader->L10N->getString('state_logged_out'));
             }
 
             if ($this->Permissions === 1) {
