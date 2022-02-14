@@ -8,13 +8,12 @@
         "issues": "https://github.com/phpMussel/FrontEnd/issues",
         "source": "https://github.com/phpMussel/FrontEnd",
         "docs": "https://github.com/phpMussel/Docs",
-        "rss": "https://github.com/phpMussel/FrontEnd/releases.atom",
-        "chat": "https://gitter.im/phpMussel2/Lobby"
+        "rss": "https://github.com/phpMussel/FrontEnd/releases.atom"
     },
     "require": {
         "php": ">=7.2.0",
-        "maikuolan/common": "^2.7",
-        "phpmussel/core": "^3.3",
+        "maikuolan/common": "^2.8",
+        "phpmussel/core": "^3.3.1",
         "ext-pcre": "*"
     },
     "autoload": {
