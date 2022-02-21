@@ -86,7 +86,7 @@ config_signatures_fail_extensions_silently: "phpMussel应该报告当扩展是�
 config_signatures_fail_silently: "phpMussel应该报告当签名文件是失踪或损坏吗？​如果<code>fail_silently</code>是关闭，​失踪和损坏文件将会报告当扫描，​和如果<code>fail_silently</code>是激活，​失踪和损坏文件将会忽略，​有扫描报告为那些文件哪里没有问题。​这个应该按说被留下除非您遇到失败或有其他类似问题。​False（假）=是关闭；True（真）=是激活【默认】。"
 config_signatures_heuristic_threshold: "有某些签名的phpMussel意味为确定可疑和可能恶意文件零件被上传有不在他们自己确定那些文件被上传特别是作为恶意。​这个“threshold”数值告诉phpMussel什么是最大总重量的可疑和潜在恶意文件零件被上传允许之前那些文件是被识别作为恶意。​定义的重量在这个上下文是总数值的可疑和可能恶意文件零件确定。​作为默认，​这个数值将会设置作为3。​一个较低的值通常将结果在一个更高的发生的假阳性但一个更高的发生的恶意文件被确定，​而一个更高的数值将通常结果在一个较低的发生的假阳性但一个较低的数值的恶意文件被确定。​它是通常最好忽略这个数值除非您遇到关联问题。"
 config_supplementary_cache_options: "补充缓存选项。​注意：更改这些值可能会使您注销。"
-config_supplementary_cache_options_enable_apcu: "指定是否尝试使用APCu进行缓存。​标准 = False。"
+config_supplementary_cache_options_enable_apcu: "指定是否尝试使用APCu进行缓存。​标准 = True。"
 config_supplementary_cache_options_enable_memcached: "指定是否尝试使用Memcached进行缓存。​标准 = False。"
 config_supplementary_cache_options_enable_pdo: "指定是否尝试使用PDO进行缓存。​标准 = False。"
 config_supplementary_cache_options_enable_redis: "指定是否尝试使用Redis进行缓存。​标准 = False。"

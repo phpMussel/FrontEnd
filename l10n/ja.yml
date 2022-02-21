@@ -86,7 +86,7 @@ config_signatures_fail_extensions_silently: "拡張子がない場合にphpMusse
 config_signatures_fail_silently: "シグネチャ・ファイルがない、​あるいは破損している場合に、​phpMusselがそれをリポートすべきか否か？​<code>fail_silently</code>が無効ならば、​問題はリポートされ、​有効であれば、​問題は無視されたスキャニングレポートが作成されます。​クラッシュするというような害がなければ、​デフォルト設定のままにしておくべきです。​False（偽） = Disabled/無効; True（真） = Enabled/有効 （Default/デフォルト）。"
 config_signatures_heuristic_threshold: "phpMusselには、​このファイルは疑わしく危険性が高いと判断するシグネチャがあります。​しきい値は、​アップロードされているファイルの危険性の最大値であり、​これを超えるとマルウェアと判断されます。​ここにおける危険性の定義とは、​疑わしいと特定されたものの総数です。​デフォルトでは３に設定されています。​これより低いと誤検出の可能性が増え、​大きすぎると、​誤検出は減るものの危険性のあるファイルが検出されない可能性が増加してしまいます。​特に問題がなければ、​デフォルト値のままにしておくことお勧めします。"
 config_supplementary_cache_options: "補足キャッシュ・オプション。 注：これらの値を変更すると、ログアウトする可能性があります。"
-config_supplementary_cache_options_enable_apcu: "キャッシュに「APCu」を使用するかどうかを指定します。 Default/デフォルルト = False。"
+config_supplementary_cache_options_enable_apcu: "キャッシュに「APCu」を使用するかどうかを指定します。 Default/デフォルルト = True。"
 config_supplementary_cache_options_enable_memcached: "キャッシュに「Memcached」を使用するかどうかを指定します。 Default/デフォルルト = False。"
 config_supplementary_cache_options_enable_pdo: "キャッシュに「PDO」を使用するかどうかを指定します。 Default/デフォルルト = False。"
 config_supplementary_cache_options_enable_redis: "キャッシュに「Redis」を使用するかどうかを指定します。 Default/デフォルルト = False。"
