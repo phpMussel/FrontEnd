@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.02.13).
+ * This file: Front-end handler (last modified: 2022.02.21).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1107,17 +1107,12 @@ class FrontEnd
                                         $DirValue['Posts'][] = $DirValue['ThisChoiceKey'] . ':' . $DirValue['ThisLabelKey'];
                                     }
                                 }
-                            } else {
-                                if (!empty($_POST[$ThisDir['DirLangKey'] . '_' . $DirValue['ThisChoiceKey']])) {
-                                    $DirValue['Posts'][] = $DirValue['ThisChoiceKey'];
-                                }
+                            } elseif (!empty($_POST[$ThisDir['DirLangKey'] . '_' . $DirValue['ThisChoiceKey']])) {
+                                $DirValue['Posts'][] = $DirValue['ThisChoiceKey'];
                             }
                         }
                         $DirValue['Posts'] = implode(',', $DirValue['Posts']) ?: '';
-                        if (
-                            !empty($_POST['updatingConfig']) &&
-                            $this->Loader->Configuration[$CatKey][$DirKey] !== $DirValue['Posts']
-                        ) {
+                        if (!empty($_POST['updatingConfig']) && $this->Loader->Configuration[$CatKey][$DirKey] !== $DirValue['Posts']) {
                             $ConfigurationModified = true;
                             $this->Loader->Configuration[$CatKey][$DirKey] = $DirValue['Posts'];
                         }
