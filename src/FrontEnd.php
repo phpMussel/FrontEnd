@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.02.21).
+ * This file: Front-end handler (last modified: 2022.02.26).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1241,29 +1241,26 @@ class FrontEnd
                     if (isset($DirValue['choices'])) {
                         if ($DirValue['type'] === 'checkbox') {
                             if (isset($DirValue['labels']) && is_array($DirValue['labels'])) {
+                                $DirValue['gridV'] = 'gridVB';
                                 $ThisDir['FieldOut'] = sprintf(
-                                    '<div style="display:grid;grid-template-columns:%s;text-align:%s">',
-                                    str_repeat('18px ', count($DirValue['labels'])) . 'auto',
+                                    '<div style="display:grid;margin:auto 38px;grid-template-columns:%s;text-align:%s">',
+                                    str_repeat('auto ', count($DirValue['labels'])) . 'auto',
                                     $FE['FE_Align']
                                 );
                                 $DirValue['HasLabels'] = true;
                                 foreach ($DirValue['labels'] as $DirValue['ThisLabel']) {
-                                    foreach (['response_', 'label_', 'field_'] as $LabelPrefix) {
-                                        if (array_key_exists($LabelPrefix . $DirValue['ThisLabel'], $this->Loader->L10N->Data)) {
-                                            $DirValue['ThisLabel'] = $this->Loader->L10N->getString($LabelPrefix . $DirValue['ThisLabel']);
-                                            break;
-                                        }
-                                    }
+                                    $DirValue['gridV'] = ($DirValue['gridV']) === 'gridVB' ? 'gridVA': 'gridVB';
+                                    $this->replaceLabelWithL10N($DirValue['ThisLabel']);
                                     $ThisDir['FieldOut'] .= sprintf(
-                                        '<div class="gridboxitem" style="text-align:right;writing-mode:vertical-%s;height:auto;line-height:18px"><span class="s">%s</span></div>',
-                                        $FE['FE_Align_Mode'],
+                                        '<div class="gridboxitem configMatrixLabel %s">%s</div>',
+                                        $DirValue['gridV'],
                                         $DirValue['ThisLabel']
                                     );
                                 }
                                 $ThisDir['FieldOut'] .= '<div class="gridboxitem"></div>';
                             } else {
                                 $ThisDir['FieldOut'] = sprintf(
-                                    '<div style="display:grid;grid-template-columns:18px auto;text-align:%s">',
+                                    '<div style="display:grid;margin:auto 38px;grid-template-columns:19px auto;text-align:%s">',
                                     $FE['FE_Align']
                                 );
                                 $DirValue['HasLabels'] = false;
@@ -1275,6 +1272,7 @@ class FrontEnd
                                 $ThisDir['Trigger']
                             );
                         }
+                        $DirValue['gridH'] = 'gridHB';
                         foreach ($DirValue['choices'] as $ChoiceKey => $ChoiceValue) {
                             if (isset($DirValue['choice_filter'])) {
                                 if (
@@ -1284,43 +1282,49 @@ class FrontEnd
                                     continue;
                                 }
                             }
+                            $DirValue['gridV'] = 'gridVB';
+                            $DirValue['gridH'] = ($DirValue['gridH']) === 'gridHB' ? 'gridHA': 'gridHB';
                             $ChoiceValue = $this->Loader->timeFormat($this->Loader->Time, $ChoiceValue);
                             if (strpos($ChoiceValue, '{') !== false) {
                                 $ChoiceValue = $this->Loader->parse($this->Loader->L10N->Data, $ChoiceValue);
                             }
+                            $this->replaceLabelWithL10N($ChoiceValue);
                             if ($DirValue['type'] === 'checkbox') {
                                 if ($DirValue['HasLabels']) {
                                     foreach ($DirValue['labels'] as $DirValue['ThisLabelKey'] => $DirValue['ThisLabel']) {
+                                        $DirValue['gridV'] = ($DirValue['gridV']) === 'gridVB' ? 'gridVA': 'gridVB';
                                         $ThisDir['FieldOut'] .= sprintf(
-                                            '<div class="gridboxitem" style="text-align:center;vertical-align:middle"><input%3$s type="checkbox" class="auto" name="%1$s" id="%1$s"%2$s /></div>',
+                                            '<div class="gridboxcheckcell %4$s %5$s"><label class="gridlabel"><input%3$s type="checkbox" class="auto" name="%1$s" id="%1$s"%2$s /></label></div>',
                                             $ThisDir['DirLangKey'] . '_' . $ChoiceKey . '_' . $DirValue['ThisLabelKey'],
                                             $this->Loader->Request->inCsv(
                                                 $ChoiceKey . ':' . $DirValue['ThisLabelKey'],
                                                 $this->Loader->Configuration[$CatKey][$DirKey]
                                             ) ? ' checked' : '',
-                                            $ThisDir['Trigger']
+                                            $ThisDir['Trigger'],
+                                            $DirValue['gridV'],
+                                            $DirValue['gridH']
                                         );
                                     }
-                                    $ThisDir['FieldOut'] .= sprintf('<div class="gridboxitem"><span class="s">%s</span></div>', $ChoiceValue);
+                                    $ThisDir['FieldOut'] .= sprintf(
+                                        '<div class="gridboxitem %s %s">%s</div>',
+                                        $DirValue['gridH'],
+                                        (count($DirValue['labels']) % 2) === 0 ? 'vrte' : 'vrto',
+                                        $ChoiceValue
+                                    );
                                 } else {
                                     $ThisDir['FieldOut'] .= sprintf(
-                                        '<div class="gridboxitem" style="text-align:center;vertical-align:middle"><input%4$s type="checkbox" class="auto" name="%1$s" id="%1$s"%2$s /></div><div class="gridboxitem"><label for="%1$s" class="s">%3$s</label></div>',
+                                        '<div class="gridboxcheckcell gridVA %5$s"><label class="gridlabel"><input%4$s type="checkbox" class="auto" name="%1$s" id="%1$s"%2$s /></label></div><div class="gridboxitem %5$s"><label for="%1$s" class="s">%3$s</label></div>',
                                         $ThisDir['DirLangKey'] . '_' . $ChoiceKey,
                                         $this->Loader->Request->inCsv(
                                             $ChoiceKey,
                                             $this->Loader->Configuration[$CatKey][$DirKey]
                                         ) ? ' checked' : '',
                                         $ChoiceValue,
-                                        $ThisDir['Trigger']
+                                        $ThisDir['Trigger'],
+                                        $DirValue['gridH']
                                     );
                                 }
                             } else {
-                                foreach (['response_', 'label_', 'field_'] as $ChoicePrefix) {
-                                    if (array_key_exists($ChoicePrefix . $ChoiceValue, $this->Loader->L10N->Data)) {
-                                        $ChoiceValue = $this->Loader->L10N->getString($ChoicePrefix . $ChoiceValue);
-                                        break;
-                                    }
-                                }
                                 $ThisDir['FieldOut'] .= sprintf(
                                     '<option style="text-transform:capitalize" value="%1$s"%2$s>%3$s</option>',
                                     $ChoiceKey,
@@ -2618,5 +2622,21 @@ class FrontEnd
             }
         }
         return $Salt;
+    }
+
+    /**
+     * Replaces labels with corresponding L10N data (if there's any).
+     *
+     * @param string $Label The actual label.
+     * @return string The replaced label.
+     */
+    private function replaceLabelWithL10N(string &$Label): void
+    {
+        foreach (['', 'response_', 'label_', 'field_'] as $Prefix) {
+            if (array_key_exists($Prefix . $Label, $this->Loader->L10N->Data)) {
+                $Label = preg_replace('~(?: | )?(?:：|:) ?$~', '', $this->Loader->L10N->getString($Prefix . $Label));
+                return;
+            }
+        }
     }
 }
