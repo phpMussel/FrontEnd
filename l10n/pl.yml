@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2022.01.22).
+# This file: Polish language data (last modified: 2022.03.01).
 ##/
 
 config_core: "Ogólna konfiguracja (dowolna konfiguracja podstawowa nienależąca do innych kategorii)."
@@ -34,7 +34,7 @@ config_experimental: "Niestabilny/Eksperymentalny!"
 config_files: "Szczegóły dotyczące obsługi plików podczas skanowania."
 config_files_allow_leading_trailing_dots: "Czy dozwolone są wiodące i końcowe kropki w nazwach plików? Czasami można tego użyć do ukrywania plików lub oszukiwania niektórych systemów w celu umożliwienia przejścia do katalogu. False (Fałszywy) = Nie pozwól na to [Domyślna]. True (Prawdziwe) = Pozwól na to."
 config_files_archive_file_extensions: "Rozpoznane rozszerzenia plików archiwów (format to CSV; należy dodawać lub usuwać tylko w przypadku wystąpienia problemów; niepotrzebne usunięcie może spowodować pojawienie się fałszywych pozytywnów dla plików archiwalnych, podczas gdy niepotrzebne dodawanie skutecznie doda do białej listy to, co dodajesz po wykryciu określonego ataku; modyfikuj ostrożnie; zauważ również, że nie ma to wpływu na to, które archiwa można analizować na poziomie ich zawartości). Domyślnie lista zawiera listę formatów używanych najczęściej w większości systemów i CMS, ale celowo niekoniecznie jest wyczerpująca."
-config_files_block_control_characters: "Zablokować pliki zawierające znaki sterujące (inne niż nowe linie)? (<code>[\x00-\x08\x0b\x0c\x0e\x1f\x7f]</code>) Jeśli przesyłasz <em><strong>TYLKO</strong></em> zwykły tekst, możesz włączyć tę opcję, aby zapewnić dodatkową ochronę systemu. Jeśli jednak prześlesz coś innego niż zwykły tekst, włączenie tego może spowodować fałszywe pozytywne. False (Fałszywy) = Nie blokuj [Domyślna]; True (Prawdziwe) = Blokuj."
+config_files_block_control_characters: "Zablokować pliki zawierające znaki sterujące (inne niż nowe linie)? (<code>[\\x00-\\x08\\x0b\\x0c\\x0e\\x1f\\x7f]</code>) Jeśli przesyłasz <em><strong>TYLKO</strong></em> zwykły tekst, możesz włączyć tę opcję, aby zapewnić dodatkową ochronę systemu. Jeśli jednak prześlesz coś innego niż zwykły tekst, włączenie tego może spowodować fałszywe pozytywne. False (Fałszywy) = Nie blokuj [Domyślna]; True (Prawdziwe) = Blokuj."
 config_files_block_encrypted_archives: "Wykrywać i blokować zaszyfrowane archiwa? Ponieważ phpMussel nie jest w stanie skanować zawartości zaszyfrowanych archiwów, możliwe jest, że osoba atakująca może zastosować szyfrowanie archiwów w celu ominięcia phpMussel, skanerów antywirusowych i innych takich zabezpieczeń. Poinstruowanie phpMussel, aby zablokował wszelkie archiwa, które odkryje, że ma być zaszyfrowane, może potencjalnie pomóc zmniejszyć ryzyko związane z takimi możliwościami. False (Fałszywy) = Nie; True (Prawdziwe) = Tak [Domyślna]."
 config_files_block_macros: "Spróbuj zablokować jakieś pliki zawierające makra? Niektóre typy dokumentów i arkuszy kalkulacyjnych mogą zawierać makra wykonywalne, co stanowi niebezpieczny potencjalny wektor złośliwego oprogramowania. False (Fałszywy) = Nie blokuj [Domyślna]; True (Prawdziwe) = Blokuj."
 config_files_can_contain_php_file_extensions: "Lista rozszerzeń plików, które mogą zawierać kod PHP, oddzielone przecinkami. Jeśli włączone jest wykrywanie ataku kameleona PHP, pliki zawierające kod PHP, które mają rozszerzenia, których nie ma na tej liście, będą wykrywane jako ataki kameleona PHP."

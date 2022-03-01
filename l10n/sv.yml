@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2022.01.22).
+# This file: Swedish language data (last modified: 2022.03.01).
 ##/
 
 config_core: "Allmän konfiguration (alla kärnkonfigurationer som inte tillhör andra kategorier)."
@@ -34,7 +34,7 @@ config_experimental: "Instabil/Experimentell!"
 config_files: "Specifikationerna för hur man hanterar filer vid skanning."
 config_files_allow_leading_trailing_dots: "Tillåt ledande och släpande punkter i filnamn? Detta kan ibland användas för att dölja filer eller för att lura vissa system för att möjliggöra katalogöverskridande. False = Tillåt inte [Standard]. True = Tillåt."
 config_files_archive_file_extensions: "Erkända arkivfiländelser (formatet är CSV; bör bara lägga till eller ta bort när problem uppstår; om onödigt borttagning kan orsaka falska positiva effekter för arkivfiler, medan onödigt lägga till kommer i huvudsak att vittlista vad du lägger till från attackspecifik upptäckt; ändra med försiktighet; observera också att detta inte har någon effekt på vad arkiv kan och inte kan analyseras på innehållsnivå). Som standard, listan listar de format som oftast används i de flesta system och CMS, men medvetet är inte nödvändigtvis omfattande."
-config_files_block_control_characters: "Blockera alla filer som innehåller några kontrolltecken (andra än nya linjer)? (<code>[\x00-\x08\x0b\x0c\x0e\x1f\x7f]</code>) Om du <em><strong>BARA</strong></em> laddar upp vanlig text, du kan aktivera det här alternativet för att ge ditt system ett extra skydd. Men om du laddar upp något annat än vanlig text, att slå på detta kan leda till falska positiva effekter. False = Blockera inte [Standard]; True = Blockera."
+config_files_block_control_characters: "Blockera alla filer som innehåller några kontrolltecken (andra än nya linjer)? (<code>[\\x00-\\x08\\x0b\\x0c\\x0e\\x1f\\x7f]</code>) Om du <em><strong>BARA</strong></em> laddar upp vanlig text, du kan aktivera det här alternativet för att ge ditt system ett extra skydd. Men om du laddar upp något annat än vanlig text, att slå på detta kan leda till falska positiva effekter. False = Blockera inte [Standard]; True = Blockera."
 config_files_block_encrypted_archives: "Upptäcka och blockera krypterade arkiv? Eftersom phpMussel inte kan skanna innehållet i krypterade arkiv är det möjligt att arkivkryptering kan användas av en angripare som ett sätt att försöka kringgå phpMussel, antivirusskannrar och andra sådana skydd. Att instruera phpMussel för att blockera alla arkiv som den upptäcker för att vara krypterade kan potentiellt bidra till att minska risken i samband med dessa sådana möjligheter. False = Nej; True = Ja [Standard]."
 config_files_block_macros: "Försök att blockera alla filer som innehåller makron? Vissa typer av dokument och kalkylark kan innehålla körbara makron, vilket ger en farlig potentiell skadlig vektor. False = Blockera inte [Standard]; True = Blockera."
 config_files_can_contain_php_file_extensions: "En lista över filändelser som kan innehålla PHP-kod, åtskilda av komma. Om detektion av PHP-kameleonattacker är aktiverad, kommer filer som innehåller PHP-kod, som har tillägg som inte finns på den här listan, kommer att upptäckas som PHP-kameleonattacker."
