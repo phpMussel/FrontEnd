@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.02.26).
+ * This file: Front-end handler (last modified: 2022.03.01).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1249,7 +1249,7 @@ class FrontEnd
                                 );
                                 $DirValue['HasLabels'] = true;
                                 foreach ($DirValue['labels'] as $DirValue['ThisLabel']) {
-                                    $DirValue['gridV'] = ($DirValue['gridV']) === 'gridVB' ? 'gridVA': 'gridVB';
+                                    $DirValue['gridV'] = ($DirValue['gridV']) === 'gridVB' ? 'gridVA' : 'gridVB';
                                     $this->replaceLabelWithL10N($DirValue['ThisLabel']);
                                     $ThisDir['FieldOut'] .= sprintf(
                                         '<div class="gridboxitem configMatrixLabel %s">%s</div>',
@@ -1283,7 +1283,7 @@ class FrontEnd
                                 }
                             }
                             $DirValue['gridV'] = 'gridVB';
-                            $DirValue['gridH'] = ($DirValue['gridH']) === 'gridHB' ? 'gridHA': 'gridHB';
+                            $DirValue['gridH'] = ($DirValue['gridH']) === 'gridHB' ? 'gridHA' : 'gridHB';
                             $ChoiceValue = $this->Loader->timeFormat($this->Loader->Time, $ChoiceValue);
                             if (strpos($ChoiceValue, '{') !== false) {
                                 $ChoiceValue = $this->Loader->parse($this->Loader->L10N->Data, $ChoiceValue);
@@ -1292,7 +1292,7 @@ class FrontEnd
                             if ($DirValue['type'] === 'checkbox') {
                                 if ($DirValue['HasLabels']) {
                                     foreach ($DirValue['labels'] as $DirValue['ThisLabelKey'] => $DirValue['ThisLabel']) {
-                                        $DirValue['gridV'] = ($DirValue['gridV']) === 'gridVB' ? 'gridVA': 'gridVB';
+                                        $DirValue['gridV'] = ($DirValue['gridV']) === 'gridVB' ? 'gridVA' : 'gridVB';
                                         $ThisDir['FieldOut'] .= sprintf(
                                             '<div class="gridboxcheckcell %4$s %5$s"><label class="gridlabel"><input%3$s type="checkbox" class="auto" name="%1$s" id="%1$s"%2$s /></label></div>',
                                             $ThisDir['DirLangKey'] . '_' . $ChoiceKey . '_' . $DirValue['ThisLabelKey'],
