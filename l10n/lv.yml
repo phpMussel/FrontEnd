@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2022.01.22).
+# This file: Latvian language data (last modified: 2022.03.01).
 ##/
 
 config_core: "Vispārējā konfigurācija (jebkura pamata konfigurācija, kas nepieder citām kategorijām)."
@@ -200,7 +200,7 @@ link_upload_test: "Augšupielādes Pārbaude"
 logs_logfile_doesnt_exist: "Atlasītais logfails neeksistē!"
 logs_no_logfile_selected: "Nav atlasīts logfails."
 logs_no_logfiles_available: "Neviens logfails nav pieejams."
-max_login_attempts_exceeded: "Pārsniegts maksimālais ielogošanās mēģinājumu skaits; Pieeja noliegta."
+max_login_attempts_exceeded: "Pārsniegts maksimālais ielogošanās mēģinājumu skaits; Piekļuve liegta."
 previewer_days: "Dienas"
 previewer_hours: "Stundas"
 previewer_minutes: "Minūtes"

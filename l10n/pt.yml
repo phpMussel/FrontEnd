@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese language data (last modified: 2022.01.22).
+# This file: Portuguese language data (last modified: 2022.03.01).
 ##/
 
 config_core: "Configuração geral (qualquer configuração principal que não pertença a outras categorias)."
@@ -26,7 +26,7 @@ config_core_scan_cache_expiry: "Por quanto tempo deve phpMussel cache os resulta
 config_core_scan_log: "Nome do arquivo para registrar todos os resultados do análises. Especifique um arquivo nome, ou deixe branco para desativar."
 config_core_scan_log_serialized: "Nome do arquivo para registrar todos os resultados do análises (formato é serializado). Especifique um arquivo nome, ou deixe branco para desativar."
 config_core_statistics: "Monitorar as estatísticas de uso do phpMussel? True = Sim; False = Não [Padrão]."
-config_core_time_format: "O formato de notação de data/tempo utilizado pelo phpMussel. Opções adicionais podem ser adicionadas a pedido."
+config_core_time_format: "O formato de notação de data/tempo utilizado pelo phpMussel. Opções adicionais podem ser adicionadas mediante solicitação."
 config_core_time_offset: "Deslocamento do fuso horário em minutos."
 config_core_timezone: "Isso é usado para especificar o fuso horário a ser usado (por exemplo, Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, etc). Especifique "SYSTEM" para permitir que o PHP lide com isso automaticamente."
 config_core_truncate: "Truncar arquivos de log quando atingem um determinado tamanho? Valor é o tamanho máximo em B/KB/MB/GB/TB que um arquivo de log pode crescer antes de ser truncado. O valor padrão de 0KB desativa o truncamento (arquivos de log podem crescer indefinidamente). Nota: Aplica-se a arquivos de log individuais! O tamanho dos arquivos de log não é considerado coletivamente."
@@ -256,7 +256,7 @@ state_cache_is_empty: "O cache está vazio."
 state_complete_access: "Acesso completo"
 state_default_password: "Atenção: Usando senha padrão!"
 state_loading: "Carregando..."
-state_loadtime: "Pedido de página concluído em %s segundos."
+state_loadtime: "Solicitação de página concluída em em %s segundos."
 state_logged_in: "Conectado."
 state_logged_in_2fa_pending: "Conectado + 2FA pendentes."
 state_logged_out: "Desconectado."
