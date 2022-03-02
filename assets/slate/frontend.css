@@ -127,4 +127,4 @@ input[type=checkbox]+label,input[type=radio]+label,.gridboxitem>label,.gridboxit
 .gridHA:not(.gridVA):not(.gridVB),.gridHB:not(.gridVA):not(.gridVB){white-space:nowrap}
 .configMatrixLabel.gridVB{background:linear-gradient(0deg,rgba(236,191,142,.6),rgba(0,0,0,0))}
 .warning::before,.warning::after{content:"⚠️";font-size:24px;display:inline;line-height:100%;position:relative;top:2px}
-.warning{font-weight:700;color:red;background:linear-gradient(90deg,rgba(255,192,0,0) 0,rgba(255,192,0,.8) 20% 80%,rgba(255,192,0,0) 100%);line-height:100%}
+.warning{font-weight:700;color:#f52;background:linear-gradient(90deg,rgba(60,60,60,0) 0,rgba(85,85,85,.8) 20% 80%,rgba(60,60,60,0) 100%);line-height:100%}
