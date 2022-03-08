@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.03.01).
+ * This file: Front-end handler (last modified: 2022.03.07).
  */
 
 namespace phpMussel\FrontEnd;
@@ -2637,7 +2637,7 @@ class FrontEnd
     {
         foreach (['', 'response_', 'label_', 'field_'] as $Prefix) {
             if (array_key_exists($Prefix . $Label, $this->Loader->L10N->Data)) {
-                $Label = preg_replace('~(?: | )?(?:：|:) ?$~', '', $this->Loader->L10N->getString($Prefix . $Label));
+                $Label = $this->Loader->L10N->getString($Prefix . $Label);
                 return;
             }
         }
