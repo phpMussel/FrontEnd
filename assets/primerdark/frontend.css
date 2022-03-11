@@ -1,8 +1,8 @@
 *{vertical-align:text-top}
 body,input,select,textarea,code,.idx{font-size:calc((12px * {magnification}) + .03vw)}
-body,input,select{font-family:BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;letter-spacing:1px;text-decoration:none;border-style:none;margin:0;white-space:normal;color:#e4e6eb}
+body,input,select{font-family:BlinkMacSystemFont,"Segoe UI",Helvetica,'Arial',sans-serif;letter-spacing:1px;text-decoration:none;border-style:none;margin:0;white-space:normal;color:#e4e6eb}
 body{background-color:#18191a}
-code{font-family:SFMono-Regular,Consolas,"Liberation Mono",monospace;background-color:rgba(255,153,102,.3);vertical-align:0;display:inline-block;height:calc(1em + 2px)}
+code{background-color:rgba(255,153,102,.3);vertical-align:0;display:inline-block;height:calc(1em + 2px)}
 .branchline,hr{box-sizing:content-box;height:0;overflow:visible;height:0;margin:15px 0;overflow:hidden;background:0 0;border:0;border-bottom:1px solid #3a3b3c}
 .branchline,hr::after{display:table;clear:both;content:""}
 .branchline,hr::before{display:table;content:""}
@@ -31,7 +31,8 @@ a:hover{color:#fc0;text-decoration:underline}
 .h1,.h3,.spanner{background-color:rgba(255,255,255,.1)}
 .h2,.h4{background-color:rgba(255,255,255,.2)}
 .h3,.h3f,.h4,.h4f{width:50%}
-.nav{font-size:calc((14px * {magnification}) + .03vw);width:20%}
+.nav{font-size:calc((14px * {magnification}) + .03vw);width:20%;letter-spacing:calc(1px + .03vw)}
+.nav:lang(ja){letter-spacing:calc(-1px)}
 .ng1,.h1f,.h3f{background:linear-gradient({Gradient_Degree}deg,rgba(255,255,255,.1),rgba(255,255,255,.3))}
 .ng2,.h2f,.h4f{background:linear-gradient({Gradient_Degree}deg,rgba(255,255,255,.2),rgba(255,255,255,.4))}
 .hFd:hover,.r{background-color:rgba(255,102,0,.3)}
