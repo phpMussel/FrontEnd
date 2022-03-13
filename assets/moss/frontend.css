@@ -43,7 +43,7 @@ a:hover,a:active,a:focus{color:#866}
 .h2,.h4,code{background-color:rgba(144,162,72,.6)}
 .h3,.h3f,.h4,.h4f{width:50%}
 .nav{font-size:calc((14px * {magnification}) + .03vw);width:20%;letter-spacing:calc(1px + .03vw)}
-.nav:lang(ja){letter-spacing:calc(-1px)}
+.nav:lang(ja){letter-spacing:-1px}
 .ng1,.h1f,.h3f{background:linear-gradient({Gradient_Degree}deg,rgba(192,216,96,.6),#a8bd54)}
 .ng2,.h2f,.h4f{background:linear-gradient({Gradient_Degree}deg,rgba(144,162,72,.6),#78873c)}
 .hFd:hover,.r{background-color:rgba(216,192,96,.6)}
@@ -128,4 +128,4 @@ input[type=checkbox]+label,input[type=radio]+label,.gridboxitem>label,.gridboxit
 .gridHA:not(.gridVA):not(.gridVB),.gridHB:not(.gridVA):not(.gridVB){white-space:nowrap}
 .configMatrixLabel.gridVB{background:linear-gradient(0deg,rgba(191,251,127,.7),rgba(0,0,0,0))}
 .warning::before,.warning::after{content:"⚠️";font-size:24px;display:inline;line-height:100%;position:relative;top:2px}
-.warning{font-weight:700;color:#a04848;background:linear-gradient(90deg,rgba(255,192,0,0) 0,rgba(255,192,0,.8) 20% 80%,rgba(255,192,0,0) 100%);line-height:100%}
+.warning{display:inline-block;margin:4px;font-weight:700;color:#a04848;background:linear-gradient(90deg,rgba(255,192,0,0) 0,rgba(255,192,0,.8) 20% 80%,rgba(255,192,0,0) 100%);line-height:100%}

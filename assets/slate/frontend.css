@@ -44,7 +44,7 @@ a:hover,a:active,a:focus{color:#fc6}
 .h2,.h4,code{background-color:#444}
 .h3,.h3f,.h4,.h4f{width:50%}
 .nav{font-size:calc((14px * {magnification}) + .03vw);width:20%;letter-spacing:calc(1px + .03vw)}
-.nav:lang(ja){letter-spacing:calc(-1px)}
+.nav:lang(ja){letter-spacing:-1px}
 .ng1,.h1f,.h3f{background:linear-gradient({Gradient_Degree}deg,#555,#3c3c3c)}
 .ng2,.h2f,.h4f{background:linear-gradient({Gradient_Degree}deg,#444,#363636)}
 .hFd:hover,.r{background-color:#c63}
@@ -128,4 +128,4 @@ input[type=checkbox]+label,input[type=radio]+label,.gridboxitem>label,.gridboxit
 .gridHA:not(.gridVA):not(.gridVB),.gridHB:not(.gridVA):not(.gridVB){white-space:nowrap}
 .configMatrixLabel.gridVB{background:linear-gradient(0deg,rgba(236,191,142,.6),rgba(0,0,0,0))}
 .warning::before,.warning::after{content:"⚠️";font-size:24px;display:inline;line-height:100%;position:relative;top:2px}
-.warning{font-weight:700;color:#f52;background:linear-gradient(90deg,rgba(60,60,60,0) 0,rgba(85,85,85,.8) 20% 80%,rgba(60,60,60,0) 100%);line-height:100%}
+.warning{display:inline-block;margin:4px;font-weight:700;color:#f52;background:linear-gradient(90deg,rgba(60,60,60,0) 0,rgba(85,85,85,.8) 20% 80%,rgba(60,60,60,0) 100%);line-height:100%}
