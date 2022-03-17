@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.03.13).
+ * This file: Front-end handler (last modified: 2022.03.17).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1420,6 +1420,26 @@ class FrontEnd
                         $ThisDir['FieldOut'] .= '</small>';
                     }
 
+                    /** Provide hints, useful for users to better understand the directive at hand. */
+                    if (!empty($DirValue['hints'])) {
+                        $ThisDir['Hints'] = $this->Loader->L10N->Data[$DirValue['hints']] ?? $DirValue['hints'];
+                        if (!is_array($ThisDir['Hints'])) {
+                            $ThisDir['Hints'] = [$ThisDir['Hints']];
+                        }
+                        foreach ($ThisDir['Hints'] as $ThisDir['HintKey'] => $ThisDir['HintValue']) {
+                            if (is_int($ThisDir['HintKey'])) {
+                                $ThisDir['FieldOut'] .= sprintf("\n<br /><br />%s", $ThisDir['HintValue']);
+                                continue;
+                            }
+                            $ThisDir['FieldOut'] .= sprintf(
+                                "\n<br /><br /><span class=\"s\">%s</span> %s",
+                                $ThisDir['HintKey'],
+                                $ThisDir['HintValue']
+                            );
+                        }
+                    }
+
+                    /** Provide additional information, useful for users to better understand the directive at hand. */
                     if (!empty($DirValue['See also']) && is_array($DirValue['See also'])) {
                         $ThisDir['FieldOut'] .= sprintf("\n<br /><br />%s<ul>\n", $this->Loader->L10N->getString('label_see_also'));
                         foreach ($DirValue['See also'] as $RefKey => $RefLink) {
@@ -1427,6 +1447,8 @@ class FrontEnd
                         }
                         $ThisDir['FieldOut'] .= "\n</ul>";
                     }
+
+                    /** Finalise configuration row. */
                     $FE['ConfigFields'] .= $this->Loader->parse(
                         $this->Loader->L10N->Data,
                         $this->Loader->parse($ThisDir, $ConfigurationRow)
