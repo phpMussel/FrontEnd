@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.03.17).
+ * This file: Front-end handler (last modified: 2022.03.22).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1023,13 +1023,7 @@ class FrontEnd
             $ConfigurationModified = false;
 
             $FE['Indexes'] = '<ul class="pieul">';
-
-            /** Generate entries for display and regenerate configuration if any changes were submitted. */
-            $FE['ConfigFields'] = sprintf(
-                '<style>.showlink::before,.hidelink::before{content:"➖";display:inline-block;margin-%1$s:6px}.hidelink::before{transform:rotate(%2$s)}</style>',
-                $FE['FE_Align_Reverse'],
-                $FE['45deg']
-            );
+            $FE['ConfigFields'] = '';
 
             /** For required extensions, classes, etc. */
             $ReqsLookupCache = [];
@@ -1044,13 +1038,12 @@ class FrontEnd
                 }
                 $FE['ConfigFields'] .= sprintf(
                     '<table><tr><td class="ng2"><div id="%1$s-container" class="s">' .
-                    '<a class="showlink" id="%1$s-showlink" href="#%1$s-container" onclick="javascript:showid(\'%1$s-hidelink\');hideid(\'%1$s-showlink\');show(\'%1$s-row\')">%1$s</a>' .
-                    '<a class="hidelink" id="%1$s-hidelink" %2$s href="#" onclick="javascript:showid(\'%1$s-showlink\');hideid(\'%1$s-hidelink\');hide(\'%1$s-row\')">%1$s</a>' .
-                    "%3\$s</div></td></tr></table>\n<span class=\"%1\$s-row\" %2\$s><table>\n",
+                    '<a id="%1$sShowLink" class="showlink" href="#%1$s-container" onclick="javascript:toggleconfig(\'%1$sRow\',\'%1$sShowLink\')">%1$s</a>' .
+                    '%3$s</div></td></tr></table><span id="%1$sRow" %2$s><table>',
                     $CatKey,
                     'style="display:none"',
                     $CatInfo
-                );
+                ) . "\n";
                 $CatData = '';
                 foreach ($CatValue as $DirKey => $DirValue) {
                     $ThisDir = ['Preview' => '', 'Trigger' => '', 'FieldOut' => '', 'CatKey' => $CatKey];
@@ -1062,7 +1055,7 @@ class FrontEnd
                     $ThisDir['DirName'] = '<span class="normalHeight">' . $this->ltrInRtf($CatKey . '➡' . $DirKey) . '</span>';
                     $ThisDir['Friendly'] = $this->Loader->L10N->getString($ThisDir['DirLangKey'] . '_label') ?: $DirKey;
                     $CatData .= sprintf(
-                        '<li><a onclick="javascript:showid(\'%1$s-hidelink\');hideid(\'%1$s-showlink\');show(\'%1$s-row\')" href="#%2$s">%3$s</a></li>',
+                        '<li><a onclick="javascript:toggleconfigNav(\'%1$sRow\',\'%1$sShowLink\')" href="#%2$s">%3$s</a></li>',
                         $CatKey,
                         $ThisDir['DirLangKey'],
                         $ThisDir['Friendly']
