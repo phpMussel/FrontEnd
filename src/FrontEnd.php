@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.03.22).
+ * This file: Front-end handler (last modified: 2022.03.24).
  */
 
 namespace phpMussel\FrontEnd;
@@ -247,7 +247,7 @@ class FrontEnd
             ),
 
             /** Main front-end HTML template file. */
-            'Template' => $this->Loader->readFileBlocks($this->getAssetPath('frontend.html')),
+            'Template' => $this->Loader->readFileContent($this->getAssetPath('frontend.html')),
 
             /** Populated by front-end JavaScript data as per needed. */
             'JS' => '',
@@ -345,7 +345,7 @@ class FrontEnd
 
         /** Fetch pips data. */
         $PipsPath = $this->getAssetPath('pips.yml');
-        $PipsData = $this->Loader->readFileBlocks($PipsPath);
+        $PipsData = $this->Loader->readFileContent($PipsPath);
         $Pips = [];
         if ($PipsData) {
             $this->Loader->YAML->process($PipsData, $Pips);
@@ -417,7 +417,7 @@ class FrontEnd
                         header('Last-Modified: ' . gmdate(DATE_RFC1123, filemtime($ThisAsset)));
                     }
                     /** Send asset data. */
-                    echo $this->Loader->readFileBlocks($ThisAsset);
+                    echo $this->Loader->readFileContent($ThisAsset);
                 }
             }
             return;
@@ -428,7 +428,7 @@ class FrontEnd
             header('Content-Type: text/css');
             echo $this->Loader->parse($FE, $this->Loader->parse(
                 $this->Loader->L10N->Data,
-                $this->Loader->readFileBlocks($this->getAssetPath('frontend.css'))
+                $this->Loader->readFileContent($this->getAssetPath('frontend.css'))
             ));
             return;
         }
@@ -615,13 +615,13 @@ class FrontEnd
                 /** If the user has complete access. */
                 $FE['nav'] = $this->Loader->parse(
                     $this->Loader->L10N->Data,
-                    $this->Loader->parse($FE, $this->Loader->readFileBlocks($this->getAssetPath('_nav_complete_access.html')))
+                    $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_nav_complete_access.html')))
                 );
             } elseif ($this->Permissions === 2) {
                 /** If the user has logs access only. */
                 $FE['nav'] = $this->Loader->parse(
                     $this->Loader->L10N->Data,
-                    $this->Loader->parse($FE, $this->Loader->readFileBlocks($this->getAssetPath('_nav_logs_access_only.html')))
+                    $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_nav_logs_access_only.html')))
                 );
             } else {
                 /** No valid navigation state. */
@@ -644,7 +644,7 @@ class FrontEnd
                 /** Show them the two-factor authentication page. */
                 $FE['FE_Content'] = $this->Loader->parse(
                     $this->Loader->L10N->Data,
-                    $this->Loader->parse($FE, $this->Loader->readFileBlocks($this->getAssetPath('_2fa.html')))
+                    $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_2fa.html')))
                 );
             } else {
                 /** Omit the log out and home links. */
@@ -658,7 +658,7 @@ class FrontEnd
                 /** Show them the login page. */
                 $FE['FE_Content'] = $this->Loader->parse(
                     $this->Loader->L10N->Data,
-                    $this->Loader->parse($FE, $this->Loader->readFileBlocks($this->getAssetPath('_login.html')))
+                    $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_login.html')))
                 );
             }
             /** Send output. */
@@ -844,7 +844,7 @@ class FrontEnd
             /** Parse output. */
             $FE['FE_Content'] = $this->Loader->parse(
                 $this->Loader->L10N->Data,
-                $this->Loader->parse($FE, $this->Loader->readFileBlocks($this->getAssetPath('_home.html')))
+                $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_home.html')))
             ) . $MenuToggle;
 
             /** Send output. */
@@ -940,7 +940,7 @@ class FrontEnd
                     "w('stateMsg',"
                 );
 
-                $AccountsRow = $this->Loader->readFileBlocks($this->getAssetPath('_accounts_row.html'));
+                $AccountsRow = $this->Loader->readFileContent($this->getAssetPath('_accounts_row.html'));
                 $FE['Accounts'] = '';
                 $NewLineOffSet = 0;
 
@@ -999,7 +999,7 @@ class FrontEnd
                 /** Parse output. */
                 $FE['FE_Content'] = $this->Loader->parse(
                     $this->Loader->L10N->Data,
-                    $this->Loader->parse($FE, $this->Loader->readFileBlocks($this->getAssetPath('_accounts.html')))
+                    $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_accounts.html')))
                 );
 
                 /** Send output. */
@@ -1017,7 +1017,7 @@ class FrontEnd
             $FE['JS'] .= $this->numberJS() . "\n";
 
             /** Directive template. */
-            $ConfigurationRow = $this->Loader->readFileBlocks($this->getAssetPath('_config_row.html'));
+            $ConfigurationRow = $this->Loader->readFileContent($this->getAssetPath('_config_row.html'));
 
             /** Flag for modified configuration. */
             $ConfigurationModified = false;
@@ -1473,7 +1473,7 @@ class FrontEnd
             /** Parse output. */
             $FE['FE_Content'] = $this->Loader->parse(
                 $this->Loader->L10N->Data,
-                $this->Loader->parse($FE, $this->Loader->readFileBlocks($this->getAssetPath('_config.html')))
+                $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_config.html')))
             ) . $MenuToggle;
 
             /** Send output. */
@@ -1542,7 +1542,7 @@ class FrontEnd
                 /** Parse output. */
                 $FE['FE_Content'] = $this->Loader->parse(
                     $this->Loader->L10N->Data,
-                    $this->Loader->parse($FE, $this->Loader->readFileBlocks($this->getAssetPath('_cache.html')))
+                    $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_cache.html')))
                 ) . $MenuToggle;
 
                 /** Send output. */
@@ -1571,7 +1571,7 @@ class FrontEnd
             /** Parse output. */
             $FE['FE_Content'] = $this->Loader->parse(
                 $this->Loader->L10N->Data,
-                $this->Loader->parse($FE, $this->Loader->readFileBlocks($this->getAssetPath('_upload_test.html')))
+                $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_upload_test.html')))
             );
 
             /** Send output. */
@@ -1652,7 +1652,7 @@ class FrontEnd
             }
 
             /** Template for quarantine files row. */
-            $QuarantineRow = $this->Loader->readFileBlocks($this->getAssetPath('_quarantine_row.html'));
+            $QuarantineRow = $this->Loader->readFileContent($this->getAssetPath('_quarantine_row.html'));
 
             /** Fetch quarantine data array. */
             $FilesInQuarantine = $this->quarantineRecursiveList();
@@ -1683,7 +1683,7 @@ class FrontEnd
             /** Parse output. */
             $FE['FE_Content'] = $this->Loader->parse(
                 $this->Loader->L10N->Data,
-                $this->Loader->parse($FE, $this->Loader->readFileBlocks($this->getAssetPath('_quarantine.html')))
+                $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_quarantine.html')))
             );
 
             /** Send output. */
@@ -1715,7 +1715,7 @@ class FrontEnd
             /** Parse output. */
             $FE['FE_Content'] = $this->Loader->parse(
                 $this->Loader->L10N->Data,
-                $this->Loader->parse($FE, $this->Loader->readFileBlocks($this->getAssetPath('_siginfo.html')))
+                $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_siginfo.html')))
             );
 
             /** Send output. */
@@ -1789,7 +1789,7 @@ class FrontEnd
             /** Parse output. */
             $FE['FE_Content'] = $this->Loader->parse(
                 $this->Loader->L10N->Data,
-                $this->Loader->parse($FE, $this->Loader->readFileBlocks($this->getAssetPath('_statistics.html')))
+                $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_statistics.html')))
             );
 
             /** Send output. */
@@ -1808,7 +1808,7 @@ class FrontEnd
             /** Parse output. */
             $FE['FE_Content'] = $this->Loader->parse(
                 $this->Loader->L10N->Data,
-                $this->Loader->parse($FE, $this->Loader->readFileBlocks($this->getAssetPath('_logs.html')))
+                $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_logs.html')))
             );
 
             /** Initialise array for fetching logs data. */
@@ -1834,9 +1834,9 @@ class FrontEnd
             } else {
                 $FE['TextModeSwitchLink'] .= '?phpmussel-page=logs&logfile=' . $this->QueryVariables['logfile'] . '&text-mode=';
                 if (strtolower(substr($this->QueryVariables['logfile'], -3)) === '.gz') {
-                    $FE['logfileData'] = $this->Loader->readFileBlocksGZ($this->QueryVariables['logfile']);
+                    $FE['logfileData'] = $this->Loader->readFileContentGZ($this->QueryVariables['logfile']);
                 } else {
-                    $FE['logfileData'] = $this->Loader->readFileBlocks($this->QueryVariables['logfile']);
+                    $FE['logfileData'] = $this->Loader->readFileContent($this->QueryVariables['logfile']);
                 }
                 $FE['logfileData'] = $TextMode ? str_replace(
                     ['<', '>', "\r", "\n"],
@@ -2079,7 +2079,7 @@ class FrontEnd
                 'QFU-Size' => filesize($Item)
             ];
             $this->formatFilesize($Arr[$Key]['QFU-Size']);
-            $Head = $this->Loader->readFileBlocks($Item, 256);
+            $Head = $this->Loader->readFileContent($Item);
 
             /** Upload date/time. */
             $Arr[$Key]['Upload-Date'] = (
@@ -2136,7 +2136,7 @@ class FrontEnd
         }
 
         /** Fetch data. */
-        $Data = $this->Loader->readFileBlocks($File);
+        $Data = $this->Loader->readFileContent($File);
 
         /** Fetch headers. */
         if (($HeadPos = strpos($Data, "\xA1phpMussel\x21")) === false || (substr($Data, $HeadPos + 31, 1) !== "\1")) {
@@ -2209,7 +2209,7 @@ class FrontEnd
         }));
 
         /** Template for range rows. */
-        $InfoRow = $this->Loader->readFileBlocks($this->getAssetPath('_siginfo_row.html'));
+        $InfoRow = $this->Loader->readFileContent($this->getAssetPath('_siginfo_row.html'));
 
         /** Get list of vendor search patterns and metadata search pattern partials. */
         $Arr = [
@@ -2257,7 +2257,7 @@ class FrontEnd
         /** Iterate through active signature files and append totals. */
         foreach ($Active as $File) {
             $File = (strpos($File, ':') === false) ? $File : substr($File, strpos($File, ':') + 1);
-            $Data = $File && is_readable($this->Loader->SignaturesPath . $File) ? $this->Loader->readFileBlocks($this->Loader->SignaturesPath . $File) : '';
+            $Data = $this->Loader->readFileContent($this->Loader->SignaturesPath . $File);
             if (substr($Data, 0, 9) !== 'phpMussel') {
                 continue;
             }
@@ -2352,7 +2352,7 @@ class FrontEnd
         $FE['FE_Tip'] = $this->Loader->parse(['username' => $Username], $Tips);
 
         /** Load main front-end JavaScript data. */
-        $FE['JS'] = $JS ? $this->Loader->readFileBlocks($this->getAssetPath('scripts.js')) : '';
+        $FE['JS'] = $JS ? $this->Loader->readFileContent($this->getAssetPath('scripts.js')) : '';
     }
 
     /**
