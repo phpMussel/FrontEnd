@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2022.03.01).
+# This file: Spanish language data (last modified: 2022.03.25).
 ##/
 
 config_core: "Configuración general (cualquier configuración que no pertenezca a otras categorías)."
@@ -53,7 +53,7 @@ config_files_filesize_response: "Qué hacer con los archivos que superen el lím
 config_files_filetype_archives: "Heredar la blacklist/whitelist para los tipos de archivos para los contenidos de compactados archivos? False = No (todo en la greylist) [Predefinido]; True = Sí."
 config_files_filetype_blacklist: "Blacklist:"
 config_files_filetype_greylist: "Greylist:"
-config_files_filetype_whitelist: "Si su sistema sólo permite ciertos tipos de archivos para ser subido, o si su sistema niega explícitamente ciertos tipos de archivos, especificando los tipos de archivos en la whitelist, blacklist y/o greylist puede aumentar la velocidad a que escaneando se realizado por permitiendo la script para saltar sobre ciertos tipos de archivos. Formato es CSV (comas separados valores). Si desea escanear todo, en lugar de utilizando la whitelist, blacklist o greylist, dejar las variables en blanco; haciendo tal desactivará la whitelist/blacklist/greylist. Lógico orden de procesamiento es: Si el tipo de archivo está en la whitelist, no escanear y no bloquear el archivo, y no cotejar el archivo con la blacklist o la greylist. Si el tipo de archivo está en la blacklist, no escanear el archivo, pero bloquearlo en todo caso, y no cotejar el archivo con la greylist. Si la greylist está vacía o si la greylist está no vacía y el tipo de archivo está en la greylist, escanearlo como normal y determinar si para bloquearlo basado en los resultados de la escaneo, pero si la greylist está no vacía y el tipo de archivo está no en la greylist, tratar el archivo como si está en la blacklist, por lo tanto no escanearlo pero bloquearlo en todo caso. Whitelist:"
+config_files_filetype_whitelist: "Whitelist:"
 config_files_max_files_in_archives: "Número máximo de archivos para analizar desde archivos comprimidos antes de abortar el análisis. Predefinido = 0 (sin máximo)."
 config_files_max_recursion: "Máximo recursividad nivel límite para compactados archivos. Predefinido = 3."
 config_files_only_allow_images: "Cuando es true, cualquier archivo encontrado por el escáner que no sean imágenes se marcará de inmediato, sin ser escaneado. Esto puede ayudar a reducir el tiempo necesario para completar una escaneo en algunos casos. Establecido en falso por predeterminado."
@@ -147,6 +147,50 @@ field_update_signatures_files: "Actualizar archivos de firmas"
 field_username: "Usuario"
 field_your_version: "Tu Versión"
 header_login: "Por favor iniciar sesión para continuar."
+hints_xlists:
+ Cómo funciona esto.: "Si su sistema sólo permite ciertos tipos de archivos para ser subido, o si su sistema niega explícitamente ciertos tipos de archivos, especificando los tipos de archivos en la whitelist, blacklist y/o greylist puede aumentar la velocidad a que escaneando se realizado por permitiendo la script para saltar sobre ciertos tipos de archivos. Formato es CSV (comas separados valores)."
+ Orden lógico de procesamiento.: "Si el tipo de archivo está en la whitelist, no escanear y no bloquear el archivo, y no cotejar el archivo con la blacklist o la greylist. Si el tipo de archivo está en la blacklist, no escanear el archivo, pero bloquearlo en todo caso, y no cotejar el archivo con la greylist. Si la greylist está vacía o si la greylist está no vacía y el tipo de archivo está en la greylist, escanearlo como normal y determinar si para bloquearlo basado en los resultados de la escaneo, pero si la greylist está no vacía y el tipo de archivo está no en la greylist, tratar el archivo como si está en la blacklist, por lo tanto no escanearlo pero bloquearlo en todo caso."
+info_some_useful_links: |
+ Algunos enlaces útiles:<br />
+     <ul class="pieul">
+       <li><span class="comCat">Herramientas, recursos, etc. para phpMussel.</span>
+         <ul class="comSub">
+           <li>{{Links.phpMussel.Issues}} – Página de problemas para phpMussel (apoyo, asistencia, etc).</li>
+           <li>{{Links.phpMussel.SigTool}} – Crea archivos de firma por phpMussel usando la base de datos de firmas ClamAV.</li>
+           <li>{{Links.phpMussel.Extras}} – Varios extras.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Herramientas, recursos, etc. para ClamAV.</span>
+         <ul class="comSub">
+           <li>{{Links.ClamavNet}} – Página principal de ClamAV (ClamAV® es un motor antivirus de código abierto para detectar troyanos, virus, malware y otras amenazas maliciosas).</li>
+           <li>{{Links.SecuriteInfo}} – Compañía de seguridad informática que ofrece firmas complementarias para ClamAV.</li>
+           <li>{{Links.Sanesecurity}} – Compañía de seguridad informática que ofrece firmas complementarias para ClamAV.</li>
+           <li>{{Links.Malware Expert}} – Ofrece firmas complementarias para ClamAV y reglas complementarias para ModSecurity.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Grupos, foros, comunidades, etc.</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Facebook}} – PHP recursos de aprendizaje y discusión.</li>
+           <li>{{Links.MalwareTips}} – Útiles foros de discusión enfocados en el malware.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Otras herramientas, recursos, servicios, etc. que son útiles.</span>
+         <ul class="comSub">
+           <li>{{Links.PhishTank}} – Base de datos de phishing utilizada por el escáner URL de phpMussel.</li>
+           <li>{{Links.VirusTotal}} – VirusTotal es un servicio gratuito para analizar archivos y URL sospechosos.</li>
+           <li>{{Links.Hybrid Analysis}} – Hybrid Analysis es un servicio gratuito para analizar malware proporcionado por {{Links.Payload Security}}.</li>
+           <li>{{Links.Malwarebytes}} – Especialistas informáticos contra malware.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Recursos informativos y de aprendizaje.</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Website}} – PHP recursos de aprendizaje y discusión.</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Listas de vulnerabilidades</a> – Lista las versiones seguras/inseguras de varios paquetes (PHP, HHVM, etc).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Listas de compatibilidades</a> – Lista información de compatibilidad para varios paquetes (CIDRAM, phpMussel, etc).</li>
+         </ul>
+       </li>
+     </ul>
+
 label_active_config_file: "Archivo de configuración activo:"
 label_blocked: "Subidas bloqueadas"
 label_branch: "Branch más nuevo estable:"
@@ -162,9 +206,9 @@ label_is_available_class: "%s está disponible."
 label_is_not_available: "%s no está disponible."
 label_never: "Nunca"
 label_os: "Sistema operativo utilizada:"
+label_other: "Otro"
 label_other-Active: "Archivos de firmas activas"
 label_other-Since: "Fecha de inicio"
-label_other: "Otro"
 label_php: "Versión PHP utilizada:"
 label_phpmussel: "Versión phpMussel utilizada:"
 label_quarantined: "Subidas en cuarentena"
@@ -200,6 +244,13 @@ logs_logfile_doesnt_exist: "¡Archivo de registro seleccionado no existe!"
 logs_no_logfile_selected: "Ningún archivo de registro seleccionado."
 logs_no_logfiles_available: "Ningún archivos de registro disponibles."
 max_login_attempts_exceeded: "Número máximo de intentos de login excedido; Acceso denegado."
+msg_subject_2fa: "Autenticación de dos factores"
+msg_template_2fa: |
+ <center><p>Hola, %1$s.<br />
+ <br />
+ Su código de autenticación de dos factores para iniciar sesión en el front-end de phpMussel:</p>
+ <h1>%2$s</h1>
+ <p>Este código vence en 10 minutos.</p></center>
 previewer_days: "Días"
 previewer_hours: "Horas"
 previewer_minutes: "Minutos"
@@ -282,52 +333,3 @@ tip_statistics_disabled: "Nota: El seguimiento de estadísticas está actualment
 tip_upload_test: "Hola, {username}.<br />La página para subir pruebas contiene un formulario de subir de archivos estándar, permite probar si un archivo normalmente se bloquea por phpMussel cuando intentar subirlo."
 title_login: "Login"
 warning_signatures_1: "Advertencia: ¡No hay archivos de firma activos!"
-
-info_some_useful_links: |
- Algunos enlaces útiles:<br />
-     <ul class="pieul">
-       <li><span class="comCat">Herramientas, recursos, etc. para phpMussel.</span>
-         <ul class="comSub">
-           <li>{{Links.phpMussel.Issues}} – Página de problemas para phpMussel (apoyo, asistencia, etc).</li>
-           <li>{{Links.phpMussel.SigTool}} – Crea archivos de firma por phpMussel usando la base de datos de firmas ClamAV.</li>
-           <li>{{Links.phpMussel.Extras}} – Varios extras.</li>
-         </ul>
-       </li>
-       <li><span class="comCat">Herramientas, recursos, etc. para ClamAV.</span>
-         <ul class="comSub">
-           <li>{{Links.ClamavNet}} – Página principal de ClamAV (ClamAV® es un motor antivirus de código abierto para detectar troyanos, virus, malware y otras amenazas maliciosas).</li>
-           <li>{{Links.SecuriteInfo}} – Compañía de seguridad informática que ofrece firmas complementarias para ClamAV.</li>
-           <li>{{Links.Sanesecurity}} – Compañía de seguridad informática que ofrece firmas complementarias para ClamAV.</li>
-           <li>{{Links.Malware Expert}} – Ofrece firmas complementarias para ClamAV y reglas complementarias para ModSecurity.</li>
-         </ul>
-       </li>
-       <li><span class="comCat">Grupos, foros, comunidades, etc.</span>
-         <ul class="comSub">
-           <li>{{Links.PHP.Earth.Facebook}} – PHP recursos de aprendizaje y discusión.</li>
-           <li>{{Links.MalwareTips}} – Útiles foros de discusión enfocados en el malware.</li>
-         </ul>
-       </li>
-       <li><span class="comCat">Otras herramientas, recursos, servicios, etc. que son útiles.</span>
-         <ul class="comSub">
-           <li>{{Links.PhishTank}} – Base de datos de phishing utilizada por el escáner URL de phpMussel.</li>
-           <li>{{Links.VirusTotal}} – VirusTotal es un servicio gratuito para analizar archivos y URL sospechosos.</li>
-           <li>{{Links.Hybrid Analysis}} – Hybrid Analysis es un servicio gratuito para analizar malware proporcionado por {{Links.Payload Security}}.</li>
-           <li>{{Links.Malwarebytes}} – Especialistas informáticos contra malware.</li>
-         </ul>
-       </li>
-       <li><span class="comCat">Recursos informativos y de aprendizaje.</span>
-         <ul class="comSub">
-           <li>{{Links.PHP.Earth.Website}} – PHP recursos de aprendizaje y discusión.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Listas de vulnerabilidades</a> – Lista las versiones seguras/inseguras de varios paquetes (PHP, HHVM, etc).</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Listas de compatibilidades</a> – Lista información de compatibilidad para varios paquetes (CIDRAM, phpMussel, etc).</li>
-         </ul>
-       </li>
-     </ul>
-
-msg_template_2fa: |
- <center><p>Hola, %1$s.<br />
- <br />
- Su código de autenticación de dos factores para iniciar sesión en el front-end de phpMussel:</p>
- <h1>%2$s</h1>
- <p>Este código vence en 10 minutos.</p></center>
-msg_subject_2fa: "Autenticación de dos factores"

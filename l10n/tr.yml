@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2022.03.01).
+# This file: Turkish language data (last modified: 2022.03.25).
 ##/
 
 config_core: "Genel yapılandırma (diğer kategorilere ait olmayan herhangi bir çekirdek yapılandırma)."
@@ -53,7 +53,7 @@ config_files_filesize_response: "Dosya boyutu sınırını aşan dosyalarla ne y
 config_files_filetype_archives: "Arşiv içeriği için dosya türü kara listeyi ve beyaz listeyi devralır mı? Yanlış/False = Hayır [Varsayılan]; Doğru/True = Evet."
 config_files_filetype_blacklist: "Kara liste:"
 config_files_filetype_greylist: "Gri liste:"
-config_files_filetype_whitelist: "Sisteminiz yalnızca belirli dosya türlerinin yüklenmesine izin veriyorsa, veya sisteminiz belli dosya türlerini açıkça reddetiyorsa, bu dosya türlerini beyaz listelerde, kara listelerde ve gri listelerde belirtmek taramanın hızını artırabilir, komut dosyası belirli dosya türlerini atlamak için izin vererek. Biçim CSV (virgülle ayrılmış değerler). Her şeyi taramak istiyorsanız, bu değişkenleri boş bırakın; Bunu yapmak beyaz/kara/gri listeyi devre dışı bırakır. İşlem mantığı şu şekildedir: Dosya türü beyaz listede bulunuyorsa, dosyayı taramayın ve engellemeyin ve dosyayı kara listeye veya gri listeye karşı kontrol etmeyin. Dosya türü kara listede bulunuyorsa, dosyayı taramayın, ancak yine de engelleyin ve dosyayı gri liste karşı kontrol etmeyin. Gri liste boşsa, ya da gri liste boş değilse ve dosya türü gri listede bulunuyorsa, dosyayı normal göre tara ve taramanın sonuçlarına dayanarak engelleyip engellemeyeceğini belirleme, ancak gri liste boş değilse ve dosya türü gri listede değil, dosyayı kara listede olduğu gibi davranın, bu nedenle tarama değil, yine de engelleme. Beyaz liste:"
+config_files_filetype_whitelist: "Beyaz liste:"
 config_files_max_files_in_archives: "Taramayı iptal etmeden önce arşiv içinden taranacak maksimum dosya sayısı. Varsayılan = 0 (maksimum değil)."
 config_files_max_recursion: "Arşivler için maksimum özyineleme derinliği sınırı. Varsayılan = 3."
 config_files_only_allow_images: "True olarak ayarlandığında, tarayıcı tarafından karşılaşılan görüntü olmayan dosyalar hemen işaretlenir, taranmadan. Bu, bazı durumlarda taramayı tamamlamak için gereken süreyi azaltmaya yardımcı olabilir. Varsayılan olarak false değerine ayarlıdır."
@@ -145,6 +145,50 @@ field_update_signatures_files: "İmza dosyalarını güncelle"
 field_username: "Kullanıcı adı"
 field_your_version: "Sürümünüz"
 header_login: "Devam etmek için lütfen giriş yapınız."
+hints_xlists:
+ Bu nasıl çalışır.: "Sisteminiz yalnızca belirli dosya türlerinin yüklenmesine izin veriyorsa, veya sisteminiz belli dosya türlerini açıkça reddetiyorsa, bu dosya türlerini beyaz listelerde, kara listelerde ve gri listelerde belirtmek taramanın hızını artırabilir, komut dosyası belirli dosya türlerini atlamak için izin vererek. Biçim CSV (virgülle ayrılmış değerler)."
+ İşlem mantığı şu şekildedir: "Dosya türü beyaz listede bulunuyorsa, dosyayı taramayın ve engellemeyin ve dosyayı kara listeye veya gri listeye karşı kontrol etmeyin. Dosya türü kara listede bulunuyorsa, dosyayı taramayın, ancak yine de engelleyin ve dosyayı gri liste karşı kontrol etmeyin. Gri liste boşsa, ya da gri liste boş değilse ve dosya türü gri listede bulunuyorsa, dosyayı normal göre tara ve taramanın sonuçlarına dayanarak engelleyip engellemeyeceğini belirleme, ancak gri liste boş değilse ve dosya türü gri listede değil, dosyayı kara listede olduğu gibi davranın, bu nedenle tarama değil, yine de engelleme."
+info_some_useful_links: |
+ Bazı kullanışlı bağlantılar:<br />
+     <ul class="pieul">
+       <li><span class="comCat">phpMussel için araçlar, kaynaklar, vb.</span>
+         <ul class="comSub">
+           <li>{{Links.phpMussel.Issues}} – phpMussel için sorunlar sayfası (destek, yardım, vb).</li>
+           <li>{{Links.phpMussel.SigTool}} – ClamAV imza veritabanını kullanarak phpMussel imza dosyaları oluşturur.</li>
+           <li>{{Links.phpMussel.Extras}} – Çeşitli ekstralar.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">ClamAV için araçlar, kaynaklar, vb.</span>
+         <ul class="comSub">
+           <li>{{Links.ClamavNet}} – ClamAV anasayfası (Truva atlarını, virüsleri, kötü amaçlı yazılımları ve diğer kötü niyetli tehditleri tespit etmek için kullanılan açık kaynak kodlu bir antivirüs motoru).</li>
+           <li>{{Links.SecuriteInfo}} – ClamAV için ek imzalar sunan bilgisayar güvenlik şirketi.</li>
+           <li>{{Links.Sanesecurity}} – ClamAV için ek imzalar sunan bilgisayar güvenlik şirketi.</li>
+           <li>{{Links.Malware Expert}} – ClamAV için ek imzalar ve ModSecurity için ek kurallar sunar.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Gruplar, forumlar, topluluklar, vb.</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Facebook}} – PHP öğrenme kaynakları ve tartışmalar.</li>
+           <li>{{Links.MalwareTips}} – Yararlı kötü amaçlı yazılım odaklı tartışma forumları.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Diğer faydalı araçlar, kaynaklar, hizmetler, vb.</span>
+         <ul class="comSub">
+           <li>{{Links.PhishTank}} – Kimlik avı veritabanı (URL tarayıcısı tarafından kullanılır).</li>
+           <li>{{Links.VirusTotal}} – Şüpheli dosyaları ve URL'leri analiz etmek için ücretsiz bir hizmet.</li>
+           <li>{{Links.Hybrid Analysis}} – {{Links.Payload Security}} tarafından sağlanan ücretsiz bir kötü amaçlı yazılım analizi hizmeti.</li>
+           <li>{{Links.Malwarebytes}} – Kötü amaçlı yazılımlarla mücadele uzmanları.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Bilgi ve öğrenme kaynakları.</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Website}} – PHP öğrenme kaynakları ve tartışmalar.</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Güvenlik Açığı Tabloları</a> – Çeşitli paketler (PHP, HHVM, vb) güvenli/güvensiz sürümlerini listeler.</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Uyumluluk Tabloları</a> – Çeşitli paketler (CIDRAM, phpMussel, vb) için uyumluluk bilgilerini listeler.</li>
+         </ul>
+       </li>
+     </ul>
+
 label_active_config_file: "Etkin yapılandırma dosyası:"
 label_blocked: "Yüklemeler engellendi"
 label_branch: "Branşı en yeni kararlı:"
@@ -160,9 +204,9 @@ label_is_available_class: "%s mevcuttur."
 label_is_not_available: "%s mevcut değil."
 label_never: "Asla"
 label_os: "Kullanılan işletim sistemi:"
+label_other: "Diğer"
 label_other-Active: "Etkin imza dosyaları"
 label_other-Since: "Başlangıç tarihi"
-label_other: "Diğer"
 label_php: "Kullanılan PHP sürümü:"
 label_phpmussel: "Kullanılan phpMussel sürümü:"
 label_quarantined: "Karantinaya yüklenenler"
@@ -198,6 +242,13 @@ logs_logfile_doesnt_exist: "Seçilen günlük dosyası yok!"
 logs_no_logfile_selected: "Hiçbir günlük dosyası seçilmedi."
 logs_no_logfiles_available: "Günlük dosyası yok."
 max_login_attempts_exceeded: "Maksimum giriş denemesi aşıldı; Erişim reddedildi."
+msg_subject_2fa: "2FA (İki Faktörlü Kimlik Doğrulama)"
+msg_template_2fa: |
+ <center><p>Merhaba, %1$s.<br />
+ <br />
+ phpMussel ön ucuna giriş yapmak için 2FA kodunuz:</p>
+ <h1>%2$s</h1>
+ <p>Bu kod 10 dakika içinde sona eriyor.</p></center>
 previewer_days: "Gün"
 previewer_hours: "Saat"
 previewer_minutes: "Dakika"
@@ -280,52 +331,3 @@ tip_statistics_disabled: "Not: İstatistik izleme şu anda devre dışı, ancak 
 tip_upload_test: "Merhaba, {username}.<br />Yükleme sınama sayfası, bir dosyanın yüklenmeye çalışılırken normalde phpMussel tarafından engelleneceğini test etmenize izin veren standart bir dosya yükleme formu içerir."
 title_login: "Giriş"
 warning_signatures_1: "Uyarı: Hiçbir imza dosyası aktif değil!"
-
-info_some_useful_links: |
- Bazı kullanışlı bağlantılar:<br />
-     <ul class="pieul">
-       <li><span class="comCat">phpMussel için araçlar, kaynaklar, vb.</span>
-         <ul class="comSub">
-           <li>{{Links.phpMussel.Issues}} – phpMussel için sorunlar sayfası (destek, yardım, vb).</li>
-           <li>{{Links.phpMussel.SigTool}} – ClamAV imza veritabanını kullanarak phpMussel imza dosyaları oluşturur.</li>
-           <li>{{Links.phpMussel.Extras}} – Çeşitli ekstralar.</li>
-         </ul>
-       </li>
-       <li><span class="comCat">ClamAV için araçlar, kaynaklar, vb.</span>
-         <ul class="comSub">
-           <li>{{Links.ClamavNet}} – ClamAV anasayfası (Truva atlarını, virüsleri, kötü amaçlı yazılımları ve diğer kötü niyetli tehditleri tespit etmek için kullanılan açık kaynak kodlu bir antivirüs motoru).</li>
-           <li>{{Links.SecuriteInfo}} – ClamAV için ek imzalar sunan bilgisayar güvenlik şirketi.</li>
-           <li>{{Links.Sanesecurity}} – ClamAV için ek imzalar sunan bilgisayar güvenlik şirketi.</li>
-           <li>{{Links.Malware Expert}} – ClamAV için ek imzalar ve ModSecurity için ek kurallar sunar.</li>
-         </ul>
-       </li>
-       <li><span class="comCat">Gruplar, forumlar, topluluklar, vb.</span>
-         <ul class="comSub">
-           <li>{{Links.PHP.Earth.Facebook}} – PHP öğrenme kaynakları ve tartışmalar.</li>
-           <li>{{Links.MalwareTips}} – Yararlı kötü amaçlı yazılım odaklı tartışma forumları.</li>
-         </ul>
-       </li>
-       <li><span class="comCat">Diğer faydalı araçlar, kaynaklar, hizmetler, vb.</span>
-         <ul class="comSub">
-           <li>{{Links.PhishTank}} – Kimlik avı veritabanı (URL tarayıcısı tarafından kullanılır).</li>
-           <li>{{Links.VirusTotal}} – Şüpheli dosyaları ve URL'leri analiz etmek için ücretsiz bir hizmet.</li>
-           <li>{{Links.Hybrid Analysis}} – {{Links.Payload Security}} tarafından sağlanan ücretsiz bir kötü amaçlı yazılım analizi hizmeti.</li>
-           <li>{{Links.Malwarebytes}} – Kötü amaçlı yazılımlarla mücadele uzmanları.</li>
-         </ul>
-       </li>
-       <li><span class="comCat">Bilgi ve öğrenme kaynakları.</span>
-         <ul class="comSub">
-           <li>{{Links.PHP.Earth.Website}} – PHP öğrenme kaynakları ve tartışmalar.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Güvenlik Açığı Tabloları</a> – Çeşitli paketler (PHP, HHVM, vb) güvenli/güvensiz sürümlerini listeler.</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Uyumluluk Tabloları</a> – Çeşitli paketler (CIDRAM, phpMussel, vb) için uyumluluk bilgilerini listeler.</li>
-         </ul>
-       </li>
-     </ul>
-
-msg_template_2fa: |
- <center><p>Merhaba, %1$s.<br />
- <br />
- phpMussel ön ucuna giriş yapmak için 2FA kodunuz:</p>
- <h1>%2$s</h1>
- <p>Bu kod 10 dakika içinde sona eriyor.</p></center>
-msg_subject_2fa: "2FA (İki Faktörlü Kimlik Doğrulama)"

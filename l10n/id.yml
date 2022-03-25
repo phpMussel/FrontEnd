@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2022.03.01).
+# This file: Indonesian language data (last modified: 2022.03.25).
 ##/
 
 config_core: "Konfigurasi umum (konfigurasi inti apapun yang bukan milik kategori lain)."
@@ -53,7 +53,7 @@ config_files_filesize_response: "Apa yang Anda lakukan dengan file-file yang mel
 config_files_filetype_archives: "Memperlalaikan jenis file daftar hitam/putih dari isi file terkompress? False = Tidak (Bertanda abu-abu semua) [Default]; True = Ya."
 config_files_filetype_blacklist: "Daftar Hitam:"
 config_files_filetype_greylist: "Daftar Abu-Abu:"
-config_files_filetype_whitelist: "Jika sistem Anda hanya mengizinkan tipe file spesifik menjadi diupload, atau jika sistem Anda secara eksplisit menolak tipe file-file tertentu, menspesifikasikan tipe file dalam bertanda putih, bertanda hitam dan bertanda abu-abu dapat menaikkan kecepatan dari pemindaian dilakukan dengan mengizinkan skrip untuk mengabaikan tipe file tertentu. Format adalah CSV (comma separated values). Jika Anda ingin memindai semuanya, daripada daftar putih, daftar hitam atau daftar abu-abu, tinggalkan variabel kosong; Melakukannya akan menonaktifkan dafter putih/hitam/abu-abu. Urutan logis dari pengolahan: Jika tipe file bertanda putih, tidak memindai dan tidak memblokir file, dan tidak memeriksa file terhadap daftar hitam atau daftar abu-abu. Jika tipe file bertanda hitem, tidak memindai file tapi memblokir bagaimanapun, dan tidak memeriksa file terhadap daftar abu-abu. Jika daftar abu-abu yang kosong atau jika daftar abu-abu tidak kosong dan tipe file bertanda abu-abu, memindai file seperti biasa dan menentukan apakah untuk memblokir berdasarkan hasil memindai, tapi jika daftar abu-abu tidak kosong dan tipe file tidak bertanda abu-abu, memperlakukan seolah olah bertanda hitam, demikian tidak memindai tapi memblokir itu bagaimanapun. Daftar Putih:"
+config_files_filetype_whitelist: "Daftar Putih:"
 config_files_max_files_in_archives: "Jumlah maksimum file yang akan dipindai dari dalam arsip sebelum membatalkan pemindaian. Default = 0 (tidak ada maksimal)."
 config_files_max_recursion: "Batas kedalaman rekursi maksimum untuk arsip. Default = 3."
 config_files_only_allow_images: "Bila diset ke true, file apapun ditemukan oleh pemindai yang bukan gambar akan segera ditandai, tanpa dipindai. Ini dapat membantu mengurangi waktu yang dibutuhkan untuk menyelesaikan pemindaian dalam beberapa kasus. Diset ke false secara default."
@@ -145,6 +145,50 @@ field_update_signatures_files: "Memperbarui file tanda tangan"
 field_username: "Nama Pengguna"
 field_your_version: "Versi Anda"
 header_login: "Silahkan masuk untuk melanjutkan."
+hints_xlists:
+ Bagaimana ini bekerja.: "Jika sistem Anda hanya mengizinkan tipe file spesifik menjadi diupload, atau jika sistem Anda secara eksplisit menolak tipe file-file tertentu, menspesifikasikan tipe file dalam bertanda putih, bertanda hitam dan bertanda abu-abu dapat menaikkan kecepatan dari pemindaian dilakukan dengan mengizinkan skrip untuk mengabaikan tipe file tertentu. Format adalah CSV (nilai yang dipisahkan koma)."
+ Urutan logis dari pengolahan.: "Jika tipe file bertanda putih, tidak memindai dan tidak memblokir file, dan tidak memeriksa file terhadap daftar hitam atau daftar abu-abu. Jika tipe file bertanda hitem, tidak memindai file tapi memblokir bagaimanapun, dan tidak memeriksa file terhadap daftar abu-abu. Jika daftar abu-abu yang kosong atau jika daftar abu-abu tidak kosong dan tipe file bertanda abu-abu, memindai file seperti biasa dan menentukan apakah untuk memblokir berdasarkan hasil memindai, tapi jika daftar abu-abu tidak kosong dan tipe file tidak bertanda abu-abu, memperlakukan seolah olah bertanda hitam, demikian tidak memindai tapi memblokir itu bagaimanapun."
+info_some_useful_links: |
+ Beberapa link yang berguna:<br />
+     <ul class="pieul">
+       <li><span class="comCat">Alat, sumber daya, dll untuk phpMussel.</span>
+         <ul class="comSub">
+           <li>{{Links.phpMussel.Issues}} – Halaman masalah untuk phpMussel (dukungan, bantuan, dll).</li>
+           <li>{{Links.phpMussel.SigTool}} – Membuat file tanda tangan phpMussel menggunakan database tanda tangan ClamAV.</li>
+           <li>{{Links.phpMussel.Extras}} – Berbagai tambahan.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Alat, sumber daya, dll untuk ClamAV.</span>
+         <ul class="comSub">
+           <li>{{Links.ClamavNet}} – Halaman utama untuk ClamAV (ClamAV® adalah injin antivirus open source untuk mendeteksi trojan, virus, malware dan ancaman berbahaya lainnya).</li>
+           <li>{{Links.SecuriteInfo}} – Perusahaan keamanan komputer yang menawarkan tanda tangan tambahan untuk ClamAV.</li>
+           <li>{{Links.Sanesecurity}} – Perusahaan keamanan komputer yang menawarkan tanda tangan tambahan untuk ClamAV.</li>
+           <li>{{Links.Malware Expert}} – Menyediakan tanda tangan tambahan untuk ClamAV dan aturan tambahan untuk ModSecurity.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Grup, forum, komunitas, dll.</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Facebook}} – Sumber belajar dan diskusi PHP.</li>
+           <li>{{Links.MalwareTips}} – Berguna forum diskusi difokuskan pada malware.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Alat, sumber daya, layanan, dll bermanfaat lainnya.</span>
+         <ul class="comSub">
+           <li>{{Links.PhishTank}} – Database phishing digunakan oleh scanner URL phpMussel.</li>
+           <li>{{Links.VirusTotal}} – VirusTotal adalah layanan gratis untuk menganalisis file dan URL yang mencurigakan.</li>
+           <li>{{Links.Hybrid Analysis}} – Hybrid Analysis adalah layanan analisis malware gratis yang disediakan oleh {{Links.Payload Security}}.</li>
+           <li>{{Links.Malwarebytes}} – Komputer spesialis anti-malware.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Sumber daya informasi dan pembelajaran.</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Website}} – Sumber belajar dan diskusi PHP.</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Tabel Kerentanan</a> – Mencantumkan berbagai versi dari paket-paket yang aman dan tidak aman (PHP, HHVM, dll).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Tabel Kompatibilitas</a> – Mencantumkan informasi kompatibilitas untuk berbagai paket (CIDRAM, phpMussel, dll).</li>
+         </ul>
+       </li>
+     </ul>
+
 label_active_config_file: "File konfigurasi aktif:"
 label_blocked: "Upload diblokir"
 label_branch: "Cabang terbaru stabil:"
@@ -160,9 +204,9 @@ label_is_available_class: "%s tersedia."
 label_is_not_available: "%s tidak tersedia."
 label_never: "Tak pernah"
 label_os: "Sistem operasi digunakan:"
+label_other: "Lain"
 label_other-Active: "File tanda tangan aktif"
 label_other-Since: "Mulai tanggal"
-label_other: "Lain"
 label_php: "Versi PHP digunakan:"
 label_phpmussel: "Versi phpMussel digunakan:"
 label_quarantined: "Upload dikarantina"
@@ -198,6 +242,13 @@ logs_logfile_doesnt_exist: "Log yang dipilih tidak ada!"
 logs_no_logfile_selected: "Tidak ada log dipilih."
 logs_no_logfiles_available: "Tidak ada log tersedia."
 max_login_attempts_exceeded: "Jumlah maksimum upaya untuk memasukkan tercapai; Akses ditolak."
+msg_subject_2fa: "Otentikasi Dua-Faktor"
+msg_template_2fa: |
+ <center><p>Salam, %1$s.<br />
+ <br />
+ Kode otentikasi dua-faktor Anda untuk masuk ke depan phpMussel:</p>
+ <h1>%2$s</h1>
+ <p>Kode ini berakhir dalam 10 menit.</p></center>
 previewer_days: "Hari"
 previewer_hours: "Jam"
 previewer_minutes: "Menit"
@@ -278,52 +329,3 @@ tip_statistics_disabled: "Catat: Pelacakan statistik saat ini dinonaktifkan, nam
 tip_upload_test: "Salam, {username}.<br />Halaman upload test berisi form upload file standar, memungkinkan Anda untuk mengetes apakah file biasanya akan diblokir oleh phpMussel ketika mencoba untuk menguploadnya."
 title_login: "Masuk"
 warning_signatures_1: "Peringatan: Tidak ada file tanda tangan yang aktif!"
-
-info_some_useful_links: |
- Beberapa link yang berguna:<br />
-     <ul class="pieul">
-       <li><span class="comCat">Alat, sumber daya, dll untuk phpMussel.</span>
-         <ul class="comSub">
-           <li>{{Links.phpMussel.Issues}} – Halaman masalah untuk phpMussel (dukungan, bantuan, dll).</li>
-           <li>{{Links.phpMussel.SigTool}} – Membuat file tanda tangan phpMussel menggunakan database tanda tangan ClamAV.</li>
-           <li>{{Links.phpMussel.Extras}} – Berbagai tambahan.</li>
-         </ul>
-       </li>
-       <li><span class="comCat">Alat, sumber daya, dll untuk ClamAV.</span>
-         <ul class="comSub">
-           <li>{{Links.ClamavNet}} – Halaman utama untuk ClamAV (ClamAV® adalah injin antivirus open source untuk mendeteksi trojan, virus, malware dan ancaman berbahaya lainnya).</li>
-           <li>{{Links.SecuriteInfo}} – Perusahaan keamanan komputer yang menawarkan tanda tangan tambahan untuk ClamAV.</li>
-           <li>{{Links.Sanesecurity}} – Perusahaan keamanan komputer yang menawarkan tanda tangan tambahan untuk ClamAV.</li>
-           <li>{{Links.Malware Expert}} – Menyediakan tanda tangan tambahan untuk ClamAV dan aturan tambahan untuk ModSecurity.</li>
-         </ul>
-       </li>
-       <li><span class="comCat">Grup, forum, komunitas, dll.</span>
-         <ul class="comSub">
-           <li>{{Links.PHP.Earth.Facebook}} – Sumber belajar dan diskusi PHP.</li>
-           <li>{{Links.MalwareTips}} – Berguna forum diskusi difokuskan pada malware.</li>
-         </ul>
-       </li>
-       <li><span class="comCat">Alat, sumber daya, layanan, dll bermanfaat lainnya.</span>
-         <ul class="comSub">
-           <li>{{Links.PhishTank}} – Database phishing digunakan oleh scanner URL phpMussel.</li>
-           <li>{{Links.VirusTotal}} – VirusTotal adalah layanan gratis untuk menganalisis file dan URL yang mencurigakan.</li>
-           <li>{{Links.Hybrid Analysis}} – Hybrid Analysis adalah layanan analisis malware gratis yang disediakan oleh {{Links.Payload Security}}.</li>
-           <li>{{Links.Malwarebytes}} – Komputer spesialis anti-malware.</li>
-         </ul>
-       </li>
-       <li><span class="comCat">Sumber daya informasi dan pembelajaran.</span>
-         <ul class="comSub">
-           <li>{{Links.PHP.Earth.Website}} – Sumber belajar dan diskusi PHP.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Tabel Kerentanan</a> – Mencantumkan berbagai versi dari paket-paket yang aman dan tidak aman (PHP, HHVM, dll).</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Tabel Kompatibilitas</a> – Mencantumkan informasi kompatibilitas untuk berbagai paket (CIDRAM, phpMussel, dll).</li>
-         </ul>
-       </li>
-     </ul>
-
-msg_template_2fa: |
- <center><p>Salam, %1$s.<br />
- <br />
- Kode otentikasi dua-faktor Anda untuk masuk ke depan phpMussel:</p>
- <h1>%2$s</h1>
- <p>Kode ini berakhir dalam 10 menit.</p></center>
-msg_subject_2fa: "Otentikasi Dua-Faktor"

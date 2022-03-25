@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2022.03.01).
+# This file: Latvian language data (last modified: 2022.03.25).
 ##/
 
 config_core: "Vispārējā konfigurācija (jebkura pamata konfigurācija, kas nepieder citām kategorijām)."
@@ -53,7 +53,7 @@ config_files_filesize_response: "Ko darīt ar failiem, kas pārsniedz faila liel
 config_files_filetype_archives: "Vai faila tips melnajā/baltajā sarakstā būtu jāattiecina uz arhīvu saturu? False (Nepatiess) = Nē (visu tikai iekļauj pelēkajā sarakstā) [Noklusējuma]; True (Patiess) = Jā."
 config_files_filetype_blacklist: "Melnais saraksts:"
 config_files_filetype_greylist: "Pelēkais saraksts:"
-config_files_filetype_whitelist: "Ja jūsu sistēma ļauj augšupielādēt tikai noteikta veida failus vai ja jūsu sistēma skaidri noliedz noteikta veida failus, failu tipu norādīšana baltajos sarakstos, melnajos sarakstos un pelēkajos sarakstos var palielināt skenēšanas ātrumu ļaujot skriptam izlaist noteiktus failu tipus. Formāts ir CSV (komatatdalītas vērtības). Ja vēlaties skenēt visu, nevis ievietot to baltajā sarakstā, melnajā sarakstā vai pelēkajā sarakstā, atstājiet mainīgos tukšus. To darot, baltais/melnais/pelēkais saraksts tiks atspējots. Apstrādes loģiskā secība: Ja faila tips ir iekļauts baltajā sarakstā, neskenējiet un nebloķējiet failu, un nepārbaudiet failu pret melno sarakstu vai pelēko sarakstu. Ja faila tips ir iekļauts melnajā sarakstā, neskenējiet failu, bet jebkurā gadījumā to bloķējiet, un nepārbaudiet failu pret pelēko sarakstu. Ja pelēkais saraksts ir tukšs vai, ja pelēkais saraksts nav tukšs un faila tips ir iekļauts pelēkajā sarakstā, skenējiet failu kā parasti un, pamatojoties uz skenēšanas rezultātiem, nosakiet, vai to bloķēt, bet ja pelēkais saraksts nav tukšs un faila tips nav pelēkā sarakstā, apstrādājiet failu kā melnajā sarakstā, tāpēc nevis skenē bet jebkurā gadījumā to bloķēt. Baltais saraksts:"
+config_files_filetype_whitelist: "Baltais saraksts:"
 config_files_max_files_in_archives: "Maksimālais skenējamo failu skaits arhīvos pirms skenēšanas pārtraukšanas. Noklusējuma = 0 (nav maksimālā)."
 config_files_max_recursion: "Maksimālais rekursijas dziļuma ierobežojums arhīviem. Noklusējuma = 3."
 config_files_only_allow_images: "Ja iestatīts uz true, visus failus, kas nav attēli un ar kuriem skeneris sastapis, tie tiks atzīmēti nekavējoties un bez skenēšanas. Dažos gadījumos tas var palīdzēt samazināt skenēšanai vajadzīgo laiku. Pēc noklusējuma tā ir iestatīta uz false."
@@ -148,6 +148,50 @@ field_update_signatures_files: "Atjauniniet paraksta failus"
 field_username: "Lietotājvārds"
 field_your_version: "Jūsu Versija"
 header_login: "Lūdzu, ielogoties, lai turpinātu."
+hints_xlists:
+ Kā tas darbojas.: "Ja jūsu sistēma ļauj augšupielādēt tikai noteikta veida failus vai ja jūsu sistēma skaidri noliedz noteikta veida failus, failu tipu norādīšana baltajos sarakstos, melnajos sarakstos un pelēkajos sarakstos var palielināt skenēšanas ātrumu ļaujot skriptam izlaist noteiktus failu tipus. Formāts ir CSV (komatatdalītas vērtības)."
+ Apstrādes loģiskā secība.: "Ja faila tips ir iekļauts baltajā sarakstā, neskenējiet un nebloķējiet failu, un nepārbaudiet failu pret melno sarakstu vai pelēko sarakstu. Ja faila tips ir iekļauts melnajā sarakstā, neskenējiet failu, bet jebkurā gadījumā to bloķējiet, un nepārbaudiet failu pret pelēko sarakstu. Ja pelēkais saraksts ir tukšs vai, ja pelēkais saraksts nav tukšs un faila tips ir iekļauts pelēkajā sarakstā, skenējiet failu kā parasti un, pamatojoties uz skenēšanas rezultātiem, nosakiet, vai to bloķēt, bet ja pelēkais saraksts nav tukšs un faila tips nav pelēkā sarakstā, apstrādājiet failu kā melnajā sarakstā, tāpēc nevis skenē bet jebkurā gadījumā to bloķēt."
+info_some_useful_links: |
+ Dažas noderīgas saites:<br />
+     <ul class="pieul">
+       <li><span class="comCat">phpMussel rīki, resursi, utt.</span>
+         <ul class="comSub">
+           <li>{{Links.phpMussel.Issues}} – phpMussel issues lapa (atbalsts, palīdzība, utt).</li>
+           <li>{{Links.phpMussel.SigTool}} – Izveido phpMussel parakstu failus, izmantojot ClamAV parakstu datu bāzi.</li>
+           <li>{{Links.phpMussel.Extras}} – Dažādas ekstras.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">ClamAV rīki, resursi, utt.</span>
+         <ul class="comSub">
+           <li>{{Links.ClamavNet}} – ClamAV mājas lapa (ClamAV® ir atvērtā koda pretvīrusu dzinējs, lai atklātu trojas zirgus, vīrusus, ļaunprātīgu programmatūru un citus ļaunprātīgus draudus).</li>
+           <li>{{Links.SecuriteInfo}} – Datoru drošības uzņēmums, kas piedāvā ClamAV papildu parakstus.</li>
+           <li>{{Links.Sanesecurity}} – Datoru drošības uzņēmums, kas piedāvā ClamAV papildu parakstus.</li>
+           <li>{{Links.Malware Expert}} – Piedāvā papildu parakstus ClamAV un papildu noteikumi ModSecurity.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Grupas, forumi, kopienas, utt.</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Facebook}} – PHP mācību resursi un diskusija.</li>
+           <li>{{Links.MalwareTips}} – Noderīgi diskusiju forumi, kas vērsti uz ļaunprātīgu programmatūru.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Citi noderīgi rīki, resursi, pakalpojumi, utt.</span>
+         <ul class="comSub">
+           <li>{{Links.PhishTank}} – Pikšķerēšanas datu bāze, ko izmanto phpMussel URL skeneris.</li>
+           <li>{{Links.VirusTotal}} – VirusTotal ir bezmaksas pakalpojums aizdomīgu failu un vietrāžu URL analīzei.</li>
+           <li>{{Links.Hybrid Analysis}} – Hybrid Analysis ir bezmaksas ļaunprātīgas programmatūras analīzes pakalpojums, ko nodrošina uzņēmums {{Links.Payload Security}}.</li>
+           <li>{{Links.Malwarebytes}} – Datoru ļaundabīgo programmu speciālisti.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Informācijas un mācību resursi.</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Website}} – PHP mācību resursi un diskusija.</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Ievainojamības Diagrammas</a> – Saraksta dažādu programmatūras pakotņu drošas/nedrošas versijas (HHVM, PHP, phpMyAdmin, Python, utt).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Saderības Diagrammas</a> – Saraksta informācija par saderību par dažādām programmatūras pakotnēm (CIDRAM, phpMussel, utt).</li>
+         </ul>
+       </li>
+     </ul>
+
 label_active_config_file: "Aktīvs konfigurācijas fails:"
 label_blocked: "Bloķēto augšupielāžu skaits"
 label_branch: "Jaunākā stabilā (uz šīs "branch"):"
@@ -163,9 +207,9 @@ label_is_available_class: "%s ir pieejams."
 label_is_not_available: "%s nav pieejams."
 label_never: "Nekad"
 label_os: "Izmantotā operētājsistēmu:"
+label_other: "Cits"
 label_other-Active: "Aktīvie paraksta faili"
 label_other-Since: "Sākuma datums"
-label_other: "Cits"
 label_php: "Izmantotā PHP versija:"
 label_phpmussel: "Izmantotā phpMussel versija:"
 label_quarantined: "Augšupielāde karantīnā skaits"
@@ -201,6 +245,13 @@ logs_logfile_doesnt_exist: "Atlasītais logfails neeksistē!"
 logs_no_logfile_selected: "Nav atlasīts logfails."
 logs_no_logfiles_available: "Neviens logfails nav pieejams."
 max_login_attempts_exceeded: "Pārsniegts maksimālais ielogošanās mēģinājumu skaits; Piekļuve liegta."
+msg_subject_2fa: "Divu-Faktoru Autentifikācija"
+msg_template_2fa: |
+ <center><p>Sveiks, %1$s.<br />
+ <br />
+ Jūsu divu-faktoru autentifikācijas kods, lai ielogotos phpMussel:</p>
+ <h1>%2$s</h1>
+ <p>Šis kods zaudē spēku 10 minūtēs.</p></center>
 previewer_days: "Dienas"
 previewer_hours: "Stundas"
 previewer_minutes: "Minūtes"
@@ -284,52 +335,3 @@ tip_statistics_disabled: "Piezīme: Statistikas izsekošana pašlaik ir atspējo
 tip_upload_test: "Augšupielādes testa lapā ir standarta failu augšupielādes forma. Varat to izmantot, lai pārbaudītu, vai phpMussel parasti bloķē failu."
 title_login: "Ielogošanās"
 warning_signatures_1: "Brīdinājums: Neviens paraksta fails nav aktīvs!"
-
-info_some_useful_links: |
- Dažas noderīgas saites:<br />
-     <ul class="pieul">
-       <li><span class="comCat">phpMussel rīki, resursi, utt.</span>
-         <ul class="comSub">
-           <li>{{Links.phpMussel.Issues}} – phpMussel issues lapa (atbalsts, palīdzība, utt).</li>
-           <li>{{Links.phpMussel.SigTool}} – Izveido phpMussel parakstu failus, izmantojot ClamAV parakstu datu bāzi.</li>
-           <li>{{Links.phpMussel.Extras}} – Dažādas ekstras.</li>
-         </ul>
-       </li>
-       <li><span class="comCat">ClamAV rīki, resursi, utt.</span>
-         <ul class="comSub">
-           <li>{{Links.ClamavNet}} – ClamAV mājas lapa (ClamAV® ir atvērtā koda pretvīrusu dzinējs, lai atklātu trojas zirgus, vīrusus, ļaunprātīgu programmatūru un citus ļaunprātīgus draudus).</li>
-           <li>{{Links.SecuriteInfo}} – Datoru drošības uzņēmums, kas piedāvā ClamAV papildu parakstus.</li>
-           <li>{{Links.Sanesecurity}} – Datoru drošības uzņēmums, kas piedāvā ClamAV papildu parakstus.</li>
-           <li>{{Links.Malware Expert}} – Piedāvā papildu parakstus ClamAV un papildu noteikumi ModSecurity.</li>
-         </ul>
-       </li>
-       <li><span class="comCat">Grupas, forumi, kopienas, utt.</span>
-         <ul class="comSub">
-           <li>{{Links.PHP.Earth.Facebook}} – PHP mācību resursi un diskusija.</li>
-           <li>{{Links.MalwareTips}} – Noderīgi diskusiju forumi, kas vērsti uz ļaunprātīgu programmatūru.</li>
-         </ul>
-       </li>
-       <li><span class="comCat">Citi noderīgi rīki, resursi, pakalpojumi, utt.</span>
-         <ul class="comSub">
-           <li>{{Links.PhishTank}} – Pikšķerēšanas datu bāze, ko izmanto phpMussel URL skeneris.</li>
-           <li>{{Links.VirusTotal}} – VirusTotal ir bezmaksas pakalpojums aizdomīgu failu un vietrāžu URL analīzei.</li>
-           <li>{{Links.Hybrid Analysis}} – Hybrid Analysis ir bezmaksas ļaunprātīgas programmatūras analīzes pakalpojums, ko nodrošina uzņēmums {{Links.Payload Security}}.</li>
-           <li>{{Links.Malwarebytes}} – Datoru ļaundabīgo programmu speciālisti.</li>
-         </ul>
-       </li>
-       <li><span class="comCat">Informācijas un mācību resursi.</span>
-         <ul class="comSub">
-           <li>{{Links.PHP.Earth.Website}} – PHP mācību resursi un diskusija.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Ievainojamības Diagrammas</a> – Saraksta dažādu programmatūras pakotņu drošas/nedrošas versijas (HHVM, PHP, phpMyAdmin, Python, utt).</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Saderības Diagrammas</a> – Saraksta informācija par saderību par dažādām programmatūras pakotnēm (CIDRAM, phpMussel, utt).</li>
-         </ul>
-       </li>
-     </ul>
-
-msg_template_2fa: |
- <center><p>Sveiks, %1$s.<br />
- <br />
- Jūsu divu-faktoru autentifikācijas kods, lai ielogotos phpMussel:</p>
- <h1>%2$s</h1>
- <p>Šis kods zaudē spēku 10 minūtēs.</p></center>
-msg_subject_2fa: "Divu-Faktoru Autentifikācija"

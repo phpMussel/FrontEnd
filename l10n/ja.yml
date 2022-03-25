@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2022.03.01).
+# This file: Japanese language data (last modified: 2022.03.25).
 ##/
 
 config_core: "全般的な設定（他のカテゴリに属さないの設定）。"
@@ -53,7 +53,7 @@ config_files_filesize_response: "上限サイズを超えるファイルをど�
 config_files_filetype_archives: "ファイルタイプのブラックリスト化/ホワイトリスト化をアーカイブのコンテンツに持ち込むか否か？​False = いいえ（ただグレーリストすべて） 「Default/デフォルト設定」; True = はい。"
 config_files_filetype_blacklist: "ファイルタイプ・ブラックリスト:"
 config_files_filetype_greylist: "ファイルタイプ・グレーリスト:"
-config_files_filetype_whitelist: "システムが特定タイプのファイルのみアップロードを許可する、​あるいは拒絶する場合は、​ファイルタイプを適切にホワイトリスト、​ブラックリスト、​グレーリストにて分類しておくと、​ファイルタイプによって弾かれるファイルはスキャンをスキップできるため、​スピードアップに繋がります。​フォーマットはＣＳＶ（カンマ区切り）です。​リストによらず全てをスキャンしたい場合は、​変数は空白のままとし、​ホワイトリスト/ブラックリスト/グレーリストを無効にします。​プロセスの論理的順序: ファイルタイプがホワイトリストに記載されていれば、​スキャンせず、​ブロックせず、​ブラックリストおよびグレイリストに対してチェックを行いません。​ファイルタイプがブラックリストに記載されていれば、​スキャンすることなく、​直ちににブロックし、​グレーリストに対してチェックを行いません。​グレーリストが空、​あるいはグレーリストが空でなくかつそのファイルタイプがあれば、​通常通りスキャンしブロックするか否かを判断します。​グレーリストが空でなくかつそのファイルタイプが含まれていなければ、​ブラックリストと同様の扱いをすることになり、​スキャンなしにブロックします。​ファイルタイプ・ホワイトリスト:"
+config_files_filetype_whitelist: "ファイルタイプ・ホワイトリスト:"
 config_files_max_files_in_archives: "スキャンを中止する前にアーカイブ内からスキャンするファイルの最大数。​デフォルト＝０（上限なし）。"
 config_files_max_recursion: "アーカイブに対する最大再帰深さです。​デフォルト＝３。"
 config_files_only_allow_images: "Trueに設定した場合、スキャナーで検出された非画像ファイルには、スキャンされずに、直ちにマークされます。​これは、場合によっては、スキャンの完了に必要な時間を短縮するのに役立ちます。​デフォルトではfalseに設定されています。"
@@ -145,6 +145,50 @@ field_update_signatures_files: "シグネチャ・ファイルをアップデー
 field_username: "ユーザー名"
 field_your_version: "お使いのバージョン"
 header_login: "継続するには、​ログインしてください。"
+hints_xlists:
+ これがどのように機能する。: "システムが特定タイプのファイルのみアップロードを許可する、​あるいは拒絶する場合は、​ファイルタイプを適切にホワイトリスト、​ブラックリスト、​グレーリストにて分類しておくと、​ファイルタイプによって弾かれるファイルはスキャンをスキップできるため、​スピードアップに繋がります。​フォーマットはＣＳＶ（カンマ区切り）です。"
+ プロセスの論理的順序。: "ファイルタイプがホワイトリストに記載されていれば、​スキャンせず、​ブロックせず、​ブラックリストおよびグレイリストに対してチェックを行いません。​ファイルタイプがブラックリストに記載されていれば、​スキャンすることなく、​直ちににブロックし、​グレーリストに対してチェックを行いません。​グレーリストが空、​あるいはグレーリストが空でなくかつそのファイルタイプがあれば、​通常通りスキャンしブロックするか否かを判断します。​グレーリストが空でなくかつそのファイルタイプが含まれていなければ、​ブラックリストと同様の扱いをすることになり、​スキャンなしにブロックします。"
+info_some_useful_links: |
+ 役に立つリンク：<br />
+     <ul class="pieul">
+       <li><span class="comCat">phpMussel用のツール、リソース、など。</span>
+         <ul class="comSub">
+           <li>{{Links.phpMussel.Issues}} – phpMusselの問題ページ（サポート、​援助、​など）。</li>
+           <li>{{Links.phpMussel.SigTool}} – ClamAVシグネチャ・データベースを使用してphpMusselシグネチャ・ファイルを作成します。</li>
+           <li>{{Links.phpMussel.Extras}} – その他エキストラ。</li>
+         </ul>
+       </li>
+       <li><span class="comCat">ClamAV用のツール、リソース、など。</span>
+         <ul class="comSub">
+           <li>{{Links.ClamavNet}} – ClamAVホームページ（ClamAV®は、​トロイの木馬、​ウイルス、​マルウェア、​とその他の脅威を検出するための、​オープンソースのウイルス対策エンジンです）。</li>
+           <li>{{Links.SecuriteInfo}} – ClamAVの補足的なシグネチャを提供する、​コンピュータセキュリティ会社。</li>
+           <li>{{Links.Sanesecurity}} – ClamAVの補足的なシグネチャを提供する、​コンピュータセキュリティ会社。</li>
+           <li>{{Links.Malware Expert}} – ClamAV用の補足シグネチャとModSecurity用の補足規則を提供します。</li>
+         </ul>
+       </li>
+       <li><span class="comCat">グループ、フォーラム、コミュニティ、など。</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Facebook}} – ＰＨＰ学習リソースとディスカッション。</li>
+           <li>{{Links.MalwareTips}} – 便利なマルウェア対策ディスカッションフォーラム。</li>
+         </ul>
+       </li>
+       <li><span class="comCat">その他の便利なツール、リソース、サービス、など。</span>
+         <ul class="comSub">
+           <li>{{Links.PhishTank}} – phpMussel URLスキャナーで利用される、​フィッシング詐欺データベース。</li>
+           <li>{{Links.VirusTotal}} – VirusTotalは、​疑わしいファイルやURLを分析するための無料サービスです。</li>
+           <li>{{Links.Hybrid Analysis}} – Hybrid Analysisは、​{{Links.Payload Security}}が提供する無料のマルウェア分析サービスで。</li>
+           <li>{{Links.Malwarebytes}} – コンピュータのマルウェア対策専門家。</li>
+         </ul>
+       </li>
+       <li><span class="comCat">情報および学習用リソース。</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Website}} – ＰＨＰ学習リソースとディスカッション。</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">脆弱性チャート</a> – さまざまなパッケージの安全で安全でないバージョンを一覧表示する（ＰＨＰ、ＨＨＶＭ、等）。</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">互換性チャート</a> – さまざまなパッケージの互換性情報を一覧表示します（CIDRAM、phpMussel、等）。</li>
+         </ul>
+       </li>
+     </ul>
+
 label_active_config_file: "アクティブ・コンフィグレーション・ファイル："
 label_blocked: "ブロックされたアップロード"
 label_branch: "ブランチ最新安定："
@@ -160,9 +204,9 @@ label_is_available_class: "%s は使用できます。"
 label_is_not_available: "%s は使用できません。"
 label_never: "決して"
 label_os: "使用されたオペレーティングシステム："
+label_other: "その他"
 label_other-Active: "アクティブなシグネチャ・ファイル"
 label_other-Since: "開始日"
-label_other: "その他"
 label_php: "使用されたPHPバージョン："
 label_phpmussel: "使用されたphpMusselバージョン："
 label_quarantined: "検疫されたアップロード"
@@ -198,6 +242,13 @@ logs_logfile_doesnt_exist: "選択したログは存在しません！"
 logs_no_logfile_selected: "ログが選択されていません。"
 logs_no_logfiles_available: "いいえログが利用可能。"
 max_login_attempts_exceeded: "ログイン試行の最大回数を超えました；アクセス拒否。"
+msg_subject_2fa: "２ＦＡ（二要素認証）"
+msg_template_2fa: |
+ <center><p>こんにちは、​%1$s。<br />
+ <br />
+ phpMusselフロントエンドにログインするための２ＦＡコード：</p>
+ <h1>%2$s</h1>
+ <p>このコードの有効期限は１０分です。</p></center>
 previewer_days: "日"
 previewer_hours: "時"
 previewer_minutes: "分"
@@ -278,52 +329,3 @@ tip_statistics_disabled: "注意：統計トラッキングは現在オフライ
 tip_upload_test: "こんにちは、​{username}。​<br />アップロード・テスト・ページ、​標準的なファイルアップロードフォームを含んでいます、​ファイルが通常ブロックされるかどうかをテストすることができます。"
 title_login: "ログイン"
 warning_signatures_1: "警告：アクティブ・シグネチャ・ファイルはありません！"
-
-info_some_useful_links: |
- 役に立つリンク：<br />
-     <ul class="pieul">
-       <li><span class="comCat">phpMussel用のツール、リソース、など。</span>
-         <ul class="comSub">
-           <li>{{Links.phpMussel.Issues}} – phpMusselの問題ページ（サポート、​援助、​など）。</li>
-           <li>{{Links.phpMussel.SigTool}} – ClamAVシグネチャ・データベースを使用してphpMusselシグネチャ・ファイルを作成します。</li>
-           <li>{{Links.phpMussel.Extras}} – その他エキストラ。</li>
-         </ul>
-       </li>
-       <li><span class="comCat">ClamAV用のツール、リソース、など。</span>
-         <ul class="comSub">
-           <li>{{Links.ClamavNet}} – ClamAVホームページ（ClamAV®は、​トロイの木馬、​ウイルス、​マルウェア、​とその他の脅威を検出するための、​オープンソースのウイルス対策エンジンです）。</li>
-           <li>{{Links.SecuriteInfo}} – ClamAVの補足的なシグネチャを提供する、​コンピュータセキュリティ会社。</li>
-           <li>{{Links.Sanesecurity}} – ClamAVの補足的なシグネチャを提供する、​コンピュータセキュリティ会社。</li>
-           <li>{{Links.Malware Expert}} – ClamAV用の補足シグネチャとModSecurity用の補足規則を提供します。</li>
-         </ul>
-       </li>
-       <li><span class="comCat">グループ、フォーラム、コミュニティ、など。</span>
-         <ul class="comSub">
-           <li>{{Links.PHP.Earth.Facebook}} – ＰＨＰ学習リソースとディスカッション。</li>
-           <li>{{Links.MalwareTips}} – 便利なマルウェア対策ディスカッションフォーラム。</li>
-         </ul>
-       </li>
-       <li><span class="comCat">その他の便利なツール、リソース、サービス、など。</span>
-         <ul class="comSub">
-           <li>{{Links.PhishTank}} – phpMussel URLスキャナーで利用される、​フィッシング詐欺データベース。</li>
-           <li>{{Links.VirusTotal}} – VirusTotalは、​疑わしいファイルやURLを分析するための無料サービスです。</li>
-           <li>{{Links.Hybrid Analysis}} – Hybrid Analysisは、​{{Links.Payload Security}}が提供する無料のマルウェア分析サービスで。</li>
-           <li>{{Links.Malwarebytes}} – コンピュータのマルウェア対策専門家。</li>
-         </ul>
-       </li>
-       <li><span class="comCat">情報および学習用リソース。</span>
-         <ul class="comSub">
-           <li>{{Links.PHP.Earth.Website}} – ＰＨＰ学習リソースとディスカッション。</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">脆弱性チャート</a> – さまざまなパッケージの安全で安全でないバージョンを一覧表示する（ＰＨＰ、ＨＨＶＭ、等）。</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">互換性チャート</a> – さまざまなパッケージの互換性情報を一覧表示します（CIDRAM、phpMussel、等）。</li>
-         </ul>
-       </li>
-     </ul>
-
-msg_template_2fa: |
- <center><p>こんにちは、​%1$s。<br />
- <br />
- phpMusselフロントエンドにログインするための２ＦＡコード：</p>
- <h1>%2$s</h1>
- <p>このコードの有効期限は１０分です。</p></center>
-msg_subject_2fa: "２ＦＡ（二要素認証）"
