@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.03.28).
+ * This file: Front-end handler (last modified: 2022.03.30).
  */
 
 namespace phpMussel\FrontEnd;
@@ -2435,14 +2435,12 @@ class FrontEnd
      */
     private function twoFactorNumber(): int
     {
-        if (function_exists('random_int')) {
-            try {
-                $Key = random_int($this->TwoFactorMinInt, $this->TwoFactorMaxInt);
-            } catch (\Exception $e) {
-                $Key = rand($this->TwoFactorMinInt, $this->TwoFactorMaxInt);
-            }
+        try {
+            $Key = random_int($this->TwoFactorMinInt, $this->TwoFactorMaxInt);
+        } catch (\Exception $e) {
+            $Key = rand($this->TwoFactorMinInt, $this->TwoFactorMaxInt);
         }
-        return isset($Key) ? $Key : rand($this->TwoFactorMinInt, $this->TwoFactorMaxInt);
+        return $Key;
     }
 
     /**
@@ -2602,35 +2600,23 @@ class FrontEnd
     private function generateSalt(): string
     {
         $Salt = '';
-        if (function_exists('random_int')) {
-            try {
-                $Length = random_int($this->SaltMinLen, $this->SaltMaxLen);
-            } catch (\Exception $e) {
-                $Length = rand($this->SaltMinLen, $this->SaltMaxLen);
-            }
-        } else {
+        try {
+            $Length = random_int($this->SaltMinLen, $this->SaltMaxLen);
+        } catch (\Exception $e) {
             $Length = rand($this->SaltMinLen, $this->SaltMaxLen);
         }
-        if (function_exists('random_bytes')) {
+        try {
+            $Salt = random_bytes($Length);
+        } catch (\Exception $e) {
+            $Salt = '';
+        }
+        if (!strlen($Salt)) {
             try {
-                $Salt = random_bytes($Length);
+                for ($Index = 0; $Index < $Length; $Index++) {
+                    $Salt .= chr(random_int($this->SaltMinChr, $this->SaltMaxChr));
+                }
             } catch (\Exception $e) {
                 $Salt = '';
-            }
-        }
-        if (empty($Salt)) {
-            if (function_exists('random_int')) {
-                try {
-                    for ($Index = 0; $Index < $Length; $Index++) {
-                        $Salt .= chr(random_int($this->SaltMinChr, $this->SaltMaxChr));
-                    }
-                } catch (\Exception $e) {
-                    $Salt = '';
-                    for ($Index = 0; $Index < $Length; $Index++) {
-                        $Salt .= chr(rand($this->SaltMinChr, $this->SaltMaxChr));
-                    }
-                }
-            } else {
                 for ($Index = 0; $Index < $Length; $Index++) {
                     $Salt .= chr(rand($this->SaltMinChr, $this->SaltMaxChr));
                 }
