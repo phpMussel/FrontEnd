@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2022.03.25).
+# This file: Norwegian language data (last modified: 2022.03.30).
 ##/
 
 config_core: "Generell konfigurasjon (enhver kjernekonfigurasjon som ikke tilhører andre kategorier)."
@@ -19,7 +19,7 @@ config_core_hide_version: "Skjul versjoninformasjon fra logger og sideutdata? Tr
 config_core_ipaddr: "Hvor finner jeg IP-adressen til å koble til forespørsler? (Nyttig for tjenester som Cloudflare og så videre). Standardverdi = REMOTE_ADDR. ADVARSEL: Ikke endre dette med mindre du vet hva du gjør!"
 config_core_lang: "Angi standardspråket for phpMussel."
 config_core_lang_override: "Lokaliser i henhold til HTTP_ACCEPT_LANGUAGE når det er mulig? True = Ja [Standardverdi]; False = Nei."
-config_core_log_rotation_action: "Loggrotasjon begrenser antall loggfiler som bør eksistere til enhver tid. Når nye loggfiler blir opprettet, hvis det totale antall loggfiler overskrider den angitte grensen, den angitte handlingen vil bli utført. Du kan angi ønsket handling her. Delete = Slett de eldste loggfiler, til grensen ikke overskrides. Archive = Først arkiver, og deretter slett de eldste loggfiler, til grensen ikke overskrides."
+config_core_log_rotation_action: "Loggrotasjon begrenser antall loggfiler som bør eksistere til enhver tid. Når nye loggfiler blir opprettet, hvis det totale antall loggfiler overskrider den angitte grensen, den angitte handlingen vil bli utført. Du kan angi ønsket handling her."
 config_core_log_rotation_limit: "Loggrotasjon begrenser antall loggfiler som bør eksistere til enhver tid. Når nye loggfiler blir opprettet, hvis det totale antall loggfiler overskrider den angitte grensen, den angitte handlingen vil bli utført. Du kan angi ønsket grense her. En verdi på 0 deaktiverer loggrotasjon."
 config_core_maintenance_mode: "Aktiver vedlikeholdsmodus? True = Ja; False = Nei [Standardverdi]. Deaktiverer alt annet enn frontenden. Noen ganger nyttig for når du oppdaterer CMS, rammeverker, osv."
 config_core_scan_cache_expiry: "Hvor lenge skal phpMussel cacher resultatene av skanning? Verdi er antall sekunder å cache resultatene av skanning etter. Standard er 21600 sekunder (6 timer); En verdi på 0 vil deaktivere hurtigbufring av resultatene av skanning."
@@ -123,6 +123,8 @@ field_false: "False (Falsk)"
 field_file: "Fil"
 field_latest_version: "Siste Versjon"
 field_log_in: "Logg Inn"
+field_log_rotation_archive: "Først arkiver, og deretter slett de eldste loggfiler, til grensen ikke overskrides."
+field_log_rotation_delete: "Slett de eldste loggfiler, til grensen ikke overskrides."
 field_more_fields: "Flere Felt"
 field_ok: "OK"
 field_options: "Alternativer"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2022.03.25).
+# This file: Swedish language data (last modified: 2022.03.30).
 ##/
 
 config_core: "Allmän konfiguration (alla kärnkonfigurationer som inte tillhör andra kategorier)."
@@ -19,7 +19,7 @@ config_core_hide_version: "Dölj versionsinformation från loggar och sidoutgån
 config_core_ipaddr: "Var hittar du IP-adressen för anslutningsförfrågningar? (Användbar för tjänster som Cloudflare och liknande). Standard = REMOTE_ADDR. VARNING: Ändra inte detta om du inte vet vad du gör!"
 config_core_lang: "Ange standardspråk för phpMussel."
 config_core_lang_override: "Lokalisera enligt HTTP_ACCEPT_LANGUAGE när det är möjligt? True = Ja [Standard]; False = Nej."
-config_core_log_rotation_action: "Loggrotering begränsar antalet loggfiler som ska existera vid en gång. När nya loggfiler skapas, om det totala antalet loggfiler överstiger den angivna gränsen, den angivna åtgärden kommer att utföras. Du kan ange önskad åtgärd här. Delete = Radera de äldsta loggfilerna, tills gränsen inte längre överskrids. Archive = För det första, arkivera, och sedan radera de äldsta loggfilerna, tills gränsen inte längre överskrids."
+config_core_log_rotation_action: "Loggrotering begränsar antalet loggfiler som ska existera vid en gång. När nya loggfiler skapas, om det totala antalet loggfiler överstiger den angivna gränsen, den angivna åtgärden kommer att utföras. Du kan ange önskad åtgärd här."
 config_core_log_rotation_limit: "Loggrotering begränsar antalet loggfiler som ska existera vid en gång. När nya loggfiler skapas, om det totala antalet loggfiler överstiger den angivna gränsen, den angivna åtgärden kommer att utföras. Du kan ange önskad gräns här. Ett värde på 0 kommer att inaktivera loggroteringen."
 config_core_maintenance_mode: "Aktivera underhållsläge? True = Ja; False = Nej [Standard]. Inaktiverar allt annat än front-end. Ibland användbar för när du uppdaterar dina CMS, frameworks, osv."
 config_core_scan_cache_expiry: "Hur länge ska phpMussel cache resultatet av skanningen? Värdet är antalet sekunder att cache resultatet av skanningen. Standard är 21600 sekunder (6 timmar); Ett värde på 0 inaktiverar cachningsresultaten för skanningen."
@@ -123,6 +123,8 @@ field_false: "False (Falsk)"
 field_file: "Fil"
 field_latest_version: "Senaste versionen"
 field_log_in: "Logga in"
+field_log_rotation_archive: "För det första, arkivera, och sedan radera de äldsta loggfilerna, tills gränsen inte längre överskrids."
+field_log_rotation_delete: "Radera de äldsta loggfilerna, tills gränsen inte längre överskrids."
 field_more_fields: "Fler Fält"
 field_ok: "OK"
 field_options: "Alternativ"

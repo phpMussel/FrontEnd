@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2022.03.25).
+# This file: English language data (last modified: 2022.03.30).
 ##/
 
 config_core: "General configuration (any core configuration not belonging to other categories)."
@@ -19,7 +19,7 @@ config_core_hide_version: "Hide version information from logs and page output? T
 config_core_ipaddr: "Where to find the IP address of connecting requests? (Useful for services such as Cloudflare and the likes). Default = REMOTE_ADDR. WARNING: Don't change this unless you know what you're doing!"
 config_core_lang: "Specify the default language for phpMussel."
 config_core_lang_override: "Localise according to HTTP_ACCEPT_LANGUAGE whenever possible? True = Yes [Default]; False = No."
-config_core_log_rotation_action: "Log rotation limits the number of logfiles that should exist at any one time. When new logfiles are created, if the total number of logfiles exceeds the specified limit, the specified action will be performed. You can specify the desired action here. Delete = Delete the oldest logfiles, until the limit is no longer exceeded. Archive = Firstly archive, and then delete the oldest logfiles, until the limit is no longer exceeded."
+config_core_log_rotation_action: "Log rotation limits the number of logfiles that should exist at any one time. When new logfiles are created, if the total number of logfiles exceeds the specified limit, the specified action will be performed. You can specify the desired action here."
 config_core_log_rotation_limit: "Log rotation limits the number of logfiles that should exist at any one time. When new logfiles are created, if the total number of logfiles exceeds the specified limit, the specified action will be performed. You can specify the desired limit here. A value of 0 will disable log rotation."
 config_core_maintenance_mode: "Enable maintenance mode? True = Yes; False = No [Default]. Disables everything other than the front-end. Sometimes useful for when updating your CMS, frameworks, etc."
 config_core_scan_cache_expiry: "For how long should phpMussel cache the results of scanning? Value is the number of seconds to cache the results of scanning for. Default is 21600 seconds (6 hours); A value of 0 will disable caching the results of scanning."
@@ -123,6 +123,8 @@ field_false: "False"
 field_file: "File"
 field_latest_version: "Latest Version"
 field_log_in: "Log In"
+field_log_rotation_archive: "Firstly archive, and then delete the oldest logfiles, until the limit is no longer exceeded."
+field_log_rotation_delete: "Delete the oldest logfiles, until the limit is no longer exceeded."
 field_more_fields: "More Fields"
 field_ok: "OK"
 field_options: "Options"

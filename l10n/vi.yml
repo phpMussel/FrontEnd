@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2022.03.25).
+# This file: Vietnamese language data (last modified: 2022.03.30).
 ##/
 
 config_core: "Cấu hình chung (bất kỳ cấu hình cốt lõi nào không thuộc về các loại khác)."
@@ -19,7 +19,7 @@ config_core_hide_version: "Ẩn thông tin phiên bản từ nhật ký và đ�
 config_core_ipaddr: "Nơi để tìm thấy các địa chỉ IP của các yêu cầu kết nối? (Hữu ích cho các dịch vụ như thế Cloudflare và vv). Mặc định = REMOTE_ADDR. CẢNH BÁO: Không thay đổi này trừ khi bạn biết những gì bạn đang làm!"
 config_core_lang: "Xác định tiếng mặc định cho phpMussel."
 config_core_lang_override: "Bản địa hóa theo HTTP_ACCEPT_LANGUAGE bất cứ khi nào có thể? True = Vâng [Mặc định]; False = Không."
-config_core_log_rotation_action: "Xoay vòng nhật ký giới hạn số lượng của tập tin nhật ký có cần tồn tại cùng một lúc. Khi các tập tin nhật ký mới được tạo, nếu tổng số lượng tập tin nhật ký vượt quá giới hạn được chỉ định, hành động được chỉ định sẽ được thực hiện. Bạn có thể chỉ định hành động mong muốn tại đây. Delete = Xóa các tập tin nhật ký cũ nhất, cho đến khi giới hạn không còn vượt quá. Archive = Trước tiên lưu trữ, và sau đó xóa các tập tin nhật ký cũ nhất, cho đến khi giới hạn không còn vượt quá."
+config_core_log_rotation_action: "Xoay vòng nhật ký giới hạn số lượng của tập tin nhật ký có cần tồn tại cùng một lúc. Khi các tập tin nhật ký mới được tạo, nếu tổng số lượng tập tin nhật ký vượt quá giới hạn được chỉ định, hành động được chỉ định sẽ được thực hiện. Bạn có thể chỉ định hành động mong muốn tại đây."
 config_core_log_rotation_limit: "Xoay vòng nhật ký giới hạn số lượng của tập tin nhật ký có cần tồn tại cùng một lúc. Khi các tập tin nhật ký mới được tạo, nếu tổng số lượng tập tin nhật ký vượt quá giới hạn được chỉ định, hành động được chỉ định sẽ được thực hiện. Bạn có thể chỉ định giới hạn mong muốn tại đây. Giá trị 0 sẽ vô hiệu hóa xoay vòng nhật ký."
 config_core_maintenance_mode: "Bật chế độ bảo trì? True = Vâng; False = Không [Mặc định]. Vô hiệu hoá mọi thứ khác ngoài các front-end. Đôi khi hữu ích khi cập nhật CMS, framework của bạn, vv."
 config_core_scan_cache_expiry: "Trong bao lâu phpMussel nên nhớ đệm kết quả quét? Giá trị là số giây để nhớ đệm các kết quả quét cho. Mặc định là 21600 giây (6 giờ); Giá trị 0 sẽ vô hiệu hóa bộ nhớ đệm kết quả quét."
@@ -123,6 +123,8 @@ field_false: "False (Sai)"
 field_file: "Tập Tin"
 field_latest_version: "Phiên bản mới nhất"
 field_log_in: "Đăng Nhập"
+field_log_rotation_archive: "Trước tiên lưu trữ, và sau đó xóa các tập tin nhật ký cũ nhất, cho đến khi giới hạn không còn vượt quá."
+field_log_rotation_delete: "Xóa các tập tin nhật ký cũ nhất, cho đến khi giới hạn không còn vượt quá."
 field_more_fields: "Thêm Lĩnh Vực"
 field_ok: "OK"
 field_options: "Tùy Chọn"

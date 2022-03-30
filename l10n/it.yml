@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2022.03.25).
+# This file: Italian language data (last modified: 2022.03.30).
 ##/
 
 config_core: "Configurazione generale (qualsiasi configurazione di base non appartenente ad altre categorie)."
@@ -19,7 +19,7 @@ config_core_hide_version: "Nascondi informazioni sulla versione dai registri e l
 config_core_ipaddr: "Dove trovare l'indirizzo IP di collegamento richiesta? (Utile per servizi come Cloudflare e simili). Predefinito = REMOTE_ADDR. AVVISO: Non modificare questa se non sai quello che stai facendo!"
 config_core_lang: "Specifica la lingua predefinita per phpMussel."
 config_core_lang_override: "Localizzare secondo HTTP_ACCEPT_LANGUAGE quando possibile? True = Sì [Predefinito]; False = No."
-config_core_log_rotation_action: "La rotazione dei log limita il numero di file di log che dovrebbero esistere in qualsiasi momento. Quando vengono creati nuovi file di log, se il numero totale di file di log supera il limite specificato, verrà eseguita l'azione specificata. Qui puoi specificare l'azione desiderato. Delete = Elimina i file di log più vecchi, finché il limite non viene più superato. Archive = In primo luogo archiviare e quindi, eliminare i file di log più vecchi, finché il limite non viene più superato."
+config_core_log_rotation_action: "La rotazione dei log limita il numero di file di log che dovrebbero esistere in qualsiasi momento. Quando vengono creati nuovi file di log, se il numero totale di file di log supera il limite specificato, verrà eseguita l'azione specificata. Qui puoi specificare l'azione desiderato."
 config_core_log_rotation_limit: "La rotazione dei log limita il numero di file di log che dovrebbero esistere in qualsiasi momento. Quando vengono creati nuovi file di log, se il numero totale di file di log supera il limite specificato, verrà eseguita l'azione specificata. Qui puoi specificare il limite desiderato. Un valore di 0 disabiliterà la rotazione dei log."
 config_core_maintenance_mode: "Abilita la modalità di manutenzione? True = Sì; False = No [Predefinito]. Disattiva tutto tranne il front-end. A volte utile per l'aggiornamento del CMS, dei framework, ecc."
 config_core_scan_cache_expiry: "Per quanto tempo deve phpMussel cache i risultati della scansione? Il valore è il numero di secondi per memorizzare nella cache i risultati della scansione per. Predefinito valore è 21600 secondi (6 ore); Un valore pari a 0 disabilita il caching dei risultati di scansione."
@@ -123,6 +123,8 @@ field_false: "False (Falso)"
 field_file: "File"
 field_latest_version: "Ultima Versione"
 field_log_in: "Accedi"
+field_log_rotation_archive: "In primo luogo archiviare e quindi, eliminare i file di log più vecchi, finché il limite non viene più superato."
+field_log_rotation_delete: "Elimina i file di log più vecchi, finché il limite non viene più superato."
 field_more_fields: "Più Campi"
 field_ok: "OK"
 field_options: "Opzioni"

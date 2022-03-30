@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2022.03.25).
+# This file: Polish language data (last modified: 2022.03.30).
 ##/
 
 config_core: "Ogólna konfiguracja (dowolna konfiguracja podstawowa nienależąca do innych kategorii)."
@@ -19,7 +19,7 @@ config_core_hide_version: "Ukryć informacje o wersji z dzienników i danych wyj
 config_core_ipaddr: "Gdzie znaleźć adres IP żądań połączenia? (Przydatny w przypadku usług takich jak Cloudflare i podobnych). Domyślna = REMOTE_ADDR. OSTRZEŻENIE: Nie zmieniaj tego, jeśli nie wiesz, co robisz!"
 config_core_lang: "Określ domyślny język dla phpMussel."
 config_core_lang_override: "Kiedy to możliwe, lokalizuj według HTTP_ACCEPT_LANGUAGE? True (Prawdziwe) = Tak [Domyślna]; False (Fałszywy) = Nie."
-config_core_log_rotation_action: "Rotacja dziennika ogranicza liczbę plików dziennika, które powinny istnieć jednocześnie. Po utworzeniu nowych plików dziennika, jeśli całkowita liczba plików dziennika przekroczy określony limit, zostanie wykonana określona akcja. Tutaj możesz określić żądaną akcję. Delete = Usuń najstarsze pliki dziennika, dopóki limit nie zostanie przekroczony. Archive = Najpierw zarchiwizuj, a następnie usuń najstarsze pliki dziennika, dopóki limit nie zostanie przekroczony."
+config_core_log_rotation_action: "Rotacja dziennika ogranicza liczbę plików dziennika, które powinny istnieć jednocześnie. Po utworzeniu nowych plików dziennika, jeśli całkowita liczba plików dziennika przekroczy określony limit, zostanie wykonana określona akcja. Tutaj możesz określić żądaną akcję."
 config_core_log_rotation_limit: "Rotacja dziennika ogranicza liczbę plików dziennika, które powinny istnieć jednocześnie. Po utworzeniu nowych plików dziennika, jeśli całkowita liczba plików dziennika przekroczy określony limit, zostanie wykonana określona akcja. Tutaj możesz określić żądany limit. Wartość 0 spowoduje wyłączenie rotacja dziennika."
 config_core_maintenance_mode: "Włączyć tryb konserwacji? True (Prawdziwe) = Tak; False (Fałszywy) = Nie [Domyślna]. Wyłącza wszystko oprócz interfejsu użytkownika. Czasami przydatne w przypadku aktualizacji CMS, frameworków, itp."
 config_core_scan_cache_expiry: "Jak długo phpMussel powinien buforować wyniki skanowania? Wartość to liczba sekund, przez którą buforowane są wyniki skanowania. Domyślnie 21600 sekund (6 godzin); Wartość 0 spowoduje wyłączenie buforowania wyników skanowania."
@@ -123,6 +123,8 @@ field_false: "False (Fałszywy)"
 field_file: "Plik"
 field_latest_version: "Ostatnia Wersja"
 field_log_in: "Zaloguj sie"
+field_log_rotation_archive: "Najpierw zarchiwizuj, a następnie usuń najstarsze pliki dziennika, dopóki limit nie zostanie przekroczony."
+field_log_rotation_delete: "Usuń najstarsze pliki dziennika, dopóki limit nie zostanie przekroczony."
 field_more_fields: "Więcej pól"
 field_ok: "OK"
 field_options: "Opcje"

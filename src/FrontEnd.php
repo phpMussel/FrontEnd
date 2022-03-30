@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.03.24).
+ * This file: Front-end handler (last modified: 2022.03.28).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1415,10 +1415,7 @@ class FrontEnd
 
                     /** Provide hints, useful for users to better understand the directive at hand. */
                     if (!empty($DirValue['hints'])) {
-                        $ThisDir['Hints'] = $this->Loader->L10N->Data[$DirValue['hints']] ?? $DirValue['hints'];
-                        if (!is_array($ThisDir['Hints'])) {
-                            $ThisDir['Hints'] = [$ThisDir['Hints']];
-                        }
+                        $ThisDir['Hints'] = $this->arrayFromL10NDataToArray($DirValue['hints']);
                         foreach ($ThisDir['Hints'] as $ThisDir['HintKey'] => $ThisDir['HintValue']) {
                             if (is_int($ThisDir['HintKey'])) {
                                 $ThisDir['FieldOut'] .= sprintf("\n<br /><br />%s", $ThisDir['HintValue']);
@@ -2646,15 +2643,45 @@ class FrontEnd
      * Replaces labels with corresponding L10N data (if there's any).
      *
      * @param string $Label The actual label.
-     * @return string The replaced label.
+     * @return void
      */
     private function replaceLabelWithL10N(string &$Label): void
     {
         foreach (['', 'response_', 'label_', 'field_'] as $Prefix) {
-            if (array_key_exists($Prefix . $Label, $this->Loader->L10N->Data)) {
+            if (isset($this->Loader->L10N->Data[$Prefix . $Label])) {
                 $Label = $this->Loader->L10N->getString($Prefix . $Label);
                 return;
             }
         }
+    }
+
+    /**
+     * Parses an array of L10N data references from L10N data to an array.
+     *
+     * @param string|array $References The L10N data references.
+     * @return array An array of L10N data.
+     */
+    private function arrayFromL10NDataToArray($References): array
+    {
+        if (!is_array($References)) {
+            $References = [$References];
+        }
+        $Out = [];
+        foreach ($References as $Reference) {
+            if (isset($this->Loader->L10N->Data[$Reference])) {
+                $Reference = $this->Loader->L10N->Data[$Reference];
+            }
+            if (!is_array($Reference)) {
+                $Reference = [$Reference];
+            }
+            foreach ($Reference as $Key => $Value) {
+                if (is_int($Key)) {
+                    $Out[] = $Value;
+                    continue;
+                }
+                $Out[$Key] = $Value;
+            }
+        }
+        return $Out;
     }
 }

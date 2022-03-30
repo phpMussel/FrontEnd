@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2022.03.25).
+# This file: Latvian language data (last modified: 2022.03.30).
 ##/
 
 config_core: "Vispārējā konfigurācija (jebkura pamata konfigurācija, kas nepieder citām kategorijām)."
@@ -19,7 +19,7 @@ config_core_hide_version: "Vai paslēpt versiju informāciju no logs un lapas iz
 config_core_ipaddr: "Kur atrast savienojošo pieprasījumu IP adresi? (Noderīga tādiem pakalpojumiem kā Cloudflare un tamlīdzīgi). Noklusējuma = REMOTE_ADDR. BRĪDINĀJUMS: Nemainiet to, ja vien nezināt, ko darāt!"
 config_core_lang: "Norādiet phpMussel noklusējuma valodu."
 config_core_lang_override: "Ja iespējams, lokalizēt saskaņā ar HTTP_ACCEPT_LANGUAGE? True (Patiess) = Jā [Noklusējuma]; False (Nepatiess) = Nē."
-config_core_log_rotation_action: "Log rotācija ierobežo to logfailu skaitu, kuriem vajadzētu pastāvēt vienlaikus. Veidojot jaunus logfailus, ja kopējais logfailu skaits pārsniedz noteikto limitu, tiks veikta norādītā darbība. Šeit varat norādīt vēlamo darbību. Delete = Izdzēsiet vecākos logfailus, līdz ierobežojums vairs netiek pārsniegts. Archive = Vispirms arhivējiet un pēc tam izdzēsiet vecākos logfailus, līdz ierobežojums vairs netiek pārsniegts."
+config_core_log_rotation_action: "Log rotācija ierobežo to logfailu skaitu, kuriem vajadzētu pastāvēt vienlaikus. Veidojot jaunus logfailus, ja kopējais logfailu skaits pārsniedz noteikto limitu, tiks veikta norādītā darbība. Šeit varat norādīt vēlamo darbību."
 config_core_log_rotation_limit: "Log rotācija ierobežo to logfailu skaitu, kuriem vajadzētu pastāvēt vienlaikus. Veidojot jaunus logfailus, ja kopējais logfailu skaits pārsniedz noteikto limitu, tiks veikta norādītā darbība. Šeit varat norādīt vēlamo ierobežojumu. Ja vērtība ir 0, tiks atspējota log rotācija."
 config_core_maintenance_mode: "Vai iespējot apkopes režīmu? True (Patiess) = Jā; False (Nepatiess) = Nē [Noklusējuma]. Jūs joprojām varat administrēt, bet viss pārējais ir atspējots. Tas dažreiz var būt noderīgs, atjaunojot CMS, frameworks, utt."
 config_core_scan_cache_expiry: "Cik ilgi skenēšanas rezultāti ir jāglabā kešatmiņā? Vērtība ir sekunžu skaits, kurā skenēšanas rezultāti tiek saglabāti kešatmiņā. Noklusējums ir 21600 sekundes (6 stundas); Ja vērtība būs 0, skenēšanas rezultāti netiks saglabāti kešatmiņā."
@@ -123,6 +123,8 @@ field_false: "False (Nepatiess)"
 field_file: "Fails"
 field_latest_version: "Jaunākā Versija"
 field_log_in: "Ielogoties"
+field_log_rotation_archive: "Vispirms arhivējiet un pēc tam izdzēsiet vecākos logfailus, līdz ierobežojums vairs netiek pārsniegts."
+field_log_rotation_delete: "Izdzēsiet vecākos logfailus, līdz ierobežojums vairs netiek pārsniegts."
 field_more_fields: "Vairāk Lauku"
 field_ok: "Labi"
 field_options: "Opcijas"
