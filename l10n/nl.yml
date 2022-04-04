@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2022.03.30).
+# This file: Dutch language data (last modified: 2022.04.02).
 ##/
 
 config_core: "Algemene configuratie (elke kernconfiguratie die niet tot andere categorieën behoort)."
@@ -201,6 +201,7 @@ label_default: "Standaard"
 label_events: "Scan gebeurtenissen"
 label_expires: "Verloopt:"
 label_extension: "Extensie"
+label_external: "Externe"
 label_flagged: "Objecten gemarkeerd"
 label_installed_available: "Geïnstalleerd/Beschikbaar"
 label_is_available: "%s is beschikbaar (%s)."

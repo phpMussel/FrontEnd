@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2022.03.30).
+# This file: Korean language data (last modified: 2022.04.02).
 ##/
 
 config_core: "일반 설정 (다른 카테고리에 속하지 않는 설정)."
@@ -199,6 +199,7 @@ label_default: "기본값"
 label_events: "스캔 이벤트"
 label_expires: "만료일\_:"
 label_extension: "확장"
+label_external: "외부"
 label_flagged: "신고된 개체"
 label_installed_available: "설치되어있다 / 이용 가능"
 label_is_available: "%s를 사용할 수 있습니다 (%s)."

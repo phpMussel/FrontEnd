@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2022.03.30).
+# This file: Arabic language data (last modified: 2022.04.02).
 ##/
 
 config_core: "التكوين العام (أي التكوين الأساسي لا ينتمي إلى فئات أخرى)."
@@ -199,6 +199,7 @@ label_default: "الافتراضي"
 label_events: "مسح الأحداث"
 label_expires: "تنتهي:"
 label_extension: "التمديد"
+label_external: "خارجي"
 label_flagged: "تم الإبلاغ عن الكائنات"
 label_installed_available: "المثبتة/متاح"
 label_is_available: "%s متاح (%s)."

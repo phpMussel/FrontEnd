@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2022.03.30).
+# This file: Latvian language data (last modified: 2022.04.02).
 ##/
 
 config_core: "Vispārējā konfigurācija (jebkura pamata konfigurācija, kas nepieder citām kategorijām)."
@@ -202,6 +202,7 @@ label_default: "Noklusējuma"
 label_events: "Skenēšanas notikumu skaits"
 label_expires: "Derīguma termiņš:"
 label_extension: "Paplašinājums"
+label_external: "Ārējā"
 label_flagged: "Atzīmēto objektu skaits"
 label_installed_available: "Instalēts/Pieejams"
 label_is_available: "%s ir pieejams (%s)."

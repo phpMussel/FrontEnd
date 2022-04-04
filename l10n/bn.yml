@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bangla language data (last modified: 2022.03.30).
+# This file: Bangla language data (last modified: 2022.04.02).
 ##/
 
 config_core: "সাধারণ কনফিগারেশন (অন্য কোনও বিভাগের অন্তর্ভুক্ত নয় এমন কোনও কনফিগারেশন)।"
@@ -199,6 +199,7 @@ label_default: "ডিফল্ট"
 label_events: "স্ক্যান ঘটনা"
 label_expires: "মেয়াদ শেষ:"
 label_extension: "এক্সটেনশন"
+label_external: "এক্সটার্নাল"
 label_flagged: "অবজেক্টস পতাকাঙ্কিত"
 label_installed_available: "ইনস্টল করা হয়েছে / সহজলভ্য"
 label_is_available: "%s পাওয়া যায় (%s)।"

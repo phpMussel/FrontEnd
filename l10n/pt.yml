@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese language data (last modified: 2022.03.30).
+# This file: Portuguese language data (last modified: 2022.04.02).
 ##/
 
 config_core: "Configuração geral (qualquer configuração principal que não pertença a outras categorias)."
@@ -201,6 +201,7 @@ label_default: "Padrão"
 label_events: "Eventos de análise"
 label_expires: "Expirará:"
 label_extension: "Extensão"
+label_external: "Externo"
 label_flagged: "Objetos marcados"
 label_installed_available: "Instalado/Disponível"
 label_is_available: "%s está disponível (%s)."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (simplified) language data (last modified: 2022.03.30).
+# This file: Chinese (simplified) language data (last modified: 2022.04.02).
 ##/
 
 config_core: "基本配置（任何不属于其他类别的核心配置）。"
@@ -200,6 +200,7 @@ label_default: "标准"
 label_events: "扫描事件"
 label_expires: "过期："
 label_extension: "扩展"
+label_external: "外部"
 label_flagged: "对象已标记"
 label_installed_available: "已安装/可用"
 label_is_available: "%s可用（%s）。"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2022.03.30).
+# This file: Turkish language data (last modified: 2022.04.02).
 ##/
 
 config_core: "Genel yapılandırma (diğer kategorilere ait olmayan herhangi bir çekirdek yapılandırma)."
@@ -199,6 +199,7 @@ label_default: "Varsayılan"
 label_events: "Tara olayları"
 label_expires: "Son Geçerlilik Tarihi:"
 label_extension: "Uzantısı"
+label_external: "Dış"
 label_flagged: "İşaretlenen nesneler"
 label_installed_available: "Yüklü/Mevcut"
 label_is_available: "%s mevcuttur (%s)."

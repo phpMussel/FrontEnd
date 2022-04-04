@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2022.03.30).
+# This file: Norwegian language data (last modified: 2022.04.02).
 ##/
 
 config_core: "Generell konfigurasjon (enhver kjernekonfigurasjon som ikke tilhører andre kategorier)."
@@ -199,6 +199,7 @@ label_default: "Standardverdi"
 label_events: "Skann hendelser"
 label_expires: "Utgår:"
 label_extension: "Forlengelse"
+label_external: "Ekstern"
 label_flagged: "Objekter flagget"
 label_installed_available: "Installert/Tilgjengelig"
 label_is_available: "%s er tilgjengelig (%s)."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Tamil language data (last modified: 2022.03.30).
+# This file: Tamil language data (last modified: 2022.04.02).
 ##/
 
 config_core: "பொதுவான உள்ளமைவு (மற்ற வகைகளுக்கு சொந்தமில்லாத உள்ளமைவு)."
@@ -201,6 +201,7 @@ label_default: "இயல்புநிலை"
 label_events: "நிகழ்வுகளை ஸ்கேன் செய்யுங்கள்"
 label_expires: "காலாவதியாகிறது:"
 label_extension: "நீட்டிப்பு"
+label_external: "வெளிப்புற"
 label_flagged: "பொருள்கள் கொடியிடப்பட்டுள்ளன"
 label_installed_available: "நிறுவப்பட்ட/கிடைக்கும்"
 label_is_available: "%s கிடைக்கிறது (%s)."

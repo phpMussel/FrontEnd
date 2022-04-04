@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hindi language data (last modified: 2022.03.30).
+# This file: Hindi language data (last modified: 2022.04.02).
 ##/
 
 config_core: "सामान्य कॉन्फ़िगरेशन (कॉन्फ़िगरेशन जो अन्य श्रेणियों से संबंधित नहीं है)।"
@@ -201,6 +201,7 @@ label_default: "डिफ़ॉल्ट"
 label_events: "स्कैन घटनाओं"
 label_expires: "समय समाप्ति:"
 label_extension: "विस्तार"
+label_external: "बाहरी"
 label_flagged: "फ़्लैग किए गए ऑब्जेक्ट"
 label_installed_available: "स्थापित/उपलब्ध है"
 label_is_available: "%s उपलब्ध है (%s)।"

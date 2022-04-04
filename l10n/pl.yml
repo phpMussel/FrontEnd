@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2022.03.30).
+# This file: Polish language data (last modified: 2022.04.02).
 ##/
 
 config_core: "Ogólna konfiguracja (dowolna konfiguracja podstawowa nienależąca do innych kategorii)."
@@ -202,6 +202,7 @@ label_default: "Domyślna"
 label_events: "Zdarzenia skanowania"
 label_expires: "Wygasa:"
 label_extension: "Rozszerzenie"
+label_external: "Zewnętrzny"
 label_flagged: "Obiekty oflagowane"
 label_installed_available: "Zainstalowano/Dostępny"
 label_is_available: "%s jest dostępny (%s)."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Thai language data (last modified: 2022.03.30).
+# This file: Thai language data (last modified: 2022.04.02).
 ##/
 
 config_core: "การกำหนดค่าทั่วไป (การกำหนดค่าใด ๆ ที่ไม่ได้อยู่ในหมวดหมู่อื่น)."
@@ -199,6 +199,7 @@ label_default: "ค่าเริ่มต้น"
 label_events: "สแกนเหตุการณ์"
 label_expires: "หมดอายุ:"
 label_extension: "ส่วนขยาย"
+label_external: "ภายนอก"
 label_flagged: "วัตถุที่ถูกตั้งค่าสถานะ"
 label_installed_available: "การติดตั้ง/ที่มีจำหน่าย"
 label_is_available: "%s สามารถใช้ได้ (%s)."

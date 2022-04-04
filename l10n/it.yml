@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2022.03.30).
+# This file: Italian language data (last modified: 2022.04.02).
 ##/
 
 config_core: "Configurazione generale (qualsiasi configurazione di base non appartenente ad altre categorie)."
@@ -199,6 +199,7 @@ label_default: "Predefinito"
 label_events: "Scansioni eventi"
 label_expires: "Scade:"
 label_extension: "Estensione"
+label_external: "Esterno"
 label_flagged: "Oggetti contrassegnati"
 label_installed_available: "Installato/Disponibile"
 label_is_available: "%s è disponibile (%s)."

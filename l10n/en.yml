@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2022.03.30).
+# This file: English language data (last modified: 2022.04.02).
 ##/
 
 config_core: "General configuration (any core configuration not belonging to other categories)."
@@ -201,6 +201,7 @@ label_default: "Default"
 label_events: "Scan events"
 label_expires: "Expires:"
 label_extension: "Extension"
+label_external: "External"
 label_flagged: "Objects flagged"
 label_installed_available: "Installed/Available"
 label_is_available: "%s is available (%s)."

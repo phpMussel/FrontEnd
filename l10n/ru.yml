@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Russian language data (last modified: 2022.03.30).
+# This file: Russian language data (last modified: 2022.04.02).
 ##/
 
 config_core: "Общая конфигурация (любая конфигурация ядра, не относящаяся к другим категориям)."
@@ -202,6 +202,7 @@ label_default: "Стандарт"
 label_events: "События сканирования"
 label_expires: "Истекает:"
 label_extension: "Расширение"
+label_external: "Внешняя"
 label_flagged: "Помеченные объекты"
 label_installed_available: "Установлено/Доступно"
 label_is_available: "%s доступен (%s)."

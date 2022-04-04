@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2022.03.30).
+# This file: Vietnamese language data (last modified: 2022.04.02).
 ##/
 
 config_core: "Cấu hình chung (bất kỳ cấu hình cốt lõi nào không thuộc về các loại khác)."
@@ -199,6 +199,7 @@ label_default: "Mặc định"
 label_events: "Sự kiện quét"
 label_expires: "Hết hạn:"
 label_extension: "Phần mở rộng"
+label_external: "Bên ngoài"
 label_flagged: "Đối tượng bị gắn cờ"
 label_installed_available: "Được cài đặt / Có sẵn"
 label_is_available: "%s có sẵn (%s)."

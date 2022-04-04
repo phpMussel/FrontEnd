@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data (last modified: 2022.03.30).
+# This file: German language data (last modified: 2022.04.02).
 ##/
 
 config_core: "Allgemeine Konfiguration (jede Kernkonfiguration, die nicht zu anderen Kategorien gehört)."
@@ -201,6 +201,7 @@ label_default: "Standardeinstellung"
 label_events: "Scan-Veranstaltungen"
 label_expires: "Läuft ab:"
 label_extension: "Erweiterung"
+label_external: "Externer"
 label_flagged: "Objekte markiert"
 label_installed_available: "Installiert/Verfügbar"
 label_is_available: "%s ist verfügbar (%s)."

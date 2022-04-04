@@ -141,3 +141,4 @@ input[type=text][pattern]:invalid:not(input[type=text]:placeholder-shown){backgr
 .showlink::before,.shownlink::before,.unshownlink::before{content:"➖";display:inline-block;margin-{FE_Align_Reverse}:6px}
 .shownlink::before{animation:forRotate .5s ease-out 1;animation-fill-mode:both}
 .unshownlink::before{animation:revRotate .5s ease-out 1;animation-fill-mode:both}
+.subNav{text-align:center;font-size:calc((10px * {magnification}) + .03vw);color:rgba(228,230,235,.6);text-shadow:2px 2px 1px rgba(255,255,255,.2)}

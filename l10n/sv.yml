@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2022.03.30).
+# This file: Swedish language data (last modified: 2022.04.02).
 ##/
 
 config_core: "Allmän konfiguration (alla kärnkonfigurationer som inte tillhör andra kategorier)."
@@ -199,6 +199,7 @@ label_default: "Standard"
 label_events: "Skanna händelser"
 label_expires: "Utgår:"
 label_extension: "Förlängning"
+label_external: "Extern"
 label_flagged: "Föremål flaggas"
 label_installed_available: "Installerad/Tillgängliga"
 label_is_available: "%s är tillgänglig (%s)."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2022.03.30).
+# This file: Japanese language data (last modified: 2022.04.02).
 ##/
 
 config_core: "全般的な設定（他のカテゴリに属さないの設定）。"
@@ -199,6 +199,7 @@ label_default: "デフォルト"
 label_events: "スキャンイベント"
 label_expires: "有効期限："
 label_extension: "エクステンション"
+label_external: "外部"
 label_flagged: "フラグされたオブジェクト"
 label_installed_available: "インストールされている/利用可能です"
 label_is_available: "%s は使用できます（%s）。"

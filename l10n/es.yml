@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2022.03.30).
+# This file: Spanish language data (last modified: 2022.04.02).
 ##/
 
 config_core: "Configuración general (cualquier configuración que no pertenezca a otras categorías)."
@@ -201,6 +201,7 @@ label_default: "Predefinido"
 label_events: "Escanear eventos"
 label_expires: "Expirará:"
 label_extension: "Extensión"
+label_external: "Externo"
 label_flagged: "Objetos marcados"
 label_installed_available: "Instalado/Disponible"
 label_is_available: "%s está disponible (%s)."

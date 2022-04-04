@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Urdu language data (last modified: 2022.03.30).
+# This file: Urdu language data (last modified: 2022.04.02).
 ##/
 
 config_core: "عام ترتیبات (کنفیگریشن جس کا تعلق دوسری قسموں سے نہیں ہے)."
@@ -198,6 +198,7 @@ label_default: "پہلے سے طے شدہ"
 label_events: "واقعات اسکین کریں"
 label_expires: "ختم ہو جاتی ہے:"
 label_extension: "کی توسیع"
+label_external: "بیرونی"
 label_flagged: "نشان لگا دیا گیا آبجیکٹ"
 label_installed_available: "انسٹال/دستیاب ہے"
 label_is_available: "%s دستیاب ہے (%s)."

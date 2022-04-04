@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2022.03.30).
+# This file: Indonesian language data (last modified: 2022.04.02).
 ##/
 
 config_core: "Konfigurasi umum (konfigurasi inti apapun yang bukan milik kategori lain)."
@@ -199,6 +199,7 @@ label_default: "Default"
 label_events: "Pindai acara"
 label_expires: "Kedaluwarsa:"
 label_extension: "Ekstensi"
+label_external: "Eksternal"
 label_flagged: "Obyek ditandai"
 label_installed_available: "Diinstal/Tersedia"
 label_is_available: "%s tersedia (%s)."
