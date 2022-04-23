@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.03.30).
+ * This file: Front-end handler (last modified: 2022.04.19).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1235,8 +1235,8 @@ class FrontEnd
                         }
                     }
                     if (isset($DirValue['choices'])) {
-                        if ($DirValue['type'] === 'checkbox') {
-                            if (isset($DirValue['labels']) && is_array($DirValue['labels'])) {
+                        if ($DirValue['type'] === 'checkbox' || (isset($DirValue['style']) && $DirValue['style'] === 'radio')) {
+                            if ($DirValue['type'] === 'checkbox' && isset($DirValue['labels']) && is_array($DirValue['labels'])) {
                                 $DirValue['gridV'] = 'gridVB';
                                 $ThisDir['FieldOut'] = sprintf(
                                     '<div style="display:grid;margin:auto 38px;grid-template-columns:%s;text-align:%s">',
@@ -1320,6 +1320,32 @@ class FrontEnd
                                         $DirValue['gridH']
                                     );
                                 }
+                            } elseif (isset($DirValue['style']) && $DirValue['style'] === 'radio') {
+                                if (strpos($ChoiceValue, "\n")) {
+                                    $ChoiceValue = explode("\n", $ChoiceValue);
+                                    $ThisDir['FieldOut'] .= sprintf(
+                                        '<div class="gridboxstretch gridVA %5$s"><label class="gridlabel"><input%4$s type="radio" class="auto" name="%6$s" id="%1$s" value="%7$s"%2$s /></label></div><div class="gridboxstretch %5$s"><label for="%1$s"><span class="s">%3$s</span><br />%8$s</label></div>',
+                                        $ThisDir['DirLangKey'] . '_' . $ChoiceKey,
+                                        $ChoiceKey === $Config[$CatKey][$DirKey] ? ' checked' : '',
+                                        $ChoiceValue[0],
+                                        $ThisDir['Trigger'],
+                                        $DirValue['gridH'],
+                                        $ThisDir['DirLangKey'],
+                                        $ChoiceKey,
+                                        $ChoiceValue[1]
+                                    );
+                                } else {
+                                    $ThisDir['FieldOut'] .= sprintf(
+                                        '<div class="gridboxcheckcell gridVA %5$s"><label class="gridlabel"><input%4$s type="radio" class="auto" name="%6$s" id="%1$s" value="%7$s"%2$s /></label></div><div class="gridboxitem %5$s"><label for="%1$s" class="s">%3$s</label></div>',
+                                        $ThisDir['DirLangKey'] . '_' . $ChoiceKey,
+                                        $ChoiceKey === $Config[$CatKey][$DirKey] ? ' checked' : '',
+                                        $ChoiceValue,
+                                        $ThisDir['Trigger'],
+                                        $DirValue['gridH'],
+                                        $ThisDir['DirLangKey'],
+                                        $ChoiceKey
+                                    );
+                                }
                             } else {
                                 $ThisDir['FieldOut'] .= sprintf(
                                     '<option style="text-transform:capitalize" value="%1$s"%2$s>%3$s</option>',
@@ -1329,7 +1355,7 @@ class FrontEnd
                                 );
                             }
                         }
-                        if ($DirValue['type'] === 'checkbox') {
+                        if ($DirValue['type'] === 'checkbox' || (isset($DirValue['style']) && $DirValue['style'] === 'radio')) {
                             $ThisDir['FieldOut'] .= '</div>';
                         } else {
                             $ThisDir['SelectOther'] = !isset($DirValue['choices'][$this->Loader->Configuration[$CatKey][$DirKey]]);
