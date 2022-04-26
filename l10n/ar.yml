@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2022.04.02).
+# This file: Arabic language data (last modified: 2022.04.25).
 ##/
 
 config_core: "التكوين العام (أي التكوين الأساسي لا ينتمي إلى فئات أخرى)."
@@ -339,4 +339,5 @@ tip_statistics: "مرحبا، {username}.<br />تعرض هذه الصفحة بع
 tip_statistics_disabled: "ملاحظة: يتم تعطيل تتبع الإحصاءات حاليا، ولكن يمكن تمكينه عبر صفحة التكوين."
 tip_upload_test: "مرحبا، {username}.<br />الصفحة تحميل اختبار يحتوي على شكل تحميل الملفات القياسية، مما يسمح لك لاختبار ما إذا كان عادة يكون قد تم حظره ملف بواسطة phpMussel عند محاولة تحميله."
 title_login: "تسجيل الدخول"
+warning_javascript_required: "تحذير: تتطلب بعض وظائف الواجهة الأمامية JavaScript. لضمان عمل الواجهة الأمامية بالكامل كما هو متوقع، يوصى بتمكين JavaScript."
 warning_signatures_1: "تحذير: لا ملفات التوقيع نشطة!"

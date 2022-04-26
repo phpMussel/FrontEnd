@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese language data (last modified: 2022.04.02).
+# This file: Portuguese language data (last modified: 2022.04.25).
 ##/
 
 config_core: "Configuração geral (qualquer configuração principal que não pertença a outras categorias)."
@@ -337,4 +337,5 @@ tip_statistics: "Olá, {username}.<br />Esta página mostra algumas estatística
 tip_statistics_disabled: "Nota: O monitoramento de estatísticas está desativado atualmente, mas pode ser ativado através da página de configuração."
 tip_upload_test: "Olá, {username}.<br />A página de carregamento teste contém um formulário padrão para carregando arquivos, permitindo que você teste se um arquivo seria normalmente bloqueado através phpMussel quando carregando."
 title_login: "Login"
+warning_javascript_required: "Atenção: Algumas funcionalidades do front-end requerem JavaScript. Para garantir que todo o front-end se comporte conforme o esperado, é recomendável ativar o JavaScript."
 warning_signatures_1: "Atenção: Nenhum arquivo de assinaturas está ativo!"

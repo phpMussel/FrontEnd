@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2022.04.02).
+# This file: Latvian language data (last modified: 2022.04.25).
 ##/
 
 config_core: "Vispārējā konfigurācija (jebkura pamata konfigurācija, kas nepieder citām kategorijām)."
@@ -339,4 +339,5 @@ tip_statistics: "Šī lapa parāda dažus pamata statistikas datus par jūsu php
 tip_statistics_disabled: "Piezīme: Statistikas izsekošana pašlaik ir atspējota, bet to var iespējot, izmantojot konfigurācijas lapu."
 tip_upload_test: "Augšupielādes testa lapā ir standarta failu augšupielādes forma. Varat to izmantot, lai pārbaudītu, vai phpMussel parasti bloķē failu."
 title_login: "Ielogošanās"
+warning_javascript_required: "Brīdinājums: Dažām funkcionalitātēm ir nepieciešams JavaScript. Ieteicams iespējot JavaScript, lai nodrošinātu, ka visa interfeiss darbojas, kā paredzēts."
 warning_signatures_1: "Brīdinājums: Neviens paraksta fails nav aktīvs!"

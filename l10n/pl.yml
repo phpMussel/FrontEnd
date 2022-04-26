@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2022.04.02).
+# This file: Polish language data (last modified: 2022.04.25).
 ##/
 
 config_core: "Ogólna konfiguracja (dowolna konfiguracja podstawowa nienależąca do innych kategorii)."
@@ -339,4 +339,5 @@ tip_statistics: "Witaj, {username}.<br />Ta strona pokazuje podstawowe statystyk
 tip_statistics_disabled: "Uwaga: Śledzenie statystyk jest obecnie wyłączone, ale można je włączyć na stronie konfiguracji."
 tip_upload_test: "Witaj, {username}.<br />Strona testowa przesyłania zawiera standardowy formularz przesyłania pliku. Możesz go użyć do przetestowania, czy plik normalnie zostałby zablokowany przez phpMussel."
 title_login: "Zaloguj sie"
+warning_javascript_required: "Ostrzeżenie: Niektóre funkcjonalność wymagają JavaScript. Aby upewnić się, że cały interfejs zachowuje się zgodnie z oczekiwaniami, zalecane jest włączenie JavaScript."
 warning_signatures_1: "Ostrzeżenie: Żadne pliki podpis nie są aktywne!"

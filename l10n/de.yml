@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data (last modified: 2022.04.02).
+# This file: German language data (last modified: 2022.04.25).
 ##/
 
 config_core: "Allgemeine Konfiguration (jede Kernkonfiguration, die nicht zu anderen Kategorien gehört)."
@@ -150,7 +150,7 @@ field_username: "Benutzername"
 field_your_version: "Ihre Version"
 header_login: "Bitte einloggen zum Fortfahren."
 hints_pdo_dsn:
- FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.de.md\#HOW_TO_USE_PDO" hreflang="de">Was ist ein "PDO DSN"? Wie kann ich PDO mit phpMussel verwenden?</a></em>"
+ FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.de.md\#HOW_TO_USE_PDO" hreflang="de">Was ist ein „PDO DSN“? Wie kann ich PDO mit phpMussel verwenden?</a></em>"
 hints_xlists:
  Wie das funktioniert.: "Sofern Ihr System spezielle Dateitypen im Upload erlaubt oder komplett verweigert, so unterteilen Sie diese Dateitypen in Whitelists, Blacklists oder Greylists, um den Scanvorgang zu beschleunigen, indem diese Dateitypen übersprungen werden. Format ist CSV (Komma-getrennte Werte)."
  Logische Reihenfolge der Verarbeitung.: "Wenn der Dateityp in der Whitelist ist, scanne und blockieren nicht die Datei, und überprüfe nicht wenn die Datei in der Whitelist oder in der Greylist ist. Wenn der Dateityp in der Blacklist ist, scanne nicht die Datei aber blockieren sie trotzdem, und überprüfe nicht wenn die Datei in der Greylist ist. Wenn die Greylist leer ist oder wenn die Greylist nicht leer ist und der Dateityp in der Greylist ist, scanne die Datei wie standardmäßig eingestellt ist und stelle fest, ob diese blockiert werden soll, basierend auf dem Scan, aber wenn die Greylist nicht leer ist und der Dateityp nicht in der Greylist ist, behandel die Datei als ob sie in der Blacklist ist, scanne sie nicht aber blockiere sie trotzdem."
@@ -337,4 +337,5 @@ tip_statistics: "Hallo, {username}.<br />Diese Seite zeigt einige grundlegende N
 tip_statistics_disabled: "Hinweis: Die Statistikverfolgung ist derzeit deaktiviert, aber kann über die Konfigurationsseite aktiviert werden."
 tip_upload_test: "Hallo, {username}.<br />Das Upload-Testseite enthält ein Standard-Datei-Upload-Formular, das macht es möglich zu prüfen ob eine Datei normalerweise gestoppt von phpMussel werden soll, wenn Sie versuchen es hochzuladen."
 title_login: "Einloggen"
+warning_javascript_required: "Warnung: Einige Front-End-Funktionalität erfordern JavaScript. Um sicherzustellen dass sich das gesamte Front-End wie erwartet verhält, wird die Aktivierung von JavaScript empfohlen."
 warning_signatures_1: "Warnung: Keine Signaturdateien sind aktiv!"

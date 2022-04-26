@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2022.04.02).
+# This file: Japanese language data (last modified: 2022.04.25).
 ##/
 
 config_core: "全般的な設定（他のカテゴリに属さないの設定）。"
@@ -333,4 +333,5 @@ tip_statistics: "こんにちは、​{username}。​<br />このページに�
 tip_statistics_disabled: "注意：統計トラッキングは現在オフラインですが、コンフィギュレーション・ページで有効にすることができます。"
 tip_upload_test: "こんにちは、​{username}。​<br />アップロード・テスト・ページ、​標準的なファイルアップロードフォームを含んでいます、​ファイルが通常ブロックされるかどうかをテストすることができます。"
 title_login: "ログイン"
+warning_javascript_required: "警告：一部のフロントエンド機能性にはJavaScriptが必要です。フロントエンドの全体が期待どおりに動作するようにするには、JavaScriptを有効にすることをお勧めします。"
 warning_signatures_1: "警告：アクティブ・シグネチャ・ファイルはありません！"

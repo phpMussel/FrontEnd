@@ -77,3 +77,7 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 ### v3.2.3
 
 [2022.03.24; Bug-fix; Maikuolan]: Fixed a bottleneck in the scan process caused by the readFileBlocks method (phpMussel/phpMussel#231).
+
+### v3.2.4
+
+[2022.04.26; Maikuolan]: Added a JavaScript warning to the front-end login.

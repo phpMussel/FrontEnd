@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2022.04.02).
+# This file: Dutch language data (last modified: 2022.04.25).
 ##/
 
 config_core: "Algemene configuratie (elke kernconfiguratie die niet tot andere categorieën behoort)."
@@ -337,4 +337,5 @@ tip_statistics: "Hallo, {username}.<br />Deze pagina bevat een aantal basisgebru
 tip_statistics_disabled: "Notitie: Statistische tracking is momenteel uitgeschakeld, maar kan via de configuratiepagina worden ingeschakeld."
 tip_upload_test: "Hallo, {username}.<br />De upload test pagina bevat een standaard file upload formulier, voor het testen of een bestand normaliter geblokkeerd door phpMussel bij een poging om het te uploaden."
 title_login: "Inloggen"
+warning_javascript_required: "Waarschuwing: Voor sommige frontend functionaliteit is JavaScript vereist. Om ervoor te zorgen dat de gehele frontend zich naar verwachting gedraagt, wordt het inschakelen van JavaScript aanbevolen."
 warning_signatures_1: "Waarschuwing: Geen signatuurbestanden zijn actief!"

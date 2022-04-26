@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2022.04.02).
+# This file: Indonesian language data (last modified: 2022.04.25).
 ##/
 
 config_core: "Konfigurasi umum (konfigurasi inti apapun yang bukan milik kategori lain)."
@@ -333,4 +333,5 @@ tip_statistics: "Salam, {username}.<br />Halaman ini menunjukkan beberapa statis
 tip_statistics_disabled: "Catat: Pelacakan statistik saat ini dinonaktifkan, namun dapat diaktifkan melalui halaman konfigurasi."
 tip_upload_test: "Salam, {username}.<br />Halaman upload test berisi form upload file standar, memungkinkan Anda untuk mengetes apakah file biasanya akan diblokir oleh phpMussel ketika mencoba untuk menguploadnya."
 title_login: "Masuk"
+warning_javascript_required: "Peringatan: Beberapa fungsionalitas memerlukan JavaScript. Untuk memastikan bahwa seluruh antarmuka berperilaku seperti yang diharapkan, disarankan untuk mengaktifkan JavaScript."
 warning_signatures_1: "Peringatan: Tidak ada file tanda tangan yang aktif!"

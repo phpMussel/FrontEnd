@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2022.04.02).
+# This file: Norwegian language data (last modified: 2022.04.25).
 ##/
 
 config_core: "Generell konfigurasjon (enhver kjernekonfigurasjon som ikke tilhører andre kategorier)."
@@ -335,4 +335,5 @@ tip_statistics: "Hallo, {username}.<br />Denne siden viser noen grunnleggende br
 tip_statistics_disabled: "Merk: Statistikksporing er for øyeblikket deaktivert, men kan aktiveres via konfigurasjonssiden."
 tip_upload_test: "Hallo, {username}.<br />Opplastings-testsiden inneholder et standard skjema for opplasting av filer, slik at du kan teste om en fil normalt vil bli blokkert av phpMussel når du prøver å laste den opp."
 title_login: "Innloggingssiden"
+warning_javascript_required: "Advarsel: Noen frontend-funksjonalitet krever JavaScript. For å sikre at hele grensesnittet oppfører seg som forventet, anbefales det å aktivere JavaScript."
 warning_signatures_1: "Advarsel: Ingen signaturfiler er aktive!"

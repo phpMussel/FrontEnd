@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2022.04.02).
+# This file: Italian language data (last modified: 2022.04.25).
 ##/
 
 config_core: "Configurazione generale (qualsiasi configurazione di base non appartenente ad altre categorie)."
@@ -333,4 +333,5 @@ tip_statistics: "Salve, {username}.<br />Questa pagina mostra alcune statistiche
 tip_statistics_disabled: "Nota: Il monitoraggio delle statistiche è attualmente disattivato, ma può essere attivato tramite la pagina di configurazione."
 tip_upload_test: "Salve, {username}.<br />La pagina di carica testare contiene un modulo per i caricamenti file standard, che permette di verificare se un file viene normalmente essere bloccata da phpMussel quando si cerca di caricarlo."
 title_login: "Accedi"
-warning_signatures_1: "Attenzione: Non ci sono file di firme attivi!"
+warning_javascript_required: "Avvertimento: Alcune funzionalità del front-end richiedono JavaScript. Per garantire che l'intero front-end si comporti come previsto, si consiglia di abilitare JavaScript."
+warning_signatures_1: "Avvertimento: Non ci sono file di firme attivi!"
