@@ -81,3 +81,5 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 ### v3.2.4
 
 [2022.04.26; Maikuolan]: Added a JavaScript warning to the front-end login.
+
+[2022.05.02; Maikuolan]: Front-end warnings have been hidden from non-logged in users.

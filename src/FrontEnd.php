@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.04.19).
+ * This file: Front-end handler (last modified: 2022.05.02).
  */
 
 namespace phpMussel\FrontEnd;
@@ -633,6 +633,9 @@ class FrontEnd
         if ($this->Permissions < 1 || $this->Permissions === 3) {
             /** Page initial prepwork. */
             $this->initialPrepwork($FE, $this->Loader->L10N->getString('title_login'), '', false);
+
+            /** Hide warnings from non-logged in users. */
+            $FE['Warnings'] = '';
 
             if ($this->Permissions === 3) {
                 /** Provide the option to log out (omit home link). */
