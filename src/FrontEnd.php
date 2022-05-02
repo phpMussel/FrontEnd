@@ -270,12 +270,6 @@ class FrontEnd
             /** Current theme. */
             'theme' => $this->Loader->Configuration['frontend']['theme'],
 
-            /**
-             * Sourced from either $_POST['username'] or $_COOKIE['PHPMUSSEL-ADMIN'] (the
-             * username claimed by the client).
-             */
-            'User' => '',
-
             /** Will be populated by messages reflecting the current request state. */
             'state_msg' => '',
 
@@ -450,9 +444,9 @@ class FrontEnd
             } elseif (!empty($_POST['username']) && !empty($_POST['password'])) {
                 $ConfigUserPath = 'user.' . $_POST['username'];
                 if (isset(
-                        $this->Loader->Configuration[$ConfigUserPath],
-                        $this->Loader->Configuration[$ConfigUserPath]['password'],
-                        $this->Loader->Configuration[$ConfigUserPath]['permissions']
+                    $this->Loader->Configuration[$ConfigUserPath],
+                    $this->Loader->Configuration[$ConfigUserPath]['password'],
+                    $this->Loader->Configuration[$ConfigUserPath]['permissions']
                 ) &&
                     !empty($this->Loader->Configuration[$ConfigUserPath]['password']) &&
                     !empty($this->Loader->Configuration[$ConfigUserPath]['permissions'])
@@ -599,7 +593,6 @@ class FrontEnd
 
         /** Executed only for users that are logged in or awaiting two-factor authentication. */
         if ($this->Permissions > 0) {
-
             /** Log the user out. */
             if ($Page === 'logout') {
                 $this->Loader->Cache->deleteEntry($this->ThisSession);
