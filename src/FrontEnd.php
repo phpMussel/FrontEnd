@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.05.02).
+ * This file: Front-end handler (last modified: 2022.05.04).
  */
 
 namespace phpMussel\FrontEnd;
@@ -553,7 +553,6 @@ class FrontEnd
                         $TwoFactorState = $this->Loader->Cache->getEntry('TwoFactorState:' . $_COOKIE['PHPMUSSEL-ADMIN']);
                         $Try = (int)substr($TwoFactorState, 0, 1);
                         if ($Try === 0 && $FE['FormTarget'] === '2fa' && !empty($_POST['2fa'])) {
-
                             /** User has submitted a 2FA code. Attempt to verify it. */
                             if (password_verify($_POST['2fa'], substr($TwoFactorState, 1))) {
                                 $this->Loader->Cache->setEntry('TwoFactorState:' . $_COOKIE['PHPMUSSEL-ADMIN'], '1', $this->SessionTTL);
@@ -595,7 +594,7 @@ class FrontEnd
         if ($this->Permissions > 0) {
             /** Log the user out. */
             if ($Page === 'logout') {
-                $this->Loader->Cache->deleteEntry($this->ThisSession);
+                $this->Loader->Cache->deleteEntry($_COOKIE['PHPMUSSEL-ADMIN']);
                 $this->Loader->Cache->deleteEntry('TwoFactorState:' . $_COOKIE['PHPMUSSEL-ADMIN']);
                 $this->ThisSession = '';
                 $this->User = '';
@@ -868,7 +867,6 @@ class FrontEnd
             if ($FE['FormTarget'] === 'accounts' && !empty($_POST['do'])) {
                 /** Create a new account. */
                 if ($_POST['do'] === 'create-account' && !empty($_POST['username']) && !empty($_POST['password']) && !empty($_POST['permissions'])) {
-                    $TryUser = $_POST['username'];
                     $TryPath = 'user.' . $_POST['username'];
                     $TryPass = password_hash($_POST['password'], $this->DefaultAlgo);
                     $TryPermissions = (int)$_POST['permissions'];
@@ -886,7 +884,6 @@ class FrontEnd
 
                 /** Delete an account. */
                 if ($_POST['do'] === 'delete-account' && !empty($_POST['username'])) {
-                    $TryUser = $_POST['username'];
                     $TryPath = 'user.' . $_POST['username'];
                     if (!isset($this->Loader->Configuration[$TryPath])) {
                         $FE['state_msg'] = $this->Loader->L10N->getString('response_accounts_doesnt_exist');
@@ -902,7 +899,6 @@ class FrontEnd
 
                 /** Update an account password. */
                 if ($_POST['do'] === 'update-password' && !empty($_POST['username']) && !empty($_POST['password'])) {
-                    $TryUser = $_POST['username'];
                     $TryPath = 'user.' . $_POST['username'];
                     $TryPass = password_hash($_POST['password'], $this->DefaultAlgo);
                     if (!isset($this->Loader->Configuration[$TryPath])) {

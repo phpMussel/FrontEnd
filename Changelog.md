@@ -83,3 +83,5 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 [2022.04.26; Maikuolan]: Added a JavaScript warning to the front-end login.
 
 [2022.05.02; Maikuolan]: Front-end warnings have been hidden from non-logged in users.
+
+[2022.05.04; Bug-fix; Maikuolan]: Session cache entries weren't being deleted correctly when logging out.
