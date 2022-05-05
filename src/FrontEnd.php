@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.05.04).
+ * This file: Front-end handler (last modified: 2022.05.05).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1515,39 +1515,32 @@ class FrontEnd
                 $FE['JS'] .=
                     "function cdd(d,n){window.cdi=d,window.do='delete',$('POST','',['phpmusse" .
                     "l-form-target','cdi','do'],null,function(o){hideid(d+'Container')})}wind" .
-                    "ow['phpmussel-form-target']='cache-data';window['phpmussel-form-target']='cache-data';";
+                    "ow['phpmussel-form-target']='cache-data';";
 
                 /** To be populated by the cache data. */
                 $FE['CacheData'] = '';
 
-                /** Array of all cache items from all sources. */
+                /** Array of all cache items. */
                 $CacheArray = [];
 
-                /** Get cache index data. */
+                /** Get cache index data and process all cache items. */
                 if ($this->Loader->Cache->Using) {
                     foreach ($this->Loader->Cache->getAllEntries() as $ThisCacheName => $ThisCacheItem) {
                         if (isset($ThisCacheItem['Time']) && $ThisCacheItem['Time'] > 0 && $ThisCacheItem['Time'] < $this->Loader->Time) {
                             continue;
                         }
                         $this->Loader->arrayify($ThisCacheItem);
-                        $CacheArray[$this->Loader->Cache->Using][$ThisCacheName] = $ThisCacheItem;
+                        $CacheArray[$ThisCacheName] = $ThisCacheItem;
                     }
                     unset($ThisCacheName, $ThisCacheItem);
-                }
-
-                /** Begin processing all cache items from all sources. */
-                foreach ($CacheArray as $CacheSourceName => $CacheSourceData) {
-                    if (empty($CacheSourceData)) {
-                        continue;
-                    }
                     $FE['CacheData'] .= sprintf(
                         '<div class="ng1" id="__Container"><span class="s">%s – (<span style="cursor:pointer" onclick="javascript:cdd(\'__\')"><code class="s">%s</code></span>)</span><br /><br /><ul class="pieul">%s</ul></div>',
-                        $CacheSourceName,
+                        $this->Loader->Cache->Using,
                         $this->Loader->L10N->getString('field_clear_all'),
-                        $this->arrayToClickableList($CacheSourceData, 'cdd', 0, $CacheSourceName)
+                        $this->arrayToClickableList($CacheArray, 'cdd', 0, $this->Loader->Cache->Using)
                     );
                 }
-                unset($CacheSourceData, $CacheSourceName, $CacheArray);
+                unset($CacheArray);
 
                 /** Cache is empty. */
                 if (!$FE['CacheData']) {
