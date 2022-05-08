@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.05.05).
+ * This file: Front-end handler (last modified: 2022.05.08).
  */
 
 namespace phpMussel\FrontEnd;
@@ -934,7 +934,20 @@ class FrontEnd
 
                 $AccountsRow = $this->Loader->readFileContent($this->getAssetPath('_accounts_row.html'));
                 $FE['Accounts'] = '';
-                $NewLineOffSet = 0;
+
+                $LI = ['Possible' => []];
+                foreach ($this->Loader->Cache->getAllEntries() as $LI['KeyName'] => $LI['KeyData']) {
+                    if (isset($LI['KeyData']['Time']) && $LI['KeyData']['Time'] > 0 && $LI['KeyData']['Time'] < $this->Loader->Time) {
+                        continue;
+                    }
+                    if (strlen($LI['KeyName']) > 64) {
+                        $LI['Try'] = substr($LI['KeyName'], 0, -64);
+                        if (isset($this->Loader->Configuration['user.' . $LI['Try']])) {
+                            $LI['Possible'][$LI['Try']] = true;
+                        }
+                    }
+                }
+                $LI = $LI['Possible'];
 
                 foreach ($this->Loader->Configuration as $CatKey => $CatValues) {
                     if (substr($CatKey, 0, 5) !== 'user.' || !is_array($CatValues)) {
@@ -974,6 +987,11 @@ class FrontEnd
                         $RowInfo['AccWarnings'] .= '<br /><div class="txtRd">' . $this->Loader->L10N->getString('state_password_not_valid') . '</div>';
                     }
 
+                    /** Logged in notice. */
+                    if (isset($LI[$RowInfo['AccUsername']])) {
+                        $RowInfo['AccWarnings'] .= '<br /><div class="txtGn">' . $this->Loader->L10N->getString('state_logged_in') . '</div>';
+                    }
+
                     $RowInfo['AccID'] = bin2hex($RowInfo['AccUsername']);
                     $RowInfo['AccUsername'] = htmlentities($RowInfo['AccUsername']);
                     $FE['Accounts'] .= $this->Loader->parse(
@@ -981,7 +999,7 @@ class FrontEnd
                         $this->Loader->parse($RowInfo, $AccountsRow)
                     );
                 }
-                unset($RowInfo);
+                unset($RowInfo, $LI);
             }
 
             if ($FE['ASYNC']) {
