@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese language data (last modified: 2022.04.25).
+# This file: Portuguese language data (last modified: 2022.05.12).
 ##/
 
 config_core: "Configuração geral (qualquer configuração principal que não pertença a outras categorias)."
@@ -331,7 +331,7 @@ tip_home: "Olá, {username}.<br />Esta é a página principal do phpMussel front
 tip_logs: "Olá, {username}.<br />Selecionar um arquivo de registro da lista abaixo para visualizar o conteúdo do arquivo de registro."
 tip_quarantine: "Olá, {username}.<br />Esta página lista todos os arquivos atualmente em quarentena e facilita o gerenciamento desses arquivos."
 tip_quarantine_disabled: "Nota: A quarentena está atualmente desativada, mas pode ser ativada através da página de configuração."
-tip_see_the_documentation: "Consulte a <a href="https://github.com/phpMussel/Docs/blob/master/readme.pt.md\#SECTION7" hreflang="pt" rel="noopener external">documentação</a> para obter informações sobre as várias diretrizes de configuração e seus objetivos."
+tip_see_the_documentation: "Consulte a <a href="https://github.com/phpMussel/Docs/blob/master/readme.pt.md\#SECTION5" hreflang="pt" rel="noopener external">documentação</a> para obter informações sobre as várias diretrizes de configuração e seus objetivos."
 tip_siginfo: "Olá, {username}.<br />A página de informações de assinaturas fornece algumas informações básicas sobre as origens e os tipos das assinaturas atualmente ativas."
 tip_statistics: "Olá, {username}.<br />Esta página mostra algumas estatísticas de uso básicas relativas à instalação do phpMussel."
 tip_statistics_disabled: "Nota: O monitoramento de estatísticas está desativado atualmente, mas pode ser ativado através da página de configuração."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Tamil language data (last modified: 2022.04.25).
+# This file: Tamil language data (last modified: 2022.05.12).
 ##/
 
 config_core: "பொதுவான உள்ளமைவு (மற்ற வகைகளுக்கு சொந்தமில்லாத உள்ளமைவு)."
@@ -331,7 +331,7 @@ tip_home: "வணக்கம், {username}.<br />இது phpMussel முன
 tip_logs: "வணக்கம், {username}.<br />அந்த பதிவு கோப்பின் உள்ளடக்கங்களைக் காண கீழேயுள்ள பட்டியலிலிருந்து ஒரு பதிவு கோப்பைத் தேர்ந்தெடுக்கவும்."
 tip_quarantine: "வணக்கம், {username}.<br />இந்த பக்கம் தற்போது தனிமைப்படுத்தப்பட்ட அனைத்து கோப்புகளையும் பட்டியலிடுகிறது மற்றும் அந்த கோப்புகளை நிர்வகிக்க உதவுகிறது."
 tip_quarantine_disabled: "குறிப்பு: தனிமைப்படுத்தல் தற்போது முடக்கப்பட்டுள்ளது, ஆனால் உள்ளமைவு பக்கம் வழியாக இயக்க முடியும்."
-tip_see_the_documentation: "பல்வேறு உள்ளமைவு வழிமுறைகள் மற்றும் அவற்றின் நோக்கங்கள் பற்றிய தகவல்களுக்கு <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#SECTION7" hreflang="en" rel="noopener external">ஆவணங்களைக்</a> காண்க."
+tip_see_the_documentation: "பல்வேறு உள்ளமைவு வழிமுறைகள் மற்றும் அவற்றின் நோக்கங்கள் பற்றிய தகவல்களுக்கு <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#SECTION5" hreflang="en" rel="noopener external">ஆவணங்களைக்</a> காண்க."
 tip_siginfo: "வணக்கம், {username}.<br />கையொப்ப தகவல் பக்கம் தற்போது செயலில் உள்ள கையொப்பங்களின் மூலங்கள் மற்றும் வகைகள் பற்றிய சில அடிப்படை தகவல்களை வழங்குகிறது."
 tip_statistics: "வணக்கம், {username}.<br />உங்கள் phpMussel நிறுவல் தொடர்பான சில அடிப்படை பயன்பாட்டு புள்ளிவிவரங்களை இந்த பக்கம் காட்டுகிறது."
 tip_statistics_disabled: "குறிப்பு: புள்ளிவிவர கண்காணிப்பு தற்போது முடக்கப்பட்டுள்ளது, ஆனால் உள்ளமைவு பக்கம் வழியாக இயக்க முடியும்."

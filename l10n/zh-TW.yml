@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (traditional) language data (last modified: 2022.04.25).
+# This file: Chinese (traditional) language data (last modified: 2022.05.12).
 ##/
 
 config_core: "基本配置（任何不屬於其他類別的核心配置）。"
@@ -328,7 +328,7 @@ tip_home: "你好，​{username}。​<br />這是phpMussel的前端主頁。�
 tip_logs: "你好，​{username}。​<br />選擇一個日誌從下面的列表以查看那個日誌的內容。"
 tip_quarantine: "你好，​{username}。​<br />此頁面列出當前在隔離中的所有文件，並可以用來管理這些文件。"
 tip_quarantine_disabled: "注意：隔離目前禁用，但可以通過配置頁面啟用。"
-tip_see_the_documentation: "請參閱<a href="https://github.com/phpMussel/Docs/blob/master/readme.zh-TW.md\#SECTION7" hreflang="zh-TW" rel="noopener external">文檔</a>以獲取有關各種配置指令的信息和他們的目的。"
+tip_see_the_documentation: "請參閱<a href="https://github.com/phpMussel/Docs/blob/master/readme.zh-TW.md\#SECTION5" hreflang="zh-TW" rel="noopener external">文檔</a>以獲取有關各種配置指令的信息和他們的目的。"
 tip_siginfo: "你好，​{username}。<br />簽名信息頁面提供了有關當前活動簽名的來源和類型的一些基本信息。"
 tip_statistics: "你好，​{username}。​<br />此頁面顯示了有關phpMussel安裝的一些基本使用統計信息。"
 tip_statistics_disabled: "注意：統計跟踪目前已被禁用，但可以通過配置頁面啟用。"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2022.04.25).
+# This file: Norwegian language data (last modified: 2022.05.12).
 ##/
 
 config_core: "Generell konfigurasjon (enhver kjernekonfigurasjon som ikke tilhører andre kategorier)."
@@ -329,7 +329,7 @@ tip_home: "Hallo, {username}.<br />Dette er hjemmesiden for frontenden av phpMus
 tip_logs: "Hallo, {username}.<br />Velg en loggfil fra listen nedenfor for å se innholdet i den loggfilen."
 tip_quarantine: "Hallo, {username}.<br />Denne siden viser alle filene som er i karantene, og letter administrasjonen av filene."
 tip_quarantine_disabled: "Merk: Karantene er for øyeblikket deaktivert, men kan aktiveres via konfigurasjonssiden."
-tip_see_the_documentation: "Se <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#SECTION7" hreflang="en" rel="noopener external">dokumentasjonen</a> for informasjon om de ulike konfigurasjonsdirektiver og deres formål."
+tip_see_the_documentation: "Se <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#SECTION5" hreflang="en" rel="noopener external">dokumentasjonen</a> for informasjon om de ulike konfigurasjonsdirektiver og deres formål."
 tip_siginfo: "Hallo, {username}.<br />Informasjonssiden for signatur gir grunnleggende informasjon om kildene og typene til de aktive signaturene."
 tip_statistics: "Hallo, {username}.<br />Denne siden viser noen grunnleggende bruksstatistikk angående phpMussel-installasjonen."
 tip_statistics_disabled: "Merk: Statistikksporing er for øyeblikket deaktivert, men kan aktiveres via konfigurasjonssiden."
