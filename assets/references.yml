@@ -7,13 +7,13 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: YAML references file (last modified: 2022.01.22).
+# This file: YAML references file (last modified: 2022.05.16).
 ##/
 
 Links:
  ClamavNet: "<a href="https://www.clamav.net/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external">ClamavNet</a>"
  Discussions: "https://github.com/phpMussel/phpMussel/discussions"
- Documentation: "https://phpmussel.github.io/\\#documentation"
+ Documentation: "https://phpmussel.github.io/\#documentation"
  Hybrid Analysis: "<a href="https://www.hybrid-analysis.com/" dir="ltr" hreflang="en" rel="noopener noreferrer external">Hybrid Analysis</a>"
  Malware Expert: "<a href="https://malware.expert/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external">Malware.Expert</a>"
  MalwareTips: "<a href="https://malwaretips.com/" dir="ltr" hreflang="en" rel="noopener noreferrer external">MalwareTips</a>"
