@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.05.08).
+ * This file: Front-end handler (last modified: 2022.05.26).
  */
 
 namespace phpMussel\FrontEnd;
@@ -408,7 +408,7 @@ class FrontEnd
                 if ($Success) {
                     if (!empty($this->QueryVariables['theme'])) {
                         /** Prevents needlessly reloading static assets. */
-                        header('Last-Modified: ' . gmdate(DATE_RFC1123, filemtime($ThisAsset)));
+                        header('Last-Modified: ' . gmdate('D, d M Y H:i:s T', filemtime($ThisAsset)));
                     }
                     /** Send asset data. */
                     echo $this->Loader->readFileContent($ThisAsset);
