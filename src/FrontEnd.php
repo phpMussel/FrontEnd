@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.06.02).
+ * This file: Front-end handler (last modified: 2022.06.03).
  */
 
 namespace phpMussel\FrontEnd;
@@ -174,7 +174,7 @@ class FrontEnd
         $this->Loader->InstanceCache['LogPaths'][] = $this->Loader->Configuration['frontend']['frontend_log'];
 
         /** Load phpMussel front-end handler L10N data. */
-        $this->Loader->loadL10N($this->Loader->L10NPath);
+        $this->Loader->loadL10N($this->L10NPath);
 
         /** Instantiate the NumberFormatter object. */
         $this->NumberFormatter = new \Maikuolan\Common\NumberFormatter($this->Loader->Configuration['frontend']['numbers']);
@@ -1984,7 +1984,7 @@ class FrontEnd
      */
     private function filterL10N(string $ChoiceKey): bool
     {
-        return is_readable($this->Loader->L10NPath . $ChoiceKey . '.yml');
+        return is_readable($this->L10NPath . $ChoiceKey . '.yml');
     }
 
     /**
