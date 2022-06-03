@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.05.26).
+ * This file: Front-end handler (last modified: 2022.06.02).
  */
 
 namespace phpMussel\FrontEnd;
@@ -174,7 +174,7 @@ class FrontEnd
         $this->Loader->InstanceCache['LogPaths'][] = $this->Loader->Configuration['frontend']['frontend_log'];
 
         /** Load phpMussel front-end handler L10N data. */
-        $this->Loader->loadL10N($this->L10NPath);
+        $this->Loader->loadL10N($this->Loader->L10NPath);
 
         /** Instantiate the NumberFormatter object. */
         $this->NumberFormatter = new \Maikuolan\Common\NumberFormatter($this->Loader->Configuration['frontend']['numbers']);
@@ -792,17 +792,17 @@ class FrontEnd
                         $ThisResponse .= ', {' . implode(', ', $ThisExtension['Drivers']) . '}';
                     }
                     $FE['ExtensionsCopyData'] .= $this->ltrInRtf(
-                        sprintf('- %1$s➡%2$s\n', $ThisExtension['Name'], $ThisResponse)
+                        sprintf('- %s➡%s\n', $ThisExtension['Name'], $ThisResponse)
                     );
                     $ThisResponse = '<span class="txtGn">' . $ThisResponse . '</span>';
                 } else {
                     $FE['ExtensionsCopyData'] .= $this->ltrInRtf(
-                        sprintf('- %1$s➡%2$s\n', $ThisExtension['Name'], $this->Loader->L10N->getString('response_no'))
+                        sprintf('- %s➡%s\n', $ThisExtension['Name'], $this->Loader->L10N->getString('response_no'))
                     );
                     $ThisResponse = '<span class="txtRd">' . $this->Loader->L10N->getString('response_no') . '</span>';
                 }
                 $FE['Extensions'][] = '    <li><small>' . $this->ltrInRtf(sprintf(
-                    '%1$s➡%2$s',
+                    '%s➡%s',
                     $ThisExtension['Name'],
                     $ThisResponse
                 )) . '</small></li>';
@@ -1358,7 +1358,7 @@ class FrontEnd
                                 }
                             } else {
                                 $ThisDir['FieldOut'] .= sprintf(
-                                    '<option style="text-transform:capitalize" value="%1$s"%2$s>%3$s</option>',
+                                    '<option style="text-transform:capitalize" value="%s"%s>%s</option>',
                                     $ChoiceKey,
                                     $ChoiceKey === $this->Loader->Configuration[$CatKey][$DirKey] ? ' selected' : '',
                                     $ChoiceValue
@@ -1468,8 +1468,12 @@ class FrontEnd
                     /** Provide additional information, useful for users to better understand the directive at hand. */
                     if (!empty($DirValue['See also']) && is_array($DirValue['See also'])) {
                         $ThisDir['FieldOut'] .= sprintf("\n<br /><br />%s<ul>\n", $this->Loader->L10N->getString('label_see_also'));
-                        foreach ($DirValue['See also'] as $RefKey => $RefLink) {
-                            $ThisDir['FieldOut'] .= sprintf('<li><a dir="ltr" href="%s">%s</a></li>', $RefLink, $RefKey);
+                        foreach ($DirValue['See also'] as $DirValue['Ref key'] => $DirValue['Ref link']) {
+                            $ThisDir['FieldOut'] .= sprintf(
+                                '<li><a dir="ltr" href="%s">%s</a></li>',
+                                $DirValue['Ref link'],
+                                $this->Loader->L10N->Data[$DirValue['Ref key']] ?? $DirValue['Ref key']
+                            );
                         }
                         $ThisDir['FieldOut'] .= "\n</ul>";
                     }
@@ -1482,7 +1486,7 @@ class FrontEnd
                 }
                 $CatKeyFriendly = $this->Loader->L10N->getString('config_' . $CatKey . '_label') ?: $CatKey;
                 $FE['Indexes'] .= sprintf(
-                    '<li><span class="comCat">%1$s</span><ul class="comSub">%2$s</ul></li>',
+                    '<li><span class="comCat">%s</span><ul class="comSub">%s</ul></li>',
                     $CatKeyFriendly,
                     $CatData
                 );
@@ -1980,7 +1984,7 @@ class FrontEnd
      */
     private function filterL10N(string $ChoiceKey): bool
     {
-        return is_readable($this->L10NPath . $ChoiceKey . '.yml');
+        return is_readable($this->Loader->L10NPath . $ChoiceKey . '.yml');
     }
 
     /**
