@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.06.09).
+ * This file: Front-end handler (last modified: 2022.06.16).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1535,9 +1535,9 @@ class FrontEnd
             } else {
                 /** Append async globals. */
                 $FE['JS'] .=
-                    "function cdd(d,n){window.cdi=d,window.do='delete',$('POST','',['phpmusse" .
-                    "l-form-target','cdi','do'],null,function(o){hideid(d+'Container')})}wind" .
-                    "ow['phpmussel-form-target']='cache-data';";
+                    "function cdd(d){window.cdi=d,window.do='delete',$('POST','',['phpmussel-" .
+                    "form-target','cdi','do'],null,function(o){hideid(d+'Container')})}window" .
+                    "['phpmussel-form-target']='cache-data';";
 
                 /** To be populated by the cache data. */
                 $FE['CacheData'] = '';
@@ -2496,7 +2496,7 @@ class FrontEnd
         foreach ($Arr as $Key => $Value) {
             $Delete = ($Depth === 0) ? ' – (<span style="cursor:pointer" onclick="javascript:' . $DeleteKey . '(\'' . addslashes($Key) . '\')"><code class="s">' . $this->Loader->L10N->getString('field_delete_file') . '</code></span>)' : '';
             $Output .= ($Depth === 0 ? '<span id="' . $Key . $Prefix . 'Container">' : '') . '<li>';
-            if (!is_array($Value)) {
+            if (is_string($Value)) {
                 if (substr($Value, 0, 2) === '{"' && substr($Value, -2) === '"}') {
                     $Try = json_decode($Value, true);
                     if ($Try !== null) {
@@ -2507,9 +2507,9 @@ class FrontEnd
                     (preg_match('~^(?:Data|\d+)$~', $Key) && preg_match('~\.ya?ml$~i', $ParentKey)) ||
                     substr($Value, 0, 4) === "---\n"
                 ) {
-                    $Try = new \Maikuolan\Common\YAML();
-                    if ($Try->process($Value, $Try->Data) && !empty($Try->Data)) {
-                        $Value = $Try->Data;
+                    $Try = [];
+                    if ($this->Loader->YAML->process($Value, $Try) && !empty($Try)) {
+                        $Value = $Try;
                     }
                 } elseif (substr($Value, 0, 2) === '["' && substr($Value, -2) === '"]' && strpos($Value, '","') !== false) {
                     $Value = explode('","', substr($Value, 2, -2));
