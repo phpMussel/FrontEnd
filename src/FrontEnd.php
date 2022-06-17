@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.06.16).
+ * This file: Front-end handler (last modified: 2022.06.17).
  */
 
 namespace phpMussel\FrontEnd;
@@ -359,9 +359,9 @@ class FrontEnd
             $FE['PIP_Input_Valid_64'] = base64_encode($Pips['Right Valid']);
             $FE['PIP_Input_Invalid'] = $Pips['Right Invalid'];
             $FE['PIP_Input_Invalid_64'] = base64_encode($Pips['Right Invalid']);
-            $FE['Gradient_Degree'] = 90;
             $FE['Half_Border'] = 'solid solid none none';
             $FE['45deg'] = '45deg';
+            $FE['90deg'] = '90deg';
         } else {
             $FE['FE_Align'] = 'right';
             $FE['FE_Align_Reverse'] = 'left';
@@ -372,9 +372,9 @@ class FrontEnd
             $FE['PIP_Input_Valid_64'] = base64_encode($Pips['Left Valid']);
             $FE['PIP_Input_Invalid'] = $Pips['Left Invalid'];
             $FE['PIP_Input_Invalid_64'] = base64_encode($Pips['Left Invalid']);
-            $FE['Gradient_Degree'] = 270;
             $FE['Half_Border'] = 'solid none none solid';
             $FE['45deg'] = '-45deg';
+            $FE['90deg'] = '270deg';
         }
 
         /** Cleanup. */
@@ -2536,7 +2536,9 @@ class FrontEnd
                 }
                 $Class = ($Key === $this->Loader->L10N->getString('field_size') || $Key === $this->Loader->L10N->getString('label_expires')) ? 'txtRd' : 's';
                 $Text = ($Count === 1 && $Key === 0) ? $Value : $Key . ($Class === 's' ? ' => ' : ' ') . $Value;
-                $Output .= '<code class="' . $Class . '" style="word-wrap:break-word;word-break:break-all">' . str_replace(['<', '>'], ['&lt;', '&gt;'], $Text) . '</code>' . $Delete;
+                $Output .= '<code class="' . $Class . '" style="word-wrap:break-word;word-break:break-all">' . $this->ltrInRtf(
+                    str_replace(['<', '>'], ['&lt;', '&gt;'], $Text)
+                ) . '</code>' . $Delete;
             }
             $Output .= '</li>' . ($Depth === 0 ? '<br /></span>' : '');
         }
@@ -2608,8 +2610,7 @@ class FrontEnd
     {
         /** Get direction. */
         $Direction = (
-            !isset($this->Loader->L10N) ||
-            empty($this->Loader->L10N->Data['Text Direction']) ||
+            !isset($this->Loader->L10N->Data['Text Direction']) ||
             $this->Loader->L10N->Data['Text Direction'] !== 'rtl'
         ) ? 'ltr' : 'rtl';
 
@@ -2619,11 +2620,17 @@ class FrontEnd
         }
 
         /** Modify the string to better suit RTL directionality and return it. */
-        return preg_replace(
-            ['~^(.+)-&gt;(.+)$~i', '~^(.+)➡(.+)$~i'],
-            ['\2&lt;-\1', '\2⬅\1'],
-            $String
-        );
+        while (true) {
+            $NewString = preg_replace(
+                ['~^(.+)( +)-&gt;( +)(.+)$~i', '~^(.+)-&gt;(.+)$~i', '~^(.+)( +)➡( +)(.+)$~i', '~^(.+)➡(.+)$~i', '~^(.+)( +)=&gt;( +)(.+)$~i', '~^(.+)=&gt;(.+)$~i'],
+                ['\4\2&lt;-\3\1', '\2&lt;-\1', '\4\2⬅\3\1', '\2⬅\1', '\4\2&lt;=\3\1', '\2&lt;=\1'],
+                $String
+            );
+            if ($NewString === $String) {
+                return $NewString;
+            }
+            $String = $NewString;
+        }
     }
 
     /**

@@ -93,3 +93,5 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 [2022.05.26; Bug-fix; Maikuolan]: Instead of "GMT", the "Last modified" header given for front-end assets specified "+0000", which some browsers don't understand properly; Fixed.
 
 [2022.06.09; Maikuolan]: Following symlinks for RecursiveDirectoryIterator instances enabled.
+
+[2022.06.17; Maikuolan]: Slightly improved RTL support.
