@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.06.17).
+ * This file: Front-end handler (last modified: 2022.07.09).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1249,8 +1249,8 @@ class FrontEnd
                             if ($DirValue['type'] === 'checkbox' && isset($DirValue['labels']) && is_array($DirValue['labels'])) {
                                 $DirValue['gridV'] = 'gridVB';
                                 $ThisDir['FieldOut'] = sprintf(
-                                    '<div style="display:grid;margin:auto 38px;grid-template-columns:%s;text-align:%s">',
-                                    str_repeat('auto ', count($DirValue['labels'])) . 'auto',
+                                    '<div style="display:grid;margin:auto 38px;grid-template-columns:repeat(%s) auto;text-align:%s">',
+                                    count($DirValue['labels']) . ',minmax(0, 1fr)',
                                     $FE['FE_Align']
                                 );
                                 $DirValue['HasLabels'] = true;
