@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (simplified) language data (last modified: 2022.05.12).
+# This file: Chinese (simplified) language data (last modified: 2022.07.17).
 ##/
 
 config_core: "基本配置（任何不属于其他类别的核心配置）。"
@@ -336,3 +336,4 @@ tip_upload_test: "你好，​{username}。​<br />上传测试页面包含标�
 title_login: "登录"
 warning_javascript_required: "警告：一些前端功能需要JavaScript。为确保整个前端按预期运行，建议启用JavaScript。"
 warning_signatures_1: "警告：没有签名文件是活动的！"
+warning_will_log_out_all_users: "警告：如果继续，所有用户都将被登出。"

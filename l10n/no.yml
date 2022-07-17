@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2022.05.12).
+# This file: Norwegian language data (last modified: 2022.07.17).
 ##/
 
 config_core: "Generell konfigurasjon (enhver kjernekonfigurasjon som ikke tilhører andre kategorier)."
@@ -337,3 +337,4 @@ tip_upload_test: "Hallo, {username}.<br />Opplastings-testsiden inneholder et st
 title_login: "Innloggingssiden"
 warning_javascript_required: "Advarsel: Noen frontend-funksjonalitet krever JavaScript. For å sikre at hele grensesnittet oppfører seg som forventet, anbefales det å aktivere JavaScript."
 warning_signatures_1: "Advarsel: Ingen signaturfiler er aktive!"
+warning_will_log_out_all_users: "Advarsel: Hvis du fortsetter, logges alle brukere ut."

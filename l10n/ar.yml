@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2022.05.12).
+# This file: Arabic language data (last modified: 2022.07.17).
 ##/
 
 config_core: "التكوين العام (أي التكوين الأساسي لا ينتمي إلى فئات أخرى)."
@@ -341,3 +341,4 @@ tip_upload_test: "مرحبا، {username}.<br />الصفحة تحميل اختب
 title_login: "تسجيل الدخول"
 warning_javascript_required: "تحذير: تتطلب بعض وظائف الواجهة الأمامية JavaScript. لضمان عمل الواجهة الأمامية بالكامل كما هو متوقع، يوصى بتمكين JavaScript."
 warning_signatures_1: "تحذير: لا ملفات التوقيع نشطة!"
+warning_will_log_out_all_users: "تحذير: ستؤدي المتابعة إلى تسجيل خروج جميع المستخدمين."

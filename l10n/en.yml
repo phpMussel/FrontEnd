@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2022.05.12).
+# This file: English language data (last modified: 2022.07.17).
 ##/
 
 config_core: "General configuration (any core configuration not belonging to other categories)."
@@ -339,3 +339,4 @@ tip_upload_test: "Hello, {username}.<br />The upload test page contains a standa
 title_login: "Login"
 warning_javascript_required: "Warning: Some front-end functionality requires JavaScript. To ensure that the entire front-end behaves as expected, enabling JavaScript is recommended."
 warning_signatures_1: "Warning: No signature files are active!"
+warning_will_log_out_all_users: "Warning: Proceeding will log out all users."

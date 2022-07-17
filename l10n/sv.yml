@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2022.05.12).
+# This file: Swedish language data (last modified: 2022.07.17).
 ##/
 
 config_core: "Allmän konfiguration (alla kärnkonfigurationer som inte tillhör andra kategorier)."
@@ -337,3 +337,4 @@ tip_upload_test: "Hallå, {username}.<br />Uppladdningssidan innehåller ett sta
 title_login: "Inloggning"
 warning_javascript_required: "Varning: Vissa frontend-funktionalitet kräver JavaScript. För att säkerställa att hela gränssnittet beter sig som förväntat, rekommenderas att aktivera JavaScript."
 warning_signatures_1: "Varning: Inga signaturfiler är aktiva!"
+warning_will_log_out_all_users: "Varning: Alla användare kommer att loggas ut om du fortsätter."

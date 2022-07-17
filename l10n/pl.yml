@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2022.05.12).
+# This file: Polish language data (last modified: 2022.07.17).
 ##/
 
 config_core: "Ogólna konfiguracja (dowolna konfiguracja podstawowa nienależąca do innych kategorii)."
@@ -341,3 +341,4 @@ tip_upload_test: "Witaj, {username}.<br />Strona testowa przesyłania zawiera st
 title_login: "Zaloguj sie"
 warning_javascript_required: "Ostrzeżenie: Niektóre funkcjonalność wymagają JavaScript. Aby upewnić się, że cały interfejs zachowuje się zgodnie z oczekiwaniami, zalecane jest włączenie JavaScript."
 warning_signatures_1: "Ostrzeżenie: Żadne pliki podpis nie są aktywne!"
+warning_will_log_out_all_users: "Ostrzeżenie: Kontynuacja spowoduje wylogowanie wszystkich użytkowników."

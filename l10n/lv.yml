@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2022.05.12).
+# This file: Latvian language data (last modified: 2022.07.17).
 ##/
 
 config_core: "Vispārējā konfigurācija (jebkura pamata konfigurācija, kas nepieder citām kategorijām)."
@@ -341,3 +341,4 @@ tip_upload_test: "Augšupielādes testa lapā ir standarta failu augšupielādes
 title_login: "Ielogošanās"
 warning_javascript_required: "Brīdinājums: Dažām funkcionalitātēm ir nepieciešams JavaScript. Ieteicams iespējot JavaScript, lai nodrošinātu, ka visa interfeiss darbojas, kā paredzēts."
 warning_signatures_1: "Brīdinājums: Neviens paraksta fails nav aktīvs!"
+warning_will_log_out_all_users: "Brīdinājums: Turpinot, visi lietotāji izlogoties."

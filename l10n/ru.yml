@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Russian language data (last modified: 2022.05.12).
+# This file: Russian language data (last modified: 2022.07.17).
 ##/
 
 config_core: "Общая конфигурация (любая конфигурация ядра, не относящаяся к другим категориям)."
@@ -341,3 +341,4 @@ tip_upload_test: "Привет, {username}.<br />Тестовая загрузк
 title_login: "Войти"
 warning_javascript_required: "Предупреждение: Некоторых функциональность требуется JavaScript. Чтобы весь интерфейс работал должным образом, рекомендуется включить JavaScript."
 warning_signatures_1: "Предупреждение: Активные файлы сигнатуры не активны!"
+warning_will_log_out_all_users: "Предупреждение: Все пользователи выйдут из системы, если вы продолжите."

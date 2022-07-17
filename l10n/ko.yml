@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2022.05.12).
+# This file: Korean language data (last modified: 2022.07.17).
 ##/
 
 config_core: "일반 설정 (다른 카테고리에 속하지 않는 설정)."
@@ -335,3 +335,4 @@ tip_upload_test: "안녕하세요, {username}.<br />업로드 테스트 페이�
 title_login: "로그인"
 warning_javascript_required: "경고\_: 일부 프런트 엔드 기능에는 JavaScript가 필요합니다. 전체 프런트 엔드가 예상대로 작동하도록 하려면 JavaScript를 활성화하는 것이 좋습니다."
 warning_signatures_1: "경고\_: 서명 파일이 활성화되어 있지 않습니다!"
+warning_will_log_out_all_users: "경고\_: 계속하면, 모든 사용자가 로그아웃됩니다."

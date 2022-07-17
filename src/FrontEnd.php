@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.07.09).
+ * This file: Front-end handler (last modified: 2022.07.17).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1536,17 +1536,19 @@ class FrontEnd
                 /** Append async globals. */
                 $FE['JS'] .=
                     "function cdd(d){window.cdi=d,window.do='delete',$('POST','',['phpmussel-" .
-                    "form-target','cdi','do'],null,function(o){hideid(d+'Container')})}window" .
-                    "['phpmussel-form-target']='cache-data';";
+                    "form-target','cdi','do'],null,function(o){'__'===d?window.location=windo" .
+                    "w.location.href.split('?')[0]:hideid(d+'Container')})}window['phpmussel-" .
+                    "form-target']='cache-data';";
 
                 /** To be populated by the cache data. */
                 $FE['CacheData'] = '';
 
-                /** Array of all cache items. */
-                $CacheArray = [];
-
                 /** Get cache index data and process all cache items. */
                 if ($this->Loader->Cache->Using) {
+                    /** Array of all cache items. */
+                    $CacheArray = [];
+
+                    /** Get cache index data. */
                     foreach ($this->Loader->Cache->getAllEntries() as $ThisCacheName => $ThisCacheItem) {
                         if (isset($ThisCacheItem['Time']) && $ThisCacheItem['Time'] > 0 && $ThisCacheItem['Time'] < $this->Loader->Time) {
                             continue;
@@ -1555,14 +1557,20 @@ class FrontEnd
                         $CacheArray[$ThisCacheName] = $ThisCacheItem;
                     }
                     unset($ThisCacheName, $ThisCacheItem);
+
+                    /** Process all cache items. */
                     $FE['CacheData'] .= sprintf(
-                        '<div class="ng1" id="__Container"><span class="s">%s – (<span style="cursor:pointer" onclick="javascript:cdd(\'__\')"><code class="s">%s</code></span>)</span><br /><br /><ul class="pieul">%s</ul></div>',
+                        '<div class="ng1" id="__Container"><span class="s">%s – (<span style="cursor:pointer" onclick="javascript:confirm(\'%s\')&&cdd(\'__\')"><code class="s">%s</code></span>)</span><br /><br /><ul class="pieul">%s</ul></div>',
                         $this->Loader->Cache->Using,
+                        str_replace(["'", '"'], ["\'", '\x22'], sprintf(
+                            $this->Loader->L10N->getString('confirm_action'),
+                            $this->Loader->L10N->getString('field_clear_all')
+                        ) . '\n' . $this->Loader->L10N->getString('warning_will_log_out_all_users')),
                         $this->Loader->L10N->getString('field_clear_all'),
                         $this->arrayToClickableList($CacheArray, 'cdd', 0, $this->Loader->Cache->Using)
                     );
+                    unset($CacheArray);
                 }
-                unset($CacheArray);
 
                 /** Cache is empty. */
                 if (!$FE['CacheData']) {

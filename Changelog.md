@@ -95,3 +95,5 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 [2022.06.09; Maikuolan]: Following symlinks for RecursiveDirectoryIterator instances enabled.
 
 [2022.06.17; Maikuolan]: Slightly improved RTL support.
+
+[2022.07.17; Maikuolan]: Added a warning to the cache data page regarding logging all users out when clearing all cache data.

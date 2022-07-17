@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2022.05.12).
+# This file: Vietnamese language data (last modified: 2022.07.17).
 ##/
 
 config_core: "Cấu hình chung (bất kỳ cấu hình cốt lõi nào không thuộc về các loại khác)."
@@ -335,3 +335,4 @@ tip_upload_test: "Xin chào, {username}.<br />Trang kiểm tra tải lên chứa
 title_login: "Đăng nhập"
 warning_javascript_required: "Cảnh báo: Một số chức năng yêu cầu JavaScript. Để đảm bảo rằng toàn bộ giao diện hoạt động như mong đợi, bạn nên bật JavaScript."
 warning_signatures_1: "Cảnh báo: Không có tập tin chữ ký nào đang hoạt động!"
+warning_will_log_out_all_users: "Cảnh báo: Tiếp tục sẽ đăng xuất tất cả người dùng."

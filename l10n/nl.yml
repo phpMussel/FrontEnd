@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2022.05.12).
+# This file: Dutch language data (last modified: 2022.07.17).
 ##/
 
 config_core: "Algemene configuratie (elke kernconfiguratie die niet tot andere categorieën behoort)."
@@ -339,3 +339,4 @@ tip_upload_test: "Hallo, {username}.<br />De upload test pagina bevat een standa
 title_login: "Inloggen"
 warning_javascript_required: "Waarschuwing: Voor sommige frontend functionaliteit is JavaScript vereist. Om ervoor te zorgen dat de gehele frontend zich naar verwachting gedraagt, wordt het inschakelen van JavaScript aanbevolen."
 warning_signatures_1: "Waarschuwing: Geen signatuurbestanden zijn actief!"
+warning_will_log_out_all_users: "Waarschuwing: Als u doorgaat, worden alle gebruikers uitgelogd."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2022.05.12).
+# This file: Italian language data (last modified: 2022.07.17).
 ##/
 
 config_core: "Configurazione generale (qualsiasi configurazione di base non appartenente ad altre categorie)."
@@ -335,3 +335,4 @@ tip_upload_test: "Salve, {username}.<br />La pagina di carica testare contiene u
 title_login: "Accedi"
 warning_javascript_required: "Avvertimento: Alcune funzionalità del front-end richiedono JavaScript. Per garantire che l'intero front-end si comporti come previsto, si consiglia di abilitare JavaScript."
 warning_signatures_1: "Avvertimento: Non ci sono file di firme attivi!"
+warning_will_log_out_all_users: "Avvertimento: Procedendo si disconnetterà tutti gli utenti."
