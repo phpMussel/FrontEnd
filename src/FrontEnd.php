@@ -1316,7 +1316,7 @@ class FrontEnd
                                             isset($this->Loader->ConfigurationDefaults[$CatKey][$DirKey]['default']) && $this->Loader->Request->inCsv(
                                                 $ChoiceKey . ':' . $DirValue['ThisLabelKey'],
                                                 $this->Loader->ConfigurationDefaults[$CatKey][$DirKey]['default']
-                                            ) ? 'true' : 'false',
+                                            ) ? 'true' : 'false'
                                         );
                                     }
                                     $ThisDir['FieldOut'] .= sprintf(
@@ -1343,7 +1343,7 @@ class FrontEnd
                                         isset($this->Loader->ConfigurationDefaults[$CatKey][$DirKey]['default']) && $this->Loader->Request->inCsv(
                                             $ChoiceKey,
                                             $this->Loader->ConfigurationDefaults[$CatKey][$DirKey]['default']
-                                        ) ? 'true' : 'false',
+                                        ) ? 'true' : 'false'
                                     );
                                 }
                             } elseif (isset($DirValue['style']) && $DirValue['style'] === 'radio') {
