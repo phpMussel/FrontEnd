@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.07.22).
+ * This file: Front-end handler (last modified: 2022.07.24).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1710,13 +1710,10 @@ class FrontEnd
                 !is_dir($this->Loader->QuarantinePath . $_POST['qfu']) &&
                 is_readable($this->Loader->QuarantinePath . $_POST['qfu'])
             ) {
-                /** Delete a file. */
                 if ($_POST['do'] === 'delete-file') {
                     $FE['state_msg'] .= '<code>' . $_POST['qfu'] . '</code> ' . $this->Loader->L10N->getString(
                         unlink($this->Loader->QuarantinePath . $_POST['qfu']) ? 'response_file_deleted' : 'response_failed_to_delete'
                     ) . '<br />';
-
-                /** Download or restore a file. */
                 } elseif ($_POST['do'] === 'download-file' || $_POST['do'] === 'restore-file') {
                     if (empty($_POST['qkey'])) {
                         $FE['state_msg'] .= '<code>' . $_POST['qfu'] . '</code> ' . $this->Loader->L10N->getString('response_restore_error_2') . '<br />';
@@ -1741,15 +1738,11 @@ class FrontEnd
                             fwrite($Handle, $Restored);
                             fclose($Handle);
                             $FE['state_msg'] .= '<code>' . $_POST['qfu'] . '.restored</code> ' . $this->Loader->L10N->getString('response_file_restored') . '<br />';
-                        }
-
-                        /** Corrupted file! */
-                        elseif ($this->InstanceCache['RestoreStatus'] === 2) {
+                        } elseif ($this->InstanceCache['RestoreStatus'] === 2) {
+                            /** Corrupted file! */
                             $FE['state_msg'] .= '<code>' . $_POST['qfu'] . '</code> ' . $this->Loader->L10N->getString('response_restore_error_1') . '<br />';
-                        }
-
-                        /** Incorrect quarantine key! */
-                        else {
+                        } else {
+                            /** Incorrect quarantine key! */
                             $FE['state_msg'] .= '<code>' . $_POST['qfu'] . '</code> ' . $this->Loader->L10N->getString('response_restore_error_2') . '<br />';
                         }
 
