@@ -99,3 +99,5 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 [2022.07.17; Maikuolan]: Added a warning to the cache data page regarding logging all users out when clearing all cache data.
 
 [2022.07.21; Maikuolan]: Coloured the "delete" option available at various dropdown menus red, to make it stand out a little from the other options.
+
+[2022.07.23; Maikuolan]: Added the ability to reset specific parts of the configuration back to their defaults.

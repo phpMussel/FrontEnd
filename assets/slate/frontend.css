@@ -14,7 +14,7 @@ input[type=text]{background-image:url(data:image/gif;base64,{PIP_Input_64})}
 input[type=text][pattern]:valid:not(input[type=text]:placeholder-shown){background-image:url(data:image/gif;base64,{PIP_Input_Valid_64})}
 input[type=text][pattern]:invalid:not(input[type=text]:placeholder-shown){background-image:url(data:image/gif;base64,{PIP_Input_Invalid_64})}
 input{border-radius:0}
-input[type=button],input[type=submit],input[type=reset]{border-radius:18px}
+input[type=button],input[type=submit],input[type=reset]{border-radius:18px;transition:all .3s ease-out}
 select,option,textarea,input{filter:brightness(.94)}
 select:active,textarea:active:not([readonly]),input:active{filter:brightness(1)}
 select:disabled,textarea:disabled,input:disabled{filter:brightness(.5)}
@@ -133,3 +133,5 @@ input[type=checkbox]+label,input[type=radio]+label,input[type=radio]+label,.grid
 .shownlink::before{animation:forRotate .5s ease-out 1;animation-fill-mode:both}
 .unshownlink::before{animation:revRotate .5s ease-out 1;animation-fill-mode:both}
 .subNav{text-align:center;font-size:calc((10px * {magnification}) + .03vw);color:rgba(221,221,221,.6);text-shadow:2px 2px 1px rgba(255,255,255,.2)}
+input[type=button].reset{background:none;cursor:pointer;border:none;padding:0 12px 0 12px;margin:0;width:auto;color:#f74}
+input[type=button].reset:hover,input[type=button].reset:active{color:#fa7}

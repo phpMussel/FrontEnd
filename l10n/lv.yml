@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2022.07.17).
+# This file: Latvian language data (last modified: 2022.07.22).
 ##/
 
 config_core: "Vispārējā konfigurācija (jebkura pamata konfigurācija, kas nepieder citām kategorijām)."
@@ -111,6 +111,7 @@ config_virustotal_vt_quota_time: "(Skatīt aprakstu iepriekš)."
 config_virustotal_vt_suspicion_level: "Pēc noklusējuma phpMussel ierobežos, kurus failus tas skenē, izmantojot Virus Total API, līdz tiem failiem, kurus tā uzskata par "aizdomīgiem". Jūs varat pēc izvēles pielāgot šo ierobežojumu, mainot <code>vt_suspicion_level</code> direktīvas vērtību."
 config_virustotal_vt_weighting: "Vai phpMussel vajadzētu interpretēt rezultātus no Virus Total API kā atklājumu skaits vai kā atklājumu svars? Faila skenēšanai, izmantojot vairākus dzinējus (tāpat kā Virus Total), jāpalielina atklāšanas biežums (un tāpēc vajadzētu noķert lielāku skaitu ļaunprātīgu failu), bet tas var izraisīt arī lielāku nepatiesu pozitīvu skaits, un tāpēc dažos gadījumos, skenēšanas rezultātus var labāk izmantot kā ticamības rādītāju, pretstatā galīgu secinājumu (tas ir iemesls, kāpēc šī direktīva pastāv). Ja tiek izmantota vērtība 0, skenēšanas rezultāti no Virus Total API tiks interpretēti kā atklājumu skaits, un tāpēc, ja kāds no Virus Total izmantotajiem dzinējiem atzīmē skenējamo failu kā ļaunprātīgu, phpMussel uzskatīs failu par ļaunprātīgu. Ja tiek izmantota kāda cita vērtība, skenēšanas rezultāti no Virus Total API tiks interpretēti kā atklājumu svars, un tāpēc, Virus Total izmantoto dzinēju skaits, kas atzīmē skenēto failu kā ļaunprātīgu, kalpos kā ticamības rādītājs (vai atklāšanas svērums) tam, vai phpMussel skenētajiem failiem ir jāuzskata par ļaunprātīgu (izmantotā vērtība atspoguļos minimālo ticamības rādītāju vai svaru, kas vajadzīgs, lai to uzskatītu par ļaunprātīgu). Pēc noklusējuma tiek izmantota vērtība 0."
 confirm_action: "Vai tiešām vēlaties "%s"?"
+confirm_delete: "Vai tiešām vēlaties izdzēst "%s"?"
 field_2fa: "2FA kods"
 field_clear_all: "Notīriet visus"
 field_confirm: "Apstiprināt"
@@ -132,6 +133,7 @@ field_password: "Parole"
 field_permissions: "Atļaujas"
 field_quarantine_key: "Karantīnas atslēga"
 field_rename_file: "Pārdēvējiet"
+field_reset: "Atiestatīt"
 field_restore_file: "Atjaunot"
 field_set_new_password: "Iestatiet jauno paroli"
 field_size: "Kopējais Lielums:"
