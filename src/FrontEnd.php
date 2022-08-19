@@ -1038,6 +1038,11 @@ class FrontEnd
             /** For required extensions, classes, etc. */
             $ReqsLookupCache = [];
 
+            /** Rebuilding in order to strip out orphaned data. */
+            if (isset($_POST['orphaned'])) {
+                $NewConfig = [];
+            }
+
             /** Iterate through configuration defaults. */
             foreach ($this->Loader->ConfigurationDefaults as $CatKey => $CatValue) {
                 if (!is_array($CatValue)) {
@@ -1553,6 +1558,14 @@ class FrontEnd
                         $this->Loader->L10N->Data,
                         $this->Loader->parse($ThisDir, $ConfigurationRow)
                     );
+
+                    /** Rebuilding in order to strip out orphaned data. */
+                    if (isset($NewConfig)) {
+                        if (!isset($NewConfig[$CatKey])) {
+                            $NewConfig[$CatKey] = [];
+                        }
+                        $NewConfig[$CatKey][$DirKey] = $this->Loader->Configuration[$CatKey][$DirKey];
+                    }
                 }
                 $CatKeyFriendly = $this->Loader->L10N->getString('config_' . $CatKey . '_label') ?: $CatKey;
                 $FE['Indexes'] .= sprintf(
@@ -1567,7 +1580,17 @@ class FrontEnd
             unset($ReqsLookupCache);
 
             /** Update the currently active configuration file if any changes were made. */
-            if ($ConfigurationModified) {
+            if ($ConfigurationModified || isset($NewConfig)) {
+                if (isset($NewConfig)) {
+                    foreach ($this->Loader->Configuration as $CatKey => $CatValue) {
+                        if (substr($CatKey, 0, 5) !== 'user.') {
+                            continue;
+                        }
+                        $NewConfig[$CatKey] = $CatValue;
+                    }
+                    $this->Loader->Configuration = $NewConfig;
+                    unset($NewConfig);
+                }
                 if ($this->Loader->updateConfiguration()) {
                     $FE['state_msg'] = $this->Loader->L10N->getString('response_configuration_updated');
                 } else {
