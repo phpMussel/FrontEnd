@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.08.11).
+ * This file: Front-end handler (last modified: 2022.08.19).
  */
 
 namespace phpMussel\FrontEnd;
@@ -259,7 +259,7 @@ class FrontEnd
             'magnification' => $this->Loader->Configuration['frontend']['magnification'],
 
             /** Define active configuration file. */
-            'ActiveConfigFile' => realpath($this->Loader->ConfigurationPath),
+            'ActiveConfigFile' => $this->canonical($this->Loader->ConfigurationPath),
 
             /** Current time and date. */
             'DateTime' => $this->Loader->timeFormat($this->Loader->Time, $this->Loader->Configuration['core']['time_format']),
@@ -2783,5 +2783,20 @@ class FrontEnd
             }
         }
         return $Out;
+    }
+
+    /**
+     * Get canonical path (but not checking whether it's real).
+     *
+     * @param string $Path The path to check.
+     * @return string The canonicalised path.
+     */
+    private function canonical(string $Path): string
+    {
+        $Path = str_replace("\\", '/', $Path);
+        while (preg_match('~/[^/]+/\.\./|/\./|/{2,}~', $Path)) {
+            $Path = preg_replace('~/[^/]+/\.\./|/\./|/{2,}~', '/', $Path);
+        }
+        return $Path;
     }
 }
