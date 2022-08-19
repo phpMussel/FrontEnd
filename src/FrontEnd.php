@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.08.19).
+ * This file: Front-end handler (last modified: 2022.08.20).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1746,7 +1746,6 @@ class FrontEnd
 
                         /** Restore success! */
                         if (empty($this->InstanceCache['RestoreStatus'])) {
-
                             /** Download the file. */
                             if ($_POST['do'] === 'download-file') {
                                 header('Content-Type: application/octet-stream');
