@@ -7,9 +7,24 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2022.07.22).
+# This file: Italian language data (last modified: 2022.08.19).
+#
+# Regarding translations: My native language is English. Because this is a free
+# and open-source hobby project which generates zero income, and translatable
+# content is likely to change as the features and functionality supported by
+# the project changes, it doesn't make sense for me to spend money for
+# translations. Because I'm the sole author/developer/maintainer for the
+# project and I'm not a ployglot, any translations I produce are very likely to
+# contain errors. Sorry, but realistically, that won't ever change. If you find
+# any such errors/typos/mistakes/etc, your assistance to correct them would be
+# very much appreciated. Pull requests are invited and encouraged. Otherwise,
+# if you find these errors too much to handle, just stick with the original
+# English source. If a translation is irredeemably incomprehensible, let me
+# know which, and I can delete it. If you're not sure how to perform pull
+# requests, ask. I can help.
 ##/
 
+checkbox_delete_orphaned_values: "Elimina i valori orfani."
 config_core: "Configurazione generale (qualsiasi configurazione di base non appartenente ad altre categorie)."
 config_core_default_timeout: "Il tempo scaduto predefinito da utilizzare per le richieste esterne? Predefinito = 12 secondi."
 config_core_delete_on_sight: "Abilitando questa opzione sarà istruirà lo script per tentare immediatamente eliminare qualsiasi file trovato durante scansioni che corrisponde a qualsiasi i criteri di rilevazione, attraverso le firme o altrimenti. I file determinati ad essere "pulito" non verranno toccati. Nel caso degli archivi, l'intero archivio verrà eliminato (indipendentemente se il file all'origine è soltanto uno dei vari file contenuti all'interno dell'archivio o non). Nel caso di file caricamente scansione, solitamente, non è necessario attivare questa opzione, perché solitamente, PHP sarà automaticamente eliminerà il contenuto della cache quando l'esecuzione è terminata, il che significa che lo farà solitamente eliminare tutti i file caricati tramite al server tranne ciò che già è spostato, copiato o cancellato. L'opzione viene aggiunto qui come ulteriore misura di sicurezza per coloro le cui copie di PHP non sempre comportarsi nel previsto modo. False = Dopo la scansione, lasciare il file solo [Predefinito]; True = Dopo la scansione, se non pulite, immediatamente eliminarlo."
@@ -59,7 +74,7 @@ config_files_max_recursion: "Massimo ricorsione profondità limite per gli archi
 config_files_only_allow_images: "Se impostato su true, tutti i file rilevati dallo scanner, che non sono immagini, verranno contrassegnati immediatamente, senza essere scansionati. Ciò può aiutare a ridurre il tempo necessario per completare una scansione in alcuni casi. Impostato su false per predefinita."
 config_files_scannable_threshold: "Soglia per la lunghezza dei dati grezzi dove phpMussel è permesso di leggere e scansione (nel caso in cui vi siano notevoli problemi di prestazioni durante la scansione). Predefinito = 32MB. Un zero o un nullo valore disabilita la soglia. In generale, questo valore non dovrebbe essere meno quella media dimensione dei file che si desidera e si aspettano di ricevere al vostro server o al vostro web sito, non dovrebbe essere più di la filesize_limit direttiva, e non dovrebbe essere più di circa un quinto del totale ammissibile allocazione della memoria concesso al PHP tramite il file di configurazione "php.ini". Questa direttiva esiste per tenta di evitare avendo phpMussel utilizzare troppa memoria (di cui sarebbe impedirebbe di essere capace di completare la file scansione correttamente per i file piú d'una certa dimensione)."
 config_frontend: "Configurazione per il front-end."
-config_frontend_default_algo: "Definisce quale algoritmo da utilizzare per tutte le password e le sessioni in futuro. Opzioni: PASSWORD_DEFAULT (predefinito), PASSWORD_BCRYPT, PASSWORD_ARGON2I (richiede PHP &gt;= 7.2.0), PASSWORD_ARGON2ID (richiede PHP &gt;= 7.3.0)."
+config_frontend_default_algo: "Definisce quale algoritmo da utilizzare per tutte le password e le sessioni in futuro."
 config_frontend_frontend_log: "File per la registrazione di tentativi di accesso al front-end. Specificare un nome di file, o lasciare vuoto per disabilitare."
 config_frontend_magnification: "Ingrandimento del carattere. Predefinito = 1."
 config_frontend_max_login_attempts: "Numero massimo di tentativi di accesso al front-end. Predefinito = 5."
@@ -95,7 +110,7 @@ config_supplementary_cache_options_memcached_port: "Il valore della porta Memcac
 config_supplementary_cache_options_pdo_dsn: "Il valore della DSN per PDO. Predefinito = "mysql:dbname=phpmussel;host=localhost;port=3306"."
 config_supplementary_cache_options_pdo_password: "La password per PDO."
 config_supplementary_cache_options_pdo_username: "Il nome utente per PDO."
-config_supplementary_cache_options_prefix: "Il valore specificato qui verrà anteposto a tutte le chiavi di ingresso della cache. Vuoto per impostazione predefinita. Quando esistono più installazioni sullo stesso server, questo può essere utile per mantenere le loro cache separate l'una dall'altra."
+config_supplementary_cache_options_prefix: "Il valore specificato qui verrà anteposto a tutte le chiavi di ingresso della cache. Predefinito = "phpMussel_". Quando esistono più installazioni sullo stesso server, questo può essere utile per mantenere le loro cache separate l'una dall'altra."
 config_supplementary_cache_options_redis_host: "Il valore dell'host Redis. Predefinito = "localhost"."
 config_supplementary_cache_options_redis_port: "Il valore della porta Redis. Predefinito = "6379"."
 config_supplementary_cache_options_redis_timeout: "Il valore del tempo scaduto per Redis. Predefinito = "2.5"."
@@ -132,7 +147,6 @@ field_options: "Opzioni"
 field_password: "Password"
 field_permissions: "Permessi"
 field_quarantine_key: "Chiave di quarantena"
-field_rename_file: "Rinominare"
 field_reset: "Azzerare"
 field_restore_file: "Ripristinare"
 field_set_new_password: "Imposta una nuova password"
@@ -251,10 +265,9 @@ logs_no_logfiles_available: "Nessun file di log disponibili."
 max_login_attempts_exceeded: "Numero massimo di tentativi di accesso superato; Accesso negato."
 msg_subject_2fa: "Autenticazione a due fattori"
 msg_template_2fa: |
- <center><p>Salve, %1$s.<br />
- <br />
+ <center><p>Salve, %s.<br /><br />
  Il vostro codice di autenticazione a due fattori per l'accesso al front-end di phpMussel:</p>
- <h1>%2$s</h1>
+ <h1>%s</h1>
  <p>Questo codice scade tra 10 minuti.</p></center>
 previewer_days: "Giorni"
 previewer_hours: "Ore"

@@ -7,9 +7,24 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2022.07.22).
+# This file: Dutch language data (last modified: 2022.08.19).
+#
+# Regarding translations: My native language is English. Because this is a free
+# and open-source hobby project which generates zero income, and translatable
+# content is likely to change as the features and functionality supported by
+# the project changes, it doesn't make sense for me to spend money for
+# translations. Because I'm the sole author/developer/maintainer for the
+# project and I'm not a ployglot, any translations I produce are very likely to
+# contain errors. Sorry, but realistically, that won't ever change. If you find
+# any such errors/typos/mistakes/etc, your assistance to correct them would be
+# very much appreciated. Pull requests are invited and encouraged. Otherwise,
+# if you find these errors too much to handle, just stick with the original
+# English source. If a translation is irredeemably incomprehensible, let me
+# know which, and I can delete it. If you're not sure how to perform pull
+# requests, ask. I can help.
 ##/
 
+checkbox_delete_orphaned_values: "Verweesde waarden verwijderen."
 config_core: "Algemene configuratie (elke kernconfiguratie die niet tot andere categorieën behoort)."
 config_core_default_timeout: "Standaard time-out om te gebruiken voor externe verzoeken? Standaard = 12 seconden."
 config_core_delete_on_sight: "Het inschakelen van dit richtlijn zal instrueren het script om elke gescande geprobeerd bestand upload dat gecontroleerd tegen elke detectie criteria te proberen onmiddellijk verwijderen, via signatures of anderszins. Bestanden vastbesloten te zijn schoon zal niet worden aangeraakt. In het geval van archieven, het hele archief wordt verwijderd, ongeacht of niet het overtredende bestand is slechts één van meerdere bestanden vervat in het archief. Voor het geval van bestand upload scannen, doorgaans, het is niet nodig om dit richtlijn te inschakelen, omdat doorgaans, PHP zal automatisch zuiveren de inhoud van zijn cache wanneer de uitvoering is voltooid, wat betekent dat het doorgans zal verwijdert ieder bestanden geüpload doorheen aan de server tenzij ze zijn verhuisd, gekopieerd of verwijderd alreeds. Dit richtlijn is toegevoegd hier als een extra maatregel van veiligheid voor degenen wier kopies van PHP misschien niet altijd gedragen op de manier verwacht. False = Na het scannen, met rust laten het bestand [Standaard]; True = Na het scannen, als niet schoon, onmiddellijk verwijderen."
@@ -59,7 +74,7 @@ config_files_max_recursion: "Maximale recursiediepte limiet voor archieven. Stan
 config_files_only_allow_images: "Indien ingesteld op true, worden alle niet-afbeeldingsbestanden die door de scanner worden aangetroffen, zullen werden onmiddellijk gemarkeerd, zonder te worden gescand. Dit kan in sommige gevallen de tijd verkorten die nodig is om een scan te voltooien. Standaard ingesteld op false."
 config_files_scannable_threshold: "Drempelwaarde de lengte van onverwerkte gegevens dat phpMussel is toegestaan te lezen en scan (in het geval er enige merkbare prestatieproblemen terwijl scannen). Standaard = 32MB. Zero of nulwaarde zal uitschakelen het drempelwaarde. Algemeen, dit waarde moeten niet zijn lagere dan de gemiddelde bestandsgrootte van het bestandsuploads dat u wilt en verwacht te ontvangen aan uw server of website, moeten niet zijn meer dan de filesize_limit richtlijn, en moeten niet zijn meet dan ongeveer een vijfde van de totale toegestane geheugentoewijzing toegekend aan PHP via de "php.ini" configuratiebestand. Dit richtlijn bestaat te proberen om phpMussel te verhinderen van het gebruik van teveel geheugen (dat zou verhinderen het van de mogelijkheid te scannen bestanden met succes boven een bepaalde bestandsgrootte)."
 config_frontend: "Configuratie voor de frontend."
-config_frontend_default_algo: "Definieert welk algoritme u wilt gebruiken voor alle toekomstige wachtwoorden en sessies. Opties: PASSWORD_DEFAULT (standaard), PASSWORD_BCRYPT, PASSWORD_ARGON2I (vereist PHP &gt;= 7.2.0), PASSWORD_ARGON2ID (vereist PHP &gt;= 7.3.0)."
+config_frontend_default_algo: "Definieert welk algoritme u wilt gebruiken voor alle toekomstige wachtwoorden en sessies."
 config_frontend_frontend_log: "Bestand om de frontend login pogingen te loggen. Geef een bestandsnaam, of laat leeg om uit te schakelen."
 config_frontend_magnification: "Lettergrootte vergroting. Standaard = 1."
 config_frontend_max_login_attempts: "Maximum aantal frontend-inlogpogingen. Standaard = 5."
@@ -95,7 +110,7 @@ config_supplementary_cache_options_memcached_port: "Memcached poortwaarde. Stand
 config_supplementary_cache_options_pdo_dsn: "PDO DSN-waarde. Standaard = "mysql:dbname=phpmussel;host=localhost;port=3306"."
 config_supplementary_cache_options_pdo_password: "PDO wachtwoord."
 config_supplementary_cache_options_pdo_username: "PDO gebruikersnaam."
-config_supplementary_cache_options_prefix: "De hier opgegeven waarde wordt toegevoegd aan alle cache-invoersleutels. Standaard leeg. Als er meerdere installaties op dezelfde server staan, dit kan handig zijn om hun caches gescheiden van elkaar te houden."
+config_supplementary_cache_options_prefix: "De hier opgegeven waarde wordt toegevoegd aan alle cache-invoersleutels. Standaard = "phpMussel_". Als er meerdere installaties op dezelfde server staan, dit kan handig zijn om hun caches gescheiden van elkaar te houden."
 config_supplementary_cache_options_redis_host: "Redis hostwaarde. Standaard = "localhost"."
 config_supplementary_cache_options_redis_port: "Redis poortwaarde. Standaard = "6379"."
 config_supplementary_cache_options_redis_timeout: "Redis timeoutwaarde. Standaard = "2.5"."
@@ -132,7 +147,6 @@ field_options: "Opties"
 field_password: "Wachtwoord"
 field_permissions: "Machtigingen"
 field_quarantine_key: "Quarantaine sleutel"
-field_rename_file: "Naam veranderen"
 field_reset: "Resetten"
 field_restore_file: "Herstellen"
 field_set_new_password: "Stel Nieuw Wachtwoord"
@@ -253,10 +267,9 @@ logs_no_logfiles_available: "Geen logbestanden beschikbaar."
 max_login_attempts_exceeded: "Maximum aantal inlogpogingen overschreden; Toegang geweigerd."
 msg_subject_2fa: "2FA (Twee-Factor Authenticatie)"
 msg_template_2fa: |
- <center><p>Hallo, %1$s.<br />
- <br />
+ <center><p>Hallo, %s.<br /><br />
  Uw 2FA-code voor in te loggen bij de frontend van phpMussel:</p>
- <h1>%2$s</h1>
+ <h1>%s</h1>
  <p>Deze code verloopt over 10 minuten.</p></center>
 previewer_days: "Dagen"
 previewer_hours: "Uur"

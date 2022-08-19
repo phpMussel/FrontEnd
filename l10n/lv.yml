@@ -7,9 +7,24 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2022.07.22).
+# This file: Latvian language data (last modified: 2022.08.19).
+#
+# Regarding translations: My native language is English. Because this is a free
+# and open-source hobby project which generates zero income, and translatable
+# content is likely to change as the features and functionality supported by
+# the project changes, it doesn't make sense for me to spend money for
+# translations. Because I'm the sole author/developer/maintainer for the
+# project and I'm not a ployglot, any translations I produce are very likely to
+# contain errors. Sorry, but realistically, that won't ever change. If you find
+# any such errors/typos/mistakes/etc, your assistance to correct them would be
+# very much appreciated. Pull requests are invited and encouraged. Otherwise,
+# if you find these errors too much to handle, just stick with the original
+# English source. If a translation is irredeemably incomprehensible, let me
+# know which, and I can delete it. If you're not sure how to perform pull
+# requests, ask. I can help.
 ##/
 
+checkbox_delete_orphaned_values: "Dzēst bezsaimnieka vērtības."
 config_core: "Vispārējā konfigurācija (jebkura pamata konfigurācija, kas nepieder citām kategorijām)."
 config_core_default_timeout: "Kādu noklusējuma taimautu izmantot ārējiem pieprasījumiem? Noklusējuma = 12 sekundes."
 config_core_delete_on_sight: "Enabling this directive will instruct the script to attempt to immediately delete any scanned attempted file upload matching any detection criteria, whether via signatures or otherwise. Files determined to be "clean" won't be touched. In the case of archives, the entire archive will be deleted, regardless of whether or not the offending file is only one of several files contained within the archive. For the case of file upload scanning, usually, it isn't necessary to enable this directive, because usually, PHP will automatically purge the contents of its cache when execution has finished, meaning it'll usually delete any files uploaded through it to the server unless they've been moved, copied or deleted already. This directive is added here as an extra measure of security for those whose copies of PHP mightn't always behave in the manner expected. False (Nepatiess) = After scanning, leave the file alone [Noklusējuma]; True (Patiess) = After scanning, if not clean, delete immediately."
@@ -59,7 +74,7 @@ config_files_max_recursion: "Maksimālais rekursijas dziļuma ierobežojums arh�
 config_files_only_allow_images: "Ja iestatīts uz true, visus failus, kas nav attēli un ar kuriem skeneris sastapis, tie tiks atzīmēti nekavējoties un bez skenēšanas. Dažos gadījumos tas var palīdzēt samazināt skenēšanai vajadzīgo laiku. Pēc noklusējuma tā ir iestatīta uz false."
 config_files_scannable_threshold: "Neapstrādātu datu maksimālais garums, kuru phpMussel ir atļauts lasīt un skenēt (ja skenēšanas laikā rodas kādas pamanāmas veiktspējas problēmas). Noklusējuma = 32MB. Nulle atspējo limitu. Parasti šai vērtībai nevajadzētu būt mazākam par vidējo failu augšupielādi lielums, ko jūs vēlaties/domājat saņemt uz savu serveri vai vietni, nevajadzētu būt vairāk kā filesize_limit direktīva, un nedrīkstētu būt vairāk kā aptuveni viena piektā daļa no kopējās pieļaujamās atmiņas, kas piešķirta PHP, izmantojot "php.ini" konfigurācijas failu. Šī direktīva pastāv, lai mēģinātu neļaut phpMussel izmantot pārāk daudz atmiņas (kas neļautu tam veiksmīgi skenēt failus, kas pārsniedz noteiktu faila lielumu)."
 config_frontend: ""Front-end" konfigurācija."
-config_frontend_default_algo: "Definē, kuru algoritmu izmantot visām turpmākajām parolēm un sesijām. Iespējas: PASSWORD_DEFAULT (noklusējuma), PASSWORD_BCRYPT, PASSWORD_ARGON2I (nepieciešama &gt;= 7.2.0), PASSWORD_ARGON2ID (nepieciešama &gt;= 7.3.0)."
+config_frontend_default_algo: "Definē, kuru algoritmu izmantot visām turpmākajām parolēm un sesijām."
 config_frontend_frontend_log: "Fails ielogošanās mēģinājumu reģistrēšanai. Norādiet faila nosaukumu, vai atstājiet tukšu, lai to atspējotu."
 config_frontend_magnification: "Fonta palielinājums. Noklusējuma = 1."
 config_frontend_max_login_attempts: "Maksimālais ielogošanās mēģinājumu skaits. Noklusējuma = 5."
@@ -95,7 +110,7 @@ config_supplementary_cache_options_memcached_port: "Memcached porta vērtību. N
 config_supplementary_cache_options_pdo_dsn: "PDO DSN vērtību. Noklusējuma = "mysql:dbname=phpmussel;host=localhost;port=3306"."
 config_supplementary_cache_options_pdo_password: "PDO parole."
 config_supplementary_cache_options_pdo_username: "PDO lietotājvārds."
-config_supplementary_cache_options_prefix: "Šeit norādītā vērtība tiks pievienota visām kešatmiņas ievades atslēgām. Pēc noklusējuma tukšs. Ja vienā serverī ir vairākas instalācijas, tas var būt noderīgi, lai saglabātu to kešatmiņas atsevišķi vienu no otras."
+config_supplementary_cache_options_prefix: "Šeit norādītā vērtība tiks pievienota visām kešatmiņas ievades atslēgām. Noklusējuma = "phpMussel_". Ja vienā serverī ir vairākas instalācijas, tas var būt noderīgi, lai saglabātu to kešatmiņas atsevišķi vienu no otras."
 config_supplementary_cache_options_redis_host: "Redis resursdatora vērtību. Noklusējuma = "localhost"."
 config_supplementary_cache_options_redis_port: "Redis porta vērtību. Noklusējuma = "6379"."
 config_supplementary_cache_options_redis_timeout: "Redis taimauta vērtību. Noklusējuma = "2.5"."
@@ -132,7 +147,6 @@ field_options: "Opcijas"
 field_password: "Parole"
 field_permissions: "Atļaujas"
 field_quarantine_key: "Karantīnas atslēga"
-field_rename_file: "Pārdēvējiet"
 field_reset: "Atiestatīt"
 field_restore_file: "Atjaunot"
 field_set_new_password: "Iestatiet jauno paroli"
@@ -254,10 +268,9 @@ logs_no_logfiles_available: "Neviens logfails nav pieejams."
 max_login_attempts_exceeded: "Pārsniegts maksimālais ielogošanās mēģinājumu skaits; Piekļuve liegta."
 msg_subject_2fa: "Divu-Faktoru Autentifikācija"
 msg_template_2fa: |
- <center><p>Sveiks, %1$s.<br />
- <br />
+ <center><p>Sveiks, %s.<br /><br />
  Jūsu divu-faktoru autentifikācijas kods, lai ielogotos phpMussel:</p>
- <h1>%2$s</h1>
+ <h1>%s</h1>
  <p>Šis kods zaudē spēku 10 minūtēs.</p></center>
 previewer_days: "Dienas"
 previewer_hours: "Stundas"

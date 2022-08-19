@@ -7,9 +7,24 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Thai language data (last modified: 2022.07.22).
+# This file: Thai language data (last modified: 2022.08.19).
+#
+# Regarding translations: My native language is English. Because this is a free
+# and open-source hobby project which generates zero income, and translatable
+# content is likely to change as the features and functionality supported by
+# the project changes, it doesn't make sense for me to spend money for
+# translations. Because I'm the sole author/developer/maintainer for the
+# project and I'm not a ployglot, any translations I produce are very likely to
+# contain errors. Sorry, but realistically, that won't ever change. If you find
+# any such errors/typos/mistakes/etc, your assistance to correct them would be
+# very much appreciated. Pull requests are invited and encouraged. Otherwise,
+# if you find these errors too much to handle, just stick with the original
+# English source. If a translation is irredeemably incomprehensible, let me
+# know which, and I can delete it. If you're not sure how to perform pull
+# requests, ask. I can help.
 ##/
 
+checkbox_delete_orphaned_values: "ลบค่าที่ถูกละเลย."
 config_core: "การกำหนดค่าทั่วไป (การกำหนดค่าใด ๆ ที่ไม่ได้อยู่ในหมวดหมู่อื่น)."
 config_core_default_timeout: "หมดเวลาเริ่มต้นที่จะใช้สำหรับคำขอภายนอก? ค่าเริ่มต้น = 12 วินาที."
 config_core_delete_on_sight: "การเปิดใช้คำสั่งนี้จะบอกสคริปต์เพื่อพยายามลบอัปโหลดไฟล์ใด ๆ ที่สแกนแล้วทันทีที่จับคู่เกณฑ์การตรวจสอบใด, ไม่ว่าจะผ่านลายเซ็นหรืออื่น ๆ. ไฟล์ที่ถือว่า "สะอาด" จะไม่ได้รับการสัมผัส. ในกรณีที่เก็บถาวร, ที่เก็บถาวรทั้งหมดจะถูกลบ, ไม่ว่าจะเป็นหรือไม่ก็ตามไฟล์ที่กระทำผิดเป็นเพียงหนึ่งในหลายไฟล์มีอยู่ในเก็บถาวร. สำหรับกรณีของการสแกนอัปโหลดไฟล์, ปกติ, ไม่จำเป็นต้องใช้คำสั่งนี้, เพราะปกติ, PHP จะล้างเนื้อหาของแคชโดยอัตโนมัติเมื่อดำเนินการเสร็จสิ้น, หมายความว่ามักจะลบไฟล์ใด ๆ ที่อัปโหลดผ่านของมันไปยังเซิร์ฟเวอร์จนกว่าพวกเขาจะถูกย้าย, คัดลอกหรือลบแล้ว. คำสั่งนี้ถูกเพิ่มที่นี่เป็นมาตรการพิเศษในการรักษาความปลอดภัยสำหรับผู้ที่มีสำเนาของ PHP ที่อาจไม่ทำงานในลักษณะที่คาดหมายเสมอ. False = หลังการสแกน, ออกจากไฟล์เพียงอย่างเดียว [ค่าเริ่มต้น]; True = หลังการสแกน, ถ้าไม่สะอาด, ลบทันที."
@@ -59,7 +74,7 @@ config_files_max_recursion: "ความลึกสูงสุดของก
 config_files_only_allow_images: "เมื่อตั้งค่าเป็น true ไฟล์ที่ไม่ใช่รูปภาพ ๆ ที่สแกนเนอร์พบจะถูกทำเครื่องหมายทันทีโดยไม่ถูกสแกน. นี่อาจช่วยลดเวลาที่ต้องใช้ในการสแกนในบางกรณี. ตั้งค่าเป็น false โดยค่าเริ่มต้น."
 config_files_scannable_threshold: "ความยาวสูงสุดของข้อมูลดิบที่ phpMussel สามารถอ่านและสแกนได้ (ในกรณีที่มีปัญหาเรื่องประสิทธิภาพการใช้งานที่เห็นได้ชัดขณะสแกน). ค่าเริ่มต้น = 32MB. ค่าเป็นศูนย์หรือค่า null จะปิดใช้งานขีด จำกัด. โดยทั่วไป นี้ไม่ควรน้อยกว่าค่าเฉลี่ยขนาดไฟล์ของการอัปโหลดที่คุณคาดว่าจะได้รับไปยังเซิร์ฟเวอร์หรือเว็บไซต์ของคุณ ไม่ควรมากกว่าคำสั่ง filesize_limit และไม่ควรเกินกว่าหนึ่งในห้าการจัดสรรหน่วยความจำทั้งหมดให้กับ PHP ผ่านไฟล์กำหนดค่า "php.ini". คำสั่งนี้มีอยู่เพื่อป้องกันไม่ให้ phpMussel ใช้หน่วยความจำมากเกินไป (การใช้หน่วยความจำมากเกินไปสามารถป้องกันไม่ให้ phpMussel สแกนไฟล์ทั้งหมด)."
 config_frontend: "การกำหนดค่าสำหรับ front-end."
-config_frontend_default_algo: "กำหนดว่าจะใช้อัลกอริทึมใดสำหรับรหัสผ่านและเซสชันในอนาคต. ตัวเลือก: PASSWORD_DEFAULT (ค่าเริ่มต้น), PASSWORD_BCRYPT, PASSWORD_ARGON2I (ต้องการ PHP &gt;= 7.2.0), PASSWORD_ARGON2ID (ต้องการ PHP &gt;= 7.3.0)."
+config_frontend_default_algo: "กำหนดว่าจะใช้อัลกอริทึมใดสำหรับรหัสผ่านและเซสชันในอนาคต."
 config_frontend_frontend_log: "ไฟล์สำหรับบันทึกพยายามเข้าสู่ระบบที่ front-end. ระบุชื่อไฟล์หรือเว้นว่างไว้เพื่อปิดใช้งาน."
 config_frontend_magnification: "การขยายตัวอักษร. ค่าเริ่มต้น = 1."
 config_frontend_max_login_attempts: "สามารถลองเข้าสู่ระบบส่วนหน้าได้กี่ครั้ง. ค่าเริ่มต้น = 5."
@@ -95,7 +110,7 @@ config_supplementary_cache_options_memcached_port: "ค่าพอร์ต Mem
 config_supplementary_cache_options_pdo_dsn: "ค่า DSN PDO. ค่าเริ่มต้น = "mysql:dbname=phpmussel;host=localhost;port=3306"."
 config_supplementary_cache_options_pdo_password: "รหัสผ่าน PDO."
 config_supplementary_cache_options_pdo_username: "ชื่อผู้ใช้ PDO."
-config_supplementary_cache_options_prefix: "ค่าที่ระบุในที่นี้จะถูกเติมไว้ข้างหน้าคีย์รายการแคชทั้งหมด. ว่างเปล่าโดยค่าเริ่มต้น. เมื่อมีการติดตั้งหลายรายการในเซิร์ฟเวอร์เดียวกัน การทำเช่นนี้อาจเป็นประโยชน์ในการแยกแคชออกจากกัน."
+config_supplementary_cache_options_prefix: "ค่าที่ระบุในที่นี้จะถูกเติมไว้ข้างหน้าคีย์รายการแคชทั้งหมด. ค่าเริ่มต้น = "phpMussel_". เมื่อมีการติดตั้งหลายรายการในเซิร์ฟเวอร์เดียวกัน การทำเช่นนี้อาจเป็นประโยชน์ในการแยกแคชออกจากกัน."
 config_supplementary_cache_options_redis_host: "ค่าโฮสต์ Redis. ค่าเริ่มต้น = "localhost"."
 config_supplementary_cache_options_redis_port: "ค่าพอร์ต Redis. ค่าเริ่มต้น = "6379"."
 config_supplementary_cache_options_redis_timeout: "ค่าการหมดเวลา Redis. ค่าเริ่มต้น = "2.5"."
@@ -132,7 +147,6 @@ field_options: "ตัวเลือก"
 field_password: "รหัสผ่าน"
 field_permissions: "สิทธิ์"
 field_quarantine_key: "คีย์กักกัน"
-field_rename_file: "เปลี่ยนชื่อ"
 field_reset: "รีเซ็ต"
 field_restore_file: "ฟื้นฟู"
 field_set_new_password: "ตั้งรหัสผ่านใหม่"
@@ -251,10 +265,9 @@ logs_no_logfiles_available: "ไม่มีไฟล์บันทึกใช
 max_login_attempts_exceeded: "จำนวนสูงสุดความพยายามเข้าสู่ระบบเกิน; ปฏิเสธการเข้าใช้."
 msg_subject_2fa: "2FA"
 msg_template_2fa: |
- <center><p>สวัสดี %1$s.<br />
- <br />
+ <center><p>สวัสดี %s.<br /><br />
  รหัส 2FA ของคุณสำหรับการลงชื่อเข้าใช้ phpMussel front-end:</p>
- <h1>%2$s</h1>
+ <h1>%s</h1>
  <p>รหัสนี้หมดอายุใน 10 นาที.</p></center>
 previewer_days: "วัน"
 previewer_hours: "ชั่วโมง"

@@ -7,9 +7,24 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2022.07.22).
+# This file: Polish language data (last modified: 2022.08.19).
+#
+# Regarding translations: My native language is English. Because this is a free
+# and open-source hobby project which generates zero income, and translatable
+# content is likely to change as the features and functionality supported by
+# the project changes, it doesn't make sense for me to spend money for
+# translations. Because I'm the sole author/developer/maintainer for the
+# project and I'm not a ployglot, any translations I produce are very likely to
+# contain errors. Sorry, but realistically, that won't ever change. If you find
+# any such errors/typos/mistakes/etc, your assistance to correct them would be
+# very much appreciated. Pull requests are invited and encouraged. Otherwise,
+# if you find these errors too much to handle, just stick with the original
+# English source. If a translation is irredeemably incomprehensible, let me
+# know which, and I can delete it. If you're not sure how to perform pull
+# requests, ask. I can help.
 ##/
 
+checkbox_delete_orphaned_values: "Usuń osierocone wartości."
 config_core: "Ogólna konfiguracja (dowolna konfiguracja podstawowa nienależąca do innych kategorii)."
 config_core_default_timeout: "Domyślny limit czasu używany dla żądań zewnętrznych? Domyślna = 12 sekund."
 config_core_delete_on_sight: "Włączenie tej dyrektywy instruuje skrypt, aby spróbował natychmiast usunąć wszelkie zeskanowane próby przesłania pliku spełniające dowolne kryteria wykrywania, czy to przez podpisy, czy w inny sposób. Pliki oznaczone jako „czyste” nie zostaną dotknięte. W przypadku archiwów całe archiwum zostanie usunięte, niezależnie od tego, czy plik naruszający prawo jest tylko jednym z kilku plików zawartych w archiwum. W przypadku skanowania wysyłania plików zwykle nie jest konieczne włączenie tej dyrektywy, ponieważ PHP zwykle automatycznie wyczyści zawartość swojej pamięci podręcznej po zeskanowaniu wykonywania co oznacza, że zazwyczaj usuwa wszystkie pliki przesłane przez serwer na serwer, chyba że zostały już przeniesione, skopiowane lub usunięte. Ta dyrektywa została dodana tutaj jako dodatkowy środek bezpieczeństwa dla tych, których kopie PHP mogą nie zawsze zachowywać się w oczekiwany sposób. False (Fałszywy) = Po zeskanowaniu skanowania pozostaw plik w spokoju [Domyślna]; True (Prawdziwe) = Po zeskanowaniu, jeśli nie jest czyste, usuń natychmiast."
@@ -59,7 +74,7 @@ config_files_max_recursion: "Maksymalny limit głębokości rekurencji dla archi
 config_files_only_allow_images: "Po ustawieniu na true, wszystkie pliki napotkane przez skaner, które nie są obrazami, zostaną natychmiast oznaczone, bez skanowania. W niektórych przypadkach może to pomóc skrócić czas potrzebny na ukończenie skanowania. Domyślnie ustawiona jest wartość false."
 config_files_scannable_threshold: "Próg długości nieprzetworzonych danych, które phpMussel może czytać i skanować (w przypadku wystąpienia zauważalnych problemów z wydajnością podczas skanowania). Domyślna = 32MB. Zero lub null wyłącza próg. Zasadniczo ta wartość nie powinna być mniejsza niż średni rozmiar przesyłanych plików, którego można oczekiwać na serwerze lub stronie internetowej, nie powinna być większa niż dyrektywa filesize_limit, i nie powinna stanowić więcej niż około jednej piątej całkowitej dozwolonej alokacji pamięci przyznanej PHP przez plik konfiguracyjny „php.ini”. Ta dyrektywa istnieje, aby zapobiec zbyt dużemu zużyciu pamięci przez phpMussel (uniemożliwiłoby to pomyślne skanowanie plików powyżej określonego rozmiaru)."
 config_frontend: "Konfiguracja interfejsu użytkownika."
-config_frontend_default_algo: "Określa, którego algorytmu należy używać dla wszystkich przyszłych haseł i sesji. Opcje: PASSWORD_DEFAULT (domyślna), PASSWORD_BCRYPT, PASSWORD_ARGON2I (wymaga PHP &gt;= 7.2.0), PASSWORD_ARGON2ID (wymaga PHP &gt;= 7.3.0)."
+config_frontend_default_algo: "Określa, którego algorytmu należy używać dla wszystkich przyszłych haseł i sesji."
 config_frontend_frontend_log: "Plik do logowania próbuje zalogować się do interfejsu użytkownika. Podaj nazwę pliku lub pozostaw puste, aby wyłączyć."
 config_frontend_magnification: "Powiększenie czcionki. Domyślna = 1."
 config_frontend_max_login_attempts: "Maksymalna liczba prób zalogowania się do interfejsu użytkownika. Domyślna = 5."
@@ -95,7 +110,7 @@ config_supplementary_cache_options_memcached_port: "Wartość portu Memcached. D
 config_supplementary_cache_options_pdo_dsn: "Wartość DSN PDO. Domyślna = „mysql:dbname=phpmussel;host=localhost;port=3306”."
 config_supplementary_cache_options_pdo_password: "Hasło PDO."
 config_supplementary_cache_options_pdo_username: "Nazwa użytkownika PDO."
-config_supplementary_cache_options_prefix: "Ta wartość zostanie dodana na początku kluczy dla wszystkich wpisów w pamięci podręcznej. Domyślnie puste. Gdy na tym samym serwerze istnieje wiele instalacji, to może być przydatne do przechowywania ich pamięci podręcznych oddzielnie od siebie."
+config_supplementary_cache_options_prefix: "Ta wartość zostanie dodana na początku kluczy dla wszystkich wpisów w pamięci podręcznej. Domyślna = „phpMussel_”. Gdy na tym samym serwerze istnieje wiele instalacji, to może być przydatne do przechowywania ich pamięci podręcznych oddzielnie od siebie."
 config_supplementary_cache_options_redis_host: "Wartość hosta Redis. Domyślna = „localhost”."
 config_supplementary_cache_options_redis_port: "Wartość portu Redis. Domyślna = „6379”."
 config_supplementary_cache_options_redis_timeout: "Wartość limitu czasu Redis. Domyślna = „2.5”."
@@ -132,7 +147,6 @@ field_options: "Opcje"
 field_password: "Hasło"
 field_permissions: "Uprawnienia"
 field_quarantine_key: "Klucz kwarantanny"
-field_rename_file: "Przemianować"
 field_reset: "Resetowanie"
 field_restore_file: "Przywróć"
 field_set_new_password: "Ustaw nowe hasło"
@@ -254,10 +268,9 @@ logs_no_logfiles_available: "Brak dostępnych plików dziennika."
 max_login_attempts_exceeded: "Przekroczono maksymalną liczbę prób logowania; Dostęp zabroniony."
 msg_subject_2fa: "Uwierzytelnianie Dwuskładnikowe"
 msg_template_2fa: |
- <center><p>Cześć, %1$s.<br />
- <br />
+ <center><p>Cześć, %s.<br /><br />
  Twój dwuskładnikowy kod uwierzytelniający do logowania do interfejsu phpMussel:</p>
- <h1>%2$s</h1>
+ <h1>%s</h1>
  <p>Ten kod wygasa za 10 minut.</p></center>
 previewer_days: "Dni"
 previewer_hours: "Godziny"

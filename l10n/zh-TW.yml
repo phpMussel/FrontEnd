@@ -7,9 +7,24 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (traditional) language data (last modified: 2022.07.22).
+# This file: Chinese (traditional) language data (last modified: 2022.08.19).
+#
+# Regarding translations: My native language is English. Because this is a free
+# and open-source hobby project which generates zero income, and translatable
+# content is likely to change as the features and functionality supported by
+# the project changes, it doesn't make sense for me to spend money for
+# translations. Because I'm the sole author/developer/maintainer for the
+# project and I'm not a ployglot, any translations I produce are very likely to
+# contain errors. Sorry, but realistically, that won't ever change. If you find
+# any such errors/typos/mistakes/etc, your assistance to correct them would be
+# very much appreciated. Pull requests are invited and encouraged. Otherwise,
+# if you find these errors too much to handle, just stick with the original
+# English source. If a translation is irredeemably incomprehensible, let me
+# know which, and I can delete it. If you're not sure how to perform pull
+# requests, ask. I can help.
 ##/
 
+checkbox_delete_orphaned_values: "刪除孤立值。"
 config_core: "基本配置（任何不屬於其他類別的核心配置）。"
 config_core_default_timeout: "用於外部請求的默認超時？ 標準 = 12秒。"
 config_core_delete_on_sight: "激活的這個指令將指示腳本馬上刪除任何掃描文件上傳匹配任何檢測標準，​是否通過簽名或任何事其他。​文件已確定是清潔將會忽略。​如果是存檔，​全存檔將會刪除，​不管如果違規文件是只有一個的幾個文件包含在存檔。​為文件上傳掃描，​按說，​它不必要為您激活這個指令，​因為按說，​PHP將自動清洗內容的它的緩存當執行是完，​意思它將按說刪除任何文件上傳從它向服務器如果不已移動，​複製或刪除。​這個指令是添加這里為額外安全為任何人誰的PHP副本可能不始終表現在預期方式。​False【假/負】：之後掃描，​忽略文件【標準】，​True【真/正】：之後掃描，​如果不清潔，​馬上刪除。"
@@ -59,7 +74,7 @@ config_files_max_recursion: "最大存檔遞歸深度限。​默認=3。"
 config_files_only_allow_images: "設置為true時，掃描程序遇到的任何非圖像文件將被立即標記，而不會被掃描。​在某些情況下，這可能有助於減少完成掃描所需的時間。​默認情況下設置為false。"
 config_files_scannable_threshold: "原始數據讀取和掃描的最大長度（如果有任何引人注目性能問題當掃描）。​默認 = 32MB。​零或空值將關閉門檻。​按說，​這個數值應不會少於平均文件大小的文件上傳您想和期待收到您的服務器或網站，​應不會多於<code>filesize_limit</code>指令，​和應不會多於大致五分之一的總允許內存分配獲授PHP通過"php.ini"配置文件。​這個指令存在為嘗試防止phpMussel從用的太多內存（這個將防止它從能夠順利掃描文件以上的一個特別文件大小）。"
 config_frontend: "前端的配置。"
-config_frontend_default_algo: "定義要用於所有未來密碼和會話的算法。​選項：​PASSWORD_DEFAULT（標準），​PASSWORD_BCRYPT，​PASSWORD_ARGON2I（需要PHP &gt;= 7.2.0），​PASSWORD_ARGON2ID（需要PHP &gt;= 7.3.0）。"
+config_frontend_default_algo: "定義要用於所有未來密碼和會話的算法。"
 config_frontend_frontend_log: "前端登錄嘗試的錄音文件。​指定一個文件名，​或留空以禁用。"
 config_frontend_magnification: "字體放大。​標準 = 1。"
 config_frontend_max_login_attempts: "最大前端登錄嘗試次數。​標準=5。"
@@ -95,7 +110,7 @@ config_supplementary_cache_options_memcached_port: "Memcached端口值。​默�
 config_supplementary_cache_options_pdo_dsn: "PDO DSN值。​默認 = 『mysql:dbname=phpmussel;host=localhost;port=3306』。"
 config_supplementary_cache_options_pdo_password: "PDO密碼。"
 config_supplementary_cache_options_pdo_username: "PDO用戶名。"
-config_supplementary_cache_options_prefix: "該值將附加到所有緩存條目的鍵的開頭。​默認值為空。​當同一服務器上存在多個安裝時，這對於將它們的緩存彼此分開非常有用。"
+config_supplementary_cache_options_prefix: "該值將附加到所有緩存條目的鍵的開頭。​默認 = 『phpMussel_』。​當同一服務器上存在多個安裝時，這對於將它們的緩存彼此分開非常有用。"
 config_supplementary_cache_options_redis_host: "Redis主機值。​默認 = 『localhost』。"
 config_supplementary_cache_options_redis_port: "Redis端口值。​默認 = 『6379』。"
 config_supplementary_cache_options_redis_timeout: "Redis超時值。​默認 = 『2.5』。"
@@ -132,7 +147,6 @@ field_options: "選項"
 field_password: "密碼"
 field_permissions: "權限"
 field_quarantine_key: "隔離鑰匙"
-field_rename_file: "改名"
 field_reset: "重啟"
 field_restore_file: "恢復"
 field_set_new_password: "保存新密碼"
@@ -252,10 +266,9 @@ logs_no_logfiles_available: "沒有日誌可用。"
 max_login_attempts_exceeded: "最大登錄嘗試次數已經超過；拒絕訪問。"
 msg_subject_2fa: "2FA（雙因素身份驗證）"
 msg_template_2fa: |
- <center><p>你好，%1$s。<br />
- <br />
+ <center><p>你好，%s。<br /><br />
  用於登錄phpMussel前端的2FA代碼：</p>
- <h1>%2$s</h1>
+ <h1>%s</h1>
  <p>此代碼將在10分鐘後到期。</p></center>
 previewer_days: "天"
 previewer_hours: "小時"

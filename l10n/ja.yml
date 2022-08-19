@@ -7,9 +7,24 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2022.07.22).
+# This file: Japanese language data (last modified: 2022.08.19).
+#
+# Regarding translations: My native language is English. Because this is a free
+# and open-source hobby project which generates zero income, and translatable
+# content is likely to change as the features and functionality supported by
+# the project changes, it doesn't make sense for me to spend money for
+# translations. Because I'm the sole author/developer/maintainer for the
+# project and I'm not a ployglot, any translations I produce are very likely to
+# contain errors. Sorry, but realistically, that won't ever change. If you find
+# any such errors/typos/mistakes/etc, your assistance to correct them would be
+# very much appreciated. Pull requests are invited and encouraged. Otherwise,
+# if you find these errors too much to handle, just stick with the original
+# English source. If a translation is irredeemably incomprehensible, let me
+# know which, and I can delete it. If you're not sure how to perform pull
+# requests, ask. I can help.
 ##/
 
+checkbox_delete_orphaned_values: "孤立した値を削除します。"
 config_core: "全般的な設定（他のカテゴリに属さないの設定）。"
 config_core_default_timeout: "外部リクエストに使用するデフォルトのタイムアウト？ Default/デフォルルト = １２秒。"
 config_core_delete_on_sight: "このディレクティブを有効にすると、​検知基準（シグネチャでも何でも）にあったアップロードファイルは直ちに削除されます。​クリーンと判断されたファイルはそのままです。​アーカイブの場合、​問題のファイルが一部であってもアーカイブ全てが削除の対象となります。​アップロードファイルのスキャンにおいては、​本ディレクティブを有効にすることは必須ではありません。​なぜならＰＨＰはスクリプト実行後に自動的にキャッシュの内容を破棄するからです。​言い換えれば、​ファイルが移動されたか、​コピーされたか、​削除されない限り、​ＰＨＰはサーバーにアップロードしたファイルを残しておくことは通常ありません。​このディレクティブはセキュリティーに念を入れる目的で設置されています。​ＰＨＰは稀に予測外の振る舞いをすることがあるからです。​False（偽） = スキャニング後、​ファイルはそのまま（デフォルト設定）。​True（真） = スキャニング後、​クリーンでなければ直ちに削除。"
@@ -59,7 +74,7 @@ config_files_max_recursion: "アーカイブに対する最大再帰深さです
 config_files_only_allow_images: "Trueに設定した場合、スキャナーで検出された非画像ファイルには、スキャンされずに、直ちにマークされます。​これは、場合によっては、スキャンの完了に必要な時間を短縮するのに役立ちます。​デフォルトではfalseに設定されています。"
 config_files_scannable_threshold: "phpMusselが読みスキャンしてよい生データの長さの制限（スキャニング中に顕著な問題がある場合に必要に応じて設定）。​デフォルト＝３２ＭＢ。​ゼロあるいは値なし（null）はしきい値を無効化します。​値は、​サーバーやウェブサイトでアップロードされるファイルの平均ファイルサイズより大きく、​filesize_limitディレクティブより小さく設定すべきです。​また"php.ini"設定によってPHPに割り当てられたメモリーのおおよそ5分の１を超えるべきではありません。​このディレクティブはphpMusselがメモリーを使い過ぎないようにするためのものです。​（一定のサイズ以上のファイルはスキャンできなくなることもあります）。"
 config_frontend: "フロントエンドの設定。"
-config_frontend_default_algo: "将来のすべてのパスワードとセッションに使用するアルゴリズムを定義します。​オプション：​PASSWORD_DEFAULT（Default/デフォルルト）、​PASSWORD_BCRYPT、​PASSWORD_ARGON2I （ＰＨＰ &gt;= 7.2.0 が必要）、​PASSWORD_ARGON2ID （ＰＨＰ &gt;= 7.3.0 が必要）。"
+config_frontend_default_algo: "将来のすべてのパスワードとセッションに使用するアルゴリズムを定義します。"
 config_frontend_frontend_log: "フロントエンド・ログインの試みを記録するためのファイル。​ファイル名指定するか、​無効にしたい場合は空白のままにして下さい。"
 config_frontend_magnification: "フォントの倍率。​Default/デフォルルト = １。"
 config_frontend_max_login_attempts: "ログイン試行の最大回数（フロントエンド）。​Default（デフォルト設定） = ５。"
@@ -95,7 +110,7 @@ config_supplementary_cache_options_memcached_port: "Memcachedのポート値。 
 config_supplementary_cache_options_pdo_dsn: "PDOのDSN値。 Default/デフォルルト = 「mysql:dbname=phpmussel;host=localhost;port=3306」。"
 config_supplementary_cache_options_pdo_password: "PDOのパスワード。"
 config_supplementary_cache_options_pdo_username: "PDOのユーザー名。"
-config_supplementary_cache_options_prefix: "ここで指定された値は、すべてのキャッシュ・エントリ・キーの前に追加されます。​デフォルトでは空です。​同じサーバーに複数のインストールが存在する場合、これはキャッシュを互いに分離しておくのに役立ちます。"
+config_supplementary_cache_options_prefix: "ここで指定された値は、すべてのキャッシュ・エントリ・キーの前に追加されます。 Default/デフォルルト = 「phpMussel_」。 同じサーバーに複数のインストールが存在する場合、これはキャッシュを互いに分離しておくのに役立ちます。"
 config_supplementary_cache_options_redis_host: "Redisのホスト値。 Default/デフォルルト = 「localhost」。"
 config_supplementary_cache_options_redis_port: "Redisのポート値。 Default/デフォルルト = 「6379」。"
 config_supplementary_cache_options_redis_timeout: "Redisのタイムアウト値。 Default/デフォルルト = 「2.5」。"
@@ -132,7 +147,6 @@ field_options: "オプション"
 field_password: "パスワード"
 field_permissions: "パーミッション"
 field_quarantine_key: "検疫キー"
-field_rename_file: "名前を変更する"
 field_reset: "リセット"
 field_restore_file: "復元"
 field_set_new_password: "新しいパスワードを設定します"
@@ -251,10 +265,9 @@ logs_no_logfiles_available: "いいえログが利用可能。"
 max_login_attempts_exceeded: "ログイン試行の最大回数を超えました；アクセス拒否。"
 msg_subject_2fa: "２ＦＡ（二要素認証）"
 msg_template_2fa: |
- <center><p>こんにちは、​%1$s。<br />
- <br />
+ <center><p>こんにちは、​%s。<br /><br />
  phpMusselフロントエンドにログインするための２ＦＡコード：</p>
- <h1>%2$s</h1>
+ <h1>%s</h1>
  <p>このコードの有効期限は１０分です。</p></center>
 previewer_days: "日"
 previewer_hours: "時"

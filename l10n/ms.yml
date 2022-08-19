@@ -1,0 +1,353 @@
+##\
+# This file is a part of the phpMussel\FrontEnd package.
+# Homepage: https://phpmussel.github.io/
+#
+# PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: Malay language data (last modified: 2022.08.19).
+#
+# Regarding translations: My native language is English. Because this is a free
+# and open-source hobby project which generates zero income, and translatable
+# content is likely to change as the features and functionality supported by
+# the project changes, it doesn't make sense for me to spend money for
+# translations. Because I'm the sole author/developer/maintainer for the
+# project and I'm not a ployglot, any translations I produce are very likely to
+# contain errors. Sorry, but realistically, that won't ever change. If you find
+# any such errors/typos/mistakes/etc, your assistance to correct them would be
+# very much appreciated. Pull requests are invited and encouraged. Otherwise,
+# if you find these errors too much to handle, just stick with the original
+# English source. If a translation is irredeemably incomprehensible, let me
+# know which, and I can delete it. If you're not sure how to perform pull
+# requests, ask. I can help.
+##/
+
+checkbox_delete_orphaned_values: "Padamkan nilai-nilai yang diyatimkan."
+config_core: "Konfigurasi generik (sebarang konfigurasi teras yang bukan tergolong dalam kategori lain)."
+config_core_default_timeout: "Tamat masa lalai yang digunakan untuk permintaan luaran? Lalai = 12 saat."
+config_core_delete_on_sight: "Mengaktifkan arahan ini akan mengarahkan skrip untuk cuba memadamkan sebarang muat naik fail percubaan yang diimbas dengan serta-merta yang sepadan dengan mana-mana kriteria pengesanan, sama ada melalui tandatangan atau sebaliknya. Fail yang dikenal pasti sebagai "bersih" tidak akan disentuh. Dalam kes arkib, keseluruhan arkib akan dipadamkan, tidak kira sama ada fail tersebut hanyalah satu daripada beberapa fail yang terkandung dalam arkib. Untuk kes pengimbasan muat naik fail, biasanya, arahan ini tidak perlu diaktifkan, kerana biasanya, PHP akan membersihkan kandungan cachenya secara automatik apabila pelaksanaan telah selesai, bermakna ia biasanya akan memadamkan mana-mana fail yang dimuat naik melaluinya ke pelayan melainkan ia telah dialihkan, disalin, atau dipadamkan. Arahan tersebut ditambahkan disini sebagai langkah keselamatan tambahan bagi mereka yang salinan PHPnya mungkin tidak selalu berkelakuan seperti yang diharapkan. False = Selepas mengimbas, biarkan fail tersebut sahaja [Lalai]; True = Selepas mengimbasnya, jika bukan bersih, padamkannya dengan serta-merta."
+config_core_disabled_channels: "Ini boleh digunakan untuk menghalang phpMussel daripada menggunakan saluran tertentu semasa menghantar permintaan (cth., semasa mengemas kini, semasa mengambil metadata komponen, dll)."
+config_core_error_log: "Fail untuk mengelog sebarang ralat bukan maut yang dikesan. Tentukan nama fail, atau biarkan kosong untuk nyahaktifkan."
+config_core_hide_version: "Sembunyikan maklumat versi daripada log dan keluaran halaman? True = Ya; False = Tidak [Lalai]."
+config_core_ipaddr: "Dimana untuk mencari alamat IP daripada permintaan penyambungan? (Berguna untuk perkhidmatan seperti Cloudflare dan seumpamanya). Lalai = REMOTE_ADDR. AMARAN: Jangan ganti ini melainkan anda tahu apa yang anda lakukan!"
+config_core_lang: "Tentukan bahasa lalai untuk phpMussel."
+config_core_lang_override: "Setempatkan mengikut HTTP_ACCEPT_LANGUAGE apabila boleh? True = Ya [Lalai]; False = Tidak."
+config_core_log_rotation_action: "Putaran log mengehadkan bilangan fail log yang sepatutnya wujud pada satu-satu masa. Apabila fail log baharu dicipta, jika jumlah bilangan fail log melebihi had yang ditentukan, tindakan yang ditentukan akan dilakukan. Anda boleh menentukan tindakan yang diingini disini."
+config_core_log_rotation_limit: "Putaran log mengehadkan bilangan fail log yang sepatutnya wujud pada satu-satu masa. Apabila fail log baharu dicipta, jika jumlah bilangan fail log melebihi had yang ditentukan, tindakan yang ditentukan akan dilakukan. Anda boleh menentukan had yang dikehendaki disini. Nilai 0 akan menyahaktifkan putaran log."
+config_core_maintenance_mode: "Aktifkan mod penyelenggaraan? True = Ya; False = Tidak [Lalai]. Menyahaktifkan semua selain bahagian hadapan. Kadangkala berguna apabila mengemas kini CMS anda, rangka kerja anda, dsb."
+config_core_scan_cache_expiry: "Berapa lama phpMussel perlu menyimpan hasil pengimbasan? Nilai ialah bilangan saat untuk cache hasil pengimbasan. Lalai ialah 21600 saat (6 jam); Nilai 0 menyahaktifkan cache hasil pengimbasan."
+config_core_scan_log: "Nama fail untuk log semua hasil pengimbasan. Tentukan nama fail, atau biarkan kosong untuk nyahaktifkan."
+config_core_scan_log_serialized: "Nama fail untuk log semua hasil pengimbasan (menggunakan format bersiri). Tentukan nama fail, atau biarkan kosong untuk nyahaktifkan."
+config_core_statistics: "Jejaki statistik penggunaan phpMussel? True = Ya; False = Tidak [Lalai]."
+config_core_time_format: "Format notasi tarikh/masa yang digunakan oleh phpMussel. Pilihan tambahan boleh ditambah atas permintaan."
+config_core_time_offset: "Zon waktu diimbangi dalam minit."
+config_core_timezone: "Ini digunakan untuk menentukan zon waktu yang akan digunakan (cth., Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, dll). Tentukan "SISTEM" untuk membenarkan PHP mengendalikan ini untuk anda secara automatik."
+config_core_truncate: "Memotong fail log apabila ia mencapai saiz tertentu? Nilai ialah saiz maksimum dalam B/KB/MB/GB/TB yang fail log boleh berkembang sebelum dipotong. Nilai lalai 0KB nyahaktifkan pemotongan (fail log boleh berkembang selama-lamanya). Perhatikan: Terpakai pada fail log individu! Saiz fail log tidak dipertimbangkan secara kolektif."
+config_experimental: "Tidak stabil / Eksperimen!"
+config_files: "Butiran cara mengendalikan fail semasa mengimbas."
+config_files_allow_leading_trailing_dots: "Benarkan memimpin dan mengekori titik dalam nama fail? Ini kadangkala boleh digunakan untuk menyembunyikan fail, atau untuk menipu beberapa sistem supaya membenarkan traversal direktori. False = Jangan benarkan [Lalai]. True = Benarkan."
+config_files_archive_file_extensions: "Sambungan fail arkib yang diiktiraf (format ialah CSV; hanya perlu menambah atau mengalih keluar apabila masalah berlaku; mengalih keluar tanpa perlu boleh menyebabkan positif palsu muncul untuk fail arkib, manakala penambahan tanpa perlu akan menyenaraiputihkan pada dasarnya perkara yang anda tambahkan daripada pengesanan spesifik serangan; ubah suai dengan berhati-hati; juga ambil perhatian bahawa ini tidak mempunyai kesan ke atas perkara yang boleh dan tidak boleh dianalisis oleh arkib pada peringkat kandungan). Senarai ini, seperti pada lalai, menyenaraikan format yang paling biasa digunakan oleh kebanyakan sistem dan CMS, tetapi secara sengaja tidak semestinya menyeluruh."
+config_files_block_control_characters: "Sekat mana-mana fail yang mengandungi sebarang aksara kawalan (selain baris baharu)? Jika anda hanya memuat naik teks biasa, maka anda boleh menghidupkan pilihan ini untuk memberikan beberapa perlindungan tambahan kepada sistem anda. Walau bagaimanapun, jika anda memuat naik apa-apa selain daripada teks biasa, menghidupkannya boleh mengakibatkan positif palsu. False = Jangan sekat [Lalai]; True = Sekat."
+config_files_block_encrypted_archives: "Kesan dan sekat arkib yang disulitkan? Oleh kerana phpMussel tidak dapat mengimbas kandungan arkib yang disulitkan, ada kemungkinan penyulitan arkib boleh digunakan oleh penyerang sebagai cara untuk cuba memintas phpMussel, pengimbas anti-virus dan perlindungan lain. Mengarahkan phpMussel untuk menyekat mana-mana arkib disulitkan yang ditemui boleh berpotensi membantu mengurangkan sebarang risiko yang berkaitan. False = Tidak; True = Ja [Lalai]."
+config_files_block_macros: "Cuba sekat mana-mana fail yang mengandungi makro? Beberapa jenis dokumen dan hamparan mungkin mengandungi makro yang boleh dilaksanakan, jadi menyediakan vektor perisian hasad yang berpotensi berbahaya. False = Jangan sekat [Lalai]; True = Sekat."
+config_files_can_contain_php_file_extensions: "Senarai sambungan fail yang dibenarkan mengandungi kod PHP, dipisahkan dengan koma. Jika pengesanan serangan chameleon PHP didayakan, fail yang mengandungi kod PHP, yang mempunyai sambungan yang tiada dalam senarai ini, akan dikesan sebagai serangan chameleon PHP."
+config_files_chameleon_from_exe: "Cari pengepala yang boleh dilaksanakan dalam fail, yang bukan arkib yang boleh dilaksanakan mahupun arkib yang diiktiraf, dan untuk fail yang boleh dilaksanakan yang pengepalanya tidak betul. False = Dimatikan; True = Dihidupkan."
+config_files_chameleon_from_php: "Cari pengepala PHP dalam fail yang bukan fail PHP mahupun arkib yang diiktiraf. False = Dimatikan; True = Dihidupkan."
+config_files_chameleon_to_archive: "Kesan pengepala yang salah dalam arkib dan fail termampat. Disokong: BZ/BZIP2, GZ/GZIP, LZF, RAR, ZIP. False = Dimatikan; True = Dihidupkan."
+config_files_chameleon_to_doc: "Cari dokumen pejabat yang pengepalanya tidak betul (Disokong: DOC, DOT, PPS, PPT, XLA, XLS, WIZ). False = Dimatikan; True = Dihidupkan."
+config_files_chameleon_to_img: "Cari imej yang pengepalanya tidak betul (Disokong: BMP, DIB, PNG, GIF, JPEG, JPG, XCF, PSD, PDD, WEBP). False = Dimatikan; True = Dihidupkan."
+config_files_chameleon_to_pdf: "Cari fail PDF yang pengepalanya tidak betul. False = Dimatikan; True = Dihidupkan."
+config_files_check_archives: "Cuba menyemak kandungan arkib? False = Jangan semak; True = Semak [Lalai]. Disokong: Zip (memerlukan libzip), Tar, Rar (memerlukan sambungan rar)."
+config_files_corrupted_exe: "Fail rosak dan ralat penghurai. False = Abaikan; True = Sekat [Lalai]. Kesan dan sekat fail PE (Portable Executable) yang berpotensi rosak? Selalunya (tetapi tidak selalu), apabila aspek tertentu fail PE adalah rosak atau tidak dapat dihuraikan dengan betul, ia boleh menunjukkan jangkitan virus. Proses yang digunakan oleh kebanyakan program anti-virus untuk mengesan virus dalam fail PE memerlukan menghuraikan fail tersebut dengan cara tertentu, yang pengaturcara virus akan spesifik cuba dihalang jika mereka sedarnya, untuk membolehkan virus mereka kekal sebagai tidak boleh dikesan."
+config_files_decode_threshold: "Ambang untuk panjang data mentah dimana perintah nyahkod harus dikesan (sekiranya terdapat sebarang isu prestasi yang ketara semasa mengimbas). Lalai = 512KB. Sifar akan melumpuhkan ambang ini (mengalih keluar sebarang had sedemikian berdasarkan saiz fail)."
+config_files_filesize_archives: "Bawa senaraihitamkan/senaraiputihkan bersaiz fail ke kandungan arkib? False = Tidak (hanya senaraikelabukan semuanya); True = Ya [Lalai]."
+config_files_filesize_limit: "Had saiz fail dalam KB. 65536 = 64MB [Lalai]; 0 = Tiada had (sentiasa disenaraikelabukan). Sebarang nilai berangka (positif) diterima. Ini boleh berguna apabila konfigurasi PHP anda mengehadkan jumlah memori yang boleh disimpan oleh proses atau jika konfigurasi PHP anda mengehadkan saiz fail dimuat naik."
+config_files_filesize_response: "Perkara yang perlu dilakukan dengan fail yang melebihi had saiz fail (jika ada wujud). False = Senaraiputihkan; True = Senaraihitamkan [Lalai]."
+config_files_filetype_archives: "Bawa senaraihitamkan/senaraiputihkan berjenis fail ke kandungan arkib? False = Tidak (hanya senaraikelabukan semuanya) [Lalai]; True = Ya."
+config_files_filetype_blacklist: "Senarai hitam:"
+config_files_filetype_greylist: "Senarai kelabu:"
+config_files_filetype_whitelist: "Senarai putih:"
+config_files_max_files_in_archives: "Bilangan maksimum fail untuk diimbas dari dalam arkib sebelum membatalkan imbasan. Lalai = 0 (tiada maksimum)."
+config_files_max_recursion: "Had kedalaman rekursi maksimum untuk arkib. Lalai = 3."
+config_files_only_allow_images: "Apabila ditetapkan kepada true, sebarang fail yang ditemui oleh pengimbas yang bukan imej akan dibenderakan serta-merta, tanpa diimbas. Ini boleh membantu mengurangkan masa yang diperlukan untuk menyelesaikan imbasan dalam beberapa kes. Ditetapkan kepada false secara lalai."
+config_files_scannable_threshold: "Ambang untuk panjang data mentah yang dibenarkan untuk dibaca dan diimbas oleh phpMussel (sekiranya terdapat sebarang isu prestasi yang ketara semasa mengimbas). Lalai = 32MB. Sifar akan melumpuhkan ambang ini. Secara amnya, nilai ini tidak sepatutnya kurang daripada purata saiz muat naik fail yang anda mahu dan jangkakan terima ke pelayan atau tapak web anda, tidak sepatutnya lebih daripada arahan filesize_limit, dan tidak sepatutnya melebihi kira-kira satu perlima daripada jumlah peruntukan memori yang dibenarkan kepada PHP melalui fail konfigurasi "php.ini". Arahan ini wujud untuk cuba menghalang phpMussel daripada menggunakan terlalu banyak memori (yang boleh menghalangnya daripada berjaya mengimbas fail di atas saiz fail tertentu)."
+config_frontend: "Konfigurasi untuk bahagian hadapan."
+config_frontend_default_algo: "Mentakrifkan algoritma yang hendak digunakan untuk semua kata laluan dan sesi masa depan."
+config_frontend_frontend_log: "Fail untuk mengelog percubaan log masuk bahagian hadapan. Tentukan nama fail, atau biarkan kosong untuk nyahaktifkan."
+config_frontend_magnification: "Pembesaran fon. Lalai = 1."
+config_frontend_max_login_attempts: "Jumlah maksimum percubaan log masuk bahagian hadapan. Lalai = 5."
+config_frontend_numbers: "Bagaimanakah anda lebih suka nombor untuk dipaparkan? Pilih contoh yang kelihatan paling betul untuk anda."
+config_frontend_theme: "Estetika yang digunakan untuk bahagian hadapan phpMussel."
+config_legal: "Konfigurasi untuk keperluan undang-undang."
+config_legal_privacy_policy: "Alamat kepada dasar privasi yang akan dipaparkan dalam pengaki mana-mana halaman yang dijana. Tentukan URL, atau biarkan kosong untuk menyahaktifkan."
+config_legal_pseudonymise_ip_addresses: "Pseudonimisasikan alamat IP apabila mengelog? True = Ya [Lalai]; False = Tidak."
+config_quarantine: "Konfigurasi untuk kuarantin."
+config_quarantine_quarantine_max_files: "The maximum number of files that can exist in the quarantine. When new files are added to the quarantine, if this number is exceeded, old files will be deleted until the remainder no longer exceeds this number. Lalai = 100."
+config_quarantine_quarantine_key: "phpMussel dapat mengkuarantin muat naik fail yang disekat, jika ini adalah sesuatu yang anda mahu lakukan. Pengguna kasual phpMussel yang hanya mahu melindungi tapak web atau persekitaran pengehosan mereka tanpa berminat untuk menganalisis secara mendalam sebarang percubaan muat naik fail yang dibenderakan harus membiarkan kefungsian ini dinyahaktifkan, tetapi mana-mana pengguna yang berminat untuk menganalisis lebih lanjut mengenai percubaan muat naik fail yang dibenderakan untuk penyelidikan perisian hasad atau untuk perkara yang serupa harus mengaktifkan kefungsian ini. Kuarantin kadangkala juga boleh membantu dalam menyahpepijat positif palsu, jika ini kerap berlaku untuk anda. Untuk menyahaktifkan kefungsian kuarantin, hanya biarkan arahan <code>quarantine_key</code> kosong, atau padamkan kandungan arahan ini jika ia belum kosong. Untuk mengaktifkan kefungsian kuarantin, masukkan beberapa nilai ke dalam arahan ini. <code>quarantine_key</code> ialah ciri keselamatan penting bagi kefungsian kuarantin yang diperlukan sebagai cara untuk menghalang dieksploitasi oleh penyerang berpotensi dan sebagai cara untuk menghalang sebarang pelaksanaan data yang disimpan dalam kuarantin. <code>quarantine_key</code> harus dilayan dengan cara yang sama seperti kata laluan anda: Lebih lama lebih baik, dan jaga dengan teliti. Untuk kesan terbaik, gunakan bersama-sama dengan <code>delete_on_sight</code>."
+config_quarantine_quarantine_max_filesize: "Saiz fail maksimum yang dibenarkan untuk fail dikuarantin. Fail yang lebih besar daripada nilai yang ditetapkan TIDAK akan dikuarantin. Ini menyukarkan mana-mana penyerang berpotensi membanjiri kuarantin anda dengan data yang tidak diingini yang berpotensi menyebabkan penggunaan data yang berlebihan pada perkhidmatan pengehosan anda. Lalai = 2MB."
+config_quarantine_quarantine_max_usage: "Penggunaan memori maksimum yang dibenarkan untuk kuarantin. Jika jumlah memori yang digunakan oleh kuarantin mencapai nilai ini, fail tertua yang dikuarantin akan dipadamkan sehingga jumlah memori yang digunakan tidak lagi mencapai nilai ini. Ini menyukarkan mana-mana penyerang berpotensi membanjiri kuarantin anda dengan data yang tidak diingini yang berpotensi menyebabkan penggunaan data yang berlebihan pada perkhidmatan pengehosan anda. Lalai = 64MB."
+config_signatures: "Konfigurasi untuk tandatangan, fail tandatangan, dsb."
+config_signatures_active: "Senarai fail tandatangan aktif, dihadkan dengan koma. Nota: Fail tandatangan mesti dipasang dahulu, sebelum anda boleh mengaktifkannya. Untuk fail ujian berfungsi dengan betul, fail tandatangan mesti dipasang dan diaktifkan."
+config_signatures_detect_adware: "Patutkah phpMussel menghuraikan tandatangan untuk mengesan perisian iklan? False = Tidak; True = Ya [Lalai]."
+config_signatures_detect_deface: "Patutkah phpMussel menghuraikan tandatangan untuk mengesan pengrosakan/vandalisme laman web? False = Tidak; True = Ya [Lalai]."
+config_signatures_detect_encryption: "Patutkah phpMussel mengesan dan menyekat fail yang disulitkan? False = Tidak; True = Ya [Lalai]."
+config_signatures_detect_joke_hoax: "Patutkah phpMussel menghuraikan tandatangan untuk mengesan virus jenaka/tipuan? False = Tidak; True = Ya [Lalai]."
+config_signatures_detect_packer_packed: "Patutkah phpMussel menghuraikan tandatangan untuk mengesan pembungkus dan data yang dibungkus? False = Tidak; True = Ya [Lalai]."
+config_signatures_detect_pua_pup: "Patutkah phpMussel menghuraikan tandatangan untuk mengesan PUA/PUP? False = Tidak; True = Ya [Lalai]."
+config_signatures_detect_shell: "Patutkah phpMussel menghuraikan tandatangan untuk mengesan skrip shell? False = Tidak; True = Ya [Lalai]."
+config_signatures_fail_extensions_silently: "Patutkah phpMussel melaporkan apabila sambungan tiada? Jika <code>fail_extensions_silently</code> dinyahaktifkan, sambungan yang tiada akan dilaporkan semasa pengimbasan, dan jika <code>fail_extensions_silently</code> diaktifkan, sambungan yang hilang akan diabaikan, dan pengimbasan akan melaporkan bahawa tiada sebarang masalah dengan fail tersebut. Menyahaktifkan arahan ini mungkin meningkatkan keselamatan anda, tetapi juga boleh menyebabkan peningkatan positif palsu. False = Dinyahaktifkan; True = Diaktifkan [Lalai]."
+config_signatures_fail_silently: "Patutkah phpMussel melaporkan apabila fail tandatangan hilang atau rosak? Jika <code>fail_silently</code> Jika x dinyahaktifkan, fail yang hilang atau rosak akan dilaporkan semasa pengimbasan, dan jika <code>fail_silently</code> diaktifkan, fail yang hilang atau rosak akan diabaikan, dan pengimbasan akan melaporkan bahawa tiada sebarang masalah dengan fail tersebut. Ini biasanya harus dibiarkan sahaja melainkan anda mengalami ranap sistem atau masalah yang serupa. False = Dinyahaktifkan; True = Diaktifkan [Lalai]."
+config_signatures_heuristic_threshold: "Beberapa tandatangan phpMussel bertujuan untuk mengenal pasti penunjuk yang mencurigakan dan berpotensi berniat jahat dalam fail, tanpa mengenal pasti secara langsung fail tersebut sebagai berniat jahat. Nilai ambang ini memberitahu phpMussel berat maksimum yang dibenarkan sebelum membenderakan fail tersebut sebagai berniat jahat. Takrifan "berat" dalam konteks ini ialah jumlah bilangan penunjuk yang mencurigakan dan berpotensi berniat jahat yang dikenal. Secara lalai, nilai ini akan ditetapkan kepada 3. Nilai yang lebih rendah biasanya akan mengakibatkan kejadian positif palsu yang lebih tinggi tetapi bilangan fail berniat jahat yang dibenderakan akan lebih tinggi, sedangkan nilai yang lebih tinggi biasanya akan mengakibatkan kejadian positif palsu yang lebih rendah tetapi bilangan fail berniat jahat yang dibenderakan juga akan lebih rendah. Secara amnya, sebaiknya biarkan nilai ini pada lalai melainkan anda mengalami masalah yang berkaitan dengannya."
+config_supplementary_cache_options: "Pilihan cache tambahan. Nota: Menukar nilai ini mungkin berpotensi log anda keluar."
+config_supplementary_cache_options_enable_apcu: "Menentukan sama ada hendak mencuba menggunakan APCu untuk caching. Lalai = True."
+config_supplementary_cache_options_enable_memcached: "Menentukan sama ada hendak mencuba menggunakan Memcached untuk caching. Lalai = False."
+config_supplementary_cache_options_enable_pdo: "Menentukan sama ada hendak mencuba menggunakan PDO untuk caching. Lalai = False."
+config_supplementary_cache_options_enable_redis: "Menentukan sama ada hendak mencuba menggunakan Redis untuk caching. Lalai = False."
+config_supplementary_cache_options_memcached_host: "Nilai hos Memcached. Lalai = "localhost"."
+config_supplementary_cache_options_memcached_port: "Nilai port Memcached. Lalai = "11211"."
+config_supplementary_cache_options_pdo_dsn: "Nilai DSN PDO. Lalai = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+config_supplementary_cache_options_pdo_password: "Kata laluan PDO."
+config_supplementary_cache_options_pdo_username: "Nama pengguna PDO."
+config_supplementary_cache_options_prefix: "Nilai yang dinyatakan disini akan ditambahkan pada permulaan kunci untuk semua entri dalam cache. Lalai = "phpMussel_". Apabila berbilang pemasangan wujud pada pelayan yang sama, ini boleh berguna untuk memastikan cache mereka berasingan antara satu sama lain."
+config_supplementary_cache_options_redis_host: "Nilai hos Redis. Lalai = "localhost"."
+config_supplementary_cache_options_redis_port: "Nilai port Redis. Lalai = "6379"."
+config_supplementary_cache_options_redis_timeout: "Nilai tamat masa Redis. Lalai = "2.5"."
+config_urlscanner: "Konfigurasi untuk pengimbas URL."
+config_urlscanner_cache_time: "Berapa lama (dalam saat) hasil carian API harus dicache? Lalai ialah 3600 saat (1 jam)."
+config_urlscanner_google_api_key: "Mendayakan carian ke API Google Safe Browsing apabila kunci API yang diperlukan ditentukan."
+config_urlscanner_maximum_api_lookups: "Bilangan maksimum carian API yang dibenarkan untuk dilakukan setiap lelaran imbasan individu. Oleh kerana setiap carian API tambahan akan menambah jumlah masa yang diperlukan untuk melengkapkan setiap lelaran imbasan, anda mungkin mahu menetapkan had untuk mempercepatkan keseluruhan imbasan. Apabila ditetapkan kepada 0, tiada nombor maksimum yang dibenarkan sedemikian akan digunakan. Ditetapkan kepada 10 secara lalai."
+config_urlscanner_maximum_api_lookups_response: "Apakah yang perlu dilakukan jika bilangan maksimum carian API yang dibenarkan melebihi? False = Jangan buat apa-apa (teruskan pemprosesan) [Lalai]; True = Benderakan/sekat fail."
+config_virustotal: "Konfigurasi untuk integrasi Virus Total."
+config_virustotal_vt_public_api_key: "Secara pilihan, phpMussel boleh mengimbas fail menggunakan API Virus Total sebagai satu cara untuk menyediakan tahap perlindungan yang sangat dipertingkatkan terhadap virus, trojan, perisian hasad, dan ancaman lain. Secara lalai, mengimbas fail menggunakan API Virus Total dinyahaktifkan. Untuk mengaktifkannya, kunci API daripada Virus Total diperlukan. Oleh kerana manfaat yang boleh diberikan kepada anda, saya amat mengesyorkan untuk mengaktifkannya. Walau bagaimanapun, harap maklum bahawa untuk menggunakan API Virus Total, anda <em><strong>MESTI</strong></em> bersetuju dengan Syarat Perkhidmatan mereka dan anda <em><strong>MESTI</strong></em> mematuhi semua garis panduan seperti yang diterangkan oleh dokumentasi Virus Total! Anda TIDAK dibenarkan menggunakan ciri penyepaduan ini KECUALI: Anda telah dibaca dan bersetuju Syarat Perkhidmatan untuk Virus Total dan APInya. Anda telah dibaca dan anda memahami, sekurang-kurangnya, mukadimah dokumentasi API Virus Total (semuanya selepas "VirusTotal Public API v2.0" tetapi sebelum "Contents")."
+config_virustotal_vt_quota_rate: "Menurut dokumentasi API Virus Total, ia terhad kepada paling banyak 4 permintaan dalam apa jua bentuk dalam mana-mana tempoh masa 1 minit tertentu. Jika anda menjalankan honeyclient, honeypot atau mana-mana automasi lain yang akan menyediakan sumber kepada VirusTotal dan bukan sahaja mendapatkan laporan, anda berhak mendapat kuota kadar permintaan yang lebih tinggi. Secara lalai, phpMussel akan mematuhi batasan ini dengan ketat, tetapi disebabkan kemungkinan kuota kadar ini dinaikkan, kedua-dua arahan ini disediakan sebagai cara untuk anda mengarahkan phpMussel tentang had yang perlu dipatuhi. Melainkan anda telah diarahkan berbuat demikian, anda tidak disyorkan untuk meningkatkan nilai ini, tetapi, jika anda menghadapi masalah yang berkaitan dengan mencapai kuota kadar anda, mengurangkan nilai ini kadangkala <em><strong>MUNGKIN</strong></em> membantu anda menangani masalah ini. Had kadar anda ditentukan sebagai <code>vt_quota_rate</code> permintaan apa-apa sifat dalam mana-mana tempoh masa <code>vt_quota_time</code> minit tertentu."
+config_virustotal_vt_quota_time: "(Lihat penerangan di atas)."
+config_virustotal_vt_suspicion_level: "Secara lalai, phpMussel akan mengehadkan fail yang diimbas menggunakan API Virus Total kepada fail yang dianggapnya "mencurigakan". Jika anda mahu, anda boleh melaraskan sekatan ini dengan menukar nilai arahan <code>vt_suspicion_level</code>."
+config_virustotal_vt_weighting: "Patutkah phpMussel menggunakan hasil pengimbasan menggunakan API Virus Total sebagai pengesanan atau pemberat? Arahan ini wujud, kerana, walaupun mengimbas fail menggunakan berbilang enjin (seperti yang dilakukan oleh Virus Total) seharusnya menghasilkan kadar pengesanan yang meningkat (dan oleh mengakibatkan lebih banyak fail berniat jahat ditangkap), ia juga boleh menghasilkan bilangan positif palsu yang lebih tinggi, dan jadi, dalam beberapa keadaan, hasil imbasan mungkin lebih baik digunakan sebagai skor keyakinan dan bukannya sebagai kesimpulan muktamad. Jika nilai 0 digunakan, hasil pengimbasan menggunakan API Virus Total akan digunakan sebagai pengesanan, dan jadi, jika mana-mana enjin yang digunakan oleh Virus Total benderakan fail yang diimbas sebagai berniat jahat, phpMussel akan menganggap fail sebagai berniat jahat. Jika sebarang nilai lain digunakan, hasil pengimbasan menggunakan API Virus Total akan digunakan sebagai pemberat, dan jadi, bilangan enjin yang digunakan oleh Virus Total yang benderakan fail yang diimbas sebagai berniat jahat akan berfungsi sebagai skor keyakinan (atau pemberat) sama ada fail yang diimbas harus dianggap berniat jahat oleh phpMussel (nilai yang digunakan akan mewakili skor keyakinan minimum atau pemberat yang diperlukan untuk dianggap berniat jahat). Nilai 0 digunakan secara lalai."
+confirm_action: "Adakah anda pasti mahu "%s"?"
+confirm_delete: "Adakah anda pasti mahu memadamkan "%s"?"
+field_2fa: "Kod 2FA"
+field_clear_all: "Kosongkan semua"
+field_confirm: "Sahkan"
+field_create_new_account: "Buat akaun baru"
+field_delete_account: "Memadam akaun"
+field_delete_all: "Memadam semua"
+field_delete_file: "Padamkan"
+field_download_file: "Muat turun"
+field_false: "False (Palsu)"
+field_file: "Fail"
+field_latest_version: "Versi terkini"
+field_log_in: "Masuk"
+field_log_rotation_archive: "Mula-mula arkibkan, dan kemudian padamkan fail log tertua, sehingga had tidak lagi melebihi."
+field_log_rotation_delete: "Padamkan fail log tertua, sehingga had tidak lagi melebihi."
+field_more_fields: "Lagi medan"
+field_ok: "OK"
+field_options: "Pilihan"
+field_password: "Kata laluan"
+field_permissions: "Kebenaran"
+field_quarantine_key: "Kunci kuarantin"
+field_reset: "Tetapkan semula"
+field_restore_file: "Pulihkan"
+field_set_new_password: "Tetapkan kata laluan baharu"
+field_size: "Jumlah Saiz:"
+field_size_GB: "GB"
+field_size_KB: "KB"
+field_size_MB: "MB"
+field_size_TB: "TB"
+field_size_bytes: "bait"
+field_system_timezone: "Gunakan zon waktu lalai sistem."
+field_true: "True (Benar)"
+field_update: "Kemas kini"
+field_update_signatures_files: "Kemas kini fail tandatangan"
+field_username: "Nama pengguna"
+field_your_version: "Versi anda"
+header_login: "Sila log masuk untuk meneruskan."
+hints_pdo_dsn:
+ FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.id.md\#HOW_TO_USE_PDO" hreflang="id">Apakah itu "PDO DSN"? Bagaimanakah saya boleh menggunakan PDO dengan phpMussel?</a></em>"
+hints_xlists:
+ Bagaimana ini berfungsi.: "Jika sistem anda membenarkan hanya jenis fail tertentu untuk dimuat naik, atau jika sistem anda secara eksplisit menafikan jenis fail tertentu, menyatakan jenis fail tersebut dalam senarai putih, senarai hitam, dan senarai kelabu boleh meningkatkan kelajuan pengimbasan dilakukan dengan membenarkan skrip melangkau jenis fail tertentu. Format ialah CSV (nilai dipisahkan koma)."
+ Perintah pemprosesan logik.: "Jika jenis fail disenaraiputihkan, jangan imbas dan jangan sekat fail, dan jangan semak fail terhadap senarai hitam atau senarai kelabu. Jika jenis fail disenaraihitamkan, jangan imbas fail tetapi sekat fail jugak, dan jangan semak fail terhadap senarai kelabu. Jika senarai kelabu kosong atau jika senarai kelabu tidak kosong dan jenis fail disenaraikelabukan, imbas fail seperti biasa dan tentukan sama ada untuk menyekatnya berdasarkan hasil imbasan, tetapi jika senarai kelabu tidak kosong dan jenis fail tidak disenaraikelabukan, anggap fail sebagai disenaraihitamkan, jadi tidak mengimbasnya tetapi menyekatnya jugak."
+info_some_useful_links: |
+ Beberapa pautan yang berguna:<br />
+     <ul class="pieul">
+       <li><span class="comCat">Alat, sumber, dll untuk phpMussel.</span>
+         <ul class="comSub">
+           <li>{{Links.phpMussel.Issues}} – Halaman isu untuk phpMussel (sokongan, bantuan, dll).</li>
+           <li>{{Links.phpMussel.SigTool}} – Membuat fail tandatangan phpMussel menggunakan pangkalan data tandatangan ClamAV.</li>
+           <li>{{Links.phpMussel.Extras}} – Pelbagai tambahan.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Alat, sumber, dll untuk ClamAV.</span>
+         <ul class="comSub">
+           <li>{{Links.ClamavNet}} – Laman utama untuk ClamAV (ClamAV® ialah enjin antivirus yang sumber terbuka untuk mengesan trojan, virus, perisian hasad dan ancaman jahat yang lain).</li>
+           <li>{{Links.SecuriteInfo}} – Syarikat keselamatan komputer yang menawarkan tandatangan tambahan untuk ClamAV.</li>
+           <li>{{Links.Sanesecurity}} – Syarikat keselamatan komputer yang menawarkan tandatangan tambahan untuk ClamAV.</li>
+           <li>{{Links.Malware Expert}} – Menawarkan tandatangan tambahan untuk ClamAV dan peraturan tambahan untuk ModSecurity.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Kumpulan, forum, komuniti, dll.</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Facebook}} – Sumber pembelajaran dan perbincangan PHP.</li>
+           <li>{{Links.MalwareTips}} – Berguna forum perbincangan tertumpu perisian hasad.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Alat berguna, sumber, perkhidmatan, dll lain.</span>
+         <ul class="comSub">
+           <li>{{Links.PhishTank}} – Pangkalan data pancingan data yang digunakan oleh pengimbas URL phpMussel.</li>
+           <li>{{Links.VirusTotal}} – VirusTotal ialah perkhidmatan percuma untuk menganalisis fail dan URL yang mencurigakan.</li>
+           <li>{{Links.Hybrid Analysis}} – Hybrid Analysis ialah perkhidmatan percuma untuk analisis perisian hasad yang disediakan oleh {{Links.Payload Security}}.</li>
+           <li>{{Links.Malwarebytes}} – Komputer pakar anti-perisian hasad.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Sumber bermaklumat dan pembelajaran.</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Website}} – Sumber pembelajaran dan perbincangan PHP.</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Carta Kerentanan</a> – Menyenaraikan pelbagai versi daripada pakej yang selamat dan tidak selamat (HHVM, PHP, phpMyAdmin, Python, dll).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Carta Keserasian</a> – Menyenaraikan maklumat keserasian untuk pelbagai pakej (CIDRAM, phpMussel, dll).</li>
+         </ul>
+       </li>
+     </ul>
+
+label_active_config_file: "Fail konfigurasi aktif:"
+label_blocked: "Muat naik disekat"
+label_branch: "Cawangan terkini stabil:"
+label_clientinfo: "Maklumat pelanggan:"
+label_default: "Lalai"
+label_events: "Imbas acara"
+label_expires: "Tamat tempoh:"
+label_extension: "Sambungan"
+label_external: "Luaran"
+label_flagged: "Objek dibenderakan"
+label_installed_available: "Dipasang/Tersedia"
+label_is_available: "%s tersedia (%s)."
+label_is_available_class: "%s tersedia."
+label_is_not_available: "%s tidak tersedia."
+label_never: "Tak pernah"
+label_os: "Sistem operasi digunakan:"
+label_other: "Lain"
+label_other-Active: "Fail tandatangan aktif"
+label_other-Since: "Tarikh mula"
+label_php: "Versi PHP digunakan:"
+label_phpmussel: "Versi phpMussel digunakan:"
+label_quarantined: "Muat naik dikuarantin"
+label_sapi: "SAPI digunakan:"
+label_scanned_objects: "Objek diimbas"
+label_scanned_uploads: "Muat naik diimbas"
+label_see_also: "Lihat juga:"
+label_size_in_quarantine: "Saiz dalam kuarantin:"
+label_stable: "Terkini stabil:"
+label_sysinfo: "Maklumat sistem:"
+label_unstable: "Terkini tidak stabil:"
+label_upload_date: "Muat naik tarikh:"
+label_upload_hash: "Muat naik hash:"
+label_upload_origin: "Muat naik asal:"
+label_upload_size: "Saiz muat naik:"
+label_your_ip: "IP anda:"
+label_your_ua: "UA anda:"
+link_accounts: "Akaun"
+link_cache_data: "Data Cache"
+link_config: "Konfigurasi"
+link_copy_to_clipboard: "Salin ke papan keratan"
+link_discussions: "Perbincangan"
+link_documentation: "Dokumentasi"
+link_home: "Halaman Utama"
+link_log_out: "Log Keluar"
+link_logs: "Log"
+link_quarantine: "Kuarantin"
+link_siginfo: "Maklumat Tandatangan"
+link_statistics: "Statistik"
+link_textmode: "Pemformatan teks: <a href="%1$sfalse">Mudah</a> – <a href="%1$strue">Diformatkan</a>"
+link_upload_test: "Ujian Muat Naik"
+logs_logfile_doesnt_exist: "Fail log yang dipilih tidak wujud!"
+logs_no_logfile_selected: "Tiada fail log dipilih."
+logs_no_logfiles_available: "Tiada fail log tersedia."
+max_login_attempts_exceeded: "Bilangan maksimum percubaan untuk memasuki dicapai; Akses dinafikan."
+msg_subject_2fa: "Pengesahan Dua-Faktor"
+msg_template_2fa: |
+ <center><p>Salam, %s.<br /><br />
+ Kod pengesahan dua-faktor anda untuk masuk ke bahagian hadapan phpMussel:</p>
+ <h1>%s</h1>
+ <p>Kod ini tamat tempoh dalam masa 10 minit.</p></center>
+previewer_days: "Hari"
+previewer_hours: "Jam"
+previewer_minutes: "Minit"
+previewer_months: "Bulan"
+previewer_seconds: "Saat"
+previewer_weeks: "Minggu"
+previewer_years: "Tahun"
+response_2fa_invalid: "Kod 2FA salah dimasukkan. Pengesahan gagal."
+response_2fa_valid: "Berjaya disahkan."
+response_accounts_already_exists: "Akaun dengan nama pengguna ini sudah wujud!"
+response_accounts_created: "Akaun berjaya dibuat!"
+response_accounts_deleted: "Akaun berjaya dipadamkan!"
+response_accounts_doesnt_exist: "Akaun ini tidak wujud."
+response_accounts_password_updated: "Kata laluan berjaya dikemas kini!"
+response_configuration_updated: "Konfigurasi berjaya dikemas kini."
+response_failed: "Gagal"
+response_failed_to_create: "Gagal mencipta!"
+response_failed_to_delete: "Gagal memadam!"
+response_failed_to_update: "Gagal mengemas kini!"
+response_file_deleted: "Fail berjaya dipadamkan!"
+response_file_restored: "Fail berjaya dipulihkan!"
+response_login_invalid_password: "Kegagalan masuk! Kata laluan tidak sah!"
+response_login_invalid_username: "Kegagalan masuk! Nama pengguna tidak wujud!"
+response_login_password_field_empty: "Medan kata laluan kosong!"
+response_login_username_field_empty: "Medan nama pengguna kosong!"
+response_login_wrong_endpoint: "Titik akhir salah!"
+response_no: "Tidak"
+response_restore_error_1: "Gagal dipulihkan! Fail rosak!"
+response_restore_error_2: "Gagal dipulihkan! Kunci kuarantin salah!"
+response_statistics_cleared: "Statistik dikosongkan."
+response_yes: "Ya"
+siginfo_key_CVE: "Tandatangan yang berurusan dengan CVE (Kerentanan dan Pendedahan Biasa)."
+siginfo_key_Chameleon: "Tandatangan yang berurusan dengan "serangan chameleon"."
+siginfo_key_FN: "Tandatangan yang berfungsi dengan nama fail (berbeza dengan kandungan fail)."
+siginfo_key_Fake: "Pengesanan ialah varian palsu dan berniat jahat daripada entiti yang tidak berbahaya (perisian, skrip, dll)."
+siginfo_key_HEUR: "Tandatangan yang diperoleh daripada data heuristik."
+siginfo_key_META: "Tandatangan yang berfungsi dengan metadata fail (berbeza dengan data fail)."
+siginfo_key_Other: "Tidak dikenali atau lain-lain."
+siginfo_key_Other_Metadata: "Tiada metadata tersedia."
+siginfo_key_Suspect: "Pengesanan disyaki, tetapi tidak disahkan (mungkin melibatkan gabungan pelbagai pengecam)."
+siginfo_key_Testfile: "Tandatangan untuk fail ujian (iaitu, bukan pengesanan berniat jahat)."
+siginfo_key_Total: "Jumlah tandatangan aktif."
+siginfo_key_VT: "Tandatangan termasuk atau berdasarkan data daripada Virus Total."
+siginfo_key_Werewolf: "Tandatangan yang berurusan dengan "serangan werewolf"."
+siginfo_sub_Classes: "Kira berdasarkan kelas fail tandatangan"
+siginfo_sub_Files: "Kira berdasarkan fail tandatangan"
+siginfo_sub_MalwareTypes: "Kira berdasarkan jenis jangkitan atau perisian hasad"
+siginfo_sub_SigTypes: "Kira berdasarkan metadata tandatangan"
+siginfo_sub_Targets: "Kira berdasarkan vektor yang disasarkan"
+siginfo_sub_Vendors: "Kira berdasarkan vendor atau sumber tandatangan"
+siginfo_xkey: "Dikenali sebagai "%s"."
+state_async_deny: "Kebenaran tidak mencukupi untuk melaksanakan permintaan tak segerak. Cuba masuk semula."
+state_cache_is_empty: "Cache kosong."
+state_complete_access: "Akses lengkap"
+state_default_password: "Amaran: Menggunakan kata laluan lalai!"
+state_loading: "Memuatkan..."
+state_loadtime: "Permintaan halaman selesai dalam masa %s saat."
+state_logged_in: "Dimasukkan."
+state_logged_in_2fa_pending: "Dimasukkan + 2FA sedang menunggu."
+state_logged_out: "Dikeluarkan."
+state_logs_access_only: "Akses kepada log sahaja"
+state_maintenance_mode: "Amaran: Beroperasi dalam mod penyelenggaraan!"
+state_password_not_valid: "Amaran: Akaun ini tidak menggunakan kata laluan yang sah!"
+state_quarantine: "Terdapat %s fail sedang dalam kuarantin."
+tip_2fa_sent: "E-mel yang mengandungi kod pengesahan dua-faktor telah dihantar ke alamat e-mel anda. Sila sahkan kod ini dibawah untuk mendapatkan akses kepada bahagian hadapan. Jika anda tidak menerima e-mel ini, cuba log keluar, tunggu selama 10 minit, dan log masuk semula untuk menerima e-mel baharu yang mengandungi kod baharu."
+tip_accounts: "Salam, {username}.<br />Halaman akaun membolehkan anda mengawal siapa yang boleh mengakses bahagian hadapan phpMussel."
+tip_cache_data: "Salam, {username}.<br />Disini anda boleh menyemak kandungan cache."
+tip_config: "Salam, {username}.<br />Halaman konfigurasi membolehkan anda mengubah suai konfigurasi untuk phpMussel dari bahagian hadapan."
+tip_fe_cookie_warning: "Nota: phpMussel menggunakan kuki untuk mengesahkan log masuk. Apabila anda log masuk, anda memberikan persetujuan anda untuk kuki dibuat dan disimpan oleh penyemak imbas anda."
+tip_home: "Salam, {username}.<br />Ini ialah halaman utama untuk bahagian hadapan phpMussel. Pilih pautan daripada menu navigasi di sebelah kiri untuk meneruskan."
+tip_logs: "Salam, {username}.<br />Pilih fail log daripada senarai dibawah untuk melihat kandungan fail log tersebut."
+tip_quarantine: "Salam, {username}.<br />Halaman ini menyenaraikan semua fail yang sedang dalam kuarantin dan memudahkan pengurusan fail tersebut."
+tip_quarantine_disabled: "Nota: Kuarantin sedang dinyahaktifkan, tetapi boleh diaktifkan melalui halaman konfigurasi."
+tip_see_the_documentation: "Lihat <a href="https://github.com/phpMussel/Docs/blob/master/readme.id.md\#SECTION5" hreflang="id" rel="noopener external">dokumentasi</a> untuk mendapatkan maklumat tentang pelbagai arahan konfigurasi dan tujuannya."
+tip_siginfo: "Salam, {username}.<br />Halaman maklumat tandatangan menyediakan beberapa maklumat asas tentang sumber dan jenis tandatangan yang sedang aktif."
+tip_statistics: "Salam, {username}.<br />Halaman ini menunjukkan beberapa statistik penggunaan asas mengenai pemasangan phpMussel anda."
+tip_statistics_disabled: "Nota: Penjejakan statistik kini dinyahaktifkan, tetapi boleh diaktifkan melalui halaman konfigurasi."
+tip_upload_test: "Salam, {username}.<br />Halaman ujian muat naik mengandungi borang muat naik fail standard, membolehkan anda menguji sama ada fail biasanya akan disekat oleh phpMussel apabila cuba memuat naiknya."
+title_login: "Masuk"
+warning_javascript_required: "Amaran: Sesetengah kefungsian bahagian hadapan memerlukan JavaScript. Untuk memastikan bahawa keseluruhan bahagian hadapan berkelakuan seperti yang diharapkan, mendayakan JavaScript adalah disyorkan."
+warning_signatures_1: "Amaran: Tiada fail tandatangan yang aktif!"
+warning_will_log_out_all_users: "Amaran: Meneruskan akan log keluar semua pengguna."

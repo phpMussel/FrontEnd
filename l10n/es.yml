@@ -7,9 +7,24 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2022.07.22).
+# This file: Spanish language data (last modified: 2022.08.19).
+#
+# Regarding translations: My native language is English. Because this is a free
+# and open-source hobby project which generates zero income, and translatable
+# content is likely to change as the features and functionality supported by
+# the project changes, it doesn't make sense for me to spend money for
+# translations. Because I'm the sole author/developer/maintainer for the
+# project and I'm not a ployglot, any translations I produce are very likely to
+# contain errors. Sorry, but realistically, that won't ever change. If you find
+# any such errors/typos/mistakes/etc, your assistance to correct them would be
+# very much appreciated. Pull requests are invited and encouraged. Otherwise,
+# if you find these errors too much to handle, just stick with the original
+# English source. If a translation is irredeemably incomprehensible, let me
+# know which, and I can delete it. If you're not sure how to perform pull
+# requests, ask. I can help.
 ##/
 
+checkbox_delete_orphaned_values: "Eliminar valores huérfanos."
 config_core: "Configuración general (cualquier configuración que no pertenezca a otras categorías)."
 config_core_default_timeout: "¿Tiempo de espera predeterminado para usar en solicitudes externas? Predeterminado = 12 segundos."
 config_core_delete_on_sight: "Activando esta directiva instruirá la script para intentar para eliminar inmediatamente cualquier escaneados intentados archivos subidos emparejando a los criterios de detección, si través de firmas o de otras maneras. Archivos determinados como limpia no serán tocados. En el caso de los compactados archivos, la totalidad del compactado archivo será eliminado (independientemente de si el emparejando archivo es sólo uno de muchos varios archivos contenida dentro del compactado archivo). Para el caso de archivo subir escaneo, en general, no es necesario activar esta directiva, porque en general, PHP purgará automáticamente el contenido de su caché cuando la ejecución ha terminado, significando que lo en general eliminará cualquier archivos subidos a través de él con el servidor a no ser que se han movido, copiado o eliminado ya. La directiva se añade aquí como una medida adicional de seguridad para aquellos cuyas copias de PHP no siempre se comportan de la manera esperada. False = Después escaneando, dejar el archivo solo [Predefinido]; True = Después escaneando, si no se limpia, eliminar inmediatamente."
@@ -59,7 +74,7 @@ config_files_max_recursion: "Máximo recursividad nivel límite para compactados
 config_files_only_allow_images: "Cuando es true, cualquier archivo encontrado por el escáner que no sean imágenes se marcará de inmediato, sin ser escaneado. Esto puede ayudar a reducir el tiempo necesario para completar una escaneo en algunos casos. Establecido en falso por predeterminado."
 config_files_scannable_threshold: "Opcional limitación a la longitud de datos puros para que phpMussel se permitido leer y escanear (en caso de que los hay notable rendimiento problemas mientras que escaneando). Predefinido = 32MB. Cero o nulo valor desactiva la limitación. En general, Este valor no debe ser inferior a la media tamaño de archivos subidos que desea y espera recibir a su servidor o website, no debe ser mayor que el filesize_limit directiva, y no debe ser más de aproximadamente una quinta parte de la total permisible memoria asignación concedida a PHP a través de la "php.ini" configuración archivo. Esta directiva existe para intratar prevenir phpMussel del uso de demasiada memoria (eso sería prevenir que sea capaz para escanear archivos con éxito encima de un cierto tamaño de archivos)."
 config_frontend: "Configuración para el front-end."
-config_frontend_default_algo: "Define qué algoritmo utilizar para todas las contraseñas y sesiones en el futuro. Opciones: PASSWORD_DEFAULT (predefinido), PASSWORD_BCRYPT, PASSWORD_ARGON2I (requiere PHP &gt;= 7.2.0), PASSWORD_ARGON2ID (requiere PHP &gt;= 7.3.0)."
+config_frontend_default_algo: "Define qué algoritmo utilizar para todas las contraseñas y sesiones en el futuro."
 config_frontend_frontend_log: "Archivo para registrar intentos de login al front-end. Especificar el nombre del archivo, o dejar en blanco para desactivar."
 config_frontend_magnification: "Ampliación de fuente. Predefinido = 1."
 config_frontend_max_login_attempts: "Número máximo de intentos de login al front-end. Predefinido = 5."
@@ -95,7 +110,7 @@ config_supplementary_cache_options_memcached_port: "Valor del puerto de Memcache
 config_supplementary_cache_options_pdo_dsn: "Valor del DSN de PDO. Predefinido = "mysql:dbname=phpmussel;host=localhost;port=3306"."
 config_supplementary_cache_options_pdo_password: "Contraseña de PDO."
 config_supplementary_cache_options_pdo_username: "Nombre del usuario de PDO."
-config_supplementary_cache_options_prefix: "El valor especificado aquí se antepondrá a las claves de todas las entradas de la caché. Vacía por predefinida. Cuando existen varias instalaciones en el mismo servidor, esto puede ser útil para mantener sus cachés separados entre sí."
+config_supplementary_cache_options_prefix: "El valor especificado aquí se antepondrá a las claves de todas las entradas de la caché. Predefinido = "phpMussel_". Cuando existen varias instalaciones en el mismo servidor, esto puede ser útil para mantener sus cachés separados entre sí."
 config_supplementary_cache_options_redis_host: "Valor del host de Redis. Predefinido = "localhost"."
 config_supplementary_cache_options_redis_port: "Valor del puerto de Redis. Predefinido = "6379"."
 config_supplementary_cache_options_redis_timeout: "Valor de tiempo de espera de Redis. Predefinido = "2.5"."
@@ -111,14 +126,14 @@ config_virustotal_vt_quota_time: "(Ver descripción arriba)."
 config_virustotal_vt_suspicion_level: "Por predefinido, phpMussel restringirá qué archivos se escaneado usando el Virus Total API a esos archivos que se considera "sospechosa". Opcionalmente, usted puede ajustar esta restricción por manera de cambiando el valor de la <code>vt_suspicion_level</code> directiva."
 config_virustotal_vt_weighting: "¿Debería phpMussel aplicar los resultados del escaneo utilizando el Virus Total API como detecciones o como detección peso? Esta directiva existe, por razón de que, aunque escanear un archivo usando múltiples motores (como Virus Total hacer) debería resultar en un aumento detección cuenta (y por lo tanto en un mayor número de maliciosos archivos ser atrapado), esta también puede resultar en un mayor número de falsos positivos, y por lo tanto, en algunas circunstancias, los resultados del escanear pueden ser mejor utilizados como una puntuación de confianza y no como una definitiva conclusión. Si un valor de 0 es utiliza, los resultados del escaneo utilizando el Virus Total API se aplicará como detecciones, y por lo tanto, si cualquier motor utilizado por Virus Total marca el archivo está escaneando como malicioso, phpMussel considerará el archivo a ser malicioso. Si cualquier otro valor es utiliza, los resultados del escaneo utilizando el Virus Total API se aplicará como detección peso, y por lo tanto, el número de motores utilizados por Virus Total que marca el archivo está escaneando como malicioso servirá como una puntuación de confianza (o detección peso) para si el archivo que ser escanear debe ser considerado malicioso por phpMussel (el valor utilizado representará el mínima puntuación de confianza o peso requerido con el fin de ser considerado malicioso). Un valor de 0 es utilizado por predefinido."
 confirm_action: "¿Estás seguro de que quieres "%s"?"
-confirm_delete: "¿Estás seguro de que quieres borrar "%s"?"
+confirm_delete: "¿Estás seguro de que quieres eliminar "%s"?"
 field_2fa: "Código 2FA"
 field_clear_all: "Anular todo"
 field_confirm: "Confirmar"
 field_create_new_account: "Crear Nueva Cuenta"
 field_delete_account: "Eliminar Cuenta"
 field_delete_all: "Eliminar todos"
-field_delete_file: "Borrar"
+field_delete_file: "Eliminar"
 field_download_file: "Descargar"
 field_false: "False (Falso)"
 field_file: "Archivo"
@@ -132,7 +147,6 @@ field_options: "Opciones"
 field_password: "Contraseña"
 field_permissions: "Permisos"
 field_quarantine_key: "Clave de cuarentena"
-field_rename_file: "Cambiar el nombre"
 field_reset: "Reiniciar"
 field_restore_file: "Restaurar"
 field_set_new_password: "Crear Nueva Contraseña"
@@ -253,10 +267,9 @@ logs_no_logfiles_available: "Ningún archivos de registro disponibles."
 max_login_attempts_exceeded: "Número máximo de intentos de login excedido; Acceso denegado."
 msg_subject_2fa: "Autenticación de dos factores"
 msg_template_2fa: |
- <center><p>Hola, %1$s.<br />
- <br />
+ <center><p>Hola, %s.<br /><br />
  Su código de autenticación de dos factores para iniciar sesión en el front-end de phpMussel:</p>
- <h1>%2$s</h1>
+ <h1>%s</h1>
  <p>Este código vence en 10 minutos.</p></center>
 previewer_days: "Días"
 previewer_hours: "Horas"

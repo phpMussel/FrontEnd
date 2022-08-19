@@ -7,9 +7,24 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Urdu language data (last modified: 2022.07.22).
+# This file: Urdu language data (last modified: 2022.08.19).
+#
+# Regarding translations: My native language is English. Because this is a free
+# and open-source hobby project which generates zero income, and translatable
+# content is likely to change as the features and functionality supported by
+# the project changes, it doesn't make sense for me to spend money for
+# translations. Because I'm the sole author/developer/maintainer for the
+# project and I'm not a ployglot, any translations I produce are very likely to
+# contain errors. Sorry, but realistically, that won't ever change. If you find
+# any such errors/typos/mistakes/etc, your assistance to correct them would be
+# very much appreciated. Pull requests are invited and encouraged. Otherwise,
+# if you find these errors too much to handle, just stick with the original
+# English source. If a translation is irredeemably incomprehensible, let me
+# know which, and I can delete it. If you're not sure how to perform pull
+# requests, ask. I can help.
 ##/
 
+checkbox_delete_orphaned_values: "یتیم اقدار کو حذف کریں."
 config_core: "عام ترتیبات (کنفیگریشن جس کا تعلق دوسری قسموں سے نہیں ہے)."
 config_core_default_timeout: "بیرونی درخواستوں کے لئے استعمال کرنے کیلئے پہلے سے طے شدہ ٹائم آؤٹ؟ پہلے سے طے شدہ = 12 سیکنڈ."
 config_core_delete_on_sight: "Eفوری طور پر دستخط کے ذریعے یا دوسری صورت میں چاہے، الفاظ کے ملاپ کے کسی بھی پتہ لگانے کے معیار پر کسی بھی سکین کی کوشش کی فائل اپ لوڈ حذف کرنے کی کوشش کرنے کے لئے اس ہدایت nabling سکرپٹ ہدایت کرے گا. "صاف" ہونے کا تعین کیا فائلیں چھوا نہیں کیا جائے گا. ابلیھاگاروں کی صورت میں، پورے آرکائیو حذف کر دیا جائے گا قطع نظر یا نہیں آمیز فائل کا صرف ایک ہی محفوظ شدہ دستاویزات کے اندر موجود کئی فائلوں میں سے ہے. فائل اپ لوڈ کی سکیننگ کے معاملے کے طور پر، عام طور پر، یہ ضروری نہیں ہے، یہ ہدایت چالو کرنے کے لئے عام طور پر PHP کی خود کار طریقے سے اس کی کیشے کے مندرجات مٹا دے گا کیونکہ عملدرآمد ختم ہو گیا ہے جب یہ عام طور پر سرور ہے جب تک کہ اس کے ذریعے اپ لوڈ کردہ کسی بھی فائلوں کو خارج کر دیں گے جس کا مطلب ہے، وہ منتقل کر دیا کاپی یا پہلے سے ہی خارج کر دیا گیا ہے. یہ ہدایت جن PHP کی کاپیاں ہمیشہ انداز کی توقع میں برتاؤ نہیں کر سکتے ہیں ان کے لئے سیکورٹی کی ایک اضافی اقدام کے طور پر یہاں شامل کی جاتی ہے. False (جھوٹی) = سکیننگ کے بعد، اکیلے فائل [پہلے سے طے شدہ] چھوڑ دیں؛ True (سچے) = سکیننگ کے بعد، صاف نہیں ہے تو، فوری طور پر حذف."
@@ -59,7 +74,7 @@ config_files_max_recursion: "ابلیھاگاروں کے لئے زیادہ سے 
 config_files_only_allow_images: "جب true پر سیٹ کریں، اسکینر کے ذریعہ پائے جانے والی غیر تصویر والی فائلوں کو فوری طور پر نشان زد کیا جائے گا، اسکین کیے بغیر. اس سے کچھ معاملات میں اسکین مکمل کرنے کے لئے درکار وقت کو کم کرنے میں مدد مل سکتی ہے. بطور ڈیفالٹ false پر سیٹ کریں."
 config_files_scannable_threshold: "کہ phpMussel پڑھیں اور سکین کرنے کی اجازت ہے خام ڈیٹا کی لمبائی کی حد (کے معاملے میں کوئی نمایاں کارکردگی کے مسائل جبکہ سکیننگ ہیں). پہلے سے طے شدہ = 32MB. زیرو یا خالی قدر حد سے غیر فعال. عام طور پر، اس کی قیمت آپ چاہتے ہیں اور filesize_limit ہدایت کے مقابلے میں زیادہ نہیں ہونا چاہئے، آپ کے سرور یا ویب سائٹ کو حاصل کرنے کی توقع ہے کہ فائل اپ لوڈ کی اوسط فائل سے کم نہیں ہونا چاہئے، اور میں سے ایک تقریبا سے زیادہ پانچویں نہیں ہونا چاہئے کل قابل اجازت میموری مختص "php.ini" ترتیب دینے کی فائل کے ذریعے PHP کے لئے عطا کی. یہ ہدایت بہت زیادہ میموری کا استعمال کرتے ہوئے کی طرف سے phpMussel کو روکنے کے لئے کوشش کرنے کے لئے موجود ہے (کہ کامیابی کی ایک مخصوص فائل کے اوپر فائلوں کو اسکین کرنے کے قابل ہونے سے روکنے کروں گا)."
 config_frontend: "سامنے کے آخر کے لئے ترتیبات."
-config_frontend_default_algo: "اس بات کی وضاحت کرتا ہے جو تمام مستقبل کے پاس ورڈ اور سیشن کے لئے الگورتھم استعمال کرنا ہے. اختیارات: PASSWORD_DEFAULT (ڈیفالٹ), PASSWORD_BCRYPT, PASSWORD_ARGON2I (PHP &gt;= 7.2.0 کی ضرورت ہے), PASSWORD_ARGON2ID (PHP &gt;= 7.3.0 کی ضرورت ہے)."
+config_frontend_default_algo: "اس بات کی وضاحت کرتا ہے جو تمام مستقبل کے پاس ورڈ اور سیشن کے لئے الگورتھم استعمال کرنا ہے."
 config_frontend_frontend_log: "سامنے کے آخر میں لاگ ان کوششوں لاگنگ کے لئے دائر. ایک فائل کا نام کی وضاحت کریں، یا غیر فعال کرنے کو خالی چھوڑ."
 config_frontend_magnification: "فونٹ اضافہ. پہلے سے طے شدہ = 1."
 config_frontend_max_login_attempts: "لاگ ان کوششوں کی زیادہ سے زیادہ تعداد (سامنے کے آخر میں). پہلے سے طے شدہ = 5."
@@ -95,7 +110,7 @@ config_supplementary_cache_options_memcached_port: "Memcached کے لئے بند
 config_supplementary_cache_options_pdo_dsn: "PDO کے لئے DSN. پہلے سے طے شدہ = "mysql:dbname=phpmussel;host=localhost;port=3306"."
 config_supplementary_cache_options_pdo_password: "PDO کیلئے پاس ورڈ."
 config_supplementary_cache_options_pdo_username: "PDO کے لئے صارف نام."
-config_supplementary_cache_options_prefix: "یہاں بیان کردہ قدر کو تمام کیش انٹری کیز کے ساتھ پہلے سے جوڑا جائے گا. بطور ڈیفالٹ خالی. جب ایک ہی سرور پر متعدد تنصیبات موجود ہوں، تو یہ ان کے کیچز کو ایک دوسرے سے الگ رکھنے کے لیے مفید ہو سکتا ہے."
+config_supplementary_cache_options_prefix: "یہاں بیان کردہ قدر کو تمام کیش انٹری کیز کے ساتھ پہلے سے جوڑا جائے گا. پہلے سے طے شدہ = "phpMussel_". جب ایک ہی سرور پر متعدد تنصیبات موجود ہوں، تو یہ ان کے کیچز کو ایک دوسرے سے الگ رکھنے کے لیے مفید ہو سکتا ہے."
 config_supplementary_cache_options_redis_host: "Redis کے میزبان نام. پہلے سے طے شدہ = "localhost"."
 config_supplementary_cache_options_redis_port: "Redis کے لئے بندرگاہ. پہلے سے طے شدہ = "6379"."
 config_supplementary_cache_options_redis_timeout: "Redis کے لئے ٹائم آؤٹ. پہلے سے طے شدہ = "2.5"."
@@ -132,7 +147,6 @@ field_options: "اختیارات"
 field_password: "پاس ورڈ"
 field_permissions: "اجازتیں"
 field_quarantine_key: "قرنطین کلید"
-field_rename_file: "نام تبدیل کریں"
 field_reset: "دوبارہ ترتیب دیں"
 field_restore_file: "بحال"
 field_set_new_password: "نیا پاس ورڈ مقرر"
@@ -250,10 +264,9 @@ logs_no_logfiles_available: "کوئی لاگ مسلیں دستیاب."
 max_login_attempts_exceeded: "لاگ ان کوششوں کی زیادہ سے زیادہ تعداد سے تجاوز کر گئی. رسائی مسترد کر دی."
 msg_subject_2fa: "2FA"
 msg_template_2fa: |
- <center><p>ہیلو، %1$s.<br />
- <br />
+ <center><p>ہیلو، %s.<br /><br />
  phpMussel سامنے کے آخر میں آپ کے 2FA کوڈ:</p>
- <h1>%2$s</h1>
+ <h1>%s</h1>
  <p>یہ کوڈ 10 منٹ میں ختم ہو جاتا ہے.</p></center>
 previewer_days: "دن"
 previewer_hours: "گھنٹے"

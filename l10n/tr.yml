@@ -7,9 +7,24 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2022.07.22).
+# This file: Turkish language data (last modified: 2022.08.19).
+#
+# Regarding translations: My native language is English. Because this is a free
+# and open-source hobby project which generates zero income, and translatable
+# content is likely to change as the features and functionality supported by
+# the project changes, it doesn't make sense for me to spend money for
+# translations. Because I'm the sole author/developer/maintainer for the
+# project and I'm not a ployglot, any translations I produce are very likely to
+# contain errors. Sorry, but realistically, that won't ever change. If you find
+# any such errors/typos/mistakes/etc, your assistance to correct them would be
+# very much appreciated. Pull requests are invited and encouraged. Otherwise,
+# if you find these errors too much to handle, just stick with the original
+# English source. If a translation is irredeemably incomprehensible, let me
+# know which, and I can delete it. If you're not sure how to perform pull
+# requests, ask. I can help.
 ##/
 
+checkbox_delete_orphaned_values: "Artık değerleri silin."
 config_core: "Genel yapılandırma (diğer kategorilere ait olmayan herhangi bir çekirdek yapılandırma)."
 config_core_default_timeout: "Harici istekler için kullanılacak varsayılan zaman aşımı? Varsayılan = 12 saniye."
 config_core_delete_on_sight: "Bu yönergeyi etkinleştirmek, komut dosyasına, imzalar yoluyla veya başka şekilde herhangi bir algılama ölçütüyle eşleşen tüm taranan yüklemeleri derhal silmesini söyleyecektir. Temiz olduğu düşünülen dosyalara dokunulmaz. Arşiv durumunda tüm arşiv silinir. Dosya yükleme taraması için, genellikle bu yönergeyi etkinleştirmek gerekli değildir, çünkü genellikle yürütme tamamlandığında PHP otomatik olarak önbellek içeriğini temizleyecektir (yükleme nedeniyle geçici olarak saklanan dosyaları sileceğini belirtir). Bu yönerge, burada PHP'nin kopyaları her zaman beklendiği gibi davranmayanlar için ek bir güvenlik tedbiri olarak eklenmiştir. Yanlış/False = Taramadan sonra, dosyayı yalnız bırakın [Varsayılan]; Doğru/True = Taramadan sonra, temiz değilse hemen silin."
@@ -59,7 +74,7 @@ config_files_max_recursion: "Arşivler için maksimum özyineleme derinliği sı
 config_files_only_allow_images: "True olarak ayarlandığında, tarayıcı tarafından karşılaşılan görüntü olmayan dosyalar hemen işaretlenir, taranmadan. Bu, bazı durumlarda taramayı tamamlamak için gereken süreyi azaltmaya yardımcı olabilir. Varsayılan olarak false değerine ayarlıdır."
 config_files_scannable_threshold: "phpMussel'ın okumasına ve taramasına izin verilen ham verinin maksimum uzunluğu (tarama sırasında belirgin bir performans sorunu olması durumunda). Varsayılan = 32MB. Sıfır veya null değer, sınırı devre dışı bırakır. Genellikle bu değer, sunucuya veya web sitenize almak istediğiniz ve beklediğiniz dosya yüklemelerinin ortalama dosya boyutundan daha az olmamalıdır, filesize_limit yönergesinden daha fazla olmamalıdır, ve PHP'ye izin verilen toplam bellek ayırmanın beşte birinden fazla olmamalıdır. Bu yönerge, phpMussel'ın fazla bellek kullanmasını önlemeye yöneliktir."
 config_frontend: "Ön uç için yapılandırma."
-config_frontend_default_algo: "Gelecekteki tüm şifreler ve oturumlar için hangi algoritmayı kullanacağını tanımlar. Options: PASSWORD_DEFAULT (varsayılan), PASSWORD_BCRYPT, PASSWORD_ARGON2I (PHP &gt;= 7.2.0 gerektirir), PASSWORD_ARGON2ID (PHP &gt;= 7.3.0 gerektirir)."
+config_frontend_default_algo: "Gelecekteki tüm şifreler ve oturumlar için hangi algoritmayı kullanacağını tanımlar."
 config_frontend_frontend_log: "Ön uç giriş denemelerini kaydetmek için kullanılan dosya. Dosya adı belirtin veya devre dışı bırakmak için boş bırakın."
 config_frontend_magnification: "Yazı tipi büyütme. Varsayılan = 1."
 config_frontend_max_login_attempts: "Maksimum giriş denemesi sayısı. Varsayılan = 5."
@@ -95,7 +110,7 @@ config_supplementary_cache_options_memcached_port: "Memcached port değeri. Vars
 config_supplementary_cache_options_pdo_dsn: "PDO DSN değeri. Varsayılan = "mysql:dbname=phpmussel;host=localhost;port=3306"."
 config_supplementary_cache_options_pdo_password: "PDO parola."
 config_supplementary_cache_options_pdo_username: "PDO kullanıcı adı."
-config_supplementary_cache_options_prefix: "Burada belirtilen değer, tüm önbellek giriş anahtarlarının önüne eklenecektir. Varsayılan olarak boş. Aynı sunucuda birden fazla kurulum olduğunda, bu onların önbelleklerini birbirinden ayrı tutmak için faydalı olabilir."
+config_supplementary_cache_options_prefix: "Burada belirtilen değer, tüm önbellek giriş anahtarlarının önüne eklenecektir. Varsayılan = "phpMussel_". Aynı sunucuda birden fazla kurulum olduğunda, bu onların önbelleklerini birbirinden ayrı tutmak için faydalı olabilir."
 config_supplementary_cache_options_redis_host: "Redis ana bilgisayar değeri. Varsayılan = "localhost"."
 config_supplementary_cache_options_redis_port: "Redis port değeri. Varsayılan = "6379"."
 config_supplementary_cache_options_redis_timeout: "Redis zaman aşımı değeri. Varsayılan = "2.5"."
@@ -132,7 +147,6 @@ field_options: "Seçenekler"
 field_password: "Parola"
 field_permissions: "İzinler"
 field_quarantine_key: "Karantina anahtarı"
-field_rename_file: "Adını değiştirmek"
 field_reset: "Sıfırla"
 field_restore_file: "Canlandır"
 field_set_new_password: "Yeni Şifre Oluştur"
@@ -251,10 +265,9 @@ logs_no_logfiles_available: "Günlük dosyası yok."
 max_login_attempts_exceeded: "Maksimum giriş denemesi aşıldı; Erişim reddedildi."
 msg_subject_2fa: "2FA (İki Faktörlü Kimlik Doğrulama)"
 msg_template_2fa: |
- <center><p>Merhaba, %1$s.<br />
- <br />
+ <center><p>Merhaba, %s.<br /><br />
  phpMussel ön ucuna giriş yapmak için 2FA kodunuz:</p>
- <h1>%2$s</h1>
+ <h1>%s</h1>
  <p>Bu kod 10 dakika içinde sona eriyor.</p></center>
 previewer_days: "Gün"
 previewer_hours: "Saat"

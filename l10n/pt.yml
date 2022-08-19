@@ -7,9 +7,24 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese language data (last modified: 2022.07.22).
+# This file: Portuguese language data (last modified: 2022.08.19).
+#
+# Regarding translations: My native language is English. Because this is a free
+# and open-source hobby project which generates zero income, and translatable
+# content is likely to change as the features and functionality supported by
+# the project changes, it doesn't make sense for me to spend money for
+# translations. Because I'm the sole author/developer/maintainer for the
+# project and I'm not a ployglot, any translations I produce are very likely to
+# contain errors. Sorry, but realistically, that won't ever change. If you find
+# any such errors/typos/mistakes/etc, your assistance to correct them would be
+# very much appreciated. Pull requests are invited and encouraged. Otherwise,
+# if you find these errors too much to handle, just stick with the original
+# English source. If a translation is irredeemably incomprehensible, let me
+# know which, and I can delete it. If you're not sure how to perform pull
+# requests, ask. I can help.
 ##/
 
+checkbox_delete_orphaned_values: "Deletar valores órfãos."
 config_core: "Configuração geral (qualquer configuração principal que não pertença a outras categorias)."
 config_core_default_timeout: "Tempo limite padrão a ser usado para solicitações externas? Padrão = 12 segundos."
 config_core_delete_on_sight: "Ativando esta opção irá instruir o script para tentar imediatamente deletando qualquer arquivo que ele encontra durante a análise que corresponde a qualquer critério de detecção, quer seja através de assinaturas ou de outra forma. Arquivos determinados para ser "limpo" não serão tocados. Em caso de compactados arquivos, o inteiro arquivo será deletado (independentemente de se o problemático arquivo é apenas um dos vários arquivos contidos dentro do compactado arquivo). Para o caso de arquivo carregamento análise, em geral, não é necessário ativar essa opção, porque normalmente, PHP irá automaticamente expurgar os conteúdos de o seu cache quando a execução foi concluída, significando que ele vai normalmente deletar todos os arquivos enviados através dele para o servidor a menos que tenha movido, copiado ou deletado já. A opção é adicionado aqui como uma medida de segurança para aqueles cujas cópias de PHP nem sempre se comportam da forma esperada. False = Após a análise, deixe o arquivo sozinho [Padrão]; True = Após a análise, se não limpo, deletar imediatamente."
@@ -59,7 +74,7 @@ config_files_max_recursion: "Máxima recursão profundidade limite por compactad
 config_files_only_allow_images: "Quando definido como true, todos os arquivos encontrados pelo scanner que não são imagens serão sinalizados imediatamente, sem serem analisados. Isso pode ajudar a reduzir o tempo necessário para concluir uma análise em alguns casos. Defina como false por padrão."
 config_files_scannable_threshold: "Opcional limitação para o comprimento dos dados brutos para que phpMussel é permitido a ler e analisar (em caso de existirem quaisquer notável problemas de desempenho enquanto analisando). Padrão = 32MB. Zero ou nulo valor desativa o limitação. Em geral, esse valor não deve ser menor que o médio arquivo tamanho de carregamentos que você quer e espera para receber no seu servidor ou website, não deve ser mais que o filesize_limit directivo, e não deve ser menor que aproximadamente um quinto do total permissível memória alocação concedido para PHP através do "php.ini" configuração arquivo. Esta directiva existe para tentar impedir phpMussel de usando demais memória (que seria impedir-lo de ser capaz de analisando arquivos acima de um certo tamanho com sucesso)."
 config_frontend: "Configuração para o front-end."
-config_frontend_default_algo: "Define qual algoritmo usar para todas as futuras senhas e sessões. Opções: PASSWORD_DEFAULT (padrão), PASSWORD_BCRYPT, PASSWORD_ARGON2I (requer PHP &gt;= 7.2.0), PASSWORD_ARGON2ID (requer PHP &gt;= 7.3.0)."
+config_frontend_default_algo: "Define qual algoritmo usar para todas as futuras senhas e sessões."
 config_frontend_frontend_log: "Arquivo para registrar tentativas de login ao front-end. Especifique o nome de um arquivo, ou deixe em branco para desabilitar."
 config_frontend_magnification: "Ampliação de fonte. Padrão = 1."
 config_frontend_max_login_attempts: "Número máximo de tentativas de login ao front-end. Padrão = 5."
@@ -95,7 +110,7 @@ config_supplementary_cache_options_memcached_port: "Valor da porta do Memcached.
 config_supplementary_cache_options_pdo_dsn: "Valor DSN do PDO. Padrão = "mysql:dbname=phpmussel;host=localhost;port=3306"."
 config_supplementary_cache_options_pdo_password: "A senha do PDO."
 config_supplementary_cache_options_pdo_username: "O nome de usuário do PDO."
-config_supplementary_cache_options_prefix: "O valor especificado aqui será adicionado ao começo das chaves para todas as entradas de cache. Vazio por padrão. Quando existem várias instalações no mesmo servidor, isso pode ser útil para manter seus caches separados uns dos outros."
+config_supplementary_cache_options_prefix: "O valor especificado aqui será adicionado ao começo das chaves para todas as entradas de cache. Padrão = "phpMussel_". Quando existem várias instalações no mesmo servidor, isso pode ser útil para manter seus caches separados uns dos outros."
 config_supplementary_cache_options_redis_host: "Valor da host do Redis. Padrão = "localhost"."
 config_supplementary_cache_options_redis_port: "Valor da porta do Redis. Padrão = "6379"."
 config_supplementary_cache_options_redis_timeout: "Valor de tempo limite do Redis. Padrão = "2.5"."
@@ -132,7 +147,6 @@ field_options: "Opções"
 field_password: "Senha"
 field_permissions: "Permissões"
 field_quarantine_key: "Chave de quarentena"
-field_rename_file: "Renomear"
 field_reset: "Reiniciar"
 field_restore_file: "Restaurar"
 field_set_new_password: "Definir Nova Senha"
@@ -253,10 +267,9 @@ logs_no_logfiles_available: "Não quaisquer arquivos de log disponíveis."
 max_login_attempts_exceeded: "Número máximo de tentativas de login foi excedido; Acesso negado."
 msg_subject_2fa: "Autenticação de dois fatores"
 msg_template_2fa: |
- <center><p>Olá, %1$s.<br />
- <br />
+ <center><p>Olá, %s.<br /><br />
  Seu código de autenticação de dois fatores para efetuar login no front-end phpMussel:</p>
- <h1>%2$s</h1>
+ <h1>%s</h1>
  <p>Este código expira em 10 minutos.</p></center>
 previewer_days: "Dias"
 previewer_hours: "Horas"

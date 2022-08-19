@@ -7,9 +7,24 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2022.07.22).
+# This file: Korean language data (last modified: 2022.08.19).
+#
+# Regarding translations: My native language is English. Because this is a free
+# and open-source hobby project which generates zero income, and translatable
+# content is likely to change as the features and functionality supported by
+# the project changes, it doesn't make sense for me to spend money for
+# translations. Because I'm the sole author/developer/maintainer for the
+# project and I'm not a ployglot, any translations I produce are very likely to
+# contain errors. Sorry, but realistically, that won't ever change. If you find
+# any such errors/typos/mistakes/etc, your assistance to correct them would be
+# very much appreciated. Pull requests are invited and encouraged. Otherwise,
+# if you find these errors too much to handle, just stick with the original
+# English source. If a translation is irredeemably incomprehensible, let me
+# know which, and I can delete it. If you're not sure how to perform pull
+# requests, ask. I can help.
 ##/
 
+checkbox_delete_orphaned_values: "분리된 값을 삭제합니다."
 config_core: "일반 설정 (다른 카테고리에 속하지 않는 설정)."
 config_core_default_timeout: "외부 요청에 사용할 기본 제한 시간? Default (기본 설정) = 12 초."
 config_core_delete_on_sight: "이 지시문을 사용하면 감지 기준 (서명이든 뭐든)에 있던 업로드 파일은 즉시 삭제됩니다. 클린 판단 된 파일은 그대로입니다. 아카이브의 경우, 문제의 파일이 일부라도 아카이브 모든이 삭제 대상이됩니다. 업로드 파일 검사에서는 본 지시어를 활성화 할 필요는 없습니다. 왜냐하면 PHP는 스크립트 실행 후 자동으로 캐시의 내용을 파기하기 때문입니다. 즉, 파일이 이동되거나 복사되거나 삭제되지 않는 한, PHP는 서버에 업로드 한 파일을 남겨 두는 것은 보통 없습니다. 이 지시어는 보안에 공을들이는 목적으로 설치되어 있습니다. PHP는 드물게 예상치 못한 행동을 할 수 있기 때문입니다. False = 스캔 후 파일은 그대로 (기본 설정). True = 스캔 후 깨끗해야 즉시 삭제합니다."
@@ -59,7 +74,7 @@ config_files_max_recursion: "아카이브에 대한 최대 재귀 깊이입니�
 config_files_only_allow_images: "True로 설정하면, 스캐너가 발견한 이미지가 아닌 파일은 스캔하지 않고 즉시 신고됩니다. 이는 때에 따라 스캔을 완료하는 데 필요한 시간을 줄이는 데 도움이 될 수 있습니다. 기본 설정에 따라 false로 설정되어 있습니다."
 config_files_scannable_threshold: "phpMussel이 읽고 스캔 할 수있는 원시 데이터의 길이에 대한 임계 값 (스캐닝 중에 눈에 띄는 문제가있는 경우에는 필요에 따라 설정). 기본값 = 32MB. 제로 또는 값 없음 (null)은 임계 값을 비활성화합니다. 값은 서버 나 웹 사이트에 업로드되는 파일의 평균 파일 크기보다 크고 filesize_limit 지시어보다 작게 설정해야합니다. 또한 "php.ini" 설정에 따라 PHP에 할당 된 메모리의 대략 5 분의 1을 초과해서는 없습니다. 이 지시문은 phpMussel가 메모리를 너무 많이 사용하지 않도록하기위한 것입니다. (일정 크기 이상의 파일은 스캔하지 못할 수도 있습니다)."
 config_frontend: "프론트 엔드 설정."
-config_frontend_default_algo: "향후 모든 암호와 세션에 사용할 알고리즘을 정의합니다. 옵션\_: PASSWORD_DEFAULT (default / 기본 설정), PASSWORD_BCRYPT, PASSWORD_ARGON2I (PHP &gt;= 7.2.0 가 필요합니다), PASSWORD_ARGON2ID (PHP &gt;= 7.3.0 가 필요합니다)."
+config_frontend_default_algo: "향후 모든 암호와 세션에 사용할 알고리즘을 정의합니다."
 config_frontend_frontend_log: "프론트 엔드 로그인 시도를 기록하는 파일. 파일 이름을 지정하십시오. 비활성화하려면 비워 둡니다."
 config_frontend_magnification: "글꼴 배율. Default (기본 설정) = 1."
 config_frontend_max_login_attempts: "로그인 시도 최대 횟수입니다 (프론트 엔드). Default / 기본 설정 = 5."
@@ -95,7 +110,7 @@ config_supplementary_cache_options_memcached_port: "Memcached 포트 값. Defaul
 config_supplementary_cache_options_pdo_dsn: "PDO DSN 값. Default (기본값) = "mysql:dbname=phpmussel;host=localhost;port=3306"."
 config_supplementary_cache_options_pdo_password: "PDO 암호."
 config_supplementary_cache_options_pdo_username: "PDO 사용자 이름."
-config_supplementary_cache_options_prefix: "여기에 지정된 값은 모든 캐시 항목 키 앞에 추가됩니다. 기본적으로 비어 있습니다. 동일한 서버에 여러 설치가 있는 경우, 캐시를 서로 분리하여 유지하는 데 유용할 수 있습니다."
+config_supplementary_cache_options_prefix: "여기에 지정된 값은 모든 캐시 항목 키 앞에 추가됩니다. Default (기본값) = "phpMussel_". 동일한 서버에 여러 설치가 있는 경우, 캐시를 서로 분리하여 유지하는 데 유용할 수 있습니다."
 config_supplementary_cache_options_redis_host: "Redis 호스트 값. Default (기본값) = "localhost"."
 config_supplementary_cache_options_redis_port: "Redis 포트 값. Default (기본값) = "6379"."
 config_supplementary_cache_options_redis_timeout: "Redis 시간 초과 값. Default (기본값) = "2.5"."
@@ -132,7 +147,6 @@ field_options: "옵션"
 field_password: "비밀번호"
 field_permissions: "권한"
 field_quarantine_key: "격리 키"
-field_rename_file: "이름을 변경하려면"
 field_reset: "재설정"
 field_restore_file: "복구"
 field_set_new_password: "새 암호를 설정합니다"
@@ -251,10 +265,9 @@ logs_no_logfiles_available: "아니 로그를 사용할 수 있습니다."
 max_login_attempts_exceeded: "로그인 시도 횟수를 초과했습니다; 액세스 거부."
 msg_subject_2fa: "2FA (이중 인증)"
 msg_template_2fa: |
- <center><p>안녕하세요, %1$s.<br />
- <br />
+ <center><p>안녕하세요, %s.<br /><br />
  phpMussel 프런트 엔드에 로그인하기위한 2FA 코드 :</p>
- <h1>%2$s</h1>
+ <h1>%s</h1>
  <p>이 코드는 10 분 후에 만료됩니다.</p></center>
 previewer_days: "일"
 previewer_hours: "시간"

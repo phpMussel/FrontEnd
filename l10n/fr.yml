@@ -7,9 +7,24 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2022.07.22).
+# This file: French language data (last modified: 2022.08.19).
+#
+# Regarding translations: My native language is English. Because this is a free
+# and open-source hobby project which generates zero income, and translatable
+# content is likely to change as the features and functionality supported by
+# the project changes, it doesn't make sense for me to spend money for
+# translations. Because I'm the sole author/developer/maintainer for the
+# project and I'm not a ployglot, any translations I produce are very likely to
+# contain errors. Sorry, but realistically, that won't ever change. If you find
+# any such errors/typos/mistakes/etc, your assistance to correct them would be
+# very much appreciated. Pull requests are invited and encouraged. Otherwise,
+# if you find these errors too much to handle, just stick with the original
+# English source. If a translation is irredeemably incomprehensible, let me
+# know which, and I can delete it. If you're not sure how to perform pull
+# requests, ask. I can help.
 ##/
 
+checkbox_delete_orphaned_values: "Supprimer les valeurs orphelines."
 config_core: "Configuration générale (toute configuration de base n'appartenant pas à d'autres catégories)."
 config_core_default_timeout: "Délai d'attente par défaut à utiliser pour les requêtes externes\_? Défaut = 12 secondes."
 config_core_delete_on_sight: "Mise en cette option sera instruire le script à tenter immédiatement supprimer tout fichiers elle constate au cours de son analyse correspondant à des critères de détection, que ce soit via des signatures ou autrement. Fichiers jugées propre ne seront pas touchés. Dans le cas des archives, l'ensemble d'archive sera supprimé (indépendamment de si le incriminé fichier est que l'un de plusieurs fichiers contenus dans l'archive). Pour le cas d'analyse de fichiers téléchargement, généralement, il n'est pas nécessaire d'activer cette option sur, parce généralement, PHP faire purger automatiquement les contenus de son cache lorsque l'exécution est terminée, ce qui signifie que il va généralement supprimer tous les fichiers téléchargés à travers elle au serveur sauf qu'ils ont déménagé, copié ou supprimé déjà. L'option est ajoutée ici comme une supplémentaire mesure de sécurité pour ceux dont copies de PHP peut pas toujours se comporter de la manière attendu. False = Après l'analyse, laissez le fichier tel quel [Défaut]\_; True = Après l'analyse, si pas propre, supprimer immédiatement."
@@ -59,7 +74,7 @@ config_files_max_recursion: "Maximum récursivité profondeur limite pour archiv
 config_files_only_allow_images: "Lorsqu'il est défini sur true, tous les fichiers rencontrés par le scanner qui ne sont pas des images seront immédiatement marqués, sans être analysés. Cela peut aider à réduire le temps nécessaire pour terminer une analyse dans certains cas. Défini sur false par défaut."
 config_files_scannable_threshold: "Seuil à la longueur de données brutes dans laquelle phpMussel est autorisé à lire et à analyser (dans le cas où il ya remarquable performance problèmes au cours de l'analyse). Défaut = 32Mo. Zéro ou nulle valeur désactive le seuil. En général, cette valeur ne doit pas être moins que la moyenne tailles des fichiers des téléchargements que vous voulez et s'attendent à recevoir de votre serveur ou site web, ne devrait pas être plus que la filesize_limit directive, et ne devrait pas être plus que d'un cinquième de l'allocation de totale mémoire autorisée à PHP via le "php.ini" fichier de configuration. Cette directive existe pour tenter d'empêcher phpMussel d'utiliser trop de mémoire (ce qui l'empêcherait d'être capable d'analyse fichiers dessus d'une certaine taille avec succès)."
 config_frontend: "Configuration pour l'accès frontal."
-config_frontend_default_algo: "Définit quel algorithme utiliser pour tous les mots de passe et les sessions à l'avenir. Options\_: PASSWORD_DEFAULT (défaut), PASSWORD_BCRYPT, PASSWORD_ARGON2I (nécessite PHP &gt;= 7.2.0), PASSWORD_ARGON2ID (nécessite PHP &gt;= 7.3.0)."
+config_frontend_default_algo: "Définit quel algorithme utiliser pour tous les mots de passe et les sessions à l'avenir."
 config_frontend_frontend_log: "Fichier pour l'enregistrement des tentatives de connexion à l'accès frontal. Spécifier un fichier, ou laisser vide à désactiver."
 config_frontend_magnification: "Grossissement des fontes. Défaut = 1."
 config_frontend_max_login_attempts: "Nombre maximal de tentatives de connexion (l'accès frontal). Défaut = 5."
@@ -95,7 +110,7 @@ config_supplementary_cache_options_memcached_port: "Valeur du port Memcached. D�
 config_supplementary_cache_options_pdo_dsn: "Valeur de DSN de PDO. Défaut = «\_mysql:dbname=phpmussel;host=localhost;port=3306\_»."
 config_supplementary_cache_options_pdo_password: "Mot de passe PDO."
 config_supplementary_cache_options_pdo_username: "Nom d'utilisateur PDO."
-config_supplementary_cache_options_prefix: "La valeur spécifiée ici sera ajoutée à toutes les clés d'entrée du cache. Vide par défaut. Lorsque plusieurs installations existent sur le même serveur, cela peut être utile pour séparer leurs caches les uns des autres."
+config_supplementary_cache_options_prefix: "La valeur spécifiée ici sera ajoutée à toutes les clés d'entrée du cache. Défaut = «\_phpMussel_\_». Lorsque plusieurs installations existent sur le même serveur, cela peut être utile pour séparer leurs caches les uns des autres."
 config_supplementary_cache_options_redis_host: "Valeur de l'hôte Redis. Défaut = «\_localhost\_»."
 config_supplementary_cache_options_redis_port: "Valeur du port Redis. Défaut = «\_6379\_»."
 config_supplementary_cache_options_redis_timeout: "Valeur du délai d'attente Redis. Défaut = «\_2.5\_»."
@@ -132,7 +147,6 @@ field_options: "Options"
 field_password: "Mot de Passe"
 field_permissions: "Autorisations"
 field_quarantine_key: "Clé de quarantaine"
-field_rename_file: "Renommer"
 field_reset: "Réinitialiser"
 field_restore_file: "Restaurer"
 field_set_new_password: "Définir nouveau mot de passe"
@@ -253,10 +267,9 @@ logs_no_logfiles_available: "Aucun fichiers journaux disponibles."
 max_login_attempts_exceeded: "Nombre maximal de tentatives de connexion excédée\_; Accès refusé."
 msg_subject_2fa: "Authentification à deux facteurs"
 msg_template_2fa: |
- <center><p>Bonjour, %1$s.<br />
- <br />
+ <center><p>Bonjour, %s.<br /><br />
  Votre code d'authentification à deux facteurs pour l'accès frontal de phpMussel :</p>
- <h1>%2$s</h1>
+ <h1>%s</h1>
  <p>Ce code expire dans 10 minutes.</p></center>
 previewer_days: "Journées"
 previewer_hours: "Heures"

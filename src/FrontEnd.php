@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.07.24).
+ * This file: Front-end handler (last modified: 2022.08.11).
  */
 
 namespace phpMussel\FrontEnd;
@@ -2055,7 +2055,7 @@ class FrontEnd
      */
     private function filterL10N(string $ChoiceKey): bool
     {
-        return is_readable($this->L10NPath . $ChoiceKey . '.yml');
+        return is_readable($this->L10NPath . $ChoiceKey . '.yml') && is_file($this->L10NPath . $ChoiceKey . '.yml');
     }
 
     /**
