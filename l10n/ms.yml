@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2022.08.19).
+# This file: Malay language data (last modified: 2022.09.22).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -28,7 +28,7 @@ checkbox_delete_orphaned_values: "Padamkan nilai-nilai yang diyatimkan."
 config_core: "Konfigurasi generik (sebarang konfigurasi teras yang bukan tergolong dalam kategori lain)."
 config_core_default_timeout: "Tamat masa lalai yang digunakan untuk permintaan luaran? Lalai = 12 saat."
 config_core_delete_on_sight: "Mengaktifkan arahan ini akan mengarahkan skrip untuk cuba memadamkan sebarang muat naik fail percubaan yang diimbas dengan serta-merta yang sepadan dengan mana-mana kriteria pengesanan, sama ada melalui tandatangan atau sebaliknya. Fail yang dikenal pasti sebagai "bersih" tidak akan disentuh. Dalam kes arkib, keseluruhan arkib akan dipadamkan, tidak kira sama ada fail tersebut hanyalah satu daripada beberapa fail yang terkandung dalam arkib. Untuk kes pengimbasan muat naik fail, biasanya, arahan ini tidak perlu diaktifkan, kerana biasanya, PHP akan membersihkan kandungan cachenya secara automatik apabila pelaksanaan telah selesai, bermakna ia biasanya akan memadamkan mana-mana fail yang dimuat naik melaluinya ke pelayan melainkan ia telah dialihkan, disalin, atau dipadamkan. Arahan tersebut ditambahkan disini sebagai langkah keselamatan tambahan bagi mereka yang salinan PHPnya mungkin tidak selalu berkelakuan seperti yang diharapkan. False = Selepas mengimbas, biarkan fail tersebut sahaja [Lalai]; True = Selepas mengimbasnya, jika bukan bersih, padamkannya dengan serta-merta."
-config_core_disabled_channels: "Ini boleh digunakan untuk menghalang phpMussel daripada menggunakan saluran tertentu semasa menghantar permintaan (cth., semasa mengemas kini, semasa mengambil metadata komponen, dll)."
+config_core_disabled_channels: "Ini boleh digunakan untuk menghalang phpMussel daripada menggunakan saluran tertentu semasa menghantar permintaan."
 config_core_error_log: "Fail untuk mengelog sebarang ralat bukan maut yang dikesan. Tentukan nama fail, atau biarkan kosong untuk nyahaktifkan."
 config_core_hide_version: "Sembunyikan maklumat versi daripada log dan keluaran halaman? True = Ya; False = Tidak [Lalai]."
 config_core_ipaddr: "Dimana untuk mencari alamat IP daripada permintaan penyambungan? (Berguna untuk perkhidmatan seperti Cloudflare dan seumpamanya). Lalai = REMOTE_ADDR. AMARAN: Jangan ganti ini melainkan anda tahu apa yang anda lakukan!"
@@ -99,7 +99,7 @@ config_signatures_detect_pua_pup: "Patutkah phpMussel menghuraikan tandatangan u
 config_signatures_detect_shell: "Patutkah phpMussel menghuraikan tandatangan untuk mengesan skrip shell? False = Tidak; True = Ya [Lalai]."
 config_signatures_fail_extensions_silently: "Patutkah phpMussel melaporkan apabila sambungan tiada? Jika <code>fail_extensions_silently</code> dinyahaktifkan, sambungan yang tiada akan dilaporkan semasa pengimbasan, dan jika <code>fail_extensions_silently</code> diaktifkan, sambungan yang hilang akan diabaikan, dan pengimbasan akan melaporkan bahawa tiada sebarang masalah dengan fail tersebut. Menyahaktifkan arahan ini mungkin meningkatkan keselamatan anda, tetapi juga boleh menyebabkan peningkatan positif palsu. False = Dinyahaktifkan; True = Diaktifkan [Lalai]."
 config_signatures_fail_silently: "Patutkah phpMussel melaporkan apabila fail tandatangan hilang atau rosak? Jika <code>fail_silently</code> Jika x dinyahaktifkan, fail yang hilang atau rosak akan dilaporkan semasa pengimbasan, dan jika <code>fail_silently</code> diaktifkan, fail yang hilang atau rosak akan diabaikan, dan pengimbasan akan melaporkan bahawa tiada sebarang masalah dengan fail tersebut. Ini biasanya harus dibiarkan sahaja melainkan anda mengalami ranap sistem atau masalah yang serupa. False = Dinyahaktifkan; True = Diaktifkan [Lalai]."
-config_signatures_heuristic_threshold: "Beberapa tandatangan phpMussel bertujuan untuk mengenal pasti penunjuk yang mencurigakan dan berpotensi berniat jahat dalam fail, tanpa mengenal pasti secara langsung fail tersebut sebagai berniat jahat. Nilai ambang ini memberitahu phpMussel berat maksimum yang dibenarkan sebelum membenderakan fail tersebut sebagai berniat jahat. Takrifan "berat" dalam konteks ini ialah jumlah bilangan penunjuk yang mencurigakan dan berpotensi berniat jahat yang dikenal. Secara lalai, nilai ini akan ditetapkan kepada 3. Nilai yang lebih rendah biasanya akan mengakibatkan kejadian positif palsu yang lebih tinggi tetapi bilangan fail berniat jahat yang dibenderakan akan lebih tinggi, sedangkan nilai yang lebih tinggi biasanya akan mengakibatkan kejadian positif palsu yang lebih rendah tetapi bilangan fail berniat jahat yang dibenderakan juga akan lebih rendah. Secara amnya, sebaiknya biarkan nilai ini pada lalai melainkan anda mengalami masalah yang berkaitan dengannya."
+config_signatures_heuristic_threshold: "Beberapa tandatangan phpMussel bertujuan mengenal pasti penunjuk yang mencurigakan dan berpotensi berniat jahat dalam fail, tanpa mengenal pasti secara langsung fail tersebut sebagai berniat jahat. Nilai ambang ini memberitahu phpMussel berat maksimum yang dibenarkan sebelum membenderakan fail tersebut sebagai berniat jahat. Takrifan "berat" dalam konteks ini ialah jumlah bilangan penunjuk yang mencurigakan dan berpotensi berniat jahat yang dikenal. Secara lalai, nilai ini akan ditetapkan kepada 3. Nilai yang lebih rendah biasanya akan mengakibatkan kejadian positif palsu yang lebih tinggi tetapi bilangan fail berniat jahat yang dibenderakan akan lebih tinggi, sedangkan nilai yang lebih tinggi biasanya akan mengakibatkan kejadian positif palsu yang lebih rendah tetapi bilangan fail berniat jahat yang dibenderakan juga akan lebih rendah. Secara amnya, sebaiknya biarkan nilai ini pada lalai melainkan anda mengalami masalah yang berkaitan dengannya."
 config_supplementary_cache_options: "Pilihan cache tambahan. Nota: Menukar nilai ini mungkin berpotensi log anda keluar."
 config_supplementary_cache_options_enable_apcu: "Menentukan sama ada hendak mencuba menggunakan APCu untuk caching. Lalai = True."
 config_supplementary_cache_options_enable_memcached: "Menentukan sama ada hendak mencuba menggunakan Memcached untuk caching. Lalai = False."
@@ -154,6 +154,7 @@ field_size: "Jumlah Saiz:"
 field_size_GB: "GB"
 field_size_KB: "KB"
 field_size_MB: "MB"
+field_size_PB: "PB"
 field_size_TB: "TB"
 field_size_bytes: "bait"
 field_system_timezone: "Gunakan zon waktu lalai sistem."
@@ -333,13 +334,13 @@ state_logs_access_only: "Akses kepada log sahaja"
 state_maintenance_mode: "Amaran: Beroperasi dalam mod penyelenggaraan!"
 state_password_not_valid: "Amaran: Akaun ini tidak menggunakan kata laluan yang sah!"
 state_quarantine: "Terdapat %s fail sedang dalam kuarantin."
-tip_2fa_sent: "E-mel yang mengandungi kod pengesahan dua-faktor telah dihantar ke alamat e-mel anda. Sila sahkan kod ini dibawah untuk mendapatkan akses kepada bahagian hadapan. Jika anda tidak menerima e-mel ini, cuba log keluar, tunggu selama 10 minit, dan log masuk semula untuk menerima e-mel baharu yang mengandungi kod baharu."
+tip_2fa_sent: "E-mel yang mengandungi kod pengesahan dua-faktor telah dihantar ke alamat e-mel anda. Sila sahkan kod ini di bawah untuk mendapatkan akses kepada bahagian hadapan. Jika anda tidak menerima e-mel ini, cuba log keluar, tunggu selama 10 minit, dan log masuk semula untuk menerima e-mel baharu yang mengandungi kod baharu."
 tip_accounts: "Salam, {username}.<br />Halaman akaun membolehkan anda mengawal siapa yang boleh mengakses bahagian hadapan phpMussel."
 tip_cache_data: "Salam, {username}.<br />Disini anda boleh menyemak kandungan cache."
 tip_config: "Salam, {username}.<br />Halaman konfigurasi membolehkan anda mengubah suai konfigurasi untuk phpMussel dari bahagian hadapan."
 tip_fe_cookie_warning: "Nota: phpMussel menggunakan kuki untuk mengesahkan log masuk. Apabila anda log masuk, anda memberikan persetujuan anda untuk kuki dibuat dan disimpan oleh penyemak imbas anda."
 tip_home: "Salam, {username}.<br />Ini ialah halaman utama untuk bahagian hadapan phpMussel. Pilih pautan daripada menu navigasi di sebelah kiri untuk meneruskan."
-tip_logs: "Salam, {username}.<br />Pilih fail log daripada senarai dibawah untuk melihat kandungan fail log tersebut."
+tip_logs: "Salam, {username}.<br />Pilih fail log daripada senarai di bawah untuk melihat kandungan fail log tersebut."
 tip_quarantine: "Salam, {username}.<br />Halaman ini menyenaraikan semua fail yang sedang dalam kuarantin dan memudahkan pengurusan fail tersebut."
 tip_quarantine_disabled: "Nota: Kuarantin sedang dinyahaktifkan, tetapi boleh diaktifkan melalui halaman konfigurasi."
 tip_see_the_documentation: "Lihat <a href="https://github.com/phpMussel/Docs/blob/master/readme.id.md\#SECTION5" hreflang="id" rel="noopener external">dokumentasi</a> untuk mendapatkan maklumat tentang pelbagai arahan konfigurasi dan tujuannya."

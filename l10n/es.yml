@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2022.08.19).
+# This file: Spanish language data (last modified: 2022.09.22).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -28,7 +28,7 @@ checkbox_delete_orphaned_values: "Eliminar valores huérfanos."
 config_core: "Configuración general (cualquier configuración que no pertenezca a otras categorías)."
 config_core_default_timeout: "¿Tiempo de espera predeterminado para usar en solicitudes externas? Predeterminado = 12 segundos."
 config_core_delete_on_sight: "Activando esta directiva instruirá la script para intentar para eliminar inmediatamente cualquier escaneados intentados archivos subidos emparejando a los criterios de detección, si través de firmas o de otras maneras. Archivos determinados como limpia no serán tocados. En el caso de los compactados archivos, la totalidad del compactado archivo será eliminado (independientemente de si el emparejando archivo es sólo uno de muchos varios archivos contenida dentro del compactado archivo). Para el caso de archivo subir escaneo, en general, no es necesario activar esta directiva, porque en general, PHP purgará automáticamente el contenido de su caché cuando la ejecución ha terminado, significando que lo en general eliminará cualquier archivos subidos a través de él con el servidor a no ser que se han movido, copiado o eliminado ya. La directiva se añade aquí como una medida adicional de seguridad para aquellos cuyas copias de PHP no siempre se comportan de la manera esperada. False = Después escaneando, dejar el archivo solo [Predefinido]; True = Después escaneando, si no se limpia, eliminar inmediatamente."
-config_core_disabled_channels: "Esto se puede usar para evitar que phpMussel use canales particulares al enviar solicitudes (por ejemplo, al actualizar, al obtener metadatos de componentes, etc)."
+config_core_disabled_channels: "Esto se puede usar para evitar que phpMussel use canales particulares al enviar solicitudes."
 config_core_error_log: "Un archivo para registrar cualquier error detectado que no sea fatal. Especificar el nombre del archivo, o dejar en blanco para desactivar."
 config_core_hide_version: "¿Ocultar información de la versión de los archivos de registro y la salida de la página? True = Sí; False = No [Predefinido]."
 config_core_ipaddr: "¿Dónde puedo encontrar el IP dirección de las solicitudes entrantes? (Útil para servicios como Cloudflare y tales). Predefinido = REMOTE_ADDR. ¡AVISO: No cambie esto a menos que sepas lo que estás haciendo!"
@@ -154,6 +154,7 @@ field_size: "Tamaño Total:"
 field_size_GB: "GB"
 field_size_KB: "KB"
 field_size_MB: "MB"
+field_size_PB: "PB"
 field_size_TB: "TB"
 field_size_bytes:
  - "byte"
@@ -205,7 +206,7 @@ info_some_useful_links: |
        <li><span class="comCat">Recursos informativos y de aprendizaje.</span>
          <ul class="comSub">
            <li>{{Links.PHP.Earth.Website}} – PHP recursos de aprendizaje y discusión.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Listas de vulnerabilidades</a> – Lista las versiones seguras/inseguras de varios paquetes (PHP, HHVM, etc).</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Listas de vulnerabilidades</a> – Lista las versiones seguras/inseguras de varios paquetes (HHVM, PHP, phpMyAdmin, Python, etc).</li>
            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Listas de compatibilidades</a> – Lista información de compatibilidad para varios paquetes (CIDRAM, phpMussel, etc).</li>
          </ul>
        </li>

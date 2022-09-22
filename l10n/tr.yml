@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2022.08.19).
+# This file: Turkish language data (last modified: 2022.09.22).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -28,7 +28,7 @@ checkbox_delete_orphaned_values: "Artık değerleri silin."
 config_core: "Genel yapılandırma (diğer kategorilere ait olmayan herhangi bir çekirdek yapılandırma)."
 config_core_default_timeout: "Harici istekler için kullanılacak varsayılan zaman aşımı? Varsayılan = 12 saniye."
 config_core_delete_on_sight: "Bu yönergeyi etkinleştirmek, komut dosyasına, imzalar yoluyla veya başka şekilde herhangi bir algılama ölçütüyle eşleşen tüm taranan yüklemeleri derhal silmesini söyleyecektir. Temiz olduğu düşünülen dosyalara dokunulmaz. Arşiv durumunda tüm arşiv silinir. Dosya yükleme taraması için, genellikle bu yönergeyi etkinleştirmek gerekli değildir, çünkü genellikle yürütme tamamlandığında PHP otomatik olarak önbellek içeriğini temizleyecektir (yükleme nedeniyle geçici olarak saklanan dosyaları sileceğini belirtir). Bu yönerge, burada PHP'nin kopyaları her zaman beklendiği gibi davranmayanlar için ek bir güvenlik tedbiri olarak eklenmiştir. Yanlış/False = Taramadan sonra, dosyayı yalnız bırakın [Varsayılan]; Doğru/True = Taramadan sonra, temiz değilse hemen silin."
-config_core_disabled_channels: "Bu, istek gönderirken phpMussel'ın belirli kanalları kullanmasını önlemek için kullanılabilir (örneğin, güncelleme yaparken, bileşen meta verileri alınırken, vb)."
+config_core_disabled_channels: "Bu, istek gönderirken phpMussel'ın belirli kanalları kullanmasını önlemek için kullanılabilir."
 config_core_error_log: "Ölümcül olmayan hataları kaydetmek için bir dosya. Dosya adı belirtin veya devre dışı bırakmak için boş bırakın."
 config_core_hide_version: "Sürüm bilgilerini günlüklerden ve sayfa çıktısından gizle? Doğru/True = Evet; Yanlış/False = Hayır [Varsayılan]."
 config_core_ipaddr: "Bağlama isteklerinin IP adresi nerede bulunur? (Cloudflare ve benzeri hizmetler için yararlıdır). Varsayılan = REMOTE_ADDR. UYARI: Ne yaptığınızı bilmiyorsanız bunu değiştirmeyin!"
@@ -154,6 +154,7 @@ field_size: "Toplam Boyut:"
 field_size_GB: "GB"
 field_size_KB: "KB"
 field_size_MB: "MB"
+field_size_PB: "PB"
 field_size_TB: "TB"
 field_size_bytes: "bayt"
 field_system_timezone: "Sistem varsayılan saat dilimini kullanın."
@@ -203,7 +204,7 @@ info_some_useful_links: |
        <li><span class="comCat">Bilgi ve öğrenme kaynakları.</span>
          <ul class="comSub">
            <li>{{Links.PHP.Earth.Website}} – PHP öğrenme kaynakları ve tartışmalar.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Güvenlik Açığı Tabloları</a> – Çeşitli paketler (PHP, HHVM, vb) güvenli/güvensiz sürümlerini listeler.</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Güvenlik Açığı Tabloları</a> – Çeşitli paketler (HHVM, PHP, phpMyAdmin, Python, vb) güvenli/güvensiz sürümlerini listeler.</li>
            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Uyumluluk Tabloları</a> – Çeşitli paketler (CIDRAM, phpMussel, vb) için uyumluluk bilgilerini listeler.</li>
          </ul>
        </li>

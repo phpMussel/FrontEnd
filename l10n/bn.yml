@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bangla language data (last modified: 2022.08.19).
+# This file: Bangla language data (last modified: 2022.09.22).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -28,7 +28,7 @@ checkbox_delete_orphaned_values: "অনাথ মান মুছুন।"
 config_core: "সাধারণ কনফিগারেশন (অন্য কোনও বিভাগের অন্তর্ভুক্ত নয় এমন কোনও কনফিগারেশন)।"
 config_core_default_timeout: "বাহ্যিক অনুরোধগুলির জন্য ডিফল্ট সময়সীমা ব্যবহার করবেন? ডিফল্ট = 12 সেকেন্ড।"
 config_core_delete_on_sight: "এই নির্দেশটি সক্ষম করা হলে, স্ক্রিপ্টকে অবিলম্বে স্ক্যান করা ফাইল আপলোডকে মুছে ফেলতে নির্দেশ দেওয়া হবে যা কোন সনাক্তকরণের মানদণ্ডের সাথে মেলে, কিনা স্বাক্ষর বা অন্যথায় মাধ্যমে। বিনয়ী পরিষ্কার/ফাইলগুলি স্পর্শ করা হবে না। আর্কাইভগুলির জন্য, সম্পূর্ণ আর্কাইভ মুছে ফেলা হবে, বিষয়বস্তুর নির্বিশেষে। স্বাভাবিক ফাইল আপলোড স্ক্যানিংয়ের জন্য, এই নির্দেশকে সক্ষম করার জন্য এটি সাধারণত প্রয়োজন হয় না, কারণ PHP সাধারণত স্বয়ংক্রিয়ভাবে তার ক্যাশের বিষয়বস্তু সাফ করা যখন মৃত্যুদন্ড সমাপ্ত হয়েছে (অর্থাত এটি সাধারণত এই ফাইলগুলি মুছে ফেলবে; তারা ইতিমধ্যে কপি বা সরানো হয়েছে না অভিমানী)। এই নির্দেশটি নিরাপত্তা একটি অতিরিক্ত পরিমাপ হিসাবে এখানে যোগ করা হয় (PHP কিছু ব্যবহারকারীদের জন্য সাধারণত আচরণ না ক্ষেত্রে)। False = স্ক্যান করার পরে, একা ফাইলটি ছেড়ে দিন [ডিফল্ট]; True = স্ক্যান করার পরে, অবিলম্বে অশুচি ফাইল মুছে দিন।"
-config_core_disabled_channels: "এটি phpMusselমগুলিকে অনুরোধ পাঠাতে বিশেষ চ্যানেল ব্যবহার করে প্রতিরোধ করতে ব্যবহার করা যেতে পারে (যেমন, আপডেট করার সময়, উপাদান মেটাডাটা আনা, ইত্যাদি)।"
+config_core_disabled_channels: "এটি phpMusselমগুলিকে অনুরোধ পাঠাতে বিশেষ চ্যানেল ব্যবহার করে প্রতিরোধ করতে ব্যবহার করা যেতে পারে।"
 config_core_error_log: "কোনও অ মারাত্মক ত্রুটিগুলি লগ করার জন্য একটি ফাইল। ফাইলের নাম উল্লেখ করুন, অথবা নিষ্ক্রিয় করতে ফাঁকা রাখুন।"
 config_core_hide_version: "লগ এবং পৃষ্ঠা আউটপুট থেকে সংস্করণ তথ্য লুকান? True = হাঁ; False = না [ডিফল্ট]।"
 config_core_ipaddr: "ইনবাউন্ড অনুরোধের আইপি ঠিকানা কোথায় পাওয়া যায়? (যেমন Cloudflare এবং ইত্যাদি সেবা জন্য দরকারী)। ডিফল্ট = REMOTE_ADDR। সতর্কতা: আপনি কি করছেন তা না জানলে তা পরিবর্তন করবেন না!"
@@ -154,6 +154,7 @@ field_size: "মোট আকার:"
 field_size_GB: "GB"
 field_size_KB: "KB"
 field_size_MB: "MB"
+field_size_PB: "PB"
 field_size_TB: "TB"
 field_size_bytes: "বাইট"
 field_system_timezone: "সিস্টেম ডিফল্ট টাইমজোন ব্যবহার করুন।"
@@ -203,7 +204,7 @@ info_some_useful_links: |
        <li><span class="comCat">তথ্য ও শিক্ষা সম্পদ।</span>
          <ul class="comSub">
            <li>{{Links.PHP.Earth.Website}} – PHP লার্নিং সম্পদ এবং আলোচনা।</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Vulnerability Charts (দুর্বলতা চার্ট)</a> – বিভিন্ন প্যাকেজের নিরাপদ/অনিরাপদ সংস্করণের তালিকা (PHP, HHVM, ইত্যাদি)।</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Vulnerability Charts (দুর্বলতা চার্ট)</a> – বিভিন্ন প্যাকেজের নিরাপদ/অনিরাপদ সংস্করণের তালিকা (HHVM, PHP, phpMyAdmin, Python, ইত্যাদি)।</li>
            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Compatibility Charts (সামঞ্জস্যের চার্ট)</a> – বিভিন্ন প্যাকেজের জন্য সামঞ্জস্য তথ্য তালিকা (CIDRAM, phpMussel, ইত্যাদি)।</li>
          </ul>
        </li>

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hindi language data (last modified: 2022.08.19).
+# This file: Hindi language data (last modified: 2022.09.22).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -28,7 +28,7 @@ checkbox_delete_orphaned_values: "अनाथ मान हटाएं।"
 config_core: "सामान्य कॉन्फ़िगरेशन (कॉन्फ़िगरेशन जो अन्य श्रेणियों से संबंधित नहीं है)।"
 config_core_default_timeout: "बाहरी अनुरोधों के लिए उपयोग करने के लिए डिफ़ॉल्ट टाइमआउट? डिफ़ॉल्ट = 12 सेकंड।"
 config_core_delete_on_sight: "इस निर्देश को सक्षम करने से स्क्रिप्ट को तुरंत किसी भी मापदंड से मेल खाने वाले किसी भी अपलोड को हटाने का प्रयास करने का निर्देश दिया जाएगा। साफ फाइलों को छुआ नहीं जाएगा। अभिलेखागार के मामले में, पूरे संग्रह हटा दिया जाएगा। अपलोड स्कैनिंग के लिए, आम तौर पर, इस निर्देश को सक्षम करने के लिए आवश्यक नहीं है, क्योंकि आमतौर पर PHP निष्पादन समाप्त होने पर स्वतः कैश की सामग्री को स्वतः शुद्ध कर देगा। यह निर्देश यहां अतिरिक्त सुरक्षा के एक अतिरिक्त उपाय के रूप में जोड़ा गया है। False(झूठी) = स्कैनिंग के बाद, अकेले फाइल को छोड़ दें [डिफ़ॉल्ट]; True(सच्चे) = स्कैनिंग के बाद, यदि साफ़ न हो तो तत्काल हटा दें।"
-config_core_disabled_channels: "अनुरोध भेजने पर विशेष चैनल का उपयोग करने से phpMussel को रोकने के लिए इसका उपयोग किया जा सकता है (उदाहरण के लिए, अपडेट करते समय, कंपोनेंट मेटाडेटा लाने पर, आदि)।"
+config_core_disabled_channels: "अनुरोध भेजने पर विशेष चैनल का उपयोग करने से phpMussel को रोकने के लिए इसका उपयोग किया जा सकता है।"
 config_core_error_log: "किसी भी गैर घातक त्रुटियों का पता लगाने के लिए एक फ़ाइल। एक फाइल नाम निर्दिष्ट करें, या निष्क्रिय करने के लिए खाली छोड़।"
 config_core_hide_version: "लॉग्स और पेज आउटपुट से संस्करण जानकारी छुपाएं? True(सच्चे) = हाँ; False(झूठी) = नहीं [डिफ़ॉल्ट]।"
 config_core_ipaddr: "कहां अनुरोध जोड़ने के IP पते खोजने के लिए? (जैसा Cloudflare के रूप में सेवाओं और पसंद के लिए उपयोगी)। डिफ़ॉल्ट = REMOTE_ADDR। चेतावनी: जब तक कि आप को पता है तुम क्या कर रहे हो उसे बदल नहीं!"
@@ -154,6 +154,7 @@ field_size: "कुल आकार:"
 field_size_GB: "GB"
 field_size_KB: "KB"
 field_size_MB: "MB"
+field_size_PB: "PB"
 field_size_TB: "TB"
 field_size_bytes:
  - "बाइट"
@@ -205,7 +206,7 @@ info_some_useful_links: |
        <li><span class="comCat">सूचनात्मक और सीखने के संसाधन।</span>
          <ul class="comSub">
            <li>{{Links.PHP.Earth.Website}} – PHP सीखने संसाधन और चर्चा।</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Vulnerability Charts (भेद्यता चार्ट)</a> – विभिन्न पैकेजों के सुरक्षित/असुरक्षित संस्करणों की सूची (PHP, HHVM, आदि)।</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Vulnerability Charts (भेद्यता चार्ट)</a> – विभिन्न पैकेजों के सुरक्षित/असुरक्षित संस्करणों की सूची (HHVM, PHP, phpMyAdmin, Python, आदि)।</li>
            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Compatibility Charts (संगतता चार्ट)</a> – विभिन्न पैकेजों के लिए सुसंगतता सूचियों की सूची (CIDRAM, phpMussel, आदि)।</li>
          </ul>
        </li>

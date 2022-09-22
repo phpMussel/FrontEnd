@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2022.08.19).
+# This file: Indonesian language data (last modified: 2022.09.22).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -28,7 +28,7 @@ checkbox_delete_orphaned_values: "Menghapus nilai-nilai yang diyatimkan."
 config_core: "Konfigurasi umum (konfigurasi inti apapun yang bukan milik kategori lain)."
 config_core_default_timeout: "Batas waktu default yang digunakan untuk permintaan eksternal? Default = 12 detik."
 config_core_delete_on_sight: "Mengaktifkan direktif ini akan menginstruksikan skrip untuk berusaha secepatnya menghapus file apapun yang ditemukannya selama scan yang mencocokkan pada kriteria deteksi apapun, baik melalui tanda tangan atau yang lain. File yang diidentifikasi sebagai "bersih" tidak akan disentuh. Dalam kasus arsip, seluruh arsip akan dihapus, terlepas dari apakah file tersebut hanya salah satu dari beberapa file yang terdapat dalam arsip. Untuk kasus pemindaian upload file biasanya, tidak cocok untuk Mengaktifkan direktif ini, karena biasanya, PHP akan secara otomatis menyatukan isi dari cache ketika eksekusi selesai, berarti bahwa dia akan selalu menghapus file terupload apapun melalui server jika tidak dipindahkan, dikopi, atau dihapus sebelumnya. Direktif tersebut ditambahkan disini sebagai ukuran keamanan ekstra untuk semua salinan PHP yang tidak selalu bersikap pada perilaku yang diharapkan. False = Setelah pemindahaian, biarkan file [Default]; True = Setelah pemindaian, jika bukan bersih, menghapusnya langsung."
-config_core_disabled_channels: "Ini dapat digunakan untuk mencegah phpMussel dari menggunakan saluran tertentu saat mengirim permintaan (misalnya, saat memperbarui, saat mengambil metadata komponen, dll)."
+config_core_disabled_channels: "Ini dapat digunakan untuk mencegah phpMussel dari menggunakan saluran tertentu saat mengirim permintaan."
 config_core_error_log: "File untuk mencatat kesalahan tidak fatal yang terdeteksi. Spesifikasikan nama file, atau biarkan kosong untuk menonaktifkan."
 config_core_hide_version: "Sembunyikan informasi versi dari log dan output halaman? True = Ya; False = Tidak [Default]."
 config_core_ipaddr: "Dimana menemukan alamat IP dari menghubungkan permintaan? (Berguna untuk pelayanan-pelayanan seperti Cloudflare dan sejenisnya). Default = REMOTE_ADDR. PERINGATAN: Jangan ganti ini kecuali Anda tahu apa yang Anda lakukan!"
@@ -154,6 +154,7 @@ field_size: "Ukuran Total:"
 field_size_GB: "GB"
 field_size_KB: "KB"
 field_size_MB: "MB"
+field_size_PB: "PB"
 field_size_TB: "TB"
 field_size_bytes: "byte"
 field_system_timezone: "Gunakan zona waktu default sistem."
@@ -203,7 +204,7 @@ info_some_useful_links: |
        <li><span class="comCat">Sumber daya informasi dan pembelajaran.</span>
          <ul class="comSub">
            <li>{{Links.PHP.Earth.Website}} – Sumber belajar dan diskusi PHP.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Tabel Kerentanan</a> – Mencantumkan berbagai versi dari paket-paket yang aman dan tidak aman (PHP, HHVM, dll).</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Tabel Kerentanan</a> – Mencantumkan berbagai versi dari paket-paket yang aman dan tidak aman (HHVM, PHP, phpMyAdmin, Python, dll).</li>
            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Tabel Kompatibilitas</a> – Mencantumkan informasi kompatibilitas untuk berbagai paket (CIDRAM, phpMussel, dll).</li>
          </ul>
        </li>
