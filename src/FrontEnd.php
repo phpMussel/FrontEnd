@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.09.25).
+ * This file: Front-end handler (last modified: 2022.09.26).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1096,10 +1096,7 @@ class FrontEnd
                         if (in_array($DirValue['type'], ['bool', 'float', 'int', 'kb', 'string', 'timezone', 'email', 'url'], true)) {
                             $this->Loader->autoType($_POST[$ThisDir['DirLangKey']], $DirValue['type']);
                         }
-                        if (!preg_match('/[^\x20-\xFF"\']/', $_POST[$ThisDir['DirLangKey']]) && (
-                            !isset($DirValue['choices']) ||
-                            isset($DirValue['choices'][$_POST[$ThisDir['DirLangKey']]])
-                        )) {
+                        if (!isset($DirValue['choices']) || isset($DirValue['choices'][$_POST[$ThisDir['DirLangKey']]])) {
                             $ConfigurationModified = true;
                             $this->Loader->Configuration[$CatKey][$DirKey] = $_POST[$ThisDir['DirLangKey']];
                         } elseif (
