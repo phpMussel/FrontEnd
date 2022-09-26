@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2022.09.22).
+# This file: Korean language data (last modified: 2022.09.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -74,6 +74,8 @@ config_files_max_recursion: "아카이브에 대한 최대 재귀 깊이입니�
 config_files_only_allow_images: "True로 설정하면, 스캐너가 발견한 이미지가 아닌 파일은 스캔하지 않고 즉시 신고됩니다. 이는 때에 따라 스캔을 완료하는 데 필요한 시간을 줄이는 데 도움이 될 수 있습니다. 기본 설정에 따라 false로 설정되어 있습니다."
 config_files_scannable_threshold: "phpMussel이 읽고 스캔 할 수있는 원시 데이터의 길이에 대한 임계 값 (스캐닝 중에 눈에 띄는 문제가있는 경우에는 필요에 따라 설정). 기본값 = 32MB. 제로 또는 값 없음 (null)은 임계 값을 비활성화합니다. 값은 서버 나 웹 사이트에 업로드되는 파일의 평균 파일 크기보다 크고 filesize_limit 지시어보다 작게 설정해야합니다. 또한 "php.ini" 설정에 따라 PHP에 할당 된 메모리의 대략 5 분의 1을 초과해서는 없습니다. 이 지시문은 phpMussel가 메모리를 너무 많이 사용하지 않도록하기위한 것입니다. (일정 크기 이상의 파일은 스캔하지 못할 수도 있습니다)."
 config_frontend: "프론트 엔드 설정."
+config_frontend_custom_footer: "모든 프런트 엔드 페이지의 맨 아래에 HTML로 삽입됩니다. 법적 고지, 연락처 링크, 비즈니스 정보, 등에 유용합니다."
+config_frontend_custom_header: "모든 프런트 엔드 페이지의 맨 처음에 HTML로 삽입됩니다. 웹사이트 로고, 개인화된 헤더, 스크립트, 등에 유용합니다."
 config_frontend_default_algo: "향후 모든 암호와 세션에 사용할 알고리즘을 정의합니다."
 config_frontend_frontend_log: "프론트 엔드 로그인 시도를 기록하는 파일. 파일 이름을 지정하십시오. 비활성화하려면 비워 둡니다."
 config_frontend_magnification: "글꼴 배율. Default (기본 설정) = 1."

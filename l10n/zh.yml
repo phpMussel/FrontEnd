@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (simplified) language data (last modified: 2022.09.22).
+# This file: Chinese (simplified) language data (last modified: 2022.09.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -74,6 +74,8 @@ config_files_max_recursion: "最大存档递归深度限。​默认=3。"
 config_files_only_allow_images: "设置为true时，扫描程序遇到的任何非图像文件将被立即标记，而不会被扫描。​在某些情况下，这可能有助于减少完成扫描所需的时间。​默认情况下设置为false。"
 config_files_scannable_threshold: "原始数据读取和扫描的最大长度（如果有任何引人注目性能问题当扫描）。​默认 = 32MB。​零或空值将关闭门槛。​按说，​这个数值应不会少于平均文件大小的文件上传您想和期待收到您的服务器或网站，​应不会多于<code>filesize_limit</code>指令，​和应不会多于大致五分之一的总允许内存分配获授PHP通过"php.ini"配置文件。​这个指令存在为尝试防止phpMussel从用的太多内存（这个将防止它从能够顺利扫描文件以上的一个特别文件大小）。"
 config_frontend: "前端的配置。"
+config_frontend_custom_footer: "在所有前端页面的末尾作为HTML插入。​如果您想在所有此类页面中包含法律声明、联系链接、业务信息、或类似，这可能会很有用。"
+config_frontend_custom_header: "在所有前端页面的开头作为HTML插入。​如果您想在所有此类页面中包含网站徽标、个性化标题、脚本、或类似，这可能会很有用。"
 config_frontend_default_algo: "定义要用于所有未来密码和会话的算法。"
 config_frontend_frontend_log: "前端登录尝试的录音文件。​指定一个文件名，​或留空以禁用。"
 config_frontend_magnification: "字体放大。​标准 = 1。"

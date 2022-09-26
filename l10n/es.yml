@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2022.09.22).
+# This file: Spanish language data (last modified: 2022.09.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -74,6 +74,8 @@ config_files_max_recursion: "Máximo recursividad nivel límite para compactados
 config_files_only_allow_images: "Cuando es true, cualquier archivo encontrado por el escáner que no sean imágenes se marcará de inmediato, sin ser escaneado. Esto puede ayudar a reducir el tiempo necesario para completar una escaneo en algunos casos. Establecido en falso por predeterminado."
 config_files_scannable_threshold: "Opcional limitación a la longitud de datos puros para que phpMussel se permitido leer y escanear (en caso de que los hay notable rendimiento problemas mientras que escaneando). Predefinido = 32MB. Cero o nulo valor desactiva la limitación. En general, Este valor no debe ser inferior a la media tamaño de archivos subidos que desea y espera recibir a su servidor o website, no debe ser mayor que el filesize_limit directiva, y no debe ser más de aproximadamente una quinta parte de la total permisible memoria asignación concedida a PHP a través de la "php.ini" configuración archivo. Esta directiva existe para intratar prevenir phpMussel del uso de demasiada memoria (eso sería prevenir que sea capaz para escanear archivos con éxito encima de un cierto tamaño de archivos)."
 config_frontend: "Configuración para el front-end."
+config_frontend_custom_footer: "Insertado como HTML al final de todas las páginas del front-end. Esto podría ser útil en caso de que desee incluir un aviso legal, enlace de contacto, información comercial, o similar en todas dichas páginas."
+config_frontend_custom_header: "Insertado como HTML al principio de todas las páginas del front-end. Esto podría ser útil en caso de que desee incluir un logotipo de sitio web, un encabezado personalizado, scripts, o similar en todas dichas páginas."
 config_frontend_default_algo: "Define qué algoritmo utilizar para todas las contraseñas y sesiones en el futuro."
 config_frontend_frontend_log: "Archivo para registrar intentos de login al front-end. Especificar el nombre del archivo, o dejar en blanco para desactivar."
 config_frontend_magnification: "Ampliación de fuente. Predefinido = 1."

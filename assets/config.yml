@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Configuration defaults file (last modified: 2022.03.28).
+# This file: Configuration defaults file (last modified: 2022.09.25).
 ##/
 
 frontend:
@@ -91,3 +91,9 @@ frontend:
   type: "float"
   step: "any"
   default: 1
+ custom_header:
+  type: "string"
+  default: ""
+ custom_footer:
+  type: "string"
+  default: ""

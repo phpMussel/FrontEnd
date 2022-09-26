@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2022.09.22).
+# This file: Dutch language data (last modified: 2022.09.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -74,6 +74,8 @@ config_files_max_recursion: "Maximale recursiediepte limiet voor archieven. Stan
 config_files_only_allow_images: "Indien ingesteld op true, worden alle niet-afbeeldingsbestanden die door de scanner worden aangetroffen, zullen werden onmiddellijk gemarkeerd, zonder te worden gescand. Dit kan in sommige gevallen de tijd verkorten die nodig is om een scan te voltooien. Standaard ingesteld op false."
 config_files_scannable_threshold: "Drempelwaarde de lengte van onverwerkte gegevens dat phpMussel is toegestaan te lezen en scan (in het geval er enige merkbare prestatieproblemen terwijl scannen). Standaard = 32MB. Zero of nulwaarde zal uitschakelen het drempelwaarde. Algemeen, dit waarde moeten niet zijn lagere dan de gemiddelde bestandsgrootte van het bestandsuploads dat u wilt en verwacht te ontvangen aan uw server of website, moeten niet zijn meer dan de filesize_limit richtlijn, en moeten niet zijn meet dan ongeveer een vijfde van de totale toegestane geheugentoewijzing toegekend aan PHP via de "php.ini" configuratiebestand. Dit richtlijn bestaat te proberen om phpMussel te verhinderen van het gebruik van teveel geheugen (dat zou verhinderen het van de mogelijkheid te scannen bestanden met succes boven een bepaalde bestandsgrootte)."
 config_frontend: "Configuratie voor de frontend."
+config_frontend_custom_footer: "Ingevoegd als HTML onderaan alle frontend pagina's. Dit kan handig zijn als u op al dergelijke pagina's een juridische kennisgeving, een contactlink, bedrijfsinformatie, of iets dergelijks wilt opnemen."
+config_frontend_custom_header: "Ingevoegd als HTML aan het begin van alle frontend pagina's. Dit kan handig zijn als u op al dergelijke pagina's een websitelogo, gepersonaliseerde koptekst, scripts, of iets dergelijks wilt opnemen."
 config_frontend_default_algo: "Definieert welk algoritme u wilt gebruiken voor alle toekomstige wachtwoorden en sessies."
 config_frontend_frontend_log: "Bestand om de frontend login pogingen te loggen. Geef een bestandsnaam, of laat leeg om uit te schakelen."
 config_frontend_magnification: "Lettergrootte vergroting. Standaard = 1."

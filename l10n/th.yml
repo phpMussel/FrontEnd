@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Thai language data (last modified: 2022.09.22).
+# This file: Thai language data (last modified: 2022.09.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -74,6 +74,8 @@ config_files_max_recursion: "ความลึกสูงสุดของก
 config_files_only_allow_images: "เมื่อตั้งค่าเป็น true ไฟล์ที่ไม่ใช่รูปภาพ ๆ ที่สแกนเนอร์พบจะถูกทำเครื่องหมายทันทีโดยไม่ถูกสแกน. นี่อาจช่วยลดเวลาที่ต้องใช้ในการสแกนในบางกรณี. ตั้งค่าเป็น false โดยค่าเริ่มต้น."
 config_files_scannable_threshold: "ความยาวสูงสุดของข้อมูลดิบที่ phpMussel สามารถอ่านและสแกนได้ (ในกรณีที่มีปัญหาเรื่องประสิทธิภาพการใช้งานที่เห็นได้ชัดขณะสแกน). ค่าเริ่มต้น = 32MB. ค่าเป็นศูนย์หรือค่า null จะปิดใช้งานขีด จำกัด. โดยทั่วไป นี้ไม่ควรน้อยกว่าค่าเฉลี่ยขนาดไฟล์ของการอัปโหลดที่คุณคาดว่าจะได้รับไปยังเซิร์ฟเวอร์หรือเว็บไซต์ของคุณ ไม่ควรมากกว่าคำสั่ง filesize_limit และไม่ควรเกินกว่าหนึ่งในห้าการจัดสรรหน่วยความจำทั้งหมดให้กับ PHP ผ่านไฟล์กำหนดค่า "php.ini". คำสั่งนี้มีอยู่เพื่อป้องกันไม่ให้ phpMussel ใช้หน่วยความจำมากเกินไป (การใช้หน่วยความจำมากเกินไปสามารถป้องกันไม่ให้ phpMussel สแกนไฟล์ทั้งหมด)."
 config_frontend: "การกำหนดค่าสำหรับ front-end."
+config_frontend_custom_footer: "เพิ่ม HTML ที่ส่วนท้ายของหน้า front-end. หากคุณต้องการใส่ประกาศทางกฎหมาย ลิงค์ติดต่อ ข้อมูลทางธุรกิจ ฯลฯ สิ่งนี้อาจเป็นประโยชน์."
+config_frontend_custom_header: "เพิ่ม HTML ที่จุดเริ่มต้นของหน้า front-end. หากคุณต้องการใส่โลโก้เว็บไซต์ ส่วนหัวส่วนบุคคล สคริปต์ ฯลฯ สิ่งนี้อาจมีประโยชน์."
 config_frontend_default_algo: "กำหนดว่าจะใช้อัลกอริทึมใดสำหรับรหัสผ่านและเซสชันในอนาคต."
 config_frontend_frontend_log: "ไฟล์สำหรับบันทึกพยายามเข้าสู่ระบบที่ front-end. ระบุชื่อไฟล์หรือเว้นว่างไว้เพื่อปิดใช้งาน."
 config_frontend_magnification: "การขยายตัวอักษร. ค่าเริ่มต้น = 1."

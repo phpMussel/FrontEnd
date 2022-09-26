@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2022.09.22).
+# This file: Malay language data (last modified: 2022.09.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -74,6 +74,8 @@ config_files_max_recursion: "Had kedalaman rekursi maksimum untuk arkib. Lalai =
 config_files_only_allow_images: "Apabila ditetapkan kepada true, sebarang fail yang ditemui oleh pengimbas yang bukan imej akan dibenderakan serta-merta, tanpa diimbas. Ini boleh membantu mengurangkan masa yang diperlukan untuk menyelesaikan imbasan dalam beberapa kes. Ditetapkan kepada false secara lalai."
 config_files_scannable_threshold: "Ambang untuk panjang data mentah yang dibenarkan untuk dibaca dan diimbas oleh phpMussel (sekiranya terdapat sebarang isu prestasi yang ketara semasa mengimbas). Lalai = 32MB. Sifar akan melumpuhkan ambang ini. Secara amnya, nilai ini tidak sepatutnya kurang daripada purata saiz muat naik fail yang anda mahu dan jangkakan terima ke pelayan atau tapak web anda, tidak sepatutnya lebih daripada arahan filesize_limit, dan tidak sepatutnya melebihi kira-kira satu perlima daripada jumlah peruntukan memori yang dibenarkan kepada PHP melalui fail konfigurasi "php.ini". Arahan ini wujud untuk cuba menghalang phpMussel daripada menggunakan terlalu banyak memori (yang boleh menghalangnya daripada berjaya mengimbas fail di atas saiz fail tertentu)."
 config_frontend: "Konfigurasi untuk bahagian hadapan."
+config_frontend_custom_footer: "Disisipkan sebagai HTML pada penghujung semua halaman bahagian hadapan. Ini mungkin berguna sekiranya anda ingin menyertakan notis undang-undang, pautan hubungan, maklumat perniagaan, dsb pada semua halaman tersebut."
+config_frontend_custom_header: "Disisipkan sebagai HTML pada permulaan semua halaman bahagian hadapan. Ini mungkin berguna sekiranya anda ingin menyertakan logo tapak web, pengepala diperibadikan, skrip, dsb pada semua halaman tersebut."
 config_frontend_default_algo: "Mentakrifkan algoritma yang hendak digunakan untuk semua kata laluan dan sesi masa depan."
 config_frontend_frontend_log: "Fail untuk mengelog percubaan log masuk bahagian hadapan. Tentukan nama fail, atau biarkan kosong untuk nyahaktifkan."
 config_frontend_magnification: "Pembesaran fon. Lalai = 1."

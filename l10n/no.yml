@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2022.09.22).
+# This file: Norwegian language data (last modified: 2022.09.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -74,6 +74,8 @@ config_files_max_recursion: "Maksimal rekursjonsdybde for arkiver. Standardverdi
 config_files_only_allow_images: "Når satt til true, alle filer som skanneren møter og som ikke er bilder, flagges umiddelbart uten å bli skannet. Dette kan bidra til å redusere tiden som trengs for å fullføre en skanning i noen tilfeller. Satt til false som standard."
 config_files_scannable_threshold: "Terskel for lengden på rådata som phpMussel har lov til å lese og skanne (i tilfelle det er merkbare ytelsesproblemer under skanning). Standardverdi = 32MB. Null deaktiverer terskelen. Generelt bør denne verdien ikke være mindre enn den gjennomsnittlige filstørrelsen for filopplastinger du ønsker og forventer å motta til serveren eller nettstedet ditt, bør ikke være mer enn filesize_limit direktivet, og bør ikke være mer enn omtrent en femtedel av den totale tillatte minnetildelingen som er gitt til PHP via konfigurasjonsfilen "php.ini". Dette direktivet eksisterer for å prøve å forhindre at phpMussel bruker opp for mye minne (som forhindrer at det lykkes å skanne filer over en viss filstørrelse)."
 config_frontend: "Konfigurasjon for frontenden."
+config_frontend_custom_footer: "Sett inn som HTML helt i slutten av alle frontend-sider. Dette kan være nyttig i tilfelle du ønsker å inkludere en juridisk melding, kontaktlenke, forretningsinformasjon, eller lignende på alle slike sider."
+config_frontend_custom_header: "Sett inn som HTML helt i begynnelsen av alle frontend-sider. Dette kan være nyttig i tilfelle du ønsker å inkludere en nettsidelogo, personlig overskrift, skript, eller lignende på alle slike sider."
 config_frontend_default_algo: "Definerer hvilken algoritme som skal brukes for alle fremtidige passord og økter."
 config_frontend_frontend_log: "Fil for å logge innloggingsforsøk på frontenden. Angi et filnavn, eller la det være tomt for å deaktivere."
 config_frontend_magnification: "Font forstørrelse. Standardverdi = 1."

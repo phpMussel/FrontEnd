@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2022.09.22).
+# This file: French language data (last modified: 2022.09.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -74,6 +74,8 @@ config_files_max_recursion: "Maximum récursivité profondeur limite pour archiv
 config_files_only_allow_images: "Lorsqu'il est défini sur true, tous les fichiers rencontrés par le scanner qui ne sont pas des images seront immédiatement marqués, sans être analysés. Cela peut aider à réduire le temps nécessaire pour terminer une analyse dans certains cas. Défini sur false par défaut."
 config_files_scannable_threshold: "Seuil à la longueur de données brutes dans laquelle phpMussel est autorisé à lire et à analyser (dans le cas où il ya remarquable performance problèmes au cours de l'analyse). Défaut = 32Mo. Zéro ou nulle valeur désactive le seuil. En général, cette valeur ne doit pas être moins que la moyenne tailles des fichiers des téléchargements que vous voulez et s'attendent à recevoir de votre serveur ou site web, ne devrait pas être plus que la filesize_limit directive, et ne devrait pas être plus que d'un cinquième de l'allocation de totale mémoire autorisée à PHP via le "php.ini" fichier de configuration. Cette directive existe pour tenter d'empêcher phpMussel d'utiliser trop de mémoire (ce qui l'empêcherait d'être capable d'analyse fichiers dessus d'une certaine taille avec succès)."
 config_frontend: "Configuration pour l'accès frontal."
+config_frontend_custom_footer: "Inséré en tant que HTML au tout bas de toutes les pages frontales. Cela peut être utile si vous souhaitez inclure une notice légale, un lien de contact, des informations commerciales, ou similaires sur toutes ces pages."
+config_frontend_custom_header: "Inséré en tant que HTML au tout début de toutes les pages frontales. Cela peut être utile si vous souhaitez inclure un logo de site Web, un en-tête personnalisé, des scripts, ou similaires sur toutes ces pages."
 config_frontend_default_algo: "Définit quel algorithme utiliser pour tous les mots de passe et les sessions à l'avenir."
 config_frontend_frontend_log: "Fichier pour l'enregistrement des tentatives de connexion à l'accès frontal. Spécifier un fichier, ou laisser vide à désactiver."
 config_frontend_magnification: "Grossissement des fontes. Défaut = 1."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2022.09.22).
+# This file: Polish language data (last modified: 2022.09.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -74,6 +74,8 @@ config_files_max_recursion: "Maksymalny limit głębokości rekurencji dla archi
 config_files_only_allow_images: "Po ustawieniu na true, wszystkie pliki napotkane przez skaner, które nie są obrazami, zostaną natychmiast oznaczone, bez skanowania. W niektórych przypadkach może to pomóc skrócić czas potrzebny na ukończenie skanowania. Domyślnie ustawiona jest wartość false."
 config_files_scannable_threshold: "Próg długości nieprzetworzonych danych, które phpMussel może czytać i skanować (w przypadku wystąpienia zauważalnych problemów z wydajnością podczas skanowania). Domyślna = 32MB. Zero lub null wyłącza próg. Zasadniczo ta wartość nie powinna być mniejsza niż średni rozmiar przesyłanych plików, którego można oczekiwać na serwerze lub stronie internetowej, nie powinna być większa niż dyrektywa filesize_limit, i nie powinna stanowić więcej niż około jednej piątej całkowitej dozwolonej alokacji pamięci przyznanej PHP przez plik konfiguracyjny „php.ini”. Ta dyrektywa istnieje, aby zapobiec zbyt dużemu zużyciu pamięci przez phpMussel (uniemożliwiłoby to pomyślne skanowanie plików powyżej określonego rozmiaru)."
 config_frontend: "Konfiguracja interfejsu użytkownika."
+config_frontend_custom_footer: "Wstawiany jako HTML na końcu wszystkich stron dla interfejsu użytkownika. Może to być przydatne w przypadku, gdy chcesz umieścić informację prawną, link kontaktowy, informacje biznesowe, lub podobne informacje na wszystkich takich stronach."
+config_frontend_custom_header: "Wstawiony jako HTML na początku wszystkich stron dla interfejsu użytkownika. Może to być przydatne w przypadku, gdy chcesz umieścić logo witryny, spersonalizowany nagłówek, skrypty, itp. na wszystkich takich stronach."
 config_frontend_default_algo: "Określa, którego algorytmu należy używać dla wszystkich przyszłych haseł i sesji."
 config_frontend_frontend_log: "Plik do logowania próbuje zalogować się do interfejsu użytkownika. Podaj nazwę pliku lub pozostaw puste, aby wyłączyć."
 config_frontend_magnification: "Powiększenie czcionki. Domyślna = 1."

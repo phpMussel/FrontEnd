@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.09.22).
+ * This file: Front-end handler (last modified: 2022.09.25).
  */
 
 namespace phpMussel\FrontEnd;
@@ -251,6 +251,12 @@ class FrontEnd
 
             /** Populated by front-end JavaScript data as per needed. */
             'JS' => '',
+
+            /** Custom header data. */
+            'CustomHeader' => $this->Loader->Configuration['frontend']['custom_header'],
+
+            /** Custom footer data. */
+            'CustomFooter' => $this->Loader->Configuration['frontend']['custom_footer'],
 
             /** Current default language. */
             'FE_Lang' => $this->Loader->Configuration['core']['lang'],

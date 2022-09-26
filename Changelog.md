@@ -105,3 +105,7 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 [2022.07.28; Maikuolan]: Added L10N for Malay.
 
 [2022.09.22; Maikuolan]: Added L10N for Ukrainian.
+
+### v3.3.0
+
+[2022.09.26; New Feature; Maikuolan]: Custom headers/footers for front-end pages and the upload denied page now be set directly via configuration.

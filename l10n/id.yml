@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2022.09.22).
+# This file: Indonesian language data (last modified: 2022.09.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -74,6 +74,8 @@ config_files_max_recursion: "Batas kedalaman rekursi maksimum untuk arsip. Defau
 config_files_only_allow_images: "Bila diset ke true, file apapun ditemukan oleh pemindai yang bukan gambar akan segera ditandai, tanpa dipindai. Ini dapat membantu mengurangi waktu yang dibutuhkan untuk menyelesaikan pemindaian dalam beberapa kasus. Diset ke false secara default."
 config_files_scannable_threshold: "Ambang batas dengan panjang file mentah yang phpMussel diperbolehkan untuk membaca dan memindai (dalam kasus ada masalah kinerja sementara pemindaian). Default = 32MB. Nol atau nilai null menonaktifkan ambang batas. Umumnya, nilai ini tidak seharusnya kurang dari ukuran file rata-rata upload file yang Anda inginkan dan Anda harapkan untuk menerima ke server atau website, tidak seharusnya lebih dari direktif filesize_limit, dan tidak seharusnya lebih dari sekitar seperlima dari total alokasi memori yang diijinkan ke PHP melalui file konfigurasi "php.ini". Direktif ini ada untuk mencegah phpMussel menggunakan terlalu banyak memori (yang bisa mencegah dari yang berhasil memindai file di atas tertentu ukuran file)."
 config_frontend: "Konfigurasi untuk bagian depan."
+config_frontend_custom_footer: "Disisipkan sebagai HTML di akhir semua halaman front-end. Ini dapat berguna jika Anda ingin menyertakan pemberitahuan hukum, tautan kontak, informasi bisnis, atau sejenisnya di semua halaman tersebut."
+config_frontend_custom_header: "Disisipkan sebagai HTML di awal semua halaman front-end. Ini dapat berguna jika Anda ingin menyertakan logo situs web, header yang dipersonalisasi, skrip, atau sejenisnya di semua halaman tersebut."
 config_frontend_default_algo: "Mendefinisikan algoritma mana yang akan digunakan untuk semua kata sandi dan sesi di masa depan."
 config_frontend_frontend_log: "File untuk mencatat upaya masuk bagian depan. Spesifikasikan nama file, atau biarkan kosong untuk menonaktifkan."
 config_frontend_magnification: "Perbesaran font. Default = 1."
