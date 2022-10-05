@@ -12,7 +12,8 @@
     },
     "require": {
         "php": ">=7.2.0",
-        "phpmussel/core": "^3.3.2",
+        "phpmussel/core": "^3.3.3",
+        "maikuolan/common": "^2.9.2",
         "ext-pcre": "*"
     },
     "autoload": {
