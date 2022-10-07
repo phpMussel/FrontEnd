@@ -16,7 +16,6 @@ This provides a front-end administrative facility for phpMussel.
 
 ```
 composer require phpmussel/frontend
-composer require phpmussel/web
 ```
 
 __*Example:*__
@@ -85,4 +84,4 @@ __*Screenshot:*__
 ---
 
 
-Last Updated: 1 March 2022 (2022.03.01).
+Last Updated: 7 October 2022 (2022.10.07).
