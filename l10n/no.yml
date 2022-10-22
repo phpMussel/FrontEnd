@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2022.09.25).
+# This file: Norwegian language data (last modified: 2022.09.26).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -43,7 +43,7 @@ config_core_scan_log_serialized: "Filnavn for fil å logge alle skanneresultaten
 config_core_statistics: "Spor phpMussel bruksstatistikk? True = Ja; False = Nei [Standardverdi]."
 config_core_time_format: "Dato/tid notasjonsformat som brukes av phpMussel. Ytterligere alternativer kan legges på forespørsel."
 config_core_time_offset: "Tidssone forskjøvet i minutter."
-config_core_timezone: "Dette brukes til å spesifisere tidssonen som skal brukes (f.eks, Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, etc). Spesifiser "SYSTEM" for å la PHP håndtere dette for deg automatisk."
+config_core_timezone: "Dette brukes til å spesifisere tidssonen som skal brukes (f.eks., Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, etc). Spesifiser "SYSTEM" for å la PHP håndtere dette for deg automatisk."
 config_core_truncate: "Skjær loggfiler når de kommer til en viss størrelse? Verdi er den maksimale størrelsen i B/KB/MB/GB/TB som en loggfil kan vokse til før den blir avkortet. Standardverdi på 0KB deaktiverer avkorting (loggfilene kan vokse på ubestemt tid). Merk: Gjelder for individuelle loggfiler! Størrelsen på loggfiler anses ikke kollektivt."
 config_experimental: "Ustabil/Eksperimentell!"
 config_files: "Spesifikasjonene for hvordan du håndterer filer når du skanner."

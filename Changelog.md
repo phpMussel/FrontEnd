@@ -108,6 +108,8 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 
 ### v3.3.0
 
-[2022.09.26; New Feature; Maikuolan]: Custom headers/footers for front-end pages and the upload denied page now be set directly via configuration.
+[2022.09.26; New Feature; Maikuolan]: Custom headers/footers for front-end pages and the upload denied page can now be set directly via configuration.
 
 [2022.09.26; Maikuolan]: Configuration multiline support added (necessary in order to properly facilitate the custom headers/footers feature introduced earlier today).
+
+[2022.10.22; Maikuolan]: Added L10N for Persian/Farsi.
