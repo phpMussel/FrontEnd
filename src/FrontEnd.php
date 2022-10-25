@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.09.26).
+ * This file: Front-end handler (last modified: 2022.10.25).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1436,14 +1436,32 @@ class FrontEnd
                             $ThisDir['DirLangKey'],
                             empty($this->Loader->ConfigurationDefaults[$CatKey][$DirKey]['default']) ? 'false' : 'true'
                         );
-                    } elseif (in_array($DirValue['type'], ['float', 'int'], true)) {
+                    } elseif ($DirValue['type'] === 'float' || $DirValue['type'] === 'int') {
+                        $ThisDir['FieldAppend'] = '';
+                        if (isset($DirValue['step'])) {
+                            $ThisDir['FieldAppend'] .= ' step="' . $DirValue['step'] . '"';
+                        }
+                        $ThisDir['FieldAppend'] .= $ThisDir['Trigger'];
+                        if ($DirValue['type'] === 'int') {
+                            $ThisDir['FieldAppend'] .= ' inputmode="numeric"';
+                            if (isset($DirValue['pattern'])) {
+                                $ThisDir['FieldAppend'] .= ' pattern="' . $DirValue['pattern'] . '"';
+                            } else {
+                                $ThisDir['FieldAppend'] .= (!isset($DirValue['min']) || $DirValue['min'] < 0) ? ' pattern="^-?\d*$"' : ' pattern="^\d*$"';
+                            }
+                        } elseif (isset($DirValue['pattern'])) {
+                            $ThisDir['FieldAppend'] .= ' pattern="' . $DirValue['pattern'] . '"';
+                        }
+                        foreach (['min', 'max'] as $ThisDir['ParamTry']) {
+                            if (isset($DirValue[$ThisDir['ParamTry']])) {
+                                $ThisDir['FieldAppend'] .= ' ' . $ThisDir['ParamTry'] . '="' . $DirValue[$ThisDir['ParamTry']] . '"';
+                            }
+                        }
                         $ThisDir['FieldOut'] = sprintf(
-                            '<input type="number" name="%1$s" id="%1$s_field" value="%2$s"%3$s%4$s%5$s />',
+                            '<input type="number" name="%1$s" id="%1$s_field" value="%2$s"%3$s />',
                             $ThisDir['DirLangKey'],
                             $this->Loader->Configuration[$CatKey][$DirKey],
-                            (isset($DirValue['step']) ? ' step="' . $DirValue['step'] . '"' : ''),
-                            $ThisDir['Trigger'],
-                            ($DirValue['type'] === 'int' ? ' inputmode="numeric"' : '')
+                            $ThisDir['FieldAppend']
                         );
                         if (isset($this->Loader->ConfigurationDefaults[$CatKey][$DirKey]['default'])) {
                             $ThisDir['Reset'] .= sprintf(
@@ -1470,12 +1488,15 @@ class FrontEnd
                             );
                         }
                     } else {
+                        $ThisDir['FieldAppend'] = $ThisDir['autocomplete'] . $ThisDir['Trigger'];
+                        if (isset($DirValue['pattern'])) {
+                            $ThisDir['FieldAppend'] .= ' pattern="' . $DirValue['pattern'] . '"';
+                        }
                         $ThisDir['FieldOut'] = sprintf(
-                            '<input type="text" name="%1$s" id="%1$s_field" value="%2$s"%3$s%4$s />',
+                            '<input type="text" name="%1$s" id="%1$s_field" value="%2$s"%3$s />',
                             $ThisDir['DirLangKey'],
                             $this->Loader->Configuration[$CatKey][$DirKey],
-                            $ThisDir['autocomplete'],
-                            $ThisDir['Trigger']
+                            $ThisDir['FieldAppend']
                         );
                         if (isset($this->Loader->ConfigurationDefaults[$CatKey][$DirKey]['default'])) {
                             $ThisDir['Reset'] .= sprintf(

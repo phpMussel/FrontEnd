@@ -113,3 +113,5 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 [2022.09.26; Maikuolan]: Configuration multiline support added (necessary in order to properly facilitate the custom headers/footers feature introduced earlier today).
 
 [2022.10.22; Maikuolan]: Added L10N for Persian/Farsi.
+
+[2022.10.25; Maikuolan]: Hardened some configuration constraints.
