@@ -1,0 +1,362 @@
+##\
+# This file is a part of the phpMussel\FrontEnd package.
+# Homepage: https://phpmussel.github.io/
+#
+# PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: Hebrew language data (last modified: 2022.11.12).
+#
+# Regarding translations: My native language is English. Because this is a free
+# and open-source hobby project which generates zero income, and translatable
+# content is likely to change as the features and functionality supported by
+# the project changes, it doesn't make sense for me to spend money for
+# translations. Because I'm the sole author/developer/maintainer for the
+# project and I'm not a ployglot, any translations I produce are very likely to
+# contain errors. Sorry, but realistically, that won't ever change. If you find
+# any such errors/typos/mistakes/etc, your assistance to correct them would be
+# very much appreciated. Pull requests are invited and encouraged. Otherwise,
+# if you find these errors too much to handle, just stick with the original
+# English source. If a translation is irredeemably incomprehensible, let me
+# know which, and I can delete it. If you're not sure how to perform pull
+# requests, ask. I can help.
+##/
+
+checkbox_delete_orphaned_values: "מחק ערכים יתומים."
+config_core: "תצורה כללית (כל תצורה ראשית שאינה שייכת לקטגוריות אחרות)."
+config_core_default_timeout: "פסק זמן רגיל לשימוש עבור בקשות חיצוניות? סטנדרטי = 12 שניות."
+config_core_delete_on_sight: "כאשר מופעל, אם קבצים סרוקים עומדים בקריטריונים לזיהוי, הם יימחקו מיד. לא ייגעו בקבצים שזוהו כ"נקיים". במקרה של ארכיונים, הארכיון כולו יימחק, ללא קשר לשאלה אם הקובץ הפוגע הוא רק אחד מתוך מספר קבצים הכלולים בארכיון. כאשר סורקים רק העלאות, לרוב אין צורך להפעיל הנחיה זו, מכיוון ש-PHP בדרך כלל תנקה אוטומטית את תוכן המטמון שלו כאשר הביצוע יסתיים, כלומר, בדרך כלל הוא ימחק את כל הקבצים שהועלו דרכו לשרת אלא אם כן הם הועברו, הועתקו, או נמחקו כבר. מסופק כמדד נוסף לביטחון ולשקט נפשי. False = לאחר הסריקה, השאר את הקובץ בשקט [סטנדרטי]; True = לאחר הסריקה, אם לא נקי, מחק מיד."
+config_core_disabled_channels: "זה יכול לשמש כדי למנוע מ-phpMussel להשתמש בערוצים מסוימים בעת שליחת בקשות."
+config_core_error_log: "קובץ לרישום שגיאות לא קטלניות שזוהו. ציין שם קובץ, או השאר ריק כדי להשבית."
+config_core_hide_version: "להסתיר את פרטי הגרסה מהיומנים ומפלט העמוד? True = כן; False = לא [סטנדרטי]."
+config_core_ipaddr: "היכן למצוא את כתובת ה-IP של בקשות נכנסות? (שימושי עבור שירותים כגון Cloudflare וכדומה). סטנדרטי = REMOTE_ADDR. אזהרה: שנה זאת רק אם אתה יודע מה אתה עושה!"
+config_core_lang: "ציין את השפה הסטנדרטית עבור phpMussel."
+config_core_lang_override: "האם לבצע לוקליזציה לפי HTTP_ACCEPT_LANGUAGE במידת האפשר? True = כן [סטנדרטי]; False = לא."
+config_core_log_rotation_action: "סיבוב יומן מגביל את מספר קובצי היומן שצריכים להתקיים בכל זמן נתון. כאשר נוצרים קובצי יומן חדשים, אם המספר הכולל של קובצי יומן חורג מהמגבלה שצוינה, הפעולה שצוינה תתבצע. אתה יכול לציין את הפעולה הרצויה כאן."
+config_core_log_rotation_limit: "סיבוב יומן מגביל את מספר קובצי היומן שצריכים להתקיים בכל זמן נתון. כאשר נוצרים קובצי יומן חדשים, אם המספר הכולל של קובצי יומן חורג מהמגבלה שצוינה, הפעולה שצוינה תתבצע. אתה יכול לציין את המגבלה הרצויה כאן. ערך של 0 ישבית את סיבוב היומן."
+config_core_maintenance_mode: "להפעיל מצב תחזוקה? True = כן; False = לא [סטנדרטי]. משבית כל דבר מלבד הקצה הקדמי. לפעמים שימושי בעת עדכון CMS, מסגרות, וכו'."
+config_core_scan_cache_expiry: "לכמה זמן phpMussel צריך לשמור את תוצאות הסריקה במטמון? ערך הוא מספר השניות שיש לאחסן את תוצאות הסריקה עבורן. התקן הוא 21600 שניות (6 שעות); ערך 0 ישבית את שמירה במטמון של תוצאות הסריקה."
+config_core_scan_log: "שם הקובץ שאליו יש לרשום את כל תוצאות הסריקה. ציין שם קובץ, או השאר ריק כדי להשבית."
+config_core_scan_log_serialized: "שם הקובץ שאליו יש לרשום את כל תוצאות הסריקה (באמצעות פורמט סידורי). ציין שם קובץ, או השאר ריק כדי להשבית."
+config_core_statistics: "לעקוב אחר סטטיסטיקות השימוש ב-phpMussel? True = כן; False = לא [סטנדרטי]."
+config_core_time_format: "פורמט סימון התאריך/שעה המשמש את phpMussel. ניתן להוסיף אפשרויות נוספות לפי בקשה."
+config_core_time_offset: "קיזוז אזור הזמן בדקות."
+config_core_timezone: "זה משמש כדי לציין את אזור הזמן לשימוש (למשל, Africa/Cairo ,America/New_York ,Asia/Tokyo ,Australia/Perth ,Europe/Berlin ,Pacific/Guam, וכו'). ציין "SYSTEM" כדי לאפשר ל-PHP לטפל בזה עבורך באופן אוטומטי."
+config_core_truncate: "לקצץ קובצי יומן כשהם מגיעים לגודל מסוים? הערך הוא הגודל המקסימלי ב-B/KB/MB/GB/TB שקובץ יומן עשוי לגדול אליו לפני קיצוץ. הערך הסטנדרטי של 0KB משבית חיתוך (קבצי יומן יכולים לגדול ללא הגבלת). הערה: חל על קבצי יומן בודדים! הגודל של קובצי יומן לא נחשב באופן קולקטיבי."
+config_experimental: "לא יציב/ניסיוני!"
+config_files: "הפרטים כיצד לטפל בקבצים בעת סריקה."
+config_files_allow_leading_trailing_dots: "האם לאפשר נקודות מובילות ונגררות בשמות קבצים? לפעמים זה יכול לשמש כדי להסתיר קבצים, או כדי להערים על מערכות מסוימות לאפשר מעבר ספריות. False = אל תאפשר את זה [סטנדרטי]. True = תאפשר את זה."
+config_files_archive_file_extensions: "אילו סיומות קבצי ארכיון מזוהות (הפורמט הוא CSV; צריך להוסיף או להסיר רק כאשר מתרחשות בעיות; הסרה מיותרת עלולה לגרום להופעת חיוביות כוזבות עבור קבצי ארכיון, בעוד שתוספות מיותרות יהפכו למעשה את התוספות הללו לחסינות מפני זיהוי ספציפי לתקיפה; היזהר בעת שינוי; שים לב גם שזה לא משפיע על ניתוח ברמת התוכן). הרשימה מפרטת בדרך כלל את הפורמטים הנפוצים ביותר ברוב המערכות וה-CMS, אך בכוונה אינה בהכרח מקיפה."
+config_files_block_control_characters: "לחסום קבצים המכילים תווי בקרה כלשהם (מלבד שורות חדשות)? אם אתה מעלה רק טקסט רגיל, תוכל להפעיל אפשרות זו כדי לספק הגנה נוספת למערכת שלך. עם זאת, אם אתה מעלה משהו אחר מלבד טקסט רגיל, הפעלת זה עלולה לגרום לתוצאות חיוביות כוזבות. False = אל תחסום את זה [סטנדרטי]; True = תחסום את זה."
+config_files_block_encrypted_archives: "לזהות ולחסום ארכיונים מוצפנים? מכיוון ש-phpMussel אינו מסוגל לסרוק את התוכן של ארכיונים מוצפנים, ייתכן שהצפנת ארכיון עשויה לשמש תוקף כדי לעקוף את phpMussel, סורקי אנטי-וירוס והגנות אחרות מסוג זה. חסימת כל ארכיון מוצפן שהתגלה עלולה להפחית במידה מסוימת סיכוני אבטחה כאלה. False = לא; True = כן [סטנדרטי]."
+config_files_block_macros: "לנסות לחסום קבצים המכילים פקודות מאקרו? סוגים מסוימים של מסמכים וגיליונות אלקטרוניים עשויים להכיל פקודות מאקרו הניתנות להפעלה, ובכך לספק וקטור איום פוטנציאלי. False = אל תחסום את זה [סטנדרטי]; True = תחסום את זה."
+config_files_can_contain_php_file_extensions: "רשימה של סיומות קבצים המורשות להכיל קוד PHP, מופרדים בפסיקים. אם זיהוי התקפת זיקית PHP מופעל, קבצים המכילים קוד PHP, שיש להם הרחבות שאינן ברשימה זו, יתגלו כהתקפות זיקית PHP."
+config_files_chameleon_from_exe: "חפש כותרות הפעלה בקבצים שאינם קובצי הפעלה או ארכיונים מוכרים וכן קובצי הפעלה שהכותרות שלהם שגויות. False = כבוי; True = דלוק."
+config_files_chameleon_from_php: "חפש כותרות PHP בקבצים שאינם קבצי PHP או ארכיונים מוכרים. False = כבוי; True = דלוק."
+config_files_chameleon_to_archive: "זיהוי כותרות שגויות בארכיונים ובקבצים דחוסים. (נתמך: BZ/BZIP2 ,GZ/GZIP ,LZF ,RAR ,ZIP). False = כבוי; True = דלוק."
+config_files_chameleon_to_doc: "חפש מסמכי office שהכותרות שלהם שגויות (נתמך: DOC ,DOT ,PPS ,PPT ,XLA ,XLS ,WIZ). False = כבוי; True = דלוק."
+config_files_chameleon_to_img: "חפש תמונות שהכותרות שלהן שגויות (נתמך: BMP ,DIB ,PNG ,GIF ,JPEG ,JPG ,XCF ,PSD ,PDD ,WEBP). False = כבוי; True = דלוק."
+config_files_chameleon_to_pdf: "חפש קבצי PDF שהכותרות שלהם שגויות. False = כבוי; True = דלוק."
+config_files_check_archives: "ניסיון לבדוק את תוכן הארכיון? False = אל תבדוק את זה; True = תבדוק את זה [סטנדרטי]. נתמך: Zip (דורש libzip), Tar ,Rar (דורש סיומת rar)."
+config_files_corrupted_exe: "קבצים פגומים ושגיאות ניתוח. False = התעלם; True = תחסום את זה [סטנדרטי]. לזהות ולחסום קבצי PE (קובץ הפעלה נייד) פגומים? לעיתים קרובות (אך לא תמיד), כאשר היבטים של קובץ PE פגומים או שלא ניתן לנתח אותם כראוי, זה יכול להעיד על זיהום ויראלי. התהליכים המשמשים את רוב תוכנות האנטי-וירוס לאיתור וירוסים בקובצי PE דורשים ניתוח של קבצים אלה בדרכים מסוימות, אשר המתכנת של וירוס ינסה למנוע באופן ספציפי אם הוא מודע לכך, על מנת לאפשר לוירוס שלהם להישאר לא מזוהה."
+config_files_decode_threshold: "סף עבור אורך הנתונים הגולמיים שבתוכם יש לזהות פקודות פענוח (למקרה שיש בעיות ביצועים בולטות בזמן הסריקה). סטנדרטי = 512KB. אפס או null משביתים את הסף (הסרת כל מגבלה כזו בהתבסס על גודל הקובץ)."
+config_files_filesize_archives: "האם רשימות שחורות ורשימות הלבנות לגבי גודל הקבצים צריכות לחול על תוכן הארכיונים? False = לא (פשוט רשימת הכל באפור); True = כן [סטנדרטי]."
+config_files_filesize_limit: "מגבלת גודל קובץ ב-KB. 65536 = 64MB [סטנדרטי]; 0 = אין גבול (תמיד ברשימה האפורה). כל ערך מספרי (חיובי) מתקבל. זה יכול להיות שימושי כאשר תצורת ה-PHP שלך מגבילה את כמות הזיכרון שתהליך יכול להחזיק או אם תצורת ה-PHP שלך מגבילה את גודל הקבצים של העלאות."
+config_files_filesize_response: "מה לעשות עם קבצים החורגים ממגבלת גודל הקבצים (אם קיים כזה). False = רשימת היתרים; True = רשימה שחורה [סטנדרטי]."
+config_files_filetype_archives: "להעביר את הרשימה השחורה/הרשימה הלבנה לתוכן של ארכיונים? False = לא (פשוט רשימת הכל באפור) [סטנדרטי]; True = כן."
+config_files_filetype_blacklist: "רשימה שחורה:"
+config_files_filetype_greylist: "רשימת אפור:"
+config_files_filetype_whitelist: "רשימת הלבנים:"
+config_files_max_files_in_archives: "מספר מקסימלי של קבצים לסריקה מתוך ארכיונים לפני ביטול הסריקה. סטנדרטי = 0 (אין מקסימום)."
+config_files_max_recursion: "מגבלת עומק רקורסיה מקסימלית עבור ארכיונים. סטנדרטי = 3."
+config_files_only_allow_images: "כאשר מוגדר כ-true, כל קבצים שנתקל בסורק שאינם תמונות יסומנו באופן מיידי, מבלי להיסרק. זה עשוי לעזור להפחית את הזמן הדרוש להשלמת סריקה במקרים מסוימים. מוגדר ל-false כסטנדרט."
+config_files_scannable_threshold: "סף לאורך הנתונים הגולמיים ש-phpMussel מורשה לקרוא ולסרוק (למקרה שיש בעיות ביצועים בולטות בזמן הסריקה). סטנדרטי = 32MB. אפס או null משביתים את הסף. בדרך כלל, ערך זה לא אמור להיות קטן מגודל הקבצים הממוצע של העלאות קבצים שאתה רוצה ומצפה לקבל לשרת או לאתר שלך, לא צריך להיות יותר מההנחיה filesize_limit, והוא לא אמור להיות יותר מחמישית בערך מהקצאת הזיכרון הכוללת המותרת המוענקת ל-PHP באמצעות קובץ התצורה "php.ini". ההנחיה הזו קיימת כדי לנסות למנוע מ-phpMussel להשתמש ביותר מדי זיכרון (שימנע ממנו את היכולת לסרוק בהצלחה קבצים מעל גודל קבצים מסוים)."
+config_frontend: "תצורה עבור הקצה הקדמי."
+config_frontend_custom_footer: "מוכנס כ-HTML בתחתית כל דפי הקצה הקדמיים. זה יכול להיות שימושי למקרה שתרצה לכלול הודעה משפטית, קישור ליצירת קשר, מידע עסקי, או דומה בכל הדפים הללו."
+config_frontend_custom_header: "מוכנס כ-HTML ממש בתחילת כל דפי הקצה הקדמיים. זה יכול להיות שימושי למקרה שתרצה לכלול לוגו של אתר אינטרנט, כותרת עליונה אישית, סקריפטים, או דומה בכל הדפים הללו."
+config_frontend_default_algo: "מגדיר באיזה אלגוריתם להשתמש עבור כל הסיסמאות וההפעלות העתידיות."
+config_frontend_frontend_log: "קובץ עבור ניסיונות רישום להיכנס הקצה הקדמי. ציין שם קובץ, או השאר ריק כדי להשבית."
+config_frontend_magnification: "הגדלת גופן. סטנדרטי = 1."
+config_frontend_max_login_attempts: "המספר המרבי של ניסיונות כניסה הקצה הקדמי. סטנדרטי = 5."
+config_frontend_numbers: "איך אתה מעדיף שמספרים יוצגו? בחר את הדוגמה שנראית לך הנכונה ביותר."
+config_frontend_theme: "האסתטיקה לשימוש עבור הקצה הקדמית של phpMussel."
+config_legal: "תצורה לדרישות משפטיות."
+config_legal_privacy_policy: "הכתובת של מדיניות פרטיות רלוונטית שתוצג בכותרת התחתונה של כל עמוד שנוצר. ציין כתובת אתר, או השאר ריק כדי להשבית."
+config_legal_pseudonymise_ip_addresses: "לטשטש חלקית כתובות IP בעת רישום? True = כן [סטנדרטי]; False = לא."
+config_quarantine: "תצורה להסגר."
+config_quarantine_quarantine_key: "phpMussel יכול להסגר את העלאות הקבצים החסומים, אם תרצה. משתמשים שרוצים רק להגן על אתרי האינטרנט שלהם או על סביבת האירוח שלהם מבלי שיש להם עניין בניתוח מעמיק של העלאות מסומנות, צריכים להשאיר את הפונקציונליות הזו מושבתת, אבל כל משתמש המעוניין בניתוח נוסף של העלאות מסומנות עבור מחקר תוכנות זדוניות או עבור דברים דומים צריכים לאפשר את הפונקציונליות הזו. הסגר של העלאות מסומנות יכול לפעמים גם לסייע באיתור שגיאות חיוביות כוזבות, אם זה משהו מתרחש לעיתים קרובות עבורך. כדי להשבית את פונקציונליות ההסגר, השאר את <code>quarantine_key</code> ריק, או נקה אותו אם הוא עדיין לא ריק. כדי להפעיל אותו, הזן ערך כלשהו. <code>quarantine_key</code> חשוב לאבטחה מכיוון שהוא מונע את ניצול פונקציונליות ההסגר על ידי תוקפים פוטנציאליים וכאמצעי למניעת ביצוע של נתונים המאוחסנים בהסגר. יש להתייחס ל<code>quarantine_key</code> באותו אופן כמו הסיסמאות שלך: ככל שיותר זמן יותר טוב, ושמור עליה היטב. לקבלת האפקט הטוב ביותר, השתמש בשילוב עם <code>delete_on_sight</code>."
+config_quarantine_quarantine_max_files: "המספר המרבי של קבצים שיכולים להתקיים בהסגר. כאשר קבצים חדשים מתווספים להסגר, אם חריגה ממספר זה, קבצים ישנים יימחקו עד שהשאר לא יחרוג ממספר זה. סטנדרטי = 100."
+config_quarantine_quarantine_max_filesize: "גודל הקבצים המקסימלי המותר לקבצים להיות בהסגר. קבצים גדולים מהערך שצוין לא יועברו להסגר. הנחיה זו חשובה כאמצעי להקשות על כל תוקף פוטנציאלי להציף את ההסגר שלך בנתונים לא רצויים, מה שעלול לגרום לשימוש מופרז בנתונים בשירות האירוח שלך. סטנדרטי = 2MB."
+config_quarantine_quarantine_max_usage: "השימוש המרבי בזיכרון המותר להסגר. אם סך הזיכרון ששימש את ההסגר יגיע לערך זה, הקבצים הישנים ביותר בהסגר יימחקו עד שכלל הזיכרון בשימוש לא יגיע עוד לערך זה. הנחיה זו חשובה כאמצעי להקשות על כל תוקף פוטנציאלי להציף את ההסגר שלך בנתונים לא רצויים, מה שעלול לגרום לשימוש מופרז בנתונים בשירות האירוח שלך. סטנדרטי = 64MB."
+config_signatures: "תצורה של חתימות, קבצי חתימה, וכו'."
+config_signatures_active: "רשימה של קובצי החתימה הפעילים, מופרדים בפסיקים. הערה: יש להתקין תחילה קבצי חתימה, לפני שתוכל להפעיל אותם. כדי שקובצי הבדיקה יפעלו כהלכה, יש להתקין ולהפעיל את קובצי החתימה."
+config_signatures_detect_adware: "האם phpMussel צריך לנתח חתימות לאיתור תוכנות פרסום? False = לא; True = כן [סטנדרטי]."
+config_signatures_detect_deface: "האם phpMussel צריך לנתח חתימות לאיתור השחתת אתרים? False = לא; True = כן [סטנדרטי]."
+config_signatures_detect_encryption: "האם phpMussel צריך לזהות ולחסום קבצים מוצפנים? False = לא; True = כן [סטנדרטי]."
+config_signatures_detect_joke_hoax: "האם phpMussel צריך לנתח חתימות לאיתור תוכנות זדוניות בדיחות/מתיחה? False = לא; True = כן [סטנדרטי]."
+config_signatures_detect_packer_packed: "האם phpMussel צריך לנתח חתימות לזיהוי אורזים ונתונים ארוזים? False = לא; True = כן [סטנדרטי]."
+config_signatures_detect_pua_pup: "האם phpMussel צריך לנתח חתימות לזיהוי PUA/PUP? False = לא; True = כן [סטנדרטי]."
+config_signatures_detect_shell: "האם phpMussel צריך לנתח חתימות לזיהוי סקריפטים של מעטפת? False = לא; True = כן [סטנדרטי]."
+config_signatures_fail_extensions_silently: "האם phpMussel צריך לדווח כאשר חסרות תוספים? אם <code>fail_extensions_silently</code> מושבת, תוספים חסרים ידווחו בסריקה, ואם <code>fail_extensions_silently</code> מופעל, תתעלם מהרחבות חסרות, עם סריקה שמדווחת לאותם קבצים שאין בעיות כלשהן. השבתה זו עשויה להגביר את האבטחה שלך, אך עשויה גם להוביל לעלייה בתוצאות חיוביות כוזבות. False = מושבת; True = מופעל [סטנדרטי]."
+config_signatures_fail_silently: "האם phpMussel צריך לדווח כאשר קבצי חתימות חסרים או פגומים? אם <code>fail_silently</code> מושבת, קבצים חסרים ופגומים ידווחו בסריקה, ואם <code>fail_silently</code> מופעל, יתעלמו מקבצים חסרים ופגומים, עם סריקה שמדווחת לאותם קבצים שאין בעיות כלשהן. בדרך כלל יש להשאיר את זה לבד, אלא אם כן אתה חווה קריסות או בעיות דומות. False = מושבת; True = מופעל [סטנדרטי]."
+config_signatures_heuristic_threshold: "חלק מהחתימות של phpMussel נועדו למצוא אינדיקציות לקובץ שעלול להיות זדוני, מבלי לזהות כשלעצמן את הקבצים האלה כזדוניים ישירות. ערך "סף" זה אומר ל-phpMussel את המשקל המרבי המותר לפני סימון הקבצים האלה כזדוניים. ההגדרה של משקל בהקשר זה היא המספר הכולל של האינדיקציות שנמצאו. כסטנדרט, ערך זה יוגדר ל-3. ערך נמוך יותר בדרך כלל יגרום להופעה גבוהה יותר של תוצאות חיוביות כוזבות אך למספר גבוה יותר של קבצים זדוניים מסומנים, בעוד שערך גבוה יותר יגרום להופעה נמוכה יותר של תוצאות חיוביות כוזבות אך למספר נמוך יותר של קבצים זדוניים מסומנים. בדרך כלל עדיף לשמור על ערך זה ברמה שלו אלא אם כן אתה נתקל בבעיות."
+config_supplementary_cache_options: "אפשרויות מטמון משלימות. הערה: שינוי ערכים אלה עלול להתנתק."
+config_supplementary_cache_options_enable_apcu: "מציין אם לנסות להשתמש ב-APCu לשמירה במטמון. סטנדרטי = True."
+config_supplementary_cache_options_enable_memcached: "מציין אם לנסות להשתמש ב-Memcached לשמירה במטמון. סטנדרטי = False."
+config_supplementary_cache_options_enable_pdo: "מציין אם לנסות להשתמש ב-PDO לשמירה במטמון. סטנדרטי = False."
+config_supplementary_cache_options_enable_redis: "מציין אם לנסות להשתמש ב-Redis לשמירה במטמון. סטנדרטי = False."
+config_supplementary_cache_options_memcached_host: "ערך מארח Memcached. סטנדרטי = "localhost"."
+config_supplementary_cache_options_memcached_port: "ערך יציאת Memcached. סטנדרטי = "11211"."
+config_supplementary_cache_options_pdo_dsn: "ערך PDO DSN. סטנדרטי = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+config_supplementary_cache_options_pdo_password: "סיסמת PDO."
+config_supplementary_cache_options_pdo_username: "שם משתמש PDO."
+config_supplementary_cache_options_prefix: "הערך שצוין כאן יופיע לפני כל מפתחות הזנת המטמון. סטנדרטי = "phpMussel_". כאשר קיימות התקנות מרובות באותו שרת, זה יכול להיות שימושי לשמירת המטמונים שלהם נפרדים זה מזה."
+config_supplementary_cache_options_redis_host: "ערך מארח Redis. סטנדרטי = "localhost"."
+config_supplementary_cache_options_redis_port: "ערך יציאת Redis. סטנדרטי = "6379"."
+config_supplementary_cache_options_redis_timeout: "ערך הזמן הקצוב של Redis. סטנדרטי = "2.5"."
+config_urlscanner: "תצורה עבור הסורק ה-URL."
+config_urlscanner_cache_time: "כמה זמן (בשניות) צריך לשמור את התוצאות של חיפושי API? התקן הוא 3600 שניות (1 שעה)."
+config_urlscanner_google_api_key: "מאפשר חיפושי ל-API לגלישה בטוחה של Google כאשר מפתח ה-API הדרוש מוגדר."
+config_urlscanner_maximum_api_lookups: "המספר המרבי המותר של חיפושי API לביצוע בכל איטרציה של סריקה בודדת. מכיוון שכל חיפוש API נוסף יוסיף לזמן הכולל הנדרש להשלמת כל איטרציה של סריקה, ייתכן שתרצה לקבוע מגבלה על מנת לזרז את תהליך הסריקה הכולל. כאשר מוגדר ל-0, לא יוחל מספר מקסימלי מותר כזה. מוגדר ל-10 כסטנדרט."
+config_urlscanner_maximum_api_lookups_response: "מה לעשות אם חריגה מהמספר המרבי המותר של חיפושי API? False = אל תעשה כלום (המשך בעיבוד) [סטנדרטי]; True = סמן/חסום את הקובץ."
+config_virustotal: "תצורה לאינטגרציה של Virus Total."
+config_virustotal_vt_public_api_key: "באופן אופציונלי, phpMussel יכול לסרוק קבצים באמצעות Virus Total API כדרך לספק רמת הגנה משופרת מאוד מפני וירוסים, סוסים טרויאניים, תוכנות זדוניות ואיומים אחרים. כסטנדרט, סריקת קבצים באמצעות ממשק ה-API של Virus Total מושבתת. כדי להפעיל אותו, יש צורך במפתח API מ-Virus Total. בשל התועלת המשמעותית שזה יכול לספק לך, זה משהו שאני ממליץ בחום לאפשר. עם זאת, אנא שים לב שכדי להשתמש ב-Virus Total API, עליך להסכים לתנאי השירות שלהם, ועליך לציית לכל ההנחיות כפי שמתוארות בתיעוד של Virus Total! אינך מורשה להשתמש בתכונת האינטגרציה הזו אם לא קראת והסכמת לתנאי השירות של Virus Total ושל ה-API שלו. עליך לקרוא ולהבין, לכל הפחות, את ההקדמה של תיעוד ה-API Virus Total Public (הכל אחרי "VirusTotal Public API v2.0" אבל לפני "Contents")."
+config_virustotal_vt_quota_rate: "לפי התיעוד של Virus Total API, הוא מוגבל לכל היותר ל-4 בקשות מכל סוג בכל מסגרת זמן נתונה של דקה אחת. אם אתה מפעיל לקוח דבש, סיר דבש, או כל אוטומציה אחרת שעומדת לספק משאבים ל-VirusTotal ולא רק לאחזר דוחות, אתה זכאי למכסת תעריף בקשות גבוהה יותר. כסטנדרט, phpMussel תעמוד בקפדנות במגבלות אלו, אך בשל האפשרות להגדלת מכסות התעריפים הללו, שתי ההנחיות הללו ניתנות כאמצעי להנחות את phpMussel לאיזו מגבלה עליה לעמוד. אלא אם כן קיבלת הוראה לעשות זאת, לא מומלץ להעלות ערכים אלו, אבל, אם נתקלת בבעיות הקשורות להגיע למכסת התעריפים שלך, הפחתת ערכים אלו עשויה לפעמים לעזור. מגבלת התעריף שלך נקבעת כבקשות <code>vt_quota_rate</code> מכל סוג שהוא בכל מסגרת זמן נתונה של דקה <code>vt_quota_time</code>."
+config_virustotal_vt_quota_time: "(ראה תיאור למעלה)."
+config_virustotal_vt_suspicion_level: "כסטנדרט, phpMussel יגביל את הקבצים שהיא סורקת באמצעות ה-Virus Total API לאותם קבצים שהיא מחשיבה כ"חשודים". אתה יכול לחלופין להתאים הגבלה זו על ידי שינוי הערך של <code>vt_suspicion_level</code>."
+config_virustotal_vt_weighting: "האם על phpMussel ליישם את תוצאות הסריקה באמצעות ה-Virus Total API כזיהוי או כשקלול? הנחיה זו קיימת, מכיוון שלמרות שסריקת קובץ באמצעות מנועים מרובים (כפי שעושה Virus Total) אמורה לגרום לשיעור זיהוי מוגבר (ולכן למספר גבוה יותר של קבצים זדוניים שנתפסים), היא יכולה גם לגרום למספר גבוה יותר של חיוביות כוזבות, ולפיכך, בנסיבות מסוימות, תוצאות הסריקה עשויות להיות מנוצלות טוב יותר כציון ביטחון ולא כמסקנה סופית. אם נעשה שימוש בערך של 0, תוצאות הסריקה באמצעות ה-Virus Total API יחולו כזיהויים, ולכן, אם מנוע כלשהו בשימוש על ידי Virus Total מסמן את הקובץ הנסרק כזדוני, phpMussel יחשב את הקובץ כזדוני. אם נעשה שימוש בכל ערך אחר, תוצאות הסריקה באמצעות ה-Virus Total API יוחלו כשקלול, ולפיכך, מספר המנועים בשימוש על ידי Virus Total המסמנים את הקובץ הנסרק כזדוני ישמש ציון ביטחון (או שקלול) לשאלה האם הקובץ הנסרק צריך להיחשב כזדוני על ידי phpMussel (הערך בו נעשה שימוש ייצג את ציון הביטחון המינימלי או המשקל הנדרש על מנת להיחשב כזדוני). ערך של 0 משמש כסטנדרט."
+confirm_action: "האם אתה בטוח שברצונך "%s"?"
+confirm_delete: "האם אתה בטוח שברצונך למחוק את "%s"?"
+field_2fa: "קוד 2FA"
+field_clear_all: "נקה הכל"
+field_confirm: "לאשר"
+field_create_new_account: "ליצור חשבון חדש"
+field_delete_account: "מחק חשבון"
+field_delete_all: "מחק הכל"
+field_delete_file: "מחק"
+field_download_file: "הורד"
+field_false: "False (שקר)"
+field_file: "קובץ"
+field_latest_version: "הגרסה העדכנית ביותר"
+field_log_in: "התחבר על"
+field_log_rotation_archive: "תחילה ארכיון, ולאחר מכן מחק את קבצי היומן הישנים ביותר, עד שההגבלה לא תחרוג עוד."
+field_log_rotation_delete: "מחק את קובצי היומן הישנים ביותר, עד שההגבלה לא תחרוג עוד."
+field_more_fields: "שדות נוספים"
+field_ok: "בסדר"
+field_options: "אפשרויות"
+field_password: "סיסמה"
+field_permissions: "הרשאות"
+field_quarantine_key: "המפתח להסגר"
+field_reset: "לאתחל מחדש"
+field_restore_file: "שחזר"
+field_set_new_password: "הגדר סיסמה חדשה"
+field_size: "הגודל הכולל:"
+field_size_GB: "GB"
+field_size_KB: "KB"
+field_size_MB: "MB"
+field_size_PB: "PB"
+field_size_TB: "TB"
+field_size_bytes:
+ - "בייט"
+ - "בתים"
+ - "בתים"
+ - "בתים"
+field_system_timezone: "השתמש באזור הזמן הסטנדרטי של המערכת."
+field_true: "True (נכון)"
+field_update: "עדכן"
+field_update_signatures_files: "עדכן קבצי חתימה"
+field_username: "שם משתמש"
+field_your_version: "הגרסה שלך"
+header_login: "אנא התחבר על מנת להמשיך."
+hints_pdo_dsn:
+ שאלות נפוצות.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#HOW_TO_USE_PDO" hreflang="en-AU">מהו "PDO DSN"? כיצד להשתמש ב-PDO עם phpMussel?</a></em>"
+hints_xlists:
+ איך זה עובד.: "If your system allows only specific types of files to be uploaded, or if your system explicitly denies certain types of files, specifying those filetypes in whitelists, blacklists, and greylists can increase the speed at which scanning is performed by allowing the script to skip over certain filetypes. Format is CSV (comma separated values)."
+ סדר לוגי של עיבוד.: "If the filetype is whitelisted, don't scan and don't block the file, and don't check the file against the blacklist or the greylist. If the filetype is blacklisted, don't scan the file but block it anyway, and don't check the file against the greylist. If the greylist is empty or if the greylist is not empty and the filetype is greylisted, scan the file as per normal and determine whether to block it based on the results of the scan, but if the greylist is not empty and the filetype is not greylisted, treat the file as blacklisted, therefore not scanning it but blocking it anyway."
+info_some_useful_links: |
+ כמה קישורים שימושיים:<br />
+     <ul class="pieul">
+       <li><span class="comCat">Tools, resources, etc for phpMussel.</span>
+         <ul class="comSub">
+           <li>{{Links.phpMussel.Issues}} – Issues page for phpMussel (support, assistance, etc).</li>
+           <li>{{Links.phpMussel.SigTool}} – Creates phpMussel signature files using the ClamAV signatures database.</li>
+           <li>{{Links.phpMussel.Extras}} – Various extras.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Tools, resources, etc for ClamAV.</span>
+         <ul class="comSub">
+           <li>{{Links.ClamavNet}} – ClamAV homepage (ClamAV® is an open source antivirus engine for detecting trojans, viruses, malware &amp; other malicious threats).</li>
+           <li>{{Links.SecuriteInfo}} – Computer security company that offers supplementary signatures for ClamAV.</li>
+           <li>{{Links.Sanesecurity}} – Computer security company that offers supplementary signatures for ClamAV.</li>
+           <li>{{Links.Malware Expert}} – Offers supplementary signatures for ClamAV and supplementary rules for ModSecurity.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Groups, forums, communities, etc.</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Facebook}} – PHP learning resources and discussion.</li>
+           <li>{{Links.MalwareTips}} – Useful malware focused discussion forums.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Other useful tools, resources, services, etc.</span>
+         <ul class="comSub">
+           <li>{{Links.PhishTank}} – Phishing database utilised by the phpMussel URL scanner.</li>
+           <li>{{Links.VirusTotal}} – VirusTotal is a free service for analysing suspicious files and URLs.</li>
+           <li>{{Links.Hybrid Analysis}} – Hybrid Analysis is a free malware analysis service provided by {{Links.Payload Security}}.</li>
+           <li>{{Links.Malwarebytes}} – Computer anti-malware specialists.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Informational and learning resources.</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Website}} – PHP learning resources and discussion.</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Vulnerability Charts</a> – Lists safe/unsafe versions of various packages (HHVM, PHP, phpMyAdmin, Python, etc).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Compatibility Charts</a> – Lists compatibility information for various packages (CIDRAM, phpMussel, etc).</li>
+         </ul>
+       </li>
+     </ul>
+
+label_active_config_file: "Active configuration file:"
+label_blocked: "Uploads blocked"
+label_branch: "Branch latest stable:"
+label_clientinfo: "Client information:"
+label_default: "סטנדרטי"
+label_events: "Scan events"
+label_expires: "Expires:"
+label_extension: "Extension"
+label_external: "External"
+label_flagged: "Objects flagged"
+label_installed_available: "Installed/Available"
+label_is_available: "%s is available (%s)."
+label_is_available_class: "%s is available."
+label_is_not_available: "%s is not available."
+label_never: "Never"
+label_os: "Operating system used:"
+label_other: "Other"
+label_other-Active: "Active signature files"
+label_other-Since: "Start date"
+label_php: "PHP version used:"
+label_phpmussel: "phpMussel version used:"
+label_quarantined: "Uploads quarantined"
+label_sapi: "SAPI used:"
+label_scanned_objects: "Objects scanned"
+label_scanned_uploads: "Uploads scanned"
+label_see_also: "See also:"
+label_size_in_quarantine: "Size in quarantine:"
+label_stable: "Latest stable:"
+label_sysinfo: "System information:"
+label_unstable: "Latest unstable:"
+label_upload_date: "Upload date:"
+label_upload_hash: "Upload hash:"
+label_upload_origin: "Upload origin:"
+label_upload_size: "Upload size:"
+label_your_ip: "Your IP:"
+label_your_ua: "Your UA:"
+link_accounts: "Accounts"
+link_cache_data: "Cache Data"
+link_config: "Configuration"
+link_copy_to_clipboard: "Copy to clipboard"
+link_discussions: "Discussions"
+link_documentation: "Documentation"
+link_home: "Home"
+link_log_out: "Log Out"
+link_logs: "Logs"
+link_quarantine: "Quarantine"
+link_siginfo: "Signature Information"
+link_statistics: "Statistics"
+link_textmode: "Text formatting: <a href="%1$sfalse">Simple</a> – <a href="%1$strue">Fancy</a>"
+link_upload_test: "Upload Test"
+logs_logfile_doesnt_exist: "Selected log file doesn't exist!"
+logs_no_logfile_selected: "No log file selected."
+logs_no_logfiles_available: "No log files available."
+max_login_attempts_exceeded: "Maximum number of login attempts exceeded; Access denied."
+msg_subject_2fa: "Two-Factor Authentication"
+msg_template_2fa: |
+ <center><p>Hello, %s.<br /><br />
+ Your two-factor authentication code for logging into the phpMussel front-end:</p>
+ <h1>%s</h1>
+ <p>This code expires in 10 minutes.</p></center>
+previewer_days: "Days"
+previewer_hours: "Hours"
+previewer_minutes: "Minutes"
+previewer_months: "Months"
+previewer_seconds: "Seconds"
+previewer_weeks: "Weeks"
+previewer_years: "Years"
+response_2fa_invalid: "Incorrect 2FA code entered. Authentication failed."
+response_2fa_valid: "Successfully authenticated."
+response_accounts_already_exists: "An account with that username already exists!"
+response_accounts_created: "Account successfully created!"
+response_accounts_deleted: "Account successfully deleted!"
+response_accounts_doesnt_exist: "That account doesn't exist."
+response_accounts_password_updated: "Password successfully updated!"
+response_configuration_updated: "Configuration successfully updated."
+response_failed: "Failed"
+response_failed_to_create: "Failed to create!"
+response_failed_to_delete: "Failed to delete!"
+response_failed_to_update: "Failed to update!"
+response_file_deleted: "File successfully deleted!"
+response_file_restored: "File successfully restored!"
+response_login_invalid_password: "Login failure! Invalid password!"
+response_login_invalid_username: "Login failure! Username doesn't exist!"
+response_login_password_field_empty: "Password field empty!"
+response_login_username_field_empty: "Username field empty!"
+response_login_wrong_endpoint: "Wrong endpoint!"
+response_no: "No"
+response_restore_error_1: "Failed to restore! Corrupted file!"
+response_restore_error_2: "Failed to restore! Incorrect quarantine key!"
+response_statistics_cleared: "Statistics cleared."
+response_yes: "Yes"
+siginfo_key_CVE: "Signatures that deal with CVEs (Common Vulnerabilities and Exposures)."
+siginfo_key_Chameleon: "Signatures that deal with "chameleon attacks"."
+siginfo_key_FN: "Signatures working with filenames (as opposed to file contents)."
+siginfo_key_Fake: "Detections are fake, malicious variants of otherwise benign entities (software, scripts, etc)."
+siginfo_key_HEUR: "Signatures derived from heuristic data."
+siginfo_key_META: "Signatures working with file metadata (as opposed to file data)."
+siginfo_key_Other: "Unidentified or other."
+siginfo_key_Other_Metadata: "No metadata available."
+siginfo_key_Suspect: "Detections are suspected, but not confirmed (may involve combinations of various identifiers)."
+siginfo_key_Testfile: "Signatures for testfiles (i.e., not malicious detections)."
+siginfo_key_Total: "Total active signatures."
+siginfo_key_VT: "Signatures including or based upon data from Virus Total."
+siginfo_key_Werewolf: "Signatures that deal with "werewolf attacks"."
+siginfo_sub_Classes: "Count by signature file class"
+siginfo_sub_Files: "Count by signature file"
+siginfo_sub_MalwareTypes: "Count by infection or malware type"
+siginfo_sub_SigTypes: "Count by signature metadata"
+siginfo_sub_Targets: "Count by targeted vector"
+siginfo_sub_Vendors: "Count by signature vendor or source"
+siginfo_xkey: "Identified as "%s"."
+state_async_deny: "Permissions not adequate to perform asynchronous requests. Try logging in again."
+state_cache_is_empty: "The cache is empty."
+state_complete_access: "Complete access"
+state_default_password: "אזהרה: Using standard password!"
+state_loading: "Loading..."
+state_loadtime: "Page request completed in %s seconds."
+state_logged_in: "Logged in."
+state_logged_in_2fa_pending: "Logged in + 2FA pending."
+state_logged_out: "Logged out."
+state_logs_access_only: "Logs access only"
+state_maintenance_mode: "אזהרה: Maintenance mode is enabled!"
+state_password_not_valid: "אזהרה: This account is not using a valid password!"
+state_quarantine:
+ - "There is %s file currently in quarantine."
+ - "There are %s files currently in quarantine."
+tip_2fa_sent: "An email containing a two-factor authentication code has been sent to your email address. Please confirm this code below to gain access to the front-end. If you didn't receive this email, try logging out, waiting for 10 minutes, and logging in again to receive a new email containing a new code."
+tip_accounts: "Hello, {username}.<br />The accounts page allows you to control who can access the phpMussel front-end."
+tip_cache_data: "Hello, {username}.<br />Here you can review the contents of the cache."
+tip_config: "Hello, {username}.<br />The configuration page allows you to modify the configuration for phpMussel from the front-end."
+tip_fe_cookie_warning: "הערה: phpMussel uses a cookie to authenticate logins. By logging in, you give your consent for a cookie to be created and stored by your browser."
+tip_home: "Hello, {username}.<br />This is the homepage for the phpMussel front-end. Select a link from the navigation menu on the left to continue."
+tip_logs: "Hello, {username}.<br />Select a log file from the list below to view the contents of that logfile."
+tip_quarantine: "Hello, {username}.<br />This page lists all files currently in quarantine and facilitates management of those files."
+tip_quarantine_disabled: "הערה: Quarantine is currently disabled, but can be enabled via the configuration page."
+tip_see_the_documentation: "See the <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#SECTION5" hreflang="en" rel="noopener external">documentation</a> for information about the various configuration directives and their purposes."
+tip_siginfo: "Hello, {username}.<br />The signature information page provides some basic information about the sources and types of the currently active signatures."
+tip_statistics: "Hello, {username}.<br />This page shows some basic usage statistics regarding your phpMussel installation."
+tip_statistics_disabled: "הערה: Statistics tracking is currently disabled, but can be enabled via the configuration page."
+tip_upload_test: "Hello, {username}.<br />The upload test page contains a standard file upload form, allowing you to test whether a file would normally be blocked by phpMussel when attempting to upload it."
+title_login: "Login"
+warning_javascript_required: "אזהרה: Some front-end functionality requires JavaScript. To ensure that the entire front-end behaves as expected, enabling JavaScript is recommended."
+warning_signatures_1: "אזהרה: No signature files are active!"
+warning_will_log_out_all_users: "אזהרה: Proceeding will log out all users."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2022.09.25).
+# This file: Malay language data (last modified: 2022.11.11).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -344,7 +344,7 @@ tip_fe_cookie_warning: "Nota: phpMussel menggunakan kuki untuk mengesahkan log m
 tip_home: "Salam, {username}.<br />Ini ialah halaman utama untuk bahagian hadapan phpMussel. Pilih pautan daripada menu navigasi di sebelah kiri untuk meneruskan."
 tip_logs: "Salam, {username}.<br />Pilih fail log daripada senarai di bawah untuk melihat kandungan fail log tersebut."
 tip_quarantine: "Salam, {username}.<br />Halaman ini menyenaraikan semua fail yang sedang dalam kuarantin dan memudahkan pengurusan fail tersebut."
-tip_quarantine_disabled: "Nota: Kuarantin sedang dinyahaktifkan, tetapi boleh diaktifkan melalui halaman konfigurasi."
+tip_quarantine_disabled: "Nota: Kuarantin kini dinyahaktifkan, tetapi boleh diaktifkan melalui halaman konfigurasi."
 tip_see_the_documentation: "Lihat <a href="https://github.com/phpMussel/Docs/blob/master/readme.id.md\#SECTION5" hreflang="id" rel="noopener external">dokumentasi</a> untuk mendapatkan maklumat tentang pelbagai arahan konfigurasi dan tujuannya."
 tip_siginfo: "Salam, {username}.<br />Halaman maklumat tandatangan menyediakan beberapa maklumat asas tentang sumber dan jenis tandatangan yang sedang aktif."
 tip_statistics: "Salam, {username}.<br />Halaman ini menunjukkan beberapa statistik penggunaan asas mengenai pemasangan phpMussel anda."
