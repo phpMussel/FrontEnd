@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data (last modified: 2022.11.12).
+# This file: Hebrew language data (last modified: 2022.11.22).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -173,70 +173,70 @@ header_login: "אנא התחבר על מנת להמשיך."
 hints_pdo_dsn:
  שאלות נפוצות.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#HOW_TO_USE_PDO" hreflang="en-AU">מהו "PDO DSN"? כיצד להשתמש ב-PDO עם phpMussel?</a></em>"
 hints_xlists:
- איך זה עובד.: "If your system allows only specific types of files to be uploaded, or if your system explicitly denies certain types of files, specifying those filetypes in whitelists, blacklists, and greylists can increase the speed at which scanning is performed by allowing the script to skip over certain filetypes. Format is CSV (comma separated values)."
- סדר לוגי של עיבוד.: "If the filetype is whitelisted, don't scan and don't block the file, and don't check the file against the blacklist or the greylist. If the filetype is blacklisted, don't scan the file but block it anyway, and don't check the file against the greylist. If the greylist is empty or if the greylist is not empty and the filetype is greylisted, scan the file as per normal and determine whether to block it based on the results of the scan, but if the greylist is not empty and the filetype is not greylisted, treat the file as blacklisted, therefore not scanning it but blocking it anyway."
+ איך זה עובד.: "אם המערכת שלך מאפשרת להעלות רק סוגים מסוימים של קבצים, או אם המערכת שלך שוללת במפורש סוגים מסוימים של קבצים, ציון סוגי קבצים אלה ברשימות הלבנות, רשימות שחורות ורשימות אפורות יכול להגביר את המהירות שבה מתבצעת הסריקה על ידי מתן אפשרות לסקריפט לדלג מעל סוגי קבצים מסוימים. הפורמט הוא CSV (ערכים מופרדים בפסיקים)."
+ סדר לוגי של עיבוד.: "אם סוג הקובץ נמצא ברשימת הלבנות, אל תסרוק ואל תחסום את הקובץ, ואל תבדוק את הקובץ מול הרשימה השחורה או הרשימה האפורה. אם הרשימה האפורה ריקה או אם הרשימה האפורה אינה ריקה וסוג הקובץ מופיע ברשימה אפורה, סרוק את הקובץ כרגיל וקבע אם לחסום אותו על סמך תוצאות הסריקה, אך אם הרשימה האפורה אינה ריקה וסוג הקובץ אינו מופיע ברשימה האפורה, התייחסו לקובץ כאל רשימת שחורה, לכן אל סורקים אותו אלא חוסמים אותו בכל זאת."
 info_some_useful_links: |
  כמה קישורים שימושיים:<br />
      <ul class="pieul">
-       <li><span class="comCat">Tools, resources, etc for phpMussel.</span>
+       <li><span class="comCat">כלים, משאבים, וכו' עבור phpMussel.</span>
          <ul class="comSub">
-           <li>{{Links.phpMussel.Issues}} – Issues page for phpMussel (support, assistance, etc).</li>
-           <li>{{Links.phpMussel.SigTool}} – Creates phpMussel signature files using the ClamAV signatures database.</li>
-           <li>{{Links.phpMussel.Extras}} – Various extras.</li>
+           <li>{{Links.phpMussel.Issues}} – דף בעיות עבור phpMussel (תמיכה, סיוע, וכו').</li>
+           <li>{{Links.phpMussel.SigTool}} – יוצר קבצי חתימה של phpMussel באמצעות מסד הנתונים של חתימות ClamAV.</li>
+           <li>{{Links.phpMussel.Extras}} – תוספות שונות.</li>
          </ul>
        </li>
-       <li><span class="comCat">Tools, resources, etc for ClamAV.</span>
+       <li><span class="comCat">כלים, משאבים, וכו' עבור ClamAV.</span>
          <ul class="comSub">
-           <li>{{Links.ClamavNet}} – ClamAV homepage (ClamAV® is an open source antivirus engine for detecting trojans, viruses, malware &amp; other malicious threats).</li>
-           <li>{{Links.SecuriteInfo}} – Computer security company that offers supplementary signatures for ClamAV.</li>
-           <li>{{Links.Sanesecurity}} – Computer security company that offers supplementary signatures for ClamAV.</li>
-           <li>{{Links.Malware Expert}} – Offers supplementary signatures for ClamAV and supplementary rules for ModSecurity.</li>
+           <li>{{Links.ClamavNet}} – דף הבית של ClamAV (ClamAV® הוא מנוע אנטי-וירוס בקוד פתוח לזיהוי סוסים טרויאנים, וירוסים, תוכנות זדוניות ואיומים זדוניים אחרים).</li>
+           <li>{{Links.SecuriteInfo}} – חברת אבטחת מחשבים המציעה חתימות משלימות עבור ClamAV.</li>
+           <li>{{Links.Sanesecurity}} – חברת אבטחת מחשבים המציעה חתימות משלימות עבור ClamAV.</li>
+           <li>{{Links.Malware Expert}} – מציע חתימות משלימות עבור ClamAV וכללים משלימים עבור ModSecurity.</li>
          </ul>
        </li>
-       <li><span class="comCat">Groups, forums, communities, etc.</span>
+       <li><span class="comCat">קבוצות, פורומים, קהילות, וכו'.</span>
          <ul class="comSub">
-           <li>{{Links.PHP.Earth.Facebook}} – PHP learning resources and discussion.</li>
-           <li>{{Links.MalwareTips}} – Useful malware focused discussion forums.</li>
+           <li>{{Links.PHP.Earth.Facebook}} – משאבי למידה ודיון ב-PHP.</li>
+           <li>{{Links.MalwareTips}} – פורומי דיון שימושיים הממוקדים בתוכנות זדוניות.</li>
          </ul>
        </li>
-       <li><span class="comCat">Other useful tools, resources, services, etc.</span>
+       <li><span class="comCat">כלים אחרים, משאבים, שירותים, וכו' שיכולים להיות שימושיים.</span>
          <ul class="comSub">
-           <li>{{Links.PhishTank}} – Phishing database utilised by the phpMussel URL scanner.</li>
-           <li>{{Links.VirusTotal}} – VirusTotal is a free service for analysing suspicious files and URLs.</li>
-           <li>{{Links.Hybrid Analysis}} – Hybrid Analysis is a free malware analysis service provided by {{Links.Payload Security}}.</li>
-           <li>{{Links.Malwarebytes}} – Computer anti-malware specialists.</li>
+           <li>{{Links.PhishTank}} – מסד נתונים דיוג בשימוש על ידי סורק phpMussel URL.</li>
+           <li>{{Links.VirusTotal}} – VirusTotal הוא שירות חינמי לניתוח קבצים וכתובות URL חשודות.</li>
+           <li>{{Links.Hybrid Analysis}} – Hybrid Analysis הוא שירות חינמי לניתוח תוכנות זדוניות המסופק על ידי {{Links.Payload Security}}.</li>
+           <li>{{Links.Malwarebytes}} – מומחי מחשבים נגד תוכנות זדוניות.</li>
          </ul>
        </li>
-       <li><span class="comCat">Informational and learning resources.</span>
+       <li><span class="comCat">מידע ומשאבי למידה.</span>
          <ul class="comSub">
-           <li>{{Links.PHP.Earth.Website}} – PHP learning resources and discussion.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Vulnerability Charts</a> – Lists safe/unsafe versions of various packages (HHVM, PHP, phpMyAdmin, Python, etc).</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Compatibility Charts</a> – Lists compatibility information for various packages (CIDRAM, phpMussel, etc).</li>
+           <li>{{Links.PHP.Earth.Website}} – משאבי למידה ודיון ב-PHP.</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">תרשימי פגיעות</a> – מפרטת גרסאות בטוחות ולא בטוחות של חבילות שונות (HHVM ,PHP ,phpMyAdmin ,Python, וכו').</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">תרשימי תאימות</a> – מפרטת מידע תאימות עבור חבילות שונות (CIDRAM ,phpMussel, וכו').</li>
          </ul>
        </li>
      </ul>
 
-label_active_config_file: "Active configuration file:"
-label_blocked: "Uploads blocked"
-label_branch: "Branch latest stable:"
-label_clientinfo: "Client information:"
+label_active_config_file: "קובץ תצורה פעיל:"
+label_blocked: "העלאות חסומות"
+label_branch: "האורווה האחרונה של הסניף:"
+label_clientinfo: "מידע הלקוח:"
 label_default: "סטנדרטי"
-label_events: "Scan events"
-label_expires: "Expires:"
-label_extension: "Extension"
-label_external: "External"
-label_flagged: "Objects flagged"
-label_installed_available: "Installed/Available"
-label_is_available: "%s is available (%s)."
-label_is_available_class: "%s is available."
-label_is_not_available: "%s is not available."
-label_never: "Never"
-label_os: "Operating system used:"
-label_other: "Other"
-label_other-Active: "Active signature files"
-label_other-Since: "Start date"
-label_php: "PHP version used:"
-label_phpmussel: "phpMussel version used:"
+label_events: "סריקת אירועים"
+label_expires: "פג תוקף:"
+label_extension: "הרחבת"
+label_external: "חיצוני"
+label_flagged: "אובייקטים מסומנים"
+label_installed_available: "מותקן/זמין"
+label_is_available: "%s זמין (%s)."
+label_is_available_class: "%s זמין."
+label_is_not_available: "%s אינו זמין."
+label_never: "לעולם לא"
+label_os: "מערכת הפעלה בשימוש:"
+label_other: "אחר"
+label_other-Active: "קבצי חתימת פעילים"
+label_other-Since: "תאריך התחלה"
+label_php: "גרסת PHP בשימוש:"
+label_phpmussel: "גרסת phpMussel בשימוש:"
 label_quarantined: "Uploads quarantined"
 label_sapi: "SAPI used:"
 label_scanned_objects: "Objects scanned"
@@ -330,7 +330,7 @@ siginfo_xkey: "Identified as "%s"."
 state_async_deny: "Permissions not adequate to perform asynchronous requests. Try logging in again."
 state_cache_is_empty: "The cache is empty."
 state_complete_access: "Complete access"
-state_default_password: "אזהרה: Using standard password!"
+state_default_password: "אזהרה: שימוש בסיסמת ברירת מחדל!"
 state_loading: "Loading..."
 state_loadtime: "Page request completed in %s seconds."
 state_logged_in: "Logged in."
@@ -338,7 +338,7 @@ state_logged_in_2fa_pending: "Logged in + 2FA pending."
 state_logged_out: "Logged out."
 state_logs_access_only: "Logs access only"
 state_maintenance_mode: "אזהרה: Maintenance mode is enabled!"
-state_password_not_valid: "אזהרה: This account is not using a valid password!"
+state_password_not_valid: "אזהרה: חשבון זה אינו משתמש בסיסמה חוקית!"
 state_quarantine:
  - "There is %s file currently in quarantine."
  - "There are %s files currently in quarantine."
@@ -356,7 +356,7 @@ tip_siginfo: "Hello, {username}.<br />The signature information page provides so
 tip_statistics: "Hello, {username}.<br />This page shows some basic usage statistics regarding your phpMussel installation."
 tip_statistics_disabled: "הערה: Statistics tracking is currently disabled, but can be enabled via the configuration page."
 tip_upload_test: "Hello, {username}.<br />The upload test page contains a standard file upload form, allowing you to test whether a file would normally be blocked by phpMussel when attempting to upload it."
-title_login: "Login"
-warning_javascript_required: "אזהרה: Some front-end functionality requires JavaScript. To ensure that the entire front-end behaves as expected, enabling JavaScript is recommended."
-warning_signatures_1: "אזהרה: No signature files are active!"
-warning_will_log_out_all_users: "אזהרה: Proceeding will log out all users."
+title_login: "התחברות"
+warning_javascript_required: "אזהרה: חלק מפונקציונליות הקצה הקדמי דורשת JavaScript. כדי להבטיח שכל הקצה הקדמי יתנהג כמצופה, מומלץ להפעיל JavaScript."
+warning_signatures_1: "אזהרה: אין קבצי חתימה פעילים!"
+warning_will_log_out_all_users: "אזהרה: אם תמשיך, כל המשתמשים ינותקו."
