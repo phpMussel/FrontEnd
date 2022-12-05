@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data (last modified: 2022.11.22).
+# This file: Hebrew language data (last modified: 2022.12.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -237,7 +237,7 @@ label_other-Active: "קבצי חתימת פעילים"
 label_other-Since: "תאריך התחלה"
 label_php: "גרסת PHP בשימוש:"
 label_phpmussel: "גרסת phpMussel בשימוש:"
-label_quarantined: "Uploads quarantined"
+label_quarantined: "העלאות בהסגר"
 label_sapi: "SAPI used:"
 label_scanned_objects: "Objects scanned"
 label_scanned_uploads: "Uploads scanned"
