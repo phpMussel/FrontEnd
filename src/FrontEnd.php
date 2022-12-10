@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2022.10.28).
+ * This file: Front-end handler (last modified: 2022.12.10).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1577,6 +1577,13 @@ class FrontEnd
 
                     /** Reset to defaults. */
                     if ($ThisDir['Reset'] !== '') {
+                        if (isset($DirValue['preview'], $DirValue['default']) && $DirValue['preview'] === 'allow_other') {
+                            $ThisDir['Reset'] .= sprintf(
+                                'hideid(\'%1$s_field\');getElementById(\'%1$s_field\').value=\'%2$s\';',
+                                $ThisDir['DirLangKeyOther'],
+                                $DirValue['default']
+                            );
+                        }
                         $ThisDir['FieldOut'] .= sprintf(
                             '<br /><br /><input type="button" class="reset" onclick="javascript:%s" value="↺ %s" />',
                             $ThisDir['Reset'],

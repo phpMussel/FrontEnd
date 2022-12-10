@@ -119,3 +119,7 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 [2022.10.28; Maikuolan]: Reworked how the configuration page deals with volume-based configuration.
 
 [2022.11.20; Maikuolan]: Avoid packaging unnecessary files into dist.
+
+### v3.3.1
+
+[2022.12.10; Bug-fix; Maikuolan]: The reset button at the front-end configuration page wasn't resetting the hidden "other" field; Fixed.
