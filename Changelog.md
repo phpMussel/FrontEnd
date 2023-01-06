@@ -123,3 +123,5 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 ### v3.3.1
 
 [2022.12.10; Bug-fix; Maikuolan]: The reset button at the front-end configuration page wasn't resetting the hidden "other" field; Fixed.
+
+[2023.01.06; Maikuolan]: Added L10N for Hebrew.
