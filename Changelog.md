@@ -127,3 +127,7 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 [2023.01.06; Maikuolan]: Added L10N for Hebrew.
 
 [2023.01.12; Bug-fix; Maikuolan]: Decimals in the names, choice keys, and labels keys of configuration directives were being coerced by PHP to underscores; Fixed.
+
+### v3.3.2
+
+[2023.01.19; Bug-fix; Maikuolan]: Multiple choice configuration directives in radio style weren't being correctly populated from the configuration at the front-end configuration page; Fixed.

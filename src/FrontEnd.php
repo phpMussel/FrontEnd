@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2023.01.12).
+ * This file: Front-end handler (last modified: 2023.01.19).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1389,7 +1389,7 @@ class FrontEnd
                                     $ThisDir['FieldOut'] .= sprintf(
                                         '<div class="gridboxstretch gridVA %5$s"><label class="gridlabel"><input%4$s type="radio" class="auto" name="%6$s" id="%1$s" value="%7$s"%2$s /></label></div><div class="gridboxstretch %5$s"><label for="%1$s"><span class="s">%3$s</span><br />%8$s</label></div>',
                                         $ThisDir['DirLangKey'] . '_' . $ChoiceKey,
-                                        $ChoiceKey === $Config[$CatKey][$DirKey] ? ' checked' : '',
+                                        $ChoiceKey === $this->Loader->Configuration[$CatKey][$DirKey] ? ' checked' : '',
                                         $ChoiceValue[0],
                                         $ThisDir['Trigger'],
                                         $DirValue['gridH'],
@@ -1401,7 +1401,7 @@ class FrontEnd
                                     $ThisDir['FieldOut'] .= sprintf(
                                         '<div class="gridboxcheckcell gridVA %5$s"><label class="gridlabel"><input%4$s type="radio" class="auto" name="%6$s" id="%1$s" value="%7$s"%2$s /></label></div><div class="gridboxitem %5$s"><label for="%1$s" class="s">%3$s</label></div>',
                                         $ThisDir['DirLangKey'] . '_' . $ChoiceKey,
-                                        $ChoiceKey === $Config[$CatKey][$DirKey] ? ' checked' : '',
+                                        $ChoiceKey === $this->Loader->Configuration[$CatKey][$DirKey] ? ' checked' : '',
                                         $ChoiceValue,
                                         $ThisDir['Trigger'],
                                         $DirValue['gridH'],
