@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Ukrainian language data (last modified: 2022.09.25).
+# This file: Ukrainian language data (last modified: 2023.01.19).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -167,6 +167,9 @@ field_true: "True (Правда)"
 field_update: "Оновіть"
 field_update_signatures_files: "Оновити файли сигнатур"
 field_username: "Ім'я користувача"
+field_vt_suspicion_level_all: "Сканувати всі файли."
+field_vt_suspicion_level_executable: "Сканувати файли з евристичною вагою, виконувані файли, та файли які потенційно містять виконувані дані.\nПриклади виконуваних файлів, і файлів які потенційно містять виконувані дані, включають файли Windows PE, файли Linux ELF, файли Mach-O, файли DOCX, файли ZIP, тощо."
+field_vt_suspicion_level_heuristic_only: "Сканувати лише файли з евристичною вагою.\nСкануються лише файли з евристичною вагою. Евристична вага може бути отримана від сигнатур, призначених для виявлення звичайних відбитків пальців, пов'язаних із потенційним зараженням, що не обов'язково гарантує зараження. Пошук у таких випадках може служити для отримання другої думки щодо результатів, які виправдовують підозру, але не забезпечують жодної впевненості."
 field_your_version: "Ваша версія"
 header_login: "Увійдіть щоб продовжити."
 hints_pdo_dsn:

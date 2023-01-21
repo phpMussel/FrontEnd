@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Russian language data (last modified: 2022.09.25).
+# This file: Russian language data (last modified: 2023.01.19).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -167,6 +167,9 @@ field_true: "True (Правда)"
 field_update: "Обновить"
 field_update_signatures_files: "Обновить файлы сигнатуры"
 field_username: "Имя Пользователя"
+field_vt_suspicion_level_all: "Сканировать все файлы."
+field_vt_suspicion_level_executable: "Сканировать файлы с эвристическим весом, исполняемые файлы, и файлы потенциально содержащие исполняемые данные.\nПримеры исполняемых файлов, и файлов потенциально содержащих исполняемые данные, включают файлы Windows PE, файлы Linux ELF, файлы Mach-O, файлы DOCX, файлы ZIP, и т.д."
+field_vt_suspicion_level_heuristic_only: "Сканировать только файлы с эвристическим весом.\nСканироваться будут только файлы с эвристическим весом. Эвристический вес может быть получен из-за сигнатур, предназначенных для обнаружения общих отпечатков пальцев, связанных с потенциальным заражением, которые не обязательно гарантируют заражение. Поиск в таких случаях может служить для получения второго мнения о результатах, которые оправдывают подозрения, но в остальном не дают никакой уверенности."
 field_your_version: "Ваша версия"
 header_login: "Пожалуйста войдите чтобы продолжить."
 hints_pdo_dsn:

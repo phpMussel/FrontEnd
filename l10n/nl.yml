@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2022.09.25).
+# This file: Dutch language data (last modified: 2023.01.19).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -166,6 +166,9 @@ field_true: "True (Waar)"
 field_update: "Bijwerken"
 field_update_signatures_files: "Bijwerken signatuurbestanden"
 field_username: "Gebruikersnaam"
+field_vt_suspicion_level_all: "Scan alle bestanden."
+field_vt_suspicion_level_executable: "Scan bestanden met heuristisch gewicht, uitvoerbare bestanden, en bestanden die mogelijk uitvoerbare gegevens bevatten.\nVoorbeelden van uitvoerbare bestanden, en bestanden die mogelijk uitvoerbare gegevens bevatten, omvatten Windows PE-bestanden, Linux ELF-bestanden, Mach-O-bestanden, DOCX-bestanden, ZIP-bestanden, enz."
+field_vt_suspicion_level_heuristic_only: "Scan alleen bestanden met heuristisch gewicht.\nBestanden worden alleen gescand als ze een heuristisch gewicht hebben. Heuristisch gewicht kan worden verkregen uit signatures die bedoeld zijn om veelvoorkomende vingerafdrukken op te vangen die verband houden met een mogelijke infectie die niet noodzakelijkerwijs een infectie garandeert. De zoekopdracht kan in dergelijke gevallen dienen om een second opinion te geven voor resultaten die een verdenking rechtvaardigen, maar verder geen absoluut vertrouwen bieden."
 field_your_version: "Uw Versie"
 header_login: "Inloggen om verder te gaan."
 hints_pdo_dsn:

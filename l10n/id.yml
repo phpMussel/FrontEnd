@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2022.09.25).
+# This file: Indonesian language data (last modified: 2023.01.19).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -164,6 +164,9 @@ field_true: "True (Benar)"
 field_update: "Memperbarui"
 field_update_signatures_files: "Memperbarui file tanda tangan"
 field_username: "Nama pengguna"
+field_vt_suspicion_level_all: "Pindai semua file."
+field_vt_suspicion_level_executable: "Pindai file dengan bobot heuristik, file yang dapat dieksekusi, dan file yang berpotensi berisi data yang dapat dieksekusi.\nContoh file yang dapat dieksekusi, dan file yang berpotensi berisi data yang dapat dieksekusi, termasuk file Windows PE, file Linux ELF, file Mach-O, file DOCX, file ZIP, dll."
+field_vt_suspicion_level_heuristic_only: "Pindai hanya file dengan bobot heuristik.\nFile akan dipindai hanya jika memiliki bobot heuristik. Bobot heuristik dapat ditimbulkan dari tanda tangan yang dimaksudkan untuk menangkap sidik jari umum yang terkait dengan infeksi potensial yang tidak selalu menjamin infeksi. Pencarian, dalam kasus tersebut, dapat berfungsi untuk memberikan pendapat kedua untuk hasil yang membenarkan kecurigaan tetapi tidak memberikan kepastian apapun."
 field_your_version: "Versi Anda"
 header_login: "Silahkan masuk untuk melanjutkan."
 hints_pdo_dsn:

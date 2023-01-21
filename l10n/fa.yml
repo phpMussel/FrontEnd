@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Farsi language data (last modified: 2022.12.01).
+# This file: Farsi language data (last modified: 2023.01.19).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -164,6 +164,9 @@ field_true: "True"
 field_update: "به روز کنید"
 field_update_signatures_files: "فایل های امضا را به روز کنید"
 field_username: "نام کاربری"
+field_vt_suspicion_level_all: "تمام فایل ها را اسکن کنید."
+field_vt_suspicion_level_executable: "فایل‌هایی با وزن اکتشافی، فایل‌های اجرایی و فایل‌هایی که احتمالاً حاوی داده‌های اجرایی هستند را اسکن کنید.\nچنین فایل هایی شامل فایل های Windows PE، فایل های Linux ELF، فایل های Mach-O، فایل های DOCX، فایل های ZIP و غیره می باشد."
+field_vt_suspicion_level_heuristic_only: "فقط فایل هایی با وزن اکتشافی اسکن کنید.\nفایل‌ها فقط در صورتی اسکن می‌شوند که وزن اکتشافی داشته باشند. وزن اکتشافی را می توان از امضا هایی برای گرفتن اثر انگشت که نشان دهنده عفونت است، اما عفونت را تضمین نمی کند. برای نتایجی که ظن را توجیه می‌کنند اما هیچ قطعیتی ارائه نمی‌دهند، جستجو می‌تواند برای ارائه نظر دوم مفید باشد."
 field_your_version: "نسخه شما"
 header_login: "لطفا برای ادامه وارد شوید."
 hints_pdo_dsn:

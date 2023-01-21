@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2022.09.25).
+# This file: Polish language data (last modified: 2023.01.19).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -167,6 +167,9 @@ field_true: "True (Prawdziwe)"
 field_update: "Zaktualizuj"
 field_update_signatures_files: "Zaktualizuj pliki podpis"
 field_username: "Nazwa Użytkownika"
+field_vt_suspicion_level_all: "Skanuj wszystkie pliki."
+field_vt_suspicion_level_executable: "Skanuj pliki z wagą heurystyczną, pliki wykonywalne, i pliki potencjalnie zawierające dane wykonywalne.\nPrzykłady plików wykonywalnych, i plików potencjalnie zawierających dane wykonywalne, obejmują pliki Windows PE, pliki Linux ELF, pliki Mach-O, pliki DOCX, pliki ZIP, itp."
+field_vt_suspicion_level_heuristic_only: "Skanuj tylko pliki z wagą heurystyczną.\nSkanowane będą tylko pliki z wagą heurystyczną. Waga heurystyczna może wynikać z sygnatur przeznaczonych do wychwytywania typowych odcisków palców związanych z potencjalną infekcją, które niekoniecznie gwarantują infekcję. Wyszukiwanie w takich przypadkach może posłużyć do uzyskania drugiej opinii w przypadku wyników, które uzasadniają podejrzenia, ale poza tym nie dają żadnej pewności."
 field_your_version: "Twoja Wersja"
 header_login: "Proszę się zalogować, aby kontynuować."
 hints_pdo_dsn:

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2022.11.11).
+# This file: Korean language data (last modified: 2023.01.19).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -164,6 +164,9 @@ field_true: "True (참된)"
 field_update: "업데이트"
 field_update_signatures_files: "서명 파일 업데이트"
 field_username: "사용자 이름"
+field_vt_suspicion_level_all: "모든 파일을 스캔합니다."
+field_vt_suspicion_level_executable: "휴리스틱 가중치가 있는 파일, 실행 파일, 및 잠재적으로 실행 가능 데이터가 포함된 파일을 검사합니다.\n실행 파일 및 잠재적으로 실행 데이터를 포함하는 파일의 예로는 Windows PE 파일, Linux ELF 파일, Mach-O 파일, DOCX 파일, ZIP 파일, 등이 있습니다."
+field_vt_suspicion_level_heuristic_only: "휴리스틱 가중치가 있는 파일만 검사합니다.\n휴리스틱 가중치가 발생하는 경우에만 파일이 검색됩니다. 감염을 암시하지만 감염을 보장하지는 않는 지문을 포착하기 위한 서명에서 휴리스틱 가중치가 발생할 수 있습니다. 의심을 정당화하지만 확실성을 제공하지 않는 결과의 경우 검색을 통해 두 번째 의견을 제공할 수 있습니다."
 field_your_version: "사용 버전"
 header_login: "계속하려면 로그인하십시오."
 hints_pdo_dsn:

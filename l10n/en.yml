@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2022.09.25).
+# This file: English language data (last modified: 2023.01.19).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -166,6 +166,9 @@ field_true: "True"
 field_update: "Update"
 field_update_signatures_files: "Update signature files"
 field_username: "Username"
+field_vt_suspicion_level_all: "Scan all files."
+field_vt_suspicion_level_executable: "Scan files with heuristic weight, executable files, and files potentially containing executable data.\nExamples of executable files, and files potentially containing executable data, includes Windows PE files, Linux ELF files, Mach-O files, DOCX files, ZIP files, etc."
+field_vt_suspicion_level_heuristic_only: "Scan only files with heuristic weight.\nFiles will be scanned only if they incur some heuristic weight. Heuristic weight can be incurred from signatures intended to catch common fingerprints associated with potential infection which don't necessarily guarantee infection. The lookup, in such cases, can serve to provide a second opinion for results which justify suspicion but don't otherwise provide any certainty."
 field_your_version: "Your Version"
 header_login: "Please log in to continue."
 hints_pdo_dsn:

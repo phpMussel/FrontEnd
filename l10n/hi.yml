@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hindi language data (last modified: 2022.12.07).
+# This file: Hindi language data (last modified: 2023.01.19).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -166,6 +166,9 @@ field_true: "True (सच)"
 field_update: "अपडेट करो"
 field_update_signatures_files: "सिग्नेचर फाइल अपडेट करें"
 field_username: "उपयोगकर्ता नाम"
+field_vt_suspicion_level_all: "सभी फाइलों को स्कैन करें।"
+field_vt_suspicion_level_executable: "हेयुरिस्टिक वजन वाली फाइलें, निष्पादन योग्य फ़ाइलों, और संभावित रूप से निष्पादन योग्य डेटा वाली फ़ाइलों को स्कैन करें।\nऐसी फाइलों में Windows PE फाइलें, Linux ELF फाइलें, Mach-O फाइलें, DOCX फाइलें, Zip फाइलें, आदि शामिल हैं।"
+field_vt_suspicion_level_heuristic_only: "केवल हेयुरिस्टिक वजन वाली फाइलें को स्कैन करें।\nफाइलों को तभी स्कैन किया जाएगा जब उनमें हेयुरिस्टिक वजन  होगा। यह उन हस्ताक्षरों के कारण हो सकता है जो फिंगरप्रिंटयों के निशान पकड़ते हैं जो संक्रमण का सुझाव देते हैं लेकिन जो संक्रमण की गारंटी नहीं देते हैं। जब परिणाम संदेह को सही ठहराते हैं लेकिन कोई निश्चितता प्रदान नहीं करते हैं, तो लुकअप दूसरी राय प्रदान करने का काम कर सकता है।"
 field_your_version: "आपका संस्करण"
 header_login: "जारी रखने के लिए कृपया लॉग इन करें।"
 hints_pdo_dsn:

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (simplified) language data (last modified: 2022.09.25).
+# This file: Chinese (simplified) language data (last modified: 2023.01.19).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -164,6 +164,9 @@ field_true: "True（真）"
 field_update: "更新"
 field_update_signatures_files: "更新签名文件"
 field_username: "用户名"
+field_vt_suspicion_level_all: "扫描所有文件。"
+field_vt_suspicion_level_executable: "扫描具启发式权重的文件、可执行文件、和可能包含可执行数据的文件。\n此类文件包括Windows PE文件、Linux ELF文件、Mach-O文件、DOCX文件、ZIP文件、等等。"
+field_vt_suspicion_level_heuristic_only: "仅扫描具有启发式权重的文件。\n仅当文件产生启发式权重时才会扫描文件。​启发式权重可能来自暗示感染但不能保证感染的签名。​当怀疑有道理但没有得到证实时，查询可以作为第二意见。"
 field_your_version: "您的版本"
 header_login: "请登录以继续。"
 hints_pdo_dsn:

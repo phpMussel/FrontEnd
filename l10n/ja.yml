@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2022.11.29).
+# This file: Japanese language data (last modified: 2023.01.19).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -164,6 +164,9 @@ field_true: "True （真）"
 field_update: "アップデート"
 field_update_signatures_files: "シグネチャ・ファイルをアップデートする"
 field_username: "ユーザー名"
+field_vt_suspicion_level_all: "すべてのファイルをスキャンします。"
+field_vt_suspicion_level_executable: "ヒューリスティックな重みを持つファイル、実行可能ファイル、および実行可能データを含む可能性のファイルをスキャンします。\n実行可能ファイル、および実行可能データを含む可能性のファイルの例には、Windows PEファイル、Linux ELFファイル、Mach-Oファイル、DOCXファイル、ZIPファイル、などが含まれます。"
+field_vt_suspicion_level_heuristic_only: "ヒューリスティックな重みを持つファイルのみをスキャンします。\nファイルは、ヒューリスティックな重みが発生する場合にのみスキャンされます。​ューリスティックな重みは、感染を示唆しているが感染を保証していない指紋をキャッチするためのシグネチャから発生する可能性があります。​疑いを正当化するが確実性を提供しない結果については、ルックアップはセカンド・オピニオンを提供するのに役立ちます。"
 field_your_version: "お使いのバージョン"
 header_login: "継続するには、​ログインしてください。"
 hints_pdo_dsn:

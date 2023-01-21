@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2022.09.25).
+# This file: French language data (last modified: 2023.01.19).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -166,6 +166,9 @@ field_true: "True (Vrai)"
 field_update: "Mettre à jour"
 field_update_signatures_files: "Mettre à jour les fichiers de signature"
 field_username: "Nom d'Utilisateur"
+field_vt_suspicion_level_all: "Analysez tous les fichiers."
+field_vt_suspicion_level_executable: "Analysez les fichiers avec un poids heuristique, les fichiers exécutables, et les fichiers contenant potentiellement des données exécutables.\nExemples des fichiers exécutables, et de fichiers contenant potentiellement des données exécutables, incluent les fichiers Windows PE, les fichiers Linux ELF, les fichiers Mach-O, les fichiers DOCX, les fichiers ZIP, etc."
+field_vt_suspicion_level_heuristic_only: "Analyser seulement les fichiers avec un poids heuristique.\nLes fichiers seront analysés s'ils ont un poids heuristique, mais dans aucun autre cas. Le poids heuristique peut être induit par des signatures destinées à capturer des empreintes digitales communes associées à une infection potentielle qui ne garantissent pas nécessairement l'infection. L'utilisation de l'API, dans de tels cas, peut servir à fournir une deuxième opinion pour des résultats qui justifient des soupçons mais ne fournissent aucune certitude."
 field_your_version: "Votre Version"
 header_login: "Merci de vous connecter pour continuer."
 hints_pdo_dsn:

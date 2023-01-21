@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese language data (last modified: 2022.09.25).
+# This file: Portuguese language data (last modified: 2023.01.19).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -166,6 +166,9 @@ field_true: "True (Verdadeiro)"
 field_update: "Atualizar"
 field_update_signatures_files: "Atualizar arquivos de assinaturas"
 field_username: "Nome de Usuário"
+field_vt_suspicion_level_all: "Analisar todos os arquivos."
+field_vt_suspicion_level_executable: "Analisar arquivos com peso heurístico, arquivos executáveis, e arquivos potencialmente contendo dados executáveis.\nExemplos de arquivos executáveis, e arquivos potencialmente contendo dados executáveis, incluem arquivos Windows PE, arquivos Linux ELF, arquivos Mach-O, arquivos DOCX, arquivos ZIP, etc."
+field_vt_suspicion_level_heuristic_only: "Analisar apenas arquivos com peso heurístico.\nArquivos serão analisados apenas se incorrerem em algum peso heurístico. O peso heurístico pode ser incorrido por meio de assinaturas destinadas a capturar impressões digitais comuns associadas a possíveis infecções que não garantem necessariamente a infecção. A pesquisa, nesses casos, pode servir para fornecer uma segunda opinião para resultados que justificam a suspeita, mas não fornecem nenhuma certeza."
 field_your_version: "Sua Versão"
 header_login: "Por favor faça o login para continuar."
 hints_pdo_dsn:

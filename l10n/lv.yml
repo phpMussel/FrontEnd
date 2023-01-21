@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2022.11.11).
+# This file: Latvian language data (last modified: 2023.01.19).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -167,6 +167,9 @@ field_true: "True (Patiess)"
 field_update: "Atjauniniet"
 field_update_signatures_files: "Atjauniniet paraksta failus"
 field_username: "Lietotājvārds"
+field_vt_suspicion_level_all: "Skenējiet visus failus."
+field_vt_suspicion_level_executable: "Skenējiet failus ar heiristisku svaru, izpildāmos failus, un failus kas, iespējams, satur izpildāmos datus.\nIzpildāmie faili, un faili kas potenciāli satur izpildāmus datus, ietver Windows PE failus, Linux ELF failus, Mach-O failus, DOCX failus, ZIP failus, utt."
+field_vt_suspicion_level_heuristic_only: "Skenējiet tikai failus ar heiristisko svaru.\nTiks skenēti tikai faili ar heiristisko svaru. Heiristiskais svars var rasties no parakstiem, kas paredzēti, lai noķertu bieži sastopamus pirkstu nospiedumus, kas saistīti ar iespējamu infekciju, kas ne vienmēr garantē infekciju. Šādos gadījumos meklēšana var kalpot, lai sniegtu otru atzinumu par rezultātiem, kas pamato aizdomas, bet citādi nesniedz nekādu noteiktību."
 field_your_version: "Jūsu Versija"
 header_login: "Lūdzu, ielogoties, lai turpinātu."
 hints_pdo_dsn:

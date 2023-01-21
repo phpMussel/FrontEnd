@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Thai language data (last modified: 2022.09.25).
+# This file: Thai language data (last modified: 2023.01.19).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -164,6 +164,9 @@ field_true: "True (จริง)"
 field_update: "อัปเดต"
 field_update_signatures_files: "อัพเดตไฟล์ลายเซ็น"
 field_username: "ชื่อผู้ใช้"
+field_vt_suspicion_level_all: "สแกนไฟล์ทั้งหมด."
+field_vt_suspicion_level_executable: "สแกนไฟล์ด้วยฮิวริสติก ไฟล์ปฏิบัติการ และไฟล์ที่อาจมีข้อมูลปฏิบัติการ.\nไฟล์ดังกล่าวรวมถึงไฟล์ Windows PE, ไฟล์ Linux ELF, ไฟล์ Mach-O, ไฟล์ DOCX, ไฟล์ ZIP, เป็นต้น."
+field_vt_suspicion_level_heuristic_only: "สแกนเฉพาะไฟล์ที่มีน้ำหนักฮิวริสติก.\nไฟล์จะถูกสแกนเฉพาะเมื่อมีน้ำหนักแบบฮิวริสติกเท่านั้น. น้ำหนักฮิวริสติกอาจเกิดขึ้นได้จากลายเซ็นสำหรับจับลายนิ้วมือซึ่งบ่งชี้ว่ามีการติดเชื้อ แต่ไม่รับประกันการติดเชื้อ. เมื่อมีข้อสงสัยที่ยังไม่ได้รับการพิสูจน์ การค้นหาสามารถใช้เป็นความคิดเห็นที่สองได้."
 field_your_version: "เวอร์ชั่นของคุณ"
 header_login: "เข้าสู่ระบบเพื่อดำเนินการต่อ."
 hints_pdo_dsn:

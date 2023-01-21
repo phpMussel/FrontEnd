@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Urdu language data (last modified: 2022.09.25).
+# This file: Urdu language data (last modified: 2023.01.19).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -164,6 +164,9 @@ field_true: "True (سچ)"
 field_update: "اپ ڈیٹ"
 field_update_signatures_files: "دستخط فائلوں کو اپ ڈیٹ کریں"
 field_username: "صارف کا نام"
+field_vt_suspicion_level_all: "تمام فائلوں کو اسکین کریں."
+field_vt_suspicion_level_executable: "heuristic وزن کے ساتھ فائلیں، قابل عمل فائلیں، اور فائلیں ممکنہ طور پر قابل عمل ڈیٹا پر مشتمل ہیں کو اسکین کریں.\nایسی فائلوں میں Windows PE فائلیں، Linux ELF فائلیں، Mach-O فائلیں، DOCX فائلیں، ZIP فائلیں وغیرہ شامل ہیں."
+field_vt_suspicion_level_heuristic_only: "صرف heuristic وزن کے ساتھ فائلیں کو اسکین کریں.\nفائلوں کو صرف اس صورت میں اسکین کیا جائے heuristic وزن واقع ہوا ہے. ایسا ان دستخطوں کی وجہ سے ہو سکتا ہے جو انگلیوں کے نشانات پکڑتے ہیں جو انفیکشن کی تجویز کرتے ہیں لیکن جو انفیکشن کی ضمانت نہیں دیتے. جب نتائج شک کا جواز پیش کرتے ہیں لیکن کوئی یقین فراہم نہیں کرتے ہیں، تو تلاش دوسری رائے فراہم کرنے کے لیے کام کر سکتی ہے."
 field_your_version: "آپ کے ورژن"
 header_login: "جاری رکھنے کے لیے لاگ ان کریں."
 hints_pdo_dsn:

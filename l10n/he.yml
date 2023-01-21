@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data (last modified: 2023.01.06).
+# This file: Hebrew language data (last modified: 2023.01.19).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -168,6 +168,9 @@ field_true: "True (נכון)"
 field_update: "עדכן"
 field_update_signatures_files: "עדכן קבצי חתימה"
 field_username: "שם משתמש"
+field_vt_suspicion_level_all: "סרוק את כל הקבצים."
+field_vt_suspicion_level_executable: "סרוק קבצים עם משקל היוריסטי, קבצי הפעלה, וקבצים שעשויים להכיל נתוני הפעלה.\nדוגמאות לקבצי הפעלה, וקבצים שעשויים להכיל נתונים ניתנים להפעלה, כוללות קבצי Windows PE, קבצי Linux ELF, קבצי Mach-O, קבצי DOCX, קובצי ZIP, וכו'."
+field_vt_suspicion_level_heuristic_only: "סרוק רק קבצים בעלי משקל היוריסטי.\nקבצים ייסרקו רק אם יש להם משקל היוריסטי. משקל היוריסטי יכול להיגרם מחתימות שנועדו לתפוס טביעות אצבע נפוצות המצביעות על זיהום אך אינן מבטיחות זיהום. הבדיקה, במקרים כאלה, יכולה לשמש לספק חוות דעת שנייה לתוצאות המצדיקות חשד אך אינן מספקות ודאות אחרת."
 field_your_version: "הגרסה שלך"
 header_login: "אנא התחבר על מנת להמשיך."
 hints_pdo_dsn:

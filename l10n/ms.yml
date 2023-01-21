@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2022.11.11).
+# This file: Malay language data (last modified: 2023.01.19).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -164,6 +164,9 @@ field_true: "True (Benar)"
 field_update: "Kemas kini"
 field_update_signatures_files: "Kemas kini fail tandatangan"
 field_username: "Nama pengguna"
+field_vt_suspicion_level_all: "Imbas semua fail."
+field_vt_suspicion_level_executable: "Imbas fail dengan berat heuristik, fail boleh laku, dan fail yang berpotensi mengandungi data boleh laku.\nContoh fail boleh laku, dan fail yang berpotensi mengandungi data boleh laku, termasuk fail Windows PE, fail Linux ELF, fail Mach-O, fail DOCX, fail ZIP, dsb."
+field_vt_suspicion_level_heuristic_only: "Imbas hanya fail dengan berat heuristik.\nFail akan diimbas hanya jika ia mempunyai berat heuristik. Berat heuristik boleh ditanggung daripada tandatangan yang bertujuan untuk menangkap cap jari biasa yang dikaitkan dengan kemungkinan jangkitan yang tidak semestinya menjamin jangkitan. Pencarian, dalam kes sedemikian, boleh memberikan pendapat kedua untuk keputusan yang mewajarkan syak tetapi sebaliknya tidak memberikan sebarang kepastian."
 field_your_version: "Versi anda"
 header_login: "Sila log masuk untuk meneruskan."
 hints_pdo_dsn:

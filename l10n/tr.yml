@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2022.09.25).
+# This file: Turkish language data (last modified: 2023.01.19).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -164,6 +164,9 @@ field_true: "True (Doğru)"
 field_update: "Güncelle"
 field_update_signatures_files: "İmza dosyalarını güncelle"
 field_username: "Kullanıcı adı"
+field_vt_suspicion_level_all: "Tüm dosyaları tarayın."
+field_vt_suspicion_level_executable: "Buluşsal ağırlıklı dosyaları, yürütülebilir dosyaları, ve potansiyel olarak yürütülebilir veri içeren dosyaları tarayın.\nYürütülebilir dosyalara ve potansiyel olarak yürütülebilir veriler içeren dosyalara örnek olarak Windows PE dosyaları, Linux ELF dosyaları, Mach-O dosyaları, DOCX dosyaları, ZIP dosyaları, vb."
+field_vt_suspicion_level_heuristic_only: "Yalnızca buluşsal ağırlıklı dosyaları tarayın.\nDosyalar yalnızca buluşsal ağırlığa maruz kaldıklarında taranacaktır. Buluşsal ağırlık, enfeksiyonu düşündüren ancak enfeksiyonu garanti etmeyen yaygın parmak izlerini yakalamayı amaçlayan imzalardan kaynaklanabilir. Şüpheyi haklı çıkaran ancak herhangi bir kesinlik sağlamayan sonuçlar için, arama ikinci bir görüş sağlamaya hizmet edebilir."
 field_your_version: "Sürümünüz"
 header_login: "Devam etmek için lütfen giriş yapınız."
 hints_pdo_dsn:

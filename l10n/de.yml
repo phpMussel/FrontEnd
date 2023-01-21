@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data (last modified: 2022.09.25).
+# This file: German language data (last modified: 2023.01.19).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -166,6 +166,9 @@ field_true: "True (Wahr)"
 field_update: "Aktualisieren"
 field_update_signatures_files: "Signaturdateien aktualisieren"
 field_username: "Benutzername"
+field_vt_suspicion_level_all: "Scannen alle Dateien."
+field_vt_suspicion_level_executable: "Scannen Dateien mit heuristischem Gewicht, ausführbare Dateien, und Dateien die möglicherweise ausführbare Daten enthalten.\nBeispiele für ausführbare Dateien, und Dateien die möglicherweise ausführbare Daten enthalten, umfassen Windows PE-Dateien, Linux ELF-Dateien, Mach-O-Dateien, DOCX-Dateien, ZIP-Dateien, u.s.w."
+field_vt_suspicion_level_heuristic_only: "Scannen nur Dateien mit heuristischem Gewicht.\nDateien werden nur gescannt wenn sie ein heuristisches Gewicht haben. Heuristisches Gewicht kann aus Signaturen entstehen die gemeinsame Fingerabdrücke erfassen, die eine Infektion nahelegen aber keine Infektion garantieren. Für Ergebnissen die einen Verdacht rechtfertigen aber keine Gewissheit geben, kann die Lookup dazu dienen eine zweite Meinung dienen."
 field_your_version: "Ihre Version"
 header_login: "Bitte einloggen zum Fortfahren."
 hints_pdo_dsn:

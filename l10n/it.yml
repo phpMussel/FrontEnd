@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2022.09.25).
+# This file: Italian language data (last modified: 2023.01.19).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -164,6 +164,9 @@ field_true: "True (Vero)"
 field_update: "Aggiornarlo"
 field_update_signatures_files: "Aggiorna i file delle firme"
 field_username: "Nome Utente"
+field_vt_suspicion_level_all: "Scansiona tutti i file."
+field_vt_suspicion_level_executable: "Scansiona file con peso euristico, file eseguibili, e file potenzialmente contenenti dati eseguibili.\nEsempi di file eseguibili e file potenzialmente contenenti dati eseguibili includono file Windows PE, file Linux ELF, file Mach-O, file DOCX, file ZIP, ecc."
+field_vt_suspicion_level_heuristic_only: "Analizza solo i file con peso euristico.\nI file verranno scansionati solo se hanno un peso euristico. Il peso euristico può derivare da firme destinate a rilevare impronte digitali comuni associate a potenziali infezioni che non garantiscono necessariamente l'infezione. L'uso dell'API, in questi casi, può servire a fornire una seconda opinione per risultati che giustificano il sospetto ma non forniscono alcuna certezza."
 field_your_version: "La Vostra Versione"
 header_login: "Per favore accedi per continuare."
 hints_pdo_dsn:
