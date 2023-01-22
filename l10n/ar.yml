@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2023.01.19).
+# This file: Arabic language data (last modified: 2023.01.22).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -340,10 +340,6 @@ state_maintenance_mode: "تحذير: تم تمكين وضع الصيانة!"
 state_password_not_valid: " تحذير: هذا الحساب لا يستخدم كلمه السر صالحة!"
 state_quarantine:
  - "هناك ملف %s موجود حاليا في وحدة العزل."
- - "هناك ملفات %s موجود حاليا في وحدة العزل."
- - "هناك ملفات %s موجود حاليا في وحدة العزل."
- - "هناك ملفات %s موجود حاليا في وحدة العزل."
- - "هناك ملفات %s موجود حاليا في وحدة العزل."
  - "هناك ملفات %s موجود حاليا في وحدة العزل."
 tip_2fa_sent: "تم إرسال بريد إلكتروني يحتوي على رمز 2FA إلى عنوان بريدك الإلكتروني. يرجى تأكيد هذا الرمز أدناه للوصول إلى الواجهة الأمامية. إذا لم تتلقَ رسالة البريد الإلكتروني هذه، فحاول تسجيل الخروج، والانتظار لمدة 10 دقائق، وتسجيل الدخول مرة أخرى لتلقي رسالة إلكترونية جديدة تحتوي على رمز جديد."
 tip_accounts: "مرحبا، {username}.<br />الصفحة حسابات يسمح لك للسيطرة على الذي يمكن الوصول ألfront-end phpMussel."

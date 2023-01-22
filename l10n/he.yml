@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data (last modified: 2023.01.19).
+# This file: Hebrew language data (last modified: 2023.01.22).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -160,8 +160,6 @@ field_size_PB: "PB"
 field_size_TB: "TB"
 field_size_bytes:
  - "בייט"
- - "בתים"
- - "בתים"
  - "בתים"
 field_system_timezone: "השתמש באזור הזמן הסטנדרטי של המערכת."
 field_true: "True (נכון)"
@@ -344,8 +342,6 @@ state_maintenance_mode: "אזהרה: מצב תחזוקה מופעל!"
 state_password_not_valid: "אזהרה: חשבון זה אינו משתמש בסיסמה חוקית!"
 state_quarantine:
  - "יש כרגע %s קובץ בהסגר."
- - "יש כרגע %s קבצים בהסגר."
- - "יש כרגע %s קבצים בהסגר."
  - "יש כרגע %s קבצים בהסגר."
 tip_2fa_sent: "דוא"ל המכיל קוד אימות דו-גורמי נשלח לכתובת הדוא"ל שלך. אנא אשר את הקוד הזה למטה כדי לקבל גישה להקצה הקדמי. אם לא קיבלת דוא"ל זה, נסה להתנתק, המתן 10 דקות, ולהיכנס שוב כדי לקבל דוא"ל חדש המכיל קוד חדש."
 tip_accounts: "שלום, {username}.<br />דף החשבונות מאפשר לך לשלוט למי יכול לגשת להקצה הקדמי ה-phpMussel."
