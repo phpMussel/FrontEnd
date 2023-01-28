@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2023.01.19).
+# This file: Korean language data (last modified: 2023.01.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -289,6 +289,7 @@ response_accounts_created: "계정 만들기에 성공했습니다!"
 response_accounts_deleted: "계정 삭제가 성공했습니다!"
 response_accounts_doesnt_exist: "계정이 존재하지 않습니다."
 response_accounts_password_updated: "암호 업데이트가 성공했습니다!"
+response_configuration_update_failed: "구성을 업데이트하지 못했습니다!"
 response_configuration_updated: "구성 업데이트가 성공했습니다."
 response_failed: "실패했습니다"
 response_failed_to_create: "만들지 못했습니다!"

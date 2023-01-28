@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Urdu language data (last modified: 2023.01.19).
+# This file: Urdu language data (last modified: 2023.01.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -288,6 +288,7 @@ response_accounts_created: "اکاؤنٹ کامیابی سے تشکیل!"
 response_accounts_deleted: "اکاؤنٹ کامیابی سے خارج!"
 response_accounts_doesnt_exist: "اس اکاؤنٹ کا کوئی وجود نہیں."
 response_accounts_password_updated: "پاس ورڈ کامیابی سے اپ ڈیٹ!"
+response_configuration_update_failed: "کنفیگریشن کو اپ ڈیٹ کرنے میں ناکام!"
 response_configuration_updated: "کنفگریشن کامیابی سے اپ ڈیٹ."
 response_failed: "ناکامی"
 response_failed_to_create: "بنانے میں ناکام!"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2023.01.19).
+# This file: Spanish language data (last modified: 2023.01.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -291,6 +291,7 @@ response_accounts_created: "¡Cuenta creada con éxito!"
 response_accounts_deleted: "¡Cuenta eliminada con éxito!"
 response_accounts_doesnt_exist: "Esa cuenta no existe."
 response_accounts_password_updated: "¡Contraseña actualizado con éxito!"
+response_configuration_update_failed: "¡Error al actualizar la configuración!"
 response_configuration_updated: "Configuración actualizado con éxito."
 response_failed: "Fallado"
 response_failed_to_create: "¡No se pudo crear!"

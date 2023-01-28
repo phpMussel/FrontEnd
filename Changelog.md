@@ -133,3 +133,5 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 [2023.01.19; Bug-fix; Maikuolan]: Multiple choice configuration directives in radio style weren't being correctly populated from the configuration at the front-end configuration page; Fixed.
 
 [2023.01.21; Maikuolan]: Better value definitions for `vt_suspicion_level`.
+
+[2023.01.27; Maikuolan]: Display proper status message when updating configuration fails.

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2023.01.19).
+# This file: Malay language data (last modified: 2023.01.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -289,6 +289,7 @@ response_accounts_created: "Akaun berjaya dibuat!"
 response_accounts_deleted: "Akaun berjaya dipadamkan!"
 response_accounts_doesnt_exist: "Akaun ini tidak wujud."
 response_accounts_password_updated: "Kata laluan berjaya dikemas kini!"
+response_configuration_update_failed: "Gagal mengemas kini konfigurasi!"
 response_configuration_updated: "Konfigurasi berjaya dikemas kini."
 response_failed: "Gagal"
 response_failed_to_create: "Gagal mencipta!"

@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2023.01.19).
+ * This file: Front-end handler (last modified: 2023.01.27).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1656,7 +1656,7 @@ class FrontEnd
                 if ($this->Loader->updateConfiguration()) {
                     $FE['state_msg'] = $this->Loader->L10N->getString('response_configuration_updated');
                 } else {
-                    $FE['state_msg'] = $this->Loader->L10N->getString('response_failed_to_update');
+                    $FE['state_msg'] = $this->Loader->L10N->getString('response_configuration_update_failed');
                 }
             }
 

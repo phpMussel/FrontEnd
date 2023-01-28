@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2023.01.22).
+# This file: Latvian language data (last modified: 2023.01.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -291,6 +291,7 @@ response_accounts_created: "Konts ir izveidots!"
 response_accounts_deleted: "Konts ir izdzēsts!"
 response_accounts_doesnt_exist: "Šis konts nepastāv."
 response_accounts_password_updated: "Parole ir atjaunināta!"
+response_configuration_update_failed: "Konfigurācijas atjaunināšana neizdevās!"
 response_configuration_updated: "Konfigurācija ir atjaunināta."
 response_failed: "Neizdevās"
 response_failed_to_create: "Izveidošana neizdevās!"
@@ -344,19 +345,19 @@ state_quarantine:
  - "Šobrīd karantīnā ir %s fails."
  - "Šobrīd karantīnā ir %s faili."
 tip_2fa_sent: "Uz jūsu e-pasta adresi ir nosūtīts e-pasts ar divu faktoru autentifikācijas kodu. Lūdzu, apstipriniet šo kodu zemāk, lai ielogotos. Ja nesaņēmāt šo e-pastu, mēģiniet izlogoties, nogaidiet 10 minūtes, un ielogoties vēlreiz, lai saņemtu jaunu e-pastu ar jaunu kodu."
-tip_accounts: "Kontu lapa ļauj jums kontrolēt, kurš var ielogoties phpMussel."
-tip_cache_data: "Šeit jūs varat pārskatīt kešatmiņas saturu."
-tip_config: "Konfigurācijas lapa ļauj mainīt phpMussel konfigurāciju."
+tip_accounts: "Sveiki, {username}.<br />Kontu lapa ļauj jums kontrolēt, kurš var ielogoties phpMussel."
+tip_cache_data: "Sveiki, {username}.<br />Šeit jūs varat pārskatīt kešatmiņas saturu."
+tip_config: "Sveiki, {username}.<br />Konfigurācijas lapa ļauj mainīt phpMussel konfigurāciju."
 tip_fe_cookie_warning: "Piezīme: phpMussel izmanto sīkfailu, lai autentificētu ielogošanās informāciju. Ielogoties, jūs dodat piekrišanu sīkdatnes izveidošanai un saglabāšanai jūsu pārlūkprogrammā."
-tip_home: "Šī ir jūsu phpMussel instalācijas mājas lapa. Lai turpinātu, navigācijas izvēlnē kreisajā pusē atlasiet saiti."
-tip_logs: "Zemāk redzamajā sarakstā atlasiet logfailu, lai skatītu šī faila saturu."
-tip_quarantine: "Šajā lapā ir uzskaitīti visi faili, kas pašlaik atrodas karantīnā, un atvieglo šo failu pārvaldību."
+tip_home: "Sveiki, {username}.<br />Šī ir jūsu phpMussel instalācijas mājas lapa. Lai turpinātu, navigācijas izvēlnē kreisajā pusē atlasiet saiti."
+tip_logs: "Sveiki, {username}.<br />Zemāk redzamajā sarakstā atlasiet logfailu, lai skatītu šī faila saturu."
+tip_quarantine: "Sveiki, {username}.<br />Šajā lapā ir uzskaitīti visi faili, kas pašlaik atrodas karantīnā, un atvieglo šo failu pārvaldību."
 tip_quarantine_disabled: "Piezīme: Karantīna pašlaik ir atspējota, taču to var iespējot konfigurācijas lapā."
 tip_see_the_documentation: "Skatiet <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#SECTION5" hreflang="en" rel="noopener external">dokumentāciju</a>, lai iegūtu informāciju par dažādām konfigurācijas direktīvām un to mērķiem."
-tip_siginfo: "Parakstu informācijas lapā ir sniegta pamatinformācija par pašlaik aktīvo parakstu avotiem un veidiem."
-tip_statistics: "Šī lapa parāda dažus pamata statistikas datus par jūsu phpMussel instalēšanu."
+tip_siginfo: "Sveiki, {username}.<br />Parakstu informācijas lapā ir sniegta pamatinformācija par pašlaik aktīvo parakstu avotiem un veidiem."
+tip_statistics: "Sveiki, {username}.<br />Šī lapa parāda dažus pamata statistikas datus par jūsu phpMussel instalēšanu."
 tip_statistics_disabled: "Piezīme: Statistikas izsekošana pašlaik ir atspējota, taču to var iespējot konfigurācijas lapā."
-tip_upload_test: "Augšupielādes testa lapā ir standarta failu augšupielādes forma. Varat to izmantot, lai pārbaudītu, vai phpMussel parasti bloķē failu."
+tip_upload_test: "Sveiki, {username}.<br />Augšupielādes testa lapā ir standarta failu augšupielādes forma. Varat to izmantot, lai pārbaudītu, vai phpMussel parasti bloķē failu."
 title_login: "Ielogošanās"
 warning_javascript_required: "Brīdinājums: Dažām funkcionalitātēm ir nepieciešams JavaScript. Ieteicams iespējot JavaScript, lai nodrošinātu, ka visa interfeiss darbojas, kā paredzēts."
 warning_signatures_1: "Brīdinājums: Neviens paraksta fails nav aktīvs!"

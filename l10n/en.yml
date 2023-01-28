@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2023.01.19).
+# This file: English language data (last modified: 2023.01.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -291,6 +291,7 @@ response_accounts_created: "Account successfully created!"
 response_accounts_deleted: "Account successfully deleted!"
 response_accounts_doesnt_exist: "That account doesn't exist."
 response_accounts_password_updated: "Password successfully updated!"
+response_configuration_update_failed: "Failed to update configuration!"
 response_configuration_updated: "Configuration successfully updated."
 response_failed: "Failed"
 response_failed_to_create: "Failed to create!"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hindi language data (last modified: 2023.01.19).
+# This file: Hindi language data (last modified: 2023.01.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -291,6 +291,7 @@ response_accounts_created: "खाता सफलतापूर्वक ब�
 response_accounts_deleted: "खाता सफलतापूर्वक हटाया गया!"
 response_accounts_doesnt_exist: "वह खाता मौजूद नहीं है।"
 response_accounts_password_updated: "पासवर्ड सफलतापूर्वक अपडेट किया गया!"
+response_configuration_update_failed: "कॉन्फ़िगरेशन अपडेट करने में विफल!"
 response_configuration_updated: "कॉन्फ़िगरेशन सफलतापूर्वक अपडेट किया गया।"
 response_failed: "असफलता"
 response_failed_to_create: "बनाने में विफल!"

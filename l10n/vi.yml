@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2023.01.19).
+# This file: Vietnamese language data (last modified: 2023.01.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -289,6 +289,7 @@ response_accounts_created: "Tài khoản tạo ra thành công!"
 response_accounts_deleted: "Tài khoản xóa thành công!"
 response_accounts_doesnt_exist: "Tài khoản này không tồn tại."
 response_accounts_password_updated: "Mật khẩu cập nhật thành công!"
+response_configuration_update_failed: "Không thể cập nhật cấu hình!"
 response_configuration_updated: "Cấu hình cập nhật thành công."
 response_failed: "Thất bại"
 response_failed_to_create: "Tạo ra không thành công!"

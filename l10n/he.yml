@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data (last modified: 2023.01.22).
+# This file: Hebrew language data (last modified: 2023.01.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -291,6 +291,7 @@ response_accounts_created: "החשבון נוצר בהצלחה!"
 response_accounts_deleted: "החשבון נמחק בהצלחה!"
 response_accounts_doesnt_exist: "החשבון הזה לא קיים."
 response_accounts_password_updated: "הסיסמה עודכנה בהצלחה!"
+response_configuration_update_failed: "עדכון התצורה נכשל!"
 response_configuration_updated: "התצורה עודכנה בהצלחה."
 response_failed: "נכשל"
 response_failed_to_create: "היצירה נכשל!"

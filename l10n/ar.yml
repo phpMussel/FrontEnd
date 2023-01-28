@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2023.01.22).
+# This file: Arabic language data (last modified: 2023.01.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -289,7 +289,8 @@ response_accounts_created: "تم انشاء الحساب بنجاح!"
 response_accounts_deleted: "تم حذف الحساب بنجاح!"
 response_accounts_doesnt_exist: "حساب غير موجود."
 response_accounts_password_updated: "تم تحديث كلمه السر بنجاح!"
-response_configuration_updated: "تم تحديث التكوين بنجاح"
+response_configuration_update_failed: "فشل تحديث التكوين!"
+response_configuration_updated: "تم تحديث التكوين بنجاح."
 response_failed: "فشل"
 response_failed_to_create: "فشل في انشاء!"
 response_failed_to_delete: "فشلت في حذف!"

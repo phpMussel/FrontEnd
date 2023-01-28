@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Tamil language data (last modified: 2023.01.19).
+# This file: Tamil language data (last modified: 2023.01.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -291,6 +291,7 @@ response_accounts_created: "கணக்கு வெற்றிகரமாக
 response_accounts_deleted: "கணக்கு வெற்றிகரமாக நீக்கப்பட்டது!"
 response_accounts_doesnt_exist: "அந்த கணக்கு இல்லை."
 response_accounts_password_updated: "கடவுச்சொல் வெற்றிகரமாக புதுப்பிக்கப்பட்டது!"
+response_configuration_update_failed: "உள்ளமைவைப் புதுப்பிக்க முடியவில்லை!"
 response_configuration_updated: "உள்ளமைவு வெற்றிகரமாக புதுப்பிக்கப்பட்டது."
 response_failed: "தோல்வி"
 response_failed_to_create: "உருவாக்கத்தில் தோல்வி!"
