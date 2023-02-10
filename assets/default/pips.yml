@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Default theme pips data (last modified: 2022.02.13).
+# This file: Default theme pips data (last modified: 2023.02.09).
 ##/
 
 Key: !!binary "R0lGODlhBwAJAKECAJkCAP3/+////////yH5BAEKAAEALAAAAAAHAAkAAAINjH+gyaaAAkQrznRbKAA7"
@@ -17,3 +17,4 @@ Left: !!binary "R0lGODlhCAAIAKECAJkCAPv99P///////yH5BAEKAAEALAAAAAAIAAgAAAINjH+g
 Right Invalid: !!binary "R0lGODlhCAAQAIABAJkCAAAAACH5BAEKAAEALAAAAAAIABAAAAIWjH+gmwvoUGBSSfPatTVDr10i94lIAQA7"
 Right Valid: !!binary "R0lGODlhCAAQAKECAJkCAAKZAAAAAAAAACH5BAEKAAIALAAAAAAIABAAAAIalH+gmwvokGBSSfOuFuGGLoHId5Ci8Z3ohhQAOw=="
 Right: !!binary "R0lGODlhCAAIAKECAJkCAPv99P///////yH5BAEKAAEALAAAAAAIAAgAAAINjH+gmwvoUGBSSfOuKQA7"
+Tick: !!binary "R0lGODlhCAAJAIABAAKZAP///yH5BAEKAAEALAAAAAAIAAkAAAINjI8IGbD5VHQNUshYAQA7"

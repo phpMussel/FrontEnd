@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Blue metal theme pips data (last modified: 2022.02.13).
+# This file: Blue metal theme pips data (last modified: 2023.02.09).
 ##/
 
 Key: !!binary "R0lGODlhBwAJAIABAH+UsP///yH5BAEKAAEALAAAAAAHAAkAAAINjH+gyaaAAkQrznRbKAA7"
@@ -17,3 +17,4 @@ Left: !!binary "R0lGODlhCAAQAIABAH+UsAAAACH5BAEKAAEALAAAAAAIABAAAAIWjH+ga6vJIEDh
 Right Invalid: !!binary "R0lGODlhCAAQAIABAH+UsAAAACH5BAEKAAEALAAAAAAIABAAAAIWjH+gmwvoUGBSSfPatTVDr10i94lIAQA7"
 Right Valid: !!binary "R0lGODlhCAAQAKECAAKZAH+UsAAAAAAAACH5BAEKAAIALAAAAAAIABAAAAIalH+hmxvokGBSSfOuFuCCLoHId5Ci8Z3ohhQAOw=="
 Right: !!binary "R0lGODlhCAAIAIABAH+UsP///yH5BAEKAAEALAAAAAAIAAgAAAINjH+gmwvoUGBSSfOuKQA7"
+Tick: !!binary "R0lGODlhCAAJAIABAAKZAP///yH5BAEKAAEALAAAAAAIAAkAAAINjI8IGbD5VHQNUshYAQA7"

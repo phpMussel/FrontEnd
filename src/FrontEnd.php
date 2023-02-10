@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2023.01.27).
+ * This file: Front-end handler (last modified: 2023.02.10).
  */
 
 namespace phpMussel\FrontEnd;
@@ -391,46 +391,14 @@ class FrontEnd
 
         /** A simple passthru for non-private theme images and related data. */
         if (!empty($this->QueryVariables['phpmussel-asset'])) {
-            /** Guard. */
-            if (!$ThisAsset = $this->getAssetPath($this->QueryVariables['phpmussel-asset'], true)) {
-                return;
-            }
-
-            if (is_readable($ThisAsset) && ($Delimiter = strrpos($ThisAsset, '.')) !== false) {
-                $AssetType = strtolower(substr($ThisAsset, $Delimiter + 1));
-                if ($AssetType === 'jpeg') {
-                    $AssetType = 'jpg';
-                }
-                $Success = false;
-                if (preg_match('~^(?:gif|jpg|png|webp)$~', $AssetType)) {
-                    /** Set asset mime-type (images). */
-                    header('Content-Type: image/' . $AssetType);
-                    $Success = true;
-                } elseif ($AssetType === 'js') {
-                    /** Set asset mime-type (JavaScript). */
-                    header('Content-Type: text/javascript');
-                    $Success = true;
-                }
-                if ($Success) {
-                    if (!empty($this->QueryVariables['theme'])) {
-                        /** Prevents needlessly reloading static assets. */
-                        header('Last-Modified: ' . gmdate('D, d M Y H:i:s T', filemtime($ThisAsset)));
-                    }
-                    /** Send asset data. */
-                    echo $this->Loader->readFileContent($ThisAsset);
-                }
-            }
-            return;
+            $this->eTaggable($this->QueryVariables['phpmussel-asset']);
         }
 
         /** A simple passthru for the front-end CSS. */
         if ($Page === 'css') {
-            header('Content-Type: text/css');
-            echo $this->Loader->parse($FE, $this->Loader->parse(
-                $this->Loader->L10N->Data,
-                $this->Loader->readFileContent($this->getAssetPath('frontend.css'))
-            ));
-            return;
+            $this->eTaggable('frontend.css', function ($AssetData) use (&$FE) {
+                return $this->Loader->parse($FE, $this->Loader->parse($this->Loader->L10N->Data, $AssetData));
+            });
         }
 
         /** A simple passthru for the favicon. */
@@ -2882,5 +2850,64 @@ class FrontEnd
             $Path = preg_replace('~/[^/]+/\.\./|/\./|/{2,}~', '/', $Path);
         }
         return $Path;
+    }
+
+    /**
+     * Fetch an etaggable asset as requested by the client.
+     *
+     * @param string $Asset The path to the asset.
+     * @param ?callable $Callback An optional callback.
+     * @return exit
+     */
+    private function eTaggable(string $Asset, ?callable $Callback = null): void
+    {
+        if (!preg_match('~[^\da-z._]~i', $Asset)) {
+            $ThisAsset = $this->getAssetPath($Asset, true);
+            if (strlen($ThisAsset) && is_readable($ThisAsset) && ($ThisAssetDel = strrpos($ThisAsset, '.')) !== false) {
+                $Success = false;
+                $Type = strtolower(substr($ThisAsset, $ThisAssetDel + 1));
+                if ($Type === 'jpeg') {
+                    $Type = 'jpg';
+                }
+                if (preg_match('/^(?:gif|jpg|png|webp)$/', $Type)) {
+                    $MimeType = 'Content-Type: image/' . $Type;
+                    $Success = true;
+                } elseif ($Type === 'js') {
+                    $MimeType = 'Content-Type: text/javascript';
+                    $Success = true;
+                } elseif ($Type === 'css') {
+                    $MimeType = 'Content-Type: text/css';
+                    $Success = true;
+                }
+                if ($Success) {
+                    $AssetData = $this->Loader->readFileContent($ThisAsset);
+                    $OldETag = $_SERVER['HTTP_IF_NONE_MATCH'] ?? '';
+                    $NewETag = hash('sha256', $AssetData) . '-' . strlen($AssetData);
+                    header('Last-Modified: ' . gmdate('D, d M Y H:i:s T', filemtime($ThisAsset)));
+                    header('ETag: "' . $NewETag . '"');
+                    header('Expires: ' . gmdate('D, d M Y H:i:s T', $this->Loader->Time + 2592000));
+                    if (preg_match('~(?:^|, )(?:"' . $NewETag . '"|' . $NewETag . ')(?:$|, )~', $OldETag)) {
+                        header('HTTP/1.0 304 Not Modified');
+                        header('HTTP/1.1 304 Not Modified');
+                        header('Status: 304 Not Modified');
+                        die;
+                    }
+                    header($MimeType);
+                    if (is_callable($Callback)) {
+                        $AssetData = $Callback($AssetData);
+                    }
+                    echo $AssetData;
+                    die;
+                }
+            }
+            header('HTTP/1.0 404 Not Found');
+            header('HTTP/1.1 404 Not Found');
+            header('Status: 404 Not Found');
+            die;
+        }
+        header('HTTP/1.0 403 Forbidden');
+        header('HTTP/1.1 403 Forbidden');
+        header('Status: 403 Forbidden');
+        die;
     }
 }

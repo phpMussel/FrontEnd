@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Slate theme pips data (last modified: 2022.02.13).
+# This file: Slate theme pips data (last modified: 2023.02.09).
 ##/
 
 Key: !!binary "R0lGODlhBwAJAKECAMrMyf3/+////////yH5BAEKAAEALAAAAAAHAAkAAAINjH+gyaaAAkQrznRbKAA7"
@@ -17,3 +17,4 @@ Left: !!binary "R0lGODlhCAAIAKECAMrMyfv99P///////yH5BAEKAAEALAAAAAAIAAgAAAINjH+g
 Right Invalid: !!binary "R0lGODlhCAAQAIABAMrMyQAAACH5BAEKAAEALAAAAAAIABAAAAIWjH+gmwvoUGBSSfPatTVDr10i94lIAQA7"
 Right Valid: !!binary "R0lGODlhCAAQAKECAAKZAMrMyQAAAAAAACH5BAEKAAIALAAAAAAIABAAAAIalH+hmxvokGBSSfOuFuCCLoHId5Ci8Z3ohhQAOw=="
 Right: !!binary "R0lGODlhCAAIAKECAMrMyfv99P///////yH5BAEKAAEALAAAAAAIAAgAAAINjH+gmwvoUGBSSfOuKQA7"
+Tick: !!binary "R0lGODlhCAAJAIABAAKZAP///yH5BAEKAAEALAAAAAAIAAkAAAINjI8IGbD5VHQNUshYAQA7"
