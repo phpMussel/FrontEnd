@@ -28,6 +28,7 @@ a:hover,a:active,a:focus{color:#fff7bc}
 .cat,.exp,.gen,.nav,.s,.txtGn,.txtOe,.txtRd,.spanner,a,input,select,textarea{font-weight:700}
 .ci,.co,.gen,.center{margin:auto}
 .ci,.co,.ng1,.ng2{width:calc(100% - 32px)}
+.idx{width:calc(100% - 10px)}
 .ci{background-color:rgba(69,84,75,.5);border-style:solid;border-width:1px;border-color:#aaa;text-align:{FE_Align};border-top-right-radius:24px}
 .ci{padding:12px}
 .co,body,.nav,.center{text-align:center}
@@ -120,3 +121,4 @@ input[type=checkbox]+label,input[type=radio]+label,input[type=radio]+label,.grid
 input[type=button].reset{background:none;cursor:pointer;border:none;padding:0 12px 0 12px;margin:0;width:auto;color:#e7ab7d}
 input[type=button].reset:hover,input[type=button].reset:active{color:#fcefcf}
 .tablend{margin-top:-2px}
+#logsTA{position:relative;top:-2px}

@@ -31,6 +31,7 @@ a:hover,a:active,a:focus,.txtRd{color:#fca}
 .cat,.exp,.bNav,.gen,.nav,.s,.tip,.txtGn,.txtOe,.txtRd,.spanner,a,input,select,textarea{font-weight:700}
 .ci,.co,.gen,.center{margin:auto}
 .ci,.co,.ng1,.ng2{width:calc(100% - 32px)}
+.idx{width:calc(100% - 10px)}
 .ci{background-color:rgba(102,119,136,.5);text-align:{FE_Align};border-top-right-radius:24px}
 .ci{padding:12px}
 .co,body,.center{text-align:center}
@@ -137,3 +138,4 @@ input[type=checkbox]+label,input[type=radio]+label,input[type=radio]+label,.grid
 input[type=button].reset{background:none;cursor:pointer;border:none;padding:0 12px 0 12px;margin:0;width:auto;color:#fca}
 input[type=button].reset:hover,input[type=button].reset:active{color:#ffc}
 .tablend{margin-top:-2px}
+#logsTA{position:relative;top:-2px}

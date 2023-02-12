@@ -21,6 +21,7 @@ a:active,a:focus{color:#cb2431}
 .cat,.exp,.bNav,.gen,.nav,.s,.tip,.txtGn,.txtOe,.txtRd,.spanner,a{font-weight:700}
 .ci,.co,.gen,.center{margin:auto}
 .ci,.co,.ng1,.ng2,.ci>.bNav:first-child{width:calc(100% - 32px)}
+.idx{width:calc(100% - 10px)}
 .ci{padding:12px}
 .ci{text-align:{FE_Align}}
 .co,body,.center{text-align:center}
@@ -143,3 +144,4 @@ input[type=text][pattern]:invalid:not(input[type=text]:placeholder-shown){backgr
 input[type=button].reset{box-shadow:none;background:none;cursor:pointer;border:none;padding:0 12px 0 12px;margin:0;width:auto;color:#cb2431}
 input[type=button].reset:hover,input[type=button].reset:active{color:#f88}
 .tablend{margin-top:-2px}
+#logsTA{position:relative;top:-2px}

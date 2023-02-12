@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2023.02.10).
+ * This file: Front-end handler (last modified: 2023.02.12).
  */
 
 namespace phpMussel\FrontEnd;
@@ -403,9 +403,20 @@ class FrontEnd
 
         /** A simple passthru for the favicon. */
         if ($Page === 'favicon') {
+            $FavIconData = $this->Loader->getFavicon();
+            $OldETag = $_SERVER['HTTP_IF_NONE_MATCH'] ?? '';
+            $NewETag = hash('sha256', $FavIconData) . '-' . strlen($FavIconData);
+            header('ETag: "' . $NewETag . '"');
+            header('Expires: ' . gmdate('D, d M Y H:i:s T', $this->Loader->Time + 2592000));
+            if (preg_match('~(?:^|, )(?:"' . $NewETag . '"|' . $NewETag . ')(?:$|, )~', $OldETag)) {
+                header('HTTP/1.0 304 Not Modified');
+                header('HTTP/1.1 304 Not Modified');
+                header('Status: 304 Not Modified');
+                die;
+            }
             header('Content-Type: image/png');
-            echo $this->Loader->getFavicon();
-            return;
+            echo $FavIconData;
+            die;
         }
 
         /** Attempt to log the user in. */
@@ -2019,7 +2030,7 @@ class FrontEnd
 
             /** Prepare log data formatting. */
             if (!$TextMode) {
-                $FE['logfileData'] = '<textarea readonly>' . $FE['logfileData'] . '</textarea>';
+                $FE['logfileData'] = '<textarea id="logsTA" readonly>' . $FE['logfileData'] . '</textarea>';
             } else {
                 $this->formatter($FE['logfileData']);
             }
@@ -2857,7 +2868,7 @@ class FrontEnd
      *
      * @param string $Asset The path to the asset.
      * @param ?callable $Callback An optional callback.
-     * @return exit
+     * @return never
      */
     private function eTaggable(string $Asset, ?callable $Callback = null): void
     {
