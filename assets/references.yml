@@ -7,12 +7,11 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: YAML references file (last modified: 2022.05.16).
+# This file: YAML references file (last modified: 2023.02.20).
 ##/
 
 Links:
  ClamavNet: "<a href="https://www.clamav.net/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external">ClamavNet</a>"
- Discussions: "https://github.com/phpMussel/phpMussel/discussions"
  Documentation: "https://phpmussel.github.io/\#documentation"
  Hybrid Analysis: "<a href="https://www.hybrid-analysis.com/" dir="ltr" hreflang="en" rel="noopener noreferrer external">Hybrid Analysis</a>"
  Malware Expert: "<a href="https://malware.expert/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external">Malware.Expert</a>"
@@ -32,4 +31,4 @@ Links:
  Sanesecurity: "<a href="https://sanesecurity.com/usage/signatures/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external">Sanesecurity</a>"
  SecuriteInfo: "<a href="https://www.securiteinfo.com/" dir="ltr" hreflang="fr-FR" rel="noopener noreferrer external">SecuriteInfo.com</a>"
  VirusTotal: "<a href="https://www.virustotal.com/" dir="ltr" rel="noopener noreferrer external">VirusTotal</a>"
- Website: "<a id="websitelink" href="https://phpmussel.github.io/" hreflang="en-US" rel="noopener external">phpmussel.github.io</a>"
+ Website: "<a href="https://phpmussel.github.io/" hreflang="en-US" rel="noopener external"><img src="?phpmussel-asset=link.svg" class="navicon" aria-hidden="true" />phpmussel.github.io</a>"

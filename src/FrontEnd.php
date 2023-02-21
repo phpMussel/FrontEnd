@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2023.02.12).
+ * This file: Front-end handler (last modified: 2023.02.20).
  */
 
 namespace phpMussel\FrontEnd;
@@ -306,7 +306,6 @@ class FrontEnd
             'FE_Title' => '',
 
             /** Make some of the link references available to the main front-end array. */
-            'Links.Discussions' => $this->Loader->YAML->Refs['Links']['Discussions'],
             'Links.Documentation' => $this->Loader->YAML->Refs['Links']['Documentation'],
             'Links.Website' => $this->Loader->YAML->Refs['Links']['Website'],
 
@@ -2882,6 +2881,9 @@ class FrontEnd
                 }
                 if (preg_match('/^(?:gif|jpg|png|webp)$/', $Type)) {
                     $MimeType = 'Content-Type: image/' . $Type;
+                    $Success = true;
+                } elseif ($Type === 'svg') {
+                    $MimeType = 'Content-Type: image/svg+xml';
                     $Success = true;
                 } elseif ($Type === 'js') {
                     $MimeType = 'Content-Type: text/javascript';

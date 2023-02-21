@@ -135,3 +135,5 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 [2023.01.21; Maikuolan]: Better value definitions for `vt_suspicion_level`.
 
 [2023.01.27; Maikuolan]: Display proper status message when updating configuration fails.
+
+[2023.02.21; Maikuolan]: Replaced the emojis at the front-end navigation menu with SVGs.
