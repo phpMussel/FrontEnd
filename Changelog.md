@@ -137,3 +137,7 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 [2023.01.27; Maikuolan]: Display proper status message when updating configuration fails.
 
 [2023.02.21; Maikuolan]: Replaced the emojis at the front-end navigation menu with SVGs.
+
+### v3.3.3
+
+[2023.02.28; Maikuolan]: Adjusted the eTaggable method, increasing expiries from 1 month to 6 months to further reduce superfluous requests for static files, and explicitly removing the Cache-Control header due to some implementations setting the Cache-Control header within their own code, prior to calling phpMussel, thus preventing browsers from being able to properly cache phpMussel's static assets (explicitly removing the header should ensure that static assets can be cached as expected).
