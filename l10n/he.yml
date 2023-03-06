@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data (last modified: 2023.01.27).
+# This file: Hebrew language data (last modified: 2023.03.06).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -172,7 +172,7 @@ field_vt_suspicion_level_heuristic_only: "סרוק רק קבצים בעלי מש
 field_your_version: "הגרסה שלך"
 header_login: "אנא התחבר על מנת להמשיך."
 hints_pdo_dsn:
- שאלות נפוצות.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#HOW_TO_USE_PDO" hreflang="en-AU">מהו "PDO DSN"? כיצד להשתמש ב-PDO עם phpMussel?</a></em>"
+ שאלות נפוצות.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">מהו "PDO DSN"? כיצד להשתמש ב-PDO עם phpMussel?</a></em>"
 hints_xlists:
  איך זה עובד.: "אם המערכת שלך מאפשרת להעלות רק סוגים מסוימים של קבצים, או אם המערכת שלך שוללת במפורש סוגים מסוימים של קבצים, ציון סוגי קבצים אלה ברשימות הלבנות, רשימות שחורות ורשימות אפורות יכול להגביר את המהירות שבה מתבצעת הסריקה על ידי מתן אפשרות לסקריפט לדלג מעל סוגי קבצים מסוימים. הפורמט הוא CSV (ערכים מופרדים בפסיקים)."
  סדר לוגי של עיבוד.: "אם סוג הקובץ נמצא ברשימת הלבנות, אל תסרוק ואל תחסום את הקובץ, ואל תבדוק את הקובץ מול הרשימה השחורה או הרשימה האפורה. אם הרשימה האפורה ריקה או אם הרשימה האפורה אינה ריקה וסוג הקובץ מופיע ברשימה אפורה, סרוק את הקובץ כרגיל וקבע אם לחסום אותו על סמך תוצאות הסריקה, אך אם הרשימה האפורה אינה ריקה וסוג הקובץ אינו מופיע ברשימה האפורה, התייחסו לקובץ כאל רשימת שחורה, לכן אל סורקים אותו אלא חוסמים אותו בכל זאת."
@@ -353,7 +353,7 @@ tip_home: "שלום, {username}.<br />זהו דף הבית של הקצה הקד�
 tip_logs: "שלום, {username}.<br />בחר קובץ יומן מהרשימה למטה כדי להציג את התוכן של קובץ יומן זה."
 tip_quarantine: "שלום, {username}.<br />דף זה מפרט את כל הקבצים הנמצאים בהסגר ומקל על הניהול של קבצים אלה."
 tip_quarantine_disabled: "הערה: הסגר מושבת כעת, אך ניתן להפעיל אותו דרך דף התצורה."
-tip_see_the_documentation: "עיין <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#SECTION5" hreflang="en" rel="noopener external">בתיעוד</a> למידע על הנחיות התצורה השונות ומטרותיהן."
+tip_see_the_documentation: "עיין <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">בתיעוד</a> למידע על הנחיות התצורה השונות ומטרותיהן."
 tip_siginfo: "שלום, {username}.<br />דף מידע החתימה מספק מידע בסיסי על המקורות והסוגים של החתימות הפעילות כעת."
 tip_statistics: "שלום, {username}.<br />דף זה מציג כמה סטטיסטיקות שימוש בסיסיות לגבי התקנת phpMussel שלך."
 tip_statistics_disabled: "הערה: מעקב סטטיסטיקה מושבת כעת, אך ניתן להפעילו דרך דף התצורה."

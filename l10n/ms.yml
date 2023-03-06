@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2023.01.27).
+# This file: Malay language data (last modified: 2023.03.06).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -170,7 +170,7 @@ field_vt_suspicion_level_heuristic_only: "Imbas hanya fail dengan berat heuristi
 field_your_version: "Versi anda"
 header_login: "Sila log masuk untuk meneruskan."
 hints_pdo_dsn:
- FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.id.md\#HOW_TO_USE_PDO" hreflang="id">Apakah itu "PDO DSN"? Bagaimanakah saya boleh menggunakan PDO dengan phpMussel?</a></em>"
+ FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.id.md\#user-content-HOW_TO_USE_PDO" hreflang="id">Apakah itu "PDO DSN"? Bagaimanakah saya boleh menggunakan PDO dengan phpMussel?</a></em>"
 hints_xlists:
  Bagaimana ini berfungsi.: "Jika sistem anda membenarkan hanya jenis fail tertentu untuk dimuat naik, atau jika sistem anda secara eksplisit menafikan jenis fail tertentu, menyatakan jenis fail tersebut dalam senarai putih, senarai hitam, dan senarai kelabu boleh meningkatkan kelajuan pengimbasan dilakukan dengan membenarkan skrip melangkau jenis fail tertentu. Format ialah CSV (nilai dipisahkan koma)."
  Perintah pemprosesan logik.: "Jika jenis fail disenaraiputihkan, jangan imbas dan jangan sekat fail, dan jangan semak fail terhadap senarai hitam atau senarai kelabu. Jika jenis fail disenaraihitamkan, jangan imbas fail tetapi sekat fail jugak, dan jangan semak fail terhadap senarai kelabu. Jika senarai kelabu kosong atau jika senarai kelabu tidak kosong dan jenis fail disenaraikelabukan, imbas fail seperti biasa dan tentukan sama ada untuk menyekatnya berdasarkan hasil imbasan, tetapi jika senarai kelabu tidak kosong dan jenis fail tidak disenaraikelabukan, anggap fail sebagai disenaraihitamkan, jadi tidak mengimbasnya tetapi menyekatnya jugak."
@@ -349,7 +349,7 @@ tip_home: "Salam, {username}.<br />Ini ialah halaman utama untuk bahagian hadapa
 tip_logs: "Salam, {username}.<br />Pilih fail log daripada senarai di bawah untuk melihat kandungan fail log tersebut."
 tip_quarantine: "Salam, {username}.<br />Halaman ini menyenaraikan semua fail yang sedang dalam kuarantin dan memudahkan pengurusan fail tersebut."
 tip_quarantine_disabled: "Nota: Kuarantin kini dinyahaktifkan, tetapi boleh diaktifkan melalui halaman konfigurasi."
-tip_see_the_documentation: "Lihat <a href="https://github.com/phpMussel/Docs/blob/master/readme.id.md\#SECTION5" hreflang="id" rel="noopener external">dokumentasi</a> untuk mendapatkan maklumat tentang pelbagai arahan konfigurasi dan tujuannya."
+tip_see_the_documentation: "Lihat <a href="https://github.com/phpMussel/Docs/blob/master/readme.id.md\#user-content-SECTION5" hreflang="id" rel="noopener external">dokumentasi</a> untuk mendapatkan maklumat tentang pelbagai arahan konfigurasi dan tujuannya."
 tip_siginfo: "Salam, {username}.<br />Halaman maklumat tandatangan menyediakan beberapa maklumat asas tentang sumber dan jenis tandatangan yang sedang aktif."
 tip_statistics: "Salam, {username}.<br />Halaman ini menunjukkan beberapa statistik penggunaan asas mengenai pemasangan phpMussel anda."
 tip_statistics_disabled: "Nota: Penjejakan statistik kini dinyahaktifkan, tetapi boleh diaktifkan melalui halaman konfigurasi."

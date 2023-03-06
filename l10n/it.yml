@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2023.01.27).
+# This file: Italian language data (last modified: 2023.03.06).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -170,7 +170,7 @@ field_vt_suspicion_level_heuristic_only: "Analizza solo i file con peso euristic
 field_your_version: "La Vostra Versione"
 header_login: "Per favore accedi per continuare."
 hints_pdo_dsn:
- FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.it.md\#HOW_TO_USE_PDO" hreflang="it">Che cos'è un "DSN PDO"? Come posso usare PDO con phpMussel?</a></em>"
+ FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.it.md\#user-content-HOW_TO_USE_PDO" hreflang="it">Che cos'è un "DSN PDO"? Come posso usare PDO con phpMussel?</a></em>"
 hints_xlists:
  Come funziona.: "Se il vostro sistema permette solo determinati tipi di file per caricamenti, o se il vostra sistema esplicitamente negare determinati tipi di file, specificando i tipi di file nel whitelist, blacklist e/o greylist può aumentare la velocità a cui la scansione viene eseguita da permettendo lo script da ignora alcuni tipi di file. Il formato è CSV (valori separati da virgola)."
  Logico ordine del trattamento.: "Se il tipo di file è nel whitelist, non scansiona e non blocca il file, e non verificare il file contra la blacklist o la greylist. Se il tipo di file è nel blacklist, non scansiona il file ma bloccarlo comunque, e non verificar il file contra la greylist. Se il greylist è vuoto o se il greylist non è vuota e il tipo di file è nel greylist, scansiona il file come per normale e determinare se bloccarlo sulla base dei risultati della scansione, ma se il greylist non è vuoto e il tipo di file non è nel greylist, trattare il file come se è nel blacklist, quindi non scansionarlo ma bloccarlo comunque."
@@ -349,7 +349,7 @@ tip_home: "Salve, {username}.<br />Questa è la pagina principale per il front-e
 tip_logs: "Salve, {username}.<br />Selezionare un file di log dall'elenco sottostante per visualizzare il contenuto di tale file di log."
 tip_quarantine: "Salve, {username}.<br />Questa pagina elenca tutti i file attualmente in quarantena e facilita la gestione di tali file."
 tip_quarantine_disabled: "Nota: La quarantena è attualmente disattivata, ma può essere attivata tramite la pagina di configurazione."
-tip_see_the_documentation: "Vedere la <a href="https://github.com/phpMussel/Docs/blob/master/readme.it.md\#SECTION5" hreflang="it" rel="noopener external">documentazione</a> per informazioni sulle varie direttive di configurazione ed i loro scopi."
+tip_see_the_documentation: "Vedere la <a href="https://github.com/phpMussel/Docs/blob/master/readme.it.md\#user-content-SECTION5" hreflang="it" rel="noopener external">documentazione</a> per informazioni sulle varie direttive di configurazione ed i loro scopi."
 tip_siginfo: "Salve, {username}.<br />La pagina delle informazioni sulle firme fornisce alcune informazioni di base sulle origini e i tipi delle firme attualmente attive."
 tip_statistics: "Salve, {username}.<br />Questa pagina mostra alcune statistiche di utilizzo relative all'installazione di phpMussel."
 tip_statistics_disabled: "Nota: Il monitoraggio delle statistiche è attualmente disattivato, ma può essere attivato tramite la pagina di configurazione."

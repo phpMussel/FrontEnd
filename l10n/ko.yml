@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2023.01.27).
+# This file: Korean language data (last modified: 2023.03.06).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -170,7 +170,7 @@ field_vt_suspicion_level_heuristic_only: "휴리스틱 가중치가 있는 파�
 field_your_version: "사용 버전"
 header_login: "계속하려면 로그인하십시오."
 hints_pdo_dsn:
- 자주하는 질문.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.ko.md\#HOW_TO_USE_PDO" hreflang="ko">"PDO DSN"은 무엇입니까? phpMussel과 함께 PDO를 사용하려면 어떻게해야합니까?</a></em>"
+ 자주하는 질문.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.ko.md\#user-content-HOW_TO_USE_PDO" hreflang="ko">"PDO DSN"은 무엇입니까? phpMussel과 함께 PDO를 사용하려면 어떻게해야합니까?</a></em>"
 hints_xlists:
  작동 원리.: "시스템이 특정 유형의 파일 만 업로드를 허용하거나 거절하는 경우 파일 유형을 적절히 화이트리스트, 블랙리스트, 그레이리스트로 분류 해두면 파일 유형에 튀겨 진 파일은 스캔을 건너 뛸 수 때문에 속도로 연결됩니다. 형식은 CSV (쉼표로 구분)입니다."
  프로세스의 논리적 순서.: "파일 형식이 화이트리스트에 포함되어 있으면, 스캔하지 않고 블록하지 않고 블랙리스트 및 그레이리스트에 체크를하지 않습니다. 파일 형식이 블랙리스트에 있으면 스캔하지 않고 즉시 차단하고 그레이리스트에 체크를하지 않습니다. 회색 목록이 비어 또는 그레이리스트가 하늘이 아닌 한편 그 파일 타입이 있으면 정상적으로 스캔 차단 여부를 판단합니다. 그레이리스트가 하늘이 아닌 한편 그 파일 유형이 포함되어 있지 않으면 블랙리스트와 같은 취급을 할 수 있고 스캔없이 차단합니다."
@@ -349,7 +349,7 @@ tip_home: "안녕하세요, {username}.<br />이것은 phpMussel 프론트 엔�
 tip_logs: "안녕하세요, {username}.<br />로그의 내용을 보려면 다음 목록에서 로그를 선택합니다."
 tip_quarantine: "안녕하세요, {username}.<br />관리를 용이하게하기 위해, 현재 격리 저장소에있는 모든 파일이이 페이지에 나열됩니다."
 tip_quarantine_disabled: "노트\_: 격리는 현재 비활성화되어, 있지만 구성 페이지를 통해 활성화할 수 있습니다."
-tip_see_the_documentation: "설정 지시어에 대한 자세한 내용은 <a href="https://github.com/phpMussel/Docs/blob/master/readme.ko.md\#SECTION5" hreflang="ko" rel="noopener external">문서를</a> 참조하십시오."
+tip_see_the_documentation: "설정 지시어에 대한 자세한 내용은 <a href="https://github.com/phpMussel/Docs/blob/master/readme.ko.md\#user-content-SECTION5" hreflang="ko" rel="noopener external">문서를</a> 참조하십시오."
 tip_siginfo: "안녕하세요, {username}.<br />서명 정보 페이지는 현재 활성화 된 서명의 소스 및 유형에 대한 몇 가지 기본 정보를 제공합니다."
 tip_statistics: "안녕하세요, {username}.<br />이 페이지는 phpMussel 설치와 관련된 몇 가지 기본 사용 통계를 보여줍니다."
 tip_statistics_disabled: "노트\_: 통계 추적은 현재 비활성화되어, 있지만 구성 페이지를 통해 활성화할 수 있습니다."

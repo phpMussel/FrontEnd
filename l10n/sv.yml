@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2023.01.27).
+# This file: Swedish language data (last modified: 2023.03.06).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -170,7 +170,7 @@ field_vt_suspicion_level_heuristic_only: "Skanna endast filer med heuristisk vik
 field_your_version: "Din version"
 header_login: "Snälla logga in för att fortsätta."
 hints_pdo_dsn:
- FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#HOW_TO_USE_PDO" hreflang="en-AU">Vad är en "PDO DSN"? Hur kan jag använda PDO med phpMussel?</a></em>"
+ FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Vad är en "PDO DSN"? Hur kan jag använda PDO med phpMussel?</a></em>"
 hints_xlists:
  Hur det här fungerar.: "Om ditt system endast tillåter att specifika filtyper som ska laddas upp, eller om ditt system uttryckligen nekar vissa typer av filer, att specificera dessa filtyper i vitlistor, svartlistor och grålistor kan öka hastigheten med vilken skanning utförs genom att låta skriptet hoppa över vissa filtyper. Formatet är CSV (kommaseparerade värden)."
  Logisk ordning på behandlingen.: "Om filtypen är vitlistad, inte skanna och inte blockera filen, och kontrollera inte filen mot svartlistan eller grålistan. Om filtypen är svartlistad, inte skanna filen, men blockera den ändå, och kontrollera inte filen mot grålistan. Om grålistan är tom, eller om grålistan inte är tom och filtypen är grålistad, skanna filen enligt normal och avgör om den ska blockeras baserat på sökresultaten, men om grålisten inte är tom och filtypen inte är grålistad, behandla filen som svartlistad, därför inte skanna det men blockera det ändå."
@@ -351,7 +351,7 @@ tip_home: "Hallå, {username}.<br />Detta är hemsidan för phpMussel front-end.
 tip_logs: "Hallå, {username}.<br />Välj en loggfil från listan nedan för att se innehållet i den loggfilen."
 tip_quarantine: "Hallå, {username}.<br />Denna sida visar alla filer som för närvarande är i karantän och underlättar hanteringen av dessa filer."
 tip_quarantine_disabled: "Notera: Karantän är för närvarande inaktiverad, men kan aktiveras via konfigurationssidan."
-tip_see_the_documentation: "Se <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#SECTION5" hreflang="en" rel="noopener external">dokumentationen</a> för information om de olika konfigurationsdirektiven och deras ändamål."
+tip_see_the_documentation: "Se <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">dokumentationen</a> för information om de olika konfigurationsdirektiven och deras ändamål."
 tip_siginfo: "Hallå, {username}.<br />Signaturinformationssidan för signatur ger grundläggande information om källorna och typerna av de för närvarande aktiva signaturerna."
 tip_statistics: "Hallå, {username}.<br />Den här sidan visar en viss användarstatistik för din phpMussel-installation."
 tip_statistics_disabled: "Notera: Statistikspårning är för närvarande inaktiverad, men kan aktiveras via konfigurationssidan."
