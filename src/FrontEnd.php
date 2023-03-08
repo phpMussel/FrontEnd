@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2023.02.28).
+ * This file: Front-end handler (last modified: 2023.03.07).
  */
 
 namespace phpMussel\FrontEnd;
@@ -342,28 +342,12 @@ class FrontEnd
             'this.parentElement.querySelector(".comSub").classList.toggle("active"), !this.classList.toggle("caret-down") && this.classList.toggle("caret-up") && setTimeout(function(t) {' .
             't.classList.toggle("caret-up")}, 200, this)});</script>';
 
-        /** Fetch pips data. */
-        $PipsPath = $this->getAssetPath('pips.yml');
-        $PipsData = $this->Loader->readFileContent($PipsPath);
-        $Pips = [];
-        if ($PipsData) {
-            $this->Loader->YAML->process($PipsData, $Pips);
-            $FE['PIP_Key'] = $Pips['Key'];
-            $FE['PIP_Key_64'] = base64_encode($Pips['Key']);
-        }
-
         /** A fix for correctly displaying LTR/RTL text. */
         if (empty($this->Loader->L10N->Data['Text Direction']) || $this->Loader->L10N->Data['Text Direction'] !== 'rtl') {
             $this->Loader->L10N->Data['Text Direction'] = 'ltr';
             $FE['FE_Align'] = 'left';
             $FE['FE_Align_Reverse'] = 'right';
             $FE['FE_Align_Mode'] = 'lr';
-            $FE['PIP_Input'] = $Pips['Right'];
-            $FE['PIP_Input_64'] = base64_encode($Pips['Right']);
-            $FE['PIP_Input_Valid'] = $Pips['Right Valid'];
-            $FE['PIP_Input_Valid_64'] = base64_encode($Pips['Right Valid']);
-            $FE['PIP_Input_Invalid'] = $Pips['Right Invalid'];
-            $FE['PIP_Input_Invalid_64'] = base64_encode($Pips['Right Invalid']);
             $FE['Half_Border'] = 'solid solid none none';
             $FE['45deg'] = '45deg';
             $FE['90deg'] = '90deg';
@@ -371,19 +355,10 @@ class FrontEnd
             $FE['FE_Align'] = 'right';
             $FE['FE_Align_Reverse'] = 'left';
             $FE['FE_Align_Mode'] = 'rl';
-            $FE['PIP_Input'] = $Pips['Left'];
-            $FE['PIP_Input_64'] = base64_encode($Pips['Left']);
-            $FE['PIP_Input_Valid'] = $Pips['Left Valid'];
-            $FE['PIP_Input_Valid_64'] = base64_encode($Pips['Left Valid']);
-            $FE['PIP_Input_Invalid'] = $Pips['Left Invalid'];
-            $FE['PIP_Input_Invalid_64'] = base64_encode($Pips['Left Invalid']);
             $FE['Half_Border'] = 'solid none none solid';
             $FE['45deg'] = '-45deg';
             $FE['90deg'] = '270deg';
         }
-
-        /** Cleanup. */
-        unset($Pips, $PipsData, $PipsPath);
 
         /** Fire event: "frontend_before_page". */
         $this->Loader->Events->fireEvent('frontend_before_page', '', $FE);
@@ -396,7 +371,7 @@ class FrontEnd
         /** A simple passthru for the front-end CSS. */
         if ($Page === 'css') {
             $this->eTaggable('frontend.css', function ($AssetData) use (&$FE) {
-                return $this->Loader->parse($FE, $this->Loader->parse($this->Loader->L10N->Data, $AssetData));
+                return $this->embedAssets($this->Loader->parse($FE, $this->Loader->parse($this->Loader->L10N->Data, $AssetData)));
             });
         }
 
@@ -2552,7 +2527,7 @@ class FrontEnd
                 $Template = substr($Template, 0, $BPos) . substr($Template, $EPos + strlen($Segment) + 13);
             }
         }
-        return $this->Loader->parse($this->Loader->L10N->Data, $this->Loader->parse($FE, $Template));
+        return $this->embedAssets($this->Loader->parse($this->Loader->L10N->Data, $this->Loader->parse($FE, $Template)));
     }
 
     /**
@@ -2923,5 +2898,32 @@ class FrontEnd
         header('HTTP/1.1 403 Forbidden');
         header('Status: 403 Forbidden');
         die;
+    }
+
+    /**
+     * Embed assets inside a string.
+     *
+     * @param string $In The string to embed assets in.
+     * @return string
+     */
+    private function embedAssets(string $In): string
+    {
+        if (preg_match_all('~\{Asset\:([^{}]+)\}~', $In, $Matches)) {
+            $Matches = (isset($Matches[1]) && is_array($Matches[1])) ? array_unique($Matches[1]) : [];
+            foreach ($Matches as $AssetName) {
+                if (($AssetPath = $this->getAssetPath($AssetName, true)) !== '') {
+                    if (($Value = $this->Loader->readFileContent($AssetPath)) !== '') {
+                        $In = str_replace('{Asset:' . $AssetName . '}', $Value, $In);
+                    }
+                }
+            }
+        }
+        if (preg_match_all('~\{Base64Encode\}(.+?)\{/Base64Encode\}~s', $In, $Matches)) {
+            $Matches = (isset($Matches[1]) && is_array($Matches[1])) ? array_unique($Matches[1]) : [];
+            foreach ($Matches as $Data) {
+                $In = str_replace('{Base64Encode}' . $Data . '{/Base64Encode}', base64_encode($Data), $In);
+            }
+        }
+        return $In;
     }
 }

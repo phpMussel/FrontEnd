@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: YAML references file (last modified: 2023.02.20).
+# This file: YAML references file (last modified: 2023.03.08).
 ##/
 
 Links:
@@ -31,4 +31,4 @@ Links:
  Sanesecurity: "<a href="https://sanesecurity.com/usage/signatures/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external">Sanesecurity</a>"
  SecuriteInfo: "<a href="https://www.securiteinfo.com/" dir="ltr" hreflang="fr-FR" rel="noopener noreferrer external">SecuriteInfo.com</a>"
  VirusTotal: "<a href="https://www.virustotal.com/" dir="ltr" rel="noopener noreferrer external">VirusTotal</a>"
- Website: "<a href="https://phpmussel.github.io/" hreflang="en-US" rel="noopener external"><img src="?phpmussel-asset=link.svg" class="navicon" aria-hidden="true" />phpmussel.github.io</a>"
+ Website: "<a href="https://phpmussel.github.io/" hreflang="en-US" rel="noopener external"><span class="navicon link"></span>phpmussel.github.io</a>"

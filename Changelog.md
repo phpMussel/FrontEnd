@@ -143,3 +143,5 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 [2023.02.28; Maikuolan]: Adjusted the eTaggable method, increasing expiries from 1 month to 6 months to further reduce superfluous requests for static files, and explicitly removing the Cache-Control header due to some implementations setting the Cache-Control header within their own code, prior to calling phpMussel, thus preventing browsers from being able to properly cache phpMussel's static assets (explicitly removing the header should ensure that static assets can be cached as expected).
 
 [2023.03.06; Documentation; Maikuolan]: Due to changes implemented by GitHub in how it handles anchors in markdown files, a vast majority of the internal links within the documentation were broken, as well as most links within the L10N data which pointed to said documentation; Fixed.
+
+[2023.03.08; Maikuolan]: Optimise nav icons, pip icons, and related assets.
