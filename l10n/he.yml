@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data (last modified: 2023.03.06).
+# This file: Hebrew language data (last modified: 2023.03.24).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -37,6 +37,7 @@ config_core_lang_override: "האם לבצע לוקליזציה לפי HTTP_ACCEP
 config_core_log_rotation_action: "סיבוב יומן מגביל את מספר קובצי היומן שצריכים להתקיים בכל זמן נתון. כאשר נוצרים קובצי יומן חדשים, אם המספר הכולל של קובצי יומן חורג מהמגבלה שצוינה, הפעולה שצוינה תתבצע. אתה יכול לציין את הפעולה הרצויה כאן."
 config_core_log_rotation_limit: "סיבוב יומן מגביל את מספר קובצי היומן שצריכים להתקיים בכל זמן נתון. כאשר נוצרים קובצי יומן חדשים, אם המספר הכולל של קובצי יומן חורג מהמגבלה שצוינה, הפעולה שצוינה תתבצע. אתה יכול לציין את המגבלה הרצויה כאן. ערך של 0 ישבית את סיבוב היומן."
 config_core_maintenance_mode: "להפעיל מצב תחזוקה? True = כן; False = לא [סטנדרטי]. משבית כל דבר מלבד הקצה הקדמי. לפעמים שימושי בעת עדכון CMS, מסגרות, וכו'."
+config_core_outbound_request_log: "קובץ לרישום התוצאות של כל בקשות יוצאות. ציין שם קובץ, או השאר ריק כדי להשבית."
 config_core_scan_cache_expiry: "לכמה זמן phpMussel צריך לשמור את תוצאות הסריקה במטמון? ערך הוא מספר השניות שיש לאחסן את תוצאות הסריקה עבורן. התקן הוא 21600 שניות (6 שעות); ערך 0 ישבית את שמירה במטמון של תוצאות הסריקה."
 config_core_scan_log: "שם הקובץ שאליו יש לרשום את כל תוצאות הסריקה. ציין שם קובץ, או השאר ריק כדי להשבית."
 config_core_scan_log_serialized: "שם הקובץ שאליו יש לרשום את כל תוצאות הסריקה (באמצעות פורמט סידורי). ציין שם קובץ, או השאר ריק כדי להשבית."

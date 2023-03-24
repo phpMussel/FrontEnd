@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2023.03.06).
+# This file: Swedish language data (last modified: 2023.03.24).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -37,6 +37,7 @@ config_core_lang_override: "Lokalisera enligt HTTP_ACCEPT_LANGUAGE när det är 
 config_core_log_rotation_action: "Loggrotering begränsar antalet loggfiler som ska existera vid en gång. När nya loggfiler skapas, om det totala antalet loggfiler överstiger den angivna gränsen, den angivna åtgärden kommer att utföras. Du kan ange önskad åtgärd här."
 config_core_log_rotation_limit: "Loggrotering begränsar antalet loggfiler som ska existera vid en gång. När nya loggfiler skapas, om det totala antalet loggfiler överstiger den angivna gränsen, den angivna åtgärden kommer att utföras. Du kan ange önskad gräns här. Ett värde på 0 kommer att inaktivera loggroteringen."
 config_core_maintenance_mode: "Aktivera underhållsläge? True = Ja; False = Nej [Standard]. Inaktiverar allt annat än front-end. Ibland användbar för när du uppdaterar dina CMS, frameworks, osv."
+config_core_outbound_request_log: "En fil för att logga resultaten av eventuella utgående förfrågningar. Ange ett filnamn, eller lämna tomt för att inaktivera."
 config_core_scan_cache_expiry: "Hur länge ska phpMussel cache resultatet av skanningen? Värdet är antalet sekunder att cache resultatet av skanningen. Standard är 21600 sekunder (6 timmar); Ett värde på 0 inaktiverar cachningsresultaten för skanningen."
 config_core_scan_log: "Filnamn för fil för att logga alla skanningsresultat till. Ange ett filnamn eller lämna tomt för att inaktivera."
 config_core_scan_log_serialized: "Filnamn för fil för att logga alla skanningsresultat till (med ett seriellt format). Ange ett filnamn eller lämna tomt för att inaktivera."

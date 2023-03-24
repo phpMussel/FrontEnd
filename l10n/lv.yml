@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2023.03.06).
+# This file: Latvian language data (last modified: 2023.03.24).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -37,6 +37,7 @@ config_core_lang_override: "Ja iespējams, lokalizēt saskaņā ar HTTP_ACCEPT_L
 config_core_log_rotation_action: "Log rotācija ierobežo to logfailu skaitu, kuriem vajadzētu pastāvēt vienlaikus. Veidojot jaunus logfailus, ja kopējais logfailu skaits pārsniedz noteikto limitu, tiks veikta norādītā darbība. Šeit varat norādīt vēlamo darbību."
 config_core_log_rotation_limit: "Log rotācija ierobežo to logfailu skaitu, kuriem vajadzētu pastāvēt vienlaikus. Veidojot jaunus logfailus, ja kopējais logfailu skaits pārsniedz noteikto limitu, tiks veikta norādītā darbība. Šeit varat norādīt vēlamo ierobežojumu. Ja vērtība ir 0, tiks atspējota log rotācija."
 config_core_maintenance_mode: "Vai iespējot apkopes režīmu? True (Patiess) = Jā; False (Nepatiess) = Nē [Noklusējuma]. Jūs joprojām varat administrēt, bet viss pārējais ir atspējots. Tas dažreiz var būt noderīgs, atjaunojot CMS, frameworks, utt."
+config_core_outbound_request_log: "Fails, visu izejošo pieprasījumu rezultātu reģistrēšanai. Norādiet faila nosaukumu, vai atstājiet tukšu, lai to atspējotu."
 config_core_scan_cache_expiry: "Cik ilgi skenēšanas rezultāti ir jāglabā kešatmiņā? Vērtība ir sekunžu skaits, kurā skenēšanas rezultāti tiek saglabāti kešatmiņā. Noklusējums ir 21600 sekundes (6 stundas); Ja vērtība būs 0, skenēšanas rezultāti netiks saglabāti kešatmiņā."
 config_core_scan_log: "Faila nosaukums, kurā reģistrēt visus skenēšanas rezultātus. Norādiet faila nosaukumu, vai atstājiet tukšu, lai to atspējotu."
 config_core_scan_log_serialized: "Faila nosaukums, kurā reģistrēt visus skenēšanas rezultātus (izmantojot sērijveida formātu). Norādiet faila nosaukumu, vai atstājiet tukšu, lai to atspējotu."

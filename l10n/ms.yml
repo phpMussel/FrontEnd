@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2023.03.06).
+# This file: Malay language data (last modified: 2023.03.24).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -37,6 +37,7 @@ config_core_lang_override: "Setempatkan mengikut HTTP_ACCEPT_LANGUAGE apabila bo
 config_core_log_rotation_action: "Putaran log mengehadkan bilangan fail log yang sepatutnya wujud pada satu-satu masa. Apabila fail log baharu dicipta, jika jumlah bilangan fail log melebihi had yang ditentukan, tindakan yang ditentukan akan dilakukan. Anda boleh menentukan tindakan yang diingini disini."
 config_core_log_rotation_limit: "Putaran log mengehadkan bilangan fail log yang sepatutnya wujud pada satu-satu masa. Apabila fail log baharu dicipta, jika jumlah bilangan fail log melebihi had yang ditentukan, tindakan yang ditentukan akan dilakukan. Anda boleh menentukan had yang dikehendaki disini. Nilai 0 akan menyahaktifkan putaran log."
 config_core_maintenance_mode: "Aktifkan mod penyelenggaraan? True = Ya; False = Tidak [Lalai]. Menyahaktifkan semua selain bahagian hadapan. Kadangkala berguna apabila mengemas kini CMS anda, rangka kerja anda, dsb."
+config_core_outbound_request_log: "Fail untuk mengelog hasil sebarang permintaan keluar. Tentukan nama fail, atau biarkan kosong untuk nyahaktifkan."
 config_core_scan_cache_expiry: "Berapa lama phpMussel perlu menyimpan hasil pengimbasan? Nilai ialah bilangan saat untuk cache hasil pengimbasan. Lalai ialah 21600 saat (6 jam); Nilai 0 menyahaktifkan cache hasil pengimbasan."
 config_core_scan_log: "Nama fail untuk log semua hasil pengimbasan. Tentukan nama fail, atau biarkan kosong untuk nyahaktifkan."
 config_core_scan_log_serialized: "Nama fail untuk log semua hasil pengimbasan (menggunakan format bersiri). Tentukan nama fail, atau biarkan kosong untuk nyahaktifkan."

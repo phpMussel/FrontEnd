@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Farsi language data (last modified: 2023.03.06).
+# This file: Farsi language data (last modified: 2023.03.24).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -37,6 +37,7 @@ config_core_lang_override: "هر زمان ممکن است بر اساس HTTP_ACC
 config_core_log_rotation_action: "چرخش گزارش، تعداد فایل‌های گزارشی را که باید در هر زمان وجود داشته باشند، محدود می‌کند. هنگامی که فایل های گزارش جدید ایجاد می شوند، اگر تعداد کل فایل های گزارش از حد تعیین شده بیشتر شود، اقدام مشخص شده انجام می شود. در اینجا می توانید عمل مورد نظر را مشخص کنید."
 config_core_log_rotation_limit: "چرخش گزارش، تعداد فایل‌های گزارشی را که باید در هر زمان وجود داشته باشند، محدود می‌کند. هنگامی که فایل های گزارش جدید ایجاد می شوند، اگر تعداد کل فایل های گزارش از حد تعیین شده بیشتر شود، اقدام مشخص شده انجام می شود. در اینجا می توانید حد مورد نظر را مشخص کنید. مقدار 0 چرخش گزارش را غیرفعال می کند."
 config_core_maintenance_mode: "حالت تعمیر و نگهداری فعال شود؟ True = آره؛ False = نکن [پیش فرض]. Disables everything other than the front. گاهی اوقات برای به روز رسانی CMS، چارچوب ها و غیره مفید است."
+config_core_outbound_request_log: "فایلی برای ثبت نتایج هر درخواست خروجی. نام فایل را مشخص کنید، یا برای غیرفعال کردن آن را خالی بگذارید."
 config_core_scan_cache_expiry: "phpMussel چه مدت باید نتایج اسکن را کش کند؟ مقدار تعداد ثانیه هایی است که نتایج اسکن را در حافظه پنهان می کند. پیش فرض 21600 ثانیه (6 ساعت) است؛ مقدار 0 باعث غیرفعال کردن کش نتایج اسکن می شود."
 config_core_scan_log: "نام فایلی که همه نتایج اسکن را در آن ثبت کنید. نام فایل را مشخص کنید، یا برای غیرفعال کردن آن را خالی بگذارید."
 config_core_scan_log_serialized: "نام فایلی که همه نتایج اسکن را در آن ثبت کنید (با استفاده از فرمت سریال). نام فایل را مشخص کنید، یا برای غیرفعال کردن آن را خالی بگذارید."

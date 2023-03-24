@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2023.03.06).
+# This file: Turkish language data (last modified: 2023.03.24).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -37,6 +37,7 @@ config_core_lang_override: "Mümkün olduğunda, HTTP_ACCEPT_LANGUAGE uyarınca 
 config_core_log_rotation_action: "Log rotasyonu, herhangi bir zamanda bulunması gereken günlük dosyalarının sayısını sınırlar. Yeni log dosyaları oluşturulduğunda, toplam log dosya sayısı belirtilen sınırı aşarsa, belirtilen eylem gerçekleştirilecektir. İstenen işlemi burada belirtebilirsiniz."
 config_core_log_rotation_limit: "Log rotasyonu, herhangi bir zamanda bulunması gereken günlük dosyalarının sayısını sınırlar. Yeni log dosyaları oluşturulduğunda, toplam log dosya sayısı belirtilen sınırı aşarsa, belirtilen eylem gerçekleştirilecektir. İstenen sınırı burada belirtebilirsiniz. 0 değeri, log rotasyonunu devre dışı bırakır."
 config_core_maintenance_mode: "Bakım modunu etkinleştirilsin mi? Doğru/True = Evet; Yanlış/False = Hayır [Varsayılan]. Ön uç haricindeki her şeyi devre dışı bırakır. Bazen CMS'nizi, çerçeveleri, vb. güncellenirken yararlıdır."
+config_core_outbound_request_log: "Giden isteklerin sonuçlarını günlüğe kaydetmek için bir dosya. Dosya adı belirtin veya devre dışı bırakmak için boş bırakın."
 config_core_scan_cache_expiry: "phpMussel tarama sonuçlarını ne kadar süreyle önbelleğe almalı? Değer, tarama sonuçlarının önbellekleneceği saniye sayısıdır. Varsayılan 21600 saniyedir (6 saat); 0 değeri, tarama sonuçlarını önbelleğe almayı devre dışı bırakır."
 config_core_scan_log: "Tüm tarama sonuçlarını günlüğe kaydetmek için dosyanın adı. Dosya adı belirtin veya devre dışı bırakmak için boş bırakın."
 config_core_scan_log_serialized: "Tüm tarama sonuçlarını kaydetmek için dosyanın adı (seri hale getirilmiş bir format kullanarak). Dosya adı belirtin veya devre dışı bırakmak için boş bırakın."

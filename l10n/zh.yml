@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (simplified) language data (last modified: 2023.03.06).
+# This file: Chinese (simplified) language data (last modified: 2023.03.24).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -37,6 +37,7 @@ config_core_lang_override: "尽可能根据HTTP_ACCEPT_LANGUAGE进行本地化�
 config_core_log_rotation_action: "日志轮转限制了任何时候应该存在的日志文件的数量。​当新的日志文件被创建时，如果日志文件的指定的最大数量已经超过，将执行指定的操作。​您可以在此处指定所需的操作。"
 config_core_log_rotation_limit: "日志轮转限制了任何时候应该存在的日志文件的数量。​当新的日志文件被创建时，如果日志文件的指定的最大数量已经超过，将执行指定的操作。​您可以在此指定所需的限制。​值为“0”将禁用日志轮转。"
 config_core_maintenance_mode: "启用维护模式？​True（真）=关闭；​False（假）=不关闭【标准】。​它停用一切以外前端。​有时候在更新CMS，框架，等时有用。"
+config_core_outbound_request_log: "用于记录任何出站请求结果的文件。​指定一个文件名，​或留空以禁用。"
 config_core_scan_cache_expiry: "多长时间应该phpMussel维持扫描结果？​数值是秒数为维持扫描结果。​标准是21600秒（6小时）； 一个<code>0</code>数值将停止维持扫描结果。"
 config_core_scan_log: "文件为记录在所有扫描结果。​指定一个文件名，​或留空以关闭。"
 config_core_scan_log_serialized: "文件为记录在所有扫描结果（它采用序列化格式）。​指定一个文件名，​或留空以关闭。"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2023.03.06).
+# This file: Norwegian language data (last modified: 2023.03.24).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -37,6 +37,7 @@ config_core_lang_override: "Lokaliser i henhold til HTTP_ACCEPT_LANGUAGE når de
 config_core_log_rotation_action: "Loggrotasjon begrenser antall loggfiler som bør eksistere til enhver tid. Når nye loggfiler blir opprettet, hvis det totale antall loggfiler overskrider den angitte grensen, den angitte handlingen vil bli utført. Du kan angi ønsket handling her."
 config_core_log_rotation_limit: "Loggrotasjon begrenser antall loggfiler som bør eksistere til enhver tid. Når nye loggfiler blir opprettet, hvis det totale antall loggfiler overskrider den angitte grensen, den angitte handlingen vil bli utført. Du kan angi ønsket grense her. En verdi på 0 deaktiverer loggrotasjon."
 config_core_maintenance_mode: "Aktiver vedlikeholdsmodus? True = Ja; False = Nei [Standardverdi]. Deaktiverer alt annet enn frontenden. Noen ganger nyttig for når du oppdaterer CMS, rammeverker, osv."
+config_core_outbound_request_log: "En fil for å logge resultatene av eventuelle utgående forespørsler. Angi et filnavn, eller la det være tomt for å deaktivere."
 config_core_scan_cache_expiry: "Hvor lenge skal phpMussel cacher resultatene av skanning? Verdi er antall sekunder å cache resultatene av skanning etter. Standard er 21600 sekunder (6 timer); En verdi på 0 vil deaktivere hurtigbufring av resultatene av skanning."
 config_core_scan_log: "Filnavn for fil å logge alle skanneresultatene til. Spesifiser et filnavn, eller la være tomt for å deaktivere."
 config_core_scan_log_serialized: "Filnavn for fil å logge alle skanneresultatene til (ved hjelp av et serialisert format). Spesifiser et filnavn, eller la være tomt for å deaktivere."

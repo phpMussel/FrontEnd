@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Thai language data (last modified: 2023.03.06).
+# This file: Thai language data (last modified: 2023.03.24).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -37,6 +37,7 @@ config_core_lang_override: "แปลตาม HTTP_ACCEPT_LANGUAGE ทุกค
 config_core_log_rotation_action: "หมุนเวียนล็อก (log rotation) จำกัด จำนวนล็อกไฟล์ที่ควรมีอยู่ ณ เวลาใดก็ได้. เมื่อล็อกไฟล์ใหม่ถูกสร้างขึ้น ถ้าจำนวนล็อกไฟล์ทั้งหมด เกินขีด จำกัด ที่ระบุ การดำเนินการที่ระบุจะถูกดำเนินการ. คุณสามารถระบุการกระทำที่ต้องการได้ที่นี่."
 config_core_log_rotation_limit: "หมุนเวียนล็อก (log rotation) จำกัด จำนวนล็อกไฟล์ที่ควรมีอยู่ ณ เวลาใดก็ได้. เมื่อล็อกไฟล์ใหม่ถูกสร้างขึ้น ถ้าจำนวนล็อกไฟล์ทั้งหมด เกินขีด จำกัด ที่ระบุ การดำเนินการที่ระบุจะถูกดำเนินการ. คุณสามารถระบุขีด จำกัด ที่ต้องการได้ที่นี่. ค่า 0 จะปิดใช้งานการหมุนเวียนล็อก (log rotation)."
 config_core_maintenance_mode: "เปิดใช้โหมดการบำรุงรักษาหรือไม่? True = เปิดใช้งานได้; False = ไม่เปิดใช้งาน [ค่าเริ่มต้น]. ปิดใช้งานทุกอย่างอื่นที่ไม่ใช่ front-end. บางครั้งมีประโยชน์สำหรับการอัปเดต CMS, framework, ฯลฯ."
+config_core_outbound_request_log: "ไฟล์สำหรับบันทึกผลลัพธ์ของคำขอขาออก. ระบุชื่อไฟล์หรือเว้นว่างไว้เพื่อปิดใช้งาน."
 config_core_scan_cache_expiry: "เวลาเท่าไรควร phpMussel แคชผลการสแกน? ค่าคือจำนวนวินาทีที่จะแคชผลการสแกน. ค่าเริ่มต้นคือ 21600 วินาที (6 ชั่วโมง); ค่า 0 จะปิดใช้งานแคชของผลการสแกน."
 config_core_scan_log: "ชื่อไฟล์สำหรับบันทึกผลการสแกนทั้งหมด. ระบุชื่อไฟล์หรือเว้นว่างไว้เพื่อปิดใช้งาน."
 config_core_scan_log_serialized: "ชื่อไฟล์สำหรับบันทึกผลการสแกนทั้งหมด (ใช้รูปแบบ serialized). ระบุชื่อไฟล์หรือเว้นว่างไว้เพื่อปิดใช้งาน."

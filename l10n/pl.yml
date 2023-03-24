@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2023.03.06).
+# This file: Polish language data (last modified: 2023.03.24).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -37,6 +37,7 @@ config_core_lang_override: "Kiedy to możliwe, lokalizuj według HTTP_ACCEPT_LAN
 config_core_log_rotation_action: "Rotacja dziennika ogranicza liczbę plików dziennika, które powinny istnieć jednocześnie. Po utworzeniu nowych plików dziennika, jeśli całkowita liczba plików dziennika przekroczy określony limit, zostanie wykonana określona akcja. Tutaj możesz określić żądaną akcję."
 config_core_log_rotation_limit: "Rotacja dziennika ogranicza liczbę plików dziennika, które powinny istnieć jednocześnie. Po utworzeniu nowych plików dziennika, jeśli całkowita liczba plików dziennika przekroczy określony limit, zostanie wykonana określona akcja. Tutaj możesz określić żądany limit. Wartość 0 spowoduje wyłączenie rotacja dziennika."
 config_core_maintenance_mode: "Włączyć tryb konserwacji? True (Prawdziwe) = Tak; False (Fałszywy) = Nie [Domyślna]. Wyłącza wszystko oprócz interfejsu użytkownika. Czasami przydatne w przypadku aktualizacji CMS, frameworków, itp."
+config_core_outbound_request_log: "Plik do rejestrowania wyników wszelkich żądań wychodzących. Podaj nazwę pliku lub pozostaw puste, aby wyłączyć."
 config_core_scan_cache_expiry: "Jak długo phpMussel powinien buforować wyniki skanowania? Wartość to liczba sekund, przez którą buforowane są wyniki skanowania. Domyślnie 21600 sekund (6 godzin); Wartość 0 spowoduje wyłączenie buforowania wyników skanowania."
 config_core_scan_log: "Nazwa pliku do rejestrowania wszystkich wyników skanowania Podaj nazwę pliku lub pozostaw puste, aby wyłączyć."
 config_core_scan_log_serialized: "Nazwa pliku do rejestrowania wszystkich wyników skanowania (przy użyciu formatu zserializowanego). Podaj nazwę pliku lub pozostaw puste, aby wyłączyć."
