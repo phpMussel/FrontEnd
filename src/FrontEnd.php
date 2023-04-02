@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2023.03.07).
+ * This file: Front-end handler (last modified: 2023.04.01).
  */
 
 namespace phpMussel\FrontEnd;
@@ -259,7 +259,7 @@ class FrontEnd
             'CustomFooter' => $this->Loader->Configuration['frontend']['custom_footer'],
 
             /** Current default language. */
-            'FE_Lang' => $this->Loader->Configuration['core']['lang'],
+            'FE_Lang' => $this->Loader->L10NAccepted,
 
             /** Font magnification. */
             'magnification' => $this->Loader->Configuration['frontend']['magnification'],
@@ -343,7 +343,7 @@ class FrontEnd
             't.classList.toggle("caret-up")}, 200, this)});</script>';
 
         /** A fix for correctly displaying LTR/RTL text. */
-        if (empty($this->Loader->L10N->Data['Text Direction']) || $this->Loader->L10N->Data['Text Direction'] !== 'rtl') {
+        if ($this->Loader->L10N->Directionality !== 'rtl') {
             $this->Loader->L10N->Data['Text Direction'] = 'ltr';
             $FE['FE_Align'] = 'left';
             $FE['FE_Align_Reverse'] = 'right';
@@ -352,6 +352,7 @@ class FrontEnd
             $FE['45deg'] = '45deg';
             $FE['90deg'] = '90deg';
         } else {
+            $this->Loader->L10N->Data['Text Direction'] = 'rtl';
             $FE['FE_Align'] = 'right';
             $FE['FE_Align_Reverse'] = 'left';
             $FE['FE_Align_Mode'] = 'rl';
@@ -2716,14 +2717,8 @@ class FrontEnd
      */
     private function ltrInRtf(string $String = ''): string
     {
-        /** Get direction. */
-        $Direction = (
-            !isset($this->Loader->L10N->Data['Text Direction']) ||
-            $this->Loader->L10N->Data['Text Direction'] !== 'rtl'
-        ) ? 'ltr' : 'rtl';
-
         /** If the page isn't RTL, the string should be returned verbatim. */
-        if ($Direction !== 'rtl') {
+        if ($this->Loader->L10N->Directionality !== 'rtl') {
             return $String;
         }
 
