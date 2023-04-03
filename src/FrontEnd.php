@@ -372,7 +372,7 @@ class FrontEnd
         /** A simple passthru for the front-end CSS. */
         if ($Page === 'css') {
             $this->eTaggable('frontend.css', function ($AssetData) use (&$FE) {
-                return $this->embedAssets($this->Loader->parse($FE, $this->Loader->parse($this->Loader->L10N->Data, $AssetData)));
+                return $this->embedAssets($this->Loader->parse($FE, $AssetData, true));
             });
         }
 
@@ -565,16 +565,10 @@ class FrontEnd
 
             if ($this->Permissions === 1) {
                 /** If the user has complete access. */
-                $FE['nav'] = $this->Loader->parse(
-                    $this->Loader->L10N->Data,
-                    $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_nav_complete_access.html')))
-                );
+                $FE['nav'] = $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_nav_complete_access.html')), true);
             } elseif ($this->Permissions === 2) {
                 /** If the user has logs access only. */
-                $FE['nav'] = $this->Loader->parse(
-                    $this->Loader->L10N->Data,
-                    $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_nav_logs_access_only.html')))
-                );
+                $FE['nav'] = $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_nav_logs_access_only.html')), true);
             } else {
                 /** No valid navigation state. */
                 $FE['nav'] = '';
@@ -597,10 +591,7 @@ class FrontEnd
                 $FE['2fa_status_spacer'] = empty($FE['state_msg']) ? '' : '<br /><br />';
 
                 /** Show them the two-factor authentication page. */
-                $FE['FE_Content'] = $this->Loader->parse(
-                    $this->Loader->L10N->Data,
-                    $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_2fa.html')))
-                );
+                $FE['FE_Content'] = $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_2fa.html')), true);
             } else {
                 /** Omit the log out and home links. */
                 $FE['bNav'] = '';
@@ -611,10 +602,7 @@ class FrontEnd
                 }
 
                 /** Show them the login page. */
-                $FE['FE_Content'] = $this->Loader->parse(
-                    $this->Loader->L10N->Data,
-                    $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_login.html')))
-                );
+                $FE['FE_Content'] = $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_login.html')), true);
             }
             /** Send output. */
             echo $this->sendOutput($FE);
@@ -797,10 +785,7 @@ class FrontEnd
             );
 
             /** Parse output. */
-            $FE['FE_Content'] = $this->Loader->parse(
-                $this->Loader->L10N->Data,
-                $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_home.html')))
-            ) . $MenuToggle;
+            $FE['FE_Content'] = $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_home.html')), true) . $MenuToggle;
 
             /** Send output. */
             echo $this->sendOutput($FE);
@@ -954,10 +939,7 @@ class FrontEnd
 
                     $RowInfo['AccID'] = bin2hex($RowInfo['AccUsername']);
                     $RowInfo['AccUsername'] = htmlentities($RowInfo['AccUsername']);
-                    $FE['Accounts'] .= $this->Loader->parse(
-                        $this->Loader->L10N->Data,
-                        $this->Loader->parse($RowInfo, $AccountsRow)
-                    );
+                    $FE['Accounts'] .= $this->Loader->parse($RowInfo, $AccountsRow, true);
                 }
                 unset($RowInfo, $LI);
             }
@@ -967,10 +949,7 @@ class FrontEnd
                 echo $FE['state_msg'];
             } else {
                 /** Parse output. */
-                $FE['FE_Content'] = $this->Loader->parse(
-                    $this->Loader->L10N->Data,
-                    $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_accounts.html')))
-                );
+                $FE['FE_Content'] = $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_accounts.html')), true);
 
                 /** Send output. */
                 echo $this->sendOutput($FE);
@@ -1283,7 +1262,7 @@ class FrontEnd
                             $DirValue['gridH'] = ($DirValue['gridH']) === 'gridHB' ? 'gridHA' : 'gridHB';
                             $ChoiceValue = $this->Loader->timeFormat($this->Loader->Time, $ChoiceValue);
                             if (strpos($ChoiceValue, '{') !== false) {
-                                $ChoiceValue = $this->Loader->parse($this->Loader->L10N->Data, $ChoiceValue);
+                                $ChoiceValue = $this->Loader->parse([], $ChoiceValue, true);
                             }
                             $this->replaceLabelWithL10N($ChoiceValue);
                             if ($DirValue['type'] === 'checkbox') {
@@ -1547,7 +1526,7 @@ class FrontEnd
                             $ThisDir['FieldOut'] .= sprintf(
                                 '<li><a dir="ltr" href="%s">%s</a></li>',
                                 $DirValue['Ref link'],
-                                $this->Loader->L10N->Data[$DirValue['Ref key']] ?? $DirValue['Ref key']
+                                $this->Loader->L10N->getString($DirValue['Ref key']) ?: $DirValue['Ref key']
                             );
                         }
                         $ThisDir['FieldOut'] .= "\n</ul>";
@@ -1570,10 +1549,7 @@ class FrontEnd
                     }
 
                     /** Finalise configuration row. */
-                    $FE['ConfigFields'] .= $this->Loader->parse(
-                        $this->Loader->L10N->Data,
-                        $this->Loader->parse($ThisDir, $ConfigurationRow)
-                    );
+                    $FE['ConfigFields'] .= $this->Loader->parse($ThisDir, $ConfigurationRow, true);
 
                     /** Rebuilding in order to strip out orphaned data. */
                     if (isset($NewConfig)) {
@@ -1617,10 +1593,7 @@ class FrontEnd
             $FE['Indexes'] .= '</ul>';
 
             /** Parse output. */
-            $FE['FE_Content'] = $this->Loader->parse(
-                $this->Loader->L10N->Data,
-                $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_config.html')))
-            ) . $MenuToggle;
+            $FE['FE_Content'] = $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_config.html')), true) . $MenuToggle;
 
             /** Send output. */
             echo $this->sendOutput($FE);
@@ -1687,10 +1660,7 @@ class FrontEnd
                 }
 
                 /** Parse output. */
-                $FE['FE_Content'] = $this->Loader->parse(
-                    $this->Loader->L10N->Data,
-                    $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_cache.html')))
-                ) . $MenuToggle;
+                $FE['FE_Content'] = $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_cache.html')), true) . $MenuToggle;
 
                 /** Send output. */
                 echo $this->sendOutput($FE);
@@ -1716,10 +1686,7 @@ class FrontEnd
             $FE['MaxFilesize'] = $this->Loader->readBytes($this->Loader->Configuration['files']['filesize_limit']);
 
             /** Parse output. */
-            $FE['FE_Content'] = $this->Loader->parse(
-                $this->Loader->L10N->Data,
-                $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_upload_test.html')))
-            );
+            $FE['FE_Content'] = $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_upload_test.html')), true);
 
             /** Send output. */
             echo $this->sendOutput($FE);
@@ -1810,20 +1777,14 @@ class FrontEnd
 
             /** Process quarantine files data. */
             foreach ($FilesInQuarantine as $ThisFile) {
-                $FE['FilesInQuarantine'] .= $this->Loader->parse(
-                    $this->Loader->L10N->Data,
-                    $this->Loader->parse($FE, $this->Loader->parse($ThisFile, $QuarantineRow))
-                );
+                $FE['FilesInQuarantine'] .= $this->Loader->parse($FE, $this->Loader->parse($ThisFile, $QuarantineRow), true);
             }
 
             /** Cleanup. */
             unset($ThisFile, $FilesInQuarantineCount, $FilesInQuarantine);
 
             /** Parse output. */
-            $FE['FE_Content'] = $this->Loader->parse(
-                $this->Loader->L10N->Data,
-                $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_quarantine.html')))
-            );
+            $FE['FE_Content'] = $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_quarantine.html')), true);
 
             /** Send output. */
             echo $this->sendOutput($FE);
@@ -1852,10 +1813,7 @@ class FrontEnd
             ) . '</div>';
 
             /** Parse output. */
-            $FE['FE_Content'] = $this->Loader->parse(
-                $this->Loader->L10N->Data,
-                $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_siginfo.html')))
-            );
+            $FE['FE_Content'] = $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_siginfo.html')), true);
 
             /** Send output. */
             echo $this->sendOutput($FE);
@@ -1926,10 +1884,7 @@ class FrontEnd
             }
 
             /** Parse output. */
-            $FE['FE_Content'] = $this->Loader->parse(
-                $this->Loader->L10N->Data,
-                $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_statistics.html')))
-            );
+            $FE['FE_Content'] = $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_statistics.html')), true);
 
             /** Send output. */
             echo $this->sendOutput($FE);
@@ -1945,10 +1900,7 @@ class FrontEnd
             $this->initialPrepwork($FE, $this->Loader->L10N->getString('link_logs'), $this->Loader->L10N->getString('tip_logs'), false);
 
             /** Parse output. */
-            $FE['FE_Content'] = $this->Loader->parse(
-                $this->Loader->L10N->Data,
-                $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_logs.html')))
-            );
+            $FE['FE_Content'] = $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_logs.html')), true);
 
             /** Initialise array for fetching logs data. */
             $FE['LogFiles'] = ['Files' => $this->logsRecursiveList(), 'Out' => ''];
@@ -2528,7 +2480,7 @@ class FrontEnd
                 $Template = substr($Template, 0, $BPos) . substr($Template, $EPos + strlen($Segment) + 13);
             }
         }
-        return $this->embedAssets($this->Loader->parse($this->Loader->L10N->Data, $this->Loader->parse($FE, $Template)));
+        return $this->embedAssets($this->Loader->parse($FE, $Template, true));
     }
 
     /**
@@ -2780,8 +2732,8 @@ class FrontEnd
     private function replaceLabelWithL10N(string &$Label): void
     {
         foreach (['', 'response_', 'label_', 'field_'] as $Prefix) {
-            if (isset($this->Loader->L10N->Data[$Prefix . $Label])) {
-                $Label = $this->Loader->L10N->getString($Prefix . $Label);
+            if (($Try = $this->Loader->L10N->getString($Prefix . $Label)) !== '') {
+                $Label = $Try;
                 return;
             }
         }
