@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2023.04.01).
+ * This file: Front-end handler (last modified: 2023.04.03).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1526,7 +1526,7 @@ class FrontEnd
 
                     /** Provide hints, useful for users to better understand the directive at hand. */
                     if (!empty($DirValue['hints'])) {
-                        $ThisDir['Hints'] = $this->arrayFromL10NDataToArray($DirValue['hints']);
+                        $ThisDir['Hints'] = $this->arrayFromL10nToArray($DirValue['hints']);
                         foreach ($ThisDir['Hints'] as $ThisDir['HintKey'] => $ThisDir['HintValue']) {
                             if (is_int($ThisDir['HintKey'])) {
                                 $ThisDir['FieldOut'] .= sprintf("\n<br /><br />%s", $ThisDir['HintValue']);
@@ -2793,7 +2793,7 @@ class FrontEnd
      * @param string|array $References The L10N data references.
      * @return array An array of L10N data.
      */
-    private function arrayFromL10NDataToArray($References): array
+    private function arrayFromL10nToArray($References): array
     {
         if (!is_array($References)) {
             $References = [$References];
@@ -2802,9 +2802,16 @@ class FrontEnd
         foreach ($References as $Reference) {
             if (isset($this->Loader->L10N->Data[$Reference])) {
                 $Reference = $this->Loader->L10N->Data[$Reference];
-            }
-            if (!is_array($Reference)) {
-                $Reference = [$Reference];
+            } elseif (is_array($this->Loader->L10N->Fallback)) {
+                if (isset($this->Loader->L10N->Fallback[$Reference])) {
+                    $Reference = $this->Loader->L10N->Fallback[$Reference];
+                }
+            } elseif ($this->Loader->L10N->Fallback instanceof \Maikuolan\Common\L10N) {
+                if (isset($this->Loader->L10N->Fallback->Data[$Reference])) {
+                    $Reference = $this->Loader->L10N->Fallback->Data[$Reference];
+                } elseif (is_array($this->Loader->L10N->Fallback->Fallback) && isset($this->Loader->L10N->Fallback->Fallback[$Reference])) {
+                    $Reference = $this->Loader->L10N->Fallback->Fallback[$Reference];
+                }
             }
             foreach ($Reference as $Key => $Value) {
                 if (is_int($Key)) {
