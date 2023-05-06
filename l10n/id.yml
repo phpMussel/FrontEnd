@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2023.03.24).
+# This file: Indonesian language data (last modified: 2023.05.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -171,7 +171,7 @@ field_vt_suspicion_level_heuristic_only: "Pindai hanya file dengan bobot heurist
 field_your_version: "Versi Anda"
 header_login: "Silahkan masuk untuk melanjutkan."
 hints_pdo_dsn:
- FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.id.md\#user-content-HOW_TO_USE_PDO" hreflang="id">Apa itu "PDO DSN"? Bagaimana saya bisa menggunakan PDO dengan phpMussel?</a></em>"
+ FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.id.md\#user-content-HOW_TO_USE_PDO" hreflang="id-ID">Apa itu "PDO DSN"? Bagaimana saya bisa menggunakan PDO dengan phpMussel?</a></em>"
 hints_xlists:
  Bagaimana ini bekerja.: "Jika sistem Anda hanya mengizinkan jenis file spesifik menjadi diupload, atau jika sistem Anda secara eksplisit menolak jenis file-file tertentu, menspesifikasikan jenis file dalam bertanda putih, bertanda hitam dan bertanda abu-abu dapat menaikkan kecepatan dari pemindaian dilakukan dengan mengizinkan skrip untuk mengabaikan jenis file tertentu. Format adalah CSV (nilai yang dipisahkan koma)."
  Urutan pemrosesan logis.: "Jika jenis file bertanda putih, jangan memindai dan jangan memblokir file, dan jangan memeriksa file terhadap daftar hitam atau daftar abu-abu. Jika jenis file bertanda hitam, jangan memindai file tetapi memblokir bagaimanapun, dan jangan memeriksa file terhadap daftar abu-abu. Jika daftar abu-abu yang kosong atau jika daftar abu-abu tidak kosong dan jenis file bertanda abu-abu, memindai file seperti biasa dan menentukan apakah untuk memblokir berdasarkan hasil memindai, tapi jika daftar abu-abu tidak kosong dan jenis file tidak bertanda abu-abu, memperlakukan seolah olah bertanda hitam, demikian tidak memindai tapi memblokir itu bagaimanapun."
@@ -350,7 +350,7 @@ tip_home: "Salam, {username}.<br />Ini adalah halaman utama untuk phpMussel bagi
 tip_logs: "Salam, {username}.<br />Pilih log dari daftar dibawah untuk melihat isi log."
 tip_quarantine: "Salam, {username}.<br />Halaman ini mencantumkan semua file yang saat ini ada di karantina dan memfasilitasi pengelolaan file-file tersebut."
 tip_quarantine_disabled: "Catat: Karantina saat ini dinonaktifkan, namun bisa diaktifkan melalui halaman konfigurasi."
-tip_see_the_documentation: "Lihat <a href="https://github.com/phpMussel/Docs/blob/master/readme.id.md\#user-content-SECTION5" hreflang="id" rel="noopener external">dokumentasi</a> untuk informasi tentang berbagai direktif konfigurasi dan tujuan mereka."
+tip_see_the_documentation: "Lihat <a href="https://github.com/phpMussel/Docs/blob/master/readme.id.md\#user-content-SECTION5" hreflang="id-ID" rel="noopener external">dokumentasi</a> untuk informasi tentang berbagai direktif konfigurasi dan tujuan mereka."
 tip_siginfo: "Salam, {username}.<br />Halaman informasi tanda tangan memberikan beberapa informasi dasar tentang sumber dan jenis tanda tangan yang saat ini aktif."
 tip_statistics: "Salam, {username}.<br />Halaman ini menunjukkan beberapa statistik penggunaan dasar mengenai instalasi phpMussel Anda."
 tip_statistics_disabled: "Catat: Pelacakan statistik saat ini dinonaktifkan, namun dapat diaktifkan melalui halaman konfigurasi."

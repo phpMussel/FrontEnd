@@ -1,0 +1,365 @@
+##\
+# This file is a part of the phpMussel\FrontEnd package.
+# Homepage: https://phpmussel.github.io/
+#
+# PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: Bulgarian language data (last modified: 2023.05.06).
+#
+# Regarding translations: My native language is English. Because this is a free
+# and open-source hobby project which generates zero income, and translatable
+# content is likely to change as the features and functionality supported by
+# the project changes, it doesn't make sense for me to spend money for
+# translations. Because I'm the sole author/developer/maintainer for the
+# project and I'm not a ployglot, any translations I produce are very likely to
+# contain errors. Sorry, but realistically, that won't ever change. If you find
+# any such errors/typos/mistakes/etc, your assistance to correct them would be
+# very much appreciated. Pull requests are invited and encouraged. Otherwise,
+# if you find these errors too much to handle, just stick with the original
+# English source. If a translation is irredeemably incomprehensible, let me
+# know which, and I can delete it. If you're not sure how to perform pull
+# requests, ask. I can help.
+##/
+
+checkbox_delete_orphaned_values: "Изтриване на осиротели стойности."
+config_core: "Обща конфигурация (всяка основна конфигурация, която не принадлежи към други категории)."
+config_core_default_timeout: "Стандартното време за изчакване, което да се използва за външни заявки. Стандарт = 12 секунди."
+config_core_delete_on_sight: "Инструктира скрипта да се опита незабавно да изтрие всички сканирани качени файлове, които отговарят на критерии за откриване, независимо дали чрез сигнатури или по друг начин. Файловете, определени като "чисти", няма да бъдат докосвани. В случай на архиви, целият архив ще бъде изтрит, независимо дали проблемният файл е само един от няколко файла, съдържащи се в архива. В случай на сканиране на качени файлове, обикновено не е необходимо да се активира тази директива, тъй като обикновено PHP автоматично ще изчисти съдържанието на своя кеш, когато изпълнението приключи, което означава, че обикновено изтрива всички файлове, качени през него на сървъра, освен ако вече не са били преместени, копирани или изтрити. Тази директива е добавена тук като допълнителна мярка за сигурност за онези, чиито копия на PHP може да не се държат винаги по очаквания начин. False (Невярно) = След сканиране оставете файла на мира [Стандарт]; True (Вярно) = След сканиране, ако не е чисто, изтрийте незабавно."
+config_core_disabled_channels: "Това може да се използва, за да се попречи на phpMussel да използва определени канали при изпращане на заявки."
+config_core_error_log: "Файл за регистриране на всички открити нефатални грешки. Посочете име на файл, или за да го деактивирате, оставете го празно."
+config_core_hide_version: "Да се скрие ли информацията за версията от регистрационните файлове и изхода на страницата? True (Вярно) = Да; False (Невярно) = Не [Стандарт]."
+config_core_ipaddr: "Къде да намеря IP адреса на входящи заявки? (Полезно за услуги като Cloudflare и други подобни). Стандарт = REMOTE_ADDR. ВНИМАНИЕ: Не променяйте това, ако не знаете какво правите!"
+config_core_lang: "Посочете стандартния език за phpMussel."
+config_core_lang_override: "Да се локализира според HTTP_ACCEPT_LANGUAGE, когато е възможно? True (Вярно) = Да [Стандарт]; False (Невярно) = Не."
+config_core_log_rotation_action: "Ротацията на регистрационните ограничава броя на регистрационните файлове, които трябва да съществуват във всеки един момент. Когато се създават нови регистрационни файлове, ако общият брой на регистрационните файлове надвиши указаното ограничение, определеното действие ще бъде извършено. Тук можете да посочите желаното действие."
+config_core_log_rotation_limit: "Ротацията на регистрационните ограничава броя на регистрационните файлове, които трябва да съществуват във всеки един момент. Когато се създават нови регистрационни файлове, ако общият брой на регистрационните файлове надвиши указаното ограничение, определеното действие ще бъде извършено. Тук можете да посочите желания лимит. Стойност 0 ще деактивира ротацията на регистрационните."
+config_core_maintenance_mode: "Активиране на режима на поддръжка? True (Вярно) = Да; False (Невярно) = Не [Стандарт]. Деактивира всичко, освен фронтенд. Понякога е полезно, когато актуализирате вашата CMS, рамки, и т.н."
+config_core_outbound_request_log: "Файл за регистриране на резултатите от всякакви изходящи заявки. Посочете име на файл, или за да го деактивирате, оставете го празно."
+config_core_scan_cache_expiry: "За колко време phpMussel трябва да кешира резултатите от сканирането? Стойността е броят секунди, за които да се кешират резултатите от сканирането. Стандартната стойност е 21600 секунди (6 часа); Стойност 0 ще забрани кеширането на резултатите от сканирането."
+config_core_scan_log: "Име на файла, в който да се регистрират всички резултати от сканирането. Посочете име на файл, или за да го деактивирате, оставете го празно."
+config_core_scan_log_serialized: "Име на файла, в който да се регистрират всички резултати от сканирането (използвайки сериализиран формат). Посочете име на файл, или за да го деактивирате, оставете го празно."
+config_core_statistics: "Проследяване на статистика за използване на phpMussel? True (Вярно) = Да; False (Невярно) = Не [Стандарт]."
+config_core_time_format: "Форматът за нотиране на дата/час, използван от phpMussel. Допълнителни опции могат да бъдат добавени при поискване."
+config_core_time_offset: "Отместване на часовата зона в минути."
+config_core_timezone: "Това се използва за указване на часовата зона, която да се използва (напр., Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, и т.н). Посочете „SYSTEM“, за да позволите на PHP да се справи с това автоматично."
+config_core_truncate: "Съкращаване на регистрационните файлове, когато достигнат определен размер? Стойността е максималният размер в Б/КБ/МБ/ГБ/ТБ, до който може да нарасне регистрационният файл, преди да бъде съкратен. Стандартната стойност от 0KB деактивира отрязването (регистрационните файлове могат да растат за неопределено време). Забележка: Отнася се за отделни регистрационните файлове! Размерът на регистрационните файлове не се разглежда колективно."
+config_experimental: "Нестабилна/Експериментален!"
+config_files: "The specifics of how to handle files when scanning."
+config_files_allow_leading_trailing_dots: "Allow leading and trailing dots in filenames? This can sometimes be used to hide files, or to trick some systems into allowing directory traversal. False (Невярно) = Don't allow [Стандарт]. True (Вярно) = Allow."
+config_files_archive_file_extensions: "Recognised archive file extensions (format is CSV; should only add or remove when problems occur; unnecessarily removing may cause false positives to appear for archive files, whereas unnecessarily adding will essentially whitelist what you're adding from attack specific detection; modify with caution; also note that this has no effect on what archives can and can't be analysed at content-level). The list, as is at default, lists those formats used most commonly across the majority of systems and CMS, but intentionally isn't necessarily comprehensive."
+config_files_block_control_characters: "Block any files containing any control characters (other than newlines)? If you're <em><strong>ONLY</strong></em> uploading plain-text, then you can turn this option on to provide some additional protection to your system. However, if you upload anything other than plain-text, turning this on may result in false positives. False (Невярно) = Don't block [Стандарт]; True (Вярно) = Block."
+config_files_block_encrypted_archives: "Detect and block encrypted archives? Because phpMussel isn't able to scan the contents of encrypted archives, it's possible that archive encryption may be employed by an attacker as a means of attempting to bypass phpMussel, anti-virus scanners and other such protections. Instructing phpMussel to block any archives that it discovers to be encrypted could potentially help reduce any risk associated with these such possibilities. False (Невярно) = Не; True (Вярно) = Да [Стандарт]."
+config_files_block_macros: "Try to block any files containing macros? Some types of documents and spreadsheets may contain executable macros, thus providing a dangerous potential malware vector. False (Невярно) = Don't block [Стандарт]; True (Вярно) = Block."
+config_files_can_contain_php_file_extensions: "A list of file extensions allowed to contain PHP code, separated by commas. If PHP chameleon attack detection is activated, files that contain PHP code, which have extensions that aren't on this list, will be detected as PHP chameleon attacks."
+config_files_chameleon_from_exe: "Search for executable headers in files that are neither executables nor recognised archives and for executables whose headers are incorrect. False (Невярно) = Off; True (Вярно) = On."
+config_files_chameleon_from_php: "Search for PHP headers in files that are neither PHP files nor recognised archives. False (Невярно) = Off; True (Вярно) = On."
+config_files_chameleon_to_archive: "Detect incorrect headers in archives and compressed files. Supported: BZ/BZIP2, GZ/GZIP, LZF, RAR, ZIP. False (Невярно) = Off; True (Вярно) = On."
+config_files_chameleon_to_doc: "Search for office documents whose headers are incorrect (Supported: DOC, DOT, PPS, PPT, XLA, XLS, WIZ). False (Невярно) = Off; True (Вярно) = On."
+config_files_chameleon_to_img: "Search for images whose headers are incorrect (Supported: BMP, DIB, PNG, GIF, JPEG, JPG, XCF, PSD, PDD, WEBP). False (Невярно) = Off; True (Вярно) = On."
+config_files_chameleon_to_pdf: "Search for PDF files whose headers are incorrect. False (Невярно) = Off; True (Вярно) = On."
+config_files_check_archives: "Attempt to check the contents of archives? False (Невярно) = Don't check; True (Вярно) = Check [Стандарт]. Supported: Zip (requires libzip), Tar, Rar (requires the rar extension)."
+config_files_corrupted_exe: "Corrupted files and parse errors. False (Невярно) = Ignore; True (Вярно) = Block [Стандарт]. Detect and block potentially corrupted PE (Portable Executable) files? Often (but not always), when certain aspects of a PE file are corrupted or can't be parsed correctly, it can be indicative of a viral infection. The processes used by most anti-virus programs to detect viruses in PE files require parsing those files in certain ways, which, if the programmer of a virus is aware of, will specifically try to prevent, in order to allow their virus to remain undetected."
+config_files_decode_threshold: "Threshold for the length of raw data within which decode commands should be detected (in case there are any noticeable performance issues while scanning). Стандарт = 512KB. Zero or null disables the threshold (removing any such limitation based on filesize)."
+config_files_filesize_archives: "Carry over filesize blacklisting/whitelisting to the contents of archives? False (Невярно) = Не (just greylist everything); True (Вярно) = Да [Стандарт]."
+config_files_filesize_limit: "Filesize limit in KB. 65536 = 64MB [Стандарт]; 0 = Не limit (always greylisted). Any (positive) numeric value accepted. This can be useful when your PHP configuration limits the amount of memory a process can hold or if your PHP configuration limits filesize of uploads."
+config_files_filesize_response: "What to do with files that exceed the filesize limit (if one exists). False (Невярно) = Whitelist; True (Вярно) = Blacklist [Стандарт]."
+config_files_filetype_archives: "Carry over filetype blacklisting/whitelisting to the contents of archives? False (Невярно) = Не (just greylist everything) [Стандарт]; True (Вярно) = Да."
+config_files_filetype_blacklist: "Blacklist:"
+config_files_filetype_greylist: "Greylist:"
+config_files_filetype_whitelist: "Whitelist:"
+config_files_max_files_in_archives: "Maximum number of files to scan from within archives before aborting the scan. Стандарт = 0 (no maximum)."
+config_files_max_recursion: "Maximum recursion depth limit for archives. Стандарт = 3."
+config_files_only_allow_images: "When set to true, any files encountered by the scanner which aren't images will be flagged immediately, without being scanned. This may help reduce the time needed to complete a scan in some cases. Set to false by default."
+config_files_scannable_threshold: "Threshold to the length of raw data that phpMussel is permitted to read and scan (in case there are any noticeable performance issues while scanning). Стандарт = 32MB. Zero or null value disables the threshold. Generally, this value shouldn't be less than the average filesize of file uploads that you want and expect to receive to your server or website, shouldn't be more than the filesize_limit directive, and shouldn't be more than roughly one fifth of the total allowable memory allocation granted to PHP via the "php.ini" configuration file. This directive exists to try to prevent phpMussel from using up too much memory (that'd prevent it from being able to successfully scan files above a certain filesize)."
+config_frontend: "Configuration for the front-end."
+config_frontend_custom_footer: "Inserted as HTML at the very bottom of all front-end pages. Това може да бъде полезно, в случай че искате да включите правно съобщение, връзка за контакт, бизнес информация, или подобни на всички подобни страници."
+config_frontend_custom_header: "Inserted as HTML at the very beginning of all front-end pages. Това може да бъде полезно, в случай че искате да включите лого на уебсайт, персонализирана заглавка, скриптове, или подобни на всички подобни страници."
+config_frontend_default_algo: "Defines which algorithm to use for all future passwords and sessions."
+config_frontend_frontend_log: "File for logging front-end login attempts. Посочете име на файл, или за да го деактивирате, оставете го празно."
+config_frontend_magnification: "Увеличението на шрифта. Стандарт = 1."
+config_frontend_max_login_attempts: "Maximum number of front-end login attempts. Стандарт = 5."
+config_frontend_numbers: "How do you prefer numbers to be displayed? Select the example that looks the most correct to you."
+config_frontend_theme: "The aesthetic to use for the phpMussel front-end."
+config_legal: "Configuration for legal requirements."
+config_legal_privacy_policy: "The address of a relevant privacy policy to be displayed in the footer of any generated pages. Specify a URL, or leave blank to disable."
+config_legal_pseudonymise_ip_addresses: "Pseudonymise IP addresses when logging? True (Вярно) = Да [Стандарт]; False (Невярно) = Не."
+config_quarantine: "Configuration for the quarantine."
+config_quarantine_quarantine_key: "phpMussel is able to quarantine blocked file uploads, if this is something you want it to do. Casual users of phpMussel that simply wish to protect their websites or hosting environment without having any interest in deeply analysing any flagged attempted file uploads should leave this functionality deactivated, but any users interested in further analysis of flagged attempted file uploads for malware research or for similar such things should enable this functionality. Quarantining of flagged attempted file uploads can sometimes also assist in debugging false positives, if this is something that frequently occurs for you. To disable quarantine functionality, simply leave the <code>quarantine_key</code> directive empty, or erase the contents of that directive if it isn't already empty. To enable quarantine functionality, enter some value into the directive. The <code>quarantine_key</code> is an important security feature of the quarantine functionality required as a means of preventing the quarantine functionality from being exploited by potential attackers and as a means of preventing any potential execution of data stored within the quarantine. The <code>quarantine_key</code> should be treated in the same manner as your passwords: The longer the better, and guard it tightly. For best effect, use in conjunction with <code>delete_on_sight</code>."
+config_quarantine_quarantine_max_files: "The maximum number of files that can exist in the quarantine. When new files are added to the quarantine, if this number is exceeded, old files will be deleted until the remainder no longer exceeds this number. Стандарт = 100."
+config_quarantine_quarantine_max_filesize: "The maximum filesize allowed for files to be quarantined. Files larger than the value specified will NOT be quarantined. This directive is important as a means of making it more difficult for any potential attackers to flood your quarantine with unwanted data potentially causing run-away data usage on your hosting service. Стандарт = 2MB."
+config_quarantine_quarantine_max_usage: "The maximum memory usage allowed for the quarantine. If the total memory used by the quarantine reaches this value, the oldest quarantined files will be deleted until the total memory used no longer reaches this value. This directive is important as a means of making it more difficult for any potential attackers to flood your quarantine with unwanted data potentially causing run-away data usage on your hosting service. Стандарт = 64MB."
+config_signatures: "Configuration for signatures, signature files, etc."
+config_signatures_active: "A list of the active signature files, delimited by commas. Забележка: Signature files must firstly be installed, before you can activate them. For the test files to work correctly, the signature files must be installed and activated."
+config_signatures_detect_adware: "Should phpMussel parse signatures for detecting adware? False (Невярно) = Не; True (Вярно) = Да [Стандарт]."
+config_signatures_detect_deface: "Should phpMussel parse signatures for detecting defacements and defacers? False (Невярно) = Не; True (Вярно) = Да [Стандарт]."
+config_signatures_detect_encryption: "Should phpMussel detect and block encrypted files? False (Невярно) = Не; True (Вярно) = Да [Стандарт]."
+config_signatures_detect_joke_hoax: "Should phpMussel parse signatures for detecting joke/hoax malware/viruses? False (Невярно) = Не; True (Вярно) = Да [Стандарт]."
+config_signatures_detect_packer_packed: "Should phpMussel parse signatures for detecting packers and packed data? False (Невярно) = Не; True (Вярно) = Да [Стандарт]."
+config_signatures_detect_pua_pup: "Should phpMussel parse signatures for detecting PUAs/PUPs? False (Невярно) = Не; True (Вярно) = Да [Стандарт]."
+config_signatures_detect_shell: "Should phpMussel parse signatures for detecting shell scripts? False (Невярно) = Не; True (Вярно) = Да [Стандарт]."
+config_signatures_fail_extensions_silently: "Should phpMussel report when extensions are missing? If <code>fail_extensions_silently</code> is deactivated, missing extensions will be reported on scanning, and if <code>fail_extensions_silently</code> is activated, missing extensions will be ignored, with scanning reporting for those files that there aren't any problems. Disabling this directive may potentially increase your security, but may also lead to an increase of false positives. False (Невярно) = deactivated; True (Вярно) = activated [Стандарт]."
+config_signatures_fail_silently: "Should phpMussel report when signatures files are missing or corrupted? If <code>fail_silently</code> is deactivated, missing and corrupted files will be reported on scanning, and if <code>fail_silently</code> is activated, missing and corrupted files will be ignored, with scanning reporting for those files that there aren't any problems. This should generally be left alone unless you're experiencing crashes or similar problems. False (Невярно) = deactivated; True (Вярно) = activated [Стандарт]."
+config_signatures_heuristic_threshold: "Some phpMussel signatures are intended to identify suspicious and potentially malicious indicators in files, without in themselves identifying those files as being malicious directly. This "threshold" value tells phpMussel the maximum weight allowed before flagging those files as malicious. The definition of weight in this context is the total number of suspicious and potentially malicious indicators identified. By default, this value will be set to 3. A lower value generally will result in a higher occurrence of false positives but a higher number of malicious files being flagged, whereas a higher value generally will result in a lower occurrence of false positives but a lower number of malicious files being flagged. It's generally best to leave this value at its default unless you're experiencing problems related to it."
+config_supplementary_cache_options: "Supplementary cache options. Забележка: Changing these values may potentially log you out."
+config_supplementary_cache_options_enable_apcu: "Specifies whether to try using APCu for caching. Стандарт = True."
+config_supplementary_cache_options_enable_memcached: "Specifies whether to try using Memcached for caching. Стандарт = False."
+config_supplementary_cache_options_enable_pdo: "Specifies whether to try using PDO for caching. Стандарт = False."
+config_supplementary_cache_options_enable_redis: "Specifies whether to try using Redis for caching. Стандарт = False."
+config_supplementary_cache_options_memcached_host: "Memcached host value. Стандарт = "localhost"."
+config_supplementary_cache_options_memcached_port: "Memcached port value. Стандарт = "11211"."
+config_supplementary_cache_options_pdo_dsn: "PDO DSN value. Стандарт = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+config_supplementary_cache_options_pdo_password: "PDO password."
+config_supplementary_cache_options_pdo_username: "PDO username."
+config_supplementary_cache_options_prefix: "The value specified here will be prepended to all cache entry keys. Стандарт = "phpMussel_". When multiple installations exist at the same server, this can be useful for keeping their caches separate from each other."
+config_supplementary_cache_options_redis_host: "Redis host value. Стандарт = "localhost"."
+config_supplementary_cache_options_redis_port: "Redis port value. Стандарт = "6379"."
+config_supplementary_cache_options_redis_timeout: "Redis timeout value. Стандарт = "2.5"."
+config_urlscanner: "Configuration for the URL scanner."
+config_urlscanner_cache_time: "How long (in seconds) should the results of API lookups be cached for? Default is 3600 seconds (1 hour)."
+config_urlscanner_google_api_key: "Enables API lookups to the Google Safe Browsing API when the necessary API key is defined."
+config_urlscanner_maximum_api_lookups: "Maximum allowable number of API lookups to perform per individual scan iteration. Because each additional API lookup will add to the total time required to complete each scan iteration, you may wish to stipulate a limitation in order to expedite the overall scan process. When set to 0, no such maximum allowable number will be applied. Set to 10 by default."
+config_urlscanner_maximum_api_lookups_response: "What to do if the maximum allowable number of API lookups is exceeded? False (Невярно) = Do nothing (continue processing) [Стандарт]; True (Вярно) = Flag/block the file."
+config_virustotal: "Configuration for Virus Total integration."
+config_virustotal_vt_public_api_key: "Optionally, phpMussel is able to scan files using the Virus Total API as a way to provide a greatly enhanced level of protection against viruses, trojans, malware and other threats. By default, scanning files using the Virus Total API is deactivated. To enable it, an API key from Virus Total is required. Due to the significant benefit that this could provide to you, it's something that I highly recommend enabling. Please be aware, however, that to use the Virus Total API, you <em><strong>MUST</strong></em> agree to their Terms of Service and you <em><strong>MUST</strong></em> adhere to all guidelines as per described by the Virus Total documentation! You are NOT permitted to use this integration feature UNLESS: You have read and agree to the Terms of Service of Virus Total and its API. You have read and you understand, at a minimum, the preamble of the Virus Total Public API documentation (everything after "VirusTotal Public API v2.0" but before "Contents")."
+config_virustotal_vt_quota_rate: "According to the Virus Total API documentation, "it is limited to at most 4 requests of any nature in any given 1 minute time frame. If you run a honeyclient, honeypot or any other automation that is going to provide resources to VirusTotal and not only retrieve reports you are entitled to a higher request rate quota". By default, phpMussel will strictly adhere to these limitations, but due to the possibility of these rate quotas being increased, these two directives are provided as a means for you to instruct phpMussel as to what limit it should adhere to. Unless you've been instructed to do so, it's not recommended for you to increase these values, but, if you've encountered problems relating to reaching your rate quota, decreasing these values <em><strong>MAY</strong></em> sometimes help you in dealing with these problems. Your rate limit is determined as <code>vt_quota_rate</code> requests of any nature in any given <code>vt_quota_time</code> minute time frame."
+config_virustotal_vt_quota_time: "(See description above)."
+config_virustotal_vt_suspicion_level: "By default, phpMussel will restrict which files it scans using the Virus Total API to those files that it considers "suspicious". You can optionally adjust this restriction by changing the value of the <code>vt_suspicion_level</code> directive."
+config_virustotal_vt_weighting: "Should phpMussel apply the results of scanning using the Virus Total API as detections or as detection weighting? This directive exists, because, although scanning a file using multiple engines (as Virus Total does) should result in an increased detection rate (and therefore in a higher number of malicious files being caught), it can also result in a higher number of false positives, and therefore, in some circumstances, it may be better to use the results of the scan as a confidence score rather than as a definitive conclusion. If a value of 0 is used, the results of scanning using the Virus Total API will be applied as detections, and therefore, if any engine used by Virus Total flags the file being scanned as being malicious, phpMussel will consider the file to be malicious. If any other value is used, the results of scanning using the Virus Total API will be applied as detection weighting, and therefore, the number of engines used by Virus Total that flag the file being scanned as being malicious will serve as a confidence score (or detection weighting) for whether or not the file being scanned should be considered malicious by phpMussel (the value used will represent the minimum confidence score or weight required in order to be considered malicious). A value of 0 is used by default."
+confirm_action: "Are you sure you want to "%s"?"
+confirm_delete: "Are you sure you want to delete "%s"?"
+field_2fa: "2FA code"
+field_clear_all: "Clear all"
+field_confirm: "Confirm"
+field_create_new_account: "Create new account"
+field_delete_account: "Delete account"
+field_delete_all: "Delete all"
+field_delete_file: "Delete"
+field_download_file: "Download"
+field_false: "False (Невярно)"
+field_file: "File"
+field_latest_version: "Latest Version"
+field_log_in: "Log In"
+field_log_rotation_archive: "Firstly archive, and then delete the oldest logfiles, until the limit is no longer exceeded."
+field_log_rotation_delete: "Delete the oldest logfiles, until the limit is no longer exceeded."
+field_more_fields: "More Fields"
+field_ok: "OK"
+field_options: "Options"
+field_password: "Password"
+field_permissions: "Permissions"
+field_quarantine_key: "Quarantine key"
+field_reset: "Reset"
+field_restore_file: "Restore"
+field_set_new_password: "Set new password"
+field_size: "Total Size:"
+field_size_GB: "GB"
+field_size_KB: "KB"
+field_size_MB: "MB"
+field_size_PB: "PB"
+field_size_TB: "TB"
+field_size_bytes:
+ - "byte"
+ - "bytes"
+field_system_timezone: "Use system default timezone."
+field_true: "True (Вярно)"
+field_update: "Update"
+field_update_signatures_files: "Update signature files"
+field_username: "Username"
+field_vt_suspicion_level_all: "Scan all files."
+field_vt_suspicion_level_executable: "Scan files with heuristic weight, executable files, and files potentially containing executable data.\nExamples of executable files, and files potentially containing executable data, includes Windows PE files, Linux ELF files, Mach-O files, DOCX files, ZIP files, etc."
+field_vt_suspicion_level_heuristic_only: "Scan only files with heuristic weight.\nFiles will be scanned only if they incur some heuristic weight. Heuristic weight can be incurred from signatures intended to catch common fingerprints associated with potential infection which don't necessarily guarantee infection. The lookup, in such cases, can serve to provide a second opinion for results which justify suspicion but don't otherwise provide any certainty."
+field_your_version: "Your Version"
+header_login: "Please log in to continue."
+hints_pdo_dsn:
+ FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">What is a "PDO DSN"? How can I use PDO with phpMussel?</a></em>"
+hints_xlists:
+ How this works.: "If your system allows only specific types of files to be uploaded, or if your system explicitly denies certain types of files, specifying those filetypes in whitelists, blacklists, and greylists can increase the speed at which scanning is performed by allowing the script to skip over certain filetypes. Format is CSV (comma separated values)."
+ Logical order of processing.: "If the filetype is whitelisted, don't scan and don't block the file, and don't check the file against the blacklist or the greylist. If the filetype is blacklisted, don't scan the file but block it anyway, and don't check the file against the greylist. If the greylist is empty or if the greylist is not empty and the filetype is greylisted, scan the file as per normal and determine whether to block it based on the results of the scan, but if the greylist is not empty and the filetype is not greylisted, treat the file as blacklisted, therefore not scanning it but blocking it anyway."
+info_some_useful_links: |
+ Some useful links:<br />
+     <ul class="pieul">
+       <li><span class="comCat">Tools, resources, etc for phpMussel.</span>
+         <ul class="comSub">
+           <li>{{Links.phpMussel.Issues}} – Issues page for phpMussel (support, assistance, и т.н).</li>
+           <li>{{Links.phpMussel.SigTool}} – Creates phpMussel signature files using the ClamAV signatures database.</li>
+           <li>{{Links.phpMussel.Extras}} – Various extras.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Tools, resources, etc for ClamAV.</span>
+         <ul class="comSub">
+           <li>{{Links.ClamavNet}} – ClamAV homepage (ClamAV® is an open source antivirus engine for detecting trojans, viruses, malware &amp; other malicious threats).</li>
+           <li>{{Links.SecuriteInfo}} – Computer security company that offers supplementary signatures for ClamAV.</li>
+           <li>{{Links.Sanesecurity}} – Computer security company that offers supplementary signatures for ClamAV.</li>
+           <li>{{Links.Malware Expert}} – Offers supplementary signatures for ClamAV and supplementary rules for ModSecurity.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Groups, forums, communities, etc.</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Facebook}} – PHP learning resources and discussion.</li>
+           <li>{{Links.MalwareTips}} – Useful malware focused discussion forums.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Other useful tools, resources, services, etc.</span>
+         <ul class="comSub">
+           <li>{{Links.PhishTank}} – Phishing database used by the phpMussel URL scanner.</li>
+           <li>{{Links.VirusTotal}} – VirusTotal is a free service for analysing suspicious files and URLs.</li>
+           <li>{{Links.Hybrid Analysis}} – Hybrid Analysis is a free malware analysis service provided by {{Links.Payload Security}}.</li>
+           <li>{{Links.Malwarebytes}} – Computer anti-malware specialists.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Informational and learning resources.</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Website}} – PHP learning resources and discussion.</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Vulnerability Charts</a> – Lists safe/unsafe versions of various packages (HHVM, PHP, phpMyAdmin, Python, и т.н).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Compatibility Charts</a> – Lists compatibility information for various packages (CIDRAM, phpMussel, и т.н).</li>
+         </ul>
+       </li>
+     </ul>
+
+label_active_config_file: "Active configuration file:"
+label_blocked: "Uploads blocked"
+label_branch: "Branch latest stable:"
+label_clientinfo: "Client information:"
+label_default: "Default"
+label_events: "Scan events"
+label_expires: "Expires:"
+label_extension: "Extension"
+label_external: "External"
+label_flagged: "Objects flagged"
+label_installed_available: "Installed/Available"
+label_is_available: "%s is available (%s)."
+label_is_available_class: "%s is available."
+label_is_not_available: "%s is not available."
+label_never: "Never"
+label_os: "Operating system used:"
+label_other: "Other"
+label_other-Active: "Active signature files"
+label_other-Since: "Start date"
+label_php: "PHP version used:"
+label_phpmussel: "phpMussel version used:"
+label_quarantined: "Uploads quarantined"
+label_sapi: "SAPI used:"
+label_scanned_objects: "Objects scanned"
+label_scanned_uploads: "Uploads scanned"
+label_see_also: "See also:"
+label_size_in_quarantine: "Size in quarantine:"
+label_stable: "Latest stable:"
+label_sysinfo: "System information:"
+label_unstable: "Latest unstable:"
+label_upload_date: "Upload date:"
+label_upload_hash: "Upload hash:"
+label_upload_origin: "Upload origin:"
+label_upload_size: "Upload size:"
+label_your_ip: "Your IP:"
+label_your_ua: "Your UA:"
+link_accounts: "Accounts"
+link_cache_data: "Cache Data"
+link_config: "Configuration"
+link_copy_to_clipboard: "Copy to clipboard"
+link_discussions: "Discussions"
+link_documentation: "Documentation"
+link_home: "Home"
+link_log_out: "Log Out"
+link_logs: "Logs"
+link_quarantine: "Quarantine"
+link_siginfo: "Signature Information"
+link_statistics: "Statistics"
+link_textmode: "Text formatting: <a href="%1$sfalse">Simple</a> – <a href="%1$strue">Fancy</a>"
+link_upload_test: "Upload Testing"
+logs_logfile_doesnt_exist: "Selected log file doesn't exist!"
+logs_no_logfile_selected: "No log file selected."
+logs_no_logfiles_available: "No log files available."
+max_login_attempts_exceeded: "Maximum number of login attempts exceeded; Отказан достъп."
+msg_subject_2fa: "Two-Factor Authentication"
+msg_template_2fa: |
+ <center><p>Здравейте, %s.<br /><br />
+ Your two-factor authentication code for logging into the phpMussel front-end:</p>
+ <h1>%s</h1>
+ <p>This code expires in 10 minutes.</p></center>
+previewer_days: "Days"
+previewer_hours: "Hours"
+previewer_minutes: "Minutes"
+previewer_months: "Months"
+previewer_seconds: "Seconds"
+previewer_weeks: "Weeks"
+previewer_years: "Years"
+response_2fa_invalid: "Incorrect 2FA code entered. Authentication failed."
+response_2fa_valid: "Successfully authenticated."
+response_accounts_already_exists: "An account with that username already exists!"
+response_accounts_created: "Account successfully created!"
+response_accounts_deleted: "Account successfully deleted!"
+response_accounts_doesnt_exist: "That account doesn't exist."
+response_accounts_password_updated: "Password successfully updated!"
+response_configuration_update_failed: "Failed to update configuration!"
+response_configuration_updated: "Configuration successfully updated."
+response_failed: "Failed"
+response_failed_to_create: "Failed to create!"
+response_failed_to_delete: "Failed to delete!"
+response_failed_to_update: "Failed to update!"
+response_file_deleted: "File successfully deleted!"
+response_file_restored: "File successfully restored!"
+response_login_invalid_password: "Login failure! Invalid password!"
+response_login_invalid_username: "Login failure! Username doesn't exist!"
+response_login_password_field_empty: "Password field empty!"
+response_login_username_field_empty: "Username field empty!"
+response_login_wrong_endpoint: "Wrong endpoint!"
+response_no: "No"
+response_restore_error_1: "Failed to restore! Corrupted file!"
+response_restore_error_2: "Failed to restore! Incorrect quarantine key!"
+response_statistics_cleared: "Statistics cleared."
+response_yes: "Yes"
+siginfo_key_CVE: "Signatures that deal with CVEs (Common Vulnerabilities and Exposures)."
+siginfo_key_Chameleon: "Signatures that deal with "chameleon attacks"."
+siginfo_key_FN: "Signatures working with filenames (as opposed to file contents)."
+siginfo_key_Fake: "Detections are fake, malicious variants of otherwise benign entities (software, scripts, и т.н)."
+siginfo_key_HEUR: "Signatures derived from heuristic data."
+siginfo_key_META: "Signatures working with file metadata (as opposed to file data)."
+siginfo_key_Other: "Unidentified or other."
+siginfo_key_Other_Metadata: "No metadata available."
+siginfo_key_Suspect: "Detections are suspected, but not confirmed (may involve combinations of various identifiers)."
+siginfo_key_Testfile: "Signatures for testfiles (i.e., not malicious detections)."
+siginfo_key_Total: "Total active signatures."
+siginfo_key_VT: "Signatures including or based upon data from Virus Total."
+siginfo_key_Werewolf: "Signatures that deal with "werewolf attacks"."
+siginfo_sub_Classes: "Count by signature file class"
+siginfo_sub_Files: "Count by signature file"
+siginfo_sub_MalwareTypes: "Count by infection or malware type"
+siginfo_sub_SigTypes: "Count by signature metadata"
+siginfo_sub_Targets: "Count by targeted vector"
+siginfo_sub_Vendors: "Count by signature vendor or source"
+siginfo_xkey: "Identified as „%s“."
+state_async_deny: "Permissions not adequate to perform asynchronous requests. Try logging in again."
+state_cache_is_empty: "The cache is empty."
+state_complete_access: "Complete access"
+state_default_password: "Внимание: Using default password!"
+state_loading: "Loading..."
+state_loadtime: "Page request completed in %s seconds."
+state_logged_in: "Logged in."
+state_logged_in_2fa_pending: "Logged in + 2FA pending."
+state_logged_out: "Logged out."
+state_logs_access_only: "Logs access only"
+state_maintenance_mode: "Внимание: Maintenance mode is activated!"
+state_password_not_valid: "Внимание: This account is not using a valid password!"
+state_quarantine:
+ - "There is %s file currently in quarantine."
+ - "There are %s files currently in quarantine."
+tip_2fa_sent: "An email containing a two-factor authentication code has been sent to your email address. Please confirm this code below to gain access to the front-end. If you didn't receive this email, try logging out, waiting for 10 minutes, and logging in again to receive a new email containing a new code."
+tip_accounts: "Здравейте, {username}.<br />The accounts page allows you to control who can access the phpMussel front-end."
+tip_cache_data: "Здравейте, {username}.<br />Here you can review the contents of the cache."
+tip_config: "Здравейте, {username}.<br />The configuration page allows you to modify the configuration for phpMussel from the front-end."
+tip_fe_cookie_warning: "Забележка: phpMussel uses a cookie to authenticate logins. By logging in, you give your consent for a cookie to be created and stored by your browser."
+tip_home: "Здравейте, {username}.<br />This is the homepage for the phpMussel front-end. Select a link from the navigation menu on the left to continue."
+tip_logs: "Здравейте, {username}.<br />Select a log file from the list below to view the contents of that log file."
+tip_quarantine: "Здравейте, {username}.<br />This page lists all files currently in quarantine and facilitates management of those files."
+tip_quarantine_disabled: "Забележка: Quarantine is currently deactivated, but can be activated via the configuration page."
+tip_see_the_documentation: "See the <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">documentation</a> for information about the various configuration directives and their purposes."
+tip_siginfo: "Здравейте, {username}.<br />The signature information page provides some basic information about the sources and types of the currently active signatures."
+tip_statistics: "Здравейте, {username}.<br />This page shows some basic usage statistics regarding your phpMussel installation."
+tip_statistics_disabled: "Забележка: Statistics tracking is currently deactivated, but can be activated via the configuration page."
+tip_upload_test: "Здравейте, {username}.<br />The upload testing page contains a standard file upload form, allowing you to test whether a file would normally be blocked by phpMussel when attempting to upload it."
+title_login: "Login"
+warning_javascript_required: "Внимание: Some front-end functionality requires JavaScript. To ensure that the entire front-end behaves as expected, enabling JavaScript is recommended."
+warning_signatures_1: "Внимание: No signature files are active!"
+warning_will_log_out_all_users: "Внимание: Proceeding will log out all users."
