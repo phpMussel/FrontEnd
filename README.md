@@ -47,7 +47,7 @@ unset($Web, $FrontEnd, $Scanner, $Loader);
 ```
 
 __*Screenshot:*__
-![Screenshot](https://raw.githubusercontent.com/phpMussel/extras/master/screenshots/frontend-v3.0.0-alpha2.png)
+![Screenshot](https://raw.githubusercontent.com/phpMussel/extras/master/screenshots/frontend-v3.4.0.png)
 
 ---
 
@@ -84,4 +84,4 @@ __*Screenshot:*__
 ---
 
 
-Last Updated: 7 October 2022 (2022.10.07).
+Last Updated: 9 May 2023 (2023.05.09).
