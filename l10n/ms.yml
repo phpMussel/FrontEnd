@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2023.05.04).
+# This file: Malay language data (last modified: 2023.05.13).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -153,7 +153,7 @@ field_quarantine_key: "Kunci kuarantin"
 field_reset: "Tetapkan semula"
 field_restore_file: "Pulihkan"
 field_set_new_password: "Tetapkan kata laluan baharu"
-field_size: "Jumlah Saiz:"
+field_size: "Jumlah saiz:"
 field_size_GB: "GB"
 field_size_KB: "KB"
 field_size_MB: "MB"

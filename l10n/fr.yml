@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2023.05.04).
+# This file: French language data (last modified: 2023.05.13).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -140,7 +140,7 @@ field_delete_file: "Supprimer"
 field_download_file: "Télécharger"
 field_false: "False (Faux)"
 field_file: "Fichier"
-field_latest_version: "Dernière Version"
+field_latest_version: "Dernière version"
 field_log_in: "Connecter"
 field_log_rotation_archive: "Tout d'abord archiver, puis supprimez les fichiers journaux les plus anciens, jusqu'à ce que la limite ne soit plus dépassée."
 field_log_rotation_delete: "Supprimez les fichiers journaux les plus anciens, jusqu'à ce que la limite ne soit plus dépassée."
@@ -170,7 +170,7 @@ field_username: "Nom d'Utilisateur"
 field_vt_suspicion_level_all: "Analysez tous les fichiers."
 field_vt_suspicion_level_executable: "Analysez les fichiers avec un poids heuristique, les fichiers exécutables, et les fichiers contenant potentiellement des données exécutables.\nExemples des fichiers exécutables, et de fichiers contenant potentiellement des données exécutables, incluent les fichiers Windows PE, les fichiers Linux ELF, les fichiers Mach-O, les fichiers DOCX, les fichiers ZIP, etc."
 field_vt_suspicion_level_heuristic_only: "Analyser seulement les fichiers avec un poids heuristique.\nLes fichiers seront analysés s'ils ont un poids heuristique, mais dans aucun autre cas. Le poids heuristique peut être induit par des signatures destinées à capturer des empreintes digitales communes associées à une infection potentielle qui ne garantissent pas nécessairement l'infection. L'utilisation de l'API, dans de tels cas, peut servir à fournir une deuxième opinion pour des résultats qui justifient des soupçons mais ne fournissent aucune certitude."
-field_your_version: "Votre Version"
+field_your_version: "Votre version"
 header_login: "Merci de vous connecter pour continuer."
 hints_pdo_dsn:
  FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.fr.md\#user-content-HOW_TO_USE_PDO" hreflang="fr-FR">Qu'est-ce qu'un «\_PDO DSN\_»\_? Comment utiliser PDO avec phpMussel\_?</a></em>"

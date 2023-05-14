@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2023.03.24).
+# This file: Polish language data (last modified: 2023.05.13).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -140,7 +140,7 @@ field_delete_file: "Usuń"
 field_download_file: "Pobierz"
 field_false: "False (Fałszywy)"
 field_file: "Plik"
-field_latest_version: "Ostatnia Wersja"
+field_latest_version: "Ostatnia wersja"
 field_log_in: "Zaloguj sie"
 field_log_rotation_archive: "Najpierw zarchiwizuj, a następnie usuń najstarsze pliki dziennika, dopóki limit nie zostanie przekroczony."
 field_log_rotation_delete: "Usuń najstarsze pliki dziennika, dopóki limit nie zostanie przekroczony."
@@ -153,7 +153,7 @@ field_quarantine_key: "Klucz kwarantanny"
 field_reset: "Resetowanie"
 field_restore_file: "Przywróć"
 field_set_new_password: "Ustaw nowe hasło"
-field_size: "Całkowity Rozmiar:"
+field_size: "Całkowity rozmiar:"
 field_size_GB: "GB"
 field_size_KB: "KB"
 field_size_MB: "MB"
@@ -171,7 +171,7 @@ field_username: "Nazwa Użytkownika"
 field_vt_suspicion_level_all: "Skanuj wszystkie pliki."
 field_vt_suspicion_level_executable: "Skanuj pliki z wagą heurystyczną, pliki wykonywalne, i pliki potencjalnie zawierające dane wykonywalne.\nPrzykłady plików wykonywalnych, i plików potencjalnie zawierających dane wykonywalne, obejmują pliki Windows PE, pliki Linux ELF, pliki Mach-O, pliki DOCX, pliki ZIP, itp."
 field_vt_suspicion_level_heuristic_only: "Skanuj tylko pliki z wagą heurystyczną.\nSkanowane będą tylko pliki z wagą heurystyczną. Waga heurystyczna może wynikać z sygnatur przeznaczonych do wychwytywania typowych odcisków palców związanych z potencjalną infekcją, które niekoniecznie gwarantują infekcję. Wyszukiwanie w takich przypadkach może posłużyć do uzyskania drugiej opinii w przypadku wyników, które uzasadniają podejrzenia, ale poza tym nie dają żadnej pewności."
-field_your_version: "Twoja Wersja"
+field_your_version: "Twoja wersja"
 header_login: "Proszę się zalogować, aby kontynuować."
 hints_pdo_dsn:
  FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Co to jest „PDO DSN”? Jak mogę używać PDO z phpMussel?</a></em>"

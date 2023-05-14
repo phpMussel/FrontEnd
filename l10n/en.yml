@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2023.05.06).
+# This file: English language data (last modified: 2023.05.13).
 ##/
 
 checkbox_delete_orphaned_values: "Delete orphaned values."
@@ -126,7 +126,7 @@ field_delete_file: "Delete"
 field_download_file: "Download"
 field_false: "False"
 field_file: "File"
-field_latest_version: "Latest Version"
+field_latest_version: "Latest version"
 field_log_in: "Log In"
 field_log_rotation_archive: "Firstly archive, and then delete the oldest logfiles, until the limit is no longer exceeded."
 field_log_rotation_delete: "Delete the oldest logfiles, until the limit is no longer exceeded."
@@ -139,7 +139,7 @@ field_quarantine_key: "Quarantine key"
 field_reset: "Reset"
 field_restore_file: "Restore"
 field_set_new_password: "Set new password"
-field_size: "Total Size:"
+field_size: "Total size:"
 field_size_GB: "GB"
 field_size_KB: "KB"
 field_size_MB: "MB"
@@ -156,7 +156,7 @@ field_username: "Username"
 field_vt_suspicion_level_all: "Scan all files."
 field_vt_suspicion_level_executable: "Scan files with heuristic weight, executable files, and files potentially containing executable data.\nExamples of executable files, and files potentially containing executable data, includes Windows PE files, Linux ELF files, Mach-O files, DOCX files, ZIP files, etc."
 field_vt_suspicion_level_heuristic_only: "Scan only files with heuristic weight.\nFiles will be scanned only if they incur some heuristic weight. Heuristic weight can be incurred from signatures intended to catch common fingerprints associated with potential infection which don't necessarily guarantee infection. The lookup, in such cases, can serve to provide a second opinion for results which justify suspicion but don't otherwise provide any certainty."
-field_your_version: "Your Version"
+field_your_version: "Your version"
 header_login: "Please log in to continue."
 hints_pdo_dsn:
  FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">What is a "PDO DSN"? How can I use PDO with phpMussel?</a></em>"

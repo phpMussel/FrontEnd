@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese (Brazil) language data (last modified: 2023.04.25).
+# This file: Portuguese (Brazil) language data (last modified: 2023.05.13).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -153,7 +153,7 @@ field_quarantine_key: "Chave de quarentena"
 field_reset: "Reiniciar"
 field_restore_file: "Restaurar"
 field_set_new_password: "Definir nova senha"
-field_size: "Tamanho Total:"
+field_size: "Tamanho total:"
 field_size_GB: "GB"
 field_size_KB: "KB"
 field_size_MB: "MB"

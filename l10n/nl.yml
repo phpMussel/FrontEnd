@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2023.05.04).
+# This file: Dutch language data (last modified: 2023.05.13).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -140,7 +140,7 @@ field_delete_file: "Verwijder"
 field_download_file: "Download"
 field_false: "False (Vals)"
 field_file: "Bestand"
-field_latest_version: "Laatste Versie"
+field_latest_version: "Laatste versie"
 field_log_in: "Inloggen"
 field_log_rotation_archive: "Eerst archiveer en verwijder vervolgens de oudste logbestanden, totdat de limiet niet langer wordt overschreden."
 field_log_rotation_delete: "Verwijder de oudste logbestanden, totdat de limiet niet langer wordt overschreden."
@@ -153,7 +153,7 @@ field_quarantine_key: "Quarantaine sleutel"
 field_reset: "Resetten"
 field_restore_file: "Herstellen"
 field_set_new_password: "Stel Nieuw Wachtwoord"
-field_size: "Totale Grootte:"
+field_size: "Totale grootte:"
 field_size_GB: "GB"
 field_size_KB: "KB"
 field_size_MB: "MB"
@@ -170,7 +170,7 @@ field_username: "Gebruikersnaam"
 field_vt_suspicion_level_all: "Scan alle bestanden."
 field_vt_suspicion_level_executable: "Scan bestanden met heuristisch gewicht, uitvoerbare bestanden, en bestanden die mogelijk uitvoerbare gegevens bevatten.\nVoorbeelden van uitvoerbare bestanden, en bestanden die mogelijk uitvoerbare gegevens bevatten, omvatten Windows PE-bestanden, Linux ELF-bestanden, Mach-O-bestanden, DOCX-bestanden, ZIP-bestanden, enz."
 field_vt_suspicion_level_heuristic_only: "Scan alleen bestanden met heuristisch gewicht.\nBestanden worden alleen gescand als ze een heuristisch gewicht hebben. Heuristisch gewicht kan worden verkregen uit signatures die bedoeld zijn om veelvoorkomende vingerafdrukken op te vangen die verband houden met een mogelijke infectie die niet noodzakelijkerwijs een infectie garandeert. De zoekopdracht kan in dergelijke gevallen dienen om een second opinion te geven voor resultaten die een verdenking rechtvaardigen, maar verder geen absoluut vertrouwen bieden."
-field_your_version: "Uw Versie"
+field_your_version: "Uw versie"
 header_login: "Inloggen om verder te gaan."
 hints_pdo_dsn:
  FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.nl.md\#user-content-HOW_TO_USE_PDO" hreflang="nl-NL">Wat is een "PDO DSN"? Hoe kan ik PDO gebruiken met phpMussel?</a></em>"

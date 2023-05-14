@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2023.05.03).
+# This file: Norwegian language data (last modified: 2023.05.13).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -140,7 +140,7 @@ field_delete_file: "Slett"
 field_download_file: "Nedlasting"
 field_false: "False (Falsk)"
 field_file: "Fil"
-field_latest_version: "Siste Versjon"
+field_latest_version: "Siste versjon"
 field_log_in: "Logg inn"
 field_log_rotation_archive: "Først arkiver, og deretter slett de eldste loggfiler, til grensen ikke overskrides."
 field_log_rotation_delete: "Slett de eldste loggfiler, til grensen ikke overskrides."
@@ -168,7 +168,7 @@ field_username: "Brukernavn"
 field_vt_suspicion_level_all: "Skann alle filer."
 field_vt_suspicion_level_executable: "Skann filer med heuristisk vekt, kjørbare filer, og filer som potensielt inneholder kjørbare data.\nEksempler på kjørbare filer, og filer som potensielt inneholder kjørbare data, inkluderer Windows PE-filer, Linux ELF-filer, Mach-O-filer, DOCX-filer, ZIP-filer, etc."
 field_vt_suspicion_level_heuristic_only: "Skann kun filer med heuristisk vekt.\nFiler skannes bare hvis de har en heuristisk vekt. Heuristisk vekt kan påløpe fra signaturer som er ment å fange opp vanlige fingeravtrykk assosiert med potensiell infeksjon som ikke nødvendigvis garanterer infeksjon. Oppslaget kan i slike tilfeller gi en avgjørende faktor for resultater som rettferdiggjør mistanke, men som ellers ikke gir absolutt tillit."
-field_your_version: "Din Versjon"
+field_your_version: "Din versjon"
 header_login: "Vennligst logg inn for å fortsette."
 hints_pdo_dsn:
  FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Hva er en «PDO DSN»? Hvordan kan jeg bruke PDO med phpMussel?</a></em>"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2023.05.04).
+# This file: Spanish language data (last modified: 2023.05.13).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -140,7 +140,7 @@ field_delete_file: "Eliminar"
 field_download_file: "Descargar"
 field_false: "False (Falso)"
 field_file: "Archivo"
-field_latest_version: "Ultima Versión"
+field_latest_version: "Ultima versión"
 field_log_in: "Iniciar sesión"
 field_log_rotation_archive: "Primero archiva, y luego eliminar los archivos de registro más antiguos, hasta que el límite ya no se exceda."
 field_log_rotation_delete: "Eliminar los archivos de registro más antiguos, hasta que el límite ya no se exceda."
@@ -153,7 +153,7 @@ field_quarantine_key: "Clave de cuarentena"
 field_reset: "Reiniciar"
 field_restore_file: "Restaurar"
 field_set_new_password: "Crear Nueva Contraseña"
-field_size: "Tamaño Total:"
+field_size: "Tamaño total:"
 field_size_GB: "GB"
 field_size_KB: "KB"
 field_size_MB: "MB"
@@ -170,7 +170,7 @@ field_username: "Usuario"
 field_vt_suspicion_level_all: "Escanear todos los archivos."
 field_vt_suspicion_level_executable: "Escanear los archivos con peso heurísticos, archivos ejecutables, y archivos que potencialmente contengan datos ejecutables.\nEjemplos de archivos ejecutables, y archivos que potencialmente contienen datos ejecutables, incluyen archivos Windows PE, archivos ELF Linux, archivos Mach-O, archivos DOCX, archivos ZIP, etc."
 field_vt_suspicion_level_heuristic_only: "Escanear solo archivos con peso heurísticos.\nLos archivos se escanearán solo si tienen algún peso heurístico. Se puede incurrir peso heurístico a través de firmas destinadas a capturar huellas digitales comunes asociadas con una infección potencial que no necesariamente garantiza una infección. La búsqueda, en tales casos, puede servir para proporcionar una segunda opinión para los resultados que justifican la sospecha pero que de otro modo no brindan ninguna certeza."
-field_your_version: "Tu Versión"
+field_your_version: "Tu versión"
 header_login: "Por favor iniciar sesión para continuar."
 hints_pdo_dsn:
  FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.es.md\#user-content-HOW_TO_USE_PDO" hreflang="es-ES">¿Qué es un "PDO DSN"? Cómo puedo usar PDO con phpMussel?</a></em>"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2023.03.24).
+# This file: Latvian language data (last modified: 2023.05.13).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -140,7 +140,7 @@ field_delete_file: "Izdzēst"
 field_download_file: "Lejupielādējiet"
 field_false: "False (Nepatiess)"
 field_file: "Fails"
-field_latest_version: "Jaunākā Versija"
+field_latest_version: "Jaunākā versija"
 field_log_in: "Ielogoties"
 field_log_rotation_archive: "Vispirms arhivējiet un pēc tam izdzēsiet vecākos logfailus, līdz ierobežojums vairs netiek pārsniegts."
 field_log_rotation_delete: "Izdzēsiet vecākos logfailus, līdz ierobežojums vairs netiek pārsniegts."
@@ -153,7 +153,7 @@ field_quarantine_key: "Karantīnas atslēga"
 field_reset: "Atiestatīt"
 field_restore_file: "Atjaunot"
 field_set_new_password: "Iestatiet jauno paroli"
-field_size: "Kopējais Lielums:"
+field_size: "Kopējais lielums:"
 field_size_GB: "GB"
 field_size_KB: "KB"
 field_size_MB: "MB"
@@ -170,7 +170,7 @@ field_username: "Lietotājvārds"
 field_vt_suspicion_level_all: "Skenējiet visus failus."
 field_vt_suspicion_level_executable: "Skenējiet failus ar heiristisku svaru, izpildāmos failus, un failus kas, iespējams, satur izpildāmos datus.\nIzpildāmie faili, un faili kas potenciāli satur izpildāmus datus, ietver Windows PE failus, Linux ELF failus, Mach-O failus, DOCX failus, ZIP failus, utt."
 field_vt_suspicion_level_heuristic_only: "Skenējiet tikai failus ar heiristisko svaru.\nTiks skenēti tikai faili ar heiristisko svaru. Heiristiskais svars var rasties no parakstiem, kas paredzēti, lai noķertu bieži sastopamus pirkstu nospiedumus, kas saistīti ar iespējamu infekciju, kas ne vienmēr garantē infekciju. Šādos gadījumos meklēšana var kalpot, lai sniegtu otru atzinumu par rezultātiem, kas pamato aizdomas, bet citādi nesniedz nekādu noteiktību."
-field_your_version: "Jūsu Versija"
+field_your_version: "Jūsu versija"
 header_login: "Lūdzu, ielogoties, lai turpinātu."
 hints_pdo_dsn:
  FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Kas ir "PDO DSN"? Kā es varu izmantot PDO ar phpMussel?</a></em>"

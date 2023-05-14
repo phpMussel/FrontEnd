@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2023.05.04).
+# This file: Italian language data (last modified: 2023.05.13).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -140,7 +140,7 @@ field_delete_file: "Eliminare"
 field_download_file: "Scaricare"
 field_false: "False (Falso)"
 field_file: "File"
-field_latest_version: "Ultima Versione"
+field_latest_version: "Ultima versione"
 field_log_in: "Accedi"
 field_log_rotation_archive: "In primo luogo archiviare e quindi, eliminare i file di log più vecchi, finché il limite non viene più superato."
 field_log_rotation_delete: "Elimina i file di log più vecchi, finché il limite non viene più superato."
@@ -153,7 +153,7 @@ field_quarantine_key: "Chiave di quarantena"
 field_reset: "Azzerare"
 field_restore_file: "Ripristinare"
 field_set_new_password: "Imposta una nuova password"
-field_size: "Dimensione Totale:"
+field_size: "Dimensione totale:"
 field_size_GB: "GB"
 field_size_KB: "KB"
 field_size_MB: "MB"
@@ -168,7 +168,7 @@ field_username: "Nome Utente"
 field_vt_suspicion_level_all: "Scansiona tutti i file."
 field_vt_suspicion_level_executable: "Scansiona file con peso euristico, file eseguibili, e file potenzialmente contenenti dati eseguibili.\nEsempi di file eseguibili e file potenzialmente contenenti dati eseguibili includono file Windows PE, file Linux ELF, file Mach-O, file DOCX, file ZIP, ecc."
 field_vt_suspicion_level_heuristic_only: "Analizza solo i file con peso euristico.\nI file verranno scansionati solo se hanno un peso euristico. Il peso euristico può derivare da firme destinate a rilevare impronte digitali comuni associate a potenziali infezioni che non garantiscono necessariamente l'infezione. L'uso dell'API, in questi casi, può servire a fornire una seconda opinione per risultati che giustificano il sospetto ma non forniscono alcuna certezza."
-field_your_version: "La Vostra Versione"
+field_your_version: "La vostra versione"
 header_login: "Per favore accedi per continuare."
 hints_pdo_dsn:
  FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.it.md\#user-content-HOW_TO_USE_PDO" hreflang="it-IT">Che cos'è un "DSN PDO"? Come posso usare PDO con phpMussel?</a></em>"

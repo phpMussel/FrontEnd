@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Russian language data (last modified: 2023.05.04).
+# This file: Russian language data (last modified: 2023.05.13).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -140,7 +140,7 @@ field_delete_file: "Удалить"
 field_download_file: "Скачать"
 field_false: "False (Ложный)"
 field_file: "Файл"
-field_latest_version: "Последняя Версия"
+field_latest_version: "Последняя версия"
 field_log_in: "Войдите"
 field_log_rotation_archive: "Сначала архивируйте, а затем удалите самые старые лог-файлы, пока лимит больше не будет превышен."
 field_log_rotation_delete: "Удалите самые старые лог-файлы, пока лимит больше не будет превышен."

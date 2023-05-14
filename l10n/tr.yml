@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2023.03.24).
+# This file: Turkish language data (last modified: 2023.05.13).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -153,7 +153,7 @@ field_quarantine_key: "Karantina anahtarı"
 field_reset: "Sıfırla"
 field_restore_file: "Canlandır"
 field_set_new_password: "Yeni Şifre Oluştur"
-field_size: "Toplam Boyut:"
+field_size: "Toplam boyut:"
 field_size_GB: "GB"
 field_size_KB: "KB"
 field_size_MB: "MB"
