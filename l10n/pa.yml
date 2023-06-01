@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Punjabi language data (last modified: 2023.05.13).
+# This file: Punjabi language data (last modified: 2023.06.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,8 +39,8 @@ config_core_log_rotation_limit: "Log rotation limits the number of log files tha
 config_core_maintenance_mode: "Enable maintenance mode? True = ਹਾਂ; False = ਨਹੀਂ [ਡਿਫਾਲਟ]. Disables everything other than the front-end. Sometimes useful for when updating your CMS, frameworks, etc."
 config_core_outbound_request_log: "A file for logging the results of any outbound requests. ਇੱਕ ਫਾਈਲ ਨਾਮ ਦਿਓ, ਜਾਂ ਅਯੋਗ ਕਰਨ ਲਈ ਖਾਲੀ ਛੱਡੋ।"
 config_core_scan_cache_expiry: "For how long should phpMussel cache the results of scanning? Value is the number of seconds to cache the results of scanning for. Default is 21600 seconds (6 hours); A value of 0 will disable caching the results of scanning."
-config_core_scan_log: "Filename of file to log all scanning results to. ਇੱਕ ਫਾਈਲ ਨਾਮ ਦਿਓ, ਜਾਂ ਅਯੋਗ ਕਰਨ ਲਈ ਖਾਲੀ ਛੱਡੋ।"
-config_core_scan_log_serialized: "Filename of file to log all scanning results to (using a serialised format). ਇੱਕ ਫਾਈਲ ਨਾਮ ਦਿਓ, ਜਾਂ ਅਯੋਗ ਕਰਨ ਲਈ ਖਾਲੀ ਛੱਡੋ।"
+config_core_scan_log: "ਸਾਰੇ ਸਕੈਨਿੰਗ ਨਤੀਜਿਆਂ ਨੂੰ ਲੌਗ ਕਰਨ ਲਈ ਫਾਈਲ ਦਾ ਨਾਮ। ਇੱਕ ਫਾਈਲ ਨਾਮ ਦਿਓ, ਜਾਂ ਅਯੋਗ ਕਰਨ ਲਈ ਖਾਲੀ ਛੱਡੋ।"
+config_core_scan_log_serialized: "ਸਾਰੇ ਸਕੈਨਿੰਗ ਨਤੀਜਿਆਂ ਨੂੰ ਲੌਗ ਕਰਨ ਲਈ ਫਾਈਲ ਦਾ ਨਾਮ (ਇੱਕ ਲੜੀਬੱਧ ਫਾਰਮੈਟ ਦੀ ਵਰਤੋਂ ਕਰਕੇ)। ਇੱਕ ਫਾਈਲ ਨਾਮ ਦਿਓ, ਜਾਂ ਅਯੋਗ ਕਰਨ ਲਈ ਖਾਲੀ ਛੱਡੋ।"
 config_core_statistics: "Track phpMussel usage statistics? True = ਹਾਂ; False = ਨਹੀਂ [ਡਿਫਾਲਟ]."
 config_core_time_format: "The date/time notation format used by phpMussel. Additional options may be added upon request."
 config_core_time_offset: "Timezone offset in minutes."
@@ -49,7 +49,7 @@ config_core_truncate: "Truncate log files when they reach a certain size? Value 
 config_experimental: "Unstable/Experimental!"
 config_files: "The specifics of how to handle files when scanning."
 config_files_allow_leading_trailing_dots: "Allow leading and trailing dots in filenames? This can sometimes be used to hide files, or to trick some systems into allowing directory traversal. False = Don't allow [ਡਿਫਾਲਟ]. True = Allow."
-config_files_archive_file_extensions: "Recognised archive file extensions (format is CSV; should only add or remove when problems occur; unnecessarily removing may cause false positives to appear for archive files, whereas unnecessarily adding will essentially whitelist what you're adding from attack specific detection; modify with caution; also note that this has no effect on what archives can and can't be analysed at content-level). The list, as is at default, lists those formats used most commonly across the majority of systems and CMS, but intentionally isn't necessarily comprehensive."
+config_files_archive_file_extensions: "ਮਾਨਤਾ ਪ੍ਰਾਪਤ ਆਰਕਾਈਵ ਫਾਈਲ ਐਕਸਟੈਂਸ਼ਨ (ਫਾਰਮੈਟ CSV ਹੈ; ਸਮੱਸਿਆ ਆਉਣ 'ਤੇ ਹੀ ਜੋੜਨਾ ਜਾਂ ਹਟਾਉਣਾ ਚਾਹੀਦਾ ਹੈ; ਬੇਲੋੜੇ ਹਟਾਉਣ ਨਾਲ ਆਰਕਾਈਵ ਫਾਈਲਾਂ ਲਈ ਝੂਠੇ ਸਕਾਰਾਤਮਕ ਦਿਖਾਈ ਦੇ ਸਕਦੇ ਹਨ, ਜਦੋਂ ਕਿ ਬੇਲੋੜੇ ਤੌਰ 'ਤੇ ਸ਼ਾਮਲ ਕਰਨ ਨਾਲ ਜ਼ਰੂਰੀ ਤੌਰ 'ਤੇ ਉਸ ਚੀਜ਼ ਨੂੰ ਵਾਈਟਲਿਸਟ ਕੀਤਾ ਜਾਵੇਗਾ ਜੋ ਤੁਸੀਂ ਹਮਲੇ ਖਾਸ ਖੋਜ ਤੋਂ ਜੋੜ ਰਹੇ ਹੋ; ਸਾਵਧਾਨੀ ਨਾਲ ਸੋਧੋ; ਇਹ ਵੀ ਨੋਟ ਕਰੋ ਕਿ ਸਮੱਗਰੀ-ਪੱਧਰ 'ਤੇ ਪੁਰਾਲੇਖਾਂ ਦਾ ਵਿਸ਼ਲੇਸ਼ਣ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ ਅਤੇ ਕੀ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ, ਇਸ 'ਤੇ ਇਸਦਾ ਕੋਈ ਪ੍ਰਭਾਵ ਨਹੀਂ ਹੈ). ਸੂਚੀ, ਮਿਆਰੀ ਦੇ ਤੌਰ 'ਤੇ, ਉਹਨਾਂ ਫਾਰਮੈਟਾਂ ਨੂੰ ਸੂਚੀਬੱਧ ਕਰਦੀ ਹੈ ਜੋ ਜ਼ਿਆਦਾਤਰ ਸਿਸਟਮਾਂ ਅਤੇ CMS ਵਿੱਚ ਆਮ ਤੌਰ 'ਤੇ ਵਰਤੇ ਜਾਂਦੇ ਹਨ, ਪਰ ਇਹ ਜ਼ਰੂਰੀ ਤੌਰ 'ਤੇ ਵਿਆਪਕ ਨਹੀਂ ਹੈ।"
 config_files_block_control_characters: "Block any files containing any control characters (other than newlines)? If you're <em><strong>ONLY</strong></em> uploading plain-text, then you can turn this option on to provide some additional protection to your system. However, if you upload anything other than plain-text, turning this on may result in false positives. False = Don't block [ਡਿਫਾਲਟ]; True = Block."
 config_files_block_encrypted_archives: "Detect and block encrypted archives? Because phpMussel isn't able to scan the contents of encrypted archives, it's possible that archive encryption may be employed by an attacker as a means of attempting to bypass phpMussel, anti-virus scanners and other such protections. Instructing phpMussel to block any archives that it discovers to be encrypted could potentially help reduce any risk associated with these such possibilities. False = ਨਹੀਂ; True = ਹਾਂ [ਡਿਫਾਲਟ]."
 config_files_block_macros: "Try to block any files containing macros? Some types of documents and spreadsheets may contain executable macros, thus providing a dangerous potential malware vector. False = Don't block [ਡਿਫਾਲਟ]; True = Block."

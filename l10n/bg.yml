@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bulgarian language data (last modified: 2023.05.21).
+# This file: Bulgarian language data (last modified: 2023.05.22).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -335,7 +335,7 @@ state_cache_is_empty: "Кешът е празен."
 state_complete_access: "Пълен достъп"
 state_default_password: "Внимание: Използване на стандартната парола!"
 state_loading: "Зареждане..."
-state_loadtime: "Page request completed in %s seconds."
+state_loadtime: "Заявката за страница е изпълнена за %s секунди."
 state_logged_in: "Вписан."
 state_logged_in_2fa_pending: "Вписан + 2FA предстои."
 state_logged_out: "Излязъл."
