@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2023.05.13).
+# This file: English language data (last modified: 2023.06.01).
 ##/
 
 checkbox_delete_orphaned_values: "Delete orphaned values."
@@ -25,8 +25,8 @@ config_core_log_rotation_limit: "Log rotation limits the number of log files tha
 config_core_maintenance_mode: "Enable maintenance mode? True = Yes; False = No [Default]. Disables everything other than the front-end. Sometimes useful for when updating your CMS, frameworks, etc."
 config_core_outbound_request_log: "A file for logging the results of any outbound requests. Specify a filename, or leave blank to disable."
 config_core_scan_cache_expiry: "For how long should phpMussel cache the results of scanning? Value is the number of seconds to cache the results of scanning for. Default is 21600 seconds (6 hours); A value of 0 will disable caching the results of scanning."
-config_core_scan_log: "Filename of file to log all scanning results to. Specify a filename, or leave blank to disable."
-config_core_scan_log_serialized: "Filename of file to log all scanning results to (using a serialised format). Specify a filename, or leave blank to disable."
+config_core_scan_log: "The name of the file to log all scanning results to. Specify a filename, or leave blank to disable."
+config_core_scan_log_serialized: "The name of the file to log all scanning results to (using a serialised format). Specify a filename, or leave blank to disable."
 config_core_statistics: "Track phpMussel usage statistics? True = Yes; False = No [Default]."
 config_core_time_format: "The date/time notation format used by phpMussel. Additional options may be added upon request."
 config_core_time_offset: "Timezone offset in minutes."
@@ -128,8 +128,8 @@ field_false: "False"
 field_file: "File"
 field_latest_version: "Latest version"
 field_log_in: "Log In"
-field_log_rotation_archive: "Firstly archive, and then delete the oldest logfiles, until the limit is no longer exceeded."
-field_log_rotation_delete: "Delete the oldest logfiles, until the limit is no longer exceeded."
+field_log_rotation_archive: "Firstly archive, and then delete the oldest log files, until the limit is no longer exceeded."
+field_log_rotation_delete: "Delete the oldest log files, until the limit is no longer exceeded."
 field_more_fields: "More Fields"
 field_ok: "OK"
 field_options: "Options"

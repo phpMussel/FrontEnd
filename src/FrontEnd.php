@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2023.05.21).
+ * This file: Front-end handler (last modified: 2023.06.01).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1979,7 +1979,7 @@ class FrontEnd
                 '<span class="txtRd">' . $this->NumberFormatter->format($FE['ProcessTime'], 3) . '</span>'
             );
 
-            /** Set logfile list or no logfiles available message. */
+            /** Set the log files list or the no log files available message. */
             $FE['LogFiles'] = $FE['LogFiles']['Out'] ?: $this->Loader->L10N->getString('logs_no_logfiles_available');
 
             /** Send output. */
@@ -2497,7 +2497,7 @@ class FrontEnd
     }
 
     /**
-     * A quicker way to add entries to the front-end logfile.
+     * A quicker way to add entries to the front-end log file.
      *
      * @param string $IPAddr The IP address triggering the log event.
      * @param string $User The user triggering the log event.

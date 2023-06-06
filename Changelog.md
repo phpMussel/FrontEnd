@@ -152,4 +152,4 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 
 [2023.04.01; Maikuolan]: Reworked the loadL10N method, how it handles HTTP_ACCEPT_LANGUAGE, improved rule assignment, added some assumptions for supported L10N, and added the ability to defer non-supported L10N to supported L10N where sufficiently similar to be acceptable.
 
-[2023.05.06~21; Maikuolan]: Added L10N for Bulgarian.
+[2023.05~06; Maikuolan]: Added L10N for Bulgarian and Czech.
