@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Czech language data (last modified: 2023.06.06).
+# This file: Czech language data (last modified: 2023.06.10).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -26,7 +26,7 @@
 
 checkbox_delete_orphaned_values: "Smazat osiřel hodnoty."
 config_core: "Obecná konfigurace (jakákoliv hlavní konfigurace, která nepatří do jiných kategorií)."
-config_core_default_timeout: "Výchozí časový limit pro externí požadavky? Standardní = 12 sekund."
+config_core_default_timeout: "Časový limit pro externí požadavky? Standardní = 12 sekund."
 config_core_delete_on_sight: "Dává skriptu pokyn, aby se pokusil okamžitě smazat všechna naskenovaná nahrání souborů, která splňují všechna detekční kritéria, ať už prostřednictvím podpisů nebo jinak. Souborů označených jako „čisté“ se nedotknete. V případě archivů bude smazán celý archiv bez ohledu zda je problematický soubor pouze jedním z několika souborů obsažených v archivu. V případě skenování nahraných souborů není obvykle nutné tuto direktivu povolit, protože PHP obvykle po dokončení provádění automaticky vyčistí obsah své mezipaměti, což znamená, že obvykle smaže všechny soubory nahrané přes něj na server, pokud již nebyly přesunuty, zkopírovány nebo smazány. Tato direktiva je zde přidána jako zvláštní opatření pro zabezpečení pro ty jejichž kopie PHP se nemusí vždy chovat očekávaným způsobem. False (Nepravdivé) = Po naskenování nechte soubor na pokoji [Standardní]; True (Pravdivé) = Po skenování, pokud není čisté, okamžitě smažte."
 config_core_disabled_channels: "To lze použít k zabránění phpMussel v používání konkrétních kanálů při odesílání požadavků."
 config_core_error_log: "Soubor pro protokolování všech zjištěných nezávažných chyb. Zadejte název souboru nebo ponechejte prázdné, chcete-li jej deaktivovat."
@@ -100,8 +100,8 @@ config_signatures_detect_joke_hoax: "Měl by phpMussel analyzovat podpisy pro de
 config_signatures_detect_packer_packed: "Měl by phpMussel analyzovat podpisy pro detekci packerů a zabalených dat? False (Nepravdivé) = Ne; True (Pravdivé) = Ano [Standardní]."
 config_signatures_detect_pua_pup: "Měl by phpMussel analyzovat podpisy pro detekci PUA/PUP? False (Nepravdivé) = Ne; True (Pravdivé) = Ano [Standardní]."
 config_signatures_detect_shell: "Měl by phpMussel analyzovat podpisy pro detekci shell skriptů? False (Nepravdivé) = Ne; True (Pravdivé) = Ano [Standardní]."
-config_signatures_fail_extensions_silently: "Měl by phpMussel hlásit, když rozšíření chybí? Pokud je <code>fail_extensions_silently</code> deaktivováno, chybějící přípony budou hlášeny při skenování, a pokud je <code>fail_extensions_silently</code> aktivováno, budou chybějící přípony ignorovány a skenování bude hlásit, že těchto souborů nejsou žádné problémy. Deaktivace této direktiva může potenciálně zvýšit vaši bezpečnost, ale může také vést ke zvýšení počtu falešných poplachů. False (Nepravdivé) = Deaktivováno; True (Pravdivé) = Aktivováno [Standardní]."
-config_signatures_fail_silently: "Měl by phpMussel hlásit, když soubory s podpisy chybí nebo jsou poškozené? Pokud je <code>fail_silently</code> deaktivováno, chybějící a poškozené soubory budou hlášeny při skenování, a pokud je <code>fail_silently</code> aktivováno, chybějící a poškozené soubory budou ignorovány a skenování bude hlásit, že těchto souborů nejsou žádné problémy. To by obecně mělo být ponecháno samo, pokud nedochází k pádům nebo podobným problémům. False (Nepravdivé) = Deaktivováno; True (Pravdivé) = Aktivováno [Standardní]."
+config_signatures_fail_extensions_silently: "Měl by phpMussel reportovat, když rozšíření chybí? Pokud je <code>fail_extensions_silently</code> deaktivováno, chybějící přípony budou hlášeny při skenování, a pokud je <code>fail_extensions_silently</code> aktivováno, budou chybějící přípony ignorovány a skenování bude reportuje, že těchto souborů nejsou žádné problémy. Deaktivace této direktiva může potenciálně zvýšit vaši bezpečnost, ale může také vést ke zvýšení počtu falešných poplachů. False (Nepravdivé) = Deaktivováno; True (Pravdivé) = Aktivováno [Standardní]."
+config_signatures_fail_silently: "Měl by phpMussel reportovat, když podpisové soubory chybí nebo jsou poškozené? Pokud je <code>fail_silently</code> deaktivováno, chybějící a poškozené soubory budou hlášeny při skenování, a pokud je <code>fail_silently</code> aktivováno, chybějící a poškozené soubory budou ignorovány a skenování bude reportuje, že těchto souborů nejsou žádné problémy. To by obecně mělo být ponecháno samo, pokud nedochází k pádům nebo podobným problémům. False (Nepravdivé) = Deaktivováno; True (Pravdivé) = Aktivováno [Standardní]."
 config_signatures_heuristic_threshold: "Některé podpisy phpMussel jsou určeny k identifikaci podezřelých a potenciálně škodlivých indikátorů v souborech, aniž by samy o sobě tyto soubory přímo identifikovaly jako škodlivé. Tato hodnota sděluje phpMussel maximální povolenou váhu, než tyto soubory označí jako škodlivé. Definice váhy je v tomto kontextu celkový počet identifikovaných podezřelých a potenciálně škodlivých indikátorů. Standardně bude tato hodnota nastavena na 3. Nižší hodnota obecně povede k vyššímu výskytu falešných poplachů, ale k vyššímu počtu označených škodlivých souborů, zatímco vyšší hodnota obecně povede k nižšímu výskytu falešných poplachů, ale nižšímu počtu označených škodlivých souborů. Obecně je nejlepší ponechat tuto hodnotu, pokud nemáte s tím související problémy."
 config_supplementary_cache_options: "Doplňkové možnosti mezipaměti. Poznámka: Změna těchto hodnot vás může potenciálně odhlásit."
 config_supplementary_cache_options_enable_apcu: "Určuje, zda zkusit použít APCu pro ukládání do mezipaměti. Standardní = True."
@@ -176,8 +176,8 @@ header_login: "Pro pokračování se prosím přihlašte."
 hints_pdo_dsn:
  FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Co je to „PDO DSN“? Jak mohu používat PDO s phpMussel?</a></em>"
 hints_xlists:
- Jak to funguje.: "Pokud váš systém umožňuje nahrávat pouze určité typy souborů, nebo pokud váš systém výslovně zakazuje určité typy souborů, zadáním těchto typů souborů v whitelist'ech, blacklist'ech, a greylist'ech můžete zvýšit rychlost provádění skenování tím, že skriptu umožníte přeskakovat určité typy souborů. Formát je CSV (hodnoty oddělené čárkou)."
- Logické pořadí zpracování.: "Pokud je typ souboru na whitelist, neskenujte a neblokujte soubor a neporovnejte soubor proti blacklist'em nebo greylist'em. Pokud je typ souboru na blacklist, neskenujte soubor, ale i tak jej zablokujte a neporovnejte soubor proti greylist'em. Pokud je greylist prázdný nebo pokud greylist není prázdný a typ souboru je na greylist'u, neskenujte soubor jako obvykle a na základě výsledky skenování určete, zda jej chcete zablokovat, ale pokud greylist není prázdný a typ souboru není na greylist'u, zacházejte se souborem jako na blacklist'u, tedy neskenujte jej, ale i tak jej zablokujte."
+ Jak to funguje.: "Pokud váš systém umožňuje nahrávat pouze určité typy souborů, nebo pokud váš systém výslovně zakazuje určité typy souborů, zadáním těchto typů souborů v whitelistech, blacklistech, a greylistech můžete zvýšit rychlost provádění skenování tím, že skriptu umožníte přeskakovat určité typy souborů. Formát je CSV (hodnoty oddělené čárkou)."
+ Logické pořadí zpracování.: "Pokud je typ souboru na whitelist, neskenujte a neblokujte soubor a neporovnejte soubor proti blacklistem nebo greylistem. Pokud je typ souboru na blacklist, neskenujte soubor, ale i tak jej zablokujte a neporovnejte soubor proti greylistem. Pokud je greylist prázdný nebo pokud greylist není prázdný a typ souboru je na greylistu, neskenujte soubor jako obvykle a na základě výsledky skenování určete, zda jej chcete zablokovat, ale pokud greylist není prázdný a typ souboru není na greylistu, zacházejte se souborem jako na blacklistu, tedy neskenujte jej, ale i tak jej zablokujte."
 info_some_useful_links: |
  Některé užitečné odkazy:<br />
      <ul class="pieul">
@@ -265,7 +265,7 @@ link_home: "Domovská stránka"
 link_log_out: "Odhlásit se"
 link_logs: "Protokoly"
 link_quarantine: "Karanténa"
-link_siginfo: "Informace o podpisu"
+link_siginfo: "Informace o podpisů"
 link_statistics: "Statistika"
 link_textmode: "Formátování textu: <a href="%1$sfalse">Jednoduchý</a> – <a href="%1$strue">Ozdobný</a>"
 link_upload_test: "Testování nahrání"
@@ -324,10 +324,10 @@ siginfo_key_Testfile: "Podpisy pro testovací soubory (tj., ne škodlivé detekc
 siginfo_key_Total: "Celkový počet aktivních podpisů."
 siginfo_key_VT: "Podpisy zahrnující nebo založené na datech z Virus Total."
 siginfo_key_Werewolf: "Podpisy, které se zabývají „útoky vlkodlaků“."
-siginfo_sub_Classes: "Počítání podle třídy souboru podpisu"
+siginfo_sub_Classes: "Počítání podle třídy souboru podpisů"
 siginfo_sub_Files: "Počítání podle podpisového souboru"
 siginfo_sub_MalwareTypes: "Počítání podle infekce nebo typu malwaru"
-siginfo_sub_SigTypes: "Počítání podle metadat podpisu"
+siginfo_sub_SigTypes: "Počítání podle metadat podpisů"
 siginfo_sub_Targets: "Počítání podle cíleného vektoru"
 siginfo_sub_Vendors: "Počítání podle prodejce nebo zdroj podpisů"
 siginfo_xkey: "Identifikováno jako „%s“."
@@ -357,7 +357,7 @@ tip_logs: "Ahoj, {username}.<br />Chcete-li zobrazit obsah tohoto souboru protok
 tip_quarantine: "Ahoj, {username}.<br />Tato stránka obsahuje seznam všech souborů aktuálně v karanténě a usnadňuje správu těchto souborů."
 tip_quarantine_disabled: "Poznámka: Karanténa je aktuálně deaktivována, ale lze ji aktivovat prostřednictvím konfigurační stránky."
 tip_see_the_documentation: "Informace o různých konfiguračních direktivách a jejich účelech najdete v <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">dokumentaci</a>."
-tip_siginfo: "Ahoj, {username}.<br />Stránka s informacemi o podpisu poskytuje některé základní informace o zdrojích a typech aktuálně aktivních podpisů."
+tip_siginfo: "Ahoj, {username}.<br />Stránka s informacemi o podpisů poskytuje některé základní informace o zdrojích a typech aktuálně aktivních podpisů."
 tip_statistics: "Ahoj, {username}.<br />Tato stránka zobrazuje některé základní statistiky používání týkající se vaší instalace phpMussel."
 tip_statistics_disabled: "Poznámka: Sledování statistik je aktuálně deaktivováno, ale lze jej aktivovat prostřednictvím konfigurační stránky."
 tip_upload_test: "Ahoj, {username}.<br />Stránka testování nahrání obsahuje standardní formulář pro nahrání souborů, který vám umožňuje otestovat, zda by byl soubor normálně blokován phpMussel při pokusu o jeho nahrání."

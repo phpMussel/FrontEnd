@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Punjabi language data (last modified: 2023.06.01).
+# This file: Punjabi language data (last modified: 2023.06.24).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,16 +24,16 @@
 # requests, ask. I can help.
 ##/
 
-checkbox_delete_orphaned_values: "Delete orphaned values."
+checkbox_delete_orphaned_values: "ਅਨਾਥ ਮੁੱਲਾਂ ਨੂੰ ਮਿਟਾਓ।"
 config_core: "General configuration (any core configuration not belonging to other categories)."
 config_core_default_timeout: "Default timeout to use for external requests? ਡਿਫਾਲਟ = 12 seconds."
 config_core_delete_on_sight: "Instructs the script to attempt to immediately delete any file uploads scanned which match any detection criteria, whether via signatures or otherwise. Files determined to be "clean" won't be touched. In the case of archives, the entire archive will be deleted, regardless of whether or not the offending file is only one of several files contained within the archive. In the case of scanning file uploads, it isn't usually necessary to enable this directive, because usually, PHP will automatically purge the contents of its cache when execution has finished, meaning it'll usually delete any files uploaded through it to the server unless they've been moved, copied or deleted already. This directive is added here as an extra measure of security for those whose copies of PHP mightn't always behave in the manner expected. False = After scanning, leave the file alone [ਡਿਫਾਲਟ]; True = After scanning, if not clean, delete immediately."
-config_core_disabled_channels: "This can be used to prevent phpMussel from using particular channels when sending requests."
+config_core_disabled_channels: "ਇਹ ਬੇਨਤੀਆਂ ਭੇਜਣ ਵੇਲੇ phpMussel ਨੂੰ ਖਾਸ ਚੈਨਲਾਂ ਦੀ ਵਰਤੋਂ ਕਰਨ ਤੋਂ ਰੋਕਣ ਲਈ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
 config_core_error_log: "A file for logging any non-fatal errors detected. ਇੱਕ ਫਾਈਲ ਨਾਮ ਦਿਓ, ਜਾਂ ਅਯੋਗ ਕਰਨ ਲਈ ਖਾਲੀ ਛੱਡੋ।"
-config_core_hide_version: "Hide version information from logs and page output? True = ਹਾਂ; False = ਨਹੀਂ [ਡਿਫਾਲਟ]."
+config_core_hide_version: "Hide version information from logs and page output? True = ਹਾਂ; False = ਨਹੀਂ [ਡਿਫਾਲਟ]।"
 config_core_ipaddr: "Where to find the IP address of connecting requests? (Useful for services such as Cloudflare and the likes). ਡਿਫਾਲਟ = REMOTE_ADDR. WARNING: Don't change this if you don't know what you're doing!"
-config_core_lang: "Specify the default language for phpMussel."
-config_core_lang_override: "Localise according to HTTP_ACCEPT_LANGUAGE whenever possible? True = ਹਾਂ [ਡਿਫਾਲਟ]; False = ਨਹੀਂ."
+config_core_lang: "phpMussel ਲਈ ਡਿਫਾਲਟ ਭਾਸ਼ਾ ਦਿਓ।"
+config_core_lang_override: "ਜਦੋਂ ਵੀ ਸੰਭਵ ਹੋਵੇ HTTP_ACCEPT_LANGUAGE ਦੇ ਅਨੁਸਾਰ ਸਥਾਨੀਕਰਨ ਕਰੀਏ? True = ਹਾਂ [ਡਿਫਾਲਟ]; False = ਨਹੀਂ।"
 config_core_log_rotation_action: "Log rotation limits the number of log files that should exist at any one time. When new log files are created, if the total number of log files exceeds the specified limit, the specified action will be performed. You can specify the desired action here."
 config_core_log_rotation_limit: "Log rotation limits the number of log files that should exist at any one time. When new log files are created, if the total number of log files exceeds the specified limit, the specified action will be performed. You can specify the desired limit here. A value of 0 will disable log rotation."
 config_core_maintenance_mode: "Enable maintenance mode? True = ਹਾਂ; False = ਨਹੀਂ [ਡਿਫਾਲਟ]. Disables everything other than the front-end. Sometimes useful for when updating your CMS, frameworks, etc."
@@ -41,10 +41,10 @@ config_core_outbound_request_log: "A file for logging the results of any outboun
 config_core_scan_cache_expiry: "For how long should phpMussel cache the results of scanning? Value is the number of seconds to cache the results of scanning for. Default is 21600 seconds (6 hours); A value of 0 will disable caching the results of scanning."
 config_core_scan_log: "ਸਾਰੇ ਸਕੈਨਿੰਗ ਨਤੀਜਿਆਂ ਨੂੰ ਲੌਗ ਕਰਨ ਲਈ ਫਾਈਲ ਦਾ ਨਾਮ। ਇੱਕ ਫਾਈਲ ਨਾਮ ਦਿਓ, ਜਾਂ ਅਯੋਗ ਕਰਨ ਲਈ ਖਾਲੀ ਛੱਡੋ।"
 config_core_scan_log_serialized: "ਸਾਰੇ ਸਕੈਨਿੰਗ ਨਤੀਜਿਆਂ ਨੂੰ ਲੌਗ ਕਰਨ ਲਈ ਫਾਈਲ ਦਾ ਨਾਮ (ਇੱਕ ਲੜੀਬੱਧ ਫਾਰਮੈਟ ਦੀ ਵਰਤੋਂ ਕਰਕੇ)। ਇੱਕ ਫਾਈਲ ਨਾਮ ਦਿਓ, ਜਾਂ ਅਯੋਗ ਕਰਨ ਲਈ ਖਾਲੀ ਛੱਡੋ।"
-config_core_statistics: "Track phpMussel usage statistics? True = ਹਾਂ; False = ਨਹੀਂ [ਡਿਫਾਲਟ]."
-config_core_time_format: "The date/time notation format used by phpMussel. Additional options may be added upon request."
-config_core_time_offset: "Timezone offset in minutes."
-config_core_timezone: "This is used to specify the timezone to use (e.g., Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, etc). Specify "SYSTEM" to let PHP handle this for you automatically."
+config_core_statistics: "phpMussel ਵਰਤੋਂ ਦੇ ਅੰਕੜਿਆਂ ਨੂੰ ਟ੍ਰੈਕ ਕਰੋ? True = ਹਾਂ; False = ਨਹੀਂ [ਡਿਫਾਲਟ]।"
+config_core_time_format: "phpMussel ਦੁਆਰਾ ਵਰਤਿਆ ਜਾਣ ਵਾਲਾ ਮਿਤੀ/ਸਮਾਂ ਨੋਟੇਸ਼ਨ ਫਾਰਮੈਟ। ਬੇਨਤੀ ਕਰਨ 'ਤੇ ਵਾਧੂ ਵਿਕਲਪ ਸ਼ਾਮਲ ਕੀਤੇ ਜਾ ਸਕਦੇ ਹਨ।"
+config_core_time_offset: "ਟਾਈਮ ਜ਼ੋਨ ਮਿੰਟਾਂ ਵਿੱਚ ਔਫਸੈੱਟ।"
+config_core_timezone: "ਇਹ ਵਰਤਣ ਲਈ ਸਮਾਂ ਖੇਤਰ ਨਿਰਧਾਰਤ ਕਰਨ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ (ਉਦਾਹਰਨ ਲਈ, Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, ਆਦਿ)। PHP ਨੂੰ ਤੁਹਾਡੇ ਲਈ ਇਸਨੂੰ ਆਪਣੇ ਆਪ ਸੰਭਾਲਣ ਦੇਣ ਲਈ "SYSTEM" ਨਿਸ਼ਚਿਤ ਕਰੋ।"
 config_core_truncate: "Truncate log files when they reach a certain size? Value is the maximum size in B/KB/MB/GB/TB that a log file may grow to before being truncated. The default value of 0KB disables truncation (log files can grow indefinitely). ਨੋਟ: Applies to individual log files! The size of log files is not considered collectively."
 config_experimental: "Unstable/Experimental!"
 config_files: "The specifics of how to handle files when scanning."
@@ -66,7 +66,7 @@ config_files_decode_threshold: "Threshold for the length of raw data within whic
 config_files_filesize_archives: "Carry over filesize blacklisting/whitelisting to the contents of archives? False = ਨਹੀਂ (just greylist everything); True = ਹਾਂ [ਡਿਫਾਲਟ]."
 config_files_filesize_limit: "Filesize limit in KB. 65536 = 64MB [ਡਿਫਾਲਟ]; 0 = ਨਹੀਂ limit (always greylisted). Any (positive) numeric value accepted. This can be useful when your PHP configuration limits the amount of memory a process can hold or if your PHP configuration limits filesize of uploads."
 config_files_filesize_response: "What to do with files that exceed the filesize limit (if one exists). False = Whitelist; True = Blacklist [ਡਿਫਾਲਟ]."
-config_files_filetype_archives: "Carry over filetype blacklisting/whitelisting to the contents of archives? False = ਨਹੀਂ (just greylist everything) [ਡਿਫਾਲਟ]; True = ਹਾਂ."
+config_files_filetype_archives: "Carry over filetype blacklisting/whitelisting to the contents of archives? False = ਨਹੀਂ (just greylist everything) [ਡਿਫਾਲਟ]; True = ਹਾਂ।"
 config_files_filetype_blacklist: "Blacklist:"
 config_files_filetype_greylist: "Greylist:"
 config_files_filetype_whitelist: "Whitelist:"
@@ -85,7 +85,7 @@ config_frontend_numbers: "How do you prefer numbers to be displayed? Select the 
 config_frontend_theme: "The aesthetic to use for the phpMussel front-end."
 config_legal: "Configuration for legal requirements."
 config_legal_privacy_policy: "The address of a relevant privacy policy to be displayed in the footer of any generated pages. Specify a URL, or leave blank to disable."
-config_legal_pseudonymise_ip_addresses: "Pseudonymise IP addresses when logging? True = ਹਾਂ [ਡਿਫਾਲਟ]; False = ਨਹੀਂ."
+config_legal_pseudonymise_ip_addresses: "Pseudonymise IP addresses when logging? True = ਹਾਂ [ਡਿਫਾਲਟ]; False = ਨਹੀਂ।"
 config_quarantine: "Configuration for the quarantine."
 config_quarantine_quarantine_key: "phpMussel is able to quarantine blocked file uploads, if this is something you want it to do. Casual users of phpMussel that simply wish to protect their websites or hosting environment without having any interest in deeply analysing any flagged attempted file uploads should leave this functionality deactivated, but any users interested in further analysis of flagged attempted file uploads for malware research or for similar such things should enable this functionality. Quarantining of flagged attempted file uploads can sometimes also assist in debugging false positives, if this is something that frequently occurs for you. To disable quarantine functionality, simply leave the <code>quarantine_key</code> directive empty, or erase the contents of that directive if it isn't already empty. To enable quarantine functionality, enter some value into the directive. The <code>quarantine_key</code> is an important security feature of the quarantine functionality required as a means of preventing the quarantine functionality from being exploited by potential attackers and as a means of preventing any potential execution of data stored within the quarantine. The <code>quarantine_key</code> should be treated in the same manner as your passwords: The longer the better, and guard it tightly. For best effect, use in conjunction with <code>delete_on_sight</code>."
 config_quarantine_quarantine_max_files: "The maximum number of files that can exist in the quarantine. When new files are added to the quarantine, if this number is exceeded, old files will be deleted until the remainder no longer exceeds this number. ਡਿਫਾਲਟ = 100."
@@ -182,7 +182,7 @@ info_some_useful_links: |
      <ul class="pieul">
        <li><span class="comCat">Tools, resources, etc for phpMussel.</span>
          <ul class="comSub">
-           <li>{{Links.phpMussel.Issues}} – Issues page for phpMussel (support, assistance, etc).</li>
+           <li>{{Links.phpMussel.Issues}} – Issues page for phpMussel (support, assistance, ਆਦਿ).</li>
            <li>{{Links.phpMussel.SigTool}} – Creates phpMussel signature files using the ClamAV signatures database.</li>
            <li>{{Links.phpMussel.Extras}} – Various extras.</li>
          </ul>
@@ -212,8 +212,8 @@ info_some_useful_links: |
        <li><span class="comCat">Informational and learning resources.</span>
          <ul class="comSub">
            <li>{{Links.PHP.Earth.Website}} – PHP learning resources and discussion.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Vulnerability Charts</a> – Lists safe/unsafe versions of various packages (HHVM, PHP, phpMyAdmin, Python, etc).</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Compatibility Charts</a> – Lists compatibility information for various packages (CIDRAM, phpMussel, etc).</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Vulnerability Charts</a> – Lists safe/unsafe versions of various packages (HHVM, PHP, phpMyAdmin, Python, ਆਦਿ).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Compatibility Charts</a> – Lists compatibility information for various packages (CIDRAM, phpMussel, ਆਦਿ).</li>
          </ul>
        </li>
      </ul>
@@ -313,7 +313,7 @@ response_yes: "Yes"
 siginfo_key_CVE: "Signatures that deal with CVEs (Common Vulnerabilities and Exposures)."
 siginfo_key_Chameleon: "Signatures that deal with "chameleon attacks"."
 siginfo_key_FN: "Signatures working with filenames (as opposed to file contents)."
-siginfo_key_Fake: "Detections are fake, malicious variants of otherwise benign entities (software, scripts, etc)."
+siginfo_key_Fake: "Detections are fake, malicious variants of otherwise benign entities (software, scripts, ਆਦਿ)."
 siginfo_key_HEUR: "Signatures derived from heuristic data."
 siginfo_key_META: "Signatures working with file metadata (as opposed to file data)."
 siginfo_key_Other: "Unidentified or other."
@@ -333,15 +333,15 @@ siginfo_xkey: "Identified as "%s"."
 state_async_deny: "Permissions not adequate to perform asynchronous requests. Try logging in again."
 state_cache_is_empty: "The cache is empty."
 state_complete_access: "Complete access"
-state_default_password: "Warning: Using default password!"
+state_default_password: "ਚੇਤਾਵਨੀ: ਡਿਫਾਲਟ ਪਾਸਵਰਡ ਵਰਤ ਰਿਹਾ ਹੈ!"
 state_loading: "Loading..."
 state_loadtime: "Page request completed in %s seconds."
 state_logged_in: "Logged in."
 state_logged_in_2fa_pending: "Logged in + 2FA pending."
 state_logged_out: "Logged out."
 state_logs_access_only: "Logs access only"
-state_maintenance_mode: "Warning: Maintenance mode is activated!"
-state_password_not_valid: "Warning: This account is not using a valid password!"
+state_maintenance_mode: "ਚੇਤਾਵਨੀ: ਮੇਨਟੇਨੈਂਸ ਮੋਡ ਸਰਗਰਮ ਹੈ!"
+state_password_not_valid: "ਚੇਤਾਵਨੀ: ਇਹ ਖਾਤਾ ਇੱਕ ਵੈਧ ਪਾਸਵਰਡ ਨਹੀਂ ਵਰਤ ਰਿਹਾ ਹੈ!"
 state_quarantine:
  - "There is %s file currently in quarantine."
  - "There are %s files currently in quarantine."
@@ -360,6 +360,6 @@ tip_statistics: "ਸਤਿ ਸ਼੍ਰੀ ਅਕਾਲ, {username}.<br />This p
 tip_statistics_disabled: "ਨੋਟ: Statistics tracking is currently deactivated, but can be activated via the configuration page."
 tip_upload_test: "ਸਤਿ ਸ਼੍ਰੀ ਅਕਾਲ, {username}.<br />The upload testing page contains a standard file upload form, allowing you to test whether a file would normally be blocked by phpMussel when attempting to upload it."
 title_login: "Login"
-warning_javascript_required: "Warning: Some front-end functionality requires JavaScript. To ensure that the entire front-end behaves as expected, enabling JavaScript is recommended."
-warning_signatures_1: "Warning: No signature files are active!"
-warning_will_log_out_all_users: "Warning: Proceeding will log out all users."
+warning_javascript_required: "ਚੇਤਾਵਨੀ: ਕੁਝ ਫਰੰਟ-ਐਂਡ ਕਾਰਜਕੁਸ਼ਲਤਾ ਲਈ JavaScript ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ। ਇਹ ਯਕੀਨੀ ਬਣਾਉਣ ਲਈ ਕਿ ਪੂਰਾ ਫਰੰਟ-ਐਂਡ ਉਮੀਦ ਅਨੁਸਾਰ ਵਿਵਹਾਰ ਕਰਦਾ ਹੈ, JavaScript ਨੂੰ ਸਮਰੱਥ ਕਰਨ ਦੀ ਸਿਫ਼ਾਰਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ।"
+warning_signatures_1: "ਚੇਤਾਵਨੀ: ਕੋਈ ਦਸਤਖਤ ਫਾਈਲਾਂ ਸਰਗਰਮ ਨਹੀਂ ਹਨ!"
+warning_will_log_out_all_users: "ਚੇਤਾਵਨੀ: ਅੱਗੇ ਵਧਣ ਨਾਲ ਸਾਰੇ ਉਪਭੋਗਤਾ ਲੌਗ ਆਊਟ ਹੋ ਜਾਣਗੇ।"
