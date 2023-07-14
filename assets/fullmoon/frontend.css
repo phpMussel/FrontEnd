@@ -121,3 +121,7 @@ input[type=button].reset{background:none;cursor:pointer;border:none;padding:0 12
 input[type=button].reset:hover,input[type=button].reset:active{color:#fcefcf}
 .tablend{margin-top:-2px}
 #logsTA{position:relative;top:-2px}
+::selection{background-color:rgba(204,102,102,.5);color:#fff}
+.txtGn::selection{color:#dfc}
+.txtOe::selection{color:#fec}
+.txtRd::selection{color:#fcc}
