@@ -154,4 +154,8 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 
 [2023.05~06; Maikuolan]: Added L10N for Bulgarian and Czech.
 
+### v3.4.1
+
 [2023.07.14; Maikuolan]: Added CSS for selection pseudo-element.
+
+[2023.06~07; Maikuolan]: Added L10N for Punjabi.
