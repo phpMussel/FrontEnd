@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Thai language data (last modified: 2023.03.24).
+# This file: Thai language data (last modified: 2023.08.22).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -306,7 +306,7 @@ response_login_wrong_endpoint: "จุดเชื่อมต่อ ไม่�
 response_no: "ไม่ได้"
 response_restore_error_1: "ไม่สามารถฟื้นฟู! ไฟล์ที่เสียหาย!"
 response_restore_error_2: "ไม่สามารถฟื้นฟู! คีย์กักกันไม่ถูกต้อง!"
-response_statistics_cleared: "สถิติลบแล้ว"
+response_statistics_cleared: "สถิติลบแล้ว."
 response_yes: "ใช่แล้ว"
 siginfo_key_CVE: "ลายเซ็นที่จัดการกับ CVE."
 siginfo_key_Chameleon: "ลายเซ็นที่จัดการกับ "กิ้งก่าโจมตี"."

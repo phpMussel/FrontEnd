@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Punjabi language data (last modified: 2023.07.31).
+# This file: Punjabi language data (last modified: 2023.08.22).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -306,7 +306,7 @@ response_login_wrong_endpoint: "ਗਲਤ ਅੰਤ ਬਿੰਦੂ!"
 response_no: "ਨਹੀਂ"
 response_restore_error_1: "ਰੀਸਟੋਰ ਕਰਨ ਵਿੱਚ ਅਸਫਲ! ਖਰਾਬ ਫਾਈਲ!"
 response_restore_error_2: "ਰੀਸਟੋਰ ਕਰਨ ਵਿੱਚ ਅਸਫਲ! ਗਲਤ ਕੁਆਰੰਟੀਨ ਕੁੰਜੀ!"
-response_statistics_cleared: "ਅੰਕੜੇ ਸਾਫ਼ ਕੀਤੇ ਗਏ।"
+response_statistics_cleared: "ਅੰਕੜੇ ਨੂੰ ਸਾਫ਼ ਕੀਤੇ ਗਏ।"
 response_yes: "ਹਾਂ"
 siginfo_key_CVE: "ਦਸਤਖਤ ਜੋ CVE ਨਾਲ ਨਜਿੱਠਦੇ ਹਨ (ਆਮ ਕਮਜ਼ੋਰੀਆਂ ਅਤੇ ਐਕਸਪੋਜ਼ਰ)।"
 siginfo_key_Chameleon: "ਦਸਤਖਤ ਜੋ "ਗਿਰਗਿਟ ਦੇ ਹਮਲੇ" ਨਾਲ ਨਜਿੱਠਦੇ ਹਨ।"

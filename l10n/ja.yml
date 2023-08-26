@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2023.08.10).
+# This file: Japanese language data (last modified: 2023.08.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -60,7 +60,7 @@ config_files_chameleon_to_archive: "ヘッダーが正しくないアーカイ�
 config_files_chameleon_to_doc: "ヘッダーが正しくないオフィスドキュメントを探します（ＤＯＣ、ＤＯＴ、ＰＰＳ、ＰＰＴ、ＸＬＡ、ＸＬＳ、ＷＩＺをサポートされています）。 False（偽） = オフ。 True（真） = オン。"
 config_files_chameleon_to_img: "ヘッダーが正しくない画像ファイルを探します（ＢＭＰ、ＤＩＢ、ＰＮＧ、ＧＩＦ、ＪＰＥＧ、ＪＰＧ、ＸＣＦ、ＰＳＤ、ＰＤＤ、ＷＥＢＰをサポートされています）。 False（偽） = オフ。 True（真） = オン。"
 config_files_chameleon_to_pdf: "ヘッダーが正しくないPDFファイルを探します。 False（偽） = オフ。 True（真） = オン。"
-config_files_check_archives: "アーカイブのコンテンツに対してチェックを試みるか否かについてです。 False（偽） = チェックしない; True（真） = チェックする（Default/デフォルト）。 Ｚｉｐ（ｌｉｂｚｉｐが必要）、Ｔａｒ、Ｒａｒ（ｒａｒ拡張が必要）をサポートされています。"
+config_files_check_archives: "アーカイブのコンテンツに対してチェックを試みるか否かについてです。 False（偽） = チェックしない; True（真） = チェックする（Default/デフォルト）。 Ｚｉｐ（ｌｉｂｚｉｐが必要です）、Ｔａｒ、Ｒａｒ（ｒａｒ拡張が必要です）をサポートされています。"
 config_files_corrupted_exe: "破損ファイルとエラー解析。​False（偽） = 無視する；​True（真） = ブロックする（Default/デフォルト）。​破損の可能性があるPEファイルをブロックし検出するか否か？​についてです。​PEファイルの一部が破損し、正しく分析できないことは珍しくなく、ウィルス感染をみるバロメーターになります。​PEファイル内のウィルスを検出するアンチウィルスプログラムは、PEファイルの解析を行いますが、ウィルスを作る側では、ウィルスが検出されないようそれを避けようとするものだからです。"
 config_files_decode_threshold: "デコード・コマンドが検出されるべき生データの長さの制限（スキャニング中に顕著な問題がある場合に必要に応じて設定）。​デフォルト＝５１２ＫＢ。​ゼロあるいは値なし（null）はしきい値を無効化します（ファイルサイズによる制限を取り除きます）。"
 config_files_filesize_archives: "ファイルサイズのブラックリスト化/ホワイトリスト化をアーカイブのコンテンツに持ち込むか否か？​False = いいえ（ただグレーリストすべて）; True = はい 「Default/デフォルト設定」。"

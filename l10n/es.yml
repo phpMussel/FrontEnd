@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2023.05.13).
+# This file: Spanish language data (last modified: 2023.08.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -308,7 +308,7 @@ response_login_wrong_endpoint: "¡Punto final equivocado!"
 response_no: "No"
 response_restore_error_1: "¡Error al restaurar! Archivo corrupto!"
 response_restore_error_2: "¡Error al restaurar! Clave de cuarentena incorrecta!"
-response_statistics_cleared: "Estadística anulado."
+response_statistics_cleared: "Estadísticas anuladas."
 response_yes: "Sí"
 siginfo_key_CVE: "Firmas que se ocupan de las CVE (Vulnerabilidades y Exposiciones Comunes)."
 siginfo_key_Chameleon: "Firmas que se ocupan de "ataques de camaleón"."
