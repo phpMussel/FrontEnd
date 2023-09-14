@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2023.06.01).
+# This file: English language data (last modified: 2023.09.13).
 ##/
 
 checkbox_delete_orphaned_values: "Delete orphaned values."
@@ -319,7 +319,7 @@ siginfo_xkey: "Identified as "%s"."
 state_async_deny: "Permissions not adequate to perform asynchronous requests. Try logging in again."
 state_cache_is_empty: "The cache is empty."
 state_complete_access: "Complete access"
-state_default_password: "Warning: Using default password!"
+state_default_password: "Warning: Using the default password!"
 state_loading: "Loading..."
 state_loadtime: "Page request completed in %s seconds."
 state_logged_in: "Logged in."

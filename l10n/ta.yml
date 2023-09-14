@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Tamil language data (last modified: 2023.08.22).
+# This file: Tamil language data (last modified: 2023.09.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -262,7 +262,7 @@ link_discussions: "விவாதங்கள்"
 link_documentation: "ஆவணப்படுத்தல்"
 link_home: "முகப்பு"
 link_log_out: "வெளியேறு"
-link_logs: "பதிவு கோப்புகள்"
+link_logs: "பதிவு கோப்புகள்"
 link_quarantine: "தனிமைப்படுத்துதல்"
 link_siginfo: "கையொப்ப தகவல்"
 link_statistics: "புள்ளியியல்"

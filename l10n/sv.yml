@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2023.03.24).
+# This file: Swedish language data (last modified: 2023.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -166,7 +166,7 @@ field_update: "Uppdatera"
 field_update_signatures_files: "Uppdatera signaturfiler"
 field_username: "Användarnamn"
 field_vt_suspicion_level_all: "Skanna alla filer."
-field_vt_suspicion_level_executable: "Skanna filer med heuristisk vikt, körbara filer, och filer som potentiellt innehåller körbara data.\nExempel på körbara filer, och filer som potentiellt innehåller körbara data, inkluderar Windows PE-filer, Linux ELF-filer, Mach-O-filer, DOCX-filer, ZIP-filer, etc."
+field_vt_suspicion_level_executable: "Skanna filer med heuristisk vikt, körbara filer, och filer som potentiellt innehåller körbara data.\nExempel på körbara filer, och filer som potentiellt innehåller körbara data, inkluderar Windows PE-filer, Linux ELF-filer, Mach-O-filer, DOCX-filer, ZIP-filer, osv."
 field_vt_suspicion_level_heuristic_only: "Skanna endast filer med heuristisk vikt.\nFiler skannas endast om de har heuristisk vikt. Heuristisk vikt kan uppstå från signaturer som är avsedda att fånga vanliga fingeravtryck associerade med potentiell infektion som inte nödvändigtvis garanterar infektion. Uppslagningen, i sådana fall, kan tjäna till att ge en andra åsikt för resultat som motiverar misstankar men som annars inte ger absolut förtroende."
 field_your_version: "Din version"
 header_login: "Snälla logga in för att fortsätta."
