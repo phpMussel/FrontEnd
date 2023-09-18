@@ -172,6 +172,8 @@ field:
 hints_pdo_dsn:
  Gereelde vrae.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Wat is 'n "PDO DSN"? Hoe kan ek PDO met phpMussel gebruik?</a></em>"
 title_login: "Inteken"
-warning_javascript_required: "Waarskuwing: Sommige front-end funksionaliteit vereis JavaScript. Om te verseker dat die hele front-end optree soos verwag, word dit aanbeveel om JavaScript te aktiveer."
-warning_signatures_1: "Waarskuwing: Geen handtekeninglêers is aktief nie!"
-warning_will_log_out_all_users: "Waarskuwing: As jy voortgaan, sal alle gebruikers uitteken."
+warning:
+ JavaScript required: "Waarskuwing: Sommige front-end funksionaliteit vereis JavaScript. Om te verseker dat die hele front-end optree soos verwag, word dit aanbeveel om JavaScript te aktiveer."
+ No signature files are active: "Waarskuwing: Geen handtekeninglêers is aktief nie!"
+ Proceeding will log out all users: "Waarskuwing: As jy voortgaan, sal alle gebruikers uitteken."
+ Using the default password: "Waarskuwing: Verstekwagwoord word gebruik!"

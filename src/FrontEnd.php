@@ -284,13 +284,13 @@ class FrontEnd
                 '<form action="?phpmussel-page=logout" method="POST" style="display:inline">%s%s<input type="submit" id="logoutbutton" value="%s" class="auto" /></form>',
                 '<input name="hostname" id="hostnameoverride" type="hidden" value="" />',
                 '<script type="text/javascript">document.getElementById(\'hostnameoverride\').value=window.location.hostname;</script>',
-                $this->Loader->L10N->getString('link_log_out')
+                $this->Loader->L10N->getString('link.Log Out')
             ),
 
             /** Used to return home. */
             'HomeButton' => sprintf(
                 '<form action="?" method="GET" style="display:inline"><input type="submit" id="homebutton" value="%s" class="auto" /></form>',
-                $this->Loader->L10N->getString('link_home')
+                $this->Loader->L10N->getString('link.Home')
             ),
 
             /** The user agent of the current request. */
@@ -326,7 +326,7 @@ class FrontEnd
 
         /** Warns if no signature files are active. */
         if (empty($this->Loader->Configuration['signatures']['active'])) {
-            $FE['Warnings'][] = $this->Loader->L10N->getString('warning_signatures_1');
+            $FE['Warnings'][] = $this->Loader->L10N->getString('warning.No signature files are active');
         }
 
         /** Prepare warnings. */
@@ -615,7 +615,7 @@ class FrontEnd
          */
         if ($Page === '') {
             /** Page initial prepwork. */
-            $this->initialPrepwork($FE, $this->Loader->L10N->getString('link_home'), $this->Loader->L10N->getString('tip_home'), false);
+            $this->initialPrepwork($FE, $this->Loader->L10N->getString('link.Home'), $this->Loader->L10N->getString('tip_home'), false);
 
             /** phpMussel version used. */
             $FE['ScriptVersion'] = $this->Loader->ScriptVersion;
@@ -861,7 +861,7 @@ class FrontEnd
 
             if (!$FE['ASYNC']) {
                 /** Page initial prepwork. */
-                $this->initialPrepwork($FE, $this->Loader->L10N->getString('link_accounts'), $this->Loader->L10N->getString('tip_accounts'));
+                $this->initialPrepwork($FE, $this->Loader->L10N->getString('link.Accounts'), $this->Loader->L10N->getString('tip_accounts'));
 
                 /** Append async globals. */
                 $FE['JS'] .= sprintf(
@@ -914,7 +914,7 @@ class FrontEnd
 
                     /** Account password warnings. */
                     if ($RowInfo['AccPassword'] === $this->DefaultPassword) {
-                        $RowInfo['AccWarnings'] .= '<br /><div class="txtRd">' . $this->Loader->L10N->getString('state_default_password') . '</div>';
+                        $RowInfo['AccWarnings'] .= '<br /><div class="txtRd">' . $this->Loader->L10N->getString('warning.Using the default password') . '</div>';
                     } elseif ((
                         strlen($RowInfo['AccPassword']) !== 60 &&
                         strlen($RowInfo['AccPassword']) !== 96 &&
@@ -929,7 +929,7 @@ class FrontEnd
                         strlen($RowInfo['AccPassword']) === 97 &&
                         !preg_match('/^\$argon2id\$/', $RowInfo['AccPassword'])
                     )) {
-                        $RowInfo['AccWarnings'] .= '<br /><div class="txtRd">' . $this->Loader->L10N->getString('state_password_not_valid') . '</div>';
+                        $RowInfo['AccWarnings'] .= '<br /><div class="txtRd">' . $this->Loader->L10N->getString('state_This account is not using a valid password') . '</div>';
                     }
 
                     /** Logged in notice. */
@@ -960,7 +960,7 @@ class FrontEnd
         /** Configuration. */
         if ($Page === 'config' && $this->Permissions === 1) {
             /** Page initial prepwork. */
-            $this->initialPrepwork($FE, $this->Loader->L10N->getString('link_config'), $this->Loader->L10N->getString('tip_config'));
+            $this->initialPrepwork($FE, $this->Loader->L10N->getString('link.Configuration'), $this->Loader->L10N->getString('tip_config'));
 
             /** Append number localisation JS. */
             $FE['JS'] .= $this->numberJS() . "\n";
@@ -1106,13 +1106,13 @@ class FrontEnd
                                 'eview\').innerHTML=a:%10$s&&!%9$s?%10$s.%1$s_preview.innerHTML=a:\'\'}' .
                                 '%1$s_function();</script>',
                                 $ThisDir['DirLangKey'],
-                                $this->Loader->L10N->getString('previewer_years'),
-                                $this->Loader->L10N->getString('previewer_months'),
-                                $this->Loader->L10N->getString('previewer_weeks'),
-                                $this->Loader->L10N->getString('previewer_days'),
-                                $this->Loader->L10N->getString('previewer_hours'),
-                                $this->Loader->L10N->getString('previewer_minutes'),
-                                $this->Loader->L10N->getString('previewer_seconds'),
+                                $this->Loader->L10N->getString('previewer.Years'),
+                                $this->Loader->L10N->getString('previewer.Months'),
+                                $this->Loader->L10N->getString('previewer.Weeks'),
+                                $this->Loader->L10N->getString('previewer.Days'),
+                                $this->Loader->L10N->getString('previewer.Hours'),
+                                $this->Loader->L10N->getString('previewer.Minutes'),
+                                $this->Loader->L10N->getString('previewer.Seconds'),
                                 'document.getElementById',
                                 'document.all'
                             );
@@ -1130,13 +1130,13 @@ class FrontEnd
                                 'TML=a:%10$s&&!%9$s?%10$s.%1$s_preview.innerHTML=a:\'\'}%1$s_function();<' .
                                 '/script>',
                                 $ThisDir['DirLangKey'],
-                                $this->Loader->L10N->getString('previewer_years'),
-                                $this->Loader->L10N->getString('previewer_months'),
-                                $this->Loader->L10N->getString('previewer_weeks'),
-                                $this->Loader->L10N->getString('previewer_days'),
-                                $this->Loader->L10N->getString('previewer_hours'),
-                                $this->Loader->L10N->getString('previewer_minutes'),
-                                $this->Loader->L10N->getString('previewer_seconds'),
+                                $this->Loader->L10N->getString('previewer.Years'),
+                                $this->Loader->L10N->getString('previewer.Months'),
+                                $this->Loader->L10N->getString('previewer.Weeks'),
+                                $this->Loader->L10N->getString('previewer.Days'),
+                                $this->Loader->L10N->getString('previewer.Hours'),
+                                $this->Loader->L10N->getString('previewer.Minutes'),
+                                $this->Loader->L10N->getString('previewer.Seconds'),
                                 'document.getElementById',
                                 'document.all'
                             );
@@ -1153,13 +1153,13 @@ class FrontEnd
                                 'nft(f.toString())+\' %8$s\';%9$s?%9$s(\'%1$s_preview\').innerHTML=a:' .
                                 '%10$s&&!%9$s?%10$s.%1$s_preview.innerHTML=a:\'\'}%1$s_function();</script>',
                                 $ThisDir['DirLangKey'],
-                                $this->Loader->L10N->getString('previewer_years'),
-                                $this->Loader->L10N->getString('previewer_months'),
-                                $this->Loader->L10N->getString('previewer_weeks'),
-                                $this->Loader->L10N->getString('previewer_days'),
-                                $this->Loader->L10N->getString('previewer_hours'),
-                                $this->Loader->L10N->getString('previewer_minutes'),
-                                $this->Loader->L10N->getString('previewer_seconds'),
+                                $this->Loader->L10N->getString('previewer.Years'),
+                                $this->Loader->L10N->getString('previewer.Months'),
+                                $this->Loader->L10N->getString('previewer.Weeks'),
+                                $this->Loader->L10N->getString('previewer.Days'),
+                                $this->Loader->L10N->getString('previewer.Hours'),
+                                $this->Loader->L10N->getString('previewer.Minutes'),
+                                $this->Loader->L10N->getString('previewer.Seconds'),
                                 'document.getElementById',
                                 'document.all'
                             );
@@ -1604,7 +1604,7 @@ class FrontEnd
         /** Cache data. */
         if ($Page === 'cache-data' && $this->Permissions === 1) {
             /** Page initial prepwork. */
-            $this->initialPrepwork($FE, $this->Loader->L10N->getString('link_cache_data'), $this->Loader->L10N->getString('tip_cache_data'));
+            $this->initialPrepwork($FE, $this->Loader->L10N->getString('link.Cache Data'), $this->Loader->L10N->getString('tip_cache_data'));
 
             if ($FE['ASYNC']) {
                 /** Delete a cache entry. */
@@ -1648,7 +1648,7 @@ class FrontEnd
                         str_replace(["'", '"'], ["\'", '\x22'], sprintf(
                             $this->Loader->L10N->getString('confirm.Action'),
                             $this->Loader->L10N->getString('field.Clear all')
-                        ) . '\n' . $this->Loader->L10N->getString('warning_will_log_out_all_users')),
+                        ) . '\n' . $this->Loader->L10N->getString('warning.Proceeding will log out all users')),
                         $this->Loader->L10N->getString('field.Clear all'),
                         $this->arrayToClickableList($CacheArray, 'cdd', 0, $this->Loader->Cache->Using)
                     );
@@ -1672,7 +1672,7 @@ class FrontEnd
         /** Upload Test. */
         if ($Page === 'upload-test' && $this->Permissions === 1) {
             /** Page initial prepwork. */
-            $this->initialPrepwork($FE, $this->Loader->L10N->getString('link_upload_test'), $this->Loader->L10N->getString('tip_upload_test'), false);
+            $this->initialPrepwork($FE, $this->Loader->L10N->getString('link.Upload Testing'), $this->Loader->L10N->getString('tip_upload_test'), false);
 
             /** Append upload test JS. */
             $FE['JS'] .=
@@ -1697,7 +1697,7 @@ class FrontEnd
         /** Quarantine. */
         if ($Page === 'quarantine' && $this->Permissions === 1) {
             /** Page initial prepwork. */
-            $this->initialPrepwork($FE, $this->Loader->L10N->getString('link_quarantine'), $this->Loader->L10N->getString('tip_quarantine'));
+            $this->initialPrepwork($FE, $this->Loader->L10N->getString('link.Quarantine'), $this->Loader->L10N->getString('tip_quarantine'));
 
             /** Display how to enable quarantine if currently disabled. */
             if (!$this->Loader->Configuration['quarantine']['quarantine_key']) {
@@ -1795,7 +1795,7 @@ class FrontEnd
         /** Signature information. */
         if ($Page === 'siginfo' && $this->Permissions === 1) {
             /** Page initial prepwork. */
-            $this->initialPrepwork($FE, $this->Loader->L10N->getString('link_siginfo'), $this->Loader->L10N->getString('tip_siginfo'));
+            $this->initialPrepwork($FE, $this->Loader->L10N->getString('link.Signature Information'), $this->Loader->L10N->getString('tip_siginfo'));
 
             /** Append number localisation JS. */
             $FE['JS'] .= $this->numberJS() . "\n";
@@ -1824,7 +1824,7 @@ class FrontEnd
         /** Statistics. */
         if ($Page === 'statistics' && $this->Permissions === 1) {
             /** Page initial prepwork. */
-            $this->initialPrepwork($FE, $this->Loader->L10N->getString('link_statistics'), $this->Loader->L10N->getString('tip_statistics'), false);
+            $this->initialPrepwork($FE, $this->Loader->L10N->getString('link.Statistics'), $this->Loader->L10N->getString('tip_statistics'), false);
 
             /** Display how to enable statistics if currently disabled. */
             if (!$this->Loader->Configuration['core']['statistics']) {
@@ -1898,7 +1898,7 @@ class FrontEnd
         /** Logs. */
         if ($Page === 'logs' && ($this->Permissions === 1 || $this->Permissions === 2)) {
             /** Page initial prepwork. */
-            $this->initialPrepwork($FE, $this->Loader->L10N->getString('link_logs'), $this->Loader->L10N->getString('tip_logs'), false);
+            $this->initialPrepwork($FE, $this->Loader->L10N->getString('link.Logs'), $this->Loader->L10N->getString('tip_logs'), false);
 
             /** Parse output. */
             $FE['FE_Content'] = $this->Loader->parse($FE, $this->Loader->readFileContent($this->getAssetPath('_logs.html')), true);
@@ -1952,7 +1952,7 @@ class FrontEnd
 
             /** Text mode switch link formatted. */
             $FE['TextModeSwitchLink'] = sprintf(
-                $this->Loader->L10N->getString('link_textmode'),
+                $this->Loader->L10N->getString('link.Text formatting'),
                 $FE['TextModeSwitchLink']
             );
 
