@@ -3,11 +3,11 @@
 <input name="phpmussel-form-target" type="hidden" value="login" />
 <input name="hostname" id="hostnameoverride" type="hidden" value="" />
 <script type="text/javascript">document.getElementById('hostnameoverride').value=window.location.hostname;</script>
-<h1>{header_login}</h1>{state_msg}
-<input name="username" type="text" placeholder="{field_username}" autocomplete="username" /><br />
-<input id="password" name="password" type="password" placeholder="{field_password}" onkeyup="javascript:document.getElementById('pgrad').style=RGBW(this.value)" autocomplete="current-password" /><br />
+<h1>{label.Please log in to continue}</h1>{state_msg}
+<input name="username" type="text" placeholder="{field.Username}" autocomplete="username" /><br />
+<input id="password" name="password" type="password" placeholder="{field.Password}" onkeyup="javascript:document.getElementById('pgrad').style=RGBW(this.value)" autocomplete="current-password" /><br />
 <div id="pgrad"></div><br />
-<input type="submit" value="{field_log_in}" class="auto" /><br /><br />
+<input type="submit" value="{field.Log In}" class="auto" /><br /><br />
 <div class="txtRd"><small>{tip_fe_cookie_warning}<noscript><br />{warning_javascript_required}</noscript></small></div><br /><br />
 <div class="icon48x48"></div>
 </form>

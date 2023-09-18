@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2023.06.01).
+ * This file: Front-end handler (last modified: 2023.09.18).
  */
 
 namespace phpMussel\FrontEnd;
@@ -757,28 +757,28 @@ class FrontEnd
             }
             $FE['Extensions'] = implode("\n", $FE['Extensions']);
             $FE['ExtensionIsAvailable'] = $this->ltrInRtf(
-                $this->Loader->L10N->getString('label_extension') . '➡' . $this->Loader->L10N->getString('label_installed_available')
+                $this->Loader->L10N->getString('label.Extension') . '➡' . $this->Loader->L10N->getString('label.Installed Available')
             );
             unset($ExtensionVersion, $ThisResponse, $ThisExtension);
 
             /** Build clipboard data. */
             $FE['HomeCopyData'] = sprintf(
                 '%1$s\n\n- %2$s %3$s\n- %4$s %5$s\n- %6$s %7$s\n- %8$s %9$s\n\n- %10$s %11$s\n- %4$s %12$s\n- %6$s %13$s\n- %8$s %14$s\n- %15$s %16$s\n\n%17$s\n%18$s',
-                $this->Loader->L10N->getString('label_sysinfo'),
-                $this->Loader->L10N->getString('label_phpmussel'),
+                $this->Loader->L10N->getString('label.System information'),
+                $this->Loader->L10N->getString('label.phpMussel version used'),
                 $FE['ScriptVersion'],
-                $this->Loader->L10N->getString('label_branch'),
+                $this->Loader->L10N->getString('label.Branch latest stable'),
                 $FE['info_phpmussel_branch'],
-                $this->Loader->L10N->getString('label_stable'),
+                $this->Loader->L10N->getString('label.Latest stable'),
                 $FE['info_phpmussel_stable'],
-                $this->Loader->L10N->getString('label_unstable'),
+                $this->Loader->L10N->getString('label.Latest unstable'),
                 $FE['info_phpmussel_unstable'],
-                $this->Loader->L10N->getString('label_php'),
+                $this->Loader->L10N->getString('label.PHP version used'),
                 $FE['info_php'],
                 $FE['info_php_branch'],
                 $FE['info_php_stable'],
                 $FE['info_php_unstable'],
-                $this->Loader->L10N->getString('label_sapi'),
+                $this->Loader->L10N->getString('label.SAPI used'),
                 $FE['info_sapi'],
                 $FE['ExtensionIsAvailable'],
                 $FE['ExtensionsCopyData']
@@ -987,7 +987,7 @@ class FrontEnd
                 if (!is_array($CatValue)) {
                     continue;
                 }
-                if ($CatInfo = $this->Loader->L10N->getString('config_' . $CatKey)) {
+                if ($CatInfo = $this->Loader->L10N->getString('config.' . $CatKey)) {
                     $CatInfo = '<br /><em>' . $CatInfo . '</em>';
                 }
                 $FE['ConfigFields'] .= sprintf(
@@ -1007,7 +1007,7 @@ class FrontEnd
                     $ThisDir['DirLangKey'] = 'config_' . $CatKey . '_' . $DirKey;
                     $ThisDir['DirLangKeyOther'] = $ThisDir['DirLangKey'] . '_other';
                     $ThisDir['DirName'] = '<span class="normalHeight">' . $this->ltrInRtf($CatKey . '➡' . $DirKey) . ':</span>';
-                    $ThisDir['Friendly'] = $this->Loader->L10N->getString($ThisDir['DirLangKey'] . '_label') ?: $DirKey;
+                    $ThisDir['Friendly'] = $this->Loader->L10N->getString('config.' . $CatKey . '_' . $DirKey . '_label') ?: $DirKey;
                     $CatData .= sprintf(
                         '<li><a onclick="javascript:toggleconfigNav(\'%1$sRow\',\'%1$sShowLink\')" href="#%2$s">%3$s</a></li>',
                         $CatKey,
@@ -1015,11 +1015,12 @@ class FrontEnd
                         $ThisDir['Friendly']
                     );
                     $ThisDir['DirLang'] =
-                        $this->Loader->L10N->getString($ThisDir['DirLangKey']) ?:
-                        $this->Loader->L10N->getString('config_' . $CatKey) ?:
+                        $this->Loader->L10N->getString('config.' . $CatKey . '_' . $DirKey) ?:
+                        $this->Loader->L10N->getString('label.' . $DirKey) ?:
+                        $this->Loader->L10N->getString('config.' . $CatKey) ?:
                         $this->Loader->L10N->getString('response_error');
                     if (!empty($DirValue['experimental'])) {
-                        $ThisDir['DirLang'] = '<code class="exp">' . $this->Loader->L10N->getString('config_experimental') . '</code> ' . $ThisDir['DirLang'];
+                        $ThisDir['DirLang'] = '<code class="exp">' . $this->Loader->L10N->getString('config.experimental') . '</code> ' . $ThisDir['DirLang'];
                     }
                     $ThisDir['autocomplete'] = empty($DirValue['autocomplete']) ? '' : sprintf(
                         ' autocomplete="%s"',
@@ -1198,18 +1199,18 @@ class FrontEnd
                             'p;%8$s?%8$s(\'%1$s_preview\').innerHTML=t:%9$s&&!%8$s?%9$s.%1$s_preview.inne' .
                             'rHTML=t:\'\';};%1$s_function();</script>',
                             $ThisDir['DirLangKey'],
-                            $this->Loader->L10N->getPlural(0, 'field_size_bytes'),
-                            $this->Loader->L10N->getString('field_size_KB'),
-                            $this->Loader->L10N->getString('field_size_MB'),
-                            $this->Loader->L10N->getString('field_size_GB'),
-                            $this->Loader->L10N->getString('field_size_TB'),
-                            $this->Loader->L10N->getString('field_size_PB'),
+                            $this->Loader->L10N->getPlural(0, 'field.size.bytes'),
+                            $this->Loader->L10N->getString('field.size.KB'),
+                            $this->Loader->L10N->getString('field.size.MB'),
+                            $this->Loader->L10N->getString('field.size.GB'),
+                            $this->Loader->L10N->getString('field.size.TB'),
+                            $this->Loader->L10N->getString('field.size.PB'),
                             'document.getElementById',
                             'document.all'
                         );
                     }
                     if ($DirValue['type'] === 'timezone') {
-                        $DirValue['choices'] = ['SYSTEM' => $this->Loader->L10N->getString('field_system_timezone')];
+                        $DirValue['choices'] = ['SYSTEM' => $this->Loader->L10N->getString('field.Use system default timezone')];
                         foreach (array_unique(\DateTimeZone::listIdentifiers()) as $DirValue['ChoiceValue']) {
                             $DirValue['choices'][$DirValue['ChoiceValue']] = $DirValue['ChoiceValue'];
                         }
@@ -1377,7 +1378,7 @@ class FrontEnd
                             $ThisDir['FieldOut'] .= empty($DirValue['allow_other']) ? '</select>' : sprintf(
                                 '<option value="Other"%1$s>%2$s</option></select><input type="text"%3$s class="auto" name="%4$s" id="%4$s_field" value="%5$s" />',
                                 $ThisDir['SelectOther'] ? ' selected' : '',
-                                $this->Loader->L10N->getString('label_other'),
+                                $this->Loader->L10N->getString('label.Other'),
                                 $ThisDir['SelectOther'] ? '' : ' style="display:none"',
                                 $ThisDir['DirLangKeyOther'],
                                 $this->Loader->Configuration[$CatKey][$DirKey]
@@ -1388,8 +1389,8 @@ class FrontEnd
                             '<select class="auto" name="%1$s" id="%1$s_field"%2$s><option value="true"%5$s>%3$s</option><option value="false"%6$s>%4$s</option></select>',
                             $ThisDir['DirLangKey'],
                             $ThisDir['Trigger'],
-                            $this->Loader->L10N->getString('field_true'),
-                            $this->Loader->L10N->getString('field_false'),
+                            $this->Loader->L10N->getString('field.True (True)'),
+                            $this->Loader->L10N->getString('field.False (False)'),
                             ($this->Loader->Configuration[$CatKey][$DirKey] ? ' selected' : ''),
                             ($this->Loader->Configuration[$CatKey][$DirKey] ? '' : ' selected')
                         );
@@ -1482,19 +1483,19 @@ class FrontEnd
                             }
                             if (substr($DirValue['Requirement'], 0, 1) === "\\") {
                                 $ReqsLookupCache[$DirValue['Requirement']] = '<br /><span class="txtGn">✔️ ' . sprintf(
-                                    $this->Loader->L10N->getString('label_is_available_class'),
+                                    $this->Loader->L10N->getString('label.%s is available'),
                                     $DirValue['Friendly']
                                 ) . '</span>';
                             } elseif (extension_loaded($DirValue['Requirement'])) {
                                 $DirValue['ReqVersion'] = (new \ReflectionExtension($DirValue['Requirement']))->getVersion();
                                 $ReqsLookupCache[$DirValue['Requirement']] = '<br /><span class="txtGn">✔️ ' . sprintf(
-                                    $this->Loader->L10N->getString('label_is_available'),
+                                    $this->Loader->L10N->getString('label.%s is available (%s)'),
                                     $DirValue['Friendly'],
                                     $DirValue['ReqVersion']
                                 ) . '</span>';
                             } else {
                                 $ReqsLookupCache[$DirValue['Requirement']] = '<br /><span class="txtRd">❌ ' . sprintf(
-                                    $this->Loader->L10N->getString('label_is_not_available'),
+                                    $this->Loader->L10N->getString('label.%s is not available'),
                                     $DirValue['Friendly']
                                 ) . '</span>';
                             }
@@ -1521,7 +1522,7 @@ class FrontEnd
 
                     /** Provide additional information, useful for users to better understand the directive at hand. */
                     if (!empty($DirValue['See also']) && is_array($DirValue['See also'])) {
-                        $ThisDir['FieldOut'] .= sprintf("\n<br /><br />%s<ul>\n", $this->Loader->L10N->getString('label_see_also'));
+                        $ThisDir['FieldOut'] .= sprintf("\n<br /><br />%s<ul>\n", $this->Loader->L10N->getString('label.See also'));
                         foreach ($DirValue['See also'] as $DirValue['Ref key'] => $DirValue['Ref link']) {
                             $ThisDir['FieldOut'] .= sprintf(
                                 '<li><a dir="ltr" href="%s">%s</a></li>',
@@ -1544,7 +1545,7 @@ class FrontEnd
                         $ThisDir['FieldOut'] .= sprintf(
                             '<br /><br /><input type="button" class="reset" onclick="javascript:%s" value="↺ %s" />',
                             $ThisDir['Reset'],
-                            $this->Loader->L10N->getString('field_reset')
+                            $this->Loader->L10N->getString('field.Reset')
                         );
                     }
 
@@ -1559,7 +1560,7 @@ class FrontEnd
                         $NewConfig[$CatKey][$DirKey] = $this->Loader->Configuration[$CatKey][$DirKey];
                     }
                 }
-                $CatKeyFriendly = $this->Loader->L10N->getString('config_' . $CatKey . '_label') ?: $CatKey;
+                $CatKeyFriendly = $this->Loader->L10N->getString('config.' . $CatKey . '_label') ?: $CatKey;
                 $FE['Indexes'] .= sprintf(
                     '<li><span class="comCat">%s</span><ul class="comSub">%s</ul></li>',
                     $CatKeyFriendly,
@@ -1645,10 +1646,10 @@ class FrontEnd
                         '<div class="ng1" id="__Container"><span class="s">%s – (<span style="cursor:pointer" onclick="javascript:confirm(\'%s\')&&cdd(\'__\')"><code class="s">%s</code></span>)</span><br /><br /><ul class="pieul">%s</ul></div>',
                         $this->Loader->Cache->Using,
                         str_replace(["'", '"'], ["\'", '\x22'], sprintf(
-                            $this->Loader->L10N->getString('confirm_action'),
-                            $this->Loader->L10N->getString('field_clear_all')
+                            $this->Loader->L10N->getString('confirm.Action'),
+                            $this->Loader->L10N->getString('field.Clear all')
                         ) . '\n' . $this->Loader->L10N->getString('warning_will_log_out_all_users')),
-                        $this->Loader->L10N->getString('field_clear_all'),
+                        $this->Loader->L10N->getString('field.Clear all'),
                         $this->arrayToClickableList($CacheArray, 'cdd', 0, $this->Loader->Cache->Using)
                     );
                     unset($CacheArray);
@@ -1704,7 +1705,7 @@ class FrontEnd
             }
 
             /** Generate confirm button. */
-            $FE['Confirm-DeleteAll'] = $this->generateConfirm($this->Loader->L10N->getString('field_delete_all'), 'quarantineForm');
+            $FE['Confirm-DeleteAll'] = $this->generateConfirm($this->Loader->L10N->getString('field.Delete all'), 'quarantineForm');
 
             /** Append necessary quarantine JS. */
             $FE['JS'] .= "function qOpt(e){b=document.getElementById(e+'-S'),'delete-file'==b.value?hideid(e):showid(e)}\n";
@@ -1831,7 +1832,7 @@ class FrontEnd
             }
 
             /** Generate confirm button. */
-            $FE['Confirm-ClearAll'] = $this->generateConfirm($this->Loader->L10N->getString('field_clear_all'), 'statForm');
+            $FE['Confirm-ClearAll'] = $this->generateConfirm($this->Loader->L10N->getString('field.Clear all'), 'statForm');
 
             /** Fetch statistics cache data. */
             if ($this->Loader->InstanceCache['Statistics'] = ($this->Loader->Cache->getEntry('Statistics') ?: [])) {
@@ -2024,7 +2025,7 @@ class FrontEnd
      */
     private function formatFilesize(int &$Filesize): void
     {
-        $Scale = ['field_size_bytes', 'field_size_KB', 'field_size_MB', 'field_size_GB', 'field_size_TB', 'field_size_PB'];
+        $Scale = ['field.size.bytes', 'field.size.KB', 'field.size.MB', 'field.size.GB', 'field.size.TB', 'field.size.PB'];
         $Iterate = 0;
         while ($Filesize > 1024) {
             $Filesize /= 1024;
@@ -2181,13 +2182,13 @@ class FrontEnd
             ) ? $this->Loader->timeFormat(
                 (int)substr($Head, $DatePos + 20, 16),
                 $this->Loader->Configuration['core']['time_format']
-            ) : $this->Loader->L10N->getString('field_filetype_unknown');
+            ) : $this->Loader->L10N->getString('field.Unknown');
 
             /** Upload origin. */
             $Arr[$Key]['Upload-Origin'] = (
                 ($OriginStartPos = strpos($Head, 'Uploaded From: ')) !== false &&
                 ($OriginEndPos = strpos($Head, ' ', $OriginStartPos + 15)) !== false
-            ) ? substr($Head, $OriginStartPos + 15, $OriginEndPos - $OriginStartPos - 15) : $this->Loader->L10N->getString('field_filetype_unknown');
+            ) ? substr($Head, $OriginStartPos + 15, $OriginEndPos - $OriginStartPos - 15) : $this->Loader->L10N->getString('field.Unknown');
 
             /** If the phpMussel QFU (Quarantined File Upload) header isn't found, it probably isn't a quarantined file. */
             if (($HeadPos = strpos($Head, "\xA1phpMussel\x21")) !== false && (substr($Head, $HeadPos + 31, 1) === "\1")) {
@@ -2197,8 +2198,8 @@ class FrontEnd
                 $Arr[$Key]['Upload-Size'] = isset($Arr[$Key]['Upload-Size'][1]) ? (int)$Arr[$Key]['Upload-Size'][1] : 0;
                 $this->formatFilesize($Arr[$Key]['Upload-Size']);
             } else {
-                $Arr[$Key]['Upload-MD5'] = $this->Loader->L10N->getString('field_filetype_unknown');
-                $Arr[$Key]['Upload-Size'] = $this->Loader->L10N->getString('field_filetype_unknown');
+                $Arr[$Key]['Upload-MD5'] = $this->Loader->L10N->getString('field.Unknown');
+                $Arr[$Key]['Upload-Size'] = $this->Loader->L10N->getString('field.Unknown');
             }
 
             /** Appends Virus Total search URL for this hash onto the hash. */
@@ -2492,7 +2493,7 @@ class FrontEnd
      */
     private function generateConfirm(string $Action, string $Form): string
     {
-        $Confirm = str_replace(["'", '"'], ["\'", '\x22'], sprintf($this->Loader->L10N->getString('confirm_action'), $Action));
+        $Confirm = str_replace(["'", '"'], ["\'", '\x22'], sprintf($this->Loader->L10N->getString('confirm.Action'), $Action));
         return 'javascript:confirm(\'' . $Confirm . '\')&&document.getElementById(\'' . $Form . '\').submit()';
     }
 
@@ -2555,7 +2556,7 @@ class FrontEnd
         $Count = count($Arr);
         $Prefix = substr($DeleteKey, 0, 2) === 'fe' ? 'FE' : '';
         foreach ($Arr as $Key => $Value) {
-            $Delete = ($Depth === 0) ? ' – (<span style="cursor:pointer" onclick="javascript:' . $DeleteKey . '(\'' . addslashes($Key) . '\')"><code class="s"><span class="txtRd">⌧</span>' . $this->Loader->L10N->getString('field_delete_file') . '</code></span>)' : '';
+            $Delete = ($Depth === 0) ? ' – (<span style="cursor:pointer" onclick="javascript:' . $DeleteKey . '(\'' . addslashes($Key) . '\')"><code class="s"><span class="txtRd">⌧</span>' . $this->Loader->L10N->getString('field.Delete') . '</code></span>)' : '';
             $Output .= ($Depth === 0 ? '<span id="' . $Key . $Prefix . 'Container">' : '') . '<li>';
             if (is_string($Value)) {
                 if (substr($Value, 0, 2) === '{"' && substr($Value, -2) === '"}') {
@@ -2578,7 +2579,7 @@ class FrontEnd
             }
             if (is_array($Value)) {
                 if ($Depth === 0) {
-                    $SizeField = $this->Loader->L10N->getString('field_size') ?: 'Size';
+                    $SizeField = $this->Loader->L10N->getString('field.size.Total size') ?: 'Size';
                     $Size = isset($Value['Data']) && is_string($Value['Data']) ? strlen($Value['Data']) : (
                         isset($Value[0]) && is_string($Value[0]) ? strlen($Value[0]) : false
                     );
@@ -2592,10 +2593,10 @@ class FrontEnd
                 $Output .= '</ul>';
             } else {
                 if ($Key === 'Time' && preg_match('~^\d+$~', $Value)) {
-                    $Key = $this->Loader->L10N->getString('label_expires');
+                    $Key = $this->Loader->L10N->getString('label.Expires');
                     $Value = $this->Loader->timeFormat($Value, $this->Loader->Configuration['core']['time_format']);
                 }
-                $Class = ($Key === $this->Loader->L10N->getString('field_size') || $Key === $this->Loader->L10N->getString('label_expires')) ? 'txtRd' : 's';
+                $Class = ($Key === $this->Loader->L10N->getString('field.size.Total size') || $Key === $this->Loader->L10N->getString('label.Expires')) ? 'txtRd' : 's';
                 $Text = ($Count === 1 && $Key === 0) ? $Value : $Key . ($Class === 's' ? ' => ' : ' ') . $Value;
                 $Output .= '<code class="' . $Class . '" style="word-wrap:break-word;word-break:break-all">' . $this->ltrInRtf(
                     str_replace(['<', '>'], ['&lt;', '&gt;'], $Text)
@@ -2731,7 +2732,7 @@ class FrontEnd
      */
     private function replaceLabelWithL10N(string &$Label): void
     {
-        foreach (['', 'response_', 'label_', 'field_'] as $Prefix) {
+        foreach (['', 'response.', 'label.', 'field.'] as $Prefix) {
             if (($Try = $this->Loader->L10N->getString($Prefix . $Label)) !== '') {
                 $Label = $Try;
                 return;
