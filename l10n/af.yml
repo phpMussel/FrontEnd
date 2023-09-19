@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2023.09.18).
+# This file: Afrikaans language data (last modified: 2023.09.19).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,7 +24,8 @@
 # requests, ask. I can help.
 ##/
 
-checkbox_delete_orphaned_values: "Vee onverbonde waardes uit."
+checkbox:
+ Delete orphaned values: "Vee onverbonde waardes uit."
 config:
  core: "Algemene konfigurasie (enige kernkonfigurasie wat nie aan ander kategorieë behoort nie)."
  core_default_timeout: "Verstek uitteltyd om vir eksterne versoeke te gebruik? Verstek = 12 sekondes."
@@ -171,9 +172,14 @@ field:
  vt_suspicion_level_heuristic_only: "Skandeer slegs lêers met heuristiese gewig.\nLêers sal slegs geskandeer word as hulle 'n mate van heuristiese gewig dra. Heuristiese gewig kan verkry word uit handtekeninge wat bedoel is om algemene vingerafdrukke te vang wat verband hou met potensiële infeksie wat nie noodwendig infeksie waarborg nie. Die opsoek kan in sulke gevalle dien om 'n tweede mening te gee vir resultate wat vermoede regverdig, maar andersins geen sekerheid verskaf nie."
 hints_pdo_dsn:
  Gereelde vrae.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Wat is 'n "PDO DSN"? Hoe kan ek PDO met phpMussel gebruik?</a></em>"
-title_login: "Inteken"
+hints_xlists:
+ Hoe dit werk.: "As jou stelsel toelaat dat slegs spesifieke tipes lêers opgelaai word, of as jou stelsel sekere tipes lêers uitdruklik weier, deur daardie lêertipes in witlyste, swartlyste, en gryslyste te spesifiseer, kan die spoed waarteen skandering uitgevoer word verhoog deur die skrip toe te laat om die skandering van daardie lêertipes te vermy. Formaat is CSV (kommageskeide waardes)."
+ Logiese volgorde van verwerking.: "As die lêertipe op die gewitlys is, moenie die lêer skandeer en blokkeer nie, en moenie die lêer teen die swartlys of die gryslys kontroleer nie. As die lêertipe op die swartlys is, moenie die lêer skandeer nie, maar blokkeer dit in elk geval, en moenie die lêer teen die gryslys kontroleer nie. As die gryslys leeg is of as die gryslys nie leeg is nie en die lêertipe op die gryslys is, skandeer die lêer soos normaalweg en bepaal of dit geblokkeer moet word op grond van die resultate van die skandering, maar as die gryslys nie leeg is nie en die lêertipe nie op die gryslys is nie, hanteer die lêer asof op die swartlys, dus nie skandeer dit nie maar blokkeer dit in elk geval."
 warning:
+ Cookies: "Kennis neem: phpMussel gebruik 'n koekie vir die verifikasie van aanmeldings. Deur aan te meld, gee jy jou toestemming dat 'n koekie deur jou blaaier geskep en gestoor word."
  JavaScript required: "Waarskuwing: Sommige front-end funksionaliteit vereis JavaScript. Om te verseker dat die hele front-end optree soos verwag, word dit aanbeveel om JavaScript te aktiveer."
+ Maintenance mode is enabled: "Waarskuwing: Onderhoudsmodus is geaktiveer!"
  No signature files are active: "Waarskuwing: Geen handtekeninglêers is aktief nie!"
  Proceeding will log out all users: "Waarskuwing: As jy voortgaan, sal alle gebruikers uitteken."
+ This account is not using a valid password: "Waarskuwing: Hierdie rekening gebruik nie 'n geldige wagwoord nie!"
  Using the default password: "Waarskuwing: Verstekwagwoord word gebruik!"
