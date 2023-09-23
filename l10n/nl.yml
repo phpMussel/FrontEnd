@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2023.09.19).
+# This file: Dutch language data (last modified: 2023.09.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -222,6 +222,7 @@ label:
  Branch latest stable: "Branch laatste stabiele:"
  Client information: "Gebruikers informatie:"
  Complete access: "Volledige toegang"
+ Copy to clipboard: "Kopieer naar klembord"
  Default: "Standaard"
  Expires: "Verloopt:"
  Extension: "Extensie"
@@ -267,7 +268,6 @@ link:
  Accounts: "Accounts"
  Cache Data: "Cachegegevens"
  Configuration: "Configuratie"
- Copy to clipboard: "Kopieer naar klembord"
  Discussions: "Discussies"
  Documentation: "Documentatie"
  Home: "Startpagina"
@@ -319,7 +319,7 @@ response:
  Username field empty: "Gebruikersnaam veld leeg!"
  Wrong endpoint: "Verkeerd eindpunt!"
  _No: "Nee"
- _Yes: "Ja" 
+ _Yes: "Ja"
 siginfo_key_CVE: "Signatures die te maken hebben met CVE's (Algemene Kwetsbaarheden en Blootstellingen)."
 siginfo_key_Chameleon: "Signatures die te maken hebben met "kameleonaanvallen"."
 siginfo_key_FN: "Signatures die werken met bestandsnamen (in tegenstelling tot bestandsinhoud)."

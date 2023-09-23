@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Russian language data (last modified: 2023.09.19).
+# This file: Russian language data (last modified: 2023.09.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -231,6 +231,7 @@ label:
  Branch latest stable: "Ветвь последние стабильный:"
  Client information: "Информация о клиенте:"
  Complete access: "Полный доступ"
+ Copy to clipboard: "Скопировать в буфер обмена"
  Default: "Стандарт"
  Expires: "Истекает:"
  Extension: "Расширение"
@@ -276,7 +277,6 @@ link:
  Accounts: "Аккаунта"
  Cache Data: "Данные кэша"
  Configuration: "Конфигурация"
- Copy to clipboard: "Скопировать в буфер обмена"
  Discussions: "Обсуждения"
  Documentation: "Документация"
  Home: "Домашняя страница"
@@ -328,7 +328,7 @@ response:
  Username field empty: "Имя пользователя пусто!"
  Wrong endpoint: "Неправильная конечная точка!"
  _No: "Нет"
- _Yes: "Да" 
+ _Yes: "Да"
 siginfo_key_CVE: "Сигнатуры, которые касаются CVE (Общие Уязвимости и Риски)."
 siginfo_key_Chameleon: "Сигнатуры, которые касаются «хамелеонных атак»."
 siginfo_key_FN: "Сигнатуры, работающие с именами файлов (в отличие от содержимого файлов)."

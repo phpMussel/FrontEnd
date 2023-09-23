@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Farsi language data (last modified: 2023.09.19).
+# This file: Farsi language data (last modified: 2023.09.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -228,6 +228,7 @@ label:
  Branch latest stable: "آخرین اصطبل شعبه:"
  Client information: "اطلاعات مشتری:"
  Complete access: "دسترسی کامل"
+ Copy to clipboard: "کپی به کلیپ بورد"
  Default: "پیش فرض"
  Expires: "منقضی می شود:"
  Extension: "افزونه"
@@ -273,7 +274,6 @@ link:
  Accounts: "حساب ها"
  Cache Data: "داده های کش"
  Configuration: "پیکربندی"
- Copy to clipboard: "کپی به کلیپ بورد"
  Discussions: "بحث ها"
  Documentation: "مستندات"
  Home: "صفحه نخست"
@@ -325,7 +325,7 @@ response:
  Username field empty: "فیلد نام کاربری خالی است!"
  Wrong endpoint: "نقطه پایانی اشتباه!"
  _No: "خیر"
- _Yes: "آره" 
+ _Yes: "آره"
 siginfo_key_CVE: "امضاهایی که با CVE ها (آسیب پذیری ها و مواجهه های رایج) سروکار دارند."
 siginfo_key_Chameleon: "امضاهایی که با «حملات آفتاب پرست» سروکار دارند."
 siginfo_key_FN: "امضاهایی که با نام فایل ها کار می کنند (بر خلاف محتوای فایل)."

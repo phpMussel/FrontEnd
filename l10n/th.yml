@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Thai language data (last modified: 2023.09.19).
+# This file: Thai language data (last modified: 2023.09.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -223,6 +223,7 @@ label:
  Branch latest stable: "สาขาเสถียรล่าสุด:"
  Client information: "ข้อมูลผู้ใช้:"
  Complete access: "เข้าถึงได้อย่างสมบูรณ์"
+ Copy to clipboard: "คัดลอกไปที่คลิปบอร์ด"
  Default: "ค่าเริ่มต้น"
  Expires: "หมดอายุ:"
  Extension: "ส่วนขยาย"
@@ -268,7 +269,6 @@ link:
  Accounts: "บัญชี"
  Cache Data: "ข้อมูลแคช"
  Configuration: "การกำหนดค่า"
- Copy to clipboard: "คัดลอกไปที่คลิปบอร์ด"
  Discussions: "การสนทนา"
  Documentation: "เอกสาร"
  Home: "โฮมเพจ"
@@ -320,7 +320,7 @@ response:
  Username field empty: "ชื่อผู้ใช้ฟิลด์ว่างเปล่า!"
  Wrong endpoint: "จุดเชื่อมต่อ ไม่ถูกต้อง!"
  _No: "ไม่ได้"
- _Yes: "ใช่แล้ว" 
+ _Yes: "ใช่แล้ว"
 siginfo_key_CVE: "ลายเซ็นที่จัดการกับ CVE."
 siginfo_key_Chameleon: "ลายเซ็นที่จัดการกับ "กิ้งก่าโจมตี"."
 siginfo_key_FN: "ลายเซ็นทำงานกับชื่อไฟล์ (ไม่ใช่เนื้อหาในไฟล์)."

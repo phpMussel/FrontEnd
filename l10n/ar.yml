@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2023.09.19).
+# This file: Arabic language data (last modified: 2023.09.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -223,6 +223,7 @@ label:
  Branch latest stable: "فرع أحدث مستقرة:"
  Client information: "معلومات المستخدممعلومات المستخدم:"
  Complete access: "الوصول كامل"
+ Copy to clipboard: "نسخ إلى الحافظة"
  Default: "الافتراضي"
  Expires: "تنتهي:"
  Extension: "التمديد"
@@ -268,7 +269,6 @@ link:
  Accounts: "حسابات"
  Cache Data: "بيانات ذاكرة التخزين المؤقت"
  Configuration: "التكوين"
- Copy to clipboard: "نسخ إلى الحافظة"
  Discussions: "مناقشات"
  Documentation: "توثيق"
  Home: "الرئيسية"
@@ -320,7 +320,7 @@ response:
  Username field empty: "اسم المستخدم حقل فارغ!"
  Wrong endpoint: "نقطة نهاية خاطئة!"
  _No: "لا"
- _Yes: "نعم" 
+ _Yes: "نعم"
 siginfo_key_CVE: "التوقيعات التي تتعامل مع CVE (نقاط الضعف والتعرض الشائعة)."
 siginfo_key_Chameleon: "التوقيعات التي تتعامل مع "هجمات الحرباء"."
 siginfo_key_FN: "التوقيعات تعمل مع أسماء الملفات (على عكس محتويات الملف)."

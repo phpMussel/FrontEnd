@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2023.09.19).
+# This file: English language data (last modified: 2023.09.23).
 ##/
 
 checkbox:
@@ -216,6 +216,7 @@ label:
  Branch latest stable: "Branch latest stable:"
  Client information: "Client information:"
  Complete access: "Complete access"
+ Copy to clipboard: "Copy to clipboard"
  Default: "Default"
  Expires: "Expires:"
  Extension: "Extension"
@@ -261,7 +262,6 @@ link:
  Accounts: "Accounts"
  Cache Data: "Cache Data"
  Configuration: "Configuration"
- Copy to clipboard: "Copy to clipboard"
  Discussions: "Discussions"
  Documentation: "Documentation"
  Home: "Home"
@@ -313,7 +313,7 @@ response:
  Username field empty: "Username field empty!"
  Wrong endpoint: "Wrong endpoint!"
  _No: "No"
- _Yes: "Yes" 
+ _Yes: "Yes"
 siginfo_key_CVE: "Signatures that deal with CVEs (Common Vulnerabilities and Exposures)."
 siginfo_key_Chameleon: "Signatures that deal with "chameleon attacks"."
 siginfo_key_FN: "Signatures working with filenames (as opposed to file contents)."

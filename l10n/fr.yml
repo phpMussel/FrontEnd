@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2023.09.19).
+# This file: French language data (last modified: 2023.09.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -229,6 +229,7 @@ label:
  Active signature files: "Fichiers de signatures actifs"
  Branch latest stable: "Dernier stable de branche\_:"
  Client information: "Informations sur le client\_:"
+ Copy to clipboard: "Copier dans le presse-papier"
  Default: "Défaut"
  Expires: "Expire\_:"
  Extension: "Extension"
@@ -268,7 +269,6 @@ link:
  Accounts: "Comptes"
  Cache Data: "Données de cache"
  Configuration: "Configuration"
- Copy to clipboard: "Copier dans le presse-papier"
  Discussions: "Discussions"
  Documentation: "Documentation"
  Home: "Page d'accueil"
@@ -320,7 +320,7 @@ response:
  Username field empty: "Nom d'utilisateur entrée était vide\_!"
  Wrong endpoint: "Mauvais point final\_!"
  _No: "Non"
- _Yes: "Oui" 
+ _Yes: "Oui"
 siginfo_key_CVE: "Les signatures qui traitent des CVE (Vulnérabilités et Expositions Communes)."
 siginfo_key_Chameleon: "Les signatures qui traitent des «\_attaques caméléon\_»."
 siginfo_key_FN: "Les signatures fonctionnant avec des noms de fichiers (par opposition au contenu du fichier)."

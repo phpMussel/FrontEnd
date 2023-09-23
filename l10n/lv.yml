@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2023.09.19).
+# This file: Latvian language data (last modified: 2023.09.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -225,6 +225,7 @@ label:
  Branch latest stable: "Jaunākā stabilā (uz šīs "branch"):"
  Client information: "Informācija par klientu:"
  Complete access: "Pilnīga piekļuve"
+ Copy to clipboard: "Kopēt starpliktuvē"
  Default: "Noklusējuma"
  Expires: "Derīguma termiņš:"
  Extension: "Paplašinājums"
@@ -270,7 +271,6 @@ link:
  Accounts: "Konti"
  Cache Data: "Kešatmiņas dati"
  Configuration: "Konfigurācija"
- Copy to clipboard: "Kopēt starpliktuvē"
  Discussions: "Diskusijas"
  Documentation: "Dokumentācija"
  Home: "Mājas"
@@ -322,7 +322,7 @@ response:
  Username field empty: "Lietotājvārda lauks ir tukšs!"
  Wrong endpoint: "Nepareizs galapunkts!"
  _No: "Nē"
- _Yes: "Jā" 
+ _Yes: "Jā"
 siginfo_key_CVE: "Paraksti, kas attiecas uz CVE (kopējā ievainojamības un ekspozīcijas)."
 siginfo_key_Chameleon: "Paraksti, kas nodarbojas ar "hameleonu uzbrukumiem"."
 siginfo_key_FN: "Paraksti, kas strādā ar failu nosaukumiem (pretstatā faila saturam)."

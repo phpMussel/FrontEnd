@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2023.09.19).
+# This file: Korean language data (last modified: 2023.09.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -223,6 +223,7 @@ label:
  Branch latest stable: "분기 최신 안정\_:"
  Client information: "사용자 정보\_:"
  Complete access: "전체 액세스"
+ Copy to clipboard: "클립 보드에 복사"
  Default: "기본값"
  Expires: "만료일\_:"
  Extension: "확장"
@@ -268,7 +269,6 @@ link:
  Accounts: "계정"
  Cache Data: "데이터 캐쉬"
  Configuration: "구성"
- Copy to clipboard: "클립 보드에 복사"
  Discussions: "토론"
  Documentation: "문서"
  Home: "홈"
@@ -320,7 +320,7 @@ response:
  Username field empty: "사용자 이름 입력이 비어 있습니다!"
  Wrong endpoint: "잘못된 끝점!"
  _No: "아니오"
- _Yes: "예" 
+ _Yes: "예"
 siginfo_key_CVE: "CVE를 다루는 서명."
 siginfo_key_Chameleon: ""카멜레온 공격"을 다루는 서명."
 siginfo_key_FN: "파일 이름을 사용하는 서명 (파일 내용이 아닌)."

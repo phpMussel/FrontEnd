@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2023.09.19).
+# This file: Polish language data (last modified: 2023.09.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -226,6 +226,7 @@ label:
  Branch latest stable: "Oddział najnowsza stabilna:"
  Client information: "Informacja klientów:"
  Complete access: "Pełny dostęp"
+ Copy to clipboard: "Skopiuj do schowka"
  Default: "Domyślna"
  Expires: "Wygasa:"
  Extension: "Rozszerzenie"
@@ -271,7 +272,6 @@ link:
  Accounts: "Konta"
  Cache Data: "Dane z pamięci podręcznej"
  Configuration: "Konfiguracja"
- Copy to clipboard: "Skopiuj do schowka"
  Discussions: "Dyskusje"
  Documentation: "Dokumentacja"
  Home: "Główna"
@@ -323,7 +323,7 @@ response:
  Username field empty: "Pole nazwy użytkownika jest puste!"
  Wrong endpoint: "Niewłaściwy punkt końcowy!"
  _No: "Nie"
- _Yes: "Tak" 
+ _Yes: "Tak"
 siginfo_key_CVE: "Podpisy, które dotyczą CVE (typowe podatności i narażenia)."
 siginfo_key_Chameleon: "Podpisy dotyczące „ataków kameleona”."
 siginfo_key_FN: "Podpisy pracujące z nazwami plików (w przeciwieństwie do zawartości pliku)."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bulgarian language data (last modified: 2023.09.19).
+# This file: Bulgarian language data (last modified: 2023.09.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -230,6 +230,7 @@ label:
  Branch latest stable: "Най-новата стабилна в клона:"
  Client information: "Информация за клиента:"
  Complete access: "Пълен достъп"
+ Copy to clipboard: "Копиране в клипборда"
  Default: "Стандартна"
  Expires: "Изтича:"
  Extension: "Разширение"
@@ -275,7 +276,6 @@ link:
  Accounts: "Акаунти"
  Cache Data: "Кеширане на данни"
  Configuration: "Конфигурация"
- Copy to clipboard: "Копиране в клипборда"
  Discussions: "Дискусии"
  Documentation: "Документация"
  Home: "Начална страница"
@@ -327,7 +327,7 @@ response:
  Username field empty: "Полето за потребителско име е празно!"
  Wrong endpoint: "Грешна крайна точка!"
  _No: "Не"
- _Yes: "Да" 
+ _Yes: "Да"
 siginfo_key_CVE: "Сигнатури които се занимават с CVE (често срещани уязвимости и експозиции)."
 siginfo_key_Chameleon: "Сигнатури които се справят с „хамелеонски атаки“."
 siginfo_key_FN: "Сигнатури работещи с имена на файлове (за разлика от съдържанието на файла)."

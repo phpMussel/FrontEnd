@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (traditional) language data (last modified: 2023.09.19).
+# This file: Chinese (traditional) language data (last modified: 2023.09.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -224,6 +224,7 @@ label:
  Branch latest stable: "分支最新穩定："
  Client information: "客戶信息："
  Complete access: "完全訪問"
+ Copy to clipboard: "複製到剪貼板"
  Default: "標準"
  Expires: "過期："
  Extension: "擴展"
@@ -269,7 +270,6 @@ link:
  Accounts: "帳戶"
  Cache Data: "緩存數據"
  Configuration: "配置"
- Copy to clipboard: "複製到剪貼板"
  Discussions: "討論"
  Documentation: "文檔"
  Home: "主頁"
@@ -321,7 +321,7 @@ response:
  Username field empty: "用戶名輸入是空的！"
  Wrong endpoint: "錯誤的端點！"
  _No: "不是"
- _Yes: "是" 
+ _Yes: "是"
 siginfo_key_CVE: "處理CVE（常見漏洞和暴露）的簽名。"
 siginfo_key_Chameleon: "處理『變色龍攻擊』的簽名。"
 siginfo_key_FN: "處理文件名的簽名（與文件內容相反）。"

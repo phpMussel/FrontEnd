@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Punjabi language data (last modified: 2023.09.19).
+# This file: Punjabi language data (last modified: 2023.09.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -223,6 +223,7 @@ label:
  Branch latest stable: "ਸ਼ਾਖਾ ਨਵੀਨਤਮ ਸਥਿਰ:"
  Client information: "ਕਲਾਈਂਟ ਜਾਣਕਾਰੀ:"
  Complete access: "ਪੂਰੀ ਪਹੁੰਚ"
+ Copy to clipboard: "ਕਲਿੱਪਬੋਰਡ ਵਿੱਚ ਕਾਪੀ ਕਰੋ"
  Default: "ਡਿਫਾਲਟ"
  Expires: "ਮਿਆਦ ਪੁੱਗਦੀ ਹੈ:"
  Extension: "ਐਕਸਟੈਂਸ਼ਨ"
@@ -268,7 +269,6 @@ link:
  Accounts: "ਖਾਤੇ"
  Cache Data: "ਕੈਸ਼ ਡੇਟਾ"
  Configuration: "ਕੌਂਫਿਗਰੇਸ਼ਨ"
- Copy to clipboard: "ਕਲਿੱਪਬੋਰਡ ਵਿੱਚ ਕਾਪੀ ਕਰੋ"
  Discussions: "ਚਰਚਾਵਾਂ"
  Documentation: "ਦਸਤਾਵੇਜ਼ੀਕਰਨ"
  Home: "ਹੋਮਪੇਜ"
@@ -320,7 +320,7 @@ response:
  Username field empty: "ਉਪਭੋਗਤਾ ਨਾਮ ਖੇਤਰ ਖਾਲੀ ਹੈ!"
  Wrong endpoint: "ਗਲਤ ਅੰਤ ਬਿੰਦੂ!"
  _No: "ਨਹੀਂ"
- _Yes: "ਹਾਂ" 
+ _Yes: "ਹਾਂ"
 siginfo_key_CVE: "ਦਸਤਖਤ ਜੋ CVE ਨਾਲ ਨਜਿੱਠਦੇ ਹਨ (ਆਮ ਕਮਜ਼ੋਰੀਆਂ ਅਤੇ ਐਕਸਪੋਜ਼ਰ)।"
 siginfo_key_Chameleon: "ਦਸਤਖਤ ਜੋ "ਗਿਰਗਿਟ ਦੇ ਹਮਲੇ" ਨਾਲ ਨਜਿੱਠਦੇ ਹਨ।"
 siginfo_key_FN: "ਫਾਈਲਨਾਮਾਂ ਨਾਲ ਕੰਮ ਕਰਨ ਵਾਲੇ ਦਸਤਖਤ (ਫਾਇਲ ਸਮੱਗਰੀ ਦੇ ਉਲਟ)।"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2023.09.19).
+# This file: Norwegian language data (last modified: 2023.09.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -223,6 +223,7 @@ label:
  Branch latest stable: "Branch siste stabile:"
  Client information: "Klientinformasjon:"
  Complete access: "Komplett tilgang"
+ Copy to clipboard: "Kopiere til utklippstavle"
  Default: "Standardverdi"
  Expires: "Utgår:"
  Extension: "Forlengelse"
@@ -268,7 +269,6 @@ link:
  Accounts: "Kontoer"
  Cache Data: "Cache data"
  Configuration: "Konfigurasjon"
- Copy to clipboard: "Kopiere til utklippstavle"
  Discussions: "Diskusjoner"
  Documentation: "Dokumentasjon"
  Home: "Hjem"
@@ -320,7 +320,7 @@ response:
  Username field empty: "Brukernavn-felt tomt!"
  Wrong endpoint: "Feil sluttpunkt!"
  _No: "Nei"
- _Yes: "Ja" 
+ _Yes: "Ja"
 siginfo_key_CVE: "Signaturer som omhandler CVE-er (vanlige sikkerhetsproblemer og eksponeringer)."
 siginfo_key_Chameleon: "Signaturer som omhandler «kameleonangrep»."
 siginfo_key_FN: "Signaturer som arbeider med filnavn (i motsetning til fildata)."

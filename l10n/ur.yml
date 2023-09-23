@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Urdu language data (last modified: 2023.09.19).
+# This file: Urdu language data (last modified: 2023.09.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -222,6 +222,7 @@ label:
  Branch latest stable: "شاخ تازہ ترین مستحکم:"
  Client information: "کلائنٹ کی معلومات:"
  Complete access: "مکمل رسائی"
+ Copy to clipboard: "کلپ بورڈ پر کاپی کریں"
  Default: "پہلے سے طے شدہ"
  Expires: "ختم ہو جاتی ہے:"
  Extension: "کی توسیع"
@@ -267,7 +268,6 @@ link:
  Accounts: "اکاؤنٹس"
  Cache Data: "کیش ڈیٹا"
  Configuration: "کنفگریشن"
- Copy to clipboard: "کلپ بورڈ پر کاپی کریں"
  Discussions: "مباحثے"
  Documentation: "دستاویزی"
  Home: "ہوم"
@@ -319,7 +319,7 @@ response:
  Username field empty: "صارف کا نام فیلڈ کو خالی!"
  Wrong endpoint: "غلط رسائی پوائنٹ!"
  _No: "نہیں"
- _Yes: "جی ہاں" 
+ _Yes: "جی ہاں"
 siginfo_key_CVE: "دستخط CVE سے نمٹنے کے."
 siginfo_key_Chameleon: "دستخط جو "chameleon حملوں" سے نمٹنے کے لئے ہے."
 siginfo_key_FN: "دستخط جن فائل نام کے ساتھ کام کرتے ہیں (فائل کا مواد کے بجائے)."

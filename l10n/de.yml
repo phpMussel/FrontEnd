@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data (last modified: 2023.09.19).
+# This file: German language data (last modified: 2023.09.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -222,6 +222,7 @@ label:
  Branch latest stable: "Branch neueste stabil:"
  Client information: "Client Information:"
  Complete access: "Vollständiger Zugriff"
+ Copy to clipboard: "In die Zwischenablage kopieren"
  Default: "Standardeinstellung"
  Expires: "Läuft ab:"
  Extension: "Erweiterung"
@@ -267,7 +268,6 @@ link:
  Accounts: "Konten"
  Cache Data: "Datencache"
  Configuration: "Konfiguration"
- Copy to clipboard: "In die Zwischenablage kopieren"
  Discussions: "Diskussionen"
  Documentation: "Dokumentation"
  Home: "Startseite"
@@ -319,7 +319,7 @@ response:
  Username field empty: "Benutzername-Feld leer!"
  Wrong endpoint: "Falscher Endpunkt!"
  _No: "Nein"
- _Yes: "Ja" 
+ _Yes: "Ja"
 siginfo_key_CVE: "Signaturen, die sich mit CVEs (Häufige Schwachstellen und Gefährdungen) befassen."
 siginfo_key_Chameleon: "Signaturen, die sich mit „Chamäleon-Attacken“ befassen."
 siginfo_key_FN: "Signaturen, die mit Dateinamen arbeiten (im Gegensatz zu Dateiinhalten)."

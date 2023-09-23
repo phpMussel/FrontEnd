@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2023.09.19).
+# This file: Malay language data (last modified: 2023.09.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -223,6 +223,7 @@ label:
  Branch latest stable: "Cawangan terkini stabil:"
  Client information: "Maklumat pelanggan:"
  Complete access: "Akses lengkap"
+ Copy to clipboard: "Salin ke papan keratan"
  Default: "Lalai"
  Expires: "Tamat tempoh:"
  Extension: "Sambungan"
@@ -268,7 +269,6 @@ link:
  Accounts: "Akaun"
  Cache Data: "Data cache"
  Configuration: "Konfigurasi"
- Copy to clipboard: "Salin ke papan keratan"
  Discussions: "Perbincangan"
  Documentation: "Dokumentasi"
  Home: "Halaman utama"
@@ -320,7 +320,7 @@ response:
  Username field empty: "Medan nama pengguna kosong!"
  Wrong endpoint: "Titik akhir salah!"
  _No: "Tidak"
- _Yes: "Ya" 
+ _Yes: "Ya"
 siginfo_key_CVE: "Tandatangan yang berurusan dengan CVE (Kerentanan dan Pendedahan Biasa)."
 siginfo_key_Chameleon: "Tandatangan yang berurusan dengan "serangan chameleon"."
 siginfo_key_FN: "Tandatangan yang berfungsi dengan nama fail (berbeza dengan kandungan fail)."

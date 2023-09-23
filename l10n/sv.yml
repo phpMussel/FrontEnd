@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2023.09.19).
+# This file: Swedish language data (last modified: 2023.09.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -223,6 +223,7 @@ label:
  Branch latest stable: "Branch senaste stabila:"
  Client information: "Klientinformation:"
  Complete access: "Fullständig tillgång"
+ Copy to clipboard: "Kopiera till urklipp"
  Default: "Standard"
  Expires: "Utgår:"
  Extension: "Förlängning"
@@ -268,7 +269,6 @@ link:
  Accounts: "Konton"
  Cache Data: "Cacherdata"
  Configuration: "Konfiguration"
- Copy to clipboard: "Kopiera till urklipp"
  Discussions: "Diskussioner"
  Documentation: "Dokumentation"
  Home: "Hem"
@@ -320,7 +320,7 @@ response:
  Username field empty: "Användarnamn fältet tomt!"
  Wrong endpoint: "Felaktig slutpunkt!"
  _No: "Nej"
- _Yes: "Ja" 
+ _Yes: "Ja"
 siginfo_key_CVE: "Signaturer som hanterar CVEer (gemensamma sårbarheter och exponeringar)."
 siginfo_key_Chameleon: "Signaturer som handlar om "kameleonattacker"."
 siginfo_key_FN: "Signaturer arbetar med filnamn (i motsats till filinnehållet)."

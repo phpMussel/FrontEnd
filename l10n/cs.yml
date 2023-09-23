@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Czech language data (last modified: 2023.09.19).
+# This file: Czech language data (last modified: 2023.09.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -226,6 +226,7 @@ label:
  Branch latest stable: "Nejnovější stáj pobočky:"
  Client information: "Informace o klientovi:"
  Complete access: "Kompletní přístup"
+ Copy to clipboard: "Zkopírovat do schránky"
  Default: "Standardní"
  Expires: "Platnost vyprší:"
  Extension: "Rozšíření"
@@ -271,7 +272,6 @@ link:
  Accounts: "Účty"
  Cache Data: "Data mezipaměti"
  Configuration: "Konfigurace"
- Copy to clipboard: "Zkopírovat do schránky"
  Discussions: "Diskuse"
  Documentation: "Dokumentace"
  Home: "Domovská stránka"
@@ -323,7 +323,7 @@ response:
  Username field empty: "Pole uživatelského jména prázdné!"
  Wrong endpoint: "Špatný koncový bod!"
  _No: "Ne"
- _Yes: "Ano" 
+ _Yes: "Ano"
 siginfo_key_CVE: "Podpisy, které se zabývají CVE (Common Vulnerabilities and Exposures)."
 siginfo_key_Chameleon: "Podpisy, které se zabývají „útoky chameleonů“."
 siginfo_key_FN: "Podpisy pracující s názvy souborů (na rozdíl od obsahu souboru)."

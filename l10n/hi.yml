@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hindi language data (last modified: 2023.09.19).
+# This file: Hindi language data (last modified: 2023.09.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -225,6 +225,7 @@ label:
  Branch latest stable: "शाखा नवीनतम स्थिर:"
  Client information: "क्लाइंट की सूचना:"
  Complete access: "पूरा पहुंच"
+ Copy to clipboard: "क्लिपबोर्ड पर कॉपी करें"
  Default: "डिफ़ॉल्ट"
  Expires: "समय समाप्ति:"
  Extension: "विस्तार"
@@ -270,7 +271,6 @@ link:
  Accounts: "खातों"
  Cache Data: "कैश डेटा"
  Configuration: "कॉन्फ़िगरेशन"
- Copy to clipboard: "क्लिपबोर्ड पर कॉपी करें"
  Discussions: "चर्चाएँ"
  Documentation: "डॉक्यूमेंटेशन"
  Home: "होमपेज"
@@ -322,7 +322,7 @@ response:
  Username field empty: "उपयोगकर्ता नाम फ़ील्ड खाली!"
  Wrong endpoint: "गलत समापन बिंदु!"
  _No: "नहीं"
- _Yes: "हाँ" 
+ _Yes: "हाँ"
 siginfo_key_CVE: "हस्ताक्षर जो CVE (सामान्य भेद्यता और एक्सपोजर) से निपटते हैं।"
 siginfo_key_Chameleon: "हस्ताक्षर जो "गिरगिट हमलों" से निपटते हैं।"
 siginfo_key_FN: "हस्ताक्षर जो फ़ाइल नामों के साथ काम करते हैं (फ़ाइल सामग्री के विपरीत)।"

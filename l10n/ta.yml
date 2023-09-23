@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Tamil language data (last modified: 2023.09.19).
+# This file: Tamil language data (last modified: 2023.09.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -225,6 +225,7 @@ label:
  Branch latest stable: "கிளை சமீபத்திய நிலையானது:"
  Client information: "வாடிக்கையாளர் தகவல்:"
  Complete access: "முழுமையான அணுகல்"
+ Copy to clipboard: "கிளிப்போர்டுக்கு நகலெடுக்கவும்"
  Default: "இயல்புநிலை"
  Expires: "காலாவதியாகிறது:"
  Extension: "நீட்டிப்பு"
@@ -270,7 +271,6 @@ link:
  Accounts: "கணக்குகள்"
  Cache Data: "தற்காலிக சேமிப்பின் தரவு"
  Configuration: "உள்ளமைவு"
- Copy to clipboard: "கிளிப்போர்டுக்கு நகலெடுக்கவும்"
  Discussions: "விவாதங்கள்"
  Documentation: "ஆவணப்படுத்தல்"
  Home: "முகப்பு"
@@ -322,7 +322,7 @@ response:
  Username field empty: "பயனர்பெயர் புலம் காலியாக உள்ளது!"
  Wrong endpoint: "தவறான முடிவுப்புள்ளி!"
  _No: "இல்லை"
- _Yes: "ஆம்" 
+ _Yes: "ஆம்"
 siginfo_key_CVE: "CVEக்களைக் கையாளும் கையொப்பங்கள் (பொதுவான பாதிப்புகள் மற்றும் வெளிப்பாடுகள்)."
 siginfo_key_Chameleon: ""பச்சோந்தி தாக்குதல்களை" கையாளும் கையொப்பங்கள்."
 siginfo_key_FN: "கோப்பு பெயர்களுடன் பணிபுரியும் கையொப்பங்கள்."

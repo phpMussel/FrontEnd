@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2023.09.19).
+# This file: Vietnamese language data (last modified: 2023.09.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -68,7 +68,7 @@ config:
  files_filesize_archives: "Thừa kế danh sách đen/trắng cho kích thước của tập tin trong kho lưu trữ? False = Không (chỉ danh sách xám mọi điều); True = Vâng [Mặc định]."
  files_filesize_limit: "Giới hạn của kích thước tập tin trong KB. 65536 = 64MB [Mặc định]; 0 = Không giới hạn (luôn có trên danh sách xám), bất kỳ giá trị số dương chấp nhận. Điều này có thể hữu ích khi cấu hình PHP của bạn hạn chế số lượng bộ nhớ một quá trình có thể giữ hay nếu hình PHP của bạn giới hạn kích thước của tải lên tập tin."
  files_filesize_response: "Làm gì với tập tin mà vượt quá các giới hạn kích thước của tải lên (nếu tồn tại). False = Danh sách trắng; True = Danh sách đen [Mặc định]."
- files_filetype_archives: "Thừa kế danh sách đen/trắng cho loại tệp của tập tin trong kho lưu trữ? False = Không (chỉ danh sách xám mọi điều) [Mặc định]; True = Vâng."
+ files_filetype_archives: "Thừa kế danh sách đen/trắng cho loại tập tin trong kho lưu trữ? False = Không (chỉ danh sách xám mọi điều) [Mặc định]; True = Vâng."
  files_filetype_blacklist: "Danh sách đen:"
  files_filetype_greylist: "Danh sách xám:"
  files_filetype_whitelist: "Danh sách trắng:"
@@ -171,8 +171,8 @@ field:
 hints_pdo_dsn:
  Câu hỏi thường gặp.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.vi.md\#user-content-HOW_TO_USE_PDO" hreflang="vi-VN">"PDO DSN" là gì? Làm cách nào tôi có thể sử dụng PDO với phpMussel?</a></em>"
 hints_xlists:
- Làm thế nào điều này hoạt động.: "Nếu hệ thống của bạn chỉ cho phép các loại tệp cụ thể được tải lên, hay nếu hệ thống của bạn từ chối một cách rõ ràng các loại tập tin cụ thể, xác định các loại tập tin trong danh sách trắng, danh sách đen và danh sách xám có thể tăng tốc độ quét được tiến hành bằng cách cho phép các kịch bản bỏ qua các loại tập tin nhất định. Định dạng là CSV (dấu phẩy ngăn cách giá trị)."
- Thứ tự hợp lý của chế biến.: "Nếu loại tệp là trên danh sách trắng, không quét và không chặn các tập tin, và không kiểm tra các tập tin chống lại danh sách đen hay danh sách xám. Nếu loại tệp là trên danh sách đen, không quét các tập tin nhưng chặn nó dù sao, và không kiểm tra các tập tin chống lại danh sách xám. Nếu danh sách xám là trống hay nếu danh sách xám không phải là trống và các loại tệp là danh sách xám, quét các tập tin như bình thường và xác định xem có chặn nó dựa trên kết quả của quá trình quét, nhưng nếu danh sách xám không phải là trống và các loại tệp không phải trên danh sách xám, điều trị các tập tin như thể nó là trên danh sách đen, vì thế không quét nó nhưng chặn nó dù sao."
+ Làm thế nào điều này hoạt động.: "Nếu hệ thống của bạn chỉ cho phép các loại tập tin cụ thể được tải lên, hay nếu hệ thống của bạn từ chối một cách rõ ràng các loại tập tin cụ thể, xác định các loại tập tin trong danh sách trắng, danh sách đen và danh sách xám có thể tăng tốc độ quét được tiến hành bằng cách cho phép các kịch bản bỏ qua các loại tập tin nhất định. Định dạng là CSV (dấu phẩy ngăn cách giá trị)."
+ Thứ tự hợp lý của chế biến.: "Nếu loại tập tin là trên danh sách trắng, không quét và không chặn các tập tin, và không kiểm tra các tập tin chống lại danh sách đen hay danh sách xám. Nếu loại tập tin là trên danh sách đen, không quét các tập tin nhưng chặn nó dù sao, và không kiểm tra các tập tin chống lại danh sách xám. Nếu danh sách xám là trống hay nếu danh sách xám không phải là trống và các loại tập tin là danh sách xám, quét các tập tin như bình thường và xác định xem có chặn nó dựa trên kết quả của quá trình quét, nhưng nếu danh sách xám không phải là trống và các loại tập tin không phải trên danh sách xám, điều trị các tập tin như thể nó là trên danh sách đen, vì thế không quét nó nhưng chặn nó dù sao."
 Some useful links: |
  Một số liên kết hữu ích:<br />
      <ul class="pieul">
@@ -223,6 +223,7 @@ label:
  Branch latest stable: "Chi nhánh ổn định mới nhất:"
  Client information: "Thông tin người dùng:"
  Complete access: "Truy cập đầy đủ"
+ Copy to clipboard: "Sao chép vào clipboard"
  Default: "Mặc định"
  Expires: "Hết hạn:"
  Extension: "Phần mở rộng"
@@ -268,7 +269,6 @@ link:
  Accounts: "Tài khoản"
  Cache Data: "Dữ liệu cache"
  Configuration: "Cấu hình"
- Copy to clipboard: "Sao chép vào clipboard"
  Discussions: "Thảo luận"
  Documentation: "Tài liệu"
  Home: "Trang chủ"
@@ -320,7 +320,7 @@ response:
  Username field empty: "Tên người dùng là trống!"
  Wrong endpoint: "Điểm truy cập không đúng!"
  _No: "Không"
- _Yes: "Vâng" 
+ _Yes: "Vâng"
 siginfo_key_CVE: "Chữ ký để xử lý CVE (lỗ hổng và tiếp xúc thường gặp)."
 siginfo_key_Chameleon: "Chữ ký để xử lý "cuộc tấn công tắc kè hoa"."
 siginfo_key_FN: "Chữ ký để làm việc với tên tập tin (trái ngược với nội dung tập tin)."

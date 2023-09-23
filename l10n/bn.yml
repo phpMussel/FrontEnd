@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bangla language data (last modified: 2023.09.19).
+# This file: Bangla language data (last modified: 2023.09.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -223,6 +223,7 @@ label:
  Branch latest stable: "শাখা সর্বশেষ স্থিতিশীল:"
  Client information: "ক্লায়েন্ট তথ্য:"
  Complete access: "সম্পূর্ণ অ্যাক্সেস"
+ Copy to clipboard: "ক্লিপবোর্ডে অনুলিপি করুন"
  Default: "ডিফল্ট"
  Expires: "মেয়াদ শেষ:"
  Extension: "এক্সটেনশন"
@@ -268,7 +269,6 @@ link:
  Accounts: "অ্যাকাউন্ট"
  Cache Data: "ক্যাশ ডেটা"
  Configuration: "কনফিগারেশন"
- Copy to clipboard: "ক্লিপবোর্ডে অনুলিপি করুন"
  Discussions: "আলোচনা"
  Documentation: "ডকুমেন্টেশনটি"
  Home: "হোম পেজ"
@@ -320,7 +320,7 @@ response:
  Username field empty: "ব্যবহারকারীর নাম ক্ষেত্র খালি!"
  Wrong endpoint: "ভুল শেষপ্রান্ত!"
  _No: "না"
- _Yes: "হাঁ" 
+ _Yes: "হাঁ"
 siginfo_key_CVE: "স্বাক্ষর যে CVEগুলি (প্রচলিত দুর্বলতা এবং এক্সপোজারস) সঙ্গে মোকাবিলা।"
 siginfo_key_Chameleon: "স্বাক্ষরগুলি "chameleon হামলার" মোকাবেলা করে।"
 siginfo_key_FN: "স্বাক্ষর ফাইলের নামগুলির (ফাইলের বিষয়বস্তু বিরোধিতা হিসাবে) সাথে কাজ করে।"

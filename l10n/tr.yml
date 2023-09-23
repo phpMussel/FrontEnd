@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2023.09.19).
+# This file: Turkish language data (last modified: 2023.09.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -223,6 +223,7 @@ label:
  Branch latest stable: "Branşı en yeni kararlı:"
  Client information: "Kullanıcı bilgisi:"
  Complete access: "Tam erişim"
+ Copy to clipboard: "Panoya kopyala"
  Default: "Varsayılan"
  Expires: "Son Geçerlilik Tarihi:"
  Extension: "Uzantısı"
@@ -268,7 +269,6 @@ link:
  Accounts: "Hesaplar"
  Cache Data: "Önbellek verileri"
  Configuration: "Yapılandırma"
- Copy to clipboard: "Panoya kopyala"
  Discussions: "Tartışmalar"
  Documentation: "Belgeler"
  Home: "Ana sayfa"
@@ -320,7 +320,7 @@ response:
  Username field empty: "Kullanıcı adı alanı boş!"
  Wrong endpoint: "Yanlış bitiş noktası!"
  _No: "Hayır"
- _Yes: "Evet" 
+ _Yes: "Evet"
 siginfo_key_CVE: "CVE'lerle (Ortak Güvenlik Açıkları ve Etkilenmeler) ilgilenen imzalar."
 siginfo_key_Chameleon: ""Bukalemun saldırıları" ile ilgilenen imzalar."
 siginfo_key_FN: "Dosya isimleriyle çalışan imzalar (dosya içeriğinin aksine)."

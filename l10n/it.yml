@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2023.09.19).
+# This file: Italian language data (last modified: 2023.09.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -223,6 +223,7 @@ label:
  Branch latest stable: "Branch più recente stabile:"
  Client information: "Informazioni sul cliente:"
  Complete access: "Accesso completo"
+ Copy to clipboard: "Copia negli appunti"
  Default: "Predefinito"
  Expires: "Scade:"
  Extension: "Estensione"
@@ -268,7 +269,6 @@ link:
  Accounts: "Utenti"
  Cache Data: "Dati della cache"
  Configuration: "Configurazione"
- Copy to clipboard: "Copia negli appunti"
  Discussions: "Discussioni"
  Documentation: "Documentazione"
  Home: "Pagina principale"
@@ -320,7 +320,7 @@ response:
  Username field empty: "L'input nome utente era vuoto!"
  Wrong endpoint: "Punto finale errato!"
  _No: "No"
- _Yes: "Sì" 
+ _Yes: "Sì"
 siginfo_key_CVE: "Firme che trattano CVE (Vulnerabilità ed Esposizioni Comuni)."
 siginfo_key_Chameleon: "Firme che trattano "attacchi camaleonti"."
 siginfo_key_FN: "Firme che funzionano con i nomi di file (al contrario del contenuto dei file)."

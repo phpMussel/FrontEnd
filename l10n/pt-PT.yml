@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese (Europe) language data (last modified: 2023.09.19).
+# This file: Portuguese (Europe) language data (last modified: 2023.09.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -222,6 +222,7 @@ label:
  Branch latest stable: "Mais novo de estável de branch:"
  Client information: "Informação ao cliente:"
  Complete access: "Acesso completo"
+ Copy to clipboard: "Copiar para área de transferência"
  Default: "Padrão"
  Expires: "Expirará:"
  Extension: "Extensão"
@@ -267,7 +268,6 @@ link:
  Accounts: "Contas"
  Cache Data: "Dados de cache"
  Configuration: "Configuração"
- Copy to clipboard: "Copiar para área de transferência"
  Discussions: "Discussões"
  Documentation: "Documentação"
  Home: "Página principal"
@@ -319,7 +319,7 @@ response:
  Username field empty: "Entrada de nome de utilizador vazio!"
  Wrong endpoint: "Ponto final errado!"
  _No: "Não"
- _Yes: "Sim" 
+ _Yes: "Sim"
 siginfo_key_CVE: "Assinaturas que tratam de CVEs (Vulnerabilidades e Exposições Comuns)."
 siginfo_key_Chameleon: "Assinaturas que tratam de "ataques de camaleão"."
 siginfo_key_FN: "Assinaturas que trabalham com os nomes de arquivos (em oposição ao conteúdo dos arquivos)."
