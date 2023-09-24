@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2023.09.19).
+# This file: Afrikaans language data (last modified: 2023.09.24).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -80,9 +80,9 @@ config:
  frontend_custom_footer: "Ingevoeg as HTML heel onderaan alle front-end-bladsye. Dit kan nuttig wees indien jy 'n regskennisgewing, kontakskakel, besigheidsinligting, of soortgelyke by al sulke bladsye wil insluit."
  frontend_custom_header: "Ingevoeg as HTML heel aan die begin van alle front-end-bladsye. Dit kan nuttig wees indien u 'n webwerf-logo, gepersonaliseerde kopskrif, skrifte, of soortgelyke by al sulke bladsye wil insluit."
  frontend_default_algo: "Definieer watter algoritme om vir alle toekomstige wagwoorde en sessies te gebruik."
- frontend_frontend_log: "Lêer vir aanteken van front-end aanmeldpogings. Spesifiseer 'n lêernaam, of laat leeg om te deaktiveer."
+ frontend_frontend_log: "Lêer vir front-end intekenpogings aan te meld. Spesifiseer 'n lêernaam, of laat leeg om te deaktiveer."
  frontend_magnification: "Lettertipe vergroting. Verstek = 1."
- frontend_max_login_attempts: "Maksimum aantal aanmeldingpogings aan die front-end. Verstek = 5."
+ frontend_max_login_attempts: "Maksimum aantal intekenpogings aan die front-end. Verstek = 5."
  frontend_numbers: "Hoe verkies jy dat getalle vertoon word? Kies die voorbeeld wat vir jou die korrekste lyk."
  frontend_theme: "Die estetiese om te gebruik vir phpMussel se front-end."
  legal: "Konfigurasie vir wetlike vereistes."
@@ -175,8 +175,193 @@ hints_pdo_dsn:
 hints_xlists:
  Hoe dit werk.: "As jou stelsel toelaat dat slegs spesifieke tipes lêers opgelaai word, of as jou stelsel sekere tipes lêers uitdruklik weier, deur daardie lêertipes in witlyste, swartlyste, en gryslyste te spesifiseer, kan die spoed waarteen skandering uitgevoer word verhoog deur die skrip toe te laat om die skandering van daardie lêertipes te vermy. Formaat is CSV (kommageskeide waardes)."
  Logiese volgorde van verwerking.: "As die lêertipe op die gewitlys is, moenie die lêer skandeer en blokkeer nie, en moenie die lêer teen die swartlys of die gryslys kontroleer nie. As die lêertipe op die swartlys is, moenie die lêer skandeer nie, maar blokkeer dit in elk geval, en moenie die lêer teen die gryslys kontroleer nie. As die gryslys leeg is of as die gryslys nie leeg is nie en die lêertipe op die gryslys is, skandeer die lêer soos normaalweg en bepaal of dit geblokkeer moet word op grond van die resultate van die skandering, maar as die gryslys nie leeg is nie en die lêertipe nie op die gryslys is nie, hanteer die lêer asof op die swartlys, dus nie skandeer dit nie maar blokkeer dit in elk geval."
+Some useful links: |
+ Nuttige skakels:<br />
+     <ul class="pieul">
+       <li><span class="comCat">Gereedskap, hulpbronne, ens vir phpMussel.</span>
+         <ul class="comSub">
+           <li>{{Links.phpMussel.Issues}} – Kwessies bladsy vir phpMussel (ondersteuning, bystand, ens).</li>
+           <li>{{Links.phpMussel.SigTool}} – Skep phpMussel handtekeninglêers met behulp van die ClamAV handtekening databasis.</li>
+           <li>{{Links.phpMussel.Extras}} – Verskeie ekstras.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Gereedskap, hulpbronne, ens vir ClamAV.</span>
+         <ul class="comSub">
+           <li>{{Links.ClamavNet}} – ClamAV tuisblad (ClamAV® is 'n oopbron-antivirus-enjin vir die opsporing van trojans, virusse, wanware en ander kwaadwillige bedreigings).</li>
+           <li>{{Links.SecuriteInfo}} – Rekenaar sekuriteitsmaatskappy wat aanvullende handtekeninge vir ClamAV aanbied.</li>
+           <li>{{Links.Sanesecurity}} – Rekenaar sekuriteitsmaatskappy wat aanvullende handtekeninge vir ClamAV aanbied.</li>
+           <li>{{Links.Malware Expert}} – Bied aanvullende handtekeninge vir ClamAV en aanvullende reëls vir ModSecurity.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Groepe, forums, gemeenskappe, ens.</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Facebook}} – PHP leerhulpbronne en bespreking.</li>
+           <li>{{Links.MalwareTips}} – Nuttige wanware-gefokusde besprekingsforums.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Ander nuttige gereedskap, hulpbronne, dienste, ens.</span>
+         <ul class="comSub">
+           <li>{{Links.PhishTank}} – Uitvissing-databasis wat deur die phpMussel URL-skandeerder gebruik word.</li>
+           <li>{{Links.VirusTotal}} – VirusTotal is 'n gratis diens vir die ontleding van verdagte lêers en URL's.</li>
+           <li>{{Links.Hybrid Analysis}} – Hybrid Analysis is 'n gratis wanware-ontledingsdiens wat deur {{Links.Payload Security}} verskaf word.</li>
+           <li>{{Links.Malwarebytes}} – Rekenaar teen wanware spesialiste.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Inligtings en leerhulpbronne.</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Website}} – PHP leerhulpbronne en bespreking.</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Kwesbaarheidskaarte</a> – Lys veilige/onveilige weergawes van verskeie pakkette (HHVM, PHP, phpMyAdmin, Python, ens).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Verenigbaarheidskaarte</a> – Lys versoenbaarheidsinligting vir verskeie pakkette (CIDRAM, phpMussel, ens).</li>
+         </ul>
+       </li>
+     </ul>
+
+label:
+ %s is available (%s): "%s beskikbaar is (%s)."
+ %s is available: "%s beskikbaar is."
+ %s is not available: "%s is nie beskikbaar nie."
+ Active configuration file: "Aktiewe konfigurasielêer:"
+ Active signature files: "Aktiewe handtekeninglêers"
+ Branch latest stable: "Tak nuutste stabiele:"
+ Client information: "Kliënt inligting:"
+ Complete access: "Volledige toegang"
+ Copy to clipboard: "Kopieer na knipbord"
+ Default: "Verstek"
+ Expires: "Verstryking:"
+ Extension: "Uitbreiding"
+ External: "Ekstern"
+ Installed Available: "Geïnstalleer/Beskikbaar"
+ Latest stable: "Nuutste stabiele:"
+ Latest unstable: "Nuutste onstabiele:"
+ Loading_: "Laai tans..."
+ Logged in, 2FA pending: "Ingeteken, 2FA hangende."
+ Logged in: "Ingeteken."
+ Logged out: "Uitgeteken."
+ Login: "Intekening"
+ Logs access only: "Slegs logs toegang"
+ Never: "Nooit nie"
+ No log file selected: "Geen loglêer gekies nie."
+ No log files available: "Geen loglêers beskikbaar nie."
+ Objects flagged: "Voorwerpe gevlag"
+ Objects scanned: "Voorwerpe geskandeer"
+ Operating system used: "Bedryfstelsel gebruik:"
+ Other: "Ander"
+ PHP version used: "PHP weergawe gebruik:"
+ Page request completed in %s seconds: "Bladsyversoek voltooi in %s sekondes."
+ Please log in to continue: "Teken asseblief in om voort te gaan."
+ SAPI used: "SAPI gebruik:"
+ Scan events: "Skandeer gebeure"
+ See also: "Sien ook:"
+ Selected log file doesn_t exist: "Geselekteerde loglêer bestaan nie!"
+ Size in quarantine: "Grootte in kwarantyn:"
+ Start date: "Begindatum"
+ System information: "Stelselinligting:"
+ The cache is empty: "Die kas is leeg."
+ Upload date: "Oplaaidatum:"
+ Upload hash: "Oplaaihash:"
+ Upload origin: "Oplaaioorsprong:"
+ Upload size: "Oplaaigrootte:"
+ Uploads blocked: "Oplaaie geblokkeer"
+ Uploads quarantined: "Oplaaie gekwarantyn"
+ Uploads scanned: "Oplaaie geskandeer"
+ Your IP: "Jou IP:"
+ Your UA: "Jou gebruikersagent:"
+ phpMussel version used: "phpMussel weergawe gebruik:"
+link:
+ Accounts: "Rekeninge"
+ Cache Data: "Kas data"
+ Configuration: "Konfigurasie"
+ Discussions: "Besprekings"
+ Documentation: "Dokumentasie"
+ Home: "Tuis"
+ Log Out: "Teken uit"
+ Logs: "Logs"
+ Quarantine: "Kwarantyn"
+ Signature Information: "Handtekening inligting"
+ Statistics: "Statistiek"
+ Text formatting: "Teksformatering: <a href="%1$sfalse">Eenvoudige</a> – <a href="%1$strue">Fancy</a>"
+ Upload Testing: "Oplaaitoetsing"
+max_login_attempts_exceeded: "Maksimum aantal intekenpogings oorskry; Toegang geweier."
+msg_subject_2fa: "Tweefaktor-verifikasie"
+msg_template_2fa: |
+ <center><p>Hallo, %s.<br /><br />
+ Jou tweefaktor-verifikasiekode om by die phpMussel se front-end in te teken:</p>
+ <h1>%s</h1>
+ <p>Hierdie kode verval oor 10 minute.</p></center>
+previewer:
+ Days: "Dae"
+ Hours: "Ure"
+ Minutes: "Minute"
+ Months: "Maande"
+ Seconds: "Sekondes"
+ Weeks: "Weke"
+ Years: "Jare"
+response:
+ Account successfully created: "Rekening suksesvol geskep!"
+ Account successfully deleted: "Rekening suksesvol verwyderde!"
+ An account with that username already exists: "Rekening met daardie gebruikersnaam bestaan reeds!"
+ Configuration successfully updated: "Konfigurasie suksesvol opgedateer."
+ Corrupted file: "Kon nie herstel nie! Korrupte lêer!"
+ Failed to create: "Kon nie skep nie!"
+ Failed to delete: "Kon nie verwyder nie!"
+ Failed to update configuration: "Kon nie konfigurasie opdateer nie!"
+ Failed to update: "Kon nie opdateer nie!"
+ Failed: "Misluk"
+ File successfully deleted: "Lêer suksesvol verwyderde!"
+ File successfully restored: "Lêer suksesvol herstel!"
+ Incorrect 2FA code entered: "Verkeerde 2FA-kode ingevoer. Verifikasie misluk."
+ Incorrect quarantine key: "Kon nie herstel nie! Verkeerde kwarantynsleutel!"
+ Invalid password: "Intekening misluk! Ongeldige wagwoord!"
+ Password field empty: "Wagwoord veld leeg!"
+ Password successfully updated: "Wagwoord suksesvol opgedateer!"
+ Permissions not adequate to perform asynchronous requests:: "Toestemmings nie voldoende om asinchrone versoeke uit te voer nie. Probeer om weer in te teken."
+ Statistics cleared: "Statistiek uitgevee."
+ Successfully authenticated: "Suksesvol geverifieer."
+ That account doesn_t exist: "Daardie rekening bestaan nie."
+ Username doesn_t exist: "Intekening misluk! Gebruikersnaam bestaan nie!"
+ Username field empty: "Gebruikersnaam veld leeg!"
+ Wrong endpoint: "Verkeerde eindpunt!"
+ _No: "Nee"
+ _Yes: "Ja"
+siginfo_key_CVE: "Handtekeninge wat handel oor CVE's (algemene kwesbaarhede en blootstellings)."
+siginfo_key_Chameleon: "Handtekeninge wat handel oor "verkleurmannetjie-aanvalle"."
+siginfo_key_FN: "Handtekeninge wat met lêername werk (in teenstelling met lêerinhoud)."
+siginfo_key_Fake: "Bespeurings is vals, kwaadwillige variante van andersins goedaardige entiteite (sagteware, skrifte, ens)."
+siginfo_key_HEUR: "Handtekeninge afgelei van heuristiese data."
+siginfo_key_META: "Handtekeninge wat met lêermetadata werk (in teenstelling met lêerdata)."
+siginfo_key_Other: "Ongeïdentifiseerde of ander."
+siginfo_key_Other_Metadata: "Geen metadata beskikbaar nie."
+siginfo_key_Suspect: "Opsporings word vermoed, maar nie bevestig nie (kan kombinasies van verskeie identifiseerders behels)."
+siginfo_key_Testfile: "Handtekeninge vir toetslêers (d.w.s., nie kwaadwillige opsporings nie)."
+siginfo_key_Total: "Totale aktiewe handtekeninge."
+siginfo_key_VT: "Handtekeninge insluitend of gebaseer op data van Virus Total."
+siginfo_key_Werewolf: "Handtekeninge wat handel oor "weerwolf-aanvalle"."
+siginfo_sub_Classes: "Tel volgens handtekeninglêerklas"
+siginfo_sub_Files: "Tel volgens handtekeninglêer"
+siginfo_sub_MalwareTypes: "Tel volgens infeksie of wanware tipe"
+siginfo_sub_SigTypes: "Tel volgens handtekening-metadata"
+siginfo_sub_Targets: "Tel volgens geteikende vektor"
+siginfo_sub_Vendors: "Tel volgens handtekeningverkoper of bron"
+siginfo_xkey: "Geïdentifiseer as "%s"."
+state_quarantine:
+ - "Daar is tans %s lêer in kwarantyn."
+ - "Daar is tans %s lêers in kwarantyn."
+tip:
+ 2FA Sent: "Ons het 'n e-pos gestuur wat 'n tweefaktor-verifikasiekode bevat na jou e-pos adres. Bevestig asseblief hierdie kode hieronder om toegang tot die front-end te kry. As jy nie hierdie e-pos ontvang nie, probeer om uit te teken, wag vir 10 minute, en weer inteken om 'n nuwe e-pos met 'n nuwe kode te ontvang."
+ Accounts: "Hallo, {username}.<br />Jy kan vanaf die rekeninge-bladsy beheer wie toegang tot die phpMussel front-end het."
+ Cache Data: "Hallo, {username}.<br />Hier kan jy die inhoud van die kas hersien."
+ Configuration: "Hallo, {username}.<br />Die konfigurasiebladsy laat jou toe om die konfigurasie vir phpMussel vanaf die front-end te verander."
+ Home: "Hallo, {username}.<br />Dit is die tuisblad vir phpMussel se front-end. Kies 'n skakel uit die navigasiekieslys aan die linkerkant om voort te gaan."
+ Logs: "Hallo, {username}.<br />Kies 'n loglêer uit die lys hieronder om die inhoud van daardie loglêer te sien."
+ Quarantine is currently disabled: "Kennis neem: Kwarantyn is tans gedeaktiveer, maar kan via die konfigurasiebladsy geaktiveer word."
+ Quarantine: "Hallo, {username}.<br />Hierdie bladsy lys alle lêers wat tans in kwarantyn is en fasiliteer die bestuur van daardie lêers."
+ See the documentation: "Sien die <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">dokumentasie</a> vir inligting oor die verskillende konfigurasie-opsies en hul doeleindes."
+ Signature Information: "Hallo, {username}.<br />Die handtekeninginligtingbladsy verskaf basiese inligting oor die bronne en tipes van die tans aktiewe handtekeninge."
+ Statistics tracking is currently disabled: "Kennis neem: Statistieknasporing is tans gedeaktiveer, maar kan via die konfigurasiebladsy geaktiveer word."
+ Statistics: "Hallo, {username}.<br />Hierdie bladsy wys basiese gebruikstatistieke rakende jou phpMussel-installasie."
+ Upload Testing: "Hallo, {username}.<br />Die oplaaitoetsingbladsy bevat 'n standaard lêeroplaaivorm, wat jou toelaat om te toets of 'n lêer normaalweg deur phpMussel geblokkeer sal word wanneer jy dit probeer oplaai."
 warning:
- Cookies: "Kennis neem: phpMussel gebruik 'n koekie vir die verifikasie van aanmeldings. Deur aan te meld, gee jy jou toestemming dat 'n koekie deur jou blaaier geskep en gestoor word."
+ Cookies: "Kennis neem: phpMussel gebruik 'n koekie vir die verifikasie van intekeninge. Deur in te teken, gee jy jou toestemming dat 'n koekie deur jou blaaier geskep en gestoor word."
  JavaScript required: "Waarskuwing: Sommige front-end funksionaliteit vereis JavaScript. Om te verseker dat die hele front-end optree soos verwag, word dit aanbeveel om JavaScript te aktiveer."
  Maintenance mode is enabled: "Waarskuwing: Onderhoudsmodus is geaktiveer!"
  No signature files are active: "Waarskuwing: Geen handtekeninglêers is aktief nie!"
