@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2023.09.25).
+ * This file: Front-end handler (last modified: 2023.09.26).
  */
 
 namespace phpMussel\FrontEnd;
@@ -133,7 +133,7 @@ class FrontEnd
     private $User = '';
 
     /**
-     * Construct the loader.
+     * Construct the front-end instance.
      *
      * @param \phpMussel\Core\Loader $Loader The instantiated loader object, passed by reference.
      * @param \phpMussel\Core\Scanner $Scanner The instantiated scanner object, passed by reference.
