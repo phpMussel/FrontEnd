@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data (last modified: 2023.09.03).
+# This file: Romanian language data (last modified: 2023.09.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -23,3 +23,36 @@
 # know which, and I can delete it. If you're not sure how to perform pull
 # requests, ask. I can help.
 ##/
+
+checkbox:
+ Delete orphaned values: "Ștergeți valorile orfane."
+config:
+ core: "Configurație generală (orice configurație de bază care nu aparține altor categorii)."
+ core_default_timeout: "Timeout implicit de utilizat pentru solicitările externe? Implicit = 12 secunde."
+ core_delete_on_sight: "Activarea acestei directive va instrui scriptul să încerce să ștergă imediat orice încercare de încărcare a fișierelor scanate care corespunde oricărui criteriu de detectare, fie prin semnături sau altfel. Fișierele considerate a fi „curate” nu vor fi atinse. În cazul arhivelor, întreaga arhivă va fi ștearsă, indiferent dacă dosarul contravenient este sau nu doar unul dintre mai multe fișiere conținute în arhivă. În cazul scanării încărcării fișierelor, de obicei, nu este necesar să activați această directivă, deoarece de obicei, PHP va șterge automat conținutul cache-ului său când execuția sa terminat, ceea ce înseamnă că va șterge de obicei toate fișierele încărcate prin intermediul acestuia pe server, dacă nu au fost deja mutate, copiate sau șterse. Această directivă este adăugată aici ca o măsură suplimentară de securitate pentru cei ale căror copii de PHP ar putea să nu se comporte întotdeauna în modul așteptat. False = După scanare, lăsați fișierul în pace [Implicit]; True = După scanare, dacă nu curățați, ștergeți imediat."
+ core_disabled_channels: "Acest lucru poate fi folosit pentru a împiedica phpMussel să folosească anumite canale atunci când trimite cereri."
+ core_error_log: "Un fișier pentru înregistrarea oricăror erori non-fatale detectate. Specificați un nume de fișier, sau lăsați necompletat pentru a dezactiva."
+ core_hide_version: "Ascundeți informațiile despre versiune din jurnalele și rezultatele paginii? True = Da; False = Nu [Implicit]."
+ core_ipaddr: "Unde găsiți adresa IP a solicitărilor de conectare? (Util pentru servicii precum Cloudflare et al). Implicit = REMOTE_ADDR. AVERTIZARE: Nu schimba asta dacă nu înțelegi ce faci!"
+ core_lang: "Specificați limba implicită pentru phpMussel."
+ core_lang_override: "Localizați conform HTTP_ACCEPT_LANGUAGE ori de câte ori este posibil? True = Da [Implicit]; False = Nu."
+ core_log_rotation_action: "Rotația jurnalului limitează numărul de fișiere jurnal care ar trebui să existe la un moment dat. Când sunt create fișiere jurnal noi, dacă numărul total de fișiere jurnal depășește limita specificată, acțiunea specificată va fi efectuată. Aici puteți specifica acțiunea dorită."
+ core_log_rotation_limit: "Rotația jurnalului limitează numărul de fișiere jurnal care ar trebui să existe la un moment dat. Când sunt create fișiere jurnal noi, dacă numărul total de fișiere jurnal depășește limita specificată, acțiunea specificată va fi efectuată. Aici puteți specifica limita dorită. O valoare de 0 va dezactiva rotirea jurnalului."
+ core_maintenance_mode: "Activați modul de întreținere? True = Da; False = Nu [Implicit]. Dezactivează totul, în afară de front-end. Uneori util pentru actualizarea CMS-ului, cadrelor, etc."
+ core_outbound_request_log: "Un fișier pentru înregistrarea rezultatelor oricăror solicitări de ieșire. Specificați un nume de fișier, sau lăsați necompletat pentru a dezactiva."
+ core_scan_cache_expiry: "Pentru cât timp ar trebui phpMussel să păstreze în cache rezultatele scanării? Valoarea este numărul de secunde pentru care se memorează în cache rezultatele scanării. Implicit este 21600 secunde (6 ore); O valoare de 0 va dezactiva stocarea în cache a rezultatelor scanării."
+ core_scan_log: "Numele fișierului în care se înregistrează toate rezultatele scanării. Specificați un nume de fișier, sau lăsați necompletat pentru a dezactiva."
+ core_scan_log_serialized: "Numele fișierului în care se înregistrează toate rezultatele scanării (folosind un format serializat). Specificați un nume de fișier, sau lăsați necompletat pentru a dezactiva."
+ core_statistics: "Urmăriți statisticile de utilizare a phpMussel? True = Da; False = Nu [Implicit]."
+ core_time_format: "Formatul de notație dată/ora utilizat de phpMussel. Opțiuni suplimentare pot fi adăugate la cerere."
+ core_time_offset: "Compensarea fusului orar în minute."
+ core_timezone: "Acesta este folosit pentru a specifica fusul orar de utilizat (de exemplu, Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, etc). Specificați „SISTEM” pentru a lăsa PHP să se ocupe de asta în mod automat."
+ core_truncate: "Trunchiați fișierele jurnal când ating o anumită dimensiune? Valoarea este dimensiunea maximă în B/KB/MB/GB/TB la care poate crește un fișier jurnal înainte de a fi trunchiat. Valoarea implicită de 0KB dezactivează trunchierea (fișierele jurnal pot crește la infinit). Notă: Se aplică fișierelor jurnal individuale! Dimensiunea fișierelor jurnal nu este luată în considerare în mod colectiv."
+ experimental: "Instabil/Experimental!"
+ files: "Specificul modului de manipulare a fișierelor la scanare."
+ files_allow_leading_trailing_dots: "Permiteți punctele de început și de final în numele fișierelor? Aceasta poate fi uneori folosită pentru a ascunde fișiere sau pentru a păcăli unele sisteme să permită traversarea directoarelor. False = Nu permite [Implicit]. True = Permite."
+ files_archive_file_extensions: "Extensii de fișiere de arhivă recunoscute (formatul este CSV; ar trebui să adăugați sau să eliminați numai atunci când apar probleme; eliminarea inutilă poate duce la apariția unor rezultate false pozitive pentru fișierele de arhivă, în timp ce adăugarea inutilă va include în esență pe lista albă ceea ce adăugați din detectarea specifică atacului; modificați cu precauție; de asemenea, rețineți că acest lucru nu are niciun efect asupra arhivelor care pot și nu pot fi analizate la nivel de conținut). Lista, așa cum este implicit, listează acele formate utilizate cel mai frecvent în majoritatea sistemelor și CMS, dar în mod intenționat nu este neapărat cuprinzătoare."
+ files_block_control_characters: "Blocați orice fișiere care conțin caractere de control (altele decât liniile noi)? Dacă încărcați <em><strong>DOAR</strong></em> text simplu, atunci puteți activa această opțiune pentru a oferi o protecție suplimentară sistemului dumneavoastră. Cu toate acestea, dacă încărcați altceva decât text simplu, activarea acestei opțiuni poate duce la rezultate false pozitive. False = Nu blocați [Implicit]; True = Blocați."
+ files_block_encrypted_archives: "Detectați și blocați arhivele criptate? Deoarece phpMussel nu poate scana conținutul arhivelor criptate, este posibil ca criptarea arhivei să fie folosită de un atacator ca mijloc de a încerca să ocolească phpMussel, scanerele antivirus și alte astfel de protecții. Instruirea phpMussel să blocheze orice arhive despre care descoperă că sunt criptate ar putea ajuta la reducerea oricărui risc asociat cu aceste posibilități. False = Nu; True = Da [Implicit]."
+ files_block_macros: "Încercați să blocați orice fișiere care conțin macrocomenzi? Unele tipuri de documente și foi de calcul pot conține macrocomenzi executabile, oferind astfel un vector potențial de malware periculos. False = Nu blocați [Implicit]; True = Blocați."
+ files_can_contain_php_file_extensions: "O listă de extensii de fișiere autorizate să conțină cod PHP, separate prin virgule. Dacă detectarea atacurilor PHP cameleon este activată, fișierele care conțin cod PHP, care au extensii care nu sunt în această listă, vor fi detectate ca atacuri PHP cameleon."
