@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data (last modified: 2023.10.01).
+# This file: Romanian language data (last modified: 2023.10.07).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -30,7 +30,7 @@ config:
  core: "Configurație generală (orice configurație de bază care nu aparține altor categorii)."
  core_default_timeout: "Timeout implicit de utilizat pentru solicitările externe? Implicit = 12 secunde."
  core_delete_on_sight: "Activarea acestei directive va instrui scriptul să încerce să ștergă imediat orice încercare de încărcare a fișierelor scanate care corespunde oricărui criteriu de detectare, fie prin semnături sau altfel. Fișierele considerate a fi „curate” nu vor fi atinse. În cazul arhivelor, întreaga arhivă va fi ștearsă, indiferent dacă dosarul contravenient este sau nu doar unul dintre mai multe fișiere conținute în arhivă. În cazul scanării încărcării fișierelor, de obicei, nu este necesar să activați această directivă, deoarece de obicei, PHP va șterge automat conținutul cache-ului său când execuția sa terminat, ceea ce înseamnă că va șterge de obicei toate fișierele încărcate prin intermediul acestuia pe server, dacă nu au fost deja mutate, copiate sau șterse. Această directivă este adăugată aici ca o măsură suplimentară de securitate pentru cei ale căror copii de PHP ar putea să nu se comporte întotdeauna în modul așteptat. False = După scanare, lăsați fișierul în pace [Implicit]; True = După scanare, dacă nu curățați, ștergeți imediat."
- core_disabled_channels: "Acest lucru poate fi folosit pentru a împiedica phpMussel să folosească anumite canale atunci când trimite cereri."
+ core_disabled_channels: "Acest lucru poate fi folosit pentru a împiedica phpMussel să folosească anumite canale atunci când trimite solicitări."
  core_error_log: "Un fișier pentru înregistrarea oricăror erori non-fatale detectate. Specificați un nume de fișier, sau lăsați necompletat pentru a dezactiva."
  core_hide_version: "Ascundeți informațiile despre versiune din jurnalele și rezultatele paginii? True = Da; False = Nu [Implicit]."
  core_ipaddr: "Unde găsiți adresa IP a solicitărilor de conectare? (Util pentru servicii precum Cloudflare et al). Implicit = REMOTE_ADDR. AVERTIZARE: Nu schimba asta dacă nu înțelegi ce faci!"
@@ -146,7 +146,7 @@ field:
  Latest version: "Ultima versiune"
  Log In: "Conectați"
  More fields: "Mai multe câmpuri"
- OK: "Bine"
+ OK: "OK"
  Options: "Opțiuni"
  Password: "Parola"
  Permissions: "Permisiuni"
@@ -181,3 +181,197 @@ hints_pdo_dsn:
 hints_xlists:
  Cum funcționează asta.: "Dacă sistemul dvs. permite încărcarea numai a anumitor tipuri de fișiere sau dacă sistemul dvs. respinge în mod explicit anumite tipuri de fișiere, specificarea acestor tipuri de fișiere în liste albe, liste negre, și liste gri poate crește viteza la care se efectuează scanarea, permițând scriptului să sară peste anumite tipuri de fișiere. Formatul este CSV (valori separate prin virgulă)."
  Ordinea logică a procesării.: "Dacă tipul de fișier este inclus pe lista albă, nu scanați și nu blocați fișierul, și nu verificați fișierul cu lista neagră sau cu lista gri. Dacă tipul de fișier este pe lista neagră, nu scanați fișierul, ci blocați-l oricum, și nu verificați fișierul cu lista gri. Dacă lista gri este goală sau dacă lista gri nu este goală și tipul fișierului este în listă gri, scanați fișierul în mod normal și determinați dacă îl blocați pe baza rezultatelor scanării, dar dacă lista gri nu este goală și tipul fișierului nu este inclus în lista gri, tratați fișierul ca pe lista neagră, prin urmare nu îl scanați, ci blocați-l oricum."
+Some useful links: |
+ Link-uri utile:<br />
+     <ul class="pieul">
+       <li><span class="comCat">Instrumente, resurse, etc pentru phpMussel.</span>
+         <ul class="comSub">
+           <li>{{Links.phpMussel.Issues}} – Pagina cu issues pentru phpMussel (suport, asistență, etc).</li>
+           <li>{{Links.phpMussel.SigTool}} – Creează fișiere de semnătură phpMussel folosind baza de date de semnături ClamAV.</li>
+           <li>{{Links.phpMussel.Extras}} – Diverse extra.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Instrumente, resurse, etc pentru ClamAV.</span>
+         <ul class="comSub">
+           <li>{{Links.ClamavNet}} – Pagina principala ClamAV (ClamAV® este un motor antivirus open source pentru detectarea troienilor, virușilor, programelor malware și a altor amenințări rău intenționate).</li>
+           <li>{{Links.SecuriteInfo}} – Companie de securitate informatică care oferă semnături suplimentare pentru ClamAV.</li>
+           <li>{{Links.Sanesecurity}} – Companie de securitate informatică care oferă semnături suplimentare pentru ClamAV.</li>
+           <li>{{Links.Malware Expert}} – Oferă semnături suplimentare pentru ClamAV și reguli suplimentare pentru ModSecurity.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Grupuri, forumuri, comunități, etc.</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Facebook}} – Resurse de învățare și discuții PHP.</li>
+           <li>{{Links.MalwareTips}} – Forumuri de discuții utile axate pe malware.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Alte instrumente utile, resurse, servicii, etc.</span>
+         <ul class="comSub">
+           <li>{{Links.PhishTank}} – Baza de date de phishing utilizată de scanerul URL phpMussel.</li>
+           <li>{{Links.VirusTotal}} – VirusTotal este un serviciu gratuit pentru analiza fișierelor și adreselor URL suspecte.</li>
+           <li>{{Links.Hybrid Analysis}} – Hybrid Analysis este un serviciu gratuit de analiză a malware oferit de {{Links.Payload Security}}.</li>
+           <li>{{Links.Malwarebytes}} – Specialiști în anti-malware computerizat.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Resurse informaționale și de învățare.</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Website}} – Resurse de învățare și discuții PHP.</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Diagrame de vulnerabilitate</a> – Listează versiunile sigure/nesigure ale diferitelor pachete (HHVM, PHP, phpMyAdmin, Python, etc).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Diagrame de compatibilitate</a> – Listează informații de compatibilitate pentru diverse pachete (CIDRAM, phpMussel, etc).</li>
+         </ul>
+       </li>
+     </ul>
+
+label:
+ %s is available (%s): "%s este disponibil (%s)."
+ %s is available: "%s este disponibil."
+ %s is not available: "%s nu este disponibil."
+ Active configuration file: "Fișier de configurare activ:"
+ Active signature files: "Fișiere de semnătură active"
+ Branch latest stable: "Cel mai recent ramura stabilă:"
+ Client information: "Informații despre client:"
+ Complete access: "Acces complet"
+ Copy to clipboard: "Copiați în clipboard"
+ Default: "Implicit"
+ Expires: "Expiră:"
+ Extension: "Extensie"
+ External: "Extern"
+ Installed Available: "Instalat/Disponibil"
+ Latest stable: "Ultima stabilă:"
+ Latest unstable: "Ultima instabilă:"
+ Loading_: "Se încarcă..."
+ Logged in, 2FA pending: "Conectat, 2FA în așteptare."
+ Logged in: "Conectat."
+ Logged out: "Deconectat."
+ Login: "Conectare"
+ Logs access only: "Acces doar la jurnalele"
+ Never: "Niciodată"
+ No log file selected: "Niciun fișier jurnal selectat."
+ No log files available: "Niciun fișier jurnal disponibile."
+ Objects flagged: "Obiecte marcate"
+ Objects scanned: "Obiecte scanate"
+ Operating system used: "Sistem de operare folosit:"
+ Other: "Alte"
+ PHP version used: "Versiunea PHP folosită:"
+ Page request completed in %s seconds: "Solicitarea paginii a fost finalizată în %s secunde."
+ Please log in to continue: "Vă rugăm să vă conectați pentru a continua."
+ SAPI used: "SAPI folosit:"
+ Scan events: "Evenimentele de scanare"
+ See also: "Vezi si:"
+ Selected log file doesn_t exist: "Fișierul jurnal selectat nu există!"
+ Size in quarantine: "Dimensiunea în carantină:"
+ Start date: "Data de început"
+ System information: "Informatii despre sistem:"
+ The cache is empty: "Cache-ul este gol."
+ Upload date: "Data de încărcare:"
+ Upload hash: "Hash-ul de încărcare:"
+ Upload origin: "Originea încărcării:"
+ Upload size: "Dimensiune de încărcare:"
+ Uploads blocked: "Încărcări blocate"
+ Uploads quarantined: "Încărcări puse în carantină"
+ Uploads scanned: "Încărcări scanate"
+ Your IP: "IP-ul dvs.:"
+ Your UA: "Agentul dvs. de utilizator:"
+ phpMussel version used: "Versiunea phpMussel folosită:"
+link:
+ Accounts: "Conturi"
+ Cache Data: "Datele din cache"
+ Configuration: "Configurare"
+ Discussions: "Discuții"
+ Documentation: "Documentație"
+ Home: "Pagina principala"
+ Log Out: "Deconectați"
+ Logs: "Jurnalele"
+ Quarantine: "Carantină"
+ Signature Information: "Informații despre semnătură"
+ Statistics: "Statistici"
+ Text formatting: "Formatarea textului: <a href="%1$sfalse">Simplu</a> – <a href="%1$strue">Extravagant</a>"
+ Upload Testing: "Testarea încărcării"
+max_login_attempts_exceeded: "Numărul maxim de încercări de conectare a fost depășit; Acces refuzat."
+msg_subject_2fa: "Autentificare cu doi factori"
+msg_template_2fa: |
+ <center><p>Buna ziua, %s.<br /><br />
+ Codul dvs. de autentificare cu doi factori pentru conectarea la front-end phpMussel:</p>
+ <h1>%s</h1>
+ <p>Acest cod expiră în 10 minute.</p></center>
+previewer:
+ Days: "Zile"
+ Hours: "Ore"
+ Minutes: "Minute"
+ Months: "Luni"
+ Seconds: "Secunde"
+ Weeks: "Săptămâni"
+ Years: "Ani"
+response:
+ Account successfully created: "Contul a fost creat cu succes!"
+ Account successfully deleted: "Contul a fost șters cu succes!"
+ An account with that username already exists: "Un cont cu acel nume de utilizator există deja!"
+ Configuration successfully updated: "Configurația a fost actualizată cu succes."
+ Corrupted file: "Restaurare a eșuat! Fișier corupt!"
+ Failed to create: "Crearea a eșuat!"
+ Failed to delete: "Ștergerea a eșuat!"
+ Failed to update configuration: "Actualizarea configurației a eșuat!"
+ Failed to update: "Actualizare a eșuat!"
+ Failed: "A eșuat"
+ File successfully deleted: "Fișierul a fost șters cu succes!"
+ File successfully restored: "Fișierul a fost restaurat cu succes!"
+ Incorrect 2FA code entered: "A fost introdus un cod 2FA incorect. Autentificare a eșuat."
+ Incorrect quarantine key: "Restaurare a eșuat! Cheie de carantină incorectă!"
+ Invalid password: "Conectare a eșuat! Parolă invalidă!"
+ Password field empty: "Câmpul parolei este gol!"
+ Password successfully updated: "Parola a fost actualizată cu succes!"
+ Permissions not adequate to perform asynchronous requests:: "Permisiunile nu sunt adecvate pentru a efectua solicitări asincrone. Încercați să vă conectați din nou."
+ Statistics cleared: "Statisticile au fost șterse."
+ Successfully authenticated: "Autentificat cu succes."
+ That account doesn_t exist: "Acest cont nu există."
+ Username doesn_t exist: "Conectare a eșuat! Numele de utilizator nu există!"
+ Username field empty: "Câmpul nume de utilizator este gol!"
+ Wrong endpoint: "Punct final greșit!"
+ _No: "Nu"
+ _Yes: "Da"
+siginfo_key_CVE: "Semnături care se ocupă de CVE (Common Vulnerabilities and Exposures)."
+siginfo_key_Chameleon: "Semnături care tratează „atacuri cameleonice”."
+siginfo_key_FN: "Semnături care lucrează cu nume de fișiere (spre deosebire de conținutul fișierului)."
+siginfo_key_Fake: "Detectările sunt variante false, rău intenționate ale unor entități altfel benigne (software, scripturi, etc)."
+siginfo_key_HEUR: "Semnături derivate din date euristice."
+siginfo_key_META: "Semnături care lucrează cu metadatele fișierelor (spre deosebire de datele fișierului)."
+siginfo_key_Other: "Neidentificat sau altul."
+siginfo_key_Other_Metadata: "Metadatele indisponibile."
+siginfo_key_Suspect: "Detectările sunt suspectate, dar nu sunt confirmate (pot implica combinații de diferiți identificatori)."
+siginfo_key_Testfile: "Semnături pentru fișierele de testare (adică, detectările nu sunt rău intenționate)."
+siginfo_key_Total: "Total semnături active."
+siginfo_key_VT: "Semnături care includ sau se bazează pe date de la Virus Total."
+siginfo_key_Werewolf: "Semnături care tratează „atacuri de vârcolaci”."
+siginfo_sub_Classes: "Numărați după clasa de fișiere de semnătură"
+siginfo_sub_Files: "Numărați după fișier de semnătură"
+siginfo_sub_MalwareTypes: "Numărați după tipul de infecție sau malware"
+siginfo_sub_SigTypes: "Numărați după metadatele semnăturii"
+siginfo_sub_Targets: "Numărați după vectorul vizat"
+siginfo_sub_Vendors: "Numărați după semnătură furnizor sau sursă"
+siginfo_xkey: "Identificat ca „%s”."
+state_quarantine:
+ - "Există %s fișier în prezent în carantină."
+ - "Există %s fișiere în prezent în carantină."
+ - "Există %s de fișiere în prezent în carantină."
+tip:
+ 2FA Sent: "Un e-mail care conține un cod de autentificare cu doi factori a fost trimis la adresa dvs. de e-mail. Vă rugăm să confirmați acest cod mai jos pentru a obține acces la front-end. Dacă nu ați primit acest e-mail, încercați să vă deconectați, așteptați 10 minute, și să vă conectați din nou pentru a primi un nou e-mail care conține un nou cod."
+ Accounts: "Buna ziua, {username}.<br />Pagina de conturi vă permite să controlați cine poate accesa front-end-ul phpMussel."
+ Cache Data: "Buna ziua, {username}.<br />Aici puteți revizui conținutul cache-ului."
+ Configuration: "Buna ziua, {username}.<br />Pagina de configurare vă permite să modificați configurația pentru phpMussel din front-end."
+ Home: "Buna ziua, {username}.<br />Aceasta este pagina principala pentru front-end-ul phpMussel. Selectați un link din meniul de navigare din stânga pentru a continua."
+ Logs: "Buna ziua, {username}.<br />Selectați un fișier jurnal din lista de mai jos pentru a vedea conținutul acelui fișier jurnal."
+ Quarantine is currently disabled: "Notă: Carantina este în prezent dezactivată, dar poate fi activată prin pagina de configurare."
+ Quarantine: "Buna ziua, {username}.<br />Această pagină listează toate fișierele aflate în carantină și facilitează gestionarea acelor fișiere."
+ See the documentation: "Consultați <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">documentația</a> pentru informații despre diferitele directive de configurare și scopurile acestora."
+ Signature Information: "Buna ziua, {username}.<br />Această pagină oferă câteva informații de bază despre sursele și tipurile de semnături active în prezent."
+ Statistics tracking is currently disabled: "Notă: Urmărirea statisticilor este în prezent dezactivată, dar poate fi activată prin pagina de configurare."
+ Statistics: "Buna ziua, {username}.<br />Această pagină prezintă câteva statistici de utilizare de bază referitoare la instalarea dvs. phpMussel."
+ Upload Testing: "Buna ziua, {username}.<br />Pagina de testare a încărcării conține un formular standard de încărcare a fișierelor, permițându-vă să testați dacă un fișier ar fi în mod normal blocat de phpMussel atunci când încercați să îl încărcați."
+warning:
+ Cookies: "Notă: phpMussel folosește un cookie pentru a autentifica conectarea. Conectându-vă, vă dați acordul ca un cookie să fie creat și stocat de browserul dvs."
+ JavaScript required: "Avertizare: Unele funcționalități front-end necesită JavaScript. Pentru a vă asigura că întregul front-end se comportă conform așteptărilor, se recomandă activarea JavaScript."
+ Maintenance mode is enabled: "Avertizare: Modul de întreținere este activat!"
+ No signature files are active: "Avertizare: Nu există fișiere de semnătură active!"
+ Proceeding will log out all users: "Avertizare: În continuare, toți utilizatorii vor fi deconectați."
+ This account is not using a valid password: "Avertizare: Acest cont nu folosește o parolă validă!"
+ Using the default password: "Avertizare: Folosind parola implicită!"
