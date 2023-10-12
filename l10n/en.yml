@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2023.09.23).
+# This file: English language data (last modified: 2023.10.12).
 ##/
 
 checkbox:
@@ -21,14 +21,20 @@ config:
  core_hide_version: "Hide version information from logs and page output? True = Yes; False = No [Default]."
  core_ipaddr: "Where to find the IP address of connecting requests? (Useful for services such as Cloudflare and the likes). Default = REMOTE_ADDR. WARNING: Don't change this unless you know what you're doing!"
  core_lang: "Specify the default language for phpMussel."
- core_lang_override: "Localise according to HTTP_ACCEPT_LANGUAGE whenever possible? True = Yes [Default]; False = No."
+ core_lang_override:
+  en-AU: "Localise according to HTTP_ACCEPT_LANGUAGE whenever possible? True = Yes [Default]; False = No."
+  en-CA: &cp "Localize according to HTTP_ACCEPT_LANGUAGE whenever possible? True = Yes [Default]; False = No."
+  en-US: *cp
  core_log_rotation_action: "Log rotation limits the number of log files that should exist at any one time. When new log files are created, if the total number of log files exceeds the specified limit, the specified action will be performed. You can specify the desired action here."
  core_log_rotation_limit: "Log rotation limits the number of log files that should exist at any one time. When new log files are created, if the total number of log files exceeds the specified limit, the specified action will be performed. You can specify the desired limit here. A value of 0 will disable log rotation."
  core_maintenance_mode: "Enable maintenance mode? True = Yes; False = No [Default]. Disables everything other than the front-end. Sometimes useful for when updating your CMS, frameworks, etc."
  core_outbound_request_log: "A file for logging the results of any outbound requests. Specify a filename, or leave blank to disable."
  core_scan_cache_expiry: "For how long should phpMussel cache the results of scanning? Value is the number of seconds to cache the results of scanning for. Default is 21600 seconds (6 hours); A value of 0 will disable caching the results of scanning."
  core_scan_log: "The name of the file to log all scanning results to. Specify a filename, or leave blank to disable."
- core_scan_log_serialized: "The name of the file to log all scanning results to (using a serialised format). Specify a filename, or leave blank to disable."
+ core_scan_log_serialized:
+  en-AU: "The name of the file to log all scanning results to (using a serialised format). Specify a filename, or leave blank to disable."
+  en-CA: &cp "The name of the file to log all scanning results to (using a serialized format). Specify a filename, or leave blank to disable."
+  en-US: *cp
  core_statistics: "Track phpMussel usage statistics? True = Yes; False = No [Default]."
  core_time_format: "The date/time notation format used by phpMussel. Additional options may be added upon request."
  core_time_offset: "Timezone offset in minutes."
@@ -37,13 +43,22 @@ config:
  experimental: "Unstable/Experimental!"
  files: "The specifics of how to handle files when scanning."
  files_allow_leading_trailing_dots: "Allow leading and trailing dots in filenames? This can sometimes be used to hide files, or to trick some systems into allowing directory traversal. False = Don't allow [Default]. True = Allow."
- files_archive_file_extensions: "Recognised archive file extensions (format is CSV; should only add or remove when problems occur; unnecessarily removing may cause false positives to appear for archive files, whereas unnecessarily adding will essentially whitelist what you're adding from attack specific detection; modify with caution; also note that this has no effect on what archives can and can't be analysed at content-level). The list, as is at default, lists those formats used most commonly across the majority of systems and CMS, but intentionally isn't necessarily comprehensive."
+ files_archive_file_extensions:
+  en-AU: "Recognised archive file extensions (format is CSV; should only add or remove when problems occur; unnecessarily removing may cause false positives to appear for archive files, whereas unnecessarily adding will essentially whitelist what you're adding from attack specific detection; modify with caution; also note that this has no effect on what archives can and can't be analysed at content-level). The list, as is at default, lists those formats used most commonly across the majority of systems and CMS, but intentionally isn't necessarily comprehensive."
+  en-CA: &cp "Recognized archive file extensions (format is CSV; should only add or remove when problems occur; unnecessarily removing may cause false positives to appear for archive files, whereas unnecessarily adding will essentially whitelist what you're adding from attack specific detection; modify with caution; also note that this has no effect on what archives can and can't be analysed at content-level). The list, as is at default, lists those formats used most commonly across the majority of systems and CMS, but intentionally isn't necessarily comprehensive."
+  en-US: *cp
  files_block_control_characters: "Block any files containing any control characters (other than newlines)? If you're <em><strong>ONLY</strong></em> uploading plain-text, then you can turn this option on to provide some additional protection to your system. However, if you upload anything other than plain-text, turning this on may result in false positives. False = Don't block [Default]; True = Block."
  files_block_encrypted_archives: "Detect and block encrypted archives? Because phpMussel isn't able to scan the contents of encrypted archives, it's possible that archive encryption may be employed by an attacker as a means of attempting to bypass phpMussel, anti-virus scanners and other such protections. Instructing phpMussel to block any archives that it discovers to be encrypted could potentially help reduce any risk associated with these such possibilities. False = No; True = Yes [Default]."
  files_block_macros: "Try to block any files containing macros? Some types of documents and spreadsheets may contain executable macros, thus providing a dangerous potential malware vector. False = Don't block [Default]; True = Block."
  files_can_contain_php_file_extensions: "A list of file extensions allowed to contain PHP code, separated by commas. If PHP chameleon attack detection is enabled, files that contain PHP code, which have extensions that aren't on this list, will be detected as PHP chameleon attacks."
- files_chameleon_from_exe: "Search for executable headers in files that are neither executables nor recognised archives and for executables whose headers are incorrect. False = Off; True = On."
- files_chameleon_from_php: "Search for PHP headers in files that are neither PHP files nor recognised archives. False = Off; True = On."
+ files_chameleon_from_exe:
+  en-AU: "Search for executable headers in files that are neither executables nor recognised archives and for executables whose headers are incorrect. False = Off; True = On."
+  en-CA: &cp "Search for executable headers in files that are neither executables nor recognized archives and for executables whose headers are incorrect. False = Off; True = On."
+  en-US: *cp
+ files_chameleon_from_php:
+  en-AU: "Search for PHP headers in files that are neither PHP files nor recognised archives. False = Off; True = On."
+  en-CA: &cp "Search for PHP headers in files that are neither PHP files nor recognized archives. False = Off; True = On."
+  en-US: *cp
  files_chameleon_to_archive: "Detect incorrect headers in archives and compressed files. Supported: BZ/BZIP2, GZ/GZIP, LZF, RAR, ZIP. False = Off; True = On."
  files_chameleon_to_doc: "Search for office documents whose headers are incorrect (Supported: DOC, DOT, PPS, PPT, XLA, XLS, WIZ). False = Off; True = On."
  files_chameleon_to_img: "Search for images whose headers are incorrect (Supported: BMP, DIB, PNG, GIF, JPEG, JPG, XCF, PSD, PDD, WEBP). False = Off; True = On."
@@ -64,7 +79,10 @@ config:
  files_scannable_threshold: "Threshold to the length of raw data that phpMussel is permitted to read and scan (in case there are any noticeable performance issues while scanning). Default = 32MB. Zero or null value disables the threshold. Generally, this value shouldn't be less than the average filesize of file uploads that you want and expect to receive to your server or website, shouldn't be more than the filesize_limit directive, and shouldn't be more than roughly one fifth of the total allowable memory allocation granted to PHP via the "php.ini" configuration file. This directive exists to try to prevent phpMussel from using up too much memory (that'd prevent it from being able to successfully scan files above a certain filesize)."
  frontend: "Configuration for the front-end."
  frontend_custom_footer: "Inserted as HTML at the very bottom of all front-end pages. This could be useful in case you want to include a legal notice, contact link, business information or similar at all such pages."
- frontend_custom_header: "Inserted as HTML at the very beginning of all front-end pages. This could be useful in case you want to include a website logo, personalised header, scripts, or similar at all such pages."
+ frontend_custom_header:
+  en-AU: "Inserted as HTML at the very beginning of all front-end pages. This could be useful in case you want to include a website logo, personalised header, scripts, or similar at all such pages."
+  en-CA: &cp "Inserted as HTML at the very beginning of all front-end pages. This could be useful in case you want to include a website logo, personalized header, scripts, or similar at all such pages."
+  en-US: *cp
  frontend_default_algo: "Defines which algorithm to use for all future passwords and sessions."
  frontend_frontend_log: "File for logging front-end login attempts. Specify a filename, or leave blank to disable."
  frontend_magnification: "Font magnification. Default = 1."
@@ -73,7 +91,10 @@ config:
  frontend_theme: "The aesthetic to use for the phpMussel front-end."
  legal: "Configuration for legal requirements."
  legal_privacy_policy: "The address of a relevant privacy policy to be displayed in the footer of any generated pages. Specify a URL, or leave blank to disable."
- legal_pseudonymise_ip_addresses: "Pseudonymise IP addresses when logging? True = Yes [Default]; False = No."
+ legal_pseudonymise_ip_addresses:
+  en-AU: "Pseudonymise IP addresses when logging? True = Yes [Default]; False = No."
+  en-CA: &cp "Pseudonymize IP addresses when logging? True = Yes [Default]; False = No."
+  en-US: *cp
  quarantine: "Configuration for the quarantine."
  quarantine_quarantine_key: "phpMussel is able to quarantine blocked file uploads, if this is something you want it to do. Casual users of phpMussel that simply wish to protect their websites or hosting environment without having any interest in deeply analysing any flagged attempted file uploads should leave this functionality disabled, but any users interested in further analysis of flagged attempted file uploads for malware research or for similar such things should enable this functionality. Quarantining of flagged attempted file uploads can sometimes also assist in debugging false positives, if this is something that frequently occurs for you. To disable quarantine functionality, simply leave the <code>quarantine_key</code> directive empty, or erase the contents of that directive if it isn't already empty. To enable quarantine functionality, enter some value into the directive. The <code>quarantine_key</code> is an important security feature of the quarantine functionality required as a means of preventing the quarantine functionality from being exploited by potential attackers and as a means of preventing any potential execution of data stored within the quarantine. The <code>quarantine_key</code> should be treated in the same manner as your passwords: The longer the better, and guard it tightly. For best effect, use in conjunction with <code>delete_on_sight</code>."
  quarantine_quarantine_max_files: "The maximum number of files that can exist in the quarantine. When new files are added to the quarantine, if this number is exceeded, old files will be deleted until the remainder no longer exceeds this number. Default = 100."

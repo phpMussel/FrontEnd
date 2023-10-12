@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2023.09.23).
+# This file: Spanish language data (last modified: 2023.10.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -162,8 +162,7 @@ field:
  Your version: "Tu versión"
  log_rotation_archive: "Primero archiva, y luego eliminar los archivos de registro más antiguos, hasta que el límite ya no se exceda."
  log_rotation_delete: "Eliminar los archivos de registro más antiguos, hasta que el límite ya no se exceda."
- size:
-  Total size: "Tamaño total:"
+ size: {"Total size": "Tamaño total:"}
  vt_suspicion_level_all: "Escanear todos los archivos."
  vt_suspicion_level_executable: "Escanear los archivos con peso heurísticos, archivos ejecutables, y archivos que potencialmente contengan datos ejecutables.\nEjemplos de archivos ejecutables, y archivos que potencialmente contienen datos ejecutables, incluyen archivos Windows PE, archivos ELF Linux, archivos Mach-O, archivos DOCX, archivos ZIP, etc."
  vt_suspicion_level_heuristic_only: "Escanear solo archivos con peso heurísticos.\nLos archivos se escanearán solo si tienen algún peso heurístico. Se puede incurrir peso heurístico a través de firmas destinadas a capturar huellas digitales comunes asociadas con una infección potencial que no necesariamente garantiza una infección. La búsqueda, en tales casos, puede servir para proporcionar una segunda opinión para los resultados que justifican la sospecha pero que de otro modo no brindan ninguna certeza."

@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2023.09.26).
+ * This file: Front-end handler (last modified: 2023.10.12).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1506,7 +1506,7 @@ class FrontEnd
 
                     /** Provide hints, useful for users to better understand the directive at hand. */
                     if (!empty($DirValue['hints'])) {
-                        $ThisDir['Hints'] = $this->arrayFromL10nToArray($DirValue['hints']);
+                        $ThisDir['Hints'] = $this->Loader->L10N->arrayFromL10nToArray($DirValue['hints']);
                         foreach ($ThisDir['Hints'] as $ThisDir['HintKey'] => $ThisDir['HintValue']) {
                             if (is_int($ThisDir['HintKey'])) {
                                 $ThisDir['FieldOut'] .= sprintf("\n<br /><br />%s", $ThisDir['HintValue']);
@@ -2035,18 +2035,6 @@ class FrontEnd
             }
         }
         $Filesize = $this->NumberFormatter->format($Filesize, ($Iterate === 0) ? 0 : 2) . ' ' . $this->Loader->L10N->getPlural($Filesize, $Scale[$Iterate]);
-    }
-
-    /**
-     * Filter the available language options provided by the configuration page on
-     * the basis of the availability of the corresponding language files.
-     *
-     * @param string $ChoiceKey Language code.
-     * @return bool Valid/Invalid.
-     */
-    private function filterL10N(string $ChoiceKey): bool
-    {
-        return is_readable($this->L10NPath . $ChoiceKey . '.yml') && is_file($this->L10NPath . $ChoiceKey . '.yml');
     }
 
     /**
@@ -2738,43 +2726,6 @@ class FrontEnd
                 return;
             }
         }
-    }
-
-    /**
-     * Parses an array of L10N data references from L10N data to an array.
-     *
-     * @param string|array $References The L10N data references.
-     * @return array An array of L10N data.
-     */
-    private function arrayFromL10nToArray($References): array
-    {
-        if (!is_array($References)) {
-            $References = [$References];
-        }
-        $Out = [];
-        foreach ($References as $Reference) {
-            if (isset($this->Loader->L10N->Data[$Reference])) {
-                $Reference = $this->Loader->L10N->Data[$Reference];
-            } elseif (is_array($this->Loader->L10N->Fallback)) {
-                if (isset($this->Loader->L10N->Fallback[$Reference])) {
-                    $Reference = $this->Loader->L10N->Fallback[$Reference];
-                }
-            } elseif ($this->Loader->L10N->Fallback instanceof \Maikuolan\Common\L10N) {
-                if (isset($this->Loader->L10N->Fallback->Data[$Reference])) {
-                    $Reference = $this->Loader->L10N->Fallback->Data[$Reference];
-                } elseif (is_array($this->Loader->L10N->Fallback->Fallback) && isset($this->Loader->L10N->Fallback->Fallback[$Reference])) {
-                    $Reference = $this->Loader->L10N->Fallback->Fallback[$Reference];
-                }
-            }
-            foreach ($Reference as $Key => $Value) {
-                if (is_int($Key)) {
-                    $Out[] = $Value;
-                    continue;
-                }
-                $Out[$Key] = $Value;
-            }
-        }
-        return $Out;
     }
 
     /**

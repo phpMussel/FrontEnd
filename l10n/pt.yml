@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese (Brazil) language data (last modified: 2023.09.23).
+# This file: Portuguese language data (last modified: 2023.10.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -29,11 +29,15 @@ checkbox:
 config:
  core: "Configuração geral (qualquer configuração principal que não pertença a outras categorias)."
  core_default_timeout: "Tempo limite padrão a ser usado para solicitações externas? Padrão = 12 segundos."
- core_delete_on_sight: "Ativando esta opção irá instruir o script para tentar imediatamente deletando qualquer arquivo que ele encontra durante a análise que corresponde a qualquer critério de detecção, quer seja através de assinaturas ou de outra forma. Arquivos determinados para ser "limpo" não serão tocados. Em caso de compactados arquivos, o inteiro arquivo será deletado (independentemente de se o problemático arquivo é apenas um dos vários arquivos contidos dentro do compactado arquivo). Para o caso de arquivo carregamento análise, em geral, não é necessário ativar essa opção, porque normalmente, PHP irá automaticamente expurgar os conteúdos de o seu cache quando a execução foi concluída, significando que ele vai normalmente deletar todos os arquivos enviados através dele para o servidor a menos que tenha movido, copiado ou deletado já. A opção é adicionado aqui como uma medida de segurança para aqueles cujas cópias de PHP nem sempre se comportam da forma esperada. False = Após a análise, deixe o arquivo sozinho [Padrão]; True = Após a análise, se não limpo, deletar imediatamente."
+ core_delete_on_sight:
+  pt-BR: "Ativando esta opção irá instruir o script para tentar imediatamente deletando qualquer arquivo que ele encontra durante a análise que corresponde a qualquer critério de detecção, quer seja através de assinaturas ou de outra forma. Arquivos determinados para ser "limpo" não serão tocados. Em caso de compactados arquivos, o inteiro arquivo será deletado (independentemente de se o problemático arquivo é apenas um dos vários arquivos contidos dentro do compactado arquivo). Para o caso de arquivo carregamento análise, em geral, não é necessário ativar essa opção, porque normalmente, PHP irá automaticamente expurgar os conteúdos de o seu cache quando a execução foi concluída, significando que ele vai normalmente deletar todos os arquivos enviados através dele para o servidor a menos que tenha movido, copiado ou deletado já. A opção é adicionado aqui como uma medida de segurança para aqueles cujas cópias de PHP nem sempre se comportam da forma esperada. False = Após a análise, deixe o arquivo sozinho [Padrão]; True = Após a análise, se não limpo, deletar imediatamente."
+  pt-PT: "Ativando esta opção irá instruir o script para tentar imediatamente deletando qualquer arquivo que ele encontra durante a análise que corresponde a qualquer critério de deteção, quer seja através de assinaturas ou de outra forma. Arquivos determinados para ser "limpo" não serão tocados. Em caso de compactados arquivos, o inteiro arquivo será deletado (independentemente de se o problemático arquivo é apenas um dos vários arquivos contidos dentro do compactado arquivo). Para o caso de arquivo carregamento análise, em geral, não é necessário ativar essa opção, porque normalmente, PHP irá automaticamente expurgar os conteúdos de o seu cache quando a execução foi concluída, significando que ele vai normalmente deletar todos os arquivos enviados através dele para o servidor a menos que tenha movido, copiado ou deletado já. A opção é adicionado aqui como uma medida de segurança para aqueles cujas cópias de PHP nem sempre se comportam da forma esperada. False = Após a análise, deixe o arquivo sozinho [Padrão]; True = Após a análise, se não limpo, deletar imediatamente."
  core_disabled_channels: "Isso pode ser usado para impedir que o phpMussel use canais específicos ao enviar solicitações."
  core_error_log: "Um arquivo para registrar erros detectados que não são fatais. Especifique o nome de um arquivo, ou deixe em branco para desabilitar."
  core_hide_version: "Ocultar informações da versão dos logs e da saída da página? True = Sim; False = Não [Padrão]."
- core_ipaddr: "Onde encontrar o IP endereço das solicitações? (Útil por serviços como o Cloudflare e tal). Padrão = REMOTE_ADDR. ATENÇÃO: Não mude isso a menos que você saiba o que está fazendo!"
+ core_ipaddr:
+  pt-BR: "Onde encontrar o IP endereço das solicitações? (Útil por serviços como o Cloudflare e tal). Padrão = REMOTE_ADDR. ATENÇÃO: Não mude isso a menos que você saiba o que está fazendo!"
+  pt-PT: "Onde encontrar o IP endereço das solicitações? (Útil por serviços como o Cloudflare e tal). Padrão = REMOTE_ADDR. ATENÇÃO: Não mude isso a menos que você saiba o que está a fazer!"
  core_lang: "Especificar o padrão da linguagem por phpMussel."
  core_lang_override: "Localizar de acordo com HTTP_ACCEPT_LANGUAGE sempre que possível? True = Sim [Padrão]; False = Não."
  core_log_rotation_action: "A rotação de log limita o número de arquivos de log que devem existir a qualquer momento. Quando novos arquivos de log são criados, se o número total de arquivos de log exceder o limite especificado, a ação especificada será executada. Você pode especificar a ação desejada aqui."
@@ -51,11 +55,15 @@ config:
  experimental: "Instável/Experimental!"
  files: "Os detalhes de como lidar com arquivos durante a análise."
  files_allow_leading_trailing_dots: "Permitir pontos iniciais e finais em nomes de arquivos? Às vezes, isso pode ser usado para ocultar arquivos, ou enganar alguns sistemas para permitir a passagem de diretórios. False = Não permitir [Padrão]. True = Permitir."
- files_archive_file_extensions: "Reconhecidos arquivos extensões (formato é CSV; só deve adicionar ou remover quando problemas ocorrem; desnecessariamente removendo pode causar falso-positivos para aparecer por compactados arquivos, enquanto desnecessariamente adicionando será essencialmente whitelist o que você está adicionando contra ataque específica detecção; modificar com cautela; Também notar que este não tem efeito em qual compactados arquivos podem e não podem ser analisados no escopo de conteúdo). A lista, como é padrão, é do formatos utilizados mais comumente através da maioria dos sistemas e CMS, mas intencionalmente não é necessariamente abrangente."
+ files_archive_file_extensions:
+  pt-BR: "Reconhecidos arquivos extensões (formato é CSV; só deve adicionar ou remover quando problemas ocorrem; desnecessariamente removendo pode causar falso-positivos para aparecer por compactados arquivos, enquanto desnecessariamente adicionando será essencialmente whitelist o que você está adicionando contra ataque específica detecção; modificar com cautela; Também notar que este não tem efeito em qual compactados arquivos podem e não podem ser analisados no escopo de conteúdo). A lista, como é padrão, é do formatos utilizados mais comumente através da maioria dos sistemas e CMS, mas intencionalmente não é necessariamente abrangente."
+  pt-PT: "Reconhecidos arquivos extensões (formato é CSV; só deve adicionar ou remover quando problemas ocorrem; desnecessariamente removendo pode causar falso-positivos para aparecer por compactados arquivos, enquanto desnecessariamente adicionando será essencialmente whitelist o que você está adicionando contra ataque específica deteção; modificar com cautela; Também notar que este não tem efeito em qual compactados arquivos podem e não podem ser analisados no escopo de conteúdo). A lista, como é padrão, é do formatos utilizados mais comumente através da maioria dos sistemas e CMS, mas intencionalmente não é necessariamente abrangente."
  files_block_control_characters: "Bloquear todos os arquivos que contenham quaisquer caracteres de controle, exceto linha quebras? Se você está <em><strong>APENAS</strong></em> carregando simple texto, então você pode ativar essa opção para fornecer alguma adicional proteção para o seu sistema. Mas, se você carregar qualquer coisa que não seja de texto simples, ativando isso pode resultas em falso positivos. False = Não bloquear [Padrão]; True = Bloquear."
  files_block_encrypted_archives: "Detectar e bloquear compactados arquivos criptografados? Porque phpMussel não é capaz de analisar o conteúdo de arquivos criptografados, é possível que a criptografia de arquivo pode ser empregado por um atacante como meio de tentar contornar phpMussel, analisadores antivírus e outras dessas protecções. Instruindo phpMussel para bloquear quaisquer arquivos que ele descobrir a ser criptografada poderia ajudar a reduzir o risco associado a essas tais possibilidades. False = Não; True = Sim [Padrão]."
  files_block_macros: "Tente bloquear todos os arquivos que contenham macros? Alguns tipos de documentos e planilhas podem conter macros executáveis, fornecendo assim um perigoso vetor potencial de malware. False = Não bloquear [Padrão]; True = Bloquear."
- files_can_contain_php_file_extensions: "Uma lista de extensões de arquivos com permissão para conter código PHP, separadas por vírgulas. Se a detecção de ataques de camaleão PHP estiver ativada, os arquivos que contêm código PHP, que possuem extensões que não estão nesta lista, serão detectados como ataques de camaleão PHP."
+ files_can_contain_php_file_extensions:
+  pt-BR: "Uma lista de extensões de arquivos com permissão para conter código PHP, separadas por vírgulas. Se a detecção de ataques de camaleão PHP estiver ativada, os arquivos que contêm código PHP, que possuem extensões que não estão nesta lista, serão detectados como ataques de camaleão PHP."
+  pt-PT: "Uma lista de extensões de arquivos com permissão para conter código PHP, separadas por vírgulas. Se a deteção de ataques de camaleão PHP estiver ativada, os arquivos que contêm código PHP, que possuem extensões que não estão nesta lista, serão detectados como ataques de camaleão PHP."
  files_chameleon_from_exe: "Olha por executável headers em arquivos que são não executáveis nem reconhecidos compactados arquivos e por executáveis cujos headers estão incorretas. False = Inativo; True = Ativo."
  files_chameleon_from_php: "Olha por PHP header em arquivos que são não PHP arquivos nem reconhecidos compactados arquivos. False = Inativo; True = Ativo."
  files_chameleon_to_archive: "Detectar headers incorretas em arquivos compactados. Suportados: BZ/BZIP2, GZ/GZIP, LZF, RAR, ZIP. False = Inativo; True = Ativo."
@@ -63,7 +71,9 @@ config:
  files_chameleon_to_img: "Olha por imagens cujos headers estão incorretas (Suportados: BMP, DIB, PNG, GIF, JPEG, JPG, XCF, PSD, PDD, WEBP). False = Inativo; True = Ativo."
  files_chameleon_to_pdf: "Olha por PDF arquivos cujos headers estão incorretas. False = Inativo; True = Ativo."
  files_check_archives: "Tentativa de verificar os conteúdos dos compactados arquivos? False = Não (Não verificar); True = Sim (Verificar) [Padrão]. Suportados: Zip (requer libzip), Tar, Rar (requer a extensão rar)."
- files_corrupted_exe: "Corrompidos arquivos e erros de análise. False = Ignorar; True = Bloquear [Padrão]. Detectar e bloquear potencialmente corrompidos PE (Portátil Executável) arquivos? Frequentemente (mas não sempre), quando certos aspectos de um PE arquivo é corrompido ou não pode ser analisado corretamente, essa pode ser indicativo de uma viral infecção. Os processos utilizados pela maioria dos antivírus programas para detectar vírus em PE arquivos requerem analisando os arquivos de certas maneiras, que, se o programador de um vírus é consciente de, especificamente irá tentar impedir, a fim de permitir seu vírus para permanecer não detectado."
+ files_corrupted_exe:
+  pt-BR: "Corrompidos arquivos e erros de análise. False = Ignorar; True = Bloquear [Padrão]. Detectar e bloquear potencialmente corrompidos PE (Portátil Executável) arquivos? Frequentemente (mas não sempre), quando certos aspectos de um PE arquivo é corrompido ou não pode ser analisado corretamente, essa pode ser indicativo de uma viral infecção. Os processos utilizados pela maioria dos antivírus programas para detectar vírus em PE arquivos requerem analisando os arquivos de certas maneiras, que, se o programador de um vírus é consciente de, especificamente irá tentar impedir, a fim de permitir seu vírus para permanecer não detectado."
+  pt-PT: "Corrompidos arquivos e erros de análise. False = Ignorar; True = Bloquear [Padrão]. Detectar e bloquear potencialmente corrompidos PE (Portátil Executável) arquivos? Frequentemente (mas não sempre), quando certos aspectos de um PE arquivo é corrompido ou não pode ser analisado corretamente, essa pode ser indicativo de uma viral infeção. Os processos utilizados pela maioria dos antivírus programas para detectar vírus em PE arquivos requerem analisando os arquivos de certas maneiras, que, se o programador de um vírus é consciente de, especificamente irá tentar impedir, a fim de permitir seu vírus para permanecer não detectado."
  files_decode_threshold: "Opcional limitação para o comprimento dos dados para que dentro de decodificar comandos devem ser detectados (em caso de existirem quaisquer notável problemas de desempenho enquanto analisando). Padrão = 512KB. Zero ou nulo valor desativa o limitação (removendo qualquer limitação baseado em tamanho do arquivo)."
  files_filesize_archives: "Herdar o arquivo tamanho blacklist/whitelist para o conteúdo de compactados arquivos? False = Não (greylist tudo); True = Sim [Padrão]."
  files_filesize_limit: "Arquivo tamanho limit. Em KB. 65536 = 64MB [Padrão] 0 = Não limite (sempre greylisted), qualquer (positivo) numérico valor aceite. Isso pode ser útil quando sua PHP configuração limita a quantidade de memória que um processo pode ocupar ou se sua PHP configuração limita o arquivo tamanho de carregamentos."
@@ -77,7 +87,9 @@ config:
  files_only_allow_images: "Quando definido como true, todos os arquivos encontrados pelo scanner que não são imagens serão sinalizados imediatamente, sem serem analisados. Isso pode ajudar a reduzir o tempo necessário para concluir uma análise em alguns casos. Defina como false por padrão."
  files_scannable_threshold: "Opcional limitação para o comprimento dos dados brutos para que phpMussel é permitido a ler e analisar (em caso de existirem quaisquer notável problemas de desempenho enquanto analisando). Padrão = 32MB. Zero ou nulo valor desativa o limitação. Em geral, esse valor não deve ser menor que o médio arquivo tamanho de carregamentos que você quer e espera para receber no seu servidor ou website, não deve ser mais que o filesize_limit directivo, e não deve ser menor que aproximadamente um quinto do total permissível memória alocação concedido para PHP através do "php.ini" configuração arquivo. Esta directiva existe para tentar impedir phpMussel de usando demais memória (que seria impedir-lo de ser capaz de analisando arquivos acima de um certo tamanho com sucesso)."
  frontend: "Configuração para o front-end."
- frontend_custom_footer: "Inserido como HTML no final de todas as páginas do front-end. Isso pode ser útil caso você queira incluir um aviso legal, link de contato, informações comerciais, ou similares em todas essas páginas."
+ frontend_custom_footer:
+  pt-BR: "Inserido como HTML no final de todas as páginas do front-end. Isso pode ser útil caso você queira incluir um aviso legal, link de contato, informações comerciais, ou similares em todas essas páginas."
+  pt-PT: "Inserido como HTML no final de todas as páginas do front-end. Isso pode ser útil caso você queira incluir um aviso legal, link de contacto, informações comerciais, ou similares em todas essas páginas."
  frontend_custom_header: "Inserido como HTML no início de todas as páginas do front-end. Isso pode ser útil caso você queira incluir um logotipo de site, cabeçalho personalizado, scripts, ou similares em todas essas páginas."
  frontend_default_algo: "Define qual algoritmo usar para todas as futuras senhas e sessões."
  frontend_frontend_log: "Arquivo para registrar tentativas de login ao front-end. Especifique o nome de um arquivo, ou deixe em branco para desabilitar."
@@ -89,7 +101,9 @@ config:
  legal_privacy_policy: "O endereço de uma política de privacidade relevante a ser exibida no rodapé de qualquer página gerada. Especifique um URL, ou deixe em branco para desabilitar."
  legal_pseudonymise_ip_addresses: "Pseudonimiza endereços IP ao escrever os arquivos de log? True = Sim [Padrão]; False = Não."
  quarantine: "Configuração para a quarentena."
- quarantine_quarantine_key: "O phpMussel pode colocar em quarentena os carregamentos de arquivos bloqueados, se isso é algo que você quer que ele faça. Casuais usuários de phpMussel de que simplesmente desejam proteger seus sites ou hospedagem sem ter qualquer interesse em profundamente analisando qualquer marcados tentados arquivos carregamentos deve deixar esta funcionalidade desativada, mas qualquer usuário interessado em mais profundamente analisando marcados tentados arquivos carregamentos para pesquisa de malware ou de similares tais coisas deve ativada essa funcionalidade. Quarentena de marcados tentados arquivos carregamentos às vezes pode também ajudar em depuração de falso-positivos, se isso é algo que ocorre com frequência para você. Por desativar a funcionalidade de quarentena, simplesmente deixar a directiva <code>quarantine_key</code> vazio, ou apagar o conteúdo do directivo, se ele não está já vazio. Por ativar a funcionalidade de quarentena, introduzir algum valor no directiva. O <code>quarantine_key</code> é um importante segurança característica do quarentena funcionalidade necessária como um meio de prevenir a funcionalidade de quarentena de ser explorada por potenciais atacantes e como meio de evitar qualquer potencial execução de dados armazenados dentro da quarentena. O <code>quarantine_key</code> devem ser tratados da mesma maneira como suas senhas: O mais longo o mais melhor, e guardá-lo com força. Por melhor efeito, usar em conjunto com <code>delete_on_sight</code>."
+ quarantine_quarantine_key:
+  pt-BR: "O phpMussel pode colocar em quarentena os carregamentos de arquivos bloqueados, se isso é algo que você quer que ele faça. Casuais usuários de phpMussel de que simplesmente desejam proteger seus sites ou hospedagem sem ter qualquer interesse em profundamente analisando qualquer marcados tentados arquivos carregamentos deve deixar esta funcionalidade desativada, mas qualquer usuário interessado em mais profundamente analisando marcados tentados arquivos carregamentos para pesquisa de malware ou de similares tais coisas deve ativada essa funcionalidade. Quarentena de marcados tentados arquivos carregamentos às vezes pode também ajudar em depuração de falso-positivos, se isso é algo que ocorre com frequência para você. Por desativar a funcionalidade de quarentena, simplesmente deixar a directiva <code>quarantine_key</code> vazio, ou apagar o conteúdo do directivo, se ele não está já vazio. Por ativar a funcionalidade de quarentena, introduzir algum valor no directiva. O <code>quarantine_key</code> é um importante segurança característica do quarentena funcionalidade necessária como um meio de prevenir a funcionalidade de quarentena de ser explorada por potenciais atacantes e como meio de evitar qualquer potencial execução de dados armazenados dentro da quarentena. O <code>quarantine_key</code> devem ser tratados da mesma maneira como suas senhas: O mais longo o mais melhor, e guardá-lo com força. Por melhor efeito, usar em conjunto com <code>delete_on_sight</code>."
+  pt-PT: "O phpMussel pode colocar em quarentena os carregamentos de arquivos bloqueados, se isso é algo que você quer que ele faça. Casuais utilizadores de phpMussel de que simplesmente desejam proteger seus sites ou hospedagem sem ter qualquer interesse em profundamente analisando qualquer marcados tentados arquivos carregamentos deve deixar esta funcionalidade desativada, mas qualquer utilizador interessado em mais profundamente analisando marcados tentados arquivos carregamentos para pesquisa de malware ou de similares tais coisas deve ativada essa funcionalidade. Quarentena de marcados tentados arquivos carregamentos às vezes pode também ajudar em depuração de falso-positivos, se isso é algo que ocorre com frequência para você. Por desativar a funcionalidade de quarentena, simplesmente deixar a directiva <code>quarantine_key</code> vazio, ou apagar o conteúdo do directivo, se ele não está já vazio. Por ativar a funcionalidade de quarentena, introduzir algum valor no directiva. O <code>quarantine_key</code> é um importante segurança característica do quarentena funcionalidade necessária como um meio de prevenir a funcionalidade de quarentena de ser explorada por potenciais atacantes e como meio de evitar qualquer potencial execução de dados armazenados dentro da quarentena. O <code>quarantine_key</code> devem ser tratados da mesma maneira como suas senhas: O mais longo o mais melhor, e guardá-lo com força. Por melhor efeito, usar em conjunto com <code>delete_on_sight</code>."
  quarantine_quarantine_max_files: "O número máximo de arquivos que podem existir na quarentena. Quando novos arquivos são adicionados à quarentena, se esse número for excedido, os arquivos antigos serão excluídos até que o restante não exceda mais esse número. Padrão = 100."
  quarantine_quarantine_max_filesize: "O máximo permitido tamanho do arquivos serem colocados em quarentena. Arquivos maiores que este valor NÃO serão colocados em quarentena. Esta directiva é importante como um meio de torná-lo mais difícil por qualquer potenciais atacante para inundar sua quarentena com indesejados dados potencialmente causando excesso uso de dados no seu hospedagem serviço. Padrão = 2MB."
  quarantine_quarantine_max_usage: "O uso máximo de memória permitido através do quarentena. Se o total de memória utilizada pelo quarentena atingir este valor, os mais antigos arquivos em quarentena serão apagados até que a total memória utilizada já não atinge este valor. Esta directiva é importante como um meio de torná-lo mais difícil por qualquer potenciais atacante para inundar sua quarentena com indesejados dados potencialmente causando excesso uso de dados no seu hospedagem serviço. Padrão = 64MB."
@@ -114,7 +128,9 @@ config:
  supplementary_cache_options_memcached_port: "Valor da porta do Memcached. Padrão = "11211"."
  supplementary_cache_options_pdo_dsn: "Valor DSN do PDO. Padrão = "mysql:dbname=phpmussel;host=localhost;port=3306"."
  supplementary_cache_options_pdo_password: "A senha do PDO."
- supplementary_cache_options_pdo_username: "O nome de usuário do PDO."
+ supplementary_cache_options_pdo_username:
+  pt-BR: "O nome de usuário do PDO."
+  pt-PT: "O nome de utilizador do PDO."
  supplementary_cache_options_prefix: "O valor especificado aqui será adicionado ao começo das chaves para todas as entradas de cache. Padrão = "phpMussel_". Quando existem várias instalações no mesmo servidor, isso pode ser útil para manter seus caches separados uns dos outros."
  supplementary_cache_options_redis_host: "Valor da host do Redis. Padrão = "localhost"."
  supplementary_cache_options_redis_port: "Valor da porta do Redis. Padrão = "6379"."
@@ -129,7 +145,9 @@ config:
  virustotal_vt_quota_rate: "De acordo com o Virus Total API documentação, é limitada a, no máximo, 4 solicitações de qualquer natureza dentro qualquer 1 minuto período de tempo. Se você executar um honeyclient, honeypot ou qualquer outro automação que vai fornecer recursos para Virus Total e não só recuperar relatórios você tem direito a uma melhor solicitações cota. Por padrão, phpMussel vai aderir estritamente a estas limitações, mas, devido à possibilidade de essas cotas a ser aumentada, estas duas directivas são fornecidos como um meio para que você possa instruir phpMussel sobre o limite que deve aderir para. Excepto se tenha sido instruído a fazê-lo, não é recomendado para você aumentar esses valores, mas, se você encontrou problemas relacionados com a atingir sua cota, diminuir esses valores podem <em><strong>POR VEZES</strong></em> ajudá-lo em lidar com estes problemas. Seu taxa limite é determinada como <code>vt_quota_rate</code> solicitações de qualquer natureza dentro qualquer <code>vt_quota_time</code> minuto período de tempo."
  virustotal_vt_quota_time: "(Ver descrição acima)."
  virustotal_vt_suspicion_level: "Por padrão, phpMussel restringirá os arquivos que são verificado usando o Virus Total API a esses arquivos que considera "suspeito". Opcionalmente, você pode ajustar essa restrição via alterando o valor ao <code>vt_suspicion_level</code> directiva."
- virustotal_vt_weighting: "Deve phpMussel aplicar os resultados de analisando usando o Virus Total API como detecções ou como detecção ponderação? Esta directiva existe, porque, embora verificando um arquivo usando múltiplos mecanismos (como Virus Total faz) deve resultar em um aumento da taxa de detecção (e por conseguinte em um maior número de arquivos maliciosos detectados), isto também pode resultar em um aumento número de falsos positivos, e por conseguinte, em algumas circunstâncias, os resultados de análise pode ser melhor utilizado como uma pontuação de confiança e não como uma conclusão definitiva. Se um valor de 0 é usado, os resultados de análise usando o Virus Total API será aplicado como detecções, e por conseguinte, Se qualquer mecanismo usado pelo Virus Total marca o arquivo que está sendo analisado como sendo malicioso, phpMussel considerará o arquivo a ser malicioso. Se qualquer outro valor é usado, os resultados de análise usando o Virus Total API será aplicado como detecção ponderação, e por conseguinte, o número de mecanismos utilizados pela Virus Total que marcar o arquivo que está sendo analisado como sendo malicioso servirá como uma pontuação de confiança (ou ponderação de detecção) para se ou não o arquivo que está sendo analisado deve ser considerado malicioso por phpMussel (o valor utilizado representará o mínima pontuação de confiança ou peso requerido a fim de ser considerado malicioso). Um valor de 0 é usado por padrão."
+ virustotal_vt_weighting:
+  pt-BR: "Deve phpMussel aplicar os resultados de analisando usando o Virus Total API como detecções ou como detecção ponderação? Esta directiva existe, porque, embora verificando um arquivo usando múltiplos mecanismos (como Virus Total faz) deve resultar em um aumento da taxa de detecção (e por conseguinte em um maior número de arquivos maliciosos detectados), isto também pode resultar em um aumento número de falsos positivos, e por conseguinte, em algumas circunstâncias, os resultados de análise pode ser melhor utilizado como uma pontuação de confiança e não como uma conclusão definitiva. Se um valor de 0 é usado, os resultados de análise usando o Virus Total API será aplicado como detecções, e por conseguinte, Se qualquer mecanismo usado pelo Virus Total marca o arquivo que está sendo analisado como sendo malicioso, phpMussel considerará o arquivo a ser malicioso. Se qualquer outro valor é usado, os resultados de análise usando o Virus Total API será aplicado como detecção ponderação, e por conseguinte, o número de mecanismos utilizados pela Virus Total que marcar o arquivo que está sendo analisado como sendo malicioso servirá como uma pontuação de confiança (ou ponderação de detecção) para se ou não o arquivo que está sendo analisado deve ser considerado malicioso por phpMussel (o valor utilizado representará o mínima pontuação de confiança ou peso requerido a fim de ser considerado malicioso). Um valor de 0 é usado por padrão."
+  pt-PT: "Deve phpMussel aplicar os resultados de analisando usando o Virus Total API como deteções ou como deteção ponderação? Esta directiva existe, porque, embora verificando um arquivo usando múltiplos mecanismos (como Virus Total faz) deve resultar em um aumento da taxa de deteção (e por conseguinte em um maior número de arquivos maliciosos detectados), isto também pode resultar em um aumento número de falsos positivos, e por conseguinte, em algumas circunstâncias, os resultados de análise pode ser melhor utilizado como uma pontuação de confiança e não como uma conclusão definitiva. Se um valor de 0 é usado, os resultados de análise usando o Virus Total API será aplicado como deteções, e por conseguinte, Se qualquer mecanismo usado pelo Virus Total marca o arquivo que está sendo analisado como sendo malicioso, phpMussel considerará o arquivo a ser malicioso. Se qualquer outro valor é usado, os resultados de análise usando o Virus Total API será aplicado como deteção ponderação, e por conseguinte, o número de mecanismos utilizados pela Virus Total que marcar o arquivo que está sendo analisado como sendo malicioso servirá como uma pontuação de confiança (ou ponderação de deteção) para se ou não o arquivo que está sendo analisado deve ser considerado malicioso por phpMussel (o valor utilizado representará o mínima pontuação de confiança ou peso requerido a fim de ser considerado malicioso). Um valor de 0 é usado por padrão."
 confirm:
  Action: "Você tem certeza de que deseja "%s"?"
 field:
@@ -158,19 +176,24 @@ field:
  Update signature files: "Atualizar arquivos de assinaturas"
  Update: "Atualizar"
  Use system default timezone: "Usar o fuso horário padrão do sistema."
- Username: "Nome de usuário"
+ Username:
+  pt-BR: "Nome de usuário"
+  pt-PT: "Nome de utilizador"
  Your version: "Sua versão"
  log_rotation_archive: "Primeiramente arquivar, e então deletar os arquivos de log mais antigos, até o limite não seja mais excedido."
  log_rotation_delete: "Deletar os arquivos de log mais antigos, até o limite não seja mais excedido."
- size:
-  Total size: "Tamanho total:"
+ size: {"Total size": "Tamanho total:"}
  vt_suspicion_level_all: "Analisar todos os arquivos."
  vt_suspicion_level_executable: "Analisar arquivos com peso heurístico, arquivos executáveis, e arquivos potencialmente contendo dados executáveis.\nExemplos de arquivos executáveis, e arquivos potencialmente contendo dados executáveis, incluem arquivos Windows PE, arquivos Linux ELF, arquivos Mach-O, arquivos DOCX, arquivos ZIP, etc."
- vt_suspicion_level_heuristic_only: "Analisar apenas arquivos com peso heurístico.\nArquivos serão analisados apenas se incorrerem em algum peso heurístico. O peso heurístico pode ser incorrido por meio de assinaturas destinadas a capturar impressões digitais comuns associadas a possíveis infecções que não garantem necessariamente a infecção. A pesquisa, nesses casos, pode servir para fornecer uma segunda opinião para resultados que justificam a suspeita, mas não fornecem nenhuma certeza."
+ vt_suspicion_level_heuristic_only:
+  pt-BR: "Analisar apenas arquivos com peso heurístico.\nArquivos serão analisados apenas se incorrerem em algum peso heurístico. O peso heurístico pode ser incorrido por meio de assinaturas destinadas a capturar impressões digitais comuns associadas a possíveis infecções que não garantem necessariamente a infecção. A pesquisa, nesses casos, pode servir para fornecer uma segunda opinião para resultados que justificam a suspeita, mas não fornecem nenhuma certeza."
+  pt-PT: "Analisar apenas arquivos com peso heurístico.\nArquivos serão analisados apenas se incorrerem em algum peso heurístico. O peso heurístico pode ser incorrido por meio de assinaturas destinadas a capturar impressões digitais comuns associadas a possíveis infeções que não garantem necessariamente a infeção. A pesquisa, nesses casos, pode servir para fornecer uma segunda opinião para resultados que justificam a suspeita, mas não fornecem nenhuma certeza."
 hints_pdo_dsn:
  FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.pt.md\#user-content-HOW_TO_USE_PDO" hreflang="pt">O que é um "PDO DSN"? Como posso usar o PDO com o phpMussel?</a></em>"
 hints_xlists:
- Como isso funciona.: "Se o seu sistema só permite certos tipos de arquivos sejam carregado, ou se o seu sistema explicitamente nega certos tipos de arquivos, especificando esses tipos de arquivos no whitelists, blacklists, e greylists pode aumentar a velocidado em que a análise é realizada através de permitindo o script para ignorar certos tipos de arquivos. O formato é CSV. (Valores Separados Por Virgula)."
+ Como isso funciona.:
+  pt-BR: "Se o seu sistema só permite certos tipos de arquivos sejam carregado, ou se o seu sistema explicitamente nega certos tipos de arquivos, especificando esses tipos de arquivos no whitelists, blacklists, e greylists pode aumentar a velocidado em que a análise é realizada através de permitindo o script para ignorar certos tipos de arquivos. O formato é CSV. (Valores Separados Por Virgula)."
+  pt-PT: "Se o seu sistema só permite certos tipos de arquivos sejam carregado, ou se o seu sistema explicitamente nega certos tipos de arquivos, especificando esses tipos de arquivos no whitelists, blacklists, e greylists pode aumentar a velocidado em que a análise é realizada através de permitir o script para ignorar certos tipos de arquivos. O formato é CSV. (Valores Separados Por Virgula)."
  Ordem lógica de processamento.: "Se o tipo de arquivo está na whitelist, não verificar e não bloqueia o arquivo, e não verificar o arquivo contra o blacklist ou greylist. Se o tipo de arquivo está na blacklist, não verificar o arquivo, mas bloqueá-lo de qualquer maneira, e não verificar o arquivo contra o greylist. Se o greylist está vazia ou se o greylist não está vazia e o tipo de arquivo é no greylist, verificar o arquivo como por normal e determinar se a bloqueá-lo com base nos resultados do verificando, mas se o greylist não está vazia e o tipo de arquivo não é no greylist, tratar o arquivo da mesma maneira como está na blacklist, portanto não verificá-lo, mas bloqueá-lo de qualquer maneira."
 Some useful links: |
  Alguns links úteis:<br />
@@ -315,27 +338,39 @@ response:
  Statistics cleared: "Estatísticas apagadas."
  Successfully authenticated: "Autenticado com sucesso."
  That account doesn_t exist: "Essa conta não existe."
- Username doesn_t exist: "Falha no login! Esse usuário não existe!"
- Username field empty: "Entrada de nome de usuário vazio!"
+ Username doesn_t exist:
+  pt-BR: "Falha no login! Esse usuário não existe!"
+  pt-PT: "Falha no login! Esse utilizador não existe!"
+ Username field empty:
+  pt-BR: "Entrada de nome de usuário vazio!"
+  pt-PT: "Entrada de nome de utilizador vazio!"
  Wrong endpoint: "Ponto final errado!"
  _No: "Não"
  _Yes: "Sim"
 siginfo_key_CVE: "Assinaturas que tratam de CVEs (Vulnerabilidades e Exposições Comuns)."
 siginfo_key_Chameleon: "Assinaturas que tratam de "ataques de camaleão"."
 siginfo_key_FN: "Assinaturas que trabalham com os nomes de arquivos (em oposição ao conteúdo dos arquivos)."
-siginfo_key_Fake: "Detecções são falsas, variantes maliciosas de entidades benignas (softwares, scripts, etc)."
+siginfo_key_Fake:
+ pt-BR: "Detecções são falsas, variantes maliciosas de entidades benignas (softwares, scripts, etc)."
+ pt-PT: "Deteções são falsas, variantes maliciosas de entidades benignas (softwares, scripts, etc)."
 siginfo_key_HEUR: "Assinaturas derivadas de dados heurísticos."
 siginfo_key_META: "Assinaturas que trabalham com metadados de arquivos (em oposição aos dados dos arquivos)."
 siginfo_key_Other: "Não identificado ou outro."
 siginfo_key_Other_Metadata: "Nenhum metadado disponível."
-siginfo_key_Suspect: "Detecções são suspeitas, mas não confirmadas (podem envolver combinações de vários identificadores)."
-siginfo_key_Testfile: "Assinaturas para arquivos de teste (ou seja, não detecções maliciosas)."
+siginfo_key_Suspect:
+ pt-BR: "Detecções são suspeitas, mas não confirmadas (podem envolver combinações de vários identificadores)."
+ pt-PT: "Deteções são suspeitas, mas não confirmadas (podem envolver combinações de vários identificadores)."
+siginfo_key_Testfile:
+ pt-BR: "Assinaturas para arquivos de teste (ou seja, não detecções maliciosas)."
+ pt-PT: "Assinaturas para arquivos de teste (ou seja, não deteções maliciosas)."
 siginfo_key_Total: "Total de assinaturas ativas."
 siginfo_key_VT: "Assinaturas incluindo ou baseadas em dados do Virus Total."
 siginfo_key_Werewolf: "Assinaturas que tratam de "ataques de lobisomens"."
 siginfo_sub_Classes: "Contar por classe de arquivo de assinatura"
 siginfo_sub_Files: "Contar por arquivo de assinatura"
-siginfo_sub_MalwareTypes: "Contar por infecção ou tipo de malware"
+siginfo_sub_MalwareTypes:
+ pt-BR: "Contar por infecção ou tipo de malware"
+ pt-PT: "Contar por infeção ou tipo de malware"
 siginfo_sub_SigTypes: "Contar por metadados de assinatura"
 siginfo_sub_Targets: "Contar por vetor alvejados"
 siginfo_sub_Vendors: "Contar por o fornecedor ou fonte de assinatura"
@@ -356,12 +391,18 @@ tip:
  Signature Information: "Olá, {username}.<br />A página de informações de assinaturas fornece algumas informações básicas sobre as origens e os tipos das assinaturas atualmente ativas."
  Statistics tracking is currently disabled: "Nota: O monitoramento de estatísticas está desativado atualmente, mas pode ser ativado através da página de configuração."
  Statistics: "Olá, {username}.<br />Esta página mostra algumas estatísticas de uso básicas relativas à instalação do phpMussel."
- Upload Testing: "Olá, {username}.<br />A página de carregamento teste contém um formulário padrão para carregando arquivos, permitindo que você teste se um arquivo seria normalmente bloqueado através phpMussel quando carregando."
+ Upload Testing:
+  pt-BR: "Olá, {username}.<br />A página de carregamento teste contém um formulário padrão para carregando arquivos, permitindo que você teste se um arquivo seria normalmente bloqueado através phpMussel quando carregando."
+  pt-PT: "Olá, {username}.<br />A página de carregamento teste contém um formulário padrão para carregando arquivos, a permitir que você teste se um arquivo seria normalmente bloqueado através phpMussel quando carregando."
 warning:
  Cookies: "Nota: phpMussel usa um cookie para autenticar logins. Ao efetuar o login, você dá seu consentimento para que um cookie seja criado e armazenado pelo seu navegador."
  JavaScript required: "Atenção: Algumas funcionalidades do front-end requerem JavaScript. Para garantir que todo o front-end se comporte conforme o esperado, é recomendável ativar o JavaScript."
  Maintenance mode is enabled: "Atenção: O modo de manutenção está ativado!"
  No signature files are active: "Atenção: Nenhum arquivo de assinaturas está ativo!"
- Proceeding will log out all users: "Atenção: Todos os usuários serão saíram se você continuar."
- This account is not using a valid password: "Atenção: Esta conta não está usando uma senha válida!"
+ Proceeding will log out all users:
+  pt-BR: "Atenção: Todos os usuários serão saíram se você continuar."
+  pt-PT: "Atenção: Todos os utilizadores serão saíram se você continuar."
+ This account is not using a valid password:
+  pt-BR: "Atenção: Esta conta não está usando uma senha válida!"
+  pt-PT: "Atenção: Esta conta não usa uma senha válida!"
  Using the default password: "Atenção: Usando a senha padrão!"
