@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2023.10.12).
+# This file: Spanish language data (last modified: 2023.10.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -118,7 +118,7 @@ config:
  supplementary_cache_options_prefix: "El valor especificado aquí se antepondrá a las claves de todas las entradas de la caché. Predefinido = "phpMussel_". Cuando existen varias instalaciones en el mismo servidor, esto puede ser útil para mantener sus cachés separados entre sí."
  supplementary_cache_options_redis_host: "Valor del host de Redis. Predefinido = "localhost"."
  supplementary_cache_options_redis_port: "Valor del puerto de Redis. Predefinido = "6379"."
- supplementary_cache_options_redis_timeout: "Valor de tiempo de espera de Redis. Predefinido = "2.5"."
+ supplementary_cache_options_redis_timeout: "Valor del tiempo de espera de Redis. Predefinido = "2.5"."
  urlscanner: "Configuración para el escáner de URL."
  urlscanner_cache_time: "Por cuánto tiempo (en segundos) debe los resultados de las API búsquedas ser almacenan en caché? Predefinido es 3600 segundos (1 horas)."
  urlscanner_google_api_key: "Permite API búsquedas al Google Safe Browsing API cuando la necesario API clave es define."
