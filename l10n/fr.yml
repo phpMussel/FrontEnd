@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2023.09.23).
+# This file: French language data (last modified: 2023.11.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -229,6 +229,7 @@ label:
  Active signature files: "Fichiers de signatures actifs"
  Branch latest stable: "Dernier stable de branche\_:"
  Client information: "Informations sur le client\_:"
+ Complete access: "Accès complet"
  Copy to clipboard: "Copier dans le presse-papier"
  Default: "Défaut"
  Expires: "Expire\_:"
@@ -237,6 +238,10 @@ label:
  Installed Available: "Installé/Disponible"
  Latest stable: "Dernier stable\_:"
  Latest unstable: "Dernier instable\_:"
+ Loading_: "Chargement..."
+ Logged in, 2FA pending: "Connecté, 2FA en attente."
+ Logged in: "Connecté."
+ Logged out: "Déconnecté."
  Login: "Connexion"
  Logs access only: "Accès aux fichiers journaux seulement"
  Never: "Jamais"
@@ -247,6 +252,9 @@ label:
  Operating system used: "Système opérateur utilisée\_:"
  Other: "Autres"
  PHP version used: "Version PHP utilisée\_:"
+ Page request completed in %s seconds:
+  - "Requête de page complétée en %s seconde."
+  - "Requête de page complétée en %s secondes."
  Please log in to continue: "Merci de vous connecter pour continuer."
  SAPI used: "SAPI utilisée\_:"
  Scan events: "événements d'analyse"
@@ -342,14 +350,6 @@ siginfo_sub_Targets: "Compter par vecteur ciblé"
 siginfo_sub_Vendors: "Compter par fournisseur ou source de signature"
 siginfo_xkey: "Identifié comme «\_%s\_»."
 The cache is empty: "Le cache est vide."
-label.Complete access: "Accès complet"
-label.Loading_: "Chargement..."
-label.Page request completed in %s seconds:
- - "Requête de page complétée en %s seconde."
- - "Requête de page complétée en %s secondes."
-label.Logged in: "Connecté."
-label.label.Logged in, 2FA pending: "Connecté, 2FA en attente."
-label.Logged out: "Déconnecté."
 state_quarantine:
  - "Il y a %s fichier actuellement en quarantaine."
  - "Il y a %s fichiers actuellement en quarantaine."
