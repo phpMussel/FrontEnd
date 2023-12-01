@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2023.09.23).
+# This file: Polish language data (last modified: 2023.12.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -116,6 +116,7 @@ config:
  supplementary_cache_options_pdo_password: "Hasło PDO."
  supplementary_cache_options_pdo_username: "Nazwa użytkownika PDO."
  supplementary_cache_options_prefix: "Ta wartość zostanie dodana na początku kluczy dla wszystkich wpisów w pamięci podręcznej. Domyślna = „phpMussel_”. Gdy na tym samym serwerze istnieje wiele instalacji, to może być przydatne do przechowywania ich pamięci podręcznych oddzielnie od siebie."
+ supplementary_cache_options_redis_database_number: "Numer bazy danych Redis. Domyślna = 0. Uwaga: W Redis Cluster nie można używać wartości innych niż 0."
  supplementary_cache_options_redis_host: "Wartość hosta Redis. Domyślna = „localhost”."
  supplementary_cache_options_redis_port: "Wartość portu Redis. Domyślna = „6379”."
  supplementary_cache_options_redis_timeout: "Wartość limitu czasu Redis. Domyślna = „2.5”."

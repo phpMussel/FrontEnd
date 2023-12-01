@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2023.09.23).
+# This file: Malay language data (last modified: 2023.12.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -116,6 +116,7 @@ config:
  supplementary_cache_options_pdo_password: "Kata laluan PDO."
  supplementary_cache_options_pdo_username: "Nama pengguna PDO."
  supplementary_cache_options_prefix: "Nilai yang dinyatakan disini akan ditambahkan pada permulaan kunci untuk semua entri dalam cache. Lalai = "phpMussel_". Apabila berbilang pemasangan wujud pada pelayan yang sama, ini boleh berguna untuk memastikan cache mereka berasingan antara satu sama lain."
+ supplementary_cache_options_redis_database_number: "Nombor pangkalan data Redis. Lalai = 0. Nota: Tidak boleh menggunakan nilai selain 0 dengan Redis Cluster."
  supplementary_cache_options_redis_host: "Nilai hos Redis. Lalai = "localhost"."
  supplementary_cache_options_redis_port: "Nilai port Redis. Lalai = "6379"."
  supplementary_cache_options_redis_timeout: "Nilai tamat masa Redis. Lalai = "2.5"."

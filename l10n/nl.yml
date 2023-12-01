@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2023.10.12).
+# This file: Dutch language data (last modified: 2023.12.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -116,6 +116,7 @@ config:
  supplementary_cache_options_pdo_password: "PDO wachtwoord."
  supplementary_cache_options_pdo_username: "PDO gebruikersnaam."
  supplementary_cache_options_prefix: "De hier opgegeven waarde wordt toegevoegd aan alle cache-invoersleutels. Standaard = "phpMussel_". Als er meerdere installaties op dezelfde server staan, dit kan handig zijn om hun caches gescheiden van elkaar te houden."
+ supplementary_cache_options_redis_database_number: "Redis-databasenummer. Standaard = 0. Opmerking: Kan geen andere waarden dan 0 gebruiken met Redis Cluster."
  supplementary_cache_options_redis_host: "Redis hostwaarde. Standaard = "localhost"."
  supplementary_cache_options_redis_port: "Redis poortwaarde. Standaard = "6379"."
  supplementary_cache_options_redis_timeout: "Redis timeoutwaarde. Standaard = "2.5"."

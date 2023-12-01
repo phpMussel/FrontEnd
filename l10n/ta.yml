@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Tamil language data (last modified: 2023.09.23).
+# This file: Tamil language data (last modified: 2023.12.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -116,8 +116,9 @@ config:
  supplementary_cache_options_pdo_password: "PDO கடவுச்சொல்."
  supplementary_cache_options_pdo_username: "PDO பயனர்பெயர்."
  supplementary_cache_options_prefix: "இங்கு குறிப்பிடப்பட்டுள்ள மதிப்பு அனைத்து கேச் நுழைவு விசைகளுக்கும் முன்கூட்டியதாக இருக்கும். இயல்புநிலை = "phpMussel_". ஒரே சர்வரில் பல நிறுவல்கள் இருக்கும்போது, அவற்றின் தற்காலிக சேமிப்புகளை ஒருவருக்கொருவர் தனித்தனியாக வைத்திருக்க இது பயனுள்ளதாக இருக்கும்."
+ supplementary_cache_options_redis_database_number: "Redis தரவுத்தள எண். இயல்புநிலை = 0. குறிப்பு: Redis Cluster உடன் 0 ஐத் தவிர வேறு மதிப்புகளைப் பயன்படுத்த முடியாது."
  supplementary_cache_options_redis_host: "Redisக்கான ஹோஸ்ட் மதிப்பு. இயல்புநிலை = "localhost"."
- supplementary_cache_options_redis_port: "Redisக்கான போர்ட் மதிப்பு. இயல்புநிலை = "6379"."
+ supplementary_cache_options_redis_port: "Redisக்கான போர்ட் மதிப்பு. இயல்புநிலை = 6379."
  supplementary_cache_options_redis_timeout: "Redisக்கான காலாவதியான மதிப்பு. இயல்புநிலை = "2.5"."
  urlscanner: "URL ஸ்கேனருக்கான உள்ளமைவு."
  urlscanner_cache_time: "API ஐ தேடல்களின் முடிவுகள் எத்தனை வினாடிகளுக்கு தற்காலிகமாக சேமிக்கப்பட வேண்டும்? இயல்புநிலை 3600 வினாடிகள் (1 மணிநேரம்)."

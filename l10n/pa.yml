@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Punjabi language data (last modified: 2023.09.23).
+# This file: Punjabi language data (last modified: 2023.12.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -116,6 +116,7 @@ config:
  supplementary_cache_options_pdo_password: "PDO ਪਾਸਵਰਡ।"
  supplementary_cache_options_pdo_username: "PDO ਉਪਭੋਗਤਾ ਨਾਮ।"
  supplementary_cache_options_prefix: "ਇੱਥੇ ਦਰਸਾਏ ਗਏ ਮੁੱਲ ਨੂੰ ਸਾਰੀਆਂ ਕੈਸ਼ ਐਂਟਰੀ ਕੁੰਜੀਆਂ ਲਈ ਅੱਗੇ ਰੱਖਿਆ ਜਾਵੇਗਾ। ਡਿਫਾਲਟ = "phpMussel_". ਜਦੋਂ ਇੱਕੋ ਸਰਵਰ 'ਤੇ ਕਈ ਇੰਸਟਾਲੇਸ਼ਨ ਮੌਜੂਦ ਹੁੰਦੀ ਹੈ, ਤਾਂ ਇਹ ਉਹਨਾਂ ਦੇ ਕੈਚਾਂ ਨੂੰ ਇੱਕ ਦੂਜੇ ਤੋਂ ਵੱਖ ਰੱਖਣ ਲਈ ਲਾਭਦਾਇਕ ਹੋ ਸਕਦਾ ਹੈ।"
+ supplementary_cache_options_redis_database_number: "Redis ਡਾਟਾਬੇਸ ਨੰਬਰ। ਡਿਫਾਲਟ = 0. ਨੋਟ: Redis Cluster ਨਾਲ 0 ਤੋਂ ਇਲਾਵਾ ਹੋਰ ਮੁੱਲਾਂ ਦੀ ਵਰਤੋਂ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕਦੀ।"
  supplementary_cache_options_redis_host: "Redis ਹੋਸਟ ਮੁੱਲ। ਡਿਫਾਲਟ = "localhost"."
  supplementary_cache_options_redis_port: "Redis ਪੋਰਟ ਮੁੱਲ। ਡਿਫਾਲਟ = 6379."
  supplementary_cache_options_redis_timeout: "Redis ਸਮਾਂ ਸਮਾਪਤ ਮੁੱਲ। ਡਿਫਾਲਟ = "2.5"."

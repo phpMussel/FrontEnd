@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Thai language data (last modified: 2023.09.23).
+# This file: Thai language data (last modified: 2023.12.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -116,8 +116,9 @@ config:
  supplementary_cache_options_pdo_password: "รหัสผ่าน PDO."
  supplementary_cache_options_pdo_username: "ชื่อผู้ใช้ PDO."
  supplementary_cache_options_prefix: "ค่าที่ระบุในที่นี้จะถูกเติมไว้ข้างหน้าคีย์รายการแคชทั้งหมด. ค่าเริ่มต้น = "phpMussel_". เมื่อมีการติดตั้งหลายรายการในเซิร์ฟเวอร์เดียวกัน การทำเช่นนี้อาจเป็นประโยชน์ในการแยกแคชออกจากกัน."
+ supplementary_cache_options_redis_database_number: "หมายเลขฐานข้อมูล Redis. ค่าเริ่มต้น = 0. หมายเหตุ: ใช้ค่าอื่นที่ไม่ใช่ 0 กับ Redis Cluster ไม่ได้."
  supplementary_cache_options_redis_host: "ค่าโฮสต์ Redis. ค่าเริ่มต้น = "localhost"."
- supplementary_cache_options_redis_port: "ค่าพอร์ต Redis. ค่าเริ่มต้น = "6379"."
+ supplementary_cache_options_redis_port: "ค่าพอร์ต Redis. ค่าเริ่มต้น = 6379."
  supplementary_cache_options_redis_timeout: "ค่าการหมดเวลา Redis. ค่าเริ่มต้น = "2.5"."
  urlscanner: "การกำหนดค่าสำหรับเครื่องสแกน URL."
  urlscanner_cache_time: "จำนวนวินาทีที่จะแคชผลลัพธ์สำหรับการค้นหา API. ค่าเริ่มต้นคือ 3600 วินาที (1 ชั่วโมง)."

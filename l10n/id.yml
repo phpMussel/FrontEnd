@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2023.09.23).
+# This file: Indonesian language data (last modified: 2023.12.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -116,6 +116,7 @@ config:
  supplementary_cache_options_pdo_password: "Kata sandi PDO."
  supplementary_cache_options_pdo_username: "Nama pengguna PDO."
  supplementary_cache_options_prefix: "Nilai yang ditentukan disini akan ditambahkan ke awal kunci untuk semua entri di cache. Default = "phpMussel_". Ketika beberapa instalasi ada di server, ini dapat berguna untuk menjaga cache mereka terpisah."
+ supplementary_cache_options_redis_database_number: "Nomor basis data Redis. Default = 0. Catatan: Tidak dapat menggunakan nilai selain 0 dengan Redis Cluster."
  supplementary_cache_options_redis_host: "Nilai host Redis. Default = "localhost"."
  supplementary_cache_options_redis_port: "Nilai port Redis. Default = "6379"."
  supplementary_cache_options_redis_timeout: "Nilai batas waktu Redis. Default = "2.5"."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Farsi language data (last modified: 2023.09.23).
+# This file: Farsi language data (last modified: 2023.12.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -116,6 +116,7 @@ config:
  supplementary_cache_options_pdo_password: "کلمه عبور PDO."
  supplementary_cache_options_pdo_username: "نام کاربری PDO."
  supplementary_cache_options_prefix: "مقدار مشخص شده در اینجا به تمام کلیدهای ورودی حافظه پنهان اضافه می شود. پیش فرض = «phpMussel_». هنگامی که چندین نصب در یک سرور وجود دارد، این می تواند برای جدا نگه داشتن حافظه پنهان آنها از یکدیگر مفید باشد."
+ supplementary_cache_options_redis_database_number: "شماره پایگاه داده Redis. پیش فرض = 0. توجه داشته باشید: نمی توان از مقادیری غیر از 0 با Redis Cluster استفاده کرد."
  supplementary_cache_options_redis_host: "مقدار میزبان Redis. پیش فرض = «localhost»."
  supplementary_cache_options_redis_port: "مقدار پورت Redis. پیش فرض = «6379»."
  supplementary_cache_options_redis_timeout: "مقدار مهلت زمانی Redis. پیش فرض = «2.5»."

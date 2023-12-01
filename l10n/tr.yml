@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2023.09.23).
+# This file: Turkish language data (last modified: 2023.12.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -116,6 +116,7 @@ config:
  supplementary_cache_options_pdo_password: "PDO parola."
  supplementary_cache_options_pdo_username: "PDO kullanıcı adı."
  supplementary_cache_options_prefix: "Burada belirtilen değer, tüm önbellek giriş anahtarlarının önüne eklenecektir. Varsayılan = "phpMussel_". Aynı sunucuda birden fazla kurulum olduğunda, bu onların önbelleklerini birbirinden ayrı tutmak için faydalı olabilir."
+ supplementary_cache_options_redis_database_number: "Redis veritabanı numarası. Varsayılan = 0. Not: Redis Cluster'da 0'dan farklı değerler kullanılamaz."
  supplementary_cache_options_redis_host: "Redis ana bilgisayar değeri. Varsayılan = "localhost"."
  supplementary_cache_options_redis_port: "Redis port değeri. Varsayılan = "6379"."
  supplementary_cache_options_redis_timeout: "Redis zaman aşımı değeri. Varsayılan = "2.5"."

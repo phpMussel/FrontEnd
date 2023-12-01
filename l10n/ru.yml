@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Russian language data (last modified: 2023.09.23).
+# This file: Russian language data (last modified: 2023.12.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -116,6 +116,7 @@ config:
  supplementary_cache_options_pdo_password: "Пароль PDO."
  supplementary_cache_options_pdo_username: "Имя пользователя PDO."
  supplementary_cache_options_prefix: "Указанное здесь значение будет добавлено в начало всех ключей записи кэша. Стандарт = «phpMussel_». Когда на одном сервере существует несколько установок, это может быть полезно для хранения их кэшей отдельно."
+ supplementary_cache_options_redis_database_number: "Номер базы данных Redis. Стандарт = 0. Примечание: В Redis Cluster нельзя использовать значения, отличные от 0."
  supplementary_cache_options_redis_host: "Значение хоста Redis. Стандарт = «localhost»."
  supplementary_cache_options_redis_port: "Значение порта Redis. Стандарт = «6379»."
  supplementary_cache_options_redis_timeout: "Значение тайм-аута Redis. Стандарт = «2.5»."

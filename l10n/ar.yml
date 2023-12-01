@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2023.09.23).
+# This file: Arabic language data (last modified: 2023.12.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -116,6 +116,7 @@ config:
  supplementary_cache_options_pdo_password: "PDO كلمه السر."
  supplementary_cache_options_pdo_username: "PDO اسم المستخدم."
  supplementary_cache_options_prefix: "سيتم إضافة القيمة المحددة هنا إلى جميع مفاتيح إدخال ذاكرة التخزين المؤقت. افتراضي = "phpMussel_". عند وجود عدة عمليات تثبيت على نفس الخادم، يمكن أن يكون ذلك مفيدًا للحفاظ على ذاكرة التخزين المؤقت منفصلة عن بعضها البعض."
+ supplementary_cache_options_redis_database_number: "رقم قاعدة بيانات Redis. افتراضي = 0. ملاحظة: لا يمكن استخدام قيم غير 0 مع Redis Cluster."
  supplementary_cache_options_redis_host: "قيمة المضيف Redis. افتراضي = "localhost"."
  supplementary_cache_options_redis_port: "قيمة منفذ Redis. افتراضي = "6379"."
  supplementary_cache_options_redis_timeout: "Redis قيمة المهلة. افتراضي = "2.5"."
