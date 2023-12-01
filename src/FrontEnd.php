@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2023.10.12).
+ * This file: Front-end handler (last modified: 2023.12.01).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1481,7 +1481,7 @@ class FrontEnd
                                 $ThisDir['FieldOut'] .= $ReqsLookupCache[$DirValue['Requirement']];
                                 continue;
                             }
-                            if (substr($DirValue['Requirement'], 0, 1) === "\\") {
+                            if (substr($DirValue['Requirement'], 0, 1) === '\\') {
                                 $ReqsLookupCache[$DirValue['Requirement']] = '<br /><span class="txtGn">✔️ ' . sprintf(
                                     $this->Loader->L10N->getString('label.%s is available'),
                                     $DirValue['Friendly']
@@ -2633,10 +2633,10 @@ class FrontEnd
             $Block .= $SeparatorType === 0 ? "<br />\n<br />\n</div>" : "<br />\n</div>";
             if ($SeparatorType === 2) {
                 $Block = preg_replace([
-                    '~(a\:\d+\:)\{~',
+                    '~(a:\d+:)\{~',
                     '~("|\d);\}~',
-                    '~\:(\d+)~',
-                    '~\:"([^"]+)"~'
+                    '~:(\d+)~',
+                    '~:"([^"]+)"~'
                 ], [
                     '\1<span class="txtRd">{</span>',
                     '\1;<span class="txtRd">}</span>',
@@ -2736,7 +2736,7 @@ class FrontEnd
      */
     private function canonical(string $Path): string
     {
-        $Path = str_replace("\\", '/', $Path);
+        $Path = str_replace('\\', '/', $Path);
         while (preg_match('~/[^/]+/\.\./|/\./|/{2,}~', $Path)) {
             $Path = preg_replace('~/[^/]+/\.\./|/\./|/{2,}~', '/', $Path);
         }
@@ -2814,7 +2814,7 @@ class FrontEnd
      */
     private function embedAssets(string $In): string
     {
-        if (preg_match_all('~\{Asset\:([^{}]+)\}~', $In, $Matches)) {
+        if (preg_match_all('~\{Asset:([^{}]+)\}~', $In, $Matches)) {
             $Matches = (isset($Matches[1]) && is_array($Matches[1])) ? array_unique($Matches[1]) : [];
             foreach ($Matches as $AssetName) {
                 if (($AssetPath = $this->getAssetPath($AssetName, true)) !== '') {
