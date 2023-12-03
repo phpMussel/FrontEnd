@@ -171,3 +171,5 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 ### v3.5.0
 
 [2023.12.01; Maikuolan]: Improved escaping. Added support for specifying a Redis database number to the supplementary cache options.
+
+[2023.12.03; Bug-fix; Maikuolan]: At the page for entering a 2FA code when logging into a 2FA-enabled account, no logout button was displayed, preventing the user from logging out easily, which may be needed in the event of not receiving any 2FA code; Fixed.

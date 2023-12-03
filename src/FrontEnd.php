@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2023.12.01).
+ * This file: Front-end handler (last modified: 2023.12.03).
  */
 
 namespace phpMussel\FrontEnd;
@@ -2452,7 +2452,7 @@ class FrontEnd
         $Template = $FE['Template'];
         $Labels = [];
         $Segments = [];
-        if ($this->Permissions === 1 || $this->Permissions === 2) {
+        if ($this->Permissions === 1 || $this->Permissions === 2 || $this->Permissions === 3) {
             $Labels[] = 'Logged In';
             $Segments[] = 'Logged Out';
         } else {
