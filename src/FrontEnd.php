@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2023.12.03).
+ * This file: Front-end handler (last modified: 2023.12.12).
  */
 
 namespace phpMussel\FrontEnd;
@@ -2340,6 +2340,9 @@ class FrontEnd
         /** Iterate through active signature files and append totals. */
         foreach ($Active as $File) {
             $File = (strpos($File, ':') === false) ? $File : substr($File, strpos($File, ':') + 1);
+            if ($File === '' || $this->Loader->isReserved($File)) {
+                continue;
+            }
             $Data = $this->Loader->readFile($this->Loader->SignaturesPath . $File);
             if (substr($Data, 0, 9) !== 'phpMussel') {
                 continue;
