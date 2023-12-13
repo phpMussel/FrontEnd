@@ -8,8 +8,10 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The quarantine page (last modified: 2023.12.12).
+ * This file: The quarantine page (last modified: 2023.12.13).
  */
+
+namespace phpMussel\FrontEnd;
 
 if (!isset($Page) || $Page !== 'quarantine' || $this->Permissions !== 1) {
     die;
