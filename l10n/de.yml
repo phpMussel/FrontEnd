@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data (last modified: 2023.12.01).
+# This file: German language data (last modified: 2023.12.26).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -281,7 +281,7 @@ link:
 max_login_attempts_exceeded: "Maximale Anzahl der Versucht zu einloggen überschritten; Zugriff verweigert."
 msg_subject_2fa: "Zwei-Faktor-Authentifizierung"
 msg_template_2fa: |
- <center><p>Hallo, %s.<br /><br />
+ <center><p><br />
  Ihr Zwei-Faktor-Authentifizierungscode für die Einloggen am phpMussel Frontend:</p>
  <h1>%s</h1>
  <p>Dieser Code läuft in 10 Minuten ab.</p></center>
@@ -345,18 +345,19 @@ state_quarantine:
  - "Es befinden sich derzeit %s Dateien in der Quarantäne."
 tip:
  2FA Sent: "Eine E-Mail mit einem Zwei-Faktor-Authentifizierungscode wurde an Ihre E-Mail-Adresse gesendet. Bitte bestätigen Sie diesen Code, um Zugang zum Frontend zu erhalten. Wenn Sie diese E-Mail nicht erhalten haben, versuchen Sie sich auszuloggen, warten Sie 10 Minuten, und melden Sie sich einzuloggen, um eine neue E-Mail mit einem neuen Code zu erhalten."
- Accounts: "Hallo, {username}.<br />Das Kontenseite macht es möglich zu kontrollieren, wer kann Zugriff auf der phpMussel Frontend haben."
- Cache Data: "Hallo, {username}.<br />Hier können Sie den Inhalt des Cache überprüfen."
- Configuration: "Hallo, {username}.<br />Das Konfigurationsseite macht es möglich zu ändern das Konfiguration für phpMussel von der Frontend."
- Home: "Hallo, {username}.<br />Dies ist die Homepage der phpMussel Frontend. Wählen Sie einen Link aus dem Navigationsmenü auf der linken um fortzufahren."
- Logs: "Hallo, {username}.<br />Wählen Sie eine Protokolldatei aus der folgenden Liste um den Inhalt dieser Protokolldatei anzuzeigen."
+ Accounts: "Das Kontenseite macht es möglich zu kontrollieren, wer kann Zugriff auf der phpMussel Frontend haben."
+ Cache Data: "Hier können Sie den Inhalt des Cache überprüfen."
+ Configuration: "Das Konfigurationsseite macht es möglich zu ändern das Konfiguration für phpMussel von der Frontend."
+ Greeting: "Hallo, %s."
+ Home: "Dies ist die Homepage der phpMussel Frontend. Wählen Sie einen Link aus dem Navigationsmenü auf der linken um fortzufahren."
+ Logs: "Wählen Sie eine Protokolldatei aus der folgenden Liste um den Inhalt dieser Protokolldatei anzuzeigen."
  Quarantine is currently disabled: "Hinweis: Die Quarantäne ist derzeit deaktiviert, aber kann über die Konfigurationsseite aktiviert werden."
- Quarantine: "Hallo, {username}.<br />Diese Seite erleichtert die Verwaltung von, und listet alle Dateien auf, die sich derzeit in der Quarantäne befinden."
+ Quarantine: "Diese Seite erleichtert die Verwaltung von, und listet alle Dateien auf, die sich derzeit in der Quarantäne befinden."
  See the documentation: "Siehe die <a href="https://github.com/phpMussel/Docs/blob/master/readme.de.md\#user-content-SECTION5" hreflang="de-DE" rel="noopener external">Dokumentation</a> für Informationen über den verschiedenen Konfigurationseinstellungen und ihren Zwecken."
- Signature Information: "Hallo, {username}.<br />Die „Signature Information“-Seite bietet einige grundlegende Informationen zu den Quellen und Typen der derzeit aktiven Signaturen."
+ Signature Information: "Die „Signature Information“-Seite bietet einige grundlegende Informationen zu den Quellen und Typen der derzeit aktiven Signaturen."
  Statistics tracking is currently disabled: "Hinweis: Die Statistikverfolgung ist derzeit deaktiviert, aber kann über die Konfigurationsseite aktiviert werden."
- Statistics: "Hallo, {username}.<br />Diese Seite zeigt einige grundlegende Nutzungsstatistiken zu Ihrer phpMussel-Installation."
- Upload Testing: "Hallo, {username}.<br />Das Upload-Testseite enthält ein Standard-Datei-Upload-Formular, das macht es möglich zu prüfen ob eine Datei normalerweise gestoppt von phpMussel werden soll, wenn Sie versuchen es hochzuladen."
+ Statistics: "Diese Seite zeigt einige grundlegende Nutzungsstatistiken zu Ihrer phpMussel-Installation."
+ Upload Testing: "Das Upload-Testseite enthält ein Standard-Datei-Upload-Formular, das macht es möglich zu prüfen ob eine Datei normalerweise gestoppt von phpMussel werden soll, wenn Sie versuchen es hochzuladen."
 warning:
  Cookies: "Hinweis: phpMussel verwendet einen Cookie zum Authentifizieren von Logins. Mit der Einloggen, Sie sich damit einverstanden, dass ein Cookie von Ihrem Browser erstellt und gespeichert wird."
  JavaScript required: "Warnung: Einige Front-End-Funktionalität erfordern JavaScript. Um sicherzustellen dass sich das gesamte Front-End wie erwartet verhält, wird die Aktivierung von JavaScript empfohlen."

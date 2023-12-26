@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2023.12.01).
+# This file: French language data (last modified: 2023.12.26).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -104,7 +104,7 @@ config:
  signatures_detect_shell: "Devrait phpMussel utiliser signatures pour détecter les scripts shell\_? False = Non\_; True = Oui [Défaut]."
  signatures_fail_extensions_silently: "Devrait phpMussel signaler quand les extensions sont manquantes\_? Si <code>fail_extensions_silently</code> est désactivé, extensions manquantes seront signalé sur analyse, et si <code>fail_extensions_silently</code> est activé, extensions manquantes seront ignorés, avec l'analyse signalés pour ceux fichiers qu'il n'y a pas de problèmes. La désactivation de cette directive peut potentiellement augmenter votre sécurité, mais peut aussi conduire à une augmentation de faux positifs. False = Désactivé\_; True = Activé [Défaut]."
  signatures_fail_silently: "Devrait phpMussel signaler quand les extensions sont manquantes\_? Si <code>fail_extensions_silently</code> est désactivé, extensions manquantes seront signalé sur analyse, et si <code>fail_extensions_silently</code> est activé, extensions manquantes seront ignorés, avec l'analyse signalés pour ceux fichiers qu'il n'y a pas de problèmes. La désactivation de cette directive peut potentiellement augmenter votre sécurité, mais peut aussi conduire à une augmentation de faux positifs. False = Désactivé\_; True = Activé [Défaut]."
- signatures_heuristic_threshold: "Il ya certaines signatures des phpMussel qui sont destinés à identifier des suspectes et potentiellement malveillants qualités des fichiers en cours de téléchargement sans en eux-mêmes identifier les fichiers en cours de téléchargement spécifiquement comme étant malveillants. Cette «\_threshold\_» (seuil) valeur raconte à phpMussel ce que le total maximum poids des suspectes et potentiellement malveillants qualités des fichiers en cours de téléchargement pour ce qui est admissible avant que ces fichiers doivent être signalées comme malveillant. La définition du poids dans ce contexte est le nombre total de suspectes et potentiellement malveillants qualités identifié. Par défaut, cette valeur sera fixée à 3. Une valeur inférieur va résulter généralement avec une fréquence supérieur de faux positifs mais une nombre supérieur de fichiers signalé comme malveillant, tandis que une valeur inférieur va résulter généralement avec une fréquence inférieur de faux positifs mais un nombre inférieur de fichiers signalé comme malveillant. Il est généralement préférable de laisser cette valeur à sa valeur défaut, sauf si vous rencontrez des problèmes qui sont liés à elle."
+ signatures_heuristic_threshold: "Il ya certaines signatures des phpMussel qui sont destinés à identifier des suspectes et potentiellement malveillants qualités des fichiers en cours de téléchargement sans en eux-mêmes identifier les fichiers en cours de téléchargement spécifiquement comme étant malveillants. Cette «\_threshold\_» (seuil) valeur raconte à phpMussel ce que le total maximum poids des suspectes et potentiellement malveillants qualités des fichiers en cours de téléchargement pour ce qui est admissible avant que ces fichiers doivent être signalés comme malveillant. La définition du poids dans ce contexte est le nombre total de suspectes et potentiellement malveillants qualités identifié. Par défaut, cette valeur sera fixée à 3. Une valeur inférieur va résulter généralement avec une fréquence supérieur de faux positifs mais une nombre supérieur de fichiers signalé comme malveillant, tandis que une valeur inférieur va résulter généralement avec une fréquence inférieur de faux positifs mais un nombre inférieur de fichiers signalé comme malveillant. Il est généralement préférable de laisser cette valeur à sa valeur défaut, sauf si vous rencontrez des problèmes qui sont liés à elle."
  supplementary_cache_options: "Options de cache supplémentaires. Remarque\_: La modification de ces valeurs peut potentiellement vous déconnecter."
  supplementary_cache_options_enable_apcu: "Spécifie s'il faut essayer d'utiliser APCu pour la mise en cache. Défaut = True."
  supplementary_cache_options_enable_memcached: "Spécifie s'il faut essayer d'utiliser Memcached pour la mise en cache. Défaut = False."
@@ -291,7 +291,7 @@ link:
 max_login_attempts_exceeded: "Nombre maximal de tentatives de connexion excédée\_; Accès refusé."
 msg_subject_2fa: "Authentification à deux facteurs"
 msg_template_2fa: |
- <center><p>Bonjour, %s.<br /><br />
+ <center><p><br />
  Votre code d'authentification à deux facteurs pour l'accès frontal de phpMussel :</p>
  <h1>%s</h1>
  <p>Ce code expire dans 10 minutes.</p></center>
@@ -310,7 +310,7 @@ response:
  Configuration successfully updated: "Configuration mis à jour avec succès."
  Corrupted file: "Échec de la restauration\_! Fichier corrompu\_!"
  Failed to create: "Échec de création\_!"
- Failed to delete: "Échec du suppriment\_!"
+ Failed to delete: "Échec du supprimer\_!"
  Failed to update configuration: "Échec de la mise à jour de la configuration\_!"
  Failed to update: "Échec de la mise à jour\_!"
  Failed: "Échoué"
@@ -356,18 +356,19 @@ state_quarantine:
  - "Il y a %s fichiers actuellement en quarantaine."
 tip:
  2FA Sent: "Un e-mail contenant un code d'authentification à deux facteurs a été envoyé à votre adresse e-mail. Veuillez confirmer ce code ci-dessous pour obtenir un accès frontal. Si vous n'avez pas reçu cet e-mail, essayez de vous déconnecter, d'attendre 10 minutes, et de vous reconnecter pour recevoir un nouvel e-mail contenant un nouveau code."
- Accounts: "Bonjour, {username}.<br />La page des comptes vous permet de contrôler qui peut accéder l'accès frontal de phpMussel."
- Cache Data: "Bonjour, {username}.<br />Ici vous pouvez revoir le contenu du cache."
- Configuration: "Bonjour, {username}.<br />La page de configuration vous permet de modifier la configuration pour phpMussel à l'accès frontal."
- Home: "Bonjour, {username}.<br />C'est la page d'accueil de l'accès frontal de phpMussel. Sélectionnez un lien dans le menu de navigation à gauche pour continuer."
- Logs: "Bonjour, {username}.<br />Sélectionnez un fichier journal dans la liste ci-dessous pour afficher le contenu de ce fichier journal."
+ Accounts: "La page des comptes vous permet de contrôler qui peut accéder l'accès frontal de phpMussel."
+ Cache Data: "Ici vous pouvez revoir le contenu du cache."
+ Configuration: "La page de configuration vous permet de modifier la configuration pour phpMussel à l'accès frontal."
+ Greeting: "Bonjour, %s."
+ Home: "C'est la page d'accueil de l'accès frontal de phpMussel. Sélectionnez un lien dans le menu de navigation à gauche pour continuer."
+ Logs: "Sélectionnez un fichier journal dans la liste ci-dessous pour afficher le contenu de ce fichier journal."
  Quarantine is currently disabled: "Remarque\_: La quarantaine est actuellement désactivée, mais peut être activée via la page de configuration."
- Quarantine: "Bonjour, {username}.<br />Cette page répertorie tous les fichiers actuellement en quarantaine et facilite la gestion de ces fichiers."
+ Quarantine: "Cette page répertorie tous les fichiers actuellement en quarantaine et facilite la gestion de ces fichiers."
  See the documentation: "Voir la <a href="https://github.com/phpMussel/Docs/blob/master/readme.fr.md\#user-content-SECTION5" hreflang="fr-FR" rel="noopener external">documentation</a> pour information sur les différentes directives de la configuration et leurs objectifs."
- Signature Information: "Bonjour, {username}.<br />La page d'informations sur les signatures fournit des informations de base sur les sources et les types des signatures actuellement actives."
+ Signature Information: "La page d'informations sur les signatures fournit des informations de base sur les sources et les types des signatures actuellement actives."
  Statistics tracking is currently disabled: "Remarque\_: Le suivi des statistiques est actuellement désactivé, mais peut être activé via la page de configuration."
- Statistics: "Bonjour, {username}.<br />Cette page présente certaines statistiques d'utilisation concernant votre installation pour phpMussel."
- Upload Testing: "Bonjour, {username}.<br />La page pour tester les téléchargements contient un formulaire pour le téléchargement de fichiers standard, vous permettant de tester si un fichier serait normalement être bloqué par phpMussel quand vous essayez de le télécharger."
+ Statistics: "Cette page présente certaines statistiques d'utilisation concernant votre installation pour phpMussel."
+ Upload Testing: "La page pour tester les téléchargements contient un formulaire pour le téléchargement de fichiers standard, vous permettant de tester si un fichier serait normalement être bloqué par phpMussel quand vous essayez de le télécharger."
 warning:
  Cookies: "Remarque\_: phpMussel utilise un cookie pour authentifier les connexions. En vous connectant, vous donnez votre consentement pour qu'un cookie soit créé et stocké par votre navigateur."
  JavaScript required: "Attention\_: Certaines fonctionnalités nécessitent JavaScript. Pour garantir que l'ensemble de l'interface se comporte comme prévu, il est recommandé d'activer JavaScript."

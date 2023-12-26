@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data (last modified: 2023.12.01).
+# This file: Romanian language data (last modified: 2023.12.26).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -291,7 +291,7 @@ link:
 max_login_attempts_exceeded: "Numărul maxim de încercări de conectare a fost depășit; Acces refuzat."
 msg_subject_2fa: "Autentificare cu doi factori"
 msg_template_2fa: |
- <center><p>Buna ziua, %s.<br /><br />
+ <center><p><br />
  Codul dvs. de autentificare cu doi factori pentru conectarea la front-end phpMussel:</p>
  <h1>%s</h1>
  <p>Acest cod expiră în 10 minute.</p></center>
@@ -356,18 +356,19 @@ state_quarantine:
  - "Există %s de fișiere în prezent în carantină."
 tip:
  2FA Sent: "Un e-mail care conține un cod de autentificare cu doi factori a fost trimis la adresa dvs. de e-mail. Vă rugăm să confirmați acest cod mai jos pentru a obține acces la front-end. Dacă nu ați primit acest e-mail, încercați să vă deconectați, așteptați 10 minute, și să vă conectați din nou pentru a primi un nou e-mail care conține un nou cod."
- Accounts: "Buna ziua, {username}.<br />Pagina de conturi vă permite să controlați cine poate accesa front-end-ul phpMussel."
- Cache Data: "Buna ziua, {username}.<br />Aici puteți revizui conținutul cache-ului."
- Configuration: "Buna ziua, {username}.<br />Pagina de configurare vă permite să modificați configurația pentru phpMussel din front-end."
- Home: "Buna ziua, {username}.<br />Aceasta este pagina principala pentru front-end-ul phpMussel. Selectați un link din meniul de navigare din stânga pentru a continua."
- Logs: "Buna ziua, {username}.<br />Selectați un fișier jurnal din lista de mai jos pentru a vedea conținutul acelui fișier jurnal."
+ Accounts: "Pagina de conturi vă permite să controlați cine poate accesa front-end-ul phpMussel."
+ Cache Data: "Aici puteți revizui conținutul cache-ului."
+ Configuration: "Pagina de configurare vă permite să modificați configurația pentru phpMussel din front-end."
+ Greeting: "Buna ziua, %s."
+ Home: "Aceasta este pagina principala pentru front-end-ul phpMussel. Selectați un link din meniul de navigare din stânga pentru a continua."
+ Logs: "Selectați un fișier jurnal din lista de mai jos pentru a vedea conținutul acelui fișier jurnal."
  Quarantine is currently disabled: "Notă: Carantina este în prezent dezactivată, dar poate fi activată prin pagina de configurare."
- Quarantine: "Buna ziua, {username}.<br />Această pagină listează toate fișierele aflate în carantină și facilitează gestionarea acelor fișiere."
+ Quarantine: "Această pagină listează toate fișierele aflate în carantină și facilitează gestionarea acelor fișiere."
  See the documentation: "Consultați <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">documentația</a> pentru informații despre diferitele directive de configurare și scopurile acestora."
- Signature Information: "Buna ziua, {username}.<br />Această pagină oferă câteva informații de bază despre sursele și tipurile de semnături active în prezent."
+ Signature Information: "Această pagină oferă câteva informații de bază despre sursele și tipurile de semnături active în prezent."
  Statistics tracking is currently disabled: "Notă: Urmărirea statisticilor este în prezent dezactivată, dar poate fi activată prin pagina de configurare."
- Statistics: "Buna ziua, {username}.<br />Această pagină prezintă câteva statistici de utilizare de bază referitoare la instalarea dvs. phpMussel."
- Upload Testing: "Buna ziua, {username}.<br />Pagina de testare a încărcării conține un formular standard de încărcare a fișierelor, permițându-vă să testați dacă un fișier ar fi în mod normal blocat de phpMussel atunci când încercați să îl încărcați."
+ Statistics: "Această pagină prezintă câteva statistici de utilizare de bază referitoare la instalarea dvs. phpMussel."
+ Upload Testing: "Pagina de testare a încărcării conține un formular standard de încărcare a fișierelor, permițându-vă să testați dacă un fișier ar fi în mod normal blocat de phpMussel atunci când încercați să îl încărcați."
 warning:
  Cookies: "Notă: phpMussel folosește un cookie pentru a autentifica conectarea. Conectându-vă, vă dați acordul ca un cookie să fie creat și stocat de browserul dvs."
  JavaScript required: "Avertizare: Unele funcționalități front-end necesită JavaScript. Pentru a vă asigura că întregul front-end se comportă conform așteptărilor, se recomandă activarea JavaScript."

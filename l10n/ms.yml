@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2023.12.01).
+# This file: Malay language data (last modified: 2023.12.26).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -283,7 +283,7 @@ link:
 max_login_attempts_exceeded: "Bilangan maksimum percubaan untuk memasuki dicapai; Akses dinafikan."
 msg_subject_2fa: "Pengesahan Dua-Faktor"
 msg_template_2fa: |
- <center><p>Salam, %s.<br /><br />
+ <center><p><br />
  Kod pengesahan dua-faktor anda untuk masuk ke bahagian hadapan phpMussel:</p>
  <h1>%s</h1>
  <p>Kod ini tamat tempoh dalam masa 10 minit.</p></center>
@@ -345,18 +345,19 @@ siginfo_xkey: "Dikenali sebagai "%s"."
 state_quarantine: "Terdapat %s fail sedang dalam kuarantin."
 tip:
  2FA Sent: "E-mel yang mengandungi kod pengesahan dua-faktor telah dihantar ke alamat e-mel anda. Sila sahkan kod ini di bawah untuk mendapatkan akses kepada bahagian hadapan. Jika anda tidak menerima e-mel ini, cuba log keluar, tunggu selama 10 minit, dan log masuk semula untuk menerima e-mel baharu yang mengandungi kod baharu."
- Accounts: "Salam, {username}.<br />Halaman akaun membolehkan anda mengawal siapa yang boleh mengakses bahagian hadapan phpMussel."
- Cache Data: "Salam, {username}.<br />Disini anda boleh menyemak kandungan cache."
- Configuration: "Salam, {username}.<br />Halaman konfigurasi membolehkan anda mengubah suai konfigurasi untuk phpMussel dari bahagian hadapan."
- Home: "Salam, {username}.<br />Ini ialah halaman utama untuk bahagian hadapan phpMussel. Pilih pautan daripada menu navigasi di sebelah kiri untuk meneruskan."
- Logs: "Salam, {username}.<br />Pilih fail log daripada senarai di bawah untuk melihat kandungan fail log tersebut."
+ Accounts: "Halaman akaun membolehkan anda mengawal siapa yang boleh mengakses bahagian hadapan phpMussel."
+ Cache Data: "Disini anda boleh menyemak kandungan cache."
+ Configuration: "Halaman konfigurasi membolehkan anda mengubah suai konfigurasi untuk phpMussel dari bahagian hadapan."
+ Greeting: "Salam, %s."
+ Home: "Ini ialah halaman utama untuk bahagian hadapan phpMussel. Pilih pautan daripada menu navigasi di sebelah kiri untuk meneruskan."
+ Logs: "Pilih fail log daripada senarai di bawah untuk melihat kandungan fail log tersebut."
  Quarantine is currently disabled: "Nota: Kuarantin kini dinyahaktifkan, tetapi boleh diaktifkan melalui halaman konfigurasi."
- Quarantine: "Salam, {username}.<br />Halaman ini menyenaraikan semua fail yang sedang dalam kuarantin dan memudahkan pengurusan fail tersebut."
+ Quarantine: "Halaman ini menyenaraikan semua fail yang sedang dalam kuarantin dan memudahkan pengurusan fail tersebut."
  See the documentation: "Lihat <a href="https://github.com/phpMussel/Docs/blob/master/readme.id.md\#user-content-SECTION5" hreflang="id-ID" rel="noopener external">dokumentasi</a> untuk mendapatkan maklumat tentang pelbagai arahan konfigurasi dan tujuannya."
- Signature Information: "Salam, {username}.<br />Halaman maklumat tandatangan menyediakan beberapa maklumat asas tentang sumber dan jenis tandatangan yang sedang aktif."
+ Signature Information: "Halaman maklumat tandatangan menyediakan beberapa maklumat asas tentang sumber dan jenis tandatangan yang sedang aktif."
  Statistics tracking is currently disabled: "Nota: Penjejakan statistik kini dinyahaktifkan, tetapi boleh diaktifkan melalui halaman konfigurasi."
- Statistics: "Salam, {username}.<br />Halaman ini menunjukkan beberapa statistik penggunaan asas mengenai pemasangan phpMussel anda."
- Upload Testing: "Salam, {username}.<br />Halaman ujian muat naik mengandungi borang muat naik fail standard, membolehkan anda menguji sama ada fail biasanya akan disekat oleh phpMussel apabila cuba memuat naiknya."
+ Statistics: "Halaman ini menunjukkan beberapa statistik penggunaan asas mengenai pemasangan phpMussel anda."
+ Upload Testing: "Halaman ujian muat naik mengandungi borang muat naik fail standard, membolehkan anda menguji sama ada fail biasanya akan disekat oleh phpMussel apabila cuba memuat naiknya."
 warning:
  Cookies: "Nota: phpMussel menggunakan kuki untuk mengesahkan log masuk. Apabila anda log masuk, anda memberikan persetujuan anda untuk kuki dibuat dan disimpan oleh penyemak imbas anda."
  JavaScript required: "Amaran: Sesetengah kefungsian bahagian hadapan memerlukan JavaScript. Untuk memastikan bahawa keseluruhan bahagian hadapan berkelakuan seperti yang diharapkan, mendayakan JavaScript adalah disyorkan."

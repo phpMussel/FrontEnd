@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2023.12.22).
+# This file: Italian language data (last modified: 2023.12.26).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -283,7 +283,7 @@ link:
 max_login_attempts_exceeded: "Numero massimo di tentativi di accesso superato; Accesso negato."
 msg_subject_2fa: "Autenticazione a due fattori"
 msg_template_2fa: |
- <center><p>Salve, %s.<br /><br />
+ <center><p><br />
  Il vostro codice di autenticazione a due fattori per l'accesso al front-end di phpMussel:</p>
  <h1>%s</h1>
  <p>Questo codice scade tra 10 minuti.</p></center>
@@ -345,18 +345,19 @@ siginfo_xkey: "Identificato come "%s"."
 state_quarantine: "Ci sono %s file attualmente in quarantena."
 tip:
  2FA Sent: "Una posta elettronica contenente un codice di autenticazione a due fattori è stata inviata al tuo indirizzo di posta elettronica. Si prega di confermare questo codice qui sotto per ottenere l'accesso al front-end. Se non hai ricevuto questa posta elettronica, prova a disconnettersi, attendere 10 minuti e accedi di nuovo per ricevere una nuova posta elettronica contenente un nuovo codice."
- Accounts: "Salve, {username}.<br />La pagina di conti permette di controllare chi può accedere il front-end di phpMussel."
- Cache Data: "Salve, {username}.<br />Qui puoi rivedere il contenuto della cache."
- Configuration: "Salve, {username}.<br />La pagina di configurazione permette di modificare la configurazione per phpMussel dal front-end."
- Home: "Salve, {username}.<br />Questa è la pagina principale per il front-end di phpMussel. Selezionare un collegamento dal menu di navigazione a sinistra per continuare."
- Logs: "Salve, {username}.<br />Selezionare un file di log dall'elenco sottostante per visualizzare il contenuto di tale file di log."
+ Accounts: "La pagina di conti permette di controllare chi può accedere il front-end di phpMussel."
+ Cache Data: "Qui puoi rivedere il contenuto della cache."
+ Configuration: "La pagina di configurazione permette di modificare la configurazione per phpMussel dal front-end."
+ Greeting: "Salve, %s."
+ Home: "Questa è la pagina principale per il front-end di phpMussel. Selezionare un collegamento dal menu di navigazione a sinistra per continuare."
+ Logs: "Selezionare un file di log dall'elenco sottostante per visualizzare il contenuto di tale file di log."
  Quarantine is currently disabled: "Nota: La quarantena è attualmente disattivata, ma può essere attivata tramite la pagina di configurazione."
- Quarantine: "Salve, {username}.<br />Questa pagina elenca tutti i file attualmente in quarantena e facilita la gestione di tali file."
+ Quarantine: "Questa pagina elenca tutti i file attualmente in quarantena e facilita la gestione di tali file."
  See the documentation: "Vedere la <a href="https://github.com/phpMussel/Docs/blob/master/readme.it.md\#user-content-SECTION5" hreflang="it-IT" rel="noopener external">documentazione</a> per informazioni sulle varie direttive di configurazione ed i loro scopi."
- Signature Information: "Salve, {username}.<br />La pagina delle informazioni sulle firme fornisce alcune informazioni di base sulle origini e i tipi delle firme attualmente attive."
+ Signature Information: "La pagina delle informazioni sulle firme fornisce alcune informazioni di base sulle origini e i tipi delle firme attualmente attive."
  Statistics tracking is currently disabled: "Nota: Il monitoraggio delle statistiche è attualmente disattivato, ma può essere attivato tramite la pagina di configurazione."
- Statistics: "Salve, {username}.<br />Questa pagina mostra alcune statistiche di utilizzo relative all'installazione di phpMussel."
- Upload Testing: "Salve, {username}.<br />La pagina di carica testare contiene un modulo per i caricamenti file standard, che permette di verificare se un file viene normalmente essere bloccata da phpMussel quando si cerca di caricarlo."
+ Statistics: "Questa pagina mostra alcune statistiche di utilizzo relative all'installazione di phpMussel."
+ Upload Testing: "La pagina di carica testare contiene un modulo per i caricamenti file standard, che permette di verificare se un file viene normalmente essere bloccata da phpMussel quando si cerca di caricarlo."
 warning:
  Cookies: "Nota: phpMussel utilizza un cookie per autenticare gli accessi. Accedendo, ti dà il tuo consenso per creare e memorizzare un cookie dal tuo browser."
  JavaScript required: "Avvertimento: Alcune funzionalità del front-end richiedono JavaScript. Per garantire che l'intero front-end si comporti come previsto, si consiglia di abilitare JavaScript."

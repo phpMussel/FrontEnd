@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2023.12.01).
+# This file: Swedish language data (last modified: 2023.12.26).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -283,7 +283,7 @@ link:
 max_login_attempts_exceeded: "Maximalt antal inloggningsförsök överskreds; Nekat tillgång."
 msg_subject_2fa: "Tvåfaktorsautentisering"
 msg_template_2fa: |
- <center><p>Hallå, %s.<br /><br />
+ <center><p><br />
  Din 2FA-kod för att logga in i phpMussel front-end:</p>
  <h1>%s</h1>
  <p>Denna kod löper ut om 10 minuter.</p></center>
@@ -347,18 +347,19 @@ state_quarantine:
  - "Det finns %s filer för närvarande i karantän."
 tip:
  2FA Sent: "Ett email som innehåller en 2FA-kod har skickats till din e-postadress. Vänligen bekräfta den här koden nedan för att få tillgång till front-end. Om du inte fick det här e-postmeddelandet, försöker du logga ut, vänta i 10 minuter, och logga in igen för att få ett nytt e-postmeddelande med en ny kod."
- Accounts: "Hallå, {username}.<br />Du kan styra vem som har tillgång till phpMussel front-end på kontosidan."
- Cache Data: "Hallå, {username}.<br />Här kan du granska innehållet i cacheminnet."
- Configuration: "Hallå, {username}.<br />Du kan ändra konfigurationen för phpMussel från front-enden konfigurationssida."
- Home: "Hallå, {username}.<br />Detta är hemsidan för phpMussel front-end. Välj en länk från navigeringsmenyn till vänster för att fortsätta."
- Logs: "Hallå, {username}.<br />Välj en loggfil från listan nedan för att se innehållet i den loggfilen."
+ Accounts: "Du kan styra vem som har tillgång till phpMussel front-end på kontosidan."
+ Cache Data: "Här kan du granska innehållet i cacheminnet."
+ Configuration: "Du kan ändra konfigurationen för phpMussel från front-enden konfigurationssida."
+ Greeting: "Hallå, %s."
+ Home: "Detta är hemsidan för phpMussel front-end. Välj en länk från navigeringsmenyn till vänster för att fortsätta."
+ Logs: "Välj en loggfil från listan nedan för att se innehållet i den loggfilen."
  Quarantine is currently disabled: "Notera: Karantän är för närvarande inaktiverad, men kan aktiveras via konfigurationssidan."
- Quarantine: "Hallå, {username}.<br />Denna sida visar alla filer som för närvarande är i karantän och underlättar hanteringen av dessa filer."
+ Quarantine: "Denna sida visar alla filer som för närvarande är i karantän och underlättar hanteringen av dessa filer."
  See the documentation: "Se <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">dokumentationen</a> för information om de olika konfigurationsdirektiven och deras ändamål."
- Signature Information: "Hallå, {username}.<br />Signaturinformationssidan för signatur ger grundläggande information om källorna och typerna av de för närvarande aktiva signaturerna."
+ Signature Information: "Signaturinformationssidan för signatur ger grundläggande information om källorna och typerna av de för närvarande aktiva signaturerna."
  Statistics tracking is currently disabled: "Notera: Statistikspårning är för närvarande inaktiverad, men kan aktiveras via konfigurationssidan."
- Statistics: "Hallå, {username}.<br />Den här sidan visar en viss användarstatistik för din phpMussel-installation."
- Upload Testing: "Hallå, {username}.<br />Uppladdningssidan innehåller ett standardformulär för uppladdning av filer, så att du kan testa om en fil normalt skulle blockeras av phpMussel när du försöker ladda upp den."
+ Statistics: "Den här sidan visar en viss användarstatistik för din phpMussel-installation."
+ Upload Testing: "Uppladdningssidan innehåller ett standardformulär för uppladdning av filer, så att du kan testa om en fil normalt skulle blockeras av phpMussel när du försöker ladda upp den."
 warning:
  Cookies: "Notera: phpMussel använder en cookie för att autentisera inloggningar. Genom att logga in, ger du ditt samtycke till att en cookie ska skapas och lagras av din webbläsare."
  JavaScript required: "Varning: Vissa frontend-funktionalitet kräver JavaScript. För att säkerställa att hela gränssnittet beter sig som förväntat, rekommenderas att aktivera JavaScript."

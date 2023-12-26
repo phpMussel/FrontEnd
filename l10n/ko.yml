@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2023.12.01).
+# This file: Korean language data (last modified: 2023.12.26).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -283,7 +283,7 @@ link:
 max_login_attempts_exceeded: "로그인 시도 횟수를 초과했습니다; 액세스 거부."
 msg_subject_2fa: "2FA (이중 인증)"
 msg_template_2fa: |
- <center><p>안녕하세요, %s.<br /><br />
+ <center><p><br />
  phpMussel 프런트 엔드에 로그인하기위한 2FA 코드 :</p>
  <h1>%s</h1>
  <p>이 코드는 10 분 후에 만료됩니다.</p></center>
@@ -345,18 +345,19 @@ siginfo_xkey: ""%s"로 식별됩니다."
 state_quarantine: "현재 %s 개의 파일이 격리 보관소에 있습니다."
 tip:
  2FA Sent: "2FA 코드가 포함 된 이메일이 귀하의 이메일 주소로 발송되었습니다. 프런트 엔드에 액세스하려면 아래 코드를 확인하십시오. 이 이메일을받지 못한 경우 로그 아웃을 시도하고 10 분을 기다린 후 다시 로그인하여 새 코드가 포함 된 새 이메일을 수신 할 수 있습니다."
- Accounts: "안녕하세요, {username}.<br />계정 페이지는 phpMussel 프론트 엔드에 액세스 할 수있는 사용자를 제어 할 수 있습니다."
- Cache Data: "안녕하세요, {username}.<br />여기서 캐시의 내용을 검토 할 수 있습니다."
- Configuration: "안녕하세요, {username}.<br />구성 페이지는 프론트 엔드에서 phpMussel의 설정을 변경할 수 있습니다."
- Home: "안녕하세요, {username}.<br />이것은 phpMussel 프론트 엔드의 홈페이지입니다. 계속하려면 왼쪽 탐색 메뉴에서 링크를 선택합니다."
- Logs: "안녕하세요, {username}.<br />로그의 내용을 보려면 다음 목록에서 로그를 선택합니다."
+ Accounts: "계정 페이지는 phpMussel 프론트 엔드에 액세스 할 수있는 사용자를 제어 할 수 있습니다."
+ Cache Data: "여기서 캐시의 내용을 검토 할 수 있습니다."
+ Configuration: "구성 페이지는 프론트 엔드에서 phpMussel의 설정을 변경할 수 있습니다."
+ Greeting: "안녕하세요, %s."
+ Home: "이것은 phpMussel 프론트 엔드의 홈페이지입니다. 계속하려면 왼쪽 탐색 메뉴에서 링크를 선택합니다."
+ Logs: "로그의 내용을 보려면 다음 목록에서 로그를 선택합니다."
  Quarantine is currently disabled: "노트\_: 격리는 현재 비활성화되어, 있지만 구성 페이지를 통해 활성화할 수 있습니다."
- Quarantine: "안녕하세요, {username}.<br />관리를 용이하게하기 위해, 현재 격리 저장소에있는 모든 파일이이 페이지에 나열됩니다."
+ Quarantine: "관리를 용이하게하기 위해, 현재 격리 저장소에있는 모든 파일이이 페이지에 나열됩니다."
  See the documentation: "설정 지시어에 대한 자세한 내용은 <a href="https://github.com/phpMussel/Docs/blob/master/readme.ko.md\#user-content-SECTION5" hreflang="ko-KR" rel="noopener external">문서를</a> 참조하십시오."
- Signature Information: "안녕하세요, {username}.<br />서명 정보 페이지는 현재 활성화 된 서명의 소스 및 유형에 대한 몇 가지 기본 정보를 제공합니다."
+ Signature Information: "서명 정보 페이지는 현재 활성화 된 서명의 소스 및 유형에 대한 몇 가지 기본 정보를 제공합니다."
  Statistics tracking is currently disabled: "노트\_: 통계 추적은 현재 비활성화되어, 있지만 구성 페이지를 통해 활성화할 수 있습니다."
- Statistics: "안녕하세요, {username}.<br />이 페이지는 phpMussel 설치와 관련된 몇 가지 기본 사용 통계를 보여줍니다."
- Upload Testing: "안녕하세요, {username}.<br />업로드 테스트 페이지 표준 파일 업로드 양식을 포함합니다 파일이 일반적 차단 여부를 테스트 할 수 있습니다."
+ Statistics: "이 페이지는 phpMussel 설치와 관련된 몇 가지 기본 사용 통계를 보여줍니다."
+ Upload Testing: "업로드 테스트 페이지 표준 파일 업로드 양식을 포함합니다 파일이 일반적 차단 여부를 테스트 할 수 있습니다."
 warning:
  Cookies: "노트\_: phpMussel은 쿠키를 사용하여 로그인을 인증합니다. 로그인하면, 브라우저에서 쿠키를 만들고 저장하는 것에 동의하게됩니다."
  JavaScript required: "경고\_: 일부 프런트 엔드 기능에는 JavaScript가 필요합니다. 전체 프런트 엔드가 예상대로 작동하도록 하려면 JavaScript를 활성화하는 것이 좋습니다."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2023.12.01).
+# This file: Arabic language data (last modified: 2023.12.26).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -283,7 +283,7 @@ link:
 max_login_attempts_exceeded: "تجاوز الحد الأقصى لعدد محاولات تسجيل الدخول؛ تم رفض الوصول."
 msg_subject_2fa: "2FA"
 msg_template_2fa: |
- <center><p>مرحبا، %s.<br /><br />
+ <center><p><br />
  شفرة 2FA الخاصة بك لتسجيل الدخول إلى واجهة phpMussel الأمامية:</p>
  <h1>%s</h1>
  <p>تنتهي صلاحية هذا الرمز خلال 10 دقائق.</p></center>
@@ -347,18 +347,19 @@ state_quarantine:
  - "هناك ملفات %s موجود حاليا في وحدة العزل."
 tip:
  2FA Sent: "تم إرسال بريد إلكتروني يحتوي على رمز 2FA إلى عنوان بريدك الإلكتروني. يرجى تأكيد هذا الرمز أدناه للوصول إلى الواجهة الأمامية. إذا لم تتلقَ رسالة البريد الإلكتروني هذه، فحاول تسجيل الخروج، والانتظار لمدة 10 دقائق، وتسجيل الدخول مرة أخرى لتلقي رسالة إلكترونية جديدة تحتوي على رمز جديد."
- Accounts: "مرحبا، {username}.<br />الصفحة حسابات يسمح لك للسيطرة على الذي يمكن الوصول ألfront-end phpMussel."
- Cache Data: "مرحبا، {username}.<br />هنا يمكنك مراجعة محتويات ذاكرة التخزين المؤقت."
- Configuration: "مرحبا، {username}.<br />الصفحة التكوين يسمح لك لتعديل التكوين phpMussel عن طريق ألfront-end."
- Home: "مرحبا، {username}.<br />هذا هو الصفحة رئيسية ألfront-end phpMussel. اختر ارتباط من قائمة التنقل على اليسار للمتابعة."
- Logs: "مرحبا، {username}.<br />اختار سجلات من القائمة أدناه لعرضها."
+ Accounts: "الصفحة حسابات يسمح لك للسيطرة على الذي يمكن الوصول ألfront-end phpMussel."
+ Cache Data: "هنا يمكنك مراجعة محتويات ذاكرة التخزين المؤقت."
+ Configuration: "الصفحة التكوين يسمح لك لتعديل التكوين phpMussel عن طريق ألfront-end."
+ Greeting: "مرحبا، %s."
+ Home: "هذا هو الصفحة رئيسية ألfront-end phpMussel. اختر ارتباط من قائمة التنقل على اليسار للمتابعة."
+ Logs: "اختار سجلات من القائمة أدناه لعرضها."
  Quarantine is currently disabled: "ملحوظة: تم تعطيل وحدة العزل حاليا، ولكن يمكن تمكينها عبر صفحة التهيئة."
- Quarantine: "مرحبا، {username}.<br />تسرد هذه الصفحة جميع الملفات الموجودة حاليا في وحدة العزل وتسهل إدارة تلك الملفات."
+ Quarantine: "تسرد هذه الصفحة جميع الملفات الموجودة حاليا في وحدة العزل وتسهل إدارة تلك الملفات."
  See the documentation: "راجع <a href="https://github.com/phpMussel/Docs/blob/master/readme.ar.md\#user-content-SECTION5" hreflang="ar" rel="noopener external">وثائق</a> للحصول على معلومات حول مختلف توجيهات التكوين ونيتهم."
- Signature Information: "مرحبا، {username}.<br />توفر صفحة معلومات التوقيع بعض المعلومات الأساسية حول مصادر وأنواع التوقيعات النشطة حاليًا."
+ Signature Information: "توفر صفحة معلومات التوقيع بعض المعلومات الأساسية حول مصادر وأنواع التوقيعات النشطة حاليًا."
  Statistics tracking is currently disabled: "ملاحظة: يتم تعطيل تتبع الإحصاءات حاليا، ولكن يمكن تمكينه عبر صفحة التكوين."
- Statistics: "مرحبا، {username}.<br />تعرض هذه الصفحة بعض إحصاءات الاستخدام الأساسية المتعلقة بتثبيت phpMussel."
- Upload Testing: "مرحبا، {username}.<br />الصفحة تحميل اختبار يحتوي على شكل تحميل الملفات القياسية، مما يسمح لك لاختبار ما إذا كان عادة يكون قد تم حظره ملف بواسطة phpMussel عند محاولة تحميله."
+ Statistics: "تعرض هذه الصفحة بعض إحصاءات الاستخدام الأساسية المتعلقة بتثبيت phpMussel."
+ Upload Testing: "الصفحة تحميل اختبار يحتوي على شكل تحميل الملفات القياسية، مما يسمح لك لاختبار ما إذا كان عادة يكون قد تم حظره ملف بواسطة phpMussel عند محاولة تحميله."
 warning:
  Cookies: "الملاحظة: يستخدم phpMussel ملف تعريف ارتباط لمصادقة تسجيلات الدخول. من خلال تسجيل الدخول، فإنك تعطي موافقتك على إنشاء ملف تعريف ارتباط وتخزينه بواسطة المتصفح."
  JavaScript required: "تحذير: تتطلب بعض وظائف الواجهة الأمامية JavaScript. لضمان عمل الواجهة الأمامية بالكامل كما هو متوقع، يوصى بتمكين JavaScript."

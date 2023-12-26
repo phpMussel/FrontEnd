@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2023.12.01).
+# This file: Latvian language data (last modified: 2023.12.26).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -127,7 +127,7 @@ config:
  urlscanner_maximum_api_lookups_response: "Ko darīt, ja tiek pārsniegts maksimāli pieļaujamais API meklējumu skaits? False (Nepatiess) = Neko nedarīt (turpiniet apstrādi) [Noklusējuma]; True (Patiess) = Atzīmējiet/bloķējiet failu."
  virustotal: "Virus Total integrācijas konfigurācija."
  virustotal_vt_public_api_key: "Pēc izvēles, phpMussel spēj skenēt failus izmantojot Virus Total API. Tas var nodrošināt ievērojami uzlabotu aizsardzības līmeni pret vīrusiem, Trojas zirgiem, ļaunprātīgu programmatūru un citiem draudiem. Pēc noklusējuma ir atspējota failu skenēšana izmantojot Virus Total API. Lai to iespējotu, nepieciešama Virus Total API atslēga. Ņemot vērā ievērojamo labumu, ko tas jums varētu sniegt, es to ļoti iesaku. Tomēr, lūdzu, ņemiet vērā, lai izmantotu Virus Total API, jums <em><strong>OBLIGĀTI</strong></em> jāpiekrīt viņu pakalpojumu sniegšanas noteikumiem un jums <em><strong>OBLIGĀTI</strong></em> jāievēro visas vadlīnijas, kā aprakstīts Virus Total dokumentācijā! Lai atļautu izmantot šo integrācijas funkciju, jums OBLIGĀTI ir jāizlasa un jāpiekrīt Virus Total un tā API pakalpojumu sniegšanas noteikumiem, un vismaz, Virus Total Public API dokumentācijas preambula (viss pēc "VirusTotal Public API v2.0", bet pirms "Contents")."
- virustotal_vt_quota_rate: "Saskaņā ar Virus Total API dokumentāciju, "tas ir ierobežots ar ne vairāk kā 4 jebkura veida pieprasījumiem jebkurā 1 minūtes laikā. Ja jūs vadāt medus klientu, medus podu, vai jebkuru citu automatizāciju, kas nodrošinās resursus VirusTotal, un ne tikai iegūt pārskatus, jums ir tiesības uz augstāku pieprasījuma likmes kvotu". Pēc noklusējuma phpMussel stingri ievēro šos ierobežojumus, taču, ņemot vērā iespēju palielināt šīs likmes kvotas, šīs divas direktīvas ir sniegtas kā līdzeklis, lai jūs varētu norādīt phpMussel, cik lieli ierobežojumi tai būtu jāievēro. Parasti nevajadzētu palielināt šīs vērtības, ja jums tas nav uzdots to darīt, bet ja esat saskāries ar problēmām saistībā ar kvotu, šo vērtību samazināšana dažreiz var palīdzēt jums tikt galā ar šīm problēmām. Jūsu likmes kvota tiek noteikts kā <code>vt_quota_rate</code> jebkura veida pieprasījumi jebkurā <code>vt_quota_time</code> minūtes laikā."
+ virustotal_vt_quota_rate: "Saskaņā ar Virus Total API dokumentāciju, "tas ir ierobežots ar ne vairāk kā 4 jebkura veida pieprasījumiem jebkurā 1 minūtes laikā. Ja jūs vadāt medus klientu, medus podu, vai jebkuru citu automatizāciju, kas nodrošinās resursus VirusTotal, un ne tikai iegūt ziņojumus, jums ir tiesības uz augstāku pieprasījuma likmes kvotu". Pēc noklusējuma phpMussel stingri ievēro šos ierobežojumus, taču, ņemot vērā iespēju palielināt šīs likmes kvotas, šīs divas direktīvas ir sniegtas kā līdzeklis, lai jūs varētu norādīt phpMussel, cik lieli ierobežojumi tai būtu jāievēro. Parasti nevajadzētu palielināt šīs vērtības, ja jums tas nav uzdots to darīt, bet ja esat saskāries ar problēmām saistībā ar kvotu, šo vērtību samazināšana dažreiz var palīdzēt jums tikt galā ar šīm problēmām. Jūsu likmes kvota tiek noteikts kā <code>vt_quota_rate</code> jebkura veida pieprasījumi jebkurā <code>vt_quota_time</code> minūtes laikā."
  virustotal_vt_quota_time: "(Skatīt aprakstu iepriekš)."
  virustotal_vt_suspicion_level: "Pēc noklusējuma phpMussel ierobežos, kurus failus tas skenē, izmantojot Virus Total API, līdz tiem failiem, kurus tā uzskata par "aizdomīgiem". Jūs varat pēc izvēles pielāgot šo ierobežojumu, mainot <code>vt_suspicion_level</code> direktīvas vērtību."
  virustotal_vt_weighting: "Vai phpMussel vajadzētu interpretēt rezultātus no Virus Total API kā atklājumu skaits vai kā atklājumu svars? Faila skenēšanai, izmantojot vairākus dzinējus (tāpat kā Virus Total), jāpalielina atklāšanas biežums (un tāpēc vajadzētu noķert lielāku skaitu ļaunprātīgu failu), bet tas var izraisīt arī lielāku nepatiesu pozitīvu skaits, un tāpēc dažos gadījumos, skenēšanas rezultātus var labāk izmantot kā ticamības rādītāju, pretstatā galīgu secinājumu (tas ir iemesls, kāpēc šī direktīva pastāv). Ja tiek izmantota vērtība 0, skenēšanas rezultāti no Virus Total API tiks interpretēti kā atklājumu skaits, un tāpēc, ja kāds no Virus Total izmantotajiem dzinējiem atzīmē skenējamo failu kā ļaunprātīgu, phpMussel uzskatīs failu par ļaunprātīgu. Ja tiek izmantota kāda cita vērtība, skenēšanas rezultāti no Virus Total API tiks interpretēti kā atklājumu svars, un tāpēc, Virus Total izmantoto dzinēju skaits, kas atzīmē skenēto failu kā ļaunprātīgu, kalpos kā ticamības rādītājs (vai atklāšanas svērums) tam, vai phpMussel skenētajiem failiem ir jāuzskata par ļaunprātīgu (izmantotā vērtība atspoguļos minimālo ticamības rādītāju vai svaru, kas vajadzīgs, lai to uzskatītu par ļaunprātīgu). Pēc noklusējuma tiek izmantota vērtība 0."
@@ -349,18 +349,19 @@ state_quarantine:
  - "Šobrīd karantīnā ir %s faili."
 tip:
  2FA Sent: "Uz jūsu e-pasta adresi ir nosūtīts e-pasts ar divu faktoru autentifikācijas kodu. Lūdzu, apstipriniet šo kodu zemāk, lai ielogotos. Ja nesaņēmāt šo e-pastu, mēģiniet izlogoties, nogaidiet 10 minūtes, un ielogoties vēlreiz, lai saņemtu jaunu e-pastu ar jaunu kodu."
- Accounts: "Sveiki, {username}.<br />Kontu lapa ļauj jums kontrolēt, kurš var ielogoties phpMussel."
- Cache Data: "Sveiki, {username}.<br />Šeit jūs varat pārskatīt kešatmiņas saturu."
- Configuration: "Sveiki, {username}.<br />Konfigurācijas lapa ļauj mainīt phpMussel konfigurāciju."
- Home: "Sveiki, {username}.<br />Šī ir jūsu phpMussel instalācijas mājas lapa. Lai turpinātu, navigācijas izvēlnē kreisajā pusē atlasiet saiti."
- Logs: "Sveiki, {username}.<br />Zemāk redzamajā sarakstā atlasiet logfailu, lai skatītu šī faila saturu."
+ Accounts: "Kontu lapa ļauj jums kontrolēt, kurš var ielogoties phpMussel."
+ Cache Data: "Šeit jūs varat pārskatīt kešatmiņas saturu."
+ Configuration: "Konfigurācijas lapa ļauj mainīt phpMussel konfigurāciju."
+ Greeting: "Sveiki, %s."
+ Home: "Šī ir jūsu phpMussel instalācijas mājas lapa. Lai turpinātu, navigācijas izvēlnē kreisajā pusē atlasiet saiti."
+ Logs: "Zemāk redzamajā sarakstā atlasiet logfailu, lai skatītu šī faila saturu."
  Quarantine is currently disabled: "Piezīme: Karantīna pašlaik ir atspējota, taču to var iespējot konfigurācijas lapā."
- Quarantine: "Sveiki, {username}.<br />Šajā lapā ir uzskaitīti visi faili, kas pašlaik atrodas karantīnā, un atvieglo šo failu pārvaldību."
+ Quarantine: "Šajā lapā ir uzskaitīti visi faili, kas pašlaik atrodas karantīnā, un atvieglo šo failu pārvaldību."
  See the documentation: "Skatiet <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">dokumentāciju</a>, lai iegūtu informāciju par dažādām konfigurācijas direktīvām un to mērķiem."
- Signature Information: "Sveiki, {username}.<br />Parakstu informācijas lapā ir sniegta pamatinformācija par pašlaik aktīvo parakstu avotiem un veidiem."
+ Signature Information: "Parakstu informācijas lapā ir sniegta pamatinformācija par pašlaik aktīvo parakstu avotiem un veidiem."
  Statistics tracking is currently disabled: "Piezīme: Statistikas izsekošana pašlaik ir atspējota, taču to var iespējot konfigurācijas lapā."
- Statistics: "Sveiki, {username}.<br />Šī lapa parāda dažus pamata statistikas datus par jūsu phpMussel instalēšanu."
- Upload Testing: "Sveiki, {username}.<br />Augšupielādes testa lapā ir standarta failu augšupielādes forma. Varat to izmantot, lai pārbaudītu, vai phpMussel parasti bloķē failu."
+ Statistics: "Šī lapa parāda dažus pamata statistikas datus par jūsu phpMussel instalēšanu."
+ Upload Testing: "Augšupielādes testa lapā ir standarta failu augšupielādes forma. Varat to izmantot, lai pārbaudītu, vai phpMussel parasti bloķē failu."
 warning:
  Cookies: "Piezīme: phpMussel izmanto sīkfailu, lai autentificētu ielogošanās informāciju. Ielogoties, jūs dodat piekrišanu sīkdatnes izveidošanai un saglabāšanai jūsu pārlūkprogrammā."
  JavaScript required: "Brīdinājums: Dažām funkcionalitātēm ir nepieciešams JavaScript. Ieteicams iespējot JavaScript, lai nodrošinātu, ka visa interfeiss darbojas, kā paredzēts."

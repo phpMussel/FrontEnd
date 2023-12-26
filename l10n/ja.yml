@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2023.12.01).
+# This file: Japanese language data (last modified: 2023.12.26).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -283,7 +283,7 @@ link:
 max_login_attempts_exceeded: "ログイン試行の最大回数を超えました；アクセス拒否。"
 msg_subject_2fa: "２ＦＡ（二要素認証）"
 msg_template_2fa: |
- <center><p>こんにちは、%s。<br /><br />
+ <center><p><br />
  phpMusselフロントエンドにログインするための２ＦＡコード：</p>
  <h1>%s</h1>
  <p>このコードの有効期限は１０分です。</p></center>
@@ -345,18 +345,19 @@ siginfo_xkey: "「%s」と識別されます。"
 state_quarantine: "現在、%sつのファイルが検疫されています。"
 tip:
  2FA Sent: "２ＦＡコードを含むＥメールがあなたのＥメール・アドレスに送信されました。​フロントエンドにアクセスするには、このコードを確認してください。​このＥメールを受信しなかった場合は、新しいコードを含む新しい電子Ｅメールを受け取るために、ログアウトして、１０分待ってからもう一度ログインしてください。"
- Accounts: "こんにちは、{username}。<br />アカウント・ページは、phpMusselフロントエンドにアクセスできるユーザーを制御できます。"
- Cache Data: "こんにちは、{username}。<br />ここでは、キャッシュの内容を確認できます。"
- Configuration: "こんにちは、{username}。<br />コンフィグレーション・ページは、フロントエンドからphpMusselの設定を変更することができます。"
- Home: "こんにちは、{username}。<br />これはphpMusselフロントエンドのホームページです。​続行するには、左側のナビゲーションメニューからリンクを選択します。"
- Logs: "こんにちは、{username}。<br />そのログの内容を表示するために、次のリストからログを選択します。"
+ Accounts: "アカウント・ページは、phpMusselフロントエンドにアクセスできるユーザーを制御できます。"
+ Cache Data: "ここでは、キャッシュの内容を確認できます。"
+ Configuration: "コンフィグレーション・ページは、フロントエンドからphpMusselの設定を変更することができます。"
+ Greeting: "こんにちは、%s。"
+ Home: "これはphpMusselフロントエンドのホームページです。​続行するには、左側のナビゲーションメニューからリンクを選択します。"
+ Logs: "そのログの内容を表示するために、次のリストからログを選択します。"
  Quarantine is currently disabled: "注意：検疫は現在無効になっていますが、コンフィギュレーション・ページで有効にすることができます。"
- Quarantine: "こんにちは、{username}。<br />管理を容易にするために、現在検疫されているすべてのファイルがこのページにリストされています。"
+ Quarantine: "管理を容易にするために、現在検疫されているすべてのファイルがこのページにリストされています。"
  See the documentation: "コンフィギュレーション・ディレクティブの詳細については、<a href="https://github.com/phpMussel/Docs/blob/master/readme.ja.md\#user-content-SECTION5" hreflang="ja-JP" rel="noopener external">ドキュメント</a>を参照してください。"
- Signature Information: "こんにちは、{username}。<br />シグネチャ情報ページには、現在アクティブなシグネチャのソースとタイプに関する基本的な情報が表示されます。"
+ Signature Information: "シグネチャ情報ページには、現在アクティブなシグネチャのソースとタイプに関する基本的な情報が表示されます。"
  Statistics tracking is currently disabled: "注意：統計トラッキングは現在オフラインですが、コンフィギュレーション・ページで有効にすることができます。"
- Statistics: "こんにちは、{username}。<br />このページには、phpMusselのインストールに関する基本的な使用状況の統計情報が表示されます。"
- Upload Testing: "こんにちは、{username}。<br />アップロード・テスト・ページ、標準的なファイルアップロードフォームを含んでいます、ファイルが通常ブロックされるかどうかをテストすることができます。"
+ Statistics: "このページには、phpMusselのインストールに関する基本的な使用状況の統計情報が表示されます。"
+ Upload Testing: "アップロード・テスト・ページ、標準的なファイルアップロードフォームを含んでいます、ファイルが通常ブロックされるかどうかをテストすることができます。"
 warning:
  Cookies: "注意：phpMusselは、Cookieを使用してログインを認証します。​ログインすると、ブラウザでCookieを作成して保存することに同意したことになります。"
  JavaScript required: "警告：一部のフロントエンド機能性にはJavaScriptが必要です。フロントエンドの全体が期待どおりに動作するようにするには、JavaScriptを有効にすることをお勧めします。"

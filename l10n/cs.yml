@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Czech language data (last modified: 2023.12.01).
+# This file: Czech language data (last modified: 2023.12.26).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -286,7 +286,7 @@ link:
 max_login_attempts_exceeded: "Byl překročen maximální počet pokusů o přihlášení; Přístup odepřen."
 msg_subject_2fa: "Dvoufaktorová autentizace"
 msg_template_2fa: |
- <center><p>Ahoj, %s.<br /><br />
+ <center><p><br />
  Váš dvoufaktorový autentizační kód pro přihlášení do front-endu phpMussel:</p>
  <h1>%s</h1>
  <p>Platnost tohoto kódu vyprší za 10 minut.</p></center>
@@ -351,18 +351,19 @@ state_quarantine:
  - "Momentálně je v karanténě %s souborů."
 tip:
  2FA Sent: "Na vaši e-mailovou adresu byl odeslán e-mail obsahující dvoufaktorový ověřovací kód. Chcete-li získat přístup k front-endu, potvrďte prosím tento kód níže. Pokud jste tento e-mail neobdrželi, zkuste se odhlásit, počkejte 10 minut, a znovu se přihlaste, abyste dostali nový e-mail obsahující nový kód."
- Accounts: "Ahoj, {username}.<br />Stránka účtů vám umožňuje ovládat, kdo má přístup k front-endu phpMussel."
- Cache Data: "Ahoj, {username}.<br />Zde si můžete prohlédnout obsah mezipaměti."
- Configuration: "Ahoj, {username}.<br />Konfigurační stránka vám umožňuje upravit konfiguraci pro phpMussel z front-endu."
- Home: "Ahoj, {username}.<br />Toto je domovská stránka pro front-end phpMussel. Pokračovat, vyberte odkaz z navigační nabídky vlevo."
- Logs: "Ahoj, {username}.<br />Chcete-li zobrazit obsah tohoto souboru protokolu, vyberte soubor protokolu ze seznamu níže."
+ Accounts: "Stránka účtů vám umožňuje ovládat, kdo má přístup k front-endu phpMussel."
+ Cache Data: "Zde si můžete prohlédnout obsah mezipaměti."
+ Configuration: "Konfigurační stránka vám umožňuje upravit konfiguraci pro phpMussel z front-endu."
+ Greeting: "Ahoj, %s."
+ Home: "Toto je domovská stránka pro front-end phpMussel. Pokračovat, vyberte odkaz z navigační nabídky vlevo."
+ Logs: "Chcete-li zobrazit obsah tohoto souboru protokolu, vyberte soubor protokolu ze seznamu níže."
  Quarantine is currently disabled: "Poznámka: Karanténa je aktuálně deaktivována, ale lze ji aktivovat prostřednictvím konfigurační stránky."
- Quarantine: "Ahoj, {username}.<br />Tato stránka obsahuje seznam všech souborů aktuálně v karanténě a usnadňuje správu těchto souborů."
+ Quarantine: "Tato stránka obsahuje seznam všech souborů aktuálně v karanténě a usnadňuje správu těchto souborů."
  See the documentation: "Informace o různých konfiguračních direktivách a jejich účelech najdete v <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">dokumentaci</a>."
- Signature Information: "Ahoj, {username}.<br />Stránka s informacemi o podpisů poskytuje některé základní informace o zdrojích a typech aktuálně aktivních podpisů."
+ Signature Information: "Stránka s informacemi o podpisů poskytuje některé základní informace o zdrojích a typech aktuálně aktivních podpisů."
  Statistics tracking is currently disabled: "Poznámka: Sledování statistik je aktuálně deaktivováno, ale lze jej aktivovat prostřednictvím konfigurační stránky."
- Statistics: "Ahoj, {username}.<br />Tato stránka zobrazuje některé základní statistiky používání týkající se vaší instalace phpMussel."
- Upload Testing: "Ahoj, {username}.<br />Stránka testování nahrání obsahuje standardní formulář pro nahrání souborů, který vám umožňuje otestovat, zda by byl soubor normálně blokován phpMussel při pokusu o jeho nahrání."
+ Statistics: "Tato stránka zobrazuje některé základní statistiky používání týkající se vaší instalace phpMussel."
+ Upload Testing: "Stránka testování nahrání obsahuje standardní formulář pro nahrání souborů, který vám umožňuje otestovat, zda by byl soubor normálně blokován phpMussel při pokusu o jeho nahrání."
 warning:
  Cookies: "Poznámka: phpMussel používá cookie k ověření přihlášení. Přihlášením souhlasíte s tím, aby váš prohlížeč vytvořil a uložil soubor cookie."
  JavaScript required: "Varování: Některé funkčnost v front-endu vyžadují JavaScript. Aby se zajistilo, že se celý front-end bude chovat podle očekávání, doporučujeme povolit JavaScript."

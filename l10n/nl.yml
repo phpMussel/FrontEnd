@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2023.12.01).
+# This file: Dutch language data (last modified: 2023.12.26).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -281,7 +281,7 @@ link:
 max_login_attempts_exceeded: "Maximum aantal inlogpogingen overschreden; Toegang geweigerd."
 msg_subject_2fa: "2FA (Twee-Factor Authenticatie)"
 msg_template_2fa: |
- <center><p>Hallo, %s.<br /><br />
+ <center><p><br />
  Uw 2FA-code voor in te loggen bij de frontend van phpMussel:</p>
  <h1>%s</h1>
  <p>Deze code verloopt over 10 minuten.</p></center>
@@ -345,18 +345,19 @@ state_quarantine:
  - "Er zijn momenteel %s bestanden in quarantaine."
 tip:
  2FA Sent: "Een e-mail met een tweefactorauthenticatie code is verzonden naar uw e-mailadres. Bevestig deze code hieronder om toegang te krijgen tot de frontend. Als u deze e-mail niet hebt ontvangen, probeert u uit te loggen, wacht 10 minuten, en in te loggen opnieuw aan om een nieuwe e-mail met een nieuwe code te ontvangen."
- Accounts: "Hallo, {username}.<br />De accounts pagina stelt u in staat om te bepalen wie toegang heeft tot de phpMussel frontend."
- Cache Data: "Hallo, {username}.<br />Hier kunt u de inhoud van de cache bekijken."
- Configuration: "Hallo, {username}.<br />De configuratie pagina stelt u in staat om de configuratie voor phpMussel te modificeren vanaf de frontend."
- Home: "Hallo, {username}.<br />Dit is de startpagina van de phpMussel frontend. Selecteer een link in het navigatiemenu aan de linkerkant om door te gaan."
- Logs: "Hallo, {username}.<br />Selecteer een logbestand uit de onderstaande lijst om de inhoud van de logbestand te bekijken."
+ Accounts: "De accounts pagina stelt u in staat om te bepalen wie toegang heeft tot de phpMussel frontend."
+ Cache Data: "Hier kunt u de inhoud van de cache bekijken."
+ Configuration: "De configuratie pagina stelt u in staat om de configuratie voor phpMussel te modificeren vanaf de frontend."
+ Greeting: "Hallo, %s."
+ Home: "Dit is de startpagina van de phpMussel frontend. Selecteer een link in het navigatiemenu aan de linkerkant om door te gaan."
+ Logs: "Selecteer een logbestand uit de onderstaande lijst om de inhoud van de logbestand te bekijken."
  Quarantine is currently disabled: "Notitie: Quarantaine is momenteel uitgeschakeld, maar kan via de configuratiepagina worden ingeschakeld."
- Quarantine: "Hallo, {username}.<br />Deze pagina bevat een lijst met alle bestanden die momenteel in quarantaine staan en het beheer van die bestanden vergemakkelijkt."
+ Quarantine: "Deze pagina bevat een lijst met alle bestanden die momenteel in quarantaine staan en het beheer van die bestanden vergemakkelijkt."
  See the documentation: "Zie de <a href="https://github.com/phpMussel/Docs/blob/master/readme.nl.md\#user-content-SECTION5" hreflang="nl-NL" rel="noopener external">documentatie</a> voor informatie over de verschillende configuratie richtlijnen en hun doeleinden."
- Signature Information: "Hallo, {username}.<br />De signature informatie pagina biedt enige basisinformatie over de bronnen en typen van de momenteel actieve signatures."
+ Signature Information: "De signature informatie pagina biedt enige basisinformatie over de bronnen en typen van de momenteel actieve signatures."
  Statistics tracking is currently disabled: "Notitie: Statistische tracking is momenteel uitgeschakeld, maar kan via de configuratiepagina worden ingeschakeld."
- Statistics: "Hallo, {username}.<br />Deze pagina bevat een aantal basisgebruiksstatistieken voor uw phpMussel-installatie."
- Upload Testing: "Hallo, {username}.<br />De upload test pagina bevat een standaard file upload formulier, voor het testen of een bestand normaliter geblokkeerd door phpMussel bij een poging om het te uploaden."
+ Statistics: "Deze pagina bevat een aantal basisgebruiksstatistieken voor uw phpMussel-installatie."
+ Upload Testing: "De upload test pagina bevat een standaard file upload formulier, voor het testen of een bestand normaliter geblokkeerd door phpMussel bij een poging om het te uploaden."
 warning:
  Cookies: "Notitie: phpMussel gebruikt een cookie om aanmeldingen te verifiëren. Door in te loggen, geeft u uw toestemming voor het maken en opslaan van een cookie door uw browser."
  JavaScript required: "Waarschuwing: Voor sommige frontend functionaliteit is JavaScript vereist. Om ervoor te zorgen dat de gehele frontend zich naar verwachting gedraagt, wordt het inschakelen van JavaScript aanbevolen."

@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2023.12.12).
+ * This file: Front-end handler (last modified: 2023.12.26).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1256,8 +1256,11 @@ class FrontEnd
             }
         }
 
+        /** Prepare page greeting. */
+        $FE['Greeting'] = sprintf($this->Loader->L10N->getString('tip.Greeting'), $Username);
+
         /** Prepare page tooltip/description. */
-        $FE['FE_Tip'] = $this->Loader->parse(['username' => $Username], $Tips);
+        $FE['FE_Tip'] = $this->Loader->parse([], $Tips);
 
         /** Load main front-end JavaScript data. */
         $FE['JS'] = $JS ? $this->Loader->readFile($this->getAssetPath('scripts.js')) : '';

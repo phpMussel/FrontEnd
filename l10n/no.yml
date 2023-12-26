@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2023.12.01).
+# This file: Norwegian language data (last modified: 2023.12.26).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -283,7 +283,7 @@ link:
 max_login_attempts_exceeded: "Maks antall påloggingsforsøk er overskredet; Tilgang nektet."
 msg_subject_2fa: "2FA (2-Faktorautentisering)"
 msg_template_2fa: |
- <center><p>Hallo, %s.<br /><br />
+ <center><p><br />
  Din 2FA-kode for å logge inn i phpMussel-fronten:</p>
  <h1>%s</h1>
  <p>Denne koden utløper om 10 minutter.</p></center>
@@ -347,18 +347,19 @@ state_quarantine:
  - "Det er %s filer for øyeblikket i karantene."
 tip:
  2FA Sent: "En e-post som inneholder en 2FA-kode, er sendt til e-postadressen din. Vennligst bekreft denne koden nedenfor for å få tilgang til frontenden. Hvis du ikke mottok denne e-posten, kan du prøve å logge ut, vente i 10 minutter og logge på igjen for å motta en ny e-post som inneholder en ny kode."
- Accounts: "Hallo, {username}.<br />Du kan kontrollere hvem som kan få tilgang til phpMussel-frontenden ved hjelp av kontosiden."
- Cache Data: "Hallo, {username}.<br />Her kan du se innholdet i cachen."
- Configuration: "Hallo, {username}.<br />Konfigurasjonssiden lar deg endre konfigurasjonen for phpMussel fra frontenden."
- Home: "Hallo, {username}.<br />Dette er hjemmesiden for frontenden av phpMussel. Velg en lenke fra navigasjonsmenyen til venstre for å fortsette."
- Logs: "Hallo, {username}.<br />Velg en loggfil fra listen nedenfor for å se innholdet i den loggfilen."
+ Accounts: "Du kan kontrollere hvem som kan få tilgang til phpMussel-frontenden ved hjelp av kontosiden."
+ Cache Data: "Her kan du se innholdet i cachen."
+ Configuration: "Konfigurasjonssiden lar deg endre konfigurasjonen for phpMussel fra frontenden."
+ Greeting: "Hallo, %s."
+ Home: "Dette er hjemmesiden for frontenden av phpMussel. Velg en lenke fra navigasjonsmenyen til venstre for å fortsette."
+ Logs: "Velg en loggfil fra listen nedenfor for å se innholdet i den loggfilen."
  Quarantine is currently disabled: "Merk: Karantene er for øyeblikket deaktivert, men kan aktiveres via konfigurasjonssiden."
- Quarantine: "Hallo, {username}.<br />Denne siden viser alle filene som er i karantene, og letter administrasjonen av filene."
+ Quarantine: "Denne siden viser alle filene som er i karantene, og letter administrasjonen av filene."
  See the documentation: "Se <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">dokumentasjonen</a> for informasjon om de ulike konfigurasjonsdirektiver og deres formål."
- Signature Information: "Hallo, {username}.<br />Informasjonssiden for signatur gir grunnleggende informasjon om kildene og typene til de aktive signaturene."
+ Signature Information: "Informasjonssiden for signatur gir grunnleggende informasjon om kildene og typene til de aktive signaturene."
  Statistics tracking is currently disabled: "Merk: Statistikksporing er for øyeblikket deaktivert, men kan aktiveres via konfigurasjonssiden."
- Statistics: "Hallo, {username}.<br />Denne siden viser noen grunnleggende bruksstatistikk angående phpMussel-installasjonen."
- Upload Testing: "Hallo, {username}.<br />Opplastings-testsiden inneholder et standard skjema for opplasting av filer, slik at du kan teste om en fil normalt vil bli blokkert av phpMussel når du prøver å laste den opp."
+ Statistics: "Denne siden viser noen grunnleggende bruksstatistikk angående phpMussel-installasjonen."
+ Upload Testing: "Opplastings-testsiden inneholder et standard skjema for opplasting av filer, slik at du kan teste om en fil normalt vil bli blokkert av phpMussel når du prøver å laste den opp."
 warning:
  Cookies: "Merk: phpMussel bruker en informasjonskapsel for å godkjenne innlogginger. Ved å logge inn, gir du ditt samtykke til at en informasjonskapsel skal opprettes og lagres av nettleseren din."
  JavaScript required: "Advarsel: Noen frontend-funksjonalitet krever JavaScript. For å sikre at hele grensesnittet oppfører seg som forventet, anbefales det å aktivere JavaScript."

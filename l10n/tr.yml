@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2023.12.01).
+# This file: Turkish language data (last modified: 2023.12.26).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -283,7 +283,7 @@ link:
 max_login_attempts_exceeded: "Maksimum giriş denemesi aşıldı; Erişim reddedildi."
 msg_subject_2fa: "2FA (İki Faktörlü Kimlik Doğrulama)"
 msg_template_2fa: |
- <center><p>Merhaba, %s.<br /><br />
+ <center><p><br />
  phpMussel ön ucuna giriş yapmak için 2FA kodunuz:</p>
  <h1>%s</h1>
  <p>Bu kod 10 dakika içinde sona eriyor.</p></center>
@@ -347,18 +347,19 @@ state_quarantine:
  - "Şu anda karantina içinde %s dosyalar var."
 tip:
  2FA Sent: "E-posta adresinize iki faktörlü bir kimlik doğrulama kodu içeren bir e-posta gönderildi. Ön tarafa erişmek için lütfen aşağıdaki kodu doğrulayın. Bu e-postayı almadıysanız, yeni bir kod içeren yeni bir e-posta almak için, çıkış yapmayı, 10 dakika beklemeyi ve tekrar giriş yapmayı deneyin."
- Accounts: "Merhaba, {username}.<br />Hesaplar sayfası, phpMussel ön ucuna kimin erişebileceğini kontrol etmenizi mümkün kılar."
- Cache Data: "Merhaba, {username}.<br />Burada önbellek içeriğini inceleyebilirsiniz."
- Configuration: "Merhaba, {username}.<br />Yapılandırma sayfası, phpMussel için yapılandırmayı ön uçtan değiştirmenizi mümkün kılar."
- Home: "Merhaba, {username}.<br />Bu, phpMussel ön uçunun ana sayfasıdır. Devam etmek için soldaki gezinme menüsünden bir bağlantı seçin."
- Logs: "Merhaba, {username}.<br />Bu günlük dosyasının içeriğini görüntülemek için aşağıdaki listeden bir günlük dosyası seçin."
+ Accounts: "Hesaplar sayfası, phpMussel ön ucuna kimin erişebileceğini kontrol etmenizi mümkün kılar."
+ Cache Data: "Burada önbellek içeriğini inceleyebilirsiniz."
+ Configuration: "Yapılandırma sayfası, phpMussel için yapılandırmayı ön uçtan değiştirmenizi mümkün kılar."
+ Greeting: "Merhaba, %s."
+ Home: "Bu, phpMussel ön uçunun ana sayfasıdır. Devam etmek için soldaki gezinme menüsünden bir bağlantı seçin."
+ Logs: "Bu günlük dosyasının içeriğini görüntülemek için aşağıdaki listeden bir günlük dosyası seçin."
  Quarantine is currently disabled: "Not: Karantina şu anda devre dışıdır, ancak yapılandırma sayfası aracılığıyla etkinleştirilebilir."
- Quarantine: "Merhaba, {username}.<br />Bu sayfada, şu anda karantinadaki tüm dosyaları listeler ve bu dosyaların yönetimini kolaylaştırır."
+ Quarantine: "Bu sayfada, şu anda karantinadaki tüm dosyaları listeler ve bu dosyaların yönetimini kolaylaştırır."
  See the documentation: "Çeşitli yapılandırma yönergeleri ve amaçlarıyla ilgili bilgi için <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">belgelere</a> bakın."
- Signature Information: "Merhaba, {username}.<br />İmza bilgisi sayfası, şu anda aktif imzaların kaynakları ve türleri hakkında bazı temel bilgiler sağlar."
+ Signature Information: "İmza bilgisi sayfası, şu anda aktif imzaların kaynakları ve türleri hakkında bazı temel bilgiler sağlar."
  Statistics tracking is currently disabled: "Not: İstatistik izleme şu anda devre dışı, ancak yapılandırma sayfası aracılığıyla etkinleştirilebilir."
- Statistics: "Merhaba, {username}.<br />Bu sayfada, phpMussel kurulumunuzla ilgili bazı temel kullanım istatistikleri gösterilmektedir."
- Upload Testing: "Merhaba, {username}.<br />Yükleme sınama sayfası, bir dosyanın yüklenmeye çalışılırken normalde phpMussel tarafından engelleneceğini test etmenize izin veren standart bir dosya yükleme formu içerir."
+ Statistics: "Bu sayfada, phpMussel kurulumunuzla ilgili bazı temel kullanım istatistikleri gösterilmektedir."
+ Upload Testing: "Yükleme sınama sayfası, bir dosyanın yüklenmeye çalışılırken normalde phpMussel tarafından engelleneceğini test etmenize izin veren standart bir dosya yükleme formu içerir."
 warning:
  Cookies: "Not: phpMussel, oturum açma kimlik doğrulamasında çerez kullanır. Oturum açarak, tarayıcınız tarafından oluşturulacak ve saklanacak bir çerez için onayınızı verirsiniz."
  JavaScript required: "Uyarı: Bazı ön uç işlevsellikleri JavaScript gerektirir. Tüm ön ucun beklendiği gibi davrandığından emin olmak için JavaScript'in etkinleştirilmesi önerilir."

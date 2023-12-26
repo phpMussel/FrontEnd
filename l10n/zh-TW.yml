@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (traditional) language data (last modified: 2023.12.15).
+# This file: Chinese (traditional) language data (last modified: 2023.12.26).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -284,7 +284,7 @@ link:
 max_login_attempts_exceeded: "最大登錄嘗試次數已經超過；拒絕訪問。"
 msg_subject_2fa: "2FA（雙因素身份驗證）"
 msg_template_2fa: |
- <center><p>你好，%s。<br /><br />
+ <center><p><br />
  用於登錄phpMussel前端的2FA代碼：</p>
  <h1>%s</h1>
  <p>此代碼將在10分鐘後到期。</p></center>
@@ -346,18 +346,19 @@ siginfo_xkey: "標識符是『%s』。"
 state_quarantine: "目前有%s個文件在隔離區。"
 tip:
  2FA Sent: "包含2FA代碼的電子郵件已發送到您的電子郵件地址。​請確認以下代碼以獲取對前端的訪問權限。​如果您沒有收到此電子郵件，嘗試登出，等待10分鐘，然後再次登錄以接收包含新代碼的新電子郵件。"
- Accounts: "你好，{username}。<br />帳戶頁面允許您控制誰可以訪問phpMussel前端。"
- Cache Data: "你好，{username}。<br />在這裡您可以查看緩存的內容。"
- Configuration: "你好，{username}。<br />配置頁面允許您修改phpMussel配置從前端。"
- Home: "你好，{username}。<br />這是phpMussel的前端主頁。​從左側的導航菜單中選擇一個鏈接以繼續。"
- Logs: "你好，{username}。<br />選擇一個日誌從下面的列表以查看那個日誌的內容。"
+ Accounts: "帳戶頁面允許您控制誰可以訪問phpMussel前端。"
+ Cache Data: "在這裡您可以查看緩存的內容。"
+ Configuration: "配置頁面允許您修改phpMussel配置從前端。"
+ Greeting: "你好，%s。"
+ Home: "這是phpMussel的前端主頁。​從左側的導航菜單中選擇一個鏈接以繼續。"
+ Logs: "選擇一個日誌從下面的列表以查看那個日誌的內容。"
  Quarantine is currently disabled: "注意：隔離目前禁用，但可以通過配置頁面啟用。"
- Quarantine: "你好，{username}。<br />此頁面列出當前在隔離中的所有文件，並可以用來管理這些文件。"
+ Quarantine: "此頁面列出當前在隔離中的所有文件，並可以用來管理這些文件。"
  See the documentation: "請參閱<a href="https://github.com/phpMussel/Docs/blob/master/readme.zh-TW.md\#user-content-SECTION5" hreflang="zh-TW" rel="noopener external">文檔</a>以獲取有關各種配置指令的信息和他們的目的。"
- Signature Information: "你好，{username}。<br />簽名信息頁面提供了有關當前活動簽名的來源和類型的一些基本信息。"
+ Signature Information: "簽名信息頁面提供了有關當前活動簽名的來源和類型的一些基本信息。"
  Statistics tracking is currently disabled: "注意：統計跟踪目前已被禁用，但可以通過配置頁面啟用。"
- Statistics: "你好，{username}。<br />此頁面顯示了有關phpMussel安裝的一些基本使用統計信息。"
- Upload Testing: "你好，{username}。<br />上傳測試頁麵包含標准文件上傳表單，​允許您測試是否文件通常會被阻止通過phpMussel當嘗試上傳他們。"
+ Statistics: "此頁面顯示了有關phpMussel安裝的一些基本使用統計信息。"
+ Upload Testing: "上傳測試頁麵包含標准文件上傳表單，​允許您測試是否文件通常會被阻止通過phpMussel當嘗試上傳他們。"
 warning:
  Cookies: "注意：phpMussel使用cookie來驗證登錄。​通過登錄，您同意您的瀏覽器創建和存儲cookie。"
  JavaScript required: "警告：一些前端功能需要JavaScript。為確保整個前端按預期運行，建議啟用JavaScript。"

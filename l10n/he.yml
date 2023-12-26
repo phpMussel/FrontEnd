@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data (last modified: 2023.12.01).
+# This file: Hebrew language data (last modified: 2023.12.26).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -285,7 +285,7 @@ link:
 max_login_attempts_exceeded: "חרג מהמספר המרבי של ניסיונות התחברות; גישה נדחתה."
 msg_subject_2fa: "אימות דו-גורמי"
 msg_template_2fa: |
- <center><p>שלום, %s.<br /><br />
+ <center><p><br />
  קוד האימות הדו-גורמי שלך לכניסה להקצה הקדמי ה-phpMussel:</p>
  <h1>%s</h1>
  <p>קוד זה יפוג בעוד 10 דקות.</p></center>
@@ -349,18 +349,19 @@ state_quarantine:
  - "יש כרגע %s קבצים בהסגר."
 tip:
  2FA Sent: "דוא"ל המכיל קוד אימות דו-גורמי נשלח לכתובת הדוא"ל שלך. אנא אשר את הקוד הזה למטה כדי לקבל גישה להקצה הקדמי. אם לא קיבלת דוא"ל זה, נסה להתנתק, המתן 10 דקות, ולהיכנס שוב כדי לקבל דוא"ל חדש המכיל קוד חדש."
- Accounts: "שלום, {username}.<br />דף החשבונות מאפשר לך לשלוט למי יכול לגשת להקצה הקדמי ה-phpMussel."
- Cache Data: "שלום, {username}.<br />כאן תוכל לסקור את תוכן המטמון."
- Configuration: "שלום, {username}.<br />דף התצורה מאפשר לך לשנות את התצורה עבור phpMussel מהקצה הקדמי."
- Home: "שלום, {username}.<br />זהו דף הבית של הקצה הקדמי ה-phpMussel. בחר קישור מתפריט הניווט בצד שמאל כדי להמשיך."
- Logs: "שלום, {username}.<br />בחר קובץ יומן מהרשימה למטה כדי להציג את התוכן של קובץ יומן זה."
+ Accounts: "דף החשבונות מאפשר לך לשלוט למי יכול לגשת להקצה הקדמי ה-phpMussel."
+ Cache Data: "כאן תוכל לסקור את תוכן המטמון."
+ Configuration: "דף התצורה מאפשר לך לשנות את התצורה עבור phpMussel מהקצה הקדמי."
+ Greeting: "שלום, %s."
+ Home: "זהו דף הבית של הקצה הקדמי ה-phpMussel. בחר קישור מתפריט הניווט בצד שמאל כדי להמשיך."
+ Logs: "בחר קובץ יומן מהרשימה למטה כדי להציג את התוכן של קובץ יומן זה."
  Quarantine is currently disabled: "הערה: הסגר מושבת כעת, אך ניתן להפעיל אותו דרך דף התצורה."
- Quarantine: "שלום, {username}.<br />דף זה מפרט את כל הקבצים הנמצאים בהסגר ומקל על הניהול של קבצים אלה."
+ Quarantine: "דף זה מפרט את כל הקבצים הנמצאים בהסגר ומקל על הניהול של קבצים אלה."
  See the documentation: "עיין <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">בתיעוד</a> למידע על הנחיות התצורה השונות ומטרותיהן."
- Signature Information: "שלום, {username}.<br />דף מידע החתימה מספק מידע בסיסי על המקורות והסוגים של החתימות הפעילות כעת."
+ Signature Information: "דף מידע החתימה מספק מידע בסיסי על המקורות והסוגים של החתימות הפעילות כעת."
  Statistics tracking is currently disabled: "הערה: מעקב סטטיסטיקה מושבת כעת, אך ניתן להפעילו דרך דף התצורה."
- Statistics: "שלום, {username}.<br />דף זה מציג כמה סטטיסטיקות שימוש בסיסיות לגבי התקנת phpMussel שלך."
- Upload Testing: "שלום, {username}.<br />דף בדיקת ההעלאה מכיל טופס סטנדרטי להעלאת קבצים, המאפשר לך לבדוק אם קובץ בדרך כלל נחסם על ידי phpMussel בעת ניסיון להעלות אותו."
+ Statistics: "דף זה מציג כמה סטטיסטיקות שימוש בסיסיות לגבי התקנת phpMussel שלך."
+ Upload Testing: "דף בדיקת ההעלאה מכיל טופס סטנדרטי להעלאת קבצים, המאפשר לך לבדוק אם קובץ בדרך כלל נחסם על ידי phpMussel בעת ניסיון להעלות אותו."
 warning:
  Cookies: "הערה: phpMussel משתמש cookie כדי לאמת כניסות. על ידי התחברות, אתה נותן את הסכמתך לכך cookie תיווצר ויישמר על ידי הדפדפן שלך."
  JavaScript required: "אזהרה: חלק מפונקציונליות הקצה הקדמי דורשת JavaScript. כדי להבטיח שכל הקצה הקדמי יתנהג כמצופה, מומלץ להפעיל JavaScript."
