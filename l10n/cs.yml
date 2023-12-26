@@ -286,7 +286,7 @@ link:
 max_login_attempts_exceeded: "Byl překročen maximální počet pokusů o přihlášení; Přístup odepřen."
 msg_subject_2fa: "Dvoufaktorová autentizace"
 msg_template_2fa: |
- <center><p><br />
+ <center><p>Ahoj, %s.<br /><br />
  Váš dvoufaktorový autentizační kód pro přihlášení do front-endu phpMussel:</p>
  <h1>%s</h1>
  <p>Platnost tohoto kódu vyprší za 10 minut.</p></center>

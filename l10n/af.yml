@@ -285,7 +285,7 @@ link:
 max_login_attempts_exceeded: "Maksimum aantal intekenpogings oorskry; Toegang geweier."
 msg_subject_2fa: "Tweefaktor-verifikasie"
 msg_template_2fa: |
- <center><p><br />
+ <center><p>Hallo, %s.<br /><br />
  Jou tweefaktor-verifikasiekode om by die phpMussel se front-end in te teken:</p>
  <h1>%s</h1>
  <p>Hierdie kode verval oor 10 minute.</p></center>
