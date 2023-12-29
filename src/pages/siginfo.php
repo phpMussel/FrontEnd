@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The signature information page (last modified: 2023.12.13).
+ * This file: The signature information page (last modified: 2023.12.29).
  */
 
 namespace phpMussel\FrontEnd;
@@ -21,7 +21,7 @@ if (!isset($Page) || $Page !== 'siginfo' || $this->Permissions !== 1) {
 $this->initialPrepwork($FE, $this->Loader->L10N->getString('link.Signature Information'), $this->Loader->L10N->getString('tip.Signature Information'));
 
 /** Append number localisation JS. */
-$FE['JS'] .= $this->numberJS() . "\n";
+$FE['JS'] .= $this->numberJs() . "\n";
 
 $FE['InfoRows'] = '';
 $FE['SigInfoMenuOptions'] = '';

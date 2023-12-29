@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The configuration page (last modified: 2023.12.13).
+ * This file: The configuration page (last modified: 2023.12.29).
  */
 
 namespace phpMussel\FrontEnd;
@@ -21,7 +21,7 @@ if (!isset($Page) || $Page !== 'config' || $this->Permissions !== 1) {
 $this->initialPrepwork($FE, $this->Loader->L10N->getString('link.Configuration'), $this->Loader->L10N->getString('tip.Configuration'));
 
 /** Append number localisation JS. */
-$FE['JS'] .= $this->numberJS() . "\n";
+$FE['JS'] .= $this->numberJs() . "\n";
 
 /** Directive template. */
 $ConfigurationRow = $this->Loader->readFile($this->getAssetPath('_config_row.html'));

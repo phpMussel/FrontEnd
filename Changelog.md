@@ -179,3 +179,5 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 [2023.12.12; Maikuolan]: Split the code for most of the various front-end pages, which the view method was responsible for, into their own distinct files.
 
 [2023.12.26; Maikuolan]: Refactored the page greeting.
+
+[2023.12.29; Bug-fix; Maikuolan]: Some of the more unusual available number formatting choices (e.g., choices not using base-10 or Arabic numerals) didn't mesh well with the JavaScript code responsible for using them; Fixed.
