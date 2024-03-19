@@ -1,0 +1,20 @@
+##\
+# This file is a part of the phpMussel\FrontEnd package.
+# Homepage: https://phpmussel.github.io/
+#
+# PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: Galician language data (last modified: 2024.03.19).
+##/
+
+warning:
+ Cookies: "Nota: phpMussel usa unha cookie para autenticar os inicios de sesión. Ao iniciar sesión, dás o teu consentimento para que o teu navegador cree e almacene unha cookie."
+ JavaScript required: "Aviso: Algunhas funcións do front-end requiren JavaScript. Para garantir que todo o front-end se comporta como se espera, recoméndase activar JavaScript."
+ Maintenance mode is enabled: "Aviso: O modo de mantemento está activado!"
+ No signature files are active: "Aviso: Non hai ficheiros de sinatura activos."
+ Proceeding will log out all users: "Aviso: Ao continuar, pecharase a sesión de todos os usuarios."
+ This account is not using a valid password: "Aviso: Esta conta non está a usar un contrasinal válido."
+ Using the default password: "Aviso: Usando o contrasinal predeterminado!"

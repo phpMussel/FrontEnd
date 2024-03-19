@@ -1,0 +1,20 @@
+##\
+# This file is a part of the phpMussel\FrontEnd package.
+# Homepage: https://phpmussel.github.io/
+#
+# PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: Catalan language data (last modified: 2024.03.19).
+##/
+
+warning:
+ Cookies: "Nota: phpMussel utilitza una cookie per autenticar els inicis de sessió. En iniciar sessió, doneu el vostre consentiment perquè el vostre navegador creï i emmagatzemi una cookie."
+ JavaScript required: "Avís: Algunes funcionalitats del front-end requereixen JavaScript. Per assegurar-vos que tot el front-end es comporta com s'esperava, es recomana activar JavaScript."
+ Maintenance mode is enabled: "Avís: El mode de manteniment està activat!"
+ No signature files are active: "Avís: No hi ha cap fitxer de signatura actiu!"
+ Proceeding will log out all users: "Avís: Si continueu, es tancarà la sessió de tots els usuaris."
+ This account is not using a valid password: "Avís: Aquest compte no utilitza una contrasenya vàlida!"
+ Using the default password: "Avís: Utilitzant la contrasenya predeterminada!"

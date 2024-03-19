@@ -1,0 +1,20 @@
+##\
+# This file is a part of the phpMussel\FrontEnd package.
+# Homepage: https://phpmussel.github.io/
+#
+# PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: Gujarati language data (last modified: 2024.03.19).
+##/
+
+warning:
+ Cookies: "નૉૅધ: phpMussel લૉગિનને પ્રમાણિત કરવા માટે કૂકીનો ઉપયોગ કરે છે. લૉગ ઇન કરીને, તમે તમારા બ્રાઉઝર દ્વારા કૂકી બનાવવા અને સંગ્રહિત કરવા માટે તમારી સંમતિ આપો છો."
+ JavaScript required: "ચેતવણી: ફ્રન્ટ-એન્ડના કેટલાક ભાગોને JavaScriptની જરૂર છે. સમગ્ર ફ્રન્ટ-એન્ડ અપેક્ષા મુજબ વર્તે તેની ખાતરી કરવા માટે, JavaScript ને સક્ષમ કરવાની ભલામણ કરવામાં આવે છે."
+ Maintenance mode is enabled: "ચેતવણી: જાળવણી મોડ સક્ષમ છે!"
+ No signature files are active: "ચેતવણી: કોઈ સિગ્નેચર ફાઈલો સક્રિય નથી!"
+ Proceeding will log out all users: "ચેતવણી: આગળ વધવાથી બધા વપરાશકર્તાઓ લૉગ આઉટ થઈ જશે."
+ This account is not using a valid password: "ચેતવણી: આ એકાઉન્ટ માન્ય પાસવર્ડનો ઉપયોગ કરતું નથી!"
+ Using the default password: "ચેતવણી: ડિફૉલ્ટ પાસવર્ડનો ઉપયોગ કરીને!"

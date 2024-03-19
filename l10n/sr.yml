@@ -1,0 +1,20 @@
+##\
+# This file is a part of the phpMussel\FrontEnd package.
+# Homepage: https://phpmussel.github.io/
+#
+# PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: Serbian language data (last modified: 2024.03.19).
+##/
+
+warning:
+ Cookies: "Белешка: пхпМуссел користи колачић за аутентификацију пријављивања. Пријављивањем, дајете сагласност да ваш претраживач креира и чува колачић."
+ JavaScript required: "Упозорење: Неке фронт-енд функционалности захтевају ЈаваСцрипт. Да бисте осигурали да се цео фронт-енд понаша како се очекује, препоручује се омогућавање ЈаваСцрипт-а."
+ Maintenance mode is enabled: "Упозорење: Режим одржавања је омогућен!"
+ No signature files are active: "Упозорење: Ниједан датотеке потписа није активан!"
+ Proceeding will log out all users: "Упозорење: Наставком ће се одјавити сви корисници."
+ This account is not using a valid password: "Упозорење: Овај налог не користи важећу лозинку!"
+ Using the default password: "Упозорење: Коришћење подразумеване лозинке!"
