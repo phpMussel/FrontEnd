@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2023.12.29).
+ * This file: Front-end handler (last modified: 2024.04.12).
  */
 
 namespace phpMussel\FrontEnd;
@@ -800,14 +800,12 @@ class FrontEnd
             return;
         }
 
-        else {
-            /** Strip out unexpected bytes here for security. */
-            $Page = preg_replace('~[^\dA-Za-z-]~', '', $Page);
+        /** Strip out unexpected bytes here for security. */
+        $Page = preg_replace('~[^\dA-Za-z-]~', '', $Page);
 
-            /** Load the page. */
-            if (!$this->Loader->isReserved($Page) && is_readable($this->PagesPath . $Page . '.php')) {
-                require_once $this->PagesPath . $Page . '.php';
-            }
+        /** Load the page. */
+        if (!$this->Loader->isReserved($Page) && is_readable($this->PagesPath . $Page . '.php')) {
+            require_once $this->PagesPath . $Page . '.php';
         }
     }
 
