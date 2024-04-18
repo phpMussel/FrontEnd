@@ -145,3 +145,5 @@ input[type=button].reset:hover,input[type=button].reset:active{color:#ffc}
 .txtGn::selection,.txtGn>*:not(.txtOe,.txtRd)::selection{color:#dfc}
 .txtOe::selection,.txtOe>*:not(.txtGn,.txtRd)::selection{color:#fec}
 .txtRd::selection,.txtRd>*:not(.txtGn,.txtOe)::selection{color:#fcc}
+.flexrow{display:flex}
+.flexin{margin-{FE_Align}:-1px;margin-{FE_Align_Reverse}:1px;width:auto;flex-grow:1}

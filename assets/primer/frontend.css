@@ -152,3 +152,5 @@ input[type=button].reset:hover,input[type=button].reset:active{color:#f88}
 .txtOe::selection,.txtOe>*:not(.txtGn,.txtRd)::selection{color:#fec}
 .txtRd::selection,.txtRd>*:not(.txtGn,.txtOe)::selection{color:#fcc}
 input[type=file]::file-selector-button{position:relative;top:-2px}
+.flexrow{display:flex}
+.flexin{margin-{FE_Align}:-1px;margin-{FE_Align_Reverse}:1px;width:auto;flex-grow:1}

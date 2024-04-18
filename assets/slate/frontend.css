@@ -148,3 +148,5 @@ input[type=button].reset:hover,input[type=button].reset:active{color:#fa7}
 .txtOe::selection,.txtOe>*:not(.txtGn,.txtRd)::selection{color:#fec}
 .txtRd::selection,.txtRd>*:not(.txtGn,.txtOe)::selection{color:#fcc}
 input[type=file]::file-selector-button{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:folder.svg}{/Base64Encode});padding-{FE_Align}:20px;background-repeat:no-repeat;background-position:top 1px {FE_Align} 4px}
+.flexrow{display:flex}
+.flexin{margin-{FE_Align}:-1px;margin-{FE_Align_Reverse}:1px;width:auto;flex-grow:1}

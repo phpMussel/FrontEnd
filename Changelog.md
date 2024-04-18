@@ -181,3 +181,9 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 [2023.12.26; Maikuolan]: Refactored the page greeting.
 
 [2023.12.29; Bug-fix; Maikuolan]: Some of the more unusual available number formatting choices (e.g., choices not using base-10 or Arabic numerals) didn't mesh well with the JavaScript code responsible for using them; Fixed.
+
+### v3.5.1
+
+[2024.04.12; Maikuolan]: Code-style patch.
+
+[2024.04.18; Maikuolan]: Added flexrow for dropdown menus with included input fields for other values at the configuration page.
