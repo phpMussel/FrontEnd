@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2023.12.26).
+# This file: Japanese language data (last modified: 2024.04.16).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -344,7 +344,7 @@ siginfo_sub_Vendors: "シグネチャ・ベンダーまたはソース別によ�
 siginfo_xkey: "「%s」と識別されます。"
 state_quarantine: "現在、%sつのファイルが検疫されています。"
 tip:
- 2FA Sent: "２ＦＡコードを含むＥメールがあなたのＥメール・アドレスに送信されました。​フロントエンドにアクセスするには、このコードを確認してください。​このＥメールを受信しなかった場合は、新しいコードを含む新しい電子Ｅメールを受け取るために、ログアウトして、１０分待ってからもう一度ログインしてください。"
+ 2FA Sent: "２ＦＡコードを含むＥメールがあなたのＥメール・アドレスに送信されました。​フロントエンドにアクセスするには、このコードを確認してください。​このＥメールを受信しなかった場合は、新しいコードを含む新しいＥメールを受け取るために、ログアウトして、１０分待ってからもう一度ログインしてください。"
  Accounts: "アカウント・ページは、phpMusselフロントエンドにアクセスできるユーザーを制御できます。"
  Cache Data: "ここでは、キャッシュの内容を確認できます。"
  Configuration: "コンフィグレーション・ページは、フロントエンドからphpMusselの設定を変更することができます。"
