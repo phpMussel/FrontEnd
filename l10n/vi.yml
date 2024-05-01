@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2023.12.26).
+# This file: Vietnamese language data (last modified: 2024.04.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -44,7 +44,7 @@ config:
  core_scan_log: "Tên của tập tin để ghi lại tất cả các kết quả quét. Chỉ định một tên tập tin, hoặc để trống để vô hiệu hóa."
  core_scan_log_serialized: "Tên của tập tin để ghi lại tất cả các kết quả quét (sử dụng một định dạng tuần tự). Chỉ định một tên tập tin, hoặc để trống để vô hiệu hóa."
  core_statistics: "Giám sát thống kê sử dụng phpMussel? True = Vâng; False = Không [Mặc định]."
- core_time_format: "Định dạng ngày tháng sử dụng bởi phpMussel. Các tùy chọn bổ sung có thể được bổ sung theo yêu cầu."
+ core_time_format: "Định dạng ngày/giờ tháng sử dụng bởi phpMussel. Tùy chọn bổ sung có thể được bổ sung theo yêu cầu."
  core_time_offset: "Múi giờ bù đắp trong phút."
  core_timezone: "Điều này được sử dụng để chỉ định múi giờ sử dụng (ví dụ, Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, vv). Chỉ định "SYSTEM" để cho phép PHP tự động xử lý việc này cho bạn."
  core_truncate: "Dọn dẹp các bản ghi khi họ được một kích thước nhất định? Giá trị là kích thước tối đa bằng B/KB/MB/GB/TB mà một tập tin bản ghi có thể tăng lên trước khi bị dọn dẹp. Giá trị mặc định 0KB sẽ vô hiệu hoá dọn dẹp (các bản ghi có thể tăng lên vô hạn). Lưu ý: Áp dụng cho tập tin riêng biệt! Kích thước tập tin bản ghi không được coi là tập thể."
@@ -169,8 +169,27 @@ field:
  vt_suspicion_level_all: "Quét tất cả các tập tin."
  vt_suspicion_level_executable: "Quét các tập tin có trọng số heuristic, tập tin thực thi, và tập tin có khả năng chứa dữ liệu thực thi.\nVí dụ về tập tin thực thi, và tập tin có khả năng chứa dữ liệu thực thi, bao gồm tập tin Windows PE, tập tin Linux ELF, tập tin Mach-O, tập tin DOCX, tập tin ZIP, vv."
  vt_suspicion_level_heuristic_only: "Chỉ quét các tập tin có trọng số heuristic.\nCác tập tin sẽ chỉ được quét nếu chúng chịu một số trọng số heuristic. Trọng số heuristic có thể phát sinh từ các chữ ký nhằm bắt dấu vân tay phổ biến gợi ý lây nhiễm nhưng không đảm bảo lây nhiễm. Đối với các kết quả chứng minh sự nghi ngờ nhưng không cung cấp bất kỳ sự chắc chắn nào, việc tra cứu có thể phục vụ để đưa ra ý kiến thứ hai."
+hints_logging_datetime: "Lời khuyên hữu ích: Bạn có thể đính kèm thông tin ngày/giờ vào tên của tập tin nhật ký bằng cách sử dụng phần giữ chỗ định dạng thời gian. Phần giữ chỗ định dạng thời gian có sẵn được hiển thị tại {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
  Câu hỏi thường gặp.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.vi.md\#user-content-HOW_TO_USE_PDO" hreflang="vi-VN">"PDO DSN" là gì? Làm cách nào tôi có thể sử dụng PDO với phpMussel?</a></em>"
+hints_time_format: |
+ <strong><em>Phần giữ chỗ – Giải trình – Ví dụ dựa trên 2024-04-30T18:27:49+08:00.</em></strong><br />
+ <code class="s">{yyyy}</code> – Năm – Ví dụ, 2024.<br />
+ <code class="s">{yy}</code> – Năm viết tắt – Ví dụ, 24.<br />
+ <code class="s">{Mon}</code> – Tên viết tắt của tháng (bằng tiếng Anh) – Ví dụ, Apr.<br />
+ <code class="s">{mm}</code> – Tháng với số 0 đứng đầu – Ví dụ, 04.<br />
+ <code class="s">{m}</code> – Tháng – Ví dụ, 4.<br />
+ <code class="s">{Day}</code> – Tên viết tắt của ngày (bằng tiếng Anh) – Ví dụ, Tue.<br />
+ <code class="s">{dd}</code> – Ngày với số 0 đứng đầu – Ví dụ, 30.<br />
+ <code class="s">{d}</code> – Ngày – Ví dụ, 30.<br />
+ <code class="s">{hh}</code> – Giờ với số 0 đứng đầu (sử dụng thời gian 24 giờ) – Ví dụ, 18.<br />
+ <code class="s">{h}</code> – Giờ (sử dụng thời gian 24 giờ) – Ví dụ, 18.<br />
+ <code class="s">{ii}</code> – Phút với số 0 đứng đầu – Ví dụ, 27.<br />
+ <code class="s">{i}</code> – Phút – Ví dụ, 27.<br />
+ <code class="s">{ss}</code> – Giây với số 0 đứng đầu – Ví dụ, 49.<br />
+ <code class="s">{s}</code> – Giây – Ví dụ, 49.<br />
+ <code class="s">{tz}</code> – Múi giờ (không có dấu hai chấm) – Ví dụ, +0800.<br />
+ <code class="s">{t:z}</code> – Múi giờ (có dấu hai chấm) – Ví dụ, +08:00.
 hints_xlists:
  Làm thế nào điều này hoạt động.: "Nếu hệ thống của bạn chỉ cho phép các loại tập tin cụ thể được tải lên, hay nếu hệ thống của bạn từ chối một cách rõ ràng các loại tập tin cụ thể, xác định các loại tập tin trong danh sách trắng, danh sách đen và danh sách xám có thể tăng tốc độ quét được tiến hành bằng cách cho phép các kịch bản bỏ qua các loại tập tin nhất định. Định dạng là CSV (dấu phẩy ngăn cách giá trị)."
  Thứ tự hợp lý của chế biến.: "Nếu loại tập tin là trên danh sách trắng, không quét và không chặn các tập tin, và không kiểm tra các tập tin chống lại danh sách đen hay danh sách xám. Nếu loại tập tin là trên danh sách đen, không quét các tập tin nhưng chặn nó dù sao, và không kiểm tra các tập tin chống lại danh sách xám. Nếu danh sách xám là trống hay nếu danh sách xám không phải là trống và các loại tập tin là danh sách xám, quét các tập tin như bình thường và xác định xem có chặn nó dựa trên kết quả của quá trình quét, nhưng nếu danh sách xám không phải là trống và các loại tập tin không phải trên danh sách xám, điều trị các tập tin như thể nó là trên danh sách đen, vì thế không quét nó nhưng chặn nó dù sao."

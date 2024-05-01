@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2023.12.26).
+# This file: Malay language data (last modified: 2024.04.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -169,8 +169,27 @@ field:
  vt_suspicion_level_all: "Imbas semua fail."
  vt_suspicion_level_executable: "Imbas fail dengan berat heuristik, fail boleh laku, dan fail yang berpotensi mengandungi data boleh laku.\nContoh fail boleh laku, dan fail yang berpotensi mengandungi data boleh laku, termasuk fail Windows PE, fail Linux ELF, fail Mach-O, fail DOCX, fail ZIP, dsb."
  vt_suspicion_level_heuristic_only: "Imbas hanya fail dengan berat heuristik.\nFail akan diimbas hanya jika ia mempunyai berat heuristik. Berat heuristik boleh ditanggung daripada tandatangan yang bertujuan untuk menangkap cap jari biasa yang dikaitkan dengan kemungkinan jangkitan yang tidak semestinya menjamin jangkitan. Pencarian, dalam kes sedemikian, boleh memberikan pendapat kedua untuk keputusan yang mewajarkan syak tetapi sebaliknya tidak memberikan sebarang kepastian."
+hints_logging_datetime: "Petua berguna: Anda boleh melampirkan maklumat tarikh/masa pada nama fail log dengan menggunakan pemegang tempat format masa. Pemegang tempat format masa yang tersedia dipaparkan pada {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
  FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.id.md\#user-content-HOW_TO_USE_PDO" hreflang="id-ID">Apakah itu "PDO DSN"? Bagaimanakah saya boleh menggunakan PDO dengan phpMussel?</a></em>"
+hints_time_format: |
+ <strong><em>Pemegang tempat – Penjelasan – Contoh berdasarkan 2024-04-30T18:27:49+08:00.</em></strong><br />
+ <code class="s">{yyyy}</code> – Tahun – Cth., 2024.<br />
+ <code class="s">{yy}</code> – Tahun yang disingkatkan – Cth., 24.<br />
+ <code class="s">{Mon}</code> – Nama yang disingkatkan bulan (dalam bahasa Inggeris) – Cth., Apr.<br />
+ <code class="s">{mm}</code> – Bulan dengan sifar pendahuluan – Cth., 04.<br />
+ <code class="s">{m}</code> – Bulan – Cth., 4.<br />
+ <code class="s">{Day}</code> – Nama yang disingkatkan hari (dalam bahasa Inggeris) – Cth., Tue.<br />
+ <code class="s">{dd}</code> – Hari dengan sifar pendahuluan – Cth., 30.<br />
+ <code class="s">{d}</code> – Hari – Cth., 30.<br />
+ <code class="s">{hh}</code> – Jam dengan sifar pendahuluan (menggunakan masa 24 jam) – Cth., 18.<br />
+ <code class="s">{h}</code> – Jam (menggunakan masa 24 jam) – Cth., 18.<br />
+ <code class="s">{ii}</code> – Minit dengan sifar pendahuluan – Cth., 27.<br />
+ <code class="s">{i}</code> – Minit – Cth., 27.<br />
+ <code class="s">{ss}</code> – Saat dengan sifar pendahuluan – Cth., 49.<br />
+ <code class="s">{s}</code> – Saat – Cth., 49.<br />
+ <code class="s">{tz}</code> – Zon waktu (tanpa titik bertindih) – Cth., +0800.<br />
+ <code class="s">{t:z}</code> – Zon waktu (dengan titik bertindih) – Cth., +08:00.
 hints_xlists:
  Bagaimana ini berfungsi.: "Jika sistem anda membenarkan hanya jenis fail tertentu untuk dimuat naik, atau jika sistem anda secara eksplisit menafikan jenis fail tertentu, menyatakan jenis fail tersebut dalam senarai putih, senarai hitam, dan senarai kelabu boleh meningkatkan kelajuan pengimbasan dilakukan dengan membenarkan skrip melangkau jenis fail tertentu. Format ialah CSV (nilai dipisahkan koma)."
  Perintah pemprosesan logik.: "Jika jenis fail disenaraiputihkan, jangan imbas dan jangan sekat fail, dan jangan semak fail terhadap senarai hitam atau senarai kelabu. Jika jenis fail disenaraihitamkan, jangan imbas fail tetapi sekat fail jugak, dan jangan semak fail terhadap senarai kelabu. Jika senarai kelabu kosong atau jika senarai kelabu tidak kosong dan jenis fail disenaraikelabukan, imbas fail seperti biasa dan tentukan sama ada untuk menyekatnya berdasarkan hasil imbasan, tetapi jika senarai kelabu tidak kosong dan jenis fail tidak disenaraikelabukan, anggap fail sebagai disenaraihitamkan, jadi tidak mengimbasnya tetapi menyekatnya jugak."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2024.04.16).
+# This file: Japanese language data (last modified: 2024.04.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -169,8 +169,27 @@ field:
  vt_suspicion_level_all: "すべてのファイルをスキャンします。"
  vt_suspicion_level_executable: "ヒューリスティックな重みを持つファイル、実行可能ファイル、および実行可能データを含む可能性のファイルをスキャンします。\n実行可能ファイル、および実行可能データを含む可能性のファイルの例には、Windows PEファイル、Linux ELFファイル、Mach-Oファイル、DOCXファイル、ZIPファイル、などが含まれます。"
  vt_suspicion_level_heuristic_only: "ヒューリスティックな重みを持つファイルのみをスキャンします。\nファイルは、ヒューリスティックな重みが発生する場合にのみスキャンされます。​ューリスティックな重みは、感染を示唆しているが感染を保証していない指紋をキャッチするためのシグネチャから発生する可能性があります。​疑いを正当化するが確実性を提供しない結果については、ルックアップはセカンド・オピニオンを提供するのに役立ちます。"
+hints_logging_datetime: "役に立つヒント:時刻形式のプレースホルダーを使用して、ログ・ファイルの名前に日付/時刻情報を添付できます。​使用可能な時刻形式のプレースホルダーが{{Links.ConfigRef.time_format}}に表示されます。"
 hints_pdo_dsn:
  ＦＡＱ。: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.ja.md\#user-content-HOW_TO_USE_PDO" hreflang="ja-JP">「PDO DSN」とは何ですか？​phpMusselでPDOを使用するにはどうすればよいですか？</a></em>"
+hints_time_format: |
+ <strong><em>プレースホルダー – 説明 – 例は2024-04-30T18:27:49+08:00に基づいています。</em></strong><br />
+ <code class="s">{yyyy}</code> – 年 – 例えば、2024。<br />
+ <code class="s">{yy}</code> – 短縮年 – 例えば、24。<br />
+ <code class="s">{Mon}</code> – 月の略称（英語） – 例えば、Apr。<br />
+ <code class="s">{mm}</code> – 先頭にゼロが付いた月 – 例えば、04。<br />
+ <code class="s">{m}</code> – 月 – 例えば、4。<br />
+ <code class="s">{Day}</code> – 曜日の略称（英語） – 例えば、Tue。<br />
+ <code class="s">{dd}</code> – 先頭にゼロが付いた日 – 例えば、30。<br />
+ <code class="s">{d}</code> – 日 – 例えば、30。<br />
+ <code class="s">{hh}</code> – 先頭にゼロが付いた時間（24時間制を使用） – 例えば、18。<br />
+ <code class="s">{h}</code> – 時間（24時間制を使用） – 例えば、18。<br />
+ <code class="s">{ii}</code> – 先頭にゼロが付いた分 – 例えば、27。<br />
+ <code class="s">{i}</code> – 分 – 例えば、27。<br />
+ <code class="s">{ss}</code> – 先頭にゼロが付いた秒 – 例えば、49。<br />
+ <code class="s">{s}</code> – 秒 – 例えば、49。<br />
+ <code class="s">{tz}</code> – タイムゾーン（コロンなし） – 例えば、+0800。<br />
+ <code class="s">{t:z}</code> – タイムゾーン（コロン付き） – 例えば、+08:00。
 hints_xlists:
  これがどのように機能する。: "システムが特定タイプのファイルのみアップロードを許可する、あるいは拒絶する場合は、ファイルタイプを適切にホワイトリスト、ブラックリスト、グレーリストにて分類しておくと、ファイルタイプによって弾かれるファイルはスキャンをスキップできるため、スピードアップに繋がります。​フォーマットはＣＳＶ（カンマ区切り）です。"
  プロセスの論理的順序。: "ファイルタイプがホワイトリストに記載されていれば、スキャンせず、ブロックせず、ブラックリストおよびグレイリストに対してチェックを行いません。​ファイルタイプがブラックリストに記載されていれば、スキャンすることなく、直ちににブロックし、グレーリストに対してチェックを行いません。​グレーリストが空、あるいはグレーリストが空でなくかつそのファイルタイプがあれば、通常通りスキャンしブロックするか否かを判断します。​グレーリストが空でなくかつそのファイルタイプが含まれていなければ、ブラックリストと同様の扱いをすることになり、スキャンなしにブロックします。"

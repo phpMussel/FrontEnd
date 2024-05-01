@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (traditional) language data (last modified: 2023.12.26).
+# This file: Chinese (traditional) language data (last modified: 2024.04.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -169,8 +169,27 @@ field:
  vt_suspicion_level_all: "掃描所有文件。"
  vt_suspicion_level_executable: "掃描具啟發式權重的文件、可執行文件、和可能包含可執行數據的文件。\n此類文件包括Windows PE文件、Linux ELF文件、Mach-O文件、DOCX文件、ZIP文件、等等。"
  vt_suspicion_level_heuristic_only: "僅掃描具有啟發式權重的文件。\n僅當文件產生啟發式權重時才會掃描文件。​啟發式權重可能來自暗示感染但不能保證感染的簽名。​當懷疑有道理但沒有得到證實時，查詢可以作為第二意見。"
+hints_logging_datetime: "有用的提示：您可以使用時間格式佔位符將日期/時間資訊附加到日誌檔案的名稱。​可用的時間格式佔位符顯示在{{Links.ConfigRef.time_format}}處。"
 hints_pdo_dsn:
  常問問題。: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.zh-tw.md\#user-content-HOW_TO_USE_PDO" hreflang="zh-TW">『PDO DSN』是什麼？如何能PDO與phpMussel一起使用？</a></em>"
+hints_time_format: |
+ <strong><em>佔位符 – 解釋 – 基於2024-04-30T18:27:49+08:00的範例。</em></strong><br />
+ <code class="s">{yyyy}</code> – 年份 – 例如，2024。<br />
+ <code class="s">{yy}</code> – 縮寫年份 – 例如，24。<br />
+ <code class="s">{Mon}</code> – 月份的縮寫名稱（英文） – 例如，Apr。<br />
+ <code class="s">{mm}</code> – 帶前導零的月份 – 例如，04。<br />
+ <code class="s">{m}</code> – 月數 – 例如，4。<br />
+ <code class="s">{Day}</code> – 當天的縮寫名稱（英文） – 例如，Tue。<br />
+ <code class="s">{dd}</code> – 帶前導零的天數 – 例如，30。<br />
+ <code class="s">{d}</code> – 天數 – 例如，30。<br />
+ <code class="s">{hh}</code> – 帶前導零的小時（使用24小時制） – 例如，18。<br />
+ <code class="s">{h}</code> – 小時（使用24小時制） – 例如，18。<br />
+ <code class="s">{ii}</code> – 帶前導零的分鐘 – 例如，27。<br />
+ <code class="s">{i}</code> – 分鐘 – 例如，27。<br />
+ <code class="s">{ss}</code> – 帶前導零的秒 – 例如，49。<br />
+ <code class="s">{s}</code> – 秒 – 例如，49。<br />
+ <code class="s">{tz}</code> – 時區（不含冒號） – 例如，+0800。<br />
+ <code class="s">{t:z}</code> – 時區（附冒號） – 例如，+08:00。
 hints_xlists:
  這是如何工作的。: "如果您的系統只允許具體文件類型被上傳，​或如果您的系統明確地否認某些文件類型，​指定那些文件類型在白名單，​黑名單和灰名單可以增加掃描執行速度通過允許腳本跳過某些文件類型。​格式是CSV（逗號分隔變量）。"
  進程的邏輯順序。: "如果文件類型已白名單，​不掃描和不受阻文件，​和不匹配文件對照黑名單或灰名單。​如果文件類型已黑名單，​不掃描文件但阻止它無論如何，​和不匹配文件對照灰名單。​如果灰名單是空，​或如果灰名單不空和文件類型已灰名單，​掃描文件像正常和確定如果阻止它基於掃描結果，​但如果灰名單不空和文件類型不灰名單，​過程文件彷彿已黑名單，​因此不掃描它但阻止它無論如何。"

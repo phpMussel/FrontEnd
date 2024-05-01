@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2023.12.26).
+# This file: French language data (last modified: 2024.04.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -176,8 +176,27 @@ field:
  vt_suspicion_level_all: "Analysez tous les fichiers."
  vt_suspicion_level_executable: "Analysez les fichiers avec un poids heuristique, les fichiers exécutables, et les fichiers contenant potentiellement des données exécutables.\nExemples des fichiers exécutables, et de fichiers contenant potentiellement des données exécutables, incluent les fichiers Windows PE, les fichiers Linux ELF, les fichiers Mach-O, les fichiers DOCX, les fichiers ZIP, etc."
  vt_suspicion_level_heuristic_only: "Analyser seulement les fichiers avec un poids heuristique.\nLes fichiers seront analysés s'ils ont un poids heuristique, mais dans aucun autre cas. Le poids heuristique peut être induit par des signatures destinées à capturer des empreintes digitales communes associées à une infection potentielle qui ne garantissent pas nécessairement l'infection. L'utilisation de l'API, dans de tels cas, peut servir à fournir une deuxième opinion pour des résultats qui justifient des soupçons mais ne fournissent aucune certitude."
+hints_logging_datetime: "Conseil utile\_: Vous pouvez joindre des informations de date/heure aux noms des fichiers journaux à l'aide d'espaces réservés du format horaire. Les espaces réservés du format horaire disponibles sont affichés en {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
  FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.fr.md\#user-content-HOW_TO_USE_PDO" hreflang="fr-FR">Qu'est-ce qu'un «\_PDO DSN\_»\_? Comment utiliser PDO avec phpMussel\_?</a></em>"
+hints_time_format: |
+ <strong><em>Espace réservé – Explication – Exemple basé sur 2024-04-30T18:27:49+08:00.</em></strong><br />
+ <code class="s">{yyyy}</code> – L'année – Par exemple, 2024.<br />
+ <code class="s">{yy}</code> – L'année abrégée – Par exemple, 24.<br />
+ <code class="s">{Mon}</code> – Le nom abrégé du mois (en anglais) – Par exemple, Apr.<br />
+ <code class="s">{mm}</code> – Le mois avec des zéros non significatifs – Par exemple, 04.<br />
+ <code class="s">{m}</code> – Le mois – Par exemple, 4.<br />
+ <code class="s">{Day}</code> – Le nom abrégé du jour (en anglais) – Par exemple, Tue.<br />
+ <code class="s">{dd}</code> – Le jour avec des zéros non significatifs – Par exemple, 30.<br />
+ <code class="s">{d}</code> – Le jour – Par exemple, 30.<br />
+ <code class="s">{hh}</code> – L'heure avec des zéros non significatifs (utilise le format 24 heures) – Par exemple, 18.<br />
+ <code class="s">{h}</code> – L'heure (utilise le format 24 heures) – Par exemple, 18.<br />
+ <code class="s">{ii}</code> – La minute avec des zéros non significatifs – Par exemple, 27.<br />
+ <code class="s">{i}</code> – La minute – Par exemple, 27.<br />
+ <code class="s">{ss}</code> – La seconde avec des zéros non significatifs – Par exemple, 49.<br />
+ <code class="s">{s}</code> – La seconde – Par exemple, 49.<br />
+ <code class="s">{tz}</code> – Le fuseau horaire (sans deux points) – Par exemple, +0800.<br />
+ <code class="s">{t:z}</code> – Le fuseau horaire (avec deux points) – Par exemple, +08:00.
 hints_xlists:
  Comment cela fonctionne.: "Si votre système permettre seulement particuliers types des fichiers à être téléchargé, ou si votre système nie explicitement particuliers types des fichiers, spécifiant les types des fichiers dans listes blanches, listes noires et listes grises peut augmenter la vitesse à laquelle l'analyse est effectuée en permettant le script à sauter particuliers types des fichiers. Format est CSV (virgule séparées valeurs)."
  L'ordre logique de l'application.: "Si le type de fichier est listé blanche, n'analyser pas ni bloquer pas le fichier, et ne vérifie pas le fichier contre la liste noire ou la liste grise. Si le type de fichier est listé noire, n'analyser pas le fichier mais bloquer de toute façon, et ne vérifie pas le fichier contre la liste grise. Si la liste grise est vide ou si la liste grise n'est vide pas et le type de fichier est listé grise, analyser le fichier comme d'habitude et déterminer si de bloquer basés des résultats de l'analyse, mais si la liste grise n'est vide pas et le type de fichier n'est listé grise pas, traiter le fichier comme listé noire, donc n'analyse pas mais bloque de toute façon."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data (last modified: 2023.12.26).
+# This file: Hebrew language data (last modified: 2024.04.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -46,7 +46,7 @@ config:
  core_statistics: "לעקוב אחר סטטיסטיקות השימוש ב-phpMussel? True = כן; False = לא [סטנדרטי]."
  core_time_format: "פורמט סימון התאריך/שעה המשמש את phpMussel. ניתן להוסיף אפשרויות נוספות לפי בקשה."
  core_time_offset: "קיזוז אזור הזמן בדקות."
- core_timezone: "זה משמש כדי לציין את אזור הזמן לשימוש (למשל, Africa/Cairo ,America/New_York ,Asia/Tokyo ,Australia/Perth ,Europe/Berlin ,Pacific/Guam, וכו'). ציין "SYSTEM" כדי לאפשר ל-PHP לטפל בזה עבורך באופן אוטומטי."
+ core_timezone: "זה משמש כדי לציין את אזור הזמן לשימוש (למשל., Africa/Cairo ,America/New_York ,Asia/Tokyo ,Australia/Perth ,Europe/Berlin ,Pacific/Guam, וכו'). ציין "SYSTEM" כדי לאפשר ל-PHP לטפל בזה עבורך באופן אוטומטי."
  core_truncate: "לקצץ קובצי יומן כשהם מגיעים לגודל מסוים? הערך הוא הגודל המקסימלי ב-B/KB/MB/GB/TB שקובץ יומן עשוי לגדול אליו לפני קיצוץ. הערך הסטנדרטי של 0KB משבית חיתוך (קבצי יומן יכולים לגדול ללא הגבלת). הערה: חל על קבצי יומן בודדים! הגודל של קובצי יומן לא נחשב באופן קולקטיבי."
  experimental: "לא יציב/ניסיוני!"
  files: "הפרטים כיצד לטפל בקבצים בעת סריקה."
@@ -171,8 +171,27 @@ field:
  vt_suspicion_level_all: "סרוק את כל הקבצים."
  vt_suspicion_level_executable: "סרוק קבצים עם משקל היוריסטי, קבצי הפעלה, וקבצים שעשויים להכיל נתוני הפעלה.\nדוגמאות לקבצי הפעלה, וקבצים שעשויים להכיל נתונים ניתנים להפעלה, כוללות קבצי Windows PE, קבצי Linux ELF, קבצי Mach-O, קבצי DOCX, קובצי ZIP, וכו'."
  vt_suspicion_level_heuristic_only: "סרוק רק קבצים בעלי משקל היוריסטי.\nקבצים ייסרקו רק אם יש להם משקל היוריסטי. משקל היוריסטי יכול להיגרם מחתימות שנועדו לתפוס טביעות אצבע נפוצות המצביעות על זיהום אך אינן מבטיחות זיהום. הבדיקה, במקרים כאלה, יכולה לשמש לספק חוות דעת שנייה לתוצאות המצדיקות חשד אך אינן מספקות ודאות אחרת."
+hints_logging_datetime: "טיפ שימושי: ניתן לצרף מידע על תאריך/שעה לשמות של קובצי יומן על ידי שימוש במצייני מיקום של פורמט זמן. מצייני מיקום זמינים של פורמט זמן מוצגים ב-{{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
  שאלות נפוצות.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">מהו "PDO DSN"? כיצד להשתמש ב-PDO עם phpMussel?</a></em>"
+hints_time_format: |
+ <strong><em>מציין מקום – הסבר – דוגמה מבוססת על <span dir="ltr">2024-04-30T18:27:49+08:00</span>.</em></strong><br />
+ <code dir="ltr" class="s">{yyyy}</code> – השנה – למשל., 2024.<br />
+ <code dir="ltr" class="s">{yy}</code> – השנה המקוצרת – למשל., 24.<br />
+ <code dir="ltr" class="s">{Mon}</code> – השם המקוצר של החודש (באנגלית) – למשל., Apr.<br />
+ <code dir="ltr" class="s">{mm}</code> – החודש עם אפסים מובילים – למשל., 04.<br />
+ <code dir="ltr" class="s">{m}</code> – החודש – למשל., 4.<br />
+ <code dir="ltr" class="s">{Day}</code> – השם המקוצר של היום (באנגלית) – למשל., Tue.<br />
+ <code dir="ltr" class="s">{dd}</code> – היום עם אפסים מובילים – למשל., 30.<br />
+ <code dir="ltr" class="s">{d}</code> – היום – למשל., 30.<br />
+ <code dir="ltr" class="s">{hh}</code> – השעה עם אפסים מובילים (משתמשת בזמן של 24 שעות) – למשל., 18.<br />
+ <code dir="ltr" class="s">{h}</code> – השעה (משתמשת בזמן של 24 שעות) – למשל., 18.<br />
+ <code dir="ltr" class="s">{ii}</code> – הדקה עם אפסים מובילים – למשל., 27.<br />
+ <code dir="ltr" class="s">{i}</code> – הדקה – למשל., 27.<br />
+ <code dir="ltr" class="s">{ss}</code> – שניות עם אפסים מובילים – למשל., 49.<br />
+ <code dir="ltr" class="s">{s}</code> – שניות – למשל., 49.<br />
+ <code dir="ltr" class="s">{tz}</code> – אזור הזמן (ללא נקודתיים) – למשל., <span dir="ltr">+0800</span>.<br />
+ <code dir="ltr" class="s">{t:z}</code> – אזור הזמן (עם נקודתיים) – למשל., <span dir="ltr">+08:00</span>.
 hints_xlists:
  איך זה עובד.: "אם המערכת שלך מאפשרת להעלות רק סוגים מסוימים של קבצים, או אם המערכת שלך שוללת במפורש סוגים מסוימים של קבצים, ציון סוגי קבצים אלה ברשימות הלבנות, רשימות שחורות ורשימות אפורות יכול להגביר את המהירות שבה מתבצעת הסריקה על ידי מתן אפשרות לסקריפט לדלג מעל סוגי קבצים מסוימים. הפורמט הוא CSV (ערכים מופרדים בפסיקים)."
  סדר לוגי של עיבוד.: "אם סוג הקובץ נמצא ברשימת הלבנות, אל תסרוק ואל תחסום את הקובץ, ואל תבדוק את הקובץ מול הרשימה השחורה או הרשימה האפורה. אם הרשימה האפורה ריקה או אם הרשימה האפורה אינה ריקה וסוג הקובץ מופיע ברשימה אפורה, סרוק את הקובץ כרגיל וקבע אם לחסום אותו על סמך תוצאות הסריקה, אך אם הרשימה האפורה אינה ריקה וסוג הקובץ אינו מופיע ברשימה האפורה, התייחסו לקובץ כאל רשימת שחורה, לכן אל סורקים אותו אלא חוסמים אותו בכל זאת."

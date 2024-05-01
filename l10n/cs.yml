@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Czech language data (last modified: 2023.12.26).
+# This file: Czech language data (last modified: 2024.04.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -172,8 +172,27 @@ field:
  vt_suspicion_level_all: "Prohledejte všechny soubory."
  vt_suspicion_level_executable: "Skenujte soubory s heuristickou váhou, spustitelné soubory, a soubory, které potenciálně obsahují spustitelná data.\nPříklady spustitelných souborů, a souborů které potenciálně obsahují spustitelná data, zahrnují soubory Windows PE, soubory Linux ELF, soubory Mach-O, soubory DOCX, soubory ZIP, atd."
  vt_suspicion_level_heuristic_only: "Skenovat pouze soubory s heuristickou váhou.\nSoubory budou skenovány pouze v případě že mají určitou heuristickou váhu. Heuristickou váhu lze získat z podpisů určených k zachycení běžných otisků prstů spojených s potenciální infekcí, která nemusí nutně zaručovat infekci. Vyhledávání v takových případech může sloužit k poskytnutí druhého názoru na výsledky, které odůvodňují podezření, ale jinak neposkytují žádnou jistotu."
+hints_logging_datetime: "Užitečný tip: K názvům souborů protokolu můžete připojit informace o datu a čase pomocí zástupných symbolů formátu času. Dostupné zástupné symboly formátu času jsou zobrazeny v {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
  FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Co je to „PDO DSN“? Jak mohu používat PDO s phpMussel?</a></em>"
+hints_time_format: |
+ <strong><em>Zástupný symbol – Vysvětlení – Příklad založený na 2024-04-30T18:27:49+08:00.</em></strong><br />
+ <code class="s">{yyyy}</code> – Rok – Např., 2024.<br />
+ <code class="s">{yy}</code> – Zkrácený rok – Např., 24.<br />
+ <code class="s">{Mon}</code> – Zkrácený název měsíce (v angličtině) – Např., Apr.<br />
+ <code class="s">{mm}</code> – Měsíc s úvodními nulami – Např., 04.<br />
+ <code class="s">{m}</code> – Měsíc – Např., 4.<br />
+ <code class="s">{Day}</code> – Zkrácený název dne (v angličtině) – Např., Tue.<br />
+ <code class="s">{dd}</code> – Den s úvodními nulami – Např., 30.<br />
+ <code class="s">{d}</code> – Den – Např., 30.<br />
+ <code class="s">{hh}</code> – Hodina s úvodními nulami (používá 24hodinový čas) – Např., 18.<br />
+ <code class="s">{h}</code> – Hodina (používá 24hodinový čas) – Např., 18.<br />
+ <code class="s">{ii}</code> – Minuta s úvodními nulami – Např., 27.<br />
+ <code class="s">{i}</code> – Minuta – Např., 27.<br />
+ <code class="s">{ss}</code> – Sekunda s úvodními nulami – Např., 49.<br />
+ <code class="s">{s}</code> – Sekunda – Např., 49.<br />
+ <code class="s">{tz}</code> – Časové pásmo (bez dvojtečky) – Např., +0800.<br />
+ <code class="s">{t:z}</code> – Časové pásmo (s dvojtečkou) – Např., +08:00.
 hints_xlists:
  Jak to funguje.: "Pokud váš systém umožňuje nahrávat pouze určité typy souborů, nebo pokud váš systém výslovně zakazuje určité typy souborů, zadáním těchto typů souborů v whitelistech, blacklistech, a greylistech můžete zvýšit rychlost provádění skenování tím, že skriptu umožníte přeskakovat určité typy souborů. Formát je CSV (hodnoty oddělené čárkou)."
  Logické pořadí zpracování.: "Pokud je typ souboru na whitelist, neskenujte a neblokujte soubor a neporovnejte soubor proti blacklistem nebo greylistem. Pokud je typ souboru na blacklist, neskenujte soubor, ale i tak jej zablokujte a neporovnejte soubor proti greylistem. Pokud je greylist prázdný nebo pokud greylist není prázdný a typ souboru je na greylistu, neskenujte soubor jako obvykle a na základě výsledky skenování určete, zda jej chcete zablokovat, ale pokud greylist není prázdný a typ souboru není na greylistu, zacházejte se souborem jako na blacklistu, tedy neskenujte jej, ale i tak jej zablokujte."

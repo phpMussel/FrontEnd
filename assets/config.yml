@@ -7,13 +7,14 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Configuration defaults file (last modified: 2022.09.25).
+# This file: Configuration defaults file (last modified: 2024.04.30).
 ##/
 
 frontend:
  frontend_log:
   type: "string"
   default: ""
+  hints: "hints_logging_datetime"
  max_login_attempts:
   type: "int"
   default: 5

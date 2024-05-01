@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2023.12.26).
+# This file: Polish language data (last modified: 2024.04.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -172,8 +172,27 @@ field:
  vt_suspicion_level_all: "Skanuj wszystkie pliki."
  vt_suspicion_level_executable: "Skanuj pliki z wagą heurystyczną, pliki wykonywalne, i pliki potencjalnie zawierające dane wykonywalne.\nPrzykłady plików wykonywalnych, i plików potencjalnie zawierających dane wykonywalne, obejmują pliki Windows PE, pliki Linux ELF, pliki Mach-O, pliki DOCX, pliki ZIP, itp."
  vt_suspicion_level_heuristic_only: "Skanuj tylko pliki z wagą heurystyczną.\nSkanowane będą tylko pliki z wagą heurystyczną. Waga heurystyczna może wynikać z sygnatur przeznaczonych do wychwytywania typowych odcisków palców związanych z potencjalną infekcją, które niekoniecznie gwarantują infekcję. Wyszukiwanie w takich przypadkach może posłużyć do uzyskania drugiej opinii w przypadku wyników, które uzasadniają podejrzenia, ale poza tym nie dają żadnej pewności."
+hints_logging_datetime: "Przydatna wskazówka: Do nazw plików dziennika można dołączać informacje o dacie/godzinie, używając symboli zastępczych w formacie godziny. Dostępne symbole zastępcze formatu czasu są wyświetlane przy {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
  FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Co to jest „PDO DSN”? Jak mogę używać PDO z phpMussel?</a></em>"
+hints_time_format: |
+ <strong><em>Symbol zastępczy – Wyjaśnienie – Przykład oparty na 2024-04-30T18:27:49+08:00.</em></strong><br />
+ <code class="s">{yyyy}</code> – Rok – Np., 2024.<br />
+ <code class="s">{yy}</code> – Skrócony rok – Np., 24.<br />
+ <code class="s">{Mon}</code> – Skrócona nazwa miesiąca (w języku angielskim) – Np., Apr.<br />
+ <code class="s">{mm}</code> – Miesiąc z zerami wiodącymi – Np., 04.<br />
+ <code class="s">{m}</code> – Miesiąc – Np., 4.<br />
+ <code class="s">{Day}</code> – Skrócona nazwa dnia (w języku angielskim) – Np., Tue.<br />
+ <code class="s">{dd}</code> – Dzień z zerami wiodącymi – Np., 30.<br />
+ <code class="s">{d}</code> – Dzień – Np., 30.<br />
+ <code class="s">{hh}</code> – Godzina z zerami wiodącymi (używa czasu 24-godzinnego) – Np., 18.<br />
+ <code class="s">{h}</code> – Godzina (używa czasu 24-godzinnego) – Np., 18.<br />
+ <code class="s">{ii}</code> – Minuta z zerami wiodącymi – Np., 27.<br />
+ <code class="s">{i}</code> – Minuta – Np., 27.<br />
+ <code class="s">{ss}</code> – Sekunda z zerami wiodącymi – Np., 49.<br />
+ <code class="s">{s}</code> – Sekunda – Np., 49.<br />
+ <code class="s">{tz}</code> – Strefa czasowa (bez dwukropka) – Np., +0800.<br />
+ <code class="s">{t:z}</code> – Strefa czasowa (z dwukropkiem) – Np., +08:00.
 hints_xlists:
  Jak to działa.: "Jeśli twój system zezwala tylko na przesyłanie określonych typów plików lub jeśli twój system jednoznacznie zaprzecza określonym typom plików, określenie tych typów plików na białych listach, czarnych listach i szarych listach może zwiększyć szybkość skanowania, umożliwiając skryptowi pomijanie niektórych rodzajów plików. Format to CSV (wartości oddzielone przecinkami)."
  Logiczna kolejność przetwarzania.: "Jeśli typ pliku znajduje się na białej liście, nie skanuj i nie blokuj pliku oraz nie porównuj pliku z czarną listą lub szarą listą. Jeśli typ pliku znajduje się na czarnej liście, nie skanuj pliku, ale i tak go zablokuj i nie sprawdzaj pliku z szarą listą. Jeśli szara lista jest pusta lub jeśli szara lista nie jest pusta, a typ pliku znajduje się na szarej liście, zeskanuj plik jak zwykle i ustal, czy chcesz go zablokować na podstawie wyników skanowania, ale jeśli szara lista nie jest pusta, a typu pliku nie ma na szarej liście, traktuj plik tak, jakby znajdował się na czarnej liście, dlatego nie skanuj go, ale i tak go blokuj."

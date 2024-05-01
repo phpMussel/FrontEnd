@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese language data (last modified: 2023.12.26).
+# This file: Portuguese language data (last modified: 2024.04.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -189,8 +189,27 @@ field:
  vt_suspicion_level_heuristic_only:
   pt-BR: "Analisar apenas arquivos com peso heurístico.\nArquivos serão analisados apenas se incorrerem em algum peso heurístico. O peso heurístico pode ser incorrido por meio de assinaturas destinadas a capturar impressões digitais comuns associadas a possíveis infecções que não garantem necessariamente a infecção. A pesquisa, nesses casos, pode servir para fornecer uma segunda opinião para resultados que justificam a suspeita, mas não fornecem nenhuma certeza."
   pt-PT: "Analisar apenas arquivos com peso heurístico.\nArquivos serão analisados apenas se incorrerem em algum peso heurístico. O peso heurístico pode ser incorrido por meio de assinaturas destinadas a capturar impressões digitais comuns associadas a possíveis infeções que não garantem necessariamente a infeção. A pesquisa, nesses casos, pode servir para fornecer uma segunda opinião para resultados que justificam a suspeita, mas não fornecem nenhuma certeza."
+hints_logging_datetime: "Dica útil: Você pode anexar informações de data/hora aos nomes dos arquivos de log usando espaços reservados de formato de hora. Os espaços reservados para formato de hora disponíveis são exibidos em {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
  FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.pt.md\#user-content-HOW_TO_USE_PDO" hreflang="pt">O que é um "PDO DSN"? Como posso usar o PDO com o phpMussel?</a></em>"
+hints_time_format: |
+ <strong><em>Espaço reservado – Explicação – Exemplo baseado em 2024-04-30T18:27:49+08:00.</em></strong><br />
+ <code class="s">{yyyy}</code> – O ano – Por exemplo, 2024.<br />
+ <code class="s">{yy}</code> – O ano abreviado – Por exemplo, 24.<br />
+ <code class="s">{Mon}</code> – O nome abreviado do mês (em inglês) – Por exemplo, Apr.<br />
+ <code class="s">{mm}</code> – O mês com zeros à esquerda – Por exemplo, 04.<br />
+ <code class="s">{m}</code> – O mês – Por exemplo, 4.<br />
+ <code class="s">{Day}</code> – O nome abreviado do dia (em inglês) – Por exemplo, Tue.<br />
+ <code class="s">{dd}</code> – O dia com zeros à esquerda – Por exemplo, 30.<br />
+ <code class="s">{d}</code> – O dia – Por exemplo, 30.<br />
+ <code class="s">{hh}</code> – A hora com zeros à esquerda (usa o formato de 24 horas) – Por exemplo, 18.<br />
+ <code class="s">{h}</code> – A hora (usa o formato de 24 horas) – Por exemplo, 18.<br />
+ <code class="s">{ii}</code> – O minuto com zeros à esquerda – Por exemplo, 27.<br />
+ <code class="s">{i}</code> – O minuto – Por exemplo, 27.<br />
+ <code class="s">{ss}</code> – O segundo com zeros à esquerda – Por exemplo, 49.<br />
+ <code class="s">{s}</code> – O segundo – Por exemplo, 49.<br />
+ <code class="s">{tz}</code> – O fuso horário (sem dois pontos) – Por exemplo, +0800.<br />
+ <code class="s">{t:z}</code> – O fuso horário (com dois pontos) – Por exemplo, +08:00.
 hints_xlists:
  Como isso funciona.:
   pt-BR: "Se o seu sistema só permite certos tipos de arquivos sejam carregado, ou se o seu sistema explicitamente nega certos tipos de arquivos, especificando esses tipos de arquivos no whitelists, blacklists, e greylists pode aumentar a velocidado em que a análise é realizada através de permitindo o script para ignorar certos tipos de arquivos. O formato é CSV. (Valores Separados Por Virgula)."

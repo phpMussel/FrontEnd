@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2023.12.26).
+# This file: Turkish language data (last modified: 2024.04.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -169,8 +169,27 @@ field:
  vt_suspicion_level_all: "Tüm dosyaları tarayın."
  vt_suspicion_level_executable: "Buluşsal ağırlıklı dosyaları, yürütülebilir dosyaları, ve potansiyel olarak yürütülebilir veri içeren dosyaları tarayın.\nYürütülebilir dosyalara ve potansiyel olarak yürütülebilir veriler içeren dosyalara örnek olarak Windows PE dosyaları, Linux ELF dosyaları, Mach-O dosyaları, DOCX dosyaları, ZIP dosyaları, vb."
  vt_suspicion_level_heuristic_only: "Yalnızca buluşsal ağırlıklı dosyaları tarayın.\nDosyalar yalnızca buluşsal ağırlığa maruz kaldıklarında taranacaktır. Buluşsal ağırlık, enfeksiyonu düşündüren ancak enfeksiyonu garanti etmeyen yaygın parmak izlerini yakalamayı amaçlayan imzalardan kaynaklanabilir. Şüpheyi haklı çıkaran ancak herhangi bir kesinlik sağlamayan sonuçlar için, arama ikinci bir görüş sağlamaya hizmet edebilir."
+hints_logging_datetime: "Yararlı ipucu: Saat biçimi yer tutucularını kullanarak günlük dosyalarının adlarına tarih/saat bilgilerini ekleyebilirsiniz. Kullanılabilir zaman biçimi yer tutucuları {{Links.ConfigRef.time_format}} yönergesinde görüntülenir."
 hints_pdo_dsn:
  FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">"PDO DSN" nedir? PDO'yu phpMussel ile nasıl kullanabilirim?</a></em>"
+hints_time_format: |
+ <strong><em>Yer tutucu – Açıklama – Örnek 2024-04-30T18:27:49+08:00'e dayanmaktadır.</em></strong><br />
+ <code class="s">{yyyy}</code> – Yıl – Örneğin, 2024.<br />
+ <code class="s">{yy}</code> – Kısaltılmış yıl – Örneğin, 24.<br />
+ <code class="s">{Mon}</code> – Ayın kısaltılmış adı (İngilizce) – Örneğin, Apr.<br />
+ <code class="s">{mm}</code> – Başında sıfırların ay – Örneğin, 04.<br />
+ <code class="s">{m}</code> – Ay – Örneğin, 4.<br />
+ <code class="s">{Day}</code> – Günün kısaltılmış adı (İngilizce) – Örneğin, Tue.<br />
+ <code class="s">{dd}</code> – Başında sıfırların gün – Örneğin, 30.<br />
+ <code class="s">{d}</code> – Gün – Örneğin, 30.<br />
+ <code class="s">{hh}</code> – Başında sıfırların saat (24 saatlik zaman dilimini kullanır) – Örneğin, 18.<br />
+ <code class="s">{h}</code> – Saat (24 saatlik zaman dilimini kullanır) – Örneğin, 18.<br />
+ <code class="s">{ii}</code> – Başında sıfırların dakika – Örneğin, 27.<br />
+ <code class="s">{i}</code> – Dakika – Örneğin, 27.<br />
+ <code class="s">{ss}</code> – Başında sıfırların saniye – Örneğin, 49.<br />
+ <code class="s">{s}</code> – Saniye – Örneğin, 49.<br />
+ <code class="s">{tz}</code> – Saat dilimi (iki nokta üst üste olmadan) – Örneğin, +0800.<br />
+ <code class="s">{t:z}</code> – Saat dilimi (iki nokta üst üste ile) – Örneğin, +08:00.
 hints_xlists:
  Bu nasıl çalışır.: "Sisteminiz yalnızca belirli dosya türlerinin yüklenmesine izin veriyorsa, veya sisteminiz belli dosya türlerini açıkça reddetiyorsa, bu dosya türlerini beyaz listelerde, kara listelerde ve gri listelerde belirtmek taramanın hızını artırabilir, komut dosyası belirli dosya türlerini atlamak için izin vererek. Biçim CSV (virgülle ayrılmış değerler)."
  İşlem mantığı şu şekildedir: "Dosya türü beyaz listede bulunuyorsa, dosyayı taramayın ve engellemeyin ve dosyayı kara listeye veya gri listeye karşı kontrol etmeyin. Dosya türü kara listede bulunuyorsa, dosyayı taramayın, ancak yine de engelleyin ve dosyayı gri liste karşı kontrol etmeyin. Gri liste boşsa, ya da gri liste boş değilse ve dosya türü gri listede bulunuyorsa, dosyayı normal göre tara ve taramanın sonuçlarına dayanarak engelleyip engellemeyeceğini belirleme, ancak gri liste boş değilse ve dosya türü gri listede değil, dosyayı kara listede olduğu gibi davranın, bu nedenle tarama değil, yine de engelleme."

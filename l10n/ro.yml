@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data (last modified: 2023.12.26).
+# This file: Romanian language data (last modified: 2024.04.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -177,8 +177,27 @@ field:
  vt_suspicion_level_all: "Scanați toate fișierele."
  vt_suspicion_level_executable: "Scanați fișiere cu greutate euristică, fișiere executabile, și fișiere care pot conține date executabile.\nExemple de fișiere executabile și fișiere care pot conține date executabile includ fișiere Windows PE, fișiere Linux ELF, fișiere Mach-O, fișiere DOCX, fișiere ZIP, etc."
  vt_suspicion_level_heuristic_only: "Scanați numai fișiere cu greutate euristică.\nFișierele vor fi scanate numai dacă au o anumită greutate euristică. Greutatea euristică poate fi obținută din semnăturile destinate să prindă amprentele digitale comune asociate cu o potențială infecție care nu garantează neapărat infecția. Căutarea, în astfel de cazuri, poate servi pentru a oferi o a doua opinie pentru rezultate care justifică suspiciuni, dar care nu oferă altfel nicio certitudine."
+hints_logging_datetime: "Sfat util: Puteți atașa informații despre dată/ora la numele fișierelor jurnal utilizând substituenți pentru formatul de timp. Substituenții disponibili pentru formatul de timp sunt afișați la {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
  FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Ce este un „DSN PDO”? Cum pot folosi PDO cu phpMussel?</a></em>"
+hints_time_format: |
+ <strong><em>Substituent – Explicaţie – Exemplu bazat pe 2024-04-30T18:27:49+08:00.</em></strong><br />
+ <code class="s">{yyyy}</code> – Anul – De exemplu, 2024.<br />
+ <code class="s">{yy}</code> – Anul prescurtat – De exemplu, 24.<br />
+ <code class="s">{Mon}</code> – Numele prescurtat al lunii (în engleză) – De exemplu, Apr.<br />
+ <code class="s">{mm}</code> – Luna cu zerouri la început – De exemplu, 04.<br />
+ <code class="s">{m}</code> – Lună – De exemplu, 4.<br />
+ <code class="s">{Day}</code> – Numele prescurtat al zilei (în engleză) – De exemplu, Tue.<br />
+ <code class="s">{dd}</code> – Ziua cu zerouri la început – De exemplu, 30.<br />
+ <code class="s">{d}</code> – Ziua – De exemplu, 30.<br />
+ <code class="s">{hh}</code> – Ora cu zerouri inițiale (folosește 24 de ore) – De exemplu, 18.<br />
+ <code class="s">{h}</code> – Ora (folosește 24 de ore) – De exemplu, 18.<br />
+ <code class="s">{ii}</code> – Minutul cu zerouri la început – De exemplu, 27.<br />
+ <code class="s">{i}</code> – Minutul – De exemplu, 27.<br />
+ <code class="s">{ss}</code> – Secundă cu zerouri la început – De exemplu, 49.<br />
+ <code class="s">{s}</code> – Secundă – De exemplu, 49.<br />
+ <code class="s">{tz}</code> – Fusul orar (fără două puncte) – De exemplu, +0800.<br />
+ <code class="s">{t:z}</code> – Fusul orar (cu două puncte) – De exemplu, +08:00.
 hints_xlists:
  Cum funcționează asta.: "Dacă sistemul dvs. permite încărcarea numai a anumitor tipuri de fișiere sau dacă sistemul dvs. respinge în mod explicit anumite tipuri de fișiere, specificarea acestor tipuri de fișiere în liste albe, liste negre, și liste gri poate crește viteza la care se efectuează scanarea, permițând scriptului să sară peste anumite tipuri de fișiere. Formatul este CSV (valori separate prin virgulă)."
  Ordinea logică a procesării.: "Dacă tipul de fișier este inclus pe lista albă, nu scanați și nu blocați fișierul, și nu verificați fișierul cu lista neagră sau cu lista gri. Dacă tipul de fișier este pe lista neagră, nu scanați fișierul, ci blocați-l oricum, și nu verificați fișierul cu lista gri. Dacă lista gri este goală sau dacă lista gri nu este goală și tipul fișierului este în listă gri, scanați fișierul în mod normal și determinați dacă îl blocați pe baza rezultatelor scanării, dar dacă lista gri nu este goală și tipul fișierului nu este inclus în lista gri, tratați fișierul ca pe lista neagră, prin urmare nu îl scanați, ci blocați-l oricum."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2023.12.26).
+# This file: Korean language data (last modified: 2024.04.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -169,8 +169,27 @@ field:
  vt_suspicion_level_all: "모든 파일을 스캔합니다."
  vt_suspicion_level_executable: "휴리스틱 가중치가 있는 파일, 실행 파일, 및 잠재적으로 실행 가능 데이터가 포함된 파일을 검사합니다.\n실행 파일 및 잠재적으로 실행 데이터를 포함하는 파일의 예로는 Windows PE 파일, Linux ELF 파일, Mach-O 파일, DOCX 파일, ZIP 파일, 등이 있습니다."
  vt_suspicion_level_heuristic_only: "휴리스틱 가중치가 있는 파일만 검사합니다.\n휴리스틱 가중치가 발생하는 경우에만 파일이 검색됩니다. 감염을 암시하지만 감염을 보장하지는 않는 지문을 포착하기 위한 서명에서 휴리스틱 가중치가 발생할 수 있습니다. 의심을 정당화하지만 확실성을 제공하지 않는 결과의 경우 검색을 통해 두 번째 의견을 제공할 수 있습니다."
+hints_logging_datetime: "유용한 팁\_: 시간 형식 자리 표시자를 사용하여 로그 파일 이름에 날짜/시간 정보를 첨부할 수 있습니다. 사용 가능한 시간 형식 자리 표시자는 {{Links.ConfigRef.time_format}}에 표시됩니다."
 hints_pdo_dsn:
  자주하는 질문.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.ko.md\#user-content-HOW_TO_USE_PDO" hreflang="ko-KR">"PDO DSN"은 무엇입니까? phpMussel과 함께 PDO를 사용하려면 어떻게해야합니까?</a></em>"
+hints_time_format: |
+ <strong><em>자리 표시자 – 설명 – 예시는 2024-04-30T18:27:49+08:00를 기준으로 합니다.</em></strong><br />
+ <code class="s">{yyyy}</code> – 연도 – 예 : 2024.<br />
+ <code class="s">{yy}</code> – 약식 연도 – 예 : 24.<br />
+ <code class="s">{Mon}</code> – 해당 월의 약칭(영문) – 예 : Apr.<br />
+ <code class="s">{mm}</code> – 앞에 0이 붙는 달 – 예 : 04.<br />
+ <code class="s">{m}</code> – 달 – 예 : 4.<br />
+ <code class="s">{Day}</code> – 요일의 약칭(영문) – 예 : Tue.<br />
+ <code class="s">{dd}</code> – 앞에 0이 붙은 해당 월의 일 – 예 : 30.<br />
+ <code class="s">{d}</code> – 해당 월의 일 – 예 : 30.<br />
+ <code class="s">{hh}</code> – 앞에 0이 붙은 시간(24시간제 사용) – 예 : 18.<br />
+ <code class="s">{h}</code> – 시간(24시간제 사용) – 예 : 18.<br />
+ <code class="s">{ii}</code> – 앞에 0이 붙는 분 – 예 : 27.<br />
+ <code class="s">{i}</code> – 분 – 예 : 27.<br />
+ <code class="s">{ss}</code> – 앞에 0이 붙은 초 – 예 : 49.<br />
+ <code class="s">{s}</code> – 초 – 예 : 49.<br />
+ <code class="s">{tz}</code> – 시간대(콜론 제외) – 예 : +0800.<br />
+ <code class="s">{t:z}</code> – 시간대(콜론 포함) – 예 : +08:00.
 hints_xlists:
  작동 원리.: "시스템이 특정 유형의 파일 만 업로드를 허용하거나 거절하는 경우 파일 유형을 적절히 화이트리스트, 블랙리스트, 그레이리스트로 분류 해두면 파일 유형에 튀겨 진 파일은 스캔을 건너 뛸 수 때문에 속도로 연결됩니다. 형식은 CSV (쉼표로 구분)입니다."
  프로세스의 논리적 순서.: "파일 형식이 화이트리스트에 포함되어 있으면, 스캔하지 않고 블록하지 않고 블랙리스트 및 그레이리스트에 체크를하지 않습니다. 파일 형식이 블랙리스트에 있으면 스캔하지 않고 즉시 차단하고 그레이리스트에 체크를하지 않습니다. 회색 목록이 비어 또는 그레이리스트가 하늘이 아닌 한편 그 파일 타입이 있으면 정상적으로 스캔 차단 여부를 판단합니다. 그레이리스트가 하늘이 아닌 한편 그 파일 유형이 포함되어 있지 않으면 블랙리스트와 같은 취급을 할 수 있고 스캔없이 차단합니다."

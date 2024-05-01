@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2023.12.26).
+# This file: Spanish language data (last modified: 2024.04.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -167,8 +167,27 @@ field:
  vt_suspicion_level_all: "Escanear todos los archivos."
  vt_suspicion_level_executable: "Escanear los archivos con peso heurísticos, archivos ejecutables, y archivos que potencialmente contengan datos ejecutables.\nEjemplos de archivos ejecutables, y archivos que potencialmente contienen datos ejecutables, incluyen archivos Windows PE, archivos ELF Linux, archivos Mach-O, archivos DOCX, archivos ZIP, etc."
  vt_suspicion_level_heuristic_only: "Escanear solo archivos con peso heurísticos.\nLos archivos se escanearán solo si tienen algún peso heurístico. Se puede incurrir peso heurístico a través de firmas destinadas a capturar huellas digitales comunes asociadas con una infección potencial que no necesariamente garantiza una infección. La búsqueda, en tales casos, puede servir para proporcionar una segunda opinión para los resultados que justifican la sospecha pero que de otro modo no brindan ninguna certeza."
+hints_logging_datetime: "Consejo útil: Puede adjuntar información de fecha/hora a los nombres de los archivos de registro utilizando marcadores de posición de formato de hora. Los marcadores de posición de formato de hora disponibles se muestran en {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
  FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.es.md\#user-content-HOW_TO_USE_PDO" hreflang="es-ES">¿Qué es un "PDO DSN"? Cómo puedo usar PDO con phpMussel?</a></em>"
+hints_time_format: |
+ <strong><em>Marcador de posición – Explicación – Ejemplo basado en 2024-04-30T18:27:49+08:00.</em></strong><br />
+ <code class="s">{yyyy}</code> – El año – P.ej. 2024.<br />
+ <code class="s">{yy}</code> – El año abreviado – P.ej. 24.<br />
+ <code class="s">{Mon}</code> – El nombre abreviado del mes (en inglés) – P.ej. Apr.<br />
+ <code class="s">{mm}</code> – El mes con ceros a la izquierda – P.ej. 04.<br />
+ <code class="s">{m}</code> – El mes – P.ej. 4.<br />
+ <code class="s">{Day}</code> – El nombre abreviado del día (en inglés) – P.ej. Tue.<br />
+ <code class="s">{dd}</code> – El día con ceros a la izquierda – P.ej. 30.<br />
+ <code class="s">{d}</code> – El día – P.ej. 30.<br />
+ <code class="s">{hh}</code> – La hora con ceros a la izquierda (utiliza el formato de 24 horas) – P.ej. 18.<br />
+ <code class="s">{h}</code> – La hora (utiliza el formato de 24 horas) – P.ej. 18.<br />
+ <code class="s">{ii}</code> – El minuto con ceros a la izquierda – P.ej. 27.<br />
+ <code class="s">{i}</code> – El minuto – P.ej. 27.<br />
+ <code class="s">{ss}</code> – El segundo con ceros a la izquierda – P.ej. 49.<br />
+ <code class="s">{s}</code> – El segundo – P.ej. 49.<br />
+ <code class="s">{tz}</code> – La zona horaria (sin dos puntos) – P.ej. +0800.<br />
+ <code class="s">{t:z}</code> – La zona horaria (con dos puntos) – P.ej. +08:00.
 hints_xlists:
  Cómo funciona esto.: "Si su sistema sólo permite ciertos tipos de archivos para ser subido, o si su sistema niega explícitamente ciertos tipos de archivos, especificando los tipos de archivos en la whitelist, blacklist y/o greylist puede aumentar la velocidad a que escaneando se realizado por permitiendo la script para saltar sobre ciertos tipos de archivos. Formato es CSV (comas separados valores)."
  Orden lógico de procesamiento.: "Si el tipo de archivo está en la whitelist, no escanear y no bloquear el archivo, y no cotejar el archivo con la blacklist o la greylist. Si el tipo de archivo está en la blacklist, no escanear el archivo, pero bloquearlo en todo caso, y no cotejar el archivo con la greylist. Si la greylist está vacía o si la greylist está no vacía y el tipo de archivo está en la greylist, escanearlo como normal y determinar si para bloquearlo basado en los resultados de la escaneo, pero si la greylist está no vacía y el tipo de archivo está no en la greylist, tratar el archivo como si está en la blacklist, por lo tanto no escanearlo pero bloquearlo en todo caso."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (simplified) language data (last modified: 2023.12.26).
+# This file: Chinese (simplified) language data (last modified: 2024.04.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -169,8 +169,27 @@ field:
  vt_suspicion_level_all: "扫描所有文件。"
  vt_suspicion_level_executable: "扫描具启发式权重的文件、可执行文件、和可能包含可执行数据的文件。\n此类文件包括Windows PE文件、Linux ELF文件、Mach-O文件、DOCX文件、ZIP文件、等等。"
  vt_suspicion_level_heuristic_only: "仅扫描具有启发式权重的文件。\n仅当文件产生启发式权重时才会扫描文件。​启发式权重可能来自暗示感染但不能保证感染的签名。​当怀疑有道理但没有得到证实时，查询可以作为第二意见。"
+hints_logging_datetime: "有用提示：您可以使用时间格式占位符将日期/时间信息附加到日志文件的名称。​可用的时间格式占位符显示在{{Links.ConfigRef.time_format}}处。"
 hints_pdo_dsn:
  常问问题。: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.zh.md\#user-content-HOW_TO_USE_PDO" hreflang="zh-CN">“PDO DSN”是什么？如何能PDO与phpMussel一起使用？</a></em>"
+hints_time_format: |
+ <strong><em>占位符 – 解释 – 基于2024-04-30T18:27:49+08:00的示例。</em></strong><br />
+ <code class="s">{yyyy}</code> – 年份 – 例如，2024。<br />
+ <code class="s">{yy}</code> – 缩写年份 – 例如，24。<br />
+ <code class="s">{Mon}</code> – 月份缩写名称（英文） – 例如，Apr。<br />
+ <code class="s">{mm}</code> – 带前导零的月份 – 例如，04。<br />
+ <code class="s">{m}</code> – 月份数 – 例如，4。<br />
+ <code class="s">{Day}</code> – 当天缩写名称（英文） – 例如，Tue。<br />
+ <code class="s">{dd}</code> – 带前导零的天数 – 例如，30。<br />
+ <code class="s">{d}</code> – 天数 – 例如，30。<br />
+ <code class="s">{hh}</code> – 带前导零的小时（使用24小时制） – 例如，18。<br />
+ <code class="s">{h}</code> – 小时（使用24小时制） – 例如，18。<br />
+ <code class="s">{ii}</code> – 带前导零的分钟 – 例如，27。<br />
+ <code class="s">{i}</code> – 分钟 – 例如，27。<br />
+ <code class="s">{ss}</code> – 带前导零的秒 – 例如，49。<br />
+ <code class="s">{s}</code> – 秒 – 例如，49。<br />
+ <code class="s">{tz}</code> – 时区（不带冒号） – 例如，+0800。<br />
+ <code class="s">{t:z}</code> – 时区（带冒号） – 例如，+08:00。
 hints_xlists:
  这是如何工作的。: "如果您的系统只允许具体文件类型被上传，​或如果您的系统明确地否认某些文件类型，​指定那些文件类型在白名单，​黑名单和灰名单可以增加扫描执行速度通过允许脚本跳过某些文件类型。​格式是CSV（逗号分隔变量）。"
  进程的逻辑顺序。: "如果文件类型已白名单，​不扫描和不受阻文件，​和不匹配文件对照黑名单或灰名单。​如果文件类型已黑名单，​不扫描文件但阻止它无论如何，​和不匹配文件对照灰名单。​如果灰名单是空，​或如果灰名单不空和文件类型已灰名单，​扫描文件像正常和确定如果阻止它基于扫描结果，​但如果灰名单不空和文件类型不灰名单，​过程文件仿佛已黑名单，​因此不扫描它但阻止它无论如何。"

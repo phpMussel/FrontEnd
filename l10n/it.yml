@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2023.12.26).
+# This file: Italian language data (last modified: 2024.04.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -169,8 +169,27 @@ field:
  vt_suspicion_level_all: "Scansiona tutti i file."
  vt_suspicion_level_executable: "Scansiona file con peso euristico, file eseguibili, e file potenzialmente contenenti dati eseguibili.\nEsempi di file eseguibili e file potenzialmente contenenti dati eseguibili includono file Windows PE, file Linux ELF, file Mach-O, file DOCX, file ZIP, ecc."
  vt_suspicion_level_heuristic_only: "Analizza solo i file con peso euristico.\nI file verranno scansionati solo se hanno un peso euristico. Il peso euristico può derivare da firme destinate a rilevare impronte digitali comuni associate a potenziali infezioni che non garantiscono necessariamente l'infezione. L'uso dell'API, in questi casi, può servire a fornire una seconda opinione per risultati che giustificano il sospetto ma non forniscono alcuna certezza."
+hints_logging_datetime: "Consiglio utile: È possibile allegare informazioni su data/ora ai nomi dei file di registro utilizzando i segnaposto del formato ora. I segnaposto del formato ora disponibili vengono visualizzati in {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
  FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.it.md\#user-content-HOW_TO_USE_PDO" hreflang="it-IT">Che cos'è un "DSN PDO"? Come posso usare PDO con phpMussel?</a></em>"
+hints_time_format: |
+ <strong><em>Segnaposto – Spiegazione – Esempio basato sul 2024-04-30T18:27:49+08:00.</em></strong><br />
+ <code class="s">{yyyy}</code> – L'anno – Per esempio, 2024.<br />
+ <code class="s">{yy}</code> – L'anno abbreviato – Per esempio, 24.<br />
+ <code class="s">{Mon}</code> – Il nome abbreviato del mese (in inglese) – Per esempio, Apr.<br />
+ <code class="s">{mm}</code> – Il mese con gli zeri iniziali – Per esempio, 04.<br />
+ <code class="s">{m}</code> – Il mese – Per esempio, 4.<br />
+ <code class="s">{Day}</code> – Il nome abbreviato del giorno (in inglese) – Per esempio, Tue.<br />
+ <code class="s">{dd}</code> – Il giorno con gli zeri iniziali – Per esempio, 30.<br />
+ <code class="s">{d}</code> – Il giorno – Per esempio, 30.<br />
+ <code class="s">{hh}</code> – L'ora con gli zeri iniziali (utilizza il formato 24 ore) – Per esempio, 18.<br />
+ <code class="s">{h}</code> – L'ora (utilizza il formato 24 ore) – Per esempio, 18.<br />
+ <code class="s">{ii}</code> – I minuti con gli zeri iniziali – Per esempio, 27.<br />
+ <code class="s">{i}</code> – I minuti – Per esempio, 27.<br />
+ <code class="s">{ss}</code> – Il secondo con zeri iniziali – Per esempio, 49.<br />
+ <code class="s">{s}</code> – Il secondo – Per esempio, 49.<br />
+ <code class="s">{tz}</code> – Il fuso orario (senza i due punti) – Per esempio, +0800.<br />
+ <code class="s">{t:z}</code> – Il fuso orario (con i due punti) – Per esempio, +08:00.
 hints_xlists:
  Come funziona.: "Se il vostro sistema permette solo determinati tipi di file per caricamenti, o se il vostra sistema esplicitamente negare determinati tipi di file, specificando i tipi di file nel whitelist, blacklist e/o greylist può aumentare la velocità a cui la scansione viene eseguita da permettendo lo script da ignora alcuni tipi di file. Il formato è CSV (valori separati da virgola)."
  Logico ordine del trattamento.: "Se il tipo di file è nel whitelist, non scansiona e non blocca il file, e non verificare il file contra la blacklist o la greylist. Se il tipo di file è nel blacklist, non scansiona il file ma bloccarlo comunque, e non verificar il file contra la greylist. Se il greylist è vuoto o se il greylist non è vuota e il tipo di file è nel greylist, scansiona il file come per normale e determinare se bloccarlo sulla base dei risultati della scansione, ma se il greylist non è vuoto e il tipo di file non è nel greylist, trattare il file come se è nel blacklist, quindi non scansionarlo ma bloccarlo comunque."

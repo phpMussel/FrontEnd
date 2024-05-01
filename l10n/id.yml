@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2023.12.26).
+# This file: Indonesian language data (last modified: 2024.04.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -169,8 +169,27 @@ field:
  vt_suspicion_level_all: "Pindai semua file."
  vt_suspicion_level_executable: "Pindai file dengan bobot heuristik, file yang dapat dieksekusi, dan file yang berpotensi berisi data yang dapat dieksekusi.\nContoh file yang dapat dieksekusi, dan file yang berpotensi berisi data yang dapat dieksekusi, termasuk file Windows PE, file Linux ELF, file Mach-O, file DOCX, file ZIP, dll."
  vt_suspicion_level_heuristic_only: "Pindai hanya file dengan bobot heuristik.\nFile akan dipindai hanya jika memiliki bobot heuristik. Bobot heuristik dapat ditimbulkan dari tanda tangan yang dimaksudkan untuk menangkap sidik jari umum yang terkait dengan infeksi potensial yang tidak selalu menjamin infeksi. Pencarian, dalam kasus tersebut, dapat berfungsi untuk memberikan pendapat kedua untuk hasil yang membenarkan kecurigaan tetapi tidak memberikan kepastian apapun."
+hints_logging_datetime: "Kiat yang berguna: Anda dapat melampirkan informasi tanggal/waktu ke nama file log dengan menggunakan placeholder format waktu. Placeholder format waktu yang tersedia ditampilkan di {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
  FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.id.md\#user-content-HOW_TO_USE_PDO" hreflang="id-ID">Apa itu "PDO DSN"? Bagaimana saya bisa menggunakan PDO dengan phpMussel?</a></em>"
+hints_time_format: |
+ <strong><em>Placeholder – Penjelasan – Contoh berdasarkan 2024-04-30T18:27:49+08:00.</em></strong><br />
+ <code class="s">{yyyy}</code> – Tahun – Misalnya, 2024.<br />
+ <code class="s">{yy}</code> – Tahun yang disingkat – Misalnya, 24.<br />
+ <code class="s">{Mon}</code> – Nama bulan yang disingkat (dalam bahasa Inggris) – Misalnya, Apr.<br />
+ <code class="s">{mm}</code> – Bulan dengan angka nol di depannya – Misalnya, 04.<br />
+ <code class="s">{m}</code> – Bulan – Misalnya, 4.<br />
+ <code class="s">{Day}</code> – Nama hari yang disingkat (dalam bahasa Inggris) – Misalnya, Tue.<br />
+ <code class="s">{dd}</code> – Hari dengan angka nol di depannya – Misalnya, 30.<br />
+ <code class="s">{d}</code> – Hari – Misalnya, 30.<br />
+ <code class="s">{hh}</code> – Jam dengan angka nol di depannya (menggunakan waktu 24 jam) – Misalnya, 18.<br />
+ <code class="s">{h}</code> – Jam (menggunakan waktu 24 jam) – Misalnya, 18.<br />
+ <code class="s">{ii}</code> – Menit dengan angka nol di depannya – Misalnya, 27.<br />
+ <code class="s">{i}</code> – Menit – Misalnya, 27.<br />
+ <code class="s">{ss}</code> – Detik dengan angka nol di depannya – Misalnya, 49.<br />
+ <code class="s">{s}</code> – Detik – Misalnya, 49.<br />
+ <code class="s">{tz}</code> – Zona waktu (tanpa titik dua) – Misalnya, +0800.<br />
+ <code class="s">{t:z}</code> – Zona waktu (dengan titik dua) – Misalnya, +08:00.
 hints_xlists:
  Bagaimana ini bekerja.: "Jika sistem Anda hanya mengizinkan jenis file spesifik menjadi diupload, atau jika sistem Anda secara eksplisit menolak jenis file-file tertentu, menspesifikasikan jenis file dalam bertanda putih, bertanda hitam dan bertanda abu-abu dapat menaikkan kecepatan dari pemindaian dilakukan dengan mengizinkan skrip untuk mengabaikan jenis file tertentu. Format adalah CSV (nilai yang dipisahkan koma)."
  Urutan pemrosesan logis.: "Jika jenis file bertanda putih, jangan memindai dan jangan memblokir file, dan jangan memeriksa file terhadap daftar hitam atau daftar abu-abu. Jika jenis file bertanda hitam, jangan memindai file tetapi memblokir bagaimanapun, dan jangan memeriksa file terhadap daftar abu-abu. Jika daftar abu-abu yang kosong atau jika daftar abu-abu tidak kosong dan jenis file bertanda abu-abu, memindai file seperti biasa dan menentukan apakah untuk memblokir berdasarkan hasil memindai, tapi jika daftar abu-abu tidak kosong dan jenis file tidak bertanda abu-abu, memperlakukan seolah olah bertanda hitam, demikian tidak memindai tapi memblokir itu bagaimanapun."

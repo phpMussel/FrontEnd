@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Urdu language data (last modified: 2023.12.26).
+# This file: Urdu language data (last modified: 2024.04.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -169,8 +169,27 @@ field:
  vt_suspicion_level_all: "تمام فائلوں کو اسکین کریں."
  vt_suspicion_level_executable: "heuristic وزن کے ساتھ فائلیں، قابل عمل فائلیں، اور فائلیں ممکنہ طور پر قابل عمل ڈیٹا پر مشتمل ہیں کو اسکین کریں.\nایسی فائلوں میں Windows PE فائلیں، Linux ELF فائلیں، Mach-O فائلیں، DOCX فائلیں، ZIP فائلیں وغیرہ شامل ہیں."
  vt_suspicion_level_heuristic_only: "صرف heuristic وزن کے ساتھ فائلیں کو اسکین کریں.\nفائلوں کو صرف اس صورت میں اسکین کیا جائے heuristic وزن واقع ہوا ہے. ایسا ان دستخطوں کی وجہ سے ہو سکتا ہے جو انگلیوں کے نشانات پکڑتے ہیں جو انفیکشن کی تجویز کرتے ہیں لیکن جو انفیکشن کی ضمانت نہیں دیتے. جب نتائج شک کا جواز پیش کرتے ہیں لیکن کوئی یقین فراہم نہیں کرتے ہیں، تو تلاش دوسری رائے فراہم کرنے کے لیے کام کر سکتی ہے."
+hints_logging_datetime: "مفید مشورہ: آپ ٹائم فارمیٹ پلیس ہولڈرز کا استعمال کرکے لاگ فائلوں کے ناموں کے ساتھ تاریخ/وقت کی معلومات منسلک کرسکتے ہیں. دستیاب وقت کی شکل کے پلیس ہولڈرز {{Links.ConfigRef.time_format}} پر دکھائے جاتے ہیں."
 hints_pdo_dsn:
  FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.ur.md\#user-content-HOW_TO_USE_PDO" hreflang="ur-PK">"PDO DSN" کیا ہے؟ میں phpMussel کے ساتھ PDO کیسے استعمال کرسکتا ہوں؟</a></em>"
+hints_time_format: |
+ <strong><em>پلیس ہولڈر – وضاحت – <span dir="ltr">2024-04-30T18:27:49+08:00</span> پر مبنی مثال.</em></strong><br />
+ <code dir="ltr" class="s">{yyyy}</code> – سال – جیسے، 2024.<br />
+ <code dir="ltr" class="s">{yy}</code> – مختصر سال – جیسے، 24.<br />
+ <code dir="ltr" class="s">{Mon}</code> – مہینے کا مختصر نام (انگریزی میں) – جیسے، Apr.<br />
+ <code dir="ltr" class="s">{mm}</code> – پہلے صفر کے ساتھ مہینے – جیسے، 04.<br />
+ <code dir="ltr" class="s">{m}</code> – مہینے – جیسے، 4.<br />
+ <code dir="ltr" class="s">{Day}</code> – دن کا مختصر نام (انگریزی میں) – جیسے، Tue.<br />
+ <code dir="ltr" class="s">{dd}</code> – پہلے صفر کے ساتھ دن – جیسے، 30.<br />
+ <code dir="ltr" class="s">{d}</code> – دن – جیسے، 30.<br />
+ <code dir="ltr" class="s">{hh}</code> – پہلے صفر کے ساتھ گھنٹہ (24 گھنٹے کا وقت استعمال کرتا ہے) – جیسے، 18.<br />
+ <code dir="ltr" class="s">{h}</code> – گھنٹہ (24 گھنٹے کا وقت استعمال کرتا ہے) – جیسے، 18.<br />
+ <code dir="ltr" class="s">{ii}</code> – پہلے صفر کے ساتھ منٹ – جیسے، 27.<br />
+ <code dir="ltr" class="s">{i}</code> – منٹ – جیسے، 27.<br />
+ <code dir="ltr" class="s">{ss}</code> – پہلے صفر کے ساتھ سیکنڈ – جیسے، 49.<br />
+ <code dir="ltr" class="s">{s}</code> – سیکنڈ – جیسے، 49.<br />
+ <code dir="ltr" class="s">{tz}</code> – ٹائم زون (بغیر رابطہ کے) – جیسے، <span dir="ltr">+0800</span>.<br />
+ <code dir="ltr" class="s">{t:z}</code> – ٹائم زون (رابطہ کے ساتھ) – جیسے، <span dir="ltr">+08:00</span>.
 hints_xlists:
  یہ کیسے کام کرتا ہے.: "آپ کے سسٹم صرف فائلوں کی مخصوص اقسام اپ لوڈ کیا جا کرنے کی اجازت دیتا ہے، یا آپ کے سسٹم کو واضح طور پر، فائلوں کی بعض اقسام کی تردید کرتے ہیں وائٹ لسٹیں، بلیک لسٹ اور سرمئی فہرستوں میں ان قسم کی فائلوں کی وضاحت جس میں رفتار سکیننگ جائیں کرنے سکرپٹ اجازت دے کر کیا جاتا ہے بڑھا سکتے ہیں اگر تو بعض قسم کی فائلوں کے دوران. ڈاک CSV (علامت سے علیحدہ اقدار) ہے."
 Some useful links: |

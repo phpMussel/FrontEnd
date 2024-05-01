@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2023.12.26).
+# This file: Dutch language data (last modified: 2024.04.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -167,8 +167,27 @@ field:
  vt_suspicion_level_all: "Scan alle bestanden."
  vt_suspicion_level_executable: "Scan bestanden met heuristisch gewicht, uitvoerbare bestanden, en bestanden die mogelijk uitvoerbare gegevens bevatten.\nVoorbeelden van uitvoerbare bestanden, en bestanden die mogelijk uitvoerbare gegevens bevatten, omvatten Windows PE-bestanden, Linux ELF-bestanden, Mach-O-bestanden, DOCX-bestanden, ZIP-bestanden, enz."
  vt_suspicion_level_heuristic_only: "Scan alleen bestanden met heuristisch gewicht.\nBestanden worden alleen gescand als ze een heuristisch gewicht hebben. Heuristisch gewicht kan worden verkregen uit signatures die bedoeld zijn om veelvoorkomende vingerafdrukken op te vangen die verband houden met een mogelijke infectie die niet noodzakelijkerwijs een infectie garandeert. De zoekopdracht kan in dergelijke gevallen dienen om een second opinion te geven voor resultaten die een verdenking rechtvaardigen, maar verder geen absoluut vertrouwen bieden."
+hints_logging_datetime: "Handige tip: U kunt datum-/tijdinformatie aan de namen van logbestanden toevoegen door tijdelijke aanduidingen voor de tijdnotatie te gebruiken. Beschikbare tijdelijke aanduidingen voor tijdnotatie worden weergegeven bij {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
  FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.nl.md\#user-content-HOW_TO_USE_PDO" hreflang="nl-NL">Wat is een "PDO DSN"? Hoe kan ik PDO gebruiken met phpMussel?</a></em>"
+hints_time_format: |
+ <strong><em>Tijdelijke aanduiding – Uitleg – Voorbeeld gebaseerd op 2024-04-30T18:27:49+08:00.</em></strong><br />
+ <code class="s">{yyyy}</code> – Het jaartal – B.v., 2024.<br />
+ <code class="s">{yy}</code> – Het afgekorte jaartal – B.v., 24.<br />
+ <code class="s">{Mon}</code> – De afgekorte naam van de maand (in het Engels) – B.v., Apr.<br />
+ <code class="s">{mm}</code> – De maand met voorloopnullen – B.v., 04.<br />
+ <code class="s">{m}</code> – De maand – B.v., 4.<br />
+ <code class="s">{Day}</code> – De afgekorte naam van de dag (in het Engels) – B.v., Tue.<br />
+ <code class="s">{dd}</code> – De dag met voorloopnullen – B.v., 30.<br />
+ <code class="s">{d}</code> – De dag – B.v., 30.<br />
+ <code class="s">{hh}</code> – Het uur met voorloopnullen (gebruikt 24-uurs tijd) – B.v., 18.<br />
+ <code class="s">{h}</code> – Het uur (gebruikt 24-uurs tijd) – B.v., 18.<br />
+ <code class="s">{ii}</code> – De minuut met voorloopnullen – B.v., 27.<br />
+ <code class="s">{i}</code> – De minuut – B.v., 27.<br />
+ <code class="s">{ss}</code> – De seconde met voorloopnullen – B.v., 49.<br />
+ <code class="s">{s}</code> – De seconde – B.v., 49.<br />
+ <code class="s">{tz}</code> – De tijdzone (zonder dubbele punt) – B.v., +0800.<br />
+ <code class="s">{t:z}</code> – De tijdzone (met dubbele punt) – B.v., +08:00.
 hints_xlists:
  Hoe dit werkt.: "Als uw systeem vergunningen alleen specifieke bestandstypen te uploaden, of als uw systeem expliciet ontkent bepaalde bestandstypen, specificeren deze bestandstypen in whitelists, blacklists, en greylists kunt toenemen de snelheid waarin scannen is uitgevoerd via vergunningen het script te negeren bepaalde bestandstypen. Formaat is CSV (komma's gescheiden waarden)."
  Logische volgorde van de verwerking.: "Als het bestandstype is op de whitelist, niet scannen en niet blokkeren het bestand, en niet controleer het bestand tegen de blacklist of de greylist. Als het bestandstype is op de blacklist, niet scannen het bestand maar blokkeren het niettemin, en niet controleer het bestand tegen de greylist. Als de greylist is leeg of als de greylist is niet leeg en het bestandstype is op de greylist, scannen het bestand als per normaal en bepalen als om het gebaseerd op de resultaten van de scan te blokkeren, maar als de greylist is niet leeg en het bestandstype is niet op de greylist, behandel het bestand alsof op de blacklist, dus om het niet te scannen, maar toch blokkeren het niettemin."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2023.12.26).
+# This file: Latvian language data (last modified: 2024.04.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -171,8 +171,27 @@ field:
  vt_suspicion_level_all: "Skenējiet visus failus."
  vt_suspicion_level_executable: "Skenējiet failus ar heiristisku svaru, izpildāmos failus, un failus kas, iespējams, satur izpildāmos datus.\nIzpildāmie faili, un faili kas potenciāli satur izpildāmus datus, ietver Windows PE failus, Linux ELF failus, Mach-O failus, DOCX failus, ZIP failus, utt."
  vt_suspicion_level_heuristic_only: "Skenējiet tikai failus ar heiristisko svaru.\nTiks skenēti tikai faili ar heiristisko svaru. Heiristiskais svars var rasties no parakstiem, kas paredzēti, lai noķertu bieži sastopamus pirkstu nospiedumus, kas saistīti ar iespējamu infekciju, kas ne vienmēr garantē infekciju. Šādos gadījumos meklēšana var kalpot, lai sniegtu otru atzinumu par rezultātiem, kas pamato aizdomas, bet citādi nesniedz nekādu noteiktību."
+hints_logging_datetime: "Noderīgs padoms: Varat pievienot datuma/laika informāciju žurnālfailu nosaukumiem, izmantojot laika formāta vietturus. Pieejamie laika formāta vietturi tiek parādīti pie {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
  FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Kas ir "PDO DSN"? Kā es varu izmantot PDO ar phpMussel?</a></em>"
+hints_time_format: |
+ <strong><em>Vietturis – Paskaidrojums – Piemērs, kas balstīts uz 2024-04-30T18:27:49+08:00.</em></strong><br />
+ <code class="s">{yyyy}</code> – Gads – Piem., 2024.<br />
+ <code class="s">{yy}</code> – Saīsinātais gads – Piem., 24.<br />
+ <code class="s">{Mon}</code> – Mēneša saīsinātais nosaukums (angļu valodā) – Piem., Apr.<br />
+ <code class="s">{mm}</code> – Mēnesis ar nullēm sākumā – Piem., 04.<br />
+ <code class="s">{m}</code> – Mēnesis – Piem., 4.<br />
+ <code class="s">{Day}</code> – Dienas saīsinātais nosaukums (angļu valodā) – Piem., Tue.<br />
+ <code class="s">{dd}</code> – Diena ar nullēm sākumā – Piem., 30.<br />
+ <code class="s">{d}</code> – Diena – Piem., 30.<br />
+ <code class="s">{hh}</code> – Stunda ar nullēm sākumā (izmanto 24 stundu laiku) – Piem., 18.<br />
+ <code class="s">{h}</code> – Stunda (izmanto 24 stundu laiku) – Piem., 18.<br />
+ <code class="s">{ii}</code> – Minūte ar nullēm sākumā – Piem., 27.<br />
+ <code class="s">{i}</code> – Minūte – Piem., 27.<br />
+ <code class="s">{ss}</code> – Sekunde ar nullēm sākumā – Piem., 49.<br />
+ <code class="s">{s}</code> – Sekunde – Piem., 49.<br />
+ <code class="s">{tz}</code> – Laika josla (bez kolas) – Piem., +0800.<br />
+ <code class="s">{t:z}</code> – Laika josla (ar kolu) – Piem., +08:00.
 hints_xlists:
  Kā tas darbojas.: "Ja jūsu sistēma ļauj augšupielādēt tikai noteikta veida failus vai ja jūsu sistēma skaidri noliedz noteikta veida failus, failu tipu norādīšana baltajos sarakstos, melnajos sarakstos un pelēkajos sarakstos var palielināt skenēšanas ātrumu ļaujot skriptam izlaist noteiktus failu tipus. Formāts ir CSV (komatatdalītas vērtības)."
  Apstrādes loģiskā secība.: "Ja faila tips ir iekļauts baltajā sarakstā, neskenējiet un nebloķējiet failu, un nepārbaudiet failu pret melno sarakstu vai pelēko sarakstu. Ja faila tips ir iekļauts melnajā sarakstā, neskenējiet failu, bet jebkurā gadījumā to bloķējiet, un nepārbaudiet failu pret pelēko sarakstu. Ja pelēkais saraksts ir tukšs vai, ja pelēkais saraksts nav tukšs un faila tips ir iekļauts pelēkajā sarakstā, skenējiet failu kā parasti un, pamatojoties uz skenēšanas rezultātiem, nosakiet, vai to bloķēt, bet ja pelēkais saraksts nav tukšs un faila tips nav pelēkā sarakstā, apstrādājiet failu kā melnajā sarakstā, tāpēc nevis skenē bet jebkurā gadījumā to bloķēt."

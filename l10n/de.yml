@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data (last modified: 2023.12.26).
+# This file: German language data (last modified: 2024.04.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -167,8 +167,27 @@ field:
  vt_suspicion_level_all: "Scannen alle Dateien."
  vt_suspicion_level_executable: "Scannen Dateien mit heuristischem Gewicht, ausführbare Dateien, und Dateien die möglicherweise ausführbare Daten enthalten.\nBeispiele für ausführbare Dateien, und Dateien die möglicherweise ausführbare Daten enthalten, umfassen Windows PE-Dateien, Linux ELF-Dateien, Mach-O-Dateien, DOCX-Dateien, ZIP-Dateien, u.s.w."
  vt_suspicion_level_heuristic_only: "Scannen nur Dateien mit heuristischem Gewicht.\nDateien werden nur gescannt wenn sie ein heuristisches Gewicht haben. Heuristisches Gewicht kann aus Signaturen entstehen die gemeinsame Fingerabdrücke erfassen, die eine Infektion nahelegen aber keine Infektion garantieren. Für Ergebnissen die einen Verdacht rechtfertigen aber keine Gewissheit geben, kann die Lookup dazu dienen eine zweite Meinung dienen."
+hints_logging_datetime: "Nützlicher Tipp: Sie können den Namen der Protokolldateien Datums-/Uhrzeitinformationen hinzufügen, indem Sie Platzhalter für das Zeitformat verwenden. Verfügbare Platzhalter für Zeitformate werden bei {{Links.ConfigRef.time_format}} angezeigt."
 hints_pdo_dsn:
  FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.de.md\#user-content-HOW_TO_USE_PDO" hreflang="de-DE">Was ist ein „PDO DSN“? Wie kann ich PDO mit phpMussel verwenden?</a></em>"
+hints_time_format: |
+ <strong><em>Platzhalter – Erläuterung – Beispiel basierend auf 2024-04-30T18:27:49+08:00.</em></strong><br />
+ <code class="s">{yyyy}</code> – Das Jahr – Z.B., 2024.<br />
+ <code class="s">{yy}</code> – Das abgekürzte Jahr – Z.B., 24.<br />
+ <code class="s">{Mon}</code> – Der abgekürzte Name des Monats (auf Englisch) – Z.B., Apr.<br />
+ <code class="s">{mm}</code> – Der Monat mit führenden Nullen – Z.B., 04.<br />
+ <code class="s">{m}</code> – Der Monat – Z.B., 4.<br />
+ <code class="s">{Day}</code> – Der abgekürzte Name des Tages (auf Englisch) – Z.B., Tue.<br />
+ <code class="s">{dd}</code> – Der Tag mit führenden Nullen – Z.B., 30.<br />
+ <code class="s">{d}</code> – Der Tag – Z.B., 30.<br />
+ <code class="s">{hh}</code> – Die Stunde mit führenden Nullen (verwendet 24-Stunden-Zeit) – Z.B., 18.<br />
+ <code class="s">{h}</code> – Die Stunde (verwendet 24-Stunden-Zeit) – Z.B., 18.<br />
+ <code class="s">{ii}</code> – Die Minute mit führenden Nullen – Z.B., 27.<br />
+ <code class="s">{i}</code> – Die Minute – Z.B., 27.<br />
+ <code class="s">{ss}</code> – Die Sekunde mit führenden Nullen – Z.B., 49.<br />
+ <code class="s">{s}</code> – Die Sekunde – Z.B., 49.<br />
+ <code class="s">{tz}</code> – Die Zeitzone (ohne Doppelpunkt) – Z.B., +0800.<br />
+ <code class="s">{t:z}</code> – Die Zeitzone (mit Doppelpunkt) – Z.B., +08:00.
 hints_xlists:
  Wie das funktioniert.: "Sofern Ihr System spezielle Dateitypen im Upload erlaubt oder komplett verweigert, so unterteilen Sie diese Dateitypen in Whitelists, Blacklists oder Greylists, um den Scanvorgang zu beschleunigen, indem diese Dateitypen übersprungen werden. Format ist CSV (Komma-getrennte Werte)."
  Logische Reihenfolge der Verarbeitung.: "Wenn der Dateityp in der Whitelist ist, scanne und blockieren nicht die Datei, und überprüfe nicht wenn die Datei in der Whitelist oder in der Greylist ist. Wenn der Dateityp in der Blacklist ist, scanne nicht die Datei aber blockieren sie trotzdem, und überprüfe nicht wenn die Datei in der Greylist ist. Wenn die Greylist leer ist oder wenn die Greylist nicht leer ist und der Dateityp in der Greylist ist, scanne die Datei wie standardmäßig eingestellt ist und stelle fest, ob diese blockiert werden soll, basierend auf dem Scan, aber wenn die Greylist nicht leer ist und der Dateityp nicht in der Greylist ist, behandel die Datei als ob sie in der Blacklist ist, scanne sie nicht aber blockiere sie trotzdem."

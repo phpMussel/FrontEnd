@@ -7,11 +7,13 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: YAML references file (last modified: 2023.05.06).
+# This file: YAML references file (last modified: 2024.04.30).
 ##/
 
 Links:
  ClamavNet: "<a href="https://www.clamav.net/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external">ClamavNet</a>"
+ ConfigRef:
+  time_format: "<a onclick="javascript:toggleconfigNav('coreRow','coreShowLink')" href="\#config_core_time_format"><code dir="ltr">core➡time_format</code></a>"
  Documentation: "https://phpmussel.github.io/\#documentation"
  Hybrid Analysis: "<a href="https://www.hybrid-analysis.com/" dir="ltr" hreflang="en" rel="noopener noreferrer external">Hybrid Analysis</a>"
  Malware Expert: "<a href="https://malware.expert/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external">Malware.Expert</a>"

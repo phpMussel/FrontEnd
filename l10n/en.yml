@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2023.12.26).
+# This file: English language data (last modified: 2024.04.30).
 ##/
 
 checkbox:
@@ -183,8 +183,27 @@ field:
  vt_suspicion_level_all: "Scan all files."
  vt_suspicion_level_executable: "Scan files with heuristic weight, executable files, and files potentially containing executable data.\nExamples of executable files, and files potentially containing executable data, includes Windows PE files, Linux ELF files, Mach-O files, DOCX files, ZIP files, etc."
  vt_suspicion_level_heuristic_only: "Scan only files with heuristic weight.\nFiles will be scanned only if they incur some heuristic weight. Heuristic weight can be incurred from signatures intended to catch common fingerprints associated with potential infection which don't necessarily guarantee infection. The lookup, in such cases, can serve to provide a second opinion for results which justify suspicion but don't otherwise provide any certainty."
+hints_logging_datetime: "Useful tip: You can attach date/time information to the names of log files by using time format placeholders. Available time format placeholders are displayed at {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
  FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">What is a "PDO DSN"? How can I use PDO with phpMussel?</a></em>"
+hints_time_format: |
+ <strong><em>Placeholder – Explanation – Example based on 2024-04-30T18:27:49+08:00.</em></strong><br />
+ <code class="s">{yyyy}</code> – The year – E.g., 2024.<br />
+ <code class="s">{yy}</code> – The abbreviated year – E.g., 24.<br />
+ <code class="s">{Mon}</code> – The abbreviated name of the month (in English) – E.g., Apr.<br />
+ <code class="s">{mm}</code> – The month with leading zeros – E.g., 04.<br />
+ <code class="s">{m}</code> – The month – E.g., 4.<br />
+ <code class="s">{Day}</code> – The abbreviated name of the day (in English) – E.g., Tue.<br />
+ <code class="s">{dd}</code> – The day with leading zeros – E.g., 30.<br />
+ <code class="s">{d}</code> – The day – E.g., 30.<br />
+ <code class="s">{hh}</code> – The hour with leading zeros (uses 24-hour time) – E.g., 18.<br />
+ <code class="s">{h}</code> – The hour (uses 24-hour time) – E.g., 18.<br />
+ <code class="s">{ii}</code> – The minute with leading zeros – E.g., 27.<br />
+ <code class="s">{i}</code> – The minute – E.g., 27.<br />
+ <code class="s">{ss}</code> – The second with leading zeros – E.g., 49.<br />
+ <code class="s">{s}</code> – The second – E.g., 49.<br />
+ <code class="s">{tz}</code> – The timezone (without colon) – E.g., +0800.<br />
+ <code class="s">{t:z}</code> – The timezone (with colon) – E.g., +08:00.
 hints_xlists:
  How this works.: "If your system allows only specific types of files to be uploaded, or if your system explicitly denies certain types of files, specifying those filetypes in whitelists, blacklists, and greylists can increase the speed at which scanning is performed by allowing the script to skip over certain filetypes. Format is CSV (comma separated values)."
  Logical order of processing.: "If the filetype is whitelisted, don't scan and don't block the file, and don't check the file against the blacklist or the greylist. If the filetype is blacklisted, don't scan the file but block it anyway, and don't check the file against the greylist. If the greylist is empty or if the greylist is not empty and the filetype is greylisted, scan the file as per normal and determine whether to block it based on the results of the scan, but if the greylist is not empty and the filetype is not greylisted, treat the file as blacklisted, therefore not scanning it but blocking it anyway."

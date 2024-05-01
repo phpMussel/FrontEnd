@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2023.12.26).
+# This file: Swedish language data (last modified: 2024.04.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -169,8 +169,27 @@ field:
  vt_suspicion_level_all: "Skanna alla filer."
  vt_suspicion_level_executable: "Skanna filer med heuristisk vikt, körbara filer, och filer som potentiellt innehåller körbara data.\nExempel på körbara filer, och filer som potentiellt innehåller körbara data, inkluderar Windows PE-filer, Linux ELF-filer, Mach-O-filer, DOCX-filer, ZIP-filer, osv."
  vt_suspicion_level_heuristic_only: "Skanna endast filer med heuristisk vikt.\nFiler skannas endast om de har heuristisk vikt. Heuristisk vikt kan uppstå från signaturer som är avsedda att fånga vanliga fingeravtryck associerade med potentiell infektion som inte nödvändigtvis garanterar infektion. Uppslagningen, i sådana fall, kan tjäna till att ge en andra åsikt för resultat som motiverar misstankar men som annars inte ger absolut förtroende."
+hints_logging_datetime: "Användbart tips: Du kan bifoga information om datum och tid till namnen på loggfiler genom att använda platshållare i tidsformat. Tillgängliga platshållare för tidsformat visas vid {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
  FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Vad är en "PDO DSN"? Hur kan jag använda PDO med phpMussel?</a></em>"
+hints_time_format: |
+ <strong><em>Platshållare – Förklaring – Exempel baserat på 2024-04-30T18:27:49+08:00.</em></strong><br />
+ <code class="s">{yyyy}</code> – Året – T.ex., 2024.<br />
+ <code class="s">{yy}</code> – Det förkortade året – T.ex., 24.<br />
+ <code class="s">{Mon}</code> – Månadens förkortade namn (på engelska) – T.ex., Apr.<br />
+ <code class="s">{mm}</code> – Månaden med inledande nollor – T.ex., 04.<br />
+ <code class="s">{m}</code> – Månaden – T.ex., 4.<br />
+ <code class="s">{Day}</code> – Dagens förkortade namn (på engelska) – T.ex., Tue.<br />
+ <code class="s">{dd}</code> – Dagen med inledande nollor – T.ex., 30.<br />
+ <code class="s">{d}</code> – Dagen – T.ex., 30.<br />
+ <code class="s">{hh}</code> – Timmen med inledande nollor (använder 24-timmars tid) – T.ex., 18.<br />
+ <code class="s">{h}</code> – Timmen (använder 24-timmars tid) – T.ex., 18.<br />
+ <code class="s">{ii}</code> – Minuten med inledande nollor – T.ex., 27.<br />
+ <code class="s">{i}</code> – Minuten – T.ex., 27.<br />
+ <code class="s">{ss}</code> – Sekunden med inledande nollor – T.ex., 49.<br />
+ <code class="s">{s}</code> – Sekunden – T.ex., 49.<br />
+ <code class="s">{tz}</code> – Tidszonen (utan kolon) – T.ex., +0800.<br />
+ <code class="s">{t:z}</code> – Tidszonen (med kolon) – T.ex., +08:00.
 hints_xlists:
  Hur det här fungerar.: "Om ditt system endast tillåter att specifika filtyper som ska laddas upp, eller om ditt system uttryckligen nekar vissa typer av filer, att specificera dessa filtyper i vitlistor, svartlistor och grålistor kan öka hastigheten med vilken skanning utförs genom att låta skriptet hoppa över vissa filtyper. Formatet är CSV (kommaseparerade värden)."
  Logisk ordning på behandlingen.: "Om filtypen är vitlistad, inte skanna och inte blockera filen, och kontrollera inte filen mot svartlistan eller grålistan. Om filtypen är svartlistad, inte skanna filen, men blockera den ändå, och kontrollera inte filen mot grålistan. Om grålistan är tom, eller om grålistan inte är tom och filtypen är grålistad, skanna filen enligt normal och avgör om den ska blockeras baserat på sökresultaten, men om grålisten inte är tom och filtypen inte är grålistad, behandla filen som svartlistad, därför inte skanna det men blockera det ändå."
