@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2024.04.30).
+# This file: Arabic language data (last modified: 2024.05.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -332,7 +332,7 @@ response:
  Invalid password: "فشل تسجيل الدخول! كلمة السر غير صالحة!"
  Password field empty: "كلمه السر حقل فارغ!"
  Password successfully updated: "تم تحديث كلمه السر بنجاح!"
- Permissions not adequate to perform asynchronous requests:: "أذونات غير كافية لأداء طلبات غير متزامنة. حاول تسجيل الدخول مرة أخرى."
+ Permissions not adequate to perform asynchronous requests: "أذونات غير كافية لأداء طلبات غير متزامنة. حاول تسجيل الدخول مرة أخرى."
  Statistics cleared: "تم مسح الإحصاءات."
  Successfully authenticated: "تمت المصادقة بنجاح."
  That account doesn_t exist: "حساب غير موجود."

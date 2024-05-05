@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bulgarian language data (last modified: 2024.04.30).
+# This file: Bulgarian language data (last modified: 2024.05.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -339,7 +339,7 @@ response:
  Invalid password: "Грешка при влизане! Невалидна парола!"
  Password field empty: "Полето за парола е празно!"
  Password successfully updated: "Паролата е актуализирана успешно!"
- Permissions not adequate to perform asynchronous requests:: "Разрешенията не са подходящи за изпълнение на асинхронни заявки. Опитайте да влезете отново."
+ Permissions not adequate to perform asynchronous requests: "Разрешенията не са подходящи за изпълнение на асинхронни заявки. Опитайте да влезете отново."
  Statistics cleared: "Статистиката е изчистена."
  Successfully authenticated: "Успешно удостоверяване."
  That account doesn_t exist: "Този акаунт не съществува."

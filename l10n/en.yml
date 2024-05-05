@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2024.04.30).
+# This file: English language data (last modified: 2024.05.04).
 ##/
 
 checkbox:
@@ -346,7 +346,7 @@ response:
  Invalid password: "Login failure! Invalid password!"
  Password field empty: "Password field empty!"
  Password successfully updated: "Password successfully updated!"
- Permissions not adequate to perform asynchronous requests:: "Permissions not adequate to perform asynchronous requests. Try logging in again."
+ Permissions not adequate to perform asynchronous requests: "Permissions not adequate to perform asynchronous requests. Try logging in again."
  Statistics cleared: "Statistics cleared."
  Successfully authenticated: "Successfully authenticated."
  That account doesn_t exist: "That account doesn't exist."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2024.04.30).
+# This file: Latvian language data (last modified: 2024.05.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -334,7 +334,7 @@ response:
  Invalid password: "Ielogošanās neizdevās! Nepareiza parole!"
  Password field empty: "Paroles lauks ir tukšs!"
  Password successfully updated: "Parole ir atjaunināta!"
- Permissions not adequate to perform asynchronous requests:: "Atļaujas nav piemērotas asinhrono pieprasījumu izpildei. Mēģiniet ielogoties vēlreiz."
+ Permissions not adequate to perform asynchronous requests: "Atļaujas nav piemērotas asinhrono pieprasījumu izpildei. Mēģiniet ielogoties vēlreiz."
  Statistics cleared: "Statistika ir notīrīta."
  Successfully authenticated: "Autentifikācija izdevās."
  That account doesn_t exist: "Šis konts nepastāv."

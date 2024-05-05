@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data (last modified: 2024.04.30).
+# This file: Romanian language data (last modified: 2024.05.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -340,7 +340,7 @@ response:
  Invalid password: "Conectare a eșuat! Parolă invalidă!"
  Password field empty: "Câmpul parolei este gol!"
  Password successfully updated: "Parola a fost actualizată cu succes!"
- Permissions not adequate to perform asynchronous requests:: "Permisiunile nu sunt adecvate pentru a efectua solicitări asincrone. Încercați să vă conectați din nou."
+ Permissions not adequate to perform asynchronous requests: "Permisiunile nu sunt adecvate pentru a efectua solicitări asincrone. Încercați să vă conectați din nou."
  Statistics cleared: "Statisticile au fost șterse."
  Successfully authenticated: "Autentificat cu succes."
  That account doesn_t exist: "Acest cont nu există."

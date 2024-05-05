@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (simplified) language data (last modified: 2024.04.30).
+# This file: Chinese (simplified) language data (last modified: 2024.05.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -333,7 +333,7 @@ response:
  Invalid password: "登录失败！​密码无效！"
  Password field empty: "密码输入是空的！"
  Password successfully updated: "密码成功更新！"
- Permissions not adequate to perform asynchronous requests:: "权限不足以执行异步请求。尝试再次登录。"
+ Permissions not adequate to perform asynchronous requests: "权限不足以执行异步请求。尝试再次登录。"
  Statistics cleared: "统计删除。"
  Successfully authenticated: "验证成功。"
  That account doesn_t exist: "那个帐户不存在。"

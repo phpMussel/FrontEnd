@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2024.04.30).
+# This file: Italian language data (last modified: 2024.05.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -332,7 +332,7 @@ response:
  Invalid password: "Accedi non riuscito! Password non valida!"
  Password field empty: "L'input password era vuoto!"
  Password successfully updated: "Password aggiornato con successo!"
- Permissions not adequate to perform asynchronous requests:: "Autorizzazioni non adeguate per eseguire richieste asincrone. Prova ad accedere di nuovo."
+ Permissions not adequate to perform asynchronous requests: "Autorizzazioni non adeguate per eseguire richieste asincrone. Prova ad accedere di nuovo."
  Statistics cleared: "Statistiche revocate."
  Successfully authenticated: "Autenticato con successo."
  That account doesn_t exist: "Questo account non esiste."

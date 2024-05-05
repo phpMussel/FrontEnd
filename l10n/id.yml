@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2024.04.30).
+# This file: Indonesian language data (last modified: 2024.05.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -332,7 +332,7 @@ response:
  Invalid password: "Kegagalan masuk! Kata sandi salah!"
  Password field empty: "Kata sandi yang kosong!"
  Password successfully updated: "Kata sandi berhasil diperbarui!"
- Permissions not adequate to perform asynchronous requests:: "Izin tidak memadai untuk melakukan permintaan asinkron. Coba masuk lagi."
+ Permissions not adequate to perform asynchronous requests: "Izin tidak memadai untuk melakukan permintaan asinkron. Coba masuk lagi."
  Statistics cleared: "Statistik dicabut."
  Successfully authenticated: "Berhasil dikonfirmasi."
  That account doesn_t exist: "Akun ini tidak ada."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2024.04.30).
+# This file: Dutch language data (last modified: 2024.05.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -330,7 +330,7 @@ response:
  Invalid password: "Inloggen mislukt! Ongeldig wachtwoord!"
  Password field empty: "Password veld leeg!"
  Password successfully updated: "Wachtwoord succesvol gewijzigd!"
- Permissions not adequate to perform asynchronous requests:: "Machtigingen niet geschikt om asynchrone verzoeken uit te voeren. Probeer opnieuw in te loggen."
+ Permissions not adequate to perform asynchronous requests: "Machtigingen niet geschikt om asynchrone verzoeken uit te voeren. Probeer opnieuw in te loggen."
  Statistics cleared: "Statistieken geannuleerd."
  Successfully authenticated: "Succesvol geverifieerd"
  That account doesn_t exist: "Die account bestaat niet."

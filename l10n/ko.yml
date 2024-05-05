@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2024.04.30).
+# This file: Korean language data (last modified: 2024.05.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -332,7 +332,7 @@ response:
  Invalid password: "로그인 실패! 잘못된 암호!"
  Password field empty: "암호가 비어 있습니다!"
  Password successfully updated: "암호 업데이트가 성공했습니다!"
- Permissions not adequate to perform asynchronous requests:: "권한이 비동기 요청을 수행하기에 충분하지 않습니다. 다시 로그인하십시오."
+ Permissions not adequate to perform asynchronous requests: "권한이 비동기 요청을 수행하기에 충분하지 않습니다. 다시 로그인하십시오."
  Statistics cleared: "통계가 삭제되었습니다."
  Successfully authenticated: "성공적으로 인증되었습니다."
  That account doesn_t exist: "계정이 존재하지 않습니다."

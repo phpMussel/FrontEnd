@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2024.04.30).
+# This file: French language data (last modified: 2024.05.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -340,7 +340,7 @@ response:
  Invalid password: "Erreur de connexion\_! Mot de passe incorrect\_!"
  Password field empty: "Mot de passe entrée était vide\_!"
  Password successfully updated: "Mot de passe mis à jour avec succès\_!"
- Permissions not adequate to perform asynchronous requests:: "Les autorisations ne sont pas suffisantes pour effectuer des requêtes asynchrones. Essayez de vous reconnecter."
+ Permissions not adequate to perform asynchronous requests: "Les autorisations ne sont pas suffisantes pour effectuer des requêtes asynchrones. Essayez de vous reconnecter."
  Statistics cleared: "Statistiques annulées."
  Successfully authenticated: "Authentifié avec succès."
  That account doesn_t exist: "Ce compte n'existe pas."

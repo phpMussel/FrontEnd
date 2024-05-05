@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2024.04.30).
+# This file: Spanish language data (last modified: 2024.05.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -330,7 +330,7 @@ response:
  Invalid password: "¡Error al iniciar sesión – Contraseña invalida!"
  Password field empty: "¡La entrada de contraseña estaba vacío!"
  Password successfully updated: "¡Contraseña actualizado con éxito!"
- Permissions not adequate to perform asynchronous requests:: "Permisos no adecuados para realizar solicitudes asincrónicas. Intenta iniciar sesión de nuevo."
+ Permissions not adequate to perform asynchronous requests: "Permisos no adecuados para realizar solicitudes asincrónicas. Intenta iniciar sesión de nuevo."
  Statistics cleared: "Estadísticas anuladas."
  Successfully authenticated: "Autenticado con éxito."
  That account doesn_t exist: "Esa cuenta no existe."

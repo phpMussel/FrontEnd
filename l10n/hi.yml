@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hindi language data (last modified: 2024.04.30).
+# This file: Hindi language data (last modified: 2024.05.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -334,7 +334,7 @@ response:
  Invalid password: "लॉगिन विफलता! अवैध पासवर्ड!"
  Password field empty: "पासवर्ड फ़ील्ड खाली है!"
  Password successfully updated: "पासवर्ड सफलतापूर्वक अपडेट किया गया!"
- Permissions not adequate to perform asynchronous requests:: "अनुमतियाँ अतुल्यकालिक अनुरोध करने के लिए पर्याप्त नहीं हैं। फिर से लॉग इन करने का प्रयास करें"
+ Permissions not adequate to perform asynchronous requests: "अनुमतियाँ अतुल्यकालिक अनुरोध करने के लिए पर्याप्त नहीं हैं। फिर से लॉग इन करने का प्रयास करें"
  Statistics cleared: "सांख्यिकी साफ है।"
  Successfully authenticated: "सफलतापूर्वक प्रमाणीकृत।"
  That account doesn_t exist: "वह खाता मौजूद नहीं है।"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Russian language data (last modified: 2024.04.30).
+# This file: Russian language data (last modified: 2024.05.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -340,7 +340,7 @@ response:
  Invalid password: "Войти провал! Неверный пароль!"
  Password field empty: "Пароль пусто!"
  Password successfully updated: "Пароль успешно обновлено!"
- Permissions not adequate to perform asynchronous requests:: "Разрешения не подходят для выполнения асинхронных запросов. Попробуйте снова войти в систему."
+ Permissions not adequate to perform asynchronous requests: "Разрешения не подходят для выполнения асинхронных запросов. Попробуйте снова войти в систему."
  Statistics cleared: "Статистика очищена."
  Successfully authenticated: "Успешный аутентификации."
  That account doesn_t exist: "Эта аккаунт не существует."

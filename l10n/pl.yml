@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2024.04.30).
+# This file: Polish language data (last modified: 2024.05.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -335,7 +335,7 @@ response:
  Invalid password: "Logowanie nieudane! Nieprawidłowe hasło!"
  Password field empty: "Pole hasła puste!"
  Password successfully updated: "Sukces aktualizacji hasła!"
- Permissions not adequate to perform asynchronous requests:: "Uprawnienia niewystarczające do wykonywania żądań asynchronicznych. Spróbuj zalogować się ponownie."
+ Permissions not adequate to perform asynchronous requests: "Uprawnienia niewystarczające do wykonywania żądań asynchronicznych. Spróbuj zalogować się ponownie."
  Statistics cleared: "Statystyki wyczyszczone."
  Successfully authenticated: "Sukces uwierzytelnienia."
  That account doesn_t exist: "To konto nie istnieje."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Tamil language data (last modified: 2024.04.30).
+# This file: Tamil language data (last modified: 2024.05.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -334,7 +334,7 @@ response:
  Invalid password: "உள்நுழைவு தோல்வி! தவறான கடவுச்சொல்!"
  Password field empty: "கடவுச்சொல் புலம் காலியாக உள்ளது!"
  Password successfully updated: "கடவுச்சொல் வெற்றிகரமாக புதுப்பிக்கப்பட்டது!"
- Permissions not adequate to perform asynchronous requests:: "ஒத்திசைவற்ற கோரிக்கைகளைச் செய்ய அனுமதிகள் போதுமானதாக இல்லை. மீண்டும் உள்நுழைய முயற்சிக்கவும்."
+ Permissions not adequate to perform asynchronous requests: "ஒத்திசைவற்ற கோரிக்கைகளைச் செய்ய அனுமதிகள் போதுமானதாக இல்லை. மீண்டும் உள்நுழைய முயற்சிக்கவும்."
  Statistics cleared: "புள்ளிவிவரங்கள் அழிக்கப்பட்டது."
  Successfully authenticated: "வெற்றிகரமாக அங்கீகரிக்கப்பட்டது."
  That account doesn_t exist: "அந்த கணக்கு இல்லை."

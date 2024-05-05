@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Thai language data (last modified: 2024.04.30).
+# This file: Thai language data (last modified: 2024.05.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -332,7 +332,7 @@ response:
  Invalid password: "ความล้มเหลวในการเข้าสู่ระบบ! รหัสผ่านไม่ถูกต้อง!"
  Password field empty: "รหัสผ่านฟิลด์ว่างเปล่า!"
  Password successfully updated: "รหัสผ่านสำเร็จแล้วอัปเดต!"
- Permissions not adequate to perform asynchronous requests:: "สิทธิ์ไม่เพียงพอที่จะดำเนินการคำขอแบบอะซิงโครนัส. ลองเข้าสู่ระบบอีกครั้ง."
+ Permissions not adequate to perform asynchronous requests: "สิทธิ์ไม่เพียงพอที่จะดำเนินการคำขอแบบอะซิงโครนัส. ลองเข้าสู่ระบบอีกครั้ง."
  Statistics cleared: "สถิติลบแล้ว."
  Successfully authenticated: "การตรวจสอบสิทธิ์ทำสำเร็จแล้ว."
  That account doesn_t exist: "บัญชีไม่มีอยู่จริง."

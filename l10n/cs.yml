@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Czech language data (last modified: 2024.04.30).
+# This file: Czech language data (last modified: 2024.05.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -335,7 +335,7 @@ response:
  Invalid password: "Přihlášení se nezdařilo! Neplatné heslo!"
  Password field empty: "Pole hesla prázdné!"
  Password successfully updated: "Heslo bylo úspěšně aktualizováno!"
- Permissions not adequate to perform asynchronous requests:: "Oprávnění nejsou dostatečná pro provádění asynchronních požadavků. Zkuste se znovu přihlásit."
+ Permissions not adequate to perform asynchronous requests: "Oprávnění nejsou dostatečná pro provádění asynchronních požadavků. Zkuste se znovu přihlásit."
  Statistics cleared: "Statistiky vymazány."
  Successfully authenticated: "Autentizace byla úspěšná."
  That account doesn_t exist: "Ten účet neexistuje."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Punjabi language data (last modified: 2024.04.30).
+# This file: Punjabi language data (last modified: 2024.05.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -283,7 +283,7 @@ label:
  Uploads quarantined: "ਕੁਆਰੰਟੀਨ ਕੀਤੇ ਅੱਪਲੋਡਾਂ ਦੀ ਗਿਣਤੀ"
  Uploads scanned: "ਸਕੈਨ ਕੀਤੇ ਅੱਪਲੋਡਾਂ ਦੀ ਗਿਣਤੀ"
  Your IP: "ਤੁਹਾਡਾ IP:"
- Your UA: "ਤੁਹਾਡਾ ਉਪਭੋਗਤਾ ਏਜੰਟ::"
+ Your UA: "ਤੁਹਾਡਾ ਉਪਭੋਗਤਾ ਏਜੰਟ:"
  phpMussel version used: "phpMussel ਸੰਸਕਰਣ ਵਰਤਿਆ ਗਿਆ:"
 link:
  Accounts: "ਖਾਤੇ"
@@ -332,7 +332,7 @@ response:
  Invalid password: "ਲੌਗਇਨ ਅਸਫਲਤਾ! ਗਲਤ ਪਾਸਵਰਡ!"
  Password field empty: "ਪਾਸਵਰਡ ਖੇਤਰ ਖਾਲੀ ਹੈ!"
  Password successfully updated: "ਪਾਸਵਰਡ ਸਫਲਤਾਪੂਰਵਕ ਅੱਪਡੇਟ ਕੀਤਾ ਗਿਆ!"
- Permissions not adequate to perform asynchronous requests:: "ਅਸਿੰਕ੍ਰੋਨਸ ਬੇਨਤੀਆਂ ਕਰਨ ਲਈ ਅਨੁਮਤੀਆਂ ਉਚਿਤ ਨਹੀਂ ਹਨ। ਦੁਬਾਰਾ ਲੌਗਇਨ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+ Permissions not adequate to perform asynchronous requests: "ਅਸਿੰਕ੍ਰੋਨਸ ਬੇਨਤੀਆਂ ਕਰਨ ਲਈ ਅਨੁਮਤੀਆਂ ਉਚਿਤ ਨਹੀਂ ਹਨ। ਦੁਬਾਰਾ ਲੌਗਇਨ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
  Statistics cleared: "ਅੰਕੜੇ ਨੂੰ ਸਾਫ਼ ਕੀਤੇ ਗਏ।"
  Successfully authenticated: "ਸਫਲਤਾਪੂਰਵਕ ਪ੍ਰਮਾਣੀਕਰਨ ਕੀਤਾ ਗਿਆ।"
  That account doesn_t exist: "ਉਹ ਖਾਤਾ ਮੌਜੂਦ ਨਹੀਂ ਹੈ।"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bangla language data (last modified: 2024.04.30).
+# This file: Bangla language data (last modified: 2024.05.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -235,9 +235,9 @@ Some useful links: |
      </ul>
 
 label:
- %s is available (%s): "%s পাওয়া যায় (%s)।"
- %s is available: "%s পাওয়া যায়।"
- %s is not available: "%s পাওয়া যায় না।"
+ %s is available (%s): "%s উপলব্ধ (%s)।"
+ %s is available: "%s উপলব্ধ।"
+ %s is not available: "%s উপলব্ধ নয়।"
  Active configuration file: "সক্রিয় কনফিগারেশন ফাইল:"
  Active signature files: "সক্রিয় স্বাক্ষর ফাইল"
  Branch latest stable: "শাখা সর্বশেষ স্থিতিশীল:"
@@ -332,7 +332,7 @@ response:
  Invalid password: "লগইন ব্যর্থতা! অবৈধ পাসওয়ার্ড!"
  Password field empty: "পাসওয়ার্ড ক্ষেত্র খালি!"
  Password successfully updated: "পাসওয়ার্ড সফলভাবে আপডেট করা হয়েছে!"
- Permissions not adequate to perform asynchronous requests:: "অনুমতিগুলি অ্যাসিঙ্ক্রোনাস অনুরোধগুলি সঞ্চালনের পর্যাপ্ত নয়। আবার চেষ্টা করুন লগ ইন।"
+ Permissions not adequate to perform asynchronous requests: "অনুমতিগুলি অ্যাসিঙ্ক্রোনাস অনুরোধগুলি সঞ্চালনের পর্যাপ্ত নয়। আবার চেষ্টা করুন লগ ইন।"
  Statistics cleared: "পরিসংখ্যান পরিস্কার।"
  Successfully authenticated: "সফলভাবে প্রমাণিত।"
  That account doesn_t exist: "সেই অ্যাকাউন্টটি বিদ্যমান নেই।"

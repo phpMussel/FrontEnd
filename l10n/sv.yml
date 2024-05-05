@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2024.04.30).
+# This file: Swedish language data (last modified: 2024.05.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -332,7 +332,7 @@ response:
  Invalid password: "Inloggningsfel! Felaktigt lösenord!"
  Password field empty: "Lösenord fältet tomt!"
  Password successfully updated: "Lösenordet har uppdaterats framgångsrikt!"
- Permissions not adequate to perform asynchronous requests:: "Behörigheter är inte tillräckliga för att utföra asynkrona förfrågningar. Försök logga in igen."
+ Permissions not adequate to perform asynchronous requests: "Behörigheter är inte tillräckliga för att utföra asynkrona förfrågningar. Försök logga in igen."
  Statistics cleared: "Statistik rensas."
  Successfully authenticated: "Succesfullt autentiserad."
  That account doesn_t exist: "Det kontot existerar inte."

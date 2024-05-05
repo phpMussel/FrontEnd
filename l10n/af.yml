@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2024.04.30).
+# This file: Afrikaans language data (last modified: 2024.05.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -334,7 +334,7 @@ response:
  Invalid password: "Intekening misluk! Ongeldige wagwoord!"
  Password field empty: "Wagwoord veld leeg!"
  Password successfully updated: "Wagwoord suksesvol opgedateer!"
- Permissions not adequate to perform asynchronous requests:: "Toestemmings nie voldoende om asinchrone versoeke uit te voer nie. Probeer om weer in te teken."
+ Permissions not adequate to perform asynchronous requests: "Toestemmings nie voldoende om asinchrone versoeke uit te voer nie. Probeer om weer in te teken."
  Statistics cleared: "Statistiek uitgevee."
  Successfully authenticated: "Suksesvol geverifieer."
  That account doesn_t exist: "Daardie rekening bestaan nie."

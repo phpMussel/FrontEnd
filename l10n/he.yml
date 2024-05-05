@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data (last modified: 2024.04.30).
+# This file: Hebrew language data (last modified: 2024.05.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -334,7 +334,7 @@ response:
  Invalid password: "כישלון התחברות! סיסמה שגויה!"
  Password field empty: "שדה הסיסמה ריק!"
  Password successfully updated: "הסיסמה עודכנה בהצלחה!"
- Permissions not adequate to perform asynchronous requests:: "ההרשאות אינן מתאימות לביצוע בקשות אסינכרוניות. נסה להיכנס שוב."
+ Permissions not adequate to perform asynchronous requests: "ההרשאות אינן מתאימות לביצוע בקשות אסינכרוניות. נסה להיכנס שוב."
  Statistics cleared: "הסטטיסטיקה נמחקה."
  Successfully authenticated: "הצלחת האימות."
  That account doesn_t exist: "החשבון הזה לא קיים."
