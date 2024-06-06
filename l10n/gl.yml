@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Galician language data (last modified: 2024.04.26).
+# This file: Galician language data (last modified: 2024.06.06).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -29,6 +29,269 @@ checkbox:
 config:
  core: "Configuración xeral (calquera configuración básica non pertencente a outras categorías)."
  core_default_timeout: "Tempo de espera predeterminado para usar para solicitudes externas? Predeterminado = 12 segundos."
+ core_delete_on_sight: "Ao activar esta directiva indicaráselle ao script que intente eliminar inmediatamente calquera intentos de cargas de ficheiros escaneados que coincida con calquera criterio de detección, xa sexa mediante sinaturas ou doutro xeito. Non se tocarán os ficheiros que se determinen como "limpos". No caso dos arquivos, borrarase todo o arquivo, independentemente de que o ficheiro infractor sexa ou non só un dos varios ficheiros contidos no arquivo. Para o caso da exploración de carga de ficheiros, normalmente, non é necesario activar esta directiva, porque normalmente, PHP purgará automaticamente o contido da súa caché cando remate a execución, o que significa que normalmente eliminará todos os ficheiros cargados a través del ao servidor a menos que xa fosen movidos, copiados ou eliminados. Esta directiva engádese aquí como unha medida adicional de seguridade para aqueles cuxas copias de PHP non sempre se comportan da forma esperada. False/Falso = Despois da exploración, deixe o ficheiro en paz [Predeterminado]; True/Verdadeiro = Despois da exploración, se non está limpo, elimínao inmediatamente."
+ core_disabled_channels: "Pódese usar para evitar que phpMussel use determinadas canles ao enviar solicitudes."
+ core_error_log: "Un ficheiro para rexistrar os erros non graves detectados. Especifique un nome de ficheiro, ou déixeo en branco para desactivalo."
+ core_hide_version: "Ocultar a información da versión dos rexistros e da saída da páxina? True/Verdadeiro = Si; False/Falso = Non [Predeterminado]."
+ core_ipaddr: "Onde atopar o enderezo IP das solicitudes de conexión? (Útil para servizos como Cloudflare e similares). Predeterminado = REMOTE_ADDR. AVISO: Non cambies isto a menos que saibas o que estás facendo!"
+ core_lang: "Especifique o idioma predeterminado para phpMussel."
+ core_lang_override: "Localizar segundo HTTP_ACCEPT_LANGUAGE sempre que sexa posible? True/Verdadeiro = Si [Predeterminado]; False/Falso = Non."
+ core_log_rotation_action: "A rotación do rexistro limita o número de ficheiros de rexistro que deberían existir en cada momento. Cando se crean novos ficheiros de rexistro, se o número total de ficheiros de rexistro supera o límite especificado, realizarase a acción especificada. Podes especificar a acción desexada aquí."
+ core_log_rotation_limit: "A rotación do rexistro limita o número de ficheiros de rexistro que deberían existir en cada momento. Cando se crean novos ficheiros de rexistro, se o número total de ficheiros de rexistro supera o límite especificado, realizarase a acción especificada. Podes especificar o límite desexado aquí. Un valor de 0 desactivará a rotación do rexistro."
+ core_maintenance_mode: "Activar o modo de mantemento? True/Verdadeiro = Si; False/Falso = Non [Predeterminado]. Desactiva todo o que non sexa o front-end. Ás veces útil para actualizar o teu CMS, frameworks, etc."
+ core_outbound_request_log: "Un ficheiro para rexistrar os resultados de calquera solicitude de saída. Especifique un nome de ficheiro, ou déixeo en branco para desactivalo."
+ core_scan_cache_expiry: "Canto tempo debería phpMussel almacenar na caché os resultados da exploración? O valor é o número de segundos para almacenar na caché os resultados da exploración. O valor predeterminado é 21600 segundos (6 horas); Un valor de 0 desactivará o almacenamento na caché dos resultados da exploración."
+ core_scan_log: "O nome do ficheiro no que rexistrar todos os resultados da exploración. Especifique un nome de ficheiro, ou déixeo en branco para desactivalo."
+ core_scan_log_serialized: "O nome do ficheiro no que rexistrar todos os resultados da exploración (utilizando un formato serializado). Especifique un nome de ficheiro, ou déixeo en branco para desactivalo."
+ core_statistics: "Rastrexar as estatísticas de uso de phpMussel? True/Verdadeiro = Si; False/Falso = Non [Predeterminado]."
+ core_time_format: "O formato de notación de data/hora utilizado por phpMussel. Pódense engadir opcións adicionais previa solicitude."
+ core_time_offset: "Desfase de fuso horario en minutos."
+ core_timezone: "Utilízase para especificar o fuso horario a utilizar (por exemplo, Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, etc). Especifique "SYSTEM" para que PHP se ocupe de isto automaticamente."
+ core_truncate: "Truncar os ficheiros de rexistro cando alcanzan un determinado tamaño? O valor é o tamaño máximo en B/KB/MB/GB/TB ao que pode crecer un ficheiro de rexistro antes de ser truncado. O valor predeterminado de 0KB desactiva o truncamento (os ficheiros de rexistro poden crecer indefinidamente). Nota: Aplícase aos ficheiros de rexistro individuais! O tamaño dos ficheiros de rexistro non se considera colectivamente."
+ experimental: "Inestable/Experimental!"
+ files: "Os detalles específicos de como xestionar ficheiros ao escanear."
+ files_allow_leading_trailing_dots: "Permitir os puntos principais e finais nos nomes de ficheiros? Isto ás veces pode usarse para ocultar ficheiros ou para enganar algúns sistemas para que permitan o percorrido de directorios. False/Falso = Non permita [Predeterminado]. True/Verdadeiro = Permita."
+ files_archive_file_extensions: "Recoñecidas extensións de ficheiros de arquivo (o formato é CSV; as entradas deben engadirse ou eliminarse só cando se produzan problemas; a eliminación innecesaria pode facer que aparezan falsos positivos para os ficheiros de arquivo, mentres que as adicións innecesarias incluirán esencialmente na lista branca o que estás engadindo a partir da detección específica do ataque; modificar con precaución; tamén teña en conta que isto non ten ningún efecto sobre os arquivos que poden e non poden ser analizados a nivel de contido). A lista, por predeterminado, enumera os formatos utilizados máis habitualmente na maioría dos sistemas e CMS, pero intencionadamente non é necesariamente exhaustiva."
+ files_block_control_characters: "Bloquear ficheiros que conteñan caracteres de control (que non sexan novas liñas)? Se <strong><em>SÓ</em></strong> estás cargando texto sen formato, podes activar esta opción para proporcionar algunha protección adicional ao teu sistema. Non obstante, se cargas algo que non sexa texto simple, activalo pode producir falsos positivos. False/Falso = Non bloquees [Predeterminado]; True/Verdadeiro = Bloquear."
+ files_block_encrypted_archives: "Detectar e bloquear arquivos cifrados? phpMussel non é capaz de escanear o contido dos arquivos cifrados, polo que é posible que un atacante utilice o cifrado de arquivos como un medio para evitar o phpMussel, os escáneres antivirus e outras proteccións deste tipo. Instruír a phpMussel para bloquear calquera arquivo que descubra que está cifrado podería axudar a reducir calquera risco asociado a estas posibilidades. False/Falso = Non; True/Verdadeiro = Si [Predeterminado]."
+ files_block_macros: "Bloquear ficheiros que conteñan macros? Algúns tipos de documentos e follas de cálculo poden conter macros executables, proporcionando así un perigoso vector de malware potencial. False/Falso = Non bloquees [Predeterminado]; True/Verdadeiro = Bloquear."
+ files_can_contain_php_file_extensions: "Unha lista de extensións de ficheiro que permiten conter código PHP, separadas por comas. Se a detección de ataques camaleóns PHP está activada, os ficheiros que conteñan código PHP, que teñen extensións que non están nesta lista, detectaranse como ataques camaleóns PHP."
+ files_chameleon_from_exe: "Busca cabeceiras executables en ficheiros que non son nin executables nin arquivos recoñecidos e executables cuxas cabeceiras son incorrectas. False/Falso = Desactivado; True/Verdadeiro = Activado."
+ files_chameleon_from_php: "Busca cabeceiras PHP en ficheiros que non son nin ficheiros PHP nin arquivos recoñecidos. False/Falso = Desactivado; True/Verdadeiro = Activado."
+ files_chameleon_to_archive: "Detecta cabeceiras incorrectas en arquivos e ficheiros comprimidos. Soportado: BZ/BZIP2, GZ/GZIP, LZF, RAR, ZIP. False/Falso = Desactivado; True/Verdadeiro = Activado."
+ files_chameleon_to_doc: "Busca documentos ofimáticos cuxos encabezados sexan incorrectos (Soportado: DOC, DOT, PPS, PPT, XLA, XLS, WIZ). False/Falso = Desactivado; True/Verdadeiro = Activado."
+ files_chameleon_to_img: "Busca imaxes cuxos encabezados sexan incorrectos (Soportado: BMP, DIB, PNG, GIF, JPEG, JPG, XCF, PSD, PDD, WEBP). False/Falso = Desactivado; True/Verdadeiro = Activado."
+ files_chameleon_to_pdf: "Busca ficheiros PDF cuxas cabeceiras son incorrectas. False/Falso = Desactivado; True/Verdadeiro = Activado."
+ files_check_archives: "Comprobar o contido dos arquivos? False/Falso = Non comprobe; True/Verdadeiro = Comprobe [Predeterminado]. Soportado: Zip (require libzip), Tar, Rar (require a extensión rar)."
+ files_corrupted_exe: "Ficheiros danados e erros de análise. False/Falso = Ignorar; True/Verdadeiro = Bloquear [Predeterminado]. Detectar e bloquear ficheiros PE (Executable Portátil) potencialmente danados? Moitas veces (pero non sempre), cando certos aspectos dun ficheiro PE están corrompidos ou non se poden analizar correctamente, pode ser indicativo dunha infección viral. Os procesos utilizados pola maioría dos programas antivirus para detectar virus en ficheiros PE requiren analizar eses ficheiros de determinadas formas, que, se o programador dun virus é consciente, tratará especificamente de previr, para que o seu virus non se detecte."
+ files_decode_threshold: "Limiar para a lonxitude dos datos en bruto dentro do cal se deben detectar os comandos de decodificación (no caso de que exista algún problema de rendemento notable durante a exploración). Predeterminado = 512KB. Cero ou nulo desactiva o limiar (eliminando calquera tal limitación en función do tamaño do ficheiro)."
+ files_filesize_archives: "Transferir a lista negra/branca do tamaño dos ficheiros aos contidos dos arquivos? False/Falso = Non (só na lista gris de todo); True/Verdadeiro = Si [Predeterminado]."
+ files_filesize_limit: "Límite de tamaño de ficheiro en KB. 65536 = 64MB [Predeterminado]; 0 = Sen límite (sempre na lista gris). Admítese calquera valor numérico (positivo). Isto pode ser útil cando a súa configuración de PHP limita a cantidade de memoria que pode albergar un proceso ou se a súa configuración de PHP limita o tamaño dos ficheiros de carga."
+ files_filesize_response: "Que facer cos ficheiros que superan o límite de tamaño dos ficheiros (se o hai). False/Falso = Lista branca; True/Verdadeiro = Lista negra [Predeterminado]."
+ files_filetype_archives: "Transferir a lista negra/branca do tipo de ficheiro aos contidos dos arquivos? False/Falso = Non (só na lista gris de todo) [Predeterminado]; True/Verdadeiro = Si."
+ files_filetype_blacklist: "Lista negra:"
+ files_filetype_greylist: "Lista gris:"
+ files_filetype_whitelist: "Lista branca:"
+ files_max_files_in_archives: "Número máximo de ficheiros para escanear desde os arquivos antes de abortar a exploración. Predeterminado = 0 (sen máximo)."
+ files_max_recursion: "Límite máximo de profundidade de recursión para arquivos. Predeterminado = 3."
+ files_only_allow_images: "Cando se define como verdadeiro, os ficheiros que atopados polo escáner que non sexan imaxes marcaranse inmediatamente, sen ser escaneados. Isto pode axudar a reducir o tempo necesario para completar unha exploración nalgúns casos. Establécese como false como predeterminado."
+ files_scannable_threshold: "Limiar ata a lonxitude dos datos en bruto que phpMussel pode ler e escanear (no caso de que exista algún problema de rendemento notable durante a exploración). Predeterminado = 32MB. Cero ou nulo desactiva o limiar. Xeralmente, este valor non debe ser inferior ao tamaño medio dos ficheiros cargados que queres e esperas recibir no teu servidor ou sitio web, non debe ser superior á directiva filesize_limit e non debe ser máis que aproximadamente un quinto da asignación total de memoria permitida concedida a PHP a través do ficheiro de configuración "php.ini". Esta directiva existe para intentar evitar que phpMussel use demasiada memoria (iso evitaría que poida escanear con éxito ficheiros por encima dun determinado tamaño de ficheiro)."
+ frontend: "Configuración para o front-end."
+ frontend_custom_footer: "Inseriuse como HTML na parte inferior de todas as páxinas do front-end. Isto pode ser útil no caso de que queiras incluír un aviso legal, ligazón de contacto, información comercial, ou similares en todas esas páxinas."
+ frontend_custom_header: "Inseriuse como HTML ao comezo de todas as páxinas do front-end. Isto pode ser útil no caso de que queiras incluír un logotipo do sitio web, un encabezado personalizado, guións, ou similares en todas esas páxinas."
+ frontend_default_algo: "Define que algoritmo usar para todos os contrasinais e sesións futuras."
+ frontend_frontend_log: "Ficheiro para rexistrar todos os intentos de iniciar sesión na front-end. Especifique un nome de ficheiro, ou déixeo en branco para desactivalo."
+ frontend_magnification: "Ampliación da fonte. Predeterminado = 1."
+ frontend_max_login_attempts: "Número máximo de intentos para iniciar sesión na front-end. Predeterminado = 5."
+ frontend_numbers: "Como prefires que se mostren os números? Selecciona o exemplo que che pareza máis correcto."
+ frontend_theme: "A estética a usar para o front-end de phpMussel."
+ legal: "Configuración para requisitos legais."
+ legal_privacy_policy: "O enderezo dunha política de privacidade relevante que se mostrará no pé de calquera páxina xerada. Especifique un URL, ou déixao en branco para desactivalo."
+ legal_pseudonymise_ip_addresses: "Pseudonimizar enderezos IP ao rexistrar datos? True/Verdadeiro = Si [Predeterminado]; False/Falso = Non."
+ quarantine: "Configuración para a corentena."
+ quarantine_quarantine_key: "phpMussel é capaz de poñer en corentena as cargas de ficheiros bloqueadas, se isto é algo que queres que faga. Os usuarios ocasionais de phpMussel que simplemente desexen protexer os seus sitios web ou o seu ambiente de hospedaxe sen ter ningún interese en analizar a fondo os intentos de carga de ficheiros marcados deben deixar esta funcionalidade desactivada, pero calquera usuario interesado en analizar máis adiante os intentos de carga de ficheiros marcados para a investigación de malware ou para cousas similares deberían activar esta funcionalidade. A posta en corentena dos intentos de carga de ficheiros marcados ás veces tamén pode axudar a depurar falsos positivos, se isto ocorre con frecuencia para ti. Para desactivar a funcionalidade de corentena, simplemente deixe a directiva <code>quarantine_key</code> baleira, ou borre o contido desa directiva se aínda non está baleira. Para activar a funcionalidade de corentena, introduza algún valor na directiva. A <code>quarantine_key</code> é unha característica de seguranza importante da funcionalidade de corentena necesaria como medio para evitar que os potenciais atacantes exploten a funcionalidade de corentena e como medio para evitar a execución potencial dos datos almacenados na corentena. A <code>quarantine_key</code> debe tratarse da mesma forma que os teus contrasinais: Canto máis tempo mellor, e gardalo firmemente. Para o mellor efecto, úsao xunto con <code>delete_on_sight</code>."
+ quarantine_quarantine_max_files: "O número máximo de ficheiros que poden existir na corentena. Cando se engaden novos ficheiros á corentena, se se supera este número, eliminaranse os ficheiros antigos ata que o resto xa non supere este número. Predeterminado = 100."
+ quarantine_quarantine_max_filesize: "O tamaño máximo de ficheiro permitido para que os ficheiros sexan postos en corentena. Os ficheiros superiores ao valor especificado NON serán postos en corentena. Esta directiva é importante como un medio para dificultar que os posibles atacantes inunden a túa corentena con datos non desexados que poidan provocar un uso desbotado de datos no teu servizo de hospedaxe. Predeterminado = 2MB."
+ quarantine_quarantine_max_usage: "O uso máximo de memoria permitido para a corentena. Se a memoria total empregada pola corentena alcanza este valor, eliminaranse os ficheiros en corentena máis antigos ata que a memoria total utilizada xa non alcance este valor. Esta directiva é importante como un medio para dificultar que os posibles atacantes inunden a túa corentena con datos non desexados que poidan provocar un uso desbotado de datos no teu servizo de hospedaxe. Predeterminado = 64MB."
+ signatures: "Configuración de sinaturas, ficheiros de sinatura, etc."
+ signatures_active: "Unha lista dos ficheiros de sinatura activos, delimitados por comas. Nota: Os ficheiros de sinatura deben instalarse primeiro antes de activalos. Para que os ficheiros de proba funcionen correctamente, os ficheiros de sinatura deben estar instalados e activados."
+ signatures_detect_adware: "Debería phpMussel analizar sinaturas para detectar adware? False/Falso = Non; True/Verdadeiro = Si [Predeterminado]."
+ signatures_detect_deface: "Debería phpMussel analizar sinaturas para detectar desfiguracións e desfacedores? False/Falso = Non; True/Verdadeiro = Si [Predeterminado]."
+ signatures_detect_encryption: "Debería phpMussel detectar e bloquear ficheiros cifrados? False/Falso = Non; True/Verdadeiro = Si [Predeterminado]."
+ signatures_detect_joke_hoax: "Debería phpMussel analizar sinaturas para detectar malware/virus de broma/hoax? False/Falso = Non; True/Verdadeiro = Si [Predeterminado]."
+ signatures_detect_packer_packed: "Debería phpMussel analizar sinaturas para detectar empaquetadores e datos empaquetados? False/Falso = Non; True/Verdadeiro = Si [Predeterminado]."
+ signatures_detect_pua_pup: "Debería phpMussel analizar sinaturas para detectar PUA/PUP? False/Falso = Non; True/Verdadeiro = Si [Predeterminado]."
+ signatures_detect_shell: "Debería phpMussel analizar sinaturas para detectar scripts de shell? False/Falso = Non; True/Verdadeiro = Si [Predeterminado]."
+ signatures_fail_extensions_silently: "Debería phpMussel informar cando faltan extensións? Se <code>fail_extensions_silently</code> está desactivado, informarase das extensións que faltan na exploración, e se <code>fail_extensions_silently</code> está activado, ignoraranse as extensións que falten, con informes de exploración para aqueles ficheiros que non teñan ningún problema. A desactivación desta directiva pode aumentar a túa seguridade, pero tamén pode provocar un aumento de falsos positivos. False/Falso = Desactivado; True/Verdadeiro = Activado [Predeterminado]."
+ signatures_fail_silently: "Debería phpMussel informar cando os ficheiros de sinaturas están ausentes ou danados? Se <code>fail_silently</code> está desactivado, os ficheiros ausentes e danados serán informados na exploración, e se <code>fail_silently</code> está activado, ignoraranse os ficheiros ausentes e danados, con informes de exploración para aqueles ficheiros que non teñan ningún problema. Polo xeral, debería deixarse isto só, excepto cando teñas fallas ou problemas similares. False/Falso = Desactivado; True/Verdadeiro = Activado [Predeterminado]."
+ signatures_heuristic_threshold: "Algunhas sinaturas de phpMussel están destinadas a identificar indicadores sospeitosos e potencialmente maliciosos en ficheiros, sen identificar directamente eses ficheiros como maliciosos. Este valor límite indica a phpMussel o peso máximo permitido antes de marcar eses ficheiros como maliciosos. A definición de peso neste contexto é o número total de indicadores sospeitosos e potencialmente maliciosos identificados. Este valor establecerase de forma predeterminada en 3. Un valor máis baixo xeralmente dará lugar a unha maior incidencia de falsos positivos, pero un número maior de ficheiros maliciosos marcados, mentres que un valor máis alto xeralmente dará lugar a unha menor aparición de falsos positivos, pero un número menor de ficheiros maliciosos marcados. En xeral, é mellor deixar isto no seu valor predeterminado, excepto cando teña problemas."
+ supplementary_cache_options: "Opcións de caché suplementarias. Nota: Se cambias estes valores, posiblemente estea pechado a sesión."
+ supplementary_cache_options_enable_apcu: "Especifica se tentar usar a caché de APCu. Predeterminado = True."
+ supplementary_cache_options_enable_memcached: "Especifica se tentar usar o caché de Memcached. Predeterminado = False."
+ supplementary_cache_options_enable_pdo: "Especifica se tentar usar PDO para xestionar o caché. Predeterminado = False."
+ supplementary_cache_options_enable_redis: "Especifica se tentar usar a caché de Redis. Predeterminado = False."
+ supplementary_cache_options_memcached_host: "Valor do host de Memcached. Predeterminado = "localhost"."
+ supplementary_cache_options_memcached_port: "Valor do porto de Memcached. Predeterminado = "11211"."
+ supplementary_cache_options_pdo_dsn: "Valor DSN PDO. Predeterminado = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+ supplementary_cache_options_pdo_password: "Contrasinal PDO."
+ supplementary_cache_options_pdo_username: "Nome de usuario PDO."
+ supplementary_cache_options_prefix: "O valor especificado aquí antepoñerase a todas as claves de entrada da caché. Predeterminado = "phpMussel_". Cando existen varias instalacións no mesmo servidor, isto pode ser útil para manter as súas cachés separadas entre si."
+ supplementary_cache_options_redis_database_number: "Número de base de datos Redis. Predeterminado = 0. Nota: Non se poden usar valores distintos de 0 con Redis Cluster."
+ supplementary_cache_options_redis_host: "Valor do host de Redis. Predeterminado = "localhost"."
+ supplementary_cache_options_redis_port: "Valor do porto de Redis. Predeterminado = "6379"."
+ supplementary_cache_options_redis_timeout: "Valor de tempo de espera de Redis. Predeterminado = "2.5"."
+ urlscanner: "Configuración para o escáner de URL."
+ urlscanner_cache_time: "Canto tempo (en segundos) deberían almacenarse na memoria caché os resultados das buscas de API? O valor predeterminado é 3600 segundos (1 hora)."
+ urlscanner_google_api_key: "Activa as buscas de API na API de navegación segura de Google cando se define a clave de API necesaria."
+ urlscanner_maximum_api_lookups: "Número máximo permitido de buscas de API para realizar por iteración de exploración individual. Como cada busca de API adicional aumentará o tempo total necesario para completar cada iteración de exploración, é posible que desexes estipular unha limitación para acelerar o proceso de exploración. Cando se establece en 0, non se aplicará ese número máximo permitido. Valor predeterminado establecido en 10."
+ urlscanner_maximum_api_lookups_response: "Que facer se se supera o número máximo permitido de buscas de API? False/Falso = Non facer nada (continuar procesando) [Predeterminado]; True/Verdadeiro = Marcar/bloquear o ficheiro."
+ virustotal: "Configuración para a integración de Virus Total."
+ virustotal_vt_public_api_key: "Opcionalmente, phpMussel pode escanear ficheiros usando a API de Virus Total como unha forma de proporcionar un nivel de protección moi mellorado contra virus, troianos, malware e outras ameazas. A exploración de ficheiros mediante a API de Virus Total normalmente está desactivada, pero pódese activar introducindo a clave da API necesaria de Virus Total. Debido ao importante beneficio que isto podería proporcionarche, recoméndoo encarecidamente. Teña en conta que para usar a API de Virus Total, <strong><em>DEBE</em></strong> aceptar as súas Condicións de servizo e <strong><em>DEBE</em></strong> cumprir todas as directrices descritas na documentación de Virus Total! Podes usar esta función de integración SÓ se liches e aceptas as Condicións de servizo de Virus Total e a súa API. Leu e comprende, como mínimo, o preámbulo da documentación de Virus Total Public API (todo despois de "VirusTotal Public API v2.0" pero antes de "Contents")."
+ virustotal_vt_quota_rate: "Segundo a documentación da API de Virus Total, está limitada a un máximo de 4 solicitudes de calquera natureza nun período de 1 minuto. Se executas un honeyclient, un honeypot ou calquera outra automatización que vai proporcionar recursos a VirusTotal e non só recuperar informes, tes dereito a unha cota de solicitude máis alta. phpMussel cumprirá estrictamente estas limitacións como estándar, pero debido á posibilidade de que se incrementen estas cotas de tarifas, estas dúas directivas preséntanse como un medio para que lle indique a phpMussel a que límite debe cumprir. Non se recomenda que aumentes estes valores excepto cando se lle indique, pero se atopaches problemas para alcanzar a túa cota de tarifas, a diminución destes valores <strong><em>PODE</em></strong> axudarche ás veces a resolver eses problemas. O teu límite de tarifa determínase como <code>vt_quota_rate</code> solicitudes de calquera natureza nun período de tempo de <code>vt_quota_time</code> minutos."
+ virustotal_vt_quota_time: "(Vexa a descrición anterior)."
+ virustotal_vt_suspicion_level: "phpMussel restrinxirá os ficheiros que analiza mediante a API de Virus Total aos ficheiros que considere "sospeitosos". Opcionalmente, pode axustar esta restrición cambiando o valor da directiva <code>vt_suspicion_level</code>."
+ virustotal_vt_weighting: "Debería phpMussel aplicar os resultados da exploración usando a API de Virus Total como deteccións ou como ponderación de detección? Esta directiva existe porque, aínda que escanear un ficheiro usando varios motores (como fai Virus Total) debería producir un aumento da taxa de detección (e, polo tanto, nun maior número de ficheiros maliciosos capturados), tamén pode producir un maior número de falsos positivos, e polo tanto, nalgunhas circunstancias, pode ser mellor utilizar os resultados da exploración como unha puntuación de confianza en lugar de como unha conclusión definitiva. Se se utiliza un valor de 0, os resultados da exploración mediante a API de Virus Total aplicaranse como deteccións, e polo tanto, se algún motor usado por Virus Total marca o ficheiro que se está a analizar como malicioso, phpMussel considerará que o ficheiro é malicioso. Se se utiliza algún outro valor, os resultados da exploración mediante a API de Virus Total aplicaranse como ponderación de detección, e polo tanto, o número de motores utilizados por Virus Total que marcan o ficheiro que se está a analizar como malicioso servirá como puntuación de confianza (ou ponderación de detección) para saber se o ficheiro que se está a analizar debe ser considerado malicioso por phpMussel (o valor utilizado representará a puntuación ou o peso mínimo de confianza esixido para ser considerado malicioso). O valor predeterminado é 0."
+confirm:
+ Action: "Estás seguro de que queres "%s"?"
+field:
+ 2FA code: "Código 2FA"
+ Clear all: "Borrar todo"
+ Confirm: "Confirmar"
+ Create new account: "Crear unha nova conta"
+ Delete account: "Eliminar conta"
+ Delete all: "Eliminar todo"
+ Delete: "Eliminar"
+ Download: "Descargar"
+ False (False): "False (Falso)"
+ File: "Ficheiro"
+ Latest version: "Última versión"
+ Log In: "Acceder"
+ More fields: "Máis campos"
+ OK: "OK"
+ Options: "Opcións"
+ Password: "Contrasinal"
+ Permissions: "Permisos"
+ Quarantine key: "Chave de corentena"
+ Reset: "Restablecer"
+ Restore: "Restaurar"
+ Set new password: "Establece un novo contrasinal"
+ True (True): "True (Verdadeiro)"
+ Update signature files: "Actualizar ficheiros de sinatura"
+ Update: "Actualizalo"
+ Use system default timezone: "Usa o fuso horario predeterminada do sistema."
+ Username: "Nome de usuario"
+ Your version: "O teu versión"
+ log_rotation_archive: "Primeiro arquiva, e despois elimina os ficheiros de rexistro máis antigos, ata que non se supere o límite."
+ log_rotation_delete: "Elimina os ficheiros de rexistro máis antigos, ata que non se supere o límite."
+ size:
+  Total size: "Tamaño total:"
+  GB: "GB"
+  KB: "KB"
+  MB: "MB"
+  PB: "PB"
+  TB: "TB"
+  bytes:
+   - "byte"
+   - "bytes"
+ vt_suspicion_level_all: "Escanear todos os ficheiros."
+ vt_suspicion_level_executable: "Analiza ficheiros con peso heurístico, ficheiros executables, e ficheiros que poidan conter datos executables.\nExemplos de ficheiros executables, e ficheiros que poden conter datos executables, inclúen ficheiros PE de Windows, ficheiros ELF de Linux, ficheiros Mach-O, ficheiros DOCX, ficheiros ZIP, etc."
+ vt_suspicion_level_heuristic_only: "Analiza só ficheiros con peso heurístico.\nOs ficheiros analizaranse só se teñen algún peso heurístico. O peso heurístico pódese incorrer en sinaturas destinadas a capturar pegadas dixitais comúns asociadas a unha posible infección que non necesariamente garante a infección. A busca, en tales casos, pode servir para proporcionar unha segunda opinión para resultados que xustifiquen sospeitas pero que non ofrezan ningunha certeza."
+hints_logging_datetime: "Consello útil: Podes anexar información de data/hora aos nomes dos ficheiros de rexistro mediante os marcadores de posición do formato de hora. Os marcadores de posición do formato de hora dispoñibles móstranse en {{Links.ConfigRef.time_format}}."
+hints_pdo_dsn:
+ FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Que é un "PDO DSN"? Como podo usar PDO con phpMussel?</a></em>"
+hints_time_format: |
+ <strong><em>Marcador de posición – Explicación – Exemplo baseado en 2024-04-30T18:27:49+08:00.</em></strong><br />
+ <code class="s">{yyyy}</code> – O ano – Por exemplo, 2024.<br />
+ <code class="s">{yy}</code> – O ano abreviado – Por exemplo, 24.<br />
+ <code class="s">{Mon}</code> – O nome abreviado do mes (en inglés) – Por exemplo, Apr.<br />
+ <code class="s">{mm}</code> – O mes con ceros ao principio – Por exemplo, 04.<br />
+ <code class="s">{m}</code> – O mes – Por exemplo, 4.<br />
+ <code class="s">{Day}</code> – O nome abreviado do día (en inglés) – Por exemplo, Tue.<br />
+ <code class="s">{dd}</code> – O día con ceros ao principio – Por exemplo, 30.<br />
+ <code class="s">{d}</code> – O día – Por exemplo, 30.<br />
+ <code class="s">{hh}</code> – A hora con ceros ao principio (utiliza o tempo de 24 horas) – Por exemplo, 18.<br />
+ <code class="s">{h}</code> – A hora (utiliza o tempo de 24 horas) – Por exemplo, 18.<br />
+ <code class="s">{ii}</code> – O minuto con ceros ao principio – Por exemplo, 27.<br />
+ <code class="s">{i}</code> – O minuto – Por exemplo, 27.<br />
+ <code class="s">{ss}</code> – O segundo con ceros ao principio – Por exemplo, 49.<br />
+ <code class="s">{s}</code> – O segundo – Por exemplo, 49.<br />
+ <code class="s">{tz}</code> – O fuso horario (sen dous puntos) – Por exemplo, +0800.<br />
+ <code class="s">{t:z}</code> – O fuso horario (con dous puntos) – Por exemplo, +08:00.
+hints_xlists:
+ Como funciona isto.: "Se o seu sistema permite cargar só tipos específicos de ficheiros, ou se o seu sistema nega explícitamente determinados tipos de ficheiros, especificar eses tipos de ficheiros en listas brancas, listas negras, e listas grises pode aumentar a velocidade á que se realiza a exploración ao permitir que o script omita certos tipos de ficheiros. O formato é CSV (valores separados por comas)."
+ Orde lóxica de procesamento.: "Se o tipo de ficheiro está na lista branca, non escanee e non bloquee o ficheiro, nin comprobe o ficheiro coa lista negra nin coa lista gris. Se o tipo de ficheiro está na lista negra, non escanee o ficheiro, senón que o bloquee de todos os xeitos e non comprobe o ficheiro coa lista gris. Se a lista gris está baleira ou se a lista gris non está baleira e o tipo de ficheiro está na lista gris, escanea o ficheiro de forma normal e determina se queres bloquealo en función dos resultados da exploración, pero se a lista gris non está baleira e o tipo de ficheiro non está na lista gris, trate o ficheiro coma se estivese na lista negra, polo tanto, non o escanea senón que o bloquea de todos os xeitos."
+Some useful links: |
+ Algunhas ligazóns útiles:<br />
+     <ul class="pieul">
+       <li><span class="comCat">Ferramentas, recursos, etc para phpMussel.</span>
+         <ul class="comSub">
+           <li>{{Links.phpMussel.Issues}} – Páxina de problemas para phpMussel (soporte, asistencia, etc).</li>
+           <li>{{Links.phpMussel.SigTool}} – Crea ficheiros de sinaturas para phpMussel usando a base de datos de sinaturas de ClamAV.</li>
+           <li>{{Links.phpMussel.Extras}} – Varios extras.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Ferramentas, recursos, etc para ClamAV.</span>
+         <ul class="comSub">
+           <li>{{Links.ClamavNet}} – Páxina de inicio de ClamAV (ClamAV® é un motor antivirus de código aberto para detectar troianos, virus, malware e outras ameazas maliciosas).</li>
+           <li>{{Links.SecuriteInfo}} – Empresa de seguridade informática que ofrece sinaturas complementarias para ClamAV.</li>
+           <li>{{Links.Sanesecurity}} – Empresa de seguridade informática que ofrece sinaturas complementarias para ClamAV.</li>
+           <li>{{Links.Malware Expert}} – Ofrece sinaturas suplementarias para ClamAV e regras suplementarias para ModSecurity.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Grupos, foros, comunidades, etc.</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Facebook}} – Recursos de aprendizaxe e discusión de PHP.</li>
+           <li>{{Links.MalwareTips}} – Foros de discusión útiles centrados en malware.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Outras ferramentas, recursos, servizos útiles, etc.</span>
+         <ul class="comSub">
+           <li>{{Links.PhishTank}} – Base de datos de phishing utilizada polo escáner de URL de phpMussel.</li>
+           <li>{{Links.VirusTotal}} – VirusTotal é un servizo gratuíto para analizar ficheiros e URL sospeitosos.</li>
+           <li>{{Links.Hybrid Analysis}} – Hybrid Analysis é un servizo gratuíto de análise de malware proporcionado por {{Links.Payload Security}}.</li>
+           <li>{{Links.Malwarebytes}} – Especialistas en antimalware informático.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Recursos informativos e de aprendizaxe.</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Website}} – Recursos de aprendizaxe e discusión de PHP.</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Táboas de vulnerabilidade</a> – Lista versións seguras e non seguras de varios paquetes (HHVM, PHP, phpMyAdmin, Python, etc).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Táboas de compatibilidade</a> – Lista información de compatibilidade para varios paquetes (CIDRAM, phpMussel, etc).</li>
+         </ul>
+       </li>
+     </ul>
+
+label:
+ %s is available (%s): "%s está dispoñible (%s)."
+ %s is available: "%s está dispoñible."
+ %s is not available: "%s non está dispoñible."
+ Active configuration file: "Ficheiro de configuración activo:"
+ Active signature files: "Ficheiros de sinatura activos"
+ Branch latest stable: "Rama última versión:"
+ Client information: "Información do cliente:"
+ Complete access: "Acceso completo"
+ Copy to clipboard: "Copiar ao portapapeis"
+ Default: "Predeterminado"
+ Expires: "Caduca:"
+ Extension: "Extensión"
+ External: "Externo"
+ Installed Available: "Instalado/Dispoñible"
+ Latest stable: "Último estable:"
+ Latest unstable: "Último inestable:"
+ Loading_: "Cargando..."
+ Logged in, 2FA pending: "Iniciado sesión, 2FA pendente."
+ Logged in: "Iniciado sesión."
+ Logged out: "Pechou sesión."
+ Login: "Inicio de sesión"
+ Logs access only: "Só acceso aos rexistros"
+ Never: "Nunca"
+ No log file selected: "Non se seleccionou ningún ficheiro de rexistro."
+ No log files available: "Non hai ficheiros de rexistro dispoñibles."
+ Objects flagged: "Obxectos marcados"
+ Objects scanned: "Obxectos escaneados"
+ Operating system used: "Sistema operativo utilizado:"
+ Other: "Outra"
+ PHP version used: "Versión PHP utilizada:"
+ Page request completed in %s seconds: "Solicitude de páxina completada en %s segundos."
+ Please log in to continue: "Inicia sesión para continuar."
+ SAPI used: "SAPI utilizado:"
+ Scan events: "Eventos de exploración"
+ See also: "Ver tamén:"
+ Selected log file doesn_t exist: "O ficheiro de rexistro seleccionado non existe!"
+ Size in quarantine: "Tamaño en corentena:"
+ Start date: "Data de inicio"
+ System information: "Información do sistema:"
+ The cache is empty: "A caché está baleira."
+ Upload date: "Data de carga:"
+ Upload hash: "Hash da carga:"
+ Upload origin: "Orixe da carga:"
+ Upload size: "Tamaño da carga:"
+ Uploads blocked: "Cargas bloqueadas"
+ Uploads quarantined: "Cargas en corentena"
+ Uploads scanned: "Cargas escaneadas"
+ Your IP: "O teu IP:"
+ Your UA: "O teu axente de usuario:"
+ phpMussel version used: "Versión de phpMussel utilizada:"
 warning:
  Cookies: "Nota: phpMussel usa unha cookie para autenticar os inicios de sesión. Ao iniciar sesión, dás o teu consentimento para que o teu navegador cree e almacene unha cookie."
  JavaScript required: "Aviso: Algunhas funcións do front-end requiren JavaScript. Para garantir que todo o front-end se comporta como se espera, recoméndase activar JavaScript."

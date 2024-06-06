@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Catalan language data (last modified: 2024.04.26).
+# This file: Catalan language data (last modified: 2024.06.06).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -29,6 +29,269 @@ checkbox:
 config:
  core: "Configuració general (qualsevol configuració bàsica que no pertanyi a altres categories)."
  core_default_timeout: "Temps d'espera predeterminat per utilitzar per a sol·licituds externes? Predeterminat = 12 segons."
+ core_delete_on_sight: "L'habilitació d'aquesta directiva indicarà a l'script que intenti suprimir immediatament qualsevol intent de càrrega de fitxers escanejat que coincideixi amb qualsevol criteri de detecció, ja sigui mitjançant signatures o d'una altra manera. Els fitxers determinats com a "nets" no es tocaran. En el cas dels arxius, s'eliminarà tot l'arxiu, independentment de si l'arxiu infractor és o no només un dels diversos fitxers continguts a l'arxiu. En el cas de l'escaneig de la càrrega de fitxers, normalment, no és necessari habilitar aquesta directiva, perquè normalment, PHP purgarà automàticament el contingut de la seva memòria cau quan s'hagi acabat l'execució, és a dir, normalment esborrarà tots els fitxers penjats a través d'ell al servidor tret que ja s'hagin mogut, copiat o esborrat. Aquesta directiva s'afegeix aquí com una mesura addicional de seguretat per a aquells que les còpies de PHP no sempre es comporten de la manera esperada. False/Fals = Després d'escanejar, deixeu el fitxer sol [Predeterminat]; True/Cert = Després d'escanejar, si no es neteja, suprimiu-lo immediatament."
+ core_disabled_channels: "Això es pot utilitzar per evitar que phpMussel utilitzi canals concrets quan s'envien sol·licituds."
+ core_error_log: "Un fitxer per registrar qualsevol error no fatal detectat. Especifiqueu un nom de fitxer, o deixeu-lo en blanc per desactivar-lo."
+ core_hide_version: "Amagar la informació de la versió dels registres i de la sortida de la pàgina? True/Cert = Sí; False/Fals = No [Predeterminat]."
+ core_ipaddr: "On trobar l'adreça IP de les sol·licituds de connexió? (Útil per a serveis com Cloudflare i similars). Predeterminat = REMOTE_ADDR. ADVERTIMENT: No canvieu això tret que sàpigues què estàs fent!"
+ core_lang: "Especifiqueu l'idioma predeterminat per a phpMussel."
+ core_lang_override: "Localitzar segons HTTP_ACCEPT_LANGUAGE sempre que sigui possible? True/Cert = Sí [Predeterminat]; False/Fals = No."
+ core_log_rotation_action: "La rotació del registre limita el nombre de fitxers de registre que haurien d'existir en un moment determinat. Quan es creen fitxers de registre nous, si el nombre total de fitxers de registre supera el límit especificat, es realitzarà l'acció especificada. Aquí podeu especificar l'acció desitjada."
+ core_log_rotation_limit: "La rotació del registre limita el nombre de fitxers de registre que haurien d'existir en un moment determinat. Quan es creen fitxers de registre nous, si el nombre total de fitxers de registre supera el límit especificat, es realitzarà l'acció especificada. Aquí podeu especificar el límit desitjat. Un valor de 0 desactivarà la rotació del registre."
+ core_maintenance_mode: "Activar el mode de manteniment? True/Cert = Sí; False/Fals = No [Predeterminat]. Desactiva tot el que no sigui el front-end. De vegades útil per actualitzar el vostre CMS, frameworks, etc."
+ core_outbound_request_log: "Un fitxer per registrar els resultats de qualsevol sol·licitud de sortida. Especifiqueu un nom de fitxer, o deixeu-lo en blanc per desactivar-lo."
+ core_scan_cache_expiry: "Quant de temps hauria d'emmagatzemar a la memòria cau phpMussel els resultats de l'escaneig? El valor és el nombre de segons per a la memòria cau els resultats de l'escaneig. El valor predeterminat és 21600 segons (6 hores); Un valor de 0 desactivarà l'emmagatzematge a la memòria cau dels resultats de l'escaneig."
+ core_scan_log: "El nom del fitxer on registrar tots els resultats de l'escaneig. Especifiqueu un nom de fitxer, o deixeu-lo en blanc per desactivar-lo."
+ core_scan_log_serialized: "El nom del fitxer on registrar tots els resultats de l'escaneig (utilitzant un format serialitzat). Especifiqueu un nom de fitxer, o deixeu-lo en blanc per desactivar-lo."
+ core_statistics: "Fer un seguiment de les estadístiques d'ús de phpMussel? True/Cert = Sí; False/Fals = No [Predeterminat]."
+ core_time_format: "El format de notació de data/hora utilitzat per phpMussel. Es poden afegir opcions addicionals a petició."
+ core_time_offset: "Desplaçament de la zona horària en minuts."
+ core_timezone: "S'utilitza per especificar la zona horària a utilitzar (per exemple, Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, etc). Especifiqueu "SYSTEM" per tal que PHP ho gestioni automàticament."
+ core_truncate: "Tronqueu els fitxers de registre quan arribin a una mida determinada? El valor és la mida màxima en B/KB/MB/GB/TB que pot créixer un fitxer de registre abans de ser truncat. El valor predeterminat de 0KB desactiva el truncament (els fitxers de registre poden créixer indefinidament). Nota: S'aplica als fitxers de registre individuals! La mida dels fitxers de registre no es considera col·lectivament."
+ experimental: "Inestable/Experimental!"
+ files: "Les especificitats de com gestionar els fitxers en escanejar."
+ files_allow_leading_trailing_dots: "Permetre els punts inicials i finals als noms de fitxer? Això de vegades es pot utilitzar per ocultar fitxers o per enganyar alguns sistemes perquè permetin la travessa de directoris. False/Fals = No ho permetis [Predeterminat]. True/Cert = Permeteu-ho."
+ files_archive_file_extensions: "Extensions de fitxer d'arxiu reconegudes (el format és CSV; només s'han d'afegir o eliminar entrades quan es produeixin problemes; l'eliminació innecessària pot fer que apareguin falsos positius per als fitxers d'arxiu, mentre que les addicions innecessàries bàsicament inclouran a la llista blanca el que esteu afegint des de la detecció específica d'atac; modificar amb precaució; també tingueu en compte que això no té cap efecte sobre quins arxius es poden i no es poden analitzar a nivell de contingut). La llista, per predeterminat, enumera els formats que s'utilitzen amb més freqüència a la majoria de sistemes i CMS, però intencionadament no és necessàriament exhaustiva."
+ files_block_control_characters: "Bloquejar fitxers que continguin caràcters de control (que no siguin noves línies)? Si <strong><em>NOMÉS</em></strong> esteu penjant text sense format, podeu activar aquesta opció per proporcionar una protecció addicional al vostre sistema. Tanmateix, si pengeu qualsevol cosa que no sigui text sense format, activar-ho pot donar lloc a falsos positius. False/Fals = No bloquegis [Predeterminat]; True/Cert = Bloqueja."
+ files_block_encrypted_archives: "Detectar i bloquejar arxius xifrats? phpMussel no és capaç d'escanejar el contingut dels arxius xifrats, de manera que és possible que un atacant utilitzi el xifratge d'arxius com a mitjà per intentar evitar phpMussel, escàners antivirus i altres proteccions similars. Indicar a phpMussel que bloqueja els arxius que descobreix que estan xifrats podria ajudar a reduir qualsevol risc associat a aquestes possibilitats. False/Fals = No; True/Cert = Sí [Predeterminat]."
+ files_block_macros: "Bloquejar qualsevol fitxer que contingui macros? Alguns tipus de documents i fulls de càlcul poden contenir macros executables, proporcionant així un perillós vector de programari maliciós potencial. False/Fals = No bloquegis [Predeterminat]; True/Cert = Bloqueja."
+ files_can_contain_php_file_extensions: "Una llista d'extensions de fitxer que poden contenir codi PHP, separades per comes. Si la detecció d'atacs camaleònics PHP està activada, els fitxers que continguin codi PHP, que tinguin extensions que no figuren en aquesta llista, es detectaran com a atacs camaleònics PHP."
+ files_chameleon_from_exe: "Cerqueu capçaleres executables en fitxers que no siguin executables ni arxius reconeguts i executables les capçaleres dels quals siguin incorrectes. False/Fals = Desactivat; True/Cert = Activat."
+ files_chameleon_from_php: "Cerqueu capçaleres PHP en fitxers que no són ni fitxers PHP ni arxius reconeguts. False/Fals = Desactivat; True/Cert = Activat."
+ files_chameleon_to_archive: "Detecteu capçaleres incorrectes en arxius i fitxers comprimits. Suport: BZ/BZIP2, GZ/GZIP, LZF, RAR, ZIP. False/Fals = Desactivat; True/Cert = Activat."
+ files_chameleon_to_doc: "Cerqueu documents d'oficina les capçaleres dels quals siguin incorrectes (Suport: DOC, DOT, PPS, PPT, XLA, XLS, WIZ). False/Fals = Desactivat; True/Cert = Activat."
+ files_chameleon_to_img: "Cerqueu imatges les capçaleres de les quals siguin incorrectes (Suport: BMP, DIB, PNG, GIF, JPEG, JPG, XCF, PSD, PDD, WEBP). False/Fals = Desactivat; True/Cert = Activat."
+ files_chameleon_to_pdf: "Cerqueu fitxers PDF les capçaleres dels quals siguin incorrectes. False/Fals = Desactivat; True/Cert = Activat."
+ files_check_archives: "Comproveu el contingut dels arxius? False/Fals = No comproveu; True/Cert = Comproveu [Predeterminat]. Suport: Zip (requereix libzip), Tar, Rar (requereix l'extensió rar)."
+ files_corrupted_exe: "Fitxers danyats i errors d'anàlisi. False/Fals = Ignorar; True/Cert = Bloqueja [Predeterminat]. Detectar i bloquejar fitxers PE (executable portàtil) potencialment danyats? Sovint (però no sempre), quan determinats aspectes d'un fitxer PE estan danyats o no es poden analitzar correctament, pot ser indicatiu d'una infecció viral. Els processos que utilitzen la majoria dels programes antivirus per detectar virus en fitxers PE requereixen analitzar aquests fitxers de determinades maneres, que, si el programador d'un virus en té coneixement, intentarà específicament prevenir, per tal de permetre que el seu virus no es detecti."
+ files_decode_threshold: "Llindar per a la longitud de les dades en brut dins del qual s'han de detectar les ordres de descodificació (en cas que hi hagi problemes de rendiment notables durant l'escaneig). Predeterminat = 512KB. Zero o nul desactiva el llindar (eliminant qualsevol limitació d'aquest tipus basada en la mida del fitxer)."
+ files_filesize_archives: "Transferir la llista negra/blanca de la mida dels fitxers als continguts dels arxius? False/Fals = No (només llista grisa de tot); True/Cert = Sí [Predeterminat]."
+ files_filesize_limit: "Límit de mida del fitxer en KB. 65536 = 64MB [Predeterminat]; 0 = Sense límit (sempre a la llista grisa). S'accepta qualsevol valor numèric (positiu). Això pot ser útil quan la configuració de PHP limita la quantitat de memòria que pot contenir un procés o si la configuració de PHP limita la mida dels fitxers de càrrega."
+ files_filesize_response: "Què fer amb els fitxers que superen el límit de mida dels fitxers (si n'hi ha). False/Fals = Llista blanca; True/Cert = Llista negra [Predeterminat]."
+ files_filetype_archives: "Transferir la llista negra/blanca de tipus de fitxer als continguts dels arxius? False/Fals = No (només llista grisa de tot) [Predeterminat]; True/Cert = Sí."
+ files_filetype_blacklist: "Llista negra:"
+ files_filetype_greylist: "Llista grisa:"
+ files_filetype_whitelist: "Llista blanca:"
+ files_max_files_in_archives: "Nombre màxim de fitxers per escanejar des dels arxius abans d'avortar l'escaneig. Predeterminat = 0 (cap màxim)."
+ files_max_recursion: "Límit màxim de profunditat de recursivitat per als arxius. Predeterminat = 3."
+ files_only_allow_images: "Quan s'estableix com a true, qualsevol fitxer que trobi per l'escàner que no sigui imatges es marcarà immediatament, sense escanejar-los. Això pot ajudar a reduir el temps necessari per completar una escaneig en alguns casos. S'estableix com a fals de manera predeterminada."
+ files_scannable_threshold: "Llindar de la longitud de les dades en brut que phpMussel pot llegir i escanejar (en cas que hi hagi problemes de rendiment notables durant l'escaneig). Predeterminat = 32MB. Zero o nul desactiva el llindar. En general, aquest valor no hauria de ser inferior a la mida mitjana dels fitxers penjats que voleu i espereu rebre al vostre servidor o lloc web, no hauria de ser més que la directiva filesize_limit, i no hauria de ser més d'aproximadament una cinquena part de l'assignació total de memòria permesa concedida a PHP mitjançant el fitxer de configuració "php.ini". Aquesta directiva existeix per intentar evitar que phpMussel ocupi massa memòria (això impediria que pogués escanejar correctament fitxers per sobre d'una determinada mida de fitxer)."
+ frontend: "Configuració per al front-end."
+ frontend_custom_footer: "Inserir com a HTML a la part inferior de totes les pàgines del front-end. Això pot ser útil en cas que vulgueu incloure un avís legal, un enllaç de contacte, informació comercial, o similar a totes aquestes pàgines."
+ frontend_custom_header: "Inserir com a HTML al principi de totes les pàgines del front-end. Això pot ser útil en cas que vulgueu incloure un logotip de lloc web, una capçalera personalitzada, scripts, o similar a totes aquestes pàgines."
+ frontend_default_algo: "Defineix quin algorisme utilitzar per a totes les contrasenyes i sessions futures."
+ frontend_frontend_log: "Fitxer per registrar tots els intents d'iniciar sessió al front-end. Especifiqueu un nom de fitxer, o deixeu-lo en blanc per desactivar-lo."
+ frontend_magnification: "Ampliació de la font. Predeterminat = 1."
+ frontend_max_login_attempts: "Nombre màxim d'intents d'iniciar sessió al front-end. Predeterminat = 5."
+ frontend_numbers: "Com prefereixes que es mostrin els números? Seleccioneu l'exemple que us sembli més correcte."
+ frontend_theme: "L'estètica a utilitzar per al front-end de phpMussel."
+ legal: "Configuració per requisits legals."
+ legal_privacy_policy: "L'adreça d'una política de privadesa rellevant que es mostrarà al peu de qualsevol pàgina generada. Especifiqueu un URL, o deixeu-lo en blanc per desactivar-lo."
+ legal_pseudonymise_ip_addresses: "Pseudonimitzar les adreces IP en registrar dades? True/Cert = Sí [Predeterminat]; False/Fals = No."
+ quarantine: "Configuració per a la quarantena."
+ quarantine_quarantine_key: "phpMussel és capaç de posar en quarantena les càrregues de fitxers bloquejades, si això és una cosa que voleu que faci. Els usuaris ocasionals de phpMussel que simplement vulguin protegir els seus llocs web o l'entorn d'allotjament sense tenir cap interès a analitzar en profunditat els intents de càrrega de fitxers marcats haurien de deixar aquesta funcionalitat desactivada, però qualsevol usuari interessat en una anàlisi més detallada dels intents de càrrega de fitxers marcats per a la recerca de programari maliciós o per a coses semblants hauria d'activar aquesta funcionalitat. La quarantena dels intents de càrrega de fitxers marcats també pot ajudar a depurar falsos positius, si això us passa amb freqüència. Per desactivar la funcionalitat de quarantena, simplement deixeu la directiva <code>quarantine_key</code> buida, o esborreu el contingut d'aquesta directiva si encara no està buida. Per activar la funcionalitat de quarantena, introduïu algun valor a la directiva. La <code>quarantine_key</code> és una característica de seguretat important de la funcionalitat de quarantena requerida com a mitjà per evitar que els potencials atacants explotin la funcionalitat de quarantena i com a mitjà per evitar qualsevol execució potencial de dades emmagatzemades dins de la quarantena. La <code>quarantine_key</code> s'ha de tractar de la mateixa manera que les vostres contrasenyes: Com més llarg millor, i guardeu-lo amb força. Per obtenir el millor efecte, utilitzeu-lo juntament amb <code>delete_on_sight</code>."
+ quarantine_quarantine_max_files: "El nombre màxim de fitxers que poden existir a la quarantena. Quan s'afegeixen fitxers nous a la quarantena, si se supera aquest nombre, els fitxers antics s'eliminaran fins que la resta ja no superi aquest nombre. Predeterminat = 100."
+ quarantine_quarantine_max_filesize: "La mida màxima dels fitxers que es permeten posar en quarantena. Els fitxers més grans que el valor especificat NO es posaran en quarantena. Aquesta directiva és important com a mitjà per dificultar que qualsevol atacant potencial inundi la vostra quarantena amb dades no desitjades que puguin provocar un ús de dades fugaç al vostre servei d'allotjament. Predeterminat = 2MB."
+ quarantine_quarantine_max_usage: "L'ús màxim de memòria permès per a la quarantena. Si la memòria total utilitzada per la quarantena arriba a aquest valor, els fitxers en quarantena més antics s'eliminaran fins que la memòria total utilitzada ja no arribi a aquest valor. Aquesta directiva és important com a mitjà per dificultar que qualsevol atacant potencial inundi la vostra quarantena amb dades no desitjades que puguin provocar un ús de dades fugaç al vostre servei d'allotjament. Predeterminat = 64MB."
+ signatures: "Configuració de signatures, fitxers de signatures, etc."
+ signatures_active: "Una llista dels fitxers de signatura actius, delimitats per comes. Nota: Els fitxers de signatura primer s'han d'instal·lar abans de poder activar-los. Perquè els fitxers de prova funcionin correctament, cal instal·lar i activar els fitxers de signatura."
+ signatures_detect_adware: "phpMussel hauria d'analitzar les signatures per detectar adware? False/Fals = No; True/Cert = Sí [Predeterminat]."
+ signatures_detect_deface: "phpMussel hauria d'analitzar les signatures per detectar desfiguradors i alteracions de llocs web? False/Fals = No; True/Cert = Sí [Predeterminat]."
+ signatures_detect_encryption: "phpMussel hauria de detectar i bloquejar fitxers xifrats? False/Fals = No; True/Cert = Sí [Predeterminat]."
+ signatures_detect_joke_hoax: "phpMussel hauria d'analitzar les signatures per detectar malware/virus de broma/hoax? False/Fals = No; True/Cert = Sí [Predeterminat]."
+ signatures_detect_packer_packed: "phpMussel hauria d'analitzar les signatures per detectar empaquetadors i dades empaquetades? False/Fals = No; True/Cert = Sí [Predeterminat]."
+ signatures_detect_pua_pup: "phpMussel hauria d'analitzar signatures per detectar PUA/PUP? False/Fals = No; True/Cert = Sí [Predeterminat]."
+ signatures_detect_shell: "phpMussel hauria d'analitzar signatures per detectar scripts d'intèrpret d'ordres? False/Fals = No; True/Cert = Sí [Predeterminat]."
+ signatures_fail_extensions_silently: "phpMussel hauria d'informar quan falten extensions? Si <code>fail_extensions_silently</code> està desactivada, s'informarà de les extensions que falten en escanejar, i si s'activa <code>fail_extensions_silently</code>, s'ignoraran les extensions que faltin, i s'informarà d'escaneig per als fitxers que no hi hagi cap problema. La desactivació d'aquesta directiva pot augmentar la vostra seguretat, però també pot provocar un augment de falsos positius. False/Fals = Desactivat; True/Cert = Activat [Predeterminat]."
+ signatures_fail_silently: "phpMussel hauria d'informar quan els fitxers de signatura estan absents o danyats? Si <code>fail_silently</code> està desactivat, s'informarà dels fitxers absents i danyats durant l'escaneig, i si s'activa <code>fail_silently</code>, s'ignoraran els fitxers absents i danyats, amb informes d'escaneig per als fitxers que no hi hagi cap problema. En general, s'hauria de deixar en pau, excepte quan experimenteu bloquejos o problemes similars. False/Fals = Desactivat; True/Cert = Activat [Predeterminat]."
+ signatures_heuristic_threshold: "Algunes signatures de phpMussel estan destinades a identificar indicadors sospitosos i potencialment maliciosos als fitxers, sense identificar directament aquests fitxers com a maliciosos. Aquest valor llindar indica a phpMussel el pes màxim permès abans de marcar aquests fitxers com a maliciosos. La definició de pes en aquest context és el nombre total d'indicadors sospitosos i potencialment maliciosos identificats. Aquest valor s'establirà de manera predeterminada en 3. Un valor més baix generalment donarà lloc a una major presència de falsos positius, però un nombre més elevat de fitxers maliciosos marcats, mentre que un valor més alt generalment donarà lloc a una menor freqüència de falsos positius, però un nombre menor de fitxers maliciosos marcats. En general, és millor deixar-ho al seu valor predeterminat, excepte quan experimenteu problemes."
+ supplementary_cache_options: "Opcions de memòria addicionals. Nota: Si canvieu aquests valors, és possible que tanqueu la sessió."
+ supplementary_cache_options_enable_apcu: "Especifica si s'ha de provar d'utilitzar la memòria cau de APCu. Predeterminat = True."
+ supplementary_cache_options_enable_memcached: "Especifica si s'ha de provar d'utilitzar la memòria cau de Memcached. Predeterminat = False."
+ supplementary_cache_options_enable_pdo: "Especifica si s'ha de provar d'utilitzar PDO per gestionar la memòria cau. Predeterminat = False."
+ supplementary_cache_options_enable_redis: "Especifica si s'ha de provar d'utilitzar la memòria cau de Redis. Predeterminat = False."
+ supplementary_cache_options_memcached_host: "Valor de l'amfitrió de Memcached. Predeterminat = "localhost"."
+ supplementary_cache_options_memcached_port: "Valor del port de Memcached. Predeterminat = "11211"."
+ supplementary_cache_options_pdo_dsn: "Valor DSN PDO. Predeterminat = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+ supplementary_cache_options_pdo_password: "Contrasenya PDO."
+ supplementary_cache_options_pdo_username: "Nom d'usuari PDO."
+ supplementary_cache_options_prefix: "El valor especificat aquí s'afegirà davant de totes les claus d'entrada de la memòria cau. Predeterminat = "phpMussel_". Quan hi ha diverses instal·lacions al mateix servidor, això pot ser útil per mantenir les seves memòries cau separades les unes de les altres."
+ supplementary_cache_options_redis_database_number: "Número de base de dades Redis. Predeterminat = 0. Nota: No es poden utilitzar valors diferents de 0 amb Redis Cluster."
+ supplementary_cache_options_redis_host: "Valor de l'amfitrió de Redis. Predeterminat = "localhost"."
+ supplementary_cache_options_redis_port: "Valor del port de Redis. Predeterminat = "6379"."
+ supplementary_cache_options_redis_timeout: "Valor de temps d'espera de Redis. Predeterminat = "2.5"."
+ urlscanner: "Configuració de l'escàner d'URL."
+ urlscanner_cache_time: "Quant de temps (en segons) s'han d'emmagatzemar a la memòria cau els resultats de les cerques d'API? El valor predeterminat és de 3600 segons (1 hora)."
+ urlscanner_google_api_key: "Activa les cerques d'API a l'API de navegació segura de Google quan es defineix la clau d'API necessària."
+ urlscanner_maximum_api_lookups: "Nombre màxim permès de cerques d'API per realitzar per iteració d'escaneig individual. Com que cada cerca addicional de l'API augmentarà el temps total necessari per completar cada iteració d'escaneig, és possible que vulgueu estipular una limitació per tal d'agilitzar el procés d'escaneig. Quan s'estableix en 0, no s'aplicarà aquest nombre màxim permès. Valor predeterminat establert en 10."
+ urlscanner_maximum_api_lookups_response: "Què cal fer si se supera el nombre màxim permès de cerques d'API? False/Fals = No fer res (continuar processant) [Predeterminat]; True/Cert = Marcar/bloquejar el fitxer."
+ virustotal: "Configuració per a la integració de Virus Total."
+ virustotal_vt_public_api_key: "Opcionalment, phpMussel pot escanejar fitxers mitjançant l'API de Virus Total com una manera de proporcionar un nivell de protecció molt millorat contra virus, troians, programari maliciós i altres amenaces. L'escaneig de fitxers amb l'API de Virus Total normalment es desactiva, però es pot activar introduint la clau de l'API necessària de Virus Total. A causa de l'important benefici que això us pot proporcionar, us el recomano molt. Si us plau, tingueu en compte que per utilitzar l'API de Virus Total, <strong><em>HEU</em></strong> d'acceptar les seves Condicions de servei i <strong><em>HEU</em></strong> de complir totes les directrius tal com es descriu a la documentació de Virus Total! Podeu utilitzar aquesta funció d'integració NOMÉS si heu llegit i accepteu les Condicions del servei de Virus Total i la seva API. Heu llegit i enteneu, com a mínim, el preàmbul de la documentació de l'API de Virus Total Public (tot després de "VirusTotal Public API v2.0" però abans de "Contents")."
+ virustotal_vt_quota_rate: "Segons la documentació de l'API de Virus Total, es limita a un màxim de 4 sol·licituds de qualsevol naturalesa en un període de temps determinat d'1 minut. Si executeu un honeyclient, honeypot o qualsevol altra automatització que proporcionarà recursos a VirusTotal i no només recuperar informes, teniu dret a una quota de sol·licitud més alta. phpMussel s'adherirà estrictament a aquestes limitacions com a estàndard, però a causa de la possibilitat que aquestes quotes de tarifes s'augmentin, aquestes dues directives us proporcionen per indicar a phpMussel quin límit ha de complir. No es recomana que augmenteu aquests valors, excepte quan se us indiqui, però si us heu trobat amb problemes relacionats amb assolir la vostra quota de tarifes, disminuir aquests valors de vegades et pot ajudar a resoldre aquests problemes. El vostre límit de tarifa es determina com a <code>vt_quota_rate</code> sol·licituds de qualsevol naturalesa en un període de temps determinat de <code>vt_quota_time</code> minuts."
+ virustotal_vt_quota_time: "(Vegeu la descripció anterior)."
+ virustotal_vt_suspicion_level: "phpMussel restringirà els fitxers que escaneja mitjançant l'API de Virus Total als fitxers que consideri "sospitats". Opcionalment, podeu ajustar aquesta restricció canviant el valor de la directiva <code>vt_suspicion_level</code>."
+ virustotal_vt_weighting: "Ha d'aplicar phpMussel els resultats de l'escaneig mitjançant l'API Virus Total com a deteccions o com a ponderació de detecció? Aquesta directiva existeix perquè, tot i que escanejar un fitxer amb diversos motors (com ho fa Virus Total) hauria de comportar un augment de la taxa de detecció (i, per tant, en un nombre més gran de fitxers maliciosos capturats), també pot donar lloc a un major nombre de falsos positius, i per tant, en algunes circumstàncies, pot ser millor utilitzar els resultats de l'escaneig com a puntuació de confiança en lloc de com a conclusió definitiva. Si s'utilitza un valor de 0, els resultats de l'escaneig mitjançant l'API Virus Total s'aplicaran com a deteccions, i per tant, si algun motor utilitzat per Virus Total marca el fitxer que s'escaneja com a maliciós, phpMussel considerarà que el fitxer és maliciós. Si s'utilitza qualsevol altre valor, els resultats de l'escaneig mitjançant l'API Virus Total s'aplicaran com a ponderació de detecció, i per tant, el nombre de motors utilitzats per Virus Total que marquen el fitxer que s'escaneja com a maliciós servirà com a puntuació de confiança (o ponderació de detecció) per saber si el fitxer que s'escaneja ha de ser considerat maliciós per phpMussel (el valor utilitzat representarà la puntuació o el pes de confiança mínima requerida per ser considerat maliciós). El valor predeterminat és 0."
+confirm:
+ Action: "Esteu segur que voleu "%s"?"
+field:
+ 2FA code: "Codi 2FA"
+ Clear all: "Esborra-ho tot"
+ Confirm: "Confirmeu"
+ Create new account: "Crear un nou compte"
+ Delete account: "Suprimeix el compte"
+ Delete all: "Suprimeix tots"
+ Delete: "Suprimeix"
+ Download: "Descarregar"
+ False (False): "False (Fals)"
+ File: "Fitxer"
+ Latest version: "Última versió"
+ Log In: "Iniciar sessió"
+ More fields: "Més camps"
+ OK: "D'acord"
+ Options: "Opcions"
+ Password: "Contrasenya"
+ Permissions: "Permisos"
+ Quarantine key: "Clau de quarantena"
+ Reset: "Restableix"
+ Restore: "Restaurar"
+ Set new password: "Estableix una nova contrasenya"
+ True (True): "True (Cert)"
+ Update signature files: "Actualitzar els fitxers de signatura"
+ Update: "Actualitzeu-lo"
+ Use system default timezone: "Utilitzeu la zona horària predeterminada del sistema."
+ Username: "Nom d'usuari"
+ Your version: "El vostre versió"
+ log_rotation_archive: "Primer arxiveu i, a continuació, suprimiu els fitxers de registre més antics, fins que ja no es superi el límit."
+ log_rotation_delete: "Suprimeix els fitxers de registre més antics, fins que ja no es superi el límit."
+ size:
+  Total size: "Mida total:"
+  GB: "GB"
+  KB: "KB"
+  MB: "MB"
+  PB: "PB"
+  TB: "TB"
+  bytes:
+   - "byte"
+   - "bytes"
+ vt_suspicion_level_all: "Escaneja tots els fitxers."
+ vt_suspicion_level_executable: "Escaneja fitxers amb pes heurístic, fitxers executables, i fitxers que potencialment continguin dades executables.\nExemples de fitxers executables, i fitxers que potencialment continguin dades executables, inclouen fitxers PE de Windows, fitxers ELF de Linux, fitxers Mach-O, fitxers DOCX, fitxers ZIP, etc."
+ vt_suspicion_level_heuristic_only: "Escaneja només fitxers amb pes heurístic.\nEls fitxers només s'escanejaran si tenen un pes heurístic. El pes heurístic es pot incórrer a partir de signatures destinades a capturar empremtes dactilars comunes associades a una possible infecció que no necessàriament garanteixen la infecció. La cerca, en aquests casos, pot servir per proporcionar una segona opinió per als resultats que justifiquen sospita però que no proporcionen cap certesa."
+hints_logging_datetime: "Consell útil: Podeu adjuntar informació de data/hora als noms dels fitxers de registre utilitzant marcadors de posició de format d'hora. Els marcadors de posició de format d'hora disponibles es mostren a {{Links.ConfigRef.time_format}}."
+hints_pdo_dsn:
+ FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Què és un "PDO DSN"? Com puc utilitzar PDO amb phpMussel?</a></em>"
+hints_time_format: |
+ <strong><em>Marcador de posició – Explicació – Exemple basat en 2024-04-30T18:27:49+08:00.</em></strong><br />
+ <code class="s">{yyyy}</code> – L'any – Per exemple, 2024.<br />
+ <code class="s">{yy}</code> – L'any abreujat – Per exemple, 24.<br />
+ <code class="s">{Mon}</code> – El nom abreujat del mes (en anglès) – Per exemple, Apr.<br />
+ <code class="s">{mm}</code> – El mes amb zeros inicials – Per exemple, 04.<br />
+ <code class="s">{m}</code> – El mes – Per exemple, 4.<br />
+ <code class="s">{Day}</code> – El nom abreujat del dia (en anglès) – Per exemple, Tue.<br />
+ <code class="s">{dd}</code> – El dia amb zeros inicials – Per exemple, 30.<br />
+ <code class="s">{d}</code> – El dia – Per exemple, 30.<br />
+ <code class="s">{hh}</code> – L'hora amb zeros inicials (utilitza el temps de 24 hores) – Per exemple, 18.<br />
+ <code class="s">{h}</code> – L'hora (utilitza el temps de 24 hores) – Per exemple, 18.<br />
+ <code class="s">{ii}</code> – El minut amb zeros inicials – Per exemple, 27.<br />
+ <code class="s">{i}</code> – El minut – Per exemple, 27.<br />
+ <code class="s">{ss}</code> – El segon amb zeros inicials – Per exemple, 49.<br />
+ <code class="s">{s}</code> – El segon – Per exemple, 49.<br />
+ <code class="s">{tz}</code> – La zona horària (sense dos punts) – Per exemple, +0800.<br />
+ <code class="s">{t:z}</code> – La zona horària (amb dos punts) – Per exemple, +08:00.
+hints_xlists:
+ Com funciona això.: "Si el vostre sistema només permet penjar tipus específics de fitxers, o si el vostre sistema nega explícitament determinats tipus de fitxers, especificar aquests tipus de fitxers a llistes blanques, llistes negres, i llistes grises pot augmentar la velocitat a la qual es realitza l'escaneig permetent que l'script salti per sobre de determinats tipus de fitxer. El format és CSV (valors separats per comes)."
+ Ordre lògic de processament.: "Si el tipus de fitxer està a la llista blanca, no escanegeu i no bloquegeu el fitxer, i no comproveu el fitxer amb la llista negra o la llista grisa. Si el tipus de fitxer està a la llista negra, no escanegeu el fitxer, sinó que el bloquegeu igualment i no comproveu el fitxer amb la llista grisa. Si la llista grisa està buida o si la llista grisa no està buida i el tipus de fitxer està a la llista grisa, escanegeu el fitxer com és normal i determineu si voleu bloquejar-lo segons els resultats de l'escaneig, però si la llista grisa no està buida i el tipus de fitxer no està a la llista grisa, tracteu el fitxer com si estigués a la llista negra, per tant, no l'escanegeu sinó que el bloquegeu de totes maneres."
+Some useful links: |
+ Alguns enllaços útils:<br />
+     <ul class="pieul">
+       <li><span class="comCat">Eines, recursos, etc per a phpMussel.</span>
+         <ul class="comSub">
+           <li>{{Links.phpMussel.Issues}} – Pàgina de issues per a phpMussel (suport, assistència, etc).</li>
+           <li>{{Links.phpMussel.SigTool}} – Crea fitxers de signatures per a phpMussel utilitzant la base de dades de signatures de ClamAV.</li>
+           <li>{{Links.phpMussel.Extras}} – Diversos extres.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Eines, recursos, etc per a ClamAV.</span>
+         <ul class="comSub">
+           <li>{{Links.ClamavNet}} – Pàgina d'inici de ClamAV (ClamAV® és un motor antivirus de codi obert per detectar troians, virus, programari maliciós i altres amenaces malicioses).</li>
+           <li>{{Links.SecuriteInfo}} – Empresa de seguretat informàtica que ofereix signatures complementàries per ClamAV.</li>
+           <li>{{Links.Sanesecurity}} – Empresa de seguretat informàtica que ofereix signatures complementàries per ClamAV.</li>
+           <li>{{Links.Malware Expert}} – Ofereix signatures suplementàries per a ClamAV i regles suplementàries per a ModSecurity.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Grups, fòrums, comunitats, etc.</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Facebook}} – Recursos d'aprenentatge i discussió de PHP.</li>
+           <li>{{Links.MalwareTips}} – Fòrums de discussió útils centrats en programari maliciós.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Altres eines, recursos, serveis útils, etc.</span>
+         <ul class="comSub">
+           <li>{{Links.PhishTank}} – Base de dades de phishing utilitzada per l'escàner d'URL de phpMussel.</li>
+           <li>{{Links.VirusTotal}} – VirusTotal és un servei gratuït per analitzar fitxers i URL sospitosos.</li>
+           <li>{{Links.Hybrid Analysis}} – Hybrid Analysis és un servei gratuït d'anàlisi de programari maliciós proporcionat per {{Links.Payload Security}}.</li>
+           <li>{{Links.Malwarebytes}} – Especialistes en anti-malware informàtic.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Recursos informatius i d'aprenentatge.</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Website}} – Recursos d'aprenentatge i discussió de PHP.</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Taules de vulnerabilitats</a> – Llista les versions segures/insegures de diversos paquets (HHVM, PHP, phpMyAdmin, Python, etc).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Taules de compatibilitat</a> – Llista la informació de compatibilitat per a diversos paquets (CIDRAM, phpMussel, etc).</li>
+         </ul>
+       </li>
+     </ul>
+
+label:
+ %s is available (%s): "%s està disponible (%s)."
+ %s is available: "%s està disponible."
+ %s is not available: "%s no està disponible."
+ Active configuration file: "Fitxer de configuració actiu:"
+ Active signature files: "Fitxers de signatura actius"
+ Branch latest stable: "Branca darrera versió:"
+ Client information: "Informació del client:"
+ Complete access: "Accés complet"
+ Copy to clipboard: "Copiar al portapapers"
+ Default: "Predeterminat"
+ Expires: "Caduca:"
+ Extension: "Extensió"
+ External: "Extern"
+ Installed Available: "Instal·lat/Disponible"
+ Latest stable: "Últim estable:"
+ Latest unstable: "Últim inestable:"
+ Loading_: "Carregant..."
+ Logged in, 2FA pending: "Connectat, 2FA pendent."
+ Logged in: "Connectat."
+ Logged out: "Desconnectat."
+ Login: "Inici de sessió"
+ Logs access only: "Només accés als registres"
+ Never: "Mai"
+ No log file selected: "No s'ha seleccionat cap fitxer de registre."
+ No log files available: "No hi ha fitxers de registre disponibles."
+ Objects flagged: "Objectes marcats"
+ Objects scanned: "Objectes escanejats"
+ Operating system used: "Sistema operatiu utilitzat:"
+ Other: "Altres"
+ PHP version used: "Versió PHP utilitzada:"
+ Page request completed in %s seconds: "La sol·licitud de pàgina s'ha completat en %s segons."
+ Please log in to continue: "Inicieu sessió per continuar."
+ SAPI used: "SAPI utilitzat:"
+ Scan events: "Esdeveniments d'escaneig"
+ See also: "Vegeu també:"
+ Selected log file doesn_t exist: "El fitxer de registre seleccionat no existeix!"
+ Size in quarantine: "Mida en quarantena:"
+ Start date: "Data d'inici"
+ System information: "Informació del sistema:"
+ The cache is empty: "La memòria cau està buida."
+ Upload date: "Data de la càrrega:"
+ Upload hash: "Hash de la càrrega:"
+ Upload origin: "Origen de la càrrega:"
+ Upload size: "Mida de la càrrega:"
+ Uploads blocked: "Càrregues bloquejades"
+ Uploads quarantined: "Càrregues en quarantena"
+ Uploads scanned: "Càrregues escanejades"
+ Your IP: "El vostre IP:"
+ Your UA: "El vostre agent d'usuari:"
+ phpMussel version used: "Versió de phpMussel utilitzada:"
 warning:
  Cookies: "Nota: phpMussel utilitza una cookie per autenticar els inicis de sessió. En iniciar sessió, doneu el vostre consentiment perquè el vostre navegador creï i emmagatzemi una cookie."
  JavaScript required: "Avís: Algunes funcionalitats del front-end requereixen JavaScript. Per assegurar-vos que tot el front-end es comporta com s'esperava, es recomana activar JavaScript."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Gujarati language data (last modified: 2024.05.04).
+# This file: Gujarati language data (last modified: 2024.06.06).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -197,6 +197,101 @@ hints_time_format: |
  <code class="s">{s}</code> – સેકન્ડ – દા.ત., 49.<br />
  <code class="s">{tz}</code> – ટાઈમઝોન (કોલોન વગર) – દા.ત., +0800.<br />
  <code class="s">{t:z}</code> – ટાઈમઝોન (કોલોન સાથે) – દા.ત., +08:00.
+hints_xlists:
+ આ કેવી રીતે કામ કરે છે.: "જો તમારી સિસ્ટમ ફક્ત ચોક્કસ પ્રકારની ફાઇલોને અપલોડ કરવાની મંજૂરી આપે છે, અથવા જો તમારી સિસ્ટમ ચોક્કસ પ્રકારની ફાઇલોને સ્પષ્ટપણે નકારે છે, તો તે ફાઇલ પ્રકારોને વ્હાઇટલિસ્ટ્સમાં, બ્લેકલિસ્ટ્સમાં, અને ગ્રેલિસ્ટ્સમાં સ્પષ્ટ કરવાથી સ્કેનિંગની ઝડપ વધી શકે છે કારણ કે phpMussel પછી અમુક ફાઇલ પ્રકારોને પગલું છોડવા માટે સક્ષમ છે. ફોર્મેટ CSV (અલ્પવિરામથી અલગ કરેલ મૂલ્યો) છે."
+ પ્રક્રિયાનો તાર્કિક ક્રમ.: "જો ફાઇલ પ્રકાર વ્હાઇટલિસ્ટેડ છે, તો સ્કેન કરશો નહીં અને ફાઇલને અવરોધિત કરશો નહીં, અને બ્લેકલિસ્ટ અથવા ગ્રેલિસ્ટ સામે ફાઇલને તપાસશો નહીં. જો ફાઇલ પ્રકાર બ્લેકલિસ્ટેડ છે, તો ફાઇલને સ્કેન કરશો નહીં પરંતુ તેને કોઈપણ રીતે અવરોધિત કરો, અને ગ્રેલિસ્ટ સામે ફાઇલને તપાસશો નહીં. જો ગ્રેલિસ્ટ ખાલી હોય અથવા જો ગ્રેલિસ્ટ ખાલી ન હોય અને ફાઈલ ટાઈપ ગ્રેલિસ્ટેડ હોય, તો સામાન્ય પ્રમાણે ફાઈલ સ્કેન કરો અને સ્કેનનાં પરિણામોના આધારે તેને બ્લૉક કરવી કે નહીં તે નક્કી કરો, પરંતુ જો ગ્રેલિસ્ટ ખાલી ન હોય અને ફાઈલ ટાઈપ ગ્રેલિસ્ટેડ ન હોય, તો ફાઈલને બ્લેકલિસ્ટેડ માની લો, તેથી તેને સ્કેન ન કરો પરંતુ કોઈપણ રીતે તેને બ્લોક કરો."
+Some useful links: |
+ કેટલીક ઉપયોગી લિંક્સ:<br />
+     <ul class="pieul">
+       <li><span class="comCat">phpMussel માટે સાધનો, સંસાધનો, વગેરે.</span>
+         <ul class="comSub">
+           <li>{{Links.phpMussel.Issues}} – phpMussel માટે issues પૃષ્ઠ (આધાર, સહાય, વગેરે માટે).</li>
+           <li>{{Links.phpMussel.SigTool}} – ClamAV ના સિગ્નેચર ડેટાબેઝનો ઉપયોગ કરીને phpMussel માટે સિગ્નેચર ફાઇલો બનાવે છે.</li>
+           <li>{{Links.phpMussel.Extras}} – વિવિધ વધારાઓ.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">ClamAV માટે સાધનો, સંસાધનો, વગેરે.</span>
+         <ul class="comSub">
+           <li>{{Links.ClamavNet}} – ClamAV હોમપેજ (ClamAV® એ ટ્રોજન, વાયરસ, માલવેર અને અન્ય દૂષિત ધમકીઓને શોધવા માટે એક ઓપન-સોર્સ એન્ટિવાયરસ એન્જિન છે).</li>
+           <li>{{Links.SecuriteInfo}} – કમ્પ્યુટર સુરક્ષા કંપની કે જે ClamAV માટે પૂરક સિગ્નેચર ઓફર કરે છે.</li>
+           <li>{{Links.Sanesecurity}} – કમ્પ્યુટર સુરક્ષા કંપની કે જે ClamAV માટે પૂરક સિગ્નેચર ઓફર કરે છે.</li>
+           <li>{{Links.Malware Expert}} – ClamAV માટે પૂરક સિગ્નેચર અને ModSecurity માટે પૂરક નિયમો ઓફર કરે છે.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">જૂથો, ફોરમ, સમુદાયો, વગેરે.</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Facebook}} – PHP શીખવાના સંસાધનો અને ચર્ચા.</li>
+           <li>{{Links.MalwareTips}} – મૉલવેર પર કેન્દ્રિત ઉપયોગી ચર્ચા મંચો.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">અન્ય ઉપયોગી સાધનો, સંસાધનો, સેવાઓ, વગેરે.</span>
+         <ul class="comSub">
+           <li>{{Links.PhishTank}} – phpMussel URL સ્કેનર દ્વારા ઉપયોગમાં લેવાતો ફિશિંગ ડેટાબેઝ.</li>
+           <li>{{Links.VirusTotal}} – VirusTotal એ શંકાસ્પદ ફાઇલો અને URL નું વિશ્લેષણ કરવા માટેની મફત સેવા છે.</li>
+           <li>{{Links.Hybrid Analysis}} – હાઇબ્રિડ એનાલિસિસ એ {{Links.Payload Security}} દ્વારા પૂરી પાડવામાં આવતી મફત માલવેર વિશ્લેષણ સેવા છે.</li>
+           <li>{{Links.Malwarebytes}} – કમ્પ્યુટર વિરોધી માલવેર નિષ્ણાતો.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">માહિતીપ્રદ અને શીખવાના સંસાધનો.</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Website}} – PHP શીખવાના સંસાધનો અને ચર્ચા.</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">નબળાઈ ચાર્ટ્સ</a> – વિવિધ પેકેજોની (HHVM, PHP, phpMyAdmin, Python, વગેરે) સલામત અને અસુરક્ષિત આવૃત્તિઓની યાદી આપે છે.</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">સુસંગતતા ચાર્ટ્સ</a> – વિવિધ પેકેજો (CIDRAM, phpMussel, વગેરે) માટે સુસંગતતા માહિતીની યાદી આપે છે.</li>
+         </ul>
+       </li>
+     </ul>
+
+label:
+ %s is available (%s): "%s ઉપલબ્ધ છે (%s)."
+ %s is available: "%s ઉપલબ્ધ છે."
+ %s is not available: "%s ઉપલબ્ધ નથી."
+ Active configuration file: "સક્રિય રૂપરેખાંકન ફાઇલ:"
+ Active signature files: "સક્રિય સિગ્નેચર ફાઇલો"
+ Branch latest stable: "શાખા નવીનતમ સંસ્કરણ:"
+ Client information: "ગ્રાહક માહિતી:"
+ Complete access: "સંપૂર્ણ ઍક્સેસ"
+ Copy to clipboard: "ક્લિપબોર્ડ પર કૉપિ કરો"
+ Default: "ડિફૉલ્ટ"
+ Expires: "સમાપ્તિ:"
+ Extension: "વિસ્તરણ"
+ External: "બાહ્ય"
+ Installed Available: "ઇન્સ્ટોલ/ઉપલબ્ધ છે"
+ Latest stable: "નવીનતમ સ્થિર:"
+ Latest unstable: "નવીનતમ અસ્થિર:"
+ Loading_: "લોડ કરી રહ્યું છે..."
+ Logged in, 2FA pending: "લૉગ ઇન કર્યું, 2FA બાકી છે."
+ Logged in: "લૉગ ઇન કર્યું છે."
+ Logged out: "લૉગ આઉટ કર્યું છે."
+ Login: "લૉગિન"
+ Logs access only: "માત્ર લોગ એક્સેસ"
+ Never: "ક્યારેય ન"
+ No log file selected: "કોઈ લૉગ ફાઇલ પસંદ કરેલ નથી."
+ No log files available: "કોઈ લૉગ ફાઇલો ઉપલબ્ધ નથી."
+ Objects flagged: "ધ્વજાંકિત વસ્તુઓની સંખ્યા"
+ Objects scanned: "સ્કેન કરેલી વસ્તુઓની સંખ્યા"
+ Operating system used: "વપરાયેલ ઓપરેટિંગ સિસ્ટમ:"
+ Other: "અન્ય"
+ PHP version used: "વપરાયેલ PHP સંસ્કરણ:"
+ Page request completed in %s seconds: "પૃષ્ઠ વિનંતી %s સેકન્ડમાં પૂર્ણ થઈ."
+ Please log in to continue: "ચાલુ રાખવા માટે કૃપા કરીને લૉગ ઇન કરો."
+ SAPI used: "SAPI વપરાયેલ:"
+ Scan events: "સ્કેન ઇવેન્ટ્સ"
+ See also: "આ પણ જુઓ:"
+ Selected log file doesn_t exist: "પસંદ કરેલ લોગ ફાઇલ અસ્તિત્વમાં નથી!"
+ Size in quarantine: "સંસર્ગનિષેધમાં કદ:"
+ Start date: "પ્રારંભ તારીખ"
+ System information: "સિસ્ટમ માહિતી:"
+ The cache is empty: "કેશ ખાલી છે."
+ Upload date: "અપલોડ તારીખ:"
+ Upload hash: "અપલોડ હેશ:"
+ Upload origin: "અપલોડનું મૂળ:"
+ Upload size: "અપલોડ કદ:"
+ Uploads blocked: "અવરોધિત અપલોડ્સની સંખ્યા"
+ Uploads quarantined: "ક્વોરેન્ટાઇન કરાયેલ અપલોડની સંખ્યા"
+ Uploads scanned: "સ્કેન કરેલા અપલોડ્સની સંખ્યા"
+ Your IP: "તમારો IP:"
+ Your UA: "તમારા વપરાશકર્તા એજન્ટ:"
+ phpMussel version used: "phpMussel સંસ્કરણ વપરાયેલ:"
 warning:
  Cookies: "નૉૅધ: phpMussel લૉગિનને પ્રમાણિત કરવા માટે કૂકીનો ઉપયોગ કરે છે. લૉગ ઇન કરીને, તમે તમારા બ્રાઉઝર દ્વારા કૂકી બનાવવા અને સંગ્રહિત કરવા માટે તમારી સંમતિ આપો છો."
  JavaScript required: "ચેતવણી: ફ્રન્ટ-એન્ડના કેટલાક ભાગોને JavaScriptની જરૂર છે. સમગ્ર ફ્રન્ટ-એન્ડ અપેક્ષા મુજબ વર્તે તેની ખાતરી કરવા માટે, JavaScript ને સક્ષમ કરવાની ભલામણ કરવામાં આવે છે."
