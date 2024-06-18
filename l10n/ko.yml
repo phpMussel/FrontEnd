@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2024.05.04).
+# This file: Korean language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -299,7 +299,6 @@ link:
  Statistics: "통계"
  Text formatting: "텍스트 서식 지정\_: <a href="%1$sfalse">단순한</a> – <a href="%1$strue">공상</a>"
  Upload Testing: "업로드 테스트"
-max_login_attempts_exceeded: "로그인 시도 횟수를 초과했습니다; 액세스 거부."
 msg_subject_2fa: "2FA (이중 인증)"
 msg_template_2fa: |
  <center><p>안녕하세요, %s.<br /><br />
@@ -319,20 +318,23 @@ response:
  Account successfully deleted: "계정 삭제가 성공했습니다!"
  An account with that username already exists: "계정이 이미 존재합니다!"
  Configuration successfully updated: "구성 업데이트가 성공했습니다."
- Corrupted file: "복원하지 못했습니다! 손상된 파일!"
+ Corrupted file: "손상된 파일!"
  Failed to create: "만들지 못했습니다!"
  Failed to delete: "삭제에 실패했습니다!"
+ Failed to restore: "복원하지 못했습니다"
  Failed to update configuration: "구성을 업데이트하지 못했습니다!"
  Failed to update: "업데이트하지 못했습니다!"
  Failed: "실패했습니다"
  File successfully deleted: "파일 삭제가 성공했습니다!"
  File successfully restored: "파일이 성공적으로 복원되었습니다!"
  Incorrect 2FA code entered: "2FA 코드가 잘못 입력되었습니다. 인증 실패."
- Incorrect quarantine key: "복원하지 못했습니다! 잘못된 격리 키!"
+ Incorrect quarantine key: "잘못된 격리 키!"
  Invalid password: "로그인 실패! 잘못된 암호!"
+ Maximum number of login attempts exceeded: "로그인 시도 횟수를 초과했습니다; 액세스 거부."
  Password field empty: "암호가 비어 있습니다!"
  Password successfully updated: "암호 업데이트가 성공했습니다!"
  Permissions not adequate to perform asynchronous requests: "권한이 비동기 요청을 수행하기에 충분하지 않습니다. 다시 로그인하십시오."
+ Please enter a valid quarantine key: "유효한 격리 키를 입력하세요."
  Statistics cleared: "통계가 삭제되었습니다."
  Successfully authenticated: "성공적으로 인증되었습니다."
  That account doesn_t exist: "계정이 존재하지 않습니다."

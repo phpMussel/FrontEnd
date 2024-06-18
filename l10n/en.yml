@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2024.05.16).
+# This file: English language data (last modified: 2024.06.18).
 ##/
 
 checkbox:
@@ -313,7 +313,6 @@ link:
  Statistics: "Statistics"
  Text formatting: "Text formatting: <a href="%1$sfalse">Simple</a> – <a href="%1$strue">Fancy</a>"
  Upload Testing: "Upload Testing"
-max_login_attempts_exceeded: "Maximum number of login attempts exceeded; Access denied."
 msg_subject_2fa: "Two-Factor Authentication"
 msg_template_2fa: |
  <center><p>Hello, %s.<br /><br />
@@ -333,20 +332,23 @@ response:
  Account successfully deleted: "Account successfully deleted!"
  An account with that username already exists: "An account with that username already exists!"
  Configuration successfully updated: "Configuration successfully updated."
- Corrupted file: "Failed to restore! Corrupted file!"
+ Corrupted file: "Corrupted file!"
  Failed to create: "Failed to create!"
  Failed to delete: "Failed to delete!"
+ Failed to restore: "Failed to restore"
  Failed to update configuration: "Failed to update configuration!"
  Failed to update: "Failed to update!"
  Failed: "Failed"
  File successfully deleted: "File successfully deleted!"
  File successfully restored: "File successfully restored!"
  Incorrect 2FA code entered: "Incorrect 2FA code entered. Authentication failed."
- Incorrect quarantine key: "Failed to restore! Incorrect quarantine key!"
+ Incorrect quarantine key: "Incorrect quarantine key!"
  Invalid password: "Login failure! Invalid password!"
+ Maximum number of login attempts exceeded: "Maximum number of login attempts exceeded; Access denied."
  Password field empty: "Password field empty!"
  Password successfully updated: "Password successfully updated!"
  Permissions not adequate to perform asynchronous requests: "Permissions not adequate to perform asynchronous requests. Try logging in again."
+ Please enter a valid quarantine key: "Please enter a valid quarantine key."
  Statistics cleared: "Statistics cleared."
  Successfully authenticated: "Successfully authenticated."
  That account doesn_t exist: "That account doesn't exist."

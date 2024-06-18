@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2024.05.16).
+# This file: Polish language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -302,7 +302,6 @@ link:
  Statistics: "Statystyki"
  Text formatting: "Formatowanie tekstu: <a href="%1$sfalse">Prosty</a> – <a href="%1$strue">Fantazyjny</a>"
  Upload Testing: "Test przesyłania"
-max_login_attempts_exceeded: "Przekroczono maksymalną liczbę prób logowania; Dostęp zabroniony."
 msg_subject_2fa: "Uwierzytelnianie Dwuskładnikowe"
 msg_template_2fa: |
  <center><p>Cześć, %s.<br /><br />
@@ -322,20 +321,23 @@ response:
  Account successfully deleted: "Sukces usunięcie konta!"
  An account with that username already exists: "Konto o tej nazwie użytkownika już istnieje!"
  Configuration successfully updated: "Konfiguracja pomyślnie zaktualizowana."
- Corrupted file: "Niepowodzenie przywracania! Uszkodzony plik!"
+ Corrupted file: "Uszkodzony plik!"
  Failed to create: "Niepowodzenie stworzenie!"
  Failed to delete: "Niepowodzenie usuwania!"
+ Failed to restore: "Niepowodzenie przywracania"
  Failed to update configuration: "Niepowodzenie zaktualizować konfiguracji!"
  Failed to update: "Niepowodzenie aktualizacji!"
  Failed: "Niepowodzenie"
  File successfully deleted: "Sukces usunięcie pliku!"
  File successfully restored: "Sukces przywracania pliku!"
  Incorrect 2FA code entered: "Wprowadzono niepoprawny kod 2FA. Niepowodzenie uwierzytelnienia."
- Incorrect quarantine key: "Niepowodzenie przywracania! Niepoprawny klucz kwarantanny!"
+ Incorrect quarantine key: "Niepoprawny klucz kwarantanny!"
  Invalid password: "Logowanie nieudane! Nieprawidłowe hasło!"
+ Maximum number of login attempts exceeded: "Przekroczono maksymalną liczbę prób logowania; Dostęp zabroniony."
  Password field empty: "Pole hasła puste!"
  Password successfully updated: "Sukces aktualizacji hasła!"
  Permissions not adequate to perform asynchronous requests: "Uprawnienia niewystarczające do wykonywania żądań asynchronicznych. Spróbuj zalogować się ponownie."
+ Please enter a valid quarantine key: "Proszę wprowadzić prawidłowy klucz kwarantanny."
  Statistics cleared: "Statystyki wyczyszczone."
  Successfully authenticated: "Sukces uwierzytelnienia."
  That account doesn_t exist: "To konto nie istnieje."

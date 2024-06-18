@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2024.05.04).
+# This file: Japanese language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -299,7 +299,6 @@ link:
  Statistics: "統計"
  Text formatting: "テキスト・フォーマット： <a href="%1$sfalse">シンプル</a> – <a href="%1$strue">ファンシー</a>"
  Upload Testing: "アップロード・テスト"
-max_login_attempts_exceeded: "ログイン試行の最大回数を超えました；アクセス拒否。"
 msg_subject_2fa: "２ＦＡ（二要素認証）"
 msg_template_2fa: |
  <center><p>こんにちは、%s。<br /><br />
@@ -319,20 +318,23 @@ response:
  Account successfully deleted: "アカウントの削除が成功しました！"
  An account with that username already exists: "そのアカウントはすでに存在します！"
  Configuration successfully updated: "コンフィギュレーションの更新が成功しました。"
- Corrupted file: "復元に失敗しました！​破損したファイル！"
+ Corrupted file: "破損したファイル！"
  Failed to create: "作成に失敗しました！"
  Failed to delete: "削除に失敗しました！"
+ Failed to restore: "復元に失敗しました"
  Failed to update configuration: "コンフィギュレーションの更新に失敗しました！"
  Failed to update: "アップデートに失敗しました！"
  Failed: "失敗しました"
  File successfully deleted: "ファイルを削除が成功しました！"
  File successfully restored: "ファイルは正常に復元されました！"
  Incorrect 2FA code entered: "間違った２ＦＡコードが入力されました。認証に失敗しました。"
- Incorrect quarantine key: "復元に失敗しました！​検疫キーが間違っています！"
+ Incorrect quarantine key: "検疫キーが間違っています！"
  Invalid password: "ログイン失敗！​無効なパスワード！"
+ Maximum number of login attempts exceeded: "ログイン試行の最大回数を超えました；アクセス拒否。"
  Password field empty: "パスワード入力は空です！"
  Password successfully updated: "パスワードの更新が成功しました！"
  Permissions not adequate to perform asynchronous requests: "あなたのパーミッションは、非同期要求を実行するのに十分ではありません。​もう一度ログインしてみてください。"
+ Please enter a valid quarantine key: "有効な検疫キーを入力してください。"
  Statistics cleared: "統計はクリアされました。"
  Successfully authenticated: "認証に成功しました。"
  That account doesn_t exist: "そのアカウントは存在しません。"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese language data (last modified: 2024.05.16).
+# This file: Portuguese language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -321,7 +321,6 @@ link:
  Statistics: "Estatisticas"
  Text formatting: "Formatação de texto: <a href="%1$sfalse">Simples</a> – <a href="%1$strue">Chique</a>"
  Upload Testing: "Carregamento teste"
-max_login_attempts_exceeded: "Número máximo de tentativas de login foi excedido; Acesso negado."
 msg_subject_2fa: "Autenticação de dois fatores"
 msg_template_2fa: |
  <center><p>Olá, %s.<br /><br />
@@ -341,20 +340,23 @@ response:
  Account successfully deleted: "Conta deletada com sucesso!"
  An account with that username already exists: "Uma conta com esse nome já existe!"
  Configuration successfully updated: "Configuração atualizada com sucesso."
- Corrupted file: "Falha ao restaurar! Arquivo corrompido!"
+ Corrupted file: "Arquivo corrompido!"
  Failed to create: "Criação falhada!"
  Failed to delete: "Eliminação falhada!"
+ Failed to restore: "Falha ao restaurar"
  Failed to update configuration: "Falha ao atualizar a configuração!"
  Failed to update: "Atualização falhada!"
  Failed: "Falhou"
  File successfully deleted: "Arquivo deletado com sucesso!"
  File successfully restored: "Arquivo restaurado com sucesso!"
  Incorrect 2FA code entered: "Código 2FA incorreto inserido. Autenticação falhou."
- Incorrect quarantine key: "Falha ao restaurar! Chave de quarentena incorreta!"
+ Incorrect quarantine key: "Chave de quarentena incorreta!"
  Invalid password: "Falha no login! Senha inválida!"
+ Maximum number of login attempts exceeded: "Número máximo de tentativas de login foi excedido; Acesso negado."
  Password field empty: "Entrada de senha vazio!"
  Password successfully updated: "Senha atualizada com sucesso!"
  Permissions not adequate to perform asynchronous requests: "Permissões não adequadas para executar solicitações assíncronas. Tente fazer o login novamente."
+ Please enter a valid quarantine key: "Por favor, insira uma chave de quarentena válida."
  Statistics cleared: "Estatísticas apagadas."
  Successfully authenticated: "Autenticado com sucesso."
  That account doesn_t exist: "Essa conta não existe."

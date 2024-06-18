@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Farsi language data (last modified: 2024.05.04).
+# This file: Farsi language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -304,7 +304,6 @@ link:
  Statistics: "آمار"
  Text formatting: "قالب بندی متن: <a href="%1$sfalse">ساده</a> – <a href="%1$strue">فانتزی</a>"
  Upload Testing: "تست آپلود"
-max_login_attempts_exceeded: "از حداکثر تعداد تلاش برای ورود به سیستم بیشتر شد؛ دسترسی رد شد."
 msg_subject_2fa: "احراز هویت دو مرحله ای"
 msg_template_2fa: |
  <center><p>سلام، %s.<br /><br />
@@ -324,20 +323,23 @@ response:
  Account successfully deleted: "حساب با موفقیت حذف شد!"
  An account with that username already exists: "یک حساب کاربری با آن نام کاربری از قبل وجود دارد!"
  Configuration successfully updated: "پیکربندی با موفقیت به روز شد."
- Corrupted file: "بازیابی ناموفق بود! فایل خراب!"
+ Corrupted file: "فایل خراب!"
  Failed to create: "ایجاد ناموفق بود!"
  Failed to delete: "حذف ناموفق بود!"
+ Failed to restore: "بازیابی ناموفق بود"
  Failed to update configuration: "پیکربندی به روز نشد!"
  Failed to update: "به روز رسانی ناموفق بود!"
  Failed: "ناموفق بود"
  File successfully deleted: "فایل با موفقیت حذف شد!"
  File successfully restored: "فایل با موفقیت بازیابی شد!"
  Incorrect 2FA code entered: "کد 2FA اشتباه وارد شده است. احراز هویت ناموفق بود."
- Incorrect quarantine key: "بازیابی ناموفق بود! کلید قرنطینه نادرست!"
+ Incorrect quarantine key: "کلید قرنطینه نادرست!"
  Invalid password: "ورود ناموفق! رمز عبور نامعتبر!"
+ Maximum number of login attempts exceeded: "از حداکثر تعداد تلاش برای ورود به سیستم بیشتر شد؛ دسترسی رد شد."
  Password field empty: "فیلد رمز عبور خالی است!"
  Password successfully updated: "رمز عبور با موفقیت به روز شد!"
  Permissions not adequate to perform asynchronous requests: "مجوزها برای انجام درخواست های ناهمزمان کافی نیستند. سعی کنید دوباره وارد سیستم شوید."
+ Please enter a valid quarantine key: "لطفاً یک کلید قرنطینه معتبر وارد کنید."
  Statistics cleared: "آمار حذف شد."
  Successfully authenticated: "با موفقیت احراز هویت شد."
  That account doesn_t exist: "آن حساب وجود ندارد."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2024.05.16).
+# This file: Swedish language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -299,7 +299,6 @@ link:
  Statistics: "Statistik"
  Text formatting: "Textformatering: <a href="%1$sfalse%2$s">Enkel</a> – <a href="%1$strue%2$s">Fint</a>"
  Upload Testing: "Uppladdningssidan"
-max_login_attempts_exceeded: "Maximalt antal inloggningsförsök överskreds; Nekat tillgång."
 msg_subject_2fa: "Tvåfaktorsautentisering"
 msg_template_2fa: |
  <center><p>Hallå, %s.<br /><br />
@@ -319,20 +318,23 @@ response:
  Account successfully deleted: "Konto har raderats framgångsrikt!"
  An account with that username already exists: "Ett konto med det användarnamnet existerar redan!"
  Configuration successfully updated: "Konfigurationen har uppdaterats framgångsrikt."
- Corrupted file: "Restaurering misslyckades! Skadad fil!"
+ Corrupted file: "Skadad fil!"
  Failed to create: "Misslyckades med att skapa!"
  Failed to delete: "Misslyckades med att radera!"
+ Failed to restore: "Restaurering misslyckades"
  Failed to update configuration: "Det gick inte att uppdatera konfigurationen!"
  Failed to update: "Misslyckades med att uppdatera!"
  Failed: "Misslyckades"
  File successfully deleted: "Fil har raderats framgångsrikt!"
  File successfully restored: "Fil har restaurerats framgångsrikt!"
  Incorrect 2FA code entered: "Felaktig 2FA-kod inmatad. Autentisering misslyckades."
- Incorrect quarantine key: "Restaurering misslyckades! Felaktig karantännyckel!"
+ Incorrect quarantine key: "Felaktig karantännyckel!"
  Invalid password: "Inloggningsfel! Felaktigt lösenord!"
+ Maximum number of login attempts exceeded: "Maximalt antal inloggningsförsök överskreds; Nekat tillgång."
  Password field empty: "Lösenord fältet tomt!"
  Password successfully updated: "Lösenordet har uppdaterats framgångsrikt!"
  Permissions not adequate to perform asynchronous requests: "Behörigheter är inte tillräckliga för att utföra asynkrona förfrågningar. Försök logga in igen."
+ Please enter a valid quarantine key: "Snälla ange en giltig karantännyckel."
  Statistics cleared: "Statistik rensas."
  Successfully authenticated: "Succesfullt autentiserad."
  That account doesn_t exist: "Det kontot existerar inte."

@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The quarantine page (last modified: 2023.12.13).
+ * This file: The quarantine page (last modified: 2024.06.18).
  */
 
 namespace phpMussel\FrontEnd;
@@ -44,7 +44,7 @@ if (
         ) . '<br />';
     } elseif ($_POST['do'] === 'download-file' || $_POST['do'] === 'restore-file') {
         if (empty($_POST['qkey'])) {
-            $FE['state_msg'] .= '<code>' . $_POST['qfu'] . '</code> ' . $this->Loader->L10N->getString('response.Incorrect quarantine key') . '<br />';
+            $FE['state_msg'] .= '<code>' . $_POST['qfu'] . '</code> ' . $this->Loader->L10N->getString('response.Please enter a valid quarantine key') . '<br />';
         } else {
             /** Attempt to restore the file. */
             $Restored = $this->quarantineRestore($this->Loader->QuarantinePath . $_POST['qfu'], $_POST['qkey']);
@@ -67,10 +67,13 @@ if (
                 $FE['state_msg'] .= '<code>' . $_POST['qfu'] . '.restored</code> ' . $this->Loader->L10N->getString('response.File successfully restored') . '<br />';
             } elseif ($this->InstanceCache['RestoreStatus'] === 2) {
                 /** Corrupted file! */
-                $FE['state_msg'] .= '<code>' . $_POST['qfu'] . '</code> ' . $this->Loader->L10N->getString('response.Corrupted file') . '<br />';
-            } else {
+                $FE['state_msg'] .= '<code>' . $_POST['qfu'] . '</code> ' . $this->Loader->L10N->getString('response.Failed to restore') . ' – ' . $this->Loader->L10N->getString('response.Corrupted file') . '<br />';
+            } elseif ($this->InstanceCache['RestoreStatus'] === 3) {
                 /** Incorrect quarantine key! */
-                $FE['state_msg'] .= '<code>' . $_POST['qfu'] . '</code> ' . $this->Loader->L10N->getString('response.Incorrect quarantine key') . '<br />';
+                $FE['state_msg'] .= '<code>' . $_POST['qfu'] . '</code> ' . $this->Loader->L10N->getString('response.Failed to restore') . ' – ' . $this->Loader->L10N->getString('response.Incorrect quarantine key') . '<br />';
+            } else {
+                /** Invalid file! */
+                $FE['state_msg'] .= '<code>' . $_POST['qfu'] . '</code> ' . $this->Loader->L10N->getString('response.Failed to restore') . ' – ' . $this->Loader->L10N->getString('response.Invalid file') . '<br />';
             }
 
             /** Cleanup. */

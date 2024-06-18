@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2024.05.16).
+# This file: Malay language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -299,7 +299,6 @@ link:
  Statistics: "Statistik"
  Text formatting: "Pemformatan teks: <a href="%1$sfalse">Mudah</a> – <a href="%1$strue">Diformatkan</a>"
  Upload Testing: "Ujian muat naik"
-max_login_attempts_exceeded: "Bilangan maksimum percubaan untuk memasuki dicapai; Akses dinafikan."
 msg_subject_2fa: "Pengesahan Dua-Faktor"
 msg_template_2fa: |
  <center><p>Salam, %s.<br /><br />
@@ -319,20 +318,23 @@ response:
  Account successfully deleted: "Akaun berjaya dipadamkan!"
  An account with that username already exists: "Akaun dengan nama pengguna ini sudah wujud!"
  Configuration successfully updated: "Konfigurasi berjaya dikemas kini."
- Corrupted file: "Gagal dipulihkan! Fail rosak!"
+ Corrupted file: "Fail rosak!"
  Failed to create: "Gagal mencipta!"
  Failed to delete: "Gagal memadam!"
+ Failed to restore: "Gagal dipulihkan"
  Failed to update configuration: "Gagal mengemas kini konfigurasi!"
  Failed to update: "Gagal mengemas kini!"
  Failed: "Gagal"
  File successfully deleted: "Fail berjaya dipadamkan!"
  File successfully restored: "Fail berjaya dipulihkan!"
  Incorrect 2FA code entered: "Kod 2FA salah dimasukkan. Pengesahan gagal."
- Incorrect quarantine key: "Gagal dipulihkan! Kunci kuarantin salah!"
+ Incorrect quarantine key: "Kunci kuarantin salah!"
  Invalid password: "Kegagalan masuk! Kata laluan tidak sah!"
+ Maximum number of login attempts exceeded: "Bilangan maksimum percubaan untuk memasuki dicapai; Akses dinafikan."
  Password field empty: "Medan kata laluan kosong!"
  Password successfully updated: "Kata laluan berjaya dikemas kini!"
  Permissions not adequate to perform asynchronous requests: "Kebenaran tidak mencukupi untuk melaksanakan permintaan tak segerak. Cuba masuk semula."
+ Please enter a valid quarantine key: "Sila masukkan kunci kuarantin yang sah."
  Statistics cleared: "Statistik dikosongkan."
  Successfully authenticated: "Berjaya disahkan."
  That account doesn_t exist: "Akaun ini tidak wujud."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Galician language data (last modified: 2024.06.06).
+# This file: Galician language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -292,6 +292,50 @@ label:
  Your IP: "O teu IP:"
  Your UA: "O teu axente de usuario:"
  phpMussel version used: "Versión de phpMussel utilizada:"
+link:
+ Accounts: "Contas"
+ Cache Data: "Datos da caché"
+ Configuration: "Configuración"
+ Discussions: "Discusións"
+ Documentation: "Documentación"
+ Home: "Páxina de inicio"
+ Log Out: "Pechar sesión"
+ Logs: "Rexistros"
+ Quarantine: "Corentena"
+ Signature Information: "Información de sinaturas"
+ Statistics: "Estatísticas"
+ Text formatting: "Formato do texto: <a href="%1$sfalse">Sinxelo</a> – <a href="%1$strue">Fantasía</a>"
+ Upload Testing: "Proba de carga"
+msg_subject_2fa: "Autenticación de dous factores"
+msg_template_2fa: |
+ <center><p>Ola, %s.<br /><br />
+ O teu código de autenticación de dous factores para iniciar sesión na front-end de phpMussel:</p>
+ <h1>%s</h1>
+ <p>Este código caduca en 10 minutos.</p></center>
+previewer:
+ Days: "Días"
+ Hours: "Horas"
+ Minutes: "Minutos"
+ Months: "Meses"
+ Seconds: "Segundos"
+ Weeks: "Semanas"
+ Years: "Anos"
+response:
+ Account successfully created: "Conta creada con éxito!"
+ Account successfully deleted: "Conta eliminouse con éxito!"
+ An account with that username already exists: "Xa existe unha conta con ese nome de usuario!"
+ Configuration successfully updated: "Configuración actualizouse con éxito."
+ Corrupted file: "Ficheiro danado!"
+ Failed to create: "Fallou a creación!"
+ Failed to delete: "Fallou a eliminación!"
+ Failed to restore: "Fallou a restauración"
+ Failed to update configuration: "Fallou a actualización da configuración!"
+ Failed to update: "Fallou a actualización!"
+ Failed: "Fallou"
+ File successfully deleted: "O ficheiro eliminouse con éxito!"
+ File successfully restored: "O ficheiro restaurouse con éxito!"
+ Incorrect 2FA code entered: "Introduciuse un código 2FA incorrecto. Fallou a autenticación."
+ Incorrect quarantine key: "Chave de corentena incorrecta!"
 warning:
  Cookies: "Nota: phpMussel usa unha cookie para autenticar os inicios de sesión. Ao iniciar sesión, dás o teu consentimento para que o teu navegador cree e almacene unha cookie."
  JavaScript required: "Aviso: Algunhas funcións do front-end requiren JavaScript. Para garantir que todo o front-end se comporta como se espera, recoméndase activar JavaScript."

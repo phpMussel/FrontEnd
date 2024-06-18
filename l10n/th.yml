@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Thai language data (last modified: 2024.05.16).
+# This file: Thai language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -299,7 +299,6 @@ link:
  Statistics: "สถิติ"
  Text formatting: "การจัดรูปแบบข้อความ: <a href="%1$sfalse">ง่าย</a> – <a href="%1$strue">แฟนซี</a>"
  Upload Testing: "ทดสอบการอัปโหลด"
-max_login_attempts_exceeded: "จำนวนสูงสุดความพยายามเข้าสู่ระบบเกิน; ปฏิเสธการเข้าใช้."
 msg_subject_2fa: "2FA"
 msg_template_2fa: |
  <center><p>สวัสดี %s.<br /><br />
@@ -319,20 +318,23 @@ response:
  Account successfully deleted: "บัญชีสำเร็จแล้วลบ!"
  An account with that username already exists: "บัญชีด้วยนั่นเองชื่อผู้ใช้มีอยู่แล้ว!"
  Configuration successfully updated: "การกำหนดค่าสำเร็จแล้วอัปเดต."
- Corrupted file: "ไม่สามารถฟื้นฟู! ไฟล์ที่เสียหาย!"
+ Corrupted file: "ไฟล์ที่เสียหาย!"
  Failed to create: "ไม่สามารถสร้างได้!"
  Failed to delete: "ล้มเหลวลบ!"
+ Failed to restore: "ไม่สามารถฟื้นฟู"
  Failed to update configuration: "การอัปเดตการกำหนดค่าล้มเหลว!"
  Failed to update: "การอัพเดทล้มเหลว!"
  Failed: "ความล้มเหลว"
  File successfully deleted: "ไฟล์สำเร็จแล้วลบ!"
  File successfully restored: "ฟื้นฟูไฟล์สำเร็จแล้ว!"
  Incorrect 2FA code entered: "ป้อนรหัส 2FA ไม่ถูกต้อง รับรองความถูกต้องล้มเหลว."
- Incorrect quarantine key: "ไม่สามารถฟื้นฟู! คีย์กักกันไม่ถูกต้อง!"
+ Incorrect quarantine key: "คีย์กักกันไม่ถูกต้อง!"
  Invalid password: "ความล้มเหลวในการเข้าสู่ระบบ! รหัสผ่านไม่ถูกต้อง!"
+ Maximum number of login attempts exceeded: "จำนวนสูงสุดความพยายามเข้าสู่ระบบเกิน; ปฏิเสธการเข้าใช้."
  Password field empty: "รหัสผ่านฟิลด์ว่างเปล่า!"
  Password successfully updated: "รหัสผ่านสำเร็จแล้วอัปเดต!"
  Permissions not adequate to perform asynchronous requests: "สิทธิ์ไม่เพียงพอที่จะดำเนินการคำขอแบบอะซิงโครนัส. ลองเข้าสู่ระบบอีกครั้ง."
+ Please enter a valid quarantine key: "โปรดป้อนรหัสกักกันที่ถูกต้อง."
  Statistics cleared: "สถิติลบแล้ว."
  Successfully authenticated: "การตรวจสอบสิทธิ์ทำสำเร็จแล้ว."
  That account doesn_t exist: "บัญชีไม่มีอยู่จริง."

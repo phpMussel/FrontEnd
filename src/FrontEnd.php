@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2024.04.12).
+ * This file: Front-end handler (last modified: 2024.06.18).
  */
 
 namespace phpMussel\FrontEnd;
@@ -234,7 +234,7 @@ class FrontEnd
             ($Failed2FA >= $this->Loader->Configuration['frontend']['max_login_attempts'])
         )) {
             header('Content-Type: text/plain');
-            echo '[phpMussel] ' . $this->Loader->L10N->getString('max_login_attempts_exceeded');
+            echo '[phpMussel] ' . $this->Loader->L10N->getString('response.Maximum number of login attempts exceeded');
             return;
         }
 
@@ -1028,15 +1028,15 @@ class FrontEnd
         $this->InstanceCache['RestoreStatus'] = 1;
 
         /** Guard. */
-        if (!$File || !$Key) {
+        if ($File === '' || $Key === '') {
             return '';
         }
 
         /** Fetch data. */
         $Data = $this->Loader->readFile($File);
 
-        /** Fetch headers. */
-        if (($HeadPos = strpos($Data, "\xA1phpMussel\x21")) === false || (substr($Data, $HeadPos + 31, 1) !== "\1")) {
+        /** Guard against empty data and fetch headers. */
+        if ($Data === '' || ($HeadPos = strpos($Data, "\xA1phpMussel\x21")) === false || substr($Data, $HeadPos + 31, 1) !== "\1") {
             $this->InstanceCache['RestoreStatus'] = 2;
             return '';
         }

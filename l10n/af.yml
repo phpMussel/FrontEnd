@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2024.05.16).
+# This file: Afrikaans language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -301,7 +301,6 @@ link:
  Statistics: "Statistiek"
  Text formatting: "Teksformatering: <a href="%1$sfalse">Eenvoudige</a> – <a href="%1$strue">Fancy</a>"
  Upload Testing: "Oplaaitoetsing"
-max_login_attempts_exceeded: "Maksimum aantal intekenpogings oorskry; Toegang geweier."
 msg_subject_2fa: "Tweefaktor-verifikasie"
 msg_template_2fa: |
  <center><p>Hallo, %s.<br /><br />
@@ -321,20 +320,23 @@ response:
  Account successfully deleted: "Rekening suksesvol verwyderde!"
  An account with that username already exists: "Rekening met daardie gebruikersnaam bestaan reeds!"
  Configuration successfully updated: "Konfigurasie suksesvol opgedateer."
- Corrupted file: "Kon nie herstel nie! Korrupte lêer!"
+ Corrupted file: "Korrupte lêer!"
  Failed to create: "Kon nie skep nie!"
  Failed to delete: "Kon nie verwyder nie!"
+ Failed to restore: "Kon nie herstel nie"
  Failed to update configuration: "Kon nie konfigurasie opdateer nie!"
  Failed to update: "Kon nie opdateer nie!"
  Failed: "Misluk"
  File successfully deleted: "Lêer suksesvol verwyderde!"
  File successfully restored: "Lêer suksesvol herstel!"
  Incorrect 2FA code entered: "Verkeerde 2FA-kode ingevoer. Verifikasie misluk."
- Incorrect quarantine key: "Kon nie herstel nie! Verkeerde kwarantynsleutel!"
+ Incorrect quarantine key: "Verkeerde kwarantynsleutel!"
  Invalid password: "Intekening misluk! Ongeldige wagwoord!"
+ Maximum number of login attempts exceeded: "Maksimum aantal intekenpogings oorskry; Toegang geweier."
  Password field empty: "Wagwoord veld leeg!"
  Password successfully updated: "Wagwoord suksesvol opgedateer!"
  Permissions not adequate to perform asynchronous requests: "Toestemmings nie voldoende om asinchrone versoeke uit te voer nie. Probeer om weer in te teken."
+ Please enter a valid quarantine key: "Voer asseblief 'n geldige kwarantynsleutel in."
  Statistics cleared: "Statistiek uitgevee."
  Successfully authenticated: "Suksesvol geverifieer."
  That account doesn_t exist: "Daardie rekening bestaan nie."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bulgarian language data (last modified: 2024.05.16).
+# This file: Bulgarian language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -306,7 +306,6 @@ link:
  Statistics: "Статистика"
  Text formatting: "Форматиране на текст: <a href="%1$sfalse">Просто</a> – <a href="%1$strue">Изискано</a>"
  Upload Testing: "Тестване на качване"
-max_login_attempts_exceeded: "Превишен е максималният брой опити за влизане; Отказан достъп."
 msg_subject_2fa: "Двуфакторно удостоверяване"
 msg_template_2fa: |
  <center><p>Здравейте, %s.<br /><br />
@@ -326,20 +325,23 @@ response:
  Account successfully deleted: "Акаунтът е изтрит успешно!"
  An account with that username already exists: "Акаунт с това потребителско име вече съществува!"
  Configuration successfully updated: "Конфигурацията е актуализирана успешно."
- Corrupted file: "Неуспешно възстановяване! Повреден файл!"
+ Corrupted file: "Повреден файл!"
  Failed to create: "Неуспешно създаване!"
  Failed to delete: "Неуспешно изтриване!"
+ Failed to restore: "Неуспешно възстановяване"
  Failed to update configuration: "Неуспешно актуализиране на конфигурацията!"
  Failed to update: "Неуспешно актуализиране!"
  Failed: "Неуспешен"
  File successfully deleted: "Файлът е изтрит успешно!"
  File successfully restored: "Файлът е възстановен успешно!"
  Incorrect 2FA code entered: "Въведен е неправилен 2FA код. Неуспешно удостоверяване."
- Incorrect quarantine key: "Неуспешно възстановяване! Неправилен карантинен ключ!"
+ Incorrect quarantine key: "Неправилен карантинен ключ!"
  Invalid password: "Грешка при влизане! Невалидна парола!"
+ Maximum number of login attempts exceeded: "Превишен е максималният брой опити за влизане; Отказан достъп."
  Password field empty: "Полето за парола е празно!"
  Password successfully updated: "Паролата е актуализирана успешно!"
  Permissions not adequate to perform asynchronous requests: "Разрешенията не са подходящи за изпълнение на асинхронни заявки. Опитайте да влезете отново."
+ Please enter a valid quarantine key: "Моля, въведете валиден ключ за карантина."
  Statistics cleared: "Статистиката е изчистена."
  Successfully authenticated: "Успешно удостоверяване."
  That account doesn_t exist: "Този акаунт не съществува."

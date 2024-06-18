@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2024.05.16).
+# This file: Norwegian language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -299,7 +299,6 @@ link:
  Statistics: "Statistikk"
  Text formatting: "Tekstformatering: <a href="%1$sfalse">Enkel</a> – <a href="%1$strue">Fancy</a>"
  Upload Testing: "Opplastnings test"
-max_login_attempts_exceeded: "Maks antall påloggingsforsøk er overskredet; Tilgang nektet."
 msg_subject_2fa: "2FA (2-Faktorautentisering)"
 msg_template_2fa: |
  <center><p>Hallo, %s.<br /><br />
@@ -319,20 +318,23 @@ response:
  Account successfully deleted: "Kontoen slettet!"
  An account with that username already exists: "En konto med det brukernavnet eksisterer allerede!"
  Configuration successfully updated: "Konfigurasjon oppdatert."
- Corrupted file: "Kunne ikke gjenopprette! Ødelagt fil!"
+ Corrupted file: "Ødelagt fil!"
  Failed to create: "Opprettelsen mislyktes!"
  Failed to delete: "Sletting mislyktes!"
+ Failed to restore: "Kunne ikke gjenopprette"
  Failed to update configuration: "Kunne ikke oppdatere konfigurasjonen!"
  Failed to update: "Oppdatering mislyktes!"
  Failed: "Mislyktes"
  File successfully deleted: "Fil slettet!"
  File successfully restored: "Fil gjenopprettet!"
  Incorrect 2FA code entered: "Feil 2FA-kode angitt. Autentisering mislyktes."
- Incorrect quarantine key: "Kunne ikke gjenopprette! Ugyldig karantenenøkkel!"
+ Incorrect quarantine key: "Ugyldig karantenenøkkel!"
  Invalid password: "Innlogging mislyktes! Ugyldig passord!"
+ Maximum number of login attempts exceeded: "Maks antall påloggingsforsøk er overskredet; Tilgang nektet."
  Password field empty: "Passord-felt tomt!"
  Password successfully updated: "Passordet oppdatert!"
  Permissions not adequate to perform asynchronous requests: "Tillatelser ikke tilstrekkelig til å utføre asynkrone forespørsler. Prøv å logge inn igjen."
+ Please enter a valid quarantine key: "Vennligst skriv inn en gyldig karantenenøkkel."
  Statistics cleared: "Statistikk fjernet."
  Successfully authenticated: "Autentisering lyktes."
  That account doesn_t exist: "Den kontoen eksisterer ikke."

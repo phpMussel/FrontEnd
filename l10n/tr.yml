@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2024.05.04).
+# This file: Turkish language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -299,7 +299,6 @@ link:
  Statistics: "İstatistik"
  Text formatting: "Metin biçimlendirme: <a href="%1$sfalse">Basit</a> – <a href="%1$strue">Süslü</a>"
  Upload Testing: "Yükleme testi"
-max_login_attempts_exceeded: "Maksimum giriş denemesi aşıldı; Erişim reddedildi."
 msg_subject_2fa: "2FA (İki Faktörlü Kimlik Doğrulama)"
 msg_template_2fa: |
  <center><p>Merhaba, %s.<br /><br />
@@ -319,20 +318,23 @@ response:
  Account successfully deleted: "Hesap başarıyla silindi!"
  An account with that username already exists: "Bu kullanıcı adıyla bir hesap zaten var!"
  Configuration successfully updated: "Yapılandırma başarıyla güncellendi."
- Corrupted file: "Canlanamadı! Bozuk dosya!"
+ Corrupted file: "Bozuk dosya!"
  Failed to create: "Oluşturma başarısız!"
  Failed to delete: "Silme başarısız!"
+ Failed to restore: "Canlanamadı"
  Failed to update configuration: "Yapılandırma güncellenemedi!"
  Failed to update: "Güncelleme başarısız!"
  Failed: "Geçemedi"
  File successfully deleted: "Dosya başarıyla silindi!"
  File successfully restored: "Dosya başarıyla canlandırıldı!"
  Incorrect 2FA code entered: "Yanlış 2FA kodu girildi. Kimlik doğrulama başarısız oldu."
- Incorrect quarantine key: "Canlanamadı! Yanlış karantina anahtarı!"
+ Incorrect quarantine key: "Yanlış karantina anahtarı!"
  Invalid password: "Giriş başarısız! Geçersiz parola!"
+ Maximum number of login attempts exceeded: "Maksimum giriş denemesi aşıldı; Erişim reddedildi."
  Password field empty: "Parola alanı boş!"
  Password successfully updated: "Şifre başarıyla güncellendi!"
  Permissions not adequate to perform asynchronous requests: "İzinleriniz uyumsuz eşzamansız istekler gerçekleştirmek için yeterli değil. Tekrar giriş yapmayı deneyin."
+ Please enter a valid quarantine key: "Lütfen geçerli bir karantina anahtarı girin."
  Statistics cleared: "İstatistikler temizlendi."
  Successfully authenticated: "Başarıyla doğrulandı."
  That account doesn_t exist: "Bu hesap mevcut değil."

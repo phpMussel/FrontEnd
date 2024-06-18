@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data (last modified: 2024.05.16).
+# This file: Romanian language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -307,7 +307,6 @@ link:
  Statistics: "Statistici"
  Text formatting: "Formatarea textului: <a href="%1$sfalse">Simplu</a> – <a href="%1$strue">Extravagant</a>"
  Upload Testing: "Testarea încărcării"
-max_login_attempts_exceeded: "Numărul maxim de încercări de conectare a fost depășit; Acces refuzat."
 msg_subject_2fa: "Autentificare cu doi factori"
 msg_template_2fa: |
  <center><p>Buna ziua, %s.<br /><br />
@@ -327,20 +326,23 @@ response:
  Account successfully deleted: "Contul a fost șters cu succes!"
  An account with that username already exists: "Un cont cu acel nume de utilizator există deja!"
  Configuration successfully updated: "Configurația a fost actualizată cu succes."
- Corrupted file: "Restaurare a eșuat! Fișier corupt!"
+ Corrupted file: "Fișier corupt!"
  Failed to create: "Crearea a eșuat!"
  Failed to delete: "Ștergerea a eșuat!"
+ Failed to restore: "Restaurare a eșuat"
  Failed to update configuration: "Actualizarea configurației a eșuat!"
  Failed to update: "Actualizare a eșuat!"
  Failed: "A eșuat"
  File successfully deleted: "Fișierul a fost șters cu succes!"
  File successfully restored: "Fișierul a fost restaurat cu succes!"
  Incorrect 2FA code entered: "A fost introdus un cod 2FA incorect. Autentificare a eșuat."
- Incorrect quarantine key: "Restaurare a eșuat! Cheie de carantină incorectă!"
+ Incorrect quarantine key: "Cheie de carantină incorectă!"
  Invalid password: "Conectare a eșuat! Parolă invalidă!"
+ Maximum number of login attempts exceeded: "Numărul maxim de încercări de conectare a fost depășit; Acces refuzat."
  Password field empty: "Câmpul parolei este gol!"
  Password successfully updated: "Parola a fost actualizată cu succes!"
  Permissions not adequate to perform asynchronous requests: "Permisiunile nu sunt adecvate pentru a efectua solicitări asincrone. Încercați să vă conectați din nou."
+ Please enter a valid quarantine key: "Vă rugăm să introduceți o cheie de carantină validă."
  Statistics cleared: "Statisticile au fost șterse."
  Successfully authenticated: "Autentificat cu succes."
  That account doesn_t exist: "Acest cont nu există."

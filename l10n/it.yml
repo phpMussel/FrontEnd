@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2024.05.16).
+# This file: Italian language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -299,7 +299,6 @@ link:
  Statistics: "Statistiche"
  Text formatting: "Formattazione del testo: <a href="%1$sfalse">Semplice</a> – <a href="%1$strue">Formattato</a>"
  Upload Testing: "Carica testare"
-max_login_attempts_exceeded: "Numero massimo di tentativi di accesso superato; Accesso negato."
 msg_subject_2fa: "Autenticazione a due fattori"
 msg_template_2fa: |
  <center><p>Salve, %s.<br /><br />
@@ -319,20 +318,23 @@ response:
  Account successfully deleted: "Account eliminato con successo!"
  An account with that username already exists: "Un account con quel nome utente esiste già!"
  Configuration successfully updated: "Configurazione aggiornato con successo."
- Corrupted file: "Non riuscito a ripristinare! File corrotto!"
+ Corrupted file: "File è corrotto!"
  Failed to create: "Non è riuscito a creare!"
  Failed to delete: "Non è riuscito ad eliminare!"
+ Failed to restore: "Non è riuscito a ripristinare"
  Failed to update configuration: "Non è riuscito ad aggiornare la configurazione!"
  Failed to update: "Non è riuscito ad aggiornare!"
  Failed: "Fallito"
  File successfully deleted: "File eliminato con successo!"
  File successfully restored: "File ripristinato con successo!"
  Incorrect 2FA code entered: "Codice 2FA errato inserito. Autenticazione fallita."
- Incorrect quarantine key: "Non riuscito a ripristinare! La chiave di quarantena è errata!"
+ Incorrect quarantine key: "La chiave di quarantena è errata!"
  Invalid password: "Accedi non riuscito! Password non valida!"
+ Maximum number of login attempts exceeded: "Numero massimo di tentativi di accesso superato; Accesso negato."
  Password field empty: "L'input password era vuoto!"
  Password successfully updated: "Password aggiornato con successo!"
  Permissions not adequate to perform asynchronous requests: "Autorizzazioni non adeguate per eseguire richieste asincrone. Prova ad accedere di nuovo."
+ Please enter a valid quarantine key: "Per favore, inserisci una chiave di quarantena valida."
  Statistics cleared: "Statistiche revocate."
  Successfully authenticated: "Autenticato con successo."
  That account doesn_t exist: "Questo account non esiste."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Ukrainian language data (last modified: 2024.05.16).
+# This file: Ukrainian language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -307,7 +307,6 @@ link:
  Statistics: "Статистика"
  Text formatting: "Форматування тексту: <a href="%1$sfalse">Простий</a> – <a href="%1$strue">Фантазійний</a>"
  Upload Testing: "Тестування завантаження"
-max_login_attempts_exceeded: "Перевищено максимальну кількість спроб входу; Доступ заборонено."
 msg_subject_2fa: "Двофакторна автентифікація"
 msg_template_2fa: |
  <center><p>Привіт, %s.<br /><br />
@@ -327,20 +326,23 @@ response:
  Account successfully deleted: "Обліковий запис успішно видалено!"
  An account with that username already exists: "Обліковий запис із таким іменем користувача вже існує!"
  Configuration successfully updated: "Конфігурацію успішно оновлено."
- Corrupted file: "Помилка відновлення! Пошкоджений файл!"
+ Corrupted file: "Пошкоджений файл!"
  Failed to create: "Помилка створення!"
  Failed to delete: "Помилка видалення!"
+ Failed to restore: "Помилка відновлення"
  Failed to update configuration: "Не вдалося оновити конфігурацію!"
  Failed to update: "Помилка оновлення!"
  Failed: "Помилка"
  File successfully deleted: "Файл успішно видалено!"
  File successfully restored: "Файл успішно відновлено!"
  Incorrect 2FA code entered: "Введено неправильний код 2FA. Помилка автентифікації."
- Incorrect quarantine key: "Помилка відновлення! Неправильний ключ карантину!"
+ Incorrect quarantine key: "Неправильний ключ карантину!"
  Invalid password: "Помилка входу! Невірний пароль!"
+ Maximum number of login attempts exceeded: "Перевищено максимальну кількість спроб входу; Доступ заборонено."
  Password field empty: "Поле пароля порожнє!"
  Password successfully updated: "Пароль успішно оновлено!"
  Permissions not adequate to perform asynchronous requests: "Дозволи недостатні для виконання асинхронних запитів. Спробуйте увійти знову."
+ Please enter a valid quarantine key: "Будь ласка, введіть дійсний ключ карантину."
  Statistics cleared: "Статистика очищена."
  Successfully authenticated: "Успішно автентифіковано."
  That account doesn_t exist: "Такого облікового запису не існує."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2024.05.16).
+# This file: French language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -307,7 +307,6 @@ link:
  Statistics: "Statistiques"
  Text formatting: "Formatage du texte\_: <a href="%1$sfalse">Simple</a> – <a href="%1$strue">Formaté</a>"
  Upload Testing: "Test de Télécharger"
-max_login_attempts_exceeded: "Nombre maximal de tentatives de connexion excédée\_; Accès refusé."
 msg_subject_2fa: "Authentification à deux facteurs"
 msg_template_2fa: |
  <center><p>Bonjour, %s.<br /><br />
@@ -327,20 +326,23 @@ response:
  Account successfully deleted: "Compte supprimé avec succès\_!"
  An account with that username already exists: "Un compte avec ce nom d'utilisateur existe déjà\_!"
  Configuration successfully updated: "Configuration mis à jour avec succès."
- Corrupted file: "Échec de la restauration\_! Fichier corrompu\_!"
+ Corrupted file: "Fichier corrompu\_!"
  Failed to create: "Échec de création\_!"
  Failed to delete: "Échec du supprimer\_!"
+ Failed to restore: "Échec de la restauration"
  Failed to update configuration: "Échec de la mise à jour de la configuration\_!"
  Failed to update: "Échec de la mise à jour\_!"
  Failed: "Échoué"
  File successfully deleted: "Fichier supprimé avec succès\_!"
  File successfully restored: "Fichier restauré avec succès\_!"
  Incorrect 2FA code entered: "Code 2FA incorrect entré. Authentification échouée."
- Incorrect quarantine key: "Échec de la restauration\_! Clé de quarantaine incorrecte\_!"
+ Incorrect quarantine key: "Clé de quarantaine incorrecte\_!"
  Invalid password: "Erreur de connexion\_! Mot de passe incorrect\_!"
+ Maximum number of login attempts exceeded: "Nombre maximal de tentatives de connexion excédée\_; Accès refusé."
  Password field empty: "Mot de passe entrée était vide\_!"
  Password successfully updated: "Mot de passe mis à jour avec succès\_!"
  Permissions not adequate to perform asynchronous requests: "Les autorisations ne sont pas suffisantes pour effectuer des requêtes asynchrones. Essayez de vous reconnecter."
+ Please enter a valid quarantine key: "Veuillez saisir une clé de quarantaine valide."
  Statistics cleared: "Statistiques annulées."
  Successfully authenticated: "Authentifié avec succès."
  That account doesn_t exist: "Ce compte n'existe pas."

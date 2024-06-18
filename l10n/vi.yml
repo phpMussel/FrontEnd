@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2024.05.18).
+# This file: Vietnamese language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -299,7 +299,6 @@ link:
  Statistics: "Số liệu thống kê"
  Text formatting: "Định dạng văn bản: <a href="%1$sfalse">Đơn giản</a> – <a href="%1$strue">Đẹp</a>"
  Upload Testing: "Kiểm tra tải lên"
-max_login_attempts_exceeded: "Số lượng tối đa cố gắng đăng nhập đã bị vượt quá; Truy cập đã bị từ chối."
 msg_subject_2fa: "2FA (Xác thực hai yếu tố)"
 msg_template_2fa: |
  <center><p>Xin chào, %s.<br /><br />
@@ -319,20 +318,23 @@ response:
  Account successfully deleted: "Tài khoản xóa thành công!"
  An account with that username already exists: "Một tài khoản với tên người dùng này đã tồn tại!"
  Configuration successfully updated: "Cấu hình cập nhật thành công."
- Corrupted file: "Không thể khôi phục! Tập tin bị hỏng!"
+ Corrupted file: "Tập tin bị hỏng!"
  Failed to create: "Tạo ra không thành công!"
  Failed to delete: "Xóa không thành công!"
+ Failed to restore: "Không thể khôi phục"
  Failed to update configuration: "Không thể cập nhật cấu hình!"
  Failed to update: "Cập nhật không thành công!"
  Failed: "Thất bại"
  File successfully deleted: "Tập tin xóa thành công!"
  File successfully restored: "Tập tin khôi phục thành công!"
  Incorrect 2FA code entered: "Đã nhập mã 2FA không chính xác. Quá trình xác thực đã thất bại."
- Incorrect quarantine key: "Không thể khôi phục! Khóa kiểm dịch sai rồi!"
+ Incorrect quarantine key: "Khóa kiểm dịch sai rồi!"
  Invalid password: "Thất bại đăng nhập! Mật khẩu không hợp lệ!"
+ Maximum number of login attempts exceeded: "Số lượng tối đa cố gắng đăng nhập đã bị vượt quá; Truy cập đã bị từ chối."
  Password field empty: "Mật khẩu là trống!"
  Password successfully updated: "Mật khẩu cập nhật thành công!"
  Permissions not adequate to perform asynchronous requests: "Quyền không đủ để thực hiện các yêu cầu không đồng bộ. Hãy thử đăng nhập lại."
+ Please enter a valid quarantine key: "Vui lòng nhập khóa cách ly hợp lệ."
  Statistics cleared: "Thống kê đã được xóa."
  Successfully authenticated: "Đã xác thực thành công."
  That account doesn_t exist: "Tài khoản này không tồn tại."

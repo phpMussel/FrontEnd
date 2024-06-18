@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2024.05.04).
+# This file: Arabic language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -299,7 +299,6 @@ link:
  Statistics: "الإحصاء"
  Text formatting: "تنسيق النص: <a href="%1$sfalse">بسيط</a> – <a href="%1$strue">تهيئتها</a>"
  Upload Testing: "تحميل اختبار"
-max_login_attempts_exceeded: "تجاوز الحد الأقصى لعدد محاولات تسجيل الدخول؛ تم رفض الوصول."
 msg_subject_2fa: "2FA"
 msg_template_2fa: |
  <center><p>مرحبا، %s.<br /><br />
@@ -319,20 +318,23 @@ response:
  Account successfully deleted: "تم حذف الحساب بنجاح!"
  An account with that username already exists: "اسم المستخدم موجود بالفعل!"
  Configuration successfully updated: "تم تحديث التكوين بنجاح."
- Corrupted file: "أخفق الاستعادة! ملف معطوب!"
+ Corrupted file: "ملف معطوب!"
  Failed to create: "فشل في انشاء!"
  Failed to delete: "فشلت في حذف!"
+ Failed to restore: "أخفق الاستعادة"
  Failed to update configuration: "فشل تحديث التكوين!"
  Failed to update: "فشل التحديث!"
  Failed: "فشل"
  File successfully deleted: "ملف حذف بنجاح!"
  File successfully restored: "تمت استعادة الملف بنجاح!"
  Incorrect 2FA code entered: "تم إدخال رمز 2FA غير صحيح. المصادقة فشلت."
- Incorrect quarantine key: "أخفق الاستعادة! الحجر الصحي مفتاح غير صحيح!"
+ Incorrect quarantine key: "الحجر الصحي مفتاح غير صحيح!"
  Invalid password: "فشل تسجيل الدخول! كلمة السر غير صالحة!"
+ Maximum number of login attempts exceeded: "تجاوز الحد الأقصى لعدد محاولات تسجيل الدخول؛ تم رفض الوصول."
  Password field empty: "كلمه السر حقل فارغ!"
  Password successfully updated: "تم تحديث كلمه السر بنجاح!"
  Permissions not adequate to perform asynchronous requests: "أذونات غير كافية لأداء طلبات غير متزامنة. حاول تسجيل الدخول مرة أخرى."
+ Please enter a valid quarantine key: "الرجاء إدخال مفتاح عزل صالح."
  Statistics cleared: "تم مسح الإحصاءات."
  Successfully authenticated: "تمت المصادقة بنجاح."
  That account doesn_t exist: "حساب غير موجود."

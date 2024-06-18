@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Catalan language data (last modified: 2024.06.06).
+# This file: Catalan language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -292,6 +292,50 @@ label:
  Your IP: "El vostre IP:"
  Your UA: "El vostre agent d'usuari:"
  phpMussel version used: "Versió de phpMussel utilitzada:"
+link:
+ Accounts: "Comptes"
+ Cache Data: "Dades de la memòria cau"
+ Configuration: "Configuració"
+ Discussions: "Debats"
+ Documentation: "Documentació"
+ Home: "Pàgina d'inici"
+ Log Out: "Tancar sessió"
+ Logs: "Registres"
+ Quarantine: "Quarantena"
+ Signature Information: "Informació de signatures"
+ Statistics: "Estadístiques"
+ Text formatting: "Format del text: <a href="%1$sfalse">Senzill</a> – <a href="%1$strue">Luxós</a>"
+ Upload Testing: "Proves de càrrega"
+msg_subject_2fa: "Autenticació de dos factors"
+msg_template_2fa: |
+ <center><p>Hola, %s.<br /><br />
+ El vostre codi d'autenticació de dos factors per iniciar sessió al front-end de phpMussel:</p>
+ <h1>%s</h1>
+ <p>Aquest codi caduca en 10 minuts.</p></center>
+previewer:
+ Days: "Dies"
+ Hours: "Hores"
+ Minutes: "Minuts"
+ Months: "Mesos"
+ Seconds: "Segons"
+ Weeks: "Setmanes"
+ Years: "Anys"
+response:
+ Account successfully created: "Compte creat amb èxit!"
+ Account successfully deleted: "Compte suprimit amb èxit!"
+ An account with that username already exists: "Ja existeix un compte amb aquest nom d'usuari!"
+ Configuration successfully updated: "Configuració actualitzat amb èxit."
+ Corrupted file: "Fitxer malmès!"
+ Failed to create: "La creació ha fallat!"
+ Failed to delete: "L'eliminació ha fallat!"
+ Failed to restore: "La restauració ha fallat"
+ Failed to update configuration: "L'actualització de la configuració ha fallat!"
+ Failed to update: "L'actualització ha fallat!"
+ Failed: "Fallat"
+ File successfully deleted: "Fitxer suprimit amb èxit!"
+ File successfully restored: "Fitxer restaurat amb èxit!"
+ Incorrect 2FA code entered: "Introduït un codi 2FA incorrecte. L'autenticació ha fallat."
+ Incorrect quarantine key: "Clau de quarantena incorrecta!"
 warning:
  Cookies: "Nota: phpMussel utilitza una cookie per autenticar els inicis de sessió. En iniciar sessió, doneu el vostre consentiment perquè el vostre navegador creï i emmagatzemi una cookie."
  JavaScript required: "Avís: Algunes funcionalitats del front-end requereixen JavaScript. Per assegurar-vos que tot el front-end es comporta com s'esperava, es recomana activar JavaScript."

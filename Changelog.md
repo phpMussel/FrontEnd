@@ -189,3 +189,5 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 [2024.04.18; Maikuolan]: Added flexrow for dropdown menus with included input fields for other values at the configuration page.
 
 [2024.04.30~05.01; Maikuolan]: Added hints about time placeholders (e.g., `{yyyy}`, `{hh}`, etc) to the various configuration directives for logging.
+
+[2024.06.18; Maikuolan]: Slightly refactored some L10N data.

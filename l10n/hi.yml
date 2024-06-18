@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hindi language data (last modified: 2024.05.16).
+# This file: Hindi language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -301,7 +301,6 @@ link:
  Statistics: "सांख्यिकी"
  Text formatting: "पाठ स्वरूपण: <a href="%1$sfalse">बुनियादी</a> – <a href="%1$strue">स्वरूपित</a>"
  Upload Testing: "अपलोड टेस्ट"
-max_login_attempts_exceeded: "लॉगिन प्रयासों की अधिकतम संख्या पार हो गई; पहुंच अस्वीकृत।"
 msg_subject_2fa: "दो तरीकों से प्रमाणीकरण"
 msg_template_2fa: |
  <center><p>नमस्ते, %s।<br /><br />
@@ -321,20 +320,23 @@ response:
  Account successfully deleted: "खाता सफलतापूर्वक हटाया गया!"
  An account with that username already exists: "उस उपयोगकर्ता नाम के साथ एक खाता पहले से मौजूद है!"
  Configuration successfully updated: "कॉन्फ़िगरेशन सफलतापूर्वक अपडेट किया गया।"
- Corrupted file: "पुनर्स्थापित करने में विफल! दूषित फाइल!"
+ Corrupted file: "दूषित फाइल!"
  Failed to create: "बनाने में विफल!"
  Failed to delete: "हटाने में विफल!"
+ Failed to restore: "पुनर्स्थापित करने में विफल"
  Failed to update configuration: "कॉन्फ़िगरेशन अपडेट करने में विफल!"
  Failed to update: "अपडेट करने में विफल!"
  Failed: "असफलता"
  File successfully deleted: "सफलतापूर्वक फाइल हटाया गया!"
  File successfully restored: "फाइल को सफलतापूर्वक पुनर्स्थापित किया गया!"
  Incorrect 2FA code entered: "गलत 2FA कोड दर्ज किया गया। प्रमाणीकरण विफल होना।"
- Incorrect quarantine key: "पुनर्स्थापित करने में विफल! गलत संगरोध कुंजी!"
+ Incorrect quarantine key: "गलत संगरोध कुंजी!"
  Invalid password: "लॉगिन विफलता! अवैध पासवर्ड!"
+ Maximum number of login attempts exceeded: "लॉगिन प्रयासों की अधिकतम संख्या पार हो गई; पहुंच अस्वीकृत।"
  Password field empty: "पासवर्ड फ़ील्ड खाली है!"
  Password successfully updated: "पासवर्ड सफलतापूर्वक अपडेट किया गया!"
  Permissions not adequate to perform asynchronous requests: "अनुमतियाँ अतुल्यकालिक अनुरोध करने के लिए पर्याप्त नहीं हैं। फिर से लॉग इन करने का प्रयास करें"
+ Please enter a valid quarantine key: "कृपया वैध क्वारंटाइन कुंजी दर्ज करें।"
  Statistics cleared: "सांख्यिकी साफ है।"
  Successfully authenticated: "सफलतापूर्वक प्रमाणीकृत।"
  That account doesn_t exist: "वह खाता मौजूद नहीं है।"

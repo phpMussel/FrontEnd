@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data (last modified: 2024.05.04).
+# This file: Hebrew language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -301,7 +301,6 @@ link:
  Statistics: "סטטיסטיקה"
  Text formatting: "עיצוב טקסט: <a href="%1$sfalse">פשוט</a> – <a href="%1$strue">מפואר</a>"
  Upload Testing: "מבחן העלאה"
-max_login_attempts_exceeded: "חרג מהמספר המרבי של ניסיונות התחברות; גישה נדחתה."
 msg_subject_2fa: "אימות דו-גורמי"
 msg_template_2fa: |
  <center><p>שלום, %s.<br /><br />
@@ -321,20 +320,23 @@ response:
  Account successfully deleted: "החשבון נמחק בהצלחה!"
  An account with that username already exists: "חשבון עם שם משתמש זה כבר קיים!"
  Configuration successfully updated: "התצורה עודכנה בהצלחה."
- Corrupted file: "השחזור נכשל! קובץ פגום!"
+ Corrupted file: "קובץ פגום!"
  Failed to create: "היצירה נכשל!"
  Failed to delete: "המחיקה נכשל!"
+ Failed to restore: "השחזור נכשל"
  Failed to update configuration: "עדכון התצורה נכשל!"
  Failed to update: "העדכון נכשל!"
  Failed: "נכשל"
  File successfully deleted: "הקובץ נמחק בהצלחה!"
  File successfully restored: "הקובץ שוחזר בהצלחה!"
  Incorrect 2FA code entered: "הוזן קוד 2FA שגוי. אימות נכשל."
- Incorrect quarantine key: "השחזור נכשל! מפתח בידוד שגוי!"
+ Incorrect quarantine key: "מפתח בידוד שגוי!"
  Invalid password: "כישלון התחברות! סיסמה שגויה!"
+ Maximum number of login attempts exceeded: "חרג מהמספר המרבי של ניסיונות התחברות; גישה נדחתה."
  Password field empty: "שדה הסיסמה ריק!"
  Password successfully updated: "הסיסמה עודכנה בהצלחה!"
  Permissions not adequate to perform asynchronous requests: "ההרשאות אינן מתאימות לביצוע בקשות אסינכרוניות. נסה להיכנס שוב."
+ Please enter a valid quarantine key: "נא להזין מפתח הסגר חוקי."
  Statistics cleared: "הסטטיסטיקה נמחקה."
  Successfully authenticated: "הצלחת האימות."
  That account doesn_t exist: "החשבון הזה לא קיים."

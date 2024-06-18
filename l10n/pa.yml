@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Punjabi language data (last modified: 2024.05.04).
+# This file: Punjabi language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -299,7 +299,6 @@ link:
  Statistics: "ਅੰਕੜੇ"
  Text formatting: "ਟੈਕਸਟ ਫਾਰਮੈਟਿੰਗ: <a href="%1$sfalse">ਸਰਲ</a> – <a href="%1$strue">ਫੈਂਸੀ</a>"
  Upload Testing: "ਅਪਲੋਡ ਟੈਸਟਿੰਗ"
-max_login_attempts_exceeded: "ਲੌਗਇਨ ਕੋਸ਼ਿਸ਼ਾਂ ਦੀ ਅਧਿਕਤਮ ਸੰਖਿਆ ਵੱਧ ਗਈ ਹੈ; ਪਹੁੰਚ ਇਨਕਾਰ।"
 msg_subject_2fa: "ਦੋ-ਕਾਰਕ ਪ੍ਰਮਾਣਿਕਤਾ"
 msg_template_2fa: |
  <center><p>ਸਤਿ ਸ਼੍ਰੀ ਅਕਾਲ, %s।<br /><br />
@@ -319,20 +318,23 @@ response:
  Account successfully deleted: "ਖਾਤਾ ਸਫਲਤਾਪੂਰਵਕ ਮਿਟਾਇਆ ਗਿਆ!"
  An account with that username already exists: "ਉਸ ਉਪਭੋਗਤਾ ਨਾਮ ਵਾਲਾ ਖਾਤਾ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ!"
  Configuration successfully updated: "ਕੌਂਫਿਗਰੇਸ਼ਨ ਸਫਲਤਾਪੂਰਵਕ ਅੱਪਡੇਟ ਕੀਤੀ ਗਈ।"
- Corrupted file: "ਰੀਸਟੋਰ ਕਰਨ ਵਿੱਚ ਅਸਫਲ! ਖਰਾਬ ਫਾਈਲ!"
+ Corrupted file: "ਖਰਾਬ ਫਾਈਲ!"
  Failed to create: "ਬਣਾਉਣ ਵਿੱਚ ਅਸਫਲ!"
  Failed to delete: "ਮਿਟਾਉਣ ਵਿੱਚ ਅਸਫਲ!"
+ Failed to restore: "ਰੀਸਟੋਰ ਕਰਨ ਵਿੱਚ ਅਸਫਲ"
  Failed to update configuration: "ਕੌਂਫਿਗਰੇਸ਼ਨ ਅੱਪਡੇਟ ਕਰਨ ਵਿੱਚ ਅਸਫਲ!"
  Failed to update: "ਅੱਪਡੇਟ ਕਰਨ ਵਿੱਚ ਅਸਫਲ!"
  Failed: "ਅਸਫਲ"
  File successfully deleted: "ਫਾਈਲ ਸਫਲਤਾਪੂਰਵਕ ਮਿਟਾਈ ਗਈ!"
  File successfully restored: "ਫਾਈਲ ਸਫਲਤਾਪੂਰਵਕ ਰੀਸਟੋਰ ਕੀਤੀ ਗਈ!"
  Incorrect 2FA code entered: "ਗਲਤ 2FA ਕੋਡ ਦਾਖਲ ਕੀਤਾ ਗਿਆ। ਪ੍ਰਮਾਣੀਕਰਨ ਅਸਫਲ।"
- Incorrect quarantine key: "ਰੀਸਟੋਰ ਕਰਨ ਵਿੱਚ ਅਸਫਲ! ਗਲਤ ਕੁਆਰੰਟੀਨ ਕੁੰਜੀ!"
+ Incorrect quarantine key: "ਗਲਤ ਕੁਆਰੰਟੀਨ ਕੁੰਜੀ!"
  Invalid password: "ਲੌਗਇਨ ਅਸਫਲਤਾ! ਗਲਤ ਪਾਸਵਰਡ!"
+ Maximum number of login attempts exceeded: "ਲੌਗਇਨ ਕੋਸ਼ਿਸ਼ਾਂ ਦੀ ਅਧਿਕਤਮ ਸੰਖਿਆ ਵੱਧ ਗਈ ਹੈ; ਪਹੁੰਚ ਇਨਕਾਰ।"
  Password field empty: "ਪਾਸਵਰਡ ਖੇਤਰ ਖਾਲੀ ਹੈ!"
  Password successfully updated: "ਪਾਸਵਰਡ ਸਫਲਤਾਪੂਰਵਕ ਅੱਪਡੇਟ ਕੀਤਾ ਗਿਆ!"
  Permissions not adequate to perform asynchronous requests: "ਅਸਿੰਕ੍ਰੋਨਸ ਬੇਨਤੀਆਂ ਕਰਨ ਲਈ ਅਨੁਮਤੀਆਂ ਉਚਿਤ ਨਹੀਂ ਹਨ। ਦੁਬਾਰਾ ਲੌਗਇਨ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+ Please enter a valid quarantine key: "ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਵੈਧ ਕੁਆਰੰਟੀਨ ਕੁੰਜੀ ਦਾਖਲ ਕਰੋ।"
  Statistics cleared: "ਅੰਕੜੇ ਨੂੰ ਸਾਫ਼ ਕੀਤੇ ਗਏ।"
  Successfully authenticated: "ਸਫਲਤਾਪੂਰਵਕ ਪ੍ਰਮਾਣੀਕਰਨ ਕੀਤਾ ਗਿਆ।"
  That account doesn_t exist: "ਉਹ ਖਾਤਾ ਮੌਜੂਦ ਨਹੀਂ ਹੈ।"

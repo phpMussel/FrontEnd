@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Czech language data (last modified: 2024.05.16).
+# This file: Czech language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -302,7 +302,6 @@ link:
  Statistics: "Statistika"
  Text formatting: "Formátování textu: <a href="%1$sfalse">Jednoduchý</a> – <a href="%1$strue">Ozdobný</a>"
  Upload Testing: "Testování nahrání"
-max_login_attempts_exceeded: "Byl překročen maximální počet pokusů o přihlášení; Přístup odepřen."
 msg_subject_2fa: "Dvoufaktorová autentizace"
 msg_template_2fa: |
  <center><p>Ahoj, %s.<br /><br />
@@ -322,20 +321,23 @@ response:
  Account successfully deleted: "Účet byl úspěšně smazán!"
  An account with that username already exists: "Účet s tímto uživatelským jménem již existuje!"
  Configuration successfully updated: "Konfigurace byla úspěšně aktualizována."
- Corrupted file: "Obnovení se nezdařilo! Poškozený soubor!"
+ Corrupted file: "Poškozený soubor!"
  Failed to create: "Vytvoření se nezdařilo!"
  Failed to delete: "Smazání se nezdařilo!"
+ Failed to restore: "Obnovení se nezdařilo"
  Failed to update configuration: "Aktualizace konfigurace se nezdařila!"
  Failed to update: "Aktualizace se nezdařila!"
  Failed: "Selhání"
  File successfully deleted: "Soubor byl úspěšně smazán!"
  File successfully restored: "Soubor byl úspěšně obnoven!"
  Incorrect 2FA code entered: "Zadali jste nesprávný kód 2FA. Autentizace se nezdařila."
- Incorrect quarantine key: "Obnovení se nezdařilo! Nesprávný karanténní klíč!"
+ Incorrect quarantine key: "Nesprávný karanténní klíč!"
  Invalid password: "Přihlášení se nezdařilo! Neplatné heslo!"
+ Maximum number of login attempts exceeded: "Byl překročen maximální počet pokusů o přihlášení; Přístup odepřen."
  Password field empty: "Pole hesla prázdné!"
  Password successfully updated: "Heslo bylo úspěšně aktualizováno!"
  Permissions not adequate to perform asynchronous requests: "Oprávnění nejsou dostatečná pro provádění asynchronních požadavků. Zkuste se znovu přihlásit."
+ Please enter a valid quarantine key: "Zadejte prosím platný karanténní klíč."
  Statistics cleared: "Statistiky vymazány."
  Successfully authenticated: "Autentizace byla úspěšná."
  That account doesn_t exist: "Ten účet neexistuje."

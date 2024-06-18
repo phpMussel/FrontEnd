@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (simplified) language data (last modified: 2024.05.04).
+# This file: Chinese (simplified) language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -151,7 +151,7 @@ field:
  Options: "选项"
  Password: "密码"
  Permissions: "权限"
- Quarantine key: "隔离钥匙"
+ Quarantine key: "隔离密钥"
  Reset: "重启"
  Restore: "恢复"
  Set new password: "保存新密码"
@@ -300,7 +300,6 @@ link:
  Statistics: "统计"
  Text formatting: "文字格式： <a href="%1$sfalse">简单</a> – <a href="%1$strue">漂亮</a>"
  Upload Testing: "上传测试"
-max_login_attempts_exceeded: "最大登录尝试次数已经超过；拒绝访问。"
 msg_subject_2fa: "2FA（双因素身份验证）"
 msg_template_2fa: |
  <center><p>你好，%s。<br /><br />
@@ -320,20 +319,23 @@ response:
  Account successfully deleted: "帐户成功删除！"
  An account with that username already exists: "一个帐户与那个用户名已经存在！"
  Configuration successfully updated: "配置成功更新。"
- Corrupted file: "无法恢复！损坏的文件！"
+ Corrupted file: "损坏的文件！"
  Failed to create: "无法创建！"
  Failed to delete: "无法删除！"
+ Failed to restore: "无法恢复"
  Failed to update configuration: "配置更新失败！"
  Failed to update: "无法更新！"
  Failed: "失败"
  File successfully deleted: "文件成功删除！"
  File successfully restored: "文件成功恢复！"
  Incorrect 2FA code entered: "输入了错误的2FA代码。验证失败。"
- Incorrect quarantine key: "无法恢复！不正确的隔离钥匙！"
+ Incorrect quarantine key: "不正确的隔离密钥！"
  Invalid password: "登录失败！​密码无效！"
+ Maximum number of login attempts exceeded: "最大登录尝试次数已经超过；拒绝访问。"
  Password field empty: "密码输入是空的！"
  Password successfully updated: "密码成功更新！"
  Permissions not adequate to perform asynchronous requests: "权限不足以执行异步请求。尝试再次登录。"
+ Please enter a valid quarantine key: "请输入有效的隔离密钥。"
  Statistics cleared: "统计删除。"
  Successfully authenticated: "验证成功。"
  That account doesn_t exist: "那个帐户不存在。"

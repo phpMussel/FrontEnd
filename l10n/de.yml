@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data (last modified: 2024.05.16).
+# This file: German language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -297,7 +297,6 @@ link:
  Statistics: "Statistiken"
  Text formatting: "Textformatierung: <a href="%1$sfalse">Einfach</a> – <a href="%1$strue">Schick</a>"
  Upload Testing: "Upload-Prüfung"
-max_login_attempts_exceeded: "Maximale Anzahl der Versucht zu einloggen überschritten; Zugriff verweigert."
 msg_subject_2fa: "Zwei-Faktor-Authentifizierung"
 msg_template_2fa: |
  <center><p>Hallo, %s.<br /><br />
@@ -317,20 +316,23 @@ response:
  Account successfully deleted: "Konto erfolgreich gelöscht!"
  An account with that username already exists: "Ein Konto mit diesem Benutzernamen ist bereits vorhanden!"
  Configuration successfully updated: "Konfiguration erfolgreich aktualisiert."
- Corrupted file: "Fehler beim Wiederherstellen! Beschädigte Datei!"
+ Corrupted file: "Beschädigte Datei!"
  Failed to create: "Erstellung fehlgeschlagen!"
- Failed to delete: "Löschen fehlgeschlagen!"
+ Failed to delete: "Löschung fehlgeschlagen!"
+ Failed to restore: "Fehler beim Wiederherstellen"
  Failed to update configuration: "Aktualisierung der Konfiguration fehlgeschlagen!"
  Failed to update: "Aktualisierung fehlgeschlagen!"
  Failed: "Nicht bestanden"
  File successfully deleted: "Datei erfolgreich gelöscht!"
  File successfully restored: "Datei erfolgreich wiederhergestellt!"
  Incorrect 2FA code entered: "Falscher 2FA-Code eingegeben. Authentifizierung fehlgeschlagen."
- Incorrect quarantine key: "Fehler beim Wiederherstellen! Falscher Quarantäneschlüssel!"
+ Incorrect quarantine key: "Falscher Quarantäneschlüssel!"
  Invalid password: "Einloggen-Fehler! Ungültiges Passwort!"
+ Maximum number of login attempts exceeded: "Maximale Anzahl der Versucht zu einloggen überschritten; Zugriff verweigert."
  Password field empty: "Passwort-Feld leer!"
  Password successfully updated: "Passwort erfolgreich aktualisiert!"
  Permissions not adequate to perform asynchronous requests: "Berechtigungen sind nicht ausreichend, um asynchrone Anforderungen auszuführen. Versuchen Sie sich erneut anzumelden."
+ Please enter a valid quarantine key: "Bitte geben Sie einen gültigen Quarantäneschlüssel ein."
  Statistics cleared: "Statistiken gelöscht."
  Successfully authenticated: "Erfolgreich authentifiziert."
  That account doesn_t exist: "Dieses Konto existiert nicht."

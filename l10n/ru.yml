@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Russian language data (last modified: 2024.05.04).
+# This file: Russian language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -307,7 +307,6 @@ link:
  Statistics: "Статистика"
  Text formatting: "Форматирование текста: <a href="%1$sfalse">Просто</a> – <a href="%1$strue">Маскарадный</a>"
  Upload Testing: "Тестовая загрузка"
-max_login_attempts_exceeded: "Максимальное количество попыток входа в систему был превышен; Доступ закрыт."
 msg_subject_2fa: "Двухфакторная аутентификация"
 msg_template_2fa: |
  <center><p>Привет, %s.<br /><br />
@@ -327,20 +326,23 @@ response:
  Account successfully deleted: "Аккаунт успешно удален!"
  An account with that username already exists: "Аккаунт с таким именем уже существует!"
  Configuration successfully updated: "Конфигурация успешно обновлено."
- Corrupted file: "Не удалось восстановить! Поврежденный файл!"
+ Corrupted file: "Поврежденный файл!"
  Failed to create: "Не удалось создать!"
  Failed to delete: "Не удалось удалить!"
+ Failed to restore: "Не удалось восстановить"
  Failed to update configuration: "Не удалось обновить конфигурацию!"
  Failed to update: "Не удалось обновить!"
  Failed: "Не удалось"
  File successfully deleted: "Файл успешно удален!"
  File successfully restored: "Файл успешно восстановлен!"
  Incorrect 2FA code entered: "Введен неправильный код 2FA. Ошибка аутентификации."
- Incorrect quarantine key: "Не удалось восстановить! Неправильный карантинный ключ!"
+ Incorrect quarantine key: "Неправильный карантинный ключ!"
  Invalid password: "Войти провал! Неверный пароль!"
+ Maximum number of login attempts exceeded: "Максимальное количество попыток входа в систему был превышен; Доступ закрыт."
  Password field empty: "Пароль пусто!"
  Password successfully updated: "Пароль успешно обновлено!"
  Permissions not adequate to perform asynchronous requests: "Разрешения не подходят для выполнения асинхронных запросов. Попробуйте снова войти в систему."
+ Please enter a valid quarantine key: "Пожалуйста, введите действительный карантинный ключ."
  Statistics cleared: "Статистика очищена."
  Successfully authenticated: "Успешный аутентификации."
  That account doesn_t exist: "Эта аккаунт не существует."

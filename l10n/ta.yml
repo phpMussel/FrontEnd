@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Tamil language data (last modified: 2024.05.04).
+# This file: Tamil language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -301,7 +301,6 @@ link:
  Statistics: "புள்ளியியல்"
  Text formatting: "உரை வடிவமைத்தல்: <a href="%1$sfalse">எளிமையானது</a> – <a href="%1$strue">ஆடம்பரமான</a>"
  Upload Testing: "பதிவேற்ற சோதனை"
-max_login_attempts_exceeded: "உள்நுழைவு முயற்சிகளின் அதிகபட்ச எண்ணிக்கை மீறியது; அணுகல் மறுக்கப்பட்டது."
 msg_subject_2fa: "இரண்டு காரணி அங்கீகார"
 msg_template_2fa: |
  <center><p>வணக்கம், %s.<br /><br />
@@ -321,20 +320,23 @@ response:
  Account successfully deleted: "கணக்கு வெற்றிகரமாக நீக்கப்பட்டது!"
  An account with that username already exists: "அந்த பயனர்பெயருடன் ஒரு கணக்கு ஏற்கனவே உள்ளது!"
  Configuration successfully updated: "உள்ளமைவு வெற்றிகரமாக புதுப்பிக்கப்பட்டது."
- Corrupted file: "மீட்டெடுப்பதில் தோல்வி! சிதைந்த கோப்பு!"
+ Corrupted file: "சிதைந்த கோப்பு!"
  Failed to create: "உருவாக்கத்தில் தோல்வி!"
  Failed to delete: "நீக்குவதில் தோல்வி!"
+ Failed to restore: "மீட்டெடுப்பதில் தோல்வி"
  Failed to update configuration: "உள்ளமைவைப் புதுப்பிக்க முடியவில்லை!"
  Failed to update: "புதுப்பிப்பதில் தோல்வி!"
  Failed: "தோல்வி"
  File successfully deleted: "கோப்பு வெற்றிகரமாக நீக்கப்பட்டது!"
  File successfully restored: "கோப்பு வெற்றிகரமாக மீட்டெடுக்கப்பட்டது!"
  Incorrect 2FA code entered: "தவறான 2FA குறியீடு உள்ளிடப்பட்டது. அங்கீகரிப்பு தோல்வியுற்றது."
- Incorrect quarantine key: "மீட்டெடுப்பதில் தோல்வி! தவறான தனிமைப்படுத்தப்பட்ட விசை!"
+ Incorrect quarantine key: "தவறான தனிமைப்படுத்தப்பட்ட விசை!"
  Invalid password: "உள்நுழைவு தோல்வி! தவறான கடவுச்சொல்!"
+ Maximum number of login attempts exceeded: "உள்நுழைவு முயற்சிகளின் அதிகபட்ச எண்ணிக்கை மீறியது; அணுகல் மறுக்கப்பட்டது."
  Password field empty: "கடவுச்சொல் புலம் காலியாக உள்ளது!"
  Password successfully updated: "கடவுச்சொல் வெற்றிகரமாக புதுப்பிக்கப்பட்டது!"
  Permissions not adequate to perform asynchronous requests: "ஒத்திசைவற்ற கோரிக்கைகளைச் செய்ய அனுமதிகள் போதுமானதாக இல்லை. மீண்டும் உள்நுழைய முயற்சிக்கவும்."
+ Please enter a valid quarantine key: "தயவுசெய்து சரியான தனிமைப்படுத்தல் விசையை உள்ளிடவும்."
  Statistics cleared: "புள்ளிவிவரங்கள் அழிக்கப்பட்டது."
  Successfully authenticated: "வெற்றிகரமாக அங்கீகரிக்கப்பட்டது."
  That account doesn_t exist: "அந்த கணக்கு இல்லை."

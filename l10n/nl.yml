@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2024.05.16).
+# This file: Dutch language data (last modified: 2024.06.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -297,7 +297,6 @@ link:
  Statistics: "Statistieken"
  Text formatting: "Tekstformaat: <a href="%1$sfalse">Eenvoudig</a> – <a href="%1$strue">Geformatteerde</a>"
  Upload Testing: "Upload testing"
-max_login_attempts_exceeded: "Maximum aantal inlogpogingen overschreden; Toegang geweigerd."
 msg_subject_2fa: "2FA (Twee-Factor Authenticatie)"
 msg_template_2fa: |
  <center><p>Hallo, %s.<br /><br />
@@ -317,20 +316,23 @@ response:
  Account successfully deleted: "Account succesvol verwijderd!"
  An account with that username already exists: "Een account bij die gebruikersnaam bestaat al!"
  Configuration successfully updated: "Configuratie succesvol gewijzigd."
- Corrupted file: "Kan niet herstellen! Beschadigd bestand!"
+ Corrupted file: "Beschadigd bestand!"
  Failed to create: "Aanmaken mislukt!"
  Failed to delete: "Verwijderen mislukt!"
+ Failed to restore: "Kan niet herstellen"
  Failed to update configuration: "Update van configuratie mislukt!"
  Failed to update: "Update mislukt!"
  Failed: "Mislukt"
  File successfully deleted: "Bestand succesvol verwijderd!"
  File successfully restored: "Bestand succesvol hersteld!"
  Incorrect 2FA code entered: "Onjuiste 2FA-code ingevoerd. Verificatie mislukt."
- Incorrect quarantine key: "Kan niet herstellen! Onjuiste quarantaine sleutel!"
+ Incorrect quarantine key: "Onjuiste quarantaine sleutel!"
  Invalid password: "Inloggen mislukt! Ongeldig wachtwoord!"
+ Maximum number of login attempts exceeded: "Maximum aantal inlogpogingen overschreden; Toegang geweigerd."
  Password field empty: "Password veld leeg!"
  Password successfully updated: "Wachtwoord succesvol gewijzigd!"
  Permissions not adequate to perform asynchronous requests: "Machtigingen niet geschikt om asynchrone verzoeken uit te voeren. Probeer opnieuw in te loggen."
+ Please enter a valid quarantine key: "Voer alstublieft een geldige quarantainesleutel in."
  Statistics cleared: "Statistieken geannuleerd."
  Successfully authenticated: "Succesvol geverifieerd"
  That account doesn_t exist: "Die account bestaat niet."
