@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Galician language data (last modified: 2024.06.18).
+# This file: Galician language data (last modified: 2024.06.22).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -336,6 +336,58 @@ response:
  File successfully restored: "O ficheiro restaurouse con éxito!"
  Incorrect 2FA code entered: "Introduciuse un código 2FA incorrecto. Fallou a autenticación."
  Incorrect quarantine key: "Chave de corentena incorrecta!"
+ Invalid password: "Fallou o inicio de sesión! Contrasinal non é válido!"
+ Maximum number of login attempts exceeded: "Superouse o número máximo de intentos de inicio de sesión; Acceso denegado."
+ Password field empty: "O campo do contrasinal está baleiro!"
+ Password successfully updated: "Contrasinal actualizado con éxito!"
+ Permissions not adequate to perform asynchronous requests: "Os permisos non son adecuados para realizar solicitudes asíncronas. Tenta iniciar sesión de novo."
+ Please enter a valid quarantine key: "Por favor, introduce unha clave de corentena válida."
+ Statistics cleared: "Borráronse as estatísticas."
+ Successfully authenticated: "Autenticouse con éxito."
+ That account doesn_t exist: "Esa conta non existe."
+ Username doesn_t exist: "Fallou o inicio de sesión! O nome de usuario non existe!"
+ Username field empty: "O campo do nome de usuario está baleiro!"
+ Wrong endpoint: "Punto final incorrecto!"
+ _No: "Non"
+ _Yes: "Si"
+siginfo_key_CVE: "Sinaturas que tratan de CVE (vulnerabilidades e exposicións comúns)."
+siginfo_key_Chameleon: "Sinaturas que tratan de "ataques camaleónicos"."
+siginfo_key_FN: "Sinaturas que traballan con nomes de ficheiros (en oposición ao contido dos ficheiros)."
+siginfo_key_Fake: "As deteccións son variantes falsas e maliciosas de entidades benignos (software, scripts, etc)."
+siginfo_key_HEUR: "Sinaturas derivadas de datos heurísticos."
+siginfo_key_META: "Sinaturas que traballan con metadatos do ficheiro (en oposición aos datos do ficheiro)."
+siginfo_key_Other: "Non identificado ou doutro tipo."
+siginfo_key_Other_Metadata: "Non hai metadatos dispoñibles."
+siginfo_key_Suspect: "Sospeitase de deteccións, pero non confirmadas (pode implicar combinacións de varios identificadores)."
+siginfo_key_Testfile: "Sinaturas para ficheiros de proba (é dicir, non deteccións maliciosas)."
+siginfo_key_Total: "Total de sinaturas activas."
+siginfo_key_VT: "Sinaturas que inclúan ou baseadas en datos de Virus Total."
+siginfo_key_Werewolf: "Sinaturas que tratan dos "ataques dos homes lobo"."
+siginfo_sub_Classes: "Conta por clase de ficheiro de sinatura"
+siginfo_sub_Files: "Conta por ficheiro de sinatura"
+siginfo_sub_MalwareTypes: "Conta por tipo de infección ou malware"
+siginfo_sub_SigTypes: "Conta por metadatos de sinatura"
+siginfo_sub_Targets: "Conta por vector de destino"
+siginfo_sub_Vendors: "Conta por provedor ou fonte de sinatura"
+siginfo_xkey: "Identificado como "%s"."
+state_quarantine:
+ - "Actualmente hai %s ficheiro en corentena."
+ - "Actualmente hai %s ficheiros en corentena."
+tip:
+ 2FA Sent: "Enviouse un correo electrónico que contén un código de autenticación de dous factores ao teu enderezo de correo electrónico. Confirma este código a continuación para acceder ao front-end. Se non recibiches este correo electrónico, proba a pechar sesión, agardar 10 minutos, e iniciar sesión de novo para recibir un novo correo electrónico que conteña un novo código."
+ Accounts: "A páxina de contas permítelle controlar quen pode acceder ao front-end de phpMussel."
+ Cache Data: "Aquí podes revisar o contido da caché."
+ Configuration: "A páxina de configuración permítelle modificar a configuración de phpMussel desde o front-end."
+ Greeting: "Ola, %s."
+ Home: "Esta é a páxina de inicio do front-end de phpMussel. Selecciona unha ligazón no menú de navegación da esquerda para continuar."
+ Logs: "Seleccione un ficheiro de rexistro da lista a continuación para ver o contido dese ficheiro de rexistro."
+ Quarantine is currently disabled: "Nota: A corentena está actualmente desactivada, pero pódese activar a través da páxina de configuración."
+ Quarantine: "Esta páxina enumera todos os ficheiros actualmente en corentena e facilita a xestión destes ficheiros."
+ See the documentation: "Consulte a <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">documentación</a> para obter información sobre as distintas directivas de configuración e os seus propósitos."
+ Signature Information: "A páxina de información de sinatura ofrece información básica sobre as fontes e os tipos das sinaturas activas actualmente."
+ Statistics tracking is currently disabled: "Nota: O seguimento das estatísticas está actualmente desactivado, pero pódese activar a través da páxina de configuración."
+ Statistics: "Esta páxina mostra algunhas estatísticas básicas de uso sobre a súa instalación de phpMussel."
+ Upload Testing: "A páxina de proba de carga contén un formulario estándar de carga de ficheiros, que che permite probar se un ficheiro normalmente sería bloqueado por phpMussel ao tentar cargalo."
 warning:
  Cookies: "Nota: phpMussel usa unha cookie para autenticar os inicios de sesión. Ao iniciar sesión, dás o teu consentimento para que o teu navegador cree e almacene unha cookie."
  JavaScript required: "Aviso: Algunhas funcións do front-end requiren JavaScript. Para garantir que todo o front-end se comporta como se espera, recoméndase activar JavaScript."

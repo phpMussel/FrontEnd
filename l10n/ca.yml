@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Catalan language data (last modified: 2024.06.18).
+# This file: Catalan language data (last modified: 2024.06.22).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -336,6 +336,58 @@ response:
  File successfully restored: "Fitxer restaurat amb èxit!"
  Incorrect 2FA code entered: "Introduït un codi 2FA incorrecte. L'autenticació ha fallat."
  Incorrect quarantine key: "Clau de quarantena incorrecta!"
+ Invalid password: "L'inici de sessió ha fallat! Contrasenya invàlida!"
+ Maximum number of login attempts exceeded: "S'ha superat el nombre màxim d'intents d'inici de sessió; Accés denegat."
+ Password field empty: "El camp de la contrasenya està buit!"
+ Password successfully updated: "Contrasenya actualitzat amb èxit!"
+ Permissions not adequate to perform asynchronous requests: "Els permisos no són adequats per realitzar sol·licituds asíncrones. Proveu d'iniciar sessió de nou."
+ Please enter a valid quarantine key: "Introduïu una clau de quarantena vàlida."
+ Statistics cleared: "Estadístiques esborrades."
+ Successfully authenticated: "Autenticat amb èxit."
+ That account doesn_t exist: "Aquest compte no existeix."
+ Username doesn_t exist: "L'inici de sessió ha fallat! El nom d'usuari no existeix!"
+ Username field empty: "El camp del nom d'usuari està buit!"
+ Wrong endpoint: "Punt final incorrecte!"
+ _No: "No"
+ _Yes: "Sí"
+siginfo_key_CVE: "Signatures que tracten amb CVE (vulnerabilitats i exposicions comunes)."
+siginfo_key_Chameleon: "Signatures que tracten dels "atacs camaleònics"."
+siginfo_key_FN: "Signatures que treballen amb noms de fitxers (a diferència del contingut dels fitxers)."
+siginfo_key_Fake: "Les deteccions són variants falses i malicioses d'entitats benignes (programari, scripts, etc)."
+siginfo_key_HEUR: "Signatures derivades de dades heurístiques."
+siginfo_key_META: "Signatures que treballen amb metadades de fitxers (a diferència de les dades de fitxers)."
+siginfo_key_Other: "No identificats o altres."
+siginfo_key_Other_Metadata: "No hi ha metadades disponibles."
+siginfo_key_Suspect: "Les deteccions són sospitades, però no es confirmen (pot implicar combinacions de diversos identificadors)."
+siginfo_key_Testfile: "Signatures per a fitxers de prova (és a dir, no deteccions malicioses)."
+siginfo_key_Total: "Total de signatures actives."
+siginfo_key_VT: "Signatures que inclouen o es basen en dades de Virus Total."
+siginfo_key_Werewolf: "Signatures que tracten "atacs d'home llop"."
+siginfo_sub_Classes: "Comptar per classe de fitxer de signatura"
+siginfo_sub_Files: "Comptar per fitxer de signatura"
+siginfo_sub_MalwareTypes: "Comptar per tipus d'infecció o programari maliciós"
+siginfo_sub_SigTypes: "Comptar per metadades de signatura"
+siginfo_sub_Targets: "Comptar per vector objectiu"
+siginfo_sub_Vendors: "Comptar per proveïdor o font de signatura"
+siginfo_xkey: "Identificat com a "%s"."
+state_quarantine:
+ - "Actualment hi ha %s fitxer en quarantena."
+ - "Actualment hi ha %s fitxers en quarantena."
+tip:
+ 2FA Sent: "S'ha enviat un correu electrònic que conté un codi d'autenticació de dos factors a la vostra adreça de correu electrònic. Si us plau, confirmeu aquest codi a continuació per accedir al front-end. Si no heu rebut aquest correu electrònic, proveu de tancar la sessió, espereu 10 minuts, i torneu a iniciar sessió per rebre un correu electrònic nou que contingui un codi nou."
+ Accounts: "La pàgina de comptes us permet controlar qui pot accedir al front-end de phpMussel."
+ Cache Data: "Aquí podeu revisar el contingut de la memòria cau."
+ Configuration: "La pàgina de configuració us permet modificar la configuració de phpMussel des del front-end."
+ Greeting: "Hola, %s."
+ Home: "Aquesta és la pàgina d'inici del front-end de phpMussel. Seleccioneu un enllaç al menú de navegació de l'esquerra per continuar."
+ Logs: "Seleccioneu un fitxer de registre de la llista següent per veure el contingut d'aquest fitxer de registre."
+ Quarantine is currently disabled: "Nota: Actualment, la quarantena està desactivada, però es pot activar mitjançant la pàgina de configuració."
+ Quarantine: "Aquesta pàgina enumera tots els fitxers actualment en quarantena i facilita la gestió d'aquests fitxers."
+ See the documentation: "Consulteu la <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">documentació</a> per obtenir informació sobre les diferents directives de configuració i els seus propòsits."
+ Signature Information: "La pàgina d'informació de signatures proporciona informació bàsica sobre les fonts i els tipus de signatures actives actualment."
+ Statistics tracking is currently disabled: "Nota: Actualment, el seguiment d'estadístiques està desactivat, però es pot activar mitjançant la pàgina de configuració."
+ Statistics: "Aquesta pàgina mostra algunes estadístiques bàsiques d'ús relacionades amb la vostra instal·lació de phpMussel."
+ Upload Testing: "La pàgina de prova de càrrega conté un formulari estàndard de càrrega de fitxers, que us permet comprovar si un fitxer normalment seria bloquejat per phpMussel quan intenteu carregar-lo."
 warning:
  Cookies: "Nota: phpMussel utilitza una cookie per autenticar els inicis de sessió. En iniciar sessió, doneu el vostre consentiment perquè el vostre navegador creï i emmagatzemi una cookie."
  JavaScript required: "Avís: Algunes funcionalitats del front-end requereixen JavaScript. Per assegurar-vos que tot el front-end es comporta com s'esperava, es recomana activar JavaScript."
