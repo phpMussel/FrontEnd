@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Configuration defaults file (last modified: 2024.04.30).
+# This file: Configuration defaults file (last modified: 2024.06.26).
 ##/
 
 frontend:
@@ -26,7 +26,7 @@ frontend:
    Arabic-2: "١٬٢٣٤٬٥٦٧٫٨٩"
    Arabic-3: "۱٬۲۳۴٬۵۶۷٫۸۹"
    Arabic-4: "۱۲٬۳۴٬۵۶۷٫۸۹"
-   Armenian: "Ռ̅Մ̅Լ̅ՏՇԿԷ"
+   Armenian: "Ճ̅Ի̅Գ̅ՏՇԿԷ"
    Base-12: "4b6547.a8"
    Base-16: "12d687.e3"
    Bengali-1: "১২,৩৪,৫৬৭.৮৯"
@@ -37,6 +37,7 @@ frontend:
    Chinese-Traditional: "一百二十三萬四千五百六十七點八九"
    Chinese-Traditional-Financial: "壹佰貳拾叄萬肆仟伍佰陸拾柒點捌玖"
    Fullwidth: "１２３４５６７.８９"
+   Geez: "፻፳፫፼፵፭፻፷፯"
    Hebrew: "א׳׳ב׳קג׳יד׳ךסז"
    India-1: "12,34,567.89"
    India-2: "१२,३४,५६७.८९"
