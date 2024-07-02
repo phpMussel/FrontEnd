@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The configuration page (last modified: 2024.04.18).
+ * This file: The configuration page (last modified: 2024.07.02).
  */
 
 namespace phpMussel\FrontEnd;
@@ -570,7 +570,7 @@ foreach ($this->Loader->ConfigurationDefaults as $CatKey => $CatValue) {
             $ThisDir['Hints'] = $this->Loader->L10N->arrayFromL10nToArray($DirValue['hints']);
             foreach ($ThisDir['Hints'] as $ThisDir['HintKey'] => $ThisDir['HintValue']) {
                 if (is_int($ThisDir['HintKey'])) {
-                    $ThisDir['FieldOut'] .= sprintf("\n<br /><br />%s", $ThisDir['HintValue']);
+                    $ThisDir['FieldOut'] .= "\n<br /><br />" . $ThisDir['HintValue'];
                     continue;
                 }
                 $ThisDir['FieldOut'] .= sprintf(

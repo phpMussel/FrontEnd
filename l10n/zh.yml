@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (simplified) language data (last modified: 2024.06.18).
+# This file: Chinese language data (last modified: 2024.07.02).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -25,366 +25,498 @@
 ##/
 
 checkbox:
- Delete orphaned values: "删除孤立值。"
+ Delete orphaned values: {"zh-Hans": "删除孤立值。", "zh-Hant": "刪除孤立值。"}
 config:
- core: "基本配置（任何不属于其他类别的核心配置）。"
- core_default_timeout: "用于外部请求的默认超时？ 标准 = 12秒。"
- core_delete_on_sight: "激活的这个指令将指示脚本马上删除任何扫描文件上传匹配任何检测标准，​是否通过签名或任何事其他。​文件已确定是清洁将会忽略。​如果是存档，​全存档将会删除，​不管如果违规文件是只有一个的几个文件包含在存档。​为文件上传扫描，​按说，​它不必要为您激活这个指令，​因为按说，​PHP将自动清洗内容的它的缓存当执行是完，​意思它将按说删除任何文件上传从它向服务器如果不已移动，​复制或删除。​这个指令是添加这里为额外安全为任何人谁的PHP副本可能不始终表现在预期方式。​False【假/负】：之后扫描，​忽略文件【标准】，​True【真/正】：之后扫描，​如果不清洁，​马上删除。"
- core_disabled_channels: "这可用于防止phpMussel在发送请求时使用特定通道。"
- core_error_log: "用于记录检测到的任何非致命错误的文件。​指定一个文件名，​或留空以禁用。"
- core_hide_version: "从日志和页面输出中隐藏版本信息吗？​True（真）=关闭；False（假）=不关闭【标准】。"
- core_ipaddr: "在哪里可以找到连接请求IP地址？​（可以使用为服务例如Cloudflare和类似）。 标准 = REMOTE_ADDR。​警告：不要修改此除非您知道什么您做着！"
- core_lang: "指定标准phpMussel语言。"
- core_lang_override: "尽可能根据HTTP_ACCEPT_LANGUAGE进行本地化？True（真）=进行本地化【标准】；False（假）=不要本地化。"
- core_log_rotation_action: "日志轮转限制了任何时候应该存在的日志文件的数量。​当新的日志文件被创建时，如果日志文件的指定的最大数量已经超过，将执行指定的操作。​您可以在此处指定所需的操作。"
- core_log_rotation_limit: "日志轮转限制了任何时候应该存在的日志文件的数量。​当新的日志文件被创建时，如果日志文件的指定的最大数量已经超过，将执行指定的操作。​您可以在此指定所需的限制。​值为“0”将禁用日志轮转。"
- core_maintenance_mode: "启用维护模式？​True（真）=关闭；​False（假）=不关闭【标准】。​它停用一切以外前端。​有时候在更新CMS，框架，等时有用。"
- core_outbound_request_log: "用于记录任何出站请求结果的文件。​指定一个文件名，​或留空以禁用。"
- core_scan_cache_expiry: "多长时间应该phpMussel维持扫描结果？​数值是秒数为维持扫描结果。​标准是21600秒（6小时）； 一个<code>0</code>数值将停止维持扫描结果。"
- core_scan_log: "文件为记录在所有扫描结果。​指定一个文件名，​或留空以关闭。"
- core_scan_log_serialized: "文件为记录在所有扫描结果（它采用序列化格式）。​指定一个文件名，​或留空以关闭。"
- core_statistics: "跟踪phpMussel使用情况统计？​True（真）=跟踪；False（假）=不跟踪【标准】。"
- core_time_format: "phpMussel使用的日期符号格式。​可根据要求增加附加选项。"
- core_time_offset: "时区偏移量（分钟）。"
- core_timezone: "这用于指定要使用的时区​（例如，Africa/Cairo，America/New_York，Asia/Tokyo，Australia/Perth，Europe/Berlin，Pacific/Guam，等等）。​指定“SYSTEM”使PHP自动为您处理。"
- core_truncate: "截断日志文件当他们达到一定的大小吗？​值是在B/KB/MB/GB/TB，​是日志文件允许的最大大小直到它被截断。​默认值为“0KB”将禁用截断（日志文件可以无限成长）。​注意：适用于单个日志文件！​日志文件大小不被算集体的。"
- experimental: "不稳定/实验！"
- files: "在扫描过程中如何处理文件。"
- files_allow_leading_trailing_dots: "允许文件名中的前导和尾随点吗？​这有时可用于隐藏文件，或欺骗某些系统允许目录遍历。​False（假）=不允许【默认】；True（真）=允许。"
- files_archive_file_extensions: "认可存档文件扩展（格式是CSV；应该只添加或去掉当问题发生；不必要的去掉可能的可以导致假阳性出现为存档文件，​而不必要的增加将实质上白名单任何事您增加从专用攻击检测；修改有慎重；还请注这个无影响在什么存档可以和不能被分析在内容级）。​这个名单，​作为是作为标准，​名单那些格式使用最常见的横过多数的系统和CMS，​但有意是不全面。"
- files_block_control_characters: "受阻任何文件包含任何控制字符吗（以外换行符）？​如果您只上传纯文本，​您可以激活这个指令以提供某些另外保护在您的系统。​然而，​如果您上传任何事以外纯文本，​激活这个可能结果在假阳性。​False（假）=不受阻【默认】；True（真）=受阻。"
- files_block_encrypted_archives: "检测和受阻加密的存档吗？​因为phpMussel是不能够扫描加密的存档内容，​它是可能存档加密可能的可以使用通过一个攻击者作为一种手段尝试绕过phpMussel，​杀毒扫描程序和其他这样的保护。​指示phpMussel受阻任何存档它发现被加密可能的可以帮助减少任何风险有关联这些可能性。​False（假）=不受阻；True（真）=受阻【默认】。"
- files_block_macros: "尝试阻止任何包含宏的文件吗？​某些文档和电子表格类型可能包含可执行的宏，因此提供了危险的潜在恶意软件向量。​False（假）=不阻止【默认】；​True（真）=阻止。"
- files_can_contain_php_file_extensions: "允许包含PHP代码的文件扩展名列表，以逗号分隔。​如果启用了PHP变色龙攻击检测，包含PHP代码的文件，其扩展名不在此列表中，将被检测为PHP变色龙攻击。"
- files_chameleon_from_exe: "寻找可执行头在文件是不可执行文件也不认可存档文件和寻找可执行文件谁的头是不正确。​False（假）=是关闭；True（真）=是激活。"
- files_chameleon_from_php: "寻找PHP头在文件是不PHP文件也不认可存档文件。​False（假）=是关闭；True（真）=是激活。"
- files_chameleon_to_archive: "检测在存档和压缩文件中的错误标头。已支持：BZ/BZIP2，GZ/GZIP，LZF，RAR，ZIP。​False（假）=是关闭；True（真）=是激活。"
- files_chameleon_to_doc: "寻找办公文档谁的头是不正确（已支持：DOC，​DOT，​PPS，​PPT，​XLA，​XLS，​WIZ）。​False（假）=是关闭；True（真）=是激活。"
- files_chameleon_to_img: "寻找图像谁的头是不正确（已支持：BMP，​DIB，​PNG，​GIF，​JPEG，​JPG，​XCF，​PSD，​PDD，​WEBP）。​False（假）=是关闭；True（真）=是激活。"
- files_chameleon_to_pdf: "寻找PDF文件谁的头是不正确。​False（假）=是关闭；True（真）=是激活。"
- files_check_archives: "尝试匹配存档内容吗？​False（假）=不匹配；True（真）=匹配【默认】。 已支持：Zip（需要libzip），Tar，Rar（需要rar扩展名）。"
- files_corrupted_exe: "损坏文件和处理错误。​False（假）=忽略；True（真）=受阻【默认】。​检测和受阻潜在的损坏移植可执行【PE】文件吗？​时常（但不始终），​当某些零件的一个移植可执行【PE】文件是损坏或不能被正确处理，​它可以建议建议的一个病毒感染。​过程使用通过最杀毒程序以检测病毒在PE文件需要处理那些文件在某些方式，​哪里，​如果程序员的一个病毒是意识的，​将特别尝试防止，​以允许他们的病毒留不检测。"
- files_decode_threshold: "在原始数据中解码命令的长度限制（如果有任何引人注目性能问题当扫描）。​默认 = 512KB。​零或空值将关闭门槛（去除任何这样的限基于文件大小）。"
- files_filesize_archives: "继承文件大小黑名单/白名单在存档内容吗？​False（假）=不继承（刚灰名单一切）；True（真）=继承【默认】。"
- files_filesize_limit: "文件大小限在KB。​65536 = 64MB【默认】，​0 = 没有限（始终灰名单），​任何正数值接受。​这个可以有用当您的PHP配置限内存量一个进程可以占据或如果您的PHP配置限文件大小的上传。"
- files_filesize_response: "如何处理文件超过文件大小限（如果存在）。​False（假）=白名单；True（真）=黑名单【默认】。"
- files_filetype_archives: "继承文件类型黑名单/白名单在存档内容吗？​False（假）=不继承（刚灰名单一切）【默认】；​True（真）=继承。"
- files_filetype_blacklist: "黑名单："
- files_filetype_greylist: "灰名单："
- files_filetype_whitelist: "白名单："
- files_max_files_in_archives: "在中止扫描之前从档案中扫描的最大文件数。​默认=0（没有最大文件数）。"
- files_max_recursion: "最大存档递归深度限。​默认=3。"
- files_only_allow_images: "设置为true时，扫描程序遇到的任何非图像文件将被立即标记，而不会被扫描。​在某些情况下，这可能有助于减少完成扫描所需的时间。​默认情况下设置为false。"
- files_scannable_threshold: "原始数据读取和扫描的最大长度（如果有任何引人注目性能问题当扫描）。​默认 = 32MB。​零或空值将关闭门槛。​按说，​这个数值应不会少于平均文件大小的文件上传您想和期待收到您的服务器或网站，​应不会多于<code>filesize_limit</code>指令，​和应不会多于大致五分之一的总允许内存分配获授PHP通过"php.ini"配置文件。​这个指令存在为尝试防止phpMussel从用的太多内存（这个将防止它从能够顺利扫描文件以上的一个特别文件大小）。"
+ core: {"zh-Hans": "基本配置（任何不属于其他类别的核心配置）。", "zh-Hant": "基本配置（任何不屬於其他類別的核心配置）。"}
+ core_default_timeout: {"zh-Hans": "用于外部请求的默认超时？ 标准 = 12秒。", "zh-Hant": "用於外部請求的默認超時？ 標準 = 12秒。"}
+ core_delete_on_sight:
+  zh-Hans: "激活的这个指令将指示脚本马上删除任何扫描文件上传匹配任何检测标准，​是否通过签名或任何事其他。​文件已确定是清洁将会忽略。​如果是存档，​全存档将会删除，​不管如果违规文件是只有一个的几个文件包含在存档。​为文件上传扫描，​按说，​它不必要为您激活这个指令，​因为按说，​PHP将自动清洗内容的它的缓存当执行是完，​意思它将按说删除任何文件上传从它向服务器如果不已移动，​复制或删除。​这个指令是添加这里为额外安全为任何人谁的PHP副本可能不始终表现在预期方式。​False【假/负】：之后扫描，​忽略文件【标准】，​True【真/正】：之后扫描，​如果不清洁，​马上删除。"
+  zh-Hant: "激活的這個指令將指示腳本馬上刪除任何掃描文件上傳匹配任何檢測標準，​是否通過簽名或任何事其他。​文件已確定是清潔將會忽略。​如果是存檔，​全存檔將會刪除，​不管如果違規文件是只有一個的幾個文件包含在存檔。​為文件上傳掃描，​按說，​它不必要為您激活這個指令，​因為按說，​PHP將自動清洗內容的它的緩存當執行是完，​意思它將按說刪除任何文件上傳從它向服務器如果不已移動，​複製或刪除。​這個指令是添加這里為額外安全為任何人誰的PHP副本可能不始終表現在預期方式。​False【假/負】：之後掃描，​忽略文件【標準】，​True【真/正】：之後掃描，​如果不清潔，​馬上刪除。"
+ core_disabled_channels: {"zh-Hans": "这可用于防止phpMussel在发送请求时使用特定通道。", "zh-Hant": "這可用於防止phpMussel在發送請求時使用特定通道。"}
+ core_error_log: {"zh-Hans": "用于记录检测到的任何非致命错误的文件。​指定一个文件名，​或留空以禁用。", "zh-Hant": "用於記錄檢測到的任何非致命錯誤的文件。​指定一個文件名，​或留空以禁用。"}
+ core_hide_version: {"zh-Hans": "从日志和页面输出中隐藏版本信息吗？​True（真）=关闭；False（假）=不关闭【标准】。", "zh-Hant": "從日誌和頁面輸出中隱藏版本信息嗎？​True（真）=關閉；False（假）=不關閉【標準】。"}
+ core_ipaddr:
+  zh-Hans: "在哪里可以找到连接请求IP地址？​（可以使用为服务例如Cloudflare和类似）。 标准 = REMOTE_ADDR。​警告：不要修改此除非您知道什么您做着！"
+  zh-Hant: "在哪裡可以找到連接請求IP地址？​（可以使用為服務例如Cloudflare和類似）。 標準 = REMOTE_ADDR。​警告：不要修改此除非您知道什麼您做著！"
+ core_lang: {"zh-Hans": "指定标准phpMussel语言。", "zh-Hant": "指定標準phpMussel語言。"}
+ core_lang_override: {"zh-Hans": "尽可能根据HTTP_ACCEPT_LANGUAGE进行本地化？True（真）=进行本地化【标准】；False（假）=不要本地化。", "zh-Hant": "盡可能根據HTTP_ACCEPT_LANGUAGE進行本地化？True（真）=進行本地化【標準】；False（假）=不要本地化。"}
+ core_log_rotation_action:
+  zh-Hans: "日志轮转限制了任何时候应该存在的日志文件的数量。​当新的日志文件被创建时，如果日志文件的指定的最大数量已经超过，将执行指定的操作。​您可以在此处指定所需的操作。"
+  zh-Hant: "日誌輪轉限制了任何時候應該存在的日誌文件的數量。​當新的日誌文件被創建時，如果日誌文件的指定的最大數量已經超過，將執行指定的操作。​您可以在此處指定所需的操作。"
+ core_log_rotation_limit:
+  zh-Hans: "日志轮转限制了任何时候应该存在的日志文件的数量。​当新的日志文件被创建时，如果日志文件的指定的最大数量已经超过，将执行指定的操作。​您可以在此指定所需的限制。​值为“0”将禁用日志轮转。"
+  zh-Hant: "日誌輪轉限制了任何時候應該存在的日誌文件的數量。​當新的日誌文件被創建時，如果日誌文件的指定的最大數量已經超過，將執行指定的操作。​您可以在此指定所需的限制。​值為『0』將禁用日誌輪轉。"
+ core_maintenance_mode: {"zh-Hans": "启用维护模式？​True（真）=关闭；​False（假）=不关闭【标准】。​它停用一切以外前端。​有时候在更新CMS，框架，等时有用。", "zh-Hant": "啟用維護模式？​True（真）=關閉；​False（假）=不關閉【標準】。​它停用一切以外前端。​有時候在更新CMS，框架，等時有用。"}
+ core_outbound_request_log: {"zh-Hans": "用于记录任何出站请求结果的文件。​指定一个文件名，​或留空以禁用。", "zh-Hant": "用於記錄任何出站請求結果的文件。​指定一個文件名，​或留空以禁用。"}
+ core_scan_cache_expiry:
+  zh-Hans: "多长时间应该phpMussel维持扫描结果？​数值是秒数为维持扫描结果。​标准是21600秒（6小时）； 一个<code>0</code>数值将停止维持扫描结果。"
+  zh-Hant: "多長時間應該phpMussel維持掃描結果？​數值是秒數為維持掃描結果。​標準是21600秒（6小時）； 一個<code>0</code>數值將停止維持掃描結果。"
+ core_scan_log: {"zh-Hans": "文件为记录在所有扫描结果。​指定一个文件名，​或留空以关闭。", "zh-Hant": "文件為記錄在所有掃描結果。​指定一個文件名，​或留空以關閉。"}
+ core_scan_log_serialized: {"zh-Hans": "文件为记录在所有扫描结果（它采用序列化格式）。​指定一个文件名，​或留空以关闭。", "zh-Hant": "文件為記錄在所有掃描結果（它採用序列化格式）。​指定一個文件名，​或留空以關閉。"}
+ core_statistics: {"zh-Hans": "跟踪phpMussel使用情况统计？​True（真）=跟踪；False（假）=不跟踪【标准】。", "zh-Hant": "跟踪phpMussel使用情況統計？​True（真）=跟踪；False（假）=不跟踪【標準】。"}
+ core_time_format: {"zh-Hans": "phpMussel使用的日期符号格式。​可根据要求增加附加选项。", "zh-Hant": "phpMussel使用的日期符號格式。​可根據要求增加附加選項。"}
+ core_time_offset: {"zh-Hans": "时区偏移量（分钟）。", "zh-Hant": "時區偏移量（分鐘）。"}
+ core_timezone:
+  zh-Hans: "这用于指定要使用的时区​（例如，Africa/Cairo，America/New_York，Asia/Tokyo，Australia/Perth，Europe/Berlin，Pacific/Guam，等等）。​指定“SYSTEM”使PHP自动为您处理。"
+  zh-Hant: "這用於指定要使用的時區​（例如，Africa/Cairo，America/New_York，Asia/Tokyo，Australia/Perth，Europe/Berlin，Pacific/Guam，等等）。​指定『SYSTEM』使PHP自動為您處理。"
+ core_truncate:
+  zh-Hans: "截断日志文件当他们达到一定的大小吗？​值是在B/KB/MB/GB/TB，​是日志文件允许的最大大小直到它被截断。​默认值为“0KB”将禁用截断（日志文件可以无限成长）。​注意：适用于单个日志文件！​日志文件大小不被算集体的。"
+  zh-Hant: "截斷日誌文件當他們達到一定的大小嗎？​值是在B/KB/MB/GB/TB，​是日誌文件允許的最大大小直到它被截斷。​默認值為『0KB』將禁用截斷（日誌文件可以無限成長）。​注意：適用於單個日誌文件！​日誌文件大小不被算集體的。"
+ experimental: {"zh-Hans": "不稳定/实验！", "zh-Hant": "不穩定/實驗！"}
+ files: {"zh-Hans": "在扫描过程中如何处理文件。", "zh-Hant": "在掃描過程中如何處理文件。"}
+ files_allow_leading_trailing_dots: {"zh-Hans": "允许文件名中的前导和尾随点吗？​这有时可用于隐藏文件，或欺骗某些系统允许目录遍历。​False（假）=不允许【默认】；True（真）=允许。", "zh-Hant": "允許文件名中的前導和尾隨點嗎？​這有時可用於隱藏文件，或欺騙某些系統允許目錄遍歷。​False（假）=不允許【默認】；True（真）=允許。"}
+ files_archive_file_extensions:
+  zh-Hans: "认可存档文件扩展（格式是CSV；应该只添加或去掉当问题发生；不必要的去掉可能的可以导致假阳性出现为存档文件，​而不必要的增加将实质上白名单任何事您增加从专用攻击检测；修改有慎重；还请注这个无影响在什么存档可以和不能被分析在内容级）。​这个名单，​作为是作为标准，​名单那些格式使用最常见的横过多数的系统和CMS，​但有意是不全面。"
+  zh-Hant: "認可存檔文件擴展（格式是CSV；應該只添加或去掉當問題發生；不必要的去掉可能的可以導致假陽性出現為存檔文件，​而不必要的增加將實質上白名單任何事您增加從專用攻擊檢測；修改有慎重；還請注這個無影響在什麼存檔可以和不能被分析在內容級）。​這個名單，​作為是作為標準，​名單那些格式使用最常見的橫過多數的系統和CMS，​但有意是不全面。"
+ files_block_control_characters:
+  zh-Hans: "受阻任何文件包含任何控制字符吗（以外换行符）？​如果您只上传纯文本，​您可以激活这个指令以提供某些另外保护在您的系统。​然而，​如果您上传任何事以外纯文本，​激活这个可能结果在假阳性。​False（假）=不受阻【默认】；True（真）=受阻。"
+  zh-Hant: "受阻任何文件包含任何控製字符嗎（以外換行符）？​如果您只上傳純文本，​您可以激活這個指令以提供某些另外保護在您的系統。​然而，​如果您上傳任何事以外純文本，​激活這個可能結果在假陽性。​False（假）=不受阻【默認】；True（真）=受阻。"
+ files_block_encrypted_archives:
+  zh-Hans: "检测和受阻加密的存档吗？​因为phpMussel是不能够扫描加密的存档内容，​它是可能存档加密可能的可以使用通过一个攻击者作为一种手段尝试绕过phpMussel，​杀毒扫描程序和其他这样的保护。​指示phpMussel受阻任何存档它发现被加密可能的可以帮助减少任何风险有关联这些可能性。​False（假）=不受阻；True（真）=受阻【默认】。"
+  zh-Hant: "檢測和受阻加密的存檔嗎？​因為phpMussel是不能夠掃描加密的存檔內容，​它是可能存檔加密可能的可以使用通過一個攻擊者作為一種手段嘗試繞過phpMussel，​殺毒掃描程序和其他這樣的保護。​指示phpMussel受阻任何存檔它發現被加密可能的可以幫助減少任何風險有關聯這些可能性。​False（假）=不受阻；True（真）=受阻【默認】。"
+ files_block_macros:
+  zh-Hans: "尝试阻止任何包含宏的文件吗？​某些文档和电子表格类型可能包含可执行的宏，因此提供了危险的潜在恶意软件向量。​False（假）=不阻止【默认】；​True（真）=阻止。"
+  zh-Hant: "嘗試阻止任何包含宏的文件嗎？​某些文檔和電子表格類型可能包含可執行的宏，因此提供了危險的潛在惡意軟件向量。​False（假）=不阻止【默認】；​True（真）=阻止。"
+ files_can_contain_php_file_extensions:
+  zh-Hans: "允许包含PHP代码的文件扩展名列表，以逗号分隔。​如果启用了PHP变色龙攻击检测，包含PHP代码的文件，其扩展名不在此列表中，将被检测为PHP变色龙攻击。"
+  zh-Hant: "允許包含PHP代碼的文件擴展名列表，以逗號分隔。​如果啟用了PHP變色龍攻擊檢測，包含PHP代碼的文件，其擴展名不在此列表中，將被檢測為PHP變色龍攻擊。"
+ files_chameleon_from_exe: {"zh-Hans": "寻找可执行头在文件是不可执行文件也不认可存档文件和寻找可执行文件谁的头是不正确。​False（假）=是关闭；True（真）=是激活。", "zh-Hant": "尋找可執行頭在文件是不可執行文件也不認可存檔文件和尋找可執行文件誰的頭是不正確。​False（假）=是關閉；True（真）=是激活。"}
+ files_chameleon_from_php: {"zh-Hans": "寻找PHP头在文件是不PHP文件也不认可存档文件。​False（假）=是关闭；True（真）=是激活。", "zh-Hant": "尋找PHP頭在文件是不PHP文件也不認可存檔文件。​False（假）=是關閉；True（真）=是激活。"}
+ files_chameleon_to_archive: {"zh-Hans": "检测在存档和压缩文件中的错误标头。已支持：BZ/BZIP2，GZ/GZIP，LZF，RAR，ZIP。​False（假）=是关闭；True（真）=是激活。", "zh-Hant": "檢測在存檔和壓縮文件中的錯誤標頭。已支持：BZ/BZIP2，GZ/GZIP，LZF，RAR，ZIP。​False（假）=是關閉；True（真）=是激活。"}
+ files_chameleon_to_doc: {"zh-Hans": "寻找办公文档谁的头是不正确（已支持：DOC，​DOT，​PPS，​PPT，​XLA，​XLS，​WIZ）。​False（假）=是关闭；True（真）=是激活。", "zh-Hant": "尋找辦公文檔誰的頭是不正確（已支持：DOC，​DOT，​PPS，​PPT，​XLA，​XLS，​WIZ）。​False（假）=是關閉；True（真）=是激活。"}
+ files_chameleon_to_img: {"zh-Hans": "寻找图像谁的头是不正确（已支持：BMP，​DIB，​PNG，​GIF，​JPEG，​JPG，​XCF，​PSD，​PDD，​WEBP）。​False（假）=是关闭；True（真）=是激活。", "zh-Hant": "尋找圖像誰的頭是不正確（已支持：BMP，​DIB，​PNG，​GIF，​JPEG，​JPG，​XCF，​PSD，​PDD，​WEBP）。​False（假）=是關閉；True（真）=是激活。"}
+ files_chameleon_to_pdf: {"zh-Hans": "寻找PDF文件谁的头是不正确。​False（假）=是关闭；True（真）=是激活。", "zh-Hant": "尋找PDF文件誰的頭是不正確。​False（假）=是關閉；True（真）=是激活。"}
+ files_check_archives: {"zh-Hans": "尝试匹配存档内容吗？​False（假）=不匹配；True（真）=匹配【默认】。 已支持：Zip（需要libzip），Tar，Rar（需要rar扩展名）。", "zh-Hant": "嘗試匹配存檔內容嗎？​False（假）=不匹配；True（真）=匹配【默認】。 已支持：Zip（需要libzip），Tar，Rar（需要rar擴展名）。"}
+ files_corrupted_exe:
+  zh-Hans: "损坏文件和处理错误。​False（假）=忽略；True（真）=受阻【默认】。​检测和受阻潜在的损坏移植可执行【PE】文件吗？​时常（但不始终），​当某些零件的一个移植可执行【PE】文件是损坏或不能被正确处理，​它可以建议建议的一个病毒感染。​过程使用通过最杀毒程序以检测病毒在PE文件需要处理那些文件在某些方式，​哪里，​如果程序员的一个病毒是意识的，​将特别尝试防止，​以允许他们的病毒留不检测。"
+  zh-Hant: "損壞文件和處理錯誤。​False（假）=忽略；True（真）=受阻【默認】。​檢測和受阻潛在的損壞移植可執行【PE】文件嗎？​時常（但不始終），​當某些零件的一個移植可執行【PE】文件是損壞或不能被正確處理，​它可以建議建議的一個病毒感染。​過程使用通過最殺毒程序以檢測病毒在PE文件需要處理那些文件在某些方式，​哪裡，​如果程序員的一個病毒是意識的，​將特別嘗試防止，​以允許他們的病毒留不檢測。"
+ files_decode_threshold: {"zh-Hans": "在原始数据中解码命令的长度限制（如果有任何引人注目性能问题当扫描）。 默认 = 512KB。​零或空值将关闭门槛（去除任何这样的限基于文件大小）。", "zh-Hant": "在原始數據中解碼命令的長度限制（如果有任何引人注目性能問題當掃描）。 默認 = 512KB。​零或空值將關閉門檻（去除任何這樣的限基於文件大小）。"}
+ files_filesize_archives: {"zh-Hans": "继承文件大小黑名单/白名单在存档内容吗？​False（假）=不继承（刚灰名单一切）；True（真）=继承【默认】。", "zh-Hant": "繼承文件大小黑名單/白名單在存檔內容嗎？​False（假）=不繼承（剛灰名單一切）；True（真）=繼承【默認】。"}
+ files_filesize_limit:
+  zh-Hans: "文件大小限在KB。​65536 = 64MB【默认】，​0 = 没有限（始终灰名单），​任何正数值接受。​这个可以有用当您的PHP配置限内存量一个进程可以占据或如果您的PHP配置限文件大小的上传。"
+  zh-Hant: "文件大小限在KB。​65536 = 64MB【默認】，​0 = 沒有限（始終灰名單），​任何正數值接受。​這個可以有用當您的PHP配置限內存量一個進程可以佔據或如果您的PHP配置限文件大小的上傳。"
+ files_filesize_response: {"zh-Hans": "如何处理文件超过文件大小限（如果存在）。​False（假）=白名单；True（真）=黑名单【默认】。", "zh-Hant": "如何處理文件超過文件大小限（如果存在）。​False（假）=白名單；True（真）=黑名單【默認】。"}
+ files_filetype_archives: {"zh-Hans": "继承文件类型黑名单/白名单在存档内容吗？​False（假）=不继承（刚灰名单一切）【默认】；​True（真）=继承。", "zh-Hant": "繼承文件類型黑名單/白名單在存檔內容嗎？​False（假）=不繼承（剛灰名單一切）【默認】；​True（真）=繼承。"}
+ files_filetype_blacklist: {"zh-Hans": "黑名单：", "zh-Hant": "黑名單："}
+ files_filetype_greylist: {"zh-Hans": "灰名单：", "zh-Hant": "灰名單："}
+ files_filetype_whitelist: {"zh-Hans": "白名单：", "zh-Hant": "白名單："}
+ files_max_files_in_archives: {"zh-Hans": "在中止扫描之前从档案中扫描的最大文件数。​默认=0（没有最大文件数）。", "zh-Hant": "在中止掃描之前從檔案中掃描的最大文件數。​默認=0（沒有最大文件數）。"}
+ files_max_recursion: {"zh-Hans": "最大存档递归深度限。​默认=3。", "zh-Hant": "最大存檔遞歸深度限。​默認=3。"}
+ files_only_allow_images:
+  zh-Hans: "设置为true时，扫描程序遇到的任何非图像文件将被立即标记，而不会被扫描。​在某些情况下，这可能有助于减少完成扫描所需的时间。​默认情况下设置为false。"
+  zh-Hant: "設置為true時，掃描程序遇到的任何非圖像文件將被立即標記，而不會被掃描。​在某些情況下，這可能有助於減少完成掃描所需的時間。​默認情況下設置為false。"
+ files_scannable_threshold:
+  zh-Hans: "原始数据读取和扫描的最大长度（如果有任何引人注目性能问题当扫描）。 默认 = 32MB。 零或空值将关闭门槛。​按说，​这个数值应不会少于平均文件大小的文件上传您想和期待收到您的服务器或网站，​应不会多于<code>filesize_limit</code>指令，​和应不会多于大致五分之一的总允许内存分配获授PHP通过"php.ini"配置文件。​这个指令存在为尝试防止phpMussel从用的太多内存（这个将防止它从能够顺利扫描文件以上的一个特别文件大小）。"
+  zh-Hant: "原始數據讀取和掃描的最大長度（如果有任何引人注目性能問題當掃描）。 默認 = 32MB。 零或空值將關閉門檻。​按說，​這個數值應不會少於平均文件大小的文件上傳您想和期待收到您的服務器或網站，​應不會多於<code>filesize_limit</code>指令，​和應不會多於大致五分之一的總允許內存分配獲授PHP通過"php.ini"配置文件。​這個指令存在為嘗試防止phpMussel從用的太多內存（這個將防止它從能夠順利掃描文件以上的一個特別文件大小）。"
  frontend: "前端的配置。"
- frontend_custom_footer: "在所有前端页面的末尾作为HTML插入。​如果您想在所有此类页面中包含法律声明、联系链接、业务信息、或类似，这可能会很有用。"
- frontend_custom_header: "在所有前端页面的开头作为HTML插入。​如果您想在所有此类页面中包含网站徽标、个性化标题、脚本、或类似，这可能会很有用。"
- frontend_default_algo: "定义要用于所有未来密码和会话的算法。"
- frontend_frontend_log: "前端登录尝试的录音文件。​指定一个文件名，​或留空以禁用。"
- frontend_magnification: "字体放大。 标准 = 1。"
- frontend_max_login_attempts: "最大前端登录尝试次数。​标准=5。"
- frontend_numbers: "您如何喜欢显示数字？​选择最适合示例。"
- frontend_theme: "用于phpMussel前端的美学。"
+ frontend_custom_footer: {"zh-Hans": "在所有前端页面的末尾作为HTML插入。​如果您想在所有此类页面中包含法律声明、联系链接、业务信息、或类似，这可能会很有用。", "zh-Hant": "在所有前端頁面的末尾作為HTML插入。​如果您想在所有此類頁面中包含法律聲明、聯繫鏈接、業務信息、或類似，這可能會很有用。"}
+ frontend_custom_header: {"zh-Hans": "在所有前端页面的开头作为HTML插入。​如果您想在所有此类页面中包含网站徽标、个性化标题、脚本、或类似，这可能会很有用。", "zh-Hant": "在所有前端頁面的開頭作為HTML插入。​如果您想在所有此類頁面中包含網站徽標、個性化標題、腳本、或類似，這可能會很有用。"}
+ frontend_default_algo: {"zh-Hans": "定义要用于所有未来密码和会话的算法。", "zh-Hant": "定義要用於所有未來密碼和會話的算法。"}
+ frontend_frontend_log: {"zh-Hans": "前端登录尝试的录音文件。​指定一个文件名，​或留空以禁用。", "zh-Hant": "前端登錄嘗試的錄音文件。​指定一個文件名，​或留空以禁用。"}
+ frontend_magnification: {"zh-Hans": "字体放大。 标准 = 1。", "zh-Hant": "字體放大。 標準 = 1。"}
+ frontend_max_login_attempts: {"zh-Hans": "最大前端登录尝试次数。 标准 = 5。", "zh-Hant": "最大前端登錄嘗試次數。 標準 = 5。"}
+ frontend_numbers: {"zh-Hans": "您如何喜欢显示数字？​选择最适合示例。", "zh-Hant": "您如何喜歡顯示數字？​選擇最適合示例。"}
+ frontend_theme: {"zh-Hans": "用于phpMussel前端的美学。", "zh-Hant": "用於phpMussel前端的美學。"}
  legal: "法律要求的配置。"
- legal_privacy_policy: "要显示在任何生成的页面的页脚中的相关隐私政策的地址。​指定一个URL，或留空以禁用。"
- legal_pseudonymise_ip_addresses: "编写日志文件时使用假名的IP地址吗？​True（真）=使用假名【标准】；False（假）=不使用假名。"
- quarantine: "隔离配置。"
- quarantine_quarantine_key: "phpMussel能够隔离被阻止的文件上传，​如果这个是某物您想。​普通用户的phpMussel简单地想保护他们的网站或宿主环境无任何兴趣在深深分析任何尝试文件上传应该离开这个功能关闭，​但任何用户有兴趣在更深分析的尝试文件上传为目的恶意软件研究或为类似这样事情应该激活这个功能。​检疫的尝试文件上传可以有时还助攻在调试假阳性，​如果这个是某物经常发生为您。​以关闭检疫功能，​简单地离开<code>quarantine_key</code>指令空白，​或抹去内容的这个指令如果它不已空白。​以激活隔离功能，​输入一些值在这个指令。​<code>quarantine_key</code>是一个重要安全功能的隔离功能需要以预防检疫功能从成为利用通过潜在攻击者和以预防任何潜在执行的数据存储在检疫。​<code>quarantine_key</code>应该被处理在同样方法作为您的密码：更长是更好，​和紧紧保护它。​为获得最佳效果，​在结合使用<code>delete_on_sight</code>。"
- quarantine_quarantine_max_files: "隔离中可以存在的最大文件数量。​新文件添加到隔离时，如果超过此数量，则旧文件将被删除，直到剩余的文件不再超过此数量。​标准=100。"
- quarantine_quarantine_max_filesize: "最大允许文件大小为文件在检疫。​文件大于这个指定数值将不成为检疫。​这个指令是重要为使它更难为任何潜在攻击者洪水您的检疫用非通缉数据潜在的造成过度数据用法在您的虚拟主机服务。 标准 = 2MB。"
- quarantine_quarantine_max_usage: "最大内存使用允许为检疫。​如果总内存已用通过隔离到达这个数值，​最老检疫文件将会删除直到总内存已用不再到达这个数值。​这个指令是重要为使它更难为任何潜在攻击者洪水您的检疫用非通缉数据潜在的造成过度数据用法在您的虚拟主机服务。 标准 = 64MB。"
- signatures: "签名，签名文件，等的配置。"
- signatures_active: "活性签名文件的列表，​以逗号分隔。​注意：首先必须安装签名文件，然后才能激活它们。​为了使测试文件正常工作，必须安装并激活签名文件。"
- signatures_detect_adware: "phpMussel应该使用签名为广告软件检测吗？​False（假）=不检查，​True（真）=检查【默认】。"
- signatures_detect_deface: "phpMussel应该使用签名为污损和污损软件检测吗？​False（假）=不检查，​True（真）=检查【默认】。"
- signatures_detect_encryption: "phpMussel应该检测并阻止加密的文件吗？​False（假）=不检查，​True（真）=检查【默认】。"
- signatures_detect_joke_hoax: "phpMussel应该使用签名为病毒/恶意软件笑话/恶作剧检测吗？​False（假）=不检查，​True（真）=检查【默认】。"
- signatures_detect_packer_packed: "phpMussel应该使用签名为打包机和打包数据检测吗？​False（假）=不检查，​True（真）=检查【默认】。"
- signatures_detect_pua_pup: "phpMussel应该使用签名为PUP/PUA（可能无用/非通缉程序/软件）检测吗？​False（假）=不检查，​True（真）=检查【默认】。"
- signatures_detect_shell: "phpMussel应该使用签名为webshell脚本检测吗？​False（假）=不检查，​True（真）=检查【默认】。"
- signatures_fail_extensions_silently: "phpMussel应该报告当扩展是失踪吗？​如果<code>fail_extensions_silently</code>是关闭，​失踪扩展将会报告当扫描，​和如果<code>fail_extensions_silently</code>是激活，​失踪扩展将会忽略，​有扫描报告为那些文件哪里没有任何问题。​关闭的这个指令可能的可以增加您的安全，​但可能还导致一个增加的假阳性。​False（假）=是关闭；True（真）=是激活【默认】。"
- signatures_fail_silently: "phpMussel应该报告当签名文件是失踪或损坏吗？​如果<code>fail_silently</code>是关闭，​失踪和损坏文件将会报告当扫描，​和如果<code>fail_silently</code>是激活，​失踪和损坏文件将会忽略，​有扫描报告为那些文件哪里没有问题。​这个应该按说被留下除非您遇到失败或有其他类似问题。​False（假）=是关闭；True（真）=是激活【默认】。"
- signatures_heuristic_threshold: "有某些签名的phpMussel意味为确定可疑和可能恶意文件零件被上传有不在他们自己确定那些文件被上传特别是作为恶意。​这个“threshold”数值告诉phpMussel什么是最大总重量的可疑和潜在恶意文件零件被上传允许之前那些文件是被识别作为恶意。​定义的重量在这个上下文是总数值的可疑和可能恶意文件零件确定。​作为默认，​这个数值将会设置作为3。​一个较低的值通常将结果在一个更高的发生的假阳性但一个更高的发生的恶意文件被确定，​而一个更高的数值将通常结果在一个较低的发生的假阳性但一个较低的数值的恶意文件被确定。​它是通常最好忽略这个数值除非您遇到关联问题。"
- supplementary_cache_options: "补充缓存选项。​注意：更改这些值可能会使您注销。"
- supplementary_cache_options_enable_apcu: "指定是否尝试使用APCu进行缓存。 标准 = True。"
- supplementary_cache_options_enable_memcached: "指定是否尝试使用Memcached进行缓存。 标准 = False。"
- supplementary_cache_options_enable_pdo: "指定是否尝试使用PDO进行缓存。 标准 = False。"
- supplementary_cache_options_enable_redis: "指定是否尝试使用Redis进行缓存。 标准 = False。"
- supplementary_cache_options_memcached_host: "Memcached 主机值。 标准 = “localhost”。"
- supplementary_cache_options_memcached_port: "Memcached 端口值。 标准 = “11211”。"
- supplementary_cache_options_pdo_dsn: "PDO DSN值。 标准 = “mysql:dbname=phpmussel;host=localhost;port=3306”。"
- supplementary_cache_options_pdo_password: "PDO 密码。"
- supplementary_cache_options_pdo_username: "PDO 用户名。"
- supplementary_cache_options_prefix: "该值将附加到所有缓存条目的键的开头。 标准 = “phpMussel_”。​当同一服务器上存在多个安装时，这对于将它们的缓存彼此分开非常有用。"
- supplementary_cache_options_redis_database_number: "Redis 数据库编号。 标准 = “0”。 注意：不能在 Redis Cluster 中使用 0 以外的值。"
- supplementary_cache_options_redis_host: "Redis 主机值。 标准 = “localhost”。"
- supplementary_cache_options_redis_port: "Redis 端口值。 标准 = “6379”。"
- supplementary_cache_options_redis_timeout: "Redis 超时值。 标准 = “2.5”。"
- urlscanner: "URL扫描程序的配置。"
- urlscanner_cache_time: "多长时间（以秒为单位）应API结果被缓存？​默认是3600秒（1小时）。"
- urlscanner_google_api_key: "激活Google Safe Browsing API当API密钥是设置。"
- urlscanner_maximum_api_lookups: "最大数值API请求来执行每个扫描迭代。​额外API请求将增加的总要求完成时间每扫描迭代，​所以，​您可能想来规定一个限以加快全扫描过程。​当设置<code>0</code>，​没有最大数值将会应用的。​设置<code>10</code>作为默认。"
- urlscanner_maximum_api_lookups_response: "该什么办如果最大数值API请求已超过？​False（假）=没做任何事（继续处理）【默认】；True（真）=标志/受阻文件。"
+ legal_privacy_policy: {"zh-Hans": "要显示在任何生成的页面的页脚中的相关隐私政策的地址。​指定一个URL，或留空以禁用。", "zh-Hant": "要顯示在任何生成的頁面的頁腳中的相關隱私政策的地址。​指定一個URL，或留空以禁用。"}
+ legal_pseudonymise_ip_addresses: {"zh-Hans": "编写日志文件时使用假名的IP地址吗？​True（真）=使用假名【标准】；False（假）=不使用假名。", "zh-Hant": "編寫日誌文件時使用假名的IP地址嗎？​True（真）=使用假名【標準】；False（假）=不使用假名。"}
+ quarantine: {"zh-Hans": "隔离配置。", "zh-Hant": "隔離配置。"}
+ quarantine_quarantine_key:
+  zh-Hans: "phpMussel能够隔离被阻止的文件上传，​如果这个是某物您想。​普通用户的phpMussel简单地想保护他们的网站或宿主环境无任何兴趣在深深分析任何尝试文件上传应该离开这个功能关闭，​但任何用户有兴趣在更深分析的尝试文件上传为目的恶意软件研究或为类似这样事情应该激活这个功能。​检疫的尝试文件上传可以有时还助攻在调试假阳性，​如果这个是某物经常发生为您。​以关闭检疫功能，​简单地离开<code>quarantine_key</code>指令空白，​或抹去内容的这个指令如果它不已空白。​以激活隔离功能，​输入一些值在这个指令。​<code>quarantine_key</code>是一个重要安全功能的隔离功能需要以预防检疫功能从成为利用通过潜在攻击者和以预防任何潜在执行的数据存储在检疫。​<code>quarantine_key</code>应该被处理在同样方法作为您的密码：更长是更好，​和紧紧保护它。​为获得最佳效果，​在结合使用<code>delete_on_sight</code>。"
+  zh-Hant: "phpMussel能夠隔離被阻止的文件上傳，​如果這個是某物您想。​普通用戶的phpMussel簡單地想保護他們的網站或宿主環境無任何興趣在深深分析任何嘗試文件上傳應該離開這個功能關閉，​但任何用戶有興趣在更深分析的嘗試文件上傳為目的惡意軟件研究或為類似這樣事情應該激活這個功能。​檢疫的嘗試文件上傳可以有時還助攻在調試假陽性，​如果這個是某物經常發生為您。​以關閉檢疫功能，​簡單地離開<code>quarantine_key</code>指令空白，​或抹去內容的這個指令如果它不已空白。​以激活隔離功能，​輸入一些值在這個指令。​<code>quarantine_key</code>是一個重要安全功能的隔離功能需要以預防檢疫功能從成為利用通過潛在攻擊者和以預防任何潛在執行的數據存儲在檢疫。​<code>quarantine_key</code>應該被處理在同樣方法作為您的密碼：更長是更好，​和緊緊保護它。​為獲得最佳效果，​在結合使用<code>delete_on_sight</code>。"
+ quarantine_quarantine_max_files: {"zh-Hans": "隔离中可以存在的最大文件数量。​新文件添加到隔离时，如果超过此数量，则旧文件将被删除，直到剩余的文件不再超过此数量。 标准 = 100。", "zh-Hant": "隔離中可以存在的最大文件數量。​新文件添加到隔離時，如果超過此數量，則舊文件將被刪除，直到剩餘的文件不再超過此數量。 標準 = 100。"}
+ quarantine_quarantine_max_filesize:
+  zh-Hans: "最大允许文件大小为文件在检疫。​文件大于这个指定数值将不成为检疫。​这个指令是重要为使它更难为任何潜在攻击者洪水您的检疫用非通缉数据潜在的造成过度数据用法在您的虚拟主机服务。 标准 = 2MB。"
+  zh-Hant: "最大允許文件大小為文件在檢疫。​文件大於這個指定數值將不成為檢疫。​這個指令是重要為使它更難為任何潛在攻擊者洪水您的檢疫用非通緝數據潛在的造成過度數據用法在您的虛擬主機服務。 標準 = 2MB。"
+ quarantine_quarantine_max_usage:
+  zh-Hans: "最大内存使用允许为检疫。​如果总内存已用通过隔离到达这个数值，​最老检疫文件将会删除直到总内存已用不再到达这个数值。​这个指令是重要为使它更难为任何潜在攻击者洪水您的检疫用非通缉数据潜在的造成过度数据用法在您的虚拟主机服务。 标准 = 64MB。"
+  zh-Hant: "最大內存使用允許為檢疫。​如果總內存已用通過隔離到達這個數值，​最老檢疫文件將會刪除直到總內存已用不再到達這個數值。​這個指令是重要為使它更難為任何潛在攻擊者洪水您的檢疫用非通緝數據潛在的造成過度數據用法在您的虛擬主機服務。​數值是在KB。 標準 = 64MB。"
+ signatures: {"zh-Hans": "签名，签名文件，等的配置。", "zh-Hant": "簽名，簽名文件，等的配置。"}
+ signatures_active: {"zh-Hans": "活性签名文件的列表，​以逗号分隔。​注意：首先必须安装签名文件，然后才能激活它们。​为了使测试文件正常工作，必须安装并激活签名文件。", "zh-Hant": "活性簽名文件的列表，​以逗號分隔。​注意：首先必須安裝簽名文件，然後才能激活它們。​為了使測試文件正常工作，必須安裝並激活簽名文件。"}
+ signatures_detect_adware: {"zh-Hans": "phpMussel应该使用签名为广告软件检测吗？​False（假）=不检查，​True（真）=检查【默认】。", "zh-Hant": "phpMussel應該使用簽名為廣告軟件檢測嗎？​False（假）=不檢查，​True（真）=檢查【默認】。"}
+ signatures_detect_deface: {"zh-Hans": "phpMussel应该使用签名为污损和污损软件检测吗？​False（假）=不检查，​True（真）=检查【默认】。", "zh-Hant": "phpMussel應該使用簽名為污損的污損軟件檢測嗎？​False（假）=不檢查，​True（真）=檢查【默認】。"}
+ signatures_detect_encryption: {"zh-Hans": "phpMussel应该检测并阻止加密的文件吗？​False（假）=不检查，​True（真）=检查【默认】。", "zh-Hant": "phpMussel應該檢測並阻止加密的文件嗎？​False（假）=不檢查，​True（真）=檢查【默認】。"}
+ signatures_detect_joke_hoax: {"zh-Hans": "phpMussel应该使用签名为病毒/恶意软件笑话/恶作剧检测吗？​False（假）=不检查，​True（真）=检查【默认】。", "zh-Hant": "phpMussel應該使用簽名為病毒/惡意軟件笑話/惡作劇檢測嗎？​False（假）=不檢查，​True（真）=檢查【默認】。"}
+ signatures_detect_packer_packed: {"zh-Hans": "phpMussel应该使用签名为打包机和打包数据检测吗？​False（假）=不检查，​True（真）=检查【默认】。", "zh-Hant": "phpMussel應該使用簽名為打包機和打包數據檢測嗎？​False（假）=不檢查，​True（真）=檢查【默認】。"}
+ signatures_detect_pua_pup: {"zh-Hans": "phpMussel应该使用签名为PUP/PUA（可能无用/非通缉程序/软件）检测吗？​False（假）=不检查，​True（真）=检查【默认】。", "zh-Hant": "phpMussel應該使用簽名為PUP/PUA（可能無用/非通緝程序/軟件）檢測嗎？​False（假）=不檢查，​True（真）=檢查【默認】。"}
+ signatures_detect_shell: {"zh-Hans": "phpMussel应该使用签名为webshell脚本检测吗？​False（假）=不检查，​True（真）=检查【默认】。", "zh-Hant": "phpMussel應該使用簽名為webshell腳本檢測嗎？​False（假）=不檢查，​True（真）=檢查【默認】。"}
+ signatures_fail_extensions_silently:
+  zh-Hans: "phpMussel应该报告当扩展是失踪吗？​如果<code>fail_extensions_silently</code>是关闭，​失踪扩展将会报告当扫描，​和如果<code>fail_extensions_silently</code>是激活，​失踪扩展将会忽略，​有扫描报告为那些文件哪里没有任何问题。​关闭的这个指令可能的可以增加您的安全，​但可能还导致一个增加的假阳性。​False（假）=是关闭；True（真）=是激活【默认】。"
+  zh-Hant: "phpMussel應該報告當擴展是失踪嗎？​如果<code>fail_extensions_silently</code>是關閉，​失踪擴展將會報告當掃描，​和如果<code>fail_extensions_silently</code>是激活，​失踪擴展將會忽略，​有掃描報告為那些文件哪裡沒有任何問題。​關閉的這個指令可能的可以增加您的安全，​但可能還導致一個增加的假陽性。​False（假）=是關閉；True（真）=是激活【默認】。"
+ signatures_fail_silently:
+  zh-Hans: "phpMussel应该报告当签名文件是失踪或损坏吗？​如果<code>fail_silently</code>是关闭，​失踪和损坏文件将会报告当扫描，​和如果<code>fail_silently</code>是激活，​失踪和损坏文件将会忽略，​有扫描报告为那些文件哪里没有问题。​这个应该按说被留下除非您遇到失败或有其他类似问题。​False（假）=是关闭；True（真）=是激活【默认】。"
+  zh-Hant: "phpMussel應該報告當簽名文件是失踪或損壞嗎？​如果<code>fail_silently</code>是關閉，​失踪和損壞文件將會報告當掃描，​和如果<code>fail_silently</code>是激活，​失踪和損壞文件將會忽略，​有掃描報告為那些文件哪裡沒有問題。​這個應該按說被留下除非您遇到失敗或有其他類似問題。​False（假）=是關閉；True（真）=是激活【默認】。"
+ signatures_heuristic_threshold:
+  zh-Hans: "有某些签名的phpMussel意味为确定可疑和可能恶意文件零件被上传有不在他们自己确定那些文件被上传特别是作为恶意。​这个“threshold”数值告诉phpMussel什么是最大总重量的可疑和潜在恶意文件零件被上传允许之前那些文件是被识别作为恶意。​定义的重量在这个上下文是总数值的可疑和可能恶意文件零件确定。​作为默认，​这个数值将会设置作为3。​一个较低的值通常将结果在一个更高的发生的假阳性但一个更高的发生的恶意文件被确定，​而一个更高的数值将通常结果在一个较低的发生的假阳性但一个较低的数值的恶意文件被确定。​它是通常最好忽略这个数值除非您遇到关联问题。"
+  zh-Hant: "有某些簽名的phpMussel意味為確定可疑和可能惡意文件零件被上傳有不在他們自己確定那些文件被上傳特別是作為惡意。​這個『threshold』數值告訴phpMussel什麼是最大總重量的可疑和潛在惡意文件零件被上傳允許之前那些文件是被識別作為惡意。​定義的重量在這個上下文是總數值的可疑和可能惡意文件零件確定。​作為默認，​這個數值將會設置作為3。​一個較低的值通常將結果在一個更高的發生的假陽性但一個更高的發生的惡意文件被確定，​而一個更高的數值將通常結果在一個較低的發生的假陽性但一個較低的數值的惡意文件被確定。​它是通常最好忽略這個數值除非您遇到關聯問題。"
+ supplementary_cache_options: {"zh-Hans": "补充缓存选项。​注意：更改这些值可能会使您注销。", "zh-Hant": "補充緩存選項。​注意：更改這些值可能會使您註銷。"}
+ supplementary_cache_options_enable_apcu: {"zh-Hans": "指定是否尝试使用APCu进行缓存。 标准 = True。", "zh-Hant": "指定是否嘗試使用APCu進行緩存。 默認 = True。"}
+ supplementary_cache_options_enable_memcached: {"zh-Hans": "指定是否尝试使用Memcached进行缓存。 标准 = False。", "zh-Hant": "指定是否嘗試使用Memcached進行緩存。 默認 = False。"}
+ supplementary_cache_options_enable_pdo: {"zh-Hans": "指定是否尝试使用PDO进行缓存。 标准 = False。", "zh-Hant": "指定是否嘗試使用PDO進行緩存。 默認 = False。"}
+ supplementary_cache_options_enable_redis: {"zh-Hans": "指定是否尝试使用Redis进行缓存。 标准 = False。", "zh-Hant": "指定是否嘗試使用Redis進行緩存。 默認 = False。"}
+ supplementary_cache_options_memcached_host: {"zh-Hans": "Memcached 主机值。 标准 = “localhost”。", "zh-Hant": "Memcached 主機值。 默認 = 『localhost』。"}
+ supplementary_cache_options_memcached_port: {"zh-Hans": "Memcached 端口值。 标准 = “11211”。", "zh-Hant": "Memcached 端口值。 默認 = 『11211』。"}
+ supplementary_cache_options_pdo_dsn: {"zh-Hans": "PDO DSN值。 标准 = “mysql:dbname=phpmussel;host=localhost;port=3306”。", "zh-Hant": "PDO DSN值。 默認 = 『mysql:dbname=phpmussel;host=localhost;port=3306』。"}
+ supplementary_cache_options_pdo_password: {"zh-Hans": "PDO 密码。", "zh-Hant": "PDO 密碼。"}
+ supplementary_cache_options_pdo_username: {"zh-Hans": "PDO 用户名。", "zh-Hant": "PDO 用戶名。"}
+ supplementary_cache_options_prefix: {"zh-Hans": "该值将附加到所有缓存条目的键的开头。 标准 = “phpMussel_”。​当同一服务器上存在多个安装时，这对于将它们的缓存彼此分开非常有用。", "zh-Hant": "該值將附加到所有緩存條目的鍵的開頭。 默認 = 『phpMussel_』。​當同一服務器上存在多個安裝時，這對於將它們的緩存彼此分開非常有用。"}
+ supplementary_cache_options_redis_database_number: {"zh-Hans": "Redis 数据库编号。 标准 = “0”。 注意：不能在 Redis Cluster 中使用 0 以外的值。", "zh-Hant": "Redis 資料庫編號。 默認 = 『0』。 注意：不能在 Redis Cluster 中使用 0 以外的值。"}
+ supplementary_cache_options_redis_host: {"zh-Hans": "Redis 主机值。 标准 = “localhost”。", "zh-Hant": "Redis 主機值。 默認 = 『localhost』。"}
+ supplementary_cache_options_redis_port: {"zh-Hans": "Redis 端口值。 标准 = “6379”。", "zh-Hant": "Redis 端口值。 默認 = 『6379』。"}
+ supplementary_cache_options_redis_timeout: {"zh-Hans": "Redis 超时值。 标准 = “2.5”。", "zh-Hant": "Redis 超時值。 默認 = 『2.5』。"}
+ urlscanner: {"zh-Hans": "URL扫描程序的配置。", "zh-Hant": "URL掃描程序的配置。"}
+ urlscanner_cache_time: {"zh-Hans": "多长时间（以秒为单位）应API结果被缓存？​默认是3600秒（1小时）。", "zh-Hant": "多長時間（以秒為單位）應API結果被緩存？​默認是3600秒（1小時）。"}
+ urlscanner_google_api_key: {"zh-Hans": "激活Google Safe Browsing API当API密钥是设置。", "zh-Hant": "激活Google Safe Browsing API當API金鑰是設置。"}
+ urlscanner_maximum_api_lookups:
+  zh-Hans: "最大数值API请求来执行每个扫描迭代。​额外API请求将增加的总要求完成时间每扫描迭代，​所以，​您可能想来规定一个限以加快全扫描过程。​当设置<code>0</code>，​没有最大数值将会应用的。​设置<code>10</code>作为默认。"
+  zh-Hant: "最大數值API請求來執行每個掃描迭代。​額外API請求將增加的總要求完成時間每掃描迭代，​所以，​您可能想來規定一個限以加快全掃描過程。​當設置<code>0</code>，​沒有最大數值將會應用的。​設置<code>10</code>作為默認。"
+ urlscanner_maximum_api_lookups_response: {"zh-Hans": "该什么办如果最大数值API请求已超过？​False（假）=没做任何事（继续处理）【默认】；True（真）=标志/受阻文件。", "zh-Hant": "該什麼辦如果最大數值API請求已超過？​False（假）=沒做任何事（繼續處理）【默認】；True（真）=標誌/受阻文件。"}
  virustotal: "Virus Total整合的配置。"
- virustotal_vt_public_api_key: "可选的，​phpMussel可以扫描文件使用【Virus Total API】作为一个方法提供一个显着的改善保护级别针对病毒，​木马，​恶意软件和其他威胁。​作为默认，​扫描文件使用【Virus Total API】是关闭。​以激活它，​一个API密钥从VirusTotal是需要。​因为的显着好处这个可以提供为您，​它是某物我很推荐激活。​请注意，​然而，​以使用的【Virus Total API】，​您必须同意他们的服务条款和您必须坚持所有方针按照说明通过VirusTotal阅读材料！​您是不允许使用这个积分功能除非：您已阅读和您同意服务条款的VirusTotal和它的API。​您已阅读和您了解至少序言的VirusTotal公共API阅读材料(一切之后“VirusTotal Public API v2.0”但之前“Contents”）。"
- virustotal_vt_quota_rate: "根据【Virus Total API】阅读材料，​它是限于最大的<code>4</code>请求的任何类型在任何<code>1</code>分钟大体时间。​如果您经营一个“honeyclient”，​蜜罐或任何其他自动化将会提供资源为VirusTotal和不只取回报告您是有权一个更高请求率配额。​作为标准，​phpMussel将严格的坚持这些限制，​但因为可能性的这些率配额被增加，​这些二指令是提供为您指示phpMussel为什么限它应坚持。​除非您是指示这样做，​它是不推荐为您增加这些数值，​但，​如果您遇到问题相关的到达您的率配额，​减少这些数值可能有时帮助您解析这些问题。​您的率限是决定作为<code>vt_quota_rate</code>请求的任何类型在任何<code>vt_quota_time</code>分钟大体时间。"
- virustotal_vt_quota_time: "（见上面的说明）。"
- virustotal_vt_suspicion_level: "作为标准，​phpMussel将限制什么文件它扫描通过使用【Virus Total API】为那些文件它考虑作为“可疑”。​您可以可选调整这个局限性通过修改的<code>vt_suspicion_level</code>指令数值。"
- virustotal_vt_weighting: "phpMussel应使用扫描结果使用【Virus Total API】作为检测或作为检测重量吗？​这个指令存在，​因为，​虽说扫描一个文件使用多AV引擎（例如怎么样VirusTotal做） 应结果有一个增加检测率（和因此在一个更恶意文件被抓），​它可以还结果有更假阳性，​和因此，​为某些情况，​扫描结果可能被更好使用作为一个置信得分而不是作为一个明确结论。​如果一个数值的<code>0</code>是使用，​扫描结果使用【Virus Total API】将会适用作为检测，​和因此，​如果任何AV引擎使用通过VirusTotal标志文件被扫描作为恶意，​phpMussel将考虑文件作为恶意。​如果任何其他数值是使用，​扫描结果使用【Virus Total API】将会适用作为检测重量，​和因此，​数的AV引擎使用通过VirusTotal标志文件被扫描作为恶意将服务作为一个置信得分（或检测重量） 为如果文件被扫描应会考虑恶意通过phpMussel（数值使用将代表最低限度的置信得分或重量需要以被考虑恶意）。​一个数值的<code>0</code>是使用作为标准。"
+ virustotal_vt_public_api_key:
+  zh-Hans: "可选的，​phpMussel可以扫描文件使用【Virus Total API】作为一个方法提供一个显着的改善保护级别针对病毒，​木马，​恶意软件和其他威胁。​作为默认，​扫描文件使用【Virus Total API】是关闭。​以激活它，​一个API密钥从VirusTotal是需要。​因为的显着好处这个可以提供为您，​它是某物我很推荐激活。​请注意，​然而，​以使用的【Virus Total API】，​您必须同意他们的服务条款和您必须坚持所有方针按照说明通过VirusTotal阅读材料！​您是不允许使用这个积分功能除非：您已阅读和您同意服务条款的VirusTotal和它的API。​您已阅读和您了解至少序言的VirusTotal公共API阅读材料(一切之后“VirusTotal Public API v2.0”但之前“Contents”）。"
+  zh-Hant: "可選的，​phpMussel可以掃描文件使用【Virus Total API】作為一個方法提供一個顯著的改善保護級別針對病毒，​木馬，​惡意軟件和其他威脅。​作為默認，​掃描文件使用【Virus Total API】是關閉。​以激活它，​一個API金鑰從VirusTotal是需要。​因為的顯著好處這個可以提供為您，​它是某物我很推薦激活。​請注意，​然而，​以使用的【Virus Total API】，​您必須同意他們的服務條款和您必須堅持所有方針按照說明通過VirusTotal閱讀材料！​您是不允許使用這個積分功能除非：您已閱讀和您同意服務條款的VirusTotal和它的API。​您已閱讀和您了解至少序言的VirusTotal公共API閱讀材料(一切之後『VirusTotal Public API v2.0』但之前『Contents』）。"
+ virustotal_vt_quota_rate:
+  zh-Hans: "根据【Virus Total API】阅读材料，​它是限于最大的<code>4</code>请求的任何类型在任何<code>1</code>分钟大体时间。​如果您经营一个“honeyclient”，​蜜罐或任何其他自动化将会提供资源为VirusTotal和不只取回报告您是有权一个更高请求率配额。​作为标准，​phpMussel将严格的坚持这些限制，​但因为可能性的这些率配额被增加，​这些二指令是提供为您指示phpMussel为什么限它应坚持。​除非您是指示这样做，​它是不推荐为您增加这些数值，​但，​如果您遇到问题相关的到达您的率配额，​减少这些数值可能有时帮助您解析这些问题。​您的率限是决定作为<code>vt_quota_rate</code>请求的任何类型在任何<code>vt_quota_time</code>分钟大体时间。"
+  zh-Hant: "根據【Virus Total API】閱讀材料，​它是限於最大的<code>4</code>請求的任何類型在任何<code>1</code>分鐘大致時間。​如果您經營一個『honeyclient』，​蜜罐或任何其他自動化將會提供資源為VirusTotal和不只取回報告您是有權一個更高請求率配額。​作為標準，​phpMussel將嚴格的堅持這些限制，​但因為可能性的這些率配額被增加，​這些二指令是提供為您指示phpMussel為什麼限它應堅持。​除非您是指示這樣做，​它是不推薦為您增加這些數值，​但，​如果您遇到問題相關的到達您的率配額，​減少這些數值可能有時幫助您解析這些問題。​您的率限是決定作為<code>vt_quota_rate</code>請求的任何類型在任何<code>vt_quota_time</code>分鐘大致時間。"
+ virustotal_vt_quota_time: {"zh-Hans": "（见上面的说明）。", "zh-Hant": "（見上面的說明）。"}
+ virustotal_vt_suspicion_level:
+  zh-Hans: "作为标准，​phpMussel将限制什么文件它扫描通过使用【Virus Total API】为那些文件它考虑作为“可疑”。​您可以可选调整这个局限性通过修改的<code>vt_suspicion_level</code>指令数值。"
+  zh-Hant: "作為標準，​phpMussel將限制什麼文件它掃描通過使用【Virus Total API】為那些文件它考慮作為『可疑』。​您可以可選調整這個局限性通過修改的<code>vt_suspicion_level</code>指令數值。"
+ virustotal_vt_weighting:
+  zh-Hans: "phpMussel应使用扫描结果使用【Virus Total API】作为检测或作为检测重量吗？​这个指令存在，​因为，​虽说扫描一个文件使用多AV引擎（例如怎么样VirusTotal做） 应结果有一个增加检测率（和因此在一个更恶意文件被抓），​它可以还结果有更假阳性，​和因此，​为某些情况，​扫描结果可能被更好使用作为一个置信得分而不是作为一个明确结论。​如果一个数值的<code>0</code>是使用，​扫描结果使用【Virus Total API】将会适用作为检测，​和因此，​如果任何AV引擎使用通过VirusTotal标志文件被扫描作为恶意，​phpMussel将考虑文件作为恶意。​如果任何其他数值是使用，​扫描结果使用【Virus Total API】将会适用作为检测重量，​和因此，​数的AV引擎使用通过VirusTotal标志文件被扫描作为恶意将服务作为一个置信得分（或检测重量） 为如果文件被扫描应会考虑恶意通过phpMussel（数值使用将代表最低限度的置信得分或重量需要以被考虑恶意）。​一个数值的<code>0</code>是使用作为标准。"
+  zh-Hant: "phpMussel應使用掃描結果使用【Virus Total API】作為檢測或作為檢測重量嗎？​這個指令存在，​因為，​雖說掃描一個文件使用多AV引擎（例如怎麼樣VirusTotal做） 應結果有一個增加檢測率（和因此在一個更惡意文件被抓），​它可以還結果有更假陽性，​和因此，​為某些情況，​掃描結果可能被更好使用作為一個置信得分而不是作為一個明確結論。​如果一個數值的<code>0</code>是使用，​掃描結果使用【Virus Total API】將會適用作為檢測，​和因此，​如果任何AV引擎使用通過VirusTotal標致文件被掃描作為惡意，​phpMussel將考慮文件作為惡意。​如果任何其他數值是使用，​掃描結果使用【Virus Total API】將會適用作為檢測重量，​和因此，​數的AV引擎使用通過VirusTotal標致文件被掃描作為惡意將服務作為一個置信得分（或檢測重量） 為如果文件被掃描應會考慮惡意通過phpMussel（數值使用將代表最低限度的置信得分或重量需要以被考慮惡意）。​一個數值的<code>0</code>是使用作為標準。"
 confirm:
- Action: "您确定要“%s”吗？"
+ Action: {"zh-Hans": "您确定要“%s”吗？", "zh-Hant": "您確定要『%s』嗎？"}
 field:
- 2FA code: "2FA代码"
- Clear all: "撤销所有"
- Confirm: "确认"
- Create new account: "创建新帐户"
- Delete account: "删除帐户"
- Delete all: "删除所有"
- Delete: "删除"
- Download: "下载"
+ 2FA code: {"zh-Hans": "2FA代码", "zh-Hant": "2FA代碼"}
+ Clear all: {"zh-Hans": "撤销所有", "zh-Hant": "撤銷所有"}
+ Confirm: {"zh-Hans": "确认", "zh-Hant": "確認"}
+ Create new account: {"zh-Hans": "创建新帐户", "zh-Hant": "創建新帳戶"}
+ Delete account: {"zh-Hans": "删除帐户", "zh-Hant": "刪除帳戶"}
+ Delete all: {"zh-Hans": "删除所有", "zh-Hant": "刪除所有"}
+ Delete: {"zh-Hans": "删除", "zh-Hant": "刪除"}
+ Download: {"zh-Hans": "下载", "zh-Hant": "下載"}
  False (False): "False（假）"
  File: "文件"
  Latest version: "最新版本"
- Log In: "登录"
+ Log In: {"zh-Hans": "登录", "zh-Hant": "登錄"}
  More fields: "更多字段"
  OK: "OK"
- Options: "选项"
- Password: "密码"
- Permissions: "权限"
- Quarantine key: "隔离密钥"
- Reset: "重启"
- Restore: "恢复"
- Set new password: "保存新密码"
+ Options: {"zh-Hans": "选项", "zh-Hant": "選項"}
+ Password: {"zh-Hans": "密码", "zh-Hant": "密碼"}
+ Permissions: {"zh-Hans": "权限", "zh-Hant": "權限"}
+ Quarantine key: {"zh-Hans": "隔离密钥", "zh-Hant": "隔離密鑰"}
+ Reset: {"zh-Hans": "重启", "zh-Hant": "重啟"}
+ Restore: {"zh-Hans": "恢复", "zh-Hant": "恢復"}
+ Set new password: {"zh-Hans": "保存新密码", "zh-Hant": "保存新密碼"}
  True (True): "True（真）"
- Update signature files: "更新签名文件"
+ Update signature files: {"zh-Hans": "更新签名文件", "zh-Hant": "更新簽名文件"}
  Update: "更新"
- Use system default timezone: "使用系统默认时区。"
- Username: "用户名"
+ Use system default timezone: {"zh-Hans": "使用系统默认时区。", "zh-Hant": "使用系統默認時區。"}
+ Username: {"zh-Hans": "用户名", "zh-Hant": "用戶名"}
  Your version: "您的版本"
- log_rotation_archive: "首先归档，然后删除最旧的日志文件，直到不再超出限制。"
- log_rotation_delete: "删除最旧的日志文件，直到不再超出限制。"
+ log_rotation_archive: {"zh-Hans": "首先归档，然后删除最旧的日志文件，直到不再超出限制。", "zh-Hant": "首先歸檔，然後刪除最舊的日誌文件，直到不再超出限制。"}
+ log_rotation_delete: {"zh-Hans": "删除最旧的日志文件，直到不再超出限制。", "zh-Hant": "刪除最舊的日誌文件，直到不再超出限制。"}
  size:
-  Total size: "总大小："
-  bytes: "字节"
- vt_suspicion_level_all: "扫描所有文件。"
- vt_suspicion_level_executable: "扫描具启发式权重的文件、可执行文件、和可能包含可执行数据的文件。\n此类文件包括Windows PE文件、Linux ELF文件、Mach-O文件、DOCX文件、ZIP文件、等等。"
- vt_suspicion_level_heuristic_only: "仅扫描具有启发式权重的文件。\n仅当文件产生启发式权重时才会扫描文件。​启发式权重可能来自暗示感染但不能保证感染的签名。​当怀疑有道理但没有得到证实时，查询可以作为第二意见。"
-hints_logging_datetime: "有用提示：您可以使用时间格式占位符将日期/时间信息附加到日志文件的名称。​可用的时间格式占位符显示在{{Links.ConfigRef.time_format}}处。"
+  Total size: {"zh-Hans": "总大小：", "zh-Hant": "總大小："}
+  bytes:
+   - {"zh-Hans": "字节", "zh-Hant": "字節"}
+ vt_suspicion_level_all: {"zh-Hans": "扫描所有文件。", "zh-Hant": "掃描所有文件。"}
+ vt_suspicion_level_executable:
+  zh-Hans: "扫描具启发式权重的文件、可执行文件、和可能包含可执行数据的文件。\n此类文件包括Windows PE文件、Linux ELF文件、Mach-O文件、DOCX文件、ZIP文件、等等。"
+  zh-Hant: "掃描具啟發式權重的文件、可執行文件、和可能包含可執行數據的文件。\n此類文件包括Windows PE文件、Linux ELF文件、Mach-O文件、DOCX文件、ZIP文件、等等。"
+ vt_suspicion_level_heuristic_only:
+  zh-Hans: "仅扫描具有启发式权重的文件。\n仅当文件产生启发式权重时才会扫描文件。​启发式权重可能来自暗示感染但不能保证感染的签名。​当怀疑有道理但没有得到证实时，查询可以作为第二意见。"
+  zh-Hant: "僅掃描具有啟發式權重的文件。\n僅當文件產生啟發式權重時才會掃描文件。​啟發式權重可能來自暗示感染但不能保證感染的簽名。​當懷疑有道理但沒有得到證實時，查詢可以作為第二意見。"
+hints_logging_datetime:
+ zh-Hans: "有用提示：您可以使用时间格式占位符将日期/时间信息附加到日志文件的名称。​可用的时间格式占位符显示在{{Links.ConfigRef.time_format}}处。"
+ zh-Hant: "有用的提示：您可以使用時間格式佔位符將日期/時間資訊附加到日誌檔案的名稱。​可用的時間格式佔位符顯示在{{Links.ConfigRef.time_format}}處。"
 hints_pdo_dsn:
- 常问问题。: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.zh.md\#user-content-HOW_TO_USE_PDO" hreflang="zh-CN">“PDO DSN”是什么？如何能PDO与phpMussel一起使用？</a></em>"
-hints_time_format: |
- <strong><em>占位符 – 解释 – 基于2024-04-30T18:27:49+08:00的示例。</em></strong><br />
- <code class="s">{yyyy}</code> – 年份 – 例如，2024。<br />
- <code class="s">{yy}</code> – 缩写年份 – 例如，24。<br />
- <code class="s">{Mon}</code> – 月份缩写名称（英文） – 例如，Apr。<br />
- <code class="s">{mm}</code> – 带前导零的月份 – 例如，04。<br />
- <code class="s">{m}</code> – 月份数 – 例如，4。<br />
- <code class="s">{Day}</code> – 当天缩写名称（英文） – 例如，Tue。<br />
- <code class="s">{dd}</code> – 带前导零的天数 – 例如，30。<br />
- <code class="s">{d}</code> – 天数 – 例如，30。<br />
- <code class="s">{hh}</code> – 带前导零的小时（使用24小时制） – 例如，18。<br />
- <code class="s">{h}</code> – 小时（使用24小时制） – 例如，18。<br />
- <code class="s">{ii}</code> – 带前导零的分钟 – 例如，27。<br />
- <code class="s">{i}</code> – 分钟 – 例如，27。<br />
- <code class="s">{ss}</code> – 带前导零的秒 – 例如，49。<br />
- <code class="s">{s}</code> – 秒 – 例如，49。<br />
- <code class="s">{tz}</code> – 时区（不带冒号） – 例如，+0800。<br />
- <code class="s">{t:z}</code> – 时区（带冒号） – 例如，+08:00。
+ zh-Hans: "<strong>常问问题。</strong> <em><a href="https://github.com/phpMussel/Docs/blob/master/readme.zh-Hans.md\#user-content-HOW_TO_USE_PDO" hreflang="zh-Hans">“PDO DSN”是什么？如何能PDO与phpMussel一起使用？</a></em>"
+ zh-Hant: "<strong>常問問題。</strong> <em><a href="https://github.com/phpMussel/Docs/blob/master/readme.zh-Hant.md\#user-content-HOW_TO_USE_PDO" hreflang="zh-Hant">『PDO DSN』是什麼？如何能PDO與phpMussel一起使用？</a></em>"
+hints_time_format:
+ zh-Hans: |
+  <strong><em>占位符 – 解释 – 基于2024-04-30T18:27:49+08:00的示例。</em></strong><br />
+  <code class="s">{yyyy}</code> – 年份 – 例如，2024。<br />
+  <code class="s">{yy}</code> – 缩写年份 – 例如，24。<br />
+  <code class="s">{Mon}</code> – 月份缩写名称（英文） – 例如，Apr。<br />
+  <code class="s">{mm}</code> – 带前导零的月份 – 例如，04。<br />
+  <code class="s">{m}</code> – 月份数 – 例如，4。<br />
+  <code class="s">{Day}</code> – 当天缩写名称（英文） – 例如，Tue。<br />
+  <code class="s">{dd}</code> – 带前导零的天数 – 例如，30。<br />
+  <code class="s">{d}</code> – 天数 – 例如，30。<br />
+  <code class="s">{hh}</code> – 带前导零的小时（使用24小时制） – 例如，18。<br />
+  <code class="s">{h}</code> – 小时（使用24小时制） – 例如，18。<br />
+  <code class="s">{ii}</code> – 带前导零的分钟 – 例如，27。<br />
+  <code class="s">{i}</code> – 分钟 – 例如，27。<br />
+  <code class="s">{ss}</code> – 带前导零的秒 – 例如，49。<br />
+  <code class="s">{s}</code> – 秒 – 例如，49。<br />
+  <code class="s">{tz}</code> – 时区（不带冒号） – 例如，+0800。<br />
+  <code class="s">{t:z}</code> – 时区（带冒号） – 例如，+08:00。
+ zh-Hant: |
+  <strong><em>佔位符 – 解釋 – 基於2024-04-30T18:27:49+08:00的範例。</em></strong><br />
+  <code class="s">{yyyy}</code> – 年份 – 例如，2024。<br />
+  <code class="s">{yy}</code> – 縮寫年份 – 例如，24。<br />
+  <code class="s">{Mon}</code> – 月份的縮寫名稱（英文） – 例如，Apr。<br />
+  <code class="s">{mm}</code> – 帶前導零的月份 – 例如，04。<br />
+  <code class="s">{m}</code> – 月數 – 例如，4。<br />
+  <code class="s">{Day}</code> – 當天的縮寫名稱（英文） – 例如，Tue。<br />
+  <code class="s">{dd}</code> – 帶前導零的天數 – 例如，30。<br />
+  <code class="s">{d}</code> – 天數 – 例如，30。<br />
+  <code class="s">{hh}</code> – 帶前導零的小時（使用24小時制） – 例如，18。<br />
+  <code class="s">{h}</code> – 小時（使用24小時制） – 例如，18。<br />
+  <code class="s">{ii}</code> – 帶前導零的分鐘 – 例如，27。<br />
+  <code class="s">{i}</code> – 分鐘 – 例如，27。<br />
+  <code class="s">{ss}</code> – 帶前導零的秒 – 例如，49。<br />
+  <code class="s">{s}</code> – 秒 – 例如，49。<br />
+  <code class="s">{tz}</code> – 時區（不含冒號） – 例如，+0800。<br />
+  <code class="s">{t:z}</code> – 時區（附冒號） – 例如，+08:00。
 hints_xlists:
- 这是如何工作的。: "如果您的系统只允许具体文件类型被上传，​或如果您的系统明确地否认某些文件类型，​指定那些文件类型在白名单，​黑名单和灰名单可以增加扫描执行速度通过允许脚本跳过某些文件类型。​格式是CSV（逗号分隔变量）。"
- 进程的逻辑顺序。: "如果文件类型已白名单，​不扫描和不受阻文件，​和不匹配文件对照黑名单或灰名单。​如果文件类型已黑名单，​不扫描文件但阻止它无论如何，​和不匹配文件对照灰名单。​如果灰名单是空，​或如果灰名单不空和文件类型已灰名单，​扫描文件像正常和确定如果阻止它基于扫描结果，​但如果灰名单不空和文件类型不灰名单，​过程文件仿佛已黑名单，​因此不扫描它但阻止它无论如何。"
-Some useful links: |
- 一些有用的链接：<br />
-     <ul class="pieul">
-       <li><span class="comCat">phpMussel的工具，资源，等等。</span>
-         <ul class="comSub">
-           <li>{{Links.phpMussel.Issues}} – phpMussel问题页面（支持，​协助，​等等）。</li>
-           <li>{{Links.phpMussel.SigTool}} – 使用ClamAV签名数据库创建phpMussel签名文件。</li>
-           <li>{{Links.OSChina}} – phpMussel页面托管在开源中国社区。</li>
-           <li>{{Links.phpMussel.Extras}} – 各种附加功能。</li>
-         </ul>
-       </li>
-       <li><span class="comCat">ClamAV的工具，资源，等等。</span>
-         <ul class="comSub">
-           <li>{{Links.ClamavNet}} – ClamAV主页（ClamAV®是一个开源的防病毒引擎用于检测木马，​病毒，​恶意软件和其他恶意威胁）。</li>
-           <li>{{Links.SecuriteInfo}} – 一家计算机安全公司。为ClamAV提供补充签名。</li>
-           <li>{{Links.Sanesecurity}} – 一家计算机安全公司。为ClamAV提供补充签名。</li>
-           <li>{{Links.Malware Expert}} – 提供ClamAV的补充签名和ModSecurity的补充规则。</li>
-         </ul>
-       </li>
-       <li><span class="comCat">团体，论坛，社区，等等。</span>
-         <ul class="comSub">
-           <li>{{Links.PHP.Earth.Facebook}} – PHP学习资源和讨论。</li>
-           <li>{{Links.MalwareTips}} – 有用的讨论论坛关于恶意软件。</li>
-         </ul>
-       </li>
-       <li><span class="comCat">其他有用的工具，资源，服务，等等</span>
-         <ul class="comSub">
-           <li>{{Links.PhishTank}} – 网络钓鱼数据库。由phpMussel URL扫描器使用。</li>
-           <li>{{Links.VirusTotal}} – VirusTotal是一项免费服务，​用于分析可疑文件和URL。</li>
-           <li>{{Links.Hybrid Analysis}} – Hybrid Analysis是由{{Links.Payload Security}}提供的免费恶意软件分析服务。</li>
-           <li>{{Links.Malwarebytes}} – 电脑反恶意软件专家。</li>
-         </ul>
-       </li>
-       <li><span class="comCat">信息和学习资源。</span>
-         <ul class="comSub">
-           <li>{{Links.PHP.Earth.Website}} – PHP学习资源和讨论。</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">脆弱性图表</a> – 列出各种软件包的安全/不安全版本（HHVM，PHP，phpMyAdmin，Python，等等）。</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">兼容性图表</a> – 列出各种软件包的兼容性信息（CIDRAM，phpMussel，等等）。</li>
-         </ul>
-       </li>
-     </ul>
-
+ zh-Hans: "<strong>这是如何工作的。</strong> 如果您的系统只允许具体文件类型被上传，​或如果您的系统明确地否认某些文件类型，​指定那些文件类型在白名单，​黑名单和灰名单可以增加扫描执行速度通过允许脚本跳过某些文件类型。​格式是CSV（逗号分隔变量）。<br /><br /><strong>进程的逻辑顺序。</strong> 如果文件类型已白名单，​不扫描和不受阻文件，​和不匹配文件对照黑名单或灰名单。​如果文件类型已黑名单，​不扫描文件但阻止它无论如何，​和不匹配文件对照灰名单。​如果灰名单是空，​或如果灰名单不空和文件类型已灰名单，​扫描文件像正常和确定如果阻止它基于扫描结果，​但如果灰名单不空和文件类型不灰名单，​过程文件仿佛已黑名单，​因此不扫描它但阻止它无论如何。"
+ zh-Hant: "<strong>這是如何工作的。</strong> 如果您的系統只允許具體文件類型被上傳，​或如果您的系統明確地否認某些文件類型，​指定那些文件類型在白名單，​黑名單和灰名單可以增加掃描執行速度通過允許腳本跳過某些文件類型。​格式是CSV（逗號分隔變量）。<br /><br /><strong>進程的邏輯順序。</strong> 如果文件類型已白名單，​不掃描和不受阻文件，​和不匹配文件對照黑名單或灰名單。​如果文件類型已黑名單，​不掃描文件但阻止它無論如何，​和不匹配文件對照灰名單。​如果灰名單是空，​或如果灰名單不空和文件類型已灰名單，​掃描文件像正常和確定如果阻止它基於掃描結果，​但如果灰名單不空和文件類型不灰名單，​過程文件彷彿已黑名單，​因此不掃描它但阻止它無論如何。"
+Some useful links:
+ zh-Hans: |+
+  一些有用的链接：<br />
+      <ul class="pieul">
+        <li><span class="comCat">phpMussel的工具，资源，等等。</span>
+          <ul class="comSub">
+            <li>{{Links.phpMussel.Issues}} – phpMussel问题页面（支持，​协助，​等等）。</li>
+            <li>{{Links.phpMussel.SigTool}} – 使用ClamAV签名数据库创建phpMussel签名文件。</li>
+            <li>{{Links.OSChina}} – phpMussel页面托管在开源中国社区。</li>
+            <li>{{Links.phpMussel.Extras}} – 各种附加功能。</li>
+          </ul>
+        </li>
+        <li><span class="comCat">ClamAV的工具，资源，等等。</span>
+          <ul class="comSub">
+            <li>{{Links.ClamavNet}} – ClamAV主页（ClamAV®是一个开源的防病毒引擎用于检测木马，​病毒，​恶意软件和其他恶意威胁）。</li>
+            <li>{{Links.SecuriteInfo}} – 一家计算机安全公司。为ClamAV提供补充签名。</li>
+            <li>{{Links.Sanesecurity}} – 一家计算机安全公司。为ClamAV提供补充签名。</li>
+            <li>{{Links.Malware Expert}} – 提供ClamAV的补充签名和ModSecurity的补充规则。</li>
+          </ul>
+        </li>
+        <li><span class="comCat">团体，论坛，社区，等等。</span>
+          <ul class="comSub">
+            <li>{{Links.PHP.Earth.Facebook}} – PHP学习资源和讨论。</li>
+            <li>{{Links.MalwareTips}} – 有用的讨论论坛关于恶意软件。</li>
+          </ul>
+        </li>
+        <li><span class="comCat">其他有用的工具，资源，服务，等等</span>
+          <ul class="comSub">
+            <li>{{Links.PhishTank}} – 网络钓鱼数据库。由phpMussel URL扫描器使用。</li>
+            <li>{{Links.VirusTotal}} – VirusTotal是一项免费服务，​用于分析可疑文件和URL。</li>
+            <li>{{Links.Hybrid Analysis}} – Hybrid Analysis是由{{Links.Payload Security}}提供的免费恶意软件分析服务。</li>
+            <li>{{Links.Malwarebytes}} – 电脑反恶意软件专家。</li>
+          </ul>
+        </li>
+        <li><span class="comCat">信息和学习资源。</span>
+          <ul class="comSub">
+            <li>{{Links.PHP.Earth.Website}} – PHP学习资源和讨论。</li>
+            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">脆弱性图表</a> – 列出各种软件包的安全/不安全版本（HHVM，PHP，phpMyAdmin，Python，等等）。</li>
+            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">兼容性图表</a> – 列出各种软件包的兼容性信息（CIDRAM，phpMussel，等等）。</li>
+          </ul>
+        </li>
+      </ul>
+ zh-Hant: |+
+  一些有用的链接：<br />
+      <ul class="pieul">
+        <li><span class="comCat">phpMussel的工具，資源，等等。</span>
+          <ul class="comSub">
+            <li>{{Links.phpMussel.Issues}} – phpMussel問題頁面（支持，​協助，​等等）。</li>
+            <li>{{Links.phpMussel.SigTool}} – 使用ClamAV簽名數據庫創建phpMussel簽名文件。</li>
+            <li>{{Links.OSChina}} – phpMussel頁面託管在開源中國社區。</li>
+            <li>{{Links.phpMussel.Extras}} – 各種附加功能。</li>
+          </ul>
+        </li>
+        <li><span class="comCat">ClamAV的工具，資源，等等。</span>
+          <ul class="comSub">
+            <li>{{Links.ClamavNet}} – ClamAV主頁（ClamAV®是一個開源的防病毒引擎用於檢測木馬，​病毒，​惡意軟件和其他惡意威脅）。</li>
+            <li>{{Links.SecuriteInfo}} – 一家計算機安全公司。為ClamAV提供補充簽名。</li>
+            <li>{{Links.Sanesecurity}} – 一家計算機安全公司。為ClamAV提供補充簽名。</li>
+            <li>{{Links.Malware Expert}} – 提供ClamAV的補充簽名和ModSecurity的補充規則。</li>
+          </ul>
+        </li>
+        <li><span class="comCat">團體，論壇，社區，等等。</span>
+          <ul class="comSub">
+            <li>{{Links.PHP.Earth.Facebook}} – PHP學習資源和討論。</li>
+            <li>{{Links.MalwareTips}} – 有用的討論論壇關於惡意軟件。</li>
+          </ul>
+        </li>
+        <li><span class="comCat">其他有用的工具，資源，服務，等等</span>
+          <ul class="comSub">
+            <li>{{Links.PhishTank}} – 網絡釣魚數據庫。由phpMussel URL掃描器使用。</li>
+            <li>{{Links.VirusTotal}} – VirusTotal是一項免費服務，​用於分析可疑文件和URL。</li>
+            <li>{{Links.Hybrid Analysis}} – Hybrid Analysis是由{{Links.Payload Security}}提供的免費惡意軟件分析服務。</li>
+            <li>{{Links.Malwarebytes}} – 電腦反惡意軟件專家。</li>
+          </ul>
+        </li>
+        <li><span class="comCat">信息和學習資源。</span>
+          <ul class="comSub">
+            <li>{{Links.PHP.Earth.Website}} – PHP學習資源和討論。</li>
+            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">脆弱性圖表</a> – 列出各種軟件包的安全/不安全版本（HHVM，PHP，phpMyAdmin，Python，等等）。</li>
+            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">兼容性圖表</a> – 列出各種軟件包的兼容性信息（CIDRAM，phpMussel，等等）。</li>
+          </ul>
+        </li>
+      </ul>
 label:
  %s is available (%s): "%s可用（%s）。"
  %s is available: "%s可用。"
  %s is not available: "%s不可用。"
- Active configuration file: "活动配置文件："
- Active signature files: "活动签名文件"
- Branch latest stable: "分支最新稳定："
- Client information: "客户信息："
- Complete access: "完全访问"
- Copy to clipboard: "复制到剪贴板"
- Default: "标准"
- Expires: "过期："
- Extension: "扩展"
+ Active configuration file: {"zh-Hans": "活动配置文件：", "zh-Hant": "活動配置文件："}
+ Active signature files: {"zh-Hans": "活动签名文件", "zh-Hant": "活動簽名文件"}
+ Branch latest stable: {"zh-Hans": "分支最新稳定：", "zh-Hant": "分支最新穩定："}
+ Client information: {"zh-Hans": "客户信息：", "zh-Hant": "客戶信息："}
+ Complete access: {"zh-Hans": "完全访问", "zh-Hant": "完全訪問"}
+ Copy to clipboard: {"zh-Hans": "复制到剪贴板", "zh-Hant": "複製到剪貼板"}
+ Default: {"zh-Hans": "标准", "zh-Hant": "標準"}
+ Expires: {"zh-Hans": "过期：", "zh-Hant": "過期："}
+ Extension: {"zh-Hans": "扩展", "zh-Hant": "擴展"}
  External: "外部"
- Installed Available: "已安装/可用"
- Latest stable: "最新稳定："
- Latest unstable: "最新不稳定："
- Loading_: "载入中..."
- Logged in, 2FA pending: "已登录，2FA待定。"
- Logged in: "已登录。"
+ Installed Available: {"zh-Hans": "已安装/可用", "zh-Hant": "已安裝/可用"}
+ Latest stable: {"zh-Hans": "最新稳定：", "zh-Hant": "最新穩定："}
+ Latest unstable: {"zh-Hans": "最新不稳定：", "zh-Hant": "最新不穩定："}
+ Loading_: {"zh-Hans": "载入中...", "zh-Hant": "載入中..."}
+ Logged in, 2FA pending: {"zh-Hans": "已登录，2FA待定。", "zh-Hant": "已登錄，2FA待定。"}
+ Logged in: {"zh-Hans": "已登录。", "zh-Hant": "已登錄。"}
  Logged out: "已登出。"
- Login: "登录"
- Logs access only: "仅日志访问"
- Never: "决不"
- No log file selected: "没有选择的日志。"
- No log files available: "没有日志可用。"
- Objects flagged: "对象已标记"
- Objects scanned: "对象已扫描"
- Operating system used: "目前使用操作系统："
+ Login: {"zh-Hans": "登录", "zh-Hant": "登錄"}
+ Logs access only: {"zh-Hans": "仅日志访问", "zh-Hant": "僅日誌訪問"}
+ Never: {"zh-Hans": "决不", "zh-Hant": "決不"}
+ No log file selected: {"zh-Hans": "没有选择的日志。", "zh-Hant": "沒有選擇的日誌。"}
+ No log files available: {"zh-Hans": "没有日志可用。", "zh-Hant": "沒有日誌可用。"}
+ Objects flagged: {"zh-Hans": "对象已标记", "zh-Hant": "對像已標記"}
+ Objects scanned: {"zh-Hans": "对象已扫描", "zh-Hant": "對像已掃描"}
+ Operating system used: {"zh-Hans": "目前使用操作系统：", "zh-Hant": "目前使用操作系統："}
  Other: "其他"
  PHP version used: "目前使用PHP版本："
- Page request completed in %s seconds: "页面请求在%s秒内完成。"
- Please log in to continue: "请登录以继续。"
+ Page request completed in %s seconds: {"zh-Hans": "页面请求在%s秒内完成。", "zh-Hant": "頁面請求在%s秒內完成。"}
+ Please log in to continue: {"zh-Hans": "请登录以继续。", "zh-Hant": "請登錄以繼續。"}
  SAPI used: "目前使用SAPI："
- Scan events: "扫描事件"
+ Scan events: {"zh-Hans": "扫描事件", "zh-Hant": "掃描事件"}
  See also: "也可以看看："
- Selected log file doesn_t exist: "选择的日志不存在！"
- Size in quarantine: "大小在检疫："
- Start date: "开始日期"
- System information: "系统信息："
- The cache is empty: "缓存是空的。"
- Upload date: "上传日期："
- Upload hash: "上传哈希："
- Upload origin: "上传原点："
- Upload size: "上传大小："
- Uploads blocked: "上传已阻止"
- Uploads quarantined: "上传已隔离"
- Uploads scanned: "上传已扫描"
+ Selected log file doesn_t exist: {"zh-Hans": "选择的日志不存在！", "zh-Hant": "選擇的日誌不存在！"}
+ Size in quarantine: {"zh-Hans": "大小在检疫：", "zh-Hant": "大小在檢疫："}
+ Start date: {"zh-Hans": "开始日期", "zh-Hant": "開始日期"}
+ System information: {"zh-Hans": "系统信息：", "zh-Hant": "系統信息："}
+ The cache is empty: {"zh-Hans": "缓存是空的。", "zh-Hant": "緩存是空的。"}
+ Upload date: {"zh-Hans": "上传日期：", "zh-Hant": "上傳日期："}
+ Upload hash: {"zh-Hans": "上传哈希：", "zh-Hant": "上傳哈希："}
+ Upload origin: {"zh-Hans": "上传原点：", "zh-Hant": "上傳原點："}
+ Upload size: {"zh-Hans": "上传大小：", "zh-Hant": "上傳大小："}
+ Uploads blocked: {"zh-Hans": "上传已阻止", "zh-Hant": "上傳已阻止"}
+ Uploads quarantined: {"zh-Hans": "上传已隔离", "zh-Hant": "上傳已隔離"}
+ Uploads scanned: {"zh-Hans": "上传已扫描", "zh-Hant": "上傳已掃描"}
  Your IP: "您的IP："
  Your UA: "您的UA："
  phpMussel version used: "目前使用phpMussel版本："
 link:
- Accounts: "帐户"
- Cache Data: "缓存数据"
+ Accounts: {"zh-Hans": "帐户", "zh-Hant": "帳戶"}
+ Cache Data: {"zh-Hans": "缓存数据", "zh-Hant": "緩存數據"}
  Configuration: "配置"
- Discussions: "讨论"
- Documentation: "文档"
- Home: "主页"
+ Discussions: {"zh-Hans": "讨论", "zh-Hant": "討論"}
+ Documentation: {"zh-Hans": "文档", "zh-Hant": "文檔"}
+ Home: {"zh-Hans": "主页", "zh-Hant": "主頁"}
  Log Out: "登出"
- Logs: "日志"
- Quarantine: "隔离"
- Signature Information: "签名信息"
- Statistics: "统计"
- Text formatting: "文字格式： <a href="%1$sfalse">简单</a> – <a href="%1$strue">漂亮</a>"
- Upload Testing: "上传测试"
-msg_subject_2fa: "2FA（双因素身份验证）"
-msg_template_2fa: |
- <center><p>你好，%s。<br /><br />
- 用于登录phpMussel前端的2FA代码：</p>
- <h1>%s</h1>
- <p>此代码将在10分钟后到期。</p></center>
+ Logs: {"zh-Hans": "日志", "zh-Hant": "日誌"}
+ Quarantine: {"zh-Hans": "隔离", "zh-Hant": "隔離"}
+ Signature Information: {"zh-Hans": "签名信息", "zh-Hant": "簽名信息"}
+ Statistics: {"zh-Hans": "统计", "zh-Hant": "統計"}
+ Text formatting: {"zh-Hans": "文字格式： <a href="%1$sfalse">简单</a> – <a href="%1$strue">漂亮</a>", "zh-Hant": "文字格式： <a href="%1$sfalse">簡單</a> – <a href="%1$strue">漂亮</a>"}
+ Upload Testing: {"zh-Hans": "上传测试", "zh-Hant": "上傳測試"}
+msg_subject_2fa: {"zh-Hans": "2FA（双因素身份验证）", "zh-Hant": "2FA（雙因素身份驗證）"}
+msg_template_2fa:
+ zh-Hans: |
+  <center><p>你好，%s。<br /><br />
+  用于登录phpMussel前端的2FA代码：</p>
+  <h1>%s</h1>
+  <p>此代码将在10分钟后到期。</p></center>
+ zh-Hant: |
+  <center><p>你好，%s。<br /><br />
+  用於登錄phpMussel前端的2FA代碼：</p>
+  <h1>%s</h1>
+  <p>此代碼將在10分鐘後到期。</p></center>
 previewer:
  Days: "天"
- Hours: "小时"
+ Hours: {"zh-Hans": "小时", "zh-Hant": "小時"}
  Minutes: "分"
  Months: "月"
  Seconds: "秒"
- Weeks: "周"
+ Weeks: {"zh-Hans": "周", "zh-Hant": "週"}
  Years: "年"
 response:
- Account successfully created: "帐户成功创建！"
- Account successfully deleted: "帐户成功删除！"
- An account with that username already exists: "一个帐户与那个用户名已经存在！"
+ Account successfully created: {"zh-Hans": "帐户成功创建！", "zh-Hant": "帳戶成功創建！"}
+ Account successfully deleted: {"zh-Hans": "帐户成功删除！", "zh-Hant": "帳戶成功刪除！"}
+ An account with that username already exists: {"zh-Hans": "一个帐户与那个用户名已经存在！", "zh-Hant": "一個帳戶與那個用戶名已經存在！"}
  Configuration successfully updated: "配置成功更新。"
- Corrupted file: "损坏的文件！"
- Failed to create: "无法创建！"
- Failed to delete: "无法删除！"
- Failed to restore: "无法恢复"
- Failed to update configuration: "配置更新失败！"
- Failed to update: "无法更新！"
- Failed: "失败"
- File successfully deleted: "文件成功删除！"
- File successfully restored: "文件成功恢复！"
- Incorrect 2FA code entered: "输入了错误的2FA代码。验证失败。"
- Incorrect quarantine key: "不正确的隔离密钥！"
- Invalid password: "登录失败！​密码无效！"
- Maximum number of login attempts exceeded: "最大登录尝试次数已经超过；拒绝访问。"
- Password field empty: "密码输入是空的！"
- Password successfully updated: "密码成功更新！"
- Permissions not adequate to perform asynchronous requests: "权限不足以执行异步请求。尝试再次登录。"
- Please enter a valid quarantine key: "请输入有效的隔离密钥。"
- Statistics cleared: "统计删除。"
- Successfully authenticated: "验证成功。"
- That account doesn_t exist: "那个帐户不存在。"
- Username doesn_t exist: "登录失败！​用户名不存在！"
- Username field empty: "用户名输入是空的！"
- Wrong endpoint: "错误的端点！"
+ Corrupted file: {"zh-Hans": "损坏的文件！", "zh-Hant": "損壞的文件！"}
+ Failed to create: {"zh-Hans": "无法创建！", "zh-Hant": "無法創建！"}
+ Failed to delete: {"zh-Hans": "无法删除！", "zh-Hant": "無法刪除！"}
+ Failed to restore: {"zh-Hans": "无法恢复", "zh-Hant": "無法恢復"}
+ Failed to update configuration: {"zh-Hans": "配置更新失败！", "zh-Hant": "配置更新失敗！"}
+ Failed to update: {"zh-Hans": "无法更新！", "zh-Hant": "無法更新！"}
+ Failed: {"zh-Hans": "失败", "zh-Hant": "失敗"}
+ File successfully deleted: {"zh-Hans": "文件成功删除！", "zh-Hant": "文件成功刪除！"}
+ File successfully restored: {"zh-Hans": "文件成功恢复！", "zh-Hant": "文件成功恢復！"}
+ Incorrect 2FA code entered: {"zh-Hans": "输入了错误的2FA代码。验证失败。", "zh-Hant": "輸入了錯誤的2FA代碼。驗證失敗。"}
+ Incorrect quarantine key: {"zh-Hans": "不正确的隔离密钥！", "zh-Hant": "不正確的隔離密鑰！"}
+ Invalid password: {"zh-Hans": "登录失败！​密码无效！", "zh-Hant": "登錄失敗！​密碼無效！"}
+ Maximum number of login attempts exceeded: {"zh-Hans": "最大登录尝试次数已经超过；拒绝访问。", "zh-Hant": "最大登錄嘗試次數已經超過；拒絕訪問。"}
+ Password field empty: {"zh-Hans": "密码输入是空的！", "zh-Hant": "密碼輸入是空的！"}
+ Password successfully updated: {"zh-Hans": "密码成功更新！", "zh-Hant": "密碼成功更新！"}
+ Permissions not adequate to perform asynchronous requests: {"zh-Hans": "权限不足以执行异步请求。尝试再次登录。", "zh-Hant": "權限不足以執行異步請求。嘗試再次登錄。"}
+ Please enter a valid quarantine key: {"zh-Hans": "请输入有效的隔离密钥。", "zh-Hant": "請輸入有效的隔離密鑰。"}
+ Statistics cleared: {"zh-Hans": "统计删除。", "zh-Hant": "統計刪除。"}
+ Successfully authenticated: {"zh-Hans": "验证成功。", "zh-Hant": "驗證成功。"}
+ That account doesn_t exist: {"zh-Hans": "那个帐户不存在。", "zh-Hant": "那個帳戶不存在。"}
+ Username doesn_t exist: {"zh-Hans": "登录失败！​用户名不存在！", "zh-Hant": "登錄失敗！​用戶名不存在！"}
+ Username field empty: {"zh-Hans": "用户名输入是空的！", "zh-Hant": "用戶名輸入是空的！"}
+ Wrong endpoint: {"zh-Hans": "错误的端点！", "zh-Hant": "錯誤的端點！"}
  _No: "不是"
  _Yes: "是"
-siginfo_key_CVE: "处理CVE（常见漏洞和暴露）的签名。"
-siginfo_key_Chameleon: "处理“变色龙攻击”的签名。"
-siginfo_key_FN: "处理文件名的签名（与文件内容相反）。"
-siginfo_key_Fake: "检测是否则良性实体（软件，脚本，等）的恶意伪造变体。"
-siginfo_key_HEUR: "从启发式数据派生的签名。"
-siginfo_key_META: "处理文件元数据的签名（与文件数据相反）。"
+siginfo_key_CVE: {"zh-Hans": "处理CVE（常见漏洞和暴露）的签名。", "zh-Hant": "處理CVE（常見漏洞和暴露）的簽名。"}
+siginfo_key_Chameleon: {"zh-Hans": "处理“变色龙攻击”的签名。", "zh-Hant": "處理『變色龍攻擊』的簽名。"}
+siginfo_key_FN: {"zh-Hans": "处理文件名的签名（与文件内容相反）。", "zh-Hant": "處理文件名的簽名（與文件內容相反）。"}
+siginfo_key_Fake: {"zh-Hans": "检测是否则良性实体（软件，脚本，等）的恶意伪造变体。", "zh-Hant": "檢測是否則良性實體（軟件，腳本，等）的惡意偽造變體。"}
+siginfo_key_HEUR: {"zh-Hans": "从启发式数据派生的签名。", "zh-Hant": "從啟發式數據派生的簽名。"}
+siginfo_key_META: {"zh-Hans": "处理文件元数据的签名（与文件数据相反）。", "zh-Hant": "處理文件元數據的簽名（與文件數據相反）。"}
 siginfo_key_Other: "不明或其他。"
-siginfo_key_Other_Metadata: "无可用的元数据。"
-siginfo_key_Suspect: "检测是可疑的，但未得到证实（可能涉及各种标识符的组合）。"
-siginfo_key_Testfile: "测试文件的签名（即，不是恶意的检测）。"
-siginfo_key_Total: "总活动签名。"
-siginfo_key_VT: "签名包括或基于Virus Total的数据。"
-siginfo_key_Werewolf: "处理“狼人攻击”的签名。"
-siginfo_sub_Classes: "签名文件类的数量"
-siginfo_sub_Files: "签名文件的数量"
-siginfo_sub_MalwareTypes: "感染或恶意软件类型的数量"
-siginfo_sub_SigTypes: "签名元数据的数量"
-siginfo_sub_Targets: "向量目标的数量"
-siginfo_sub_Vendors: "签名供应商或来源的数量"
-siginfo_xkey: "标识符是“%s”。"
-state_quarantine: "目前有%s个文件在隔离区。"
+siginfo_key_Other_Metadata: {"zh-Hans": "无可用的元数据。", "zh-Hant": "無可用的元數據。"}
+siginfo_key_Suspect: {"zh-Hans": "检测是可疑的，但未得到证实（可能涉及各种标识符的组合）。", "zh-Hant": "檢測是可疑的，但未得到證實（可能涉及各種標識符的組合）。"}
+siginfo_key_Testfile: {"zh-Hans": "测试文件的签名（即，不是恶意的检测）。", "zh-Hant": "測試文件的簽名（即，不是惡意的檢測）。"}
+siginfo_key_Total: {"zh-Hans": "总活动签名。", "zh-Hant": "總活動簽名。"}
+siginfo_key_VT: {"zh-Hans": "签名包括或基于Virus Total的数据。", "zh-Hant": "簽名包括或基於Virus Total的數據。"}
+siginfo_key_Werewolf: {"zh-Hans": "处理“狼人攻击”的签名。", "zh-Hant": "處理『狼人攻擊』的簽名。"}
+siginfo_sub_Classes: {"zh-Hans": "签名文件类的数量", "zh-Hant": "簽名文件類的數量"}
+siginfo_sub_Files: {"zh-Hans": "签名文件的数量", "zh-Hant": "簽名文件的數量"}
+siginfo_sub_MalwareTypes: {"zh-Hans": "感染或恶意软件类型的数量", "zh-Hant": "感染或惡意軟件類型的數量"}
+siginfo_sub_SigTypes: {"zh-Hans": "签名元数据的数量", "zh-Hant": "簽名元數據的數量"}
+siginfo_sub_Targets: {"zh-Hans": "向量目标的数量", "zh-Hant": "向量目標的數量"}
+siginfo_sub_Vendors: {"zh-Hans": "签名供应商或来源的数量", "zh-Hant": "簽名供應商或來源的數量"}
+siginfo_xkey: {"zh-Hans": "标识符是“%s”。", "zh-Hant": "標識符是『%s』。"}
+state_quarantine: {"zh-Hans": "目前有%s个文件在隔离区。", "zh-Hant": "目前有%s個文件在隔離區。"}
 tip:
- 2FA Sent: "包含2FA代码的电子邮件已发送到您的电子邮件地址。​请确认以下代码以获取对前端的访问权限。​如果您没有收到此电子邮件，尝试登出，等待10分钟，然后再次登录以接收包含新代码的新电子邮件。"
- Accounts: "帐户页面允许您控制谁可以访问phpMussel前端。"
- Cache Data: "在这里您可以查看缓存的内容。"
- Configuration: "配置页面允许您修改phpMussel配置从前端。"
+ 2FA Sent:
+  zh-Hans: "包含2FA代码的电子邮件已发送到您的电子邮件地址。​请确认以下代码以获取对前端的访问权限。​如果您没有收到此电子邮件，尝试登出，等待10分钟，然后再次登录以接收包含新代码的新电子邮件。"
+  zh-Hant: "包含2FA代碼的電子郵件已發送到您的電子郵件地址。​請確認以下代碼以獲取對前端的訪問權限。​如果您沒有收到此電子郵件，嘗試登出，等待10分鐘，然後再次登錄以接收包含新代碼的新電子郵件。"
+ Accounts: {"zh-Hans": "帐户页面允许您控制谁可以访问phpMussel前端。", "zh-Hant": "帳戶頁面允許您控制誰可以訪問phpMussel前端。"}
+ Cache Data: {"zh-Hans": "在这里您可以查看缓存的内容。", "zh-Hant": "在這裡您可以查看緩存的內容。"}
+ Configuration: {"zh-Hans": "配置页面允许您修改phpMussel配置从前端。", "zh-Hant": "配置頁面允許您修改phpMussel配置從前端。"}
  Greeting: "你好，%s。"
- Home: "这是phpMussel的前端主页。​从左侧的导航菜单中选择一个链接以继续。"
- Logs: "选择一个日志从下面的列表以查看那个日志的内容。"
- Quarantine is currently disabled: "注意：隔离目前禁用，但可以通过配置页面启用。"
- Quarantine: "此页面列出当前在隔离中的所有文件，并可以用来管理这些文件。"
- See the documentation: "请参阅<a href="https://github.com/phpMussel/Docs/blob/master/readme.zh.md\#user-content-SECTION5" hreflang="zh-CN" rel="noopener external">文档</a>以获取有关各种配置指令的信息和他们的目的。"
- Signature Information: "签名信息页面提供了有关当前活动签名的来源和类型的一些基本信息。"
- Statistics tracking is currently disabled: "注意：统计跟踪目前已被禁用，但可以通过配置页面启用。"
- Statistics: "此页面显示了有关phpMussel安装的一些基本使用统计信息。"
- Upload Testing: "上传测试页面包含标准文件上传表单，​允许您测试是否文件通常会被阻止通过phpMussel当尝试上传他们。"
+ Home: {"zh-Hans": "这是phpMussel的前端主页。​从左侧的导航菜单中选择一个链接以继续。", "zh-Hant": "這是phpMussel的前端主頁。​從左側的導航菜單中選擇一個鏈接以繼續。"}
+ Logs: {"zh-Hans": "选择一个日志从下面的列表以查看那个日志的内容。", "zh-Hant": "選擇一個日誌從下面的列表以查看那個日誌的內容。"}
+ Quarantine is currently disabled: {"zh-Hans": "注意：隔离目前禁用，但可以通过配置页面启用。", "zh-Hant": "注意：隔離目前禁用，但可以通過配置頁面啟用。"}
+ Quarantine: {"zh-Hans": "此页面列出当前在隔离中的所有文件，并可以用来管理这些文件。", "zh-Hant": "此頁面列出當前在隔離中的所有文件，並可以用來管理這些文件。"}
+ See the documentation:
+  zh-Hans: "请参阅<a href="https://github.com/phpMussel/Docs/blob/master/readme.zh-Hans.md\#user-content-SECTION5" hreflang="zh-Hans" rel="noopener external">文档</a>以获取有关各种配置指令的信息和他们的目的。"
+  zh-Hant: "請參閱<a href="https://github.com/phpMussel/Docs/blob/master/readme.zh-Hant.md\#user-content-SECTION5" hreflang="zh-Hant" rel="noopener external">文檔</a>以獲取有關各種配置指令的信息和他們的目的。"
+ Signature Information: {"zh-Hans": "签名信息页面提供了有关当前活动签名的来源和类型的一些基本信息。", "zh-Hant": "簽名信息頁面提供了有關當前活動簽名的來源和類型的一些基本信息。"}
+ Statistics tracking is currently disabled: {"zh-Hans": "注意：统计跟踪目前已被禁用，但可以通过配置页面启用。", "zh-Hant": "注意：統計跟踪目前已被禁用，但可以通過配置頁面啟用。"}
+ Statistics: {"zh-Hans": "此页面显示了有关phpMussel安装的一些基本使用统计信息。", "zh-Hant": "此頁面顯示了有關phpMussel安裝的一些基本使用統計信息。"}
+ Upload Testing: {"zh-Hans": "上传测试页面包含标准文件上传表单，​允许您测试是否文件通常会被阻止通过phpMussel当尝试上传他们。", "zh-Hant": "上傳測試頁麵包含標准文件上傳表單，​允許您測試是否文件通常會被阻止通過phpMussel當嘗試上傳他們。"}
 warning:
- Cookies: "注意：phpMussel使用cookie来验证登录。​通过登录，您同意您的浏览器创建和存储cookie。"
- JavaScript required: "警告：一些前端功能需要JavaScript。为确保整个前端按预期运行，建议启用JavaScript。"
- Maintenance mode is enabled: "警告：维护模式是启用！"
- No signature files are active: "警告：没有签名文件是活动的！"
- Proceeding will log out all users: "警告：如果继续，所有用户都将被登出。"
- This account is not using a valid password: "警告：此帐户不​使用有效的密码！"
- Using the default password: "警告：它使用标准密码！"
+ Cookies: {"zh-Hans": "注意：phpMussel使用cookie来验证登录。​通过登录，您同意您的浏览器创建和存储cookie。", "zh-Hant": "注意：phpMussel使用cookie來驗證登錄。​通過登錄，您同意您的瀏覽器創建和存儲cookie。"}
+ JavaScript required: {"zh-Hans": "警告：一些前端功能需要JavaScript。为确保整个前端按预期运行，建议启用JavaScript。", "zh-Hant": "警告：一些前端功能需要JavaScript。為確保整個前端按預期運行，建議啟用JavaScript。"}
+ Maintenance mode is enabled: {"zh-Hans": "警告：维护模式是启用！", "zh-Hant": "警告：維護模式是啟用！"}
+ No signature files are active: {"zh-Hans": "警告：没有签名文件是活动的！", "zh-Hant": "警告：沒有簽名文件是活動的！"}
+ Proceeding will log out all users: {"zh-Hans": "警告：如果继续，所有用户都将被登出。", "zh-Hant": "警告：如果繼續，所有用戶都將被登出。"}
+ This account is not using a valid password: {"zh-Hans": "警告：此帐户不​使用有效的密码！", "zh-Hant": "警告：此帳戶不​使用有效的密碼！"}
+ Using the default password: {"zh-Hans": "警告：它使用标准密码！", "zh-Hant": "警告：它使用標準密碼！"}
