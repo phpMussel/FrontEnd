@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Urdu language data (last modified: 2024.06.18).
+# This file: Urdu language data (last modified: 2024.07.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -192,7 +192,7 @@ hints_time_format: |
  <code dir="ltr" class="s">{t:z}</code> – ٹائم زون (رابطہ کے ساتھ) – جیسے، <span dir="ltr">+08:00</span>.
 hints_xlists:
  یہ کیسے کام کرتا ہے.: "آپ کے سسٹم صرف فائلوں کی مخصوص اقسام اپ لوڈ کیا جا کرنے کی اجازت دیتا ہے، یا آپ کے سسٹم کو واضح طور پر، فائلوں کی بعض اقسام کی تردید کرتے ہیں وائٹ لسٹیں، بلیک لسٹ اور سرمئی فہرستوں میں ان قسم کی فائلوں کی وضاحت جس میں رفتار سکیننگ جائیں کرنے سکرپٹ اجازت دے کر کیا جاتا ہے بڑھا سکتے ہیں اگر تو بعض قسم کی فائلوں کے دوران. ڈاک CSV (علامت سے علیحدہ اقدار) ہے."
-Some useful links: |
+Some useful links: |+
  کچھ مفید لنکس:<br />
      <ul class="pieul">
        <li><span class="comCat">phpMussel کے لئے اوزار، وسائل، وغیرہ.</span>
@@ -227,12 +227,12 @@ Some useful links: |
        <li><span class="comCat">معلومات اور سیکھنے کے وسائل.</span>
          <ul class="comSub">
            <li>{{Links.PHP.Earth.Website}} – PHP سیکھنے کے وسائل اور بحث.</li>
+           <li>{{Links.MDN.Homepage}} – ڈویلپرز کے لیے وسائل، ڈویلپرز کے ذریعے. HTML، CSS، JavaScript، ایکسیسبیلٹی، اور مزید کے بارے میں سیکھنے کا ایک لاجواب وسیلہ.</li>
            <li><a dir="ltr" href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Vulnerability Charts</a> – مختلف پیکجوں کے محفوظ اور غیر محفوظ ورژن لیتے ہیں (HHVM ,PHP ,phpMyAdmin ,Python، وغیرہ).</li>
            <li><a dir="ltr" href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Compatibility Charts</a> – مختلف پیکجوں کے لئے مطابقت کی معلومات فہرست (CIDRAM، phpMussel، وغیرہ).</li>
          </ul>
        </li>
      </ul>
-
 label:
  %s is available (%s): "%s دستیاب ہے (%s)."
  %s is available: "%s دستیاب ہے."

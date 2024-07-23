@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data (last modified: 2024.06.18).
+# This file: Hebrew language data (last modified: 2024.07.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -195,7 +195,7 @@ hints_time_format: |
 hints_xlists:
  איך זה עובד.: "אם המערכת שלך מאפשרת להעלות רק סוגים מסוימים של קבצים, או אם המערכת שלך שוללת במפורש סוגים מסוימים של קבצים, ציון סוגי קבצים אלה ברשימות הלבנות, רשימות שחורות ורשימות אפורות יכול להגביר את המהירות שבה מתבצעת הסריקה על ידי מתן אפשרות לסקריפט לדלג מעל סוגי קבצים מסוימים. הפורמט הוא CSV (ערכים מופרדים בפסיקים)."
  סדר לוגי של עיבוד.: "אם סוג הקובץ נמצא ברשימת הלבנות, אל תסרוק ואל תחסום את הקובץ, ואל תבדוק את הקובץ מול הרשימה השחורה או הרשימה האפורה. אם הרשימה האפורה ריקה או אם הרשימה האפורה אינה ריקה וסוג הקובץ מופיע ברשימה אפורה, סרוק את הקובץ כרגיל וקבע אם לחסום אותו על סמך תוצאות הסריקה, אך אם הרשימה האפורה אינה ריקה וסוג הקובץ אינו מופיע ברשימה האפורה, התייחסו לקובץ כאל רשימת שחורה, לכן אל סורקים אותו אלא חוסמים אותו בכל זאת."
-Some useful links: |
+Some useful links: |+
  כמה קישורים שימושיים:<br />
      <ul class="pieul">
        <li><span class="comCat">כלים, משאבים, וכו' עבור phpMussel.</span>
@@ -230,12 +230,12 @@ Some useful links: |
        <li><span class="comCat">מידע ומשאבי למידה.</span>
          <ul class="comSub">
            <li>{{Links.PHP.Earth.Website}} – משאבי למידה ודיון ב-PHP.</li>
+           <li>{{Links.MDN.Homepage}} – משאבים למפתחים, לפי מפתחים. משאב פנטסטי ללמידה על HTML, CSS, JavaScript, נגישות, ועוד.</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">תרשימי פגיעות</a> – מפרטת גרסאות בטוחות ולא בטוחות של חבילות שונות (HHVM ,PHP ,phpMyAdmin ,Python, וכו').</li>
            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">תרשימי תאימות</a> – מפרטת מידע תאימות עבור חבילות שונות (CIDRAM ,phpMussel, וכו').</li>
          </ul>
        </li>
      </ul>
-
 label:
  %s is available (%s): "%s זמין (%s)."
  %s is available: "%s זמין."

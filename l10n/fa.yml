@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Farsi language data (last modified: 2024.06.18).
+# This file: Farsi language data (last modified: 2024.07.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -198,7 +198,7 @@ hints_time_format: |
 hints_xlists:
  چگونه این کار می کند.: "اگر سیستم شما اجازه می‌دهد فقط انواع خاصی از فایل‌ها آپلود شوند، یا اگر سیستم شما صراحتاً انواع خاصی از فایل‌ها را رد می‌کند، مشخص کردن آن نوع فایل‌ها در لیست‌های سفید، لیست‌های سیاه، و لیست‌های خاکستری می‌تواند سرعت انجام اسکن را افزایش دهد. از این لیست ها می توان برای تعیین اینکه آیا اسکن برای فایل های خاص، نادیده گرفتن برخی، مسدود کردن برخی دیگر و غیره نیاز است یا خیر. فرمت CSV (مقادیر جدا شده با کاما) است."
  ترتیب منطقی پردازش.: "اگر نوع فایل در لیست سفید است، فایل را اسکن نکنید و آن را مسدود نکنید، و فایل را در لیست سیاه یا لیست خاکستری بررسی نکنید. اگر نوع فایل در لیست سیاه است، فایل را اسکن نکنید، اما به هر حال آن را مسدود کنید، و فایل را با لیست خاکستری بررسی نکنید. اگر لیست خاکستری خالی است یا اگر لیست خاکستری خالی نیست و نوع فایل در لیست خاکستری است، فایل را اسکن کنید، و بر اساس نتایج اسکن تعیین کنید که آیا آن را مسدود کنید، اما اگر لیست خاکستری خالی نیست و نوع فایل در لیست خاکستری نیست، با فایل به گونه ای رفتار کنید که گویی در لیست سیاه است، از این رو آن را اسکن نمی کند اما به هر حال آن را مسدود می کند."
-Some useful links: |
+Some useful links: |+
  چند لینک مفید:<br />
      <ul class="pieul">
        <li><span class="comCat">ابزارها، منابع، و غیره برای phpMussel.</span>
@@ -233,12 +233,12 @@ Some useful links: |
        <li><span class="comCat">منابع اطلاعاتی و یادگیری.</span>
          <ul class="comSub">
            <li>{{Links.PHP.Earth.Website}} – منابع آموزشی و بحث برای PHP.</li>
+           <li>{{Links.MDN.Homepage}} – منابع برای توسعه دهندگان، توسط توسعه دهندگان. یک منبع فوق العاده برای یادگیری در مورد HTML، CSS، جاوا اسکریپت، دسترسی، و بیشتر.</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">نمودارهای آسیب پذیری</a> – نسخه های ایمن/ناایمن بسته های مختلف را فهرست می کند (HHVM ,PHP ,phpMyAdmin ,Python و غیره).</li>
            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">نمودارهای سازگاری</a> – اطلاعات سازگاری را برای بسته های مختلف فهرست می کند (CIDRAM ,phpMussel و غیره).</li>
          </ul>
        </li>
      </ul>
-
 label:
  %s is available (%s): "%s موجود است (%s)."
  %s is available: "%s موجود است."

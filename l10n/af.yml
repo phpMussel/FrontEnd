@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2024.06.18).
+# This file: Afrikaans language data (last modified: 2024.07.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -195,7 +195,7 @@ hints_time_format: |
 hints_xlists:
  Hoe dit werk.: "As jou stelsel toelaat dat slegs spesifieke tipes lêers opgelaai word, of as jou stelsel sekere tipes lêers uitdruklik weier, deur daardie lêertipes in witlyste, swartlyste, en gryslyste te spesifiseer, kan die spoed waarteen skandering uitgevoer word verhoog deur die skrip toe te laat om die skandering van daardie lêertipes te vermy. Formaat is CSV (kommageskeide waardes)."
  Logiese volgorde van verwerking.: "As die lêertipe op die gewitlys is, moenie die lêer skandeer en blokkeer nie, en moenie die lêer teen die swartlys of die gryslys kontroleer nie. As die lêertipe op die swartlys is, moenie die lêer skandeer nie, maar blokkeer dit in elk geval, en moenie die lêer teen die gryslys kontroleer nie. As die gryslys leeg is of as die gryslys nie leeg is nie en die lêertipe op die gryslys is, skandeer die lêer soos normaalweg en bepaal of dit geblokkeer moet word op grond van die resultate van die skandering, maar as die gryslys nie leeg is nie en die lêertipe nie op die gryslys is nie, hanteer die lêer asof op die swartlys, dus nie skandeer dit nie maar blokkeer dit in elk geval."
-Some useful links: |
+Some useful links: |+
  Nuttige skakels:<br />
      <ul class="pieul">
        <li><span class="comCat">Gereedskap, hulpbronne, ens vir phpMussel.</span>
@@ -230,12 +230,12 @@ Some useful links: |
        <li><span class="comCat">Inligtings en leerhulpbronne.</span>
          <ul class="comSub">
            <li>{{Links.PHP.Earth.Website}} – PHP leerhulpbronne en bespreking.</li>
+           <li>{{Links.MDN.Homepage}} – Hulpbronne vir ontwikkelaars, deur ontwikkelaars. Fantastiese hulpbron om te leer oor HTML, CSS, JavaScript, toeganklikheid, en meer.</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Kwesbaarheidskaarte</a> – Lys veilige/onveilige weergawes van verskeie pakkette (HHVM, PHP, phpMyAdmin, Python, ens).</li>
            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Verenigbaarheidskaarte</a> – Lys versoenbaarheidsinligting vir verskeie pakkette (CIDRAM, phpMussel, ens).</li>
          </ul>
        </li>
      </ul>
-
 label:
  %s is available (%s): "%s beskikbaar is (%s)."
  %s is available: "%s beskikbaar is."

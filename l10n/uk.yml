@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Ukrainian language data (last modified: 2024.06.18).
+# This file: Ukrainian language data (last modified: 2024.07.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -201,7 +201,7 @@ hints_time_format: |
 hints_xlists:
  Як це працює.: "Якщо ваша система дозволяє завантажувати лише певні типи файлів або якщо ваша система явно забороняє певні типи файлів, зазначення цих типів файлів у білих, чорних і сірих списках може збільшити швидкість сканування, дозволяючи сценарію пропускати певні типи файлів. Формат: CSV (значення, розділені комами)."
  Логічний порядок обробки.: "Якщо тип файлу внесено до білого списку, не скануйте та не блокуйте файл, а також не перевіряйте файл у чорному або сірому списку. Якщо тип файлу внесено до чорного списку, не скануйте файл, але все одно заблокуйте його та не перевіряйте файл у сірому списку. Якщо сірий список порожній, або якщо сірий список не порожній а тип файлу внесено до сірого списку, проскануйте файл як зазвичай і визначте, чи блокувати його на основі результатів сканування, але якщо сірий список не порожній і тип файлу не входить до сірого списку, розглядайте файл як входить до чорного списку, тому не скануйте його, але все одно блокуйте його."
-Some useful links: |
+Some useful links: |+
  Деякі корисні посилання:<br />
      <ul class="pieul">
        <li><span class="comCat">Інструменти, ресурси, тощо для phpMussel.</span>
@@ -236,12 +236,12 @@ Some useful links: |
        <li><span class="comCat">Інформаційні та навчальні ресурси.</span>
          <ul class="comSub">
            <li>{{Links.PHP.Earth.Website}} – Навчальні ресурси та обговорення для PHP.</li>
+           <li>{{Links.MDN.Homepage}} – Ресурси для розробників, за розробниками. Чудовий ресурс для вивчення HTML, CSS, JavaScript, доступність, тощо.</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Таблиці Вразливостей</a> – Перераховує безпечні/небезпечні версії різних пакетів (HHVM, PHP, phpMyAdmin, Python, тощо).</li>
            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Таблиці Сумісності</a> – Перераховує інформацію про сумісність для різних пакетів (CIDRAM, phpMussel, тощо).</li>
          </ul>
        </li>
      </ul>
-
 label:
  %s is available (%s): "%s доступний (%s)."
  %s is available: "%s доступний."

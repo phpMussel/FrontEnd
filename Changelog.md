@@ -199,3 +199,5 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 [2024.06.26; Maikuolan]: Common classes package update.
 
 [2024.07.02; Maikuolan]: Merged zh and zh-TW L10N, and dropped region designations (e.g., CN, TW) in favour of script designations (e.g., Hans, Hant).
+
+[2024.07.23; Maikuolan]: Added MDN to the front-end's "useful links".

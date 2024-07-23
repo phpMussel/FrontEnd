@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2024.06.18).
+# This file: Polish language data (last modified: 2024.07.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -196,7 +196,7 @@ hints_time_format: |
 hints_xlists:
  Jak to działa.: "Jeśli twój system zezwala tylko na przesyłanie określonych typów plików lub jeśli twój system jednoznacznie zaprzecza określonym typom plików, określenie tych typów plików na białych listach, czarnych listach i szarych listach może zwiększyć szybkość skanowania, umożliwiając skryptowi pomijanie niektórych rodzajów plików. Format to CSV (wartości oddzielone przecinkami)."
  Logiczna kolejność przetwarzania.: "Jeśli typ pliku znajduje się na białej liście, nie skanuj i nie blokuj pliku oraz nie porównuj pliku z czarną listą lub szarą listą. Jeśli typ pliku znajduje się na czarnej liście, nie skanuj pliku, ale i tak go zablokuj i nie sprawdzaj pliku z szarą listą. Jeśli szara lista jest pusta lub jeśli szara lista nie jest pusta, a typ pliku znajduje się na szarej liście, zeskanuj plik jak zwykle i ustal, czy chcesz go zablokować na podstawie wyników skanowania, ale jeśli szara lista nie jest pusta, a typu pliku nie ma na szarej liście, traktuj plik tak, jakby znajdował się na czarnej liście, dlatego nie skanuj go, ale i tak go blokuj."
-Some useful links: |
+Some useful links: |+
  Kilka przydatnych linków:<br />
      <ul class="pieul">
        <li><span class="comCat">Narzędzia, zasoby, itp dla phpMussel.</span>
@@ -231,12 +231,12 @@ Some useful links: |
        <li><span class="comCat">Materiały informacyjne i edukacyjne.</span>
          <ul class="comSub">
            <li>{{Links.PHP.Earth.Website}} – Materiały do nauki i dyskusja na temat PHP.</li>
+           <li>{{Links.MDN.Homepage}} – Zasoby dla programistów, autorstwa programistów. Fantastyczne źródło wiedzy o HTML, CSS, JavaScript, dostępności, i nie tylko.</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Wykresy Podatności</a> – Wyświetla bezpieczne/niebezpieczne wersje różnych pakietów oprogramowania (HHVM, PHP, phpMyAdmin, Python, itp).</li>
            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Wykresy Zgodności</a> – Wyświetla informacje o zgodności dla różnych pakietów oprogramowania (CIDRAM, phpMussel, itp).</li>
          </ul>
        </li>
      </ul>
-
 label:
  %s is available (%s): "%s jest dostępny (%s)."
  %s is available: "%s jest dostępny."

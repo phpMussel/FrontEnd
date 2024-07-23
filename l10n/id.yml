@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2024.06.18).
+# This file: Indonesian language data (last modified: 2024.07.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -193,7 +193,7 @@ hints_time_format: |
 hints_xlists:
  Bagaimana ini bekerja.: "Jika sistem Anda hanya mengizinkan jenis file spesifik menjadi diupload, atau jika sistem Anda secara eksplisit menolak jenis file-file tertentu, menspesifikasikan jenis file dalam bertanda putih, bertanda hitam dan bertanda abu-abu dapat menaikkan kecepatan dari pemindaian dilakukan dengan mengizinkan skrip untuk mengabaikan jenis file tertentu. Format adalah CSV (nilai yang dipisahkan koma)."
  Urutan pemrosesan logis.: "Jika jenis file bertanda putih, jangan memindai dan jangan memblokir file, dan jangan memeriksa file terhadap daftar hitam atau daftar abu-abu. Jika jenis file bertanda hitam, jangan memindai file tetapi memblokir bagaimanapun, dan jangan memeriksa file terhadap daftar abu-abu. Jika daftar abu-abu yang kosong atau jika daftar abu-abu tidak kosong dan jenis file bertanda abu-abu, memindai file seperti biasa dan menentukan apakah untuk memblokir berdasarkan hasil memindai, tapi jika daftar abu-abu tidak kosong dan jenis file tidak bertanda abu-abu, memperlakukan seolah olah bertanda hitam, demikian tidak memindai tapi memblokir itu bagaimanapun."
-Some useful links: |
+Some useful links: |+
  Beberapa link yang berguna:<br />
      <ul class="pieul">
        <li><span class="comCat">Alat, sumber daya, dll untuk phpMussel.</span>
@@ -228,12 +228,12 @@ Some useful links: |
        <li><span class="comCat">Sumber daya informasi dan pembelajaran.</span>
          <ul class="comSub">
            <li>{{Links.PHP.Earth.Website}} – Sumber belajar dan diskusi PHP.</li>
+           <li>{{Links.MDN.Homepage}} – Sumber daya untuk pengembang, oleh pengembang. Sumber daya yang luar biasa untuk mempelajari tentang HTML, CSS, JavaScript, aksesibilitas, dan banyak lagi.</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Tabel Kerentanan</a> – Mencantumkan berbagai versi dari paket-paket yang aman dan tidak aman (HHVM, PHP, phpMyAdmin, Python, dll).</li>
            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Tabel Kompatibilitas</a> – Mencantumkan informasi kompatibilitas untuk berbagai paket (CIDRAM, phpMussel, dll).</li>
          </ul>
        </li>
      </ul>
-
 label:
  %s is available (%s): "%s tersedia (%s)."
  %s is available: "%s tersedia."

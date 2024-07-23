@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Catalan language data (last modified: 2024.06.22).
+# This file: Catalan language data (last modified: 2024.07.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -163,16 +163,7 @@ field:
  Your version: "El vostre versió"
  log_rotation_archive: "Primer arxiveu i, a continuació, suprimiu els fitxers de registre més antics, fins que ja no es superi el límit."
  log_rotation_delete: "Suprimeix els fitxers de registre més antics, fins que ja no es superi el límit."
- size:
-  Total size: "Mida total:"
-  GB: "GB"
-  KB: "KB"
-  MB: "MB"
-  PB: "PB"
-  TB: "TB"
-  bytes:
-   - "byte"
-   - "bytes"
+ size: {"Total size": "Mida total:"}
  vt_suspicion_level_all: "Escaneja tots els fitxers."
  vt_suspicion_level_executable: "Escaneja fitxers amb pes heurístic, fitxers executables, i fitxers que potencialment continguin dades executables.\nExemples de fitxers executables, i fitxers que potencialment continguin dades executables, inclouen fitxers PE de Windows, fitxers ELF de Linux, fitxers Mach-O, fitxers DOCX, fitxers ZIP, etc."
  vt_suspicion_level_heuristic_only: "Escaneja només fitxers amb pes heurístic.\nEls fitxers només s'escanejaran si tenen un pes heurístic. El pes heurístic es pot incórrer a partir de signatures destinades a capturar empremtes dactilars comunes associades a una possible infecció que no necessàriament garanteixen la infecció. La cerca, en aquests casos, pot servir per proporcionar una segona opinió per als resultats que justifiquen sospita però que no proporcionen cap certesa."
@@ -200,7 +191,7 @@ hints_time_format: |
 hints_xlists:
  Com funciona això.: "Si el vostre sistema només permet penjar tipus específics de fitxers, o si el vostre sistema nega explícitament determinats tipus de fitxers, especificar aquests tipus de fitxers a llistes blanques, llistes negres, i llistes grises pot augmentar la velocitat a la qual es realitza l'escaneig permetent que l'script salti per sobre de determinats tipus de fitxer. El format és CSV (valors separats per comes)."
  Ordre lògic de processament.: "Si el tipus de fitxer està a la llista blanca, no escanegeu i no bloquegeu el fitxer, i no comproveu el fitxer amb la llista negra o la llista grisa. Si el tipus de fitxer està a la llista negra, no escanegeu el fitxer, sinó que el bloquegeu igualment i no comproveu el fitxer amb la llista grisa. Si la llista grisa està buida o si la llista grisa no està buida i el tipus de fitxer està a la llista grisa, escanegeu el fitxer com és normal i determineu si voleu bloquejar-lo segons els resultats de l'escaneig, però si la llista grisa no està buida i el tipus de fitxer no està a la llista grisa, tracteu el fitxer com si estigués a la llista negra, per tant, no l'escanegeu sinó que el bloquegeu de totes maneres."
-Some useful links: |
+Some useful links: |+
  Alguns enllaços útils:<br />
      <ul class="pieul">
        <li><span class="comCat">Eines, recursos, etc per a phpMussel.</span>
@@ -235,12 +226,12 @@ Some useful links: |
        <li><span class="comCat">Recursos informatius i d'aprenentatge.</span>
          <ul class="comSub">
            <li>{{Links.PHP.Earth.Website}} – Recursos d'aprenentatge i discussió de PHP.</li>
+           <li>{{Links.MDN.Homepage}} – Recursos per a desenvolupadors, per desenvolupadors. Un recurs fantàstic per aprendre sobre HTML, CSS, JavaScript, accessibilitat, i molt més.</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Taules de vulnerabilitats</a> – Llista les versions segures/insegures de diversos paquets (HHVM, PHP, phpMyAdmin, Python, etc).</li>
            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Taules de compatibilitat</a> – Llista la informació de compatibilitat per a diversos paquets (CIDRAM, phpMussel, etc).</li>
          </ul>
        </li>
      </ul>
-
 label:
  %s is available (%s): "%s està disponible (%s)."
  %s is available: "%s està disponible."

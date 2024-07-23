@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2024.06.18).
+# This file: Dutch language data (last modified: 2024.07.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -191,7 +191,7 @@ hints_time_format: |
 hints_xlists:
  Hoe dit werkt.: "Als uw systeem vergunningen alleen specifieke bestandstypen te uploaden, of als uw systeem expliciet ontkent bepaalde bestandstypen, specificeren deze bestandstypen in whitelists, blacklists, en greylists kunt toenemen de snelheid waarin scannen is uitgevoerd via vergunningen het script te negeren bepaalde bestandstypen. Formaat is CSV (komma's gescheiden waarden)."
  Logische volgorde van de verwerking.: "Als het bestandstype is op de whitelist, niet scannen en niet blokkeren het bestand, en niet controleer het bestand tegen de blacklist of de greylist. Als het bestandstype is op de blacklist, niet scannen het bestand maar blokkeren het niettemin, en niet controleer het bestand tegen de greylist. Als de greylist is leeg of als de greylist is niet leeg en het bestandstype is op de greylist, scannen het bestand als per normaal en bepalen als om het gebaseerd op de resultaten van de scan te blokkeren, maar als de greylist is niet leeg en het bestandstype is niet op de greylist, behandel het bestand alsof op de blacklist, dus om het niet te scannen, maar toch blokkeren het niettemin."
-Some useful links: |
+Some useful links: |+
  Enkele nuttige links:<br />
      <ul class="pieul">
        <li><span class="comCat">Tools, bronnen, enz. voor phpMussel.</span>
@@ -226,12 +226,12 @@ Some useful links: |
        <li><span class="comCat">Informatie en leermiddelen.</span>
          <ul class="comSub">
            <li>{{Links.PHP.Earth.Website}} – PHP leermiddelen en discussie.</li>
+           <li>{{Links.MDN.Homepage}} – Bronnen voor ontwikkelaars, door ontwikkelaars. Een fantastische bron voor meer informatie over HTML, CSS, JavaScript, toegankelijkheid, en meer.</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Kwetsbaarheidstabellen</a> – Hiermee worden veilige/onveilige versies van verschillende pakketten weergegeven (HHVM, PHP, phpMyAdmin, Python, enz).</li>
            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Compatibiliteitstabellen</a> – Hiermee worden informatie over compatibiliteit voor verschillende pakketten weergegeven (CIDRAM, phpMussel, enz).</li>
          </ul>
        </li>
      </ul>
-
 label:
  %s is available (%s): "%s is beschikbaar (%s)."
  %s is available: "%s is beschikbaar."

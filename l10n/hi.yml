@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hindi language data (last modified: 2024.06.18).
+# This file: Hindi language data (last modified: 2024.07.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -195,7 +195,7 @@ hints_time_format: |
 hints_xlists:
  यह कैसे काम करता है।: "यदि आपका सिस्टम केवल विशिष्ट प्रकार की फाइलों को अपलोड करने की अनुमति देता है, या यदि आपका सिस्टम कुछ प्रकार की फाइलों को स्पष्ट रूप से इनकार करता है, तो काली सूची, धूसर सूची और सफेद सूची में उन फाइलप्रकार को निर्दिष्ट करते हुए स्पीड को बढ़ाया जा सकता है जिस पर स्कैनिंग की अनुमति हो सकती है, फाइल प्रकारों। प्रारूप CSV है (कॉमा से अलग किए गए मान)।"
  प्रसंस्करण के तार्किक आदेश।: "अगर फाइल प्रकार सफेद सूची में है, तो स्कैन न करें और फाइल को ब्लॉक न करें, और फाइल को काली सूची या धूसर सूची के खिलाफ जांच न करें। यदि फाइलप्रकार काली सूची पर है, तो फाइल को स्कैन नहीं करें, लेकिन इसे किसी भी तरह से अवरुद्ध करें, और फाइल धूसर सूची के खिलाफ जांच न करें। यदि धूसर सूची रिक्त है या यदि धूसर सूची खाली नहीं है और फाइल प्रकार धूसर सूची पर है, तो फाइल को सामान्य रूप से स्कैन करें और यह निर्धारित करें कि स्कैन के परिणामों के आधार पर इसे ब्लॉक करना है या नहीं। यदि धूसर सूची खाली नहीं है और फाइल प्रकार धूसर सूची पर नहीं है, तो फाइल को काली सूची पर बताए अनुसार रखें।"
-Some useful links: |
+Some useful links: |+
  कुछ उपयोगी लिंक:<br />
      <ul class="pieul">
        <li><span class="comCat">phpMussel के लिए उपकरण, संसाधन, आदि।</span>
@@ -230,12 +230,12 @@ Some useful links: |
        <li><span class="comCat">सूचनात्मक और सीखने के संसाधन।</span>
          <ul class="comSub">
            <li>{{Links.PHP.Earth.Website}} – PHP सीखने संसाधन और चर्चा।</li>
+           <li>{{Links.MDN.Homepage}} – डेवलपर्स के लिए, डेवलपर्स द्वारा संसाधन। HTML, CSS, जावास्क्रिप्ट, एक्सेसिबिलिटी, और अधिक के बारे में जानने के लिए एक शानदार संसाधन।</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Vulnerability Charts (भेद्यता चार्ट)</a> – विभिन्न पैकेजों के सुरक्षित/असुरक्षित संस्करणों की सूची (HHVM, PHP, phpMyAdmin, Python, आदि)।</li>
            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Compatibility Charts (संगतता चार्ट)</a> – विभिन्न पैकेजों के लिए सुसंगतता सूचियों की सूची (CIDRAM, phpMussel, आदि)।</li>
          </ul>
        </li>
      </ul>
-
 label:
  %s is available (%s): "%s उपलब्ध है (%s)।"
  %s is available: "%s उपलब्ध है।"

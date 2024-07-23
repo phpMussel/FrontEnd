@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data (last modified: 2024.06.18).
+# This file: German language data (last modified: 2024.07.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -191,7 +191,7 @@ hints_time_format: |
 hints_xlists:
  Wie das funktioniert.: "Sofern Ihr System spezielle Dateitypen im Upload erlaubt oder komplett verweigert, so unterteilen Sie diese Dateitypen in Whitelists, Blacklists oder Greylists, um den Scanvorgang zu beschleunigen, indem diese Dateitypen übersprungen werden. Format ist CSV (Komma-getrennte Werte)."
  Logische Reihenfolge der Verarbeitung.: "Wenn der Dateityp in der Whitelist ist, scanne und blockieren nicht die Datei, und überprüfe nicht wenn die Datei in der Whitelist oder in der Greylist ist. Wenn der Dateityp in der Blacklist ist, scanne nicht die Datei aber blockieren sie trotzdem, und überprüfe nicht wenn die Datei in der Greylist ist. Wenn die Greylist leer ist oder wenn die Greylist nicht leer ist und der Dateityp in der Greylist ist, scanne die Datei wie standardmäßig eingestellt ist und stelle fest, ob diese blockiert werden soll, basierend auf dem Scan, aber wenn die Greylist nicht leer ist und der Dateityp nicht in der Greylist ist, behandel die Datei als ob sie in der Blacklist ist, scanne sie nicht aber blockiere sie trotzdem."
-Some useful links: |
+Some useful links: |+
  Einige nützliche Links:<br />
      <ul class="pieul">
        <li><span class="comCat">Werkzeuge, Ressourcen, u.s.w. für phpMussel.</span>
@@ -226,12 +226,12 @@ Some useful links: |
        <li><span class="comCat">Informations und Lernressourcen.</span>
          <ul class="comSub">
            <li>{{Links.PHP.Earth.Website}} – PHP Lernressourcen und Diskussion.</li>
+           <li>{{Links.MDN.Homepage}} – Ressourcen für Entwickler, von Entwicklern. Eine fantastische Ressource zum Erlernen von HTML, CSS, JavaScript, Barrierefreiheit, und mehr.</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Sicherheitskarten</a> – Listet sichere/unsichere Versionen verschiedener Pakete auf (HHVM, PHP, phpMyAdmin, Python, u.s.w.).</li>
            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Kompatibilitätskarten</a> – Listet Kompatibilitätsinformationen für verschiedene Pakete auf (CIDRAM, phpMussel, u.s.w.).</li>
          </ul>
        </li>
      </ul>
-
 label:
  %s is available (%s): "%s ist verfügbar (%s)."
  %s is available: "%s ist verfügbar."

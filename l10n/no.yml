@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2024.06.18).
+# This file: Norwegian language data (last modified: 2024.07.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -193,7 +193,7 @@ hints_time_format: |
 hints_xlists:
  Hvordan dette fungerer.: "Hvis systemet bare tillater opplasting av bestemte filtyper, eller hvis systemet eksplisitt avviser visse filtyper, å spesifisere filtypene i hvitelister, svartelister og grålister kan øke hastigheten som skanning utføres ved å la skriptet hoppe over bestemte filtyper. Format er CSV (kommaseparerte verdier)."
  Logisk rekkefølge på behandlingen.: "Hvis filtypen er hvitlistet, ikke skanne og ikke blokkere filen, og ikke sjekke filen mot svartelisten eller grålisten. Hvis filtypen er svartelistet, ikke skanne filen, men blokkere den uansett, og ikke sjekk filen mot grålisten. Hvis grålisten er tom, eller hvis grålisten ikke er tom og filtypen er grålistet, skann filen som normalt og bestemme om den skal blokkeres basert på resultatene av skanningen, men hvis grålisten ikke er tom og filtypen ikke er grålistet, behandle filen som svartelistet, derfor ikke skanne den, men blokkerer den uansett."
-Some useful links: |
+Some useful links: |+
  Noen nyttige lenker:<br />
      <ul class="pieul">
        <li><span class="comCat">Verktøy, ressurser, osv for phpMussel.</span>
@@ -228,12 +228,12 @@ Some useful links: |
        <li><span class="comCat">Informasjons og læringsressurser.</span>
          <ul class="comSub">
            <li>{{Links.PHP.Earth.Website}} – PHP læringsressurser og diskusjon.</li>
+           <li>{{Links.MDN.Homepage}} – Ressurser for utviklere, etter utviklere. En fantastisk ressurs for å lære om HTML, CSS, JavaScript, tilgjengelighet, og mer.</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Sårbarhetskart</a> – Viser sikker/usikker versjon av ulike pakker (HHVM, PHP, phpMyAdmin, Python, osv).</li>
            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Kompatibilitetskart</a> – Viser kompatibilitetsinformasjon for ulike pakker (CIDRAM, phpMussel, osv).</li>
          </ul>
        </li>
      </ul>
-
 label:
  %s is available (%s): "%s er tilgjengelig (%s)."
  %s is available: "%s er tilgjengelig."

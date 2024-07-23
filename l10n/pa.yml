@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Punjabi language data (last modified: 2024.06.18).
+# This file: Punjabi language data (last modified: 2024.07.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -193,7 +193,7 @@ hints_time_format: |
 hints_xlists:
  ਇਹ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ।: "ਜੇਕਰ ਤੁਹਾਡਾ ਸਿਸਟਮ ਸਿਰਫ ਖਾਸ ਕਿਸਮ ਦੀਆਂ ਫਾਈਲਾਂ ਨੂੰ ਅੱਪਲੋਡ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ, ਜਾਂ ਜੇਕਰ ਤੁਹਾਡਾ ਸਿਸਟਮ ਕੁਝ ਖਾਸ ਕਿਸਮਾਂ ਦੀਆਂ ਫਾਈਲਾਂ ਨੂੰ ਸਪਸ਼ਟ ਤੌਰ 'ਤੇ ਇਨਕਾਰ ਕਰਦਾ ਹੈ, ਵ੍ਹਾਈਟਲਿਸਟਸ, ਬਲੈਕਲਿਸਟਸ, ਅਤੇ ਗ੍ਰੇਲਿਸਟਸ ਵਿੱਚ ਉਹਨਾਂ ਫਾਈਲ ਕਿਸਮਾਂ ਨੂੰ ਨਿਸ਼ਚਿਤ ਕਰਕੇ, ਸਕੈਨ ਪ੍ਰਕਿਰਿਆ ਨੂੰ ਤੇਜ਼ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ, ਕਿਉਂਕਿ ਕੁਝ ਫਾਈਲ ਕਿਸਮਾਂ ਨੂੰ ਫਿਰ ਅਣਡਿੱਠ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ। ਫਾਰਮੈਟ CSV (ਕਾਮਾ ਨਾਲ ਵੱਖ ਕੀਤੇ ਮੁੱਲ) ਹੈ।"
  ਪ੍ਰੋਸੈਸਿੰਗ ਦਾ ਲਾਜ਼ੀਕਲ ਆਰਡਰ।: "ਜੇਕਰ ਫਾਈਲ ਟਾਈਪ ਵ੍ਹਾਈਟਲਿਸਟ ਕੀਤੀ ਗਈ ਹੈ, ਤਾਂ ਸਕੈਨ ਨਾ ਕਰੋ ਅਤੇ ਫਾਈਲ ਨੂੰ ਬਲੌਕ ਨਾ ਕਰੋ, ਅਤੇ ਬਲੈਕਲਿਸਟ ਜਾਂ ਗ੍ਰੇਲਿਸਟ ਦੇ ਵਿਰੁੱਧ ਫਾਈਲ ਦੀ ਜਾਂਚ ਨਾ ਕਰੋ। ਜੇਕਰ ਫਾਈਲ ਟਾਈਪ ਬਲੈਕਲਿਸਟ ਕੀਤੀ ਗਈ ਹੈ, ਤਾਂ ਫਾਈਲ ਨੂੰ ਸਕੈਨ ਨਾ ਕਰੋ ਪਰ ਇਸਨੂੰ ਕਿਸੇ ਵੀ ਤਰ੍ਹਾਂ ਬਲੌਕ ਕਰੋ, ਅਤੇ ਗ੍ਰੇਲਿਸਟ ਦੇ ਵਿਰੁੱਧ ਫਾਈਲ ਦੀ ਜਾਂਚ ਨਾ ਕਰੋ। ਜੇਕਰ ਗ੍ਰੇਲਿਸਟ ਖਾਲੀ ਹੈ, ਜਾਂ ਜੇ ਗ੍ਰੇਲਿਸਟ ਖਾਲੀ ਨਹੀਂ ਹੈ ਅਤੇ ਫਾਈਲ ਕਿਸਮ ਗ੍ਰੇਲਿਸਟਬੱਧ ਹੈ, ਤਾਂ ਫਾਈਲ ਨੂੰ ਆਮ ਵਾਂਗ ਸਕੈਨ ਕਰੋ ਅਤੇ ਸਕੈਨ ਨਤੀਜਿਆਂ ਦੇ ਆਧਾਰ 'ਤੇ ਇਹ ਨਿਰਧਾਰਤ ਕਰੋ ਕਿ ਕੀ ਇਸਨੂੰ ਬਲੌਕ ਕਰਨਾ ਹੈ, ਪਰ ਜੇਕਰ ਗ੍ਰੇਲਿਸਟ ਖਾਲੀ ਨਹੀਂ ਹੈ ਅਤੇ ਫਾਈਲ ਟਾਈਪ ਗ੍ਰੇਲਿਸਟਬੱਧ ਨਹੀਂ ਹੈ, ਤਾਂ ਫਾਈਲ ਨੂੰ ਬਲੈਕਲਿਸਟ ਕੀਤਾ ਸਮਝੋ, ਇਸਲਈ ਇਸ ਨੂੰ ਸਕੈਨ ਨਾ ਕਰੋ ਪਰ ਇਸ ਨੂੰ ਕਿਸੇ ਵੀ ਤਰ੍ਹਾਂ ਬਲੌਕ ਕਰੋ।"
-Some useful links: |
+Some useful links: |+
  ਕੁਝ ਲਾਭਦਾਇਕ ਲਿੰਕ:<br />
      <ul class="pieul">
        <li><span class="comCat">phpMussel ਲਈ ਟੂਲ, ਸਰੋਤ, ਆਦਿ।</span>
@@ -228,12 +228,12 @@ Some useful links: |
        <li><span class="comCat">ਜਾਣਕਾਰੀ ਅਤੇ ਸਿੱਖਣ ਦੇ ਸਰੋਤ।</span>
          <ul class="comSub">
            <li>{{Links.PHP.Earth.Website}} – PHP ਸਿੱਖਣ ਦੇ ਸਰੋਤ ਅਤੇ ਚਰਚਾ।</li>
+           <li>{{Links.MDN.Homepage}} – ਡਿਵੈਲਪਰਾਂ ਦੁਆਰਾ, ਡਿਵੈਲਪਰਾਂ ਲਈ ਸਰੋਤ। HTML, CSS, JavaScript, ਪਹੁੰਚਯੋਗਤਾ, ਅਤੇ ਹੋਰ ਬਹੁਤ ਕੁਝ ਬਾਰੇ ਸਿੱਖਣ ਲਈ ਇੱਕ ਸ਼ਾਨਦਾਰ ਸਰੋਤ।</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">ਕਮਜ਼ੋਰੀ ਚਾਰਟ</a> – ਵੱਖ-ਵੱਖ ਪੈਕੇਜਾਂ ਦੇ ਸੁਰੱਖਿਅਤ/ਅਸੁਰੱਖਿਅਤ ਸੰਸਕਰਣਾਂ ਨੂੰ ਸੂਚੀਬੱਧ ਕਰਦਾ ਹੈ (HHVM, PHP, phpMyAdmin, Python, ਆਦਿ)।</li>
            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">ਅਨੁਕੂਲਤਾ ਚਾਰਟ</a> – ਵੱਖ-ਵੱਖ ਪੈਕੇਜਾਂ ਲਈ ਅਨੁਕੂਲਤਾ ਜਾਣਕਾਰੀ ਨੂੰ ਸੂਚੀਬੱਧ ਕਰਦਾ ਹੈ (CIDRAM, phpMussel, ਆਦਿ)।</li>
          </ul>
        </li>
      </ul>
-
 label:
  %s is available (%s): "%s ਉਪਲਬਧ ਹੈ (%s)।"
  %s is available: "%s ਉਪਲਬਧ ਹੈ।"

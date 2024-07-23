@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Galician language data (last modified: 2024.06.22).
+# This file: Galician language data (last modified: 2024.07.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -163,16 +163,7 @@ field:
  Your version: "O teu versión"
  log_rotation_archive: "Primeiro arquiva, e despois elimina os ficheiros de rexistro máis antigos, ata que non se supere o límite."
  log_rotation_delete: "Elimina os ficheiros de rexistro máis antigos, ata que non se supere o límite."
- size:
-  Total size: "Tamaño total:"
-  GB: "GB"
-  KB: "KB"
-  MB: "MB"
-  PB: "PB"
-  TB: "TB"
-  bytes:
-   - "byte"
-   - "bytes"
+ size: {"Total size": "Tamaño total:"}
  vt_suspicion_level_all: "Escanear todos os ficheiros."
  vt_suspicion_level_executable: "Analiza ficheiros con peso heurístico, ficheiros executables, e ficheiros que poidan conter datos executables.\nExemplos de ficheiros executables, e ficheiros que poden conter datos executables, inclúen ficheiros PE de Windows, ficheiros ELF de Linux, ficheiros Mach-O, ficheiros DOCX, ficheiros ZIP, etc."
  vt_suspicion_level_heuristic_only: "Analiza só ficheiros con peso heurístico.\nOs ficheiros analizaranse só se teñen algún peso heurístico. O peso heurístico pódese incorrer en sinaturas destinadas a capturar pegadas dixitais comúns asociadas a unha posible infección que non necesariamente garante a infección. A busca, en tales casos, pode servir para proporcionar unha segunda opinión para resultados que xustifiquen sospeitas pero que non ofrezan ningunha certeza."
@@ -200,7 +191,7 @@ hints_time_format: |
 hints_xlists:
  Como funciona isto.: "Se o seu sistema permite cargar só tipos específicos de ficheiros, ou se o seu sistema nega explícitamente determinados tipos de ficheiros, especificar eses tipos de ficheiros en listas brancas, listas negras, e listas grises pode aumentar a velocidade á que se realiza a exploración ao permitir que o script omita certos tipos de ficheiros. O formato é CSV (valores separados por comas)."
  Orde lóxica de procesamento.: "Se o tipo de ficheiro está na lista branca, non escanee e non bloquee o ficheiro, nin comprobe o ficheiro coa lista negra nin coa lista gris. Se o tipo de ficheiro está na lista negra, non escanee o ficheiro, senón que o bloquee de todos os xeitos e non comprobe o ficheiro coa lista gris. Se a lista gris está baleira ou se a lista gris non está baleira e o tipo de ficheiro está na lista gris, escanea o ficheiro de forma normal e determina se queres bloquealo en función dos resultados da exploración, pero se a lista gris non está baleira e o tipo de ficheiro non está na lista gris, trate o ficheiro coma se estivese na lista negra, polo tanto, non o escanea senón que o bloquea de todos os xeitos."
-Some useful links: |
+Some useful links: |+
  Algunhas ligazóns útiles:<br />
      <ul class="pieul">
        <li><span class="comCat">Ferramentas, recursos, etc para phpMussel.</span>
@@ -235,12 +226,12 @@ Some useful links: |
        <li><span class="comCat">Recursos informativos e de aprendizaxe.</span>
          <ul class="comSub">
            <li>{{Links.PHP.Earth.Website}} – Recursos de aprendizaxe e discusión de PHP.</li>
+           <li>{{Links.MDN.Homepage}} – Recursos para desenvolvedores, por desenvolvedores. Un recurso fantástico para aprender sobre HTML, CSS, JavaScript, accesibilidade, e moito máis.</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Táboas de vulnerabilidade</a> – Lista versións seguras e non seguras de varios paquetes (HHVM, PHP, phpMyAdmin, Python, etc).</li>
            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Táboas de compatibilidade</a> – Lista información de compatibilidade para varios paquetes (CIDRAM, phpMussel, etc).</li>
          </ul>
        </li>
      </ul>
-
 label:
  %s is available (%s): "%s está dispoñible (%s)."
  %s is available: "%s está dispoñible."

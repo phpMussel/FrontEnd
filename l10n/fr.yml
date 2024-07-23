@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2024.06.18).
+# This file: French language data (last modified: 2024.07.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -200,7 +200,7 @@ hints_time_format: |
 hints_xlists:
  Comment cela fonctionne.: "Si votre système permettre seulement particuliers types des fichiers à être téléchargé, ou si votre système nie explicitement particuliers types des fichiers, spécifiant les types des fichiers dans listes blanches, listes noires et listes grises peut augmenter la vitesse à laquelle l'analyse est effectuée en permettant le script à sauter particuliers types des fichiers. Format est CSV (virgule séparées valeurs)."
  L'ordre logique de l'application.: "Si le type de fichier est listé blanche, n'analyser pas ni bloquer pas le fichier, et ne vérifie pas le fichier contre la liste noire ou la liste grise. Si le type de fichier est listé noire, n'analyser pas le fichier mais bloquer de toute façon, et ne vérifie pas le fichier contre la liste grise. Si la liste grise est vide ou si la liste grise n'est vide pas et le type de fichier est listé grise, analyser le fichier comme d'habitude et déterminer si de bloquer basés des résultats de l'analyse, mais si la liste grise n'est vide pas et le type de fichier n'est listé grise pas, traiter le fichier comme listé noire, donc n'analyse pas mais bloque de toute façon."
-Some useful links: |
+Some useful links: |+
  Quelques liens utiles :<br />
      <ul class="pieul">
        <li><span class="comCat">Outils, ressources, etc. pour phpMussel.</span>
@@ -235,12 +235,12 @@ Some useful links: |
        <li><span class="comCat">Ressources d'information et d'apprentissage.</span>
          <ul class="comSub">
            <li>{{Links.PHP.Earth.Website}} – Ressources d'apprentissage PHP et discussion.</li>
+           <li>{{Links.MDN.Homepage}} – Ressources pour les développeurs, par les développeurs. Une ressource fantastique pour en savoir plus sur HTML, CSS, JavaScript, l'accessibilité, et bien plus encore.</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Cartes de Vulnérabilité</a> – Liste des versions sûres/dangereuses de divers paquets (HHVM, PHP, phpMyAdmin, Python, etc).</li>
            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Cartes de Compatibilité</a> – Liste des informations de compatibilité pour divers packages (CIDRAM, phpMussel, etc).</li>
          </ul>
        </li>
      </ul>
-
 label:
  %s is available (%s): "%s est disponible (%s)."
  %s is available: "%s est disponible."

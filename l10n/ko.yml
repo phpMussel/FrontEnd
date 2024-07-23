@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2024.06.18).
+# This file: Korean language data (last modified: 2024.07.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -193,7 +193,7 @@ hints_time_format: |
 hints_xlists:
  작동 원리.: "시스템이 특정 유형의 파일 만 업로드를 허용하거나 거절하는 경우 파일 유형을 적절히 화이트리스트, 블랙리스트, 그레이리스트로 분류 해두면 파일 유형에 튀겨 진 파일은 스캔을 건너 뛸 수 때문에 속도로 연결됩니다. 형식은 CSV (쉼표로 구분)입니다."
  프로세스의 논리적 순서.: "파일 형식이 화이트리스트에 포함되어 있으면, 스캔하지 않고 블록하지 않고 블랙리스트 및 그레이리스트에 체크를하지 않습니다. 파일 형식이 블랙리스트에 있으면 스캔하지 않고 즉시 차단하고 그레이리스트에 체크를하지 않습니다. 회색 목록이 비어 또는 그레이리스트가 하늘이 아닌 한편 그 파일 타입이 있으면 정상적으로 스캔 차단 여부를 판단합니다. 그레이리스트가 하늘이 아닌 한편 그 파일 유형이 포함되어 있지 않으면 블랙리스트와 같은 취급을 할 수 있고 스캔없이 차단합니다."
-Some useful links: |
+Some useful links: |+
  유용한 링크 :<br />
      <ul class="pieul">
        <li><span class="comCat">phpMussel을위한 도구, 리소스, 등.</span>
@@ -228,12 +228,12 @@ Some useful links: |
        <li><span class="comCat">정보 및 학습 리소스.</span>
          <ul class="comSub">
            <li>{{Links.PHP.Earth.Website}} – PHP 학습 자원과 토론.</li>
+           <li>{{Links.MDN.Homepage}} – 개발자를 위한, 개발자에 의한 리소스입니다. HTML, CSS, JavaScript, 접근성, 등에 대해 배울 수 있는 환상적인 리소스입니다.</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">취약점 차트</a> – 다양한 패키지의 안전하고 안전하지 않은 버전을 나열합니다 (HHVM, PHP, phpMyAdmin, Python, 기타).</li>
            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">호환성 차트</a> – 다양한 패키지에 대한 호환성 정보를 나열합니다 (CIDRAM, phpMussel, 기타).</li>
          </ul>
        </li>
      </ul>
-
 label:
  %s is available (%s): "%s를 사용할 수 있습니다 (%s)."
  %s is available: "%s를 사용할 수 있습니다."

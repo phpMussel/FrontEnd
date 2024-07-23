@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: YAML references file (last modified: 2024.04.30).
+# This file: YAML references file (last modified: 2024.07.23).
 ##/
 
 Links:
@@ -22,6 +22,8 @@ Links:
  OSChina: "<a href="https://www.oschina.net/p/phpMussel" dir="ltr" hreflang="zh-CN" rel="noopener noreferrer external">phpMussel＠开源中国社区</a>"
  Payload Security: "<a href="https://www.payload-security.com/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external">Payload Security</a>"
  PhishTank: "<a href="https://www.phishtank.com/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external">PhishTank</a>"
+ MDN:
+  Homepage: "<a href="https://developer.mozilla.org/en-US/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external">MDN Web Docs</a>"
  MIT: "<a href="https://opensource.org/licenses/MIT" dir="ltr" hreflang="en-US" rel="noopener noreferrer external">MIT</a>"
  PHP:
   Earth:

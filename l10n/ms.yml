@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2024.06.18).
+# This file: Malay language data (last modified: 2024.07.23).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -193,7 +193,7 @@ hints_time_format: |
 hints_xlists:
  Bagaimana ini berfungsi.: "Jika sistem anda membenarkan hanya jenis fail tertentu untuk dimuat naik, atau jika sistem anda secara eksplisit menafikan jenis fail tertentu, menyatakan jenis fail tersebut dalam senarai putih, senarai hitam, dan senarai kelabu boleh meningkatkan kelajuan pengimbasan dilakukan dengan membenarkan skrip melangkau jenis fail tertentu. Format ialah CSV (nilai dipisahkan koma)."
  Perintah pemprosesan logik.: "Jika jenis fail disenaraiputihkan, jangan imbas dan jangan sekat fail, dan jangan semak fail terhadap senarai hitam atau senarai kelabu. Jika jenis fail disenaraihitamkan, jangan imbas fail tetapi sekat fail jugak, dan jangan semak fail terhadap senarai kelabu. Jika senarai kelabu kosong atau jika senarai kelabu tidak kosong dan jenis fail disenaraikelabukan, imbas fail seperti biasa dan tentukan sama ada untuk menyekatnya berdasarkan hasil imbasan, tetapi jika senarai kelabu tidak kosong dan jenis fail tidak disenaraikelabukan, anggap fail sebagai disenaraihitamkan, jadi tidak mengimbasnya tetapi menyekatnya jugak."
-Some useful links: |
+Some useful links: |+
  Beberapa pautan yang berguna:<br />
      <ul class="pieul">
        <li><span class="comCat">Alat, sumber, dll untuk phpMussel.</span>
@@ -228,12 +228,12 @@ Some useful links: |
        <li><span class="comCat">Sumber bermaklumat dan pembelajaran.</span>
          <ul class="comSub">
            <li>{{Links.PHP.Earth.Website}} – Sumber pembelajaran dan perbincangan PHP.</li>
+           <li>{{Links.MDN.Homepage}} – Sumber untuk pembangun, oleh pembangun. Sumber yang hebat untuk belajar tentang HTML, CSS, JavaScript, kebolehaksesan dan banyak lagi.</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Carta Kerentanan</a> – Menyenaraikan pelbagai versi daripada pakej yang selamat dan tidak selamat (HHVM, PHP, phpMyAdmin, Python, dll).</li>
            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Carta Keserasian</a> – Menyenaraikan maklumat keserasian untuk pelbagai pakej (CIDRAM, phpMussel, dll).</li>
          </ul>
        </li>
      </ul>
-
 label:
  %s is available (%s): "%s tersedia (%s)."
  %s is available: "%s tersedia."
