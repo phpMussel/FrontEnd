@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Croatian language data (last modified: 2024.04.26).
+# This file: Croatian language data (last modified: 2024.08.13).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -29,6 +29,29 @@ checkbox:
 config:
  core: "Opća konfiguracija (bilo koja konfiguracija jezgre koja ne pripada drugim kategorijama)."
  core_default_timeout: "Zadano vrijeme čekanja za korištenje za vanjske zahtjeve? Zadano = 12 sekundi."
+ core_delete_on_sight: "Omogućavanje ove direktive uputit će skriptu da odmah pokuša izbrisati svaki skenirani pokušaj učitavanja datoteke koji odgovara bilo kojem kriteriju otkrivanja, bilo putem potpisa ili na drugi način. Datoteke označene kao "čiste" neće se dirati. U slučaju arhiva, cijela će arhiva biti izbrisana, bez obzira na to je li uvredljiva datoteka samo jedna od nekoliko datoteka sadržanih u arhivi. U slučaju skeniranja učitavanja datoteka, obično nije potrebno omogućiti ovu direktivu, jer obično će PHP automatski očistiti sadržaj svoje predmemorije kada izvođenje završi, što znači da će obično izbrisati sve datoteke koje su preko njega učitane na poslužitelj osim ako već nisu premještene, kopirane ili obrisane. Ova je direktiva dodana ovdje kao dodatna mjera sigurnosti za one čije se kopije PHP-a možda neće uvijek ponašati na očekivani način. False/Lažno = Nakon skeniranja, ostavite datoteku na miru [Zadano]; True/Istinito = Nakon skeniranja, ako nije čisto, odmah izbrišite."
+ core_disabled_channels: "Ovo se može koristiti kako bi se spriječilo phpMussel da koristi određene kanale prilikom slanja zahtjeva."
+ core_error_log: "Datoteka za bilježenje svih otkrivenih nefatalnih pogrešaka. Navedite naziv datoteke ili ostavite prazno za onemogućavanje."
+ core_hide_version: "Sakriti informacije o verziji iz zapisa i ispisa stranice? True/Istinito = Da; False/Lažno = Ne [Zadano]."
+ core_ipaddr: "Gdje pronaći IP adresu zahtjeva za povezivanje? (Korisno za usluge kao što je Cloudflare i slično). Zadano = REMOTE_ADDR. UPOZORENJE: Promijenite ovo samo ako znate što radite!"
+ core_lang: "Navedite zadani jezik za phpMussel."
+ core_lang_override: "Lokalizirati prema HTTP_ACCEPT_LANGUAGE kad god je to moguće? True/Istinito = Da [Zadano]; False/Lažno = Ne."
+ core_log_rotation_action: "Rotacija dnevnika ograničava broj datoteka dnevnika koje bi trebale postojati u bilo kojem trenutku. Kada se kreiraju nove datoteke dnevnika, ako ukupni broj datoteka dnevnika premaši navedeno ograničenje, izvršit će se navedena radnja. Ovdje možete odrediti željenu radnju."
+ core_log_rotation_limit: "Rotacija dnevnika ograničava broj datoteka dnevnika koje bi trebale postojati u bilo kojem trenutku. Kada se kreiraju nove datoteke dnevnika, ako ukupni broj datoteka dnevnika premaši navedeno ograničenje, izvršit će se navedena radnja. Ovdje možete odrediti željeni limit. Vrijednost 0 onemogućit će rotaciju dnevnika."
+ core_maintenance_mode: "Omogućiti način održavanja? True/Istinito = Da; False/Lažno = Ne [Zadano]. Onemogućuje sve osim front-enda. Ponekad je korisno kada ažurirate svoj CMS, okvire, itd."
+ core_outbound_request_log: "Datoteka za bilježenje rezultata svih izlaznih zahtjeva. Navedite naziv datoteke ili ostavite prazno za onemogućavanje."
+ core_scan_cache_expiry: "Koliko dugo phpMussel treba keširati rezultate skeniranja? Vrijednost je broj sekundi za keširanje rezultata skeniranja. Zadano je 21600 sekundi (6 sati); Vrijednost 0 onemogućit će spremanje u predmemoriju rezultata skeniranja."
+ core_scan_log: "Naziv datoteke u koju se bilježe svi rezultati skeniranja. Navedite naziv datoteke ili ostavite prazno za onemogućavanje."
+ core_scan_log_serialized: "Naziv datoteke u koju se bilježe svi rezultati skeniranja (pomoću serijaliziranog formata). Navedite naziv datoteke ili ostavite prazno za onemogućavanje."
+ core_statistics: "Pratiti statistiku korištenja phpMussela? True/Istinito = Da; False/Lažno = Ne [Zadano]."
+ core_time_format: "Format zapisa datuma/vremena koji koristi phpMussel. Dodatne opcije mogu se dodati na zahtjev."
+ core_time_offset: "Pomak vremenske zone u minutama."
+ core_timezone: "Vremenska zona za korištenje (npr. Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, etc). Navedite "SYSTEM" kako bi PHP to automatski obradio za vas."
+ core_truncate: "Skratiti datoteke dnevnika kada dostignu određenu veličinu? Vrijednost je maksimalna veličina u B/KB/MB/GB/TB do koje datoteka dnevnika može narasti prije skraćivanja. Zadana vrijednost od 0 KB onemogućuje skraćivanje (dnevničke datoteke mogu neograničeno rasti). Bilješka: Odnosi se na pojedinačne datoteke dnevnika! Veličina log datoteka ne uzima se u obzir zajedno."
+ experimental: "Nestabilno/Eksperimentalno!"
+ files: "Kako postupati s datotekama prilikom skeniranja."
+ files_allow_leading_trailing_dots: "Dopustiti početne i završne točke u nazivima datoteka? To se ponekad može koristiti za skrivanje datoteka ili za prevaru nekih sustava da dopuste obilaženje direktorija. False/Lažno = Ne dopuštaj [Zadano]. True/Istinito = Dopuštaj."
+ files_archive_file_extensions: "Prepoznati nastavci arhivskih datoteka (format je CSV; treba dodati ili ukloniti samo kada se pojave problemi; nepotrebno uklanjanje može uzrokovati pojavu lažno pozitivnih rezultata za arhivske datoteke, dok će nepotrebni dodaci u biti staviti na bijelu listu ono što dodajete iz otkrivanja specifičnih napada; modificirati s oprezom; također imajte na umu da to nema utjecaja na to koji se arhivi mogu, a koji ne mogu analizirati na razini sadržaja). Popis, kao što je zadano, navodi one formate koji se najčešće koriste u većini sustava i CMS-a, ali namjerno nije nužno sveobuhvatan."
 warning:
  Cookies: "Bilješka: phpMussel koristi kolačić za provjeru autentičnosti prijava. Prijavom dajete suglasnost da vaš preglednik kreira i pohranjuje kolačić."
  JavaScript required: "Upozorenje: Neke front-end funkcije zahtijevaju JavaScript. Kako biste osigurali da se cijeli front-end ponaša prema očekivanjima, preporučuje se omogućiti JavaScript."

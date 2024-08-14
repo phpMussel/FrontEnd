@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2024.07.23).
+# This file: Italian language data (last modified: 2024.08.13).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -282,8 +282,8 @@ label:
  Uploads blocked: "Caricamenti bloccati"
  Uploads quarantined: "Caricamenti in quarantena"
  Uploads scanned: "Caricamenti scansionati"
- Your IP: "Il tuo IP:"
- Your UA: "Il tuo UA:"
+ Your IP: "Il suo indirizzo IP:"
+ Your UA: "Il suo agente utente:"
  phpMussel version used: "Versione phpMussel utilizzata:"
 link:
  Accounts: "Utenti"
@@ -365,7 +365,7 @@ siginfo_sub_Vendors: "Conta per firma fornitore o fonte"
 siginfo_xkey: "Identificato come "%s"."
 state_quarantine: "Ci sono %s file attualmente in quarantena."
 tip:
- 2FA Sent: "Una posta elettronica contenente un codice di autenticazione a due fattori è stata inviata al tuo indirizzo di posta elettronica. Si prega di confermare questo codice qui sotto per ottenere l'accesso al front-end. Se non hai ricevuto questa posta elettronica, prova a disconnettersi, attendere 10 minuti e accedi di nuovo per ricevere una nuova posta elettronica contenente un nuovo codice."
+ 2FA Sent: "Una posta elettronica contenente un codice di autenticazione a due fattori è stata inviata al suo indirizzo di posta elettronica. Si prega di confermare questo codice qui sotto per ottenere l'accesso al front-end. Se non hai ricevuto questa posta elettronica, prova a disconnettersi, attendere 10 minuti e accedi di nuovo per ricevere una nuova posta elettronica contenente un nuovo codice."
  Accounts: "La pagina di conti permette di controllare chi può accedere il front-end di phpMussel."
  Cache Data: "Qui puoi rivedere il contenuto della cache."
  Configuration: "La pagina di configurazione permette di modificare la configurazione per phpMussel dal front-end."
@@ -380,7 +380,7 @@ tip:
  Statistics: "Questa pagina mostra alcune statistiche di utilizzo relative all'installazione di phpMussel."
  Upload Testing: "La pagina di carica testare contiene un modulo per i caricamenti file standard, che permette di verificare se un file viene normalmente essere bloccata da phpMussel quando si cerca di caricarlo."
 warning:
- Cookies: "Nota: phpMussel utilizza un cookie per autenticare gli accessi. Accedendo, ti dà il tuo consenso per creare e memorizzare un cookie dal tuo browser."
+ Cookies: "Nota: phpMussel utilizza un cookie per autenticare gli accessi. Accedendo, ti dà il suo consenso per creare e memorizzare un cookie dal suo browser."
  JavaScript required: "Avvertimento: Alcune funzionalità del front-end richiedono JavaScript. Per garantire che l'intero front-end si comporti come previsto, si consiglia di abilitare JavaScript."
  Maintenance mode is enabled: "Attenzione: La modalità di manutenzione è abilitata!"
  No signature files are active: "Avvertimento: Non ci sono file di firme attivi!"
