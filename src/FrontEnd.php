@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2024.06.18).
+ * This file: Front-end handler (last modified: 2024.09.02).
  */
 
 namespace phpMussel\FrontEnd;
@@ -492,10 +492,7 @@ class FrontEnd
 
             /** Handle front-end logging. */
             $this->frontendLogger($this->Loader->IPAddr, $TryUser, $LoggerMessage ?? '');
-        }
-
-        /** Determine whether the user has logged in. */
-        elseif (!empty($_COOKIE['PHPMUSSEL-ADMIN'])) {
+        } elseif (!empty($_COOKIE['PHPMUSSEL-ADMIN'])) {
             $this->Permissions = -1;
             if (
                 ($TrySession = $this->Loader->Cache->getEntry($_COOKIE['PHPMUSSEL-ADMIN'])) &&
