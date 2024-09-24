@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2024.07.23).
+# This file: French language data (last modified: 2024.09.17).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -86,7 +86,7 @@ config:
  frontend_numbers: "Comment préférez-vous que les nombres soient affichés\_? Sélectionnez l'exemple qui vous paraît le plus approprié."
  frontend_theme: "L'esthétique à utiliser pour l'accès frontal de phpMussel."
  legal: "Configuration pour les exigences légales."
- legal_privacy_policy: "L'adresse d'une politique de confidentialité pertinente à afficher dans le pied de page des pages générées. Spécifier une URL, ou laisser vide à désactiver."
+ legal_privacy_policy: "L'adresse d'une politique de confidentialité pertinente à afficher dans le pied de page des pages générés. Spécifier une URL, ou laisser vide à désactiver."
  legal_pseudonymise_ip_addresses: "Pseudonymiser les adresses IP lors de la journalisation\_? True = Oui [Défaut]\_; False = Non."
  quarantine: "Configuration pour la quarantaine."
  quarantine_quarantine_key: "phpMussel est capable de mettre en quarantaine les téléchargements de fichiers bloqués, si cela est quelque chose que vous voulez qu'il fasse. L'utilisateurs de phpMussel qui souhaitent simplement de protéger leurs sites ou environnement d'hébergement sans avoir un profondément intérêt dans d'analyse de quelconque marqué fichier téléchargement tentatives devrait laisser cette fonctionnalité désactivée, mais tous les utilisateurs intéressés dans d'analyse plus approfondie de tenté fichier téléchargements pour la recherche des logiciels malveillants ou pour des choses semblables devraient permettre cette fonctionnalité. La quarantaine de marqué fichier téléchargement tentatives peut parfois aider également dans le débogage des faux positifs, si cela est quelque chose qui se produit fréquemment pour vous. Pour désactiver la fonctionnalité de quarantaine, il suffit de laisser la directive <code>quarantine_key</code> vide, ou effacer le contenu de cette directive si elle est pas déjà vide. Pour activer la fonctionnalité de quarantaine, entrer une valeur dans la directive. Le <code>quarantine_key</code> est une élément important de la sécurité de la fonctionnalité de quarantaine requis en tant que moyen de prévention de la fonctionnalité de quarantaine d'être exploités par des attaquants potentiels en tant que moyen de prévention toute potentielle exécution de données stockées dans la quarantaine. Le <code>quarantine_key</code> devrait être traité de la même manière que vos mots de passe\_: Le plus sera le mieux, et conservez-le bien. Pour un meilleur effet, utiliser en conjonction avec <code>delete_on_sight</code>."
