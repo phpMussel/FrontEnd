@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2024.09.02).
+ * This file: Front-end handler (last modified: 2024.09.26).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1361,6 +1361,9 @@ class FrontEnd
         $Count = count($Arr);
         $Prefix = substr($DeleteKey, 0, 2) === 'fe' ? 'FE' : '';
         foreach ($Arr as $Key => $Value) {
+            if (is_null($Value)) {
+                continue;
+            }
             $Delete = ($Depth === 0) ? ' – (<span style="cursor:pointer" onclick="javascript:' . $DeleteKey . '(\'' . addslashes($Key) . '\')"><code class="s"><span class="txtRd">⌧</span>' . $this->Loader->L10N->getString('field.Delete') . '</code></span>)' : '';
             $Output .= ($Depth === 0 ? '<span id="' . $Key . $Prefix . 'Container">' : '') . '<li>';
             if (is_string($Value)) {
@@ -1396,7 +1399,7 @@ class FrontEnd
                 $Output .= '<span class="comCat"><code class="s">' . str_replace(['<', '>'], ['&lt;', '&gt;'], $Key) . '</code></span>' . $Delete . '<ul class="comSub">';
                 $Output .= $this->arrayToClickableList($Value, $DeleteKey, $Depth + 1, $Key);
                 $Output .= '</ul>';
-            } else {
+            } elseif (is_scalar($Value)) {
                 if ($Key === 'Time' && preg_match('~^\d+$~', $Value)) {
                     $Key = $this->Loader->L10N->getString('label.Expires');
                     $Value = $this->Loader->timeFormat($Value, $this->Loader->Configuration['core']['time_format']);

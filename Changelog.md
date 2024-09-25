@@ -203,3 +203,5 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 [2024.07.23; Maikuolan]: Added MDN to the front-end's "useful links".
 
 [2024.09.02; Maikuolan]: Code-style patch.
+
+[2024.09.26; Bug-fix; Maikuolan]: Fixed a passing null parameter error in the arrayToClickableList method.
