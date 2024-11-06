@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Croatian language data (last modified: 2024.09.24).
+# This file: Croatian language data (last modified: 2024.10.10).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -52,8 +52,30 @@ config:
  files: "Kako postupati s datotekama prilikom skeniranja."
  files_allow_leading_trailing_dots: "Dopustiti početne i završne točke u nazivima datoteka? To se ponekad može koristiti za skrivanje datoteka ili za prevaru nekih sustava da dopuste obilaženje direktorija. False/Lažno = Ne dopuštaj [Zadano]. True/Istinito = Dopuštaj."
  files_archive_file_extensions: "Prepoznati nastavci arhivskih datoteka (format je CSV; treba dodati ili ukloniti samo kada se pojave problemi; nepotrebno uklanjanje može uzrokovati pojavu lažno pozitivnih rezultata za arhivske datoteke, dok će nepotrebni dodaci u biti staviti na bijelu listu ono što dodajete iz otkrivanja specifičnih napada; modificirati s oprezom; također imajte na umu da to nema utjecaja na to koji se arhivi mogu, a koji ne mogu analizirati na razini sadržaja). Popis, kao što je zadano, navodi one formate koji se najčešće koriste u većini sustava i CMS-a, ali namjerno nije nužno sveobuhvatan."
+ supplementary_cache_options: "Dodatne mogućnosti predmemorije. Bilješka: Promjena ovih vrijednosti može vas potencijalno odjaviti."
+ supplementary_cache_options_enable_apcu: "Određuje treba li pokušati koristiti APCu za predmemoriju. Zadano = True."
+ supplementary_cache_options_enable_memcached: "Određuje treba li pokušati koristiti Memcached za predmemoriju. Zadano = False."
+ supplementary_cache_options_enable_pdo: "Određuje treba li pokušati koristiti PDO za predmemoriju. Zadano = False."
+ supplementary_cache_options_enable_redis: "Određuje treba li pokušati koristiti Redis za predmemoriju. Zadano = False."
+ supplementary_cache_options_memcached_host: "Memcached vrijednost hosta. Zadano = "localhost"."
+ supplementary_cache_options_memcached_port: "Memcached vrijednost porta. Zadano = "11211"."
+ supplementary_cache_options_pdo_dsn: "Memcached vrijednost DSN-a. Zadano = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+ supplementary_cache_options_pdo_password: "PDO lozinka."
+ supplementary_cache_options_pdo_username: "PDO korisničko ime."
+ supplementary_cache_options_prefix: "Ovdje navedena vrijednost bit će pridodana svim ključevima za unos predmemorije. Zadano = "phpMussel_". Kada postoji više instalacija na istom poslužitelju, to može biti korisno za držanje njihovih predmemorija odvojenih jedna od druge."
+ supplementary_cache_options_redis_database_number: "Redis broj baze podataka. Zadano = 0. Bilješka: Ne mogu koristiti vrijednosti osim 0 s Redis klasterom."
+ supplementary_cache_options_redis_host: "Redis vrijednost hosta. Zadano = "localhost"."
+ supplementary_cache_options_redis_port: "Redis vrijednost porta. Zadano = "6379"."
+ supplementary_cache_options_redis_timeout: "Redis vrijednost za vremensko ograničenje. Zadano = "2.5"."
+confirm:
+ Action: "Jeste li sigurni da želite "%s"?"
+field:
+ 2FA code: "2FA kod"
+ Clear all: "Obriši sve"
+ Confirm: "Potvrdi"
+ Create new account: "Napravi novi račun"
 tip:
- Home: "This is the homepage for the phpMussel front-end. Select a link from the navigation menu on the left to continue."
+ Greeting: "Zdravo, %s."
  Logs: "Odaberite datoteku dnevnika s donjeg popisa kako biste vidjeli sadržaj te datoteke dnevnika."
  Quarantine is currently disabled: "Bilješka: Karantena je trenutno onemogućena, ali se može omogućiti putem konfiguracijske stranice."
  Quarantine: "Ova stranica navodi sve datoteke koje su trenutno u karanteni i olakšava upravljanje tim datotekama."

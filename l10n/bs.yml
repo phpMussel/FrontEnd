@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bosnian language data (last modified: 2024.09.24).
+# This file: Bosnian language data (last modified: 2024.10.10).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -29,7 +29,7 @@ checkbox:
 config:
  core: "Opća konfiguracija (svaka konfiguracija jezgra koja ne pripada drugim kategorijama)."
  core_default_timeout: "Zadano vremensko ograničenje za korištenje za eksterne zahtjeve? Zadano = 12 sekundi."
- core_delete_on_sight: "Omogućavanje ove direktive će uputiti skriptu da odmah pokuša da izbriše svaki skenirani pokušaj otpremanja fajla koji odgovara bilo kom kriterijumu detekcije, bilo putem potpisa ili na neki drugi način. Datoteke označeni kao "čisti" se neće dirati. U slučaju arhiva, cijela arhiva će biti izbrisana, bez obzira na to da li je uvredljivi datoteka samo jedan od nekoliko datoteka koji se nalaze u arhivi. U slučaju skeniranja učitavanja datoteka, obično nije potrebno omogućiti ovu direktivu, jer obično PHP automatski čisti sadržaj svoje keš memorije kada se izvršavanje završi, što znači da će obično izbrisati sve datoteke koje su postavljene preko njega na server osim ako već nisu premještene, kopirane ili izbrisane. Ova direktiva je ovde dodata kao dodatna mera bezbednosti za one čije se kopije PHP-a možda ne ponašaju uvek na očekivani način. False/Lažno = Nakon skeniranja, ostavite datoteku na miru [Zadano]; True/Istinito = Nakon skeniranja, ako nije čisto, odmah izbrišite."
+ core_delete_on_sight: "Omogućavanje ove direktive će uputiti skriptu da odmah pokuša da izbriše svaki skenirani pokušaj otpremanja datoteka koji odgovara bilo kom kriterijumu detekcije, bilo putem potpisa ili na neki drugi način. Datoteke označeni kao "čisti" se neće dirati. U slučaju arhiva, cijela arhiva će biti izbrisana, bez obzira na to da li je uvredljivi datoteka samo jedan od nekoliko datoteka koji se nalaze u arhivi. U slučaju skeniranja učitavanja datoteka, obično nije potrebno omogućiti ovu direktivu, jer obično PHP automatski čisti sadržaj svoje keš memorije kada se izvršavanje završi, što znači da će obično izbrisati sve datoteke koje su postavljene preko njega na server osim ako već nisu premještene, kopirane ili izbrisane. Ova direktiva je ovde dodata kao dodatna mera bezbednosti za one čije se kopije PHP-a možda ne ponašaju uvek na očekivani način. False/Lažno = Nakon skeniranja, ostavite datoteku na miru [Zadano]; True/Istinito = Nakon skeniranja, ako nije čisto, odmah izbrišite."
  core_disabled_channels: "Ovo se može koristiti da spriječi phpMussel da koristi određene kanale prilikom slanja zahtjeva."
  core_error_log: "Datoteka za evidentiranje svih otkrivenih grešaka koje nisu fatalne. Navedite naziv datoteke ili ostavite prazno da biste onemogućili."
  core_hide_version: "Sakriti informacije o verziji iz dnevnika i izlaza stranice? True/Istinito = Da; False/Lažno = Ne [Zadano]."
@@ -47,12 +47,35 @@ config:
  core_time_format: "Format notacije datuma/vremena koji koristi phpMussel. Dodatne opcije se mogu dodati na zahtjev."
  core_time_offset: "Pomak vremenske zone u minutama."
  core_timezone: "Vremenska zona koju treba koristiti (npr., Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, etc). Odredite "SYSTEM" da dozvolite PHP-u da to automatski obavi umjesto vas."
- core_truncate: "Skratiti datoteke dnevnika kada dostignu određenu veličinu? Vrijednost je maksimalna veličina u B/KB/MB/GB/TB do koje datoteka evidencije može narasti prije nego što bude skraćena. Zadana vrijednost od 0KB onemogućuje skraćivanje (datoteke evidencije mogu beskonačno rasti). Bilješka: Odnosi se na pojedinačne log fajlove! Veličina log datoteka se ne razmatra zajedno."
+ core_truncate: "Skratiti datoteke dnevnika kada dostignu određenu veličinu? Vrijednost je maksimalna veličina u B/KB/MB/GB/TB do koje datoteka evidencije može narasti prije nego što bude skraćena. Zadana vrijednost od 0KB onemogućuje skraćivanje (datoteke evidencije mogu beskonačno rasti). Bilješka: Odnosi se na pojedinačne log datoteke! Veličina log datoteka se ne razmatra zajedno."
  experimental: "Nestabilno/Eksperimentalno!"
  files: "Kako rukovati datotekama prilikom skeniranja."
  files_allow_leading_trailing_dots: "Dozvoliti vodeće i zadnje tačke u nazivima datoteka? Ovo se ponekad može koristiti za sakrivanje datoteka ili za prevariti neke sisteme da dozvole prelazak preko direktorija. False/Lažno = Ne dozvoli [Zadano]. True/Istinito = Dozvoli."
  files_archive_file_extensions: "Prepoznate ekstenzije arhivskih datoteka (format je CSV; treba dodati ili ukloniti samo kada se pojave problemi; nepotrebno uklanjanje može uzrokovati pojavu lažnih rezultata za arhivske datoteke, dok će nepotrebni dodaci u suštini staviti na bijelu listu ono što dodajete iz detekcije specifičnog za napad; modificirajte s oprezom; također imajte na umu da ovo nema utjecaja na to koje arhive mogu, a koje ne mogu biti analizirane na nivou sadržaja). Lista, kao što je podrazumevano, navodi one formate koji se najčešće koriste u većini sistema i CMS-a, ali namerno nije nužno sveobuhvatna."
+ supplementary_cache_options: "Dodatne opcije keša. Bilješka: Promjena ovih vrijednosti može vas potencijalno odjaviti."
+ supplementary_cache_options_enable_apcu: "Određuje hoće li pokušati koristiti APCu za keširanje. Zadano = True."
+ supplementary_cache_options_enable_memcached: "Određuje hoće li se pokušati koristiti Memcached za keširanje. Zadano = False."
+ supplementary_cache_options_enable_pdo: "Određuje hoće li pokušati koristiti PDO za keširanje. Zadano = False."
+ supplementary_cache_options_enable_redis: "Određuje hoće li pokušati koristiti Redis za keširanje. Zadano = False."
+ supplementary_cache_options_memcached_host: "Memcached vrijednost hosta. Zadano = "localhost"."
+ supplementary_cache_options_memcached_port: "Memcached vrijednost porta. Zadano = "11211"."
+ supplementary_cache_options_pdo_dsn: "Memcached vrijednost DSN-a. Zadano = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+ supplementary_cache_options_pdo_password: "PDO lozinka."
+ supplementary_cache_options_pdo_username: "PDO korisničko ime."
+ supplementary_cache_options_prefix: "Ovdje navedena vrijednost će biti dodata svim ključevima za unos u keš memoriju. Zadano = "phpMussel_". Kada postoji više instalacija na istom serveru, ovo može biti korisno za držanje njihovih kešova odvojenih jedan od drugog."
+ supplementary_cache_options_redis_database_number: "Redis broj baze podataka. Zadano = 0. Bilješka: Ne mogu koristiti druge vrijednosti osim 0 s Redis klasterom."
+ supplementary_cache_options_redis_host: "Redis vrijednost hosta. Zadano = "localhost"."
+ supplementary_cache_options_redis_port: "Redis vrijednost porta. Zadano = "6379"."
+ supplementary_cache_options_redis_timeout: "Redis vrijednost vremenskog ograničenja. Zadano = "2.5"."
+confirm:
+ Action: "Jeste li sigurni da želite "%s"?"
+field:
+ 2FA code: "2FA kod"
+ Clear all: "Obriši sve"
+ Confirm: "Potvrdi"
+ Create new account: "Kreirajte novi nalog"
 tip:
+ Greeting: "Zdravo, %s."
  Logs: "Izaberite datoteku evidencije sa liste ispod da vidite sadržaj te datoteke evidencije."
  Quarantine is currently disabled: "Bilješka: Karantena je trenutno onemogućena, ali se može omogućiti putem konfiguracijske stranice."
  Quarantine: "Ova stranica navodi sve datoteke koje su trenutno u karantinu i olakšava upravljanje tim datotekama."
@@ -60,7 +83,7 @@ tip:
  Signature Information: "Stranica sa informacijama o potpisu pruža neke osnovne informacije o izvorima i tipovima trenutno aktivnih potpisa."
  Statistics tracking is currently disabled: "Bilješka: Praćenje statistike je trenutno onemogućeno, ali se može omogućiti putem konfiguracijske stranice."
  Statistics: "Ova stranica prikazuje neke osnovne statistike upotrebe u vezi sa vašom instalacijom phpMussel-a."
- Upload Testing: "Stranica za testiranje učitavanja sadrži standardni obrazac za otpremanje fajla, koji vam omogućava da testirate da li bi phpMussel normalno blokirao fajl kada pokušavate da ga otpremite."
+ Upload Testing: "Stranica za testiranje učitavanja sadrži standardni obrazac za otpremanje datoteka, koji vam omogućava da testirate da li bi phpMussel normalno blokirao datoteku kada pokušavate da ga otpremite."
 warning:
  Cookies: "Bilješka: phpMussel koristi kolačić za provjeru autentičnosti prijava. Prijavom dajete pristanak da vaš pretraživač kreira i pohrani kolačić."
  JavaScript required: "Upozorenje: Neke front-end funkcionalnosti zahtijevaju JavaScript. Kako biste osigurali da se cijeli front-end ponaša kako se očekuje, preporučuje se omogućavanje JavaScripta."
