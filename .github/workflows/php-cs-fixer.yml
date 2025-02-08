@@ -24,4 +24,4 @@ jobs:
 
   - name: PHP-CS-Fixer Check
     run: |
-     php-cs-fixer fix -v --dry-run ./src --rules=@PSR12
+     php-cs-fixer fix -v --dry-run ./src --rules=@PSR12,-blank_line_after_opening_tag

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2024.07.23).
+# This file: Latvian language data (last modified: 2025.02.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -77,7 +77,7 @@ config:
  files_only_allow_images: "Ja iestatīts uz true, visus failus, kas nav attēli un ar kuriem skeneris sastapis, tie tiks atzīmēti nekavējoties un bez skenēšanas. Dažos gadījumos tas var palīdzēt samazināt skenēšanai vajadzīgo laiku. Pēc noklusējuma tā ir iestatīta uz false."
  files_scannable_threshold: "Neapstrādātu datu maksimālais garums, kuru phpMussel ir atļauts lasīt un skenēt (ja skenēšanas laikā rodas kādas pamanāmas veiktspējas problēmas). Noklusējuma = 32MB. Nulle atspējo limitu. Parasti šai vērtībai nevajadzētu būt mazākam par vidējo failu augšupielādi lielums, ko jūs vēlaties/domājat saņemt uz savu serveri vai vietni, nevajadzētu būt vairāk kā filesize_limit direktīva, un nedrīkstētu būt vairāk kā aptuveni viena piektā daļa no kopējās pieļaujamās atmiņas, kas piešķirta PHP, izmantojot "php.ini" konfigurācijas failu. Šī direktīva pastāv, lai mēģinātu neļaut phpMussel izmantot pārāk daudz atmiņas (kas neļautu tam veiksmīgi skenēt failus, kas pārsniedz noteiktu faila lielumu)."
  frontend: ""Front-end" konfigurācija."
- frontend_custom_footer: "Ievietots kā HTML visu priekšgala lapu pašā apakšā. Tas varētu būt noderīgi, ja vēlaties visās šādās lapās iekļaut juridisku paziņojumu, kontaktu saiti, uzņēmuma informāciju vai līdzīgu informāciju."
+ frontend_custom_footer: "Ievietots kā HTML visu priekšgala lapu pašā apakšā. Tas varētu būt noderīgi, ja vēlaties visās šādās lapās iekļaut juridisku paziņojumu, kontaktu saiti, uzņēmuma informāciju, vai līdzīgu informāciju."
  frontend_custom_header: "Ievietots kā HTML visu priekšgala lapu pašā sākumā. Tas varētu būt noderīgi, ja vēlaties visās šādās lapās iekļaut vietnes logotipu, personalizētu galveni, skriptus vai līdzīgu informāciju."
  frontend_default_algo: "Definē, kuru algoritmu izmantot visām turpmākajām parolēm un sesijām."
  frontend_frontend_log: "Fails ielogošanās mēģinājumu reģistrēšanai. Norādiet faila nosaukumu, vai atstājiet tukšu, lai to atspējotu."

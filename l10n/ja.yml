@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2024.07.23).
+# This file: Japanese language data (last modified: 2024.12.31).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -33,7 +33,7 @@ config:
  core_disabled_channels: "これは、要求を送信するときにphpMusselが特定のチャネルを使用しないようにするために使用できます。"
  core_error_log: "検出された致命的でないエラーを記録するためのファイル。​ファイル名指定するか、無効にしたい場合は空白のままにして下さい。"
  core_hide_version: "ログとページ出力からバージョン情報を隠すか？ True = はい。 False = いいえ（Default/デフォルルト）。"
- core_ipaddr: "接続リクエストのＩＰアドレスをどこで見つけるべきかについて（Cloudflareのようなサービスに対して有効）。​Default（デフォルト設定） = REMOTE_ADDR。​注意：あなたが何をしているのか、分からない限り、これを変更しないでください。"
+ core_ipaddr: "接続リクエストのＩＰアドレスをどこで見つけるべきかについて（Cloudflareのようなサービスに対して有効）。 Default/デフォルルト = REMOTE_ADDR。​注意：あなたが何をしているのか、分からない限り、これを変更しないでください。"
  core_lang: "phpMusselのデフォルト言語を設定します。"
  core_lang_override: "可能な限り「HTTP_ACCEPT_LANGUAGE」に従ってローカライズしますか？ True = はい（Default/デフォルルト）。 False = いいえ。"
  core_log_rotation_action: "ログ・ローテーションは、一度に存在する必要があるログ・ファイルの数を制限します。​新しいログ・ファイルが作成されると、ログ・ファイルの総数が指定された制限を超えると、指定されたアクションが実行されます。​ここで希望のアクションを指定できます。"
@@ -81,8 +81,8 @@ config:
  frontend_custom_header: "すべてのフロントエンド・ページの最初にＨＴＭＬとして挿入されます。​ウェブサイトのロゴ、パーソナライズされたヘッダー、スクリプト、などに役立ちます。"
  frontend_default_algo: "将来のすべてのパスワードとセッションに使用するアルゴリズムを定義します。"
  frontend_frontend_log: "フロントエンド・ログインの試みを記録するためのファイル。​ファイル名指定するか、無効にしたい場合は空白のままにして下さい。"
- frontend_magnification: "フォントの倍率。​Default/デフォルルト = １。"
- frontend_max_login_attempts: "ログイン試行の最大回数（フロントエンド）。​Default（デフォルト設定） = ５。"
+ frontend_magnification: "フォントの倍率。 Default/デフォルルト = １。"
+ frontend_max_login_attempts: "ログイン試行の最大回数（フロントエンド）。 Default/デフォルルト = ５。"
  frontend_numbers: "どのように数字を表示するのが好きですか？​あなたに一番正しい例を選択してください。"
  frontend_theme: "phpMusselフロントエンドに使用する美学。"
  legal: "法的要件のコンフィギュレーション。"

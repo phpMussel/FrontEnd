@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2024.07.23).
+# This file: English language data (last modified: 2025.02.08).
 ##/
 
 checkbox:
@@ -73,7 +73,7 @@ config:
  files_only_allow_images: "When set to true, any files encountered by the scanner which aren't images will be flagged immediately, without being scanned. This may help reduce the time needed to complete a scan in some cases. Set to false by default."
  files_scannable_threshold: "Threshold to the length of raw data that phpMussel is permitted to read and scan (in case there are any noticeable performance issues while scanning). Default = 32MB. Zero or null value disables the threshold. Generally, this value shouldn't be less than the average filesize of file uploads that you want and expect to receive to your server or website, shouldn't be more than the filesize_limit directive, and shouldn't be more than roughly one fifth of the total allowable memory allocation granted to PHP via the "php.ini" configuration file. This directive exists to try to prevent phpMussel from using up too much memory (that'd prevent it from being able to successfully scan files above a certain filesize)."
  frontend: "Configuration for the front-end."
- frontend_custom_footer: "Inserted as HTML at the very bottom of all front-end pages. This could be useful in case you want to include a legal notice, contact link, business information or similar at all such pages."
+ frontend_custom_footer: "Inserted as HTML at the very bottom of all front-end pages. This could be useful in case you want to include a legal notice, contact link, business information, or similar at all such pages."
  frontend_custom_header:
   en-AU: "Inserted as HTML at the very beginning of all front-end pages. This could be useful in case you want to include a website logo, personalised header, scripts, or similar at all such pages."
   [en-CA, en-US]: "Inserted as HTML at the very beginning of all front-end pages. This could be useful in case you want to include a website logo, personalized header, scripts, or similar at all such pages."
@@ -359,7 +359,7 @@ siginfo_key_META: "Signatures working with file metadata (as opposed to file dat
 siginfo_key_Other: "Unidentified or other."
 siginfo_key_Other_Metadata: "No metadata available."
 siginfo_key_Suspect: "Detections are suspected, but not confirmed (may involve combinations of various identifiers)."
-siginfo_key_Testfile: "Signatures for testfiles (i.e., not malicious detections)."
+siginfo_key_Testfile: "Signatures for test files (i.e., not malicious detections)."
 siginfo_key_Total: "Total active signatures."
 siginfo_key_VT: "Signatures including or based upon data from Virus Total."
 siginfo_key_Werewolf: "Signatures that deal with "werewolf attacks"."
