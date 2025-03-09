@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Serbian language data (last modified: 2025.02.08).
+# This file: Serbian language data (last modified: 2025.03.09).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -68,14 +68,14 @@ config:
  supplementary_cache_options_enable_memcached: "Одређује да ли да покушате да користите Мемцацхед за кеширање. Подразумевано = False."
  supplementary_cache_options_enable_pdo: "Одређује да ли да покушате да користите ПДО за кеширање. Подразумевано = False."
  supplementary_cache_options_enable_redis: "Одређује да ли да покушате да користите Редис за кеширање. Подразумевано = False."
- supplementary_cache_options_memcached_host: "Мемцацхед вредност хоста. Подразумевано = „localhost“."
+ supplementary_cache_options_memcached_host: "Мемцацхед вредност хоста. Подразумевано = localhost."
  supplementary_cache_options_memcached_port: "Мемцацхед вредност порта. Подразумевано = „11211“."
  supplementary_cache_options_pdo_dsn: "ПДО вредност ДСН-а. Подразумевано = „mysql:dbname=phpmussel;host=localhost;port=3306“."
  supplementary_cache_options_pdo_password: "ПДО лозинка."
  supplementary_cache_options_pdo_username: "ПДО корисничко име."
  supplementary_cache_options_prefix: "Овде наведена вредност биће додата свим кључевима за унос у кеш меморију. Подразумевано = „phpMussel_“. Када постоји више инсталација на истом серверу, ово може бити корисно за држање њихових кешова одвојених један од другог."
  supplementary_cache_options_redis_database_number: "Редис број базе података. Подразумевано = 0. Белешка: Не могу користити друге вредности осим 0 са Редис кластером."
- supplementary_cache_options_redis_host: "Редис вредност хоста. Подразумевано = „localhost“."
+ supplementary_cache_options_redis_host: "Редис вредност хоста. Подразумевано = localhost."
  supplementary_cache_options_redis_port: "Редис вредност порта. Подразумевано = „6379“."
  supplementary_cache_options_redis_timeout: "Редис вредност временског ограничења. Подразумевано = „2.5“."
 confirm:
@@ -125,8 +125,30 @@ hints_logging_datetime: "Користан савет: Можете да прил
 hints_pdo_dsn:
  Чпп.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Шта је „ПДО ДСН“? Како могу да користим ПДО са пхпМуссел-ом?</a></em>"
 response:
+ Incorrect quarantine key: "Нетачан кључ за карантин!"
+ Invalid password: "Пријава није успела! Неважећа лозинка!"
+ Maximum number of login attempts exceeded: "Премашен је максималан број покушаја пријављивања; Приступ забрањен."
+ Password field empty: "Поље за лозинку празно!"
+ Password successfully updated: "Лозинка је успешно ажурирана!"
+ Permissions not adequate to perform asynchronous requests: "Дозволе нису адекватне за обављање асинхроних захтева. Покушајте поново да се пријавите."
+ Please enter a valid quarantine key: "Унесите важећи кључ карантина."
+ Statistics cleared: "Статистика је обрисана."
+ Successfully authenticated: "Аутентификација је успела."
+ That account doesn_t exist: "Тај рачун не постоји."
+ Username doesn_t exist: "Пријава није успела! Корисничко име не постоји!"
+ Username field empty: "Поље корисничког имена је празно!"
+ Wrong endpoint: "Погрешна крајња тачка!"
  _No: "Не"
  _Yes: "Да"
+siginfo_key_CVE: "Потписи који се односе на ЦВЕ (уобичајене рањивости и изложености)."
+siginfo_key_Chameleon: "Потписи који се баве „нападима камелеона“."
+siginfo_key_FN: "Потписи који раде са именима датотека (за разлику од садржаја датотека)."
+siginfo_key_Fake: "Лажне, злонамерне варијанте иначе бенигних ентитета (софтвер, скрипте, итд)."
+siginfo_key_HEUR: "Потписи изведени из хеуристичких података."
+siginfo_key_META: "Потписи који раде са метаподацима датотеке (за разлику од података датотеке)."
+siginfo_key_Other: "Неидентификовани или други."
+siginfo_key_Other_Metadata: "Нема доступних метаподатака."
+siginfo_key_Suspect: "Сумња се, али није потврђено (може укључивати комбинације различитих идентификатора)."
 siginfo_key_Testfile: "Потписи за пробне датотеке (тј., не откривања злонамерних)."
 siginfo_key_Total: "Укупно активних потписа."
 siginfo_key_VT: "Потписи укључујући или засноване на подацима из Вирус Тотал-а."
