@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2024.08.13).
+# This file: Polish language data (last modified: 2025.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -65,6 +65,8 @@ config:
  files_check_archives: "Czy należy sprawdzić zawartość archiwów? False (Fałszywy) = Nie sprawdzaj; True (Prawdziwe) = Sprawdzaj [Domyślna]. Obsługiwane: Zip (wymaga libzip), Tar, Rar (wymaga rozszerzenia rar)."
  files_corrupted_exe: "Uszkodzone pliki i błędy analizy. False (Fałszywy) = Ignoruj; True (Prawdziwe) = Blokuj [Domyślna]. Wykrywać i blokować potencjalnie uszkodzone pliki PE (Portable Executable)? Często (ale nie zawsze), gdy pewne aspekty pliku PE są uszkodzone lub nie można ich poprawnie przeanalizować, może to wskazywać na infekcję wirusową. Procesy stosowane przez większość programów antywirusowych do wykrywania wirusów w plikach PE wymagają analizy tych plików w określony sposób, co, jeśli programista wirusa jest tego świadomy, w szczególności spróbuje temu zapobiec, aby wirus nie został wykryty."
  files_decode_threshold: "Próg długości nieprzetworzonych danych, w ramach którego powinny zostać wykryte polecenia dekodowania (w przypadku wystąpienia zauważalnych problemów z wydajnością podczas skanowania). Domyślna = 512KB. Zero lub null wyłącza próg (usuwa to wszelkie takie ograniczenia w oparciu o rozmiar pliku)."
+ files_entropy_filesize_limit: "Limit rozmiaru pliku entropii dla podpisów wykorzystujących znormalizowane dane (domyślnie 512KB). Gdy zostanie przekroczony zarówno limit entropii, jak i limit rozmiaru pliku entropii, w celu zmniejszenia ryzyka wystąpienia fałszywie pozytywnych, niektóre podpisy wykorzystujące znormalizowane dane zostaną zignorowane."
+ files_entropy_limit: "Limit entropii dla podpisów wykorzystujących znormalizowane dane (domyślnie 7.7). W tym kontekście, entropię definiuje się jako entropię Shannona zawartości skanowanego pliku. Gdy zostanie przekroczony zarówno limit entropii, jak i limit rozmiaru pliku entropii, w celu zmniejszenia ryzyka wystąpienia fałszywie pozytywnych, niektóre podpisy wykorzystujące znormalizowane dane zostaną zignorowane."
  files_filesize_archives: "Czy zastosować zawartość czarnej/białej listy rozmiarów plików do zawartości archiwów? False (Fałszywy) = Nie (traktuj wszystko tak, jakby znajdowało się na szarej liście); True (Prawdziwe) = Tak [Domyślna]."
  files_filesize_limit: "Limit rozmiaru pliku w KB. 65536 = 64MB [Domyślna]; 0 = Nie limit (zawsze na szarej liście). Każda (dodatnia) wartość liczbowa jest akceptowana. Może to być przydatne, gdy konfiguracja PHP ogranicza ilość pamięci, którą proces może pomieścić lub jeśli konfiguracja PHP ogranicza rozmiar przesyłanych plików."
  files_filesize_response: "Co zrobić z plikami, które przekraczają limit rozmiaru pliku (jeśli taki istnieje). False (Fałszywy) = Dodaj go do białej listy; True (Prawdziwe) = Dodaj go do czarnej listy [Domyślna]."
@@ -110,14 +112,14 @@ config:
  supplementary_cache_options_enable_memcached: "Określa, czy spróbować użyć Memcached do pamięci podręcznej. Domyślna = False."
  supplementary_cache_options_enable_pdo: "Określa, czy spróbować użyć PDO do pamięci podręcznej. Domyślna = False."
  supplementary_cache_options_enable_redis: "Określa, czy spróbować użyć Redis do pamięci podręcznej. Domyślna = False."
- supplementary_cache_options_memcached_host: "Wartość hosta Memcached. Domyślna = „localhost”."
+ supplementary_cache_options_memcached_host: "Wartość hosta Memcached. Domyślna = localhost."
  supplementary_cache_options_memcached_port: "Wartość portu Memcached. Domyślna = „11211”."
  supplementary_cache_options_pdo_dsn: "Wartość DSN PDO. Domyślna = „mysql:dbname=phpmussel;host=localhost;port=3306”."
  supplementary_cache_options_pdo_password: "Hasło PDO."
  supplementary_cache_options_pdo_username: "Nazwa użytkownika PDO."
  supplementary_cache_options_prefix: "Ta wartość zostanie dodana na początku kluczy dla wszystkich wpisów w pamięci podręcznej. Domyślna = „phpMussel_”. Gdy na tym samym serwerze istnieje wiele instalacji, to może być przydatne do przechowywania ich pamięci podręcznych oddzielnie od siebie."
  supplementary_cache_options_redis_database_number: "Numer bazy danych Redis. Domyślna = 0. Uwaga: W Redis Cluster nie można używać wartości innych niż 0."
- supplementary_cache_options_redis_host: "Wartość hosta Redis. Domyślna = „localhost”."
+ supplementary_cache_options_redis_host: "Wartość hosta Redis. Domyślna = localhost."
  supplementary_cache_options_redis_port: "Wartość portu Redis. Domyślna = „6379”."
  supplementary_cache_options_redis_timeout: "Wartość limitu czasu Redis. Domyślna = „2.5”."
  urlscanner: "Konfiguracja skanera URL."

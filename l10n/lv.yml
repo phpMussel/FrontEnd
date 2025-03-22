@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2025.02.15).
+# This file: Latvian language data (last modified: 2025.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -65,6 +65,8 @@ config:
  files_check_archives: "Mēģinājums pārbaudīt arhīvu saturu? False (Nepatiess) = Nepārbaudiet; True (Patiess) = Pārbaudiet [Noklusējuma]. Atbalstītās: Zip (prasa libzip), Tar, Rar (prasa rar pagarinājumu)."
  files_corrupted_exe: "Corrupted files and parse errors. False (Nepatiess) = Ignore; True (Patiess) = Block [Noklusējuma]. Detect and block potentially corrupted PE (Portable Executable) files? Often (but not always), when certain aspects of a PE file are corrupted or can't be parsed correctly, it can be indicative of a viral infection. The processes used by most anti-virus programs to detect viruses in PE files require parsing those files in certain ways, which, if the programmer of a virus is aware of, will specifically try to prevent, in order to allow their virus to remain undetected."
  files_decode_threshold: "Neapstrādātu datu maksimālais garums, kurā jāatklāj dekodēšanas komandas (ja skenēšanas laikā rodas kādas pamanāmas veiktspējas problēmas). Noklusējuma = 512KB. Nulle atspējo limitu (tādējādi noņemot visus šādus ierobežojumus, kuru pamatā ir faila lielums)."
+ files_entropy_filesize_limit: "Entropijas faila lieluma ierobežojums parakstiem, kas izmanto normalizētus datus (noklusējuma lielums ir 512KB). Ja tiek pārsniegts gan entropijas ierobežojums, gan entropijas faila lieluma ierobežojums, lai samazinātu viltus pozitīvu risku, daži paraksti, kas izmanto normalizētus datus, tiks ignorēti."
+ files_entropy_limit: "Entropijas ierobežojums parakstiem, kas izmanto normalizētus datus (noklusējuma lielums ir 7.7). Šajā kontekstā entropija ir definēta kā skenējamā faila satura šannona entropija. Ja tiek pārsniegts gan entropijas ierobežojums, gan entropijas faila lieluma ierobežojums, lai samazinātu viltus pozitīvu risku, daži paraksti, kas izmanto normalizētus datus, tiks ignorēti."
  files_filesize_archives: "Vai faila lielums melnajā/baltajā sarakstā būtu jāattiecina uz arhīvu saturu? False (Nepatiess) = Nē (visu tikai iekļauj pelēkajā sarakstā); True (Patiess) = Jā [Noklusējuma]."
  files_filesize_limit: "Faila lieluma ierobežojums (kā KB). 65536 = 64MB [Noklusējuma]; 0 = Nav ierobežojumu (vienmēr pelēkā sarakstā). Jebkura (pozitīva) skaitliska vērtība ir pieņemams. Tas var būt noderīgi, ja jūsu PHP konfigurācija ierobežo procesa ietilpību vai ja jūsu PHP konfigurācija ierobežo augšupielādes failu lielumu."
  files_filesize_response: "Ko darīt ar failiem, kas pārsniedz faila lieluma ierobežojumu (ja tāds pastāv). False (Nepatiess) = Baltajā sarakstā; True (Patiess) = Melnajā sarakstā [Noklusējuma]."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2025.02.15).
+# This file: Spanish language data (last modified: 2025.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -65,6 +65,8 @@ config:
  files_check_archives: "Intente comprobar el contenido de los compactados archivos? False = No (no comprobar); True = Sí (comprobar) [Predefinido]. Soportado: Zip (requiere libzip), Tar, Rar (requiere la extensión rar)."
  files_corrupted_exe: "Corrompido archivos y procesamiento errores. False = Ignorar; True = Bloquear [Predefinido]. Detectar y bloquear potencialmente corrompido PE (Portátil Ejecutable) archivos? Frecuentemente (pero no siempre), cuando ciertos aspectos de un PE archivo están corrompido, dañados o no podrá ser analizado correctamente, lo puede ser indicativo de una infección viral. Los procesos utilizados por la mayoría de los antivirus programas para detectar un virus en PE archivos requerir analizando esos archivos en ciertas maneras, que, si el programador de un virus es consciente de, intentará específicamente para prevenir, con el fin de permitir su virus permanezca sin ser detectado."
  files_decode_threshold: "Opcional limitación a la longitud de datos a que dentro de decodificación comandos deben ser detectados (en caso de que los hay notable rendimiento problemas mientras que escaneando). Predefinido = 512KB. Cero o nulo valor desactiva la limitación (eliminando cualquier tal limitación basado sobre la tamaño de archivos)."
+ files_entropy_filesize_limit: "El límite de tamaño del archivo de entropía para firmas que utilizan datos normalizados (el valor predeterminado es 512KB). Cuando se excede tanto el límite de entropía como el límite de tamaño del archivo de entropía, para reducir el riesgo de falsos positivos, se ignorarán algunas firmas que utilizan datos normalizados."
+ files_entropy_limit: "El límite de entropía para firmas que utilizan datos normalizados (el valor predeterminado es 7.7). En este contexto, la entropía se define como la entropía de Shannon del contenido del archivo que se está escaneando. Cuando se excede tanto el límite de entropía como el límite de tamaño del archivo de entropía, para reducir el riesgo de falsos positivos, se ignorarán algunas firmas que utilizan datos normalizados."
  files_filesize_archives: "Heredar tamaño de archivos blacklist/whitelist para los contenidos de compactados archivos? False = No (todo en la greylist); True = Sí [Predefinido]."
  files_filesize_limit: "Límite del tamaño de archivos en KB. 65536 = 64MB [Predefinido]; 0 = Sin límite (siempre en la greylist), cualquier (positivo) numérico valor aceptado. Esto puede ser útil cuando su PHP configuración limita la cantidad de memoria un proceso puede contener o si su PHP configuración limita el tamaño de archivo subidos."
  files_filesize_response: "Qué hacer con los archivos que superen el límite del tamaño de archivos (si existe). False = Whitelist; True = Blacklist [Predefinido]."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2025.02.15).
+# This file: Turkish language data (last modified: 2025.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -65,6 +65,8 @@ config:
  files_check_archives: "Arşiv içeriğini kontrol etmeye çalıştınız mı? Yanlış/False = Kontrol etmeyin; Doğru/True = Kontrol et [Varsayılan]. Desteklenen: Zip (libzip gerektirir), Tar, Rar (rar uzantısı gerektirir)."
  files_corrupted_exe: "Bozuk dosyalar ve işleme hataları. Yanlış/False = Aldırmamak; Doğru/True = Engelle [Varsayılan]. Potansiyel olarak bozuk PE (Portable Executable) dosyalarını algıla ve engelle? Genellikle (ama her zaman değil), bir PE dosyasının bazı kısımları bozulmuş veya doğru şekilde ayrıştırılamadığında, viral bir enfeksiyonun göstergesi olabilir. Çoğu anti-virüs programının PE dosyalarındaki virüsleri algılamak için kullandığı süreçler, dosyaların belirli yollarla işlenmesini gerektirir. Bir virüs yazarı bunun farkındaysa, virüslerinin tespit edilmemesine izin vermek için bu işlemi atlatmaya çalışacaklardır."
  files_decode_threshold: "Kod çözme komutlarını kontrol etmek için ham verinin maksimum uzunluğu (tarama sırasında belirgin bir performans sorunu olması durumunda). Varsayılan = 512KB. Sıfır veya null değer, sınırı devre dışı bırakır."
+ files_entropy_filesize_limit: "Normalleştirilmiş veri kullanan imzalar için entropi dosya boyutu sınırı (varsayılan 512KB'dir). Hem entropi sınırı hem de entropi dosya boyutu sınırı aşıldığında, yanlış pozitif riskini azaltmak için, normalleştirilmiş veri kullanan bazı imzalar göz ardı edilecektir."
+ files_entropy_limit: "Normalleştirilmiş veri kullanan imzalar için entropi sınırı (varsayılan 7.7'dir). Bu bağlamda entropi, taranan dosyanın içeriğinin shannon entropisi olarak tanımlanmaktadır. Hem entropi sınırı hem de entropi dosya boyutu sınırı aşıldığında, yanlış pozitif riskini azaltmak için, normalleştirilmiş veri kullanan bazı imzalar göz ardı edilecektir."
  files_filesize_archives: "Dosya boyutu kara/beyaz listeyi arşiv içeriğine mi aktarıyorsun? Yanlış/False = Hayır; Doğru/True = Evet [Varsayılan]."
  files_filesize_limit: "KB cinsinden dosya boyutu sınırı. 65536 = 64MB [Varsayılan]; 0 = Sınır yok. Kabul edilen herhangi bir pozitif sayısal değer. Bu, PHP yapılandırmanızın bir işlemin tutabileceği bellek miktarını sınırladığında veya PHP yapılandırmanızın yüklemelerin dosya boyutunu sınırlaması durumunda yararlı olabilir."
  files_filesize_response: "Dosya boyutu sınırını aşan dosyalarla ne yapılması gerekiyor (bir sınır varsa). Yanlış/False = Beyaz listeye; Doğru/True = Kara listeye [Varsayılan]."

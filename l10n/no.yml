@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2025.02.15).
+# This file: Norwegian language data (last modified: 2025.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -65,6 +65,8 @@ config:
  files_check_archives: "Forsøk å sjekke innholdet i arkiver? False = Ikke sjekke; True = Sjekke [Standardverdi]. Støttet: Zip (krever libzip), Tar, Rar (krever rar forlengelse)."
  files_corrupted_exe: "Korrupte filer og processr feil. False = Overse; True = Blokkere [Standardverdi]. Oppdage og blokkere potensielt ødelagte PE-filer (Portable Executable)? Ofte (men ikke alltid), når visse aspekter av en PE-fil er ødelagt eller ikke kan processs riktig, kan det indikere en virusinfeksjon. Prosessene som brukes av de fleste antivirusprogrammer for å oppdage virus i PE-filer, krever parsing av disse filene på visse måter, som, hvis programmereren av et virus er klar over, spesifikt vil prøve å forhindre, for å la viruset deres forbli uoppdaget."
  files_decode_threshold: "Terskel for lengden på rådata som avkodingskommandoer skal oppdages i (i tilfelle det er merkbare ytelsesproblemer under skanning). Standardverdi = 512KB. Null deaktiverer terskelen (fjerner en slik begrensning basert på filstørrelse)."
+ files_entropy_filesize_limit: "Entropifilstørrelsesgrensen for signaturer som bruker normaliserte data (standard er 512KB). Når både entropigrensen og entropifilstørrelsesgrensen overskrides, for å redusere risikoen for falske positiver, vil noen signaturer som bruker normaliserte data bli ignorert."
+ files_entropy_limit: "Entropigrensen for signaturer som bruker normaliserte data (standard er 7.7). I denne sammenheng er entropi definert som shannon-entropien til innholdet i filen som skannes. Når både entropigrensen og entropifilstørrelsesgrensen overskrides, for å redusere risikoen for falske positiver, vil noen signaturer som bruker normaliserte data bli ignorert."
  files_filesize_archives: "Arv inn svartelisten/hvitelisten for filstørrelse til innholdet i arkiver? False = Nei (behandle alt som grålistet); True = Ja [Standardverdi]."
  files_filesize_limit: "Filstørrelsesgrense i KB. 65536 = 64MB [Standardverdi]; 0 = Ingen grense (behandle alt som grålistet). Enhver (positiv) numerisk verdi akseptert. Dette kan være nyttig når PHP-konfigurasjonen begrenser mengden minne en prosess kan inneholde eller hvis PHP-konfigurasjonen din begrenser filstørrelse for opplastinger."
  files_filesize_response: "Hva gjør du med filer som overskrider filstørrelsesgrensen (hvis en finnes). False = Behandle som hvitelistet; True = Behandle som svartelistet [Standardverdi]."

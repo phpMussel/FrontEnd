@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malayalam language data (last modified: 2025.03.09).
+# This file: Malayalam language data (last modified: 2025.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -26,6 +26,9 @@
 
 checkbox:
  Delete orphaned values: "അനാഥ മൂല്യങ്ങൾ ഇല്ലാതാക്കുക."
+config:
+ core: "പൊതുവായ കോൺഫിഗറേഷൻ (മറ്റ് വിഭാഗങ്ങളിൽ പെടാത്ത ഏതെങ്കിലും കോർ കോൺഫിഗറേഷൻ)."
+ core_default_timeout: "ബാഹ്യ അഭ്യർത്ഥനകൾക്ക് ഉപയോഗിക്കേണ്ട ഡിഫോൾട്ട് ടൈംഔട്ട്? സ്ഥിരസ്ഥിതി = 12 സെക്കൻഡ്."
 response:
  Please enter a valid quarantine key: "ദയവായി സാധുവായ ഒരു ക്വാറന്റൈൻ കീ നൽകുക."
  Statistics cleared: "സ്ഥിതിവിവരക്കണക്കുകൾ മായ്ച്ചു."

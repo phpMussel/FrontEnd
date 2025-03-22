@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data (last modified: 2025.02.15).
+# This file: German language data (last modified: 2025.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -65,6 +65,8 @@ config:
  files_check_archives: "Soll der Inhalt von Archiven überprüft werden? False = Nein (keine Überprüfung); True = Ja (wird überprüft) [Standardeinstellung]. Unterstützt: Zip (erfordert libzip), Tar, Rar (erfordert die rar-Erweiterung)."
  files_corrupted_exe: "Defekte Dateien und Parse-Errors. False = Ignorieren; True = Blockieren [Standardeinstellung]. Soll auf potentiell defekte ausführbare Dateien geprüft und diese blockiert werden? Oftmals (aber nicht immer), wenn bestimmte Aspekte einer PE-Datei beschädigt sind oder nicht korrekt verarbeitet werden können, ist dies ein Hinweis auf eine infizierte Datei. Viele Antiviren-Programme nutzen verschiedene Methoden, um Viren in solchen Dateien zu erkennen, sofern sich der Programmierer eines Virus dieser Tatsache bewußt ist, wird er versuchen, diese Maßnahmen zu verhindern, damit der Virus unentdeckt bleibt."
  files_decode_threshold: "Schwelle der Menge der Rohdaten, die durch den Decode-Befehl erkannt werden sollen (sofern während des Scanvorgangs spürbare Performance-Probleme auftreten). Standardeinstellung ist 512KB. Null oder ein Null-Wert deaktiviert die Beschränkung (Entfernen aller solcher Einschränkungen basierend auf die Dateigröße)."
+ files_entropy_filesize_limit: "Die Entropiedateigrößenlimit für Signaturen die normalisierte Daten verwenden (der standardwert ist 512KB). Wenn sowohl das Entropielimit als auch das Entropiedateigrößenlimit überschritten werden, um das Risiko Falsch-Positiver zu verringern werden einige Signaturen die normalisierte Daten verwenden ignoriert."
+ files_entropy_limit: "Die Entropielimit für Signaturen die normalisierte Daten verwenden (der standardwert ist 7.7). In diesem Kontext wird Entropie als die Shannon-Entropie des Inhalts der gescannten Datei definiert. Wenn sowohl das Entropielimit als auch das Entropiedateigrößenlimit überschritten werden, um das Risiko Falsch-Positiver zu verringern werden einige Signaturen die normalisierte Daten verwenden ignoriert."
  files_filesize_archives: "Soll das Blacklisting/Whitelisting der Dateigröße auf den Inhalt des Archivs übertragen werden? False = Nein (alles nur in die Greylist aufnehmen); True = Ja [Standardeinstellung]."
  files_filesize_limit: "Begrenzung der Dateigröße in KB. 65536 = 64MB [Standardeinstellung]; 0 = Keine Begrenzung (wird immer zur Greylist hinzugefügt), jeder (positive) numerische Wert wird akzeptiert. Dies ist nützlich, wenn Ihre PHP-Konfiguration den verfügbaren Speicherverbrauch je Prozess einschränkt oder die Dateigröße von Uploads begrenzt."
  files_filesize_response: "Handhabung von Dateien, die die Begrenzung der Dateigröße (sofern angegeben) überschreiten. False = Hinzufügen zur Whitelist; True = Hinzufügen zur Blacklist [Standardeinstellung]."

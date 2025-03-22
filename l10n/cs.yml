@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Czech language data (last modified: 2025.02.15).
+# This file: Czech language data (last modified: 2025.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -65,6 +65,8 @@ config:
  files_check_archives: "Pokus o kontrolu obsahu archivů? False (Nepravdivé) = Nekontrolovat; True (Pravdivé) = Kontrolovat [Standardní]. Podporovány: Zip (vyžaduje libzip), Tar, Rar (vyžaduje rozšíření rar)."
  files_corrupted_exe: "Poškozené soubory a chyby analýzy. False (Nepravdivé) = Ignorovat; True (Pravdivé) = Blokovat [Standardní]. Detekovat a blokovat potenciálně poškozené soubory PE (Portable Executable)? Často (ale ne vždy), když jsou některé aspekty souboru PE poškozeny nebo je nelze správně analyzovat, může to znamenat virovou infekci. Procesy používané většinou antivirových programů k detekci virů v souborech PE vyžadují analýzu těchto souborů určitými způsoby, které, pokud si je programátor viru vědom, se konkrétně pokusí zabránit, aby jejich virus zůstal nezjištěn."
  files_decode_threshold: "Prahová hodnota pro délku nezpracovaných dat, v rámci kterých by měly být dekódovací příkazy detekovány (v případě že se při skenování vyskytnou nějaké znatelné problémy s výkonem). Standardní = 512KB. Nula zakáže práh (odstranění jakéhokoli takového omezení na základě velikosti souboru)."
+ files_entropy_filesize_limit: "Limit velikosti souborů entropie pro podpisy, které používají normalizovaná data (standardní je 512KB). Když je překročen limit entropie i limit velikosti souboru entropie, aby se snížilo riziko falešných poplachů, budou některé signatury které používají normalizovaná data ignorovány."
+ files_entropy_limit: "Limit entropie pro signatury, které používají normalizovaná data (standardní je 7.7). V tomto kontextu je entropie definována jako shannonova entropie obsahu skenovaného souboru. Když je překročen limit entropie i limit velikosti souboru entropie, aby se snížilo riziko falešných poplachů, budou některé signatury které používají normalizovaná data ignorovány."
  files_filesize_archives: "Použít blacklist/whitelist velikosti souborů při kontrole obsahu archivů? False (Nepravdivé) = Ne; True (Pravdivé) = Ano [Standardní]."
  files_filesize_limit: "Limit velikosti souboru v KB. 65536 = 64MB [Standardní]; 0 = Bez omezení. Přijímá se jakákoli kladná číselná hodnota. To může být užitečné, když vaše konfigurace PHP omezuje množství paměti, kterou může proces pojmout, nebo pokud vaše konfigurace PHP omezuje velikost nahraných souborů."
  files_filesize_response: "Co dělat se soubory, které překračují limit velikosti souborů (pokud takový existuje). False (Nepravdivé) = Whitelist; True (Pravdivé) = Blacklist [Standardní]."

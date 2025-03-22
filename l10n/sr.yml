@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Serbian language data (last modified: 2025.03.09).
+# This file: Serbian language data (last modified: 2025.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -60,6 +60,7 @@ config:
  frontend_magnification: "Увећање фонта. Подразумевано = 1."
  frontend_max_login_attempts: "Максималан број покушаја пријављивања на фронт-енд. Подразумевано = 5."
  frontend_numbers: "Како желите да се бројеви приказују? Изаберите пример који вам се чини најисправнијим."
+ frontend_theme: "The aesthetic to use for the phpMussel front-end."
  legal: "Конфигурација за законске захтеве."
  legal_privacy_policy: "Адреса релевантне политике приватности која ће се приказати у подножју сваке генерисане странице. Наведите УРЛ, или оставите празно да бисте онемогућили."
  legal_pseudonymise_ip_addresses: "Псеудонимизирати ИП адресе приликом пријављивања? Истинито = Да [Подразумевано]; Лажно = Не."
@@ -124,6 +125,24 @@ field:
 hints_logging_datetime: "Користан савет: Можете да приложите информације о датуму/времену именима датотека евиденције користећи чуваре места у формату времена. Доступни чувари места формата времена су приказани на {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
  Чпп.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Шта је „ПДО ДСН“? Како могу да користим ПДО са пхпМуссел-ом?</a></em>"
+hints_time_format: |
+ <strong><em>Чувар места – Објашњење – Пример заснован на 2024-04-30T18:27:49+08:00.</em></strong><br />
+ <code class="s">{yyyy}</code> – Година – Нпр., 2024.<br />
+ <code class="s">{yy}</code> – Скраћена година – Нпр., 24.<br />
+ <code class="s">{Mon}</code> – Скраћени назив месеца (на енглеском) – Нпр., Apr.<br />
+ <code class="s">{mm}</code> – Месец са водећим нулама – Нпр., 04.<br />
+ <code class="s">{m}</code> – Месец – Нпр., 4.<br />
+ <code class="s">{Day}</code> – Скраћени назив дана (на енглеском) – Нпр., Tue.<br />
+ <code class="s">{dd}</code> – Дан са водећим нулама – Нпр., 30.<br />
+ <code class="s">{d}</code> – Дан – Нпр., 30.<br />
+ <code class="s">{hh}</code> – Сат са водећим нулама (користи 24-часовно време) – Нпр., 18.<br />
+ <code class="s">{h}</code> – Сат (користи 24-часовно време) – Нпр., 18.<br />
+ <code class="s">{ii}</code> – Минут са водећим нулама – Нпр., 27.<br />
+ <code class="s">{i}</code> – Минут – Нпр., 27.<br />
+ <code class="s">{ss}</code> – Секунде са водећим нулама – Нпр., 49.<br />
+ <code class="s">{s}</code> – Секунде – Нпр., 49.<br />
+ <code class="s">{tz}</code> – Временска зона (без двотачка) – Нпр., +0800.<br />
+ <code class="s">{t:z}</code> – Временска зона (са двотачком) – Нпр., +08:00.
 response:
  Incorrect quarantine key: "Нетачан кључ за карантин!"
  Invalid password: "Пријава није успела! Неважећа лозинка!"

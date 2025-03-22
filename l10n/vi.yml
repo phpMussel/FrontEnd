@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2025.02.15).
+# This file: Vietnamese language data (last modified: 2025.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -65,6 +65,8 @@ config:
  files_check_archives: "Cố gắng để kiểm tra nội dung của kho lưu trữ? False = Không kiểm tra; True = Kiểm tra [Mặc định]. Được hỗ trợ: Zip (yêu cầu libzip), Tar, Rar (yêu cầu mở rộng rar)."
  files_corrupted_exe: "Tập tin bị hỏng và phân tích lỗi. False = Bỏ qua; True = Chặn [Mặc định]. Phát hiện và chặn khả thi tập tin PE (portable executable / thực thi di động) bị hỏng? Thường (nhưng không phải lúc nào), khi khía cạnh cụ thể của một tập tin PE đang bị hỏng hay không thể được phân tích chính xác, nó có thể chỉ ra một nhiễm vi rút. Các quy trình được sử dụng bởi hầu hết các chương trình chống vi rút để phát hiện vi rút trong các tập tin PE đòi hỏi phải phân tích những tập tin theo một cách mà, nếu các lập trình viên của một vi rút là nhận thức của, cụ thể sẽ cố gắng để ngăn chặn, để cho phép vi rút của mình để không bị phát hiện."
  files_decode_threshold: "Ngưỡng cho chiều dài của dữ liệu thô trong đó các lệnh giải mã nên được phát hiện (trong trường hợp có bất kỳ vấn đề hiệu suất đáng chú ý trong khi quét). Mặc định = 512KB. Số không hay số null vô hiệu hóa các ngưỡng (loại bỏ bất kỳ giới hạn dựa trên kích cỡ tập tin)."
+ files_entropy_filesize_limit: "Giới hạn kích thước tập tin entropy cho các chữ ký sử dụng dữ liệu được chuẩn hóa (mặc định là 512KB). Khi cả giới hạn entropy và giới hạn kích thước tập tin entropy đều bị vượt quá, để giảm nguy sai tích cực, một số chữ ký sử dụng dữ liệu chuẩn hóa sẽ bị bỏ qua."
+ files_entropy_limit: "Giới hạn entropy cho các chữ ký sử dụng dữ liệu được chuẩn hóa (mặc định là 7.7). Trong bối cảnh này, entropy được định nghĩa là entropy shannon của nội dung tập tin đang được quét. Khi cả giới hạn entropy và giới hạn kích thước tập tin entropy đều bị vượt quá, để giảm nguy sai tích cực, một số chữ ký sử dụng dữ liệu chuẩn hóa sẽ bị bỏ qua."
  files_filesize_archives: "Thừa kế danh sách đen/trắng cho kích thước của tập tin trong kho lưu trữ? False = Không (chỉ danh sách xám mọi điều); True = Vâng [Mặc định]."
  files_filesize_limit: "Giới hạn của kích thước tập tin trong KB. 65536 = 64MB [Mặc định]; 0 = Không giới hạn (luôn có trên danh sách xám), bất kỳ giá trị số dương chấp nhận. Điều này có thể hữu ích khi cấu hình PHP của bạn hạn chế số lượng bộ nhớ một quá trình có thể giữ hay nếu hình PHP của bạn giới hạn kích thước của tải lên tập tin."
  files_filesize_response: "Làm gì với tập tin mà vượt quá các giới hạn kích thước của tải lên (nếu tồn tại). False = Danh sách trắng; True = Danh sách đen [Mặc định]."

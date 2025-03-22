@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2025.02.15).
+# This file: Korean language data (last modified: 2025.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -65,6 +65,8 @@ config:
  files_check_archives: "아카이브의 컨텐츠에 대해 체크를 시도 여부에 대해서입니다. False = 체크하지 않는다; True = 확인 (Default / 기본 설정). Zip (libzip이 필요합니다), Tar, Rar (rar 확장이 필요합니다)이 지원됩니다."
  files_corrupted_exe: "손상된 파일과 오류 분석. False = 무시; True = 차단 (Default / 기본 설정). 손상의 가능성이있는 PE 파일을 차단 검출 여부? 관한 것입니다. PE 파일의 일부가 손상되어 제대로 분석 할 수없는 것은 드물지 않고, 바이러스 감염을 보는 바로미터가됩니다. PE 파일의 바이러스를 감지하는 안티 바이러스 프로그램은 PE 파일 분석을 실시 합니다만, 바이러스를 만드는 사람이 바이러스가 검출되지 않도록 그것을 피하려고 할 것이기 때문입니다."
  files_decode_threshold: "디코드 명령이 감지 될 원시 데이터의 길이 제한 (스캐닝 중에 눈에 띄는 문제가있는 경우에는 필요에 따라 설정). 기본값 = 512KB. 제로 또는 값 없음 (null)은 임계 값을 비활성화합니다 (파일 크기의 제한을 제거합니다)."
+ files_entropy_filesize_limit: "정규화된 데이터를 사용하는 서명에 대한 엔트로피 파일 크기 제한 (기본값은 512KB입니다). 엔트로피 한도와 엔트로피 파일 크기 한도를 모두 초과하는 경우, 거짓 긍정의 위험을 줄이기, 위해 정규화된 데이터를 사용하는 일부 서명은 무시됩니다."
+ files_entropy_limit: "정규화된 데이터를 사용하는 서명에 대한 엔트로피 제한 (기본값은 7.7입니다). 이 맥락에서, 엔트로피는 스캔되는 파일의 내용에 대한 섀넌 엔트로피로 정의됩니다. 엔트로피 한도와 엔트로피 파일 크기 한도를 모두 초과하는 경우, 거짓 긍정의 위험을 줄이기, 위해 정규화된 데이터를 사용하는 일부 서명은 무시됩니다."
  files_filesize_archives: "파일 크기 블랙리스트/화이트리스트 화를 아카이브의 컨텐츠에 반입 여부? <code>false</code> = 아니오 (단지 그레이리스트 모두); True = 예 (Default / 기본 설정)."
  files_filesize_limit: "파일 크기 제한의 단위는 KB입니다. 65536 = 64MB (Default / 기본 설정); 0 = 제한하지 않습니다 (제한없이 항상 그레이리스트 화) 양수이면 무엇이든 상관 없습니다. PHP 설정에서 메모리에 제한이 있고, 업로드 파일 크기 제한이 설정되어있는 경우에 효과적입니다."
  files_filesize_response: "최대 크기보다 큰 파일을 처리하는 방법에 관한 것입니다. False = Whitelist/화이트리스트; True = Blacklist/블랙리스트 (Default / 기본 설정)."

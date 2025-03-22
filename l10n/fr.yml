@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2025.02.15).
+# This file: French language data (last modified: 2025.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -65,6 +65,8 @@ config:
  files_check_archives: "Essayer vérifier les contenus des archives\_? False = Non (ne pas vérifier)\_; True = Oui (vérifier) [Défaut]. Supporté\_: Zip (nécessite libzip), Tar, Rar (nécessite l'extension rar)."
  files_corrupted_exe: "Fichiers corrompus et erreurs d'analyse. False = Ignorer\_; True = Bloquer [Défaut]. Détecter et bloquer les fichiers PE (Portable Executable) potentiellement corrompus\_? Souvent (mais pas toujours), lorsque certains aspects d'un fichier PE sont corrompus ou ne peut pas être analysée correctement, il peut être le signe d'une infection virale. Les processus utilisés par la plupart des programmes anti-virus pour détecter les virus dans fichiers PE requérir l'analyse de ces fichiers par méthodes certaines, de ce que, si le programmeur d'un virus est conscient de, seront spécifiquement tenter d'empêcher, en vue de permettre leur virus n'être pas détectée."
  files_decode_threshold: "Seuil à la longueur de brutes données dans laquelle commandes des décodages doivent être détectés (dans le cas où il ya remarquable performance problèmes au cours de l'analyse). Défaut = 512Ko. Zéro ou nulle valeur désactive le seuil (supprimant toute restriction basé sur la taille du fichier)."
+ files_entropy_filesize_limit: "La limite de taille du fichier d'entropie pour les signatures qui utilisent des données normalisées (la valeur par défaut est 512KB). Lorsque la limite d'entropie et la limite de taille du fichier d'entropie sont dépassées, afin de réduire le risque de faux positifs, certaines signatures qui utilisent des données normalisées seront ignorées."
+ files_entropy_limit: "La limite d'entropie pour les signatures qui utilisent des données normalisées (la valeur par défaut est 7.7). Dans ce contexte, l'entropie est définie comme l'entropie de Shannon du contenu du fichier en cours d'analyse. Lorsque la limite d'entropie et la limite de taille du fichier d'entropie sont dépassées, afin de réduire le risque de faux positifs, certaines signatures qui utilisent des données normalisées seront ignorées."
  files_filesize_archives: "Étendre taille du fichier liste noire/blanche paramètres à le contenu des archives\_? False = Non (énumérer grise tout)\_; True = Oui [Défaut]."
  files_filesize_limit: "Limite de taille des fichiers en Ko. 65536 = 64Mo [Défaut]\_; 0 = Pas limite (toujours en liste grise), tout (positif) valeur numérique acceptée. Cela peut être utile lorsque votre configuration de PHP limite la quantité de mémoire qu'un processus peut contenir ou si votre configuration de PHP limite la taille du fichier téléchargements."
  files_filesize_response: "Que faire avec des fichiers qui dépassent la limite de taille des fichiers (si existant). False = Énumérer Blanche\_; True = Énumérer Noire [Défaut]."

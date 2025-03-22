@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2025.02.15).
+# This file: Indonesian language data (last modified: 2025.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -65,8 +65,10 @@ config:
  files_check_archives: "Berusaha mencek isi file terkompress? False = Tidak (Tidak mencek); True = Ya (Mencek) [Default]. Didukung: Zip (membutuhkan libzip), Tar, Rar (membutuhkan ekstensi rar)."
  files_corrupted_exe: "File korup dan diurai kesalahan. False = Mengabaikan; True = Memblokir [Default]. Mendeteksi dan memblokir file PE (Portable Executable) berpotensi korup? Sering (tapi tidak selalu), ketika aspek-aspek tertentu dari file PE yang korup atau tidak bisa diurai dengan benar, itu dapat menjadi indikasi dari infeksi virus. Proses yang digunakan oleh sebagian besar program anti-virus untuk mendeteksi virus dalam file PE memerlukan parsing file-file dengan cara tertentu, yang, jika programmer virus menyadari, secara khusus akan mencoba untuk mencegah, untuk memungkinkan virus mereka untuk tetap tidak terdeteksi."
  files_decode_threshold: "Ambang batas dengan panjang file mentah yang dalam decode perintah harus terdeteksi (dalam kasus ada masalah kinerja sementara pemindaian). Default = 512KB. Nol atau nilai null menonaktifkan ambang batas (menghapus apapun batasan berdasarkan ukuran file)."
+ files_entropy_filesize_limit: "Batas ukuran file entropi untuk tanda tangan yang menggunakan data yang dinormalisasi (defaultnya 512KB). Ketika batas entropi dan batas ukuran file entropi terlampaui, untuk mengurangi risiko positif palsu, beberapa tanda tangan yang menggunakan data ternormalisasi akan diabaikan."
+ files_entropy_limit: "Batas entropi untuk tanda tangan yang menggunakan data yang dinormalisasi (defaultnya 7.7). Dalam konteks ini, entropi didefinisikan sebagai entropi shannon dari konten file yang sedang dipindai. Ketika batas entropi dan batas ukuran file entropi terlampaui, untuk mengurangi risiko positif palsu, beberapa tanda tangan yang menggunakan data ternormalisasi akan diabaikan."
  files_filesize_archives: "Memperlalaikan ukuran daftar hitam/putih dari isi file terkompress? False = Tidak (Bertanda abu-abu semua); True = Ya [Default]."
- files_filesize_limit: "Batasan ukuran file dalam KB. 65536 = 64MB [Default]; 0 = Tidak ada batasa (selalu bertanda abu-abu), nilai angka positif apapun diterima. Ini dapat berguna ketika batasan konfigurasi PHP Anda membatasi jumah memori dari proses yang dapat ditampungnya atau jika konfigurasi PHP Anda membatasi jumlah ukuran upload Anda."
+ files_filesize_limit: "Batas ukuran file dalam KB. 65536 = 64MB [Default]; 0 = Tidak ada batasa (selalu bertanda abu-abu), nilai angka positif apapun diterima. Ini dapat berguna ketika batasan konfigurasi PHP Anda membatasi jumah memori dari proses yang dapat ditampungnya atau jika konfigurasi PHP Anda membatasi jumlah ukuran upload Anda."
  files_filesize_response: "Apa yang Anda lakukan dengan file-file yang melebihi batasan ukuran (jika ada). False = Bertanda putih; True = Bertanda hitam [Default]."
  files_filetype_archives: "Memperlalaikan jenis file daftar hitam/putih dari isi file terkompress? False = Tidak (Bertanda abu-abu semua) [Default]; True = Ya."
  files_filetype_blacklist: "Daftar Hitam:"

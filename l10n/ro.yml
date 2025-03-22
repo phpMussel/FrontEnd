@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data (last modified: 2024.07.23).
+# This file: Romanian language data (last modified: 2025.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -65,6 +65,8 @@ config:
  files_check_archives: "Încercați să verificați conținutul arhivelor? False = Nu verifica; True = Verifica [Implicit]. Recunoscut: Zip (necesită libzip), Tar, Rar (necesită extensia rar)."
  files_corrupted_exe: "Fișiere corupte și erori de analiză. False = Ignora; True = Blocați [Implicit]. Detectați și blocați fișierele PE (Portable Executable) potențial corupte? Adesea (dar nu întotdeauna), atunci când anumite aspecte ale unui fișier PE sunt corupte sau nu pot fi analizate corect, poate indica o infecție virală. Procesele utilizate de majoritatea programelor antivirus pentru a detecta viruși în fișierele PE necesită analizarea acelor fișiere în anumite moduri, pe care, dacă programatorul unui virus este conștient, va încerca în mod special să le prevină, pentru a permite virusului lor să rămână nedetectat."
  files_decode_threshold: "Pragul pentru lungimea datelor brute în care ar trebui detectate comenzile de decodare (în cazul în care există probleme de performanță vizibile în timpul scanării). Implicit = 512KB. Zero sau null dezactivează pragul (eliminând orice astfel de limitare bazată pe dimensiunea fișierului)."
+ files_entropy_filesize_limit: "Limita de entropie a dimensiunii fișierelor pentru semnăturile care utilizează date normalizate (implicit este 512KB). Când atât limita de entropie, cât și limita de dimensiune a fișierului de entropie sunt depășite, pentru a reduce riscul de fals pozitive, unele semnături care folosesc date normalizate vor fi ignorate."
+ files_entropy_limit: "Limita de entropie pentru semnăturile care utilizează date normalizate (implicit este 7.7). În acest context, entropia este definită ca entropia shannon a conținutului fișierului scanat. Când atât limita de entropie, cât și limita de dimensiune a fișierului de entropie sunt depășite, pentru a reduce riscul de fals pozitive, unele semnături care folosesc date normalizate vor fi ignorate."
  files_filesize_archives: "Transferați lista neagră/albă cu dimensiunea fișierelor în conținutul arhivelor? False = Nu (doar pe listă gri totul); True = Da [Implicit]."
  files_filesize_limit: "Limită de dimensiune a fișierului în KB. 65536 = 64MB [Implicit]; 0 = Fără limită (intotdeauna pe lista gri). Se acceptă orice valoare numerică (pozitivă). Acest lucru poate fi util atunci când configurația dvs. PHP limitează cantitatea de memorie pe care o poate deține un proces sau dacă configurația dvs. PHP limitează dimensiunea fișierelor încărcate."
  files_filesize_response: "Ce să faci cu fișierele care depășesc limita de dimensiune a fișierelor (dacă există). False = Pe lista albă; True = Pe lista neagră [Implicit]."
@@ -110,14 +112,14 @@ config:
  supplementary_cache_options_enable_memcached: "Specifică dacă să încercați să utilizați Memcached pentru stocarea în cache. Implicit = False."
  supplementary_cache_options_enable_pdo: "Specifică dacă să încercați să utilizați PDO pentru stocarea în cache. Implicit = False."
  supplementary_cache_options_enable_redis: "Specifică dacă să încercați să utilizați Redis pentru stocarea în cache. Implicit = False."
- supplementary_cache_options_memcached_host: "Valoarea gazdei Memcached. Implicit = „localhost”."
+ supplementary_cache_options_memcached_host: "Valoarea gazdei Memcached. Implicit = localhost."
  supplementary_cache_options_memcached_port: "Valoarea portului Memcached. Implicit = „11211”."
  supplementary_cache_options_pdo_dsn: "Valoarea DSN PDO. Implicit = „mysql:dbname=phpmussel;host=localhost;port=3306”."
  supplementary_cache_options_pdo_password: "Parola pentru PDO."
  supplementary_cache_options_pdo_username: "Numele de utilizator pentru PDO."
  supplementary_cache_options_prefix: "Valoarea specificată aici va fi adăugată înaintea tuturor cheilor de intrare în cache. Implicit = „phpMussel_”. Când există mai multe instalări pe același server, acest lucru poate fi util pentru a-și păstra cache-urile separate unele de altele."
  supplementary_cache_options_redis_database_number: "Numărul bazei de date Redis. Implicit = 0. Notă: Nu se pot folosi alte valori decât 0 cu Redis Cluster."
- supplementary_cache_options_redis_host: "Valoarea gazdei Redis. Implicit = „localhost”."
+ supplementary_cache_options_redis_host: "Valoarea gazdei Redis. Implicit = localhost."
  supplementary_cache_options_redis_port: "Valoarea portului Redis. Implicit = „6379”."
  supplementary_cache_options_redis_timeout: "Valoarea timeout Redis. Implicit = „2.5”."
  urlscanner: "Configurare pentru scanerul URL."

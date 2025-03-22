@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2025.02.15).
+# This file: English language data (last modified: 2025.03.21).
 ##/
 
 checkbox:
@@ -61,6 +61,8 @@ config:
  files_check_archives: "Attempt to check the contents of archives? False = Don't check; True = Check [Default]. Supported: Zip (requires libzip), Tar, Rar (requires the rar extension)."
  files_corrupted_exe: "Corrupted files and parse errors. False = Ignore; True = Block [Default]. Detect and block potentially corrupted PE (Portable Executable) files? Often (but not always), when certain aspects of a PE file are corrupted or can't be parsed correctly, it can be indicative of a viral infection. The processes used by most anti-virus programs to detect viruses in PE files require parsing those files in certain ways, which, if the programmer of a virus is aware of, will specifically try to prevent, in order to allow their virus to remain undetected."
  files_decode_threshold: "Threshold for the length of raw data within which decode commands should be detected (in case there are any noticeable performance issues while scanning). Default = 512KB. Zero or null disables the threshold (removing any such limitation based on filesize)."
+ files_entropy_filesize_limit: "The entropy filesize limit for signatures that use normalised data (default is 512KB). When both the entropy limit and the entropy filesize limit are exceeded, in order to reduce the risk of false positives, some signatures which use normalised data will be ignored."
+ files_entropy_limit: "The entropy limit for signatures that use normalised data (default is 7.7). In this context, entropy is defined as the shannon entropy of the content of the file being scanned. When both the entropy limit and the entropy filesize limit are exceeded, in order to reduce the risk of false positives, some signatures which use normalised data will be ignored."
  files_filesize_archives: "Carry over filesize blacklisting/whitelisting to the contents of archives? False = No (just greylist everything); True = Yes [Default]."
  files_filesize_limit: "Filesize limit in KB. 65536 = 64MB [Default]; 0 = No limit (always greylisted). Any (positive) numeric value accepted. This can be useful when your PHP configuration limits the amount of memory a process can hold or if your PHP configuration limits filesize of uploads."
  files_filesize_response: "What to do with files that exceed the filesize limit (if one exists). False = Whitelist; True = Blacklist [Default]."

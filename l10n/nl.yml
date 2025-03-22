@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2025.02.15).
+# This file: Dutch language data (last modified: 2025.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -65,6 +65,8 @@ config:
  files_check_archives: "Om de inhoud van archieven proberen te controleer? False = Nee (niet doen controleer); True = Ja (doen controleer) [Standaard]. Ondersteunde: Zip (vereist libzip), Tar, Rar (vereist de rar-extensie)."
  files_corrupted_exe: "Corrupte bestanden en verwerking fouten. False = Negeren; True = Blokkeren [Standaard]. Detecteren en blokkeren mogelijk beschadigd PE (Portable Executable) bestanden? Vaak (maar niet altijd), wanneer bepaalde aspecten van een PE-bestand zijn beschadigd of kan niet correct worden verwerkt, het kan wijzen op een virale infectie. De processen gebruikt door de meeste anti-virus programma's om virussen in PE-bestanden te detecteren vereisen de verwerking van die bestanden op bepaalde manieren, dat, als de programmeur van een virus kent, specifiek zal proberen te verhinderen, zodat haar virus onopgemerkt blijven."
  files_decode_threshold: "Drempelwaarde de lengte van onverwerkte gegevens waarbinnen decoderen commando's moeten gedetecteerd worden (in het geval er enige merkbare prestatieproblemen terwijl scannen). Standaard = 512KB. Zero of nulwaarde zal uitschakelen het drempelwaarde (het verwijderen van een dergelijke limiet gebaseerd op bestandsgrootte)."
+ files_entropy_filesize_limit: "De limiet voor de bestandsgrootte van entropie voor signatures die genormaliseerde gegevens gebruiken (standaard is 512KB). Wanneer zowel de entropielimiet als de limiet voor de entropiebestandsgrootte worden overschreden, worden sommige signatures die genormaliseerde gegevens gebruiken genegeerd om het risico op foutpositieve te verkleinen."
+ files_entropy_limit: "De entropielimiet voor signatures die genormaliseerde gegevens gebruiken (standaard is 7.7). In deze context wordt entropie gedefinieerd als de shannon-entropie van de inhoud van het bestand dat wordt gescand. Wanneer zowel de entropielimiet als de limiet voor de entropiebestandsgrootte worden overschreden, worden sommige signatures die genormaliseerde gegevens gebruiken genegeerd om het risico op foutpositieve te verkleinen."
  files_filesize_archives: "Erven het bestandsgrootte blacklist/whitelist staat om de inhoud van archieven? False = Nee (gewoon greylist alles); True = Ja [Standaard]."
  files_filesize_limit: "Bestandsgrootte limiet in KB. 65536 = 64MB [Standaard]; 0 = Geen limiet (altijd op de greylist), ieder (positief) numerieke waarde aanvaard. Dit kunt handig zijn als uw PHP configuratie beperkt de hoeveelheid van geheugen een proces kunt houden of als u PHP configuratie beperkt het bestandsgrootte van uploads."
  files_filesize_response: "Wat te doen met bestanden dat overschrijden het bestandsgrootte limiet (als aanwezig). False = Whitelist; True = Blacklist [Standaard]."
