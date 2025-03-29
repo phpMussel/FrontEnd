@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Galician language data (last modified: 2025.03.21).
+# This file: Galician language data (last modified: 2025.03.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -165,7 +165,6 @@ field:
  Your version: "O teu versión"
  log_rotation_archive: "Primeiro arquiva, e despois elimina os ficheiros de rexistro máis antigos, ata que non se supere o límite."
  log_rotation_delete: "Elimina os ficheiros de rexistro máis antigos, ata que non se supere o límite."
- size: {"Total size": "Tamaño total:"}
  vt_suspicion_level_all: "Escanear todos os ficheiros."
  vt_suspicion_level_executable: "Analiza ficheiros con peso heurístico, ficheiros executables, e ficheiros que poidan conter datos executables.\nExemplos de ficheiros executables, e ficheiros que poden conter datos executables, inclúen ficheiros PE de Windows, ficheiros ELF de Linux, ficheiros Mach-O, ficheiros DOCX, ficheiros ZIP, etc."
  vt_suspicion_level_heuristic_only: "Analiza só ficheiros con peso heurístico.\nOs ficheiros analizaranse só se teñen algún peso heurístico. O peso heurístico pódese incorrer en sinaturas destinadas a capturar pegadas dixitais comúns asociadas a unha posible infección que non necesariamente garante a infección. A busca, en tales casos, pode servir para proporcionar unha segunda opinión para resultados que xustifiquen sospeitas pero que non ofrezan ningunha certeza."

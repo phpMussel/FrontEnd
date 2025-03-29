@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Ukrainian language data (last modified: 2025.03.21).
+# This file: Ukrainian language data (last modified: 2025.03.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -165,17 +165,6 @@ field:
  Your version: "Ваша версія"
  log_rotation_archive: "Спочатку заархівуйте, а потім видаліть найстаріші файли журналу, доки ліміт більше не буде перевищено."
  log_rotation_delete: "Видаліть найстаріші файли журналу, доки ліміт більше не буде перевищено."
- size:
-  Total size: "Загальний розмір:"
-  GB: "ГБ"
-  KB: "КБ"
-  MB: "МБ"
-  PB: "ПБ"
-  TB: "ТБ"
-  bytes:
-   - "байт"
-   - "байта"
-   - "байтов"
  vt_suspicion_level_all: "Сканувати всі файли."
  vt_suspicion_level_executable: "Сканувати файли з евристичною вагою, виконувані файли, та файли які потенційно містять виконувані дані.\nПриклади виконуваних файлів, і файлів які потенційно містять виконувані дані, включають файли Windows PE, файли Linux ELF, файли Mach-O, файли DOCX, файли ZIP, тощо."
  vt_suspicion_level_heuristic_only: "Сканувати лише файли з евристичною вагою.\nСкануються лише файли з евристичною вагою. Евристична вага може бути отримана від сигнатур, призначених для виявлення звичайних відбитків пальців, пов'язаних із потенційним зараженням, що не обов'язково гарантує зараження. Пошук у таких випадках може служити для отримання другої думки щодо результатів, які виправдовують підозру, але не забезпечують жодної впевненості."

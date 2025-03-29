@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2025.03.21).
+# This file: Vietnamese language data (last modified: 2025.03.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -165,9 +165,6 @@ field:
  Your version: "Phiên bản của bạn"
  log_rotation_archive: "Trước tiên lưu trữ, và sau đó xóa các tập tin nhật ký cũ nhất, cho đến khi giới hạn không còn vượt quá."
  log_rotation_delete: "Xóa các tập tin nhật ký cũ nhất, cho đến khi giới hạn không còn vượt quá."
- size:
-  Total size: "Kích thước tổng:"
-  bytes: "byte"
  vt_suspicion_level_all: "Quét tất cả các tập tin."
  vt_suspicion_level_executable: "Quét các tập tin có trọng số heuristic, tập tin thực thi, và tập tin có khả năng chứa dữ liệu thực thi.\nVí dụ về tập tin thực thi, và tập tin có khả năng chứa dữ liệu thực thi, bao gồm tập tin Windows PE, tập tin Linux ELF, tập tin Mach-O, tập tin DOCX, tập tin ZIP, vv."
  vt_suspicion_level_heuristic_only: "Chỉ quét các tập tin có trọng số heuristic.\nCác tập tin sẽ chỉ được quét nếu chúng chịu một số trọng số heuristic. Trọng số heuristic có thể phát sinh từ các chữ ký nhằm bắt dấu vân tay phổ biến gợi ý lây nhiễm nhưng không đảm bảo lây nhiễm. Đối với các kết quả chứng minh sự nghi ngờ nhưng không cung cấp bất kỳ sự chắc chắn nào, việc tra cứu có thể phục vụ để đưa ra ý kiến thứ hai."

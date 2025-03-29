@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese language data (last modified: 2025.03.21).
+# This file: Chinese language data (last modified: 2025.03.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -223,10 +223,6 @@ field:
  Your version: "您的版本"
  log_rotation_archive: {"zh-Hans": "首先归档，然后删除最旧的日志文件，直到不再超出限制。", "zh-Hant": "首先歸檔，然後刪除最舊的日誌文件，直到不再超出限制。"}
  log_rotation_delete: {"zh-Hans": "删除最旧的日志文件，直到不再超出限制。", "zh-Hant": "刪除最舊的日誌文件，直到不再超出限制。"}
- size:
-  Total size: {"zh-Hans": "总大小：", "zh-Hant": "總大小："}
-  bytes:
-   - {"zh-Hans": "字节", "zh-Hant": "字節"}
  vt_suspicion_level_all: {"zh-Hans": "扫描所有文件。", "zh-Hant": "掃描所有文件。"}
  vt_suspicion_level_executable:
   zh-Hans: "扫描具启发式权重的文件、可执行文件、和可能包含可执行数据的文件。\n此类文件包括Windows PE文件、Linux ELF文件、Mach-O文件、DOCX文件、ZIP文件、等等。"

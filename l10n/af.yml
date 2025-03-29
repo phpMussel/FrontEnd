@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2025.03.21).
+# This file: Afrikaans language data (last modified: 2025.03.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -165,11 +165,6 @@ field:
  Your version: "Jou weergawe"
  log_rotation_archive: "Argiveer eers, en vee dan die oudste loglêers uit totdat die limiet nie meer oorskry word nie."
  log_rotation_delete: "Vee die oudste loglêers uit totdat die limiet nie meer oorskry word nie."
- size:
-  Total size: "Totale grootte:"
-  bytes:
-   - "greep"
-   - "grepe"
  vt_suspicion_level_all: "Skandeer alle lêers."
  vt_suspicion_level_executable: "Skandeer lêers met heuristiese gewig, uitvoerbare lêers, en lêers wat moontlik uitvoerbare data bevat.\nVoorbeelde van uitvoerbare lêers en lêers wat moontlik uitvoerbare data bevat, sluit Windows PE-lêers, Linux ELF-lêers, Mach-O-lêers, DOCX-lêers, ZIP-lêers, ens."
  vt_suspicion_level_heuristic_only: "Skandeer slegs lêers met heuristiese gewig.\nLêers sal slegs geskandeer word as hulle 'n mate van heuristiese gewig dra. Heuristiese gewig kan verkry word uit handtekeninge wat bedoel is om algemene vingerafdrukke te vang wat verband hou met potensiële infeksie wat nie noodwendig infeksie waarborg nie. Die opsoek kan in sulke gevalle dien om 'n tweede mening te gee vir resultate wat vermoede regverdig, maar andersins geen sekerheid verskaf nie."

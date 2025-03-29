@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2025.03.21).
+# This file: Malay language data (last modified: 2025.03.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -165,9 +165,6 @@ field:
  Your version: "Versi anda"
  log_rotation_archive: "Mula-mula arkibkan, dan kemudian padamkan fail log tertua, sehingga had tidak lagi melebihi."
  log_rotation_delete: "Padamkan fail log tertua, sehingga had tidak lagi melebihi."
- size:
-  Total size: "Jumlah saiz:"
-  bytes: "bait"
  vt_suspicion_level_all: "Imbas semua fail."
  vt_suspicion_level_executable: "Imbas fail dengan berat heuristik, fail boleh laku, dan fail yang berpotensi mengandungi data boleh laku.\nContoh fail boleh laku, dan fail yang berpotensi mengandungi data boleh laku, termasuk fail Windows PE, fail Linux ELF, fail Mach-O, fail DOCX, fail ZIP, dsb."
  vt_suspicion_level_heuristic_only: "Imbas hanya fail dengan berat heuristik.\nFail akan diimbas hanya jika ia mempunyai berat heuristik. Berat heuristik boleh ditanggung daripada tandatangan yang bertujuan untuk menangkap cap jari biasa yang dikaitkan dengan kemungkinan jangkitan yang tidak semestinya menjamin jangkitan. Pencarian, dalam kes sedemikian, boleh memberikan pendapat kedua untuk keputusan yang mewajarkan syak tetapi sebaliknya tidak memberikan sebarang kepastian."

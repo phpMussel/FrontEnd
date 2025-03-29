@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bangla language data (last modified: 2025.03.21).
+# This file: Bangla language data (last modified: 2025.03.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -165,9 +165,6 @@ field:
  Your version: "আপনার সংস্করণ"
  log_rotation_archive: "প্রথমত, লগ ফাইলগুলিকে আর্কাইভ করুন, এবং তারপর, সীমা অতিক্রম না হওয়া পর্যন্ত, প্রাচীনতম লগ ফাইলগুলি মুছুন।"
  log_rotation_delete: "সীমা অতিক্রম না হওয়া পর্যন্ত, প্রাচীনতম লগ ফাইলগুলি মুছুন।"
- size:
-  Total size: "মোট আকার:"
-  bytes: "বাইট"
  vt_suspicion_level_all: "সমস্ত ফাইল স্ক্যান করুন।"
  vt_suspicion_level_executable: "হিউরিস্টিক ওজন, এক্সিকিউটেবল ফাইল, এবং সম্ভাব্য এক্সিকিউটেবল ডেটা ধারণকারী ফাইলগুলি স্ক্যান করুন।\nএক্সিকিউটেবল ফাইলের উদাহরণের, এবং সম্ভাব্য এক্সিকিউটেবল ডেটা সম্বলিত ফাইলগুলির উদাহরণের Windows PE ফাইল, Linux ELF ফাইল, Mach-O ফাইল, DOCX ফাইল, ZIP ফাইল, ইত্যাদি অন্তর্ভুক্ত।"
  vt_suspicion_level_heuristic_only: "শুধুমাত্র হিউরিস্টিক ওজন সহ ফাইল স্ক্যান করুন।\nফাইলগুলি শুধুমাত্র স্ক্যান করা হবে যদি সেগুলি কিছু হিউরিস্টিক ওজন বহন করে। সাধারণ আঙুলের ছাপ ধরার উদ্দেশ্যে স্বাক্ষর থেকে হিউরিস্টিক ওজন ব্যয় করা যেতে পারে যা সংক্রমণের পরামর্শ দেয় কিন্তু যা সংক্রমণের গ্যারান্টি দেয় না। যখন ফলাফল সন্দেহের ন্যায্যতা দেয় কিন্তু কোনো নিশ্চিততা প্রদান করে না, তখন লুকআপ একটি দ্বিতীয় মতামত প্রদান করতে পারে।"

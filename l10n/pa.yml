@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Punjabi language data (last modified: 2025.03.21).
+# This file: Punjabi language data (last modified: 2025.03.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -165,9 +165,6 @@ field:
  Your version: "ਤੁਹਾਡਾ ਸੰਸਕਰਣ"
  log_rotation_archive: "ਪਹਿਲਾਂ ਆਰਕਾਈਵ ਕਰੋ, ਅਤੇ ਫਿਰ ਸਭ ਤੋਂ ਪੁਰਾਣੀਆਂ ਲੌਗ ਫਾਈਲਾਂ ਨੂੰ ਮਿਟਾਓ, ਜਦੋਂ ਤੱਕ ਸੀਮਾ ਨੂੰ ਪਾਰ ਨਹੀਂ ਕੀਤਾ ਜਾਂਦਾ ਹੈ।"
  log_rotation_delete: "ਸਭ ਤੋਂ ਪੁਰਾਣੀਆਂ ਲੌਗ ਫਾਈਲਾਂ ਨੂੰ ਮਿਟਾਓ, ਜਦੋਂ ਤੱਕ ਸੀਮਾ ਨੂੰ ਪਾਰ ਨਹੀਂ ਕੀਤਾ ਜਾਂਦਾ ਹੈ।"
- size:
-  Total size: "ਕੁੱਲ ਆਕਾਰ:"
-  bytes: "ਬਾਈਟ"
  vt_suspicion_level_all: "ਸਾਰੀਆਂ ਫਾਈਲਾਂ ਨੂੰ ਸਕੈਨ ਕਰੋ।"
  vt_suspicion_level_executable: "ਹਿਉਰਿਸਟਿਕ ਵੇਟ, ਐਗਜ਼ੀਕਿਊਟੇਬਲ ਫਾਈਲਾਂ, ਅਤੇ ਸੰਭਾਵੀ ਤੌਰ 'ਤੇ ਐਗਜ਼ੀਕਿਊਟੇਬਲ ਡਾਟਾ ਰੱਖਣ ਵਾਲੀਆਂ ਫਾਈਲਾਂ ਨੂੰ ਸਕੈਨ ਕਰੋ।\nਐਗਜ਼ੀਕਿਊਟੇਬਲ ਫਾਈਲਾਂ ਦੀਆਂ ਉਦਾਹਰਨਾਂ, ਅਤੇ ਸੰਭਾਵੀ ਤੌਰ 'ਤੇ ਐਗਜ਼ੀਕਿਊਟੇਬਲ ਡਾਟਾ ਰੱਖਣ ਵਾਲੀਆਂ ਫਾਈਲਾਂ, Windows PE ਫਾਈਲਾਂ, Linux ELF ਫਾਈਲਾਂ, Mach-O ਫਾਈਲਾਂ, DOCX ਫਾਈਲਾਂ, ZIP ਫਾਈਲਾਂ, ਆਦਿ ਸ਼ਾਮਲ ਹਨ।"
  vt_suspicion_level_heuristic_only: "ਸਿਰਫ ਹਿਉਰਿਸਟਿਕ ਭਾਰ ਵਾਲੀਆਂ ਫਾਈਲਾਂ ਨੂੰ ਸਕੈਨ ਕਰੋ।\nਫਾਈਲਾਂ ਨੂੰ ਸਿਰਫ ਤਾਂ ਹੀ ਸਕੈਨ ਕੀਤਾ ਜਾਵੇਗਾ ਜੇਕਰ ਉਹਨਾਂ ਦਾ ਕੁਝ ਅਨੁਮਾਨਤ ਭਾਰ ਹੈ। ਕੁਝ ਖਾਸ ਕਿਸਮਾਂ ਦੇ ਦਸਤਖਤ ਹਨ ਜੋ ਹਿਉਰਿਸਟਿਕ ਭਾਰ ਚੁੱਕਣ ਦੇ ਸਮਰੱਥ ਹਨ। (ਦਸਤਖਤ ਜੋ ਸੰਭਾਵੀ ਲਾਗ ਨਾਲ ਜੁੜੇ ਫਿੰਗਰਪ੍ਰਿੰਟਸ ਦੀ ਭਾਲ ਕਰਦੇ ਹਨ, ਪਰ ਜੋ ਜ਼ਰੂਰੀ ਤੌਰ 'ਤੇ ਲਾਗ ਦੀ ਗਰੰਟੀ ਨਹੀਂ ਦਿੰਦੇ ਹਨ)। ਲੁੱਕਅੱਪ, ਅਜਿਹੇ ਮਾਮਲਿਆਂ ਵਿੱਚ, ਦੂਜੀ ਰਾਏ ਪ੍ਰਦਾਨ ਕਰ ਸਕਦੀ ਹੈ ਜਦੋਂ ਨਤੀਜੇ ਸ਼ੱਕ ਨੂੰ ਜਾਇਜ਼ ਠਹਿਰਾਉਂਦੇ ਹਨ ਪਰ ਨਿਸ਼ਚਤਤਾ ਪ੍ਰਦਾਨ ਨਹੀਂ ਕਰਦੇ।"

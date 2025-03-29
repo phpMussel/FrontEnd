@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Gujarati language data (last modified: 2025.03.21).
+# This file: Gujarati language data (last modified: 2025.03.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -165,9 +165,6 @@ field:
  Your version: "તમારું સંસ્કરણ"
  log_rotation_archive: "પ્રથમ આર્કાઇવ કરો, અને પછી સૌથી જૂની લોગ ફાઇલોને કાઢી નાખો, જ્યાં સુધી મર્યાદા હવે ઓળંગી નથી જાય."
  log_rotation_delete: "સૌથી જૂની લોગ ફાઇલોને કાઢી નાખો, જ્યાં સુધી મર્યાદા હવે ઓળંગી નથી જાય."
- size:
-  Total size: "કુલ કદ:"
-  bytes: ["બાઈટ", "બાઇટો"]
  vt_suspicion_level_all: "બધી ફાઇલો સ્કેન કરો."
  vt_suspicion_level_executable: "હ્યુરિસ્ટિક વજન, એક્ઝિક્યુટેબલ ફાઇલો, અને સંભવિત રીતે એક્ઝિક્યુટેબલ ડેટા ધરાવતી ફાઇલો સાથે સ્કેન કરો.\nએક્ઝેક્યુટેબલ ફાઇલોના ઉદાહરણો અને સંભવિત રીતે એક્ઝિક્યુટેબલ ડેટા ધરાવતી ફાઇલોમાં Windows PE ફાઇલો, Linux ELF ફાઇલો, Mach-O ફાઇલો, DOCX ફાઇલો, ZIP ફાઇલો, વગેરેનો સમાવેશ થાય છે."
  vt_suspicion_level_heuristic_only: "હ્યુરિસ્ટિક વજનવાળી ફાઇલોને જ સ્કેન કરો.\nફાઇલોને માત્ર ત્યારે જ સ્કેન કરવામાં આવશે જો તેઓમાં અમુક હ્યુરિસ્ટિક વજન હોય. હ્યુરિસ્ટિક વજન સિગ્નેચરથી ખર્ચવામાં આવી શકે છે જે સંભવિત ચેપ સાથે સંકળાયેલ સામાન્ય ફિંગરપ્રિન્ટ્સ શોધે છે જે ચેપની ખાતરી આપતું નથી. લુકઅપ, આવા કિસ્સાઓમાં, પરિણામો માટે બીજો અભિપ્રાય પ્રદાન કરવા માટે સેવા આપી શકે છે જે શંકાને વાજબી ઠેરવે છે પરંતુ અન્યથા કોઈ નિશ્ચિતતા પ્રદાન કરતું નથી."

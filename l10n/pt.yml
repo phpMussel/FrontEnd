@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese language data (last modified: 2025.03.21).
+# This file: Portuguese language data (last modified: 2025.03.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -189,7 +189,6 @@ field:
  Your version: {"pt-BR": "Sua versão", "pt-PT": "A sua versão"}
  log_rotation_archive: "Primeiramente arquivar, e então deletar os arquivos de log mais antigos, até o limite não seja mais excedido."
  log_rotation_delete: "Deletar os arquivos de log mais antigos, até o limite não seja mais excedido."
- size: {"Total size": "Tamanho total:"}
  vt_suspicion_level_all: "Analisar todos os arquivos."
  vt_suspicion_level_executable: "Analisar arquivos com peso heurístico, arquivos executáveis, e arquivos potencialmente contendo dados executáveis.\nExemplos de arquivos executáveis, e arquivos potencialmente contendo dados executáveis, incluem arquivos Windows PE, arquivos Linux ELF, arquivos Mach-O, arquivos DOCX, arquivos ZIP, etc."
  vt_suspicion_level_heuristic_only:

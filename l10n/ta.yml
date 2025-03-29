@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Tamil language data (last modified: 2025.03.21).
+# This file: Tamil language data (last modified: 2025.03.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -165,11 +165,6 @@ field:
  Your version: "உங்கள் பதிப்பு"
  log_rotation_archive: "மொத்த எண்ணிக்கையை வரம்பிற்குள் கொண்டுவர, முதலில் காப்பகப்படுத்தவும், பின்னர் பழமையான பதிவு கோப்புகளை நீக்கு."
  log_rotation_delete: "மொத்த எண்ணிக்கையை வரம்பிற்குள் கொண்டுவர, பழமையான பதிவு கோப்புகளை நீக்கு."
- size:
-  Total size: "ஒட்டு மொத்த அளவு:"
-  bytes:
-   - "பைட்"
-   - "பைட்டுகள்"
  vt_suspicion_level_all: "எல்லா கோப்புகளையும் ஸ்கேன் செய்யவும்."
  vt_suspicion_level_executable: "ஹூரிஸ்டிக் எடையுடன் கோப்புகளை, இயங்கக்கூடிய கோப்புகள், மற்றும் இயங்கக்கூடிய தரவைக் கொண்ட கோப்புகளை ஸ்கேன் செய்யவும்.\nஇத்தகைய கோப்புகளில் Windows PE கோப்புகள், Linux ELF கோப்புகள், Mach-O கோப்புகள், DOCX கோப்புகள், ZIP கோப்புகள், போன்றவை அடங்கும்."
  vt_suspicion_level_heuristic_only: "ஹூரிஸ்டிக் எடை கொண்ட கோப்புகளை மட்டும் ஸ்கேன் செய்யவும்.\nகோப்புகள் ஹூரிஸ்டிக் எடை இருந்தால் மட்டுமே ஸ்கேன் செய்யப்படும். நோய்த்தொற்றை பரிந்துரைக்கும் ஆனால் தொற்றுக்கு உத்தரவாதம் அளிக்காத கைரேகைகளைப் பிடிப்பதற்கான கையொப்பங்களிலிருந்து ஹியூரிஸ்டிக் எடை ஏற்படலாம். நிரூபிக்கப்படாத சந்தேகங்கள் இருந்தால், தேடுதல் இரண்டாவது கருத்தை வழங்க உதவும்."

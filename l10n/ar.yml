@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2025.03.21).
+# This file: Arabic language data (last modified: 2025.03.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -165,9 +165,6 @@ field:
  Your version: "الإصدار الخاص بك"
  log_rotation_archive: "أرشفة أولاً، ثم احذف أقدم السجلات، حتى لا يتم تجاوز الحد."
  log_rotation_delete: "احذف أقدم السجلات، حتى لا يتم تجاوز الحد."
- size:
-  Total size: "الحجم الإجمالي:"
-  bytes: "بايت"
  vt_suspicion_level_all: "تحقق من جميع الملفات."
  vt_suspicion_level_executable: "تحقق من الملفات ذات الوزن الإرشادي والملفات القابلة للتنفيذ والملفات التي يحتمل أن تحتوي على بيانات قابلة للتنفيذ.\nتتضمن هذه الملفات Windows PE و Linux ELF و Mach-O و DOCX و ZIP وما إلى ذلك."
  vt_suspicion_level_heuristic_only: "تحقق فقط من الملفات ذات الوزن الإرشادي.\nسيتم فحص الملفات فقط إذا كانت تحمل الوزن الإرشادي. يمكن أن يحدث "الوزن الإرشادي" من التوقيعات التي تلتقط بصمات الأصابع التي تشير إلى الإصابة ولكنها لا تضمن العدوى. بالنسبة للنتائج التي تبرر الشك ولكنها لا توفر أي يقين، يمكن أن يعمل البحث على توفير رأي ثانٍ."

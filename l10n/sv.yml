@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2025.03.21).
+# This file: Swedish language data (last modified: 2025.03.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -165,9 +165,6 @@ field:
  Your version: "Din version"
  log_rotation_archive: "För det första, arkivera, och sedan radera de äldsta loggfilerna, tills gränsen inte längre överskrids."
  log_rotation_delete: "Radera de äldsta loggfilerna, tills gränsen inte längre överskrids."
- size:
-  Total size: "Total storlek:"
-  bytes: "byte"
  vt_suspicion_level_all: "Skanna alla filer."
  vt_suspicion_level_executable: "Skanna filer med heuristisk vikt, körbara filer, och filer som potentiellt innehåller körbara data.\nExempel på körbara filer, och filer som potentiellt innehåller körbara data, inkluderar Windows PE-filer, Linux ELF-filer, Mach-O-filer, DOCX-filer, ZIP-filer, osv."
  vt_suspicion_level_heuristic_only: "Skanna endast filer med heuristisk vikt.\nFiler skannas endast om de har heuristisk vikt. Heuristisk vikt kan uppstå från signaturer som är avsedda att fånga vanliga fingeravtryck associerade med potentiell infektion som inte nödvändigtvis garanterar infektion. Uppslagningen, i sådana fall, kan tjäna till att ge en andra åsikt för resultat som motiverar misstankar men som annars inte ger absolut förtroende."

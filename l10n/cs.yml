@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Czech language data (last modified: 2025.03.21).
+# This file: Czech language data (last modified: 2025.03.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -165,12 +165,6 @@ field:
  Your version: "Vaše verze"
  log_rotation_archive: "Nejprve archivujte, a poté odstraňte nejstarší soubory protokolu, dokud nebude překročen limit."
  log_rotation_delete: "Odstraňte nejstarší soubory protokolu, dokud nebude překročen limit."
- size:
-  Total size: "Celková velikost:"
-  bytes:
-   - "bajt"
-   - "bajty"
-   - "bajtů"
  vt_suspicion_level_all: "Prohledejte všechny soubory."
  vt_suspicion_level_executable: "Skenujte soubory s heuristickou váhou, spustitelné soubory, a soubory, které potenciálně obsahují spustitelná data.\nPříklady spustitelných souborů, a souborů které potenciálně obsahují spustitelná data, zahrnují soubory Windows PE, soubory Linux ELF, soubory Mach-O, soubory DOCX, soubory ZIP, atd."
  vt_suspicion_level_heuristic_only: "Skenovat pouze soubory s heuristickou váhou.\nSoubory budou skenovány pouze v případě že mají určitou heuristickou váhu. Heuristickou váhu lze získat z podpisů určených k zachycení běžných otisků prstů spojených s potenciální infekcí, která nemusí nutně zaručovat infekci. Vyhledávání v takových případech může sloužit k poskytnutí druhého názoru na výsledky, které odůvodňují podezření, ale jinak neposkytují žádnou jistotu."

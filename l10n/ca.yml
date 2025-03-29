@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Catalan language data (last modified: 2025.03.21).
+# This file: Catalan language data (last modified: 2025.03.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -165,7 +165,6 @@ field:
  Your version: "El vostre versió"
  log_rotation_archive: "Primer arxiveu i, a continuació, suprimiu els fitxers de registre més antics, fins que ja no es superi el límit."
  log_rotation_delete: "Suprimeix els fitxers de registre més antics, fins que ja no es superi el límit."
- size: {"Total size": "Mida total:"}
  vt_suspicion_level_all: "Escaneja tots els fitxers."
  vt_suspicion_level_executable: "Escaneja fitxers amb pes heurístic, fitxers executables, i fitxers que potencialment continguin dades executables.\nExemples de fitxers executables, i fitxers que potencialment continguin dades executables, inclouen fitxers PE de Windows, fitxers ELF de Linux, fitxers Mach-O, fitxers DOCX, fitxers ZIP, etc."
  vt_suspicion_level_heuristic_only: "Escaneja només fitxers amb pes heurístic.\nEls fitxers només s'escanejaran si tenen un pes heurístic. El pes heurístic es pot incórrer a partir de signatures destinades a capturar empremtes dactilars comunes associades a una possible infecció que no necessàriament garanteixen la infecció. La cerca, en aquests casos, pot servir per proporcionar una segona opinió per als resultats que justifiquen sospita però que no proporcionen cap certesa."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2025.03.21).
+# This file: Polish language data (last modified: 2025.03.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -165,12 +165,6 @@ field:
  Your version: "Twoja wersja"
  log_rotation_archive: "Najpierw zarchiwizuj, a następnie usuń najstarsze pliki dziennika, dopóki limit nie zostanie przekroczony."
  log_rotation_delete: "Usuń najstarsze pliki dziennika, dopóki limit nie zostanie przekroczony."
- size:
-  Total size: "Całkowity rozmiar:"
-  bytes:
-   - "bajt"
-   - "bajty"
-   - "bajtów"
  vt_suspicion_level_all: "Skanuj wszystkie pliki."
  vt_suspicion_level_executable: "Skanuj pliki z wagą heurystyczną, pliki wykonywalne, i pliki potencjalnie zawierające dane wykonywalne.\nPrzykłady plików wykonywalnych, i plików potencjalnie zawierających dane wykonywalne, obejmują pliki Windows PE, pliki Linux ELF, pliki Mach-O, pliki DOCX, pliki ZIP, itp."
  vt_suspicion_level_heuristic_only: "Skanuj tylko pliki z wagą heurystyczną.\nSkanowane będą tylko pliki z wagą heurystyczną. Waga heurystyczna może wynikać z sygnatur przeznaczonych do wychwytywania typowych odcisków palców związanych z potencjalną infekcją, które niekoniecznie gwarantują infekcję. Wyszukiwanie w takich przypadkach może posłużyć do uzyskania drugiej opinii w przypadku wyników, które uzasadniają podejrzenia, ale poza tym nie dają żadnej pewności."

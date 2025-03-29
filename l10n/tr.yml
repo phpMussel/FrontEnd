@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2025.03.21).
+# This file: Turkish language data (last modified: 2025.03.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -165,9 +165,6 @@ field:
  Your version: "Sürümünüz"
  log_rotation_archive: "Öncelikle dosyayı arşivleyin, ve sonra en eski log dosyalarını sil, sınır artık aşılmamış kadar."
  log_rotation_delete: "En eski log dosyalarını sil, sınır artık aşılmamış kadar."
- size:
-  Total size: "Toplam boyut:"
-  bytes: "bayt"
  vt_suspicion_level_all: "Tüm dosyaları tarayın."
  vt_suspicion_level_executable: "Buluşsal ağırlıklı dosyaları, yürütülebilir dosyaları, ve potansiyel olarak yürütülebilir veri içeren dosyaları tarayın.\nYürütülebilir dosyalara ve potansiyel olarak yürütülebilir veriler içeren dosyalara örnek olarak Windows PE dosyaları, Linux ELF dosyaları, Mach-O dosyaları, DOCX dosyaları, ZIP dosyaları, vb."
  vt_suspicion_level_heuristic_only: "Yalnızca buluşsal ağırlıklı dosyaları tarayın.\nDosyalar yalnızca buluşsal ağırlığa maruz kaldıklarında taranacaktır. Buluşsal ağırlık, enfeksiyonu düşündüren ancak enfeksiyonu garanti etmeyen yaygın parmak izlerini yakalamayı amaçlayan imzalardan kaynaklanabilir. Şüpheyi haklı çıkaran ancak herhangi bir kesinlik sağlamayan sonuçlar için, arama ikinci bir görüş sağlamaya hizmet edebilir."

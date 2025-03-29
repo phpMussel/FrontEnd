@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2025.03.21).
+# This file: English language data (last modified: 2025.03.29).
 ##/
 
 checkbox:
@@ -165,16 +165,6 @@ field:
  Your version: "Your version"
  log_rotation_archive: "Firstly archive, and then delete the oldest log files, until the limit is no longer exceeded."
  log_rotation_delete: "Delete the oldest log files, until the limit is no longer exceeded."
- size:
-  Total size: "Total size:"
-  GB: "GB"
-  KB: "KB"
-  MB: "MB"
-  PB: "PB"
-  TB: "TB"
-  bytes:
-   - "byte"
-   - "bytes"
  vt_suspicion_level_all: "Scan all files."
  vt_suspicion_level_executable: "Scan files with heuristic weight, executable files, and files potentially containing executable data.\nExamples of executable files, and files potentially containing executable data, includes Windows PE files, Linux ELF files, Mach-O files, DOCX files, ZIP files, etc."
  vt_suspicion_level_heuristic_only: "Scan only files with heuristic weight.\nFiles will be scanned only if they incur some heuristic weight. Heuristic weight can be incurred from signatures intended to catch common fingerprints associated with potential infection which don't necessarily guarantee infection. The lookup, in such cases, can serve to provide a second opinion for results which justify suspicion but don't otherwise provide any certainty."

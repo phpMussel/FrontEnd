@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data (last modified: 2025.03.21).
+# This file: Romanian language data (last modified: 2025.03.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -165,17 +165,6 @@ field:
  Your version: "Versiunea ta:"
  log_rotation_archive: "Mai întâi arhivați, apoi ștergeți cele mai vechi fișiere jurnal, până când limita nu mai este depășită."
  log_rotation_delete: "Ștergeți cele mai vechi fișiere jurnal, până când limita nu mai este depășită."
- size:
-  Total size: "Dimensiunea totala:"
-  GB: "Go"
-  KB: "Ko"
-  MB: "Mo"
-  PB: "Po"
-  TB: "To"
-  bytes:
-   - "octet"
-   - "octeți"
-   - "de octeți"
  vt_suspicion_level_all: "Scanați toate fișierele."
  vt_suspicion_level_executable: "Scanați fișiere cu greutate euristică, fișiere executabile, și fișiere care pot conține date executabile.\nExemple de fișiere executabile și fișiere care pot conține date executabile includ fișiere Windows PE, fișiere Linux ELF, fișiere Mach-O, fișiere DOCX, fișiere ZIP, etc."
  vt_suspicion_level_heuristic_only: "Scanați numai fișiere cu greutate euristică.\nFișierele vor fi scanate numai dacă au o anumită greutate euristică. Greutatea euristică poate fi obținută din semnăturile destinate să prindă amprentele digitale comune asociate cu o potențială infecție care nu garantează neapărat infecția. Căutarea, în astfel de cazuri, poate servi pentru a oferi o a doua opinie pentru rezultate care justifică suspiciuni, dar care nu oferă altfel nicio certitudine."

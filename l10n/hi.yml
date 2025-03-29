@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hindi language data (last modified: 2025.03.21).
+# This file: Hindi language data (last modified: 2025.03.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -165,11 +165,6 @@ field:
  Your version: "आपका संस्करण"
  log_rotation_archive: "सबसे पहले संग्रहित करें, और तब सबसे पुरानी लॉगफाइल हटाएं, जब तक कि सीमा अब पार न हो जाए।"
  log_rotation_delete: "सबसे पुरानी लॉगफाइल हटाएं, जब तक कि सीमा अब पार न हो जाए।"
- size:
-  Total size: "कुल आकार:"
-  bytes:
-   - "बाइट"
-   - "बाइट्स"
  vt_suspicion_level_all: "सभी फाइलों को स्कैन करें।"
  vt_suspicion_level_executable: "हेयुरिस्टिक वजन वाली फाइलें, निष्पादन योग्य फाइलों, और संभावित रूप से निष्पादन योग्य डेटा वाली फाइलों को स्कैन करें।\nऐसी फाइलों में Windows PE फाइलें, Linux ELF फाइलें, Mach-O फाइलें, DOCX फाइलें, Zip फाइलें, आदि शामिल हैं।"
  vt_suspicion_level_heuristic_only: "केवल हेयुरिस्टिक वजन वाली फाइलें को स्कैन करें।\nफाइलों को तभी स्कैन किया जाएगा जब उनमें हेयुरिस्टिक वजन होगा। यह उन हस्ताक्षरों के कारण हो सकता है जो फिंगरप्रिंटयों के निशान पकड़ते हैं जो संक्रमण का सुझाव देते हैं लेकिन जो संक्रमण की गारंटी नहीं देते हैं। जब परिणाम संदेह को सही ठहराते हैं लेकिन कोई निश्चितता प्रदान नहीं करते हैं, तो लुकअप दूसरी राय प्रदान करने का काम कर सकता है।"
