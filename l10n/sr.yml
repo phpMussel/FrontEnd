@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Serbian language data (last modified: 2025.03.21).
+# This file: Serbian language data (last modified: 2025.04.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -60,7 +60,7 @@ config:
  frontend_magnification: "Увећање фонта. Подразумевано = 1."
  frontend_max_login_attempts: "Максималан број покушаја пријављивања на фронт-енд. Подразумевано = 5."
  frontend_numbers: "Како желите да се бројеви приказују? Изаберите пример који вам се чини најисправнијим."
- frontend_theme: "The aesthetic to use for the phpMussel front-end."
+ frontend_theme: "Естетика која се користи за пхпМуссел фронт-енд."
  legal: "Конфигурација за законске захтеве."
  legal_privacy_policy: "Адреса релевантне политике приватности која ће се приказати у подножју сваке генерисане странице. Наведите УРЛ, или оставите празно да бисте онемогућили."
  legal_pseudonymise_ip_addresses: "Псеудонимизирати ИП адресе приликом пријављивања? Истинито = Да [Подразумевано]; Лажно = Не."
@@ -111,17 +111,6 @@ field:
  Your version: "Ваша верзија"
  log_rotation_archive: "Прво архивирајте, а затим избришите најстарије датотеке евиденције, тако да ограничења више неће бити прекорачена."
  log_rotation_delete: "Избришите најстарије датотеке евиденције, тако да ограничења више неће бити прекорачена."
- size:
-  Total size: "Укупна величина:"
-  GB: "ГБ"
-  KB: "КБ"
-  MB: "МБ"
-  PB: "ПБ"
-  TB: "ТБ"
-  bytes:
-   - "бајт"
-   - "бајта"
-   - "бајтова"
 hints_logging_datetime: "Користан савет: Можете да приложите информације о датуму/времену именима датотека евиденције користећи чуваре места у формату времена. Доступни чувари места формата времена су приказани на {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
  Чпп.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Шта је „ПДО ДСН“? Како могу да користим ПДО са пхпМуссел-ом?</a></em>"
@@ -143,7 +132,74 @@ hints_time_format: |
  <code class="s">{s}</code> – Секунде – Нпр., 49.<br />
  <code class="s">{tz}</code> – Временска зона (без двотачка) – Нпр., +0800.<br />
  <code class="s">{t:z}</code> – Временска зона (са двотачком) – Нпр., +08:00.
+label:
+ Default: "Подразумевано"
+ Operating system used: "Коришћени оперативни систем:"
+ Other: "Остало"
+ PHP version used: "Коришћена ПХП верзија:"
+ Page request completed in %s seconds: "Захтев за страницу је завршен за %s секунде."
+ Please log in to continue: "Пријавите се да бисте наставили."
+ SAPI used: "САПИ користи:"
+ Scan events: "Број скенирања"
+ See also: "Погледајте такође:"
+ Selected log file doesn_t exist: "Изабрана датотека евиденције не постоји!"
+ Size in quarantine: "Величина у карантину:"
+ Start date: "Датум почетка"
+ System information: "Информације о систему:"
+ The cache is empty: "Кеш меморија је празна."
+ Upload date: "Датум отпремања:"
+ Upload hash: "Хеш отпремања:"
+ Upload origin: "Порекло отпремања:"
+ Upload size: "Величина отпремања:"
+ Uploads blocked: "Отпремања су блокирана"
+ Uploads quarantined: "Отпремања су у карантину"
+ Uploads scanned: "Отпремања су скенирана"
+ Your IP: "Ваша ИП адреса:"
+ Your UA: "Ваш кориснички агент:"
+ phpMussel version used: "Коришћена верзија пхпМуссел:"
+link:
+ Accounts: "Рачуни"
+ Cache Data: "Кеш података"
+ Configuration: "Конфигурација"
+ Discussions: "Дискусије"
+ Documentation: "Документација"
+ Home: "Почетна страница"
+ Log Out: "Одјавите се"
+ Logs: "Дневници"
+ Quarantine: "Карантин"
+ Signature Information: "Подаци о потпису"
+ Statistics: "Статистика"
+ Text formatting: "Формат текста: <a href="%1$sfalse">Једноставан</a> – <a href="%1$strue">Отмено</a>"
+ Upload Testing: "Тестирање отпремања"
+msg_subject_2fa: "Двофакторска аутентификација"
+msg_template_2fa: |
+ <center><p>Здраво, %s.<br /><br />
+ Ваш двофакторски код за аутентификацију за пријављивање на пхпМуссел фронт-енд:</p>
+ <h1>%s</h1>
+ <p>Овај код истиче за 10 минута.</p></center>
+previewer:
+ Days: "Дани"
+ Hours: "Сати"
+ Minutes: "Минуте"
+ Months: "Месеци"
+ Seconds: "Секунде"
+ Weeks: "Недеље"
+ Years: "Године"
 response:
+ Account successfully created: "Рачун је успешно креиран!"
+ Account successfully deleted: "Рачун је успешно избрисан!"
+ An account with that username already exists: "Рачун са тим корисничким именом већ постоји!"
+ Configuration successfully updated: "Конфигурација је успешно ажурирана."
+ Corrupted file: "Оштећен датотека!"
+ Failed to create: "Прављење није успело!"
+ Failed to delete: "Брисање није успело!"
+ Failed to restore: "Враћање није успело"
+ Failed to update configuration: "Ажурирање конфигурације није успело!"
+ Failed to update: "Ажурирање није успело!"
+ Failed: "Није успело"
+ File successfully deleted: "Датотека је успешно избрисан!"
+ File successfully restored: "Датотека је успешно враћен!"
+ Incorrect 2FA code entered: "Унет је нетачан 2ФА код. Аутентификација није успела."
  Incorrect quarantine key: "Нетачан кључ за карантин!"
  Invalid password: "Пријава није успела! Неважећа лозинка!"
  Maximum number of login attempts exceeded: "Премашен је максималан број покушаја пријављивања; Приступ забрањен."

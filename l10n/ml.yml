@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malayalam language data (last modified: 2025.03.21).
+# This file: Malayalam language data (last modified: 2025.04.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -29,7 +29,80 @@ checkbox:
 config:
  core: "പൊതുവായ കോൺഫിഗറേഷൻ (മറ്റ് വിഭാഗങ്ങളിൽ പെടാത്ത ഏതെങ്കിലും കോർ കോൺഫിഗറേഷൻ)."
  core_default_timeout: "ബാഹ്യ അഭ്യർത്ഥനകൾക്ക് ഉപയോഗിക്കേണ്ട ഡിഫോൾട്ട് ടൈംഔട്ട്? സ്ഥിരസ്ഥിതി = 12 സെക്കൻഡ്."
+ frontend_magnification: "ഫോണ്ട് മാഗ്നിഫിക്കേഷൻ. സ്ഥിരസ്ഥിതി = 1."
+label:
+ Operating system used: "ഉപയോഗിച്ച ഓപ്പറേറ്റിംഗ് സിസ്റ്റം:"
+ Other: "മറ്റുള്ളവ"
+ PHP version used: "ഉപയോഗിച്ച PHP പതിപ്പ്:"
+ Page request completed in %s seconds: "പേജ് അഭ്യർത്ഥന %s സെക്കൻഡിനുള്ളിൽ പൂർത്തിയായി."
+ Please log in to continue: "തുടരാൻ ദയവായി ലോഗിൻ ചെയ്യുക."
+ SAPI used: "ഉപയോഗിച്ച SAPI:"
+ Scan events: "സ്കാനുകളുടെ എണ്ണം"
+ See also: "ഇതും കാണുക:"
+ Selected log file doesn_t exist: "തിരഞ്ഞെടുത്ത ലോഗ് ഫയൽ നിലവിലില്ല!"
+ Size in quarantine: "ക്വാറന്റൈനിലെ വലുപ്പം:"
+ Start date: "ആരംഭിക്കുന്ന തീയതി"
+ System information: "സിസ്റ്റം വിവരങ്ങൾ:"
+ The cache is empty: "കാഷെ ശൂന്യമാണ്."
+ Upload date: "അപ്‌ലോഡ് ചെയ്ത തീയതി:"
+ Upload hash: "അപ്‌ലോഡിന്റെ ഹാഷ്:"
+ Upload origin: "അപ്‌ലോഡിന്റെ ഉത്ഭവം:"
+ Upload size: "അപ്‌ലോഡിന്റെ വലുപ്പം:"
+ Uploads blocked: "അപ്‌ലോഡുകൾ തടഞ്ഞു"
+ Uploads quarantined: "ക്വാറന്റൈൻ ചെയ്‌ത അപ്‌ലോഡുകൾ"
+ Uploads scanned: "സ്കാൻ ചെയ്തു അപ്‌ലോഡുകൾ"
+ Your IP: "നിങ്ങളുടെ IP വിലാസം:"
+ Your UA: "നിങ്ങളുടെ ഉപയോക്തൃ ഏജന്റ്:"
+ phpMussel version used: "ഉപയോഗിച്ച phpMussel പതിപ്പ്:"
+link:
+ Accounts: "അക്കൗണ്ടുകൾ"
+ Cache Data: "കാഷെ ഡാറ്റ"
+ Configuration: "കോൺഫിഗറേഷൻ"
+ Discussions: "ചർച്ചകൾ"
+ Documentation: "ഡോക്യുമെന്റേഷൻ"
+ Home: "ഹോംപേജ്"
+ Log Out: "ലോഗ് ഔട്ട് ചെയ്യുക"
+ Logs: "ലോഗുകൾ"
+ Quarantine: "ക്വാറന്റീൻ"
+ Signature Information: "ഒപ്പ് വിവരങ്ങൾ"
+ Statistics: "സ്ഥിതിവിവരക്കണക്കുകൾ"
+ Text formatting: "ടെക്സ്റ്റ് ഫോർമാറ്റ്: <a href="%1$sfalse">ലളിതം</a> – <a href="%1$strue">ഫാൻസി</a>"
+ Upload Testing: "അപ്‌ലോഡ് പരിശോധന"
+msg_subject_2fa: "രണ്ട്-ഘടക പ്രാമാണീകരണം"
+msg_template_2fa: |
+ <center><p>ഹലോ, %s.<br /><br />
+ phpMussel ഫ്രണ്ട്-എൻഡിലേക്ക് ലോഗിൻ ചെയ്യുന്നതിനുള്ള നിങ്ങളുടെ ടു-ഫാക്ടർ ഓതന്റിക്കേഷൻ കോഡ്:</p>
+ <h1>%s</h1>
+ <p>ഈ കോഡ് 10 മിനിറ്റിനുള്ളിൽ കാലഹരണപ്പെടും.</p></center>
+previewer:
+ Days: "ദിവസം"
+ Hours: "മണിക്കൂറുകൾ"
+ Minutes: "മിനിറ്റ്"
+ Months: "മാസങ്ങൾ"
+ Seconds: "സെക്കൻഡുകൾ"
+ Weeks: "ആഴ്ചകൾ"
+ Years: "വർഷങ്ങൾ"
 response:
+ Account successfully created: "അക്കൗണ്ട് വിജയകരമായി സൃഷ്ടിച്ചു!"
+ Account successfully deleted: "അക്കൗണ്ട് വിജയകരമായി ഇല്ലാതാക്കി!"
+ An account with that username already exists: "ആ ഉപയോക്തൃനാമമുള്ള ഒരു അക്കൗണ്ട് നിലവിലുണ്ട്!"
+ Configuration successfully updated: "കോൺഫിഗറേഷൻ വിജയകരമായി അപ്ഡേറ്റ് ചെയ്തു."
+ Corrupted file: "ഫയൽ കേടായി!"
+ Failed to create: "സൃഷ്ടിക്കുന്നതിൽ പരാജയപ്പെട്ടു!"
+ Failed to delete: "ഇല്ലാതാക്കാനായില്ല!"
+ Failed to restore: "പുനഃസ്ഥാപിക്കാനായില്ല"
+ Failed to update configuration: "കോൺഫിഗറേഷൻ അപ്ഡേറ്റ് ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു!"
+ Failed to update: "അപ്ഡേറ്റ് ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു!"
+ Failed: "പരാജയപ്പെട്ടു"
+ File successfully deleted: "ഫയൽ വിജയകരമായി ഇല്ലാതാക്കി!"
+ File successfully restored: "ഫയൽ വിജയകരമായി പുനഃസ്ഥാപിച്ചു!"
+ Incorrect 2FA code entered: "തെറ്റായ 2FA കോഡ് നൽകി. ആധികാരികത ഉറപ്പാക്കാനായില്ല."
+ Incorrect quarantine key: "തെറ്റായ ക്വാറന്റൈൻ കീ!"
+ Invalid password: "ലോഗിൻ പരാജയം! അസാധുവായ പാസ്‌വേഡ്!"
+ Maximum number of login attempts exceeded: "പരമാവധി ലോഗിൻ ശ്രമങ്ങൾ കവിഞ്ഞു; പ്രവേശനം നിരസിച്ചു."
+ Password field empty: "പാസ്‌വേഡ് ഫീൽഡ് ശൂന്യമാണ്!"
+ Password successfully updated: "പാസ്‌വേഡ് വിജയകരമായി അപ്‌ഡേറ്റ് ചെയ്‌തു!"
+ Permissions not adequate to perform asynchronous requests: "അസമന്വിത അഭ്യർത്ഥനകൾ നടത്താൻ അനുമതികൾ പര്യാപ്തമല്ല. വീണ്ടും ലോഗിൻ ചെയ്യാൻ ശ്രമിക്കുക."
  Please enter a valid quarantine key: "ദയവായി സാധുവായ ഒരു ക്വാറന്റൈൻ കീ നൽകുക."
  Statistics cleared: "സ്ഥിതിവിവരക്കണക്കുകൾ മായ്ച്ചു."
  Successfully authenticated: "വിജയകരമായി പ്രാമാണീകരിച്ചു."

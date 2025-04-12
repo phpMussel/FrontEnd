@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bosnian language data (last modified: 2025.03.21).
+# This file: Bosnian language data (last modified: 2025.04.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -29,7 +29,7 @@ checkbox:
 config:
  core: "Opća konfiguracija (svaka konfiguracija jezgra koja ne pripada drugim kategorijama)."
  core_default_timeout: "Zadano vremensko ograničenje za korištenje za eksterne zahtjeve? Zadano = 12 sekundi."
- core_delete_on_sight: "Omogućavanje ove direktive će uputiti skriptu da odmah pokuša da izbriše svaki skenirani pokušaj otpremanja datoteka koji odgovara bilo kom kriterijumu detekcije, bilo putem potpisa ili na neki drugi način. Datoteke označeni kao "čisti" se neće dirati. U slučaju arhiva, cijela arhiva će biti izbrisana, bez obzira na to da li je uvredljivi datoteka samo jedan od nekoliko datoteka koji se nalaze u arhivi. U slučaju skeniranja učitavanja datoteka, obično nije potrebno omogućiti ovu direktivu, jer obično PHP automatski čisti sadržaj svoje keš memorije kada se izvršavanje završi, što znači da će obično izbrisati sve datoteke koje su postavljene preko njega na server osim ako već nisu premještene, kopirane ili izbrisane. Ova direktiva je ovde dodata kao dodatna mera bezbednosti za one čije se kopije PHP-a možda ne ponašaju uvek na očekivani način. False/Lažno = Nakon skeniranja, ostavite datoteku na miru [Zadano]; True/Istinito = Nakon skeniranja, ako nije čisto, odmah izbrišite."
+ core_delete_on_sight: "Omogućavanje ove direktive će uputiti skriptu da odmah pokuša da izbriše svaki skenirani pokušaj prijenosa datoteka koji odgovara bilo kom kriterijumu detekcije, bilo putem potpisa ili na neki drugi način. Datoteke označeni kao "čisti" se neće dirati. U slučaju arhiva, cijela arhiva će biti izbrisana, bez obzira na to da li je uvredljivi datoteka samo jedan od nekoliko datoteka koji se nalaze u arhivi. U slučaju skeniranja prijenosa datoteka, obično nije potrebno omogućiti ovu direktivu, jer obično PHP automatski čisti sadržaj svoje keš memorije kada se izvršavanje završi, što znači da će obično izbrisati sve datoteke koje su postavljene preko njega na server osim ako već nisu premještene, kopirane ili izbrisane. Ova direktiva je ovde dodata kao dodatna mera bezbednosti za one čije se kopije PHP-a možda ne ponašaju uvek na očekivani način. False/Lažno = Nakon skeniranja, ostavite datoteku na miru [Zadano]; True/Istinito = Nakon skeniranja, ako nije čisto, odmah izbrišite."
  core_disabled_channels: "Ovo se može koristiti da spriječi phpMussel da koristi određene kanale prilikom slanja zahtjeva."
  core_error_log: "Datoteka za evidentiranje svih otkrivenih grešaka koje nisu fatalne. Navedite naziv datoteke ili ostavite prazno da biste onemogućili."
  core_hide_version: "Sakriti informacije o verziji iz dnevnika i izlaza stranice? True/Istinito = Da; False/Lažno = Ne [Zadano]."
@@ -60,7 +60,7 @@ config:
  frontend_magnification: "Uvećanje fonta. Zadano = 1."
  frontend_max_login_attempts: "Maksimalan broj front-end pokušaja prijave. Zadano = 5."
  frontend_numbers: "Kako želite da se brojevi prikazuju? Odaberite primjer koji vam se čini najispravnijim."
- frontend_theme: "The aesthetic to use for the phpMussel front-end."
+ frontend_theme: "Estetika za upotrebu za phpMussel front-end."
  legal: "Konfiguracija za zakonske zahtjeve."
  legal_privacy_policy: "Adresa relevantne politike privatnosti koja će se prikazati u podnožju svake generisane stranice. Navedite URL, ili ostavite prazno da biste onemogućili."
  legal_pseudonymise_ip_addresses: "Pseudonimizirati IP adrese prilikom prijavljivanja? True/Istinito = Da [Zadano]; False/Lažno = Ne."
@@ -111,12 +111,6 @@ field:
  Your version: "Vaša verzija"
  log_rotation_archive: "Prvo arhivirajte, a zatim izbrišite najstarije datoteke dnevnika, tako da ograničenja više neće biti prekoračena."
  log_rotation_delete: "Izbrišite najstarije datoteke dnevnika, tako da ograničenja više neće biti prekoračena."
- size:
-  Total size: "Ukupna veličina:"
-  bytes:
-   - "bajt"
-   - "bajta"
-   - "bajtova"
 hints_logging_datetime: "Koristan savjet: Možete priložiti informacije o datumu/vremenu imenima datoteka evidencije koristeći čuvare mjesta u formatu vremena. Dostupni čuvari mjesta formata vremena prikazani su na {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
  Čpp.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Šta je "PDO DSN"? Kako mogu koristiti PDO sa phpMussel-om?</a></em>"
@@ -138,7 +132,74 @@ hints_time_format: |
  <code class="s">{s}</code> – Sekunde – Npr., 49.<br />
  <code class="s">{tz}</code> – Vremenska zona (bez dvotočke) – Npr., +0800.<br />
  <code class="s">{t:z}</code> – Vremenska zona (sa dvotočkom) – Npr., +08:00.
+label:
+ Default: "Zadano"
+ Operating system used: "Korišćen operativni sistem:"
+ Other: "Ostalo"
+ PHP version used: "Korištena verzija PHP-a:"
+ Page request completed in %s seconds: "Zahtjev za stranicu dovršen za %s sekunde."
+ Please log in to continue: "Molimo prijavite se da nastavite."
+ SAPI used: "SAPI koristi:"
+ Scan events: "Broj skeniranja"
+ See also: "Vidi također:"
+ Selected log file doesn_t exist: "Odabrana datoteka dnevnika ne postoji!"
+ Size in quarantine: "Veličina u karantinu:"
+ Start date: "Datum početka"
+ System information: "Informacije o sistemu:"
+ The cache is empty: "Keš memorija je prazna."
+ Upload date: "Datum prijenosa:"
+ Upload hash: "Hash prijenosa:"
+ Upload origin: "Porijeklo prijenosa:"
+ Upload size: "Veličina prijenosa:"
+ Uploads blocked: "Prijenosi blokirani"
+ Uploads quarantined: "Prijenosi u karantinu"
+ Uploads scanned: "Prijenosi skenirani"
+ Your IP: "Vaša IP adresa:"
+ Your UA: "Vaš korisnički agent:"
+ phpMussel version used: "Korištena verzija phpMussel:"
+link:
+ Accounts: "Računi"
+ Cache Data: "Keš podataka"
+ Configuration: "Konfiguracija"
+ Discussions: "Diskusije"
+ Documentation: "Dokumentacija"
+ Home: "Početna stranica"
+ Log Out: "Odjavite se"
+ Logs: "Dnevnici"
+ Quarantine: "Karantin"
+ Signature Information: "Podaci o potpisu"
+ Statistics: "Statistika"
+ Text formatting: "Format teksta: <a href="%1$sfalse">Jednostavno</a> – <a href="%1$strue">Otmjeno</a>"
+ Upload Testing: "Testiranje prijenosa"
+msg_subject_2fa: "Dvofaktorska autentifikacija"
+msg_template_2fa: |
+ <center><p>Zdravo, %s.<br /><br />
+ Vaš dvofaktorski kod za autentifikaciju za prijavu na phpMussel front-end:</p>
+ <h1>%s</h1>
+ <p>Ovaj kod ističe za 10 minuta.</p></center>
+previewer:
+ Days: "Dani"
+ Hours: "Sati"
+ Minutes: "Minute"
+ Months: "Mjeseci"
+ Seconds: "Sekunde"
+ Weeks: "Sedmice"
+ Years: "Godine"
 response:
+ Account successfully created: "Račun je uspješno kreiran!"
+ Account successfully deleted: "Račun je uspješno izbrisan!"
+ An account with that username already exists: "Račun sa tim korisničkim imenom već postoji!"
+ Configuration successfully updated: "Konfiguracija je uspješno ažurirana."
+ Corrupted file: "Oštećen datoteka!"
+ Failed to create: "Kreiranje nije uspjelo!"
+ Failed to delete: "Brisanje nije uspjelo!"
+ Failed to restore: "Vraćanje nije uspjelo"
+ Failed to update configuration: "Ažuriranje konfiguracije nije uspjelo!"
+ Failed to update: "Ažuriranje nije uspjelo!"
+ Failed: "Nije uspjelo"
+ File successfully deleted: "Datoteka je uspješno izbrisan!"
+ File successfully restored: "Datoteka je uspješno vraćen!"
+ Incorrect 2FA code entered: "Unesen je pogrešan 2FA kod. Autentifikacija nije uspjela."
  Incorrect quarantine key: "Netočan ključ za karantin!"
  Invalid password: "Prijava nije uspjela! Nevažeća lozinka!"
  Maximum number of login attempts exceeded: "Premašen je maksimalan broj pokušaja prijave; Pristup odbijen."
@@ -192,7 +253,7 @@ tip:
  Signature Information: "Stranica sa informacijama o potpisu pruža neke osnovne informacije o izvorima i tipovima trenutno aktivnih potpisa."
  Statistics tracking is currently disabled: "Bilješka: Praćenje statistike je trenutno onemogućeno, ali se može omogućiti putem konfiguracijske stranice."
  Statistics: "Ova stranica prikazuje neke osnovne statistike upotrebe u vezi sa vašom instalacijom phpMussel-a."
- Upload Testing: "Stranica za testiranje učitavanja sadrži standardni obrazac za otpremanje datoteka, koji vam omogućava da testirate da li bi phpMussel normalno blokirao datoteku kada pokušavate da ga otpremite."
+ Upload Testing: "Stranica za testiranje prijenosa sadrži standardni obrazac za prijenos datoteka, koji vam omogućava da testirate da li bi phpMussel normalno blokirao datoteku kada pokušaju prijenosa."
 warning:
  Cookies: "Bilješka: phpMussel koristi kolačić za provjeru autentičnosti prijava. Prijavom dajete pristanak da vaš pretraživač kreira i pohrani kolačić."
  JavaScript required: "Upozorenje: Neke front-end funkcionalnosti zahtijevaju JavaScript. Kako biste osigurali da se cijeli front-end ponaša kako se očekuje, preporučuje se omogućavanje JavaScripta."
