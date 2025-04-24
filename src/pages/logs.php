@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The logs page (last modified: 2023.12.13).
+ * This file: The logs page (last modified: 2025.04.24).
  */
 
 namespace phpMussel\FrontEnd;
@@ -25,6 +25,19 @@ $FE['FE_Content'] = $this->Loader->parse($FE, $this->Loader->readFile($this->get
 
 /** Initialise array for fetching logs data. */
 $FE['LogFiles'] = ['Files' => $this->logsRecursiveList(), 'Out' => ''];
+
+/** Download a log file. */
+if (
+    isset($this->QueryVariables['text-mode'], $this->QueryVariables['logfile']) &&
+    $this->QueryVariables['text-mode'] === 'download' &&
+    isset($FE['LogFiles']['Files'][$this->QueryVariables['logfile']])
+) {
+    header('Content-Type: application/octet-stream');
+    header('Content-Transfer-Encoding: Binary');
+    header('Content-disposition: attachment; filename="' . basename($this->QueryVariables['logfile']) . '"');
+    echo $this->Loader->readFile($this->Vault . $this->QueryVariables['logfile']);
+    return;
+}
 
 /** Text mode switch link base. */
 $FE['TextModeSwitchLink'] = '';
@@ -83,15 +96,19 @@ if (!$TextMode) {
     $this->formatter($FE['logfileData']);
 }
 
-/** Process logs list. */
+$DownloadLabel = $this->Loader->L10N->getString('field.Download');
+
+/** Generate a list of the logs. */
 foreach ($FE['LogFiles']['Files'] as $Filename => $Filesize) {
     $FE['LogFiles']['Out'] .= sprintf(
-        '      <a href="?phpmussel-page=logs&logfile=%1$s&text-mode=%3$s">%1$s</a> – %2$s<br />',
+        '      <a href="?phpmussel-page=logs&logfile=%1$s&text-mode=%3$s">%1$s</a> – %2$s <a title="%4$s" href="?phpmussel-page=logs&logfile=%1$s&text-mode=download"><span class="navicon download"></span></a><br />',
         $Filename ?? '',
         $Filesize ?? '',
-        $FE['TextModeLinks'] ?? ''
+        $FE['TextModeLinks'] ?? '',
+        $DownloadLabel
     ) . "\n";
 }
+unset($Filesize, $Filename, $DownloadLabel);
 
 /** Calculate page load time (useful for debugging). */
 $FE['ProcessTime'] = microtime(true) - $_SERVER['REQUEST_TIME_FLOAT'];

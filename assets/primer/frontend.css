@@ -147,6 +147,7 @@ input[type=button].reset:hover,input[type=button].reset:active{color:#f88}
 .navicon.siginfo{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:siginfo.svg}{/Base64Encode})}
 .navicon.statistics{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:statistics.svg}{/Base64Encode})}
 .navicon.test{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:test.svg}{/Base64Encode})}
+.navicon.download{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:download.svg}{/Base64Encode})}
 ::selection{background-color:rgba(0,102,204,.6);color:#fff}
 .txtGn::selection,.txtGn>*:not(.txtOe,.txtRd)::selection{color:#dfc}
 .txtOe::selection,.txtOe>*:not(.txtGn,.txtRd)::selection{color:#fec}
