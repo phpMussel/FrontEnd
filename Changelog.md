@@ -180,6 +180,10 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 
 ### v3.6.1
 
+#### Bugs fixed.
+- [2025.04.29]: CLI-mode colour markers shouldn't be showing up when viewing the logs at the front-end in fancy mode; Fixed.
+
+#### Other changes.
 - [2025.03.29]: Moved a small number of L10N strings from the front-end to the core due to being needed for some new CLI functionality.
 - [2025.04.24]: Added download icons to allow log files to be downloaded directly from the front-end logs page.
 - [2025.02~04]: Added L10N for Marathi.

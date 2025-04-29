@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2024.09.26).
+ * This file: Front-end handler (last modified: 2025.04.29).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1423,6 +1423,9 @@ class FrontEnd
      */
     private function formatter(string &$In): void
     {
+        /** Remove CLI-mode formatting. */
+        $In = preg_replace('~[\x00-\x1f]\[0;\d+m~i', '', $In);
+
         if (strpos($In, "<br />\n") === false) {
             $In = '<div class="fW">' . $In . '</div>';
             return;
