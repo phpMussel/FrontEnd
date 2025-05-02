@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bosnian language data (last modified: 2025.04.22).
+# This file: Bosnian language data (last modified: 2025.05.02).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -28,7 +28,7 @@ checkbox:
  Delete orphaned values: "Izbrišite izgubljene vrijednosti."
 config:
  core: "Opća konfiguracija (svaka konfiguracija jezgra koja ne pripada drugim kategorijama)."
- core_default_timeout: "Zadano vremensko ograničenje za korištenje za eksterne zahtjeve? Zadano = 12 sekundi."
+ core_default_timeout: "Zadano vremensko ograničenje za korištenje za vanjske zahtjeve? Zadano = 12 sekundi."
  core_delete_on_sight: "Omogućavanje ove direktive će uputiti skriptu da odmah pokuša da izbriše svaki skenirani pokušaj prijenosa datoteka koji odgovara bilo kom kriterijumu detekcije, bilo putem potpisa ili na neki drugi način. Datoteke označeni kao "čisti" se neće dirati. U slučaju arhiva, cijela arhiva će biti izbrisana, bez obzira na to da li je uvredljivi datoteka samo jedan od nekoliko datoteka koji se nalaze u arhivi. U slučaju skeniranja prijenosa datoteka, obično nije potrebno omogućiti ovu direktivu, jer obično PHP automatski čisti sadržaj svoje keš memorije kada se izvršavanje završi, što znači da će obično izbrisati sve datoteke koje su postavljene preko njega na server osim ako već nisu premještene, kopirane ili izbrisane. Ova direktiva je ovde dodata kao dodatna mera bezbednosti za one čije se kopije PHP-a možda ne ponašaju uvek na očekivani način. False/Lažno = Nakon skeniranja, ostavite datoteku na miru [Zadano]; True/Istinito = Nakon skeniranja, ako nije čisto, odmah izbrišite."
  core_disabled_channels: "Ovo se može koristiti da spriječi phpMussel da koristi određene kanale prilikom slanja zahtjeva."
  core_error_log: "Datoteka za evidentiranje svih otkrivenih grešaka koje nisu fatalne. Navedite naziv datoteke ili ostavite prazno da biste onemogućili."
@@ -67,9 +67,17 @@ config:
  files_decode_threshold: "Maksimalna dužina neobrađenih podataka na kojoj treba detektovati komande za dekodiranje (u slučaju da postoje primetni problemi sa performansama tokom skeniranja). Zadano = 512KB. Nula uklanja svako takvo ograničenje na osnovu veličine datoteke."
  files_entropy_filesize_limit: "Ograničenje veličine datoteke entropije za potpise koji koriste normalizirane podatke (zadana vrijednost je 512KB). Kada se prekorači i granica entropije i ograničenje veličine datoteke entropije, kako bi se smanjio rizik od lažnih pozitivnih rezultata, neki potpisi koji koriste normalizirane podatke će biti zanemareni."
  files_entropy_limit: "Ograničenje entropije za potpise koji koriste normalizirane podatke (zadana vrijednost je 7.7). U ovom kontekstu, entropija je definirana kao šenonova entropija sadržaja datoteke koja se skenira. Kada se prekorači i ograničenje entropije i ograničenje veličine datoteke entropije, kako bi se smanjio rizik od lažnih pozitivnih rezultata, neki potpisi koji koriste normalizirane podatke će biti zanemareni."
- files_filesize_archives: "Prenijeti crnu/bijelu listu veličine datoteke na sadržaj arhiva? False/Lažno = Ne (stavite na sivu listu); True/Istinito = Da [Zadano]."
+ files_filesize_archives: "Primijeniti crnu/bijelu listu veličine datoteka na sadržaj arhiva? False/Lažno = Ne (stavite na sivu listu); True/Istinito = Da [Zadano]."
  files_filesize_limit: "Ograničenje veličine datoteke u KB. 65536 = 64MB [Zadano]; 0 = Nema ograničenja (uvijek na sivoj listi). Bilo koja (pozitivna) numerička vrijednost je prihvaćena. Ovo može biti korisno kada vaša PHP konfiguracija ograničava količinu memorije koju proces može zadržati ili ako vaša PHP konfiguracija ograničava veličinu datoteka za otpremanje."
  files_filesize_response: "Šta učiniti s datotekama koje premašuju ograničenje veličine datoteke (ako ograničenje postoji). False/Lažno = Stavite na bijelu listu; True/Istinito = Stavite na crnu listu [Zadano]."
+ files_filetype_archives: "Primijeniti crnu/bijelu listu tipova datoteka na sadržaj arhiva? False/Lažno = Ne (stavite na sivu listu) [Zadano]; True/Istinito = Da."
+ files_filetype_blacklist: "Crna lista:"
+ files_filetype_greylist: "Siva lista:"
+ files_filetype_whitelist: "Bijela lista:"
+ files_max_files_in_archives: "Maksimalan broj datoteka za skeniranje iz arhiva prije prekida skeniranja. Zadano = 0 (bez maksimuma)."
+ files_max_recursion: "Maksimalno ograničenje dubine rekurzije za arhive. Zadano = 3."
+ files_only_allow_images: "Kada je postavljeno na "true", sve datoteke koje skener pronađe, a nisu slike, bit će odmah označene, bez skeniranja. Ovo može pomoći u smanjenju vremena potrebnog za dovršetak skeniranja u nekim slučajevima. Podrazumevano postavljeno na "false"."
+ files_scannable_threshold: "Prag za dužinu sirovih podataka koje phpMussel smije čitati i skenirati (u slučaju da postoje bilo kakvi primjetni problemi s performansama tokom skeniranja). Zadano = 32MB. Vrijednost nula onemogućava prag. Generalno, ova vrijednost ne bi trebala biti manja od prosječne veličine datoteka koje želite i očekujete da primite na svoj server ili web stranicu, ne bi trebalo biti veće od direktive filesize_limit, i ne bi trebalo biti više od otprilike jedne petine ukupne dozvoljene alokacije memorije dodijeljene PHP-u putem konfiguracijske datoteke "php.ini". Ova direktiva postoji kako bi se spriječilo da phpMussel koristi previše memorije (što bi ga spriječilo da uspješno skenira datoteke veće od određene veličine)."
  frontend: "Konfiguracija za front-end."
  frontend_custom_footer: "Umetnuto kao HTML na samom dnu svih front-end stranica. Ovo bi moglo biti korisno u slučaju da na svim takvim stranicama želite uključiti pravnu obavijest, vezu za kontakt, poslovne informacije, ili slično."
  frontend_custom_header: "Umetnuto kao HTML na samom početku svih front-end stranica. Ovo bi moglo biti korisno u slučaju da na svim takvim stranicama želite uključiti logo web stranice, personalizirano zaglavlje, skripte, ili slično."
@@ -82,6 +90,8 @@ config:
  legal: "Konfiguracija za zakonske zahtjeve."
  legal_privacy_policy: "Adresa relevantne politike privatnosti koja će se prikazati u podnožju svake generisane stranice. Navedite URL, ili ostavite prazno da biste onemogućili."
  legal_pseudonymise_ip_addresses: "Pseudonimizirati IP adrese prilikom prijavljivanja? True/Istinito = Da [Zadano]; False/Lažno = Ne."
+ quarantine: "Konfiguracija za karantin."
+ quarantine_quarantine_key: "phpMussel može staviti blokirane prijenose datoteka u karantin, ako to želite. Povremeni korisnici phpMussel-a koji samo žele zaštititi svoje web stranice ili hosting okruženje, bez ikakvog interesa za dubinsku analizu bilo kakvih označenih pokušaja otpremanja datoteka, trebali bi ostaviti ovu funkcionalnost onemogućenom, ali svi korisnici zainteresirani za daljnju analizu označenih pokušaja otpremanja datoteka za istraživanje zlonamjernog softvera ili slične stvari trebali bi omogućiti ovu funkcionalnost. Funkcionalnost karantina ponekad može pomoći i u otklanjanju grešaka u lažno pozitivnim rezultatima, ako vam se to često dešava. Da biste onemogućili funkcionalnost karantina, jednostavno ostavite direktivu <code>quarantine_key</code> praznu, ili je ispraznite ako već nije prazna. Da biste omogućili funkcionalnost karantina, unesite neku vrijednost u direktivu. <code>quarantine_key</code> je važna sigurnosna karakteristika funkcionalnosti karantina potrebna kao sredstvo za sprečavanje iskorištavanja funkcionalnosti karantina od strane potencijalnih napadača i kao sredstvo za sprečavanje bilo kakvog potencijalnog izvršavanja podataka pohranjenih unutar karantina. <code>quarantine_key</code> treba tretirati na isti način kao i vaše lozinke: što duže to bolje, i strogo ga čuvajte. Za najbolji efekat, koristite u kombinaciji sa <code>delete_on_sight</code>."
  supplementary_cache_options: "Dodatne opcije keša. Bilješka: Promjena ovih vrijednosti može vas potencijalno odjaviti."
  supplementary_cache_options_enable_apcu: "Određuje hoće li pokušati koristiti APCu za keširanje. Zadano = True."
  supplementary_cache_options_enable_memcached: "Određuje hoće li se pokušati koristiti Memcached za keširanje. Zadano = False."
@@ -151,7 +161,28 @@ hints_time_format: |
  <code class="s">{tz}</code> – Vremenska zona (bez dvotočke) – Npr., +0800.<br />
  <code class="s">{t:z}</code> – Vremenska zona (sa dvotočkom) – Npr., +08:00.
 label:
+ %s is available (%s): "%s je dostupan (%s)."
+ %s is available: "%s je dostupan."
+ %s is not available: "%s nije dostupan."
+ Active configuration file: "Aktivna konfiguracijska datoteka:"
+ Active signature files: "Aktivne datoteke potpisa"
+ Branch latest stable: "Najnovija stabilna grana:"
+ Client information: "Informacije o klijentu:"
+ Complete access: "Potpuni pristup"
+ Copy to clipboard: "Kopiraj u međuspremnik"
  Default: "Zadano"
+ Expires: "Ističe:"
+ Extension: "Ekstenzija"
+ External: "Vanjski"
+ Installed Available: "Instalirano/Dostupno"
+ Latest stable: "Najnovija stabilna verzija:"
+ Latest unstable: "Najnovije nestabilno verzija:"
+ Loading_: "Učitavanje..."
+ Never: "Nikad"
+ No log file selected: "Nije odabrana datoteka dnevnika."
+ No log files available: "Nema dostupnih datoteka dnevnika."
+ Objects flagged: "Označeni objekti"
+ Objects scanned: "Skenirani objekti"
  Operating system used: "Korišćen operativni sistem:"
  Other: "Ostalo"
  PHP version used: "Korištena verzija PHP-a:"

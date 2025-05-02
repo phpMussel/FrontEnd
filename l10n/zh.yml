@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese language data (last modified: 2025.03.29).
+# This file: Chinese language data (last modified: 2025.04.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -255,7 +255,7 @@ hints_time_format:
   <code class="s">{s}</code> – 秒 – 例如，49。<br />
   <code class="s">{tz}</code> – 时区（不带冒号） – 例如，+0800。<br />
   <code class="s">{t:z}</code> – 时区（带冒号） – 例如，+08:00。
- zh-Hant: |
+ zh-Hant: |
   <strong><em>佔位符 – 解釋 – 基於2024-04-30T18:27:49+08:00的範例。</em></strong><br />
   <code class="s">{yyyy}</code> – 年份 – 例如，2024。<br />
   <code class="s">{yy}</code> – 縮寫年份 – 例如，24。<br />
