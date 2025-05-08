@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2025.04.29).
+ * This file: Front-end handler (last modified: 2025.05.08).
  */
 
 namespace phpMussel\FrontEnd;
@@ -289,7 +289,7 @@ class FrontEnd
 
             /** Used to log out. */
             'LogoutButton' => sprintf(
-                '<form action="?phpmussel-page=logout" method="POST" style="display:inline">%s%s<input type="submit" id="logoutbutton" value="%s" class="auto" /></form>',
+                '<form action="?phpmussel-page=logout" method="POST" class="inline">%s%s<input type="submit" id="logoutbutton" value="%s" class="auto" /></form>',
                 '<input name="hostname" id="hostnameoverride" type="hidden" value="" />',
                 '<script type="text/javascript">document.getElementById(\'hostnameoverride\').value=window.location.hostname;</script>',
                 $this->Loader->L10N->getString('link.Log Out')
@@ -297,7 +297,7 @@ class FrontEnd
 
             /** Used to return home. */
             'HomeButton' => sprintf(
-                '<form action="?" method="GET" style="display:inline"><input type="submit" id="homebutton" value="%s" class="auto" /></form>',
+                '<form action="?" method="GET" class="inline"><input type="submit" id="homebutton" value="%s" class="auto" /></form>',
                 $this->Loader->L10N->getString('link.Home')
             ),
 
