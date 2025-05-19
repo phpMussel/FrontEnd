@@ -154,3 +154,4 @@ input[type=file]::file-selector-button{background-image:url(data:image/svg+xml;b
 .flexrow{display:flex}
 .flexin{margin-{FE_Align}:-1px;margin-{FE_Align_Reverse}:1px;width:auto;flex-grow:1}
 .navSoftCnr{border-radius:0 12px 0 0}
+.capitalize{text-transform:capitalize}

@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The configuration page (last modified: 2024.07.02).
+ * This file: The configuration page (last modified: 2025.05.20).
  */
 
 namespace phpMussel\FrontEnd;
@@ -302,7 +302,7 @@ foreach ($this->Loader->ConfigurationDefaults as $CatKey => $CatValue) {
                 }
             } else {
                 $ThisDir['FieldOut'] = sprintf(
-                    '<select class="auto" style="text-transform:capitalize" name="%1$s" id="%1$s_field"%2$s>',
+                    '<select class="auto capitalize" name="%1$s" id="%1$s_field"%2$s>',
                     $ThisDir['DirLangKey'],
                     $ThisDir['Trigger']
                 );
@@ -415,7 +415,7 @@ foreach ($this->Loader->ConfigurationDefaults as $CatKey => $CatValue) {
                     }
                 } else {
                     $ThisDir['FieldOut'] .= sprintf(
-                        '<option style="text-transform:capitalize" value="%s"%s>%s</option>',
+                        '<option class="capitalize" value="%s"%s>%s</option>',
                         $ChoiceKey,
                         $ChoiceKey === $this->Loader->Configuration[$CatKey][$DirKey] ? ' selected' : '',
                         $ChoiceValue
