@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bosnian language data (last modified: 2025.05.02).
+# This file: Bosnian language data (last modified: 2025.05.20).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -92,6 +92,18 @@ config:
  legal_pseudonymise_ip_addresses: "Pseudonimizirati IP adrese prilikom prijavljivanja? True/Istinito = Da [Zadano]; False/Lažno = Ne."
  quarantine: "Konfiguracija za karantin."
  quarantine_quarantine_key: "phpMussel može staviti blokirane prijenose datoteka u karantin, ako to želite. Povremeni korisnici phpMussel-a koji samo žele zaštititi svoje web stranice ili hosting okruženje, bez ikakvog interesa za dubinsku analizu bilo kakvih označenih pokušaja otpremanja datoteka, trebali bi ostaviti ovu funkcionalnost onemogućenom, ali svi korisnici zainteresirani za daljnju analizu označenih pokušaja otpremanja datoteka za istraživanje zlonamjernog softvera ili slične stvari trebali bi omogućiti ovu funkcionalnost. Funkcionalnost karantina ponekad može pomoći i u otklanjanju grešaka u lažno pozitivnim rezultatima, ako vam se to često dešava. Da biste onemogućili funkcionalnost karantina, jednostavno ostavite direktivu <code>quarantine_key</code> praznu, ili je ispraznite ako već nije prazna. Da biste omogućili funkcionalnost karantina, unesite neku vrijednost u direktivu. <code>quarantine_key</code> je važna sigurnosna karakteristika funkcionalnosti karantina potrebna kao sredstvo za sprečavanje iskorištavanja funkcionalnosti karantina od strane potencijalnih napadača i kao sredstvo za sprečavanje bilo kakvog potencijalnog izvršavanja podataka pohranjenih unutar karantina. <code>quarantine_key</code> treba tretirati na isti način kao i vaše lozinke: što duže to bolje, i strogo ga čuvajte. Za najbolji efekat, koristite u kombinaciji sa <code>delete_on_sight</code>."
+ quarantine_quarantine_max_files: "Maksimalan broj datoteka koje mogu postojati u karantinu. Kada se nove datoteke dodaju u karantin, ako se ovaj broj premaši, stare datoteke će biti izbrisane kako bi se broj sveo ispod ovog maksimuma. Zadano = 100."
+ quarantine_quarantine_max_filesize: "Maksimalna dozvoljena veličina datoteke za stavljanje datoteka u karantin. Datoteke veće od navedene vrijednosti NEĆE biti stavljene u karantin. Ova direktiva je važna jer otežava potencijalnim napadačima da preplave vaš karantin neželjenim podacima, što bi potencijalno moglo uzrokovati prekomjerno korištenje podataka na vašoj usluzi hostinga. Zadano = 2MB."
+ quarantine_quarantine_max_usage: "Maksimalna dozvoljena upotreba memorije za karantin. Ako ukupna memorija koju koristi karantin dostigne ovu vrijednost, najstarije datoteke u karantinu bit će izbrisane kako bi se ukupna korištena memorija svela ispod ove vrijednosti. Ova direktiva je važna jer otežava potencijalnim napadačima da preplave vaš karantin neželjenim podacima, što bi potencijalno moglo uzrokovati prekomjerno korištenje podataka na vašoj usluzi hostinga. Zadano = 64MB."
+ signatures: "Konfiguracija za potpise, datoteke potpisa, itd."
+ signatures_active: "Spisak aktivnih datoteka potpisa, odvojenih zarezima. Bilješka: Datoteke potpisa prvo moraju biti instalirane, prije nego što ih možete aktivirati. Da bi testne datoteke ispravno radile, datoteke potpisa moraju biti instalirane i aktivirane."
+ signatures_detect_adware: "Treba li phpMussel koristiti potpise za otkrivanje adwarea? False/Lažno = Ne; True/Istinito = Da [Zadano]."
+ signatures_detect_deface: "Treba li phpMussel koristiti potpise za otkrivanje oštećenja web stranice? False/Lažno = Ne; True/Istinito = Da [Zadano]."
+ signatures_detect_encryption: "Treba li phpMussel otkriti i blokirati šifrirane datoteke? False/Lažno = Ne; True/Istinito = Da [Zadano]."
+ signatures_detect_joke_hoax: "Treba li phpMussel koristiti potpise za otkrivanje zlonamjernog softvera i virusa sa šalama/prevarama? False/Lažno = Ne; True/Istinito = Da [Zadano]."
+ signatures_detect_packer_packed: "Treba li phpMussel koristiti potpise za otkrivanje packer-ova i pakovanih podataka? False/Lažno = Ne; True/Istinito = Da [Zadano]."
+ signatures_detect_pua_pup: "Treba li phpMussel koristiti potpise za otkrivanje potencijalno neželjenih aplikacija (PUA/PUP)? False/Lažno = Ne; True/Istinito = Da [Zadano]."
+ signatures_detect_shell: "Treba li phpMussel koristiti potpise za otkrivanje shell skripti? False/Lažno = Ne; True/Istinito = Da [Zadano]."
  supplementary_cache_options: "Dodatne opcije keša. Bilješka: Promjena ovih vrijednosti može vas potencijalno odjaviti."
  supplementary_cache_options_enable_apcu: "Određuje hoće li pokušati koristiti APCu za keširanje. Zadano = True."
  supplementary_cache_options_enable_memcached: "Određuje hoće li se pokušati koristiti Memcached za keširanje. Zadano = False."
@@ -160,6 +172,47 @@ hints_time_format: |
  <code class="s">{s}</code> – Sekunde – Npr., 49.<br />
  <code class="s">{tz}</code> – Vremenska zona (bez dvotočke) – Npr., +0800.<br />
  <code class="s">{t:z}</code> – Vremenska zona (sa dvotočkom) – Npr., +08:00.
+Some useful links: |+
+ Neki korisni linkovi:<br />
+     <ul class="pieul">
+       <li><span class="comCat">Alati, resursi, itd. za phpMussel.</span>
+         <ul class="comSub">
+           <li>{{Links.phpMussel.Issues}} – Stranica s problemima za phpMussel (podrška, pomoć, itd).</li>
+           <li>{{Links.phpMussel.SigTool}} – Kreira phpMussel datoteke potpisa koristeći ClamAV bazu podataka potpisa.</li>
+           <li>{{Links.phpMussel.Extras}} – Razni dodaci.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Alati, resursi, itd. za ClamAV.</span>
+         <ul class="comSub">
+           <li>{{Links.ClamavNet}} – Početna stranica ClamAV-a (ClamAV® je antivirusni program otvorenog koda za otkrivanje trojanaca, virusa, zlonamjernog softvera i drugih zlonamjernih prijetnji).</li>
+           <li>{{Links.SecuriteInfo}} – Kompanija za računarsku sigurnost koja nudi dodatne potpise za ClamAV.</li>
+           <li>{{Links.Sanesecurity}} – Kompanija za računarsku sigurnost koja nudi dodatne potpise za ClamAV.</li>
+           <li>{{Links.Malware Expert}} – Nudi dodatne potpise za ClamAV i dodatna pravila za ModSecurity.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Grupe, forumi, zajednice, itd.</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Facebook}} – PHP resursi za učenje i diskusija.</li>
+           <li>{{Links.MalwareTips}} – Korisni forumi za diskusiju usmjereni na zlonamjerni softver.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Drugi korisni alati, resursi, usluge, itd.</span>
+         <ul class="comSub">
+           <li>{{Links.PhishTank}} – Phishing baza podataka koju koristi phpMussel URL skener.</li>
+           <li>{{Links.VirusTotal}} – VirusTotal je besplatna usluga za analizu sumnjivih datoteka i URL-ova.</li>
+           <li>{{Links.Hybrid Analysis}} – Hybrid Analysis je besplatna usluga analize zlonamjernog softvera koju pruža {{Links.Payload Security}}.</li>
+           <li>{{Links.Malwarebytes}} – Specijalisti za računarsku zaštitu od zlonamjernog softvera.</li>
+         </ul>
+       </li>
+       <li><span class="comCat">Informativni i obrazovni resursi.</span>
+         <ul class="comSub">
+           <li>{{Links.PHP.Earth.Website}} – PHP resursi za učenje i diskusija.</li>
+           <li>{{Links.MDN.Homepage}} – Resursi za programere, od programera. Fantastičan resurs za učenje o HTML-u, CSS-u, JavaScriptu, pristupačnosti, i još mnogo čemu.</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Grafikoni ranjivosti</a> – Navodi sigurne/nesigurne verzije različitih paketa (HHVM, PHP, phpMyAdmin, Python, itd).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Grafikoni kompatibilnosti</a> – Navodi informacije o kompatibilnosti za različite pakete (CIDRAM, phpMussel, itd).</li>
+         </ul>
+       </li>
+     </ul>
 label:
  %s is available (%s): "%s je dostupan (%s)."
  %s is available: "%s je dostupan."
@@ -178,6 +231,11 @@ label:
  Latest stable: "Najnovija stabilna verzija:"
  Latest unstable: "Najnovije nestabilno verzija:"
  Loading_: "Učitavanje..."
+ Logged in, 2FA pending: "Prijavljen/a, 2FA na čekanju."
+ Logged in: "Prijavljen/a."
+ Logged out: "Odjavljen/a."
+ Login: "Prijava"
+ Logs access only: "Pristup samo do datoteka dnevnika"
  Never: "Nikad"
  No log file selected: "Nije odabrana datoteka dnevnika."
  No log files available: "Nema dostupnih datoteka dnevnika."
