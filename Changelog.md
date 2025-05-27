@@ -191,3 +191,4 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 ### v3.6.2
 
 - [2025.05.20]: A11y patch.
+- [2025.02~05]: Added L10N for Malayalam.

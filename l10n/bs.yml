@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bosnian language data (last modified: 2025.05.20).
+# This file: Bosnian language data (last modified: 2025.05.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -104,6 +104,9 @@ config:
  signatures_detect_packer_packed: "Treba li phpMussel koristiti potpise za otkrivanje packer-ova i pakovanih podataka? False/Lažno = Ne; True/Istinito = Da [Zadano]."
  signatures_detect_pua_pup: "Treba li phpMussel koristiti potpise za otkrivanje potencijalno neželjenih aplikacija (PUA/PUP)? False/Lažno = Ne; True/Istinito = Da [Zadano]."
  signatures_detect_shell: "Treba li phpMussel koristiti potpise za otkrivanje shell skripti? False/Lažno = Ne; True/Istinito = Da [Zadano]."
+ signatures_fail_extensions_silently: "Treba li phpMussel prijaviti kada nedostaju ekstenzije? Ako je <code>fail_extensions_silently</code> onemogućen, nedostajuće ekstenzije će biti prijavljene prilikom skeniranja, a ako je <code>fail_extensions_silently</code> omogućen, nedostajuće ekstenzije će biti ignorisane, a skeniranje će izvještavati o onima datotekama za koje nema problema. Onemogućavanje ove direktive može potencijalno povećati vašu sigurnost, ali može dovesti i do povećanja lažno pozitivnih. False/Lažno = Onemogućeno; True/Istinito = Omogućeno [Zadano]."
+ signatures_fail_silently: "Treba li phpMussel prijaviti kada datoteke potpisa nedostaju ili su oštećene? Ako je <code>fail_silently</code> onemogućen, nedostajuće i oštećene datoteke će biti prijavljene prilikom skeniranja, a ako je <code>fail_silently</code> omogućen, nedostajuće i oštećene datoteke će biti ignorisane, a skeniranje će izvještavati o onima datotekama za koje nema problema. Ovo treba promijeniti samo ako imate problema poput pada sistema ili slično. False/Lažno = Onemogućeno; True/Istinito = Omogućeno [Zadano]."
+ signatures_heuristic_threshold: "Neki phpMussel potpisi su namijenjeni identifikaciji datoteka koje bi mogle biti sumnjive, bez direktnog identificiranja tih datoteka kao zlonamjernih. Ova vrijednost označava maksimalnu dozvoljenu težinu prije nego što phpMussel označi te datoteke kao zlonamjerne. Definicija težine u ovom kontekstu je ukupan broj identifikovanih sumnjivih i potencijalno zlonamjernih indikatora. Podrazumevano, ova vrijednost će biti postavljena na 3. Niža vrijednost će uglavnom rezultirati većom pojavom lažno pozitivnih, ali i većim brojem označenih zlonamjernih datoteka, dok će viša vrijednost uglavnom rezultirati manjom pojavom lažno pozitivnih, ali i manjim brojem označenih zlonamjernih datoteka. Najbolje je promijeniti ovu vrijednost samo ako imate problema."
  supplementary_cache_options: "Dodatne opcije keša. Bilješka: Promjena ovih vrijednosti može vas potencijalno odjaviti."
  supplementary_cache_options_enable_apcu: "Određuje hoće li pokušati koristiti APCu za keširanje. Zadano = True."
  supplementary_cache_options_enable_memcached: "Određuje hoće li se pokušati koristiti Memcached za keširanje. Zadano = False."
@@ -119,6 +122,12 @@ config:
  supplementary_cache_options_redis_host: "Redis vrijednost hosta. Zadano = localhost."
  supplementary_cache_options_redis_port: "Redis vrijednost porta. Zadano = "6379"."
  supplementary_cache_options_redis_timeout: "Redis vrijednost vremenskog ograničenja. Zadano = "2.5"."
+ urlscanner: "Konfiguracija za skener URL-ova."
+ urlscanner_cache_time: "Koliko dugo (u sekundama) treba keširati rezultate API pretraga? Zadana vrijednost je 3600 sekundi (1 sat)."
+ urlscanner_google_api_key: "Omogućava API pretrage za Google Safe Browsing API kada je definisan potreban API ključ."
+ urlscanner_maximum_api_lookups: "Maksimalan dozvoljeni broj API pretraga koje se mogu izvršiti po pojedinačnoj iteraciji skeniranja. Budući da će svaka dodatna API pretraga povećati ukupno vrijeme potrebno za dovršetak svake iteracije skeniranja, možda biste željeli postaviti ograničenje kako biste ubrzali cijeli proces skeniranja. Kada je postavljeno na 0, takav maksimalni dozvoljeni broj se neće primjenjivati. Zadano postavljeno na 10."
+ urlscanner_maximum_api_lookups_response: "Šta učiniti ako se prekorači maksimalni dozvoljeni broj API pretraga? False/Lažno = Ne radi ništa (nastavi obradu) [Zadano]; True/Istinito = Označi/blokiraj datoteku."
+ virustotal: "Konfiguracija za integraciju Virus Total."
 confirm:
  Action: "Jeste li sigurni da želite "%s"?"
 field:
