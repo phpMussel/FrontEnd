@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bosnian language data (last modified: 2025.05.27).
+# This file: Bosnian language data (last modified: 2025.06.06).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -128,6 +128,10 @@ config:
  urlscanner_maximum_api_lookups: "Maksimalan dozvoljeni broj API pretraga koje se mogu izvršiti po pojedinačnoj iteraciji skeniranja. Budući da će svaka dodatna API pretraga povećati ukupno vrijeme potrebno za dovršetak svake iteracije skeniranja, možda biste željeli postaviti ograničenje kako biste ubrzali cijeli proces skeniranja. Kada je postavljeno na 0, takav maksimalni dozvoljeni broj se neće primjenjivati. Zadano postavljeno na 10."
  urlscanner_maximum_api_lookups_response: "Šta učiniti ako se prekorači maksimalni dozvoljeni broj API pretraga? False/Lažno = Ne radi ništa (nastavi obradu) [Zadano]; True/Istinito = Označi/blokiraj datoteku."
  virustotal: "Konfiguracija za integraciju Virus Total."
+ virustotal_vt_public_api_key: "Opcionalno, phpMussel može skenirati datoteke koristeći Virus Total API kao način da se obezbijedi znatno poboljšani nivo zaštite od virusa, trojanaca, zlonamjernog softvera i drugih prijetnji. Standardno je skeniranje datoteka pomoću Virus Total API-ja onemogućeno. Da biste ga omogućili, potreban je API ključ od Virus Total-a. Zbog značajne koristi koju bi vam ovo moglo pružiti, toplo preporučujem da ga omogućite. Međutim, imajte na umu da za korištenje Virus Total API-ja, <strong><em>MORATE</em></strong> prihvatiti njihove uslove korištenja i <strong><em>MORATE</em></strong> se pridržavati svih smjernica opisanih u dokumentaciji Virus Total-a! NIJE vam dozvoljeno korištenje ove funkcije integracije OSIM AKO: Pročitali ste i slažete se sa uslovima korištenja Virus Total-a i njegovog API-ja. Pročitali ste i razumijete, kao minimum, uvod dokumentacije Virus Total Public API-ja (sve poslije "VirusTotal Public API v2.0" ali prije "Contents")."
+ virustotal_vt_quota_rate: "Prema dokumentaciji Virus Total API-ja, "ograničeno je na najviše 4 zahtjeva bilo koje prirode u bilo kojem datom vremenskom okviru od 1 minute. Ako koristite honeyclient, honeypot ili bilo koju drugu automatizaciju koja će VirusTotalu pružati resurse, a ne samo preuzimati izvještaje, imate pravo na veću kvotu stope zahtjeva". Standardno, phpMussel će se striktno pridržavati ovih ograničenja, ali zbog mogućnosti povećanja ovih kvota, ove dvije direktive su date kao sredstvo kojim možete uputiti phpMussel kojeg ograničenja treba da se pridržava. Preporučuje se povećanje ovih vrijednosti <strong><em>SAMO</em></strong> ako vam je to naloženo, ali ako ste naišli na probleme vezane za dostizanje vaše kvote, smanjenje ovih vrijednosti <strong><em>PONEKAD MOŽE</em></strong> pomoći kod tih problema. Vaše ograničenje se određuje kao <code>vt_quota_rate</code> zahtjeva bilo koje prirode u bilo kojem datom vremenskom okviru od <code>vt_quota_time</code> minuta."
+ virustotal_vt_quota_time: "(Pogledajte opis iznad)."
+ virustotal_vt_suspicion_level: "Standardno, phpMussel će ograničiti koje datoteke skenira pomoću Virus Total API-ja na one datoteke koje smatra "sumnjivim". Ovo ograničenje možete opcionalno prilagoditi promjenom vrijednosti direktive <code>vt_suspicion_level</code>."
 confirm:
  Action: "Jeste li sigurni da želite "%s"?"
 field:

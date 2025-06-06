@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese language data (last modified: 2025.03.29).
+# This file: Portuguese language data (last modified: 2025.03.31).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -95,7 +95,7 @@ config:
  frontend: "Configuração para o front-end."
  frontend_custom_footer:
   pt-BR: "Inserido como HTML no final de todas as páginas do front-end. Isso pode ser útil caso você queira incluir um aviso legal, link de contato, informações comerciais, ou similares em todas essas páginas."
-  pt-PT: "Inserido como HTML no final de todas as páginas do front-end. Isso pode ser útil caso você queira incluir um aviso legal, link de contacto, informações comerciais, ou similares em todas essas páginas."
+  pt-PT: "Inserido como HTML no final de todas as páginas do front-end. Isto pode ser útil caso você queira incluir um aviso legal, link de contacto, informações comerciais, ou similares em todas essas páginas."
  frontend_custom_header: "Inserido como HTML no início de todas as páginas do front-end. Isso pode ser útil caso você queira incluir um logotipo de site, cabeçalho personalizado, scripts, ou similares em todas essas páginas."
  frontend_default_algo: "Define qual algoritmo usar para todas as futuras senhas e sessões."
  frontend_frontend_log: "Arquivo para registrar tentativas de login ao front-end. Especifique o nome de um arquivo, ou deixe em branco para desabilitar."
@@ -137,7 +137,9 @@ config:
  supplementary_cache_options_pdo_username:
   pt-BR: "O nome de usuário do PDO."
   pt-PT: "O nome de utilizador do PDO."
- supplementary_cache_options_prefix: "O valor especificado aqui será adicionado ao começo das chaves para todas as entradas de cache. Padrão = "phpMussel_". Quando existem várias instalações no mesmo servidor, isso pode ser útil para manter seus caches separados uns dos outros."
+ supplementary_cache_options_prefix:
+  pt-BR: "O valor especificado aqui será adicionado ao começo das chaves para todas as entradas de cache. Padrão = "phpMussel_". Quando existem várias instalações no mesmo servidor, isso pode ser útil para manter seus caches separados uns dos outros."
+  pt-PT: "O valor especificado aqui será adicionado ao começo das chaves para todas as entradas de cache. Padrão = "phpMussel_". Quando existem várias instalações no mesmo servidor, isto pode ser útil para manter os seus caches separados uns dos outros."
  supplementary_cache_options_redis_database_number: "Número do banco de dados Redis. Padrão = 0. Observação: Não é possível usar valores diferentes de 0 com Redis Cluster."
  supplementary_cache_options_redis_host: "Valor da host do Redis. Padrão = localhost."
  supplementary_cache_options_redis_port: "Valor da porta do Redis. Padrão = "6379"."
@@ -421,7 +423,9 @@ tip:
  Logs: "Selecionar um arquivo de log da lista abaixo para visualizar o conteúdo desse arquivo de log."
  Quarantine is currently disabled: "Nota: A quarentena está atualmente desativada, mas pode ser ativada através da página de configuração."
  Quarantine: "Esta página lista todos os arquivos atualmente em quarentena e facilita o gerenciamento desses arquivos."
- See the documentation: "Consulte a <a href="https://github.com/phpMussel/Docs/blob/master/readme.pt.md\#user-content-SECTION5" hreflang="pt" rel="noopener external">documentação</a> para obter informações sobre as várias diretrizes de configuração e seus objetivos."
+ See the documentation:
+  pt-BR: "Consulte a <a href="https://github.com/phpMussel/Docs/blob/master/readme.pt.md\#user-content-SECTION5" hreflang="pt" rel="noopener external">documentação</a> para obter informações sobre as várias diretrizes de configuração e seus objetivos."
+  pt-PT: "Consulte a <a href="https://github.com/phpMussel/Docs/blob/master/readme.pt.md\#user-content-SECTION5" hreflang="pt" rel="noopener external">documentação</a> para obter informações sobre as várias diretrizes de configuração e os seus objetivos."
  Signature Information: "A página de informações de assinaturas fornece algumas informações básicas sobre as origens e os tipos das assinaturas atualmente ativas."
  Statistics tracking is currently disabled: "Nota: O monitoramento de estatísticas está desativado atualmente, mas pode ser ativado através da página de configuração."
  Statistics: "Esta página mostra algumas estatísticas de uso básicas relativas à instalação do phpMussel."
