@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2025.03.29).
+# This file: Indonesian language data (last modified: 2025.06.09).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -33,7 +33,7 @@ config:
  core_disabled_channels: "Ini dapat digunakan untuk mencegah phpMussel dari menggunakan saluran tertentu saat mengirim permintaan."
  core_error_log: "File untuk mencatat kesalahan tidak fatal yang terdeteksi. Spesifikasikan nama file, atau biarkan kosong untuk menonaktifkan."
  core_hide_version: "Sembunyikan informasi versi dari log dan output halaman? True = Ya; False = Tidak [Default]."
- core_ipaddr: "Dimana menemukan alamat IP dari menghubungkan permintaan? (Berguna untuk pelayanan-pelayanan seperti Cloudflare dan sejenisnya). Default = REMOTE_ADDR. PERINGATAN: Jangan ganti ini kecuali Anda tahu apa yang Anda lakukan!"
+ core_ipaddr: "Dimana menemukan alamat IP dari menghubungkan permintaan? (Berguna untuk layanan seperti Cloudflare). Default = REMOTE_ADDR. PERINGATAN: Jangan ganti ini kecuali Anda tahu apa yang Anda lakukan!"
  core_lang: "Tentukan bahasa default untuk phpMussel."
  core_lang_override: "Melokalisasikan sesuai dengan HTTP_ACCEPT_LANGUAGE jika memungkinkan? True = Ya [Default]; False = Tidak."
  core_log_rotation_action: "Rotasi log membatasi jumlah file log yang seharusnya ada pada satu waktu. Ketika file log baru dibuat, jika jumlah total file log melebihi batas yang ditentukan, tindakan yang ditentukan akan dilakukan. Anda dapat menentukan tindakan yang diinginkan disini."
@@ -65,7 +65,7 @@ config:
  files_check_archives: "Berusaha mencek isi file terkompress? False = Tidak (Tidak mencek); True = Ya (Mencek) [Default]. Didukung: Zip (membutuhkan libzip), Tar, Rar (membutuhkan ekstensi rar)."
  files_corrupted_exe: "File korup dan diurai kesalahan. False = Mengabaikan; True = Memblokir [Default]. Mendeteksi dan memblokir file PE (Portable Executable) berpotensi korup? Sering (tapi tidak selalu), ketika aspek-aspek tertentu dari file PE yang korup atau tidak bisa diurai dengan benar, itu dapat menjadi indikasi dari infeksi virus. Proses yang digunakan oleh sebagian besar program anti-virus untuk mendeteksi virus dalam file PE memerlukan parsing file-file dengan cara tertentu, yang, jika programmer virus menyadari, secara khusus akan mencoba untuk mencegah, untuk memungkinkan virus mereka untuk tetap tidak terdeteksi."
  files_decode_threshold: "Ambang batas dengan panjang file mentah yang dalam decode perintah harus terdeteksi (dalam kasus ada masalah kinerja sementara pemindaian). Default = 512KB. Nol atau nilai null menonaktifkan ambang batas (menghapus apapun batasan berdasarkan ukuran file)."
- files_entropy_filesize_limit: "Batas ukuran file entropi untuk tanda tangan yang menggunakan data yang dinormalisasi (defaultnya 512KB). Ketika batas entropi dan batas ukuran file entropi terlampaui, untuk mengurangi risiko positif palsu, beberapa tanda tangan yang menggunakan data ternormalisasi akan diabaikan."
+ files_entropy_filesize_limit: "Batas ukuran file entropi untuk tanda tangan yang menggunakan data yang dinormalisasi (defaultnya 256KB). Ketika batas entropi dan batas ukuran file entropi terlampaui, untuk mengurangi risiko positif palsu, beberapa tanda tangan yang menggunakan data ternormalisasi akan diabaikan."
  files_entropy_limit: "Batas entropi untuk tanda tangan yang menggunakan data yang dinormalisasi (defaultnya 7.7). Dalam konteks ini, entropi didefinisikan sebagai entropi shannon dari konten file yang sedang dipindai. Ketika batas entropi dan batas ukuran file entropi terlampaui, untuk mengurangi risiko positif palsu, beberapa tanda tangan yang menggunakan data ternormalisasi akan diabaikan."
  files_filesize_archives: "Memperlalaikan ukuran daftar hitam/putih dari isi file terkompress? False = Tidak (Bertanda abu-abu semua); True = Ya [Default]."
  files_filesize_limit: "Batas ukuran file dalam KB. 65536 = 64MB [Default]; 0 = Tidak ada batasa (selalu bertanda abu-abu), nilai angka positif apapun diterima. Ini dapat berguna ketika batasan konfigurasi PHP Anda membatasi jumah memori dari proses yang dapat ditampungnya atau jika konfigurasi PHP Anda membatasi jumlah ukuran upload Anda."

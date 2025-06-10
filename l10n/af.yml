@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2025.03.29).
+# This file: Afrikaans language data (last modified: 2025.06.09).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -33,7 +33,7 @@ config:
  core_disabled_channels: "Dit kan gebruik word om te verhoed dat phpMussel bepaalde kanale gebruik wanneer versoeke gestuur word."
  core_error_log: "Lêer om enige nie-noodlottige foute wat bespeur is, aan te teken. Spesifiseer 'n lêernaam, of laat leeg om te deaktiveer."
  core_hide_version: "Versteek weergawe-inligting van logs en bladsy-uitvoer? True = Ja; False = Nee [Verstek]."
- core_ipaddr: "Waar om die IP-adres van inkomende versoeke te vind? (Nuttig vir dienste soos Cloudflare en dies meer). Verstek = REMOTE_ADDR. WAARSKUWING: Moenie dit verander tensy jy weet wat jy doen nie!"
+ core_ipaddr: "Waar om die IP-adres van inkomende versoeke te vind? (Nuttig vir dienste soos Cloudflare). Verstek = REMOTE_ADDR. WAARSKUWING: Moenie dit verander tensy jy weet wat jy doen nie!"
  core_lang: "Spesifiseer die verstektaal vir phpMussel."
  core_lang_override: "Lokaliseer volgens HTTP_ACCEPT_LANGUAGE waar moontlik? True = Ja [Verstek]; False = Nee."
  core_log_rotation_action: "Logrotasie beperk die aantal loglêers wat op enige tydstip moet bestaan. Wanneer nuwe loglêers geskep word, as die totale aantal loglêers die gespesifiseerde limiet oorskry, sal die gespesifiseerde aksie uitgevoer word. Jy kan die verlangde aksie hier spesifiseer."
@@ -65,7 +65,7 @@ config:
  files_check_archives: "Poging om die inhoud van argiewe na te gaan? False = Moenie nagaan nie; True = Gaan dit na [Verstek]. Ondersteunde: Zip (vereis libzip), Tar, Rar (vereis die rar-uitbreiding)."
  files_corrupted_exe: "Korrupte lêers en ontleedfoute. False = Ignoreer; True = Blokkeer [Verstek]. Bespeur en blokkeer potensieel korrupte PE (Portable Executable) lêers? Dikwels (maar nie altyd nie), wanneer sekere aspekte van 'n PE-lêer beskadig is of nie korrek ontleed kan word nie, kan dit 'n virale infeksie aandui. Die prosesse wat deur die meeste antivirusprogramme gebruik word om virusse in PE-lêers op te spoor, vereis dat daardie lêers op sekere maniere ontleed word, wat, as die programmeerder van 'n virus bewus is daarvan, spesifiek sal probeer voorkom, sodat hul virus onopgemerk kan bly."
  files_decode_threshold: "Drempel vir die lengte van rou data waarbinne dekodeeropdragte opgespoor moet word (ingeval daar enige merkbare prestasieprobleme is tydens skandering). Verstek = 512KB. Zero of null deaktiveer die drempel (verwydering van enige sodanige beperking gebaseer op lêergrootte)."
- files_entropy_filesize_limit: "Die entropie lêergrootte limiet vir handtekeninge wat genormaliseerde data gebruik (verstek is 512KB). Wanneer beide die entropie limiet en die entropie lêergrootte limiet oorskry word, om die risiko van vals positiewes te verminder, sal sommige handtekeninge wat genormaliseerde data gebruik geïgnoreer word."
+ files_entropy_filesize_limit: "Die entropie lêergrootte limiet vir handtekeninge wat genormaliseerde data gebruik (verstek is 256KB). Wanneer beide die entropie limiet en die entropie lêergrootte limiet oorskry word, om die risiko van vals positiewes te verminder, sal sommige handtekeninge wat genormaliseerde data gebruik geïgnoreer word."
  files_entropy_limit: "Die entropie limiet vir handtekeninge wat genormaliseerde data gebruik (verstek is 7.7). In hierdie konteks word entropie gedefinieer as die shannon-entropie van die inhoud van die lêer wat geskandeer word. Wanneer beide die entropie limiet en die entropie lêergrootte limiet oorskry word, om die risiko van vals positiewes te verminder, sal sommige handtekeninge wat genormaliseerde data gebruik geïgnoreer word."
  files_filesize_archives: "Dra lêergrootte swartlys/witlys oor na die inhoud van argiewe? False = Nee (gryslys net alles); True = Ja [Verstek]."
  files_filesize_limit: "Lêergrootte limiet in KB. 65536 = 64MB [Verstek]; 0 = Geen limiet (altyd gegryslys). Enige (positiewe) numeriese waarde word aanvaar. Dit kan nuttig wees wanneer jou PHP-konfigurasie die hoeveelheid geheue wat 'n proses kan hou beperk of as jou PHP-konfigurasie die lêergrootte van oplaaie beperk."

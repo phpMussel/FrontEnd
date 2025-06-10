@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese language data (last modified: 2025.04.29).
+# This file: Chinese language data (last modified: 2025.06.09).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -36,8 +36,8 @@ config:
  core_error_log: {"zh-Hans": "用于记录检测到的任何非致命错误的文件。​指定一个文件名，​或留空以禁用。", "zh-Hant": "用於記錄檢測到的任何非致命錯誤的文件。​指定一個檔案名稱，​或留空以禁用。"}
  core_hide_version: {"zh-Hans": "从日志和页面输出中隐藏版本信息吗？​True（真）=关闭；False（假）=不关闭【标准】。", "zh-Hant": "從日誌和頁面輸出中隱藏版本信息嗎？​True（真）=關閉；False（假）=不關閉【標準】。"}
  core_ipaddr:
-  zh-Hans: "在哪里可以找到连接请求IP地址？​（可以使用为服务例如Cloudflare和类似）。 标准 = REMOTE_ADDR。​警告：不要修改此除非您知道什么您做着！"
-  zh-Hant: "在哪裡可以找到連接請求IP位址？​（可以使用為服務例如Cloudflare和類似）。 標準 = REMOTE_ADDR。​警告：不要修改此除非您知道什麼您做著！"
+  zh-Hans: "在哪里可以找到连接请求IP地址？ （对于Cloudflare等服务有用）。 标准 = REMOTE_ADDR。 警告：不要修改此除非您知道什么您做着！"
+  zh-Hant: "在哪裡可以找到連接請求IP位址？ （對於Cloudflare等服務有用）。 標準 = REMOTE_ADDR。 警告：不要修改此除非您知道什麼您做著！"
  core_lang: {"zh-Hans": "指定标准phpMussel语言。", "zh-Hant": "指定標準phpMussel語言。"}
  core_lang_override: {"zh-Hans": "尽可能根据HTTP_ACCEPT_LANGUAGE进行本地化？True（真）=进行本地化【标准】；False（假）=不要本地化。", "zh-Hant": "盡可能根據HTTP_ACCEPT_LANGUAGE進行本地化？True（真）=進行本地化【標準】；False（假）=不要本地化。"}
  core_log_rotation_action:
@@ -92,8 +92,8 @@ config:
   zh-Hant: "損壞文件和處理錯誤。​False（假）=忽略；True（真）=受阻【默認】。​檢測和受阻潛在的損壞移植可執行【PE】文件嗎？​時常（但不始終），​當某些零件的一個移植可執行【PE】文件是損壞或不能被正確處理，​它可以建議建議的一個病毒感染。​過程使用通過最殺毒程序以檢測病毒在PE文件需要處理那些文件在某些方式，​哪裡，​如果程序員的一個病毒是意識的，​將特別嘗試防止，​以允許他們的病毒留不檢測。"
  files_decode_threshold: {"zh-Hans": "在原始数据中解码命令的长度限制（如果有任何引人注目性能问题当扫描）。 默认 = 512KB。​零或空值将关闭门槛（去除任何这样的限基于文件大小）。", "zh-Hant": "在原始數據中解碼命令的長度限制（如果有任何引人注目性能問題當掃描）。 默認 = 512KB。​零或空值將關閉門檻（去除任何這樣的限基於文件大小）。"}
  files_entropy_filesize_limit:
-  zh-Hans: "使用规范化数据的签名的熵文件大小限制（默认为512KB）。​当熵限制和熵文件大小限制都超出时，为了降低误报的风险，一些使用标准化数据的签名将被忽略。"
-  zh-Hant: "使用規範化資料的簽名的熵檔案大小限制（默認為512KB）。​當熵限制和熵檔案大小限制都超出時，為了降低誤報的風險，一些使用標準化資料的簽章將被忽略。"
+  zh-Hans: "使用规范化数据的签名的熵文件大小限制（默认为256KB）。​当熵限制和熵文件大小限制都超出时，为了降低误报的风险，一些使用标准化数据的签名将被忽略。"
+  zh-Hant: "使用規範化資料的簽名的熵檔案大小限制（默認為256KB）。​當熵限制和熵檔案大小限制都超出時，為了降低誤報的風險，一些使用標準化資料的簽章將被忽略。"
  files_entropy_limit:
   zh_Hans: "使用规范化数据的签名的熵限制（默认为7.7）。​在此上下文中，熵被定义为被扫描文件内容的香农熵。​当熵限制和熵文件大小限制都超出时，为了降低误报的风险，一些使用标准化数据的签名将被忽略。"
   zh_Hant: "使用規範化資料的簽章的熵極限（默認為7.7）。​在此上下文中，熵被定義為被掃描檔案內容的香農熵。​當熵限制和熵檔案大小限制都超出時，為了降低誤報的風險，一些使用標準化資料的簽章將被忽略。"

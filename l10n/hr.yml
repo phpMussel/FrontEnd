@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Croatian language data (last modified: 2025.06.06).
+# This file: Croatian language data (last modified: 2025.06.10).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -33,7 +33,7 @@ config:
  core_disabled_channels: "Ovo se može koristiti kako bi se spriječilo phpMussel da koristi određene kanale prilikom slanja zahtjeva."
  core_error_log: "Datoteka za bilježenje svih otkrivenih nefatalnih pogrešaka. Navedite naziv datoteke, ili ostavite prazno za onemogućavanje."
  core_hide_version: "Sakriti informacije o verziji iz zapisa i ispisa stranice? True/Istinito = Da; False/Lažno = Ne [Zadano]."
- core_ipaddr: "Gdje pronaći IP adresu zahtjeva za povezivanje? (Korisno za usluge kao što je Cloudflare i slično). Zadano = REMOTE_ADDR. UPOZORENJE: Promijenite ovo samo ako znate što radite!"
+ core_ipaddr: "Gdje pronaći IP adresu zahtjeva za povezivanje? (Korisno za usluge kao što je Cloudflare). Zadano = REMOTE_ADDR. UPOZORENJE: Promijenite ovo samo ako znate što radite!"
  core_lang: "Navedite zadani jezik za phpMussel."
  core_lang_override: "Lokalizirati prema HTTP_ACCEPT_LANGUAGE kad god je to moguće? True/Istinito = Da [Zadano]; False/Lažno = Ne."
  core_log_rotation_action: "Rotacija dnevnika ograničava broj datoteka dnevnika koje bi trebale postojati u bilo kojem trenutku. Kada se kreiraju nove datoteke dnevnika, ako ukupni broj datoteka dnevnika premaši navedeno ograničenje, izvršit će se navedena radnja. Ovdje možete odrediti željenu radnju."
@@ -65,12 +65,12 @@ config:
  files_check_archives: "Pokušati provjeriti sadržaj arhive? False/Lažno = Ne provjeravajte; True/Istinito = Provjerite [Zadano]. Podržano: Zip (zahtijeva libzip), Tar, Rar (zahtijeva rar ekstenziju)."
  files_corrupted_exe: "Oštećene datoteke i pogreške raščlanjivanje. False/Lažno = Ignorirajte; True/Istinito = Blokiraj [Zadano]. Otkriti i blokirati potencijalno oštećene PE (Portable Executable) datoteke? Često (ali ne uvijek), kada su određeni aspekti PE datoteke oštećeni ili se ne mogu ispravno analizirati, to može ukazivati ​​na virusnu infekciju. Ako je programer virusa svjestan kako antivirusni program analizira PE datoteke, može to posebno pokušati spriječiti, kako bi dopustio da njihov virus ostane neotkriven."
  files_decode_threshold: "Maksimalna duljina neobrađenih podataka gdje bi se trebale otkriti naredbe za dekodiranje (u slučaju da postoje vidljivi problemi s performansama tijekom skeniranja). Zadano = 512KB. Nula uklanja sva takva ograničenja na temelju veličine datoteke."
- files_entropy_filesize_limit: "Ograničenje veličine datoteke entropije za potpise koji koriste normalizirane podatke (zadana vrijednost je 512KB). Kada se prekorače i ograničenje entropije i ograničenje veličine datoteke entropije, kako bi se smanjio rizik od lažno pozitivnih, neki će se potpisi koji koriste normalizirane podatke zanemariti."
+ files_entropy_filesize_limit: "Ograničenje veličine datoteke entropije za potpise koji koriste normalizirane podatke (zadana vrijednost je 256KB). Kada se prekorače i ograničenje entropije i ograničenje veličine datoteke entropije, kako bi se smanjio rizik od lažno pozitivnih, neki će se potpisi koji koriste normalizirane podatke zanemariti."
  files_entropy_limit: "Ograničenje entropije za potpise koji koriste normalizirane podatke (zadana vrijednost je 7.7). U ovom kontekstu, entropija se definira kao shannonova entropija sadržaja datoteke koja se skenira. Kada se prekorače i ograničenje entropije i ograničenje veličine datoteke entropije, kako bi se smanjio rizik od lažno pozitivnih, neki potpisi koji koriste normalizirane podatke će se zanemariti."
  files_filesize_archives: "Primijeniti crnu/bijelu listu veličine datoteka na sadržaj arhiva? False/Lažno = Ne (sve na sivoj listi); True/Istinito = Da [Zadano]."
  files_filesize_limit: "Ograničenje veličine datoteke u KB. 65536 = 64MB [Zadano]; 0 = Bez ograničenja (uvijek na sivoj listi). Prihvatljiva je bilo koja (pozitivna) brojčana vrijednost. To može biti korisno kada vaša PHP konfiguracija ograničava količinu memorije koju proces može zadržati ili ako vaša PHP konfiguracija ograničava veličinu datoteke za prijenos."
  files_filesize_response: "Što učiniti s datotekama koje premašuju ograničenje veličine datoteke (ako ograničenje postoji). False/Lažno = Stavi na bijelu listu; True/Istinito = Stavi na crnu listu [Zadano]."
- files_filetype_archives: "Primijeniti crnu/bijelu listu tipova datoteka na sadržaj arhiva? False/Lažno = Ne (sve na sivoj listi) [Zadano]; True/Istinito = Da."
+ files_filetype_archives: "Primijeniti crnu/bijelu listu vrsta datoteka na sadržaj arhiva? False/Lažno = Ne (sve na sivoj listi) [Zadano]; True/Istinito = Da."
  files_filetype_blacklist: "Crna lista:"
  files_filetype_greylist: "Siva lista:"
  files_filetype_whitelist: "Bijela lista:"
@@ -132,6 +132,7 @@ config:
  virustotal_vt_quota_rate: "Prema dokumentaciji Virus Total API-ja, "ograničeno je na najviše 4 zahtjeva bilo koje prirode u bilo kojem datom vremenskom okviru od 1 minute. Ako koristite honeyclient, honeypot ili bilo koju drugu automatizaciju koja će VirusTotalu pružati resurse, a ne samo dohvaćati izvješća, imate pravo na veću kvotu stope zahtjeva". Standardno, phpMussel će se strogo pridržavati ovih ograničenja, ali zbog mogućnosti povećanja ovih kvota, ove dvije direktive su dane kao sredstvo kojim možete uputiti phpMussel kojeg se ograničenja treba pridržavati. Preporučuje se povećanje ovih vrijednosti <strong><em>SAMO</em></strong> ako vam je to navedeno, ali ako ste naišli na probleme vezane uz dosezanje svoje kvote, smanjenje tih vrijednosti <strong><em>PONEKAD MOŽE</em></strong> pomoći kod tih problema. Vaše ograničenje određeno je kao <code>vt_quota_rate</code> zahtjeva bilo koje prirode u bilo kojem danom vremenskom okviru od <code>vt_quota_time</code> minuta."
  virustotal_vt_quota_time: "(Pogledajte opis iznad)."
  virustotal_vt_suspicion_level: "Standardno, phpMussel će ograničiti koje datoteke skenira pomoću Virus Total API-ja na one datoteke koje smatra "sumnjivima". Ovo ograničenje možete opcionalno prilagoditi promjenom vrijednosti direktive <code>vt_suspicion_level</code>."
+ virustotal_vt_weighting: "Treba li phpMussel primijeniti rezultate skeniranja Virus Total API-ja kao detekcije ili kao težinu detekcije? Ova direktiva postoji jer, iako bi skeniranje datoteke pomoću više motora (kao što to čini Virus Total) trebalo rezultirati povećanom stopom otkrivanja (a time i većim brojem uhvaćenih zlonamjernih datoteka), ono također može rezultirati većim brojem lažno pozitivnih, i stoga je u nekim okolnostima možda bolje koristiti rezultate skeniranja kao ocjenu pouzdanosti, a ne kao konačan zaključak. Ako se koristi vrijednost 0, rezultati skeniranja Virus Total API-ja bit će primijenjeni kao detekcije, i stoga, ako bilo koji motor koji koristi Virus Total označi datoteku koja se skenira kao zlonamjernu, phpMussel će datoteku smatrati zlonamjernom. Ako se koristi bilo koja druga vrijednost, rezultati skeniranja Virus Total API-ja bit će primijenjeni kao težina detekcije, i stoga će broj motora koje Virus Total koristi, a koji označavaju datoteku koja se skenira kao zlonamjernu, poslužiti kao ocjena pouzdanosti (ili težina detekcije) za procjenu treba li phpMussel skeniranu datoteku smatrati zlonamjernom (korištena vrijednost predstavljat će minimalni rezultat pouzdanosti ili težinu potrebnu da bi se smatralo zlonamjernim). Vrijednost 0 se koristi kao standard."
 confirm:
  Action: "Jeste li sigurni da želite "%s"?"
 field:
@@ -164,6 +165,9 @@ field:
  Your version: "Vaša verzija"
  log_rotation_archive: "Najprije arhivirajte, a zatim izbrišite najstarije datoteke dnevnika, tako da ograničenja više ne bi prekoračila."
  log_rotation_delete: "Izbrišite najstarije datoteke dnevnika, tako da ograničenja više ne bi prekoračila."
+ vt_suspicion_level_all: "Skeniraj sve datoteke."
+ vt_suspicion_level_executable: "Skeniraj datoteke s heurističkom težinom, izvršne datoteke, i datoteke koje potencijalno sadrže izvršne podatke.\nPrimjeri izvršnih datoteka, i datoteka koje potencijalno sadrže izvršne podatke uključuju Windows PE datoteke, Linux ELF datoteke, Mach-O datoteke, DOCX datoteke, ZIP datoteke, itd."
+ vt_suspicion_level_heuristic_only: "Skeniraj samo datoteke s heurističkom težinom.\nDatoteke će se skenirati samo ako imaju određenu heurističku težinu. Heuristička težina može se dobiti iz potpisa koji traže uobičajene otiske prstiju povezane s potencijalnom infekcijom, ali koji ne jamče nužno infekciju. U takvim slučajevima, može poslužiti za davanje drugog mišljenja za rezultate koji opravdavaju sumnju, ali inače ne pružaju nikakvu sigurnost."
 hints_logging_datetime: "Koristan savjet: Nazivima datoteka dnevnika možete priložiti informacije o datumu/vremenu pomoću rezerviranih mjesta formata vremena. Dostupni rezervirani prostori formata vremena prikazani su na {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
  Čpp.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Što je "PDO DSN"? Kako mogu koristiti PDO s phpMussel-om?</a></em>"
@@ -185,6 +189,9 @@ hints_time_format: |
  <code class="s">{s}</code> – Sekunde – Npr., 49.<br />
  <code class="s">{tz}</code> – Vremenska zona (bez dvotočke) – Npr., +0800.<br />
  <code class="s">{t:z}</code> – Vremenska zona (s dvotočkom) – Npr., +08:00.
+hints_xlists:
+ Kako ovo funkcionira.: "Ako vaš sustav dopušta prijenos samo određenih vrsta datoteka, ili ako vaš sustav izričito odbija određene vrste datoteka, navođenje tih vrsta datoteka na bijelim, crnim i sivim listama može povećati brzinu skeniranja tako što će skripti omogućiti preskakanje određenih vrsta datoteka. Format je CSV (vrijednosti odvojene zarezom)."
+ Logički redoslijed obrade.: "Ako je vrsta datoteka na bijeloj listi, nemojte skenirati i nemojte blokirati datoteku, te nemojte provjeravati datoteku na crnoj ili sivoj listi. Ako je vrsta datoteka na crnoj listi, nemojte skenirati datoteku, ali je blokirajte, i nemojte provjeravati datoteku na sivoj listi. Ako je siva lista prazna ili ako siva lista nije prazna i vrsta datoteka je na sivoj listi, skenirajte datoteku kao i obično i odredite hoće li je blokirati na temelju rezultata skeniranja, ali ako siva lista nije prazna i vrsta datoteka nije na sivoj listi, tretiraj datoteku kao na crnoj listi, dakle ne skeniraj to je već blokiraj to."
 Some useful links: |+
  Neke korisne poveznice:<br />
      <ul class="pieul">

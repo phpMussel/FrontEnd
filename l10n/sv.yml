@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2025.03.29).
+# This file: Swedish language data (last modified: 2025.06.09).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -33,7 +33,7 @@ config:
  core_disabled_channels: "Detta kan användas för att förhindra att phpMussel använder särskilda kanaler när man skickar förfrågningar."
  core_error_log: "En fil för att logga eventuella icke-dödliga fel som upptäcks. Ange ett filnamn, eller lämna tomt för att inaktivera."
  core_hide_version: "Dölj versionsinformation från loggar och sidoutgång? True = Ja; False = Nej [Standard]."
- core_ipaddr: "Var hittar du IP-adressen för anslutningsförfrågningar? (Användbar för tjänster som Cloudflare och liknande). Standard = REMOTE_ADDR. VARNING: Ändra inte detta om du inte vet vad du gör!"
+ core_ipaddr: "Var hittar du IP-adressen för anslutningsförfrågningar? (Användbar för tjänster som Cloudflare). Standard = REMOTE_ADDR. VARNING: Ändra inte detta om du inte vet vad du gör!"
  core_lang: "Ange standardspråk för phpMussel."
  core_lang_override: "Lokalisera enligt HTTP_ACCEPT_LANGUAGE när det är möjligt? True = Ja [Standard]; False = Nej."
  core_log_rotation_action: "Loggrotering begränsar antalet loggfiler som ska existera vid en gång. När nya loggfiler skapas, om det totala antalet loggfiler överstiger den angivna gränsen, den angivna åtgärden kommer att utföras. Du kan ange önskad åtgärd här."
@@ -65,7 +65,7 @@ config:
  files_check_archives: "Kontrollera innehållet i arkiven? False = Kontrollera inte; True = Kontrollera [Standard]. Stöds: Zip (kräver libzip), Tar, Rar (kräver rar förlängningen)."
  files_corrupted_exe: "Skadade filer och behandlingsfel. False = Ignorera; True = Blockera [Standard]. Upptäcka och blockera potentiellt skadade PE-filer (Portable Executable)? Ofta (men inte alltid), när vissa aspekter av en PE-fil är skadade eller inte kan behandlas korrekt, kan det indikera en virusinfektion. De processer som används av de flesta antivirusprogram för att upptäcka virus i PE-filer kräver analysering av dessa filer på vissa sätt, som, om programmeraren av ett virus är medveten om, specifikt kommer att försöka förhindra, för att låta deras virus förbli oupptäckt."
  files_decode_threshold: "Tröskel för längden på rådata inom vilka avkodningskommandon ska upptäckas (om det finns några märkbara prestandaproblem när du skannar). Standard = 512KB. Noll eller null inaktiverar tröskeln (därmed ta bort en sådan begränsning baserad på filstorlek)."
- files_entropy_filesize_limit: "Entropifilstorleksgränsen för signaturer som använder normaliserade data (standard är 512KB). När både entropigränsen och entropifilstorleksgränsen överskrids, för att minska risken för falska positiva, kommer vissa signaturer som använder normaliserade data att ignoreras."
+ files_entropy_filesize_limit: "Entropifilstorleksgränsen för signaturer som använder normaliserade data (standard är 256KB). När både entropigränsen och entropifilstorleksgränsen överskrids, för att minska risken för falska positiva, kommer vissa signaturer som använder normaliserade data att ignoreras."
  files_entropy_limit: "Entropigränsen för signaturer som använder normaliserade data (standard är 7.7). I detta sammanhang definieras entropi som shannon-entropin för innehållet i filen som skannas. När både entropigränsen och entropifilstorleksgränsen överskrids, för att minska risken för falska positiva, kommer vissa signaturer som använder normaliserade data att ignoreras."
  files_filesize_archives: "Ärva svartlistan/vitlistan till innehållet i arkiven? False = Nej (bara grålista allt); True = Ja [Standard]."
  files_filesize_limit: "Filstorleksgräns i KB. 65536 = 64MB [Standard]; 0 = Ingen gräns (alltid grålistad). Accepterar alla positiva numeriska värden. Detta kan vara användbart när din PHP-konfiguration begränsar mängden minne en process kan innehålla eller om din PHP-konfiguration begränsar filstorleken för uppladdningar."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2025.03.29).
+# This file: Malay language data (last modified: 2025.06.09).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -33,7 +33,7 @@ config:
  core_disabled_channels: "Ini boleh digunakan untuk menghalang phpMussel daripada menggunakan saluran tertentu semasa menghantar permintaan."
  core_error_log: "Fail untuk mengelog sebarang ralat bukan maut yang dikesan. Tentukan nama fail, atau biarkan kosong untuk nyahaktifkan."
  core_hide_version: "Sembunyikan maklumat versi daripada log dan keluaran halaman? True = Ya; False = Tidak [Lalai]."
- core_ipaddr: "Dimana untuk mencari alamat IP daripada permintaan penyambungan? (Berguna untuk perkhidmatan seperti Cloudflare dan seumpamanya). Lalai = REMOTE_ADDR. AMARAN: Jangan ganti ini melainkan anda tahu apa yang anda lakukan!"
+ core_ipaddr: "Dimana untuk mencari alamat IP daripada permintaan penyambungan? (Berguna untuk perkhidmatan seperti Cloudflare). Lalai = REMOTE_ADDR. AMARAN: Jangan ganti ini melainkan anda tahu apa yang anda lakukan!"
  core_lang: "Tentukan bahasa lalai untuk phpMussel."
  core_lang_override: "Setempatkan mengikut HTTP_ACCEPT_LANGUAGE apabila boleh? True = Ya [Lalai]; False = Tidak."
  core_log_rotation_action: "Putaran log mengehadkan bilangan fail log yang sepatutnya wujud pada satu-satu masa. Apabila fail log baharu dicipta, jika jumlah bilangan fail log melebihi had yang ditentukan, tindakan yang ditentukan akan dilakukan. Anda boleh menentukan tindakan yang diingini disini."
@@ -65,7 +65,7 @@ config:
  files_check_archives: "Cuba menyemak kandungan arkib? False = Jangan semak; True = Semak [Lalai]. Disokong: Zip (memerlukan libzip), Tar, Rar (memerlukan sambungan rar)."
  files_corrupted_exe: "Fail rosak dan ralat penghurai. False = Abaikan; True = Sekat [Lalai]. Kesan dan sekat fail PE (Portable Executable) yang berpotensi rosak? Selalunya (tetapi tidak selalu), apabila aspek tertentu fail PE adalah rosak atau tidak dapat dihuraikan dengan betul, ia boleh menunjukkan jangkitan virus. Proses yang digunakan oleh kebanyakan program anti-virus untuk mengesan virus dalam fail PE memerlukan menghuraikan fail tersebut dengan cara tertentu, yang pengaturcara virus akan spesifik cuba dihalang jika mereka sedarnya, untuk membolehkan virus mereka kekal sebagai tidak boleh dikesan."
  files_decode_threshold: "Ambang untuk panjang data mentah dimana perintah nyahkod harus dikesan (sekiranya terdapat sebarang isu prestasi yang ketara semasa mengimbas). Lalai = 512KB. Sifar akan melumpuhkan ambang ini (mengalih keluar sebarang had sedemikian berdasarkan saiz fail)."
- files_entropy_filesize_limit: "Had saiz fail entropi untuk tandatangan yang menggunakan data ternormal (lalai ialah 512KB). Apabila kedua-dua had entropi dan had saiz fail entropi dilampaui, untuk mengurangkan risiko positif palsu, beberapa tandatangan yang menggunakan data ternormal akan diabaikan."
+ files_entropy_filesize_limit: "Had saiz fail entropi untuk tandatangan yang menggunakan data ternormal (lalai ialah 256KB). Apabila kedua-dua had entropi dan had saiz fail entropi dilampaui, untuk mengurangkan risiko positif palsu, beberapa tandatangan yang menggunakan data ternormal akan diabaikan."
  files_entropy_limit: "Had entropi untuk tandatangan yang menggunakan data ternormal (lalai ialah 7.7). Dalam konteks ini, entropi ditakrifkan sebagai entropi shannon kandungan fail yang sedang diimbas. Apabila kedua-dua had entropi dan had saiz fail entropi dilampaui, untuk mengurangkan risiko positif palsu, beberapa tandatangan yang menggunakan data ternormal akan diabaikan."
  files_filesize_archives: "Bawa senaraihitamkan/senaraiputihkan bersaiz fail ke kandungan arkib? False = Tidak (hanya senaraikelabukan semuanya); True = Ya [Lalai]."
  files_filesize_limit: "Had saiz fail dalam KB. 65536 = 64MB [Lalai]; 0 = Tiada had (sentiasa disenaraikelabukan). Sebarang nilai berangka (positif) diterima. Ini boleh berguna apabila konfigurasi PHP anda mengehadkan jumlah memori yang boleh disimpan oleh proses atau jika konfigurasi PHP anda mengehadkan saiz fail dimuat naik."

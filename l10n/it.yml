@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2025.03.29).
+# This file: Italian language data (last modified: 2025.06.09).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -33,7 +33,7 @@ config:
  core_disabled_channels: "Questo può essere usato per impedire a phpMussel di usare canali particolari quando si inviano richieste."
  core_error_log: "Un file per la registrazione di eventuali errori non fatali rilevati. Specificare un nome di file, o lasciare vuoto per disabilitare."
  core_hide_version: "Nascondi informazioni sulla versione dai registri e l'output della pagina? True = Sì; False = No [Predefinito]."
- core_ipaddr: "Dove trovare l'indirizzo IP di collegamento richiesta? (Utile per servizi come Cloudflare e simili). Predefinito = REMOTE_ADDR. AVVISO: Non modificare questa se non sai quello che stai facendo!"
+ core_ipaddr: "Dove trovare l'indirizzo IP di collegamento richiesta? (Utile per servizi come Cloudflare). Predefinito = REMOTE_ADDR. AVVISO: Non modificare questa se non sai quello che stai facendo!"
  core_lang: "Specifica la lingua predefinita per phpMussel."
  core_lang_override: "Localizzare secondo HTTP_ACCEPT_LANGUAGE quando possibile? True = Sì [Predefinito]; False = No."
  core_log_rotation_action: "La rotazione dei log limita il numero di file di log che dovrebbero esistere in qualsiasi momento. Quando vengono creati nuovi file di log, se il numero totale di file di log supera il limite specificato, verrà eseguita l'azione specificata. Qui puoi specificare l'azione desiderato."
@@ -65,7 +65,7 @@ config:
  files_check_archives: "Tenta per verifica il contenuti degli archivi? False = No (no verifica); True = Sì (fare verifica) [Predefinito]. Supportato: Zip (richiede libzip), Tar, Rar (richiede l'estensione rar)."
  files_corrupted_exe: "Corrotto file e parsare errori. False = Ignorarli; True = Bloccarli [Predefinito]. Rilevare e bloccare i potenzialmente corrotti PE (portatile eseguibili) file? Spesso (ma non sempre), quando alcuni aspetti di un PE file sono corrotto o non può essere parsato correttamente, tale può essere indicativo di una virale infezione. I processi utilizzati dalla maggior parte dei antivirus programmi per rilevare i virus all'intero PE file richiedono parsare quei file in certi modi, di cui, se il programmatore di un virus è consapevole di, sarà specificamente provare di prevenire, al fine di abilita loro virus di rimanere inosservato."
  files_decode_threshold: "Soglia per la lunghezza dei grezzi dati dove decodificare comandi dovrebbe essere rilevati (nel caso in cui vi siano notevoli problemi di prestazioni durante la scansione). Predefinito = 512KB. Un zero o un nullo valore disabilita la soglia (rimuovere tale limitazione basata sulla dimensione dei file)."
- files_entropy_filesize_limit: "Il limite della dimensione del file di entropia per le firme che utilizzano dati normalizzati (il valore predefinito è 512KB). Quando vengono superati sia il limite dell'entropia sia il limite della dimensione del file di entropia, per ridurre il rischio di falsi positivi, alcune firme che utilizzano dati normalizzati verranno ignorate."
+ files_entropy_filesize_limit: "Il limite della dimensione del file di entropia per le firme che utilizzano dati normalizzati (il valore predefinito è 256KB). Quando vengono superati sia il limite dell'entropia sia il limite della dimensione del file di entropia, per ridurre il rischio di falsi positivi, alcune firme che utilizzano dati normalizzati verranno ignorate."
  files_entropy_limit: "Il limite di entropia per le firme che utilizzano dati normalizzati (il valore predefinito è 7.7). In questo contesto, l'entropia è definita come l'entropia di Shannon del contenuto del file sottoposto a scansione. Quando vengono superati sia il limite dell'entropia sia il limite della dimensione del file di entropia, per ridurre il rischio di falsi positivi, alcune firme che utilizzano dati normalizzati verranno ignorate."
  files_filesize_archives: "Eredita file dimensione limite blacklist/whitelist al contenuti degli archivi? False = No (appena greylist tutto); True = Sì [Predefinito]."
  files_filesize_limit: "File dimensione limite in KB. 65536 = 64MB [Predefinito]; 0 = Nessun limite (sempre sul greylist), qualsiasi (positivo) numerico valore accettato. Questo può essere utile quando la configurazione di PHP limita la quantità di memoria che un processo può contenere o se i configurazione ha limitato la dimensione dei file caricamenti."

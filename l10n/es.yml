@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2025.03.29).
+# This file: Spanish language data (last modified: 2025.06.09).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -33,7 +33,7 @@ config:
  core_disabled_channels: "Esto se puede usar para evitar que phpMussel use canales particulares al enviar solicitudes."
  core_error_log: "Un archivo para registrar cualquier error detectado que no sea fatal. Especificar el nombre del archivo, o dejar en blanco para desactivar."
  core_hide_version: "¿Ocultar información de la versión de los archivos de registro y la salida de la página? True = Sí; False = No [Predefinido]."
- core_ipaddr: "¿Dónde puedo encontrar el IP dirección de las solicitudes entrantes? (Útil para servicios como Cloudflare y tales). Predefinido = REMOTE_ADDR. ¡AVISO: No cambie esto a menos que sepas lo que estás haciendo!"
+ core_ipaddr: "¿Dónde puedo encontrar el IP dirección de las solicitudes entrantes? (Útil para servicios como Cloudflare). Predefinido = REMOTE_ADDR. ¡AVISO: No cambie esto a menos que sepas lo que estás haciendo!"
  core_lang: "Especifique la predefinido del lenguaje para phpMussel."
  core_lang_override: "¿Localizar según HTTP_ACCEPT_LANGUAGE siempre que sea posible? True = Sí [Predefinido]; False = No."
  core_log_rotation_action: "La rotación de registros limita la cantidad de archivos de registro que deberían existir al mismo tiempo. Cuando se crean nuevos archivos de registro, si la cantidad total de archivos de registro excede el límite especificado, se realizará la acción especificada. Puede especificar la acción deseada aquí."
@@ -65,7 +65,7 @@ config:
  files_check_archives: "Intente comprobar el contenido de los compactados archivos? False = No (no comprobar); True = Sí (comprobar) [Predefinido]. Soportado: Zip (requiere libzip), Tar, Rar (requiere la extensión rar)."
  files_corrupted_exe: "Corrompido archivos y procesamiento errores. False = Ignorar; True = Bloquear [Predefinido]. Detectar y bloquear potencialmente corrompido PE (Portátil Ejecutable) archivos? Frecuentemente (pero no siempre), cuando ciertos aspectos de un PE archivo están corrompido, dañados o no podrá ser analizado correctamente, lo puede ser indicativo de una infección viral. Los procesos utilizados por la mayoría de los antivirus programas para detectar un virus en PE archivos requerir analizando esos archivos en ciertas maneras, que, si el programador de un virus es consciente de, intentará específicamente para prevenir, con el fin de permitir su virus permanezca sin ser detectado."
  files_decode_threshold: "Opcional limitación a la longitud de datos a que dentro de decodificación comandos deben ser detectados (en caso de que los hay notable rendimiento problemas mientras que escaneando). Predefinido = 512KB. Cero o nulo valor desactiva la limitación (eliminando cualquier tal limitación basado sobre la tamaño de archivos)."
- files_entropy_filesize_limit: "El límite de tamaño del archivo de entropía para firmas que utilizan datos normalizados (el valor predeterminado es 512KB). Cuando se excede tanto el límite de entropía como el límite de tamaño del archivo de entropía, para reducir el riesgo de falsos positivos, se ignorarán algunas firmas que utilizan datos normalizados."
+ files_entropy_filesize_limit: "El límite de tamaño del archivo de entropía para firmas que utilizan datos normalizados (el valor predeterminado es 256KB). Cuando se excede tanto el límite de entropía como el límite de tamaño del archivo de entropía, para reducir el riesgo de falsos positivos, se ignorarán algunas firmas que utilizan datos normalizados."
  files_entropy_limit: "El límite de entropía para firmas que utilizan datos normalizados (el valor predeterminado es 7.7). En este contexto, la entropía se define como la entropía de Shannon del contenido del archivo que se está escaneando. Cuando se excede tanto el límite de entropía como el límite de tamaño del archivo de entropía, para reducir el riesgo de falsos positivos, se ignorarán algunas firmas que utilizan datos normalizados."
  files_filesize_archives: "Heredar tamaño de archivos blacklist/whitelist para los contenidos de compactados archivos? False = No (todo en la greylist); True = Sí [Predefinido]."
  files_filesize_limit: "Límite del tamaño de archivos en KB. 65536 = 64MB [Predefinido]; 0 = Sin límite (siempre en la greylist), cualquier (positivo) numérico valor aceptado. Esto puede ser útil cuando su PHP configuración limita la cantidad de memoria un proceso puede contener o si su PHP configuración limita el tamaño de archivo subidos."

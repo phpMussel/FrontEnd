@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data (last modified: 2025.03.29).
+# This file: Romanian language data (last modified: 2025.06.09).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -33,7 +33,7 @@ config:
  core_disabled_channels: "Acest lucru poate fi folosit pentru a împiedica phpMussel să folosească anumite canale atunci când trimite solicitări."
  core_error_log: "Un fișier pentru înregistrarea oricăror erori non-fatale detectate. Specificați un nume de fișier, sau lăsați necompletat pentru a dezactiva."
  core_hide_version: "Ascundeți informațiile despre versiune din jurnalele și rezultatele paginii? True = Da; False = Nu [Implicit]."
- core_ipaddr: "Unde găsiți adresa IP a solicitărilor de conectare? (Util pentru servicii precum Cloudflare et al). Implicit = REMOTE_ADDR. AVERTIZARE: Nu schimba asta dacă nu înțelegi ce faci!"
+ core_ipaddr: "Unde găsiți adresa IP a solicitărilor de conectare? (Util pentru servicii precum Cloudflare). Implicit = REMOTE_ADDR. AVERTIZARE: Nu schimba asta dacă nu înțelegi ce faci!"
  core_lang: "Specificați limba implicită pentru phpMussel."
  core_lang_override: "Localizați conform HTTP_ACCEPT_LANGUAGE ori de câte ori este posibil? True = Da [Implicit]; False = Nu."
  core_log_rotation_action: "Rotația jurnalului limitează numărul de fișiere jurnal care ar trebui să existe la un moment dat. Când sunt create fișiere jurnal noi, dacă numărul total de fișiere jurnal depășește limita specificată, acțiunea specificată va fi efectuată. Aici puteți specifica acțiunea dorită."
@@ -65,7 +65,7 @@ config:
  files_check_archives: "Încercați să verificați conținutul arhivelor? False = Nu verifica; True = Verifica [Implicit]. Recunoscut: Zip (necesită libzip), Tar, Rar (necesită extensia rar)."
  files_corrupted_exe: "Fișiere corupte și erori de analiză. False = Ignora; True = Blocați [Implicit]. Detectați și blocați fișierele PE (Portable Executable) potențial corupte? Adesea (dar nu întotdeauna), atunci când anumite aspecte ale unui fișier PE sunt corupte sau nu pot fi analizate corect, poate indica o infecție virală. Procesele utilizate de majoritatea programelor antivirus pentru a detecta viruși în fișierele PE necesită analizarea acelor fișiere în anumite moduri, pe care, dacă programatorul unui virus este conștient, va încerca în mod special să le prevină, pentru a permite virusului lor să rămână nedetectat."
  files_decode_threshold: "Pragul pentru lungimea datelor brute în care ar trebui detectate comenzile de decodare (în cazul în care există probleme de performanță vizibile în timpul scanării). Implicit = 512KB. Zero sau null dezactivează pragul (eliminând orice astfel de limitare bazată pe dimensiunea fișierului)."
- files_entropy_filesize_limit: "Limita de entropie a dimensiunii fișierelor pentru semnăturile care utilizează date normalizate (implicit este 512KB). Când atât limita de entropie, cât și limita de dimensiune a fișierului de entropie sunt depășite, pentru a reduce riscul de fals pozitive, unele semnături care folosesc date normalizate vor fi ignorate."
+ files_entropy_filesize_limit: "Limita de entropie a dimensiunii fișierelor pentru semnăturile care utilizează date normalizate (implicit este 256KB). Când atât limita de entropie, cât și limita de dimensiune a fișierului de entropie sunt depășite, pentru a reduce riscul de fals pozitive, unele semnături care folosesc date normalizate vor fi ignorate."
  files_entropy_limit: "Limita de entropie pentru semnăturile care utilizează date normalizate (implicit este 7.7). În acest context, entropia este definită ca entropia shannon a conținutului fișierului scanat. Când atât limita de entropie, cât și limita de dimensiune a fișierului de entropie sunt depășite, pentru a reduce riscul de fals pozitive, unele semnături care folosesc date normalizate vor fi ignorate."
  files_filesize_archives: "Transferați lista neagră/albă cu dimensiunea fișierelor în conținutul arhivelor? False = Nu (doar pe listă gri totul); True = Da [Implicit]."
  files_filesize_limit: "Limită de dimensiune a fișierului în KB. 65536 = 64MB [Implicit]; 0 = Fără limită (intotdeauna pe lista gri). Se acceptă orice valoare numerică (pozitivă). Acest lucru poate fi util atunci când configurația dvs. PHP limitează cantitatea de memorie pe care o poate deține un proces sau dacă configurația dvs. PHP limitează dimensiunea fișierelor încărcate."

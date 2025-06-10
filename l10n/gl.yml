@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Galician language data (last modified: 2025.03.29).
+# This file: Galician language data (last modified: 2025.06.09).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -33,7 +33,7 @@ config:
  core_disabled_channels: "Pódese usar para evitar que phpMussel use determinadas canles ao enviar solicitudes."
  core_error_log: "Un ficheiro para rexistrar os erros non graves detectados. Especifique un nome de ficheiro, ou déixeo en branco para desactivalo."
  core_hide_version: "Ocultar a información da versión dos rexistros e da saída da páxina? True/Verdadeiro = Si; False/Falso = Non [Predeterminado]."
- core_ipaddr: "Onde atopar o enderezo IP das solicitudes de conexión? (Útil para servizos como Cloudflare e similares). Predeterminado = REMOTE_ADDR. AVISO: Non cambies isto a menos que saibas o que estás facendo!"
+ core_ipaddr: "Onde atopar o enderezo IP das solicitudes de conexión? (Útil para servizos como Cloudflare). Predeterminado = REMOTE_ADDR. AVISO: Non cambies isto a menos que saibas o que estás facendo!"
  core_lang: "Especifique o idioma predeterminado para phpMussel."
  core_lang_override: "Localizar segundo HTTP_ACCEPT_LANGUAGE sempre que sexa posible? True/Verdadeiro = Si [Predeterminado]; False/Falso = Non."
  core_log_rotation_action: "A rotación do rexistro limita o número de ficheiros de rexistro que deberían existir en cada momento. Cando se crean novos ficheiros de rexistro, se o número total de ficheiros de rexistro supera o límite especificado, realizarase a acción especificada. Podes especificar a acción desexada aquí."
@@ -65,7 +65,7 @@ config:
  files_check_archives: "Comprobar o contido dos arquivos? False/Falso = Non comprobe; True/Verdadeiro = Comprobe [Predeterminado]. Soportado: Zip (require libzip), Tar, Rar (require a extensión rar)."
  files_corrupted_exe: "Ficheiros danados e erros de análise. False/Falso = Ignorar; True/Verdadeiro = Bloquear [Predeterminado]. Detectar e bloquear ficheiros PE (Executable Portátil) potencialmente danados? Moitas veces (pero non sempre), cando certos aspectos dun ficheiro PE están corrompidos ou non se poden analizar correctamente, pode ser indicativo dunha infección viral. Os procesos utilizados pola maioría dos programas antivirus para detectar virus en ficheiros PE requiren analizar eses ficheiros de determinadas formas, que, se o programador dun virus é consciente, tratará especificamente de previr, para que o seu virus non se detecte."
  files_decode_threshold: "Limiar para a lonxitude dos datos en bruto dentro do cal se deben detectar os comandos de decodificación (no caso de que exista algún problema de rendemento notable durante a exploración). Predeterminado = 512KB. Cero ou nulo desactiva o limiar (eliminando calquera tal limitación en función do tamaño do ficheiro)."
- files_entropy_filesize_limit: "O límite de tamaño do ficheiro de entropía para sinaturas que usan datos normalizados (o valor predeterminado é 512KB). Cando se superan tanto o límite de entropía como o límite de tamaño do ficheiro de entropía, para reducir o risco de falsos positivos, ignoraranse algunhas sinaturas que utilicen datos normalizados."
+ files_entropy_filesize_limit: "O límite de tamaño do ficheiro de entropía para sinaturas que usan datos normalizados (o valor predeterminado é 256KB). Cando se superan tanto o límite de entropía como o límite de tamaño do ficheiro de entropía, para reducir o risco de falsos positivos, ignoraranse algunhas sinaturas que utilicen datos normalizados."
  files_entropy_limit: "O límite de entropía para sinaturas que usan datos normalizados (o valor predeterminado é 7.7). Neste contexto, a entropía defínese como a entropía shannon do contido do ficheiro que se está a escanear. Cando se superan tanto o límite de entropía como o límite de tamaño do ficheiro de entropía, para reducir o risco de falsos positivos, ignoraranse algunhas sinaturas que utilicen datos normalizados."
  files_filesize_archives: "Transferir a lista negra/branca do tamaño dos ficheiros aos contidos dos arquivos? False/Falso = Non (só na lista gris de todo); True/Verdadeiro = Si [Predeterminado]."
  files_filesize_limit: "Límite de tamaño de ficheiro en KB. 65536 = 64MB [Predeterminado]; 0 = Sen límite (sempre na lista gris). Admítese calquera valor numérico (positivo). Isto pode ser útil cando a súa configuración de PHP limita a cantidade de memoria que pode albergar un proceso ou se a súa configuración de PHP limita o tamaño dos ficheiros de carga."

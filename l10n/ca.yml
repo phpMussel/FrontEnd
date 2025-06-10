@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Catalan language data (last modified: 2025.03.29).
+# This file: Catalan language data (last modified: 2025.06.09).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -33,7 +33,7 @@ config:
  core_disabled_channels: "Això es pot utilitzar per evitar que phpMussel utilitzi canals concrets quan s'envien sol·licituds."
  core_error_log: "Un fitxer per registrar qualsevol error no fatal detectat. Especifiqueu un nom de fitxer, o deixeu-lo en blanc per desactivar-lo."
  core_hide_version: "Amagar la informació de la versió dels registres i de la sortida de la pàgina? True/Cert = Sí; False/Fals = No [Predeterminat]."
- core_ipaddr: "On trobar l'adreça IP de les sol·licituds de connexió? (Útil per a serveis com Cloudflare i similars). Predeterminat = REMOTE_ADDR. ADVERTIMENT: No canvieu això tret que sàpigues què estàs fent!"
+ core_ipaddr: "On trobar l'adreça IP de les sol·licituds de connexió? (Útil per a serveis com Cloudflare). Predeterminat = REMOTE_ADDR. ADVERTIMENT: No canvieu això tret que sàpigues què estàs fent!"
  core_lang: "Especifiqueu l'idioma predeterminat per a phpMussel."
  core_lang_override: "Localitzar segons HTTP_ACCEPT_LANGUAGE sempre que sigui possible? True/Cert = Sí [Predeterminat]; False/Fals = No."
  core_log_rotation_action: "La rotació del registre limita el nombre de fitxers de registre que haurien d'existir en un moment determinat. Quan es creen fitxers de registre nous, si el nombre total de fitxers de registre supera el límit especificat, es realitzarà l'acció especificada. Aquí podeu especificar l'acció desitjada."
@@ -65,7 +65,7 @@ config:
  files_check_archives: "Comproveu el contingut dels arxius? False/Fals = No comproveu; True/Cert = Comproveu [Predeterminat]. Suport: Zip (requereix libzip), Tar, Rar (requereix l'extensió rar)."
  files_corrupted_exe: "Fitxers danyats i errors d'anàlisi. False/Fals = Ignorar; True/Cert = Bloqueja [Predeterminat]. Detectar i bloquejar fitxers PE (executable portàtil) potencialment danyats? Sovint (però no sempre), quan determinats aspectes d'un fitxer PE estan danyats o no es poden analitzar correctament, pot ser indicatiu d'una infecció viral. Els processos que utilitzen la majoria dels programes antivirus per detectar virus en fitxers PE requereixen analitzar aquests fitxers de determinades maneres, que, si el programador d'un virus en té coneixement, intentarà específicament prevenir, per tal de permetre que el seu virus no es detecti."
  files_decode_threshold: "Llindar per a la longitud de les dades en brut dins del qual s'han de detectar les ordres de descodificació (en cas que hi hagi problemes de rendiment notables durant l'escaneig). Predeterminat = 512KB. Zero o nul desactiva el llindar (eliminant qualsevol limitació d'aquest tipus basada en la mida del fitxer)."
- files_entropy_filesize_limit: "El límit de mida del fitxer d'entropia per a signatures que utilitzen dades normalitzades (predefinit és de 512KB). Quan se superen tant el límit d'entropia com el límit de mida del fitxer d'entropia, per tal de reduir el risc de falsos positius, s'ignoraran algunes signatures que utilitzen dades normalitzades."
+ files_entropy_filesize_limit: "El límit de mida del fitxer d'entropia per a signatures que utilitzen dades normalitzades (predefinit és de 256KB). Quan se superen tant el límit d'entropia com el límit de mida del fitxer d'entropia, per tal de reduir el risc de falsos positius, s'ignoraran algunes signatures que utilitzen dades normalitzades."
  files_entropy_limit: "El límit d'entropia per a signatures que utilitzen dades normalitzades (predefinit és de 7.7). En aquest context, l'entropia es defineix com l'entropia shannon del contingut del fitxer que s'està escanejant. Quan se superen tant el límit d'entropia com el límit de mida del fitxer d'entropia, per tal de reduir el risc de falsos positius, s'ignoraran algunes signatures que utilitzen dades normalitzades."
  files_filesize_archives: "Transferir la llista negra/blanca de la mida dels fitxers als continguts dels arxius? False/Fals = No (només llista grisa de tot); True/Cert = Sí [Predeterminat]."
  files_filesize_limit: "Límit de mida del fitxer en KB. 65536 = 64MB [Predeterminat]; 0 = Sense límit (sempre a la llista grisa). S'accepta qualsevol valor numèric (positiu). Això pot ser útil quan la configuració de PHP limita la quantitat de memòria que pot contenir un procés o si la configuració de PHP limita la mida dels fitxers de càrrega."

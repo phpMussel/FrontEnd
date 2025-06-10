@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2025.03.29).
+# This file: Polish language data (last modified: 2025.06.09).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -33,7 +33,7 @@ config:
  core_disabled_channels: "Można tego użyć, aby zapobiec korzystaniu przez phpMussel z określonych kanałów podczas wysyłania żądań."
  core_error_log: "Plik służący do rejestrowania wykrytych błędów niekrytycznych. Podaj nazwę pliku lub pozostaw puste, aby wyłączyć."
  core_hide_version: "Ukryć informacje o wersji z dzienników i danych wyjściowych strony? True (Prawdziwe) = Tak; False (Fałszywy) = Nie [Domyślna]."
- core_ipaddr: "Gdzie znaleźć adres IP żądań połączenia? (Przydatny w przypadku usług takich jak Cloudflare i podobnych). Domyślna = REMOTE_ADDR. OSTRZEŻENIE: Nie zmieniaj tego, jeśli nie wiesz, co robisz!"
+ core_ipaddr: "Gdzie znaleźć adres IP żądań połączenia? (Przydatny w przypadku usług takich jak Cloudflare). Domyślna = REMOTE_ADDR. OSTRZEŻENIE: Nie zmieniaj tego, jeśli nie wiesz, co robisz!"
  core_lang: "Określ domyślny język dla phpMussel."
  core_lang_override: "Kiedy to możliwe, lokalizuj według HTTP_ACCEPT_LANGUAGE? True (Prawdziwe) = Tak [Domyślna]; False (Fałszywy) = Nie."
  core_log_rotation_action: "Rotacja dziennika ogranicza liczbę plików dziennika, które powinny istnieć jednocześnie. Po utworzeniu nowych plików dziennika, jeśli całkowita liczba plików dziennika przekroczy określony limit, zostanie wykonana określona akcja. Tutaj możesz określić żądaną akcję."
@@ -65,7 +65,7 @@ config:
  files_check_archives: "Czy należy sprawdzić zawartość archiwów? False (Fałszywy) = Nie sprawdzaj; True (Prawdziwe) = Sprawdzaj [Domyślna]. Obsługiwane: Zip (wymaga libzip), Tar, Rar (wymaga rozszerzenia rar)."
  files_corrupted_exe: "Uszkodzone pliki i błędy analizy. False (Fałszywy) = Ignoruj; True (Prawdziwe) = Blokuj [Domyślna]. Wykrywać i blokować potencjalnie uszkodzone pliki PE (Portable Executable)? Często (ale nie zawsze), gdy pewne aspekty pliku PE są uszkodzone lub nie można ich poprawnie przeanalizować, może to wskazywać na infekcję wirusową. Procesy stosowane przez większość programów antywirusowych do wykrywania wirusów w plikach PE wymagają analizy tych plików w określony sposób, co, jeśli programista wirusa jest tego świadomy, w szczególności spróbuje temu zapobiec, aby wirus nie został wykryty."
  files_decode_threshold: "Próg długości nieprzetworzonych danych, w ramach którego powinny zostać wykryte polecenia dekodowania (w przypadku wystąpienia zauważalnych problemów z wydajnością podczas skanowania). Domyślna = 512KB. Zero lub null wyłącza próg (usuwa to wszelkie takie ograniczenia w oparciu o rozmiar pliku)."
- files_entropy_filesize_limit: "Limit rozmiaru pliku entropii dla podpisów wykorzystujących znormalizowane dane (domyślnie 512KB). Gdy zostanie przekroczony zarówno limit entropii, jak i limit rozmiaru pliku entropii, w celu zmniejszenia ryzyka wystąpienia fałszywie pozytywnych, niektóre podpisy wykorzystujące znormalizowane dane zostaną zignorowane."
+ files_entropy_filesize_limit: "Limit rozmiaru pliku entropii dla podpisów wykorzystujących znormalizowane dane (domyślnie 256KB). Gdy zostanie przekroczony zarówno limit entropii, jak i limit rozmiaru pliku entropii, w celu zmniejszenia ryzyka wystąpienia fałszywie pozytywnych, niektóre podpisy wykorzystujące znormalizowane dane zostaną zignorowane."
  files_entropy_limit: "Limit entropii dla podpisów wykorzystujących znormalizowane dane (domyślnie 7.7). W tym kontekście, entropię definiuje się jako entropię Shannona zawartości skanowanego pliku. Gdy zostanie przekroczony zarówno limit entropii, jak i limit rozmiaru pliku entropii, w celu zmniejszenia ryzyka wystąpienia fałszywie pozytywnych, niektóre podpisy wykorzystujące znormalizowane dane zostaną zignorowane."
  files_filesize_archives: "Czy zastosować zawartość czarnej/białej listy rozmiarów plików do zawartości archiwów? False (Fałszywy) = Nie (traktuj wszystko tak, jakby znajdowało się na szarej liście); True (Prawdziwe) = Tak [Domyślna]."
  files_filesize_limit: "Limit rozmiaru pliku w KB. 65536 = 64MB [Domyślna]; 0 = Nie limit (zawsze na szarej liście). Każda (dodatnia) wartość liczbowa jest akceptowana. Może to być przydatne, gdy konfiguracja PHP ogranicza ilość pamięci, którą proces może pomieścić lub jeśli konfiguracja PHP ogranicza rozmiar przesyłanych plików."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bosnian language data (last modified: 2025.06.06).
+# This file: Bosnian language data (last modified: 2025.06.10).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -33,7 +33,7 @@ config:
  core_disabled_channels: "Ovo se može koristiti da spriječi phpMussel da koristi određene kanale prilikom slanja zahtjeva."
  core_error_log: "Datoteka za evidentiranje svih otkrivenih grešaka koje nisu fatalne. Navedite naziv datoteke ili ostavite prazno da biste onemogućili."
  core_hide_version: "Sakriti informacije o verziji iz dnevnika i izlaza stranice? True/Istinito = Da; False/Lažno = Ne [Zadano]."
- core_ipaddr: "Gdje pronaći IP adresu zahtjeva za povezivanje? (Korisno za usluge kao što je Cloudflare i slično). Zadano = REMOTE_ADDR. UPOZORENJE: Promijenite ovo samo ako znate šta radite!"
+ core_ipaddr: "Gdje pronaći IP adresu zahtjeva za povezivanje? (Korisno za usluge kao što je Cloudflare). Zadano = REMOTE_ADDR. UPOZORENJE: Promijenite ovo samo ako znate šta radite!"
  core_lang: "Odredite podrazumevani jezik za phpMussel."
  core_lang_override: "Lokalizirati prema HTTP_ACCEPT_LANGUAGE kad god je to moguće? True/Istinito = Da [Zadano]; False/Lažno = Ne."
  core_log_rotation_action: "Rotacija dnevnika ograničava broj datoteka dnevnika koji bi trebali postojati u bilo kojem trenutku. Kada se kreiraju nove datoteke evidencije, ako ukupan broj datoteka dnevnika premašuje navedeno ograničenje, navedena radnja će se izvršiti. Ovdje možete odrediti željenu akciju."
@@ -54,7 +54,7 @@ config:
  files_archive_file_extensions: "Prepoznate ekstenzije arhivskih datoteka (format je CSV; treba dodati ili ukloniti samo kada se pojave problemi; nepotrebno uklanjanje može uzrokovati pojavu lažnih rezultata za arhivske datoteke, dok će nepotrebni dodaci u suštini staviti na bijelu listu ono što dodajete iz detekcije specifičnog za napad; modificirajte s oprezom; također imajte na umu da ovo nema utjecaja na to koje arhive mogu, a koje ne mogu biti analizirane na nivou sadržaja). Lista, kao što je podrazumevano, navodi one formate koji se najčešće koriste u većini sistema i CMS-a, ali namerno nije nužno sveobuhvatna."
  files_block_control_characters: "Blokirati sve datoteke koje sadrže bilo koje kontrolne znakove (osim novih redova)? Ako otpremate <strong><em>SAMO</em></strong> običan tekst, onda omogućavanje ove opcije može pružiti dodatnu zaštitu vašem sistemu. Međutim, ako otpremate bilo što osim običnog teksta, omogućavanje ove opcije može dovesti do lažnih pozitivnih rezultata. False/Lažno = Ne blokiraj [Zadano]; True/Istinito = Blokiraj."
  files_block_encrypted_archives: "Otkriti i blokirati šifrirane arhive? Budući da phpMussel nije u stanju da skenira sadržaj šifrovanih arhiva, moguće je da napadač koristi šifrovanje arhive kao način pokušaja da zaobiđe phpMussel, antivirusne skenere i druge takve zaštite. Upućivanje phpMusselu da blokira sve arhive za koje otkrije da su šifrirane moglo bi potencijalno pomoći u smanjenju takvog rizika. False/Lažno = Ne; True/Istinito = Da [Zadano]."
- files_block_macros: "Pokušati blokirati sve datoteke koje sadrže makroe? Neki tipovi dokumenata i tabela mogu sadržavati izvršne makroe, što predstavlja opasan potencijalni vektor zlonamjernog softvera. False/Lažno = Ne blokiraj [Zadano]; True/Istinito = Blokiraj."
+ files_block_macros: "Pokušati blokirati sve datoteke koje sadrže makroe? Neke vrste dokumenata i tabela mogu sadržavati izvršne makroe, što predstavlja opasan potencijalni vektor zlonamjernog softvera. False/Lažno = Ne blokiraj [Zadano]; True/Istinito = Blokiraj."
  files_can_contain_php_file_extensions: "Lista ekstenzija datoteka kojima je dozvoljeno da sadrže PHP kod, odvojenih zarezima. Ako je detekcija PHP kameleonskog napada omogućena, datoteke koje sadrže PHP kod, koje imaju ekstenzije koje nisu na ovoj listi, biće otkrivene kao PHP kameleon napadi."
  files_chameleon_from_exe: "Potražite zaglavlja izvršnih datoteka u datotekama koje nisu ni izvršne ni priznate arhive i izvršne datoteke čija su zaglavlja netačna. False/Lažno = Onemogućeno; True/Istinito = Omogućeno."
  files_chameleon_from_php: "Potražite PHP zaglavlja u datotekama koje nisu ni PHP datoteke ni priznate arhive. False/Lažno = Onemogućeno; True/Istinito = Omogućeno."
@@ -65,12 +65,12 @@ config:
  files_check_archives: "Pokušati provjeriti sadržaj arhive? False/Lažno = Ne provjeravajte; True/Istinito = Provjerite [Zadano]. Podržano: Zip (zahtijeva libzip), Tar, Rar (zahtijeva rar ekstenziju)."
  files_corrupted_exe: "Oštećeni datoteke i greške raščlanjivanje. False/Lažno = Zanemari; True/Istinito = Blokiraj [Zadano]. Otkriti i blokirati potencijalno oštećene PE (Portable Executable) datoteke? Često (ali ne uvijek), kada su određeni aspekti PE datoteke oštećeni ili se ne mogu pravilno raščlaniti, to može ukazivati ​​na virusnu infekciju. Ako je programer virusa svjestan kako antivirusni program analizira PE datoteke, može pokušati posebno to spriječiti, kako bi omogućio da njihov virus ostane neotkriven."
  files_decode_threshold: "Maksimalna dužina neobrađenih podataka na kojoj treba detektovati komande za dekodiranje (u slučaju da postoje primetni problemi sa performansama tokom skeniranja). Zadano = 512KB. Nula uklanja svako takvo ograničenje na osnovu veličine datoteke."
- files_entropy_filesize_limit: "Ograničenje veličine datoteke entropije za potpise koji koriste normalizirane podatke (zadana vrijednost je 512KB). Kada se prekorači i granica entropije i ograničenje veličine datoteke entropije, kako bi se smanjio rizik od lažnih pozitivnih rezultata, neki potpisi koji koriste normalizirane podatke će biti zanemareni."
+ files_entropy_filesize_limit: "Ograničenje veličine datoteke entropije za potpise koji koriste normalizirane podatke (zadana vrijednost je 256KB). Kada se prekorači i granica entropije i ograničenje veličine datoteke entropije, kako bi se smanjio rizik od lažnih pozitivnih rezultata, neki potpisi koji koriste normalizirane podatke će biti zanemareni."
  files_entropy_limit: "Ograničenje entropije za potpise koji koriste normalizirane podatke (zadana vrijednost je 7.7). U ovom kontekstu, entropija je definirana kao šenonova entropija sadržaja datoteke koja se skenira. Kada se prekorači i ograničenje entropije i ograničenje veličine datoteke entropije, kako bi se smanjio rizik od lažnih pozitivnih rezultata, neki potpisi koji koriste normalizirane podatke će biti zanemareni."
  files_filesize_archives: "Primijeniti crnu/bijelu listu veličine datoteka na sadržaj arhiva? False/Lažno = Ne (stavite na sivu listu); True/Istinito = Da [Zadano]."
  files_filesize_limit: "Ograničenje veličine datoteke u KB. 65536 = 64MB [Zadano]; 0 = Nema ograničenja (uvijek na sivoj listi). Bilo koja (pozitivna) numerička vrijednost je prihvaćena. Ovo može biti korisno kada vaša PHP konfiguracija ograničava količinu memorije koju proces može zadržati ili ako vaša PHP konfiguracija ograničava veličinu datoteka za otpremanje."
  files_filesize_response: "Šta učiniti s datotekama koje premašuju ograničenje veličine datoteke (ako ograničenje postoji). False/Lažno = Stavite na bijelu listu; True/Istinito = Stavite na crnu listu [Zadano]."
- files_filetype_archives: "Primijeniti crnu/bijelu listu tipova datoteka na sadržaj arhiva? False/Lažno = Ne (stavite na sivu listu) [Zadano]; True/Istinito = Da."
+ files_filetype_archives: "Primijeniti crnu/bijelu listu vrsta datoteka na sadržaj arhiva? False/Lažno = Ne (stavite na sivu listu) [Zadano]; True/Istinito = Da."
  files_filetype_blacklist: "Crna lista:"
  files_filetype_greylist: "Siva lista:"
  files_filetype_whitelist: "Bijela lista:"
@@ -132,6 +132,7 @@ config:
  virustotal_vt_quota_rate: "Prema dokumentaciji Virus Total API-ja, "ograničeno je na najviše 4 zahtjeva bilo koje prirode u bilo kojem datom vremenskom okviru od 1 minute. Ako koristite honeyclient, honeypot ili bilo koju drugu automatizaciju koja će VirusTotalu pružati resurse, a ne samo preuzimati izvještaje, imate pravo na veću kvotu stope zahtjeva". Standardno, phpMussel će se striktno pridržavati ovih ograničenja, ali zbog mogućnosti povećanja ovih kvota, ove dvije direktive su date kao sredstvo kojim možete uputiti phpMussel kojeg ograničenja treba da se pridržava. Preporučuje se povećanje ovih vrijednosti <strong><em>SAMO</em></strong> ako vam je to naloženo, ali ako ste naišli na probleme vezane za dostizanje vaše kvote, smanjenje ovih vrijednosti <strong><em>PONEKAD MOŽE</em></strong> pomoći kod tih problema. Vaše ograničenje se određuje kao <code>vt_quota_rate</code> zahtjeva bilo koje prirode u bilo kojem datom vremenskom okviru od <code>vt_quota_time</code> minuta."
  virustotal_vt_quota_time: "(Pogledajte opis iznad)."
  virustotal_vt_suspicion_level: "Standardno, phpMussel će ograničiti koje datoteke skenira pomoću Virus Total API-ja na one datoteke koje smatra "sumnjivim". Ovo ograničenje možete opcionalno prilagoditi promjenom vrijednosti direktive <code>vt_suspicion_level</code>."
+ virustotal_vt_weighting: "phpMussel treba da primijeni rezultate skeniranja Virus Total API-ja kao detekcije ili kao težinu detekcije? Ova direktiva postoji jer, iako bi skeniranje datoteke pomoću više motora (kao što to radi Virus Total) trebalo rezultirati povećanom stopom detekcije (a samim tim i većim brojem uhvaćenih zlonamjernih datoteka), ono također može rezultirati većim brojem lažno pozitivnih, i stoga je u nekim okolnostima možda bolje koristiti rezultate skeniranja kao ocjenu pouzdanosti nego kao definitivan zaključak. Ako se koristi vrijednost 0, rezultati skeniranja Virus Total API-ja će se primijeniti kao detekcije, i stoga, ako bilo koji motor koji koristi Virus Total označi datoteku koja se skenira kao zlonamjernu, phpMussel će smatrati datoteku zlonamjernom. Ako se koristi bilo koja druga vrijednost, rezultati skeniranja Virus Total API-ja bit će primijenjeni kao težina detekcije, i stoga će broj motora koje koristi Virus Total, a koji označavaju datoteku koja se skenira kao zlonamjernu, poslužiti kao ocjena pouzdanosti (ili težina detekcije) za provjeru da li phpMussel treba smatrati datoteku koja se skenira zlonamjernom (korištena vrijednost će predstavljati minimalni rezultat pouzdanosti ili težinu potrebnu da bi se smatralo zlonamjernim). Vrijednost 0 se koristi kao standard."
 confirm:
  Action: "Jeste li sigurni da želite "%s"?"
 field:
@@ -164,6 +165,9 @@ field:
  Your version: "Vaša verzija"
  log_rotation_archive: "Prvo arhivirajte, a zatim izbrišite najstarije datoteke dnevnika, tako da ograničenja više neće biti prekoračena."
  log_rotation_delete: "Izbrišite najstarije datoteke dnevnika, tako da ograničenja više neće biti prekoračena."
+ vt_suspicion_level_all: "Skeniraj sve datoteke."
+ vt_suspicion_level_executable: "Skeniraj datoteke s heurističkom težinom, izvršne datoteke, i datoteke koje potencijalno sadrže izvršne podatke.\nPrimjeri izvršnih datoteka, i datoteka koje potencijalno sadrže izvršne podatke uključuju Windows PE datoteke, Linux ELF datoteke, Mach-O datoteke, DOCX datoteke, ZIP datoteke, itd."
+ vt_suspicion_level_heuristic_only: "Skeniraj samo datoteke s heurističkom težinom.\nDatoteke će biti skenirane samo ako imaju određenu heurističku težinu. Heuristička težina može se dobiti iz potpisa koji traže uobičajene otiske prstiju povezane s potencijalnom infekcijom, ali koji ne garantuju nužno infekciju. U takvim slučajevima, može poslužiti kao drugo mišljenje za rezultate koji opravdavaju sumnju, ali inače ne pružaju nikakvu sigurnost."
 hints_logging_datetime: "Koristan savjet: Možete priložiti informacije o datumu/vremenu imenima datoteka evidencije koristeći čuvare mjesta u formatu vremena. Dostupni čuvari mjesta formata vremena prikazani su na {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
  Čpp.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Šta je "PDO DSN"? Kako mogu koristiti PDO sa phpMussel-om?</a></em>"
@@ -185,6 +189,9 @@ hints_time_format: |
  <code class="s">{s}</code> – Sekunde – Npr., 49.<br />
  <code class="s">{tz}</code> – Vremenska zona (bez dvotočke) – Npr., +0800.<br />
  <code class="s">{t:z}</code> – Vremenska zona (sa dvotočkom) – Npr., +08:00.
+hints_xlists:
+ Kako ovo funkcioniše.: "Ako vaš sistem dozvoljava otpremanje samo određenih vrsta datoteka, ili ako vaš sistem eksplicitno zabranjuje određene vrste datoteka, navođenje tih vrsta datoteka u bijelim, crnim i sivim listama može povećati brzinu skeniranja tako što će skripti omogućiti da preskoči određene vrste datoteka. Format je CSV (vrijednosti odvojene zarezima)."
+ Logički redoslijed obrade.: "Ako je vrsta datoteka na bijeloj listi, nemojte skenirati i nemojte blokirati datoteku, niti provjeravati datoteku na crnoj ili sivoj listi. Ako je vrsta datoteka na crnoj listi, nemojte skenirati datoteku, ali je blokirajte, i nemojte provjeravati datoteku na sivoj listi. Ako je siva lista prazna ili ako siva lista nije prazna i vrsta datoteka je na sivoj listi, skenirajte datoteku kao i obično i odredite da li je blokirati na osnovu rezultata skeniranja, ali ako siva lista nije prazna i vrsta datoteka nije na sivoj listi, tretiraj datoteku kao na crnoj listi, dakle ne skeniraj to je već blokiraj to."
 Some useful links: |+
  Neki korisni linkovi:<br />
      <ul class="pieul">
@@ -370,7 +377,7 @@ tip:
  Quarantine is currently disabled: "Bilješka: Karantena je trenutno onemogućena, ali se može omogućiti putem konfiguracijske stranice."
  Quarantine: "Ova stranica navodi sve datoteke koje su trenutno u karantinu i olakšava upravljanje tim datotekama."
  See the documentation: "Pogledajte <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">dokumentaciju</a> za informacije o različitim konfiguracijskim direktivama i njihovoj svrsi."
- Signature Information: "Stranica sa informacijama o potpisu pruža neke osnovne informacije o izvorima i tipovima trenutno aktivnih potpisa."
+ Signature Information: "Stranica sa informacijama o potpisu pruža neke osnovne informacije o izvorima i vrstama trenutno aktivnih potpisa."
  Statistics tracking is currently disabled: "Bilješka: Praćenje statistike je trenutno onemogućeno, ali se može omogućiti putem konfiguracijske stranice."
  Statistics: "Ova stranica prikazuje neke osnovne statistike upotrebe u vezi sa vašom instalacijom phpMussel-a."
  Upload Testing: "Stranica za testiranje prijenosa sadrži standardni obrazac za prijenos datoteka, koji vam omogućava da testirate da li bi phpMussel normalno blokirao datoteku kada pokušaju prijenosa."
