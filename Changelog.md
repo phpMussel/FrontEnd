@@ -193,3 +193,7 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 - [2025.05.20]: A11y patch.
 - [2025.02~05]: Added L10N for Malayalam.
 - [2024~2025]: Added L10N for Bosnian, Croatian, and Serbian.
+
+### v3.6.3
+
+- [2025.07.05]: Aesthetic patch.

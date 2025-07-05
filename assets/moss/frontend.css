@@ -103,7 +103,7 @@ td code~input,td code~select{vertical-align:middle}
 .trEase>div{display:inline-block;transition:inherit}
 .pipCntrs{display:inline-block;position:relative;left:0;width:12px;height:12px;transition:inherit}
 .pipCntrs>img{display:inline-block;position:absolute;left:0;transition:inherit}
-input[type=checkbox]+label,input[type=radio]+label,input[type=radio]+label,.gridboxitem>label,.gridboxitem input+strong{vertical-align:-2px;cursor:pointer}
+.gridboxitem>label,.gridboxitem input+strong{vertical-align:-2px;cursor:pointer}
 .gridHA:not(.gridVA,.gridVB,.gridboxstretch),.gridHB:not(.gridVA,.gridVB,.gridboxstretch){white-space:nowrap}
 .configMatrixLabel,.vrte,.gridbox,.gridboxcheckcell{text-align:center}
 .gridbox{display:grid;grid-template-columns:auto auto auto}
@@ -152,3 +152,4 @@ input[type=file]::file-selector-button{background-image:url(data:image/svg+xml;b
 .flexin{margin-{FE_Align}:-1px;margin-{FE_Align_Reverse}:1px;width:auto;flex-grow:1}
 .navSoftCnr{border-radius:0 12px 0 0}
 .capitalize{text-transform:capitalize}
+input[type=checkbox],input[type=radio]{accent-color:#604848}
