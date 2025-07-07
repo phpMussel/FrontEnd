@@ -196,4 +196,8 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 
 ### v3.6.3
 
+#### Bugs fixed.
+- [2025.07.07]: The formatFilesize method wasn't accounting for negative numbers; Fixed.
+
+#### Other changes.
 - [2025.07.05]: Aesthetic patch.

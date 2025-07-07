@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2025.05.08).
+ * This file: Front-end handler (last modified: 2025.07.07).
  */
 
 namespace phpMussel\FrontEnd;
@@ -838,10 +838,18 @@ class FrontEnd
      * Format filesize information.
      *
      * @param int $Filesize
+     * @param int $Markers Whether to include positive/negative markers.
+     *      1 = Negative only. 2 = Positive only. 3 = Both.
      * @return void
      */
-    private function formatFilesize(int &$Filesize): void
+    private function formatFilesize(int &$Filesize, int $Markers = 0): void
     {
+        if ($Filesize < 0) {
+            $Filesize *= -1;
+            $Marker = $Markers === 1 || $Markers === 3 ? '-' : '';
+        } else {
+            $Marker = $Markers === 2 || $Markers === 3 ? '+' : '';
+        }
         $Scale = ['field.size.bytes', 'field.size.KB', 'field.size.MB', 'field.size.GB', 'field.size.TB', 'field.size.PB'];
         $Iterate = 0;
         while ($Filesize > 1024) {
@@ -851,7 +859,7 @@ class FrontEnd
                 break;
             }
         }
-        $Filesize = $this->NumberFormatter->format($Filesize, ($Iterate === 0) ? 0 : 2) . ' ' . $this->Loader->L10N->getPlural($Filesize, $Scale[$Iterate]);
+        $Filesize = $Marker . $this->NumberFormatter->format($Filesize, ($Iterate === 0) ? 0 : 2) . ' ' . $this->Loader->L10N->getPlural($Filesize, $Scale[$Iterate]);
     }
 
     /**
