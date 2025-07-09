@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2025.06.09).
+# This file: Afrikaans language data (last modified: 2025.07.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -40,6 +40,8 @@ config:
  core_log_rotation_limit: "Logrotasie beperk die aantal loglêers wat op enige tydstip moet bestaan. Wanneer nuwe loglêers geskep word, as die totale aantal loglêers die gespesifiseerde limiet oorskry, sal die gespesifiseerde aksie uitgevoer word. Jy kan die verlangde limiet hier spesifiseer. 0 sal logrotasie deaktiveer."
  core_maintenance_mode: "Aktiveer onderhoudmodus? True = Ja; False = Nee [Verstek]. Deaktiveer alles behalwe die front-end. Soms nuttig vir wanneer jy jou CMS, raamwerke, ens. opdateer."
  core_outbound_request_log: "Lêer om die resultate van enige uitgaande versoeke aan te teken. Spesifiseer 'n lêernaam, of laat leeg om te deaktiveer."
+ core_request_proxy: "As jy wil hê dat uitgaande versoeke deur 'n proxy gestuur word, spesifiseer daardie proxy hier. Indien nie, los dit leeg."
+ core_request_proxyauth: "Indien uitgaande versoeke deur 'n instaanbediener gestuur word en daardie instaanbediener 'n gebruikersnaam en wagwoord vereis, spesifiseer daardie gebruikersnaam en wagwoord hier (bv., <code>user:pass</code>). Indien nie, los dit leeg."
  core_scan_cache_expiry: "Vir hoe lank moet phpMussel die resultate van skandering kas? Waarde is die aantal sekondes om die resultate van skandering te kas. Verstek is 21600 sekondes (6 uur); 0 sal die kas van die resultate van skandering deaktiveer."
  core_scan_log: "Die naam van die lêer om alle skanderingsresultate aan te meld. Spesifiseer 'n lêernaam, of laat leeg om te deaktiveer."
  core_scan_log_serialized: "Die naam van die lêer om alle skanderingsresultate aan te meld (met behulp van 'n reeksformaat). Spesifiseer 'n lêernaam, of laat leeg om te deaktiveer."

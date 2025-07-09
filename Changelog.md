@@ -194,10 +194,11 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 - [2025.02~05]: Added L10N for Malayalam.
 - [2024~2025]: Added L10N for Bosnian, Croatian, and Serbian.
 
-### v3.6.3
+### v3.7.0
 
 #### Bugs fixed.
 - [2025.07.07]: The formatFilesize method wasn't accounting for negative numbers; Fixed.
 
 #### Other changes.
 - [2025.07.05]: Aesthetic patch.
+- [2025.07.08]: Added the ability to route all outbound requests through a proxy, and two new configuration directives, `request_proxy` and `request_proxyauth`.

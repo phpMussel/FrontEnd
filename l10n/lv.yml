@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2025.06.09).
+# This file: Latvian language data (last modified: 2025.07.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -40,6 +40,8 @@ config:
  core_log_rotation_limit: "Log rotācija ierobežo to logfailu skaitu, kuriem vajadzētu pastāvēt vienlaikus. Veidojot jaunus logfailus, ja kopējais logfailu skaits pārsniedz noteikto limitu, tiks veikta norādītā darbība. Šeit varat norādīt vēlamo ierobežojumu. Ja vērtība ir 0, tiks atspējota log rotācija."
  core_maintenance_mode: "Vai iespējot apkopes režīmu? True (Patiess) = Jā; False (Nepatiess) = Nē [Noklusējuma]. Jūs joprojām varat administrēt, bet viss pārējais ir atspējots. Tas dažreiz var būt noderīgs, atjaunojot CMS, frameworks, utt."
  core_outbound_request_log: "Fails, visu izejošo pieprasījumu rezultātu reģistrēšanai. Norādiet faila nosaukumu, vai atstājiet tukšu, lai to atspējotu."
+ core_request_proxy: "Ja vēlaties, lai izejošie pieprasījumi tiktu sūtīti izmantojot starpniekserveri, norādiet šo starpniekserveri šeit. Ja nē, atstājiet šo tukšu."
+ core_request_proxyauth: "Ja izejošie pieprasījumi tiek sūtīti izmantojot starpniekserveri, un ja šim starpniekserverim ir nepieciešams lietotājvārds un parole, norādiet šo lietotājvārdu un paroli šeit (piemēram, <code>user:pass</code>). Ja nē, atstājiet šo tukšu."
  core_scan_cache_expiry: "Cik ilgi skenēšanas rezultāti ir jāglabā kešatmiņā? Vērtība ir sekunžu skaits, kurā skenēšanas rezultāti tiek saglabāti kešatmiņā. Noklusējums ir 21600 sekundes (6 stundas); Ja vērtība būs 0, skenēšanas rezultāti netiks saglabāti kešatmiņā."
  core_scan_log: "Faila nosaukums, kurā reģistrēt visus skenēšanas rezultātus. Norādiet faila nosaukumu, vai atstājiet tukšu, lai to atspējotu."
  core_scan_log_serialized: "Faila nosaukums, kurā reģistrēt visus skenēšanas rezultātus (izmantojot sērijveida formātu). Norādiet faila nosaukumu, vai atstājiet tukšu, lai to atspējotu."

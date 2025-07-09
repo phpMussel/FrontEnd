@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2025.06.09).
+# This file: French language data (last modified: 2025.07.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -42,6 +42,8 @@ config:
  core_log_rotation_limit: "La rotation du journal limite le nombre de fichiers journaux qui doivent exister à un moment donné. Lorsque de nouveaux fichiers journaux sont créés, si le nombre total de fichiers journaux dépasse la limite spécifiée, l'action spécifiée sera effectuée. Vous pouvez spécifier la limite souhaitée ici. Une valeur de 0 désactivera la rotation du journal."
  core_maintenance_mode: "Activer le mode de maintenance\_? True = Oui\_; False = Non [Défaut]. Désactive tout autre que l'accès frontal. Parfois utile pour la mise à jour de votre CMS, des frameworks, etc."
  core_outbound_request_log: "Un fichier pour l'enregistrement des résultats de toutes les requêtes sortantes. Spécifier un fichier, ou laisser vide à désactiver."
+ core_request_proxy: "Si vous souhaitez que les requêtes sortantes soient envoyés via un proxy, spécifiez ce proxy ici. Sinon, laissez ce champ vide."
+ core_request_proxyauth: "Si vous envoyez des requêtes sortantes via un proxy et si ce proxy nécessite un nom d'utilisateur et un mot de passe, spécifiez ce nom d'utilisateur et ce mot de passe ici (par exemple, <code>user:pass</code>). Sinon, laissez ce champ vide."
  core_scan_cache_expiry: "Pour combien de temps devrait phpMussel cache les résultats de l'analyse\_? La valeur est le nombre de secondes pour mettre en cache les résultats de l'analyse pour. Par défaut est 21600 secondes (6 heures)\_; Une valeur de 0 désactive mettre en cache les résultats de l'analyse."
  core_scan_log: "Nom du fichier à enregistrer tous les résultats de l'analyse. Spécifiez un nom de fichier, ou laissez vide à désactiver."
  core_scan_log_serialized: "Nom du fichier à enregistrer tous les résultats de l'analyse (le format est sérialisé). Spécifiez un nom de fichier, ou laissez vide à désactiver."

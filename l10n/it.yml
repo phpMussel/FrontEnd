@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2025.06.09).
+# This file: Italian language data (last modified: 2025.07.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -40,6 +40,8 @@ config:
  core_log_rotation_limit: "La rotazione dei log limita il numero di file di log che dovrebbero esistere in qualsiasi momento. Quando vengono creati nuovi file di log, se il numero totale di file di log supera il limite specificato, verrà eseguita l'azione specificata. Qui puoi specificare il limite desiderato. Un valore di 0 disabiliterà la rotazione dei log."
  core_maintenance_mode: "Abilita la modalità di manutenzione? True = Sì; False = No [Predefinito]. Disattiva tutto tranne il front-end. A volte utile per l'aggiornamento del CMS, dei framework, ecc."
  core_outbound_request_log: "Un file per la registrazione dei risultati di eventuali richieste in uscita. Specificare un nome di file, o lasciare vuoto per disabilitare."
+ core_request_proxy: "Se si desidera che le richieste in uscita vengano inviate tramite un proxy, specificarlo qui. In caso contrario, lasciare vuoto questo campo."
+ core_request_proxyauth: "Se si inviano richieste in uscita tramite un proxy e se tale proxy richiede un nome utente e una password, specificare qui il nome utente e la password (per esempio, <code>user:pass</code>). In caso contrario, lasciare vuoto questo campo."
  core_scan_cache_expiry: "Per quanto tempo deve phpMussel cache i risultati della scansione? Il valore è il numero di secondi per memorizzare nella cache i risultati della scansione per. Predefinito valore è 21600 secondi (6 ore); Un valore pari a 0 disabilita il caching dei risultati di scansione."
  core_scan_log: "Il nome del file per registrare tutti i risultati di la scansione. Specificare un nome del file, o lasciare vuoto per disattivarlo."
  core_scan_log_serialized: "Il nome del file per registrare tutti i risultati di la scansione (utilizzando un formato serializzato). Specificare un nome del file, o lasciare vuoto per disattivarlo."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Czech language data (last modified: 2025.06.09).
+# This file: Czech language data (last modified: 2025.07.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -40,6 +40,8 @@ config:
  core_log_rotation_limit: "Rotace protokolu omezuje počet souborů protokolu, které by měly existovat v jednom okamžiku. Při vytváření nových souborů protokolu, pokud celkový počet souborů protokolu překročí zadaný limit, bude provedena zadaná akce. Zde můžete zadat požadovaný limit. Hodnota 0 zakáže rotaci protokolu."
  core_maintenance_mode: "Povolit režim údržby? True (Pravdivé) = Ano; False (Nepravdivé) = Ne [Standardní]. Zakáže vše kromě front-endu. Někdy užitečné při aktualizaci vašeho CMS, frameworků, atd."
  core_outbound_request_log: "Soubor pro protokolování výsledků všech odchozích požadavků. Zadejte název souboru nebo ponechejte prázdné, chcete-li jej deaktivovat."
+ core_request_proxy: "Pokud chcete aby byly odchozí požadavky odesílány přes proxy, zadejte zde tento proxy. Pokud ne, nechte toto pole prázdné."
+ core_request_proxyauth: "Pokud odesíláte odchozí požadavky přes proxy a tento proxy vyžaduje uživatelské jméno a heslo, zadejte zde toto uživatelské jméno a heslo (např., <code>user:pass</code>). Pokud ne, nechte toto pole prázdné."
  core_scan_cache_expiry: "Jak dlouho by měl phpMussel ukládat výsledky skenování? Hodnota je počet sekund, po které se mají výsledky skenování uložit do mezipaměti. Standardní je 21600 sekund (6 hodin); Hodnota 0 zakáže ukládání výsledků skenování do mezipaměti."
  core_scan_log: "Název souboru, do kterého se mají protokolovat všechny výsledky skenování. Zadejte název souboru nebo ponechejte prázdné, chcete-li jej deaktivovat."
  core_scan_log_serialized: "Název souboru, do kterého se mají protokolovat všechny výsledky skenování (pomocí serializovaného formátu). Zadejte název souboru nebo ponechejte prázdné, chcete-li jej deaktivovat."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2025.06.09).
+# This file: Indonesian language data (last modified: 2025.07.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -40,6 +40,8 @@ config:
  core_log_rotation_limit: "Rotasi log membatasi jumlah file log yang seharusnya ada pada satu waktu. Ketika file log baru dibuat, jika jumlah total file log melebihi batas yang ditentukan, tindakan yang ditentukan akan dilakukan. Anda dapat menentukan batas yang diinginkan disini. Nilai 0 akan menonaktifkan rotasi log."
  core_maintenance_mode: "Aktifkan modus perawatan? True = Ya; False = Tidak [Default]. Nonaktifkan semuanya selain bagian depan. Terkadang berguna saat memperbarui CMS, kerangka kerja, dll."
  core_outbound_request_log: "File untuk mencatat hasil permintaan keluar apapun. Spesifikasikan nama file, atau biarkan kosong untuk menonaktifkan."
+ core_request_proxy: "Jika Anda ingin permintaan keluar dikirim melalui proxy, tentukan proxy tersebut disini. Jika tidak, biarkan ini kosong."
+ core_request_proxyauth: "Jika mengirim permintaan keluar melalui proxy dan jika proxy tersebut memerlukan nama pengguna dan kata sandi, tentukan nama pengguna dan kata sandi tersebut disini (misalnya, <code>user:pass</code>). Jika tidak, biarkan ini kosong."
  core_scan_cache_expiry: "Untuk berapa lama harus phpMussel cache hasil-hasil? Nilai adalah jumlah detik untuk cache hasil-hasil untuk. Default adalah 21600 detik (6 jam); Nilai 0 akan menonaktifkan caching hasil-hasil."
  core_scan_log: "Nama dari file untuk mencatat semua hasil pemindaian. Spesifikasikan nama atau biarkan kosong untuk menonaktifkan."
  core_scan_log_serialized: "Nama dari file untuk mencatat semua hasil pemindaian (menggunakan format serial). Spesifikasikan nama atau biarkan kosong untuk menonaktifkan."

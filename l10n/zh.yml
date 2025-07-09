@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese language data (last modified: 2025.06.09).
+# This file: Chinese language data (last modified: 2025.07.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -48,6 +48,10 @@ config:
   zh-Hant: "日誌輪轉限制了任何時候應該存在的日誌文件的數量。​當新的日誌文件被創建時，如果日誌文件的指定的最大數量已經超過，將執行指定的操作。​您可以在此指定所需的限制。​值為『0』將禁用日誌輪轉。"
  core_maintenance_mode: {"zh-Hans": "启用维护模式？​True（真）=关闭；​False（假）=不关闭【标准】。​它停用一切以外前端。​有时候在更新CMS，框架，等时有用。", "zh-Hant": "啟用維護模式？​True（真）=關閉；​False（假）=不關閉【標準】。​它停用一切以外前端。​有時候在更新CMS，框架，等時有用。"}
  core_outbound_request_log: {"zh-Hans": "用于记录任何出站请求结果的文件。​指定一个文件名，​或留空以禁用。", "zh-Hant": "用於記錄任何出站請求結果的文件。​指定一個檔案名稱，​或留空以禁用。"}
+ core_request_proxy: {"zh-Hans": "如果您希望通过代理发送出站请求，请在此处指定该代理。​如果您不想这，请将此处留空。", "zh-Hant": "如果您希望透過代理發送出站請求，請在此處指定該代理。​如果您不想這，請將此處留空。"}
+ core_request_proxyauth:
+  zh-Hans: "如果通过代理发送出站请求并且该代理需要用户名和密码，请在此处指定该用户名和密码（例如，<code>user:pass</code>）。​如果您不想这，请将此处留空。"
+  zh-Hant: "如果透過代理發送出站請求且該代理需要使用者名稱和密碼，請在此處指定該使用者名稱和密碼（例如，<code>user:pass</code>）。​如果您不想這，請將此處留空。"
  core_scan_cache_expiry:
   zh-Hans: "多长时间应该phpMussel维持扫描结果？​数值是秒数为维持扫描结果。​标准是21600秒（6小时）； 一个<code>0</code>数值将停止维持扫描结果。"
   zh-Hant: "多長時間應該phpMussel維持掃描結果？​數值是秒數為維持掃描結果。​標準是21600秒（6小時）； 一個<code>0</code>數值將停止維持掃描結果。"
@@ -164,7 +168,7 @@ config:
  supplementary_cache_options_memcached_port: {"zh-Hans": "Memcached 端口值。 标准 = “11211”。", "zh-Hant": "Memcached 端口值。 默認 = 『11211』。"}
  supplementary_cache_options_pdo_dsn: {"zh-Hans": "PDO DSN值。 标准 = “mysql:dbname=phpmussel;host=localhost;port=3306”。", "zh-Hant": "PDO DSN值。 默認 = 『mysql:dbname=phpmussel;host=localhost;port=3306』。"}
  supplementary_cache_options_pdo_password: {"zh-Hans": "PDO 密码。", "zh-Hant": "PDO 密碼。"}
- supplementary_cache_options_pdo_username: {"zh-Hans": "PDO 用户名。", "zh-Hant": "PDO 用戶名。"}
+ supplementary_cache_options_pdo_username: {"zh-Hans": "PDO 用户名。", "zh-Hant": "PDO 使用者名稱。"}
  supplementary_cache_options_prefix: {"zh-Hans": "该值将附加到所有缓存条目的键的开头。 标准 = “phpMussel_”。​当同一服务器上存在多个安装时，这对于将它们的缓存彼此分开非常有用。", "zh-Hant": "該值將附加到所有緩存條目的鍵的開頭。 默認 = 『phpMussel_』。​當同一服務器上存在多個安裝時，這對於將它們的緩存彼此分開非常有用。"}
  supplementary_cache_options_redis_database_number: {"zh-Hans": "Redis 数据库编号。 标准 = “0”。 注意：不能在 Redis Cluster 中使用 0 以外的值。", "zh-Hant": "Redis 資料庫編號。 默認 = 『0』。 注意：不能在 Redis Cluster 中使用 0 以外的值。"}
  supplementary_cache_options_redis_host: {"zh-Hans": "Redis 主机值。 标准 = localhost。", "zh-Hant": "Redis 主機值。 默認 = localhost。"}
@@ -219,7 +223,7 @@ field:
  Update signature files: {"zh-Hans": "更新签名文件", "zh-Hant": "更新簽名文件"}
  Update: "更新"
  Use system default timezone: {"zh-Hans": "使用系统默认时区。", "zh-Hant": "使用系統默認時區。"}
- Username: {"zh-Hans": "用户名", "zh-Hant": "用戶名"}
+ Username: {"zh-Hans": "用户名", "zh-Hant": "使用者名稱"}
  Your version: "您的版本"
  log_rotation_archive: {"zh-Hans": "首先归档，然后删除最旧的日志文件，直到不再超出限制。", "zh-Hant": "首先歸檔，然後刪除最舊的日誌文件，直到不再超出限制。"}
  log_rotation_delete: {"zh-Hans": "删除最旧的日志文件，直到不再超出限制。", "zh-Hant": "刪除最舊的日誌文件，直到不再超出限制。"}
@@ -449,7 +453,7 @@ previewer:
 response:
  Account successfully created: {"zh-Hans": "帐户成功创建！", "zh-Hant": "帳戶成功創建！"}
  Account successfully deleted: {"zh-Hans": "帐户成功删除！", "zh-Hant": "帳戶成功刪除！"}
- An account with that username already exists: {"zh-Hans": "一个帐户与那个用户名已经存在！", "zh-Hant": "一個帳戶與那個用戶名已經存在！"}
+ An account with that username already exists: {"zh-Hans": "一个帐户与那个用户名已经存在！", "zh-Hant": "一個帳戶與那個使用者名稱已經存在！"}
  Configuration successfully updated: "配置成功更新。"
  Corrupted file: {"zh-Hans": "损坏的文件！", "zh-Hant": "損壞的文件！"}
  Failed to create: {"zh-Hans": "无法创建！", "zh-Hant": "無法創建！"}
@@ -471,8 +475,8 @@ response:
  Statistics cleared: {"zh-Hans": "统计删除。", "zh-Hant": "統計刪除。"}
  Successfully authenticated: {"zh-Hans": "验证成功。", "zh-Hant": "驗證成功。"}
  That account doesn_t exist: {"zh-Hans": "那个帐户不存在。", "zh-Hant": "那個帳戶不存在。"}
- Username doesn_t exist: {"zh-Hans": "登录失败！​用户名不存在！", "zh-Hant": "登錄失敗！​用戶名不存在！"}
- Username field empty: {"zh-Hans": "用户名输入是空的！", "zh-Hant": "用戶名輸入是空的！"}
+ Username doesn_t exist: {"zh-Hans": "登录失败！​用户名不存在！", "zh-Hant": "登錄失敗！​使用者名稱不存在！"}
+ Username field empty: {"zh-Hans": "用户名输入是空的！", "zh-Hant": "使用者名稱輸入是空的！"}
  Wrong endpoint: {"zh-Hans": "错误的端点！", "zh-Hant": "錯誤的端點！"}
  _No: "不是"
  _Yes: "是"

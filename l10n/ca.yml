@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Catalan language data (last modified: 2025.06.09).
+# This file: Catalan language data (last modified: 2025.07.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -40,6 +40,8 @@ config:
  core_log_rotation_limit: "La rotació del registre limita el nombre de fitxers de registre que haurien d'existir en un moment determinat. Quan es creen fitxers de registre nous, si el nombre total de fitxers de registre supera el límit especificat, es realitzarà l'acció especificada. Aquí podeu especificar el límit desitjat. Un valor de 0 desactivarà la rotació del registre."
  core_maintenance_mode: "Activar el mode de manteniment? True/Cert = Sí; False/Fals = No [Predeterminat]. Desactiva tot el que no sigui el front-end. De vegades útil per actualitzar el vostre CMS, frameworks, etc."
  core_outbound_request_log: "Un fitxer per registrar els resultats de qualsevol sol·licitud de sortida. Especifiqueu un nom de fitxer, o deixeu-lo en blanc per desactivar-lo."
+ core_request_proxy: "Si voleu que les sol·licituds de sortida s'enviïn a través d'un proxy, especifiqueu aquest proxy aquí. Si no, deixeu-ho en blanc."
+ core_request_proxyauth: "Si envieu sol·licituds a través d'un proxy i aquest proxy requereix un nom d'usuari i una contrasenya, especifiqueu aquest nom d'usuari i contrasenya aquí (per exemple, <code>user:pass</code>). Si no, deixeu-ho en blanc."
  core_scan_cache_expiry: "Quant de temps hauria d'emmagatzemar a la memòria cau phpMussel els resultats de l'escaneig? El valor és el nombre de segons per a la memòria cau els resultats de l'escaneig. El valor predeterminat és 21600 segons (6 hores); Un valor de 0 desactivarà l'emmagatzematge a la memòria cau dels resultats de l'escaneig."
  core_scan_log: "El nom del fitxer on registrar tots els resultats de l'escaneig. Especifiqueu un nom de fitxer, o deixeu-lo en blanc per desactivar-lo."
  core_scan_log_serialized: "El nom del fitxer on registrar tots els resultats de l'escaneig (utilitzant un format serialitzat). Especifiqueu un nom de fitxer, o deixeu-lo en blanc per desactivar-lo."

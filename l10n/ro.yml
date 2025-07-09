@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data (last modified: 2025.06.09).
+# This file: Romanian language data (last modified: 2025.07.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -40,6 +40,8 @@ config:
  core_log_rotation_limit: "Rotația jurnalului limitează numărul de fișiere jurnal care ar trebui să existe la un moment dat. Când sunt create fișiere jurnal noi, dacă numărul total de fișiere jurnal depășește limita specificată, acțiunea specificată va fi efectuată. Aici puteți specifica limita dorită. O valoare de 0 va dezactiva rotirea jurnalului."
  core_maintenance_mode: "Activați modul de întreținere? True = Da; False = Nu [Implicit]. Dezactivează totul, în afară de front-end. Uneori util pentru actualizarea CMS-ului, cadrelor, etc."
  core_outbound_request_log: "Un fișier pentru înregistrarea rezultatelor oricăror solicitări de ieșire. Specificați un nume de fișier, sau lăsați necompletat pentru a dezactiva."
+ core_request_proxy: "Dacă doriți ca solicitările de ieșire să fie trimise printr-un proxy, specificați proxy-ul respectiv aici. Dacă nu, lăsați acest câmp necompletat."
+ core_request_proxyauth: "Dacă trimit solicitări de ieșire printr-un proxy și dacă proxy-ul respectiv necesită un nume de utilizator și o parolă, specificați numele de utilizator și parola respective aici (de exemplu, <code>user:pass</code>). Dacă nu, lăsați acest câmp necompletat."
  core_scan_cache_expiry: "Pentru cât timp ar trebui phpMussel să păstreze în cache rezultatele scanării? Valoarea este numărul de secunde pentru care se memorează în cache rezultatele scanării. Implicit este 21600 secunde (6 ore); O valoare de 0 va dezactiva stocarea în cache a rezultatelor scanării."
  core_scan_log: "Numele fișierului în care se înregistrează toate rezultatele scanării. Specificați un nume de fișier, sau lăsați necompletat pentru a dezactiva."
  core_scan_log_serialized: "Numele fișierului în care se înregistrează toate rezultatele scanării (folosind un format serializat). Specificați un nume de fișier, sau lăsați necompletat pentru a dezactiva."

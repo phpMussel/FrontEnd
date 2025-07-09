@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2025.06.09).
+# This file: Polish language data (last modified: 2025.07.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -40,6 +40,8 @@ config:
  core_log_rotation_limit: "Rotacja dziennika ogranicza liczbę plików dziennika, które powinny istnieć jednocześnie. Po utworzeniu nowych plików dziennika, jeśli całkowita liczba plików dziennika przekroczy określony limit, zostanie wykonana określona akcja. Tutaj możesz określić żądany limit. Wartość 0 spowoduje wyłączenie rotacja dziennika."
  core_maintenance_mode: "Włączyć tryb konserwacji? True (Prawdziwe) = Tak; False (Fałszywy) = Nie [Domyślna]. Wyłącza wszystko oprócz interfejsu użytkownika. Czasami przydatne w przypadku aktualizacji CMS, frameworków, itp."
  core_outbound_request_log: "Plik do rejestrowania wyników wszelkich żądań wychodzących. Podaj nazwę pliku lub pozostaw puste, aby wyłączyć."
+ core_request_proxy: "Jeśli chcesz aby żądania wychodzące były wysyłane przez serwer proxy, określ ten serwer proxy tutaj. Jeśli nie, zostaw to pole puste."
+ core_request_proxyauth: "Jeśli wysyłasz żądania wychodzące przez serwer proxy i ten serwer proxy wymaga nazwy użytkownika i hasła, podaj tutaj tę nazwę użytkownika i hasło (np., <code>user:pass</code>). Jeśli nie, zostaw to pole puste."
  core_scan_cache_expiry: "Jak długo phpMussel powinien buforować wyniki skanowania? Wartość to liczba sekund, przez którą buforowane są wyniki skanowania. Domyślnie 21600 sekund (6 godzin); Wartość 0 spowoduje wyłączenie buforowania wyników skanowania."
  core_scan_log: "Nazwa pliku do rejestrowania wszystkich wyników skanowania Podaj nazwę pliku lub pozostaw puste, aby wyłączyć."
  core_scan_log_serialized: "Nazwa pliku do rejestrowania wszystkich wyników skanowania (przy użyciu formatu zserializowanego). Podaj nazwę pliku lub pozostaw puste, aby wyłączyć."

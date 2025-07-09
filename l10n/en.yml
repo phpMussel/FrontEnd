@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2025.06.09).
+# This file: English language data (last modified: 2025.07.08).
 ##/
 
 checkbox:
@@ -28,6 +28,8 @@ config:
  core_log_rotation_limit: "Log rotation limits the number of log files that should exist at any one time. When new log files are created, if the total number of log files exceeds the specified limit, the specified action will be performed. You can specify the desired limit here. A value of 0 will disable log rotation."
  core_maintenance_mode: "Enable maintenance mode? True = Yes; False = No [Default]. Disables everything other than the front-end. Sometimes useful for when updating your CMS, frameworks, etc."
  core_outbound_request_log: "A file for logging the results of any outbound requests. Specify a filename, or leave blank to disable."
+ core_request_proxy: "If you want outbound requests to be sent through a proxy, specify that proxy here. If not, leave this blank."
+ core_request_proxyauth: "If sending outbound requests through a proxy and if that proxy requires a username and password, specify that username and password here (e.g., <code>user:pass</code>). If not, leave this blank."
  core_scan_cache_expiry: "For how long should phpMussel cache the results of scanning? Value is the number of seconds to cache the results of scanning for. Default is 21600 seconds (6 hours); A value of 0 will disable caching the results of scanning."
  core_scan_log: "The name of the file to log all scanning results to. Specify a filename, or leave blank to disable."
  core_scan_log_serialized:

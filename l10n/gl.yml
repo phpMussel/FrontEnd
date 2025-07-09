@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Galician language data (last modified: 2025.06.09).
+# This file: Galician language data (last modified: 2025.07.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -40,6 +40,8 @@ config:
  core_log_rotation_limit: "A rotación do rexistro limita o número de ficheiros de rexistro que deberían existir en cada momento. Cando se crean novos ficheiros de rexistro, se o número total de ficheiros de rexistro supera o límite especificado, realizarase a acción especificada. Podes especificar o límite desexado aquí. Un valor de 0 desactivará a rotación do rexistro."
  core_maintenance_mode: "Activar o modo de mantemento? True/Verdadeiro = Si; False/Falso = Non [Predeterminado]. Desactiva todo o que non sexa o front-end. Ás veces útil para actualizar o teu CMS, frameworks, etc."
  core_outbound_request_log: "Un ficheiro para rexistrar os resultados de calquera solicitude de saída. Especifique un nome de ficheiro, ou déixeo en branco para desactivalo."
+ core_request_proxy: "Se queres que as solicitudes de saída se envíen a través dun proxy, especifica ese proxy aquí. Se non, deixa isto en branco."
+ core_request_proxyauth: "Se envías solicitudes de saída a través dun proxy e se ese proxy require un nome de usuario e un contrasinal, especifica ese nome de usuario e contrasinal aquí (por exemplo, <code>user:pass</code>). Se non, deixa isto en branco."
  core_scan_cache_expiry: "Canto tempo debería phpMussel almacenar na caché os resultados da exploración? O valor é o número de segundos para almacenar na caché os resultados da exploración. O valor predeterminado é 21600 segundos (6 horas); Un valor de 0 desactivará o almacenamento na caché dos resultados da exploración."
  core_scan_log: "O nome do ficheiro no que rexistrar todos os resultados da exploración. Especifique un nome de ficheiro, ou déixeo en branco para desactivalo."
  core_scan_log_serialized: "O nome do ficheiro no que rexistrar todos os resultados da exploración (utilizando un formato serializado). Especifique un nome de ficheiro, ou déixeo en branco para desactivalo."
