@@ -203,3 +203,4 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 #### Other changes.
 - [2025.07.05]: Aesthetic patch.
 - [2025.07.08]: Added the ability to route all outbound requests through a proxy, and two new configuration directives, `request_proxy` and `request_proxyauth`.
+- [2025.08.01]: Slightly improved the navigation SVGs.
