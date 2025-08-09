@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2025.07.08).
+# This file: Norwegian language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "Font forstørrelse. Standardverdi = 1."
  frontend_max_login_attempts: "Maksimum antall påloggingsforsøk i front-end. Standard = 5."
  frontend_numbers: "Hvordan foretrekker du at tall vises? Velg eksempelet som passer best for deg."
- frontend_theme: "Det estetiske å bruke for phpMussel frontenden."
+ frontend_theme: "Temaet som skal brukes for frontenden."
+ frontend_theme_mode: "Modusen for temaet som skal brukes for frontenden."
  legal: "Konfigurasjon for juridiske krav."
  legal_privacy_policy: "Adressen til en relevant personvernpolicy som skal vises i bunnteksten til genererte sider. Angi en nettadresse, eller la det være tomt for å deaktivere."
  legal_pseudonymise_ip_addresses: "Pseudonymisere IP-adresser når du logger? True = Ja [Standardverdi]; False = Nei."
@@ -250,6 +251,7 @@ label:
  Extension: "Forlengelse"
  External: "Ekstern"
  Installed Available: "Installert/Tilgjengelig"
+ Inverted: "Invertert"
  Latest stable: "Siste stabile:"
  Latest unstable: "Siste ustabil:"
  Loading_: "Laster ..."
@@ -261,6 +263,7 @@ label:
  Never: "Aldri"
  No log file selected: "Ingen loggfil valgt."
  No log files available: "Ingen loggfiler tilgjengelig."
+ Normal: "Normal"
  Objects flagged: "Objekter flagget"
  Objects scanned: "Objekter skannet"
  Operating system used: "Operativsystem brukt:"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Catalan language data (last modified: 2025.07.08).
+# This file: Catalan language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "Ampliació de la font. Predeterminat = 1."
  frontend_max_login_attempts: "Nombre màxim d'intents d'iniciar sessió al front-end. Predeterminat = 5."
  frontend_numbers: "Com prefereixes que es mostrin els números? Seleccioneu l'exemple que us sembli més correcte."
- frontend_theme: "L'estètica a utilitzar per al front-end de phpMussel."
+ frontend_theme: "El tema que s'utilitzarà per al front-end."
+ frontend_theme_mode: "El mode que el tema utilitzarà per al front-end."
  legal: "Configuració per requisits legals."
  legal_privacy_policy: "L'adreça d'una política de privadesa rellevant que es mostrarà al peu de qualsevol pàgina generada. Especifiqueu un URL, o deixeu-lo en blanc per desactivar-lo."
  legal_pseudonymise_ip_addresses: "Pseudonimitzar les adreces IP en registrar dades? True/Cert = Sí [Predeterminat]; False/Fals = No."
@@ -250,6 +251,7 @@ label:
  Extension: "Extensió"
  External: "Extern"
  Installed Available: "Instal·lat/Disponible"
+ Inverted: "Invertit"
  Latest stable: "Últim estable:"
  Latest unstable: "Últim inestable:"
  Loading_: "Carregant..."
@@ -261,6 +263,7 @@ label:
  Never: "Mai"
  No log file selected: "No s'ha seleccionat cap fitxer de registre."
  No log files available: "No hi ha fitxers de registre disponibles."
+ Normal: "Normal"
  Objects flagged: "Objectes marcats"
  Objects scanned: "Objectes escanejats"
  Operating system used: "Sistema operatiu utilitzat:"

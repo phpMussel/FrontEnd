@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2025.07.08).
+# This file: Japanese language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "フォントの倍率。 Default/デフォルルト = １。"
  frontend_max_login_attempts: "ログイン試行の最大回数（フロントエンド）。 Default/デフォルルト = ５。"
  frontend_numbers: "どのように数字を表示するのが好きですか？​あなたに一番正しい例を選択してください。"
- frontend_theme: "phpMusselフロントエンドに使用する美学。"
+ frontend_theme: "フロントエンドに使用するテーマ。"
+ frontend_theme_mode: "フロントエンドに使用するテーマのモード。"
  legal: "法的要件のコンフィギュレーション。"
  legal_privacy_policy: "生成されたページのフッターに表示される関連プライバシー・ポリシーのアドレス。​ＵＲＬを指定するか、無効にしたい場合は空白のままにして下さい。"
  legal_pseudonymise_ip_addresses: "ログ・ファイルを書き込むときにＩＰアドレス偽名化するか「プセユードニマイズ」？ True = はい（Default/デフォルルト）。 False = いいえ。"
@@ -250,6 +251,7 @@ label:
  Extension: "エクステンション"
  External: "外部"
  Installed Available: "インストールされている/利用可能です"
+ Inverted: "反転"
  Latest stable: "最新安定："
  Latest unstable: "最新不安定："
  Loading_: "読み込んでいます..."
@@ -261,6 +263,7 @@ label:
  Never: "決して"
  No log file selected: "ログが選択されていません。"
  No log files available: "いいえログが利用可能。"
+ Normal: "普通"
  Objects flagged: "フラグされたオブジェクト"
  Objects scanned: "スキャンされたオブジェクト"
  Operating system used: "使用されたオペレーティングシステム："

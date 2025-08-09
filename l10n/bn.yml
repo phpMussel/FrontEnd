@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bangla language data (last modified: 2025.07.08).
+# This file: Bangla language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "ফন্ট বৃহত্তরীকরণ। ডিফল্ট = "1"।"
  frontend_max_login_attempts: "লগইন প্রচেষ্টা সর্বাধিক সংখ্যা। ডিফল্ট = "5"।"
  frontend_numbers: "কিভাবে সংখ্যা প্রদর্শন করা উচিত? উদাহরণটি নির্বাচন করুন যা আপনার কাছে সবচেয়ে সঠিক দেখায়।"
- frontend_theme: "phpMussel ফ্রন্ট-এন্ডের জন্য ব্যবহার করার নান্দনিক।"
+ frontend_theme: "ফ্রন্ট-এন্ডের জন্য ব্যবহৃত থিম।"
+ frontend_theme_mode: "ফ্রন্ট-এন্ডের জন্য ব্যবহৃত থিমের মোড।"
  legal: "আইনী প্রয়োজনীয়তার জন্য কনফিগারেশন।"
  legal_privacy_policy: "কোন প্রযোজ্য পৃষ্ঠাগুলির পাদলেখ প্রদর্শিত একটি প্রাসঙ্গিক গোপনীয়তা নীতির ঠিকানা। একটি URL উল্লেখ করুন, বা অক্ষম করতে ফাঁকা রাখুন।"
  legal_pseudonymise_ip_addresses: "লগ লেখার সময় আইপি ঠিকানাগুলি pseudonymize? True = হাঁ [ডিফল্ট]; False = না।"
@@ -250,6 +251,7 @@ label:
  Extension: "এক্সটেনশন"
  External: "এক্সটার্নাল"
  Installed Available: "ইনস্টল করা হয়েছে / সহজলভ্য"
+ Inverted: "উল্টানো"
  Latest stable: "সর্বশেষ স্থিতিশীল:"
  Latest unstable: "সর্বশেষ অস্থিতিশীল:"
  Loading_: "লোড হচ্ছে ..."
@@ -261,6 +263,7 @@ label:
  Never: "না"
  No log file selected: "কোনও লগ ফাইল নির্বাচিত নেই।"
  No log files available: "কোন লগ ফাইল উপলব্ধ।"
+ Normal: "স্বাভাবিক"
  Objects flagged: "অবজেক্টস পতাকাঙ্কিত"
  Objects scanned: "অবজেক্টস স্ক্যান করা"
  Operating system used: "অপারেটিং সিস্টেম ব্যবহৃত:"

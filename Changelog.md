@@ -204,3 +204,4 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 - [2025.07.05]: Aesthetic patch.
 - [2025.07.08]: Added the ability to route all outbound requests through a proxy, and two new configuration directives, `request_proxy` and `request_proxyauth`.
 - [2025.08.01]: Slightly improved the navigation SVGs.
+- [2025.08.08]: Added the ability to change the "mode" of the configured theme, thus enabling any singular theme to have some slight variation in its potential presentation. Two new configuration directives have been added to facilitate this (look for `theme_mode` under `frontend` and `web` respectively, directly under the existing `theme` configuration directives). For now, the available "modes" are just "normal" and "inverted" (the latter inverting the tone of the colours/lighting used by the theme).

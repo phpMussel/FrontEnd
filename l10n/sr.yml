@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Serbian language data (last modified: 2025.07.27).
+# This file: Serbian language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "Увећање фонта. Подразумевано = 1."
  frontend_max_login_attempts: "Максималан број покушаја пријављивања на фронт-енд. Подразумевано = 5."
  frontend_numbers: "Како желите да се бројеви приказују? Изаберите пример који вам се чини најисправнијим."
- frontend_theme: "Естетика која се користи за пхпМуссел фронт-енд."
+ frontend_theme: "Тема која ће се користити за фронт-енд."
+ frontend_theme_mode: "Режим за тема која ће се користити за фронт-енд."
  legal: "Конфигурација за законске захтеве."
  legal_privacy_policy: "Адреса релевантне политике приватности која ће се приказати у подножју сваке генерисане странице. Наведите УРЛ, или оставите празно да бисте онемогућили."
  legal_pseudonymise_ip_addresses: "Псеудонимизирати ИП адресе приликом пријављивања? Истинито = Да [Подразумевано]; Лажно = Не."
@@ -250,6 +251,7 @@ label:
  Extension: "Екстензија"
  External: "Спољни"
  Installed Available: "Инсталирано/Доступно"
+ Inverted: "Обрнуто"
  Latest stable: "Најновија стабилна верзија:"
  Latest unstable: "Најновије нестабилно верзија:"
  Loading_: "Учитавање..."
@@ -261,6 +263,7 @@ label:
  Never: "Никад"
  No log file selected: "Није изабрана датотека дневника."
  No log files available: "Нема доступних датотека дневника."
+ Normal: "Нормално"
  Objects flagged: "Означени објекти"
  Objects scanned: "Скенирани објекти"
  Operating system used: "Коришћени оперативни систем:"

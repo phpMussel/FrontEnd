@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2025.07.08).
+# This file: English language data (last modified: 2025.08.08).
 ##/
 
 checkbox:
@@ -86,7 +86,8 @@ config:
  frontend_magnification: "Font magnification. Default = 1."
  frontend_max_login_attempts: "Maximum number of front-end login attempts. Default = 5."
  frontend_numbers: "How do you prefer numbers to be displayed? Select the example that looks the most correct to you."
- frontend_theme: "The aesthetic to use for the phpMussel front-end."
+ frontend_theme: "The theme to use for the front-end."
+ frontend_theme_mode: "The mode for the theme to use for the front-end."
  legal: "Configuration for legal requirements."
  legal_privacy_policy: "The address of a relevant privacy policy to be displayed in the footer of any generated pages. Specify a URL, or leave blank to disable."
  legal_pseudonymise_ip_addresses:
@@ -250,6 +251,7 @@ label:
  Extension: "Extension"
  External: "External"
  Installed Available: "Installed/Available"
+ Inverted: "Inverted"
  Latest stable: "Latest stable:"
  Latest unstable: "Latest unstable:"
  Loading_: "Loading..."
@@ -261,6 +263,7 @@ label:
  Never: "Never"
  No log file selected: "No log file selected."
  No log files available: "No log files available."
+ Normal: "Normal"
  Objects flagged: "Objects flagged"
  Objects scanned: "Objects scanned"
  Operating system used: "Operating system used:"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2025.07.08).
+# This file: Vietnamese language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "Phóng to chữ. Mặc định = 1."
  frontend_max_login_attempts: "Số lượng tối đa cố gắng đăng nhập front-end. Mặc định = 5."
  frontend_numbers: "Làm thế nào để bạn thích số được hiển thị? Chọn ví dụ có vẻ chính xác nhất cho bạn."
- frontend_theme: "Tính thẩm mỹ để sử dụng cho giao diện người dùng phpMussel."
+ frontend_theme: "chủ đề sẽ được sử dụng cho front-end."
+ frontend_theme_mode: "Chế độ cho chủ đề sẽ được sử dụng cho front-end."
  legal: "Cấu hình cho các yêu cầu pháp lý."
  legal_privacy_policy: "Địa chỉ của chính sách bảo mật liên quan được hiển thị ở chân trang của bất kỳ trang nào được tạo. Chỉ định URL, hoặc để trống để vô hiệu hóa."
  legal_pseudonymise_ip_addresses: "Pseudonymise địa chỉ IP khi viết các tập tin nhật ký? True = Vâng [Mặc định]; False = Không."
@@ -250,6 +251,7 @@ label:
  Extension: "Phần mở rộng"
  External: "Bên ngoài"
  Installed Available: "Được cài đặt / Có sẵn"
+ Inverted: "Nghịch đảo"
  Latest stable: "Ổn định mới nhất:"
  Latest unstable: "Không ổn định mới nhất:"
  Loading_: "Trong tiến trình..."
@@ -261,6 +263,7 @@ label:
  Never: "Không bao giờ"
  No log file selected: "Không có bản ghi được chọn."
  No log files available: "Không có bản ghi có sẵn."
+ Normal: "Bình thường"
  Objects flagged: "Đối tượng bị gắn cờ"
  Objects scanned: "Đối tượng được quét"
  Operating system used: "Hệ điều hành đang được dùng:"

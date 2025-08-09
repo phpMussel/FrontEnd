@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Ukrainian language data (last modified: 2025.07.08).
+# This file: Ukrainian language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "Збільшення шрифту. Стандарт = 1."
  frontend_max_login_attempts: "Максимальна кількість спроб входу в фронтенд. Стандарт = 5."
  frontend_numbers: "Як ви віддаєте перевагу відображенню чисел? Виберіть приклад, який вам здається найбільш правильним."
- frontend_theme: "Естетика для фронтенду phpMussel."
+ frontend_theme: "Тема для використання для фронтенду."
+ frontend_theme_mode: "Режим для тема для використання для фронтенду."
  legal: "Конфігурація для правових вимог."
  legal_privacy_policy: "Адреса відповідної політики конфіденційності, яка відображатиметься в нижньому колонтитулі будь-яких згенерованих сторінок. Укажіть URL, або залиште поле порожнім щоб вимкнути."
  legal_pseudonymise_ip_addresses: "Псевдонімізувати IP-адреси під час журналізації? True = Так [Стандарт]; False = Ні."
@@ -250,6 +251,7 @@ label:
  Extension: "Розширення"
  External: "Зовнішня"
  Installed Available: "Встановлено/Доступно"
+ Inverted: "Перевернутий"
  Latest stable: "Остання стабільна версія:"
  Latest unstable: "Остання нестабільна версія:"
  Loading_: "Завантаження..."
@@ -261,6 +263,7 @@ label:
  Never: "Ніколи"
  No log file selected: "Файл журналу не вибрано."
  No log files available: "Немає доступних файлів журналу."
+ Normal: "Природний"
  Objects flagged: "Об'єкти позначені"
  Objects scanned: "Скановані об'єкти"
  Operating system used: "Використана операційна система:"

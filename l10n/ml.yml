@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malayalam language data (last modified: 2025.07.08).
+# This file: Malayalam language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "ഫോണ്ട് മാഗ്നിഫിക്കേഷൻ. സ്ഥിരസ്ഥിതി = 1."
  frontend_max_login_attempts: "ഫ്രണ്ട്-എൻഡ് ലോഗിൻ ശ്രമങ്ങളുടെ പരമാവധി എണ്ണം. സ്ഥിരസ്ഥിതി = 5."
  frontend_numbers: "അക്കങ്ങൾ എങ്ങനെ പ്രദർശിപ്പിക്കാനാണ് നിങ്ങൾ ഇഷ്ടപ്പെടുന്നത്? നിങ്ങൾക്ക് ഏറ്റവും ശരിയായി തോന്നുന്ന ഉദാഹരണം തിരഞ്ഞെടുക്കുക."
- frontend_theme: "phpMussel ഫ്രണ്ട്-എൻഡിൽ ഉപയോഗിക്കാനുള്ള സൗന്ദര്യശാസ്ത്രം."
+ frontend_theme: "ഫ്രണ്ട്-എന്റിന് ഉപയോഗിക്കേണ്ട തീം."
+ frontend_theme_mode: "ഫ്രണ്ട്-എന്റിന് ഉപയോഗിക്കേണ്ട തീമിനുള്ള മോഡ്."
  legal: "നിയമപരമായ ആവശ്യകതകൾക്കായുള്ള കോൺഫിഗറേഷൻ."
  legal_privacy_policy: "ജനറേറ്റ് ചെയ്യുന്ന ഏതൊരു പേജിന്റെയും ഫൂട്ടറിൽ പ്രദർശിപ്പിക്കേണ്ട പ്രസക്തമായ സ്വകാര്യതാ നയത്തിന്റെ വിലാസം. ഒരു URL വ്യക്തമാക്കുക, അല്ലെങ്കിൽ പ്രവർത്തനരഹിതമാക്കാൻ ശൂന്യമായി വിടുക."
  legal_pseudonymise_ip_addresses: "രേഖപ്പെടുത്തിയിരിക്കുന്ന IP വിലാസങ്ങൾ വ്യാജനാമമാക്കണോ? True = അതെ [സ്ഥിരസ്ഥിതി]; False = ഇല്ല."
@@ -250,6 +251,7 @@ label:
  Extension: "എക്സ്റ്റൻഷൻ"
  External: "ബാഹ്യ"
  Installed Available: "ഇൻസ്റ്റാൾ ചെയ്‌തു/ലഭ്യം"
+ Inverted: "വിപരീതം"
  Latest stable: "ഏറ്റവും പുതിയ സ്റ്റേബിൾ:"
  Latest unstable: "ഏറ്റവും പുതിയ അസ്ഥിരം:"
  Loading_: "ലോഡ് ചെയ്യുന്നു..."
@@ -261,6 +263,7 @@ label:
  Never: "ഒരിക്കലും"
  No log file selected: "ഒരു ലോഗ് ഫയലും തിരഞ്ഞെടുത്തിട്ടില്ല."
  No log files available: "ലോഗ് ഫയലുകളൊന്നും ലഭ്യമല്ല."
+ Normal: "സാധാരണ"
  Objects flagged: "ഫ്ലാഗ് ചെയ്ത വസ്തുക്കൾ"
  Objects scanned: "സ്കാൻ ചെയ്ത വസ്തുക്കൾ"
  Operating system used: "ഉപയോഗിച്ച ഓപ്പറേറ്റിംഗ് സിസ്റ്റം:"

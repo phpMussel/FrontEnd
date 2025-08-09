@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2025.07.08).
+# This file: Swedish language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "Font förstoring. Standard = 1."
  frontend_max_login_attempts: "Maximalt antal inloggningsförsök i front-end. Standard = 5."
  frontend_numbers: "Hur föredrar du nummer som ska visas? Välj det exempel som är mest korrekt för dig."
- frontend_theme: "Det estetiska att använda för phpMussel front-end."
+ frontend_theme: "Temat som ska användas för front-enden."
+ frontend_theme_mode: "Läget för temat som ska användas för front-enden."
  legal: "Konfiguration för lagkrav."
  legal_privacy_policy: "Adressen till en relevant integritetspolicy som ska visas i sidfoten av genererade sidor. Ange en webbadress, eller lämna tomt för att inaktivera."
  legal_pseudonymise_ip_addresses: "Pseudonymisera IP-adresser när loggning? True = Ja [Standard]; False = Nej."
@@ -250,6 +251,7 @@ label:
  Extension: "Förlängning"
  External: "Extern"
  Installed Available: "Installerad/Tillgängliga"
+ Inverted: "Omvänd"
  Latest stable: "Senaste stabila:"
  Latest unstable: "Senaste instabil:"
  Loading_: "Laddar..."
@@ -261,6 +263,7 @@ label:
  Never: "Aldrig"
  No log file selected: "Ingen loggfil vald."
  No log files available: "Inga loggfiler finns tillgängliga."
+ Normal: "Normal"
  Objects flagged: "Föremål flaggas"
  Objects scanned: "Föremål skannade"
  Operating system used: "Operativsystem som används:"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2025.07.08).
+# This file: Arabic language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "تكبير الخط. افتراضي = 1."
  frontend_max_login_attempts: "الحد الأقصى لعدد محاولات تسجيل الدخول (front-end). الافتراضي = 5."
  frontend_numbers: "كيف تفضل الأرقام ليتم عرضها؟ حدد المثال الذي يبدو أكثر صحيح لك."
- frontend_theme: "الجمالية المراد استخدامها في الواجهة الأمامية phpMussel."
+ frontend_theme: "الموضوع الذي سيتم استخدامه للواجهة الأمامية."
+ frontend_theme_mode: "الوضع الذي سيتم استخدامه للموضوع في الواجهة الأمامية."
  legal: "التكوين للمتطلبات القانونية."
  legal_privacy_policy: "عنوان سياسة الخصوصية ذات الصلة ليتم عرضها في تذييل الصفحات التي تم إنشاؤها. حدد عنوان URL، أو اتركه فارغًا لتعطيله."
  legal_pseudonymise_ip_addresses: "إخفاء عناوين IP عند كتابة السجلات؟ صحيح/True = نعم [افتراضي]؛ زائفة/False = لا."
@@ -250,6 +251,7 @@ label:
  Extension: "التمديد"
  External: "خارجي"
  Installed Available: "المثبتة/متاح"
+ Inverted: "معكوس"
  Latest stable: "أحدث مستقرة:"
  Latest unstable: "أحدث غير مستقرة:"
  Loading_: "جار التحميل..."
@@ -261,6 +263,7 @@ label:
  Never: "أبدا"
  No log file selected: "لا سجلات مختار."
  No log files available: "لا سجلات متاح."
+ Normal: "طبيعي"
  Objects flagged: "تم الإبلاغ عن الكائنات"
  Objects scanned: "الكائنات التي الممسوحة ضوئيا"
  Operating system used: "نظام التشغيل المستخدمة:"

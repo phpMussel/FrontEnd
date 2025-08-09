@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Gujarati language data (last modified: 2025.07.27).
+# This file: Gujarati language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "ફોન્ટ મેગ્નિફિકેશન. ડિફૉલ્ટ = 1."
  frontend_max_login_attempts: "ફ્રન્ટ-એન્ડ લૉગિન પ્રયાસોની મહત્તમ સંખ્યા. ડિફૉલ્ટ = 5."
  frontend_numbers: "તમે કેવી રીતે નંબરો પ્રદર્શિત કરવાનું પસંદ કરો છો? તમારા માટે સૌથી સાચું લાગે તે ઉદાહરણ પસંદ કરો."
- frontend_theme: "phpMussel ફ્રન્ટ-એન્ડ માટે ઉપયોગ કરવા માટે સૌંદર્યલક્ષી."
+ frontend_theme: "ફ્રન્ટ-એન્ડ માટે વાપરવાની થીમ."
+ frontend_theme_mode: "ફ્રન્ટ-એન્ડ માટે વાપરવાની થીમ માટે મોડ."
  legal: "કાનૂની જરૂરિયાતો માટે રૂપરેખાંકન."
  legal_privacy_policy: "સંબંધિત ગોપનીયતા નીતિનું સરનામું કોઈપણ જનરેટ કરેલા પૃષ્ઠોના ફૂટરમાં પ્રદર્શિત કરવું. URL નો ઉલ્લેખ કરો અથવા અક્ષમ કરવા માટે ખાલી છોડી દો."
  legal_pseudonymise_ip_addresses: "લૉગિંગ કરતી વખતે IP સરનામાંને સ્યુડોનામિઝ કરો? True/સાચું = હા [ડિફૉલ્ટ]; False/ખોટા = ના."
@@ -250,6 +251,7 @@ label:
  Extension: "વિસ્તરણ"
  External: "બાહ્ય"
  Installed Available: "ઇન્સ્ટોલ/ઉપલબ્ધ છે"
+ Inverted: "ઊલટું"
  Latest stable: "નવીનતમ સ્થિર:"
  Latest unstable: "નવીનતમ અસ્થિર:"
  Loading_: "લોડ કરી રહ્યું છે..."
@@ -261,6 +263,7 @@ label:
  Never: "ક્યારેય ન"
  No log file selected: "કોઈ લૉગ ફાઇલ પસંદ કરેલ નથી."
  No log files available: "કોઈ લૉગ ફાઇલો ઉપલબ્ધ નથી."
+ Normal: "કુદરતી"
  Objects flagged: "ધ્વજાંકિત વસ્તુઓની સંખ્યા"
  Objects scanned: "સ્કેન કરેલી વસ્તુઓની સંખ્યા"
  Operating system used: "વપરાયેલ ઓપરેટિંગ સિસ્ટમ:"

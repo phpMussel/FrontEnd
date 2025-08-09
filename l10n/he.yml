@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data (last modified: 2025.07.27).
+# This file: Hebrew language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "הגדלת גופן. סטנדרטי = 1."
  frontend_max_login_attempts: "המספר המרבי של ניסיונות כניסה הקצה הקדמי. סטנדרטי = 5."
  frontend_numbers: "איך אתה מעדיף שמספרים יוצגו? בחר את הדוגמה שנראית לך הנכונה ביותר."
- frontend_theme: "האסתטיקה לשימוש עבור הקצה הקדמית של phpMussel."
+ frontend_theme: "ערכת הנושא לשימוש עבור הקדמי."
+ frontend_theme_mode: "המצב עבור ערכת הנושא לשימוש עבור הקדמי."
  legal: "תצורה לדרישות משפטיות."
  legal_privacy_policy: "הכתובת של מדיניות פרטיות רלוונטית שתוצג בכותרת התחתונה של כל עמוד שנוצר. ציין כתובת אתר, או השאר ריק כדי להשבית."
  legal_pseudonymise_ip_addresses: "לטשטש חלקית כתובות IP בעת רישום? True = כן [סטנדרטי]; False = לא."
@@ -250,6 +251,7 @@ label:
  Extension: "הרחבת"
  External: "חיצוני"
  Installed Available: "מותקן/זמין"
+ Inverted: "הפוך"
  Latest stable: "יציב אחרון:"
  Latest unstable: "לא יציב אחרון:"
  Loading_: "טוען..."
@@ -261,6 +263,7 @@ label:
  Never: "לעולם לא"
  No log file selected: "לא נבחר קובץ יומן."
  No log files available: "אין קבצי יומן זמינים."
+ Normal: "נורמלי"
  Objects flagged: "אובייקטים מסומנים"
  Objects scanned: "חפצים נסרקו"
  Operating system used: "מערכת הפעלה בשימוש:"

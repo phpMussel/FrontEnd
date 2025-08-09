@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hindi language data (last modified: 2025.07.08).
+# This file: Hindi language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "फ़ॉन्ट बढ़ाई। डिफ़ॉल्ट = 1।"
  frontend_max_login_attempts: "फ्रंट-एंड लॉगिन प्रयासों की अधिकतम संख्या। डिफ़ॉल्ट = 5।"
  frontend_numbers: "आप संख्याओं को प्रदर्शित करने के लिए कैसे पसंद करते हैं? उदाहरण का चयन करें जो आपके लिए सबसे सही लग रहा है।"
- frontend_theme: "phpMussel फ्रंट-एंड के लिए उपयोग करने का सौंदर्यशास्त्र।"
+ frontend_theme: "फ्रंट-एंड के लिए उपयोग की जाने वाली थीम।"
+ frontend_theme_mode: "फ्रंट-एंड के लिए उपयोग की जाने वाली थीम के लिए मोड।"
  legal: "कानूनी आवश्यकताओं के लिए कॉन्फ़िगरेशन।"
  legal_privacy_policy: "किसी भी जेनरेट किए गए पृष्ठों के पाद लेख में प्रदर्शित होने वाली प्रासंगिक गोपनीयता नीति का पता। एक URL निर्दिष्ट करें, या अक्षम करने के लिए खाली छोड़ दें।"
  legal_pseudonymise_ip_addresses: "लॉग फाइल लिखते समय pseudonymize IP पते? True(सच्चे) = हाँ [डिफ़ॉल्ट]; False(झूठी) = नहीं।"
@@ -250,6 +251,7 @@ label:
  Extension: "विस्तार"
  External: "बाहरी"
  Installed Available: "स्थापित/उपलब्ध है"
+ Inverted: "उल्टे"
  Latest stable: "नवीनतम स्थिर:"
  Latest unstable: "नवीनतम अस्थिर:"
  Loading_: "लोड हो रहा है..."
@@ -261,6 +263,7 @@ label:
  Never: "कभी नहीँ"
  No log file selected: "कोई लॉग फाइल चयनित नहीं।"
  No log files available: "कोई लॉग फाइल उपलब्ध नहीं।"
+ Normal: "प्राकृतिक"
  Objects flagged: "फ़्लैग किए गए ऑब्जेक्ट"
  Objects scanned: "स्कैन किए गए ऑब्जेक्ट"
  Operating system used: "ऑपरेटिंग सिस्टम का इस्तेमाल किया:"

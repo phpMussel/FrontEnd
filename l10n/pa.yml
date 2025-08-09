@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Punjabi language data (last modified: 2025.07.08).
+# This file: Punjabi language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "ਫੌਂਟ ਵੱਡਦਰਸ਼ੀ। ਡਿਫਾਲਟ = 1."
  frontend_max_login_attempts: "ਫਰੰਟ-ਐਂਡ ਲੌਗਇਨ ਕੋਸ਼ਿਸ਼ਾਂ ਦੀ ਅਧਿਕਤਮ ਸੰਖਿਆ। ਡਿਫਾਲਟ = 5."
  frontend_numbers: "ਤੁਸੀਂ ਨੰਬਰਾਂ ਨੂੰ ਕਿਵੇਂ ਪ੍ਰਦਰਸ਼ਿਤ ਕਰਨ ਨੂੰ ਤਰਜੀਹ ਦਿੰਦੇ ਹੋ? ਉਹ ਉਦਾਹਰਨ ਚੁਣੋ ਜੋ ਤੁਹਾਨੂੰ ਸਭ ਤੋਂ ਸਹੀ ਲੱਗੇ।"
- frontend_theme: "phpMussel ਫਰੰਟ-ਐਂਡ ਲਈ ਵਰਤਣ ਲਈ ਸੁਹਜ।"
+ frontend_theme: "ਫਰੰਟ-ਐਂਡ ਲਈ ਵਰਤਣ ਲਈ ਥੀਮ।"
+ frontend_theme_mode: "ਫਰੰਟ-ਐਂਡ ਲਈ ਵਰਤਣ ਲਈ ਥੀਮ ਲਈ ਮੋਡ।"
  legal: "ਕਾਨੂੰਨੀ ਲੋੜਾਂ ਲਈ ਕੌਂਫਿਗਰੇਸ਼ਨ।"
  legal_privacy_policy: "ਕਿਸੇ ਵੀ ਤਿਆਰ ਕੀਤੇ ਪੰਨਿਆਂ ਦੇ ਫੁੱਟਰ ਵਿੱਚ ਪ੍ਰਦਰਸ਼ਿਤ ਕਰਨ ਲਈ ਇੱਕ ਸੰਬੰਧਿਤ ਗੋਪਨੀਯਤਾ ਨੀਤੀ ਦਾ ਪਤਾ। ਇੱਕ URL ਦਿਓ, ਜਾਂ ਅਯੋਗ ਕਰਨ ਲਈ ਖਾਲੀ ਛੱਡੋ।"
  legal_pseudonymise_ip_addresses: "ਲੌਗਿੰਗ ਕਰਦੇ ਸਮੇਂ IP ਪਤਿਆਂ ਨੂੰ ਸੂਡੋਨਿਮਾਇਜ਼ ਕਰਨਾ ਹੋ? True = ਹਾਂ [ਡਿਫਾਲਟ]; False = ਨਹੀਂ।"
@@ -250,6 +251,7 @@ label:
  Extension: "ਐਕਸਟੈਂਸ਼ਨ"
  External: "ਬਾਹਰੀ"
  Installed Available: "ਇੰਸਟਾਲ ਕੀਤਾ/ਉਪਲੱਬਧ"
+ Inverted: "ਉਲਟਾ"
  Latest stable: "ਤਾਜ਼ਾ ਸਥਿਰ:"
  Latest unstable: "ਤਾਜ਼ਾ ਅਸਥਿਰ:"
  Loading_: "ਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ..."
@@ -261,6 +263,7 @@ label:
  Never: "ਕਦੇ ਨਹੀਂ"
  No log file selected: "ਕੋਈ ਲੌਗ ਫਾਈਲ ਨਹੀਂ ਚੁਣੀ ਗਈ।"
  No log files available: "ਕੋਈ ਲੌਗ ਫਾਈਲਾਂ ਉਪਲਬਧ ਨਹੀਂ ਹਨ।"
+ Normal: "ਕੁਦਰਤੀ"
  Objects flagged: "ਫਲੈਗ ਕੀਤੀਆਂ ਵਸਤੂਆਂ ਦੀ ਗਿਣਤੀ"
  Objects scanned: "ਸਕੈਨ ਕੀਤੀਆਂ ਵਸਤੂਆਂ ਦੀ ਗਿਣਤੀ"
  Operating system used: "ਆਪ੍ਰੇਸ਼ਨ ਸਿਸਟਮ ਵਰਤੋਂ ਵਿੱਚ ਹੈ:"

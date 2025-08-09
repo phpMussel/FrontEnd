@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bosnian language data (last modified: 2025.07.08).
+# This file: Bosnian language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "Uvećanje fonta. Zadano = 1."
  frontend_max_login_attempts: "Maksimalan broj front-end pokušaja prijave. Zadano = 5."
  frontend_numbers: "Kako želite da se brojevi prikazuju? Odaberite primjer koji vam se čini najispravnijim."
- frontend_theme: "Estetika za upotrebu za phpMussel front-end."
+ frontend_theme: "Tema koja će se koristiti za front-end."
+ frontend_theme_mode: "Način za tema koja će se koristiti za front-end."
  legal: "Konfiguracija za zakonske zahtjeve."
  legal_privacy_policy: "Adresa relevantne politike privatnosti koja će se prikazati u podnožju svake generisane stranice. Navedite URL, ili ostavite prazno da biste onemogućili."
  legal_pseudonymise_ip_addresses: "Pseudonimizirati IP adrese prilikom prijavljivanja? True/Istinito = Da [Zadano]; False/Lažno = Ne."
@@ -250,6 +251,7 @@ label:
  Extension: "Ekstenzija"
  External: "Vanjski"
  Installed Available: "Instalirano/Dostupno"
+ Inverted: "Obrnuto"
  Latest stable: "Najnovija stabilna verzija:"
  Latest unstable: "Najnovije nestabilno verzija:"
  Loading_: "Učitavanje..."
@@ -261,6 +263,7 @@ label:
  Never: "Nikad"
  No log file selected: "Nije odabrana datoteka dnevnika."
  No log files available: "Nema dostupnih datoteka dnevnika."
+ Normal: "Normalno"
  Objects flagged: "Označeni objekti"
  Objects scanned: "Skenirani objekti"
  Operating system used: "Korišćen operativni sistem:"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bulgarian language data (last modified: 2025.07.08).
+# This file: Bulgarian language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "Увеличението на шрифта. Стандарт = 1."
  frontend_max_login_attempts: "Максимален брой опити за влизане в фронтенд. Стандарт = 5."
  frontend_numbers: "Как предпочитате да се показват числата? Изберете примера, който ви се струва най-правилен."
- frontend_theme: "Естетиката, която да използвате за фронтенд на phpMussel."
+ frontend_theme: "Темата, която да се използва за фронтенд."
+ frontend_theme_mode: "Режимът, който темата да използва за фронтенд."
  legal: "Конфигурация за законови изисквания."
  legal_privacy_policy: "Адресът на съответната политика за поверителност, който да се показва в долния колонтитул на всички генерирани страници. Посочете URL или оставете празно за да деактивирате."
  legal_pseudonymise_ip_addresses: "Псевдонимизиране на IP адреси при регистриране? True (Вярно) = Да [Стандарт]; False (Невярно) = Не."
@@ -250,6 +251,7 @@ label:
  Extension: "Разширение"
  External: "Външен"
  Installed Available: "Инсталиран/Наличен"
+ Inverted: "Обърнат"
  Latest stable: "Най-новата стабилна:"
  Latest unstable: "Най-новата нестабилна:"
  Loading_: "Зареждане..."
@@ -261,6 +263,7 @@ label:
  Never: "Никога"
  No log file selected: "Няма избран регистрационен файл."
  No log files available: "Няма налични регистрационни файлове."
+ Normal: "Нормално"
  Objects flagged: "Маркирани обекти"
  Objects scanned: "Сканирани обекти"
  Operating system used: "Използвана операционна система:"

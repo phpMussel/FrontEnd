@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2025.07.26).
+ * This file: Front-end handler (last modified: 2025.08.08).
  */
 
 namespace phpMussel\FrontEnd;
@@ -275,14 +275,20 @@ class FrontEnd
             /** Define active configuration file. */
             'ActiveConfigFile' => $this->canonical($this->Loader->ConfigurationPath),
 
-            /** Current time and date. */
+            /** The current time and date. */
             'DateTime' => $this->Loader->timeFormat($this->Loader->Time, $this->Loader->Configuration['core']['time_format']),
 
             /** How the script identifies itself. */
             'ScriptIdent' => $this->Loader->ScriptIdent,
 
-            /** Current theme. */
+            /** The currently configured theme. */
             'theme' => $this->Loader->Configuration['frontend']['theme'],
+
+            /** The currently configured theme mode. */
+            'theme_mode' => $this->Loader->Configuration['frontend']['theme_mode'],
+
+            /** The currently configured theme mode's effects. */
+            'theme_mode_effects' => $this->Loader->ConfigurationDefaults['frontend']['theme_mode']['effects'][$this->Loader->Configuration['frontend']['theme_mode']] ?? '',
 
             /** Will be populated by messages reflecting the current request state. */
             'state_msg' => '',
@@ -359,6 +365,7 @@ class FrontEnd
             $FE['Half_Border'] = 'solid solid none none';
             $FE['45deg'] = '45deg';
             $FE['90deg'] = '90deg';
+            $FE['caretTransform'] = 'translate(5px, -2px) scaleX(0.9)';
         } else {
             $this->Loader->L10N->Data['Text Direction'] = 'rtl';
             $FE['FE_Align'] = 'right';
@@ -367,6 +374,7 @@ class FrontEnd
             $FE['Half_Border'] = 'solid none none solid';
             $FE['45deg'] = '-45deg';
             $FE['90deg'] = '270deg';
+            $FE['caretTransform'] = 'translateX(-5px, -2px) scaleX(0.9)';
         }
 
         /** Fire event: "frontend_before_page". */

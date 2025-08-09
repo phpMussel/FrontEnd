@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2025.07.08).
+# This file: Malay language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "Pembesaran fon. Lalai = 1."
  frontend_max_login_attempts: "Jumlah maksimum percubaan log masuk bahagian hadapan. Lalai = 5."
  frontend_numbers: "Bagaimanakah anda lebih suka nombor untuk dipaparkan? Pilih contoh yang kelihatan paling betul untuk anda."
- frontend_theme: "Estetika yang digunakan untuk bahagian hadapan phpMussel."
+ frontend_theme: "Tema yang akan digunakan untuk bahagian hadapan."
+ frontend_theme_mode: "Mod untuk tema yang akan digunakan untuk bahagian hadapan."
  legal: "Konfigurasi untuk keperluan undang-undang."
  legal_privacy_policy: "Alamat kepada dasar privasi yang akan dipaparkan dalam pengaki mana-mana halaman yang dijana. Tentukan URL, atau biarkan kosong untuk menyahaktifkan."
  legal_pseudonymise_ip_addresses: "Pseudonimisasikan alamat IP apabila mengelog? True = Ya [Lalai]; False = Tidak."
@@ -250,6 +251,7 @@ label:
  Extension: "Sambungan"
  External: "Luaran"
  Installed Available: "Dipasang/Tersedia"
+ Inverted: "Terbalik"
  Latest stable: "Terkini stabil:"
  Latest unstable: "Terkini tidak stabil:"
  Loading_: "Memuatkan..."
@@ -261,6 +263,7 @@ label:
  Never: "Tak pernah"
  No log file selected: "Tiada fail log dipilih."
  No log files available: "Tiada fail log tersedia."
+ Normal: "Semulajadi"
  Objects flagged: "Objek dibenderakan"
  Objects scanned: "Objek diimbas"
  Operating system used: "Sistem operasi digunakan:"

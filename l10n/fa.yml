@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Farsi language data (last modified: 2025.07.11).
+# This file: Farsi language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "بزرگنمایی فونت. پیش فرض = 1."
  frontend_max_login_attempts: "حداکثر تعداد تلاش برای ورود به جلویی. پیش فرض = 5."
  frontend_numbers: "ترجیح می دهید اعداد چگونه نمایش داده شوند؟? مثالی را که به نظر شما صحیح تر است را انتخاب کنید."
- frontend_theme: "زیبایی شناسی برای استفاده برای جلویی phpMussel."
+ frontend_theme: "قالبی که برای بخش کاربری استفاده می‌شود."
+ frontend_theme_mode: "حالتی که قالب برای استفاده در بخش کاربری استفاده می‌کند."
  legal: "پیکربندی برای الزامات قانونی."
  legal_privacy_policy: "آدرس یک سیاست حفظ حریم خصوصی مربوطه که باید در پاورقی هر صفحه ایجاد شده نمایش داده شود. URL را مشخص کنید، یا برای غیرفعال کردن آن را خالی بگذارید."
  legal_pseudonymise_ip_addresses: "نام مستعار آدرس های IP هنگام ثبت؟ True = آره [پیش فرض]؛ False = نکن."
@@ -250,6 +251,7 @@ label:
  Extension: "افزونه"
  External: "خارجی"
  Installed Available: "نصب شده/در دسترس"
+ Inverted: "معکوس"
  Latest stable: "آخرین نسخه پایدار:"
  Latest unstable: "جدیدترین نسخه ناپایدار:"
  Loading_: "بارگذاری..."
@@ -261,6 +263,7 @@ label:
  Never: "هرگز"
  No log file selected: "هیچ فایل گزارشی انتخاب نشده است."
  No log files available: "هیچ فایل گزارشی در دسترس نیست."
+ Normal: "Normal"
  Objects flagged: "اشیاء علامت گذاری شده"
  Objects scanned: "اشیاء اسکن شده"
  Operating system used: "سیستم عامل مورد استفاده:"

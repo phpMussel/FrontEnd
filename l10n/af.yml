@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2025.07.08).
+# This file: Afrikaans language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "Lettertipe vergroting. Verstek = 1."
  frontend_max_login_attempts: "Maksimum aantal intekenpogings aan die front-end. Verstek = 5."
  frontend_numbers: "Hoe verkies jy dat getalle vertoon word? Kies die voorbeeld wat vir jou die korrekste lyk."
- frontend_theme: "Die estetiese om te gebruik vir phpMussel se front-end."
+ frontend_theme: "Die tema om vir die front-end te gebruik."
+ frontend_theme_mode: "Die modus vir die tema om vir die front-end te gebruik."
  legal: "Konfigurasie vir wetlike vereistes."
  legal_privacy_policy: "Die adres van 'n relevante privaatheidsbeleid wat in die voetskrif van enige gegenereerde bladsye vertoon moet word. Spesifiseer 'n URL, of laat leeg om te deaktiveer."
  legal_pseudonymise_ip_addresses: "Pseudonimiseer IP-adresse tydens aanteken? True = Ja [Verstek]; False = Nee."
@@ -250,6 +251,7 @@ label:
  Extension: "Uitbreiding"
  External: "Ekstern"
  Installed Available: "Geïnstalleer/Beskikbaar"
+ Inverted: "Omgekeerd"
  Latest stable: "Nuutste stabiele:"
  Latest unstable: "Nuutste onstabiele:"
  Loading_: "Laai tans..."
@@ -261,6 +263,7 @@ label:
  Never: "Nooit nie"
  No log file selected: "Geen loglêer gekies nie."
  No log files available: "Geen loglêers beskikbaar nie."
+ Normal: "Normaal"
  Objects flagged: "Voorwerpe gevlag"
  Objects scanned: "Voorwerpe geskandeer"
  Operating system used: "Bedryfstelsel gebruik:"

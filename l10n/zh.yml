@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese language data (last modified: 2025.07.08).
+# This file: Chinese language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -126,7 +126,8 @@ config:
  frontend_magnification: {"zh-Hans": "字体放大。 标准 = 1。", "zh-Hant": "字體放大。 標準 = 1。"}
  frontend_max_login_attempts: {"zh-Hans": "最大前端登录尝试次数。 标准 = 5。", "zh-Hant": "最大前端登錄嘗試次數。 標準 = 5。"}
  frontend_numbers: {"zh-Hans": "您如何喜欢显示数字？​选择最适合示例。", "zh-Hant": "您如何喜歡顯示數字？​選擇最適合示例。"}
- frontend_theme: {"zh-Hans": "用于phpMussel前端的美学。", "zh-Hant": "用於phpMussel前端的美學。"}
+ frontend_theme: {"zh-Hans": "用于前端的主题。", "zh-Hant": "用於前端的主題。"}
+ frontend_theme_mode: {"zh-Hans": "用于前端的主题模式。", "zh-Hant": "用於前端的主題模式。"}
  legal: "法律要求的配置。"
  legal_privacy_policy: {"zh-Hans": "要显示在任何生成的页面的页脚中的相关隐私政策的地址。​指定一个URL，或留空以禁用。", "zh-Hant": "要顯示在任何生成的頁面的頁腳中的相關隱私政策的地址。​指定一個URL，或留空以禁用。"}
  legal_pseudonymise_ip_addresses: {"zh-Hans": "编写日志文件时使用假名的IP地址吗？​True（真）=使用假名【标准】；False（假）=不使用假名。", "zh-Hant": "編寫日誌文件時使用假名的IP位址嗎？​True（真）=使用假名【標準】；False（假）=不使用假名。"}
@@ -380,6 +381,7 @@ label:
  Extension: {"zh-Hans": "扩展", "zh-Hant": "擴展"}
  External: "外部"
  Installed Available: {"zh-Hans": "已安装/可用", "zh-Hant": "已安裝/可用"}
+ Inverted: "倒置的"
  Latest stable: {"zh-Hans": "最新稳定：", "zh-Hant": "最新穩定："}
  Latest unstable: {"zh-Hans": "最新不稳定：", "zh-Hant": "最新不穩定："}
  Loading_: {"zh-Hans": "载入中...", "zh-Hant": "載入中..."}
@@ -391,6 +393,7 @@ label:
  Never: {"zh-Hans": "决不", "zh-Hant": "決不"}
  No log file selected: {"zh-Hans": "没有选择的日志。", "zh-Hant": "沒有選擇的日誌。"}
  No log files available: {"zh-Hans": "没有日志可用。", "zh-Hant": "沒有日誌可用。"}
+ Normal: "普通的"
  Objects flagged: {"zh-Hans": "对象已标记", "zh-Hant": "對像已標記"}
  Objects scanned: {"zh-Hans": "对象已扫描", "zh-Hant": "對像已掃描"}
  Operating system used: {"zh-Hans": "目前使用操作系统：", "zh-Hant": "目前使用操作系統："}

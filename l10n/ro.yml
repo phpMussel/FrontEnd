@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data (last modified: 2025.07.08).
+# This file: Romanian language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "Mărirea fontului. Implicit = 1."
  frontend_max_login_attempts: "Numărul maxim de încercări de conectare front-end. Implicit = 5."
  frontend_numbers: "Cum preferați să fie afișate numerele? Selectați exemplul care vi se pare cel mai corect."
- frontend_theme: "Estetica de utilizat pentru front-end-ul phpMussel."
+ frontend_theme: "Tema de utilizat pentru front-end."
+ frontend_theme_mode: "Modul pentru temă de utilizat pentru front-end."
  legal: "Configurare pentru cerințele legale."
  legal_privacy_policy: "Adresa unei politici de confidențialitate relevante care va fi afișată în subsolul oricăror pagini generate. Specificați o adresă URL, sau lăsați necompletat pentru a dezactiva."
  legal_pseudonymise_ip_addresses: "Pseudonimizați adresele IP în jurnale? True = Da [Implicit]; False = Nu."
@@ -250,6 +251,7 @@ label:
  Extension: "Extensie"
  External: "Extern"
  Installed Available: "Instalat/Disponibil"
+ Inverted: "Inversat"
  Latest stable: "Ultima stabilă:"
  Latest unstable: "Ultima instabilă:"
  Loading_: "Se încarcă..."
@@ -261,6 +263,7 @@ label:
  Never: "Niciodată"
  No log file selected: "Niciun fișier jurnal selectat."
  No log files available: "Niciun fișier jurnal disponibile."
+ Normal: "Normal"
  Objects flagged: "Obiecte marcate"
  Objects scanned: "Obiecte scanate"
  Operating system used: "Sistem de operare folosit:"

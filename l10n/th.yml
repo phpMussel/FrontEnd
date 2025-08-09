@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Thai language data (last modified: 2025.07.08).
+# This file: Thai language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "การขยายตัวอักษร. ค่าเริ่มต้น = 1."
  frontend_max_login_attempts: "สามารถลองเข้าสู่ระบบส่วนหน้าได้กี่ครั้ง. ค่าเริ่มต้น = 5."
  frontend_numbers: "คุณต้องการตัวเลขที่จะแสดงอย่างไร? เลือกตัวอย่างที่ดูเหมือนถูกต้องที่สุด."
- frontend_theme: "สุนทรียศาสตร์ที่ใช้สำหรับ phpMussel front-end."
+ frontend_theme: "ธีมที่จะใช้สำหรับ front-end."
+ frontend_theme_mode: "โหมดสำหรับธีมที่จะใช้สำหรับ front-end."
  legal: "การกำหนดค่าสำหรับข้อกำหนดทางกฎหมาย."
  legal_privacy_policy: "ที่อยู่ของนโยบายความเป็นส่วนตัวที่เกี่ยวข้องเพื่อแสดงในส่วนท้ายของหน้าเว็บที่สร้างขึ้น. ระบุ URL หรือเว้นว่างไว้เพื่อปิดใช้งาน."
  legal_pseudonymise_ip_addresses: "Pseudonymise ที่อยู่ IP เมื่อเขียนล็อกไฟล์หรือไม่? True = ทำ [ค่าเริ่มต้น]; False = ไม่ทำ."
@@ -250,6 +251,7 @@ label:
  Extension: "ส่วนขยาย"
  External: "ภายนอก"
  Installed Available: "การติดตั้ง/ที่มีจำหน่าย"
+ Inverted: "ตรงกันข้าม"
  Latest stable: "เสถียรล่าสุด:"
  Latest unstable: "ไม่เสถียรล่าสุด:"
  Loading_: "กำลังโหลด ..."
@@ -261,6 +263,7 @@ label:
  Never: "ไม่เคย"
  No log file selected: "ไม่มีไฟล์บันทึกเลือก."
  No log files available: "ไม่มีไฟล์บันทึกใช้ได้."
+ Normal: "ปกติ"
  Objects flagged: "วัตถุที่ถูกตั้งค่าสถานะ"
  Objects scanned: "วัตถุถูกสแกน"
  Operating system used: "ระบบปฏิบัติการในการใช้งาน:"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2025.07.08).
+# This file: Polish language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "Powiększenie czcionki. Domyślna = 1."
  frontend_max_login_attempts: "Maksymalna liczba prób zalogowania się do interfejsu użytkownika. Domyślna = 5."
  frontend_numbers: "Jak wolisz wyświetlać liczby? Wybierz przykład, który wygląda najlepiej dla Ciebie."
- frontend_theme: "Estetyka do zastosowania w interfejsie phpMussel."
+ frontend_theme: "Motyw do wykorzystania w interfejsie użytkownika."
+ frontend_theme_mode: "Tryb dla motywu do wykorzystania w interfejsie użytkownika."
  legal: "Konfiguracja wymagań prawnych."
  legal_privacy_policy: "Adres odpowiedniej polityki prywatności, która ma być wyświetlana w stopce każdej wygenerowanej strony. Podaj adres URL, lub pozostaw puste, aby wyłączyć."
  legal_pseudonymise_ip_addresses: "Pseudonimizować adresy IP podczas logowania? True (Prawdziwe) = Tak [Domyślna]; False (Fałszywy) = Nie."
@@ -250,6 +251,7 @@ label:
  Extension: "Rozszerzenie"
  External: "Zewnętrzny"
  Installed Available: "Zainstalowano/Dostępny"
+ Inverted: "Odwrotny"
  Latest stable: "Najnowsza stabilna:"
  Latest unstable: "Najnowsza niestabilna:"
  Loading_: "Ładowanie..."
@@ -261,6 +263,7 @@ label:
  Never: "Nigdy"
  No log file selected: "Nie wybrano pliku dziennika."
  No log files available: "Brak dostępnych plików dziennika."
+ Normal: "Normalna"
  Objects flagged: "Obiekty oflagowane"
  Objects scanned: "Skanowane obiekty"
  Operating system used: "Używany system operacyjny:"

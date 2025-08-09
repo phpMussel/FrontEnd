@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese language data (last modified: 2025.07.08).
+# This file: Portuguese language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -28,12 +28,18 @@ checkbox:
  Delete orphaned values: "Deletar valores órfãos."
 config:
  core: "Configuração geral (qualquer configuração principal que não pertença a outras categorias)."
- core_default_timeout: "Tempo limite padrão a ser usado para solicitações externas? Padrão = 12 segundos."
+ core_default_timeout:
+  pt-BR: "Tempo limite padrão a ser usado para solicitações externas? Padrão = 12 segundos."
+  pt-PT: "Tempo limite padrão a utilizar para solicitações externas? Padrão = 12 segundos."
  core_delete_on_sight:
   pt-BR: "Ativando esta opção irá instruir o script para tentar imediatamente deletando qualquer arquivo que ele encontra durante a análise que corresponde a qualquer critério de detecção, quer seja através de assinaturas ou de outra forma. Arquivos determinados para ser "limpo" não serão tocados. Em caso de compactados arquivos, o inteiro arquivo será deletado (independentemente de se o problemático arquivo é apenas um dos vários arquivos contidos dentro do compactado arquivo). Para o caso de arquivo carregamento análise, em geral, não é necessário ativar essa opção, porque normalmente, PHP irá automaticamente expurgar os conteúdos de seu cache quando a execução foi concluída, significando que ele vai normalmente deletar todos os arquivos enviados através dele para o servidor a menos que tenha movido, copiado ou deletado já. A opção é adicionado aqui como uma medida de segurança para aqueles cujas cópias de PHP nem sempre se comportam da forma esperada. False = Após a análise, deixe o arquivo sozinho [Padrão]; True = Após a análise, se não limpo, deletar imediatamente."
   pt-PT: "Ativando esta opção irá instruir o script para tentar imediatamente deletando qualquer arquivo que ele encontra durante a análise que corresponde a qualquer critério de deteção, quer seja através de assinaturas ou de outra forma. Arquivos determinados para ser "limpo" não serão tocados. Em caso de compactados arquivos, o inteiro arquivo será deletado (independentemente de se o problemático arquivo é apenas um dos vários arquivos contidos dentro do compactado arquivo). Para o caso de arquivo carregamento análise, em geral, não é necessário ativar essa opção, porque normalmente, PHP irá automaticamente expurgar os conteúdos de o seu cache quando a execução foi concluída, significando que ele vai normalmente deletar todos os arquivos enviados através dele para o servidor a menos que tenha movido, copiado ou deletado já. A opção é adicionado aqui como uma medida de segurança para aqueles cujas cópias de PHP nem sempre se comportam da forma esperada. False = Após a análise, deixe o arquivo sozinho [Padrão]; True = Após a análise, se não limpo, deletar imediatamente."
- core_disabled_channels: "Isso pode ser usado para impedir que o phpMussel use canais específicos ao enviar solicitações."
- core_error_log: "Um arquivo para registrar erros detectados que não são fatais. Especifique o nome de um arquivo, ou deixe em branco para desabilitar."
+ core_disabled_channels:
+  pt-BR: "Isso pode ser usado para impedir que o phpMussel use canais específicos ao enviar solicitações."
+  pt-PT: "Isto pode ser utilizado para impedir que o phpMussel utilize canais específicos ao enviar solicitações."
+ core_error_log:
+  pt-BR: "Um arquivo para registrar erros detectados que não são fatais. Especifique o nome de um arquivo, ou deixe em branco para desabilitar."
+  pt-PT: "Um arquivo para registar erros detectados que não são fatais. Especifique o nome de um arquivo, ou deixe em branco para desabilitar."
  core_hide_version: "Ocultar informações da versão dos logs e da saída da página? True = Sim; False = Não [Padrão]."
  core_ipaddr:
   pt-BR: "Onde encontrar o IP endereço das solicitações? (Útil por serviços como o Cloudflare). Padrão = REMOTE_ADDR. ATENÇÃO: Não mude isso a menos que você saiba o que está fazendo!"
@@ -45,22 +51,32 @@ config:
  core_maintenance_mode:
   pt-BR: "Ativar o modo de manutenção? True = Sim; False = Não [Padrão]. Desativa tudo além do front-end. Às vezes útil para quando atualiza seu CMS, frameworks, etc."
   pt-PT: "Ativar o modo de manutenção? True = Sim; False = Não [Padrão]. Desativa tudo além do front-end. Às vezes útil para quando atualiza o seu CMS, frameworks, etc."
- core_outbound_request_log: "Um arquivo para registrar os resultados de quaisquer solicitações de saída. Especifique o nome de um arquivo, ou deixe em branco para desabilitar."
+ core_outbound_request_log:
+  pt-BR: "Um arquivo para registrar os resultados de quaisquer solicitações de saída. Especifique o nome de um arquivo, ou deixe em branco para desabilitar."
+  pt-PT: "Um arquivo para registar os resultados de quaisquer solicitações de saída. Especifique o nome de um arquivo, ou deixe em branco para desabilitar."
  core_request_proxy: "Se você quiser que solicitações de saída sejam enviadas por meio de um proxy, especifique esse proxy aqui. Caso contrário, deixe em branco."
  core_request_proxyauth:
   pt-BR: "Se estiver enviando solicitações de saída por meio de um proxy e se esse proxy exigir um nome de usuário e uma senha, especifique esse nome de usuário e senha aqui (por exemplo, <code>user:pass</code>). Caso contrário, deixe em branco."
   pt-PT: "Se estiver a enviar solicitações de saída por meio de um proxy e se esse proxy exigir um nome de utilizador e uma senha, especifique esse nome de utilizador e senha aqui (por exemplo, <code>user:pass</code>). Caso contrário, deixe em branco."
  core_scan_cache_expiry: "Por quanto tempo deve phpMussel cache os resultados da verificação? O valor é o número de segundos para armazenar em cache os resultados da verificação para. O padrão é 21600 segundo (6 horas); Um valor de 0 irá desativar o cache os resultados da verificação."
- core_scan_log: "Nome do arquivo para registrar todos os resultados do análises. Especifique um arquivo nome, ou deixe branco para desativar."
- core_scan_log_serialized: "Nome do arquivo para registrar todos os resultados do análises (formato é serializado). Especifique um arquivo nome, ou deixe branco para desativar."
+ core_scan_log:
+  pt-BR: "Nome do arquivo para registrar todos os resultados do análises. Especifique um arquivo nome, ou deixe branco para desativar."
+  pt-PT: "Nome do arquivo para registar todos os resultados do análises. Especifique um arquivo nome, ou deixe branco para desativar."
+ core_scan_log_serialized:
+  pt-BR: "Nome do arquivo para registrar todos os resultados do análises (formato é serializado). Especifique um arquivo nome, ou deixe branco para desativar."
+  pt-PT: "Nome do arquivo para registar todos os resultados do análises (formato é serializado). Especifique um arquivo nome, ou deixe branco para desativar."
  core_statistics: "Monitorar as estatísticas de uso do phpMussel? True = Sim; False = Não [Padrão]."
  core_time_format: "O formato de notação de data/tempo utilizado pelo phpMussel. Opções adicionais podem ser adicionadas mediante solicitação."
  core_time_offset: "Deslocamento do fuso horário em minutos."
- core_timezone: "Isso é usado para especificar o fuso horário a ser usado (por exemplo, Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, etc). Especifique "SYSTEM" para permitir que o PHP lide com isso automaticamente."
+ core_timezone:
+  pt-BR: "Isso é usado para especificar o fuso horário a ser usado (por exemplo, Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, etc). Especifique "SYSTEM" para permitir que o PHP lide com isso automaticamente."
+  pt-PT: "Isto é utilizado para especificar o fuso horário a utilizar (por exemplo, Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, etc). Especifique "SYSTEM" para permitir que o PHP lide com isto automaticamente."
  core_truncate: "Truncar arquivos de log quando atingem um determinado tamanho? Valor é o tamanho máximo em B/KB/MB/GB/TB que um arquivo de log pode crescer antes de ser truncado. O valor padrão de 0KB desativa o truncamento (arquivos de log podem crescer indefinidamente). Nota: Aplica-se a arquivos de log individuais! O tamanho dos arquivos de log não é considerado coletivamente."
  experimental: "Instável/Experimental!"
  files: "Os detalhes de como lidar com arquivos durante a análise."
- files_allow_leading_trailing_dots: "Permitir pontos iniciais e finais em nomes de arquivos? Às vezes, isso pode ser usado para ocultar arquivos, ou enganar alguns sistemas para permitir a passagem de diretórios. False = Não permitir [Padrão]. True = Permitir."
+ files_allow_leading_trailing_dots:
+  pt-BR: "Permitir pontos iniciais e finais em nomes de arquivos? Às vezes, isso pode ser usado para ocultar arquivos, ou enganar alguns sistemas para permitir a passagem de diretórios. False = Não permitir [Padrão]. True = Permitir."
+  pt-PT: "Permitir pontos iniciais e finais nos nomes dos arquivos? Por vezes, isto pode ser utilizado para ocultar arquivos, ou enganar alguns sistemas para permitir a passagem de diretórios. False = Não permitir [Padrão]. True = Permitir."
  files_archive_file_extensions:
   pt-BR: "Reconhecidos arquivos extensões (formato é CSV; só deve adicionar ou remover quando problemas ocorrem; desnecessariamente removendo pode causar falso-positivos para aparecer por compactados arquivos, enquanto desnecessariamente adicionando será essencialmente whitelist o que você está adicionando contra ataque específica detecção; modificar com cautela; Também notar que este não tem efeito em qual compactados arquivos podem e não podem ser analisados no escopo de conteúdo). A lista, como é padrão, é do formatos utilizados mais comumente através da maioria dos sistemas e CMS, mas intencionalmente não é necessariamente abrangente."
   pt-PT: "Reconhecidos arquivos extensões (formato é CSV; só deve adicionar ou remover quando problemas ocorrem; desnecessariamente removendo pode causar falso-positivos para aparecer por compactados arquivos, enquanto desnecessariamente adicionando será essencialmente whitelist o que você está adicionando contra ataque específica deteção; modificar com cautela; Também notar que este não tem efeito em qual compactados arquivos podem e não podem ser analisados no escopo de conteúdo). A lista, como é padrão, é do formatos utilizados mais comumente através da maioria dos sistemas e CMS, mas intencionalmente não é necessariamente abrangente."
@@ -106,11 +122,18 @@ config:
   pt-PT: "Inserido como HTML no final de todas as páginas do front-end. Isto pode ser útil caso você queira incluir um aviso legal, link de contacto, informações comerciais, ou similares em todas essas páginas."
  frontend_custom_header: "Inserido como HTML no início de todas as páginas do front-end. Isso pode ser útil caso você queira incluir um logotipo de site, cabeçalho personalizado, scripts, ou similares em todas essas páginas."
  frontend_default_algo: "Define qual algoritmo usar para todas as futuras senhas e sessões."
- frontend_frontend_log: "Arquivo para registrar tentativas de login ao front-end. Especifique o nome de um arquivo, ou deixe em branco para desabilitar."
+ frontend_frontend_log:
+  pt-BR: "Arquivo para registrar tentativas de login ao front-end. Especifique o nome de um arquivo, ou deixe em branco para desabilitar."
+  pt-PT: "Arquivo para registar tentativas de login ao front-end. Especifique o nome de um arquivo, ou deixe em branco para desabilitar."
  frontend_magnification: "Ampliação de fonte. Padrão = 1."
  frontend_max_login_attempts: "Número máximo de tentativas de login ao front-end. Padrão = 5."
  frontend_numbers: "Como você prefere que os números sejam exibidos? Selecione o exemplo que parece mais correto para você."
- frontend_theme: "A estética a ser usada no front-end do phpMussel."
+ frontend_theme:
+  pt-BR: "O tema a ser usado no front-end."
+  pt-PT: "O tema a utilizar no front-end."
+ frontend_theme_mode:
+  pt-BR: "O modo para o tema a ser usado no front-end."
+  pt-PT: "O modo para o tema a utilizar no front-end."
  legal: "Configuração para requisitos legais."
  legal_privacy_policy: "O endereço de uma política de privacidade relevante a ser exibida no rodapé de qualquer página gerada. Especifique um URL, ou deixe em branco para desabilitar."
  legal_pseudonymise_ip_addresses: "Pseudonimiza endereços IP ao escrever os arquivos de log? True = Sim [Padrão]; False = Não."
@@ -286,6 +309,7 @@ label:
  Extension: "Extensão"
  External: "Externo"
  Installed Available: "Instalado/Disponível"
+ Inverted: "Invertido"
  Latest stable: "Mais novo de estável:"
  Latest unstable: "Mais novo de instável:"
  Loading_: "Carregando..."
@@ -297,6 +321,7 @@ label:
  Never: "Nunca"
  No log file selected: "Não qualquer arquivo de log selecionado."
  No log files available: "Não quaisquer arquivos de log disponíveis."
+ Normal: "Normal"
  Objects flagged: "Objetos marcados"
  Objects scanned: "Objetos analisados"
  Operating system used: "Sistema operacional usada:"

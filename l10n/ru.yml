@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Russian language data (last modified: 2025.07.08).
+# This file: Russian language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "Увеличение шрифта. Стандарт = 1."
  frontend_max_login_attempts: "Максимальное количество попыток входа в систему фронтенда. Стандарт = 5."
  frontend_numbers: "Как Вы предпочитаете номера для отображения? Выберите пример, который выглядит наиболее правильным для вас."
- frontend_theme: "Эстетика использования для фронтенда phpMussel."
+ frontend_theme: "Тема, которая будет использоваться для фронтенда."
+ frontend_theme_mode: "Режим для тема, которая будет использоваться для фронтенда."
  legal: "Конфигурация для юридических требований."
  legal_privacy_policy: "Адрес соответствующей политики конфиденциальности, отображаемый в нижнем колонтитуле любых сгенерированных страниц. Укажите URL-адрес, или оставьте пустым для отключения."
  legal_pseudonymise_ip_addresses: "Псевдонимный IP-адреса при записи файлов журнала? True = Да [Стандарт]; False = Нет."
@@ -250,6 +251,7 @@ label:
  Extension: "Расширение"
  External: "Внешняя"
  Installed Available: "Установлено/Доступно"
+ Inverted: "Перевернутый"
  Latest stable: "Последние стабильный:"
  Latest unstable: "Последние нестабильный:"
  Loading_: "В ходе выполнения..."
@@ -261,6 +263,7 @@ label:
  Never: "Никогда"
  No log file selected: "Не лог-файлы Выбранный."
  No log files available: "Не лог-файлы доступны."
+ Normal: "Нормальный"
  Objects flagged: "Помеченные объекты"
  Objects scanned: "Объекты сканированные"
  Operating system used: "Используемая операционная система:"

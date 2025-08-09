@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2025.07.08).
+# This file: Indonesian language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "Perbesaran font. Default = 1."
  frontend_max_login_attempts: "Jumlah maksimum upaya memasukkan ke bagian depan. Default = 5."
  frontend_numbers: "Cara apa yang kamu suka nomor menjadi ditampilkan? Pilih contoh yang paling sesuai untuk Anda."
- frontend_theme: "Estetika yang digunakan untuk bagian depan phpMussel."
+ frontend_theme: "Tema yang akan digunakan untuk front-end."
+ frontend_theme_mode: "Mode untuk tema yang akan digunakan untuk front-end."
  legal: "Konfigurasi untuk persyaratan hukum."
  legal_privacy_policy: "Alamat dari kebijakan privasi yang relevan untuk ditampilkan di footer dari setiap halaman yang dihasilkan. Spesifikasikan URL, atau biarkan kosong untuk menonaktifkan."
  legal_pseudonymise_ip_addresses: "Pseudonimisasikan alamat IP saat menulis file log? True = Ya [Default]; False = Tidak."
@@ -250,6 +251,7 @@ label:
  Extension: "Ekstensi"
  External: "Eksternal"
  Installed Available: "Diinstal/Tersedia"
+ Inverted: "Terbalik"
  Latest stable: "Terbaru stabil:"
  Latest unstable: "Terbaru tidak stabil:"
  Loading_: "Pemuatan..."
@@ -261,6 +263,7 @@ label:
  Never: "Tak pernah"
  No log file selected: "Tidak ada file log dipilih."
  No log files available: "Tidak ada file log tersedia."
+ Normal: "Normal"
  Objects flagged: "Obyek ditandai"
  Objects scanned: "Obyek dipindai"
  Operating system used: "Sistem operasi digunakan:"

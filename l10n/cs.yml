@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Czech language data (last modified: 2025.07.08).
+# This file: Czech language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "Zvětšení písma. Standardní = 1."
  frontend_max_login_attempts: "Maximální počet pokusů o přihlášení k front-endu. Standardní = 5."
  frontend_numbers: "Jak preferujete zobrazení čísel? Vyberte příklad, který se vám zdá nejsprávnější."
- frontend_theme: "Estetika, které se má použít pro front-end."
+ frontend_theme: "Téma, která se má použít pro front-end."
+ frontend_theme_mode: "Režim pro téma, která se má použít pro front-end."
  legal: "Konfigurace pro zákonné požadavky."
  legal_privacy_policy: "Adresa příslušných zásad ochrany osobních údajů, která se zobrazí v patičce všech vygenerovaných stránek. Zadejte adresu URL, nebo ponechte prázdné, chcete-li deaktivovat."
  legal_pseudonymise_ip_addresses: "Pseudonymizovat IP adresy při protokolování? True (Pravdivé) = Ano [Standardní]; False (Nepravdivé) = Ne."
@@ -250,6 +251,7 @@ label:
  Extension: "Rozšíření"
  External: "Externí"
  Installed Available: "Instalováno/Dostupné"
+ Inverted: "Inverzní"
  Latest stable: "Nejnovější stabilní:"
  Latest unstable: "Nejnovější nestabilní:"
  Loading_: "Načítání..."
@@ -261,6 +263,7 @@ label:
  Never: "Nikdy"
  No log file selected: "Nebyl vybrán žádný soubor protokolu."
  No log files available: "Nejsou k dispozici žádné soubory protokolu."
+ Normal: "Normální"
  Objects flagged: "Objekty označené"
  Objects scanned: "Objekty naskenovány"
  Operating system used: "Použitý operační systém:"

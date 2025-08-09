@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2025.07.08).
+# This file: Turkish language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "Yazı tipi büyütme. Varsayılan = 1."
  frontend_max_login_attempts: "Maksimum giriş denemesi sayısı. Varsayılan = 5."
  frontend_numbers: "Numaraların görüntülenmesini nasıl tercih edersiniz? Size en uygun görünen örneği seçin."
- frontend_theme: "phpMussel ön uç için kullanılacak estetik."
+ frontend_theme: "Ön uç için kullanılacak tema."
+ frontend_theme_mode: "Ön uç için kullanılacak tema modu."
  legal: "Yasal gereklilikler için yapılandırma."
  legal_privacy_policy: "Oluşturulan sayfaların alt kısmında görüntülenecek ilgili gizlilik politikasının adresi. Bir URL belirtin veya devre dışı bırakmak için boş bırakın."
  legal_pseudonymise_ip_addresses: "Günlük dosyaları yazarken IP adresi "pseudonymize" edilir? Doğru/True = Evet [Varsayılan]; Yanlış/False = Hayır."
@@ -250,6 +251,7 @@ label:
  Extension: "Uzantısı"
  External: "Dış"
  Installed Available: "Yüklü/Mevcut"
+ Inverted: "Ters çevrilmiş"
  Latest stable: "En yeni kararlı:"
  Latest unstable: "En yeni kararsız:"
  Loading_: "Yükleniyor..."
@@ -261,6 +263,7 @@ label:
  Never: "Asla"
  No log file selected: "Hiçbir günlük dosyası seçilmedi."
  No log files available: "Günlük dosyası yok."
+ Normal: "Normal"
  Objects flagged: "İşaretlenen nesneler"
  Objects scanned: "Nesneler tarandı"
  Operating system used: "Kullanılan işletim sistemi:"

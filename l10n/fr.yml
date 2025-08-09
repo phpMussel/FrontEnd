@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2025.07.27).
+# This file: French language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -96,7 +96,8 @@ config:
  frontend_magnification: "Grossissement des fontes. Défaut = 1."
  frontend_max_login_attempts: "Nombre maximal de tentatives de connexion (l'accès frontal). Défaut = 5."
  frontend_numbers: "Comment préférez-vous que les nombres soient affichés\_? Sélectionnez l'exemple qui vous paraît le plus approprié."
- frontend_theme: "L'esthétique à utiliser pour l'accès frontal de phpMussel."
+ frontend_theme: "Le thème à utiliser pour l'accès frontal."
+ frontend_theme_mode: "Le mode pour le thème à utiliser pour l'accès frontal."
  legal: "Configuration pour les exigences légales."
  legal_privacy_policy: "L'adresse d'une politique de confidentialité pertinente à afficher dans le pied de page des pages générés. Spécifier une URL, ou laisser vide à désactiver."
  legal_pseudonymise_ip_addresses: "Pseudonymiser les adresses IP lors de la journalisation\_? True = Oui [Défaut]\_; False = Non."
@@ -262,6 +263,7 @@ label:
  Extension: "Extension"
  External: "Externe"
  Installed Available: "Installé/Disponible"
+ Inverted: "Inversé"
  Latest stable: "Dernier stable\_:"
  Latest unstable: "Dernier instable\_:"
  Loading_: "Chargement..."
@@ -273,6 +275,7 @@ label:
  Never: "Jamais"
  No log file selected: "Aucun fichier journal sélectionné."
  No log files available: "Aucun fichiers journaux disponibles."
+ Normal: "Normale"
  Objects flagged: "Objets marqués"
  Objects scanned: "Objets analysés"
  Operating system used: "Système opérateur utilisée\_:"

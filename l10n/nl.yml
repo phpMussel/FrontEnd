@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2025.07.08).
+# This file: Dutch language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "Lettergrootte vergroting. Standaard = 1."
  frontend_max_login_attempts: "Maximum aantal frontend-inlogpogingen. Standaard = 5."
  frontend_numbers: "Hoe verkiest u nummers die worden weergegeven? Selecteer het voorbeeld dat het meest correct voor u lijkt."
- frontend_theme: "De esthetiek voor de phpMussel frontend."
+ frontend_theme: "Het thema dat voor de frontend gebruikt moet worden."
+ frontend_theme_mode: "De modus voor het thema dat voor de frontend gebruikt moet worden."
  legal: "Configuratie voor wettelijke vereisten."
  legal_privacy_policy: "Het adres van een relevant privacybeleid dat moet worden weergegeven in de voettekst van eventuele gegenereerde pagina's. Geef een URL, of laat leeg om uit te schakelen."
  legal_pseudonymise_ip_addresses: "Pseudonimiseren de IP-adressen bij het schrijven van logbestanden? True = Ja [Standaard]; False = Nee."
@@ -250,6 +251,7 @@ label:
  Extension: "Extensie"
  External: "Externe"
  Installed Available: "Geïnstalleerd/Beschikbaar"
+ Inverted: "Omgekeerd"
  Latest stable: "Laatste stabiele:"
  Latest unstable: "Laatste onstabiele:"
  Loading_: "Bezig met laden..."
@@ -261,6 +263,7 @@ label:
  Never: "Nooit"
  No log file selected: "Geen logbestand geselecteerd."
  No log files available: "Geen logbestanden beschikbaar."
+ Normal: "Normaal"
  Objects flagged: "Objecten gemarkeerd"
  Objects scanned: "Objecten gescand"
  Operating system used: "Besturingssysteem gebruikt:"

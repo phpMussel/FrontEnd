@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2025.07.08).
+# This file: Spanish language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "Ampliación de fuente. Predefinido = 1."
  frontend_max_login_attempts: "Número máximo de intentos de login al front-end. Predefinido = 5."
  frontend_numbers: "¿Cómo prefieres los números que se muestran? Seleccione el ejemplo que le parezca más correcto."
- frontend_theme: "La estética para usar en el front-end phpMussel."
+ frontend_theme: "El tema a utilizar para el front-end."
+ frontend_theme_mode: "El modo para el tema a utilizar para el front-end."
  legal: "Configuración para requisitos legales."
  legal_privacy_policy: "La dirección de una política de privacidad relevante que se mostrará en el pie de página de cualquier página generada. Especificar una URL, o dejar en blanco para desactivar."
  legal_pseudonymise_ip_addresses: "¿Seudonimizar las direcciones IP cuando al escribir archivos de registro? True = Sí [Predefinido]; False = No."
@@ -250,6 +251,7 @@ label:
  Extension: "Extensión"
  External: "Externo"
  Installed Available: "Instalado/Disponible"
+ Inverted: "Invertido"
  Latest stable: "Más nuevo estable:"
  Latest unstable: "Más nuevo inestable:"
  Loading_: "Cargando..."
@@ -261,6 +263,7 @@ label:
  Never: "Nunca"
  No log file selected: "Ningún archivo de registro seleccionado."
  No log files available: "Ningún archivos de registro disponibles."
+ Normal: "Normal"
  Objects flagged: "Objetos marcados"
  Objects scanned: "Objetos escaneados"
  Operating system used: "Sistema operativo utilizada:"

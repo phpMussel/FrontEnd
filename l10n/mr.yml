@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Marathi language data (last modified: 2025.07.08).
+# This file: Marathi language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -88,7 +88,8 @@ config:
  frontend_magnification: "फॉन्ट मॅग्निफिकेशन. डीफॉल्ट = 1."
  frontend_max_login_attempts: "फ्रंट-एंड लॉगिन प्रयत्नांची कमाल संख्या. डीफॉल्ट = 5."
  frontend_numbers: "तुम्हाला संख्या कशा प्रकारे दाखवायला आवडतात? तुम्हाला सर्वात योग्य वाटणारे उदाहरण निवडा."
- frontend_theme: "phpMussel फ्रंट-एंडसाठी वापरण्यासाठी सौंदर्यशास्त्र."
+ frontend_theme: "फ्रंट-एंडसाठी वापरायची थीम."
+ frontend_theme_mode: "फ्रंट-एंडसाठी वापरायची थीमसाठी मोड."
  legal: "कायदेशीर आवश्यकतांसाठी कॉन्फिगरेशन."
  legal_privacy_policy: "कोणत्याही जनरेट केलेल्या पृष्ठांच्या तळटीपमध्ये प्रदर्शित करावयाच्या संबंधित गोपनीयता धोरणाचा पत्ता. URL निर्दिष्ट करा किंवा अक्षम करण्यासाठी रिक्त सोडा."
  legal_pseudonymise_ip_addresses: "लॉग करताना IP पत्ते टोपणनाव ठेवायचे का? True = होय [डीफॉल्ट]; False = नाही."
@@ -250,6 +251,7 @@ label:
  Extension: "विस्तार"
  External: "बाह्य"
  Installed Available: "स्थापित/उपलब्ध"
+ Inverted: "उलटा"
  Latest stable: "नवीनतम स्थिर:"
  Latest unstable: "नवीनतम अस्थिर:"
  Loading_: "लोड होत आहे..."
@@ -261,6 +263,7 @@ label:
  Never: "कधीही नाही"
  No log file selected: "कोणतीही नोंदी फाइल निवडलेली नाही."
  No log files available: "कोणत्याही नोंदी फायली उपलब्ध नाहीत."
+ Normal: "नैसर्गिक"
  Objects flagged: "ध्वजांकित ऑब्जेक्ट्स"
  Objects scanned: "स्कॅन केलेल्या ऑब्जेक्ट्स"
  Operating system used: "वापरलेली ऑपरेटिंग सिस्टम:"
