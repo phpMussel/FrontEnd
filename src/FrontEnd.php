@@ -330,9 +330,16 @@ class FrontEnd
             'FormTarget' => $_POST['phpmussel-form-target'] ?? ''
         ];
 
-        /** Fix for immediate display of freshly updated theme selection. */
-        if (!empty($_POST['config_frontend_theme']) && !preg_match('~[^a-z]~', $_POST['config_frontend_theme']) && ($_POST['config_frontend_theme'] === 'default' ?: file_exists($this->AssetsPath . $_POST['config_frontend_theme'] . DIRECTORY_SEPARATOR . 'frontend.css'))) {
-            $FE['theme'] = $_POST['config_frontend_theme'];
+        if ($Page === 'config') {
+            /** Fix for immediate display of freshly updated theme selection. */
+            if (!empty($_POST['config_frontend_theme']) && !preg_match('~[^a-z]~', $_POST['config_frontend_theme']) && ($_POST['config_frontend_theme'] === 'default' ?: file_exists($this->AssetsPath . $_POST['config_frontend_theme'] . DIRECTORY_SEPARATOR . 'frontend.css'))) {
+                $FE['theme'] = $_POST['config_frontend_theme'];
+            }
+
+            /** Fix for immediate display of freshly updated theme mode selection. */
+            if (!empty($_POST['config_frontend_theme_mode']) && isset($this->Loader->ConfigurationDefaults['frontend']['theme_mode']['choices'][$_POST['config_frontend_theme_mode']])) {
+                $FE['theme_mode'] = $_POST['config_frontend_theme_mode'];
+            }
         }
 
         /** Populated by [Home | Log Out] by default; Replaced by [Log Out] for some specific pages (e.g., the homepage). */

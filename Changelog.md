@@ -199,6 +199,7 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 #### Bugs fixed.
 - [2025.07.07]: The formatFilesize method wasn't accounting for negative numbers; Fixed.
 - [2025.07.26]: Some browsers, in some contexts, were raising errors during request inspection concerning the absence of any X-Content-Type-Options header declaration (though it isn't entirely clear whether this error had any actual effect); Fixed.
+- [2025.08.09]: When changing the front-end's theme or theme mode at the configuration page, the change wasn't being seen immediately, instead being seen only upon subsequent request to any front-end page; Fixed.
 
 #### Security.
 - [2025.08.09]: Improved the safeguards for getAssetPath.
