@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2025.08.08).
+ * This file: Front-end handler (last modified: 2025.08.09).
  */
 
 namespace phpMussel\FrontEnd;
@@ -330,6 +330,11 @@ class FrontEnd
             'FormTarget' => $_POST['phpmussel-form-target'] ?? ''
         ];
 
+        /** Fix for immediate display of freshly updated theme selection. */
+        if (!empty($_POST['config_frontend_theme']) && !preg_match('~[^a-z]~', $_POST['config_frontend_theme']) && ($_POST['config_frontend_theme'] === 'default' ?: file_exists($this->AssetsPath . $_POST['config_frontend_theme'] . DIRECTORY_SEPARATOR . 'frontend.css'))) {
+            $FE['theme'] = $_POST['config_frontend_theme'];
+        }
+
         /** Populated by [Home | Log Out] by default; Replaced by [Log Out] for some specific pages (e.g., the homepage). */
         $FE['bNav'] = $FE['HomeButton'] . $FE['LogoutButton'];
 
@@ -388,6 +393,9 @@ class FrontEnd
         /** A simple passthru for the front-end CSS. */
         if ($Page === 'css') {
             $this->eTaggable('frontend.css', function ($AssetData) use (&$FE) {
+                if (!empty($this->QueryVariables['theme-mode'])) {
+                    $FE['theme_mode_effects'] = $this->Loader->ConfigurationDefaults['frontend']['theme_mode']['effects'][$this->QueryVariables['theme-mode']] ?? '';
+                }
                 return $this->embedAssets($this->Loader->parse($FE, $AssetData, true));
             });
         }
@@ -883,6 +891,20 @@ class FrontEnd
     }
 
     /**
+     * Traversal detection.
+     *
+     * @param string $Path The path to check for traversal.
+     * @return bool True when the path is traversal-free. False when traversal has been detected.
+     */
+    private function freeFromTraversal(string $Path): bool
+    {
+        return !preg_match(
+            '~(?://|(?<![\da-z])\.\.(?![\da-z])|/\.(?![\da-z])|(?<![\da-z])\./|[\x01-\x1F\[-^`?*$])~i',
+            str_replace('\\', '/', $Path)
+        );
+    }
+
+    /**
      * Get the appropriate path for a specified asset as per the defined theme.
      *
      * @param string $Asset The asset filename.
@@ -892,8 +914,8 @@ class FrontEnd
      */
     private function getAssetPath(string $Asset, bool $CanFail = false): string
     {
-        /** Guard against unsafe paths. */
-        if (preg_match('~[^\da-z._]~i', $Asset)) {
+        /** Guard against unsafe paths and traversal attacks. */
+        if (preg_match('~[^\da-z._]~i', $Asset) || !$this->freeFromTraversal($Asset)) {
             return '';
         }
 
@@ -905,7 +927,7 @@ class FrontEnd
             }
         }
 
-        /** Non-default assets. */
+        /** Non-default theme assets. */
         if (
             $this->Loader->Configuration['frontend']['theme'] !== 'default' &&
             is_readable($this->AssetsPath . $this->Loader->Configuration['frontend']['theme'] . DIRECTORY_SEPARATOR . $Asset)
@@ -913,12 +935,12 @@ class FrontEnd
             return $this->AssetsPath . $this->Loader->Configuration['frontend']['theme'] . DIRECTORY_SEPARATOR . $Asset;
         }
 
-        /** Default assets. */
+        /** Default theme assets. */
         if (is_readable($this->AssetsPath . 'default' . DIRECTORY_SEPARATOR . $Asset)) {
             return $this->AssetsPath . 'default' . DIRECTORY_SEPARATOR . $Asset;
         }
 
-        /** Assets base directory. */
+        /** Front-end assets base directory assets. */
         if (is_readable($this->AssetsPath . $Asset)) {
             return $this->AssetsPath . $Asset;
         }
@@ -1618,6 +1640,9 @@ class FrontEnd
                 }
                 if ($Success) {
                     $AssetData = $this->Loader->readFile($ThisAsset);
+                    if (is_callable($Callback)) {
+                        $AssetData = $Callback($AssetData);
+                    }
                     $OldETag = $_SERVER['HTTP_IF_NONE_MATCH'] ?? '';
                     $NewETag = hash('sha256', $AssetData) . '-' . strlen($AssetData);
                     header('Last-Modified: ' . gmdate('D, d M Y H:i:s T', filemtime($ThisAsset)));
@@ -1632,9 +1657,6 @@ class FrontEnd
                     header($MimeType);
                     if ($NoSniff) {
                         header('X-Content-Type-Options: nosniff');
-                    }
-                    if (is_callable($Callback)) {
-                        $AssetData = $Callback($AssetData);
                     }
                     echo $AssetData;
                     die;

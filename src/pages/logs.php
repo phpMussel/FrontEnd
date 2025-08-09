@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The logs page (last modified: 2025.04.24).
+ * This file: The logs page (last modified: 2025.08.09).
  */
 
 namespace phpMussel\FrontEnd;
@@ -24,13 +24,12 @@ $this->initialPrepwork($FE, $this->Loader->L10N->getString('link.Logs'), $this->
 $FE['FE_Content'] = $this->Loader->parse($FE, $this->Loader->readFile($this->getAssetPath('_logs.html')), true);
 
 /** Initialise array for fetching logs data. */
-$FE['LogFiles'] = ['Files' => $this->logsRecursiveList(), 'Out' => ''];
+$FE['LogFiles'] = ['Files' => $this->logsRecursiveList(), 'Out' => "\n"];
 
 /** Download a log file. */
 if (
-    isset($this->QueryVariables['text-mode'], $this->QueryVariables['logfile']) &&
-    $this->QueryVariables['text-mode'] === 'download' &&
-    isset($FE['LogFiles']['Files'][$this->QueryVariables['logfile']])
+    isset($this->QueryVariables['text-mode'], $this->QueryVariables['logfile'], $FE['LogFiles']['Files'][$this->QueryVariables['logfile']]) &&
+    $this->QueryVariables['text-mode'] === 'download'
 ) {
     header('Content-Type: application/octet-stream');
     header('Content-Transfer-Encoding: Binary');

@@ -200,6 +200,9 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 - [2025.07.07]: The formatFilesize method wasn't accounting for negative numbers; Fixed.
 - [2025.07.26]: Some browsers, in some contexts, were raising errors during request inspection concerning the absence of any X-Content-Type-Options header declaration (though it isn't entirely clear whether this error had any actual effect); Fixed.
 
+#### Security.
+- [2025.08.09]: Improved the safeguards for getAssetPath.
+
 #### Other changes.
 - [2025.07.05]: Aesthetic patch.
 - [2025.07.08]: Added the ability to route all outbound requests through a proxy, and two new configuration directives, `request_proxy` and `request_proxyauth`.
