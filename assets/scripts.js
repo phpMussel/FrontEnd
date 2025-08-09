@@ -5,5 +5,5 @@ function show(e,t='inline'){b=document.getElementsByClassName(e);for(var s=0;s<b
 function hide(e){b=document.getElementsByClassName(e);for(var s=0;s<b.length;s++)b[s].style.display="none"}
 function r(e){return document.getElementById(e).innerHTML}
 function w(e,x){document.getElementById(e).innerHTML=x}
-function toggleconfig(e,f){x=document.getElementById(e),y=document.getElementById(f),x.style.display!='none'?(x.style.display='none',y.className='unshownlink s'):(x.style.display='inline',y.className='shownlink s')}
+function toggleconfig(e,f){x=document.getElementById(e),y=document.getElementById(f),x.style.display!='none'?(x.style.display='none',y.classList.remove('showlink','shownlink'),y.classList.add('unshownlink')):(x.style.display='inline',y.classList.remove('unshownlink'),y.classList.add('showlink','shownlink'))}
 function toggleconfigNav(e,f){x=document.getElementById(e),y=document.getElementById(f),x.style.display='inline',y.className='shownlink'}

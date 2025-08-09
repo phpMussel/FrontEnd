@@ -363,10 +363,10 @@ class FrontEnd
 
         /** Menu toggle JavaScript, needed by some front-end pages. */
         $MenuToggle =
-            '<script type="text/javascript">var i, toggler = document.getElementsByClassName("comCat");' .
-            'for (i = 0; i < toggler.length; i++) toggler[i].addEventListener("click", function() {' .
-            'this.parentElement.querySelector(".comSub").classList.toggle("active"), !this.classList.toggle("caret-down") && this.classList.toggle("caret-up") && setTimeout(function(t) {' .
-            't.classList.toggle("caret-up")}, 200, this)});</script>';
+            '<script type="text/javascript">var i,toggler=document.getElementsByClassName("comCat");' .
+            'for(i=0;i<toggler.length;i++)toggler[i].addEventListener("click",function(){' .
+            'this.parentElement.querySelector(".comSub").classList.toggle("active"),!this.classList.toggle("caret-down")&&this.classList.toggle("caret-up")&&setTimeout(function(t){' .
+            't.classList.toggle("caret-up")},500,this)});</script>';
 
         /** A fix for correctly displaying LTR/RTL text. */
         if ($this->Loader->L10N->Directionality !== 'rtl') {
@@ -375,18 +375,18 @@ class FrontEnd
             $FE['FE_Align_Reverse'] = 'right';
             $FE['FE_Align_Mode'] = 'lr';
             $FE['Half_Border'] = 'solid solid none none';
-            $FE['45deg'] = '45deg';
             $FE['90deg'] = '90deg';
-            $FE['caretTransform'] = 'translate(5px, -2px) scaleX(0.9)';
+            $FE['caretTransformBefore'] = 'transform:rotate(0) scaleX(1);position:relative;top:2px;left:0px;filter:drop-shadow(0 0 0 rgba(0,0,0,0)) drop-shadow(0 0 0 rgba(0,0,0,0))';
+            $FE['caretTransformAfter'] = 'transform:rotate(90deg) scaleX(0.4);position:relative;top:4px;left:10px;filter:drop-shadow(0 6px 0 rgba(0,0,0,0.7)) drop-shadow(0 12px 0 rgba(0,0,0,0.4))';
         } else {
             $this->Loader->L10N->Data['Text Direction'] = 'rtl';
             $FE['FE_Align'] = 'right';
             $FE['FE_Align_Reverse'] = 'left';
             $FE['FE_Align_Mode'] = 'rl';
             $FE['Half_Border'] = 'solid none none solid';
-            $FE['45deg'] = '-45deg';
             $FE['90deg'] = '270deg';
-            $FE['caretTransform'] = 'translateX(-5px, -2px) scaleX(0.9)';
+            $FE['caretTransformBefore'] = 'transform:rotate(0) scaleX(1);position:relative;top:2px;right:0px;filter:drop-shadow(0 0 0 rgba(0,0,0,0)) drop-shadow(0 0 0 rgba(0,0,0,0))';
+            $FE['caretTransformAfter'] = 'transform:rotate(90deg) scaleX(0.4);position:relative;top:4px;right:10px;filter:drop-shadow(0 -6px 0 rgba(0,0,0,0.7)) drop-shadow(0 -12px 0 rgba(0,0,0,0.4))';
         }
 
         /** Fire event: "frontend_before_page". */
