@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Gujarati language data (last modified: 2025.08.08).
+# This file: Gujarati language data (last modified: 2025.08.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -260,7 +260,6 @@ label:
  Logged out: "લૉગ આઉટ કર્યું છે."
  Login: "લૉગિન"
  Logs access only: "માત્ર લોગ એક્સેસ"
- Never: "ક્યારેય ન"
  No log file selected: "કોઈ લૉગ ફાઇલ પસંદ કરેલ નથી."
  No log files available: "કોઈ લૉગ ફાઇલો ઉપલબ્ધ નથી."
  Normal: "કુદરતી"

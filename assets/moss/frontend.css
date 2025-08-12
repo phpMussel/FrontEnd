@@ -1,5 +1,9 @@
-:root{color-scheme:normal{theme_mode_effects}}
+:root{scroll-behavior:smooth;color-scheme:normal{theme_mode_effects}}
 *{vertical-align:text-top}
+@media screen and (prefers-reduced-motion: reduce) {
+  :root{scroll-behavior:auto}
+}
+.scrollTrans{transition:all .5s ease-in-out}
 body,input,select,textarea,.idx{font-size:calc((12px * {magnification}) + .03vw);background-repeat:no-repeat}
 body{font-family:'Tahoma','Verdana','Noto Sans','Arial';letter-spacing:1px;text-decoration:none;border-style:none;margin:0;white-space:normal;background-color:#789048;background-image:url('?phpmussel-asset=bg.png&theme={theme}');background-attachment:fixed;background-position:left bottom;color:#303c24}
 code{vertical-align:0;display:inline-block;height:calc(1em + 2px)}
@@ -99,10 +103,6 @@ input[name=qkey]{margin-{FE_Align}:-3px;padding-{FE_Align}:3px}
 select,input[type=submit],input[type=reset],input[type=button],input[type=file]::file-selector-button,input[type=text],input[type=password],input[type=number],input[type=date],input[type=time],button{box-sizing:border-box;height:20px;padding-top:0;padding-bottom:0}
 #pgrad{width:16px;height:16px;display:inline-block;border-radius:16px;filter:blur(2px)}
 td code~input,td code~select{vertical-align:middle}
-.trEase{transition:all .5s ease-out}
-.trEase>div{display:inline-block;transition:inherit}
-.pipCntrs{display:inline-block;position:relative;left:0;width:12px;height:12px;transition:inherit}
-.pipCntrs>img{display:inline-block;position:absolute;left:0;transition:inherit}
 input[type=checkbox]+label,input[type=radio]+label,.gridboxitem>label,.gridboxitem input+strong{vertical-align:-2px;cursor:pointer}
 .gridHA:not(.gridVA,.gridVB,.gridboxstretch),.gridHB:not(.gridVA,.gridVB,.gridboxstretch){white-space:nowrap}
 .configMatrixLabel,.vrte,.gridbox,.gridboxcheckcell{text-align:center}
@@ -150,6 +150,6 @@ input[type=file]::file-selector-button{background-image:url(data:image/svg+xml;b
 .flexrow{display:flex}
 .flexin{margin-{FE_Align}:-1px;margin-{FE_Align_Reverse}:1px;width:auto;flex-grow:1}
 .comCat::before,.showlink::before,.shownlink::before,.unshownlink::before{filter:invert(17%) sepia(44%) saturate(408%) hue-rotate(47deg) brightness(97%) contrast(89%)}
-.navSoftCnr{border-radius:0 12px 0 0}
+.navSoftCnr{border-radius:{cnrRadius} 0 0}
 .capitalize{text-transform:capitalize}
 input[type=checkbox],input[type=radio]{accent-color:#604848}

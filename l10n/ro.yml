@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data (last modified: 2025.08.08).
+# This file: Romanian language data (last modified: 2025.08.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -260,7 +260,6 @@ label:
  Logged out: "Deconectat."
  Login: "Conectare"
  Logs access only: "Acces doar la jurnalele"
- Never: "Niciodată"
  No log file selected: "Niciun fișier jurnal selectat."
  No log files available: "Niciun fișier jurnal disponibile."
  Normal: "Normal"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2025.08.08).
+# This file: Spanish language data (last modified: 2025.08.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -260,7 +260,6 @@ label:
  Logged out: "Desconectado."
  Login: "Login"
  Logs access only: "Acceso de registros solamente"
- Never: "Nunca"
  No log file selected: "Ningún archivo de registro seleccionado."
  No log files available: "Ningún archivos de registro disponibles."
  Normal: "Normal"

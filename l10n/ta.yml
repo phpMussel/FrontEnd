@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Tamil language data (last modified: 2025.08.08).
+# This file: Tamil language data (last modified: 2025.08.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -260,7 +260,6 @@ label:
  Logged out: "வெளியேறிவிட்டீர்கள்."
  Login: "உள்நுழைய"
  Logs access only: "பதிவுகள் அணுகல் மட்டுமே"
- Never: "ஒருபோதும்"
  No log file selected: "பதிவு கோப்பு எதுவும் தேர்ந்தெடுக்கப்படவில்லை."
  No log files available: "பதிவு கோப்புகள் எதுவும் கிடைக்கவில்லை."
  Normal: "இயல்பானது"

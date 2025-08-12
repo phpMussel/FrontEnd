@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Marathi language data (last modified: 2025.08.08).
+# This file: Marathi language data (last modified: 2025.08.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -260,7 +260,6 @@ label:
  Logged out: "लॉग आउट केले."
  Login: "लॉगिन"
  Logs access only: "फक्त नोंदीमध्ये प्रवेश"
- Never: "कधीही नाही"
  No log file selected: "कोणतीही नोंदी फाइल निवडलेली नाही."
  No log files available: "कोणत्याही नोंदी फायली उपलब्ध नाहीत."
  Normal: "नैसर्गिक"

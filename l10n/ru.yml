@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Russian language data (last modified: 2025.08.08).
+# This file: Russian language data (last modified: 2025.08.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -260,7 +260,6 @@ label:
  Logged out: "Вышел из системы."
  Login: "Войти"
  Logs access only: "Доступ только к лог-файлы"
- Never: "Никогда"
  No log file selected: "Не лог-файлы Выбранный."
  No log files available: "Не лог-файлы доступны."
  Normal: "Нормальный"

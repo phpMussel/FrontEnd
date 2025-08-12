@@ -378,6 +378,7 @@ class FrontEnd
             $FE['90deg'] = '90deg';
             $FE['caretTransformBefore'] = 'transform:rotate(0) scaleX(1);position:relative;top:2px;left:0px;filter:drop-shadow(0 0 0 rgba(0,0,0,0)) drop-shadow(0 0 0 rgba(0,0,0,0))';
             $FE['caretTransformAfter'] = 'transform:rotate(90deg) scaleX(0.4);position:relative;top:4px;left:10px;filter:drop-shadow(0 6px 0 rgba(0,0,0,0.7)) drop-shadow(0 12px 0 rgba(0,0,0,0.4))';
+            $FE['cnrRadius'] = '0 12px';
         } else {
             $this->Loader->L10N->Data['Text Direction'] = 'rtl';
             $FE['FE_Align'] = 'right';
@@ -387,6 +388,7 @@ class FrontEnd
             $FE['90deg'] = '270deg';
             $FE['caretTransformBefore'] = 'transform:rotate(0) scaleX(1);position:relative;top:2px;right:0px;filter:drop-shadow(0 0 0 rgba(0,0,0,0)) drop-shadow(0 0 0 rgba(0,0,0,0))';
             $FE['caretTransformAfter'] = 'transform:rotate(90deg) scaleX(0.4);position:relative;top:4px;right:10px;filter:drop-shadow(0 -6px 0 rgba(0,0,0,0.7)) drop-shadow(0 -12px 0 rgba(0,0,0,0.4))';
+            $FE['cnrRadius'] = '12px 0';
         }
 
         /** Fire event: "frontend_before_page". */

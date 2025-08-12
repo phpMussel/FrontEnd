@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Serbian language data (last modified: 2025.08.08).
+# This file: Serbian language data (last modified: 2025.08.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -260,7 +260,6 @@ label:
  Logged out: "Одјављен/а."
  Login: "Пријава"
  Logs access only: "Приступ само до датотека дневника"
- Never: "Никад"
  No log file selected: "Није изабрана датотека дневника."
  No log files available: "Нема доступних датотека дневника."
  Normal: "Нормално"

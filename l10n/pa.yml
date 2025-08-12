@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Punjabi language data (last modified: 2025.08.08).
+# This file: Punjabi language data (last modified: 2025.08.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -260,7 +260,6 @@ label:
  Logged out: "ਲੌਗ ਆਊਟ ਕੀਤਾ।"
  Login: "ਲੌਗਇਨ"
  Logs access only: "ਸਿਰਫ ਲੌਗ ਐਕਸੈਸ"
- Never: "ਕਦੇ ਨਹੀਂ"
  No log file selected: "ਕੋਈ ਲੌਗ ਫਾਈਲ ਨਹੀਂ ਚੁਣੀ ਗਈ।"
  No log files available: "ਕੋਈ ਲੌਗ ਫਾਈਲਾਂ ਉਪਲਬਧ ਨਹੀਂ ਹਨ।"
  Normal: "ਕੁਦਰਤੀ"

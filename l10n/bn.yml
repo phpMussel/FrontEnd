@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bangla language data (last modified: 2025.08.08).
+# This file: Bangla language data (last modified: 2025.08.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -260,7 +260,6 @@ label:
  Logged out: "লগ আউট হয়।"
  Login: "লগ ইন"
  Logs access only: "লগ অ্যাক্সেস শুধুমাত্র"
- Never: "না"
  No log file selected: "কোনও লগ ফাইল নির্বাচিত নেই।"
  No log files available: "কোন লগ ফাইল উপলব্ধ।"
  Normal: "স্বাভাবিক"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese language data (last modified: 2025.08.08).
+# This file: Chinese language data (last modified: 2025.08.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -390,7 +390,6 @@ label:
  Logged out: "已登出。"
  Login: {"zh-Hans": "登录", "zh-Hant": "登錄"}
  Logs access only: {"zh-Hans": "仅日志访问", "zh-Hant": "僅日誌訪問"}
- Never: {"zh-Hans": "决不", "zh-Hant": "決不"}
  No log file selected: {"zh-Hans": "没有选择的日志。", "zh-Hant": "沒有選擇的日誌。"}
  No log files available: {"zh-Hans": "没有日志可用。", "zh-Hant": "沒有日誌可用。"}
  Normal: "普通的"

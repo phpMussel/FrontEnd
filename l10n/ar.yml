@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2025.08.08).
+# This file: Arabic language data (last modified: 2025.08.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -260,7 +260,6 @@ label:
  Logged out: "تسجيل الخروج."
  Login: "تسجيل الدخول"
  Logs access only: "سجلات الوصول فقط"
- Never: "أبدا"
  No log file selected: "لا سجلات مختار."
  No log files available: "لا سجلات متاح."
  Normal: "طبيعي"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2025.08.08).
+# This file: Turkish language data (last modified: 2025.08.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -260,7 +260,6 @@ label:
  Logged out: "Çıkış yapıldı."
  Login: "Giriş"
  Logs access only: "Sadece girişleri kaydeder"
- Never: "Asla"
  No log file selected: "Hiçbir günlük dosyası seçilmedi."
  No log files available: "Günlük dosyası yok."
  Normal: "Normal"

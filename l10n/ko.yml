@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2025.08.08).
+# This file: Korean language data (last modified: 2025.08.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -260,7 +260,6 @@ label:
  Logged out: "로그 아웃했습니다."
  Login: "로그인"
  Logs access only: "로그에만 액세스"
- Never: "못"
  No log file selected: "로그가 선택되어 있지 않습니다."
  No log files available: "아니 로그를 사용할 수 있습니다."
  Normal: "정상"

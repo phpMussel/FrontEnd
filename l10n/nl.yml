@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2025.08.08).
+# This file: Dutch language data (last modified: 2025.08.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -260,7 +260,6 @@ label:
  Logged out: "Uitgelogd."
  Login: "Inloggen"
  Logs access only: "Logbestanden toegang alleen"
- Never: "Nooit"
  No log file selected: "Geen logbestand geselecteerd."
  No log files available: "Geen logbestanden beschikbaar."
  Normal: "Normaal"

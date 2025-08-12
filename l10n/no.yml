@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2025.08.08).
+# This file: Norwegian language data (last modified: 2025.08.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -260,7 +260,6 @@ label:
  Logged out: "Logget ut."
  Login: "Innloggingssiden"
  Logs access only: "Bare logger tilgang"
- Never: "Aldri"
  No log file selected: "Ingen loggfil valgt."
  No log files available: "Ingen loggfiler tilgjengelig."
  Normal: "Normal"

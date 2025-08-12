@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2025.08.08).
+# This file: English language data (last modified: 2025.08.12).
 ##/
 
 checkbox:
@@ -260,7 +260,6 @@ label:
  Logged out: "Logged out."
  Login: "Login"
  Logs access only: "Logs access only"
- Never: "Never"
  No log file selected: "No log file selected."
  No log files available: "No log files available."
  Normal: "Normal"

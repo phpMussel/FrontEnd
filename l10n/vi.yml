@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2025.08.08).
+# This file: Vietnamese language data (last modified: 2025.08.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -260,7 +260,6 @@ label:
  Logged out: "Đã đăng xuất."
  Login: "Đăng nhập"
  Logs access only: "Bản ghi truy cập chỉ"
- Never: "Không bao giờ"
  No log file selected: "Không có bản ghi được chọn."
  No log files available: "Không có bản ghi có sẵn."
  Normal: "Bình thường"

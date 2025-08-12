@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Czech language data (last modified: 2025.08.08).
+# This file: Czech language data (last modified: 2025.08.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -260,7 +260,6 @@ label:
  Logged out: "Odhlášen."
  Login: "Přihlašovací"
  Logs access only: "Pouze protokoluje přístup"
- Never: "Nikdy"
  No log file selected: "Nebyl vybrán žádný soubor protokolu."
  No log files available: "Nejsou k dispozici žádné soubory protokolu."
  Normal: "Normální"

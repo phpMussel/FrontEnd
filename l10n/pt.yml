@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese language data (last modified: 2025.08.08).
+# This file: Portuguese language data (last modified: 2025.08.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -318,7 +318,6 @@ label:
  Logged out: "Desconectado."
  Login: "Login"
  Logs access only: "Acesso aos arquivos de log somente"
- Never: "Nunca"
  No log file selected: "Não qualquer arquivo de log selecionado."
  No log files available: "Não quaisquer arquivos de log disponíveis."
  Normal: "Normal"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2025.08.08).
+# This file: Polish language data (last modified: 2025.08.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -260,7 +260,6 @@ label:
  Logged out: "Wylogowano."
  Login: "Zaloguj sie"
  Logs access only: "Dostęp tylko do dzienników"
- Never: "Nigdy"
  No log file selected: "Nie wybrano pliku dziennika."
  No log files available: "Brak dostępnych plików dziennika."
  Normal: "Normalna"

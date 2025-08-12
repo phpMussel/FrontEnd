@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2025.08.08).
+# This file: Latvian language data (last modified: 2025.08.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -260,7 +260,6 @@ label:
  Logged out: "Izlogojies."
  Login: "Ielogošanās"
  Logs access only: "Tikai piekļuvei logfailiem"
- Never: "Nekad"
  No log file selected: "Nav atlasīts logfails."
  No log files available: "Neviens logfails nav pieejams."
  Normal: "Normāls"

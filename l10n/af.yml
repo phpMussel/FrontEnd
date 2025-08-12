@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2025.08.08).
+# This file: Afrikaans language data (last modified: 2025.08.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -260,7 +260,6 @@ label:
  Logged out: "Uitgeteken."
  Login: "Intekening"
  Logs access only: "Slegs logs toegang"
- Never: "Nooit nie"
  No log file selected: "Geen loglêer gekies nie."
  No log files available: "Geen loglêers beskikbaar nie."
  Normal: "Normaal"
