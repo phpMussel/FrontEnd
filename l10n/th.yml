@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Thai language data (last modified: 2025.08.12).
+# This file: Thai language data (last modified: 2025.08.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -173,7 +173,7 @@ field:
  vt_suspicion_level_heuristic_only: "สแกนเฉพาะไฟล์ที่มีน้ำหนักฮิวริสติก.\nไฟล์จะถูกสแกนเฉพาะเมื่อมีน้ำหนักแบบฮิวริสติกเท่านั้น. น้ำหนักฮิวริสติกอาจเกิดขึ้นได้จากลายเซ็นสำหรับจับลายนิ้วมือซึ่งบ่งชี้ว่ามีการติดเชื้อ แต่ไม่รับประกันการติดเชื้อ. เมื่อมีข้อสงสัยที่ยังไม่ได้รับการพิสูจน์ การค้นหาสามารถใช้เป็นความคิดเห็นที่สองได้."
 hints_logging_datetime: "เคล็ดลับที่เป็นประโยชน์: คุณสามารถแนบข้อมูลวันที่/เวลาเข้ากับชื่อของไฟล์บันทึกได้โดยใช้ตัวยึดแบบเวลา. ตัวยึดแบบเวลาที่พร้อมใช้งานจะแสดงที่ {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
- คำถามที่พบบ่อย.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">"PDO DSN" คืออะไร? ฉันจะใช้ PDO กับ phpMussel ได้อย่างไร?</a></em>"
+ คำถามที่พบบ่อย.: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">"PDO DSN" คืออะไร? ฉันจะใช้ PDO กับ phpMussel ได้อย่างไร?</a></em>"
 hints_time_format: |
  <strong><em>ตัวยึด – คำอธิบาย – ตัวอย่างขึ้นอยู่กับ 2024-04-30T18:27:49+08:00.</em></strong><br />
  <code class="s">{yyyy}</code> – ปี – เช่น., 2024.<br />
@@ -377,7 +377,7 @@ tip:
  Logs: "เลือกไฟล์บันทึกจากรายการด้านล่างเพื่อดูเนื้อหาของไฟล์บันทึกนั้น."
  Quarantine is currently disabled: "บันทึก: กักกันถูกปิดใช้งานอยู่ แต่สามารถเปิดใช้งานได้ผ่านทางหน้ากำหนดค่า."
  Quarantine: "หน้านี้แสดงรายการไฟล์ทั้งหมดที่อยู่ในกักกันและอำนวยความสะดวกในการจัดการไฟล์เหล่านี้."
- See the documentation: "ดูที่<a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">เอกสาร</a>สำหรับข้อมูลเกี่ยวกับคำสั่งการกำหนดค่าต่างๆและวัตถุประสงค์ของพวกเขา."
+ See the documentation: "ดูที่<a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">เอกสาร</a>สำหรับข้อมูลเกี่ยวกับคำสั่งการกำหนดค่าต่างๆและวัตถุประสงค์ของพวกเขา."
  Signature Information: "หน้าข้อมูลลายเซ็นให้ข้อมูลเบื้องต้นเกี่ยวกับแหล่งที่มาและประเภทของลายเซ็นที่ใช้งานอยู่ในปัจจุบัน."
  Statistics tracking is currently disabled: "บันทึก: ขณะนี้การติดตามผลสถิติถูกปิดใช้งาน แต่สามารถเปิดใช้งานได้ผ่านทางหน้าการกำหนดค่า."
  Statistics: "หน้านี้แสดงสถิติการใช้งานขั้นพื้นฐานเกี่ยวกับการติดตั้ง phpMussel ของคุณ."

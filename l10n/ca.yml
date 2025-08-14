@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Catalan language data (last modified: 2025.08.12).
+# This file: Catalan language data (last modified: 2025.08.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -173,7 +173,7 @@ field:
  vt_suspicion_level_heuristic_only: "Escaneja només fitxers amb pes heurístic.\nEls fitxers només s'escanejaran si tenen un pes heurístic. El pes heurístic es pot incórrer a partir de signatures destinades a capturar empremtes dactilars comunes associades a una possible infecció que no necessàriament garanteixen la infecció. La cerca, en aquests casos, pot servir per proporcionar una segona opinió per als resultats que justifiquen sospita però que no proporcionen cap certesa."
 hints_logging_datetime: "Consell útil: Podeu adjuntar informació de data/hora als noms dels fitxers de registre utilitzant marcadors de posició de format d'hora. Els marcadors de posició de format d'hora disponibles es mostren a {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
- FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Què és un "PDO DSN"? Com puc utilitzar PDO amb phpMussel?</a></em>"
+ FAQ.: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Què és un "PDO DSN"? Com puc utilitzar PDO amb phpMussel?</a></em>"
 hints_time_format: |
  <strong><em>Marcador de posició – Explicació – Exemple basat en 2024-04-30T18:27:49+08:00.</em></strong><br />
  <code class="s">{yyyy}</code> – L'any – Per exemple, 2024.<br />
@@ -379,7 +379,7 @@ tip:
  Logs: "Seleccioneu un fitxer de registre de la llista següent per veure el contingut d'aquest fitxer de registre."
  Quarantine is currently disabled: "Nota: Actualment, la quarantena està desactivada, però es pot activar mitjançant la pàgina de configuració."
  Quarantine: "Aquesta pàgina enumera tots els fitxers actualment en quarantena i facilita la gestió d'aquests fitxers."
- See the documentation: "Consulteu la <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">documentació</a> per obtenir informació sobre les diferents directives de configuració i els seus propòsits."
+ See the documentation: "Consulteu la <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">documentació</a> per obtenir informació sobre les diferents directives de configuració i els seus propòsits."
  Signature Information: "La pàgina d'informació de signatures proporciona informació bàsica sobre les fonts i els tipus de signatures actives actualment."
  Statistics tracking is currently disabled: "Nota: Actualment, el seguiment d'estadístiques està desactivat, però es pot activar mitjançant la pàgina de configuració."
  Statistics: "Aquesta pàgina mostra algunes estadístiques bàsiques d'ús relacionades amb la vostra instal·lació de phpMussel."

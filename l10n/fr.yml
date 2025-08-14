@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2025.08.12).
+# This file: French language data (last modified: 2025.08.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -185,7 +185,7 @@ field:
  vt_suspicion_level_heuristic_only: "Analyser seulement les fichiers avec un poids heuristique.\nLes fichiers seront analysés s'ils ont un poids heuristique, mais dans aucun autre cas. Le poids heuristique peut être induit par des signatures destinées à capturer des empreintes digitales communes associées à une infection potentielle qui ne garantissent pas nécessairement l'infection. L'utilisation de l'API, dans de tels cas, peut servir à fournir une deuxième opinion pour des résultats qui justifient des soupçons mais ne fournissent aucune certitude."
 hints_logging_datetime: "Conseil utile\_: Vous pouvez joindre des informations de date/heure aux noms des fichiers journaux à l'aide d'espaces réservés du format horaire. Les espaces réservés du format horaire disponibles sont affichés en {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
- FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.fr.md\#user-content-HOW_TO_USE_PDO" hreflang="fr-FR">Qu'est-ce qu'un «\_PDO DSN\_»\_? Comment utiliser PDO avec phpMussel\_?</a></em>"
+ FAQ.: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.fr.md\#user-content-HOW_TO_USE_PDO" hreflang="fr-FR">Qu'est-ce qu'un «\_PDO DSN\_»\_? Comment utiliser PDO avec phpMussel\_?</a></em>"
 hints_time_format: |
  <strong><em>Espace réservé – Explication – Exemple basé sur 2024-04-30T18:27:49+08:00.</em></strong><br />
  <code class="s">{yyyy}</code> – L'année – Par exemple, 2024.<br />
@@ -401,7 +401,7 @@ tip:
  Logs: "Sélectionnez un fichier journal dans la liste ci-dessous pour afficher le contenu de ce fichier journal."
  Quarantine is currently disabled: "Remarque\_: La quarantaine est actuellement désactivée, mais peut être activée via la page de configuration."
  Quarantine: "Cette page répertorie tous les fichiers actuellement en quarantaine et facilite la gestion de ces fichiers."
- See the documentation: "Voir la <a href="https://github.com/phpMussel/Docs/blob/master/readme.fr.md\#user-content-SECTION5" hreflang="fr-FR" rel="noopener external">documentation</a> pour information sur les différentes directives de la configuration et leurs objectifs."
+ See the documentation: "Voir la <a href="{{Links.phpMussel.Docs Base Path}}readme.fr.md\#user-content-SECTION5" hreflang="fr-FR" rel="noopener external">documentation</a> pour information sur les différentes directives de la configuration et leurs objectifs."
  Signature Information: "La page d'informations sur les signatures fournit des informations de base sur les sources et les types des signatures actuellement actives."
  Statistics tracking is currently disabled: "Remarque\_: Le suivi des statistiques est actuellement désactivé, mais peut être activé via la page de configuration."
  Statistics: "Cette page présente certaines statistiques d'utilisation concernant votre installation pour phpMussel."

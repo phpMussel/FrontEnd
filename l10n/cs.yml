@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Czech language data (last modified: 2025.08.12).
+# This file: Czech language data (last modified: 2025.08.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -173,7 +173,7 @@ field:
  vt_suspicion_level_heuristic_only: "Skenovat pouze soubory s heuristickou váhou.\nSoubory budou skenovány pouze v případě že mají určitou heuristickou váhu. Heuristickou váhu lze získat z podpisů určených k zachycení běžných otisků prstů spojených s potenciální infekcí, která nemusí nutně zaručovat infekci. Vyhledávání v takových případech může sloužit k poskytnutí druhého názoru na výsledky, které odůvodňují podezření, ale jinak neposkytují žádnou jistotu."
 hints_logging_datetime: "Užitečný tip: K názvům souborů protokolu můžete připojit informace o datu a čase pomocí zástupných symbolů formátu času. Dostupné zástupné symboly formátu času jsou zobrazeny v {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
- FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Co je to „PDO DSN“? Jak mohu používat PDO s phpMussel?</a></em>"
+ FAQ.: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Co je to „PDO DSN“? Jak mohu používat PDO s phpMussel?</a></em>"
 hints_time_format: |
  <strong><em>Zástupný symbol – Vysvětlení – Příklad založený na 2024-04-30T18:27:49+08:00.</em></strong><br />
  <code class="s">{yyyy}</code> – Rok – Např., 2024.<br />
@@ -380,7 +380,7 @@ tip:
  Logs: "Chcete-li zobrazit obsah tohoto souboru protokolu, vyberte soubor protokolu ze seznamu níže."
  Quarantine is currently disabled: "Poznámka: Karanténa je aktuálně deaktivována, ale lze ji aktivovat prostřednictvím konfigurační stránky."
  Quarantine: "Tato stránka obsahuje seznam všech souborů aktuálně v karanténě a usnadňuje správu těchto souborů."
- See the documentation: "Informace o různých konfiguračních direktivách a jejich účelech najdete v <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">dokumentaci</a>."
+ See the documentation: "Informace o různých konfiguračních direktivách a jejich účelech najdete v <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">dokumentaci</a>."
  Signature Information: "Stránka s informacemi o podpisů poskytuje některé základní informace o zdrojích a typech aktuálně aktivních podpisů."
  Statistics tracking is currently disabled: "Poznámka: Sledování statistik je aktuálně deaktivováno, ale lze jej aktivovat prostřednictvím konfigurační stránky."
  Statistics: "Tato stránka zobrazuje některé základní statistiky používání týkající se vaší instalace phpMussel."

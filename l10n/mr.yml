@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Marathi language data (last modified: 2025.08.12).
+# This file: Marathi language data (last modified: 2025.08.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -173,7 +173,7 @@ field:
  vt_suspicion_level_heuristic_only: "फक्त ह्युरिस्टिक वेट असलेल्या फायली स्कॅन करा.\nजर फायलींवर काही ह्युरिस्टिक वजन असेल तरच त्या स्कॅन केल्या जातील. संभाव्य संसर्गाशी संबंधित सामान्य बोटांचे ठसे पकडण्याच्या उद्देशाने केलेल्या स्वाक्षऱ्यांमधून ह्युरिस्टिक वजन वाढू शकते (हे बोटांचे ठसे संसर्गाची हमी नाहीत). असे लुकअप, जेव्हा संशय योग्य असतो पण निश्चितता नसते तेव्हा, दुसरे मत मिळविण्यासाठी उपयुक्त ठरू शकतात."
 hints_logging_datetime: "उपयुक्त टीप: वेळ स्वरूप प्लेसहोल्डर वापरून तुम्ही लॉग फायलींच्या नावांना तारीख/वेळ माहिती जोडू शकता. उपलब्ध वेळ स्वरूप प्लेसहोल्डर {{Links.ConfigRef.time_format}} वर प्रदर्शित केले जातात."
 hints_pdo_dsn:
- वारंवार विचारले जाणारे प्रश्न.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">"PDO DSN" म्हणजे काय? मी phpMussel सह PDO कसा वापरू शकतो?</a></em>"
+ वारंवार विचारले जाणारे प्रश्न.: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">"PDO DSN" म्हणजे काय? मी phpMussel सह PDO कसा वापरू शकतो?</a></em>"
 hints_time_format: |
  <strong><em>प्लेसहोल्डर – स्पष्टीकरण – 2024-04-30T18:27:49+08:00 वर आधारित उदाहरण.</em></strong><br />
  <code class="s">{yyyy}</code> – वर्ष – उदाहरणार्थ, 2024.<br />
@@ -379,7 +379,7 @@ tip:
  Logs: "त्या लॉग फाइलमधील सामग्री पाहण्यासाठी खालील यादीतून एक लॉग फाइल निवडा."
  Quarantine is currently disabled: "टीप: क्वारंटाइन सध्या अक्षम केले आहे, परंतु कॉन्फिगरेशन पृष्ठाद्वारे ते सक्षम केले जाऊ शकते."
  Quarantine: "हे पान सध्या क्वारंटाइनमध्ये असलेल्या सर्व फायलींची यादी देते आणि त्या फायलींचे व्यवस्थापन सुलभ करते."
- See the documentation: "विविध कॉन्फिगरेशन निर्देश आणि त्यांच्या उद्देशांबद्दल माहितीसाठी <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">दस्तऐवजीकरण</a> पहा."
+ See the documentation: "विविध कॉन्फिगरेशन निर्देश आणि त्यांच्या उद्देशांबद्दल माहितीसाठी <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">दस्तऐवजीकरण</a> पहा."
  Signature Information: "स्वाक्षरी माहिती पृष्ठ सध्या सक्रिय स्वाक्षरींचे स्रोत आणि प्रकार याबद्दल काही मूलभूत माहिती प्रदान करते."
  Statistics tracking is currently disabled: "टीप: सांख्यिकी ट्रॅकिंग सध्या अक्षम केले आहे, परंतु कॉन्फिगरेशन पृष्ठाद्वारे ते सक्षम केले जाऊ शकते."
  Statistics: "हे पान तुमच्या phpMussel इंस्टॉलेशनशी संबंधित काही मूलभूत वापर आकडेवारी दर्शविते."

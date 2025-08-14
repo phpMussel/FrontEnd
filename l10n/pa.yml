@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Punjabi language data (last modified: 2025.08.12).
+# This file: Punjabi language data (last modified: 2025.08.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -173,7 +173,7 @@ field:
  vt_suspicion_level_heuristic_only: "ਸਿਰਫ ਹਿਉਰਿਸਟਿਕ ਭਾਰ ਵਾਲੀਆਂ ਫਾਈਲਾਂ ਨੂੰ ਸਕੈਨ ਕਰੋ।\nਫਾਈਲਾਂ ਨੂੰ ਸਿਰਫ ਤਾਂ ਹੀ ਸਕੈਨ ਕੀਤਾ ਜਾਵੇਗਾ ਜੇਕਰ ਉਹਨਾਂ ਦਾ ਕੁਝ ਅਨੁਮਾਨਤ ਭਾਰ ਹੈ। ਕੁਝ ਖਾਸ ਕਿਸਮਾਂ ਦੇ ਦਸਤਖਤ ਹਨ ਜੋ ਹਿਉਰਿਸਟਿਕ ਭਾਰ ਚੁੱਕਣ ਦੇ ਸਮਰੱਥ ਹਨ। (ਦਸਤਖਤ ਜੋ ਸੰਭਾਵੀ ਲਾਗ ਨਾਲ ਜੁੜੇ ਫਿੰਗਰਪ੍ਰਿੰਟਸ ਦੀ ਭਾਲ ਕਰਦੇ ਹਨ, ਪਰ ਜੋ ਜ਼ਰੂਰੀ ਤੌਰ 'ਤੇ ਲਾਗ ਦੀ ਗਰੰਟੀ ਨਹੀਂ ਦਿੰਦੇ ਹਨ)। ਲੁੱਕਅੱਪ, ਅਜਿਹੇ ਮਾਮਲਿਆਂ ਵਿੱਚ, ਦੂਜੀ ਰਾਏ ਪ੍ਰਦਾਨ ਕਰ ਸਕਦੀ ਹੈ ਜਦੋਂ ਨਤੀਜੇ ਸ਼ੱਕ ਨੂੰ ਜਾਇਜ਼ ਠਹਿਰਾਉਂਦੇ ਹਨ ਪਰ ਨਿਸ਼ਚਤਤਾ ਪ੍ਰਦਾਨ ਨਹੀਂ ਕਰਦੇ।"
 hints_logging_datetime: "ਲਾਭਦਾਇਕ ਸੁਝਾਅ: ਤੁਸੀਂ ਸਮਾਂ ਫਾਰਮੈਟ ਪਲੇਸਹੋਲਡਰਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਲੌਗ ਫਾਈਲਾਂ ਦੇ ਨਾਵਾਂ ਨਾਲ ਮਿਤੀ/ਸਮੇਂ ਦੀ ਜਾਣਕਾਰੀ ਨੱਥੀ ਕਰ ਸਕਦੇ ਹੋ। ਉਪਲਬਧ ਸਮਾਂ ਫਾਰਮੈਟ ਪਲੇਸਹੋਲਡਰ {{Links.ConfigRef.time_format}} 'ਤੇ ਪ੍ਰਦਰਸ਼ਿਤ ਹੁੰਦੇ ਹਨ।"
 hints_pdo_dsn:
- FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">"PDO DSN" ਕੀ ਹੈ? ਮੈਂ phpMussel ਨਾਲ PDO ਦੀ ਵਰਤੋਂ ਕਿਵੇਂ ਕਰ ਸਕਦਾ ਹਾਂ?</a></em>"
+ FAQ.: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">"PDO DSN" ਕੀ ਹੈ? ਮੈਂ phpMussel ਨਾਲ PDO ਦੀ ਵਰਤੋਂ ਕਿਵੇਂ ਕਰ ਸਕਦਾ ਹਾਂ?</a></em>"
 hints_time_format: |
  <strong><em>ਪਲੇਸਹੋਲਡਰ – ਵਿਆਖਿਆ – 2024-04-30T18:27:49+08:00 'ਤੇ ਆਧਾਰਿਤ ਉਦਾਹਰਨ।</em></strong><br />
  <code class="s">{yyyy}</code> – ਸਾਲ – ਉਦਾਹਰਨ ਲਈ, 2024.<br />
@@ -379,7 +379,7 @@ tip:
  Logs: "ਉਸ ਲੌਗ ਫਾਈਲ ਦੀ ਸਮੱਗਰੀ ਨੂੰ ਦੇਖਣ ਲਈ ਹੇਠਾਂ ਦਿੱਤੀ ਸੂਚੀ ਵਿੱਚੋਂ ਇੱਕ ਲੌਗ ਫਾਈਲ ਚੁਣੋ।"
  Quarantine is currently disabled: "ਨੋਟ: ਕੁਆਰੰਟੀਨ ਵਰਤਮਾਨ ਵਿੱਚ ਅਕਿਰਿਆਸ਼ੀਲ ਹੈ, ਪਰ ਕੌਂਫਿਗਰੇਸ਼ਨ ਪੰਨੇ ਦੁਆਰਾ ਕਿਰਿਆਸ਼ੀਲ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
  Quarantine: "ਇਹ ਪੰਨਾ ਵਰਤਮਾਨ ਵਿੱਚ ਕੁਆਰੰਟੀਨ ਵਿੱਚ ਸਾਰੀਆਂ ਫਾਈਲਾਂ ਨੂੰ ਸੂਚੀਬੱਧ ਕਰਦਾ ਹੈ ਅਤੇ ਉਹਨਾਂ ਫਾਈਲਾਂ ਦੇ ਪ੍ਰਬੰਧਨ ਦੀ ਸਹੂਲਤ ਦਿੰਦਾ ਹੈ।"
- See the documentation: "ਵੱਖ-ਵੱਖ ਕੌਂਫਿਗਰੇਸ਼ਨ ਨਿਰਦੇਸ਼ਾਂ ਅਤੇ ਉਹਨਾਂ ਦੇ ਉਦੇਸ਼ਾਂ ਬਾਰੇ ਜਾਣਕਾਰੀ ਲਈ <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">ਦਸਤਾਵੇਜ਼</a> ਵੇਖੋ।"
+ See the documentation: "ਵੱਖ-ਵੱਖ ਕੌਂਫਿਗਰੇਸ਼ਨ ਨਿਰਦੇਸ਼ਾਂ ਅਤੇ ਉਹਨਾਂ ਦੇ ਉਦੇਸ਼ਾਂ ਬਾਰੇ ਜਾਣਕਾਰੀ ਲਈ <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">ਦਸਤਾਵੇਜ਼</a> ਵੇਖੋ।"
  Signature Information: "ਦਸਤਖਤ ਜਾਣਕਾਰੀ ਪੰਨਾ ਮੌਜੂਦਾ ਸਰਗਰਮ ਦਸਤਖਤਾਂ ਦੇ ਸਰੋਤਾਂ ਅਤੇ ਕਿਸਮਾਂ ਬਾਰੇ ਕੁਝ ਬੁਨਿਆਦੀ ਜਾਣਕਾਰੀ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ।"
  Statistics tracking is currently disabled: "ਨੋਟ: ਅੰਕੜੇ ਟ੍ਰੈਕਿੰਗ ਵਰਤਮਾਨ ਵਿੱਚ ਅਕਿਰਿਆਸ਼ੀਲ ਹੈ, ਪਰ ਇਸਨੂੰ ਕੌਂਫਿਗਰੇਸ਼ਨ ਪੰਨੇ ਰਾਹੀਂ ਕਿਰਿਆਸ਼ੀਲ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
  Statistics: "ਇਹ ਪੰਨਾ ਤੁਹਾਡੀ phpMussel ਇੰਸਟਾਲੇਸ਼ਨ ਦੇ ਸੰਬੰਧ ਵਿੱਚ ਕੁਝ ਬੁਨਿਆਦੀ ਵਰਤੋਂ ਦੇ ਅੰਕੜੇ ਦਿਖਾਉਂਦਾ ਹੈ।"

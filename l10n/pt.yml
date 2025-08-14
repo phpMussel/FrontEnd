@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese language data (last modified: 2025.08.12).
+# This file: Portuguese language data (last modified: 2025.08.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -229,7 +229,7 @@ field:
   pt-PT: "Analisar apenas arquivos com peso heurístico.\nArquivos serão analisados apenas se incorrerem em algum peso heurístico. O peso heurístico pode ser incorrido por meio de assinaturas destinadas a capturar impressões digitais comuns associadas a possíveis infeções que não garantem necessariamente a infeção. A pesquisa, nesses casos, pode servir para fornecer uma segunda opinião para resultados que justificam a suspeita, mas não fornecem nenhuma certeza."
 hints_logging_datetime: "Dica útil: Você pode anexar informações de data/hora aos nomes dos arquivos de log usando espaços reservados de formato de hora. Os espaços reservados para formato de hora disponíveis são exibidos em {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
- FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.pt.md\#user-content-HOW_TO_USE_PDO" hreflang="pt">O que é um "PDO DSN"? Como posso usar o PDO com o phpMussel?</a></em>"
+ FAQ.: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.pt.md\#user-content-HOW_TO_USE_PDO" hreflang="pt">O que é um "PDO DSN"? Como posso usar o PDO com o phpMussel?</a></em>"
 hints_time_format: |
  <strong><em>Espaço reservado – Explicação – Exemplo baseado em 2024-04-30T18:27:49+08:00.</em></strong><br />
  <code class="s">{yyyy}</code> – O ano – Por exemplo, 2024.<br />
@@ -456,8 +456,8 @@ tip:
  Quarantine is currently disabled: "Nota: A quarentena está atualmente desativada, mas pode ser ativada através da página de configuração."
  Quarantine: "Esta página lista todos os arquivos atualmente em quarentena e facilita o gerenciamento desses arquivos."
  See the documentation:
-  pt-BR: "Consulte a <a href="https://github.com/phpMussel/Docs/blob/master/readme.pt.md\#user-content-SECTION5" hreflang="pt" rel="noopener external">documentação</a> para obter informações sobre as várias diretrizes de configuração e seus objetivos."
-  pt-PT: "Consulte a <a href="https://github.com/phpMussel/Docs/blob/master/readme.pt.md\#user-content-SECTION5" hreflang="pt" rel="noopener external">documentação</a> para obter informações sobre as várias diretrizes de configuração e os seus objetivos."
+  pt-BR: "Consulte a <a href="{{Links.phpMussel.Docs Base Path}}readme.pt.md\#user-content-SECTION5" hreflang="pt" rel="noopener external">documentação</a> para obter informações sobre as várias diretrizes de configuração e seus objetivos."
+  pt-PT: "Consulte a <a href="{{Links.phpMussel.Docs Base Path}}readme.pt.md\#user-content-SECTION5" hreflang="pt" rel="noopener external">documentação</a> para obter informações sobre as várias diretrizes de configuração e os seus objetivos."
  Signature Information: "A página de informações de assinaturas fornece algumas informações básicas sobre as origens e os tipos das assinaturas atualmente ativas."
  Statistics tracking is currently disabled: "Nota: O monitoramento de estatísticas está desativado atualmente, mas pode ser ativado através da página de configuração."
  Statistics: "Esta página mostra algumas estatísticas de uso básicas relativas à instalação do phpMussel."

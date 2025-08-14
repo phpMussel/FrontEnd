@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bulgarian language data (last modified: 2025.08.12).
+# This file: Bulgarian language data (last modified: 2025.08.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -173,7 +173,7 @@ field:
  vt_suspicion_level_heuristic_only: "Сканирайте само файлове с евристично тегло.\nФайловете ще бъдат сканирани само ако имат някаква евристична тежест. Евристично тегло може да бъде получено от сигнатури, предназначени да уловят общи пръстови отпечатъци, свързани с потенциална инфекция, които не гарантират непременно инфекция. Търсенето в такива случаи може да послужи за предоставяне на второ мнение за резултати, които оправдават подозрението, но иначе не предоставят никаква сигурност."
 hints_logging_datetime: "Полезен съвет: Можете да прикачите информация за дата/час към имената на регистрационните файлове, като използвате заместители на формата за време. Наличните заместители на формата за време се показват на {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
- ЧЗВ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Какво е „PDO DSN“? Как мога да използвам PDO с phpMussel?</a></em>"
+ ЧЗВ.: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Какво е „PDO DSN“? Как мога да използвам PDO с phpMussel?</a></em>"
 hints_time_format: |
  <strong><em>Заместител – Обяснение – Пример, базиран на 2024-04-30T18:27:49+08:00.</em></strong><br />
  <code class="s">{yyyy}</code> – Годината – Напр., 2024.<br />
@@ -379,7 +379,7 @@ tip:
  Logs: "Изберете регистрационни файл от списъка по-долу, за да видите съдържанието на този регистрационни файл."
  Quarantine is currently disabled: "Забележка: Карантината в момента е деактивирана, но може да се активира чрез страницата за конфигурация."
  Quarantine: "Тази страница изброява всички файлове в карантина и улеснява управлението на тези файлове."
- See the documentation: "Вижте <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">документацията</a> за информация относно различните директиви за конфигурация и техните цели."
+ See the documentation: "Вижте <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">документацията</a> за информация относно различните директиви за конфигурация и техните цели."
  Signature Information: "Страницата с информация за сигнатурите предоставя основна информация за източниците и типовете на текущо активните сигнатури."
  Statistics tracking is currently disabled: "Забележка: Проследяването на статистика в момента е деактивирано, но може да се активира чрез страницата за конфигурация."
  Statistics: "Тази страница показва някои основни статистически данни за използването на вашата инсталация на phpMussel."

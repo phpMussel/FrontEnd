@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Russian language data (last modified: 2025.08.12).
+# This file: Russian language data (last modified: 2025.08.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -173,7 +173,7 @@ field:
  vt_suspicion_level_heuristic_only: "Сканировать только файлы с эвристическим весом.\nСканироваться будут только файлы с эвристическим весом. Эвристический вес может быть получен из-за сигнатур, предназначенных для обнаружения общих отпечатков пальцев, связанных с потенциальным заражением, которые не обязательно гарантируют заражение. Поиск в таких случаях может служить для получения второго мнения о результатах, которые оправдывают подозрения, но в остальном не дают никакой уверенности."
 hints_logging_datetime: "Полезный совет: Вы можете прикрепить информацию о дате и времени к именам файлов журналов, используя заполнители формата времени. Доступные заполнители формата времени отображаются на {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
- FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.ru.md\#user-content-HOW_TO_USE_PDO" hreflang="ru-RU">Что такое «PDO DSN»? Как я могу использовать PDO с phpMussel?</a></em>"
+ FAQ.: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.ru.md\#user-content-HOW_TO_USE_PDO" hreflang="ru-RU">Что такое «PDO DSN»? Как я могу использовать PDO с phpMussel?</a></em>"
 hints_time_format: |
  <strong><em>Заполнитель – Объяснение – Пример на основе 2024-04-30T18:27:49+08:00.</em></strong><br />
  <code class="s">{yyyy}</code> – Год – Например, 2024.<br />
@@ -380,7 +380,7 @@ tip:
  Logs: "Выберите лог-файл из приведенного ниже списка чтобы прочитать содержимое лог-файл."
  Quarantine is currently disabled: "Заметка: В настоящее время карантин отключен, но может быть включен через страницу конфигурации."
  Quarantine: "На этой странице перечислены все файлы, находящиеся в настоящее время в карантине, и облегчает управление этими файлами."
- See the documentation: "Просмотреть <a href="https://github.com/phpMussel/Docs/blob/master/readme.ru.md\#user-content-SECTION5" hreflang="ru-RU" rel="noopener external">документации</a> для получения информации о различных директив конфигурации и их целей."
+ See the documentation: "Просмотреть <a href="{{Links.phpMussel.Docs Base Path}}readme.ru.md\#user-content-SECTION5" hreflang="ru-RU" rel="noopener external">документации</a> для получения информации о различных директив конфигурации и их целей."
  Signature Information: "На странице информация о сигнатур содержится основная информация об источниках и типах активных сигнатур."
  Statistics tracking is currently disabled: "Заметка: Отслеживание статистики в настоящее время отключено, но может быть включено через страницу конфигурации."
  Statistics: "На этой странице показаны основные статистические данные об использовании вашей phpMussel-инсталляция."

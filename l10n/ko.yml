@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2025.08.12).
+# This file: Korean language data (last modified: 2025.08.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -173,7 +173,7 @@ field:
  vt_suspicion_level_heuristic_only: "휴리스틱 가중치가 있는 파일만 검사합니다.\n휴리스틱 가중치가 발생하는 경우에만 파일이 검색됩니다. 감염을 암시하지만 감염을 보장하지는 않는 지문을 포착하기 위한 서명에서 휴리스틱 가중치가 발생할 수 있습니다. 의심을 정당화하지만 확실성을 제공하지 않는 결과의 경우 검색을 통해 두 번째 의견을 제공할 수 있습니다."
 hints_logging_datetime: "유용한 팁\_: 시간 형식 자리 표시자를 사용하여 로그 파일 이름에 날짜/시간 정보를 첨부할 수 있습니다. 사용 가능한 시간 형식 자리 표시자는 {{Links.ConfigRef.time_format}}에 표시됩니다."
 hints_pdo_dsn:
- 자주하는 질문.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.ko.md\#user-content-HOW_TO_USE_PDO" hreflang="ko-KR">"PDO DSN"은 무엇입니까? phpMussel과 함께 PDO를 사용하려면 어떻게해야합니까?</a></em>"
+ 자주하는 질문.: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.ko.md\#user-content-HOW_TO_USE_PDO" hreflang="ko-KR">"PDO DSN"은 무엇입니까? phpMussel과 함께 PDO를 사용하려면 어떻게해야합니까?</a></em>"
 hints_time_format: |
  <strong><em>자리 표시자 – 설명 – 예시는 2024-04-30T18:27:49+08:00를 기준으로 합니다.</em></strong><br />
  <code class="s">{yyyy}</code> – 연도 – 예 : 2024.<br />
@@ -377,7 +377,7 @@ tip:
  Logs: "로그의 내용을 보려면 다음 목록에서 로그를 선택합니다."
  Quarantine is currently disabled: "노트\_: 격리는 현재 비활성화되어, 있지만 구성 페이지를 통해 활성화할 수 있습니다."
  Quarantine: "관리를 용이하게하기 위해, 현재 격리 저장소에있는 모든 파일이이 페이지에 나열됩니다."
- See the documentation: "설정 지시어에 대한 자세한 내용은 <a href="https://github.com/phpMussel/Docs/blob/master/readme.ko.md\#user-content-SECTION5" hreflang="ko-KR" rel="noopener external">문서를</a> 참조하십시오."
+ See the documentation: "설정 지시어에 대한 자세한 내용은 <a href="{{Links.phpMussel.Docs Base Path}}readme.ko.md\#user-content-SECTION5" hreflang="ko-KR" rel="noopener external">문서를</a> 참조하십시오."
  Signature Information: "서명 정보 페이지는 현재 활성화 된 서명의 소스 및 유형에 대한 몇 가지 기본 정보를 제공합니다."
  Statistics tracking is currently disabled: "노트\_: 통계 추적은 현재 비활성화되어, 있지만 구성 페이지를 통해 활성화할 수 있습니다."
  Statistics: "이 페이지는 phpMussel 설치와 관련된 몇 가지 기본 사용 통계를 보여줍니다."

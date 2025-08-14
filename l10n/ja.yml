@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2025.08.12).
+# This file: Japanese language data (last modified: 2025.08.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -173,7 +173,7 @@ field:
  vt_suspicion_level_heuristic_only: "ヒューリスティックな重みを持つファイルのみをスキャンします。\nファイルは、ヒューリスティックな重みが発生する場合にのみスキャンされます。​ューリスティックな重みは、感染を示唆しているが感染を保証していない指紋をキャッチするためのシグネチャから発生する可能性があります。​疑いを正当化するが確実性を提供しない結果については、ルックアップはセカンド・オピニオンを提供するのに役立ちます。"
 hints_logging_datetime: "役に立つヒント:時刻形式のプレースホルダーを使用して、ログ・ファイルの名前に日付/時刻情報を添付できます。​使用可能な時刻形式のプレースホルダーが{{Links.ConfigRef.time_format}}に表示されます。"
 hints_pdo_dsn:
- ＦＡＱ。: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.ja.md\#user-content-HOW_TO_USE_PDO" hreflang="ja-JP">「PDO DSN」とは何ですか？​phpMusselでPDOを使用するにはどうすればよいですか？</a></em>"
+ ＦＡＱ。: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.ja.md\#user-content-HOW_TO_USE_PDO" hreflang="ja-JP">「PDO DSN」とは何ですか？​phpMusselでPDOを使用するにはどうすればよいですか？</a></em>"
 hints_time_format: |
  <strong><em>プレースホルダー – 説明 – 例は2024-04-30T18:27:49+08:00に基づいています。</em></strong><br />
  <code class="s">{yyyy}</code> – 年 – 例えば、2024。<br />
@@ -377,7 +377,7 @@ tip:
  Logs: "そのログの内容を表示するために、次のリストからログを選択します。"
  Quarantine is currently disabled: "注意：検疫は現在無効になっていますが、コンフィギュレーション・ページで有効にすることができます。"
  Quarantine: "管理を容易にするために、現在検疫されているすべてのファイルがこのページにリストされています。"
- See the documentation: "コンフィギュレーション・ディレクティブの詳細については、<a href="https://github.com/phpMussel/Docs/blob/master/readme.ja.md\#user-content-SECTION5" hreflang="ja-JP" rel="noopener external">ドキュメント</a>を参照してください。"
+ See the documentation: "コンフィギュレーション・ディレクティブの詳細については、<a href="{{Links.phpMussel.Docs Base Path}}readme.ja.md\#user-content-SECTION5" hreflang="ja-JP" rel="noopener external">ドキュメント</a>を参照してください。"
  Signature Information: "シグネチャ情報ページには、現在アクティブなシグネチャのソースとタイプに関する基本的な情報が表示されます。"
  Statistics tracking is currently disabled: "注意：統計トラッキングは現在オフラインですが、コンフィギュレーション・ページで有効にすることができます。"
  Statistics: "このページには、phpMusselのインストールに関する基本的な使用状況の統計情報が表示されます。"

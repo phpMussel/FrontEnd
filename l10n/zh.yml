@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese language data (last modified: 2025.08.12).
+# This file: Chinese language data (last modified: 2025.08.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -239,8 +239,8 @@ hints_logging_datetime:
  zh-Hans: "有用提示：您可以使用时间格式占位符将日期/时间信息附加到日志文件的名称。​可用的时间格式占位符显示在{{Links.ConfigRef.time_format}}处。"
  zh-Hant: "有用的提示：您可以使用時間格式佔位符將日期/時間資訊附加到日誌檔案的名稱。​可用的時間格式佔位符顯示在{{Links.ConfigRef.time_format}}處。"
 hints_pdo_dsn:
- zh-Hans: "<strong>常问问题。</strong> <em><a href="https://github.com/phpMussel/Docs/blob/master/readme.zh-Hans.md\#user-content-HOW_TO_USE_PDO" hreflang="zh-Hans">“PDO DSN”是什么？如何能PDO与phpMussel一起使用？</a></em>"
- zh-Hant: "<strong>常問問題。</strong> <em><a href="https://github.com/phpMussel/Docs/blob/master/readme.zh-Hant.md\#user-content-HOW_TO_USE_PDO" hreflang="zh-Hant">『PDO DSN』是什麼？如何能PDO與phpMussel一起使用？</a></em>"
+ zh-Hans: "<strong>常问问题。</strong> <em><a href="{{Links.phpMussel.Docs Base Path}}readme.zh-Hans.md\#user-content-HOW_TO_USE_PDO" hreflang="zh-Hans">“PDO DSN”是什么？如何能PDO与phpMussel一起使用？</a></em>"
+ zh-Hant: "<strong>常問問題。</strong> <em><a href="{{Links.phpMussel.Docs Base Path}}readme.zh-Hant.md\#user-content-HOW_TO_USE_PDO" hreflang="zh-Hant">『PDO DSN』是什麼？如何能PDO與phpMussel一起使用？</a></em>"
 hints_time_format:
  zh-Hans: |
   <strong><em>占位符 – 解释 – 基于2024-04-30T18:27:49+08:00的示例。</em></strong><br />
@@ -516,8 +516,8 @@ tip:
  Quarantine is currently disabled: {"zh-Hans": "注意：隔离目前禁用，但可以通过配置页面启用。", "zh-Hant": "注意：隔離目前禁用，但可以通過配置頁面啟用。"}
  Quarantine: {"zh-Hans": "此页面列出当前在隔离中的所有文件，并可以用来管理这些文件。", "zh-Hant": "此頁面列出當前在隔離中的所有文件，並可以用來管理這些文件。"}
  See the documentation:
-  zh-Hans: "请参阅<a href="https://github.com/phpMussel/Docs/blob/master/readme.zh-Hans.md\#user-content-SECTION5" hreflang="zh-Hans" rel="noopener external">文档</a>以获取有关各种配置指令的信息和他们的目的。"
-  zh-Hant: "請參閱<a href="https://github.com/phpMussel/Docs/blob/master/readme.zh-Hant.md\#user-content-SECTION5" hreflang="zh-Hant" rel="noopener external">文檔</a>以獲取有關各種配置指令的信息和他們的目的。"
+  zh-Hans: "请参阅<a href="{{Links.phpMussel.Docs Base Path}}readme.zh-Hans.md\#user-content-SECTION5" hreflang="zh-Hans" rel="noopener external">文档</a>以获取有关各种配置指令的信息和他们的目的。"
+  zh-Hant: "請參閱<a href="{{Links.phpMussel.Docs Base Path}}readme.zh-Hant.md\#user-content-SECTION5" hreflang="zh-Hant" rel="noopener external">文檔</a>以獲取有關各種配置指令的信息和他們的目的。"
  Signature Information: {"zh-Hans": "签名信息页面提供了有关当前活动签名的来源和类型的一些基本信息。", "zh-Hant": "簽名信息頁面提供了有關當前活動簽名的來源和類型的一些基本信息。"}
  Statistics tracking is currently disabled: {"zh-Hans": "注意：统计跟踪目前已被禁用，但可以通过配置页面启用。", "zh-Hant": "注意：統計跟踪目前已被禁用，但可以通過配置頁面啟用。"}
  Statistics: {"zh-Hans": "此页面显示了有关phpMussel安装的一些基本使用统计信息。", "zh-Hant": "此頁面顯示了有關phpMussel安裝的一些基本使用統計信息。"}

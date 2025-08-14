@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2025.08.12).
+# This file: Malay language data (last modified: 2025.08.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -173,7 +173,7 @@ field:
  vt_suspicion_level_heuristic_only: "Imbas hanya fail dengan berat heuristik.\nFail akan diimbas hanya jika ia mempunyai berat heuristik. Berat heuristik boleh ditanggung daripada tandatangan yang bertujuan untuk menangkap cap jari biasa yang dikaitkan dengan kemungkinan jangkitan yang tidak semestinya menjamin jangkitan. Pencarian, dalam kes sedemikian, boleh memberikan pendapat kedua untuk keputusan yang mewajarkan syak tetapi sebaliknya tidak memberikan sebarang kepastian."
 hints_logging_datetime: "Petua berguna: Anda boleh melampirkan maklumat tarikh/masa pada nama fail log dengan menggunakan pemegang tempat format masa. Pemegang tempat format masa yang tersedia dipaparkan pada {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
- FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.id.md\#user-content-HOW_TO_USE_PDO" hreflang="id-ID">Apakah itu "PDO DSN"? Bagaimanakah saya boleh menggunakan PDO dengan phpMussel?</a></em>"
+ FAQ.: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.id.md\#user-content-HOW_TO_USE_PDO" hreflang="id-ID">Apakah itu "PDO DSN"? Bagaimanakah saya boleh menggunakan PDO dengan phpMussel?</a></em>"
 hints_time_format: |
  <strong><em>Pemegang tempat – Penjelasan – Contoh berdasarkan 2024-04-30T18:27:49+08:00.</em></strong><br />
  <code class="s">{yyyy}</code> – Tahun – Cth., 2024.<br />
@@ -377,7 +377,7 @@ tip:
  Logs: "Pilih fail log daripada senarai di bawah untuk melihat kandungan fail log tersebut."
  Quarantine is currently disabled: "Nota: Kuarantin kini dinyahaktifkan, tetapi boleh diaktifkan melalui halaman konfigurasi."
  Quarantine: "Halaman ini menyenaraikan semua fail yang sedang dalam kuarantin dan memudahkan pengurusan fail tersebut."
- See the documentation: "Lihat <a href="https://github.com/phpMussel/Docs/blob/master/readme.id.md\#user-content-SECTION5" hreflang="id-ID" rel="noopener external">dokumentasi</a> untuk mendapatkan maklumat tentang pelbagai arahan konfigurasi dan tujuannya."
+ See the documentation: "Lihat <a href="{{Links.phpMussel.Docs Base Path}}readme.id.md\#user-content-SECTION5" hreflang="id-ID" rel="noopener external">dokumentasi</a> untuk mendapatkan maklumat tentang pelbagai arahan konfigurasi dan tujuannya."
  Signature Information: "Halaman maklumat tandatangan menyediakan beberapa maklumat asas tentang sumber dan jenis tandatangan yang sedang aktif."
  Statistics tracking is currently disabled: "Nota: Penjejakan statistik kini dinyahaktifkan, tetapi boleh diaktifkan melalui halaman konfigurasi."
  Statistics: "Halaman ini menunjukkan beberapa statistik penggunaan asas mengenai pemasangan phpMussel anda."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malayalam language data (last modified: 2025.08.12).
+# This file: Malayalam language data (last modified: 2025.08.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -173,7 +173,7 @@ field:
  vt_suspicion_level_heuristic_only: "ഹ്യൂറിസ്റ്റിക് ഭാരം ഉള്ള ഫയലുകൾ മാത്രം സ്കാൻ ചെയ്യുക.\nഫയലുകൾക്ക് കുറച്ച് ഹ്യൂറിസ്റ്റിക് ഭാരം ഉണ്ടെങ്കിൽ മാത്രമേ സ്കാൻ ചെയ്യൂ. അണുബാധയുമായി ബന്ധപ്പെട്ട പൊതുവായ കാര്യങ്ങൾ മനസ്സിലാക്കാൻ ഉദ്ദേശിച്ചുള്ള ഒപ്പുകളിൽ നിന്നാണ് ഹ്യൂറിസ്റ്റിക് ഭാരം ഉണ്ടാകുന്നത്, എന്നാൽ അണുബാധ ഉറപ്പുനൽകുന്നില്ല. ന്യായമായ സംശയം ഉണ്ടെങ്കിലും ഉറപ്പില്ലാത്തപ്പോൾ, അത്തരം സന്ദർഭങ്ങളിൽ, ഈ തിരയൽ ഒരു രണ്ടാമത്തെ അഭിപ്രായമായി വർത്തിക്കും."
 hints_logging_datetime: "ഉപയോഗപ്രദമായ നുറുങ്ങ്: സമയ ഫോർമാറ്റ് പ്ലെയ്‌സ്‌ഹോൾഡറുകൾ ഉപയോഗിച്ച് നിങ്ങൾക്ക് ലോഗ് ഫയലുകളുടെ പേരുകളിൽ തീയതി/സമയ വിവരങ്ങൾ അറ്റാച്ചുചെയ്യാം. ലഭ്യമായ സമയ ഫോർമാറ്റ് പ്ലെയ്‌സ്‌ഹോൾഡറുകൾ {{Links.ConfigRef.time_format}}-ൽ പ്രദർശിപ്പിക്കും."
 hints_pdo_dsn:
- പതിവുചോദ്യങ്ങൾ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">"PDO DSN" എന്താണ്? phpMussel-നൊപ്പം PDO എങ്ങനെ ഉപയോഗിക്കാം?</a></em>"
+ പതിവുചോദ്യങ്ങൾ.: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">"PDO DSN" എന്താണ്? phpMussel-നൊപ്പം PDO എങ്ങനെ ഉപയോഗിക്കാം?</a></em>"
 hints_time_format: |
  <strong><em>പ്ലെയ്‌സ്‌ഹോൾഡർ – വിശദീകരണം – 2024-04-30T18:27:49+08:00 അടിസ്ഥാനമാക്കിയുള്ള ഉദാഹരണം.</em></strong><br />
  <code class="s">{yyyy}</code> – വർഷം – ഉദാഹരണത്തിന്, 2024.<br />
@@ -379,7 +379,7 @@ tip:
  Logs: "ഒരു ലോഗ് ഫയലിന്റെ ഉള്ളടക്കം കാണുന്നതിന്, താഴെയുള്ള പട്ടികയിൽ നിന്ന് അത് തിരഞ്ഞെടുക്കുക."
  Quarantine is currently disabled: "കുറിപ്പ്: ക്വാറന്റൈൻ നിലവിൽ പ്രവർത്തനരഹിതമാക്കിയിരിക്കുന്നു, പക്ഷേ കോൺഫിഗറേഷൻ പേജ് വഴി പ്രവർത്തനക്ഷമമാക്കാം."
  Quarantine: "ഈ പേജ് നിലവിൽ ക്വാറന്റൈനിലുള്ള എല്ലാ ഫയലുകളും പട്ടികപ്പെടുത്തുകയും ആ ഫയലുകളുടെ മാനേജ്മെന്റിനെ സുഗമമാക്കുകയും ചെയ്യുന്നു."
- See the documentation: "വിവിധ കോൺഫിഗറേഷൻ നിർദ്ദേശങ്ങളെയും അവയുടെ ഉദ്ദേശ്യങ്ങളെയും കുറിച്ചുള്ള വിവരങ്ങൾക്ക് <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">ഡോക്യുമെന്റേഷൻ</a> കാണുക."
+ See the documentation: "വിവിധ കോൺഫിഗറേഷൻ നിർദ്ദേശങ്ങളെയും അവയുടെ ഉദ്ദേശ്യങ്ങളെയും കുറിച്ചുള്ള വിവരങ്ങൾക്ക് <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">ഡോക്യുമെന്റേഷൻ</a> കാണുക."
  Signature Information: "നിലവിൽ സജീവമായ ഒപ്പുകളുടെ ഉറവിടങ്ങളെയും തരങ്ങളെയും കുറിച്ചുള്ള ചില അടിസ്ഥാന വിവരങ്ങൾ ഒപ്പ് വിവര പേജ് നൽകുന്നു."
  Statistics tracking is currently disabled: "കുറിപ്പ്: സ്ഥിതിവിവരക്കണക്ക് ട്രാക്കിംഗ് നിലവിൽ പ്രവർത്തനരഹിതമാക്കിയിരിക്കുന്നു, പക്ഷേ കോൺഫിഗറേഷൻ പേജ് വഴി പ്രവർത്തനക്ഷമമാക്കാം."
  Statistics: "നിങ്ങളുടെ phpMussel ഇൻസ്റ്റാളേഷനെക്കുറിച്ചുള്ള ചില അടിസ്ഥാന ഉപയോഗ സ്ഥിതിവിവരക്കണക്കുകൾ ഈ പേജ് കാണിക്കുന്നു."

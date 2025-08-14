@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: YAML references file (last modified: 2024.07.23).
+# This file: YAML references file (last modified: 2025.08.14).
 ##/
 
 Links:
@@ -30,6 +30,7 @@ Links:
    Facebook: "<a href="https://www.facebook.com/groups/2204685680/" dir="ltr" rel="noopener noreferrer external">PHP.earth@Facebook</a>"
    Website: "<a href="https://php.earth/" dir="ltr" hreflang="en" rel="noopener noreferrer external">PHP.earth</a>"
  phpMussel:
+  Docs Base Path: "https://github.com/phpMussel/Docs/blob/master/"
   Extras: "<a href="https://github.com/phpMussel/extras" dir="ltr" hreflang="en" rel="noopener noreferrer external">phpMussel/extras</a>"
   Issues: "<a href="https://github.com/phpMussel/phpMussel/issues" dir="ltr" hreflang="en" rel="noopener noreferrer external">phpMussel/phpMussel/issues</a>"
   SigTool: "<a href="https://github.com/phpMussel/SigTool" dir="ltr" hreflang="en" rel="noopener noreferrer external">phpMussel/SigTool</a>"

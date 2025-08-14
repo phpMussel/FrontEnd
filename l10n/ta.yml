@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Tamil language data (last modified: 2025.08.12).
+# This file: Tamil language data (last modified: 2025.08.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -173,7 +173,7 @@ field:
  vt_suspicion_level_heuristic_only: "ஹூரிஸ்டிக் எடை கொண்ட கோப்புகளை மட்டும் ஸ்கேன் செய்யவும்.\nகோப்புகள் ஹூரிஸ்டிக் எடை இருந்தால் மட்டுமே ஸ்கேன் செய்யப்படும். நோய்த்தொற்றை பரிந்துரைக்கும் ஆனால் தொற்றுக்கு உத்தரவாதம் அளிக்காத கைரேகைகளைப் பிடிப்பதற்கான கையொப்பங்களிலிருந்து ஹியூரிஸ்டிக் எடை ஏற்படலாம். நிரூபிக்கப்படாத சந்தேகங்கள் இருந்தால், தேடுதல் இரண்டாவது கருத்தை வழங்க உதவும்."
 hints_logging_datetime: "பயனுள்ள உதவிக்குறிப்பு: நேர வடிவம் ஒதுக்கிடங்களைப் பயன்படுத்தி பதிவுக் கோப்புகளின் பெயர்களுடன் தேதி/நேரத் தகவலை இணைக்கலாம். கிடைக்கும் நேர வடிவமைப்பு ஒதுக்கிடங்கள் {{Links.ConfigRef.time_format}} இல் காட்டப்படும்."
 hints_pdo_dsn:
- அடிக்கடி கேட்கப்படும் கேள்விகள்.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">"PDO DSN" என்றால் என்ன? phpMussel உடன் PDO ஐ எவ்வாறு பயன்படுத்துவது?</a></em>"
+ அடிக்கடி கேட்கப்படும் கேள்விகள்.: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">"PDO DSN" என்றால் என்ன? phpMussel உடன் PDO ஐ எவ்வாறு பயன்படுத்துவது?</a></em>"
 hints_time_format: |
  <strong><em>ஒதுக்கிட – விளக்கம் – 2024-04-30T18:27:49+08:00 அடிப்படையிலான எடுத்துக்காட்டு.</em></strong><br />
  <code class="s">{yyyy}</code> – ஆண்டு – எ.கா., 2024.<br />
@@ -379,7 +379,7 @@ tip:
  Logs: "அந்த பதிவு கோப்பின் உள்ளடக்கங்களைக் காண கீழேயுள்ள பட்டியலிலிருந்து ஒரு பதிவு கோப்பைத் தேர்ந்தெடுக்கவும்."
  Quarantine is currently disabled: "குறிப்பு: தனிமைப்படுத்தல் தற்போது முடக்கப்பட்டுள்ளது, ஆனால் உள்ளமைவு பக்கம் வழியாக இயக்க முடியும்."
  Quarantine: "இந்த பக்கம் தற்போது தனிமைப்படுத்தப்பட்ட அனைத்து கோப்புகளையும் பட்டியலிடுகிறது மற்றும் அந்த கோப்புகளை நிர்வகிக்க உதவுகிறது."
- See the documentation: "பல்வேறு உள்ளமைவு வழிமுறைகள் மற்றும் அவற்றின் நோக்கங்கள் பற்றிய தகவல்களுக்கு <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">ஆவணங்களைக்</a> காண்க."
+ See the documentation: "பல்வேறு உள்ளமைவு வழிமுறைகள் மற்றும் அவற்றின் நோக்கங்கள் பற்றிய தகவல்களுக்கு <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">ஆவணங்களைக்</a> காண்க."
  Signature Information: "கையொப்ப தகவல் பக்கம் தற்போது செயலில் உள்ள கையொப்பங்களின் மூலங்கள் மற்றும் வகைகள் பற்றிய சில அடிப்படை தகவல்களை வழங்குகிறது."
  Statistics tracking is currently disabled: "குறிப்பு: புள்ளிவிவர கண்காணிப்பு தற்போது முடக்கப்பட்டுள்ளது, ஆனால் உள்ளமைவு பக்கம் வழியாக இயக்க முடியும்."
  Statistics: "உங்கள் phpMussel நிறுவல் தொடர்பான சில அடிப்படை பயன்பாட்டு புள்ளிவிவரங்களை இந்த பக்கம் காட்டுகிறது."

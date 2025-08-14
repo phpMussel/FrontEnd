@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2025.08.12).
+# This file: Arabic language data (last modified: 2025.08.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -173,7 +173,7 @@ field:
  vt_suspicion_level_heuristic_only: "تحقق فقط من الملفات ذات الوزن الإرشادي.\nسيتم فحص الملفات فقط إذا كانت تحمل الوزن الإرشادي. يمكن أن يحدث "الوزن الإرشادي" من التوقيعات التي تلتقط بصمات الأصابع التي تشير إلى الإصابة ولكنها لا تضمن العدوى. بالنسبة للنتائج التي تبرر الشك ولكنها لا توفر أي يقين، يمكن أن يعمل البحث على توفير رأي ثانٍ."
 hints_logging_datetime: "نصيحة مفيدة: يمكنك إرفاق معلومات التاريخ/الوقت بأسماء ملفات السجل باستخدام العناصر النائبة لتنسيق الوقت. يتم عرض العناصر النائبة لتنسيق الوقت المتوفرة عند {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
- FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.ar.md\#user-content-HOW_TO_USE_PDO" hreflang="ar">ما هو "PDO DSN"؟ كيف يمكنني استخدام PDO مع phpMussel؟</a></em>"
+ FAQ.: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.ar.md\#user-content-HOW_TO_USE_PDO" hreflang="ar">ما هو "PDO DSN"؟ كيف يمكنني استخدام PDO مع phpMussel؟</a></em>"
 hints_time_format: |
  <strong><em>العنصر النائب – تفسير – مثال يعتمد على <span dir="ltr">2024-04-30T18:27:49+08:00</span>.</em></strong><br />
  <code dir="ltr" class="s">{yyyy}</code> – السنة – على سبيل المثال، 2024.<br />
@@ -379,7 +379,7 @@ tip:
  Logs: "اختار سجلات من القائمة أدناه لعرضها."
  Quarantine is currently disabled: "ملحوظة: تم تعطيل وحدة العزل حاليا، ولكن يمكن تمكينها عبر صفحة التهيئة."
  Quarantine: "تسرد هذه الصفحة جميع الملفات الموجودة حاليا في وحدة العزل وتسهل إدارة تلك الملفات."
- See the documentation: "راجع <a href="https://github.com/phpMussel/Docs/blob/master/readme.ar.md\#user-content-SECTION5" hreflang="ar" rel="noopener external">وثائق</a> للحصول على معلومات حول مختلف توجيهات التكوين ونيتهم."
+ See the documentation: "راجع <a href="{{Links.phpMussel.Docs Base Path}}readme.ar.md\#user-content-SECTION5" hreflang="ar" rel="noopener external">وثائق</a> للحصول على معلومات حول مختلف توجيهات التكوين ونيتهم."
  Signature Information: "توفر صفحة معلومات التوقيع بعض المعلومات الأساسية حول مصادر وأنواع التوقيعات النشطة حاليًا."
  Statistics tracking is currently disabled: "ملاحظة: يتم تعطيل تتبع الإحصاءات حاليا، ولكن يمكن تمكينه عبر صفحة التكوين."
  Statistics: "تعرض هذه الصفحة بعض إحصاءات الاستخدام الأساسية المتعلقة بتثبيت phpMussel."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2025.08.12).
+# This file: Latvian language data (last modified: 2025.08.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -173,7 +173,7 @@ field:
  vt_suspicion_level_heuristic_only: "Skenējiet tikai failus ar heiristisko svaru.\nTiks skenēti tikai faili ar heiristisko svaru. Heiristiskais svars var rasties no parakstiem, kas paredzēti, lai noķertu bieži sastopamus pirkstu nospiedumus, kas saistīti ar iespējamu infekciju, kas ne vienmēr garantē infekciju. Šādos gadījumos meklēšana var kalpot, lai sniegtu otru atzinumu par rezultātiem, kas pamato aizdomas, bet citādi nesniedz nekādu noteiktību."
 hints_logging_datetime: "Noderīgs padoms: Varat pievienot datuma/laika informāciju žurnālfailu nosaukumiem, izmantojot laika formāta vietturus. Pieejamie laika formāta vietturi tiek parādīti pie {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
- FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Kas ir "PDO DSN"? Kā es varu izmantot PDO ar phpMussel?</a></em>"
+ FAQ.: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Kas ir "PDO DSN"? Kā es varu izmantot PDO ar phpMussel?</a></em>"
 hints_time_format: |
  <strong><em>Vietturis – Paskaidrojums – Piemērs, kas balstīts uz 2024-04-30T18:27:49+08:00.</em></strong><br />
  <code class="s">{yyyy}</code> – Gads – Piem., 2024.<br />
@@ -379,7 +379,7 @@ tip:
  Logs: "Zemāk redzamajā sarakstā atlasiet logfailu, lai skatītu šī faila saturu."
  Quarantine is currently disabled: "Piezīme: Karantīna pašlaik ir atspējota, taču to var iespējot konfigurācijas lapā."
  Quarantine: "Šajā lapā ir uzskaitīti visi faili, kas pašlaik atrodas karantīnā, un atvieglo šo failu pārvaldību."
- See the documentation: "Skatiet <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">dokumentāciju</a>, lai iegūtu informāciju par dažādām konfigurācijas direktīvām un to mērķiem."
+ See the documentation: "Skatiet <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">dokumentāciju</a>, lai iegūtu informāciju par dažādām konfigurācijas direktīvām un to mērķiem."
  Signature Information: "Parakstu informācijas lapā ir sniegta pamatinformācija par pašlaik aktīvo parakstu avotiem un veidiem."
  Statistics tracking is currently disabled: "Piezīme: Statistikas izsekošana pašlaik ir atspējota, taču to var iespējot konfigurācijas lapā."
  Statistics: "Šī lapa parāda dažus pamata statistikas datus par jūsu phpMussel instalēšanu."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2025.08.12).
+# This file: Dutch language data (last modified: 2025.08.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -173,7 +173,7 @@ field:
  vt_suspicion_level_heuristic_only: "Scan alleen bestanden met heuristisch gewicht.\nBestanden worden alleen gescand als ze een heuristisch gewicht hebben. Heuristisch gewicht kan worden verkregen uit signatures die bedoeld zijn om veelvoorkomende vingerafdrukken op te vangen die verband houden met een mogelijke infectie die niet noodzakelijkerwijs een infectie garandeert. De zoekopdracht kan in dergelijke gevallen dienen om een second opinion te geven voor resultaten die een verdenking rechtvaardigen, maar verder geen absoluut vertrouwen bieden."
 hints_logging_datetime: "Handige tip: U kunt datum-/tijdinformatie aan de namen van logbestanden toevoegen door tijdelijke aanduidingen voor de tijdnotatie te gebruiken. Beschikbare tijdelijke aanduidingen voor tijdnotatie worden weergegeven bij {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
- FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.nl.md\#user-content-HOW_TO_USE_PDO" hreflang="nl-NL">Wat is een "PDO DSN"? Hoe kan ik PDO gebruiken met phpMussel?</a></em>"
+ FAQ.: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.nl.md\#user-content-HOW_TO_USE_PDO" hreflang="nl-NL">Wat is een "PDO DSN"? Hoe kan ik PDO gebruiken met phpMussel?</a></em>"
 hints_time_format: |
  <strong><em>Tijdelijke aanduiding – Uitleg – Voorbeeld gebaseerd op 2024-04-30T18:27:49+08:00.</em></strong><br />
  <code class="s">{yyyy}</code> – Het jaartal – B.v., 2024.<br />
@@ -379,7 +379,7 @@ tip:
  Logs: "Selecteer een logbestand uit de onderstaande lijst om de inhoud van de logbestand te bekijken."
  Quarantine is currently disabled: "Notitie: Quarantaine is momenteel uitgeschakeld, maar kan via de configuratiepagina worden ingeschakeld."
  Quarantine: "Deze pagina bevat een lijst met alle bestanden die momenteel in quarantaine staan en het beheer van die bestanden vergemakkelijkt."
- See the documentation: "Zie de <a href="https://github.com/phpMussel/Docs/blob/master/readme.nl.md\#user-content-SECTION5" hreflang="nl-NL" rel="noopener external">documentatie</a> voor informatie over de verschillende configuratie richtlijnen en hun doeleinden."
+ See the documentation: "Zie de <a href="{{Links.phpMussel.Docs Base Path}}readme.nl.md\#user-content-SECTION5" hreflang="nl-NL" rel="noopener external">documentatie</a> voor informatie over de verschillende configuratie richtlijnen en hun doeleinden."
  Signature Information: "De signature informatie pagina biedt enige basisinformatie over de bronnen en typen van de momenteel actieve signatures."
  Statistics tracking is currently disabled: "Notitie: Statistische tracking is momenteel uitgeschakeld, maar kan via de configuratiepagina worden ingeschakeld."
  Statistics: "Deze pagina bevat een aantal basisgebruiksstatistieken voor uw phpMussel-installatie."

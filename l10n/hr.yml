@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Croatian language data (last modified: 2025.08.12).
+# This file: Croatian language data (last modified: 2025.08.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -173,7 +173,7 @@ field:
  vt_suspicion_level_heuristic_only: "Skeniraj samo datoteke s heurističkom težinom.\nDatoteke će se skenirati samo ako imaju određenu heurističku težinu. Heuristička težina može se dobiti iz potpisa koji traže uobičajene otiske prstiju povezane s potencijalnom infekcijom, ali koji ne jamče nužno infekciju. U takvim slučajevima, može poslužiti za davanje drugog mišljenja za rezultate koji opravdavaju sumnju, ali inače ne pružaju nikakvu sigurnost."
 hints_logging_datetime: "Koristan savjet: Nazivima datoteka dnevnika možete priložiti informacije o datumu/vremenu pomoću rezerviranih mjesta formata vremena. Dostupni rezervirani prostori formata vremena prikazani su na {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
- Čpp.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Što je "PDO DSN"? Kako mogu koristiti PDO s phpMussel-om?</a></em>"
+ Čpp.: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Što je "PDO DSN"? Kako mogu koristiti PDO s phpMussel-om?</a></em>"
 hints_time_format: |
  <strong><em>Čuvar mjesta – Obrazloženje – Primjer temeljen na 2024-04-30T18:27:49+08:00.</em></strong><br />
  <code class="s">{yyyy}</code> – Godina – Npr., 2024.<br />
@@ -380,7 +380,7 @@ tip:
  Logs: "Odaberite datoteku dnevnika s donjeg popisa kako biste vidjeli sadržaj te datoteke dnevnika."
  Quarantine is currently disabled: "Bilješka: Karantena je trenutno onemogućena, ali se može omogućiti putem konfiguracijske stranice."
  Quarantine: "Ova stranica navodi sve datoteke koje su trenutno u karanteni i olakšava upravljanje tim datotekama."
- See the documentation: "Pogledajte <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">dokumentaciju</a> za informacije o raznim konfiguracijskim direktivama i njihovim svrhama."
+ See the documentation: "Pogledajte <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">dokumentaciju</a> za informacije o raznim konfiguracijskim direktivama i njihovim svrhama."
  Signature Information: "Stranica s informacijama o potpisu pruža neke osnovne informacije o izvorima i vrstama trenutno aktivnih potpisa."
  Statistics tracking is currently disabled: "Bilješka: Praćenje statistike trenutno je onemogućeno, ali se može omogućiti putem konfiguracijske stranice."
  Statistics: "Ova stranica prikazuje neke osnovne statistike korištenja u vezi s vašom phpMussel instalacijom."

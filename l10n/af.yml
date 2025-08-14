@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2025.08.12).
+# This file: Afrikaans language data (last modified: 2025.08.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -173,7 +173,7 @@ field:
  vt_suspicion_level_heuristic_only: "Skandeer slegs lêers met heuristiese gewig.\nLêers sal slegs geskandeer word as hulle 'n mate van heuristiese gewig dra. Heuristiese gewig kan verkry word uit handtekeninge wat bedoel is om algemene vingerafdrukke te vang wat verband hou met potensiële infeksie wat nie noodwendig infeksie waarborg nie. Die opsoek kan in sulke gevalle dien om 'n tweede mening te gee vir resultate wat vermoede regverdig, maar andersins geen sekerheid verskaf nie."
 hints_logging_datetime: "Nuttige wenk: Jy kan datum/tyd inligting aan die name van loglêers heg deur tydformaat plekhouers te gebruik. Beskikbare tydformaat plekhouers word by {{Links.ConfigRef.time_format}} vertoon."
 hints_pdo_dsn:
- Gereelde vrae.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Wat is 'n "PDO DSN"? Hoe kan ek PDO met phpMussel gebruik?</a></em>"
+ Gereelde vrae.: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Wat is 'n "PDO DSN"? Hoe kan ek PDO met phpMussel gebruik?</a></em>"
 hints_time_format: |
  <strong><em>Plekhouer – Verduideliking – Voorbeeld gebaseer op 2024-04-30T18:27:49+08:00.</em></strong><br />
  <code class="s">{yyyy}</code> – Die jaartal – Bv., 2024.<br />
@@ -379,7 +379,7 @@ tip:
  Logs: "Kies 'n loglêer uit die lys hieronder om die inhoud van daardie loglêer te sien."
  Quarantine is currently disabled: "Kennis neem: Kwarantyn is tans gedeaktiveer, maar kan via die konfigurasiebladsy geaktiveer word."
  Quarantine: "Hierdie bladsy lys alle lêers wat tans in kwarantyn is en fasiliteer die bestuur van daardie lêers."
- See the documentation: "Sien die <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">dokumentasie</a> vir inligting oor die verskillende konfigurasie-opsies en hul doeleindes."
+ See the documentation: "Sien die <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">dokumentasie</a> vir inligting oor die verskillende konfigurasie-opsies en hul doeleindes."
  Signature Information: "Die handtekeninginligtingbladsy verskaf basiese inligting oor die bronne en tipes van die tans aktiewe handtekeninge."
  Statistics tracking is currently disabled: "Kennis neem: Statistieknasporing is tans gedeaktiveer, maar kan via die konfigurasiebladsy geaktiveer word."
  Statistics: "Hierdie bladsy wys basiese gebruikstatistieke rakende jou phpMussel-installasie."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data (last modified: 2025.08.12).
+# This file: German language data (last modified: 2025.08.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -173,7 +173,7 @@ field:
  vt_suspicion_level_heuristic_only: "Scannen nur Dateien mit heuristischem Gewicht.\nDateien werden nur gescannt wenn sie ein heuristisches Gewicht haben. Heuristisches Gewicht kann aus Signaturen entstehen die gemeinsame Fingerabdrücke erfassen, die eine Infektion nahelegen aber keine Infektion garantieren. Für Ergebnissen die einen Verdacht rechtfertigen aber keine Gewissheit geben, kann die Lookup dazu dienen eine zweite Meinung dienen."
 hints_logging_datetime: "Nützlicher Tipp: Sie können den Namen der Protokolldateien Datums-/Uhrzeitinformationen hinzufügen, indem Sie Platzhalter für das Zeitformat verwenden. Verfügbare Platzhalter für Zeitformate werden bei {{Links.ConfigRef.time_format}} angezeigt."
 hints_pdo_dsn:
- FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.de.md\#user-content-HOW_TO_USE_PDO" hreflang="de-DE">Was ist ein „PDO DSN“? Wie kann ich PDO mit phpMussel verwenden?</a></em>"
+ FAQ.: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.de.md\#user-content-HOW_TO_USE_PDO" hreflang="de-DE">Was ist ein „PDO DSN“? Wie kann ich PDO mit phpMussel verwenden?</a></em>"
 hints_time_format: |
  <strong><em>Platzhalter – Erläuterung – Beispiel basierend auf 2024-04-30T18:27:49+08:00.</em></strong><br />
  <code class="s">{yyyy}</code> – Das Jahr – Z.B., 2024.<br />
@@ -379,7 +379,7 @@ tip:
  Logs: "Wählen Sie eine Protokolldatei aus der folgenden Liste um den Inhalt dieser Protokolldatei anzuzeigen."
  Quarantine is currently disabled: "Hinweis: Die Quarantäne ist derzeit deaktiviert, aber kann über die Konfigurationsseite aktiviert werden."
  Quarantine: "Diese Seite erleichtert die Verwaltung von, und listet alle Dateien auf, die sich derzeit in der Quarantäne befinden."
- See the documentation: "Siehe die <a href="https://github.com/phpMussel/Docs/blob/master/readme.de.md\#user-content-SECTION5" hreflang="de-DE" rel="noopener external">Dokumentation</a> für Informationen über den verschiedenen Konfigurationseinstellungen und ihren Zwecken."
+ See the documentation: "Siehe die <a href="{{Links.phpMussel.Docs Base Path}}readme.de.md\#user-content-SECTION5" hreflang="de-DE" rel="noopener external">Dokumentation</a> für Informationen über den verschiedenen Konfigurationseinstellungen und ihren Zwecken."
  Signature Information: "Die „Signature Information“-Seite bietet einige grundlegende Informationen zu den Quellen und Typen der derzeit aktiven Signaturen."
  Statistics tracking is currently disabled: "Hinweis: Die Statistikverfolgung ist derzeit deaktiviert, aber kann über die Konfigurationsseite aktiviert werden."
  Statistics: "Diese Seite zeigt einige grundlegende Nutzungsstatistiken zu Ihrer phpMussel-Installation."

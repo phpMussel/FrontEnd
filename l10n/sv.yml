@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2025.08.12).
+# This file: Swedish language data (last modified: 2025.08.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -173,7 +173,7 @@ field:
  vt_suspicion_level_heuristic_only: "Skanna endast filer med heuristisk vikt.\nFiler skannas endast om de har heuristisk vikt. Heuristisk vikt kan uppstå från signaturer som är avsedda att fånga vanliga fingeravtryck associerade med potentiell infektion som inte nödvändigtvis garanterar infektion. Uppslagningen, i sådana fall, kan tjäna till att ge en andra åsikt för resultat som motiverar misstankar men som annars inte ger absolut förtroende."
 hints_logging_datetime: "Användbart tips: Du kan bifoga information om datum och tid till namnen på loggfiler genom att använda platshållare i tidsformat. Tillgängliga platshållare för tidsformat visas vid {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
- FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Vad är en "PDO DSN"? Hur kan jag använda PDO med phpMussel?</a></em>"
+ FAQ.: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Vad är en "PDO DSN"? Hur kan jag använda PDO med phpMussel?</a></em>"
 hints_time_format: |
  <strong><em>Platshållare – Förklaring – Exempel baserat på 2024-04-30T18:27:49+08:00.</em></strong><br />
  <code class="s">{yyyy}</code> – Året – T.ex., 2024.<br />
@@ -379,7 +379,7 @@ tip:
  Logs: "Välj en loggfil från listan nedan för att se innehållet i den loggfilen."
  Quarantine is currently disabled: "Notera: Karantän är för närvarande inaktiverad, men kan aktiveras via konfigurationssidan."
  Quarantine: "Denna sida visar alla filer som för närvarande är i karantän och underlättar hanteringen av dessa filer."
- See the documentation: "Se <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">dokumentationen</a> för information om de olika konfigurationsdirektiven och deras ändamål."
+ See the documentation: "Se <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">dokumentationen</a> för information om de olika konfigurationsdirektiven och deras ändamål."
  Signature Information: "Signaturinformationssidan för signatur ger grundläggande information om källorna och typerna av de för närvarande aktiva signaturerna."
  Statistics tracking is currently disabled: "Notera: Statistikspårning är för närvarande inaktiverad, men kan aktiveras via konfigurationssidan."
  Statistics: "Den här sidan visar en viss användarstatistik för din phpMussel-installation."

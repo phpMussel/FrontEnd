@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Farsi language data (last modified: 2025.08.12).
+# This file: Farsi language data (last modified: 2025.08.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -173,7 +173,7 @@ field:
  vt_suspicion_level_heuristic_only: "فقط فایل هایی با وزن اکتشافی اسکن کنید.\nفایل‌ها فقط در صورتی اسکن می‌شوند که وزن اکتشافی داشته باشند. وزن اکتشافی را می توان از امضا هایی برای گرفتن اثر انگشت که نشان دهنده عفونت است، اما عفونت را تضمین نمی کند. برای نتایجی که ظن را توجیه می‌کنند اما هیچ قطعیتی ارائه نمی‌دهند، جستجو می‌تواند برای ارائه نظر دوم مفید باشد."
 hints_logging_datetime: "نکته مفید: می‌توانید اطلاعات تاریخ/زمان را با استفاده از متغیرهای قالب زمان به نام فایل‌های گزارش پیوست کنید. متغیرهای قالب زمانی موجود در {{Links.ConfigRef.time_format}} نمایش داده می شوند."
 hints_pdo_dsn:
- سوالات متداول.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">«PDO DSN» چیست؟ چگونه می توانم از PDO با phpMussel استفاده کنم؟</a></em>"
+ سوالات متداول.: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">«PDO DSN» چیست؟ چگونه می توانم از PDO با phpMussel استفاده کنم؟</a></em>"
 hints_time_format: |
  <strong><em>مکان نگهدار – توضیح – مثال بر اساس <span dir="ltr">2024-04-30T18:27:49+08:00</span>.</em></strong><br />
  <code dir="ltr" class="s">{yyyy}</code> – امسال – به عنوان مثال، 2024.<br />
@@ -377,7 +377,7 @@ tip:
  Logs: "برای مشاهده محتویات آن فایل گزارش، یک فایل گزارش را از لیست زیر انتخاب کنید."
  Quarantine is currently disabled: "توجه داشته باشید: قرنطینه در حال حاضر غیرفعال است، اما می توان آن را از طریق صفحه پیکربندی فعال کرد."
  Quarantine: "این صفحه تمام فایل‌هایی را که در حال حاضر در قرنطینه هستند فهرست می‌کند و مدیریت آن فایل‌ها را تسهیل می‌کند."
- See the documentation: "برای اطلاعات در مورد دستورالعمل های پیکربندی مختلف و اهداف آنها به <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">مستندات</a> مراجعه کنید."
+ See the documentation: "برای اطلاعات در مورد دستورالعمل های پیکربندی مختلف و اهداف آنها به <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">مستندات</a> مراجعه کنید."
  Signature Information: "صفحه اطلاعات امضا برخی از اطلاعات اولیه را در مورد منابع و انواع امضاهای فعال در حال حاضر ارائه می دهد."
  Statistics tracking is currently disabled: "توجه داشته باشید: ردیابی آمار در حال حاضر غیرفعال است، اما می توان آن را از طریق صفحه پیکربندی فعال کرد."
  Statistics: "این صفحه برخی از آمارهای اولیه استفاده از نصب phpMussel شما را نشان می دهد."

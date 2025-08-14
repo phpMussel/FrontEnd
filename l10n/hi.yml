@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hindi language data (last modified: 2025.08.12).
+# This file: Hindi language data (last modified: 2025.08.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -173,7 +173,7 @@ field:
  vt_suspicion_level_heuristic_only: "केवल हेयुरिस्टिक वजन वाली फाइलें को स्कैन करें।\nफाइलों को तभी स्कैन किया जाएगा जब उनमें हेयुरिस्टिक वजन होगा। यह उन हस्ताक्षरों के कारण हो सकता है जो फिंगरप्रिंटयों के निशान पकड़ते हैं जो संक्रमण का सुझाव देते हैं लेकिन जो संक्रमण की गारंटी नहीं देते हैं। जब परिणाम संदेह को सही ठहराते हैं लेकिन कोई निश्चितता प्रदान नहीं करते हैं, तो लुकअप दूसरी राय प्रदान करने का काम कर सकता है।"
 hints_logging_datetime: "उपयोगी सुझाव: आप समय प्रारूप प्लेसहोल्डर्स का उपयोग करके लॉग फाइलों के नामों में दिनांक/समय जानकारी संलग्न कर सकते हैं। उपलब्ध समय प्रारूप प्लेसहोल्डर्स {{Links.ConfigRef.time_format}} पर प्रदर्शित होते हैं।"
 hints_pdo_dsn:
- सामान्य प्रश्न।: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">"PDO DSN" क्या है? मैं phpMussel के साथ PDO का उपयोग कैसे कर सकता हूं?</a></em>"
+ सामान्य प्रश्न।: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">"PDO DSN" क्या है? मैं phpMussel के साथ PDO का उपयोग कैसे कर सकता हूं?</a></em>"
 hints_time_format: |
  <strong><em>प्लेसहोल्डर – स्पष्टीकरण – उदाहरण 2024-04-30T18:27:49+08:00 पर आधारित है।</em></strong><br />
  <code class="s">{yyyy}</code> – वर्ष – जैसे., 2024.<br />
@@ -379,7 +379,7 @@ tip:
  Logs: "इसकी सामग्री देखने के लिए नीचे दी गई सूची से एक लॉग फाइल चुनें।"
  Quarantine is currently disabled: "नोट: संगरोध वर्तमान में अक्षम है, लेकिन कॉन्फ़िगरेशन पृष्ठ के माध्यम से सक्षम किया जा सकता है।"
  Quarantine: "यह पृष्ठ वर्तमान में संगरोध में सभी फाइलों को सूचीबद्ध करता है और उन फाइलों के प्रबंधन की सुविधा देता है।"
- See the documentation: "विभिन्न कॉन्फ़िगरेशन निर्देशों और उनके उद्देश्यों के बारे में जानकारी के लिए <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">डॉक्यूमेंटेशन</a> देखें।"
+ See the documentation: "विभिन्न कॉन्फ़िगरेशन निर्देशों और उनके उद्देश्यों के बारे में जानकारी के लिए <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">डॉक्यूमेंटेशन</a> देखें।"
  Signature Information: "हस्ताक्षर जानकारी पृष्ठ वर्तमान में सक्रिय हस्ताक्षर के स्रोतों और प्रकारों के बारे में कुछ बुनियादी जानकारी प्रदान करता है।"
  Statistics tracking is currently disabled: "नोट: सांख्यिकी ट्रैकिंग वर्तमान में अक्षम है, लेकिन कॉन्फ़िगरेशन पृष्ठ के माध्यम से सक्षम किया जा।"
  Statistics: "यह पृष्ठ आपके phpMussel स्थापना के बारे में कुछ बुनियादी उपयोग सांख्यिकी दिखाता है।"

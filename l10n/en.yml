@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2025.08.12).
+# This file: English language data (last modified: 2025.08.14).
 ##/
 
 checkbox:
@@ -173,7 +173,7 @@ field:
  vt_suspicion_level_heuristic_only: "Scan only files with heuristic weight.\nFiles will be scanned only if they incur some heuristic weight. Heuristic weight can be incurred from signatures intended to catch common fingerprints associated with potential infection which don't necessarily guarantee infection. The lookup, in such cases, can serve to provide a second opinion for results which justify suspicion but don't otherwise provide any certainty."
 hints_logging_datetime: "Useful tip: You can attach date/time information to the names of log files by using time format placeholders. Available time format placeholders are displayed at {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
- FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">What is a "PDO DSN"? How can I use PDO with phpMussel?</a></em>"
+ FAQ.: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">What is a "PDO DSN"? How can I use PDO with phpMussel?</a></em>"
 hints_time_format: |
  <strong><em>Placeholder – Explanation – Example based on 2024-04-30T18:27:49+08:00.</em></strong><br />
  <code class="s">{yyyy}</code> – The year – E.g., 2024.<br />
@@ -379,7 +379,7 @@ tip:
  Logs: "Select a log file from the list below to view the contents of that log file."
  Quarantine is currently disabled: "Note: Quarantine is currently disabled, but can be enabled via the configuration page."
  Quarantine: "This page lists all files currently in quarantine and facilitates management of those files."
- See the documentation: "See the <a href="https://github.com/phpMussel/Docs/blob/master/readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">documentation</a> for information about the various configuration directives and their purposes."
+ See the documentation: "See the <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">documentation</a> for information about the various configuration directives and their purposes."
  Signature Information: "The signature information page provides some basic information about the sources and types of the currently active signatures."
  Statistics tracking is currently disabled: "Note: Statistics tracking is currently disabled, but can be enabled via the configuration page."
  Statistics: "This page shows some basic usage statistics regarding your phpMussel installation."

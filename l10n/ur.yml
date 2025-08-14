@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Urdu language data (last modified: 2025.08.12).
+# This file: Urdu language data (last modified: 2025.08.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -173,7 +173,7 @@ field:
  vt_suspicion_level_heuristic_only: "صرف heuristic وزن کے ساتھ فائلیں کو اسکین کریں.\nفائلوں کو صرف اس صورت میں اسکین کیا جائے heuristic وزن واقع ہوا ہے. ایسا ان دستخطوں کی وجہ سے ہو سکتا ہے جو انگلیوں کے نشانات پکڑتے ہیں جو انفیکشن کی تجویز کرتے ہیں لیکن جو انفیکشن کی ضمانت نہیں دیتے. جب نتائج شک کا جواز پیش کرتے ہیں لیکن کوئی یقین فراہم نہیں کرتے ہیں، تو تلاش دوسری رائے فراہم کرنے کے لیے کام کر سکتی ہے."
 hints_logging_datetime: "مفید مشورہ: آپ ٹائم فارمیٹ پلیس ہولڈرز کا استعمال کرکے لاگ فائلوں کے ناموں کے ساتھ تاریخ/وقت کی معلومات منسلک کرسکتے ہیں. دستیاب وقت کی شکل کے پلیس ہولڈرز {{Links.ConfigRef.time_format}} پر دکھائے جاتے ہیں."
 hints_pdo_dsn:
- FAQ.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.ur.md\#user-content-HOW_TO_USE_PDO" hreflang="ur-PK">"PDO DSN" کیا ہے؟ میں phpMussel کے ساتھ PDO کیسے استعمال کرسکتا ہوں؟</a></em>"
+ FAQ.: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.ur.md\#user-content-HOW_TO_USE_PDO" hreflang="ur-PK">"PDO DSN" کیا ہے؟ میں phpMussel کے ساتھ PDO کیسے استعمال کرسکتا ہوں؟</a></em>"
 hints_time_format: |
  <strong><em>پلیس ہولڈر – وضاحت – <span dir="ltr">2024-04-30T18:27:49+08:00</span> پر مبنی مثال.</em></strong><br />
  <code dir="ltr" class="s">{yyyy}</code> – سال – جیسے، 2024.<br />
@@ -376,7 +376,7 @@ tip:
  Logs: "کہ لاگ فائل کے مواد کو دیکھنے کے لیے ذیل کی فہرست سے ایک لاگ فائل منتخب کریں."
  Quarantine is currently disabled: "نوٹ: قرنطین فی الحال غیر فعال ہے، لیکن ترتیب ترتیب کے صفحے کے ذریعہ فعال ہوسکتا ہے."
  Quarantine: "انتظامیہ کو سہولت دینے کے لیے، اس صفحہ کو فی الحال قرنطین میں موجود تمام فائلوں کی فہرست."
- See the documentation: "ملاحظہ کریں <a href="https://github.com/phpMussel/Docs/blob/master/readme.ur.md\#user-content-SECTION5" hreflang="ur-PK" rel="noopener external">دستاویزی</a> مختلف ترتیب ہدایات اور ان کے مقاصد کے بارے میں معلومات کے لیے."
+ See the documentation: "ملاحظہ کریں <a href="{{Links.phpMussel.Docs Base Path}}readme.ur.md\#user-content-SECTION5" hreflang="ur-PK" rel="noopener external">دستاویزی</a> مختلف ترتیب ہدایات اور ان کے مقاصد کے بارے میں معلومات کے لیے."
  Signature Information: "یہ صفحہ فی الحال فعال دستخط کے ذرائع اور اقسام کے بارے میں کچھ معلومات فراہم کرتا ہے."
  Statistics tracking is currently disabled: "نوٹ: اعداد و شمار کی ٹریکنگ فی الحال غیر فعال ہے، لیکن کنفگریشن کے صفحے کے ذریعہ فعال ہوسکتا ہے."
  Statistics: "یہ صفحہ آپ کے phpMussel کی تنصیب کے لیے کچھ استعمال کے اعداد و شمار ظاہر کرتا ہے."

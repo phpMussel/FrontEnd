@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2025.08.12).
+# This file: Vietnamese language data (last modified: 2025.08.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -173,7 +173,7 @@ field:
  vt_suspicion_level_heuristic_only: "Chỉ quét các tập tin có trọng số heuristic.\nCác tập tin sẽ chỉ được quét nếu chúng chịu một số trọng số heuristic. Trọng số heuristic có thể phát sinh từ các chữ ký nhằm bắt dấu vân tay phổ biến gợi ý lây nhiễm nhưng không đảm bảo lây nhiễm. Đối với các kết quả chứng minh sự nghi ngờ nhưng không cung cấp bất kỳ sự chắc chắn nào, việc tra cứu có thể phục vụ để đưa ra ý kiến thứ hai."
 hints_logging_datetime: "Lời khuyên hữu ích: Bạn có thể đính kèm thông tin ngày/giờ vào tên của tập tin nhật ký bằng cách sử dụng phần giữ chỗ định dạng thời gian. Phần giữ chỗ định dạng thời gian có sẵn được hiển thị tại {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
- Câu hỏi thường gặp.: "<em><a href="https://github.com/phpMussel/Docs/blob/master/readme.vi.md\#user-content-HOW_TO_USE_PDO" hreflang="vi-VN">"PDO DSN" là gì? Làm cách nào tôi có thể sử dụng PDO với phpMussel?</a></em>"
+ Câu hỏi thường gặp.: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.vi.md\#user-content-HOW_TO_USE_PDO" hreflang="vi-VN">"PDO DSN" là gì? Làm cách nào tôi có thể sử dụng PDO với phpMussel?</a></em>"
 hints_time_format: |
  <strong><em>Phần giữ chỗ – Giải trình – Ví dụ dựa trên 2024-04-30T18:27:49+08:00.</em></strong><br />
  <code class="s">{yyyy}</code> – Năm – Ví dụ, 2024.<br />
@@ -377,7 +377,7 @@ tip:
  Logs: "Chọn một bản ghi từ danh sách dưới đây để xem nội dung của bản ghi này."
  Quarantine is currently disabled: "Lưu ý: Kiểm dịch hiện đang bị tắt, nhưng có thể được kích hoạt thông qua trang cấu hình."
  Quarantine: "Trang này liệt kê tất cả các tập tin hiện đang được trong kiểm dịch và tạo thuận lợi cho việc quản lý các tập tin đó."
- See the documentation: "Xem <a href="https://github.com/phpMussel/Docs/blob/master/readme.vi.md\#user-content-SECTION5" hreflang="vi-VN" rel="noopener external">tài liệu</a> để biết thông tin về các chỉ thị cấu hình khác nhau và mục đích của họ."
+ See the documentation: "Xem <a href="{{Links.phpMussel.Docs Base Path}}readme.vi.md\#user-content-SECTION5" hreflang="vi-VN" rel="noopener external">tài liệu</a> để biết thông tin về các chỉ thị cấu hình khác nhau và mục đích của họ."
  Signature Information: "Trang thông tin chữ ký cung cấp một số thông tin cơ bản về các nguồn và loại chữ ký hiện đang kích hoạt."
  Statistics tracking is currently disabled: "Lưu ý: Giám sát thống kê hiện bị vô hiệu hóa, nhưng có thể được kích hoạt thông qua trang cấu hình."
  Statistics: "Trang này cho thấy một số thống kê của sử dụng cơ bản liên quan đến cài đặt phpMussel của bạn."
