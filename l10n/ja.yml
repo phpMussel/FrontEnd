@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2025.08.14).
+# This file: Japanese language data (last modified: 2025.08.19).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -383,7 +383,7 @@ tip:
  Statistics: "このページには、phpMusselのインストールに関する基本的な使用状況の統計情報が表示されます。"
  Upload Testing: "アップロード・テスト・ページ、標準的なファイルアップロードフォームを含んでいます、ファイルが通常ブロックされるかどうかをテストすることができます。"
 warning:
- Cookies: "注意：phpMusselは、Cookieを使用してログインを認証します。​ログインすると、ブラウザでCookieを作成して保存することに同意したことになります。"
+ Cookies: "注意：phpMusselは、クッキーを使用してログインを認証します。​ログインすると、ブラウザでクッキーを作成して保存することに同意したことになります。"
  JavaScript required: "警告：一部のフロントエンド機能性にはJavaScriptが必要です。フロントエンドの全体が期待どおりに動作するようにするには、JavaScriptを有効にすることをお勧めします。"
  Maintenance mode is enabled: "警告：メンテナンス・モードが有効になっています！"
  No signature files are active: "警告：アクティブ・シグネチャ・ファイルはありません！"

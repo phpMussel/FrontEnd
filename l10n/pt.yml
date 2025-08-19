@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese language data (last modified: 2025.08.14).
+# This file: Portuguese language data (last modified: 2025.08.17).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -447,7 +447,9 @@ state_quarantine:
  - "Atualmente existem %s arquivos em quarentena."
 tip:
  2FA Sent: "Um e-mail contendo um código de autenticação de dois fatores foi enviado para o seu endereço de e-mail. Por favor, confirme este código abaixo para obter acesso ao front-end. Se você não recebeu este e-mail, tente fazer logout, aguarde 10 minutos, e faça login novamente para receber um novo e-mail contendo um novo código."
- Accounts: "A página de contas permite que você controle quem pode acessar o phpMussel front-end."
+ Accounts:
+  pt-BR: "A página de contas permite que você controle quem pode acessar o phpMussel front-end."
+  pt-PT: "A página de contas permite que você controle quem pode aceder ao phpMussel front-end."
  Cache Data: "Aqui você pode rever o conteúdo do cache."
  Configuration: "A página de configuração permite que você modifique a configuração do phpMussel a partir do front-end."
  Greeting: "Olá, %s."

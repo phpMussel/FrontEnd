@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data (last modified: 2025.08.14).
+# This file: Hebrew language data (last modified: 2025.08.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -385,7 +385,7 @@ tip:
  Statistics: "דף זה מציג כמה סטטיסטיקות שימוש בסיסיות לגבי התקנת phpMussel שלך."
  Upload Testing: "דף בדיקת ההעלאה מכיל טופס סטנדרטי להעלאת קבצים, המאפשר לך לבדוק אם קובץ בדרך כלל נחסם על ידי phpMussel בעת ניסיון להעלות אותו."
 warning:
- Cookies: "הערה: phpMussel משתמש cookie כדי לאמת כניסות. על ידי התחברות, אתה נותן את הסכמתך לכך cookie תיווצר ויישמר על ידי הדפדפן שלך."
+ Cookies: "הערה: phpMussel משתמש קוקי כדי לאמת כניסות. על ידי התחברות, אתה נותן את הסכמתך לקוקי תיווצר ויישמר על ידי הדפדפן שלך."
  JavaScript required: "אזהרה: חלק מפונקציונליות הקצה הקדמי דורשת JavaScript. כדי להבטיח שכל הקצה הקדמי יתנהג כמצופה, מומלץ להפעיל JavaScript."
  Maintenance mode is enabled: "אזהרה: מצב תחזוקה מופעל!"
  No signature files are active: "אזהרה: אין קבצי חתימה פעילים!"

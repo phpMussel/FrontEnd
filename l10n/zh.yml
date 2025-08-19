@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese language data (last modified: 2025.08.14).
+# This file: Chinese language data (last modified: 2025.08.15).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -170,7 +170,9 @@ config:
  supplementary_cache_options_pdo_dsn: {"zh-Hans": "PDO DSN值。 标准 = “mysql:dbname=phpmussel;host=localhost;port=3306”。", "zh-Hant": "PDO DSN值。 默認 = 『mysql:dbname=phpmussel;host=localhost;port=3306』。"}
  supplementary_cache_options_pdo_password: {"zh-Hans": "PDO 密码。", "zh-Hant": "PDO 密碼。"}
  supplementary_cache_options_pdo_username: {"zh-Hans": "PDO 用户名。", "zh-Hant": "PDO 使用者名稱。"}
- supplementary_cache_options_prefix: {"zh-Hans": "该值将附加到所有缓存条目的键的开头。 标准 = “phpMussel_”。​当同一服务器上存在多个安装时，这对于将它们的缓存彼此分开非常有用。", "zh-Hant": "該值將附加到所有緩存條目的鍵的開頭。 默認 = 『phpMussel_』。​當同一服務器上存在多個安裝時，這對於將它們的緩存彼此分開非常有用。"}
+ supplementary_cache_options_prefix:
+  zh-Hans: "该值将附加到所有缓存条目的键的开头。 标准 = “phpMussel_”。 当同一服务器上存在多个安装时，这对于将它们的缓存彼此分开非常有用。"
+  zh-Hant: "該值將附加到所有緩存條目的鍵的開頭。 默認 = 『phpMussel_』。 當同一服務器上存在多個安裝時，這對於將它們的緩存彼此分開非常有用。"
  supplementary_cache_options_redis_database_number: {"zh-Hans": "Redis 数据库编号。 标准 = “0”。 注意：不能在 Redis Cluster 中使用 0 以外的值。", "zh-Hant": "Redis 資料庫編號。 默認 = 『0』。 注意：不能在 Redis Cluster 中使用 0 以外的值。"}
  supplementary_cache_options_redis_host: {"zh-Hans": "Redis 主机值。 标准 = localhost。", "zh-Hant": "Redis 主機值。 默認 = localhost。"}
  supplementary_cache_options_redis_port: {"zh-Hans": "Redis 端口值。 标准 = “6379”。", "zh-Hant": "Redis 端口值。 默認 = 『6379』。"}

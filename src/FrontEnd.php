@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2025.08.09).
+ * This file: Front-end handler (last modified: 2025.08.15).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1588,7 +1588,7 @@ class FrontEnd
      * @param string $Label The actual label.
      * @return void
      */
-    private function replaceLabelWithL10N(string &$Label): void
+    private function replaceLabelWithL10n(string &$Label): void
     {
         foreach (['', 'response.', 'label.', 'field.'] as $Prefix) {
             if (($Try = $this->Loader->L10N->getString($Prefix . $Label)) !== '') {
