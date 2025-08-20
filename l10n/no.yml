@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2025.08.14).
+# This file: Norwegian language data (last modified: 2025.08.20).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -54,7 +54,7 @@ config:
  files: "Spesifikasjonene for hvordan du håndterer filer når du skanner."
  files_allow_leading_trailing_dots: "Vil du tillate ledende og etterfølgende prikker i filnavn? Dette kan noen ganger brukes til å skjule filer, eller for å lure noen systemer til å tillate katalog traversering. False = Ikke tillat [Standardverdi]. True = Tillat."
  files_archive_file_extensions: "Anerkjente arkivfiltypene (formatet er CSV; bør bare legge til eller fjerne når det oppstår problemer; unødvendig fjerning kan føre til at falske positiver vises for arkivfiler, mens unødvendig å legge til vil i det vesentlige hvitliste det du legger til fra angrepspesifikk deteksjon; endre med forsiktighet; merk også at dette ikke har noen innvirkning på hva arkiver kan og ikke kan analyseres på innholdsnivå). Listen er som standard en liste over de formatene som brukes mest i de fleste systemer og CMS, men med vilje er ikke nødvendigvis omfattende."
- files_block_control_characters: "Vil du blokkere filer som inneholder kontrolltegn (annet enn nylinjer)? Hvis du <strong><em>BARE</em></strong> laster opp ren tekst, kan du slå på dette alternativet for å gi litt ekstra beskyttelse til systemet ditt. Men, hvis du laster opp noe annet enn ren tekst, å slå på dette kan føre til falske positiver. False = Ikke blokker [Standardverdi]; True = Blokker."
+ files_block_control_characters: "Vil du blokkere filer som inneholder kontrolltegn (annet enn nylinjer)? Hvis du <strong><em>BARE</em></strong> laster opp ren tekst, du kan slå på dette alternativet for å gi litt ekstra beskyttelse til systemet ditt. Men, hvis du laster opp noe annet enn ren tekst, å slå på dette kan føre til falske positiver. False = Ikke blokker [Standardverdi]; True = Blokker."
  files_block_encrypted_archives: "Oppdage og blokkere krypterte arkiver? Fordi phpMussel ikke er i stand til å skanne innholdet i krypterte arkiver, er det mulig at arkivkryptering kan brukes av en angriper som et middel til å forsøke å omgå phpMussel, antivirus-skannere og annen slik beskyttelse. Å instruere phpMussel til å blokkere krypterte arkiver som den oppdager, kan bidra til å redusere risikoen forbundet med disse mulighetene. False = Nei; True = Ja [Standardverdi]."
  files_block_macros: "Blokkere filer som inneholder makroer? Noen typer dokumenter og regneark kan inneholde kjørbare makroer, og gir dermed en farlig potensiell malware-vektor. False = Ikke blokker [Standardverdi]; True = Blokker."
  files_can_contain_php_file_extensions: "En liste over filendelser som tillater å inneholde PHP-kode, atskilt med kommaer. Hvis deteksjon av PHP-kameleonangrep er aktivert, vil filer som inneholder PHP-kode, som har utvidelser som ikke er på denne listen, bli oppdaget som PHP-kameleonangrep."
@@ -370,7 +370,7 @@ state_quarantine:
  - "Det er %s fil for øyeblikket i karantene."
  - "Det er %s filer for øyeblikket i karantene."
 tip:
- 2FA Sent: "En e-post som inneholder en 2FA-kode, er sendt til e-postadressen din. Vennligst bekreft denne koden nedenfor for å få tilgang til frontenden. Hvis du ikke mottok denne e-posten, kan du prøve å logge ut, vente i 10 minutter og logge på igjen for å motta en ny e-post som inneholder en ny kode."
+ 2FA Sent: "En e-post som inneholder en 2FA-kode, er sendt til e-postadressen din. Vennligst bekreft denne koden nedenfor for å få tilgang til frontenden. Hvis du ikke mottok denne e-posten, du kan prøve å logge ut, vente i 10 minutter og logge på igjen for å motta en ny e-post som inneholder en ny kode."
  Accounts: "Du kan kontrollere hvem som kan få tilgang til phpMussel-frontenden ved hjelp av kontosiden."
  Cache Data: "Her kan du se innholdet i cachen."
  Configuration: "Konfigurasjonssiden lar deg endre konfigurasjonen for phpMussel fra frontenden."
