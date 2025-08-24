@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data (last modified: 2025.08.18).
+# This file: Hebrew language data (last modified: 2025.08.22).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -356,7 +356,7 @@ siginfo_key_Other: "לא מזוהה או אחר."
 siginfo_key_Other_Metadata: "אין מטא נתונים זמינים."
 siginfo_key_Suspect: "גילויים חשודים אך לא מאומתים (עשויים לכלול שילובים של מזהים שונים)."
 siginfo_key_Testfile: "חתימות עבור קבצי בדיקה (כלומר, לא זיהויים זדוניים)."
-siginfo_key_Total: "סה"כ חתימות פעילות."
+siginfo_key_Total: "סך כל החתימות הפעילות."
 siginfo_key_VT: "חתימות כולל או מבוסס על נתונים מ-Virus Total."
 siginfo_key_Werewolf: "חתימות העוסקות ב"התקפות אנשי זאב"."
 siginfo_sub_Classes: "ספירה לפי מחלקת קובץ חתימה"

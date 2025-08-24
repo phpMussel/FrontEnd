@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Ukrainian language data (last modified: 2025.08.14).
+# This file: Ukrainian language data (last modified: 2025.08.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -25,7 +25,7 @@
 ##/
 
 checkbox:
- Delete orphaned values: "Видалити втрачені цінності."
+ Delete orphaned values: "Видаліть втрачені цінності."
 config:
  core: "Загальна конфігурація (будь-яка основна конфігурація, що не належить до інших категорій)."
  core_default_timeout: "Стандартний час очікування використовувати для зовнішніх запитів? Стандарт = 12 секунд."
@@ -143,8 +143,8 @@ field:
  Clear all: "Очистити все"
  Confirm: "Підтвердьте"
  Create new account: Створити новий обліковий запис
- Delete account: "Видалити обліковий запис"
- Delete all: "Видалити все"
+ Delete account: "Видаліть обліковий запис"
+ Delete all: "Видаліть все"
  Delete: "Видаліть"
  Download: "Завантажте"
  False (False): "False (Хибність)"
