@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese language data (last modified: 2025.08.15).
+# This file: Chinese language data (last modified: 2025.08.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -332,7 +332,7 @@ Some useful links:
         <li><span class="comCat">phpMussel的工具、資源、等等。</span>
           <ul class="comSub">
             <li>{{Links.phpMussel.Issues}} – phpMussel問題頁面（支持、協助、等等）。</li>
-            <li>{{Links.phpMussel.SigTool}} – 使用ClamAV簽名數據庫創建phpMussel簽名文件。</li>
+            <li>{{Links.phpMussel.SigTool}} – 使用ClamAV簽名資料庫創建phpMussel簽名文件。</li>
             <li>{{Links.OSChina}} – phpMussel頁面託管在開源中國社區。</li>
             <li>{{Links.phpMussel.Extras}} – 各種附加功能。</li>
           </ul>
@@ -353,7 +353,7 @@ Some useful links:
         </li>
         <li><span class="comCat">其他有用的工具、資源、服務、等等</span>
           <ul class="comSub">
-            <li>{{Links.PhishTank}} – 網絡釣魚數據庫。由phpMussel URL掃描器使用。</li>
+            <li>{{Links.PhishTank}} – 網絡釣魚資料庫。由phpMussel URL掃描器使用。</li>
             <li>{{Links.VirusTotal}} – VirusTotal是一項免費服務，​用於分析可疑文件和URL。</li>
             <li>{{Links.Hybrid Analysis}} – Hybrid Analysis是由{{Links.Payload Security}}提供的免費惡意軟體分析服務。</li>
             <li>{{Links.Malwarebytes}} – 電腦反惡意軟體專家。</li>
