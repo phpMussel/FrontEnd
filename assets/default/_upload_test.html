@@ -1,8 +1,8 @@
-<table>
-<tr>
-  <td class="nav big">
-{nav}  </td>
-  <td class="right extend">
+<div class="mainbox">
+  <nav class="big">
+{nav}
+  </nav>
+  <main class="extend">
     <form enctype="multipart/form-data" name="upload" action="" method="post">
       <input type="hidden" name="MAX_FILE_SIZE" value="{MaxFilesize}" />
       <div id="upload_fields" class="inline">
@@ -13,6 +13,5 @@
         <div class="spanner"><input type="file" name="upload_test[]" value="" /></div>
       </div>
     </form>
-  </td>
-</tr>
-</table>
+  </main>
+</div>

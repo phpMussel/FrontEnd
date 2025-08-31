@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The upload testing page (last modified: 2023.12.13).
+ * This file: The upload testing page (last modified: 2025.08.31).
  */
 
 namespace phpMussel\FrontEnd;
@@ -18,7 +18,7 @@ if (!isset($Page) || $Page !== 'upload-test' || $this->Permissions !== 1) {
 }
 
 /** Page initial prepwork. */
-$this->initialPrepwork($FE, $this->Loader->L10N->getString('link.Upload Testing'), $this->Loader->L10N->getString('tip.Upload Testing'), false);
+$this->initialPrepwork($FE, $this->Loader->L10N->getString('link.Upload Testing'), $this->Loader->L10N->getString('tip.Upload Testing'));
 
 /** Append upload test JS. */
 $FE['JS'] .=

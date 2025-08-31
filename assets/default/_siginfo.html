@@ -1,8 +1,8 @@
-<table>
-<tr>
-  <td class="nav big">
-{nav}  </td>
-  <td class="right extend">
+<div class="mainbox">
+  <nav class="big">
+{nav}
+  </nav>
+  <main class="extend">
     {ProcTime}
       <table>
         <tr>
@@ -15,7 +15,6 @@
       </table>
     <span class="s placeholder_loading">{label.Loading_}</span>
     {InfoRows}
-  </td>
-</tr>
-</table>
+  </main>
+</div>
 <script type="text/javascript">function setInfoCat(){x=document.getElementById('infoCatID').value,null!==window.yCat&&hide(window.yCat),show(x),window.yCat=x}window.yCat='placeholder_loading',setInfoCat();</script>

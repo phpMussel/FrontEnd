@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2025.08.15).
+ * This file: Front-end handler (last modified: 2025.08.31).
  */
 
 namespace phpMussel\FrontEnd;
@@ -645,7 +645,7 @@ class FrontEnd
          */
         if ($Page === '') {
             /** Page initial prepwork. */
-            $this->initialPrepwork($FE, $this->Loader->L10N->getString('link.Home'), $this->Loader->L10N->getString('tip.Home'), false);
+            $this->initialPrepwork($FE, $this->Loader->L10N->getString('link.Home'), $this->Loader->L10N->getString('tip.Home'));
 
             /** phpMussel version used. */
             $FE['ScriptVersion'] = $this->Loader->ScriptVersion;
@@ -1327,10 +1327,15 @@ class FrontEnd
             $Template = str_replace(['<!-- ' . $Label . ' Begin -->', '<!-- ' . $Label . ' End -->'], '', $Template);
         }
         foreach ($Segments as $Segment) {
-            $BPos = strpos($Template, '<!-- ' . $Segment . ' Begin -->');
-            $EPos = strpos($Template, '<!-- ' . $Segment . ' End -->');
-            if ($BPos !== false && $EPos !== false) {
-                $Template = substr($Template, 0, $BPos) . substr($Template, $EPos + strlen($Segment) + 13);
+            while ($Before = $Template) {
+                $BPos = strpos($Template, '<!-- ' . $Segment . ' Begin -->');
+                $EPos = $BPos === false ? false : strpos($Template, '<!-- ' . $Segment . ' End -->', $BPos);
+                if ($BPos !== false && $EPos !== false) {
+                    $Template = substr($Template, 0, $BPos) . substr($Template, $EPos + strlen($Segment) + 13);
+                }
+                if ($Template === $Before) {
+                    break;
+                }
             }
         }
         return $this->embedAssets($this->Loader->parse($FE, $Template, true));

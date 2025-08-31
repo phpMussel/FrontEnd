@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The statistics page (last modified: 2023.12.13).
+ * This file: The statistics page (last modified: 2025.08.31).
  */
 
 namespace phpMussel\FrontEnd;
@@ -18,7 +18,7 @@ if (!isset($Page) || $Page !== 'statistics' || $this->Permissions !== 1) {
 }
 
 /** Page initial prepwork. */
-$this->initialPrepwork($FE, $this->Loader->L10N->getString('link.Statistics'), $this->Loader->L10N->getString('tip.Statistics'), false);
+$this->initialPrepwork($FE, $this->Loader->L10N->getString('link.Statistics'), $this->Loader->L10N->getString('tip.Statistics'));
 
 /** Display how to enable statistics if currently disabled. */
 if (!$this->Loader->Configuration['core']['statistics']) {

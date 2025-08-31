@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The configuration page (last modified: 2025.08.20).
+ * This file: The configuration page (last modified: 2025.08.31).
  */
 
 namespace phpMussel\FrontEnd;
@@ -595,7 +595,7 @@ foreach ($this->Loader->ConfigurationDefaults as $CatKey => $CatValue) {
 
         /** Provide additional information, useful for users to better understand the directive at hand. */
         if (!empty($DirValue['See also']) && is_array($DirValue['See also'])) {
-            $ThisDir['FieldOut'] .= sprintf("<br />\n        %s<ul>\n", isset($DirValue['hints']) ? '' : $this->L10N->getString('label.See also'));
+            $ThisDir['FieldOut'] .= sprintf("<br />\n        %s<ul>\n", isset($DirValue['hints']) ? '' : $this->Loader->L10N->getString('label.See also'));
             foreach ($DirValue['See also'] as $DirValue['Ref key'] => $DirValue['Ref link']) {
                 $ThisDir['FieldOut'] .= sprintf(
                     '          <li><a dir="ltr" href="%s"><span class="navicon link"></span>%s</a></li>',

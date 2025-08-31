@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The logs page (last modified: 2025.08.09).
+ * This file: The logs page (last modified: 2025.08.31).
  */
 
 namespace phpMussel\FrontEnd;
@@ -18,7 +18,7 @@ if (!isset($Page) || $Page !== 'logs' || ($this->Permissions !== 1 && $this->Per
 }
 
 /** Page initial prepwork. */
-$this->initialPrepwork($FE, $this->Loader->L10N->getString('link.Logs'), $this->Loader->L10N->getString('tip.Logs'), false);
+$this->initialPrepwork($FE, $this->Loader->L10N->getString('link.Logs'), $this->Loader->L10N->getString('tip.Logs'));
 
 /** Parse output. */
 $FE['FE_Content'] = $this->Loader->parse($FE, $this->Loader->readFile($this->getAssetPath('_logs.html')), true);
@@ -53,8 +53,10 @@ if (empty($this->QueryVariables['text-mode']) || $this->QueryVariables['text-mod
 /** Define log data. */
 if (empty($this->QueryVariables['logfile'])) {
     $FE['logfileData'] = $this->Loader->L10N->getString('label.No log file selected');
+    $FE['mod_class_right'] = '';
 } elseif (empty($FE['LogFiles']['Files'][$this->QueryVariables['logfile']])) {
     $FE['logfileData'] = $this->Loader->L10N->getString('label.Selected log file doesn_t exist');
+    $FE['mod_class_right'] = '';
 } else {
     $FE['TextModeSwitchLink'] .= '?phpmussel-page=logs&logfile=' . $this->QueryVariables['logfile'] . '&text-mode=';
     if (strtolower(substr($this->QueryVariables['logfile'], -3)) === '.gz') {
@@ -71,12 +73,7 @@ if (empty($this->QueryVariables['logfile'])) {
         ['&lt;', '&gt;', ''],
         $FE['logfileData']
     );
-    $FE['mod_class_nav'] = ' big';
     $FE['mod_class_right'] = ' extend';
-}
-if (empty($FE['mod_class_nav'])) {
-    $FE['mod_class_nav'] = ' extend';
-    $FE['mod_class_right'] = ' big';
 }
 if (empty($FE['TextModeSwitchLink'])) {
     $FE['TextModeSwitchLink'] .= '?phpmussel-page=logs&text-mode=';
