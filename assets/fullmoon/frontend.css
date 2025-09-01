@@ -122,7 +122,6 @@ input[type=checkbox]+label,input[type=radio]+label,.gridboxitem>label,.gridboxit
 .unshownlink::before{animation:revRotate .5s linear 1;animation-fill-mode:both}
 input[type=button].reset{background:none;cursor:pointer;border:none;padding:0 12px 0 12px;margin:0;width:auto;color:#e7ab7d}
 input[type=button].reset:hover,input[type=button].reset:active{color:#fcefcf}
-.tablend{margin-top:-2px}
 #logsTA{position:relative;top:-2px}
 .navicon.accounts{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:accounts.svg}{/Base64Encode})}
 .navicon.cache{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:cache.svg}{/Base64Encode})}
@@ -152,3 +151,6 @@ input[type=checkbox],input[type=radio]{accent-color:#cca}
 .clockMinutes{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:clockminutes.svg}{/Base64Encode});position:relative;inset:0 -16px}
 .clockSeconds{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:clockseconds.svg}{/Base64Encode});position:relative;inset:0 -32px}
 .clockFace{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:clockface.svg}{/Base64Encode});position:relative;inset:0 -48px}
+.col{display:flex;flex-direction:column;gap:2px;justify-content:start;align-items:start;flex-basis:100%;width:100%}
+.configInitPos{transform:scaleY(0);transform-origin:top center;opacity:0;max-height:0;margin-top:-2px}
+.configOpenPos{transform:scaleY(1);transform-origin:top center;opacity:1;max-height:auto}

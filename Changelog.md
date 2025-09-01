@@ -213,3 +213,4 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 ### v3.7.1
 
 - [2025.08.31]: Slightly reworked the various front-end themes.
+- [2025.08.31]: Slightly reworked the logs page and the configuration page.

@@ -24,7 +24,7 @@ $this->initialPrepwork($FE, $this->Loader->L10N->getString('link.Logs'), $this->
 $FE['FE_Content'] = $this->Loader->parse($FE, $this->Loader->readFile($this->getAssetPath('_logs.html')), true);
 
 /** Initialise array for fetching logs data. */
-$FE['LogFiles'] = ['Files' => $this->logsRecursiveList(), 'Out' => "\n"];
+$FE['LogFiles'] = ['Files' => $this->logsRecursiveList(), 'Out' => ''];
 
 /** Download a log file. */
 if (
@@ -114,7 +114,11 @@ $FE['ProcessTime'] = '<br />' . sprintf(
 );
 
 /** Set the log files list or the no log files available message. */
-$FE['LogFiles'] = $FE['LogFiles']['Out'] ?: $this->Loader->L10N->getString('label.No log files available');
+if ($FE['LogFiles']['Out'] === '') {
+    $FE['LogFiles'] = $this->Loader->L10N->getString('label.No log files available');
+} else {
+    $FE['LogFiles'] = sprintf('      <div class="subNav">%s</div>', $this->Loader->L10N->getString('link.Logs')) . "\n" . $FE['LogFiles']['Out'];
+}
 
 /** Send output. */
 echo $this->sendOutput($FE);
