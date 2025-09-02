@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The signature information page (last modified: 2023.12.29).
+ * This file: The signature information page (last modified: 2025.09.01).
  */
 
 namespace phpMussel\FrontEnd;
@@ -31,10 +31,10 @@ $this->signatureInformationHandler($FE['InfoRows'], $FE['SigInfoMenuOptions']);
 
 /** Calculate and append page load time, and append totals. */
 $FE['ProcTime'] = microtime(true) - $_SERVER['REQUEST_TIME_FLOAT'];
-$FE['ProcTime'] = '<div class="s">' . sprintf(
+$FE['ProcTime'] = sprintf(
     $this->Loader->L10N->getPlural($FE['ProcTime'], 'label.Page request completed in %s seconds'),
     '<span class="txtRd">' . $this->NumberFormatter->format($FE['ProcTime'], 3) . '</span>'
-) . '</div>';
+);
 
 /** Parse output. */
 $FE['FE_Content'] = $this->Loader->parse($FE, $this->Loader->readFile($this->getAssetPath('_siginfo.html')), true);

@@ -3,18 +3,15 @@
 {nav}
   </nav>
   <main class="extend">
-    {ProcTime}
-      <table>
-        <tr>
-          <td class="spanner">
-            <select id="infoCatID" class="auto" onchange="javascript:setInfoCat()">
-{SigInfoMenuOptions}
-            </select>
-          </td>
-        </tr>
-      </table>
-    <span class="s placeholder_loading">{label.Loading_}</span>
+    <div class="col">
+      <div class="s flexstretch">{ProcTime}</div>
+      <div class="spanner">
+        <select id="infoCatID" class="auto" onchange="javascript:setInfoCat()">{SigInfoMenuOptions}
+        </select>
+      </div>
+      <span class="s placeholder_loading">{label.Loading_}</span>
     {InfoRows}
+    </div>
   </main>
 </div>
-<script type="text/javascript">function setInfoCat(){x=document.getElementById('infoCatID').value,null!==window.yCat&&hide(window.yCat),show(x),window.yCat=x}window.yCat='placeholder_loading',setInfoCat();</script>
+<script type="text/javascript">function setInfoCat(){x=document.getElementById('infoCatID').value,null!==window.yCat&&hide(window.yCat),show(x,'contents'),window.yCat=x}window.yCat='placeholder_loading',setInfoCat()</script>

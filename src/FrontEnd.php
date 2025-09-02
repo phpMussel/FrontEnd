@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2025.08.31).
+ * This file: Front-end handler (last modified: 2025.09.01).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1245,8 +1245,8 @@ class FrontEnd
         foreach ($Subs as $Sub) {
             $Label = $this->Loader->L10N->getString('siginfo_sub_' . $Sub) ?: $Sub;
             $Class = 'sigtype_' . strtolower($Sub);
-            $SigInfoMenuOptions .= "\n      <option value=\"" . $Class . '">' . $Label . '</option>';
-            $ThisTable = '<span style="display:none" class="' . $Class . '"><table><tr><td class="center h4f" colspan="2"><span class="s">' . $Label . '</span></td></tr>' . "\n";
+            $SigInfoMenuOptions .= "\n          <option value=\"" . $Class . '">' . $Label . '</option>';
+            $ThisTable = '<span style="display:none" class="' . $Class . '"><table class="toggleTable"><tr><td class="center h4f" colspan="2"><span class="s">' . $Label . '</span></td></tr>' . "\n";
             arsort($Totals[$Sub]);
             foreach ($Totals[$Sub] as $Key => &$Total) {
                 if (!$Total) {

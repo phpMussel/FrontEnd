@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The logs page (last modified: 2025.08.31).
+ * This file: The logs page (last modified: 2025.09.01).
  */
 
 namespace phpMussel\FrontEnd;
@@ -97,7 +97,7 @@ $DownloadLabel = $this->Loader->L10N->getString('field.Download');
 /** Generate a list of the logs. */
 foreach ($FE['LogFiles']['Files'] as $Filename => $Filesize) {
     $FE['LogFiles']['Out'] .= sprintf(
-        '      <a href="?phpmussel-page=logs&logfile=%1$s&text-mode=%3$s">%1$s</a> – %2$s <a title="%4$s" href="?phpmussel-page=logs&logfile=%1$s&text-mode=download"><span class="navicon download"></span></a><br />',
+        '        <a href="?phpmussel-page=logs&logfile=%1$s&text-mode=%3$s">%1$s</a> – %2$s <a title="%4$s" href="?phpmussel-page=logs&logfile=%1$s&text-mode=download"><span class="navicon download"></span></a><br />',
         $Filename ?? '',
         $Filesize ?? '',
         $FE['TextModeLinks'] ?? '',
@@ -117,7 +117,7 @@ $FE['ProcessTime'] = '<br />' . sprintf(
 if ($FE['LogFiles']['Out'] === '') {
     $FE['LogFiles'] = $this->Loader->L10N->getString('label.No log files available');
 } else {
-    $FE['LogFiles'] = sprintf('      <div class="subNav">%s</div>', $this->Loader->L10N->getString('link.Logs')) . "\n" . $FE['LogFiles']['Out'];
+    $FE['LogFiles'] = sprintf('        <div class="subNav">%s</div>', $this->Loader->L10N->getString('link.Logs')) . "\n" . $FE['LogFiles']['Out'];
 }
 
 /** Send output. */
