@@ -214,3 +214,4 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 
 - [2025.08.31]: Slightly reworked the various front-end themes.
 - [2025.08.31]: Slightly reworked the logs page and the configuration page.
+- [2025.09.03]: Slightly improved the code for traversal detection.

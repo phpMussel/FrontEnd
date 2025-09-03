@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2025.09.01).
+ * This file: Front-end handler (last modified: 2025.09.03).
  */
 
 namespace phpMussel\FrontEnd;
@@ -860,6 +860,20 @@ class FrontEnd
     }
 
     /**
+     * Traversal detection.
+     *
+     * @param string $Path The path to check for traversal.
+     * @return bool True when the path is traversal-free. False when traversal has been detected.
+     */
+    public function freeFromTraversal(string $Path): bool
+    {
+        return !preg_match(
+            '~//|(?:[^\da-z\p{L}\p{N}\p{M}\p{P}\p{S}\p{Z}.]|[\\/?&=]|^)\.\.+(?:[^\da-z\p{L}\p{N}\p{M}\p{P}\p{S}\p{Z}.]|[\\/?&=]|$)|/\.+(?:[^\da-z\p{L}\p{N}\p{M}\p{P}\p{S}\p{Z}.]|[\\/?&=]|$)|(?:[^\da-z\p{L}\p{N}\p{M}\p{P}\p{S}\p{Z}.]|[\\/?&=])\.+/|[\x01-\x1F]~i',
+            str_ireplace(['%25', '%22', '%27', '%2e', '%2f', '%5b', '%5c', '%5d', '%5e', '%5f', '%60', '\\'], ['%', '"', '\'', '.', '/', '[', '/', ']', '^', '_', '`', '/'], $Path)
+        );
+    }
+
+    /**
      * Format filesize information.
      *
      * @param int $Filesize
@@ -897,20 +911,6 @@ class FrontEnd
     private function filterByDefined(string $ChoiceKey): bool
     {
         return defined($ChoiceKey);
-    }
-
-    /**
-     * Traversal detection.
-     *
-     * @param string $Path The path to check for traversal.
-     * @return bool True when the path is traversal-free. False when traversal has been detected.
-     */
-    private function freeFromTraversal(string $Path): bool
-    {
-        return !preg_match(
-            '~(?://|(?<![\da-z])\.\.(?![\da-z])|/\.(?![\da-z])|(?<![\da-z])\./|[\x01-\x1F\[-^`?*$])~i',
-            str_replace('\\', '/', $Path)
-        );
     }
 
     /**
