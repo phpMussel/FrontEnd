@@ -2,7 +2,7 @@ function $(c,i,d,r,a,m){if('POST'===c||'GET'===c){var x=new XMLHttpRequest;x.onr
 function showid(e){b=document.getElementById(e),b.style.display='inline'}
 function hideid(e){b=document.getElementById(e),b.style.display='none'}
 function show(e,t='inline'){b=document.getElementsByClassName(e);for(var s=0;s<b.length;s++)b[s].style.display=t}
-function hide(e){b=document.getElementsByClassName(e);for(var s=0;s<b.length;s++)b[s].style.display="none"}
+function hide(e){b=document.getElementsByClassName(e);for(var s=0;s<b.length;s++)b[s].style.display='none'}
 function r(e){return document.getElementById(e).innerHTML}
 function w(e,x){document.getElementById(e).innerHTML=x}
 function toggleconfig(e,f){x=document.getElementById(e),y=document.getElementById(f),x.classList.contains('configOpenPos')?(x.classList.add('configInitPos'),x.classList.remove('configOpenPos'),y.classList.add('unshownlink'),y.classList.remove('showlink','shownlink')):(x.classList.add('configOpenPos'),x.classList.remove('configInitPos'),y.classList.add('showlink','shownlink'),y.classList.remove('unshownlink'))}
