@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2025.08.14).
+# This file: Swedish language data (last modified: 2025.09.06).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -333,7 +333,7 @@ response:
  Incorrect 2FA code entered: "Felaktig 2FA-kod inmatad. Autentisering misslyckades."
  Incorrect quarantine key: "Felaktig karantännyckel!"
  Invalid password: "Inloggningsfel! Felaktigt lösenord!"
- Maximum number of login attempts exceeded: "Maximalt antal inloggningsförsök överskreds; Nekat tillgång."
+ Maximum number of login attempts exceeded: "Maximalt antal inloggningsförsök överskreds; Åtkomst nekad."
  Password field empty: "Lösenord fältet tomt!"
  Password successfully updated: "Lösenordet har uppdaterats framgångsrikt!"
  Permissions not adequate to perform asynchronous requests: "Behörigheter är inte tillräckliga för att utföra asynkrona förfrågningar. Försök logga in igen."

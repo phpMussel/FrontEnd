@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2025.08.14).
+# This file: Spanish language data (last modified: 2025.09.06).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -28,7 +28,7 @@ checkbox:
  Delete orphaned values: "Eliminar valores huérfanos."
 config:
  core: "Configuración general (cualquier configuración que no pertenezca a otras categorías)."
- core_default_timeout: "¿Tiempo de espera predeterminado para usar en solicitudes externas? Predeterminado = 12 segundos."
+ core_default_timeout: "¿Tiempo de espera predefinido para usar en solicitudes externas? Predefinido = 12 segundos."
  core_delete_on_sight: "Activando esta directiva instruirá la script para intentar para eliminar inmediatamente cualquier escaneados intentados archivos subidos emparejando a los criterios de detección, si través de firmas o de otras maneras. Archivos determinados como limpia no serán tocados. En el caso de los compactados archivos, la totalidad del compactado archivo será eliminado (independientemente de si el emparejando archivo es sólo uno de muchos varios archivos contenida dentro del compactado archivo). Para el caso de archivo subir escaneo, en general, no es necesario activar esta directiva, porque en general, PHP purgará automáticamente el contenido de su caché cuando la ejecución ha terminado, significando que lo en general eliminará cualquier archivos subidos a través de él con el servidor a no ser que se han movido, copiado o eliminado ya. La directiva se añade aquí como una medida adicional de seguridad para aquellos cuyas copias de PHP no siempre se comportan de la manera esperada. False = Después escaneando, dejar el archivo solo [Predefinido]; True = Después escaneando, si no se limpia, eliminar inmediatamente."
  core_disabled_channels: "Esto se puede usar para evitar que phpMussel use canales particulares al enviar solicitudes."
  core_error_log: "Un archivo para registrar cualquier error detectado que no sea fatal. Especificar el nombre del archivo, o dejar en blanco para desactivar."
@@ -42,14 +42,14 @@ config:
  core_outbound_request_log: "Un archivo para registrar los resultados de cualquier solicitud saliente. Especificar el nombre del archivo, o dejar en blanco para desactivar."
  core_request_proxy: "Si desea que las solicitudes salientes se envíen a través de un proxy, especifique ese proxy aquí. En caso contrario, deje esto en blanco."
  core_request_proxyauth: "Si envía solicitudes salientes a través de un proxy y ese proxy requiere un nombre de usuario y una contraseña, especifique ese nombre de usuario y contraseña aquí (p.ej., <code>user:pass</code>). En caso contrario, deje esto en blanco."
- core_scan_cache_expiry: "Por cuánto tiempo debe phpMussel caché de los resultados del escaneo? El valor es el número de segundos para almacenar en caché los resultados del escaneo. La predeterminado valor es 21600 segundos (6 horas); Un valor de 0 desactiva el almacenamiento en caché de los resultados del escaneo."
+ core_scan_cache_expiry: "Por cuánto tiempo debe phpMussel caché de los resultados del escaneo? El valor es el número de segundos para almacenar en caché los resultados del escaneo. La predefinido valor es 21600 segundos (6 horas); Un valor de 0 desactiva el almacenamiento en caché de los resultados del escaneo."
  core_scan_log: "Nombre del archivo para registrar todos los resultados de las escaneos. Especifique un archivo nombre, o dejar en blanco para desactivar."
  core_scan_log_serialized: "Nombre del archivo para registrar todos los resultados de las escaneos (utilizando un formato serializado). Especifique un archivo nombre, o dejar en blanco para desactivar."
  core_statistics: "¿Seguir las estadísticas de uso de phpMussel? True = Sí; False = No [Predefinido]."
  core_time_format: "El formato de notación de fecha/hora usado por phpMussel. Se pueden añadir opciones adicionales bajo petición."
  core_time_offset: "Desplazamiento del huso horario en minutos."
  core_timezone: "Esto se usa para especificar la zona horaria a usar (por ejemplo, Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, etc). Especifique "SYSTEM" para permitir que PHP maneje esto automáticamente."
- core_truncate: "¿Truncar archivos de registro cuando alcanzan cierto tamaño? Valor es el tamaño máximo en B/KB/MB/GB/TB que un archivo de registro puede crecer antes de ser truncado. El valor predeterminado de 0KB deshabilita el truncamiento (archivos de registro pueden crecer indefinidamente). Nota: ¡Se aplica a archivos de registro individuales! El tamaño de los archivos de registro no se considera colectivamente."
+ core_truncate: "¿Truncar archivos de registro cuando alcanzan cierto tamaño? Valor es el tamaño máximo en B/KB/MB/GB/TB que un archivo de registro puede crecer antes de ser truncado. El valor predefinido de 0KB deshabilita el truncamiento (archivos de registro pueden crecer indefinidamente). Nota: ¡Se aplica a archivos de registro individuales! El tamaño de los archivos de registro no se considera colectivamente."
  experimental: "¡Inestable/Experimental!"
  files: "Los detalles de cómo manejar archivos al escanear."
  files_allow_leading_trailing_dots: "¿Permitir puntos iniciales y finales en los nombres de archivo? A veces, esto se puede utilizar para ocultar archivos, o para engañar a algunos sistemas para que permitan el atravesar del directorio. False = No permitir [Predefinido]. True = Permitir."
@@ -67,8 +67,8 @@ config:
  files_check_archives: "Intente comprobar el contenido de los compactados archivos? False = No (no comprobar); True = Sí (comprobar) [Predefinido]. Soportado: Zip (requiere libzip), Tar, Rar (requiere la extensión rar)."
  files_corrupted_exe: "Corrompido archivos y procesamiento errores. False = Ignorar; True = Bloquear [Predefinido]. Detectar y bloquear potencialmente corrompido PE (Portátil Ejecutable) archivos? Frecuentemente (pero no siempre), cuando ciertos aspectos de un PE archivo están corrompido, dañados o no podrá ser analizado correctamente, lo puede ser indicativo de una infección viral. Los procesos utilizados por la mayoría de los antivirus programas para detectar un virus en PE archivos requerir analizando esos archivos en ciertas maneras, que, si el programador de un virus es consciente de, intentará específicamente para prevenir, con el fin de permitir su virus permanezca sin ser detectado."
  files_decode_threshold: "Opcional limitación a la longitud de datos a que dentro de decodificación comandos deben ser detectados (en caso de que los hay notable rendimiento problemas mientras que escaneando). Predefinido = 512KB. Cero o nulo valor desactiva la limitación (eliminando cualquier tal limitación basado sobre la tamaño de archivos)."
- files_entropy_filesize_limit: "El límite de tamaño del archivo de entropía para firmas que utilizan datos normalizados (el valor predeterminado es 256KB). Cuando se excede tanto el límite de entropía como el límite de tamaño del archivo de entropía, para reducir el riesgo de falsos positivos, se ignorarán algunas firmas que utilizan datos normalizados."
- files_entropy_limit: "El límite de entropía para firmas que utilizan datos normalizados (el valor predeterminado es 7.7). En este contexto, la entropía se define como la entropía de Shannon del contenido del archivo que se está escaneando. Cuando se excede tanto el límite de entropía como el límite de tamaño del archivo de entropía, para reducir el riesgo de falsos positivos, se ignorarán algunas firmas que utilizan datos normalizados."
+ files_entropy_filesize_limit: "El límite de tamaño del archivo de entropía para firmas que utilizan datos normalizados (el valor predefinido es 256KB). Cuando se excede tanto el límite de entropía como el límite de tamaño del archivo de entropía, para reducir el riesgo de falsos positivos, se ignorarán algunas firmas que utilizan datos normalizados."
+ files_entropy_limit: "El límite de entropía para firmas que utilizan datos normalizados (el valor predefinido es 7.7). En este contexto, la entropía se define como la entropía de Shannon del contenido del archivo que se está escaneando. Cuando se excede tanto el límite de entropía como el límite de tamaño del archivo de entropía, para reducir el riesgo de falsos positivos, se ignorarán algunas firmas que utilizan datos normalizados."
  files_filesize_archives: "Heredar tamaño de archivos blacklist/whitelist para los contenidos de compactados archivos? False = No (todo en la greylist); True = Sí [Predefinido]."
  files_filesize_limit: "Límite del tamaño de archivos en KB. 65536 = 64MB [Predefinido]; 0 = Sin límite (siempre en la greylist), cualquier (positivo) numérico valor aceptado. Esto puede ser útil cuando su PHP configuración limita la cantidad de memoria un proceso puede contener o si su PHP configuración limita el tamaño de archivo subidos."
  files_filesize_response: "Qué hacer con los archivos que superen el límite del tamaño de archivos (si existe). False = Whitelist; True = Blacklist [Predefinido]."
@@ -78,7 +78,7 @@ config:
  files_filetype_whitelist: "Whitelist:"
  files_max_files_in_archives: "Número máximo de archivos para analizar desde archivos comprimidos antes de abortar el análisis. Predefinido = 0 (sin máximo)."
  files_max_recursion: "Máximo recursividad nivel límite para compactados archivos. Predefinido = 3."
- files_only_allow_images: "Cuando es true, cualquier archivo encontrado por el escáner que no sean imágenes se marcará de inmediato, sin ser escaneado. Esto puede ayudar a reducir el tiempo necesario para completar una escaneo en algunos casos. Establecido en falso por predeterminado."
+ files_only_allow_images: "Cuando es true, cualquier archivo encontrado por el escáner que no sean imágenes se marcará de inmediato, sin ser escaneado. Esto puede ayudar a reducir el tiempo necesario para completar una escaneo en algunos casos. Establecido en falso por predefinido."
  files_scannable_threshold: "Opcional limitación a la longitud de datos puros para que phpMussel se permitido leer y escanear (en caso de que los hay notable rendimiento problemas mientras que escaneando). Predefinido = 32MB. Cero o nulo valor desactiva la limitación. En general, Este valor no debe ser inferior a la media tamaño de archivos subidos que desea y espera recibir a su servidor o website, no debe ser mayor que el filesize_limit directiva, y no debe ser más de aproximadamente una quinta parte de la total permisible memoria asignación concedida a PHP a través de la "php.ini" configuración archivo. Esta directiva existe para intratar prevenir phpMussel del uso de demasiada memoria (eso sería prevenir que sea capaz para escanear archivos con éxito encima de un cierto tamaño de archivos)."
  frontend: "Configuración para el front-end."
  frontend_custom_footer: "Insertado como HTML al final de todas las páginas del front-end. Esto podría ser útil en caso de que desee incluir un aviso legal, enlace de contacto, información comercial, o similar en todas dichas páginas."
@@ -163,7 +163,7 @@ field:
  True (True): "True (Verdadero)"
  Update signature files: "Actualizar archivos de firmas"
  Update: "Actualizar"
- Use system default timezone: "Usar la zona horaria predeterminada del sistema."
+ Use system default timezone: "Usar la zona horaria predefinida del sistema."
  Username: "Usuario"
  Your version: "Tu versión"
  log_rotation_archive: "Primero archiva, y luego eliminar los archivos de registro más antiguos, hasta que el límite ya no se exceda."
