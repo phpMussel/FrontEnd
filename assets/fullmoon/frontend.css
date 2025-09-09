@@ -39,7 +39,7 @@ a:link,a:visited{color:#eee6ab}
 a:hover,a:active,a:focus{color:#fff7bc}
 .cat,.exp,.gen,nav,.s,.txtGn,.txtOe,.txtRd,.spanner,a,input,input[type=file]::file-selector-button,select,textarea{font-weight:700}
 .ci,.co,.gen,.center{margin:auto}
-.ci,.co,.ng1:not(nav .ng1,.quad .ng1,.duo .ng1,.col>.ng1),.ng2:not(nav .ng2,.quad .ng2,.duo .ng2,.col>.ng2){width:calc(100% - 32px)}
+.ci,.co,.ng1:not(nav .ng1,.quad .ng1,.duo .ng1,.col .ng1),.ng2:not(nav .ng2,.quad .ng2,.duo .ng2,.col .ng2){width:calc(100% - 32px)}
 .ci{background-color:rgba(69,84,75,.5);border-style:solid;border-width:1px;border-color:#aaa;text-align:{FE_Align};border-top-{FE_Align_Reverse}-radius:24px;padding:12px}
 .co,body,.center{text-align:center}
 .co,body{padding:0}
@@ -70,9 +70,9 @@ code,nav{font-family:'Courier New','Courier','Arial'}
 @keyframes idxAn{0%{background:rgba(120,89,92,.5)}100%{background:rgba(86,89,92,.5)}}
 @keyframes UplT{0%{opacity:0}100%{opacity:1}}
 .mob{display:none}
-input[id=logoutbutton]{border-top-{FE_Align}-radius:0;border-bottom-{FE_Align}-radius:0;padding-{FE_Align}:18px;margin-{FE_Align}:-1px;background-position:top 1px {FE_Align} 4px,top 1px {FE_Align} 4px;background-image:url(data:image/png;base64,{Base64Encode}{Asset:lock_wt_o.png}{/Base64Encode}),url(data:image/png;base64,{Base64Encode}{Asset:lock_wt_c.png}{/Base64Encode})}
-input[id=logoutbutton]:hover,input[id=logoutbutton]:active,input[id=logoutbutton]:focus{background-position:top 3px {FE_Align} 4px,top 1px {FE_Align} 4px}
-input[id=homebutton]{border-top-{FE_Align_Reverse}-radius:0;border-bottom-{FE_Align_Reverse}-radius:0;margin-{FE_Align_Reverse}:0}
+input#logoutbutton{border-top-{FE_Align}-radius:0;border-bottom-{FE_Align}-radius:0;padding-{FE_Align}:18px;margin-{FE_Align}:-1px;background-position:top 1px {FE_Align} 4px,top 1px {FE_Align} 4px;background-image:url(data:image/png;base64,{Base64Encode}{Asset:lock_wt_o.png}{/Base64Encode}),url(data:image/png;base64,{Base64Encode}{Asset:lock_wt_c.png}{/Base64Encode})}
+input#logoutbutton:hover,input#logoutbutton:active,input#logoutbutton:focus{background-position:top 3px {FE_Align} 4px,top 1px {FE_Align} 4px}
+input#homebutton{border-top-{FE_Align_Reverse}-radius:0;border-bottom-{FE_Align_Reverse}-radius:0;margin-{FE_Align_Reverse}:0}
 .h1f,.h2f,.h3f,.h4f,.rf{white-space:nowrap}
 @media only all and (max-width:968px) {
   .extend{flex-basis:100%}
@@ -124,7 +124,6 @@ input[type=checkbox]+label,input[type=radio]+label,.gridboxitem>label,.gridboxit
 .unshownlink::before{animation:revRotate .5s linear 1;animation-fill-mode:both}
 input[type=button].reset{background:none;cursor:pointer;border:none;padding:0 12px 0 12px;margin:0;width:auto;color:#e7ab7d}
 input[type=button].reset:hover,input[type=button].reset:active{color:#fcefcf}
-#logsTA{position:relative;top:-2px}
 .navicon.accounts{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:accounts.svg}{/Base64Encode})}
 .navicon.cache{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:cache.svg}{/Base64Encode})}
 .navicon.configuration{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:configuration.svg}{/Base64Encode})}
@@ -163,4 +162,4 @@ input[type=checkbox],input[type=radio]{accent-color:#cca}
 input[type=hidden],script{display:none}
 .quad{display:grid;gap:2px;grid-template-columns:repeat(4,1fr);justify-content:stretch;justify-items:stretch}
 .duo{display:grid;gap:2px;grid-template-columns:1fr 1fr;justify-content:stretch;justify-items:stretch}
-.col+.quad,.col+.duo,.quad+.col,.quad+.duo,.duo+.col,.duo+.quad{margin-top:2px;margin-{FE_Align_Reverse}:1px}
+.col+.col,.col+.quad,.col+.duo,.quad+.col,.quad+.quad,.quad+.duo,.duo+.col,.duo+.quad,.duo+.duo{margin-top:2px;margin-{FE_Align_Reverse}:1px}
