@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2025.08.14).
+# This file: English language data (last modified: 2025.09.11).
 ##/
 
 checkbox:
@@ -379,7 +379,7 @@ tip:
  Logs: "Select a log file from the list below to view the contents of that log file."
  Quarantine is currently disabled: "Note: Quarantine is currently disabled, but can be enabled via the configuration page."
  Quarantine: "This page lists all files currently in quarantine and facilitates management of those files."
- See the documentation: "See the <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">documentation</a> for information about the various configuration directives and their purposes."
+ See the documentation: "See the <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external"><span class="navicon documentation"></span>documentation</a> for information about the various configuration directives and their purposes."
  Signature Information: "The signature information page provides some basic information about the sources and types of the currently active signatures."
  Statistics tracking is currently disabled: "Note: Statistics tracking is currently disabled, but can be enabled via the configuration page."
  Statistics: "This page shows some basic usage statistics regarding your phpMussel installation."

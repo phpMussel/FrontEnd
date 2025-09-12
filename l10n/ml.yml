@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malayalam language data (last modified: 2025.08.14).
+# This file: Malayalam language data (last modified: 2025.09.11).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -379,7 +379,7 @@ tip:
  Logs: "ഒരു ലോഗ് ഫയലിന്റെ ഉള്ളടക്കം കാണുന്നതിന്, താഴെയുള്ള പട്ടികയിൽ നിന്ന് അത് തിരഞ്ഞെടുക്കുക."
  Quarantine is currently disabled: "കുറിപ്പ്: ക്വാറന്റൈൻ നിലവിൽ പ്രവർത്തനരഹിതമാക്കിയിരിക്കുന്നു, പക്ഷേ കോൺഫിഗറേഷൻ പേജ് വഴി പ്രവർത്തനക്ഷമമാക്കാം."
  Quarantine: "ഈ പേജ് നിലവിൽ ക്വാറന്റൈനിലുള്ള എല്ലാ ഫയലുകളും പട്ടികപ്പെടുത്തുകയും ആ ഫയലുകളുടെ മാനേജ്മെന്റിനെ സുഗമമാക്കുകയും ചെയ്യുന്നു."
- See the documentation: "വിവിധ കോൺഫിഗറേഷൻ നിർദ്ദേശങ്ങളെയും അവയുടെ ഉദ്ദേശ്യങ്ങളെയും കുറിച്ചുള്ള വിവരങ്ങൾക്ക് <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">ഡോക്യുമെന്റേഷൻ</a> കാണുക."
+ See the documentation: "വിവിധ കോൺഫിഗറേഷൻ നിർദ്ദേശങ്ങളെയും അവയുടെ ഉദ്ദേശ്യങ്ങളെയും കുറിച്ചുള്ള വിവരങ്ങൾക്ക് <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external"><span class="navicon documentation"></span>ഡോക്യുമെന്റേഷൻ</a> കാണുക."
  Signature Information: "നിലവിൽ സജീവമായ ഒപ്പുകളുടെ ഉറവിടങ്ങളെയും തരങ്ങളെയും കുറിച്ചുള്ള ചില അടിസ്ഥാന വിവരങ്ങൾ ഒപ്പ് വിവര പേജ് നൽകുന്നു."
  Statistics tracking is currently disabled: "കുറിപ്പ്: സ്ഥിതിവിവരക്കണക്ക് ട്രാക്കിംഗ് നിലവിൽ പ്രവർത്തനരഹിതമാക്കിയിരിക്കുന്നു, പക്ഷേ കോൺഫിഗറേഷൻ പേജ് വഴി പ്രവർത്തനക്ഷമമാക്കാം."
  Statistics: "നിങ്ങളുടെ phpMussel ഇൻസ്റ്റാളേഷനെക്കുറിച്ചുള്ള ചില അടിസ്ഥാന ഉപയോഗ സ്ഥിതിവിവരക്കണക്കുകൾ ഈ പേജ് കാണിക്കുന്നു."

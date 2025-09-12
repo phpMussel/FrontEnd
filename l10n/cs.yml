@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Czech language data (last modified: 2025.08.14).
+# This file: Czech language data (last modified: 2025.09.11).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -380,7 +380,7 @@ tip:
  Logs: "Chcete-li zobrazit obsah tohoto souboru protokolu, vyberte soubor protokolu ze seznamu níže."
  Quarantine is currently disabled: "Poznámka: Karanténa je aktuálně deaktivována, ale lze ji aktivovat prostřednictvím konfigurační stránky."
  Quarantine: "Tato stránka obsahuje seznam všech souborů aktuálně v karanténě a usnadňuje správu těchto souborů."
- See the documentation: "Informace o různých konfiguračních direktivách a jejich účelech najdete v <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">dokumentaci</a>."
+ See the documentation: "Informace o různých konfiguračních direktivách a jejich účelech najdete v <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external"><span class="navicon documentation"></span>dokumentaci</a>."
  Signature Information: "Stránka s informacemi o podpisů poskytuje některé základní informace o zdrojích a typech aktuálně aktivních podpisů."
  Statistics tracking is currently disabled: "Poznámka: Sledování statistik je aktuálně deaktivováno, ale lze jej aktivovat prostřednictvím konfigurační stránky."
  Statistics: "Tato stránka zobrazuje některé základní statistiky používání týkající se vaší instalace phpMussel."

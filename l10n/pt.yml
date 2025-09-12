@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese language data (last modified: 2025.08.17).
+# This file: Portuguese language data (last modified: 2025.09.11).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -84,7 +84,9 @@ config:
   pt-BR: "Bloquear todos os arquivos que contenham quaisquer caracteres de controle, exceto linha quebras? Se você está <strong><em>APENAS</em></strong> carregando simple texto, então você pode ativar essa opção para fornecer alguma adicional proteção para seu sistema. Mas, se você carregar qualquer coisa que não seja de texto simples, ativando isso pode resultas em falso positivos. False = Não bloquear [Padrão]; True = Bloquear."
   pt-PT: "Bloquear todos os arquivos que contenham quaisquer caracteres de controle, exceto linha quebras? Se você está <strong><em>APENAS</em></strong> carregando simple texto, então você pode ativar essa opção para fornecer alguma adicional proteção para o seu sistema. Mas, se você carregar qualquer coisa que não seja de texto simples, ativando isso pode resultas em falso positivos. False = Não bloquear [Padrão]; True = Bloquear."
  files_block_encrypted_archives: "Detectar e bloquear compactados arquivos criptografados? Porque phpMussel não é capaz de analisar o conteúdo de arquivos criptografados, é possível que a criptografia de arquivo pode ser empregado por um atacante como meio de tentar contornar phpMussel, analisadores antivírus e outras dessas protecções. Instruindo phpMussel para bloquear quaisquer arquivos que ele descobrir a ser criptografada poderia ajudar a reduzir o risco associado a essas tais possibilidades. False = Não; True = Sim [Padrão]."
- files_block_macros: "Tente bloquear todos os arquivos que contenham macros? Alguns tipos de documentos e planilhas podem conter macros executáveis, fornecendo assim um perigoso vetor potencial de malware. False = Não bloquear [Padrão]; True = Bloquear."
+ files_block_macros:
+  pt-BR: "Tente bloquear todos os arquivos que contenham macros? Alguns tipos de documentos e planilhas podem conter macros executáveis, fornecendo assim um perigoso vetor potencial de malware. False = Não bloquear [Padrão]; True = Bloquear."
+  pt-PT: "Tente bloquear todos os arquivos que contenham macros? Alguns tipos de documentos e folhas de cálculo podem conter macros executáveis, fornecendo assim um perigoso potencial vetor de malware. False = Não bloquear [Padrão]; True = Bloquear."
  files_can_contain_php_file_extensions:
   pt-BR: "Uma lista de extensões de arquivos com permissão para conter código PHP, separadas por vírgulas. Se a detecção de ataques de camaleão PHP estiver ativada, os arquivos que contêm código PHP, que possuem extensões que não estão nesta lista, serão detectados como ataques de camaleão PHP."
   pt-PT: "Uma lista de extensões de arquivos com permissão para conter código PHP, separadas por vírgulas. Se a deteção de ataques de camaleão PHP estiver ativada, os arquivos que contêm código PHP, que possuem extensões que não estão nesta lista, serão detectados como ataques de camaleão PHP."
@@ -171,7 +173,9 @@ config:
  supplementary_cache_options_prefix:
   pt-BR: "O valor especificado aqui será adicionado ao começo das chaves para todas as entradas de cache. Padrão = "phpMussel_". Quando existem várias instalações no mesmo servidor, isso pode ser útil para manter seus caches separados uns dos outros."
   pt-PT: "O valor especificado aqui será adicionado ao começo das chaves para todas as entradas de cache. Padrão = "phpMussel_". Quando existem várias instalações no mesmo servidor, isto pode ser útil para manter os seus caches separados uns dos outros."
- supplementary_cache_options_redis_database_number: "Número do banco de dados Redis. Padrão = 0. Observação: Não é possível usar valores diferentes de 0 com Redis Cluster."
+ supplementary_cache_options_redis_database_number:
+  pt-BR: "Número do banco de dados Redis. Padrão = 0. Nota: Não é possível usar valores diferentes de 0 com Redis Cluster."
+  pt-PT: "Número da base de dados Redis. Padrão = 0. Nota: Não é possível utilizar valores diferentes de 0 com o Redis Cluster."
  supplementary_cache_options_redis_host: "Valor da host do Redis. Padrão = localhost."
  supplementary_cache_options_redis_port: "Valor da porta do Redis. Padrão = "6379"."
  supplementary_cache_options_redis_timeout: "Valor de tempo limite do Redis. Padrão = "2.5"."
@@ -253,47 +257,89 @@ hints_xlists:
   pt-BR: "Se seu sistema só permite certos tipos de arquivos sejam carregado, ou se seu sistema explicitamente nega certos tipos de arquivos, especificando esses tipos de arquivos no whitelists, blacklists, e greylists pode aumentar a velocidado em que a análise é realizada através de permitindo o script para ignorar certos tipos de arquivos. O formato é CSV. (Valores Separados Por Virgula)."
   pt-PT: "Se o seu sistema só permite certos tipos de arquivos sejam carregado, ou se o seu sistema explicitamente nega certos tipos de arquivos, especificando esses tipos de arquivos no whitelists, blacklists, e greylists pode aumentar a velocidado em que a análise é realizada através de permitir o script para ignorar certos tipos de arquivos. O formato é CSV. (Valores Separados Por Virgula)."
  Ordem lógica de processamento.: "Se o tipo de arquivo está na whitelist, não verificar e não bloqueia o arquivo, e não verificar o arquivo contra o blacklist ou greylist. Se o tipo de arquivo está na blacklist, não verificar o arquivo, mas bloqueá-lo de qualquer maneira, e não verificar o arquivo contra o greylist. Se o greylist está vazia ou se o greylist não está vazia e o tipo de arquivo é no greylist, verificar o arquivo como por normal e determinar se a bloqueá-lo com base nos resultados do verificando, mas se o greylist não está vazia e o tipo de arquivo não é no greylist, tratar o arquivo da mesma maneira como está na blacklist, portanto não verificá-lo, mas bloqueá-lo de qualquer maneira."
-Some useful links: |+
- Alguns links úteis:<br />
-     <ul class="pieul">
-       <li><span class="comCat">Ferramentas, recursos, etc para o phpMussel.</span>
-         <ul class="comSub">
-           <li>{{Links.phpMussel.Issues}} – Página de problemas para phpMussel (apoio, assistência, etc).</li>
-           <li>{{Links.phpMussel.SigTool}} – Cria arquivos de assinatura para o phpMussel usando o banco de dados de assinaturas do ClamAV.</li>
-           <li>{{Links.phpMussel.Extras}} – Vários extras.</li>
-         </ul>
-       </li>
-       <li><span class="comCat">Ferramentas, recursos, etc para o ClamAV.</span>
-         <ul class="comSub">
-           <li>{{Links.ClamavNet}} – Página principal para ClamAV (ClamAV® ClamAV é um mecanismo de antivírus de código aberto para detectar trojans, vírus, malware e outras ameaças maliciosas).</li>
-           <li>{{Links.SecuriteInfo}} – Empresa de segurança informática que oferece assinaturas complementares para o ClamAV.</li>
-           <li>{{Links.Sanesecurity}} – Empresa de segurança informática que oferece assinaturas complementares para o ClamAV.</li>
-           <li>{{Links.Malware Expert}} – Oferece assinaturas complementares para o ClamAV e regras suplementares para o ModSecurity.</li>
-         </ul>
-       </li>
-       <li><span class="comCat">Grupos, fóruns, comunidades, etc.</span>
-         <ul class="comSub">
-           <li>{{Links.PHP.Earth.Facebook}} – PHP recursos de aprendizagem e discussão.</li>
-           <li>{{Links.MalwareTips}} – Fórum de discussão focado em malware útil.</li>
-         </ul>
-       </li>
-       <li><span class="comCat">Outras ferramentas, recursos, serviços, etc que são úteis.</span>
-         <ul class="comSub">
-           <li>{{Links.PhishTank}} – Base de dados de phishing utilizada pelo phpMussel URL scanner.</li>
-           <li>{{Links.VirusTotal}} – VirusTotal é um serviço gratuito para analisar arquivos e URLs suspeitos.</li>
-           <li>{{Links.Hybrid Analysis}} – Hybrid Analysis é um serviço gratuito para análise de malware fornecido pela {{Links.Payload Security}}.</li>
-           <li>{{Links.Malwarebytes}} – Especialistas em malware de computador.</li>
-         </ul>
-       </li>
-       <li><span class="comCat">Recursos informativos e de aprendizagem.</span>
-         <ul class="comSub">
-           <li>{{Links.PHP.Earth.Website}} – PHP recursos de aprendizagem e discussão.</li>
-           <li>{{Links.MDN.Homepage}} – Recursos para desenvolvedores, por desenvolvedores. Um recurso fantástico para aprender sobre HTML, CSS, JavaScript, acessibilidade, e muito mais.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Mapas de Vulnerabilidade</a> – Lista as versões seguras/inseguras de vários pacotes (HHVM, PHP, phpMyAdmin, Python, etc).</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Mapas de Compatibilidade</a> – Lista informações de compatibilidade para vários pacotes (CIDRAM, phpMussel, etc).</li>
-         </ul>
-       </li>
-     </ul>
+Some useful links:
+ pt-BR: |+
+  Alguns links úteis:<br />
+      <ul class="pieul">
+        <li><span class="comCat">Ferramentas, recursos, etc para o phpMussel.</span>
+          <ul class="comSub">
+            <li>{{Links.phpMussel.Issues}} – Página de problemas para phpMussel (apoio, assistência, etc).</li>
+            <li>{{Links.phpMussel.SigTool}} – Cria arquivos de assinatura para o phpMussel usando o banco de dados de assinaturas do ClamAV.</li>
+            <li>{{Links.phpMussel.Extras}} – Vários extras.</li>
+          </ul>
+        </li>
+        <li><span class="comCat">Ferramentas, recursos, etc para o ClamAV.</span>
+          <ul class="comSub">
+            <li>{{Links.ClamavNet}} – Página principal para ClamAV (ClamAV® ClamAV é um mecanismo de antivírus de código aberto para detectar trojans, vírus, malware e outras ameaças maliciosas).</li>
+            <li>{{Links.SecuriteInfo}} – Empresa de segurança informática que oferece assinaturas complementares para o ClamAV.</li>
+            <li>{{Links.Sanesecurity}} – Empresa de segurança informática que oferece assinaturas complementares para o ClamAV.</li>
+            <li>{{Links.Malware Expert}} – Oferece assinaturas complementares para o ClamAV e regras suplementares para o ModSecurity.</li>
+          </ul>
+        </li>
+        <li><span class="comCat">Grupos, fóruns, comunidades, etc.</span>
+          <ul class="comSub">
+            <li>{{Links.PHP.Earth.Facebook}} – PHP recursos de aprendizagem e discussão.</li>
+            <li>{{Links.MalwareTips}} – Fórum de discussão focado em malware útil.</li>
+          </ul>
+        </li>
+        <li><span class="comCat">Outras ferramentas, recursos, serviços, etc que são úteis.</span>
+          <ul class="comSub">
+            <li>{{Links.PhishTank}} – Banco de dados de phishing usado pelo phpMussel URL scanner.</li>
+            <li>{{Links.VirusTotal}} – VirusTotal é um serviço gratuito para analisar arquivos e URLs suspeitos.</li>
+            <li>{{Links.Hybrid Analysis}} – Hybrid Analysis é um serviço gratuito para análise de malware fornecido pela {{Links.Payload Security}}.</li>
+            <li>{{Links.Malwarebytes}} – Especialistas em malware de computador.</li>
+          </ul>
+        </li>
+        <li><span class="comCat">Recursos informativos e de aprendizagem.</span>
+          <ul class="comSub">
+            <li>{{Links.PHP.Earth.Website}} – PHP recursos de aprendizagem e discussão.</li>
+            <li>{{Links.MDN.Homepage}} – Recursos para desenvolvedores, por desenvolvedores. Um recurso fantástico para aprender sobre HTML, CSS, JavaScript, acessibilidade, e muito mais.</li>
+            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Mapas de Vulnerabilidade</a> – Lista as versões seguras/inseguras de vários pacotes (HHVM, PHP, phpMyAdmin, Python, etc).</li>
+            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Mapas de Compatibilidade</a> – Lista informações de compatibilidade para vários pacotes (CIDRAM, phpMussel, etc).</li>
+          </ul>
+        </li>
+      </ul>
+ pt-PT: |+
+  Alguns links úteis:<br />
+      <ul class="pieul">
+        <li><span class="comCat">Ferramentas, recursos, etc para o phpMussel.</span>
+          <ul class="comSub">
+            <li>{{Links.phpMussel.Issues}} – Página de problemas para phpMussel (apoio, assistência, etc).</li>
+            <li>{{Links.phpMussel.SigTool}} – Cria arquivos de assinatura para o phpMussel utilizando a base de dados de assinaturas do ClamAV.</li>
+            <li>{{Links.phpMussel.Extras}} – Vários extras.</li>
+          </ul>
+        </li>
+        <li><span class="comCat">Ferramentas, recursos, etc para o ClamAV.</span>
+          <ul class="comSub">
+            <li>{{Links.ClamavNet}} – Página principal para ClamAV (ClamAV® ClamAV é um motor antivírus de código aberto para detetar trojans, vírus, malware e outras ameaças maliciosas).</li>
+            <li>{{Links.SecuriteInfo}} – Empresa de segurança informática que oferece assinaturas complementares para o ClamAV.</li>
+            <li>{{Links.Sanesecurity}} – Empresa de segurança informática que oferece assinaturas complementares para o ClamAV.</li>
+            <li>{{Links.Malware Expert}} – Oferece assinaturas complementares para o ClamAV e regras suplementares para o ModSecurity.</li>
+          </ul>
+        </li>
+        <li><span class="comCat">Grupos, fóruns, comunidades, etc.</span>
+          <ul class="comSub">
+            <li>{{Links.PHP.Earth.Facebook}} – PHP recursos de aprendizagem e discussão.</li>
+            <li>{{Links.MalwareTips}} – Fórum de discussão focado em malware útil.</li>
+          </ul>
+        </li>
+        <li><span class="comCat">Outras ferramentas, recursos, serviços, etc que são úteis.</span>
+          <ul class="comSub">
+            <li>{{Links.PhishTank}} – Base de dados de phishing utilizada pelo phpMussel URL scanner.</li>
+            <li>{{Links.VirusTotal}} – O VirusTotal é um serviço gratuito para analisar arquivos e URLs suspeitos.</li>
+            <li>{{Links.Hybrid Analysis}} – O Hybrid Analysis é um serviço gratuito para análise de malware fornecido pela {{Links.Payload Security}}.</li>
+            <li>{{Links.Malwarebytes}} – Especialistas em malware de computador.</li>
+          </ul>
+        </li>
+        <li><span class="comCat">Recursos informativos e de aprendizagem.</span>
+          <ul class="comSub">
+            <li>{{Links.PHP.Earth.Website}} – PHP recursos de aprendizagem e discussão.</li>
+            <li>{{Links.MDN.Homepage}} – Recursos para desenvolvedores, por desenvolvedores. Um recurso fantástico para aprender sobre HTML, CSS, JavaScript, acessibilidade, e muito mais.</li>
+            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Mapas de Vulnerabilidade</a> – Lista as versões seguras/inseguras de vários pacotes (HHVM, PHP, phpMyAdmin, Python, etc).</li>
+            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Mapas de Compatibilidade</a> – Lista informações de compatibilidade para vários pacotes (CIDRAM, phpMussel, etc).</li>
+          </ul>
+        </li>
+      </ul>
 label:
  %s is available (%s): "%s está disponível (%s)."
  %s is available: "%s está disponível."
@@ -458,8 +504,8 @@ tip:
  Quarantine is currently disabled: "Nota: A quarentena está atualmente desativada, mas pode ser ativada através da página de configuração."
  Quarantine: "Esta página lista todos os arquivos atualmente em quarentena e facilita o gerenciamento desses arquivos."
  See the documentation:
-  pt-BR: "Consulte a <a href="{{Links.phpMussel.Docs Base Path}}readme.pt.md\#user-content-SECTION5" hreflang="pt" rel="noopener external">documentação</a> para obter informações sobre as várias diretrizes de configuração e seus objetivos."
-  pt-PT: "Consulte a <a href="{{Links.phpMussel.Docs Base Path}}readme.pt.md\#user-content-SECTION5" hreflang="pt" rel="noopener external">documentação</a> para obter informações sobre as várias diretrizes de configuração e os seus objetivos."
+  pt-BR: "Consulte a <a href="{{Links.phpMussel.Docs Base Path}}readme.pt.md\#user-content-SECTION5" hreflang="pt" rel="noopener external"><span class="navicon documentation"></span>documentação</a> para obter informações sobre as várias diretrizes de configuração e seus objetivos."
+  pt-PT: "Consulte a <a href="{{Links.phpMussel.Docs Base Path}}readme.pt.md\#user-content-SECTION5" hreflang="pt" rel="noopener external"><span class="navicon documentation"></span>documentação</a> para obter informações sobre as várias diretrizes de configuração e os seus objetivos."
  Signature Information: "A página de informações de assinaturas fornece algumas informações básicas sobre as origens e os tipos das assinaturas atualmente ativas."
  Statistics tracking is currently disabled: "Nota: O monitoramento de estatísticas está desativado atualmente, mas pode ser ativado através da página de configuração."
  Statistics: "Esta página mostra algumas estatísticas de uso básicas relativas à instalação do phpMussel."

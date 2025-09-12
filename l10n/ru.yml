@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Russian language data (last modified: 2025.08.14).
+# This file: Russian language data (last modified: 2025.09.11).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -380,7 +380,7 @@ tip:
  Logs: "Выберите лог-файл из приведенного ниже списка чтобы прочитать содержимое лог-файл."
  Quarantine is currently disabled: "Заметка: В настоящее время карантин отключен, но может быть включен через страницу конфигурации."
  Quarantine: "На этой странице перечислены все файлы, находящиеся в настоящее время в карантине, и облегчает управление этими файлами."
- See the documentation: "Просмотреть <a href="{{Links.phpMussel.Docs Base Path}}readme.ru.md\#user-content-SECTION5" hreflang="ru-RU" rel="noopener external">документации</a> для получения информации о различных директив конфигурации и их целей."
+ See the documentation: "Просмотреть <a href="{{Links.phpMussel.Docs Base Path}}readme.ru.md\#user-content-SECTION5" hreflang="ru-RU" rel="noopener external"><span class="navicon documentation"></span>документации</a> для получения информации о различных директив конфигурации и их целей."
  Signature Information: "На странице информация о сигнатур содержится основная информация об источниках и типах активных сигнатур."
  Statistics tracking is currently disabled: "Заметка: Отслеживание статистики в настоящее время отключено, но может быть включено через страницу конфигурации."
  Statistics: "На этой странице показаны основные статистические данные об использовании вашей phpMussel-инсталляция."

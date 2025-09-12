@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data (last modified: 2025.08.14).
+# This file: German language data (last modified: 2025.09.11).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -379,7 +379,7 @@ tip:
  Logs: "Wählen Sie eine Protokolldatei aus der folgenden Liste um den Inhalt dieser Protokolldatei anzuzeigen."
  Quarantine is currently disabled: "Hinweis: Die Quarantäne ist derzeit deaktiviert, aber kann über die Konfigurationsseite aktiviert werden."
  Quarantine: "Diese Seite erleichtert die Verwaltung von, und listet alle Dateien auf, die sich derzeit in der Quarantäne befinden."
- See the documentation: "Siehe die <a href="{{Links.phpMussel.Docs Base Path}}readme.de.md\#user-content-SECTION5" hreflang="de-DE" rel="noopener external">Dokumentation</a> für Informationen über den verschiedenen Konfigurationseinstellungen und ihren Zwecken."
+ See the documentation: "Siehe die <a href="{{Links.phpMussel.Docs Base Path}}readme.de.md\#user-content-SECTION5" hreflang="de-DE" rel="noopener external"><span class="navicon documentation"></span>Dokumentation</a> für Informationen über den verschiedenen Konfigurationseinstellungen und ihren Zwecken."
  Signature Information: "Die „Signature Information“-Seite bietet einige grundlegende Informationen zu den Quellen und Typen der derzeit aktiven Signaturen."
  Statistics tracking is currently disabled: "Hinweis: Die Statistikverfolgung ist derzeit deaktiviert, aber kann über die Konfigurationsseite aktiviert werden."
  Statistics: "Diese Seite zeigt einige grundlegende Nutzungsstatistiken zu Ihrer phpMussel-Installation."

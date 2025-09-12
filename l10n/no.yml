@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2025.08.20).
+# This file: Norwegian language data (last modified: 2025.09.11).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -379,7 +379,7 @@ tip:
  Logs: "Velg en loggfil fra listen nedenfor for å se innholdet i den loggfilen."
  Quarantine is currently disabled: "Merk: Karantene er for øyeblikket deaktivert, men kan aktiveres via konfigurasjonssiden."
  Quarantine: "Denne siden viser alle filene som er i karantene, og letter administrasjonen av filene."
- See the documentation: "Se <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">dokumentasjonen</a> for informasjon om de ulike konfigurasjonsdirektiver og deres formål."
+ See the documentation: "Se <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external"><span class="navicon documentation"></span>dokumentasjonen</a> for informasjon om de ulike konfigurasjonsdirektiver og deres formål."
  Signature Information: "Informasjonssiden for signatur gir grunnleggende informasjon om kildene og typene til de aktive signaturene."
  Statistics tracking is currently disabled: "Merk: Statistikksporing er for øyeblikket deaktivert, men kan aktiveres via konfigurasjonssiden."
  Statistics: "Denne siden viser noen grunnleggende bruksstatistikk angående phpMussel-installasjonen."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bangla language data (last modified: 2025.08.14).
+# This file: Bangla language data (last modified: 2025.09.11).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -377,7 +377,7 @@ tip:
  Logs: "যে লগ ফাইল এর বিষয়বস্তু দেখতে নীচের তালিকা থেকে একটি লগ ফাইল নির্বাচন করুন।"
  Quarantine is currently disabled: "নোট: সঙ্গরোধ বর্তমানে নিষ্ক্রিয়, কিন্তু কনফিগারেশন পৃষ্ঠার মাধ্যমে সক্ষম করা যেতে পারে।"
  Quarantine: "এই পৃষ্ঠাটি বর্তমানে সঙ্গরোধ মধ্যে সব ফাইল তালিকাভুক্ত এবং যারা ফাইল পরিচালনার সুবিধা।"
- See the documentation: "বিভিন্ন কনফিগারেশন নির্দেশাবলী এবং তাদের উদ্দেশ্য সম্পর্কে আরও তথ্যের জন্য <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">ডকুমেন্টেশনটি</a> দেখুন।"
+ See the documentation: "বিভিন্ন কনফিগারেশন নির্দেশাবলী এবং তাদের উদ্দেশ্য সম্পর্কে আরও তথ্যের জন্য <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external"><span class="navicon documentation"></span>ডকুমেন্টেশনটি</a> দেখুন।"
  Signature Information: "স্বাক্ষর তথ্য পৃষ্ঠা বর্তমানে সক্রিয় স্বাক্ষরগুলির সূত্র এবং প্রকারের বিষয়ে কিছু মৌলিক তথ্য সরবরাহ করে।"
  Statistics tracking is currently disabled: "নোট: পরিসংখ্যান ট্র্যাকিং বর্তমানে অক্ষম আছে, তবে কনফিগারেশন পৃষ্ঠার মাধ্যমে সক্ষম করা যেতে পারে।"
  Statistics: "এই পৃষ্ঠাটি আপনার phpMussel ইনস্টলেশনের সম্পর্কিত কিছু মৌলিক ব্যবহারের পরিসংখ্যান দেখায়।"

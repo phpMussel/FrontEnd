@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Tamil language data (last modified: 2025.08.14).
+# This file: Tamil language data (last modified: 2025.09.11).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -379,7 +379,7 @@ tip:
  Logs: "அந்த பதிவு கோப்பின் உள்ளடக்கங்களைக் காண கீழேயுள்ள பட்டியலிலிருந்து ஒரு பதிவு கோப்பைத் தேர்ந்தெடுக்கவும்."
  Quarantine is currently disabled: "குறிப்பு: தனிமைப்படுத்தல் தற்போது முடக்கப்பட்டுள்ளது, ஆனால் உள்ளமைவு பக்கம் வழியாக இயக்க முடியும்."
  Quarantine: "இந்த பக்கம் தற்போது தனிமைப்படுத்தப்பட்ட அனைத்து கோப்புகளையும் பட்டியலிடுகிறது மற்றும் அந்த கோப்புகளை நிர்வகிக்க உதவுகிறது."
- See the documentation: "பல்வேறு உள்ளமைவு வழிமுறைகள் மற்றும் அவற்றின் நோக்கங்கள் பற்றிய தகவல்களுக்கு <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">ஆவணங்களைக்</a> காண்க."
+ See the documentation: "பல்வேறு உள்ளமைவு வழிமுறைகள் மற்றும் அவற்றின் நோக்கங்கள் பற்றிய தகவல்களுக்கு <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external"><span class="navicon documentation"></span>ஆவணங்களைக்</a> காண்க."
  Signature Information: "கையொப்ப தகவல் பக்கம் தற்போது செயலில் உள்ள கையொப்பங்களின் மூலங்கள் மற்றும் வகைகள் பற்றிய சில அடிப்படை தகவல்களை வழங்குகிறது."
  Statistics tracking is currently disabled: "குறிப்பு: புள்ளிவிவர கண்காணிப்பு தற்போது முடக்கப்பட்டுள்ளது, ஆனால் உள்ளமைவு பக்கம் வழியாக இயக்க முடியும்."
  Statistics: "உங்கள் phpMussel நிறுவல் தொடர்பான சில அடிப்படை பயன்பாட்டு புள்ளிவிவரங்களை இந்த பக்கம் காட்டுகிறது."

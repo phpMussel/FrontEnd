@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Ukrainian language data (last modified: 2025.08.21).
+# This file: Ukrainian language data (last modified: 2025.09.11).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -380,7 +380,7 @@ tip:
  Logs: "Виберіть файл журналу зі списку нижче, щоб переглянути вміст цього файлу журналу."
  Quarantine is currently disabled: "Зауважте: Карантин наразі вимкнено, але його можна ввімкнути на сторінці конфігурації."
  Quarantine: "На цій сторінці перераховано всі файли, які зараз перебувають у карантині, і надано спосіб керування цими файлами."
- See the documentation: "Перегляньте <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">документацію</a> для отримання інформації про різні директиви конфігурації та їх призначення."
+ See the documentation: "Перегляньте <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external"><span class="navicon documentation"></span>документацію</a> для отримання інформації про різні директиви конфігурації та їх призначення."
  Signature Information: "Ця сторінка надає базову інформацію про джерела та типи поточних активних сигнатури."
  Statistics tracking is currently disabled: "Зауважте: Відстеження статистики наразі вимкнено, але його можна ввімкнути на сторінці конфігурації."
  Statistics: "На цій сторінці показано деякі базові статистичні дані щодо вашого встановлення phpMussel."

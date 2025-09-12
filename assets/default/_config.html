@@ -6,14 +6,14 @@
   </div>
   </nav>
   <main class="extend">
-    <div class="s flexstretch">{state_msg}</div>
     <form action="?phpmussel-page=config" method="POST">
       <input type="hidden" name="updatingConfig" value="1" />
       <div class="col scrollTrans">
+        <div class="s flexstretch">{state_msg}</div>
         <div class="ng2 s">{link.Configuration}</div>
         <div class="ng1 s">
           {tip.See the documentation}<hr /><em>{label.Active configuration file} <span class="txtRd">{ActiveConfigFile}</span></em><hr />
-          <div class="bNav">
+          <div class="reverse">
             <input type="submit" value="{field.Update}" /><br />
             <br />
             <input type="checkbox" name="orphaned" id="orphaned" class="auto" /><label class="s" for="orphaned">{checkbox.Delete orphaned values}</label>

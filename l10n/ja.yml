@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2025.08.19).
+# This file: Japanese language data (last modified: 2025.09.11).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -377,7 +377,7 @@ tip:
  Logs: "そのログの内容を表示するために、次のリストからログを選択します。"
  Quarantine is currently disabled: "注意：検疫は現在無効になっていますが、コンフィギュレーション・ページで有効にすることができます。"
  Quarantine: "管理を容易にするために、現在検疫されているすべてのファイルがこのページにリストされています。"
- See the documentation: "コンフィギュレーション・ディレクティブの詳細については、<a href="{{Links.phpMussel.Docs Base Path}}readme.ja.md\#user-content-SECTION5" hreflang="ja-JP" rel="noopener external">ドキュメント</a>を参照してください。"
+ See the documentation: "コンフィギュレーション・ディレクティブの詳細については、<a href="{{Links.phpMussel.Docs Base Path}}readme.ja.md\#user-content-SECTION5" hreflang="ja-JP" rel="noopener external"><span class="navicon documentation"></span>ドキュメント</a>を参照してください。"
  Signature Information: "シグネチャ情報ページには、現在アクティブなシグネチャのソースとタイプに関する基本的な情報が表示されます。"
  Statistics tracking is currently disabled: "注意：統計トラッキングは現在オフラインですが、コンフィギュレーション・ページで有効にすることができます。"
  Statistics: "このページには、phpMusselのインストールに関する基本的な使用状況の統計情報が表示されます。"

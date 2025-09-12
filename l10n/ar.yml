@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2025.08.14).
+# This file: Arabic language data (last modified: 2025.09.11).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -379,7 +379,7 @@ tip:
  Logs: "اختار سجلات من القائمة أدناه لعرضها."
  Quarantine is currently disabled: "ملحوظة: تم تعطيل وحدة العزل حاليا، ولكن يمكن تمكينها عبر صفحة التهيئة."
  Quarantine: "تسرد هذه الصفحة جميع الملفات الموجودة حاليا في وحدة العزل وتسهل إدارة تلك الملفات."
- See the documentation: "راجع <a href="{{Links.phpMussel.Docs Base Path}}readme.ar.md\#user-content-SECTION5" hreflang="ar" rel="noopener external">وثائق</a> للحصول على معلومات حول مختلف توجيهات التكوين ونيتهم."
+ See the documentation: "راجع <a href="{{Links.phpMussel.Docs Base Path}}readme.ar.md\#user-content-SECTION5" hreflang="ar" rel="noopener external"><span class="navicon documentation"></span>وثائق</a> للحصول على معلومات حول مختلف توجيهات التكوين ونيتهم."
  Signature Information: "توفر صفحة معلومات التوقيع بعض المعلومات الأساسية حول مصادر وأنواع التوقيعات النشطة حاليًا."
  Statistics tracking is currently disabled: "ملاحظة: يتم تعطيل تتبع الإحصاءات حاليا، ولكن يمكن تمكينه عبر صفحة التكوين."
  Statistics: "تعرض هذه الصفحة بعض إحصاءات الاستخدام الأساسية المتعلقة بتثبيت phpMussel."

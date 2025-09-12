@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Galician language data (last modified: 2025.08.14).
+# This file: Galician language data (last modified: 2025.09.11).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -379,7 +379,7 @@ tip:
  Logs: "Seleccione un ficheiro de rexistro da lista a continuación para ver o contido dese ficheiro de rexistro."
  Quarantine is currently disabled: "Nota: A corentena está actualmente desactivada, pero pódese activar a través da páxina de configuración."
  Quarantine: "Esta páxina enumera todos os ficheiros actualmente en corentena e facilita a xestión destes ficheiros."
- See the documentation: "Consulte a <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">documentación</a> para obter información sobre as distintas directivas de configuración e os seus propósitos."
+ See the documentation: "Consulte a <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external"><span class="navicon documentation"></span>documentación</a> para obter información sobre as distintas directivas de configuración e os seus propósitos."
  Signature Information: "A páxina de información de sinatura ofrece información básica sobre as fontes e os tipos das sinaturas activas actualmente."
  Statistics tracking is currently disabled: "Nota: O seguimento das estatísticas está actualmente desactivado, pero pódese activar a través da páxina de configuración."
  Statistics: "Esta páxina mostra algunhas estatísticas básicas de uso sobre a súa instalación de phpMussel."

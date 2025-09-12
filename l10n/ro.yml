@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data (last modified: 2025.08.14).
+# This file: Romanian language data (last modified: 2025.09.11).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -380,7 +380,7 @@ tip:
  Logs: "Selectați un fișier jurnal din lista de mai jos pentru a vedea conținutul acelui fișier jurnal."
  Quarantine is currently disabled: "Notă: Carantina este în prezent dezactivată, dar poate fi activată prin pagina de configurare."
  Quarantine: "Această pagină listează toate fișierele aflate în carantină și facilitează gestionarea acelor fișiere."
- See the documentation: "Consultați <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">documentația</a> pentru informații despre diferitele directive de configurare și scopurile acestora."
+ See the documentation: "Consultați <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external"><span class="navicon documentation"></span>documentația</a> pentru informații despre diferitele directive de configurare și scopurile acestora."
  Signature Information: "Această pagină oferă câteva informații de bază despre sursele și tipurile de semnături active în prezent."
  Statistics tracking is currently disabled: "Notă: Urmărirea statisticilor este în prezent dezactivată, dar poate fi activată prin pagina de configurare."
  Statistics: "Această pagină prezintă câteva statistici de utilizare de bază referitoare la instalarea dvs. phpMussel."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2025.08.14).
+# This file: Dutch language data (last modified: 2025.09.11).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -379,7 +379,7 @@ tip:
  Logs: "Selecteer een logbestand uit de onderstaande lijst om de inhoud van de logbestand te bekijken."
  Quarantine is currently disabled: "Notitie: Quarantaine is momenteel uitgeschakeld, maar kan via de configuratiepagina worden ingeschakeld."
  Quarantine: "Deze pagina bevat een lijst met alle bestanden die momenteel in quarantaine staan en het beheer van die bestanden vergemakkelijkt."
- See the documentation: "Zie de <a href="{{Links.phpMussel.Docs Base Path}}readme.nl.md\#user-content-SECTION5" hreflang="nl-NL" rel="noopener external">documentatie</a> voor informatie over de verschillende configuratie richtlijnen en hun doeleinden."
+ See the documentation: "Zie de <a href="{{Links.phpMussel.Docs Base Path}}readme.nl.md\#user-content-SECTION5" hreflang="nl-NL" rel="noopener external"><span class="navicon documentation"></span>documentatie</a> voor informatie over de verschillende configuratie richtlijnen en hun doeleinden."
  Signature Information: "De signature informatie pagina biedt enige basisinformatie over de bronnen en typen van de momenteel actieve signatures."
  Statistics tracking is currently disabled: "Notitie: Statistische tracking is momenteel uitgeschakeld, maar kan via de configuratiepagina worden ingeschakeld."
  Statistics: "Deze pagina bevat een aantal basisgebruiksstatistieken voor uw phpMussel-installatie."

@@ -1,19 +1,17 @@
-        <tr>
-          <form action="?phpmussel-page=quarantine" method="POST"><input name="qfu" type="hidden" value="{QFU-Name}" />
-            <td class="h3">
-              <span class="s">{QFU-Name}</span><br />
-              {label.Upload date} {Upload-Date}<br />
-              {label.Upload origin} {Upload-Origin}<br />
-              {label.Upload size} {Upload-Size}<br />
-              {label.Upload hash} {Upload-MD5}<br />
-              {label.Size in quarantine} {QFU-Size}<br />
-            </td>
-            <td class="h3f">
-              <select id="{QFU-JS-ID}-S" name="do" onchange="javascript:qOpt('{QFU-JS-ID}')">
-                <option value="delete-file" class="txtRd">{field.Delete}</option>
-                <option value="restore-file">{field.Restore}</option>
-                <option value="download-file">{field.Download}</option>
-              </select><input type="text" name="qkey" id="{QFU-JS-ID}" style="display:none" placeholder="{field.Quarantine key}" /><input type="submit" value="{field.OK}" class="auto" />
-            </td>
-          </form>
-        </tr>
+      <div class="h1 s">
+        <span class="s">{QFU-Name}</span><br />
+        {label.Upload date} {Upload-Date}<br />
+        {label.Upload origin} {Upload-Origin}<br />
+        {label.Upload size} {Upload-Size}<br />
+        {label.Upload hash} {Upload-MD5}<br />
+        {label.Size in quarantine} {QFU-Size}<br />
+      </div>
+      <div class="h1f s">
+        <form action="?phpmussel-page=quarantine" method="POST"><input name="qfu" type="hidden" value="{QFU-Name}" />
+          <select id="{QFU-JS-ID}-S" name="do" onchange="javascript:qOpt('{QFU-JS-ID}')">
+            <option value="delete-file" class="txtRd">{field.Delete}</option>
+            <option value="restore-file">{field.Restore}</option>
+            <option value="download-file">{field.Download}</option>
+          </select><input type="text" name="qkey" id="{QFU-JS-ID}" style="display:none" placeholder="{field.Quarantine key}" /><input type="submit" value="{field.OK}" class="auto" />
+        </form>
+      </div>

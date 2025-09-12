@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2025.08.14).
+# This file: Korean language data (last modified: 2025.09.11).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -377,7 +377,7 @@ tip:
  Logs: "로그의 내용을 보려면 다음 목록에서 로그를 선택합니다."
  Quarantine is currently disabled: "노트\_: 격리는 현재 비활성화되어, 있지만 구성 페이지를 통해 활성화할 수 있습니다."
  Quarantine: "관리를 용이하게하기 위해, 현재 격리 저장소에있는 모든 파일이이 페이지에 나열됩니다."
- See the documentation: "설정 지시어에 대한 자세한 내용은 <a href="{{Links.phpMussel.Docs Base Path}}readme.ko.md\#user-content-SECTION5" hreflang="ko-KR" rel="noopener external">문서를</a> 참조하십시오."
+ See the documentation: "설정 지시어에 대한 자세한 내용은 <a href="{{Links.phpMussel.Docs Base Path}}readme.ko.md\#user-content-SECTION5" hreflang="ko-KR" rel="noopener external"><span class="navicon documentation"></span>문서를</a> 참조하십시오."
  Signature Information: "서명 정보 페이지는 현재 활성화 된 서명의 소스 및 유형에 대한 몇 가지 기본 정보를 제공합니다."
  Statistics tracking is currently disabled: "노트\_: 통계 추적은 현재 비활성화되어, 있지만 구성 페이지를 통해 활성화할 수 있습니다."
  Statistics: "이 페이지는 phpMussel 설치와 관련된 몇 가지 기본 사용 통계를 보여줍니다."

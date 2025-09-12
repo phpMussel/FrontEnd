@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bulgarian language data (last modified: 2025.08.14).
+# This file: Bulgarian language data (last modified: 2025.09.11).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -379,7 +379,7 @@ tip:
  Logs: "Изберете регистрационни файл от списъка по-долу, за да видите съдържанието на този регистрационни файл."
  Quarantine is currently disabled: "Забележка: Карантината в момента е деактивирана, но може да се активира чрез страницата за конфигурация."
  Quarantine: "Тази страница изброява всички файлове в карантина и улеснява управлението на тези файлове."
- See the documentation: "Вижте <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">документацията</a> за информация относно различните директиви за конфигурация и техните цели."
+ See the documentation: "Вижте <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external"><span class="navicon documentation"></span>документацията</a> за информация относно различните директиви за конфигурация и техните цели."
  Signature Information: "Страницата с информация за сигнатурите предоставя основна информация за източниците и типовете на текущо активните сигнатури."
  Statistics tracking is currently disabled: "Забележка: Проследяването на статистика в момента е деактивирано, но може да се активира чрез страницата за конфигурация."
  Statistics: "Тази страница показва някои основни статистически данни за използването на вашата инсталация на phpMussel."

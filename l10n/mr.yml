@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Marathi language data (last modified: 2025.08.14).
+# This file: Marathi language data (last modified: 2025.09.11).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -379,7 +379,7 @@ tip:
  Logs: "त्या लॉग फाइलमधील सामग्री पाहण्यासाठी खालील यादीतून एक लॉग फाइल निवडा."
  Quarantine is currently disabled: "टीप: क्वारंटाइन सध्या अक्षम केले आहे, परंतु कॉन्फिगरेशन पृष्ठाद्वारे ते सक्षम केले जाऊ शकते."
  Quarantine: "हे पान सध्या क्वारंटाइनमध्ये असलेल्या सर्व फायलींची यादी देते आणि त्या फायलींचे व्यवस्थापन सुलभ करते."
- See the documentation: "विविध कॉन्फिगरेशन निर्देश आणि त्यांच्या उद्देशांबद्दल माहितीसाठी <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">दस्तऐवजीकरण</a> पहा."
+ See the documentation: "विविध कॉन्फिगरेशन निर्देश आणि त्यांच्या उद्देशांबद्दल माहितीसाठी <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external"><span class="navicon documentation"></span>दस्तऐवजीकरण</a> पहा."
  Signature Information: "स्वाक्षरी माहिती पृष्ठ सध्या सक्रिय स्वाक्षरींचे स्रोत आणि प्रकार याबद्दल काही मूलभूत माहिती प्रदान करते."
  Statistics tracking is currently disabled: "टीप: सांख्यिकी ट्रॅकिंग सध्या अक्षम केले आहे, परंतु कॉन्फिगरेशन पृष्ठाद्वारे ते सक्षम केले जाऊ शकते."
  Statistics: "हे पान तुमच्या phpMussel इंस्टॉलेशनशी संबंधित काही मूलभूत वापर आकडेवारी दर्शविते."

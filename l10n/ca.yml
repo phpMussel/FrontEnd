@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Catalan language data (last modified: 2025.08.14).
+# This file: Catalan language data (last modified: 2025.09.11).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -379,7 +379,7 @@ tip:
  Logs: "Seleccioneu un fitxer de registre de la llista següent per veure el contingut d'aquest fitxer de registre."
  Quarantine is currently disabled: "Nota: Actualment, la quarantena està desactivada, però es pot activar mitjançant la pàgina de configuració."
  Quarantine: "Aquesta pàgina enumera tots els fitxers actualment en quarantena i facilita la gestió d'aquests fitxers."
- See the documentation: "Consulteu la <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">documentació</a> per obtenir informació sobre les diferents directives de configuració i els seus propòsits."
+ See the documentation: "Consulteu la <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external"><span class="navicon documentation"></span>documentació</a> per obtenir informació sobre les diferents directives de configuració i els seus propòsits."
  Signature Information: "La pàgina d'informació de signatures proporciona informació bàsica sobre les fonts i els tipus de signatures actives actualment."
  Statistics tracking is currently disabled: "Nota: Actualment, el seguiment d'estadístiques està desactivat, però es pot activar mitjançant la pàgina de configuració."
  Statistics: "Aquesta pàgina mostra algunes estadístiques bàsiques d'ús relacionades amb la vostra instal·lació de phpMussel."

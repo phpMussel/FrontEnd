@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2025.08.14).
+# This file: Vietnamese language data (last modified: 2025.09.11).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -337,7 +337,7 @@ response:
  Password field empty: "Mật khẩu là trống!"
  Password successfully updated: "Mật khẩu cập nhật thành công!"
  Permissions not adequate to perform asynchronous requests: "Quyền không đủ để thực hiện các yêu cầu không đồng bộ. Hãy thử đăng nhập lại."
- Please enter a valid quarantine key: "Vui lòng nhập khóa cách ly hợp lệ."
+ Please enter a valid quarantine key: "Vui lòng nhập khóa kiểm dịch hợp lệ."
  Statistics cleared: "Thống kê đã được xóa."
  Successfully authenticated: "Đã xác thực thành công."
  That account doesn_t exist: "Tài khoản này không tồn tại."
@@ -377,7 +377,7 @@ tip:
  Logs: "Chọn một bản ghi từ danh sách dưới đây để xem nội dung của bản ghi này."
  Quarantine is currently disabled: "Lưu ý: Kiểm dịch hiện đang bị tắt, nhưng có thể được kích hoạt thông qua trang cấu hình."
  Quarantine: "Trang này liệt kê tất cả các tập tin hiện đang được trong kiểm dịch và tạo thuận lợi cho việc quản lý các tập tin đó."
- See the documentation: "Xem <a href="{{Links.phpMussel.Docs Base Path}}readme.vi.md\#user-content-SECTION5" hreflang="vi-VN" rel="noopener external">tài liệu</a> để biết thông tin về các chỉ thị cấu hình khác nhau và mục đích của họ."
+ See the documentation: "Xem <a href="{{Links.phpMussel.Docs Base Path}}readme.vi.md\#user-content-SECTION5" hreflang="vi-VN" rel="noopener external"><span class="navicon documentation"></span>tài liệu</a> để biết thông tin về các chỉ thị cấu hình khác nhau và mục đích của họ."
  Signature Information: "Trang thông tin chữ ký cung cấp một số thông tin cơ bản về các nguồn và loại chữ ký hiện đang kích hoạt."
  Statistics tracking is currently disabled: "Lưu ý: Giám sát thống kê hiện bị vô hiệu hóa, nhưng có thể được kích hoạt thông qua trang cấu hình."
  Statistics: "Trang này cho thấy một số thống kê của sử dụng cơ bản liên quan đến cài đặt phpMussel của bạn."

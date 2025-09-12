@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Croatian language data (last modified: 2025.08.14).
+# This file: Croatian language data (last modified: 2025.09.11).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -380,7 +380,7 @@ tip:
  Logs: "Odaberite datoteku dnevnika s donjeg popisa kako biste vidjeli sadržaj te datoteke dnevnika."
  Quarantine is currently disabled: "Bilješka: Karantena je trenutno onemogućena, ali se može omogućiti putem konfiguracijske stranice."
  Quarantine: "Ova stranica navodi sve datoteke koje su trenutno u karanteni i olakšava upravljanje tim datotekama."
- See the documentation: "Pogledajte <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">dokumentaciju</a> za informacije o raznim konfiguracijskim direktivama i njihovim svrhama."
+ See the documentation: "Pogledajte <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external"><span class="navicon documentation"></span>dokumentaciju</a> za informacije o raznim konfiguracijskim direktivama i njihovim svrhama."
  Signature Information: "Stranica s informacijama o potpisu pruža neke osnovne informacije o izvorima i vrstama trenutno aktivnih potpisa."
  Statistics tracking is currently disabled: "Bilješka: Praćenje statistike trenutno je onemogućeno, ali se može omogućiti putem konfiguracijske stranice."
  Statistics: "Ova stranica prikazuje neke osnovne statistike korištenja u vezi s vašom phpMussel instalacijom."

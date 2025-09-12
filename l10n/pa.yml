@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Punjabi language data (last modified: 2025.08.14).
+# This file: Punjabi language data (last modified: 2025.09.11).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -379,7 +379,7 @@ tip:
  Logs: "ਉਸ ਲੌਗ ਫਾਈਲ ਦੀ ਸਮੱਗਰੀ ਨੂੰ ਦੇਖਣ ਲਈ ਹੇਠਾਂ ਦਿੱਤੀ ਸੂਚੀ ਵਿੱਚੋਂ ਇੱਕ ਲੌਗ ਫਾਈਲ ਚੁਣੋ।"
  Quarantine is currently disabled: "ਨੋਟ: ਕੁਆਰੰਟੀਨ ਵਰਤਮਾਨ ਵਿੱਚ ਅਕਿਰਿਆਸ਼ੀਲ ਹੈ, ਪਰ ਕੌਂਫਿਗਰੇਸ਼ਨ ਪੰਨੇ ਦੁਆਰਾ ਕਿਰਿਆਸ਼ੀਲ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
  Quarantine: "ਇਹ ਪੰਨਾ ਵਰਤਮਾਨ ਵਿੱਚ ਕੁਆਰੰਟੀਨ ਵਿੱਚ ਸਾਰੀਆਂ ਫਾਈਲਾਂ ਨੂੰ ਸੂਚੀਬੱਧ ਕਰਦਾ ਹੈ ਅਤੇ ਉਹਨਾਂ ਫਾਈਲਾਂ ਦੇ ਪ੍ਰਬੰਧਨ ਦੀ ਸਹੂਲਤ ਦਿੰਦਾ ਹੈ।"
- See the documentation: "ਵੱਖ-ਵੱਖ ਕੌਂਫਿਗਰੇਸ਼ਨ ਨਿਰਦੇਸ਼ਾਂ ਅਤੇ ਉਹਨਾਂ ਦੇ ਉਦੇਸ਼ਾਂ ਬਾਰੇ ਜਾਣਕਾਰੀ ਲਈ <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">ਦਸਤਾਵੇਜ਼</a> ਵੇਖੋ।"
+ See the documentation: "ਵੱਖ-ਵੱਖ ਕੌਂਫਿਗਰੇਸ਼ਨ ਨਿਰਦੇਸ਼ਾਂ ਅਤੇ ਉਹਨਾਂ ਦੇ ਉਦੇਸ਼ਾਂ ਬਾਰੇ ਜਾਣਕਾਰੀ ਲਈ <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external"><span class="navicon documentation"></span>ਦਸਤਾਵੇਜ਼</a> ਵੇਖੋ।"
  Signature Information: "ਦਸਤਖਤ ਜਾਣਕਾਰੀ ਪੰਨਾ ਮੌਜੂਦਾ ਸਰਗਰਮ ਦਸਤਖਤਾਂ ਦੇ ਸਰੋਤਾਂ ਅਤੇ ਕਿਸਮਾਂ ਬਾਰੇ ਕੁਝ ਬੁਨਿਆਦੀ ਜਾਣਕਾਰੀ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ।"
  Statistics tracking is currently disabled: "ਨੋਟ: ਅੰਕੜੇ ਟ੍ਰੈਕਿੰਗ ਵਰਤਮਾਨ ਵਿੱਚ ਅਕਿਰਿਆਸ਼ੀਲ ਹੈ, ਪਰ ਇਸਨੂੰ ਕੌਂਫਿਗਰੇਸ਼ਨ ਪੰਨੇ ਰਾਹੀਂ ਕਿਰਿਆਸ਼ੀਲ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
  Statistics: "ਇਹ ਪੰਨਾ ਤੁਹਾਡੀ phpMussel ਇੰਸਟਾਲੇਸ਼ਨ ਦੇ ਸੰਬੰਧ ਵਿੱਚ ਕੁਝ ਬੁਨਿਆਦੀ ਵਰਤੋਂ ਦੇ ਅੰਕੜੇ ਦਿਖਾਉਂਦਾ ਹੈ।"

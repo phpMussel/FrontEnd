@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Gujarati language data (last modified: 2025.08.14).
+# This file: Gujarati language data (last modified: 2025.09.11).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -379,7 +379,7 @@ tip:
  Logs: "તે લોગ ફાઇલની સામગ્રીઓ જોવા માટે નીચેની યાદીમાંથી લોગ ફાઇલ પસંદ કરો."
  Quarantine is currently disabled: "નૉૅધ: સંસર્ગનિષેધ હાલમાં અક્ષમ છે, પરંતુ રૂપરેખાંકન પૃષ્ઠ દ્વારા સક્ષમ કરી શકાય છે."
  Quarantine: "આ પૃષ્ઠ હાલમાં સંસર્ગનિષેધમાં રહેલી તમામ ફાઇલોની યાદી આપે છે અને તે ફાઇલોના સંચાલનની સુવિધા આપે છે."
- See the documentation: "વિવિધ રૂપરેખાંકન નિર્દેશો અને તેમના હેતુઓ વિશેની માહિતી માટે <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">દસ્તાવેજીકરણ</a> જુઓ."
+ See the documentation: "વિવિધ રૂપરેખાંકન નિર્દેશો અને તેમના હેતુઓ વિશેની માહિતી માટે <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external"><span class="navicon documentation"></span>દસ્તાવેજીકરણ</a> જુઓ."
  Signature Information: "સિગ્નેચર માહિતી પૃષ્ઠ વર્તમાનમાં સક્રિય સિગ્નેચરના સ્ત્રોતો અને પ્રકારો વિશે કેટલીક મૂળભૂત માહિતી પ્રદાન કરે છે."
  Statistics tracking is currently disabled: "નૉૅધ: આંકડા ટ્રેકિંગ હાલમાં અક્ષમ છે, પરંતુ રૂપરેખાંકન પૃષ્ઠ દ્વારા સક્ષમ કરી શકાય છે."
  Statistics: "આ પૃષ્ઠ તમારા phpMussel ઇન્સ્ટોલેશન સંબંધિત કેટલાક મૂળભૂત વપરાશના આંકડા દર્શાવે છે."

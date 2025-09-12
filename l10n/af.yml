@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2025.08.14).
+# This file: Afrikaans language data (last modified: 2025.09.11).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -379,7 +379,7 @@ tip:
  Logs: "Kies 'n loglêer uit die lys hieronder om die inhoud van daardie loglêer te sien."
  Quarantine is currently disabled: "Kennis neem: Kwarantyn is tans gedeaktiveer, maar kan via die konfigurasiebladsy geaktiveer word."
  Quarantine: "Hierdie bladsy lys alle lêers wat tans in kwarantyn is en fasiliteer die bestuur van daardie lêers."
- See the documentation: "Sien die <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external">dokumentasie</a> vir inligting oor die verskillende konfigurasie-opsies en hul doeleindes."
+ See the documentation: "Sien die <a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-SECTION5" hreflang="en" rel="noopener external"><span class="navicon documentation"></span>dokumentasie</a> vir inligting oor die verskillende konfigurasie-opsies en hul doeleindes."
  Signature Information: "Die handtekeninginligtingbladsy verskaf basiese inligting oor die bronne en tipes van die tans aktiewe handtekeninge."
  Statistics tracking is currently disabled: "Kennis neem: Statistieknasporing is tans gedeaktiveer, maar kan via die konfigurasiebladsy geaktiveer word."
  Statistics: "Hierdie bladsy wys basiese gebruikstatistieke rakende jou phpMussel-installasie."
