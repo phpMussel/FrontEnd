@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese language data (last modified: 2025.09.11).
+# This file: Chinese language data (last modified: 2025.09.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -94,7 +94,7 @@ config:
  files_corrupted_exe:
   zh-Hans: "损坏文件和处理错误。​False（假）=忽略；True（真）=受阻【默认】。​检测和受阻潜在的损坏移植可执行【PE】文件吗？​时常（但不始终），​当某些零件的一个移植可执行【PE】文件是损坏或不能被正确处理，​它可以建议建议的一个病毒感染。​过程使用通过最杀毒程序以检测病毒在PE文件需要处理那些文件在某些方式，​哪里，​如果程序员的一个病毒是意识的，​将特别尝试防止，​以允许他们的病毒留不检测。"
   zh-Hant: "損壞文件和處理錯誤。​False（假）=忽略；True（真）=受阻【默認】。​檢測和受阻潛在的損壞移植可執行【PE】文件嗎？​時常（但不始終），​當某些零件的一個移植可執行【PE】文件是損壞或不能被正確處理，​它可以建議建議的一個病毒感染。​過程使用通過最殺毒程序以檢測病毒在PE文件需要處理那些文件在某些方式，​哪裡，​如果程序員的一個病毒是意識的，​將特別嘗試防止，​以允許他們的病毒留不檢測。"
- files_decode_threshold: {"zh-Hans": "在原始数据中解码命令的长度限制（如果有任何引人注目性能问题当扫描）。 默认 = 512KB。​零或空值将关闭门槛（去除任何这样的限基于文件大小）。", "zh-Hant": "在原始數據中解碼命令的長度限制（如果有任何引人注目性能問題當掃描）。 默認 = 512KB。​零或空值將關閉門檻（去除任何這樣的限基於文件大小）。"}
+ files_decode_threshold: {"zh-Hans": "在原始数据中解码命令的长度限制（如果有任何引人注目性能问题当扫描）。 标准 = 512KB。​零或空值将关闭门槛（去除任何这样的限基于文件大小）。", "zh-Hant": "在原始數據中解碼命令的長度限制（如果有任何引人注目性能問題當掃描）。 標準 = 512KB。​零或空值將關閉門檻（去除任何這樣的限基於文件大小）。"}
  files_entropy_filesize_limit:
   zh-Hans: "使用规范化数据的签名的熵文件大小限制（默认为256KB）。​当熵限制和熵文件大小限制都超出时，为了降低误报的风险，一些使用标准化数据的签名将被忽略。"
   zh-Hant: "使用規範化資料的簽名的熵檔案大小限制（默認為256KB）。​當熵限制和熵檔案大小限制都超出時，為了降低誤報的風險，一些使用標準化資料的簽章將被忽略。"
@@ -110,20 +110,20 @@ config:
  files_filetype_blacklist: {"zh-Hans": "黑名单：", "zh-Hant": "黑名單："}
  files_filetype_greylist: {"zh-Hans": "灰名单：", "zh-Hant": "灰名單："}
  files_filetype_whitelist: {"zh-Hans": "白名单：", "zh-Hant": "白名單："}
- files_max_files_in_archives: {"zh-Hans": "在中止扫描之前从档案中扫描的最大文件数。​默认=0（没有最大文件数）。", "zh-Hant": "在中止掃描之前從檔案中掃描的最大文件數。​默認=0（沒有最大文件數）。"}
- files_max_recursion: {"zh-Hans": "最大存档递归深度限。​默认=3。", "zh-Hant": "最大存檔遞歸深度限。​默認=3。"}
+ files_max_files_in_archives: {"zh-Hans": "在中止扫描之前从档案中扫描的最大文件数。​标准=0（没有最大文件数）。", "zh-Hant": "在中止掃描之前從檔案中掃描的最大文件數。​標準=0（沒有最大文件數）。"}
+ files_max_recursion: {"zh-Hans": "最大存档递归深度限。​标准=3。", "zh-Hant": "最大存檔遞歸深度限。​標準=3。"}
  files_only_allow_images:
   zh-Hans: "设置为true时，扫描程序遇到的任何非图像文件将被立即标记，而不会被扫描。​在某些情况下，这可能有助于减少完成扫描所需的时间。​默认情况下设置为false。"
   zh-Hant: "設置為true時，掃描程序遇到的任何非圖像文件將被立即標記，而不會被掃描。​在某些情況下，這可能有助於減少完成掃描所需的時間。​默認情況下設置為false。"
  files_scannable_threshold:
-  zh-Hans: "原始数据读取和扫描的最大长度（如果有任何引人注目性能问题当扫描）。 默认 = 32MB。 零或空值将关闭门槛。​按说，​这个数值应不会少于平均文件大小的文件上传您想和期待收到您的服务器或网站，​应不会多于<code>filesize_limit</code>指令，​和应不会多于大致五分之一的总允许内存分配获授PHP通过"php.ini"配置文件。​这个指令存在为尝试防止phpMussel从用的太多内存（这个将防止它从能够顺利扫描文件以上的一个特别文件大小）。"
-  zh-Hant: "原始數據讀取和掃描的最大長度（如果有任何引人注目性能問題當掃描）。 默認 = 32MB。 零或空值將關閉門檻。​按說，​這個數值應不會少於平均文件大小的文件上傳您想和期待收到您的服務器或網站，​應不會多於<code>filesize_limit</code>指令，​和應不會多於大致五分之一的總允許內存分配獲授PHP通過"php.ini"配置文件。​這個指令存在為嘗試防止phpMussel從用的太多內存（這個將防止它從能夠順利掃描文件以上的一個特別文件大小）。"
+  zh-Hans: "原始数据读取和扫描的最大长度（如果有任何引人注目性能问题当扫描）。 标准 = 32MB。 零或空值将关闭门槛。​按说，​这个数值应不会少于平均文件大小的文件上传您想和期待收到您的服务器或网站，​应不会多于<code>filesize_limit</code>指令，​和应不会多于大致五分之一的总允许内存分配获授PHP通过"php.ini"配置文件。​这个指令存在为尝试防止phpMussel从用的太多内存（这个将防止它从能够顺利扫描文件以上的一个特别文件大小）。"
+  zh-Hant: "原始數據讀取和掃描的最大長度（如果有任何引人注目性能問題當掃描）。 標準 = 32MB。 零或空值將關閉門檻。​按說，​這個數值應不會少於平均文件大小的文件上傳您想和期待收到您的服務器或網站，​應不會多於<code>filesize_limit</code>指令，​和應不會多於大致五分之一的總允許內存分配獲授PHP通過"php.ini"配置文件。​這個指令存在為嘗試防止phpMussel從用的太多內存（這個將防止它從能夠順利掃描文件以上的一個特別文件大小）。"
  frontend: "前端的配置。"
  frontend_custom_footer: {"zh-Hans": "在所有前端页面的末尾作为HTML插入。​如果您想在所有此类页面中包含法律声明、联系链接、业务信息、或类似，这可能会很有用。", "zh-Hant": "在所有前端頁面的末尾作為HTML插入。​如果您想在所有此類頁面中包含法律聲明、聯繫鏈接、業務信息、或類似，這可能會很有用。"}
  frontend_custom_header: {"zh-Hans": "在所有前端页面的开头作为HTML插入。​如果您想在所有此类页面中包含网站徽标、个性化标题、脚本、或类似，这可能会很有用。", "zh-Hant": "在所有前端頁面的開頭作為HTML插入。​如果您想在所有此類頁面中包含網站徽標、個性化標題、腳本、或類似，這可能會很有用。"}
  frontend_default_algo: {"zh-Hans": "定义要用于所有未来密码和会话的算法。", "zh-Hant": "定義要用於所有未來密碼和會話的算法。"}
  frontend_frontend_log: {"zh-Hans": "前端登录尝试的录音文件。​指定一个文件名，​或留空以禁用。", "zh-Hant": "前端登錄嘗試的錄音文件。​指定一個檔案名稱，​或留空以禁用。"}
- frontend_magnification: {"zh-Hans": "字体放大。 标准 = 1。", "zh-Hant": "字體放大。 標準 = 1。"}
+ frontend_magnification: {"zh-Hans": "字型放大。 标准 = 1。", "zh-Hant": "字型放大。 標準 = 1。"}
  frontend_max_login_attempts: {"zh-Hans": "最大前端登录尝试次数。 标准 = 5。", "zh-Hant": "最大前端登錄嘗試次數。 標準 = 5。"}
  frontend_numbers: {"zh-Hans": "您如何喜欢显示数字？​选择最适合示例。", "zh-Hant": "您如何喜歡顯示數字？​選擇最適合示例。"}
  frontend_theme: {"zh-Hans": "用于前端的主题。", "zh-Hant": "用於前端的主題。"}
@@ -161,24 +161,24 @@ config:
   zh-Hans: "有某些签名的phpMussel意味为确定可疑和可能恶意文件零件被上传有不在他们自己确定那些文件被上传特别是作为恶意。​这个“threshold”数值告诉phpMussel什么是最大总重量的可疑和潜在恶意文件零件被上传允许之前那些文件是被识别作为恶意。​定义的重量在这个上下文是总数值的可疑和可能恶意文件零件确定。​作为默认，​这个数值将会设置作为3。​一个较低的值通常将结果在一个更高的发生的假阳性但一个更高的发生的恶意文件被确定，​而一个更高的数值将通常结果在一个较低的发生的假阳性但一个较低的数值的恶意文件被确定。​它是通常最好忽略这个数值除非您遇到关联问题。"
   zh-Hant: "有某些簽名的phpMussel意味為確定可疑和可能惡意文件零件被上傳有不在他們自己確定那些文件被上傳特別是作為惡意。​這個『threshold』數值告訴phpMussel什麼是最大總重量的可疑和潛在惡意文件零件被上傳允許之前那些文件是被識別作為惡意。​定義的重量在這個上下文是總數值的可疑和可能惡意文件零件確定。​作為默認，​這個數值將會設置作為3。​一個較低的值通常將結果在一個更高的發生的假陽性但一個更高的發生的惡意文件被確定，​而一個更高的數值將通常結果在一個較低的發生的假陽性但一個較低的數值的惡意文件被確定。​它是通常最好忽略這個數值除非您遇到關聯問題。"
  supplementary_cache_options: {"zh-Hans": "补充缓存选项。​注意：更改这些值可能会使您注销。", "zh-Hant": "補充緩存選項。​注意：更改這些值可能會使您註銷。"}
- supplementary_cache_options_enable_apcu: {"zh-Hans": "指定是否尝试使用APCu进行缓存。 标准 = True。", "zh-Hant": "指定是否嘗試使用APCu進行緩存。 默認 = True。"}
- supplementary_cache_options_enable_memcached: {"zh-Hans": "指定是否尝试使用Memcached进行缓存。 标准 = False。", "zh-Hant": "指定是否嘗試使用Memcached進行緩存。 默認 = False。"}
- supplementary_cache_options_enable_pdo: {"zh-Hans": "指定是否尝试使用PDO进行缓存。 标准 = False。", "zh-Hant": "指定是否嘗試使用PDO進行緩存。 默認 = False。"}
- supplementary_cache_options_enable_redis: {"zh-Hans": "指定是否尝试使用Redis进行缓存。 标准 = False。", "zh-Hant": "指定是否嘗試使用Redis進行緩存。 默認 = False。"}
- supplementary_cache_options_memcached_host: {"zh-Hans": "Memcached 主机值。 标准 = localhost。", "zh-Hant": "Memcached 主機值。 默認 = localhost。"}
- supplementary_cache_options_memcached_port: {"zh-Hans": "Memcached 端口值。 标准 = “11211”。", "zh-Hant": "Memcached 端口值。 默認 = 『11211』。"}
- supplementary_cache_options_pdo_dsn: {"zh-Hans": "PDO DSN值。 标准 = “mysql:dbname=phpmussel;host=localhost;port=3306”。", "zh-Hant": "PDO DSN值。 默認 = 『mysql:dbname=phpmussel;host=localhost;port=3306』。"}
+ supplementary_cache_options_enable_apcu: {"zh-Hans": "指定是否尝试使用APCu进行缓存。 标准 = True。", "zh-Hant": "指定是否嘗試使用APCu進行緩存。 標準 = True。"}
+ supplementary_cache_options_enable_memcached: {"zh-Hans": "指定是否尝试使用Memcached进行缓存。 标准 = False。", "zh-Hant": "指定是否嘗試使用Memcached進行緩存。 標準 = False。"}
+ supplementary_cache_options_enable_pdo: {"zh-Hans": "指定是否尝试使用PDO进行缓存。 标准 = False。", "zh-Hant": "指定是否嘗試使用PDO進行緩存。 標準 = False。"}
+ supplementary_cache_options_enable_redis: {"zh-Hans": "指定是否尝试使用Redis进行缓存。 标准 = False。", "zh-Hant": "指定是否嘗試使用Redis進行緩存。 標準 = False。"}
+ supplementary_cache_options_memcached_host: {"zh-Hans": "Memcached 主机值。 标准 = localhost。", "zh-Hant": "Memcached 主機值。 標準 = localhost。"}
+ supplementary_cache_options_memcached_port: {"zh-Hans": "Memcached 端口值。 标准 = “11211”。", "zh-Hant": "Memcached 端口值。 標準 = 『11211』。"}
+ supplementary_cache_options_pdo_dsn: {"zh-Hans": "PDO DSN值。 标准 = “mysql:dbname=phpmussel;host=localhost;port=3306”。", "zh-Hant": "PDO DSN值。 標準 = 『mysql:dbname=phpmussel;host=localhost;port=3306』。"}
  supplementary_cache_options_pdo_password: {"zh-Hans": "PDO 密码。", "zh-Hant": "PDO 密碼。"}
  supplementary_cache_options_pdo_username: {"zh-Hans": "PDO 用户名。", "zh-Hant": "PDO 使用者名稱。"}
  supplementary_cache_options_prefix:
   zh-Hans: "该值将附加到所有缓存条目的键的开头。 标准 = “phpMussel_”。 当同一服务器上存在多个安装时，这对于将它们的缓存彼此分开非常有用。"
-  zh-Hant: "該值將附加到所有緩存條目的鍵的開頭。 默認 = 『phpMussel_』。 當同一服務器上存在多個安裝時，這對於將它們的緩存彼此分開非常有用。"
- supplementary_cache_options_redis_database_number: {"zh-Hans": "Redis 数据库编号。 标准 = “0”。 注意：不能在 Redis Cluster 中使用 0 以外的值。", "zh-Hant": "Redis 資料庫編號。 默認 = 『0』。 注意：不能在 Redis Cluster 中使用 0 以外的值。"}
- supplementary_cache_options_redis_host: {"zh-Hans": "Redis 主机值。 标准 = localhost。", "zh-Hant": "Redis 主機值。 默認 = localhost。"}
- supplementary_cache_options_redis_port: {"zh-Hans": "Redis 端口值。 标准 = “6379”。", "zh-Hant": "Redis 端口值。 默認 = 『6379』。"}
- supplementary_cache_options_redis_timeout: {"zh-Hans": "Redis 超时值。 标准 = “2.5”。", "zh-Hant": "Redis 超時值。 默認 = 『2.5』。"}
+  zh-Hant: "該值將附加到所有緩存條目的鍵的開頭。 標準 = 『phpMussel_』。 當同一服務器上存在多個安裝時，這對於將它們的緩存彼此分開非常有用。"
+ supplementary_cache_options_redis_database_number: {"zh-Hans": "Redis 数据库编号。 标准 = “0”。 注意：不能在 Redis Cluster 中使用 0 以外的值。", "zh-Hant": "Redis 資料庫編號。 標準 = 『0』。 注意：不能在 Redis Cluster 中使用 0 以外的值。"}
+ supplementary_cache_options_redis_host: {"zh-Hans": "Redis 主机值。 标准 = localhost。", "zh-Hant": "Redis 主機值。 標準 = localhost。"}
+ supplementary_cache_options_redis_port: {"zh-Hans": "Redis 端口值。 标准 = “6379”。", "zh-Hant": "Redis 端口值。 標準 = 『6379』。"}
+ supplementary_cache_options_redis_timeout: {"zh-Hans": "Redis 超时值。 标准 = “2.5”。", "zh-Hant": "Redis 超時值。 標準 = 『2.5』。"}
  urlscanner: {"zh-Hans": "URL扫描程序的配置。", "zh-Hant": "URL掃描程序的配置。"}
- urlscanner_cache_time: {"zh-Hans": "多长时间（以秒为单位）应API结果被缓存？​默认是3600秒（1小时）。", "zh-Hant": "多長時間（以秒為單位）應API結果被緩存？​默認是3600秒（1小時）。"}
+ urlscanner_cache_time: {"zh-Hans": "多长时间（以秒为单位）应API结果被缓存？​标准是3600秒（1小时）。", "zh-Hant": "多長時間（以秒為單位）應API結果被緩存？​標準是3600秒（1小時）。"}
  urlscanner_google_api_key: {"zh-Hans": "激活Google Safe Browsing API当API密钥是设置。", "zh-Hant": "激活Google Safe Browsing API當API金鑰是設置。"}
  urlscanner_maximum_api_lookups:
   zh-Hans: "最大数值API请求来执行每个扫描迭代。​额外API请求将增加的总要求完成时间每扫描迭代，​所以，​您可能想来规定一个限以加快全扫描过程。​当设置<code>0</code>，​没有最大数值将会应用的。​设置<code>10</code>作为默认。"
