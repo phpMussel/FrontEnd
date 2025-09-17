@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2025.09.11).
+# This file: Arabic language data (last modified: 2025.09.16).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -171,7 +171,7 @@ field:
  vt_suspicion_level_all: "تحقق من جميع الملفات."
  vt_suspicion_level_executable: "تحقق من الملفات ذات الوزن الإرشادي والملفات القابلة للتنفيذ والملفات التي يحتمل أن تحتوي على بيانات قابلة للتنفيذ.\nتتضمن هذه الملفات Windows PE و Linux ELF و Mach-O و DOCX و ZIP وما إلى ذلك."
  vt_suspicion_level_heuristic_only: "تحقق فقط من الملفات ذات الوزن الإرشادي.\nسيتم فحص الملفات فقط إذا كانت تحمل الوزن الإرشادي. يمكن أن يحدث "الوزن الإرشادي" من التوقيعات التي تلتقط بصمات الأصابع التي تشير إلى الإصابة ولكنها لا تضمن العدوى. بالنسبة للنتائج التي تبرر الشك ولكنها لا توفر أي يقين، يمكن أن يعمل البحث على توفير رأي ثانٍ."
-hints_logging_datetime: "نصيحة مفيدة: يمكنك إرفاق معلومات التاريخ/الوقت بأسماء ملفات السجل باستخدام العناصر النائبة لتنسيق الوقت. يتم عرض العناصر النائبة لتنسيق الوقت المتوفرة عند {{Links.ConfigRef.time_format}}."
+hints_logging_datetime: "نصيحة مفيدة: يمكنك إرفاق معلومات التاريخ/الوقت بأسماء ملفات السجل باستخدام العناصر النائبة لتنسيق الوقت. يتم عرض العناصر النائبة لتنسيق الوقت المتوفرة عند {{Links.ConfigRef.time_format_rtl}}."
 hints_pdo_dsn:
  FAQ.: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.ar.md\#user-content-HOW_TO_USE_PDO" hreflang="ar">ما هو "PDO DSN"؟ كيف يمكنني استخدام PDO مع phpMussel؟</a></em>"
 hints_time_format: |
