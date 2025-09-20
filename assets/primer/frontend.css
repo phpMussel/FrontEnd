@@ -37,7 +37,7 @@ a:link,a:visited{color:#0366d6;text-decoration:none}
 a:hover{text-decoration:underline;color:#f64}
 a:active,a:focus{color:#cb2431}
 .spanner{text-align:{FE_Align_Reverse}}
-.headbox,.footbox.cat,.exp,nav,.s,.txtGn,.txtOe,.txtRd,.spanner,a{font-weight:700}
+.headbox,.footbox.cat,.exp,nav,.s,.txtGn,.txtOe,.txtRd,.spanner,a,.vrte,.vrto{font-weight:700}
 .ci,.co,.center{margin:auto}
 .ci,.co,.ng1:not(.quad .ng1,.duo .ng1,.col .ng1,nav .ng1),.ng2:not(.quad .ng2,.duo .ng2,.col .ng2,nav .ng2){width:calc(100% - 32px)}
 .ci{padding:12px;text-align:{FE_Align}}
@@ -115,7 +115,6 @@ input:not([type=submit],[type=reset],[type=button]){border:none}
 textarea{border:none}
 select,input[type=submit],input[type=reset],input[type=button],input[type=file]::file-selector-button,input[type=text],input[type=password],input[type=number],input[type=date],input[type=time],button{box-sizing:border-box;height:20px;padding-top:0;padding-bottom:0}
 #pgrad{width:16px;height:16px;display:inline-block;border-radius:16px;filter:blur(2px)}
-td code~input,td code~select{vertical-align:middle}
 input[type=checkbox],input[type=radio]{margin:2px}
 .gridboxitem>label,.gridboxitem input+strong{vertical-align:-2px;cursor:pointer}
 input[type=text]{background-repeat:no-repeat;background-position:{FE_Align_Reverse} 3px center;background-image:none}
@@ -126,8 +125,7 @@ input[type=text][pattern]:invalid:not(input[type=text]:placeholder-shown){backgr
 .gridboxitem,.gridboxcheckcell{height:19px}
 .gridboxstretch{height:100%;white-space:normal}
 .configMatrixLabel{height:auto;line-height:19px;font-weight:700}
-.vrte,.vrto{vertical-align:-3px;font-weight:700}
-.gridboxcheckcell{vertical-align:middle;margin:0;padding:auto}
+.gridboxcheckcell{margin:0;padding:auto}
 .gridboxcheckcell>input[type=checkbox],.gridboxcheckcell>input[type=radio],.gridlabel>input[type=checkbox],.gridlabel>input[type=radio]{position:relative;top:1px}
 .gridlabel{display:block;height:100%;width:100%;transition:all .2s ease-out}
 .gridlabel:hover{background-color:rgba(255,255,255,.4);filter:brightness(1.4)}
@@ -182,3 +180,4 @@ input[type=hidden],script{display:none}
 .col+.col,.col+.quad,.col+.duo,.quad+.col,.quad+.quad,.quad+.duo,.duo+.col,.duo+.quad,.duo+.duo{margin-top:2px;margin-{FE_Align_Reverse}:1px}
 .reverse{text-align:{FE_Align_Reverse}}
 .stickybox{position:sticky;top:2px}
+.gridboxitem,.gridboxcheckcell,.gridboxstretch,.va{align-content:center}
