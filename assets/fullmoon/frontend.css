@@ -43,8 +43,9 @@ table,.spanner,.flexstretch{align-self:stretch}
 textarea{height:150px}
 textarea.half{height:75px}
 textarea{width:calc(100% - 10px)}
-a:link,a:visited{color:#eee6ab}
-a:hover,a:active,a:focus{color:#fff7bc}
+a,.pseudolink{text-decoration:underline}
+a:link,a:visited,.pseudolink{color:#eee6ab}
+a:hover,a:active,a:focus,.pseudolink:hover,.pseudolink:active,.pseudolink:focus{color:#fff7bc}
 .headbox,.footbox,.cat,.exp,nav,.s,.txtGn,.txtOe,.txtRd,.spanner,a,input,input[type=file]::file-selector-button,select,textarea,.vrte,.vrto{font-weight:700}
 .ci,.co,.center{margin:auto}
 .ci,.co,.ng1:not(nav .ng1,.quad .ng1,.duo .ng1,.col .ng1,nav .ng1),.ng2:not(nav .ng2,.quad .ng2,.duo .ng2,.col .ng2,nav .ng2){width:calc(100% - 32px)}
@@ -94,7 +95,7 @@ input#homebutton{border-top-{FE_Align_Reverse}-radius:0;border-bottom-{FE_Align_
 .fW{word-break:break-all}
 .exp{color:#ff0;background-color:#f00}
 .pieul{list-style-type:none;margin:0;padding:0}
-li>span.comCat:first-child,input[type=button],input[type=file]::file-selector-button,input[type=checkbox],input[type=checkbox]+label,input[type=radio],input[type=radio]+label,input[type=reset],input[type=submit],span>span[onclick],li>span[onclick],.navicon[onclick]{cursor:pointer}
+li>span.comCat:first-child,input[type=button],input[type=file]::file-selector-button,input[type=checkbox],input[type=checkbox]+label,input[type=radio],input[type=radio]+label,input[type=reset],input[type=submit],span>span[onclick],li>span[onclick],.navicon[onclick],.gridboxitem>label,.gridboxitem input+strong,.pseudolink{cursor:pointer}
 .comCat::before,.showlink::before,.shownlink::before,.unshownlink::before{content:"";width:16px;height:16px;background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:caret.svg}{/Base64Encode});background-repeat:no-repeat;background-position:center;position:relative;top:2px;display:inline-block;margin-{FE_Align_Reverse}:6px;line-height:100%;cursor:pointer}
 .caret-down::before{animation:forRotate .3s ease-in 1;animation-fill-mode:both}
 .caret-up::before{animation:revRotate .5s linear 1;animation-fill-mode:both}
@@ -107,7 +108,6 @@ select+input[type=submit],select+input[type=button],input[name=qkey]+input[type=
 input[name=qkey]{margin-{FE_Align}:-3px;padding-{FE_Align}:3px}
 select,input[type=submit],input[type=reset],input[type=button],input[type=file]::file-selector-button,input[type=text],input[type=password],input[type=number],input[type=date],input[type=time],button{box-sizing:border-box;height:20px;padding-top:0;padding-bottom:0}
 #pgrad{width:16px;height:16px;display:inline-block;border-radius:16px;filter:blur(2px)}
-input[type=checkbox]+label,input[type=radio]+label,.gridboxitem>label,.gridboxitem input+strong{cursor:pointer}
 .gridHA:not(.gridVA,.gridVB,.gridboxstretch),.gridHB:not(.gridVA,.gridVB,.gridboxstretch){white-space:nowrap}
 .configMatrixLabel,.vrte,.gridboxcheckcell{text-align:center}
 .gridboxitem,.gridboxcheckcell{height:19px}
@@ -145,6 +145,7 @@ input[type=button].reset:hover,input[type=button].reset:active{color:#fcefcf}
 .txtGn::selection,.txtGn>*:not(.txtOe,.txtRd)::selection{color:#dfc}
 .txtOe::selection,.txtOe>*:not(.txtGn,.txtRd)::selection{color:#fec}
 .txtRd::selection,.txtRd>*:not(.txtGn,.txtOe)::selection{color:#fcc}
+.canBreak{white-space:normal;overflow-wrap:break-word;word-break:break-all}
 .flexrow{display:flex;flex-direction:row}
 .flexin{margin-{FE_Align}:-1px;margin-{FE_Align_Reverse}:1px;width:auto;flex-grow:1}
 .navicon,.comCat::before,.showlink::before,.shownlink::before,.unshownlink::before{display:inline-block;background-repeat:no-repeat;filter:invert(79%) sepia(28%) saturate(328%) hue-rotate(13deg) brightness(90%) contrast(89%);position:relative;top:1px;width:16px;height:16px}

@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2025.09.06).
+ * This file: Front-end handler (last modified: 2025.09.26).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1462,7 +1462,7 @@ class FrontEnd
                 }
                 $Class = ($Key === $this->Loader->L10N->getString('field.size.Total size') || $Key === $this->Loader->L10N->getString('label.Expires')) ? 'txtRd' : 's';
                 $Text = ($Count === 1 && $Key === 0) ? $Value : $Key . ($Class === 's' ? ' => ' : ' ') . $Value;
-                $Output .= '<code class="' . $Class . '" style="word-wrap:break-word;word-break:break-all">' . $this->ltrInRtf(
+                $Output .= '<code class="' . $Class . ' canBreak">' . $this->ltrInRtf(
                     str_replace(['<', '>'], ['&lt;', '&gt;'], $Text)
                 ) . '</code>' . $Delete;
             }
