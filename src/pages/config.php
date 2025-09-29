@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The configuration page (last modified: 2025.09.25).
+ * This file: The configuration page (last modified: 2025.09.29).
  */
 
 namespace phpMussel\FrontEnd;
@@ -68,7 +68,7 @@ foreach ($this->Loader->ConfigurationDefaults as $CatKey => $CatValue) {
         $ThisDir['DirName'] = $this->ltrInRtf($CatKey . '➡' . $DirKey) . ':';
         $ThisDir['Friendly'] = $this->Loader->L10N->getString('config.' . $CatKey . '_' . $DirKey . '_label') ?: $DirKey;
         $CatData .= sprintf(
-            '<li onclick="javascript:toggleconfigNav(\'%1$sRow\',\'%1$sShowLink\');setTimeout(()=>{location.href=\'#%2$s\'},500)" class="pseudolink">%3$s</li>',
+            '<li onclick="javascript:toggleconfigNav(\'%1$sRow\',\'%1$sShowLink\');setTimeout(()=>{location.href=\'#%2$s\'},500)" class="pseudolink" tabindex="0" role="link">%3$s</li>',
             $CatKey,
             $ThisDir['DirLangKey'],
             $ThisDir['Friendly']
