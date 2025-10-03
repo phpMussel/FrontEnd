@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2025.09.26).
+ * This file: Front-end handler (last modified: 2025.10.03).
  */
 
 namespace phpMussel\FrontEnd;
@@ -998,10 +998,10 @@ class FrontEnd
         $Arr = [];
         $Key = -1;
         $Offset = strlen($this->Loader->QuarantinePath);
-        $List = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator(
+        $List = new \LimitIterator(new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator(
             $this->Loader->QuarantinePath,
-            \RecursiveDirectoryIterator::FOLLOW_SYMLINKS
-        ), \RecursiveIteratorIterator::SELF_FIRST);
+            \RecursiveDirectoryIterator::FOLLOW_SYMLINKS | \RecursiveDirectoryIterator::SKIP_DOTS | \RecursiveDirectoryIterator::UNIX_PATHS
+        ), \RecursiveIteratorIterator::SELF_FIRST), 0, 1000);
         foreach ($List as $Item => $List) {
             /** Skips if not a quarantined file. */
             if (strtolower(substr($Item, -4)) !== '.qfu' || is_dir($Item) || !is_file($Item) || !is_readable($Item)) {
