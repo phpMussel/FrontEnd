@@ -1,7 +1,6 @@
 <div class="mainbox">
   <nav class="big">
-{nav}
-  </nav>
+{nav}  </nav>
   <main class="extend">
     <div class="col">
       <div class="s flexstretch">{state_msg}</div>
@@ -12,60 +11,42 @@
           <input type="button" value="{field.Clear all}" class="auto" onclick="{Confirm-ClearAll}" />
         </form>
       </div>
-      <table>
-        <tr><td class="center h4f" colspan="2"><div class="s">Web</div></td></tr>
-        <tr>
-          <td class="h3"><div class="s">{label.Scan events}</div></td>
-          <td class="h3f"><div class="s">{Web-Events}</div></td>
-        </tr>
-        <tr>
-          <td class="h3"><div class="s">{label.Uploads scanned}</div></td>
-          <td class="h3f"><div class="s">{Web-Scanned}</div></td>
-        </tr>
-        <tr>
-          <td class="h3"><div class="s">{label.Uploads blocked}</div></td>
-          <td class="h3f"><div class="s">{Web-Blocked}</div></td>
-        </tr>
-        <tr>
-          <td class="h3"><div class="s">{label.Uploads quarantined}</div></td>
-          <td class="h3f"><div class="s">{Web-Quarantined}</div></td>
-        </tr>
-        <tr><td class="center h4f" colspan="2"><div class="s">CLI</div></td></tr>
-        <tr>
-          <td class="h3"><div class="s">{label.Scan events}</div></td>
-          <td class="h3f"><div class="s">{CLI-Events}</div></td>
-        </tr>
-        <tr>
-          <td class="h3"><div class="s">{label.Objects scanned}</div></td>
-          <td class="h3f"><div class="s">{CLI-Scanned}</div></td>
-        </tr>
-        <tr>
-          <td class="h3"><div class="s">{label.Objects flagged}</div></td>
-          <td class="h3f"><div class="s">{CLI-Flagged}</div></td>
-        </tr>
-        <tr><td class="center h4f" colspan="2"><div class="s">API</div></td></tr>
-        <tr>
-          <td class="h3"><div class="s">{label.Scan events}</div></td>
-          <td class="h3f"><div class="s">{API-Events}</div></td>
-        </tr>
-        <tr>
-          <td class="h3"><div class="s">{label.Objects scanned}</div></td>
-          <td class="h3f"><div class="s">{API-Scanned}</div></td>
-        </tr>
-        <tr>
-          <td class="h3"><div class="s">{label.Objects flagged}</div></td>
-          <td class="h3f"><div class="s">{API-Flagged}</div></td>
-        </tr>
-        <tr><td class="center h4f" colspan="2"><div class="s">{label.Other}</div></td></tr>
-        <tr>
-          <td class="h3"><div class="s">{label.Start date}</div></td>
-          <td class="h3f"><div class="s">{Other-Since}</div></td>
-        </tr>
-        <tr>
-          <td class="h3"><div class="s">{label.Active signature files}</div></td>
-          <td class="h3f"><div class="{Class-Active}">{Other-Active}</div></td>
-        </tr>
-      </table>
+      <div class="center h2f s flexstretch">Web</div>
+      <div class="duo flexstretch">
+        <div class="h1 s">{label.Scan events}</div>
+        <div class="h1f s">{Web-Events}</div>
+        <div class="h1 s">{label.Uploads scanned}</div>
+        <div class="h1f s">{Web-Scanned}</div>
+        <div class="h1 s">{label.Uploads blocked}</div>
+        <div class="h1f s">{Web-Blocked}</div>
+        <div class="h1 s">{label.Uploads quarantined}</div>
+        <div class="h1f s">{Web-Quarantined}</div>
+      </div>
+      <div class="center h2f s flexstretch">CLI</div>
+      <div class="duo flexstretch">
+        <div class="h1 s">{label.Scan events}</div>
+        <div class="h1f s">{CLI-Events}</div>
+        <div class="h1 s">{label.Objects scanned}</div>
+        <div class="h1f s">{CLI-Scanned}</div>
+        <div class="h1 s">{label.Objects flagged}</div>
+        <div class="h1f s">{CLI-Flagged}</div>
+      </div>
+      <div class="center h2f s flexstretch">API</div>
+      <div class="duo flexstretch">
+        <div class="h1 s">{label.Scan events}</div>
+        <div class="h1f s">{API-Events}</div>
+        <div class="h1 s">{label.Objects scanned}</div>
+        <div class="h1f s">{API-Scanned}</div>
+        <div class="h1 s">{label.Objects flagged}</div>
+        <div class="h1f s">{API-Flagged}</div>
+      </div>
+      <div class="center h2f s flexstretch">{label.Other}</div>
+      <div class="duo flexstretch">
+        <div class="h1 s">{label.Start date}</div>
+        <div class="h1f s">{Other-Since}</div>
+        <div class="h1 s">{label.Active signature files}</div>
+        <div class="h1f {Class-Active}">{Other-Active}</div>
+      </div>
     </div>
   </main>
 </div>

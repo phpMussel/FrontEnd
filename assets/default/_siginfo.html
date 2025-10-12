@@ -9,9 +9,8 @@
         <select id="infoCatID" class="auto" onchange="javascript:setInfoCat()">{SigInfoMenuOptions}
         </select>
       </div>
-      <span class="s placeholder_loading">{label.Loading_}</span>
-    {InfoRows}
-    </div>
+      <div class="s placeholder_loading">{label.Loading_}</div>
+{InfoRows}    </div>
   </main>
 </div>
-<script type="text/javascript">function setInfoCat(){x=document.getElementById('infoCatID').value,null!==window.yCat&&hide(window.yCat),show(x,'contents'),window.yCat=x}window.yCat='placeholder_loading',setInfoCat()</script>
+<script type="text/javascript">function setInfoCat(){x=document.getElementById('infoCatID').value,null!==window.yCat&&hide(window.yCat),hide(window.yCat+'_grid'),show(x,'block'),show(x+'_grid','grid'),window.yCat=x}window.yCat='placeholder_loading',setInfoCat()</script>

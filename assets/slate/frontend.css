@@ -44,8 +44,7 @@ nav a:not(.idx a){display:block}
 nav>div:first-child{border-radius:{cnrRadius} 0 0}
 main{flex-basis:80%;flex-shrink:1;flex-grow:2;min-width:0}
 .subNav{display:block;text-align:center;font-size:calc((10px * {magnification}) + .03vw);color:rgba(221,221,221,.6);text-shadow:2px 2px 1px rgba(255,255,255,.2)}
-table{table-layout:fixed}
-table,.spanner,.flexstretch{align-self:stretch}
+.spanner,.flexstretch{align-self:stretch}
 textarea{height:150px}
 textarea.half{height:75px}
 textarea{width:calc(100% - 10px)}
@@ -89,6 +88,7 @@ input#logoutbutton:hover,input#logoutbutton:active,input#logoutbutton:focus{back
 input#homebutton{border-top-{FE_Align_Reverse}-radius:0;border-bottom-{FE_Align_Reverse}-radius:0;margin-{FE_Align_Reverse}:0}
 .h1f,.h2f,.h3f,.h4f,.rf{white-space:nowrap}
 @media only all and (max-width:968px) {
+  nav{display:flex;flex-direction:column;gap:2px;justify-content:start;align-items:start;flex-basis:100%;width:1fr}
   .extend{flex-basis:100%}
   .headbox,.mainbox,.footbox{flex-direction:column;height:auto}
   .footbox>.start{display:none}
@@ -166,17 +166,22 @@ input[type=checkbox],input[type=radio]{accent-color:#b50}
 .clockMinutes{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:clockminutes.svg}{/Base64Encode});position:relative;inset:0 -16px}
 .clockSeconds{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:clockseconds.svg}{/Base64Encode});position:relative;inset:0 -32px}
 .clockFace{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:clockface.svg}{/Base64Encode});position:relative;inset:0 -48px}
-.col{display:flex;flex-direction:column;gap:2px;justify-content:start;align-items:start;flex-basis:100%;width:100%}
-.col>.ng1,.col>.ng2,nav>.ng1,nav>.ng2,.flexstretch,.spanner{width:calc(100% - 10px)}
+.col{display:flex;flex-direction:column;gap:2px;justify-content:start;align-items:start;flex-basis:100%;width:1fr}
+.col>.col{width:100%}
+.col>.ng1,.col>.ng2,nav>.ng1,nav>.ng2,.flexstretch:not(.col>.flexstretch),.spanner:not(.col>.spanner){width:calc(100% - 10px)}
 .configInitPos{transform:scaleY(0);transform-origin:top center;opacity:0;max-height:0;margin-top:-2px}
 .configOpenPos{transform:scaleY(1);transform-origin:top center;opacity:1;max-height:auto}
-.spanner+table,.toggleTable{margin:-2px -2px 0 -2px}
-.spanner+table~table{margin:-4px -2px 0 -2px}
-.col>form,.quad>form,.duo>form{display:contents}
+.col>form,.quad>form,.duo>form,.spanner>form{display:contents}
 input[type=hidden],script{display:none}
 .quad{display:grid;gap:2px;grid-template-columns:repeat(4,1fr);justify-content:stretch;justify-items:stretch}
 .duo{display:grid;gap:2px;grid-template-columns:1fr 1fr;justify-content:stretch;justify-items:stretch}
-.col+.col,.col+.quad,.col+.duo,.quad+.col,.quad+.quad,.quad+.duo,.duo+.col,.duo+.quad,.duo+.duo{margin-top:2px;margin-{FE_Align_Reverse}:1px}
+.col+.col,.col+.quad,.col+.duo,.quad+.col,.quad+.quad,.quad+.duo,.duo+.col,.duo+.quad,.duo+.duo{margin-top:2px}
 .reverse{text-align:{FE_Align_Reverse}}
 .stickybox{position:sticky;top:2px}
 .gridboxitem,.gridboxcheckcell,.gridboxstretch,.va{align-content:center}
+@media only all and (max-width:968px) {
+  .quad:not(.accquad){grid-template-columns:1fr 1fr}
+  .quad.accquad{grid-template-columns:1fr}
+}
+@keyframes fmDeleteAnim{0%{opacity:1}100%{filter:brightness(0);opacity:0;display:none}}
+.fmDelete{transform-origin:top;animation:fmDeleteAnim .5s cubic-bezier(0,0,.1,1);animation-iteration-count:1;animation-fill-mode:forwards}

@@ -3,15 +3,14 @@
 {nav}
   </nav>
   <main class="extend">
-    <form enctype="multipart/form-data" name="upload" action="" method="post">
-      <input type="hidden" name="MAX_FILE_SIZE" value="{MaxFilesize}" />
-      <div id="upload_fields" class="inline">
+    <div class="col">
+      <form id="upload_fields" enctype="multipart/form-data" name="upload" action="" method="post"><input type="hidden" name="MAX_FILE_SIZE" value="{MaxFilesize}" />
         <div class="spanner">
           <input type="button" onclick="javascript:more()" value="{field.More fields}" />
           <input type="submit" class="auto" value="{field.OK}" />
         </div>
         <div class="spanner"><input type="file" name="upload_test[]" value="" /></div>
-      </div>
-    </form>
+      </form>
+    </div>
   </main>
 </div>
