@@ -177,7 +177,7 @@ input[type=hidden],script{display:none}
 .duo{display:grid;gap:2px;grid-template-columns:1fr 1fr;justify-content:stretch;justify-items:stretch}
 .col+.col,.col+.quad,.col+.duo,.quad+.col,.quad+.quad,.quad+.duo,.duo+.col,.duo+.quad,.duo+.duo{margin-top:2px}
 .reverse{text-align:{FE_Align_Reverse}}
-.stickybox{position:sticky;top:2px}
+.stickybox{position:sticky;top:2px;max-height:calc(100vh - 13px);overflow:visible auto}
 .gridboxitem,.gridboxcheckcell,.gridboxstretch,.va{align-content:center}
 @media only all and (max-width:968px) {
   .quad:not(.accquad){grid-template-columns:1fr 1fr}
