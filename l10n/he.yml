@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data (last modified: 2025.09.16).
+# This file: Hebrew language data (last modified: 2025.10.19).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -69,13 +69,13 @@ config:
  files_decode_threshold: "סף עבור אורך הנתונים הגולמיים שבתוכם יש לזהות פקודות פענוח (למקרה שיש בעיות ביצועים בולטות בזמן הסריקה). סטנדרטי = 512KB. אפס או null משביתים את הסף (הסרת כל מגבלה כזו בהתבסס על גודל הקובץ)."
  files_entropy_filesize_limit: "מגבלת גודל הקבצים האנטרופית עבור חתימות המשתמשות בנתונים מנורמלים (ברירת המחדל היא 256KB). כאשר חורגים גם ממגבלת האנטרופיה וגם ממגבלת גודל הקובץ האנטרופית, על מנת להפחית את הסיכון לתוצאות חיוביות כוזבות, חלק מהחתימות המשתמשות בנתונים מנורמלים יתעלמו."
  files_entropy_limit: "מגבלת האנטרופיה עבור חתימות המשתמשות בנתונים מנורמלים (ברירת המחדל היא 7.7). בהקשר זה, אנטרופיה מוגדרת כאנטרופיית השנון של תוכן הקובץ הנסרק. כאשר חורגים גם ממגבלת האנטרופיה וגם ממגבלת גודל הקובץ האנטרופית, על מנת להפחית את הסיכון לתוצאות חיוביות כוזבות, חלק מהחתימות המשתמשות בנתונים מנורמלים יתעלמו."
- files_filesize_archives: "האם רשימות שחורות ורשימות הלבנות לגבי גודל הקבצים צריכות לחול על תוכן הארכיונים? False = לא (פשוט רשימת הכל באפור); True = כן [סטנדרטי]."
+ files_filesize_archives: "האם רשימות blacklist/whitelist גודל הקבצים צריכות לחול על תוכן הארכיונים? False = לא (הכל בgreylist); True = כן [סטנדרטי]."
  files_filesize_limit: "מגבלת גודל קובץ ב-KB. 65536 = 64MB [סטנדרטי]; 0 = אין גבול (תמיד ברשימה האפורה). כל ערך מספרי (חיובי) מתקבל. זה יכול להיות שימושי כאשר תצורת ה-PHP שלך מגבילה את כמות הזיכרון שתהליך יכול להחזיק או אם תצורת ה-PHP שלך מגבילה את גודל הקבצים של העלאות."
- files_filesize_response: "מה לעשות עם קבצים החורגים ממגבלת גודל הקבצים (אם קיים כזה). False = רשימת היתרים; True = רשימה שחורה [סטנדרטי]."
- files_filetype_archives: "להעביר את הרשימה השחורה/הרשימה הלבנה לתוכן של ארכיונים? False = לא (פשוט רשימת הכל באפור) [סטנדרטי]; True = כן."
- files_filetype_blacklist: "רשימה שחורה:"
- files_filetype_greylist: "רשימת אפור:"
- files_filetype_whitelist: "רשימת הלבנים:"
+ files_filesize_response: "מה לעשות עם קבצים החורגים ממגבלת גודל הקבצים (אם קיים כזה). False = Whitelist; True = Blacklist [סטנדרטי]."
+ files_filetype_archives: "להעביר את blacklist/whitelist לתוכן של ארכיונים? False = לא (הכל בgreylist) [סטנדרטי]; True = כן."
+ files_filetype_blacklist: "Blacklist:"
+ files_filetype_greylist: "Greylist:"
+ files_filetype_whitelist: "Whitelist:"
  files_max_files_in_archives: "מספר מקסימלי של קבצים לסריקה מתוך ארכיונים לפני ביטול הסריקה. סטנדרטי = 0 (אין מקסימום)."
  files_max_recursion: "מגבלת עומק רקורסיה מקסימלית עבור ארכיונים. סטנדרטי = 3."
  files_only_allow_images: "כאשר מוגדר כ-true, כל קבצים שנתקל בסורק שאינם תמונות יסומנו באופן מיידי, מבלי להיסרק. זה עשוי לעזור להפחית את הזמן הדרוש להשלמת סריקה במקרים מסוימים. מוגדר ל-false כסטנדרט."

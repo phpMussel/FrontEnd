@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2025.10.12).
+ * This file: Front-end handler (last modified: 2025.11.02).
  */
 
 namespace phpMussel\FrontEnd;
@@ -651,7 +651,7 @@ class FrontEnd
             $FE['ScriptVersion'] = $this->Loader->ScriptVersion;
 
             /** PHP version used. */
-            $FE['info_php'] = PHP_VERSION;
+            $FE['info_php'] = \PHP_VERSION;
 
             /** SAPI used. */
             $FE['info_sapi'] = php_sapi_name();
@@ -727,22 +727,14 @@ class FrontEnd
                 $this->Loader->YAML->process($RemoteYamlPHP, $RemoteYamlPhpArray);
 
                 /** PHP latest stable. */
-                $FE['info_php_stable'] = empty($RemoteYamlPhpArray['Stable']) ?
-                    $this->Loader->L10N->getString('response.Error') : $RemoteYamlPhpArray['Stable'];
+                $FE['info_php_stable'] = $RemoteYamlPhpArray['Stable'] ?? $this->Loader->L10N->getString('response.Error');
 
                 /** PHP latest unstable. */
-                $FE['info_php_unstable'] = empty($RemoteYamlPhpArray['Unstable']) ?
-                    $this->Loader->L10N->getString('response.Error') : $RemoteYamlPhpArray['Unstable'];
+                $FE['info_php_unstable'] = $RemoteYamlPhpArray['Unstable'] ?? $this->Loader->L10N->getString('response.Error');
 
                 /** PHP branch latest stable. */
-                if ($ThisBranch = substr(PHP_VERSION, 0, strpos(PHP_VERSION, '.') ?: 0)) {
-                    $ThisBranch .= substr(PHP_VERSION, strlen($ThisBranch) + 1, strpos(PHP_VERSION, '.', strlen($ThisBranch)) ?: 0);
-                    $ThisBranch = 'php' . $ThisBranch;
-                    $FE['info_php_branch'] = empty($RemoteYamlPhpArray['Branch'][$ThisBranch]['Latest']) ?
-                        $this->Loader->L10N->getString('response.Error') : $RemoteYamlPhpArray['Branch'][$ThisBranch]['Latest'];
-                } else {
-                    $FE['info_php_branch'] = $this->Loader->L10N->getString('response.Error');
-                }
+                $ThisBranch = 'php' . \PHP_MAJOR_VERSION . \PHP_MINOR_VERSION;
+                $FE['info_php_branch'] = $RemoteYamlPhpArray['Branch'][$ThisBranch]['Latest'] ?? $this->Loader->L10N->getString('response.Error');
             }
 
             /** Cleanup. */

@@ -217,3 +217,4 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 - [2025.09.03]: Slightly improved the code for traversal detection.
 - [2025.10.03]: Optimised some iterators.
 - [2025.10.22]: Some sticky elements now have their own scroll context.
+- [2025.11.02]: Some minor refactoring.
