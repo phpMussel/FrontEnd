@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2025.11.02).
+ * This file: Front-end handler (last modified: 2025.12.27).
  */
 
 namespace phpMussel\FrontEnd;
@@ -506,7 +506,8 @@ class FrontEnd
                     $LoggerMessage = $FE['state_msg'];
                 }
             } elseif ($this->Permissions === 3) {
-                $LoggerMessage = $this->Loader->L10N->getString('label.label.Logged in, 2FA pending');
+                $this->User = $TryUser;
+                $LoggerMessage = $this->Loader->L10N->getString('label.Logged in, 2FA pending');
             } else {
                 $this->User = $TryUser;
                 $LoggerMessage = $this->Loader->L10N->getString('label.Logged in');

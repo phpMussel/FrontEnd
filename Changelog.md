@@ -219,3 +219,8 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 - [2025.10.22]: Some sticky elements now have their own scroll context.
 - [2025.11.02]: Some minor refactoring.
 - [2025.11.21]: Added PHP 8.5 to workflows.
+
+### v3.7.2
+
+#### Bugs fixed.
+- [2025.12.27]: Page tip greeting wasn't correctly showing the username when at the awaiting 2FA code page; Fixed.
