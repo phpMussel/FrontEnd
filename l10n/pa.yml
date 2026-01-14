@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Punjabi language data (last modified: 2025.10.15).
+# This file: Punjabi language data (last modified: 2026.01.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -198,29 +198,29 @@ hints_xlists:
 Some useful links: |+
  ਕੁਝ ਲਾਭਦਾਇਕ ਲਿੰਕ:<br />
      <ul class="pieul">
-       <li><span class="comCat">phpMussel ਲਈ ਟੂਲ, ਸਰੋਤ, ਆਦਿ।</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuTRP" aria-expanded="false">phpMussel ਲਈ ਟੂਲ, ਸਰੋਤ, ਆਦਿ।</span>
+         <ul class="comSub" id="menuTRP">
            <li>{{Links.phpMussel.Issues}} – phpMussel ਲਈ issues ਪੰਨਾ (ਸਹਾਇਤਾ, ਆਦਿ).</li>
            <li>{{Links.phpMussel.SigTool}} – ClamAV ਦਸਤਖਤ ਡੇਟਾਬੇਸ ਦੀ ਵਰਤੋਂ ਕਰਕੇ phpMussel ਦਸਤਖਤ ਫਾਈਲਾਂ ਬਣਾਉਂਦਾ ਹੈ।</li>
            <li>{{Links.phpMussel.Extras}} – ਕੁਝ ਵਾਧੂ।</li>
          </ul>
        </li>
-       <li><span class="comCat">ClamAV ਲਈ ਟੂਲ, ਸਰੋਤ, ਆਦਿ।</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuTRClamAV" aria-expanded="false">ClamAV ਲਈ ਟੂਲ, ਸਰੋਤ, ਆਦਿ।</span>
+         <ul class="comSub" id="menuTRClamAV">
            <li>{{Links.ClamavNet}} – ClamAV ਹੋਮਪੇਜ (ClamAV® ਇੱਕ ਓਪਨ-ਸੋਰਸ ਐਂਟੀਵਾਇਰਸ ਇੰਜਣ ਹੈ, ਜੋ ਟਰੋਜਨ, ਵਾਇਰਸ, ਮਾਲਵੇਅਰ, ਅਤੇ ਹੋਰ ਖਤਰਨਾਕ ਖਤਰਿਆਂ ਦਾ ਪਤਾ ਲਗਾ ਸਕਦਾ ਹੈ)।</li>
            <li>{{Links.SecuriteInfo}} – ਕੰਪਿਊਟਰ ਸੁਰੱਖਿਆ ਕੰਪਨੀ ਜੋ ClamAV ਲਈ ਪੂਰਕ ਦਸਤਖਤਾਂ ਦੀ ਪੇਸ਼ਕਸ਼ ਕਰਦੀ ਹੈ।</li>
            <li>{{Links.Sanesecurity}} – ਕੰਪਿਊਟਰ ਸੁਰੱਖਿਆ ਕੰਪਨੀ ਜੋ ClamAV ਲਈ ਪੂਰਕ ਦਸਤਖਤਾਂ ਦੀ ਪੇਸ਼ਕਸ਼ ਕਰਦੀ ਹੈ।</li>
            <li>{{Links.Malware Expert}} – ClamAV ਲਈ ਪੂਰਕ ਦਸਤਖਤਾਂ ਅਤੇ ModSecurity ਲਈ ਪੂਰਕ ਨਿਯਮਾਂ ਦੀ ਪੇਸ਼ਕਸ਼ ਕਰਦਾ ਹੈ।</li>
          </ul>
        </li>
-       <li><span class="comCat">ਸਮੂਹ, ਫੋਰਮ, ਭਾਈਚਾਰੇ, ਆਦਿ।</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuGFC" aria-expanded="false">ਸਮੂਹ, ਫੋਰਮ, ਭਾਈਚਾਰੇ, ਆਦਿ।</span>
+         <ul class="comSub" id="menuGFC">
            <li>{{Links.PHP.Earth.Facebook}} – PHP ਸਿੱਖਣ ਦੇ ਸਰੋਤ ਅਤੇ ਚਰਚਾ।</li>
            <li>{{Links.MalwareTips}} – ਉਪਯੋਗੀ ਮਾਲਵੇਅਰ ਕੇਂਦਰਿਤ ਚਰਚਾ ਫੋਰਮ।</li>
          </ul>
        </li>
-       <li><span class="comCat">ਹੋਰ ਉਪਯੋਗੀ ਸਾਧਨ, ਸਰੋਤ, ਸੇਵਾਵਾਂ, ਆਦਿ।</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuOUTRS" aria-expanded="false">ਹੋਰ ਉਪਯੋਗੀ ਸਾਧਨ, ਸਰੋਤ, ਸੇਵਾਵਾਂ, ਆਦਿ।</span>
+         <ul class="comSub" id="menuOUTRS">
            <li>{{Links.PhishTank}} – phpMussel URL ਸਕੈਨਰ ਦੁਆਰਾ ਵਰਤਿਆ ਗਿਆ ਫਿਸ਼ਿੰਗ ਡੇਟਾਬੇਸ।</li>
            <li>{{Links.VirusTotal}} – VirusTotal ਸ਼ੱਕੀ ਫਾਈਲਾਂ ਅਤੇ URL ਦਾ ਵਿਸ਼ਲੇਸ਼ਣ ਕਰਨ ਲਈ ਇੱਕ ਮੁਫਤ ਸੇਵਾ ਹੈ।</li>
            <li>{{Links.Hybrid Analysis}} – Hybrid Analysis {{Links.Payload Security}} ਦੁਆਰਾ ਪ੍ਰਦਾਨ ਕੀਤੀ ਗਈ ਇੱਕ ਮੁਫਤ ਮਾਲਵੇਅਰ ਵਿਸ਼ਲੇਸ਼ਣ ਸੇਵਾ ਹੈ।</li>
@@ -228,7 +228,7 @@ Some useful links: |+
          </ul>
        </li>
        <li><span class="comCat">ਜਾਣਕਾਰੀ ਅਤੇ ਸਿੱਖਣ ਦੇ ਸਰੋਤ।</span>
-         <ul class="comSub">
+         <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – PHP ਸਿੱਖਣ ਦੇ ਸਰੋਤ ਅਤੇ ਚਰਚਾ।</li>
            <li>{{Links.MDN.Homepage}} – ਡਿਵੈਲਪਰਾਂ ਦੁਆਰਾ, ਡਿਵੈਲਪਰਾਂ ਲਈ ਸਰੋਤ। HTML, CSS, JavaScript, ਪਹੁੰਚਯੋਗਤਾ, ਅਤੇ ਹੋਰ ਬਹੁਤ ਕੁਝ ਬਾਰੇ ਸਿੱਖਣ ਲਈ ਇੱਕ ਸ਼ਾਨਦਾਰ ਸਰੋਤ।</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">ਕਮਜ਼ੋਰੀ ਚਾਰਟ</a> – ਵੱਖ-ਵੱਖ ਪੈਕੇਜਾਂ ਦੇ ਸੁਰੱਖਿਅਤ/ਅਸੁਰੱਖਿਅਤ ਸੰਸਕਰਣਾਂ ਨੂੰ ਸੂਚੀਬੱਧ ਕਰਦਾ ਹੈ (HHVM, PHP, phpMyAdmin, Python, ਆਦਿ)।</li>

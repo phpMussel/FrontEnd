@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Thai language data (last modified: 2025.10.15).
+# This file: Thai language data (last modified: 2026.01.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -198,29 +198,29 @@ hints_xlists:
 Some useful links: |+
  ลิงก์ที่เป็นประโยชน์:<br />
      <ul class="pieul">
-       <li><span class="comCat">เครื่องมือ ทรัพยากร ฯลฯ สำหรับ phpMussel.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuTRP" aria-expanded="false">เครื่องมือ ทรัพยากร ฯลฯ สำหรับ phpMussel.</span>
+         <ul class="comSub" id="menuTRP">
            <li>{{Links.phpMussel.Issues}} – หน้าปัญหาสำหรับ phpMussel (สนับสนุน ความช่วยเหลือ ฯลฯ).</li>
            <li>{{Links.phpMussel.SigTool}} – สร้างไฟล์ลายเซ็น phpMussel โดยใช้ฐานข้อมูลลายเซ็น ClamAV.</li>
            <li>{{Links.phpMussel.Extras}} – ตัวเลือกเพิ่มเติมต่างๆ.</li>
          </ul>
        </li>
-       <li><span class="comCat">เครื่องมือ ทรัพยากร ฯลฯ สำหรับ ClamAV.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuTRClamAV" aria-expanded="false">เครื่องมือ ทรัพยากร ฯลฯ สำหรับ ClamAV.</span>
+         <ul class="comSub" id="menuTRClamAV">
            <li>{{Links.ClamavNet}} – โฮมเพจ ClamAV (ClamAV® เป็นเครื่องมือป้องกันไวรัสแบบโอเพนซอร์สสำหรับการตรวจจับโทรจันไวรัสมัลแวร์และภัยคุกคามที่เป็นอันตรายอื่น).</li>
            <li>{{Links.SecuriteInfo}} – บริษัทรักษาความปลอดภัยคอมพิวเตอร์ที่เสนอลายเซ็นเสริมสำหรับ ClamAV.</li>
            <li>{{Links.Sanesecurity}} – บริษัทรักษาความปลอดภัยคอมพิวเตอร์ที่เสนอลายเซ็นเสริมสำหรับ ClamAV.</li>
            <li>{{Links.Malware Expert}} – เสนอลายเซ็นเสริมสำหรับ ClamAV และกฎเสริมสำหรับ ModSecurity.</li>
          </ul>
        </li>
-       <li><span class="comCat">กลุ่ม ฟอรั่ม ชุมชน ฯลฯ.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuGFC" aria-expanded="false">กลุ่ม ฟอรั่ม ชุมชน ฯลฯ.</span>
+         <ul class="comSub" id="menuGFC">
            <li>{{Links.PHP.Earth.Facebook}} – แหล่งเรียนรู้ PHP และการสนทนา.</li>
            <li>{{Links.MalwareTips}} – ฟอรัมที่เป็นประโยชน์สำหรับการสนทนาเกี่ยวกับมัลแวร์.</li>
          </ul>
        </li>
-       <li><span class="comCat">เครื่องมือ ทรัพยากร บริการ ฯลฯ ที่มีประโยชน์อื่น ๆ.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuOUTRS" aria-expanded="false">เครื่องมือ ทรัพยากร บริการ ฯลฯ ที่มีประโยชน์อื่น ๆ.</span>
+         <ul class="comSub" id="menuOUTRS">
            <li>{{Links.PhishTank}} – ฐานข้อมูลฟิชชิ่งใช้โดยเครื่องสแกน URL phpMussel.</li>
            <li>{{Links.VirusTotal}} – VirusTotal เป็นบริการฟรีสำหรับการวิเคราะห์ไฟล์และ URL ที่น่าสงสัย.</li>
            <li>{{Links.Hybrid Analysis}} – Hybrid Analysis เป็นบริการฟรีสำหรับการวิเคราะห์มัลแวร์ให้บริการโดย {{Links.Payload Security}}.</li>
@@ -228,7 +228,7 @@ Some useful links: |+
          </ul>
        </li>
        <li><span class="comCat">แหล่งข้อมูลและการเรียนรู้.</span>
-         <ul class="comSub">
+         <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – แหล่งเรียนรู้ PHP และการสนทนา.</li>
            <li>{{Links.MDN.Homepage}} – แหล่งข้อมูลสำหรับนักพัฒนา โดยนักพัฒนา. แหล่งข้อมูลที่ยอดเยี่ยมสำหรับการเรียนรู้เกี่ยวกับ HTML, CSS, JavaScript, การเข้าถึง และอื่นๆ.</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Vulnerability Charts (ชาร์ตเสี่ยง)</a> – แสดงรายการเวอร์ชันต่างๆแพคเกจที่ปลอดภัย/ไม่ปลอดภัย (HHVM, PHP, phpMyAdmin, Python, ฯลฯ).</li>

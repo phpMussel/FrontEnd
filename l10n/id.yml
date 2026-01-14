@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2025.09.11).
+# This file: Indonesian language data (last modified: 2026.01.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -198,29 +198,29 @@ hints_xlists:
 Some useful links: |+
  Beberapa link yang berguna:<br />
      <ul class="pieul">
-       <li><span class="comCat">Alat, sumber daya, dll untuk phpMussel.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuTRP" aria-expanded="false">Alat, sumber daya, dll untuk phpMussel.</span>
+         <ul class="comSub" id="menuTRP">
            <li>{{Links.phpMussel.Issues}} – Halaman masalah untuk phpMussel (dukungan, bantuan, dll).</li>
            <li>{{Links.phpMussel.SigTool}} – Membuat file tanda tangan phpMussel menggunakan database tanda tangan ClamAV.</li>
            <li>{{Links.phpMussel.Extras}} – Berbagai tambahan.</li>
          </ul>
        </li>
-       <li><span class="comCat">Alat, sumber daya, dll untuk ClamAV.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuTRClamAV" aria-expanded="false">Alat, sumber daya, dll untuk ClamAV.</span>
+         <ul class="comSub" id="menuTRClamAV">
            <li>{{Links.ClamavNet}} – Halaman utama untuk ClamAV (ClamAV® adalah injin antivirus open source untuk mendeteksi trojan, virus, malware dan ancaman berbahaya lainnya).</li>
            <li>{{Links.SecuriteInfo}} – Perusahaan keamanan komputer yang menawarkan tanda tangan tambahan untuk ClamAV.</li>
            <li>{{Links.Sanesecurity}} – Perusahaan keamanan komputer yang menawarkan tanda tangan tambahan untuk ClamAV.</li>
            <li>{{Links.Malware Expert}} – Menyediakan tanda tangan tambahan untuk ClamAV dan aturan tambahan untuk ModSecurity.</li>
          </ul>
        </li>
-       <li><span class="comCat">Grup, forum, komunitas, dll.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuGFC" aria-expanded="false">Grup, forum, komunitas, dll.</span>
+         <ul class="comSub" id="menuGFC">
            <li>{{Links.PHP.Earth.Facebook}} – Sumber belajar dan diskusi PHP.</li>
            <li>{{Links.MalwareTips}} – Berguna forum diskusi difokuskan pada malware.</li>
          </ul>
        </li>
-       <li><span class="comCat">Alat, sumber daya, layanan, dll bermanfaat lainnya.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuOUTRS" aria-expanded="false">Alat, sumber daya, layanan, dll bermanfaat lainnya.</span>
+         <ul class="comSub" id="menuOUTRS">
            <li>{{Links.PhishTank}} – Database phishing digunakan oleh scanner URL phpMussel.</li>
            <li>{{Links.VirusTotal}} – VirusTotal adalah layanan gratis untuk menganalisis file dan URL yang mencurigakan.</li>
            <li>{{Links.Hybrid Analysis}} – Hybrid Analysis adalah layanan analisis malware gratis yang disediakan oleh {{Links.Payload Security}}.</li>
@@ -228,7 +228,7 @@ Some useful links: |+
          </ul>
        </li>
        <li><span class="comCat">Sumber daya informasi dan pembelajaran.</span>
-         <ul class="comSub">
+         <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – Sumber belajar dan diskusi PHP.</li>
            <li>{{Links.MDN.Homepage}} – Sumber daya untuk pengembang, oleh pengembang. Sumber daya yang luar biasa untuk mempelajari tentang HTML, CSS, JavaScript, aksesibilitas, dan banyak lagi.</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Tabel Kerentanan</a> – Mencantumkan berbagai versi dari paket-paket yang aman dan tidak aman (HHVM, PHP, phpMyAdmin, Python, dll).</li>

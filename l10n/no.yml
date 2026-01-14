@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2025.09.11).
+# This file: Norwegian language data (last modified: 2026.01.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -198,29 +198,29 @@ hints_xlists:
 Some useful links: |+
  Noen nyttige lenker:<br />
      <ul class="pieul">
-       <li><span class="comCat">Verktøy, ressurser, osv for phpMussel.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuTRP" aria-expanded="false">Verktøy, ressurser, osv for phpMussel.</span>
+         <ul class="comSub" id="menuTRP">
            <li>{{Links.phpMussel.Issues}} – Issues side for phpMussel (støtte, assistanse, osv).</li>
            <li>{{Links.phpMussel.SigTool}} – Oppretter phpMussel-signaturfiler ved hjelp av ClamAV-signaturdatabasen.</li>
            <li>{{Links.phpMussel.Extras}} – Diverse statister.</li>
          </ul>
        </li>
-       <li><span class="comCat">Verktøy, ressurser, osv for ClamAV.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuTRClamAV" aria-expanded="false">Verktøy, ressurser, osv for ClamAV.</span>
+         <ul class="comSub" id="menuTRClamAV">
            <li>{{Links.ClamavNet}} – ClamAV hjemmeside (ClamAV® er en antivirusmotor med åpen kildekode for å oppdage trojanere, virus, malware og andre skadelige trusler).</li>
            <li>{{Links.SecuriteInfo}} – Datasikkerhetsselskap som tilbyr supplerende signaturer for ClamAV.</li>
            <li>{{Links.Sanesecurity}} – Datasikkerhetsselskap som tilbyr supplerende signaturer for ClamAV.</li>
            <li>{{Links.Malware Expert}} – Tilbyr supplerende signaturer for ClamAV og utfyllende regler for ModSecurity.</li>
          </ul>
        </li>
-       <li><span class="comCat">Grupper, fora, fellesskap, osv.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuGFC" aria-expanded="false">Grupper, fora, fellesskap, osv.</span>
+         <ul class="comSub" id="menuGFC">
            <li>{{Links.PHP.Earth.Facebook}} – PHP læringsressurser og diskusjon.</li>
            <li>{{Links.MalwareTips}} – Nyttige diskusjonsfora fokusert på skadelig programvare.</li>
          </ul>
        </li>
-       <li><span class="comCat">Andre nyttige verktøy, ressurser, tjenester, osv.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuOUTRS" aria-expanded="false">Andre nyttige verktøy, ressurser, tjenester, osv.</span>
+         <ul class="comSub" id="menuOUTRS">
            <li>{{Links.PhishTank}} – Phishing-database brukt av phpMussel URL-skanner.</li>
            <li>{{Links.VirusTotal}} – VirusTotal er en gratis tjeneste for å analysere mistenkelige filer og nettadresser.</li>
            <li>{{Links.Hybrid Analysis}} – Hybrid Analysis er en gratis malware-analysetjeneste levert av {{Links.Payload Security}}.</li>
@@ -228,7 +228,7 @@ Some useful links: |+
          </ul>
        </li>
        <li><span class="comCat">Informasjons og læringsressurser.</span>
-         <ul class="comSub">
+         <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – PHP læringsressurser og diskusjon.</li>
            <li>{{Links.MDN.Homepage}} – Ressurser for utviklere, etter utviklere. En fantastisk ressurs for å lære om HTML, CSS, JavaScript, tilgjengelighet, og mer.</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Sårbarhetskart</a> – Viser sikker/usikker versjon av ulike pakker (HHVM, PHP, phpMyAdmin, Python, osv).</li>

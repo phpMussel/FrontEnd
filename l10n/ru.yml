@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Russian language data (last modified: 2025.09.11).
+# This file: Russian language data (last modified: 2026.01.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -198,29 +198,29 @@ hints_xlists:
 Some useful links: |+
  Некоторые полезные ссылки:<br />
      <ul class="pieul">
-       <li><span class="comCat">Инструменты, ресурсы и т.д. для phpMussel.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuTRP" aria-expanded="false">Инструменты, ресурсы и т.д. для phpMussel.</span>
+         <ul class="comSub" id="menuTRP">
            <li>{{Links.phpMussel.Issues}} – Страница вопросы для phpMussel (поддержка, помощь, и т.д.).</li>
            <li>{{Links.phpMussel.SigTool}} – Создает файлы сигнатур phpMussel с использованием базы данных сигнатур ClamAV.</li>
            <li>{{Links.phpMussel.Extras}} – Различные дополнения.</li>
          </ul>
        </li>
-       <li><span class="comCat">Инструменты, ресурсы и т.д. для ClamAV.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuTRClamAV" aria-expanded="false">Инструменты, ресурсы и т.д. для ClamAV.</span>
+         <ul class="comSub" id="menuTRClamAV">
            <li>{{Links.ClamavNet}} – ClamAV домашняя страница (ClamAV® является антивирусный движок с открытым исходным кодом для обнаружения троянских программ, вирусов, вредоносных программ и других угроз).</li>
            <li>{{Links.SecuriteInfo}} – Компьютерной безопасности компании, которая предлагает дополнительные сигнатуры для ClamAV.</li>
            <li>{{Links.Sanesecurity}} – Компьютерной безопасности компании, которая предлагает дополнительные сигнатуры для ClamAV.</li>
            <li>{{Links.Malware Expert}} – Предлагает дополнительные сигнатуры для ClamAV и дополнительные правила для ModSecurity.</li>
          </ul>
        </li>
-       <li><span class="comCat">Группы, форумы, сообщества и т.д.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuGFC" aria-expanded="false">Группы, форумы, сообщества и т.д.</span>
+         <ul class="comSub" id="menuGFC">
            <li>{{Links.PHP.Earth.Facebook}} – PHP учебных ресурсов и обсуждение.</li>
            <li>{{Links.MalwareTips}} – Полезные вредоносные программы сфокусированные дискуссионных форумов.</li>
          </ul>
        </li>
-       <li><span class="comCat">Другие полезные инструменты, ресурсы, услуги и т.д.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuOUTRS" aria-expanded="false">Другие полезные инструменты, ресурсы, услуги и т.д.</span>
+         <ul class="comSub" id="menuOUTRS">
            <li>{{Links.PhishTank}} – Фишинг базе данных, используется в сканером URL для phpMussel.</li>
            <li>{{Links.VirusTotal}} – Бесплатный сервис для анализа подозрительных файлов и URL-адресов.</li>
            <li>{{Links.Hybrid Analysis}} – Hybrid Analysis представляет бесплатный сервис для анализа вредоносного программного, предоставленной {{Links.Payload Security}}.</li>
@@ -228,7 +228,7 @@ Some useful links: |+
          </ul>
        </li>
        <li><span class="comCat">Информационные и учебные ресурсы.</span>
-         <ul class="comSub">
+         <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – PHP учебных ресурсов и обсуждение.</li>
            <li>{{Links.MDN.Homepage}} – Ресурсы для разработчиков, от разработчиков. Фантастический ресурс для изучения HTML, CSS, JavaScript, доступность, и многого другого.</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Таблицы Уязвимостей</a> – Список безопасных/небезопасных версий различных пакетов (HHVM, PHP, phpMyAdmin, Python, и т.д.).</li>

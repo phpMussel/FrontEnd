@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2025.09.16).
+# This file: Arabic language data (last modified: 2026.01.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -198,29 +198,29 @@ hints_xlists:
 Some useful links: |+
  بعض الروابط المفيدة:<br />
      <ul class="pieul">
-       <li><span class="comCat">الأدوات، الموارد، إلخ لـ phpMussel.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuTRP" aria-expanded="false">الأدوات، الموارد، إلخ لـ phpMussel.</span>
+         <ul class="comSub" id="menuTRP">
            <li>{{Links.phpMussel.Issues}} – صفحة المشكلات لphpMussel (الدعم والمساعدة، الخ).</li>
            <li>{{Links.phpMussel.SigTool}} – ينشئ ملفات توقيع phpMussel باستخدام قاعدة بيانات توقيعات ClamAV.</li>
            <li>{{Links.phpMussel.Extras}} – إضافات مختلفة.</li>
          </ul>
        </li>
-       <li><span class="comCat">الأدوات، الموارد، إلخ لـ ClamAV.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuTRClamAV" aria-expanded="false">الأدوات، الموارد، إلخ لـ ClamAV.</span>
+         <ul class="comSub" id="menuTRClamAV">
            <li>{{Links.ClamavNet}} – الرئيسية ClamAV (ClamAV® هو محرك مكافحة الفيروسات مفتوحة المصدر للكشف عن أحصنة طروادة والفيروسات، والبرمجيات الخبيثة وغيرها من التهديدات الخبيثة).</li>
            <li>{{Links.SecuriteInfo}} – شركة أمن الكمبيوتر التي توفر التوقيعات التكميلية لكلاماف.</li>
            <li>{{Links.Sanesecurity}} – شركة أمن الكمبيوتر التي توفر التوقيعات التكميلية لكلاماف.</li>
            <li>{{Links.Malware Expert}} – يقدم التواقيع التكميلية لClamAV والقواعد التكميلية لModSecurity.</li>
          </ul>
        </li>
-       <li><span class="comCat">مجموعات، المنتديات، مجتمعات، إلخ.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuGFC" aria-expanded="false">مجموعات، المنتديات، مجتمعات، إلخ.</span>
+         <ul class="comSub" id="menuGFC">
            <li>{{Links.PHP.Earth.Facebook}} – PHP مصادر التعلم والمناقشة.</li>
            <li>{{Links.MalwareTips}} – مفيدة البرمجيات الخبيثة المنتديات مناقشة مركزة.</li>
          </ul>
        </li>
-       <li><span class="comCat">الأدوات، الموارد، الخدمات، إلخ مفيدة أخرى.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuOUTRS" aria-expanded="false">الأدوات، الموارد، الخدمات، إلخ مفيدة أخرى.</span>
+         <ul class="comSub" id="menuOUTRS">
            <li>{{Links.PhishTank}} – التصيد قاعدة البيانات التي تستخدمها URL الماسح الضوئي phpMussel.</li>
            <li>{{Links.VirusTotal}} – خدمة مجانية لتحليل الملفات وعناوين المواقع التي هي مشبوهة.</li>
            <li>{{Links.Hybrid Analysis}} – Hybrid Analysis هو خدمة تحليل البرمجيات الخبيثة المجانية التي تقدمها {{Links.Payload Security}}.</li>
@@ -228,7 +228,7 @@ Some useful links: |+
          </ul>
        </li>
        <li><span class="comCat">موارد المعلومات والتعلم.</span>
-         <ul class="comSub">
+         <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – PHP مصادر التعلم والمناقشة.</li>
            <li>{{Links.MDN.Homepage}} – موارد للمطورين، من قبل المطورين. مورد رائع للتعرف على HTML وCSS وJavaScript وإمكانية الوصول والمزيد.</li>
            <li><a dir="ltr" href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Vulnerability Charts</a> – يسرد نسخ آمنة وغير آمنة من مختلف الحزم (HHVM ,PHP ,phpMyAdmin ,Python، إلخ).</li>

@@ -224,3 +224,6 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 
 #### Bugs fixed.
 - [2025.12.27]: Page tip greeting wasn't correctly showing the username when at the awaiting 2FA code page; Fixed.
+
+#### Other changes.
+- [2026.01.14]: Added aria expanded and controls attributes to some of the clickable menus at the front-end.

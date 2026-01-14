@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2025.09.11).
+# This file: Afrikaans language data (last modified: 2026.01.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -198,29 +198,29 @@ hints_xlists:
 Some useful links: |+
  Nuttige skakels:<br />
      <ul class="pieul">
-       <li><span class="comCat">Gereedskap, hulpbronne, ens vir phpMussel.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuTRP" aria-expanded="false">Gereedskap, hulpbronne, ens vir phpMussel.</span>
+         <ul class="comSub" id="menuTRP">
            <li>{{Links.phpMussel.Issues}} – Kwessies bladsy vir phpMussel (ondersteuning, bystand, ens).</li>
            <li>{{Links.phpMussel.SigTool}} – Skep phpMussel handtekeninglêers met behulp van die ClamAV handtekening databasis.</li>
            <li>{{Links.phpMussel.Extras}} – Verskeie ekstras.</li>
          </ul>
        </li>
-       <li><span class="comCat">Gereedskap, hulpbronne, ens vir ClamAV.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuTRClamAV" aria-expanded="false">Gereedskap, hulpbronne, ens vir ClamAV.</span>
+         <ul class="comSub" id="menuTRClamAV">
            <li>{{Links.ClamavNet}} – ClamAV tuisblad (ClamAV® is 'n oopbron-antivirus-enjin vir die opsporing van trojans, virusse, wanware en ander kwaadwillige bedreigings).</li>
            <li>{{Links.SecuriteInfo}} – Rekenaar sekuriteitsmaatskappy wat aanvullende handtekeninge vir ClamAV aanbied.</li>
            <li>{{Links.Sanesecurity}} – Rekenaar sekuriteitsmaatskappy wat aanvullende handtekeninge vir ClamAV aanbied.</li>
            <li>{{Links.Malware Expert}} – Bied aanvullende handtekeninge vir ClamAV en aanvullende reëls vir ModSecurity.</li>
          </ul>
        </li>
-       <li><span class="comCat">Groepe, forums, gemeenskappe, ens.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuGFC" aria-expanded="false">Groepe, forums, gemeenskappe, ens.</span>
+         <ul class="comSub" id="menuGFC">
            <li>{{Links.PHP.Earth.Facebook}} – PHP leerhulpbronne en bespreking.</li>
            <li>{{Links.MalwareTips}} – Nuttige wanware-gefokusde besprekingsforums.</li>
          </ul>
        </li>
-       <li><span class="comCat">Ander nuttige gereedskap, hulpbronne, dienste, ens.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuOUTRS" aria-expanded="false">Ander nuttige gereedskap, hulpbronne, dienste, ens.</span>
+         <ul class="comSub" id="menuOUTRS">
            <li>{{Links.PhishTank}} – Uitvissing-databasis wat deur die phpMussel URL-skandeerder gebruik word.</li>
            <li>{{Links.VirusTotal}} – VirusTotal is 'n gratis diens vir die ontleding van verdagte lêers en URL's.</li>
            <li>{{Links.Hybrid Analysis}} – Hybrid Analysis is 'n gratis wanware-ontledingsdiens wat deur {{Links.Payload Security}} verskaf word.</li>
@@ -228,7 +228,7 @@ Some useful links: |+
          </ul>
        </li>
        <li><span class="comCat">Inligtings en leerhulpbronne.</span>
-         <ul class="comSub">
+         <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – PHP leerhulpbronne en bespreking.</li>
            <li>{{Links.MDN.Homepage}} – Hulpbronne vir ontwikkelaars, deur ontwikkelaars. Fantastiese hulpbron om te leer oor HTML, CSS, JavaScript, toeganklikheid, en meer.</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Kwesbaarheidskaarte</a> – Lys veilige/onveilige weergawes van verskeie pakkette (HHVM, PHP, phpMyAdmin, Python, ens).</li>

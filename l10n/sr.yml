@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Serbian language data (last modified: 2025.09.11).
+# This file: Serbian language data (last modified: 2026.01.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -198,29 +198,29 @@ hints_xlists:
 Some useful links: |+
  Неки корисни линкови:<br />
      <ul class="pieul">
-       <li><span class="comCat">Алати, ресурси, итд. за пхпМуссел.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuTRP" aria-expanded="false">Алати, ресурси, итд. за пхпМуссел.</span>
+         <ul class="comSub" id="menuTRP">
            <li>{{Links.phpMussel.Issues}} – Страница са проблемима за пхпМуссел (подршка, помоћ, итд).</li>
            <li>{{Links.phpMussel.SigTool}} – Креира пхпМуссел датотеке потписа користећи ClamAV базу података потписа.</li>
            <li>{{Links.phpMussel.Extras}} – Разни додаци.</li>
          </ul>
        </li>
-       <li><span class="comCat">Алати, ресурси, итд. за ClamAV.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuTRClamAV" aria-expanded="false">Алати, ресурси, итд. за ClamAV.</span>
+         <ul class="comSub" id="menuTRClamAV">
            <li>{{Links.ClamavNet}} – Почетна страница ClamAV-а (ClamAV® је антивирусни програм отвореног кода за откривање тројанаца, вируса, злонамерног софтвера и других злонамерних претњи).</li>
            <li>{{Links.SecuriteInfo}} – Компанија за рачунарску безбедност која нуди додатне потписе за ClamAV.</li>
            <li>{{Links.Sanesecurity}} – Компанија за рачунарску безбедност која нуди додатне потписе за ClamAV.</li>
            <li>{{Links.Malware Expert}} – Нуди додатне потписе за ClamAV и додатна правила за ModSecurity.</li>
          </ul>
        </li>
-       <li><span class="comCat">Групе, форуми, заједнице, итд.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuGFC" aria-expanded="false">Групе, форуми, заједнице, итд.</span>
+         <ul class="comSub" id="menuGFC">
            <li>{{Links.PHP.Earth.Facebook}} – PHP ресурси за учење и дискусија.</li>
            <li>{{Links.MalwareTips}} – Корисни форуми за дискусију фокусирани на злонамерни софтвер.</li>
          </ul>
        </li>
-       <li><span class="comCat">Други корисни алати, ресурси, услуге, итд.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuOUTRS" aria-expanded="false">Други корисни алати, ресурси, услуге, итд.</span>
+         <ul class="comSub" id="menuOUTRS">
            <li>{{Links.PhishTank}} – Фишинг база података коју користи пхпМуссел URL скенер.</li>
            <li>{{Links.VirusTotal}} – VirusTotal је бесплатна услуга за анализу сумњивих датотека и URL-ова.</li>
            <li>{{Links.Hybrid Analysis}} – Hybrid Analysis је бесплатна услуга анализе злонамерног софтвера коју пружа {{Links.Payload Security}}.</li>
@@ -228,7 +228,7 @@ Some useful links: |+
          </ul>
        </li>
        <li><span class="comCat">Информативни и образовни ресурси.</span>
-         <ul class="comSub">
+         <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – PHP ресурси за учење и дискусија.</li>
            <li>{{Links.MDN.Homepage}} – Ресурси за програмере, од програмера. Фантастичан ресурс за учење о HTML-у, CSS-у, JavaScript-у, приступачности, и још много чему.</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Графикони рањивости</a> – Наводи безбедне/небезбедне верзије различитих пакета (HHVM, PHP, phpMyAdmin, Python, итд).</li>

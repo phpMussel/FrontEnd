@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese language data (last modified: 2025.09.14).
+# This file: Chinese language data (last modified: 2026.01.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -287,38 +287,38 @@ Some useful links:
  zh-Hans: |+
   一些有用的链接：<br />
       <ul class="pieul">
-        <li><span class="comCat">phpMussel的工具、资源、等等。</span>
-          <ul class="comSub">
+        <li><span class="comCat" role="region" aria-controls="menuTRP" aria-expanded="false">phpMussel的工具、资源、等等。</span>
+          <ul class="comSub" id="menuTRP">
             <li>{{Links.phpMussel.Issues}} – phpMussel问题页面（支持、协助、等等）。</li>
             <li>{{Links.phpMussel.SigTool}} – 使用ClamAV签名数据库创建phpMussel签名文件。</li>
             <li>{{Links.OSChina}} – phpMussel页面托管在开源中国社区。</li>
             <li>{{Links.phpMussel.Extras}} – 各种附加功能。</li>
           </ul>
         </li>
-        <li><span class="comCat">ClamAV的工具、资源、等等。</span>
-          <ul class="comSub">
+        <li><span class="comCat" role="region" aria-controls="menuTRClamAV" aria-expanded="false">ClamAV的工具、资源、等等。</span>
+          <ul class="comSub" id="menuTRClamAV">
             <li>{{Links.ClamavNet}} – ClamAV主页（ClamAV®是一个开源的防病毒引擎用于检测木马，​病毒，​恶意软件和其他恶意威胁）。</li>
             <li>{{Links.SecuriteInfo}} – 一家计算机安全公司。为ClamAV提供补充签名。</li>
             <li>{{Links.Sanesecurity}} – 一家计算机安全公司。为ClamAV提供补充签名。</li>
             <li>{{Links.Malware Expert}} – 提供ClamAV的补充签名和ModSecurity的补充规则。</li>
           </ul>
         </li>
-        <li><span class="comCat">团体、论坛、社区、等等。</span>
-          <ul class="comSub">
+        <li><span class="comCat" role="region" aria-controls="menuGFC" aria-expanded="false">团体、论坛、社区、等等。</span>
+          <ul class="comSub" id="menuGFC">
             <li>{{Links.PHP.Earth.Facebook}} – PHP学习资源和讨论。</li>
             <li>{{Links.MalwareTips}} – 有用的讨论论坛关于恶意软件。</li>
           </ul>
         </li>
-        <li><span class="comCat">其他有用的工具、资源、服务、等等</span>
-          <ul class="comSub">
+        <li><span class="comCat" role="region" aria-controls="menuOUTRS" aria-expanded="false">其他有用的工具、资源、服务、等等</span>
+          <ul class="comSub" id="menuOUTRS">
             <li>{{Links.PhishTank}} – 网络钓鱼数据库。由phpMussel URL扫描器使用。</li>
             <li>{{Links.VirusTotal}} – VirusTotal是一项免费服务，​用于分析可疑文件和URL。</li>
             <li>{{Links.Hybrid Analysis}} – Hybrid Analysis是由{{Links.Payload Security}}提供的免费恶意软件分析服务。</li>
             <li>{{Links.Malwarebytes}} – 电脑反恶意软件专家。</li>
           </ul>
         </li>
-        <li><span class="comCat">信息和学习资源。</span>
-          <ul class="comSub">
+        <li><span class="comCat" role="region" aria-controls="menuILR" aria-expanded="false">信息和学习资源。</span>
+          <ul class="comSub" id="menuILR">
             <li>{{Links.PHP.Earth.Website}} – PHP学习资源和讨论。</li>
             <li>{{Links.MDN.Homepage}} – 由开发人员，为开发人员提供的资源。这是学习HTML、CSS、JavaScript、可访问性、等内容的绝佳资源。</li>
             <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">脆弱性图表</a> – 列出各种软件包的安全/不安全版本（HHVM、PHP、phpMyAdmin、Python、等等）。</li>
@@ -329,38 +329,38 @@ Some useful links:
  zh-Hant: |+
   一些有用的链接：<br />
       <ul class="pieul">
-        <li><span class="comCat">phpMussel的工具、資源、等等。</span>
-          <ul class="comSub">
+        <li><span class="comCat" role="region" aria-controls="menuTRP" aria-expanded="false">phpMussel的工具、資源、等等。</span>
+          <ul class="comSub" id="menuTRP">
             <li>{{Links.phpMussel.Issues}} – phpMussel問題頁面（支持、協助、等等）。</li>
             <li>{{Links.phpMussel.SigTool}} – 使用ClamAV簽名資料庫創建phpMussel簽名檔案。</li>
             <li>{{Links.OSChina}} – phpMussel頁面託管在開源中國社區。</li>
             <li>{{Links.phpMussel.Extras}} – 各種附加功能。</li>
           </ul>
         </li>
-        <li><span class="comCat">ClamAV的工具、資源、等等。</span>
-          <ul class="comSub">
+        <li><span class="comCat" role="region" aria-controls="menuTRClamAV" aria-expanded="false">ClamAV的工具、資源、等等。</span>
+          <ul class="comSub" id="menuTRClamAV">
             <li>{{Links.ClamavNet}} – ClamAV主頁（ClamAV®是一個開源的防病毒引擎用於檢測木馬，​病毒，​惡意軟體和其他惡意威脅）。</li>
             <li>{{Links.SecuriteInfo}} – 一家計算機安全公司。為ClamAV提供補充簽名。</li>
             <li>{{Links.Sanesecurity}} – 一家計算機安全公司。為ClamAV提供補充簽名。</li>
             <li>{{Links.Malware Expert}} – 提供ClamAV的補充簽名和ModSecurity的補充規則。</li>
           </ul>
         </li>
-        <li><span class="comCat">團體、論壇、社區、等等。</span>
-          <ul class="comSub">
+        <li><span class="comCat" role="region" aria-controls="menuGFC" aria-expanded="false">團體、論壇、社區、等等。</span>
+          <ul class="comSub" id="menuGFC">
             <li>{{Links.PHP.Earth.Facebook}} – PHP學習資源和討論。</li>
             <li>{{Links.MalwareTips}} – 有用的討論論壇關於惡意軟體。</li>
           </ul>
         </li>
-        <li><span class="comCat">其他有用的工具、資源、服務、等等</span>
-          <ul class="comSub">
+        <li><span class="comCat" role="region" aria-controls="menuOUTRS" aria-expanded="false">其他有用的工具、資源、服務、等等</span>
+          <ul class="comSub" id="menuOUTRS">
             <li>{{Links.PhishTank}} – 網絡釣魚資料庫。由phpMussel URL掃描器使用。</li>
             <li>{{Links.VirusTotal}} – VirusTotal是一項免費服務，​用於分析可疑文件和URL。</li>
             <li>{{Links.Hybrid Analysis}} – Hybrid Analysis是由{{Links.Payload Security}}提供的免費惡意軟體分析服務。</li>
             <li>{{Links.Malwarebytes}} – 電腦反惡意軟體專家。</li>
           </ul>
         </li>
-        <li><span class="comCat">信息和學習資源。</span>
-          <ul class="comSub">
+        <li><span class="comCat" role="region" aria-controls="menuILR" aria-expanded="false">信息和學習資源。</span>
+          <ul class="comSub" id="menuILR">
             <li>{{Links.PHP.Earth.Website}} – PHP學習資源和討論。</li>
             <li>{{Links.MDN.Homepage}} – 由開發人員，為開發人員提供的資源。這是學習HTML、CSS、JavaScript、輔助功能、等知識的絕佳資源。</li>
             <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">脆弱性圖表</a> – 列出各種軟件包的安全/不安全版本（HHVM、PHP、phpMyAdmin、Python、等等）。</li>

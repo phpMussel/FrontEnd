@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data (last modified: 2025.10.19).
+# This file: Hebrew language data (last modified: 2026.01.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -198,29 +198,29 @@ hints_xlists:
 Some useful links: |+
  כמה קישורים שימושיים:<br />
      <ul class="pieul">
-       <li><span class="comCat">כלים, משאבים, וכו' עבור phpMussel.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuTRP" aria-expanded="false">כלים, משאבים, וכו' עבור phpMussel.</span>
+         <ul class="comSub" id="menuTRP">
            <li>{{Links.phpMussel.Issues}} – דף בעיות עבור phpMussel (תמיכה, סיוע, וכו').</li>
            <li>{{Links.phpMussel.SigTool}} – יוצר קבצי חתימה של phpMussel באמצעות מסד הנתונים של חתימות ClamAV.</li>
            <li>{{Links.phpMussel.Extras}} – תוספות שונות.</li>
          </ul>
        </li>
-       <li><span class="comCat">כלים, משאבים, וכו' עבור ClamAV.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuTRClamAV" aria-expanded="false">כלים, משאבים, וכו' עבור ClamAV.</span>
+         <ul class="comSub" id="menuTRClamAV">
            <li>{{Links.ClamavNet}} – דף הבית של ClamAV (ClamAV® הוא מנוע אנטי-וירוס בקוד פתוח לזיהוי סוסים טרויאנים, וירוסים, תוכנות זדוניות ואיומים זדוניים אחרים).</li>
            <li>{{Links.SecuriteInfo}} – חברת אבטחת מחשבים המציעה חתימות משלימות עבור ClamAV.</li>
            <li>{{Links.Sanesecurity}} – חברת אבטחת מחשבים המציעה חתימות משלימות עבור ClamAV.</li>
            <li>{{Links.Malware Expert}} – מציע חתימות משלימות עבור ClamAV וכללים משלימים עבור ModSecurity.</li>
          </ul>
        </li>
-       <li><span class="comCat">קבוצות, פורומים, קהילות, וכו'.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuGFC" aria-expanded="false">קבוצות, פורומים, קהילות, וכו'.</span>
+         <ul class="comSub" id="menuGFC">
            <li>{{Links.PHP.Earth.Facebook}} – משאבי למידה ודיון ב-PHP.</li>
            <li>{{Links.MalwareTips}} – פורומי דיון שימושיים הממוקדים בתוכנות זדוניות.</li>
          </ul>
        </li>
-       <li><span class="comCat">כלים אחרים, משאבים, שירותים, וכו' שיכולים להיות שימושיים.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuOUTRS" aria-expanded="false">כלים אחרים, משאבים, שירותים, וכו' שיכולים להיות שימושיים.</span>
+         <ul class="comSub" id="menuOUTRS">
            <li>{{Links.PhishTank}} – מסד נתונים דיוג בשימוש על ידי סורק phpMussel URL.</li>
            <li>{{Links.VirusTotal}} – VirusTotal הוא שירות חינמי לניתוח קבצים וכתובות URL חשודות.</li>
            <li>{{Links.Hybrid Analysis}} – Hybrid Analysis הוא שירות חינמי לניתוח תוכנות זדוניות המסופק על ידי {{Links.Payload Security}}.</li>
@@ -228,7 +228,7 @@ Some useful links: |+
          </ul>
        </li>
        <li><span class="comCat">מידע ומשאבי למידה.</span>
-         <ul class="comSub">
+         <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – משאבי למידה ודיון ב-PHP.</li>
            <li>{{Links.MDN.Homepage}} – משאבים למפתחים, לפי מפתחים. משאב פנטסטי ללמידה על HTML, CSS, JavaScript, נגישות, ועוד.</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">תרשימי פגיעות</a> – מפרטת גרסאות בטוחות ולא בטוחות של חבילות שונות (HHVM ,PHP ,phpMyAdmin ,Python, וכו').</li>

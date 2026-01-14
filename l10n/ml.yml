@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malayalam language data (last modified: 2025.09.11).
+# This file: Malayalam language data (last modified: 2026.01.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -198,29 +198,29 @@ hints_xlists:
 Some useful links: |+
  ചില ഉപയോഗപ്രദമായ ലിങ്കുകൾ:<br />
      <ul class="pieul">
-       <li><span class="comCat">phpMussel-നുള്ള ഉപകരണങ്ങൾ, വിഭവങ്ങൾ, മുതലായവ.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuTRP" aria-expanded="false">phpMussel-നുള്ള ഉപകരണങ്ങൾ, വിഭവങ്ങൾ, മുതലായവ.</span>
+         <ul class="comSub" id="menuTRP">
            <li>{{Links.phpMussel.Issues}} – phpMussel-നുള്ള ലക്കങ്ങളുടെ പേജ് (പിന്തുണ, സഹായം, മുതലായവ).</li>
            <li>{{Links.phpMussel.SigTool}} – ClamAV ഒപ്പ് ഡാറ്റാബേസ് ഉപയോഗിച്ച് phpMussel ഒപ്പ് ഫയലുകൾ സൃഷ്ടിക്കുന്നു.</li>
            <li>{{Links.phpMussel.Extras}} – വിവിധ അധികങ്ങൾ.</li>
          </ul>
        </li>
-       <li><span class="comCat">ClamAV-നുള്ള ഉപകരണങ്ങൾ, വിഭവങ്ങൾ, മുതലായവ.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuTRClamAV" aria-expanded="false">ClamAV-നുള്ള ഉപകരണങ്ങൾ, വിഭവങ്ങൾ, മുതലായവ.</span>
+         <ul class="comSub" id="menuTRClamAV">
            <li>{{Links.ClamavNet}} – ClamAV ഹോംപേജ് (ട്രോജനുകൾ, വൈറസുകൾ, മാൽവെയർ, മറ്റ് ദോഷകരമായ ഭീഷണികൾ എന്നിവ കണ്ടെത്തുന്നതിനുള്ള ClamAV® ഒരു ഓപ്പൺ സോഴ്‌സ് ആന്റിവൈറസ് എഞ്ചിനാണ്).</li>
            <li>{{Links.SecuriteInfo}} – ClamAV-യ്‌ക്കായി സപ്ലിമെന്ററി ഒപ്പുകൾ വാഗ്ദാനം ചെയ്യുന്ന കമ്പ്യൂട്ടർ സുരക്ഷാ കമ്പനി.</li>
            <li>{{Links.Sanesecurity}} – ClamAV-യ്‌ക്കായി സപ്ലിമെന്ററി ഒപ്പുകൾ വാഗ്ദാനം ചെയ്യുന്ന കമ്പ്യൂട്ടർ സുരക്ഷാ കമ്പനി.</li>
            <li>{{Links.Malware Expert}} – ClamAV-യ്‌ക്കുള്ള സപ്ലിമെന്ററി ഒപ്പുകളും ModSecurity-യ്‌ക്കുള്ള സപ്ലിമെന്ററി നിയമങ്ങളും വാഗ്ദാനം ചെയ്യുന്നു.</li>
          </ul>
        </li>
-       <li><span class="comCat">ഗ്രൂപ്പുകൾ, ഫോറങ്ങൾ, കമ്മ്യൂണിറ്റികൾ, മുതലായവ.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuGFC" aria-expanded="false">ഗ്രൂപ്പുകൾ, ഫോറങ്ങൾ, കമ്മ്യൂണിറ്റികൾ, മുതലായവ.</span>
+         <ul class="comSub" id="menuGFC">
            <li>{{Links.PHP.Earth.Facebook}} – PHP പഠന വിഭവങ്ങളും ചർച്ചയും.</li>
            <li>{{Links.MalwareTips}} – ഉപയോഗപ്രദമായ മാൽവെയർ കേന്ദ്രീകൃത ചർച്ചാ ഫോറങ്ങൾ.</li>
          </ul>
        </li>
-       <li><span class="comCat">മറ്റ് ഉപയോഗപ്രദമായ ഉപകരണങ്ങൾ, വിഭവങ്ങൾ, സേവനങ്ങൾ, മുതലായവ.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuOUTRS" aria-expanded="false">മറ്റ് ഉപയോഗപ്രദമായ ഉപകരണങ്ങൾ, വിഭവങ്ങൾ, സേവനങ്ങൾ, മുതലായവ.</span>
+         <ul class="comSub" id="menuOUTRS">
            <li>{{Links.PhishTank}} – phpMussel URL സ്കാനർ ഉപയോഗിക്കുന്ന ഫിഷിംഗ് ഡാറ്റാബേസ്.</li>
            <li>{{Links.VirusTotal}} – സംശയാസ്‌പദമായ ഫയലുകളും URL-കളും വിശകലനം ചെയ്യുന്നതിനുള്ള VirusTotal ഒരു സൗജന്യ സേവനമാണ്.</li>
            <li>{{Links.Hybrid Analysis}} – {{Links.Payload Security}} നൽകുന്ന Hybrid Analysis (ഹൈബ്രിഡ് അനാലിസിസ്ഒ) രു സൌജന്യ മാൽവെയർ വിശകലന സേവനമാണ് ഹൈബ്രിഡ് അനാലിസിസ്.</li>
@@ -228,7 +228,7 @@ Some useful links: |+
          </ul>
        </li>
        <li><span class="comCat">വിവര, പഠന വിഭവങ്ങൾ.</span>
-         <ul class="comSub">
+         <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – PHP പഠന വിഭവങ്ങളും ചർച്ചയും.</li>
            <li>{{Links.MDN.Homepage}} – ഡെവലപ്പർമാർക്കുള്ള ഉറവിടങ്ങൾ, ഡെവലപ്പർമാർ മുഖേന. HTML, CSS, JavaScript, ആക്‌സസിബിലിറ്റി മറ്റും എന്നിവയെക്കുറിച്ചും പഠിക്കുന്നതിനുള്ള ഒരു മികച്ച ഉറവിടം.</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">ദുർബലതാ ചാർട്ടുകൾ</a> – വിവിധ പാക്കേജുകൾക്കായുള്ള (HHVM, PHP, phpMyAdmin, Python, മുതലായവ) സുരക്ഷിത/സുരക്ഷിതമല്ലാത്ത പതിപ്പുകൾ പട്ടികപ്പെടുത്തുന്നു.</li>

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2025.09.11).
+# This file: French language data (last modified: 2026.01.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -210,29 +210,29 @@ hints_xlists:
 Some useful links: |+
  Quelques liens utiles :<br />
      <ul class="pieul">
-       <li><span class="comCat">Outils, ressources, etc. pour phpMussel.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuTRP" aria-expanded="false">Outils, ressources, etc. pour phpMussel.</span>
+         <ul class="comSub" id="menuTRP">
            <li>{{Links.phpMussel.Issues}} – Page de problèmes pour phpMussel (soutien, assistance, etc).</li>
            <li>{{Links.phpMussel.SigTool}} – Crée des fichiers de signature pour phpMussel à l'aide de la base de données de signatures ClamAV.</li>
            <li>{{Links.phpMussel.Extras}} – Divers extras.</li>
          </ul>
        </li>
-       <li><span class="comCat">Outils, ressources, etc. pour ClamAV.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuTRClamAV" aria-expanded="false">Outils, ressources, etc. pour ClamAV.</span>
+         <ul class="comSub" id="menuTRClamAV">
            <li>{{Links.ClamavNet}} – Page d'accueil de ClamAV (ClamAV® est un moteur antivirus open source pour détecter les trojans, les virus, les logiciels malveillants et autres menaces malveillantes).</li>
            <li>{{Links.SecuriteInfo}} – Compagnie de sécurité informatique qui offre des signatures supplémentaires pour ClamAV.</li>
            <li>{{Links.Sanesecurity}} – Compagnie de sécurité informatique qui offre des signatures supplémentaires pour ClamAV.</li>
            <li>{{Links.Malware Expert}} – Offre des signatures supplémentaires pour ClamAV et des règles supplémentaires pour ModSecurity.</li>
          </ul>
        </li>
-       <li><span class="comCat">Groupes, forums, communautés, etc.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuGFC" aria-expanded="false">Groupes, forums, communautés, etc.</span>
+         <ul class="comSub" id="menuGFC">
            <li>{{Links.PHP.Earth.Facebook}} – Ressources d'apprentissage PHP et discussion.</li>
            <li>{{Links.MalwareTips}} – Forum de discussion sur les logiciels malveillants.</li>
          </ul>
        </li>
-       <li><span class="comCat">Autres outils, ressources, services, etc. utiles.</span>
-         <ul class="comSub">
+       <li><span class="comCat" role="region" aria-controls="menuOUTRS" aria-expanded="false">Autres outils, ressources, services, etc. utiles.</span>
+         <ul class="comSub" id="menuOUTRS">
            <li>{{Links.PhishTank}} – Base de données d'hameçonnage utilisée par le scanner URL de phpMussel.</li>
            <li>{{Links.VirusTotal}} – VirusTotal est un service gratuit pour analyser les fichiers et les URL qui sont suspects.</li>
            <li>{{Links.Hybrid Analysis}} – Hybrid Analysis est un service gratuit pour l'analyse des logiciels malveillants fourni par {{Links.Payload Security}}.</li>
@@ -240,7 +240,7 @@ Some useful links: |+
          </ul>
        </li>
        <li><span class="comCat">Ressources d'information et d'apprentissage.</span>
-         <ul class="comSub">
+         <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – Ressources d'apprentissage PHP et discussion.</li>
            <li>{{Links.MDN.Homepage}} – Ressources pour les développeurs, par les développeurs. Une ressource fantastique pour en savoir plus sur HTML, CSS, JavaScript, l'accessibilité, et bien plus encore.</li>
            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Cartes de Vulnérabilité</a> – Liste des versions sûres/dangereuses de divers paquets (HHVM, PHP, phpMyAdmin, Python, etc).</li>
