@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2026.01.14).
+# This file: Malay language data (last modified: 2026.01.20).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -38,7 +38,7 @@ config:
  core_lang_override: "Setempatkan mengikut HTTP_ACCEPT_LANGUAGE apabila boleh? True = Ya [Lalai]; False = Tidak."
  core_log_rotation_action: "Putaran log mengehadkan bilangan fail log yang sepatutnya wujud pada satu-satu masa. Apabila fail log baharu dicipta, jika jumlah bilangan fail log melebihi had yang ditentukan, tindakan yang ditentukan akan dilakukan. Anda boleh menentukan tindakan yang diingini disini."
  core_log_rotation_limit: "Putaran log mengehadkan bilangan fail log yang sepatutnya wujud pada satu-satu masa. Apabila fail log baharu dicipta, jika jumlah bilangan fail log melebihi had yang ditentukan, tindakan yang ditentukan akan dilakukan. Anda boleh menentukan had yang dikehendaki disini. Nilai 0 akan menyahaktifkan putaran log."
- core_maintenance_mode: "Aktifkan mod penyelenggaraan? True = Ya; False = Tidak [Lalai]. Menyahaktifkan semua selain bahagian hadapan. Kadangkala berguna apabila mengemas kini CMS anda, rangka kerja anda, dsb."
+ core_maintenance_mode: "Aktifkan mod penyelenggaraan? True = Ya; False = Tidak [Lalai]. Menyahaktifkan semua selain bahagian hadapan. Kadangkala berguna apabila mengemas kini CMS anda, rangka kerja anda, dll."
  core_outbound_request_log: "Fail untuk mengelog hasil sebarang permintaan keluar. Tentukan nama fail, atau biarkan kosong untuk nyahaktifkan."
  core_request_proxy: "Jika anda mahu permintaan keluar dihantar melalui proksi, nyatakan proksi tersebut disini. Jika tidak, biarkan ini kosong."
  core_request_proxyauth: "Jika menghantar permintaan keluar melalui proksi dan jika proksi ini memerlukan nama pengguna dan kata laluan, nyatakan nama pengguna dan kata laluan tersebut disini (cth., <code>user:pass</code>). Jika tidak, biarkan ini kosong."
@@ -48,7 +48,7 @@ config:
  core_statistics: "Jejaki statistik penggunaan phpMussel? True = Ya; False = Tidak [Lalai]."
  core_time_format: "Format notasi tarikh/masa yang digunakan oleh phpMussel. Pilihan tambahan boleh ditambah atas permintaan."
  core_time_offset: "Zon waktu diimbangi dalam minit."
- core_timezone: "Ini digunakan untuk menentukan zon waktu yang akan digunakan (cth., Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, dll). Tentukan "SISTEM" untuk membenarkan PHP mengendalikan ini untuk anda secara automatik."
+ core_timezone: "Ini digunakan untuk menentukan zon waktu yang akan digunakan (cth., Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, dsb). Tentukan "SISTEM" untuk membenarkan PHP mengendalikan ini untuk anda secara automatik."
  core_truncate: "Memotong fail log apabila ia mencapai saiz tertentu? Nilai ialah saiz maksimum dalam B/KB/MB/GB/TB yang fail log boleh berkembang sebelum dipotong. Nilai lalai 0KB nyahaktifkan pemotongan (fail log boleh berkembang selama-lamanya). Perhatikan: Terpakai pada fail log individu! Saiz fail log tidak dipertimbangkan secara kolektif."
  experimental: "Tidak stabil / Eksperimen!"
  files: "Butiran cara mengendalikan fail semasa mengimbas."
@@ -81,8 +81,8 @@ config:
  files_only_allow_images: "Apabila ditetapkan kepada true, sebarang fail yang ditemui oleh pengimbas yang bukan imej akan dibenderakan serta-merta, tanpa diimbas. Ini boleh membantu mengurangkan masa yang diperlukan untuk menyelesaikan imbasan dalam beberapa kes. Ditetapkan kepada false secara lalai."
  files_scannable_threshold: "Ambang untuk panjang data mentah yang dibenarkan untuk dibaca dan diimbas oleh phpMussel (sekiranya terdapat sebarang isu prestasi yang ketara semasa mengimbas). Lalai = 32MB. Sifar akan melumpuhkan ambang ini. Secara amnya, nilai ini tidak sepatutnya kurang daripada purata saiz muat naik fail yang anda mahu dan jangkakan terima ke pelayan atau tapak web anda, tidak sepatutnya lebih daripada arahan filesize_limit, dan tidak sepatutnya melebihi kira-kira satu perlima daripada jumlah peruntukan memori yang dibenarkan kepada PHP melalui fail konfigurasi "php.ini". Arahan ini wujud untuk cuba menghalang phpMussel daripada menggunakan terlalu banyak memori (yang boleh menghalangnya daripada berjaya mengimbas fail di atas saiz fail tertentu)."
  frontend: "Konfigurasi untuk bahagian hadapan."
- frontend_custom_footer: "Disisipkan sebagai HTML pada penghujung semua halaman bahagian hadapan. Ini mungkin berguna sekiranya anda ingin menyertakan notis undang-undang, pautan hubungan, maklumat perniagaan, dsb pada semua halaman tersebut."
- frontend_custom_header: "Disisipkan sebagai HTML pada permulaan semua halaman bahagian hadapan. Ini mungkin berguna sekiranya anda ingin menyertakan logo tapak web, pengepala diperibadikan, skrip, dsb pada semua halaman tersebut."
+ frontend_custom_footer: "Disisipkan sebagai HTML pada penghujung semua halaman bahagian hadapan. Ini mungkin berguna sekiranya anda ingin menyertakan notis undang-undang, pautan hubungan, maklumat perniagaan, dll pada semua halaman tersebut."
+ frontend_custom_header: "Disisipkan sebagai HTML pada permulaan semua halaman bahagian hadapan. Ini mungkin berguna sekiranya anda ingin menyertakan logo tapak web, pengepala diperibadikan, skrip, dll pada semua halaman tersebut."
  frontend_default_algo: "Mentakrifkan algoritma yang hendak digunakan untuk semua kata laluan dan sesi masa depan."
  frontend_frontend_log: "Fail untuk mengelog percubaan log masuk bahagian hadapan. Tentukan nama fail, atau biarkan kosong untuk nyahaktifkan."
  frontend_magnification: "Pembesaran fon. Lalai = 1."
@@ -98,7 +98,7 @@ config:
  quarantine_quarantine_key: "phpMussel dapat mengkuarantin muat naik fail yang disekat, jika ini adalah sesuatu yang anda mahu lakukan. Pengguna kasual phpMussel yang hanya mahu melindungi tapak web atau persekitaran pengehosan mereka tanpa berminat untuk menganalisis secara mendalam sebarang percubaan muat naik fail yang dibenderakan harus membiarkan kefungsian ini dinyahaktifkan, tetapi mana-mana pengguna yang berminat untuk menganalisis lebih lanjut mengenai percubaan muat naik fail yang dibenderakan untuk penyelidikan perisian hasad atau untuk perkara yang serupa harus mengaktifkan kefungsian ini. Kuarantin kadangkala juga boleh membantu dalam menyahpepijat positif palsu, jika ini kerap berlaku untuk anda. Untuk menyahaktifkan kefungsian kuarantin, hanya biarkan arahan <code>quarantine_key</code> kosong, atau padamkan kandungan arahan ini jika ia belum kosong. Untuk mengaktifkan kefungsian kuarantin, masukkan beberapa nilai ke dalam arahan ini. <code>quarantine_key</code> ialah ciri keselamatan penting bagi kefungsian kuarantin yang diperlukan sebagai cara untuk menghalang dieksploitasi oleh penyerang berpotensi dan sebagai cara untuk menghalang sebarang pelaksanaan data yang disimpan dalam kuarantin. <code>quarantine_key</code> harus dilayan dengan cara yang sama seperti kata laluan anda: Lebih lama lebih baik, dan jaga dengan teliti. Untuk kesan terbaik, gunakan bersama-sama dengan <code>delete_on_sight</code>."
  quarantine_quarantine_max_filesize: "Saiz fail maksimum yang dibenarkan untuk fail dikuarantin. Fail yang lebih besar daripada nilai yang ditetapkan TIDAK akan dikuarantin. Ini menyukarkan mana-mana penyerang berpotensi membanjiri kuarantin anda dengan data yang tidak diingini yang berpotensi menyebabkan penggunaan data yang berlebihan pada perkhidmatan pengehosan anda. Lalai = 2MB."
  quarantine_quarantine_max_usage: "Penggunaan memori maksimum yang dibenarkan untuk kuarantin. Jika jumlah memori yang digunakan oleh kuarantin mencapai nilai ini, fail tertua yang dikuarantin akan dipadamkan sehingga jumlah memori yang digunakan tidak lagi mencapai nilai ini. Ini menyukarkan mana-mana penyerang berpotensi membanjiri kuarantin anda dengan data yang tidak diingini yang berpotensi menyebabkan penggunaan data yang berlebihan pada perkhidmatan pengehosan anda. Lalai = 64MB."
- signatures: "Konfigurasi untuk tandatangan, fail tandatangan, dsb."
+ signatures: "Konfigurasi untuk tandatangan, fail tandatangan, dll."
  signatures_active: "Senarai fail tandatangan aktif, dihadkan dengan koma. Nota: Fail tandatangan mesti dipasang dahulu, sebelum anda boleh mengaktifkannya. Untuk fail ujian berfungsi dengan betul, fail tandatangan mesti dipasang dan diaktifkan."
  signatures_detect_adware: "Patutkah phpMussel menghuraikan tandatangan untuk mengesan perisian iklan? False = Tidak; True = Ya [Lalai]."
  signatures_detect_deface: "Patutkah phpMussel menghuraikan tandatangan untuk mengesan pengrosakan/vandalisme laman web? False = Tidak; True = Ya [Lalai]."
@@ -231,8 +231,8 @@ Some useful links: |+
          <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – Sumber pembelajaran dan perbincangan PHP.</li>
            <li>{{Links.MDN.Homepage}} – Sumber untuk pembangun, oleh pembangun. Sumber yang hebat untuk belajar tentang HTML, CSS, JavaScript, kebolehaksesan dan banyak lagi.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Carta Kerentanan</a> – Menyenaraikan pelbagai versi daripada pakej yang selamat dan tidak selamat (HHVM, PHP, phpMyAdmin, Python, dll).</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Carta Keserasian</a> – Menyenaraikan maklumat keserasian untuk pelbagai pakej (CIDRAM, phpMussel, dll).</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Carta Kerentanan</a> – Menyenaraikan pelbagai versi daripada pakej yang selamat dan tidak selamat (HHVM, PHP, phpMyAdmin, Python, dsb).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Carta Keserasian</a> – Menyenaraikan maklumat keserasian untuk pelbagai pakej (CIDRAM, phpMussel, dsb).</li>
          </ul>
        </li>
      </ul>

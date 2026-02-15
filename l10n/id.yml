@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2026.01.14).
+# This file: Indonesian language data (last modified: 2026.01.20).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -48,7 +48,7 @@ config:
  core_statistics: "Lacak statistik penggunaan phpMussel? True = Ya; False = Tidak [Default]."
  core_time_format: "Format notasi tanggal/waktu yang digunakan oleh phpMussel. Opsi tambahan dapat ditambahkan atas permintaan."
  core_time_offset: "Offset zona waktu dalam hitungan menit."
- core_timezone: "Ini digunakan untuk menentukan zona waktu yang akan digunakan (misalnya, Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, dll). Menentukan "SYSTEM" untuk membiarkan PHP menangani ini untuk Anda secara otomatis."
+ core_timezone: "Ini digunakan untuk menentukan zona waktu yang akan digunakan (misalnya, Africa/Cairo, America/New_York, Asia/Tokyo, Australia/Perth, Europe/Berlin, Pacific/Guam, dsb). Menentukan "SYSTEM" untuk membiarkan PHP menangani ini untuk Anda secara otomatis."
  core_truncate: "Memotong file log ketika mereka mencapai ukuran tertentu? Nilai adalah ukuran maksimum dalam B/KB/MB/GB/TB yang bisa ditambahkan untuk file log sebelum dipotong. Nilai default 0KB menonaktifkan pemotongan (file log dapat tumbuh tanpa batas waktu). Catat: Berlaku untuk file log individu! Ukuran file log tidak dianggap secara kolektif."
  experimental: "Tidak stabil / Eksperimental!"
  files: "Rincian cara menangani file saat memindai."
@@ -169,7 +169,7 @@ field:
  log_rotation_archive: "Pertama arsipkan, lalu hapus file log tertua, hingga batasnya tidak lagi terlampaui."
  log_rotation_delete: "Hapus file log tertua, hingga batasnya tidak lagi terlampaui."
  vt_suspicion_level_all: "Pindai semua file."
- vt_suspicion_level_executable: "Pindai file dengan bobot heuristik, file yang dapat dieksekusi, dan file yang berpotensi berisi data yang dapat dieksekusi.\nContoh file yang dapat dieksekusi, dan file yang berpotensi berisi data yang dapat dieksekusi, termasuk file Windows PE, file Linux ELF, file Mach-O, file DOCX, file ZIP, dll."
+ vt_suspicion_level_executable: "Pindai file dengan bobot heuristik, file yang dapat dieksekusi, dan file yang berpotensi berisi data yang dapat dieksekusi.\nContoh file yang dapat dieksekusi, dan file yang berpotensi berisi data yang dapat dieksekusi, termasuk file Windows PE, file Linux ELF, file Mach-O, file DOCX, file ZIP, dsb."
  vt_suspicion_level_heuristic_only: "Pindai hanya file dengan bobot heuristik.\nFile akan dipindai hanya jika memiliki bobot heuristik. Bobot heuristik dapat ditimbulkan dari tanda tangan yang dimaksudkan untuk menangkap sidik jari umum yang terkait dengan infeksi potensial yang tidak selalu menjamin infeksi. Pencarian, dalam kasus tersebut, dapat berfungsi untuk memberikan pendapat kedua untuk hasil yang membenarkan kecurigaan tetapi tidak memberikan kepastian apapun."
 hints_logging_datetime: "Kiat yang berguna: Anda dapat melampirkan informasi tanggal/waktu ke nama file log dengan menggunakan placeholder format waktu. Placeholder format waktu yang tersedia ditampilkan di {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
@@ -231,8 +231,8 @@ Some useful links: |+
          <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – Sumber belajar dan diskusi PHP.</li>
            <li>{{Links.MDN.Homepage}} – Sumber daya untuk pengembang, oleh pengembang. Sumber daya yang luar biasa untuk mempelajari tentang HTML, CSS, JavaScript, aksesibilitas, dan banyak lagi.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Tabel Kerentanan</a> – Mencantumkan berbagai versi dari paket-paket yang aman dan tidak aman (HHVM, PHP, phpMyAdmin, Python, dll).</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Tabel Kompatibilitas</a> – Mencantumkan informasi kompatibilitas untuk berbagai paket (CIDRAM, phpMussel, dll).</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Tabel Kerentanan</a> – Mencantumkan berbagai versi dari paket-paket yang aman dan tidak aman (HHVM, PHP, phpMyAdmin, Python, dsb).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Tabel Kompatibilitas</a> – Mencantumkan informasi kompatibilitas untuk berbagai paket (CIDRAM, phpMussel, dsb).</li>
          </ul>
        </li>
      </ul>
