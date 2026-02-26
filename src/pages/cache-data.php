@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The cache data page (last modified: 2023.12.13).
+ * This file: The cache data page (last modified: 2026.02.26).
  */
 
 namespace phpMussel\FrontEnd;
@@ -20,54 +20,102 @@ if (!isset($Page) || $Page !== 'cache-data' || $this->Permissions !== 1) {
 /** Page initial prepwork. */
 $this->initialPrepwork($FE, $this->Loader->L10N->getString('link.Cache Data'), $this->Loader->L10N->getString('tip.Cache Data'));
 
+/** All cache sources. */
+$Sources = [];
+
+/** The primary caching source. */
+if ($this->Loader->Cache->Using !== '') {
+    $Sources[$this->Loader->Cache->Using] = &$this->Loader->Cache;
+}
+
+/** In case a flatfile cache exists but isn't the primary caching source. */
+if ($this->Loader->Cache->Using !== 'FF' && $this->Loader->Cache->FFDefault !== '' && is_file($this->Loader->Cache->FFDefault) && is_readable($this->Loader->Cache->FFDefault)) {
+    $Sources['FF'] = new \Maikuolan\Common\Cache();
+    $Sources['FF']->Prefix = $this->Loader->Configuration['supplementary_cache_options']['prefix'];
+    $Sources['FF']->FFDefault = $this->Loader->Cache->FFDefault;
+    if (!$Sources['FF']->connect()) {
+        $Sources['FF'] = false;
+    }
+}
+
+/**
+ * In case APCu is available but isn't the primary caching source (doing this
+ * for APCu but not the others, as the others would potentially require a
+ * server connection, which may or may not be desirable to the user, whereas
+ * APCu data should be immediately available if the extension is available at
+ * all).
+ */
+if ($this->Loader->Cache->Using !== 'APCu' && extension_loaded('apcu')) {
+    $Sources['APCu'] = new \Maikuolan\Common\Cache();
+    $Sources['APCu']->Prefix = $this->Loader->Configuration['supplementary_cache_options']['prefix'];
+    $Sources['APCu']->EnableAPCu = true;
+    if (!$Sources['APCu']->connect()) {
+        $Sources['APCu'] = false;
+    }
+}
+
 if ($FE['ASYNC']) {
     /** Delete a cache entry. */
-    if (isset($_POST['do']) && $_POST['do'] === 'delete' && !empty($_POST['cdi'])) {
+    if (isset($_POST['do'], $_POST['cdi'], $_POST['csrc']) && $_POST['do'] === 'delete' && $_POST['cdi'] !== '' && $_POST['csrc'] !== '' && isset($Sources[$_POST['csrc']])) {
         if ($_POST['cdi'] === '__') {
-            $this->Loader->Cache->clearCache();
+            /** Delete all entries ("clear all"). */
+            $Sources[$_POST['csrc']]->clearCache();
+        } elseif (substr($_POST['cdi'], 0, 1) === '^') {
+            /** Delete all sub-entries under a specific parent entry. */
+            $Sources[$_POST['csrc']]->deleteAllEntriesWhere('~' . $_POST['cdi'] . '-~');
         } else {
-            $this->Loader->Cache->deleteEntry($_POST['cdi']);
+            /** Delete just a specific entry (or sub-entry). */
+            $Sources[$_POST['csrc']]->deleteEntry($_POST['cdi']);
         }
     }
 } else {
     /** Append async globals. */
     $FE['JS'] .=
-        "function cdd(d){window.cdi=d,window.do='delete',$('POST','',['phpmussel-" .
-        "form-target','cdi','do'],null,function(o){'__'===d?window.location=windo" .
-        "w.location.href.split('?')[0]:hideid(d+'Container')})}window['phpmussel-" .
-        "form-target']='cache-data';";
+        "function cdd(d,x){window.cdi=d,window.csrc=x,window.do='delete',$('POST" .
+        "','',['cidram-form-target','cdi','csrc','do'],null,function(o){'__'===d" .
+        "?window.location=window.location.href.split('?')[0]:'^'===d.substring(0" .
+        ",1)&&(d=d.substr(1)),hideid(d+'Container'+x)})}window['cidram-form-targ" .
+        "et']='cache-data';";
 
     /** To be populated by the cache data. */
     $FE['CacheData'] = '';
 
-    /** Get cache index data and process all cache items. */
-    if ($this->Loader->Cache->Using) {
-        /** Array of all cache items. */
+    $IsFirst = true;
+    foreach ($Sources as $SourceKey => &$Source) {
         $CacheArray = [];
-
-        /** Get cache index data. */
-        foreach ($this->Loader->Cache->getAllEntries() as $ThisCacheName => $ThisCacheItem) {
+        foreach ($Source->getAllEntries() as $ThisCacheName => $ThisCacheItem) {
             if (isset($ThisCacheItem['Time']) && $ThisCacheItem['Time'] > 0 && $ThisCacheItem['Time'] < $this->Loader->Time) {
                 continue;
             }
             $this->Loader->arrayify($ThisCacheItem);
             $CacheArray[$ThisCacheName] = $ThisCacheItem;
         }
-        unset($ThisCacheName, $ThisCacheItem);
+        if (!$IsFirst && count($CacheArray) === 0) {
+            continue;
+        }
+
+        /** Source label. */
+        $SourceLabel = $SourceKey === 'FF' ? $Source->FFDefault : $SourceKey;
+
+        /** Whether inactive. */
+        $Status = $IsFirst ? '' : ' – ' . $this->Loader->L10N->getString('label.Inactive');
 
         /** Process all cache items. */
         $FE['CacheData'] .= sprintf(
-            '<div class="ng1" id="__Container"><span class="s">%s – (<span style="cursor:pointer" onclick="javascript:confirm(\'%s\')&&cdd(\'__\')"><code class="s">%s</code></span>)</span><br /><br /><ul class="pieul">%s</ul></div>',
-            $this->Loader->Cache->Using,
+            '<div class="ng1" id="__Container%1$s"><span class="s">%2$s – (<span onclick="javascript:confirm(\'%3$s\')&&cdd(\'__\',\'%1$s\')"><code class="s">%4$s</code></span>)%5$s</span><br /><br /><ul class="pieul">%6$s</ul></div>',
+            $SourceKey,
+            $SourceLabel,
             str_replace(["'", '"'], ["\'", '\x22'], sprintf(
                 $this->Loader->L10N->getString('confirm.Action'),
                 $this->Loader->L10N->getString('field.Clear all')
-            ) . '\n' . $this->Loader->L10N->getString('warning.Proceeding will log out all users')),
+            ) . ($IsFirst ? '\n' . $this->Loader->L10N->getString('warning.Proceeding will log out all users') : '')),
             $this->Loader->L10N->getString('field.Clear all'),
-            $this->arrayToClickableList($CacheArray, 'cdd', 0, $this->Loader->Cache->Using)
+            $Status,
+            $this->arrayToClickableList($CacheArray, 'cdd', 0, $SourceLabel, $SourceKey)
         );
-        unset($CacheArray);
+        $IsFirst = false;
     }
+    unset($Status, $SourceLabel, $ThisCacheName, $ThisCacheItem, $CacheArray, $Source, $SourceKey, $IsFirst);
 
     /** Cache is empty. */
     if (!$FE['CacheData']) {
@@ -80,5 +128,5 @@ if ($FE['ASYNC']) {
     /** Send output. */
     echo $this->sendOutput($FE);
 }
-
+unset($Sources);
 return;

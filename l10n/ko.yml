@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2026.01.14).
+# This file: Korean language data (last modified: 2026.02.24).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -250,6 +250,7 @@ label:
  Expires: "만료일:"
  Extension: "확장"
  External: "외부"
+ Inactive: "비활성화됨"
  Installed Available: "설치되어있다 / 이용 가능"
  Inverted: "반전"
  Latest stable: "최신 안정:"

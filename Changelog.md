@@ -227,3 +227,4 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 
 #### Other changes.
 - [2026.01.14]: Added aria expanded and controls attributes to some of the clickable menus at the front-end.
+- [2026.02.26]: The cache data page can now manage flatfile caching and APCU caching alongside whatever else is enabled at the same time (sometimes useful for when switching between different caching mechanisms but needing to manage entries from both mechanisms or others at the same time). Replaced the delete emoji at the cache data page with an SVG. Slightly modernised the structure of the cache data page.

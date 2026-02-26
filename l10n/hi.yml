@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hindi language data (last modified: 2026.01.14).
+# This file: Hindi language data (last modified: 2026.02.24).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -161,7 +161,7 @@ field:
  Restore: "पुनर्स्थापित"
  Set new password: "नया पासवर्ड बनाएं"
  True (True): "True (सच)"
- Update signature files: "सिग्नेचर फाइल अपडेट करें"
+ Update signature files: "हस्ताक्षर फाइल अपडेट करें"
  Update: "अपडेट करो"
  Use system default timezone: "सिस्टम डिफ़ॉल्ट समयक्षेत्र का उपयोग करें।"
  Username: "उपयोगकर्ता नाम"
@@ -250,6 +250,7 @@ label:
  Expires: "समय समाप्ति:"
  Extension: "विस्तार"
  External: "बाहरी"
+ Inactive: "निष्क्रिय"
  Installed Available: "स्थापित/उपलब्ध है"
  Inverted: "उल्टे"
  Latest stable: "नवीनतम स्थिर:"

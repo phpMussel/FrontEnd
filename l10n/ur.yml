@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Urdu language data (last modified: 2026.02.14).
+# This file: Urdu language data (last modified: 2026.02.24).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -249,6 +249,7 @@ label:
  Expires: "ختم ہو جاتی ہے:"
  Extension: "کی توسیع"
  External: "بیرونی"
+ Inactive: "غیر فعال"
  Installed Available: "انسٹال/دستیاب ہے"
  Inverted: "الٹا"
  Latest stable: "تازہ ترین مستحکم:"

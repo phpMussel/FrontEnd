@@ -186,3 +186,7 @@ input[type=hidden],script{display:none}
 }
 @keyframes fmDeleteAnim{0%{opacity:1}100%{filter:brightness(0);opacity:0;display:none}}
 .fmDelete{transform-origin:top;animation:fmDeleteAnim .5s cubic-bezier(0,0,.1,1);animation-iteration-count:1;animation-fill-mode:forwards}
+.smicon{display:inline-block;background-repeat:no-repeat;position:relative;top:1px;width:12px;height:12px}
+.smicon.red{filter:invert(100%) sepia(76%) saturate(6595%) hue-rotate(290deg) brightness(108%) contrast(126%)}
+.smicon.delete{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:delete.svg}{/Base64Encode})}
+.smicontxt{padding:0 1px 0 1px}

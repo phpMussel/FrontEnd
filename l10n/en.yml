@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2026.01.14).
+# This file: English language data (last modified: 2026.02.24).
 ##/
 
 checkbox:
@@ -250,6 +250,7 @@ label:
  Expires: "Expires:"
  Extension: "Extension"
  External: "External"
+ Inactive: "Inactive"
  Installed Available: "Installed/Available"
  Inverted: "Inverted"
  Latest stable: "Latest stable:"

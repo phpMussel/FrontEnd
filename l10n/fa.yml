@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Farsi language data (last modified: 2026.01.14).
+# This file: Farsi language data (last modified: 2026.02.24).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -250,6 +250,7 @@ label:
  Expires: "منقضی می شود:"
  Extension: "افزونه"
  External: "خارجی"
+ Inactive: "غیرفعال"
  Installed Available: "نصب شده/در دسترس"
  Inverted: "معکوس"
  Latest stable: "آخرین نسخه پایدار:"

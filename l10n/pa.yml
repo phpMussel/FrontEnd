@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Punjabi language data (last modified: 2026.01.14).
+# This file: Punjabi language data (last modified: 2026.02.24).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -250,6 +250,7 @@ label:
  Expires: "ਮਿਆਦ ਪੁੱਗਦੀ ਹੈ:"
  Extension: "ਐਕਸਟੈਂਸ਼ਨ"
  External: "ਬਾਹਰੀ"
+ Inactive: "ਅਕਿਰਿਆਸ਼ੀਲ"
  Installed Available: "ਇੰਸਟਾਲ ਕੀਤਾ/ਉਪਲੱਬਧ"
  Inverted: "ਉਲਟਾ"
  Latest stable: "ਤਾਜ਼ਾ ਸਥਿਰ:"

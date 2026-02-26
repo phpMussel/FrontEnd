@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data (last modified: 2026.01.14).
+# This file: Romanian language data (last modified: 2026.02.24).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -250,6 +250,7 @@ label:
  Expires: "Expiră:"
  Extension: "Extensie"
  External: "Extern"
+ Inactive: "Inactiv"
  Installed Available: "Instalat/Disponibil"
  Inverted: "Inversat"
  Latest stable: "Ultima stabilă:"

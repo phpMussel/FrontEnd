@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2026.01.14).
+# This file: Vietnamese language data (last modified: 2026.02.24).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -250,6 +250,7 @@ label:
  Expires: "Hết hạn:"
  Extension: "Phần mở rộng"
  External: "Bên ngoài"
+ Inactive: "Không hoạt động"
  Installed Available: "Được cài đặt / Có sẵn"
  Inverted: "Nghịch đảo"
  Latest stable: "Ổn định mới nhất:"

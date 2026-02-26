@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Czech language data (last modified: 2026.01.14).
+# This file: Czech language data (last modified: 2026.02.24).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -250,6 +250,7 @@ label:
  Expires: "Platnost vyprší:"
  Extension: "Rozšíření"
  External: "Externí"
+ Inactive: "Neaktivní"
  Installed Available: "Instalováno/Dostupné"
  Inverted: "Inverzní"
  Latest stable: "Nejnovější stabilní:"

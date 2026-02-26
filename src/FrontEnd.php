@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2026.01.14).
+ * This file: Front-end handler (last modified: 2026.02.26).
  */
 
 namespace phpMussel\FrontEnd;
@@ -1256,25 +1256,63 @@ class FrontEnd
     }
 
     /**
-     * Generate a clickable list from an array.
+     * Generate a clickable list from an array (used by the cache data page).
      *
      * @param array $Arr The array to convert from.
      * @param string $DeleteKey The key to use for async calls to delete a cache entry.
      * @param int $Depth Current cache entry list depth.
      * @param string $ParentKey An optional key of the parent data source.
+     * @param string $ListSection An optional HTML ID for the parent data source.
      * @return string The generated clickable list.
      */
-    private function arrayToClickableList(array $Arr = [], string $DeleteKey = '', int $Depth = 0, string $ParentKey = ''): string
+    private function arrayToClickableList(array $Arr = [], string $DeleteKey = '', int $Depth = 0, string $ParentKey = '', string $ListSection = ''): string
     {
+        if ($Depth === 0) {
+            $this->Loader->InstanceCache['ListGroups'] = [];
+            $NewArr = [];
+            foreach ($Arr as $Key => $Value) {
+                $Matches = [];
+                if (preg_match('~^([^-]+)-(.+)$~', $Key, $Matches) && !isset($Arr[$Matches[1]])) {
+                    if (!isset($NewArr[$Matches[1]])) {
+                        $NewArr[$Matches[1]] = [];
+                        $this->Loader->InstanceCache['ListGroups'][$Matches[1]] = true;
+                    }
+                    $NewArr[$Matches[1]][$Matches[2]] = $Value;
+                    continue;
+                }
+                $NewArr[$Key] = $Value;
+            }
+            $Arr = $NewArr;
+            unset($NewArr);
+        }
         $Output = '';
         $Count = count($Arr);
-        $Prefix = substr($DeleteKey, 0, 2) === 'fe' ? 'FE' : '';
         foreach ($Arr as $Key => $Value) {
-            if (is_null($Value)) {
+            if ((is_string($Value) && !$this->Loader->Demojibakefier->checkConformity($Value)) || is_null($Value)) {
                 continue;
             }
-            $Delete = ($Depth === 0) ? ' – (<span style="cursor:pointer" onclick="javascript:' . $DeleteKey . '(\'' . addslashes($Key) . '\')"><code class="s"><span class="txtRd">⌧</span>' . $this->Loader->L10N->getString('field.Delete') . '</code></span>)' : '';
-            $Output .= ($Depth === 0 ? '<span id="' . $Key . $Prefix . 'Container">' : '') . '<li>';
+            if ($Depth === 1 && isset($this->Loader->InstanceCache['ListGroups'][$ParentKey])) {
+                $Delete = sprintf(
+                    ' – (<span onclick="javascript:%1$s(\'%2$s\'%3$s)"><code><span class="smicon red delete" title="%4$s"></span><span class="s smicontxt">%4$s</span></code></span>)',
+                    $DeleteKey,
+                    addslashes($ParentKey . '-' . $Key),
+                    $ListSection === '' ? '' : ',\'' . $ListSection . '\'',
+                    $this->Loader->L10N->getString('field.Delete')
+                );
+                $Output .= '<span id="' . addslashes($ParentKey . '-' . $Key) . 'Container' . $ListSection . '">';
+            } elseif ($Depth === 0) {
+                $Delete = sprintf(
+                    ' – (<span onclick="javascript:%1$s(\'%2$s\'%3$s)"><code><span class="smicon red delete" title="%4$s"></span><span class="s smicontxt">%4$s</span></code></span>)',
+                    $DeleteKey,
+                    (isset($this->Loader->InstanceCache['ListGroups'][$Key]) ? '^' : '') . addslashes($Key),
+                    $ListSection === '' ? '' : ',\'' . $ListSection . '\'',
+                    $this->Loader->L10N->getString('field.Delete')
+                );
+                $Output .= '<span id="' . addslashes($Key) . 'Container' . $ListSection . '">';
+            } else {
+                $Delete = '';
+            }
+            $Output .= '<li>';
             if (is_string($Value)) {
                 if (substr($Value, 0, 2) === '{"' && substr($Value, -2) === '"}') {
                     $Try = json_decode($Value, true);
@@ -1283,8 +1321,7 @@ class FrontEnd
                     }
                 } elseif (
                     preg_match('~\.ya?ml$~i', $Key) ||
-                    (preg_match('~^(?:Data|\d+)$~', $Key) && preg_match('~\.ya?ml$~i', $ParentKey)) ||
-                    substr($Value, 0, 4) === "---\n"
+                    (preg_match('~^(?:Data|\d+)$~', $Key) && preg_match('~\.ya?ml$~i', $ParentKey))
                 ) {
                     $Try = [];
                     if ($this->Loader->YAML->process($Value, $Try) && !empty($Try)) {
@@ -1295,7 +1332,7 @@ class FrontEnd
                 }
             }
             if (is_array($Value)) {
-                if ($Depth === 0) {
+                if ($Depth === 0 || ($Depth === 1 && isset($this->Loader->InstanceCache['ListGroups'][$ParentKey]))) {
                     $SizeField = $this->Loader->L10N->getString('field.size.Total size') ?: 'Size';
                     $Size = isset($Value['Data']) && is_string($Value['Data']) ? strlen($Value['Data']) : (
                         isset($Value[0]) && is_string($Value[0]) ? strlen($Value[0]) : false
@@ -1306,8 +1343,7 @@ class FrontEnd
                     }
                 }
                 $Output .= '<span class="comCat"><code class="s">' . str_replace(['<', '>'], ['&lt;', '&gt;'], $Key) . '</code></span>' . $Delete . '<ul class="comSub">';
-                $Output .= $this->arrayToClickableList($Value, $DeleteKey, $Depth + 1, $Key);
-                $Output .= '</ul>';
+                $Output .= $this->arrayToClickableList($Value, $DeleteKey, $Depth + 1, $Key, $ListSection) . '</ul>';
             } elseif (is_scalar($Value)) {
                 if ($Key === 'Time' && preg_match('~^\d+$~', $Value)) {
                     $Key = $this->Loader->L10N->getString('label.Expires');
@@ -1319,7 +1355,15 @@ class FrontEnd
                     str_replace(['<', '>'], ['&lt;', '&gt;'], $Text)
                 ) . '</code>' . $Delete;
             }
-            $Output .= '</li>' . ($Depth === 0 ? '<br /></span>' : '');
+            $Output .= '</li>';
+            if ($Depth === 1 && isset($this->Loader->InstanceCache['ListGroups'][$ParentKey])) {
+                $Output .= '</span>';
+            } elseif ($Depth === 0) {
+                $Output .= '<br /></span>';
+            }
+        }
+        if ($Depth === 0) {
+            unset($this->Loader->InstanceCache['ListGroups']);
         }
         return $Output;
     }
