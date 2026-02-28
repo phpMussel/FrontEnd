@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2026.02.24).
+# This file: Norwegian language data (last modified: 2026.02.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -286,8 +286,8 @@ label:
  Uploads blocked: "Opplastinger blokkert"
  Uploads quarantined: "Opplastinger i karantene"
  Uploads scanned: "Opplastinger skannet"
- Your IP: "Din IP:"
- Your UA: "Din UA:"
+ Your IP address: "Din IP-adresse:"
+ Your user agent: "Din brukeragent:"
  phpMussel version used: "phpMussel versjon brukt:"
 link:
  Accounts: "Kontoer"

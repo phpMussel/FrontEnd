@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2026.02.24).
+# This file: English language data (last modified: 2026.02.28).
 ##/
 
 checkbox:
@@ -286,8 +286,8 @@ label:
  Uploads blocked: "Uploads blocked"
  Uploads quarantined: "Uploads quarantined"
  Uploads scanned: "Uploads scanned"
- Your IP: "Your IP:"
- Your UA: "Your UA:"
+ Your IP address: "Your IP address:"
+ Your user agent: "Your user agent:"
  phpMussel version used: "phpMussel version used:"
 link:
  Accounts: "Accounts"

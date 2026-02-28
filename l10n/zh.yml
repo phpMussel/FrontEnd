@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese language data (last modified: 2026.02.24).
+# This file: Chinese language data (last modified: 2026.02.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -418,8 +418,8 @@ label:
  Uploads blocked: {"zh-Hans": "上传已阻止", "zh-Hant": "上傳已阻止"}
  Uploads quarantined: {"zh-Hans": "上传已隔离", "zh-Hant": "上傳已隔離"}
  Uploads scanned: {"zh-Hans": "上传已扫描", "zh-Hant": "上傳已掃描"}
- Your IP: "您的IP："
- Your UA: "您的UA："
+ Your IP address: {"zh-Hans": "您的IP地址：", "zh-Hant": "您的IP位址："}
+ Your user agent: {"zh-Hans": "您的用户代理：", "zh-Hant": "您的用戶代理："}
  phpMussel version used: "目前使用phpMussel版本："
 link:
  Accounts: {"zh-Hans": "帐户", "zh-Hant": "帳戶"}

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Punjabi language data (last modified: 2026.02.24).
+# This file: Punjabi language data (last modified: 2026.02.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -286,8 +286,8 @@ label:
  Uploads blocked: "ਬਲੌਕ ਕੀਤੇ ਅੱਪਲੋਡਾਂ ਦੀ ਗਿਣਤੀ"
  Uploads quarantined: "ਕੁਆਰੰਟੀਨ ਕੀਤੇ ਅੱਪਲੋਡਾਂ ਦੀ ਗਿਣਤੀ"
  Uploads scanned: "ਸਕੈਨ ਕੀਤੇ ਅੱਪਲੋਡਾਂ ਦੀ ਗਿਣਤੀ"
- Your IP: "ਤੁਹਾਡਾ IP:"
- Your UA: "ਤੁਹਾਡਾ ਉਪਭੋਗਤਾ ਏਜੰਟ:"
+ Your IP address: "ਤੁਹਾਡਾ IP ਪਤਾ:"
+ Your user agent: "ਤੁਹਾਡਾ ਉਪਭੋਗਤਾ ਏਜੰਟ:"
  phpMussel version used: "phpMussel ਸੰਸਕਰਣ ਵਰਤਿਆ ਗਿਆ:"
 link:
  Accounts: "ਖਾਤੇ"

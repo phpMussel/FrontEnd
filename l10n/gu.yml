@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Gujarati language data (last modified: 2026.02.24).
+# This file: Gujarati language data (last modified: 2026.02.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -286,8 +286,8 @@ label:
  Uploads blocked: "અવરોધિત અપલોડ્સની સંખ્યા"
  Uploads quarantined: "ક્વોરેન્ટાઇન કરાયેલ અપલોડની સંખ્યા"
  Uploads scanned: "સ્કેન કરેલા અપલોડ્સની સંખ્યા"
- Your IP: "તમારો IP:"
- Your UA: "તમારા વપરાશકર્તા એજન્ટ:"
+ Your IP address: "તમારો IP સરનામું:"
+ Your user agent: "તમારો વપરાશકર્તા એજન્ટ:"
  phpMussel version used: "phpMussel સંસ્કરણ વપરાયેલ:"
 link:
  Accounts: "એકાઉન્ટ્સ"

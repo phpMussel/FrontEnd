@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Urdu language data (last modified: 2026.02.24).
+# This file: Urdu language data (last modified: 2026.02.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -285,8 +285,8 @@ label:
  Uploads blocked: "بلاک اپ لوڈ"
  Uploads quarantined: "قرنطین میں اپ لوڈ"
  Uploads scanned: "سکین کیا اپ لوڈ"
- Your IP: "آپ کے IP:"
- Your UA: "آپ کے UA:"
+ Your IP address: "آپ کا IP پتہ:"
+ Your user agent: "آپ کا صارف ایجنٹ:"
  phpMussel version used: "phpMussel ورژن استعمال کیا:"
 link:
  Accounts: "اکاؤنٹس"

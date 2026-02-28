@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bangla language data (last modified: 2026.02.24).
+# This file: Bangla language data (last modified: 2026.02.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -286,8 +286,8 @@ label:
  Uploads blocked: "আপলোডগুলি অবরুদ্ধ"
  Uploads quarantined: "আপলোডগুলি সঙ্গরোধ মধ্যে"
  Uploads scanned: "আপলোডগুলি স্ক্যান করা"
- Your IP: "আপনার IP:"
- Your UA: "আপনার UA:"
+ Your IP address: "আপনার আইপি ঠিকানা:"
+ Your user agent: "আপনার ব্যবহারকারী এজেন্ট:"
  phpMussel version used: "phpMussel সংস্করণ ব্যবহৃত:"
 link:
  Accounts: "অ্যাকাউন্ট"

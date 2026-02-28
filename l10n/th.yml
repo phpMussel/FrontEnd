@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Thai language data (last modified: 2026.02.24).
+# This file: Thai language data (last modified: 2026.02.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -286,8 +286,8 @@ label:
  Uploads blocked: "อัปโหลดถูกบล็อค"
  Uploads quarantined: "อัปโหลดกักเก็บ"
  Uploads scanned: "อัปโหลดถูกสแกน"
- Your IP: "IP ของคุณ:"
- Your UA: "UA ของคุณ:"
+ Your IP address: "ที่อยู่ IP ของคุณ:"
+ Your user agent: "ตัวแทนผู้ใช้ของคุณ:"
  phpMussel version used: "รุ่น phpMussel ในการใช้งาน:"
 link:
  Accounts: "บัญชี"

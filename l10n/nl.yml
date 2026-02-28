@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2026.02.24).
+# This file: Dutch language data (last modified: 2026.02.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -286,8 +286,8 @@ label:
  Uploads blocked: "Uploads geblokkeerd"
  Uploads quarantined: "Uploads in quarantaine"
  Uploads scanned: "Uploads gescand"
- Your IP: "Je IP:"
- Your UA: "Je UA:"
+ Your IP address: "Uw IP-adres:"
+ Your user agent: "Uw gebruikersagent:"
  phpMussel version used: "phpMussel versie gebruikt:"
 link:
  Accounts: "Accounts"

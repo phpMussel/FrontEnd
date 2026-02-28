@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malayalam language data (last modified: 2026.02.24).
+# This file: Malayalam language data (last modified: 2026.02.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -286,8 +286,8 @@ label:
  Uploads blocked: "അപ്‌ലോഡുകൾ തടഞ്ഞു"
  Uploads quarantined: "ക്വാറന്റൈൻ ചെയ്‌ത അപ്‌ലോഡുകൾ"
  Uploads scanned: "സ്കാൻ ചെയ്തു അപ്‌ലോഡുകൾ"
- Your IP: "നിങ്ങളുടെ IP വിലാസം:"
- Your UA: "നിങ്ങളുടെ ഉപയോക്തൃ ഏജന്റ്:"
+ Your IP address: "നിങ്ങളുടെ IP വിലാസം:"
+ Your user agent: "നിങ്ങളുടെ ഉപയോക്തൃ ഏജന്റ്:"
  phpMussel version used: "ഉപയോഗിച്ച phpMussel പതിപ്പ്:"
 link:
  Accounts: "അക്കൗണ്ടുകൾ"

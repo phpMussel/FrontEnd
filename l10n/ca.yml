@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Catalan language data (last modified: 2026.02.24).
+# This file: Catalan language data (last modified: 2026.02.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -286,8 +286,8 @@ label:
  Uploads blocked: "Càrregues bloquejades"
  Uploads quarantined: "Càrregues en quarantena"
  Uploads scanned: "Càrregues escanejades"
- Your IP: "El vostre IP:"
- Your UA: "El vostre agent d'usuari:"
+ Your IP address: "La vostra adreça IP:"
+ Your user agent: "El vostre agent d'usuari:"
  phpMussel version used: "Versió de phpMussel utilitzada:"
 link:
  Accounts: "Comptes"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2026.02.24).
+# This file: French language data (last modified: 2026.02.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -299,8 +299,8 @@ label:
  Uploads blocked: {"fr-FR": "Téléchargements bloqués", "fr-CA": "Téléversements bloqués"}
  Uploads quarantined: {"fr-FR": "Téléchargements mis en quarantaine", "fr-CA": "Téléversements mis en quarantaine"}
  Uploads scanned: {"fr-FR": "Téléchargements analysés", "fr-CA": "Téléversements analysés"}
- Your IP: "Votre adresse IP\_:"
- Your UA: "Votre UA\_:"
+ Your IP address: "Votre adresse IP\_:"
+ Your user agent: "Votre agent utilisateur\_:"
  phpMussel version used: "Version phpMussel utilisée\_:"
 link:
  Accounts: "Comptes"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2026.02.24).
+# This file: Swedish language data (last modified: 2026.02.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -286,8 +286,8 @@ label:
  Uploads blocked: "Uppladdningar blockerade"
  Uploads quarantined: "Uppladdningar i karantän"
  Uploads scanned: "Uppladdningar skannade"
- Your IP: "Din IP:"
- Your UA: "Din UA:"
+ Your IP address: "Din IP-adress:"
+ Your user agent: "Din användaragent:"
  phpMussel version used: "phpMussel-version som används:"
 link:
  Accounts: "Konton"

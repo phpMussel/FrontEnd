@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2026.02.24).
+# This file: Indonesian language data (last modified: 2026.02.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -286,8 +286,8 @@ label:
  Uploads blocked: "Upload diblokir"
  Uploads quarantined: "Upload dikarantina"
  Uploads scanned: "Upload dipindai"
- Your IP: "IP Anda:"
- Your UA: "UA Anda:"
+ Your IP address: "Alamat IP Anda:"
+ Your user agent: "Agen pengguna Anda:"
  phpMussel version used: "Versi phpMussel digunakan:"
 link:
  Accounts: "Akun"

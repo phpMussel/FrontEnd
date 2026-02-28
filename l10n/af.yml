@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2026.02.24).
+# This file: Afrikaans language data (last modified: 2026.02.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -286,8 +286,8 @@ label:
  Uploads blocked: "Oplaaie geblokkeer"
  Uploads quarantined: "Oplaaie gekwarantyn"
  Uploads scanned: "Oplaaie geskandeer"
- Your IP: "Jou IP:"
- Your UA: "Jou gebruikersagent:"
+ Your IP address: "Jou IP-adres:"
+ Your user agent: "Jou gebruikersagent:"
  phpMussel version used: "phpMussel weergawe gebruik:"
 link:
  Accounts: "Rekeninge"

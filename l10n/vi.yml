@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2026.02.24).
+# This file: Vietnamese language data (last modified: 2026.02.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -286,8 +286,8 @@ label:
  Uploads blocked: "Tải lên bị chặn"
  Uploads quarantined: "Tải lên trong kiểm dịch"
  Uploads scanned: "Tải lên được quét"
- Your IP: "IP của bạn:"
- Your UA: "UA của bạn:"
+ Your IP address: "Địa chỉ IP của bạn:"
+ Your user agent: "Đại lý người dùng của bạn:"
  phpMussel version used: "Phiên bản phpMussel đang được dùng:"
 link:
  Accounts: "Tài khoản"

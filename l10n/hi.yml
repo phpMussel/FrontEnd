@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hindi language data (last modified: 2026.02.24).
+# This file: Hindi language data (last modified: 2026.02.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -286,8 +286,8 @@ label:
  Uploads blocked: "अपलोड अवरुद्ध"
  Uploads quarantined: "क्वारंटाइन किए गए अपलोड"
  Uploads scanned: "स्कैन किए गए अपलोड"
- Your IP: "तुम्हारी IP:"
- Your UA: "तुम्हारी UA:"
+ Your IP address: "आपका IP पता:"
+ Your user agent: "आपका उपयोगकर्ता एजेंट:"
  phpMussel version used: "phpMussel संस्करण का इस्तेमाल किया:"
 link:
  Accounts: "खातों"

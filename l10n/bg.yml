@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bulgarian language data (last modified: 2026.02.24).
+# This file: Bulgarian language data (last modified: 2026.02.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -286,8 +286,8 @@ label:
  Uploads blocked: "Качванията са блокирани"
  Uploads quarantined: "Качванията са поставени под карантина"
  Uploads scanned: "Качванията са сканирани"
- Your IP: "Вашият IP адрес:"
- Your UA: "Вашият потребителски агент:"
+ Your IP address: "Вашият IP адрес:"
+ Your user agent: "Вашият потребителски агент:"
  phpMussel version used: "Използвана версия на phpMussel:"
 link:
  Accounts: "Акаунти"

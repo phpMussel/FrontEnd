@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Ukrainian language data (last modified: 2026.02.24).
+# This file: Ukrainian language data (last modified: 2026.02.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -286,8 +286,8 @@ label:
  Uploads blocked: "Завантаження заблоковано"
  Uploads quarantined: "Завантаження на карантин"
  Uploads scanned: "Сканованих завантажень"
- Your IP: "Ваш IP:"
- Your UA: "Ваш агент користувача"
+ Your IP address: "Ваша IP-адреса:"
+ Your user agent: "Ваш користувацький агент:"
  phpMussel version used: "Використана версія phpMussel:"
 link:
  Accounts: "Облікові записи"

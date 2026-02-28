@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2026.02.24).
+# This file: Spanish language data (last modified: 2026.02.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -286,8 +286,8 @@ label:
  Uploads blocked: "Subidas bloqueadas"
  Uploads quarantined: "Subidas en cuarentena"
  Uploads scanned: "Subidas escaneadas"
- Your IP: "Tu IP:"
- Your UA: "Tu UA:"
+ Your IP address: "Su dirección IP:"
+ Your user agent: "Su agente de usuario:"
  phpMussel version used: "Versión phpMussel utilizada:"
 link:
  Accounts: "Cuentas"

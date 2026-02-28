@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Galician language data (last modified: 2026.02.24).
+# This file: Galician language data (last modified: 2026.02.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -286,8 +286,8 @@ label:
  Uploads blocked: "Cargas bloqueadas"
  Uploads quarantined: "Cargas en corentena"
  Uploads scanned: "Cargas escaneadas"
- Your IP: "O teu IP:"
- Your UA: "O teu axente de usuario:"
+ Your IP address: "O teu enderezo IP:"
+ Your user agent: "O teu axente de usuario:"
  phpMussel version used: "Versión de phpMussel utilizada:"
 link:
  Accounts: "Contas"

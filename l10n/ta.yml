@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Tamil language data (last modified: 2026.02.24).
+# This file: Tamil language data (last modified: 2026.02.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -286,8 +286,8 @@ label:
  Uploads blocked: "பதிவேற்றங்கள் தடுக்கப்பட்டன"
  Uploads quarantined: "பதிவேற்றங்கள் தனிமைப்படுத்தப்பட்டுள்ளன"
  Uploads scanned: "பதிவேற்றங்கள் ஸ்கேன் செய்யப்பட்டன"
- Your IP: "உங்கள் IP:"
- Your UA: "உங்கள் பயனர் முகவர்:"
+ Your IP address: "உங்கள் IP முகவரி:"
+ Your user agent: "உங்கள் பயனர் முகவர்:"
  phpMussel version used: "பயன்படுத்தப்படும் phpMussel பதிப்பு:"
 link:
  Accounts: "கணக்குகள்"

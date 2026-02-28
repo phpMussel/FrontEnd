@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2026.02.24).
+# This file: Arabic language data (last modified: 2026.02.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -286,8 +286,8 @@ label:
  Uploads blocked: "تم حظر التحميلات"
  Uploads quarantined: "تم عزل وحدات التحميل"
  Uploads scanned: "التحميلات الممسوحة ضوئيا"
- Your IP: "عنوان IP الخاص بك:"
- Your UA: "وكيل المستخدم الخاص بك:"
+ Your IP address: "عنوان IP الخاص بك:"
+ Your user agent: "وكيل المستخدم الخاص بك:"
  phpMussel version used: "النسخة phpMussel المستخدمة:"
 link:
  Accounts: "حسابات"

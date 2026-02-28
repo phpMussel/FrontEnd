@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2026.02.24).
+# This file: Latvian language data (last modified: 2026.02.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -286,8 +286,8 @@ label:
  Uploads blocked: "Bloķēto augšupielāžu skaits"
  Uploads quarantined: "Augšupielāde karantīnā skaits"
  Uploads scanned: "Skenēto augšupielāžu skaits"
- Your IP: "Jūsu IP:"
- Your UA: "Jūsu lietotāja aģents:"
+ Your IP address: "Jūsu IP adrese:"
+ Your user agent: "Jūsu lietotāja aģents:"
  phpMussel version used: "Izmantotā phpMussel versija:"
 link:
  Accounts: "Konti"

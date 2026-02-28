@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Russian language data (last modified: 2026.02.24).
+# This file: Russian language data (last modified: 2026.02.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -286,8 +286,8 @@ label:
  Uploads blocked: "Загружает блокировки"
  Uploads quarantined: "Загрузка в карантин"
  Uploads scanned: "Загружает сканированные"
- Your IP: "Ваш IP:"
- Your UA: "Ваш UA:"
+ Your IP address: "Ваш IP-адрес:"
+ Your user agent: "Ваш пользовательский агент:"
  phpMussel version used: "Используемая версия phpMussel:"
 link:
  Accounts: "Аккаунта"

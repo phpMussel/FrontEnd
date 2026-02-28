@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data (last modified: 2026.02.24).
+# This file: Romanian language data (last modified: 2026.02.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -286,8 +286,8 @@ label:
  Uploads blocked: "Încărcări blocate"
  Uploads quarantined: "Încărcări puse în carantină"
  Uploads scanned: "Încărcări scanate"
- Your IP: "IP-ul dvs.:"
- Your UA: "Agentul dvs. de utilizator:"
+ Your IP address: "Adresa dvs. IP:"
+ Your user agent: "Agentul dvs. utilizator:"
  phpMussel version used: "Versiunea phpMussel folosită:"
 link:
  Accounts: "Conturi"

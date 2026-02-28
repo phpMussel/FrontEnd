@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Croatian language data (last modified: 2026.02.24).
+# This file: Croatian language data (last modified: 2026.02.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -286,8 +286,8 @@ label:
  Uploads blocked: "Prijenosi blokirani"
  Uploads quarantined: "Prijenosi u karanteni"
  Uploads scanned: "Prijenosi skenirani"
- Your IP: "Vaša IP adresa:"
- Your UA: "Vaš korisnički agent:"
+ Your IP address: "Vaša IP adresa:"
+ Your user agent: "Vaš korisnički agent:"
  phpMussel version used: "Korištena verzija phpMussel:"
 link:
  Accounts: "Računi"
