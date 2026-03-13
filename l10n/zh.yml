@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese language data (last modified: 2026.02.28).
+# This file: Chinese language data (last modified: 2026.03.13).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -379,6 +379,7 @@ label:
  Complete access: {"zh-Hans": "完全访问", "zh-Hant": "完全訪問"}
  Copy to clipboard: {"zh-Hans": "复制到剪贴板", "zh-Hant": "複製到剪貼板"}
  Default: {"zh-Hans": "标准", "zh-Hant": "標準"}
+ Duplicate to %s: {"zh-Hans": "复制到%s", "zh-Hant": "複製到%s"}
  Expires: {"zh-Hans": "过期：", "zh-Hant": "過期："}
  Extension: {"zh-Hans": "扩展", "zh-Hant": "擴展"}
  External: "外部"

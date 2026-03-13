@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malayalam language data (last modified: 2026.02.28).
+# This file: Malayalam language data (last modified: 2026.03.13).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -247,6 +247,7 @@ label:
  Complete access: "പൂർണ്ണ പ്രവേശനം"
  Copy to clipboard: "ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തുക"
  Default: "സ്ഥിരസ്ഥിതി"
+ Duplicate to %s: "%s ന്റെ തനിപ്പകർപ്പ്"
  Expires: "കാലഹരണപ്പെടുന്ന:"
  Extension: "എക്സ്റ്റൻഷൻ"
  External: "ബാഹ്യ"

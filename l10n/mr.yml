@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Marathi language data (last modified: 2026.02.28).
+# This file: Marathi language data (last modified: 2026.03.13).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -247,6 +247,7 @@ label:
  Complete access: "पूर्ण प्रवेश"
  Copy to clipboard: "क्लिपबोर्डवर कॉपी करा"
  Default: "डीफॉल्ट"
+ Duplicate to %s: "%s वर डुप्लिकेट करा"
  Expires: "कालबाह्य:"
  Extension: "विस्तार"
  External: "बाह्य"

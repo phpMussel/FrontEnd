@@ -185,4 +185,6 @@ input[type=hidden],script{display:none}
 .smicon{display:inline-block;background-repeat:no-repeat;position:relative;top:1px;width:12px;height:12px}
 .smicon.red{filter:invert(12%) sepia(86%) saturate(7400%) hue-rotate(2deg) brightness(109%) contrast(114%)}
 .smicon.delete{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:delete.svg}{/Base64Encode})}
+.smicon.export{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:export.svg}{/Base64Encode})}
 .smicontxt{padding:0 1px 0 1px}
+.fixComCatBtnVert{position:relative;top:3px}

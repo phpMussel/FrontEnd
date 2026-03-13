@@ -13,6 +13,7 @@
     "require": {
         "php": ">=7.2.0",
         "phpmussel/core": "^3.7",
+        "maikuolan/common": "^2.15",
         "ext-pcre": "*"
     },
     "autoload": {

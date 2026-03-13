@@ -179,4 +179,6 @@ input[type=checkbox],input[type=radio]{accent-color:#cca}
 .smicon{display:inline-block;background-repeat:no-repeat;position:relative;top:1px;width:12px;height:12px}
 .smicon.red{filter:invert(90%) sepia(63%) saturate(4751%) hue-rotate(-59deg) brightness(96%) contrast(87%)}
 .smicon.delete{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:delete.svg}{/Base64Encode})}
+.smicon.export{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:export.svg}{/Base64Encode})}
 .smicontxt{padding:0 1px 0 1px}
+.fixComCatBtnVert{position:relative;top:3px}

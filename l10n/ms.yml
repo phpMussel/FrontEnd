@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2026.02.28).
+# This file: Malay language data (last modified: 2026.03.13).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -247,6 +247,7 @@ label:
  Complete access: "Akses lengkap"
  Copy to clipboard: "Salin ke papan keratan"
  Default: "Lalai"
+ Duplicate to %s: "Salin ke %s"
  Expires: "Tamat tempoh:"
  Extension: "Sambungan"
  External: "Luaran"

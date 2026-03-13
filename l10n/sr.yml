@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Serbian language data (last modified: 2026.02.28).
+# This file: Serbian language data (last modified: 2026.03.13).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -247,6 +247,7 @@ label:
  Complete access: "Потпун приступ"
  Copy to clipboard: "Копирај у међуспремник"
  Default: "Подразумевано"
+ Duplicate to %s: "Дуплирај у %s"
  Expires: "Истиче:"
  Extension: "Екстензија"
  External: "Спољни"

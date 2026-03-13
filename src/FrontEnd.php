@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2026.02.26).
+ * This file: Front-end handler (last modified: 2026.03.13).
  */
 
 namespace phpMussel\FrontEnd;
@@ -862,7 +862,7 @@ class FrontEnd
     public function freeFromTraversal(string $Path): bool
     {
         return !preg_match(
-            '~(?:[^\da-z\p{L}\p{N}\p{M}\p{P}\p{S}\p{Z}.]|[\\/?&=]|^)\.\.+(?:[^\da-z\p{L}\p{N}\p{M}\p{P}\p{S}\p{Z}.]|[\\/?&=]|$)|/\.+(?:[^\da-z\p{L}\p{N}\p{M}\p{P}\p{S}\p{Z}.]|[\\/?&=]|$)|(?:[^\da-z\p{L}\p{N}\p{M}\p{P}\p{S}\p{Z}.]|[\\/])\.+/|[\x01-\x1F]~i',
+            '~(?:[^\da-z\p{L}\p{N}\p{M}\p{P}\p{S}\p{Z}.]|[\\\\/?&=]|^)\.\.+(?:[^\da-z\p{L}\p{N}\p{M}\p{P}\p{S}\p{Z}.]|[\\\\/?&=]|$)|/\.+(?:[^\da-z\p{L}\p{N}\p{M}\p{P}\p{S}\p{Z}.]|[\\\\/?&=]|$)|(?:[^\da-z\p{L}\p{N}\p{M}\p{P}\p{S}\p{Z}.]|[\\\\/])\.+/|[\x01-\x1F]~i',
             str_ireplace(
                 ['%25', '%20', '%21', '%22', '%23', '%24', '%26', '%27', '%28', '%29', '%2a', '%2b', '%2c', '%2d', '%2e', '%2f', '%3a', '%3b', '%3c', '%3d', '%3e', '%3f', '%5b', '%5c', '%5d', '%5e', '%5f', '%60', '\\'],
                 ['%', ' ', '!', '"', '#', '$', '&', '\'', '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '[', '/', ']', '^', '_', '`', '/'],
@@ -1342,7 +1342,7 @@ class FrontEnd
                         $Value[$SizeField] = $Size;
                     }
                 }
-                $Output .= '<span class="comCat"><code class="s">' . str_replace(['<', '>'], ['&lt;', '&gt;'], $Key) . '</code></span>' . $Delete . '<ul class="comSub">';
+                $Output .= '<span class="comCat"><code class="s">' . str_replace(['<', '>'], ['&lt;', '&gt;'], $Key) . '</code></span><span class="fixComCatBtnVert">' . $Delete . '</span><ul class="comSub">';
                 $Output .= $this->arrayToClickableList($Value, $DeleteKey, $Depth + 1, $Key, $ListSection) . '</ul>';
             } elseif (is_scalar($Value)) {
                 if ($Key === 'Time' && preg_match('~^\d+$~', $Value)) {

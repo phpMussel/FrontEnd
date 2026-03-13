@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bosnian language data (last modified: 2026.02.28).
+# This file: Bosnian language data (last modified: 2026.03.13).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -247,6 +247,7 @@ label:
  Complete access: "Potpuni pristup"
  Copy to clipboard: "Kopiraj u međuspremnik"
  Default: "Zadano"
+ Duplicate to %s: "Dupliciraj na %s"
  Expires: "Ističe:"
  Extension: "Ekstenzija"
  External: "Vanjski"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2026.02.28).
+# This file: English language data (last modified: 2026.03.13).
 ##/
 
 checkbox:
@@ -247,6 +247,7 @@ label:
  Complete access: "Complete access"
  Copy to clipboard: "Copy to clipboard"
  Default: "Default"
+ Duplicate to %s: "Duplicate to %s"
  Expires: "Expires:"
  Extension: "Extension"
  External: "External"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Gujarati language data (last modified: 2026.02.28).
+# This file: Gujarati language data (last modified: 2026.03.13).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -247,6 +247,7 @@ label:
  Complete access: "સંપૂર્ણ ઍક્સેસ"
  Copy to clipboard: "ક્લિપબોર્ડ પર કૉપિ કરો"
  Default: "ડિફૉલ્ટ"
+ Duplicate to %s: "%s માં ડુપ્લિકેટ કરો"
  Expires: "સમાપ્તિ:"
  Extension: "વિસ્તરણ"
  External: "બાહ્ય"

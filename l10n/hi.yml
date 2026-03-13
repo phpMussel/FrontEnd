@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hindi language data (last modified: 2026.02.28).
+# This file: Hindi language data (last modified: 2026.03.13).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -247,6 +247,7 @@ label:
  Complete access: "पूरा पहुंच"
  Copy to clipboard: "क्लिपबोर्ड पर कॉपी करें"
  Default: "डिफ़ॉल्ट"
+ Duplicate to %s: "%s में डुप्लिकेट करें"
  Expires: "समय समाप्ति:"
  Extension: "विस्तार"
  External: "बाहरी"
