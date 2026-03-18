@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The logs page (last modified: 2025.09.01).
+ * This file: The logs page (last modified: 2026.03.18).
  */
 
 namespace phpMussel\FrontEnd;
@@ -59,16 +59,16 @@ if (empty($this->QueryVariables['logfile'])) {
     $FE['mod_class_right'] = '';
 } else {
     $FE['TextModeSwitchLink'] .= '?phpmussel-page=logs&logfile=' . $this->QueryVariables['logfile'] . '&text-mode=';
-    if (strtolower(substr($this->QueryVariables['logfile'], -3)) === '.gz') {
+    if (\strtolower(\substr($this->QueryVariables['logfile'], -3)) === '.gz') {
         $FE['logfileData'] = $this->Loader->readFileGZ($this->QueryVariables['logfile']);
     } else {
         $FE['logfileData'] = $this->Loader->readFile($this->QueryVariables['logfile']);
     }
-    $FE['logfileData'] = $TextMode ? str_replace(
+    $FE['logfileData'] = $TextMode ? \str_replace(
         ['<', '>', "\r", "\n"],
         ['&lt;', '&gt;', '', "<br />\n"],
         $FE['logfileData']
-    ) : str_replace(
+    ) : \str_replace(
         ['<', '>', "\r"],
         ['&lt;', '&gt;', ''],
         $FE['logfileData']
@@ -80,7 +80,7 @@ if (empty($FE['TextModeSwitchLink'])) {
 }
 
 /** Text mode switch link formatted. */
-$FE['TextModeSwitchLink'] = sprintf(
+$FE['TextModeSwitchLink'] = \sprintf(
     $this->Loader->L10N->getString('link.Text formatting'),
     $FE['TextModeSwitchLink']
 );
@@ -96,7 +96,7 @@ $DownloadLabel = $this->Loader->L10N->getString('field.Download');
 
 /** Generate a list of the logs. */
 foreach ($FE['LogFiles']['Files'] as $Filename => $Filesize) {
-    $FE['LogFiles']['Out'] .= sprintf(
+    $FE['LogFiles']['Out'] .= \sprintf(
         '        <a href="?phpmussel-page=logs&logfile=%1$s&text-mode=%3$s">%1$s</a> – %2$s <a title="%4$s" href="?phpmussel-page=logs&logfile=%1$s&text-mode=download"><span class="navicon download"></span></a><br />',
         $Filename ?? '',
         $Filesize ?? '',
@@ -107,8 +107,8 @@ foreach ($FE['LogFiles']['Files'] as $Filename => $Filesize) {
 unset($Filesize, $Filename, $DownloadLabel);
 
 /** Calculate page load time (useful for debugging). */
-$FE['ProcessTime'] = microtime(true) - $_SERVER['REQUEST_TIME_FLOAT'];
-$FE['ProcessTime'] = '<br />' . sprintf(
+$FE['ProcessTime'] = \microtime(true) - $_SERVER['REQUEST_TIME_FLOAT'];
+$FE['ProcessTime'] = '<br />' . \sprintf(
     $this->Loader->L10N->getPlural($FE['ProcessTime'], 'label.Page request completed in %s seconds'),
     '<span class="txtRd">' . $this->NumberFormatter->format($FE['ProcessTime'], 3) . '</span>'
 );
@@ -117,7 +117,7 @@ $FE['ProcessTime'] = '<br />' . sprintf(
 if ($FE['LogFiles']['Out'] === '') {
     $FE['LogFiles'] = $this->Loader->L10N->getString('label.No log files available');
 } else {
-    $FE['LogFiles'] = sprintf('        <div class="subNav">%s</div>', $this->Loader->L10N->getString('link.Logs')) . "\n" . $FE['LogFiles']['Out'];
+    $FE['LogFiles'] = \sprintf('        <div class="subNav">%s</div>', $this->Loader->L10N->getString('link.Logs')) . "\n" . $FE['LogFiles']['Out'];
 }
 
 /** Send output. */

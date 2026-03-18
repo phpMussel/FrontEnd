@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The accounts page (last modified: 2025.10.11).
+ * This file: The accounts page (last modified: 2026.03.18).
  */
 
 namespace phpMussel\FrontEnd;
@@ -22,7 +22,7 @@ if ($FE['FormTarget'] === 'accounts' && !empty($_POST['do'])) {
     /** Create a new account. */
     if ($_POST['do'] === 'create-account' && !empty($_POST['username']) && !empty($_POST['password']) && !empty($_POST['permissions'])) {
         $TryPath = 'user.' . $_POST['username'];
-        $TryPass = password_hash($_POST['password'], $this->DefaultAlgo);
+        $TryPass = \password_hash($_POST['password'], $this->DefaultAlgo);
         $TryPermissions = (int)$_POST['permissions'];
         if (isset($this->Loader->Configuration[$TryPath])) {
             $FE['state_msg'] = $this->Loader->L10N->getString('response.An account with that username already exists');
@@ -54,7 +54,7 @@ if ($FE['FormTarget'] === 'accounts' && !empty($_POST['do'])) {
     /** Update an account password. */
     if ($_POST['do'] === 'update-password' && !empty($_POST['username']) && !empty($_POST['password'])) {
         $TryPath = 'user.' . $_POST['username'];
-        $TryPass = password_hash($_POST['password'], $this->DefaultAlgo);
+        $TryPass = \password_hash($_POST['password'], $this->DefaultAlgo);
         if (!isset($this->Loader->Configuration[$TryPath])) {
             $FE['state_msg'] = $this->Loader->L10N->getString('response.That account doesn_t exist');
         } else {
@@ -73,7 +73,7 @@ if (!$FE['ASYNC']) {
     $this->initialPrepwork($FE, $this->Loader->L10N->getString('link.Accounts'), $this->Loader->L10N->getString('tip.Accounts'));
 
     /** Append async globals. */
-    $FE['JS'] .= sprintf(
+    $FE['JS'] .= \sprintf(
         'window[%3$s]=\'accounts\';function acc(e,d,i,t){var o=function(e){%4$se)' .
         '},a=function(){%4$s\'%1$s\')};window.username=%2$s(e).value,window.passw' .
         'ord=%2$s(d).value,window.do=%2$s(t).value,\'delete-account\'==window.do&' .
@@ -97,8 +97,8 @@ if (!$FE['ASYNC']) {
         if (isset($LI['KeyData']['Time']) && $LI['KeyData']['Time'] > 0 && $LI['KeyData']['Time'] < $this->Loader->Time) {
             continue;
         }
-        if (strlen($LI['KeyName']) > 64) {
-            $LI['Try'] = substr($LI['KeyName'], 0, -64);
+        if (\strlen($LI['KeyName']) > 64) {
+            $LI['Try'] = \substr($LI['KeyName'], 0, -64);
             if (isset($this->Loader->Configuration['user.' . $LI['Try']])) {
                 $LI['Possible'][$LI['Try']] = true;
             }
@@ -107,11 +107,11 @@ if (!$FE['ASYNC']) {
     $LI = $LI['Possible'];
 
     foreach ($this->Loader->Configuration as $CatKey => $CatValues) {
-        if (substr($CatKey, 0, 5) !== 'user.' || !is_array($CatValues)) {
+        if (\substr($CatKey, 0, 5) !== 'user.' || !\is_array($CatValues)) {
             continue;
         }
         $RowInfo = [
-            'AccUsername' => substr($CatKey, 5),
+            'AccUsername' => \substr($CatKey, 5),
             'AccPassword' => $CatValues['password'] ?? '',
             'AccPermissions' => (int)($CatValues['permissions'] ?? ''),
             'AccWarnings' => ''
@@ -128,18 +128,18 @@ if (!$FE['ASYNC']) {
         if ($RowInfo['AccPassword'] === $this->DefaultPassword) {
             $RowInfo['AccWarnings'] .= '<br /><div class="txtRd">' . $this->Loader->L10N->getString('warning.Using the default password') . '</div>';
         } elseif ((
-            strlen($RowInfo['AccPassword']) !== 60 &&
-            strlen($RowInfo['AccPassword']) !== 96 &&
-            strlen($RowInfo['AccPassword']) !== 97
+            \strlen($RowInfo['AccPassword']) !== 60 &&
+            \strlen($RowInfo['AccPassword']) !== 96 &&
+            \strlen($RowInfo['AccPassword']) !== 97
         ) || (
-            strlen($RowInfo['AccPassword']) === 60 &&
-            !preg_match('/^\$2.\$\d\d\$/', $RowInfo['AccPassword'])
+            \strlen($RowInfo['AccPassword']) === 60 &&
+            !\preg_match('/^\$2.\$\d\d\$/', $RowInfo['AccPassword'])
         ) || (
-            strlen($RowInfo['AccPassword']) === 96 &&
-            !preg_match('/^\$argon2i\$/', $RowInfo['AccPassword'])
+            \strlen($RowInfo['AccPassword']) === 96 &&
+            !\preg_match('/^\$argon2i\$/', $RowInfo['AccPassword'])
         ) || (
-            strlen($RowInfo['AccPassword']) === 97 &&
-            !preg_match('/^\$argon2id\$/', $RowInfo['AccPassword'])
+            \strlen($RowInfo['AccPassword']) === 97 &&
+            !\preg_match('/^\$argon2id\$/', $RowInfo['AccPassword'])
         )) {
             $RowInfo['AccWarnings'] .= '<br /><div class="txtRd">' . $this->Loader->L10N->getString('warning.This account is not using a valid password') . '</div>';
         }
@@ -149,8 +149,8 @@ if (!$FE['ASYNC']) {
             $RowInfo['AccWarnings'] .= '<br /><div class="txtGn">' . $this->Loader->L10N->getString('label.Logged in') . '</div>';
         }
 
-        $RowInfo['AccID'] = bin2hex($RowInfo['AccUsername']);
-        $RowInfo['AccUsername'] = htmlentities($RowInfo['AccUsername']);
+        $RowInfo['AccID'] = \bin2hex($RowInfo['AccUsername']);
+        $RowInfo['AccUsername'] = \htmlentities($RowInfo['AccUsername']);
         $FE['Accounts'] .= $this->Loader->parse($RowInfo, $AccountsRow, true);
     }
     unset($RowInfo, $LI);

@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The signature information page (last modified: 2025.10.12).
+ * This file: The signature information page (last modified: 2026.03.18).
  */
 
 namespace phpMussel\FrontEnd;
@@ -42,7 +42,7 @@ if (!$this->Loader->loadShorthandData()) {
 
     /** Expand patterns for signature metadata. */
     foreach ($Arr['SigTypes'] as &$Arr['Type']) {
-        $Arr['Type'] = sprintf('\x1A(?![\x80-\x8F])[\x0%1$s\x1%1$s\x2%1$s\x3%1$s\x4%1$s\x5%1$s\x6%1$s\x7%1$s\x8%1$s\x9%1$s\xa%1$s\xb%1$s\xc%1$s\xd%1$s\xe%1$s\ef%1$s].', $Arr['Type']);
+        $Arr['Type'] = \sprintf('\x1A(?![\x80-\x8F])[\x0%1$s\x1%1$s\x2%1$s\x3%1$s\x4%1$s\x5%1$s\x6%1$s\x7%1$s\x8%1$s\x9%1$s\xa%1$s\xb%1$s\xc%1$s\xd%1$s\xe%1$s\ef%1$s].', $Arr['Type']);
     }
 
     /** Get list of vector search patterns. */
@@ -75,24 +75,24 @@ if (!$this->Loader->loadShorthandData()) {
     $Subs = ['Classes', 'Files', 'Vendors', 'SigTypes', 'Targets', 'MalwareTypes'];
 
     /** The currently active signature files. */
-    $Active = array_unique(array_filter(explode(',', $this->Loader->Configuration['signatures']['active']), function ($Item) {
+    $Active = \array_unique(array_filter(\explode(',', $this->Loader->Configuration['signatures']['active']), function ($Item) {
         return !empty($Item);
     }));
 
     /** Iterate through active signature files and append totals. */
     foreach ($Active as $File) {
-        $File = (strpos($File, ':') === false) ? $File : substr($File, strpos($File, ':') + 1);
+        $File = (\strpos($File, ':') === false) ? $File : \substr($File, \strpos($File, ':') + 1);
         if ($File === '' || $this->Loader->isReserved($File)) {
             continue;
         }
         $Data = $this->Loader->readFile($this->Loader->SignaturesPath . $File);
-        if (substr($Data, 0, 9) !== 'phpMussel') {
+        if (\substr($Data, 0, 9) !== 'phpMussel') {
             continue;
         }
-        $Class = substr($Data, 9, 1);
-        $Nibbles = strlen($Class) ? $this->Scanner->splitNibble($Class) : [-1, -1];
+        $Class = \substr($Data, 9, 1);
+        $Nibbles = \strlen($Class) ? $this->Scanner->splitNibble($Class) : [-1, -1];
         $Class = $Classes[$Nibbles[0]] ?? [];
-        $Totals['Files'][$File] = empty($Class[1]) ? 0 : preg_match_all('/' . $Class[1] . '\S+/', $Data);
+        $Totals['Files'][$File] = empty($Class[1]) ? 0 : \preg_match_all('/' . $Class[1] . '\S+/', $Data);
         if (isset($Class[1])) {
             $Totals['Classes'][$Class[0]] = isset($Totals['Classes'][$Class[0]]) ? $Totals['Classes'][$Class[0]] + $Totals['Files'][$File] : $Totals['Files'][$File];
         }
@@ -103,7 +103,7 @@ if (!$this->Loader->loadShorthandData()) {
         if (!empty($Class[1])) {
             foreach (['Vendors', 'SigTypes', 'Targets', 'MalwareTypes'] as $Sub) {
                 foreach ($Arr[$Sub] as $Key => $Pattern) {
-                    $Counts = preg_match_all('/' . $Class[1] . '(?:' . $Pattern . ')\S+/', $Data);
+                    $Counts = \preg_match_all('/' . $Class[1] . '(?:' . $Pattern . ')\S+/', $Data);
                     $Totals[$Sub][$Key] = isset($Totals[$Sub][$Key]) ? $Totals[$Sub][$Key] + $Counts : $Counts;
                 }
             }
@@ -128,10 +128,10 @@ if (!$this->Loader->loadShorthandData()) {
     /** Process totals. */
     foreach ($Subs as $Sub) {
         $Label = $this->Loader->L10N->getString('siginfo_sub_' . $Sub) ?: $Sub;
-        $Class = 'sigtype_' . strtolower($Sub);
+        $Class = 'sigtype_' . \strtolower($Sub);
         $FE['SigInfoMenuOptions'] .= "\n          <option value=\"" . $Class . '">' . $Label . '</option>';
         $FE['InfoRows'] .= '      <div class="center h2f s flexstretch ' . $Class . '" style="display:none">' . $Label . "</div>\n      <div class=\"duo flexstretch " . $Class . "_grid\" style=\"display:none\">\n";
-        arsort($Totals[$Sub]);
+        \arsort($Totals[$Sub]);
         foreach ($Totals[$Sub] as $Key => &$Total) {
             if (!$Total) {
                 continue;
@@ -142,7 +142,7 @@ if (!$this->Loader->loadShorthandData()) {
             );
             if ($Key !== 'Total' && $Key !== 'Other') {
                 if (!$Label) {
-                    $Label = sprintf($this->Loader->L10N->getString('siginfo_xkey'), $Key);
+                    $Label = \sprintf($this->Loader->L10N->getString('siginfo_xkey'), $Key);
                 }
                 $CellClass = 'h1';
             } else {
@@ -158,8 +158,8 @@ if (!$this->Loader->loadShorthandData()) {
 }
 
 /** Calculate and append page load time, and append totals. */
-$FE['ProcTime'] = microtime(true) - $_SERVER['REQUEST_TIME_FLOAT'];
-$FE['ProcTime'] = sprintf(
+$FE['ProcTime'] = \microtime(true) - $_SERVER['REQUEST_TIME_FLOAT'];
+$FE['ProcTime'] = \sprintf(
     $this->Loader->L10N->getPlural($FE['ProcTime'], 'label.Page request completed in %s seconds'),
     '<span class="txtRd">' . $this->NumberFormatter->format($FE['ProcTime'], 3) . '</span>'
 );

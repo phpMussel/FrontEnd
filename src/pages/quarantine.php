@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The quarantine page (last modified: 2024.06.18).
+ * This file: The quarantine page (last modified: 2026.03.18).
  */
 
 namespace phpMussel\FrontEnd;
@@ -36,7 +36,7 @@ if (
     !empty($_POST['qfu']) &&
     !empty($_POST['do']) &&
     !is_dir($this->Loader->QuarantinePath . $_POST['qfu']) &&
-    is_readable($this->Loader->QuarantinePath . $_POST['qfu'])
+    \is_readable($this->Loader->QuarantinePath . $_POST['qfu'])
 ) {
     if ($_POST['do'] === 'delete-file') {
         $FE['state_msg'] .= '<code>' . $_POST['qfu'] . '</code> ' . $this->Loader->L10N->getString(
@@ -61,9 +61,9 @@ if (
                 }
 
                 /** Restore the file. */
-                $Handle = fopen($this->Loader->QuarantinePath . $_POST['qfu'] . '.restored', 'wb');
-                fwrite($Handle, $Restored);
-                fclose($Handle);
+                $Handle = \fopen($this->Loader->QuarantinePath . $_POST['qfu'] . '.restored', 'wb');
+                \fwrite($Handle, $Restored);
+                \fclose($Handle);
                 $FE['state_msg'] .= '<code>' . $_POST['qfu'] . '.restored</code> ' . $this->Loader->L10N->getString('response.File successfully restored') . '<br />';
             } elseif ($this->InstanceCache['RestoreStatus'] === 2) {
                 /** Corrupted file! */
@@ -89,10 +89,10 @@ $QuarantineRow = $this->Loader->readFile($this->getAssetPath('_quarantine_row.ht
 $FilesInQuarantine = $this->quarantineRecursiveList();
 
 /** Number of files in quarantine. */
-$FilesInQuarantineCount = count($FilesInQuarantine);
+$FilesInQuarantineCount = \count($FilesInQuarantine);
 
 /** Number of files in quarantine state message. */
-$FE['state_msg'] .= sprintf(
+$FE['state_msg'] .= \sprintf(
     $this->Loader->L10N->getPlural($FilesInQuarantineCount, 'state_quarantine'),
     '<span class="txtRd">' . $this->NumberFormatter->format($FilesInQuarantineCount) . '</span>'
 ) . '<br />';
