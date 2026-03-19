@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Marathi language data (last modified: 2026.03.13).
+# This file: Marathi language data (last modified: 2026.03.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -151,7 +151,7 @@ field:
  File: "फाईल"
  Latest version: "नवीनतम आवृत्ती"
  Log In: "लॉग इन करा"
- More fields: "अधिक फील्ड"
+ More fields: "अधिक क्षेत्रे"
  OK: "OK"
  Options: "पर्याय"
  Password: "पासवर्ड"
@@ -336,7 +336,7 @@ response:
  Incorrect quarantine key: "चुकीची क्वारंटाइन की!"
  Invalid password: "लॉगिन अयशस्वी! चुकीचा पासवर्ड!"
  Maximum number of login attempts exceeded: "लॉगिन प्रयत्नांची कमाल संख्या ओलांडली; प्रवेश नाकारला."
- Password field empty: "पासवर्ड फील्ड रिकामे आहे!"
+ Password field empty: "पासवर्ड क्षेत्र रिकामे आहे!"
  Password successfully updated: "पासवर्ड यशस्वीरित्या अपडेट केला!"
  Permissions not adequate to perform asynchronous requests: "असिंक्रोनस विनंत्या करण्यासाठी परवानग्या पुरेशा नाहीत. पुन्हा लॉग इन करण्याचा प्रयत्न करा."
  Please enter a valid quarantine key: "कृपया वैध क्वारंटाइन की प्रविष्ट करा."
@@ -344,7 +344,7 @@ response:
  Successfully authenticated: "यशस्वीरित्या प्रमाणीकृत केले."
  That account doesn_t exist: "ते खाते अस्तित्वात नाही."
  Username doesn_t exist: "लॉगिन अयशस्वी! वापरकर्तानाव अस्तित्वात नाही!"
- Username field empty: "वापरकर्तानाव फील्ड रिक्त आहे!"
+ Username field empty: "वापरकर्तानाव क्षेत्र रिक्त आहे!"
  Wrong endpoint: "चुकीचा शेवटचा मुद्दा!"
  _No: "नाही"
  _Yes: "हो"

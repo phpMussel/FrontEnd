@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2026.03.13).
+# This file: French language data (last modified: 2026.03.18).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -35,7 +35,7 @@ config:
  core_disabled_channels: "Ceci peut être utilisé pour empêcher phpMussel d'utiliser des canaux particuliers lors de l'envoi de requêtes."
  core_error_log: "Un fichier pour l'enregistrement des erreurs non fatales détectées. Spécifier un fichier, ou laisser vide à désactiver."
  core_hide_version: "Masquer les informations de version à partir des journaux et de la sortie de la page\_? True = Oui\_; False = Non [Défaut]."
- core_ipaddr: "Où trouver l'adresse IP de requêtes\_? (Utile pour services tels que Cloudflare). Par Défaut = REMOTE_ADDR. AVERTISSEMENT\_: Ne pas changer si vous ne sais pas ce que vous faites\_!"
+ core_ipaddr: "Où trouver l'adresse IP des requêtes\_? (Utile pour services tels que Cloudflare). Par Défaut = REMOTE_ADDR. AVERTISSEMENT\_: Ne pas changer si vous ne sais pas ce que vous faites\_!"
  core_lang: "Spécifiez la langue défaut pour phpMussel."
  core_lang_override: "Localiser selon HTTP_ACCEPT_LANGUAGE autant que possible\_? True = Oui [Défaut]\_; False = Non."
  core_log_rotation_action: "La rotation du journal limite le nombre de fichiers journaux qui doivent exister à un moment donné. Lorsque de nouveaux fichiers journaux sont créés, si le nombre total de fichiers journaux dépasse la limite spécifiée, l'action spécifiée sera effectuée. Vous pouvez spécifier l'action souhaitée ici."
