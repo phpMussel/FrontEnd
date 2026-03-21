@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2026.03.13).
+# This file: Spanish language data (last modified: 2026.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -348,26 +348,27 @@ response:
  Wrong endpoint: "¡Punto final equivocado!"
  _No: "No"
  _Yes: "Sí"
-siginfo_key_CVE: "Firmas que se ocupan de las CVE (Vulnerabilidades y Exposiciones Comunes)."
-siginfo_key_Chameleon: "Firmas que se ocupan de "ataques de camaleón"."
-siginfo_key_FN: "Firmas que trabajan con nombres de archivos (a diferencia de los contenidos de archivos)."
-siginfo_key_Fake: "Las detecciones son variantes falsas y maliciosas de entidades benignas (software, scripts, etc)."
-siginfo_key_HEUR: "Firmas derivadas de datos heurísticos."
-siginfo_key_META: "Firmas que trabajan con metadatos de archivos (a diferencia de los datos de archivos)."
-siginfo_key_Other: "No identificado u otro."
-siginfo_key_Other_Metadata: "No hay metadatos disponibles."
-siginfo_key_Suspect: "Las detecciones son sospechosas, pero no confirmadas (pueden implicar combinaciones de varios identificadores)."
-siginfo_key_Testfile: "Firmas para archivos de prueba (es decir, no detecciones maliciosas)."
-siginfo_key_Total: "Firmas activas totales."
-siginfo_key_VT: "Firmas que incluyen o se basan en datos de Virus Total."
-siginfo_key_Werewolf: "Firmas que se ocupan de "ataques de werewolf"."
-siginfo_sub_Classes: "Cuenta por clase de archivo de firma"
-siginfo_sub_Files: "Cuenta por archivo de firma"
-siginfo_sub_MalwareTypes: "Cuente por infección o tipo de malware"
-siginfo_sub_SigTypes: "Cuenta por metadatos de firma"
-siginfo_sub_Targets: "Cuenta por vector objetivo"
-siginfo_sub_Vendors: "Cuenta por proveedor o fuente de firma"
-siginfo_xkey: "Identificado como "%s"."
+Signature information: !lazy
+ key_CVE: "Firmas que se ocupan de las CVE (Vulnerabilidades y Exposiciones Comunes)."
+ key_Chameleon: "Firmas que se ocupan de "ataques de camaleón"."
+ key_FN: "Firmas que trabajan con nombres de archivos (a diferencia de los contenidos de archivos)."
+ key_Fake: "Las detecciones son variantes falsas y maliciosas de entidades benignas (software, scripts, etc)."
+ key_HEUR: "Firmas derivadas de datos heurísticos."
+ key_META: "Firmas que trabajan con metadatos de archivos (a diferencia de los datos de archivos)."
+ key_Other: "No identificado u otro."
+ key_Other_Metadata: "No hay metadatos disponibles."
+ key_Suspect: "Las detecciones son sospechosas, pero no confirmadas (pueden implicar combinaciones de varios identificadores)."
+ key_Testfile: "Firmas para archivos de prueba (es decir, no detecciones maliciosas)."
+ key_Total: "Firmas activas totales."
+ key_VT: "Firmas que incluyen o se basan en datos de Virus Total."
+ key_Werewolf: "Firmas que se ocupan de "ataques de werewolf"."
+ sub_Classes: "Cuenta por clase de archivo de firma"
+ sub_Files: "Cuenta por archivo de firma"
+ sub_MalwareTypes: "Cuente por infección o tipo de malware"
+ sub_SigTypes: "Cuenta por metadatos de firma"
+ sub_Targets: "Cuenta por vector objetivo"
+ sub_Vendors: "Cuenta por proveedor o fuente de firma"
+ xkey: "Identificado como "%s"."
 state_quarantine:
  - "Hay %s archivo actualmente en cuarentena."
  - "Hay %s archivos actualmente en cuarentena."
@@ -386,7 +387,7 @@ tip:
  Statistics tracking is currently disabled: "Nota: El seguimiento de estadísticas está actualmente deshabilitado, pero se puede habilitar a través de la página de configuración."
  Statistics: "Esta página muestra algunas estadísticas de uso básicas relacionadas con la instalación de phpMussel."
  Upload Testing: "La página para subir pruebas contiene un formulario de subir de archivos estándar, permite probar si un archivo normalmente se bloquea por phpMussel cuando intentar subirlo."
-warning:
+warning: !lazy
  Cookies: "Nota: phpMussel usa una cookie para autenticar los inicios de sesión. Al iniciar sesión, usted da su consentimiento para que su navegador cree y almacene una cookie."
  JavaScript required: "Advertencia: Algunas funciones del front-end requieren JavaScript. Para garantizar que todo el front-end se comporte como se espera, se recomienda habilitar JavaScript."
  Maintenance mode is enabled: "¡Advertencia: El modo de mantenimiento está activado!"

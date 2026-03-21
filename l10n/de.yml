@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data (last modified: 2026.03.13).
+# This file: German language data (last modified: 2026.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -348,26 +348,27 @@ response:
  Wrong endpoint: "Falscher Endpunkt!"
  _No: "Nein"
  _Yes: "Ja"
-siginfo_key_CVE: "Signaturen, die sich mit CVEs (Häufige Schwachstellen und Gefährdungen) befassen."
-siginfo_key_Chameleon: "Signaturen, die sich mit „Chamäleon-Attacken“ befassen."
-siginfo_key_FN: "Signaturen, die mit Dateinamen arbeiten (im Gegensatz zu Dateiinhalten)."
-siginfo_key_Fake: "Erkennungen sind gefälschte, bösartige Varianten von ansonsten gutartigen Entitäten (Software, Skripte, u.s.w.)."
-siginfo_key_HEUR: "Von heuristischen Daten abgeleitete Signaturen."
-siginfo_key_META: "Signaturen, die mit Dateimetadaten arbeiten (im Gegensatz zu Dateidaten)."
-siginfo_key_Other: "Nicht identifiziert oder anders."
-siginfo_key_Other_Metadata: "Keine Metadaten verfügbar."
-siginfo_key_Suspect: "Erkennungen werden vermutet, aber nicht bestätigt (können Kombinationen verschiedener Identifikatoren beinhalten)."
-siginfo_key_Testfile: "Signaturen für Testdateien (d.H., keine bösartigen Erkennungen)."
-siginfo_key_Total: "Total aktive Signaturen"
-siginfo_key_VT: "Signaturen, die Daten von Virus Total enthalten oder darauf basieren."
-siginfo_key_Werewolf: "Signaturen, die sich mit „Werwolf-Attacken“ befassen."
-siginfo_sub_Classes: "Zählen nach Signaturdateiklasse"
-siginfo_sub_Files: "Zählen nach Signaturdatei"
-siginfo_sub_MalwareTypes: "Zählen nach Infektion oder Malware-Typ"
-siginfo_sub_SigTypes: "Zählen nach Signaturmetadaten"
-siginfo_sub_Targets: "Zählen nach Zielvektor"
-siginfo_sub_Vendors: "Zählen nach Signaturanbieter oder Signaturanquelle"
-siginfo_xkey: "Identifiziert als „%s“."
+Signature information: !lazy
+ key_CVE: "Signaturen, die sich mit CVEs (Häufige Schwachstellen und Gefährdungen) befassen."
+ key_Chameleon: "Signaturen, die sich mit „Chamäleon-Attacken“ befassen."
+ key_FN: "Signaturen, die mit Dateinamen arbeiten (im Gegensatz zu Dateiinhalten)."
+ key_Fake: "Erkennungen sind gefälschte, bösartige Varianten von ansonsten gutartigen Entitäten (Software, Skripte, u.s.w.)."
+ key_HEUR: "Von heuristischen Daten abgeleitete Signaturen."
+ key_META: "Signaturen, die mit Dateimetadaten arbeiten (im Gegensatz zu Dateidaten)."
+ key_Other: "Nicht identifiziert oder anders."
+ key_Other_Metadata: "Keine Metadaten verfügbar."
+ key_Suspect: "Erkennungen werden vermutet, aber nicht bestätigt (können Kombinationen verschiedener Identifikatoren beinhalten)."
+ key_Testfile: "Signaturen für Testdateien (d.H., keine bösartigen Erkennungen)."
+ key_Total: "Total aktive Signaturen"
+ key_VT: "Signaturen, die Daten von Virus Total enthalten oder darauf basieren."
+ key_Werewolf: "Signaturen, die sich mit „Werwolf-Attacken“ befassen."
+ sub_Classes: "Zählen nach Signaturdateiklasse"
+ sub_Files: "Zählen nach Signaturdatei"
+ sub_MalwareTypes: "Zählen nach Infektion oder Malware-Typ"
+ sub_SigTypes: "Zählen nach Signaturmetadaten"
+ sub_Targets: "Zählen nach Zielvektor"
+ sub_Vendors: "Zählen nach Signaturanbieter oder Signaturanquelle"
+ xkey: "Identifiziert als „%s“."
 state_quarantine:
  - "Es befinden sich derzeit %s Datei in der Quarantäne."
  - "Es befinden sich derzeit %s Dateien in der Quarantäne."
@@ -386,7 +387,7 @@ tip:
  Statistics tracking is currently disabled: "Hinweis: Die Statistikverfolgung ist derzeit deaktiviert, aber kann über die Konfigurationsseite aktiviert werden."
  Statistics: "Diese Seite zeigt einige grundlegende Nutzungsstatistiken zu Ihrer phpMussel-Installation."
  Upload Testing: "Das Upload-Testseite enthält ein Standard-Datei-Upload-Formular, das macht es möglich zu prüfen ob eine Datei normalerweise gestoppt von phpMussel werden soll, wenn Sie versuchen es hochzuladen."
-warning:
+warning: !lazy
  Cookies: "Hinweis: phpMussel verwendet einen Cookie zum Authentifizieren von Logins. Mit der Einloggen, Sie sich damit einverstanden, dass ein Cookie von Ihrem Browser erstellt und gespeichert wird."
  JavaScript required: "Warnung: Einige Front-End-Funktionalität erfordern JavaScript. Um sicherzustellen dass sich das gesamte Front-End wie erwartet verhält, wird die Aktivierung von JavaScript empfohlen."
  Maintenance mode is enabled: "Warnung: Wartungsmodus ist aktiviert!"

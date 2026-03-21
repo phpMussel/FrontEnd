@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2026.03.18).
+# This file: French language data (last modified: 2026.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -293,6 +293,7 @@ label:
  Size in quarantine: "Taille en quarantaine\_:"
  Start date: "Date de début"
  System information: "Informations sur le système\_:"
+ The cache is empty: "Le cache est vide."
  Upload date: {"fr-FR": "Date de téléchargement\_:", "fr-CA": "Date de téléversement\_:"}
  Upload hash: {"fr-FR": "Hash de téléchargement\_:", "fr-CA": "Hash de téléversement\_:"}
  Upload origin: {"fr-FR": "Origine du téléchargement\_:", "fr-CA": "Origine du téléversement\_:"}
@@ -367,27 +368,27 @@ response:
  Wrong endpoint: "Mauvais point final\_!"
  _No: "Non"
  _Yes: "Oui"
-siginfo_key_CVE: "Les signatures qui traitent des CVE (Vulnérabilités et Expositions Communes)."
-siginfo_key_Chameleon: "Les signatures qui traitent des «\_attaques caméléon\_»."
-siginfo_key_FN: "Les signatures fonctionnant avec des noms de fichiers (par opposition au contenu du fichier)."
-siginfo_key_Fake: "Les détections sont de variantes malveillantes et contrefaites d'entités par ailleurs bénignes (logiciels, scripts, etc)."
-siginfo_key_HEUR: "Les signatures dérivées de données heuristiques."
-siginfo_key_META: "Les signatures fonctionnant avec des métadonnées de fichier (par opposition aux données de fichier)."
-siginfo_key_Other: "Non identifié ou autre."
-siginfo_key_Other_Metadata: "Aucune métadonnée disponible."
-siginfo_key_Suspect: "Les détections sont suspectées, mais pas confirmées (peuvent impliquer des combinaisons de plusieurs identifiants)."
-siginfo_key_Testfile: "Les signatures pour les fichiers de test (les détections ne sont pas malveillantes)."
-siginfo_key_Total: "Total des signatures actives."
-siginfo_key_VT: "Les signatures incluant ou basées sur des données de Virus Total."
-siginfo_key_Werewolf: "Des signatures qui traitent des «\_attaques de werewolf\_»."
-siginfo_sub_Classes: "Compter par classe de fichier de signature"
-siginfo_sub_Files: "Compter par fichier de signature"
-siginfo_sub_MalwareTypes: "Compter par type d'infection ou de programme malveillant"
-siginfo_sub_SigTypes: "Compter par métadonnées de signature"
-siginfo_sub_Targets: "Compter par vecteur ciblé"
-siginfo_sub_Vendors: "Compter par fournisseur ou source de signature"
-siginfo_xkey: "Identifié comme «\_%s\_»."
-The cache is empty: "Le cache est vide."
+Signature information: !lazy
+ key_CVE: "Les signatures qui traitent des CVE (Vulnérabilités et Expositions Communes)."
+ key_Chameleon: "Les signatures qui traitent des «\_attaques caméléon\_»."
+ key_FN: "Les signatures fonctionnant avec des noms de fichiers (par opposition au contenu du fichier)."
+ key_Fake: "Les détections sont de variantes malveillantes et contrefaites d'entités par ailleurs bénignes (logiciels, scripts, etc)."
+ key_HEUR: "Les signatures dérivées de données heuristiques."
+ key_META: "Les signatures fonctionnant avec des métadonnées de fichier (par opposition aux données de fichier)."
+ key_Other: "Non identifié ou autre."
+ key_Other_Metadata: "Aucune métadonnée disponible."
+ key_Suspect: "Les détections sont suspectées, mais pas confirmées (peuvent impliquer des combinaisons de plusieurs identifiants)."
+ key_Testfile: "Les signatures pour les fichiers de test (les détections ne sont pas malveillantes)."
+ key_Total: "Total des signatures actives."
+ key_VT: "Les signatures incluant ou basées sur des données de Virus Total."
+ key_Werewolf: "Des signatures qui traitent des «\_attaques de werewolf\_»."
+ sub_Classes: "Compter par classe de fichier de signature"
+ sub_Files: "Compter par fichier de signature"
+ sub_MalwareTypes: "Compter par type d'infection ou de programme malveillant"
+ sub_SigTypes: "Compter par métadonnées de signature"
+ sub_Targets: "Compter par vecteur ciblé"
+ sub_Vendors: "Compter par fournisseur ou source de signature"
+ xkey: "Identifié comme «\_%s\_»."
 state_quarantine:
  - "Il y a %s fichier actuellement en quarantaine."
  - "Il y a %s fichiers actuellement en quarantaine."
@@ -410,7 +411,7 @@ tip:
  Upload Testing:
   fr-FR: "La page pour tester les téléchargements contient un formulaire pour le téléchargement de fichiers standard, vous permettant de tester si un fichier serait normalement être bloqué par phpMussel quand vous essayez de le télécharger."
   fr-CA: "La page pour tester les téléversements contient un formulaire pour le téléversement de fichiers standard, vous permettant de tester si un fichier serait normalement bloqué par phpMussel lorsque vous essayez de le téléverser."
-warning:
+warning: !lazy
  Cookies: "Remarque\_: phpMussel utilise un cookie pour authentifier les connexions. En vous connectant, vous donnez votre consentement pour qu'un cookie soit créé et stocké par votre navigateur."
  JavaScript required: "Attention\_: Certaines fonctionnalités nécessitent JavaScript. Pour garantir que l'ensemble de l'interface se comporte comme prévu, il est recommandé d'activer JavaScript."
  Maintenance mode is enabled: "Avertissement\_: Le mode de maintenance est activé\_!"

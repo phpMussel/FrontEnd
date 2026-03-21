@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2026.03.13).
+# This file: Korean language data (last modified: 2026.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -348,26 +348,27 @@ response:
  Wrong endpoint: "잘못된 끝점!"
  _No: "아니오"
  _Yes: "예"
-siginfo_key_CVE: "CVE를 다루는 서명."
-siginfo_key_Chameleon: ""카멜레온 공격"을 다루는 서명."
-siginfo_key_FN: "파일 이름을 사용하는 서명 (파일 내용이 아닌)."
-siginfo_key_Fake: "탐지는 양성 엔티티 (소프트웨어, 스크립트 등)의 가짜 악성 변종입니다."
-siginfo_key_HEUR: "휴리스틱 데이터에서 파생 된 서명."
-siginfo_key_META: "파일 메타 데이터로 작업하는 서명 (파일 데이터와 반대)."
-siginfo_key_Other: "미확인 또는 기타."
-siginfo_key_Other_Metadata: "사용할 수있는 메타 데이터가 없습니다."
-siginfo_key_Suspect: "탐지는 의심 스럽지만 확인되지 않았습니다 (다양한 식별자의 조합이 포함될 수 있음)."
-siginfo_key_Testfile: "테스트 파일의 서명 (이러한 탐지는 악의적이지 않습니다)."
-siginfo_key_Total: "총 활성 서명."
-siginfo_key_VT: "Virus Total의 데이터를 포함한 서명."
-siginfo_key_Werewolf: ""늑대 인간의 공격"을 다루는 서명."
-siginfo_sub_Classes: "서명 파일 클래스 수"
-siginfo_sub_Files: "서명 파일 수"
-siginfo_sub_MalwareTypes: "감염 또는 악성 코드 유형으로 계산"
-siginfo_sub_SigTypes: "서명 메타 데이터로 계산"
-siginfo_sub_Targets: "타겟 벡터로 계산"
-siginfo_sub_Vendors: "서명 공급 업체 또는 출처 별 계산"
-siginfo_xkey: ""%s"로 식별됩니다."
+Signature information: !lazy
+ key_CVE: "CVE를 다루는 서명."
+ key_Chameleon: ""카멜레온 공격"을 다루는 서명."
+ key_FN: "파일 이름을 사용하는 서명 (파일 내용이 아닌)."
+ key_Fake: "탐지는 양성 엔티티 (소프트웨어, 스크립트 등)의 가짜 악성 변종입니다."
+ key_HEUR: "휴리스틱 데이터에서 파생 된 서명."
+ key_META: "파일 메타 데이터로 작업하는 서명 (파일 데이터와 반대)."
+ key_Other: "미확인 또는 기타."
+ key_Other_Metadata: "사용할 수있는 메타 데이터가 없습니다."
+ key_Suspect: "탐지는 의심 스럽지만 확인되지 않았습니다 (다양한 식별자의 조합이 포함될 수 있음)."
+ key_Testfile: "테스트 파일의 서명 (이러한 탐지는 악의적이지 않습니다)."
+ key_Total: "총 활성 서명."
+ key_VT: "Virus Total의 데이터를 포함한 서명."
+ key_Werewolf: ""늑대 인간의 공격"을 다루는 서명."
+ sub_Classes: "서명 파일 클래스 수"
+ sub_Files: "서명 파일 수"
+ sub_MalwareTypes: "감염 또는 악성 코드 유형으로 계산"
+ sub_SigTypes: "서명 메타 데이터로 계산"
+ sub_Targets: "타겟 벡터로 계산"
+ sub_Vendors: "서명 공급 업체 또는 출처 별 계산"
+ xkey: ""%s"로 식별됩니다."
 state_quarantine: "현재 %s 개의 파일이 격리 보관소에 있습니다."
 tip:
  2FA Sent: "2FA 코드가 포함 된 이메일이 귀하의 이메일 주소로 발송되었습니다. 프런트 엔드에 액세스하려면 아래 코드를 확인하십시오. 이 이메일을받지 못한 경우 로그 아웃을 시도하고 10 분을 기다린 후 다시 로그인하여 새 코드가 포함 된 새 이메일을 수신 할 수 있습니다."
@@ -384,7 +385,7 @@ tip:
  Statistics tracking is currently disabled: "노트: 통계 추적은 현재 비활성화되어, 있지만 구성 페이지를 통해 활성화할 수 있습니다."
  Statistics: "이 페이지는 phpMussel 설치와 관련된 몇 가지 기본 사용 통계를 보여줍니다."
  Upload Testing: "업로드 테스트 페이지 표준 파일 업로드 양식을 포함합니다 파일이 일반적 차단 여부를 테스트 할 수 있습니다."
-warning:
+warning: !lazy
  Cookies: "노트: phpMussel은 쿠키를 사용하여 로그인을 인증합니다. 로그인하면, 브라우저에서 쿠키를 만들고 저장하는 것에 동의하게됩니다."
  JavaScript required: "경고: 일부 프런트 엔드 기능에는 JavaScript가 필요합니다. 전체 프런트 엔드가 예상대로 작동하도록 하려면 JavaScript를 활성화하는 것이 좋습니다."
  Maintenance mode is enabled: "경고: 유지 관리 모드가 활성화되었습니다!"

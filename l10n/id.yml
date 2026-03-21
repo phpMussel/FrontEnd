@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2026.03.13).
+# This file: Indonesian language data (last modified: 2026.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -348,26 +348,27 @@ response:
  Wrong endpoint: "Jalur akses salah!"
  _No: "Tidak"
  _Yes: "Ya"
-siginfo_key_CVE: "Tanda tangan yang berhubungan dengan CVE (Kerentanan dan Eksposur Umum)."
-siginfo_key_Chameleon: "Tanda tangan yang berhubungan dengan "serangan bunglon"."
-siginfo_key_FN: "Tanda tangan yang bekerja dengan nama file (sebagai lawan isi file)."
-siginfo_key_Fake: "Deteksi adalah palsu, varian berbahaya dari entitas yang tidak berbahaya (perangkat lunak, skrip, dll)."
-siginfo_key_HEUR: "Tanda tangan berasal dari data heuristik."
-siginfo_key_META: "Tanda tangan yang bekerja dengan metadata file (sebagai lawan data file)."
-siginfo_key_Other: "Tidak dikenal atau lainnya."
-siginfo_key_Other_Metadata: "Tidak ada metadata yang tersedia."
-siginfo_key_Suspect: "Deteksi dicurigai, tetapi tidak dikonfirmasi (mungkin melibatkan kombinasi berbagai pengidentifikasi)."
-siginfo_key_Testfile: "Tanda tangan untuk file test (yaitu, bukan pendeteksian yang berbahaya)."
-siginfo_key_Total: "Total tanda tangan aktif."
-siginfo_key_VT: "Tanda tangan termasuk atau berdasarkan data dari Virus Total."
-siginfo_key_Werewolf: "Tanda tangan yang berhubungan dengan "serangan werewolf"."
-siginfo_sub_Classes: "Hitung berdasarkan kelas file tanda tangan"
-siginfo_sub_Files: "Hitung berdasarkan file tanda tangan"
-siginfo_sub_MalwareTypes: "Hitung berdasarkan jenis infeksi atau malware"
-siginfo_sub_SigTypes: "Hitung berdasarkan metadata tanda tangan"
-siginfo_sub_Targets: "Hitung berdasarkan vektor ditargetkan"
-siginfo_sub_Vendors: "Hitung berdasarkan vendor atau sumber tanda tangan"
-siginfo_xkey: "Diidentifikasi sebagai "%s"."
+Signature information: !lazy
+ key_CVE: "Tanda tangan yang berhubungan dengan CVE (Kerentanan dan Eksposur Umum)."
+ key_Chameleon: "Tanda tangan yang berhubungan dengan "serangan bunglon"."
+ key_FN: "Tanda tangan yang bekerja dengan nama file (sebagai lawan isi file)."
+ key_Fake: "Deteksi adalah palsu, varian berbahaya dari entitas yang tidak berbahaya (perangkat lunak, skrip, dll)."
+ key_HEUR: "Tanda tangan berasal dari data heuristik."
+ key_META: "Tanda tangan yang bekerja dengan metadata file (sebagai lawan data file)."
+ key_Other: "Tidak dikenal atau lainnya."
+ key_Other_Metadata: "Tidak ada metadata yang tersedia."
+ key_Suspect: "Deteksi dicurigai, tetapi tidak dikonfirmasi (mungkin melibatkan kombinasi berbagai pengidentifikasi)."
+ key_Testfile: "Tanda tangan untuk file test (yaitu, bukan pendeteksian yang berbahaya)."
+ key_Total: "Total tanda tangan aktif."
+ key_VT: "Tanda tangan termasuk atau berdasarkan data dari Virus Total."
+ key_Werewolf: "Tanda tangan yang berhubungan dengan "serangan werewolf"."
+ sub_Classes: "Hitung berdasarkan kelas file tanda tangan"
+ sub_Files: "Hitung berdasarkan file tanda tangan"
+ sub_MalwareTypes: "Hitung berdasarkan jenis infeksi atau malware"
+ sub_SigTypes: "Hitung berdasarkan metadata tanda tangan"
+ sub_Targets: "Hitung berdasarkan vektor ditargetkan"
+ sub_Vendors: "Hitung berdasarkan vendor atau sumber tanda tangan"
+ xkey: "Diidentifikasi sebagai "%s"."
 state_quarantine: "Ada %s file yang saat ini di karantina."
 tip:
  2FA Sent: "Email yang berisi kode otentikasi dua-faktor telah dikirim ke alamat email Anda. Silakan mengkonfirmasikan kode ini dibawah untuk mendapatkan akses ke bagian depan. Jika Anda tidak menerima email ini, coba keluar, tunggu 10 menit, dan masuk lagi untuk menerima email baru yang berisi kode baru."
@@ -384,7 +385,7 @@ tip:
  Statistics tracking is currently disabled: "Catat: Pelacakan statistik saat ini dinonaktifkan, namun dapat diaktifkan melalui halaman konfigurasi."
  Statistics: "Halaman ini menunjukkan beberapa statistik penggunaan dasar mengenai instalasi phpMussel Anda."
  Upload Testing: "Halaman pengujian pengunggahan berisi form upload file standar, memungkinkan Anda untuk mengetes apakah file biasanya akan diblokir oleh phpMussel ketika mencoba untuk menguploadnya."
-warning:
+warning: !lazy
  Cookies: "Catat: phpMussel menggunakan cookie untuk mengotentikasi semua login. Saat kamu masuk, Anda memberikan izin agar cookie dibuat dan disimpan oleh browser Anda."
  JavaScript required: "Peringatan: Beberapa fungsionalitas memerlukan JavaScript. Untuk memastikan bahwa seluruh antarmuka berperilaku seperti yang diharapkan, disarankan untuk mengaktifkan JavaScript."
  Maintenance mode is enabled: "Peringatan: Modus perawatan diaktifkan!"

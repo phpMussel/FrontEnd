@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2026.03.13).
+# This file: Latvian language data (last modified: 2026.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -348,26 +348,27 @@ response:
  Wrong endpoint: "Nepareizs galapunkts!"
  _No: "Nē"
  _Yes: "Jā"
-siginfo_key_CVE: "Paraksti, kas attiecas uz CVE (kopējā ievainojamības un ekspozīcijas)."
-siginfo_key_Chameleon: "Paraksti, kas nodarbojas ar "hameleonu uzbrukumiem"."
-siginfo_key_FN: "Paraksti, kas strādā ar failu nosaukumiem (pretstatā faila saturam)."
-siginfo_key_Fake: "Citādi labdabīgu subjektu (programmatūra, skripti, utt) viltus, ļaunprātīgi varianti."
-siginfo_key_HEUR: "Paraksti, kas iegūti no heiristiskiem datiem."
-siginfo_key_META: "Paraksti, kas strādā ar faila metadatiem (pretstatā faila datiem)."
-siginfo_key_Other: "Neidentificēts vai cits."
-siginfo_key_Other_Metadata: "Nav pieejami metadati."
-siginfo_key_Suspect: "Aizdomīgs, bet neapstiprināts (var ietvert dažādu identifikatoru kombinācijas)."
-siginfo_key_Testfile: "Paraksti testa failiem (t.i., nevis ļaunprātīgas atrašanas)."
-siginfo_key_Total: "Kopā aktīvi paraksti."
-siginfo_key_VT: "Paraksti, kas satur Virus Total datus vai ir balstīti uz tiem."
-siginfo_key_Werewolf: "Paraksti, kas nodarbojas ar "vilkaču uzbrukumiem"."
-siginfo_sub_Classes: "Skaita pēc paraksta faila klases"
-siginfo_sub_Files: "Skaita pēc paraksta faila"
-siginfo_sub_MalwareTypes: "Skaita pēc infekcijas vai ļaunprātīgas programmatūras veida"
-siginfo_sub_SigTypes: "Skaita pēc paraksta metadatiem"
-siginfo_sub_Targets: "Skaita pēc mērķa vektora"
-siginfo_sub_Vendors: "Skaita pēc paraksta pārdevēja vai avota"
-siginfo_xkey: "Identificēts kā "%s"."
+Signature information: !lazy
+ key_CVE: "Paraksti, kas attiecas uz CVE (kopējā ievainojamības un ekspozīcijas)."
+ key_Chameleon: "Paraksti, kas nodarbojas ar "hameleonu uzbrukumiem"."
+ key_FN: "Paraksti, kas strādā ar failu nosaukumiem (pretstatā faila saturam)."
+ key_Fake: "Citādi labdabīgu subjektu (programmatūra, skripti, utt) viltus, ļaunprātīgi varianti."
+ key_HEUR: "Paraksti, kas iegūti no heiristiskiem datiem."
+ key_META: "Paraksti, kas strādā ar faila metadatiem (pretstatā faila datiem)."
+ key_Other: "Neidentificēts vai cits."
+ key_Other_Metadata: "Nav pieejami metadati."
+ key_Suspect: "Aizdomīgs, bet neapstiprināts (var ietvert dažādu identifikatoru kombinācijas)."
+ key_Testfile: "Paraksti testa failiem (t.i., nevis ļaunprātīgas atrašanas)."
+ key_Total: "Kopā aktīvi paraksti."
+ key_VT: "Paraksti, kas satur Virus Total datus vai ir balstīti uz tiem."
+ key_Werewolf: "Paraksti, kas nodarbojas ar "vilkaču uzbrukumiem"."
+ sub_Classes: "Skaita pēc paraksta faila klases"
+ sub_Files: "Skaita pēc paraksta faila"
+ sub_MalwareTypes: "Skaita pēc infekcijas vai ļaunprātīgas programmatūras veida"
+ sub_SigTypes: "Skaita pēc paraksta metadatiem"
+ sub_Targets: "Skaita pēc mērķa vektora"
+ sub_Vendors: "Skaita pēc paraksta pārdevēja vai avota"
+ xkey: "Identificēts kā "%s"."
 state_quarantine:
  - "Šobrīd karantīnā ir %s fails."
  - "Šobrīd karantīnā ir %s faili."
@@ -386,7 +387,7 @@ tip:
  Statistics tracking is currently disabled: "Piezīme: Statistikas izsekošana pašlaik ir atspējota, taču to var iespējot konfigurācijas lapā."
  Statistics: "Šī lapa parāda dažus pamata statistikas datus par jūsu phpMussel instalēšanu."
  Upload Testing: "Augšupielādes testa lapā ir standarta failu augšupielādes forma. Varat to izmantot, lai pārbaudītu, vai phpMussel parasti bloķē failu."
-warning:
+warning: !lazy
  Cookies: "Piezīme: phpMussel izmanto sīkfailu, lai autentificētu ielogošanās informāciju. Ielogoties, jūs dodat piekrišanu sīkdatnes izveidošanai un saglabāšanai jūsu pārlūkprogrammā."
  JavaScript required: "Brīdinājums: Dažām funkcionalitātēm ir nepieciešams JavaScript. Ieteicams iespējot JavaScript, lai nodrošinātu, ka visa interfeiss darbojas, kā paredzēts."
  Maintenance mode is enabled: "Brīdinājums: Apkopes režīms ir iespējots!"

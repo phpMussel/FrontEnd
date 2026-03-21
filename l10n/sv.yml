@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2026.03.13).
+# This file: Swedish language data (last modified: 2026.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -348,26 +348,27 @@ response:
  Wrong endpoint: "Felaktig slutpunkt!"
  _No: "Nej"
  _Yes: "Ja"
-siginfo_key_CVE: "Signaturer som hanterar CVEer (gemensamma sårbarheter och exponeringar)."
-siginfo_key_Chameleon: "Signaturer som handlar om "kameleonattacker"."
-siginfo_key_FN: "Signaturer arbetar med filnamn (i motsats till filinnehållet)."
-siginfo_key_Fake: "Upptäckter är falska, skadliga varianter av annars godartade enheter (programvara, skript, osv)."
-siginfo_key_HEUR: "Signaturer härrörande från heuristiska data."
-siginfo_key_META: "Signaturer arbetar med filmetadata (i motsats till fildata)."
-siginfo_key_Other: "Oidentifierad eller annan."
-siginfo_key_Other_Metadata: "Inga metadata tillgängliga."
-siginfo_key_Suspect: "Detektioner är misstänkta men inte bekräftade (kan innebära kombinationer av olika identifierare)."
-siginfo_key_Testfile: "Signaturer för testfiler (d.v.s., inte skadliga upptäckter)."
-siginfo_key_Total: "Totalt aktiva signaturer."
-siginfo_key_VT: "Signaturer inklusive eller baserat på data från Virus Total."
-siginfo_key_Werewolf: "Signaturer som handlar om "varulvattacker"."
-siginfo_sub_Classes: "Räkna efter signaturfilklass"
-siginfo_sub_Files: "Räkna efter signaturfil"
-siginfo_sub_MalwareTypes: "Räkna efter infektion eller typ av skadlig kod"
-siginfo_sub_SigTypes: "Räkna efter signaturmetadata"
-siginfo_sub_Targets: "Räkna efter målinriktad vektor"
-siginfo_sub_Vendors: "Räkna efter signaturförsäljare eller källa"
-siginfo_xkey: "Identifierad som "%s"."
+Signature information: !lazy
+ key_CVE: "Signaturer som hanterar CVEer (gemensamma sårbarheter och exponeringar)."
+ key_Chameleon: "Signaturer som handlar om "kameleonattacker"."
+ key_FN: "Signaturer arbetar med filnamn (i motsats till filinnehållet)."
+ key_Fake: "Upptäckter är falska, skadliga varianter av annars godartade enheter (programvara, skript, osv)."
+ key_HEUR: "Signaturer härrörande från heuristiska data."
+ key_META: "Signaturer arbetar med filmetadata (i motsats till fildata)."
+ key_Other: "Oidentifierad eller annan."
+ key_Other_Metadata: "Inga metadata tillgängliga."
+ key_Suspect: "Detektioner är misstänkta men inte bekräftade (kan innebära kombinationer av olika identifierare)."
+ key_Testfile: "Signaturer för testfiler (d.v.s., inte skadliga upptäckter)."
+ key_Total: "Totalt aktiva signaturer."
+ key_VT: "Signaturer inklusive eller baserat på data från Virus Total."
+ key_Werewolf: "Signaturer som handlar om "varulvattacker"."
+ sub_Classes: "Räkna efter signaturfilklass"
+ sub_Files: "Räkna efter signaturfil"
+ sub_MalwareTypes: "Räkna efter infektion eller typ av skadlig kod"
+ sub_SigTypes: "Räkna efter signaturmetadata"
+ sub_Targets: "Räkna efter målinriktad vektor"
+ sub_Vendors: "Räkna efter signaturförsäljare eller källa"
+ xkey: "Identifierad som "%s"."
 state_quarantine:
  - "Det finns %s fil för närvarande i karantän."
  - "Det finns %s filer för närvarande i karantän."
@@ -386,7 +387,7 @@ tip:
  Statistics tracking is currently disabled: "Notera: Statistikspårning är för närvarande inaktiverad, men kan aktiveras via konfigurationssidan."
  Statistics: "Den här sidan visar en viss användarstatistik för din phpMussel-installation."
  Upload Testing: "Uppladdningssidan innehåller ett standardformulär för uppladdning av filer, så att du kan testa om en fil normalt skulle blockeras av phpMussel när du försöker ladda upp den."
-warning:
+warning: !lazy
  Cookies: "Notera: phpMussel använder en cookie för att autentisera inloggningar. Genom att logga in, ger du ditt samtycke till att en cookie ska skapas och lagras av din webbläsare."
  JavaScript required: "Varning: Vissa frontend-funktionalitet kräver JavaScript. För att säkerställa att hela gränssnittet beter sig som förväntat, rekommenderas att aktivera JavaScript."
  Maintenance mode is enabled: "Varning: Underhållsläget är aktiverat!"

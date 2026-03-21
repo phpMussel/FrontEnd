@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2026.03.13).
+# This file: Malay language data (last modified: 2026.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -348,26 +348,27 @@ response:
  Wrong endpoint: "Titik akhir salah!"
  _No: "Tidak"
  _Yes: "Ya"
-siginfo_key_CVE: "Tandatangan yang berurusan dengan CVE (Kerentanan dan Pendedahan Biasa)."
-siginfo_key_Chameleon: "Tandatangan yang berurusan dengan "serangan chameleon"."
-siginfo_key_FN: "Tandatangan yang berfungsi dengan nama fail (berbeza dengan kandungan fail)."
-siginfo_key_Fake: "Pengesanan ialah varian palsu dan berniat jahat daripada entiti yang tidak berbahaya (perisian, skrip, dll)."
-siginfo_key_HEUR: "Tandatangan yang diperoleh daripada data heuristik."
-siginfo_key_META: "Tandatangan yang berfungsi dengan metadata fail (berbeza dengan data fail)."
-siginfo_key_Other: "Tidak dikenali atau lain-lain."
-siginfo_key_Other_Metadata: "Tiada metadata tersedia."
-siginfo_key_Suspect: "Pengesanan disyaki, tetapi tidak disahkan (mungkin melibatkan gabungan pelbagai pengecam)."
-siginfo_key_Testfile: "Tandatangan untuk fail ujian (iaitu, bukan pengesanan berniat jahat)."
-siginfo_key_Total: "Jumlah tandatangan aktif."
-siginfo_key_VT: "Tandatangan termasuk atau berdasarkan data daripada Virus Total."
-siginfo_key_Werewolf: "Tandatangan yang berurusan dengan "serangan werewolf"."
-siginfo_sub_Classes: "Kira berdasarkan kelas fail tandatangan"
-siginfo_sub_Files: "Kira berdasarkan fail tandatangan"
-siginfo_sub_MalwareTypes: "Kira berdasarkan jenis jangkitan atau perisian hasad"
-siginfo_sub_SigTypes: "Kira berdasarkan metadata tandatangan"
-siginfo_sub_Targets: "Kira berdasarkan vektor yang disasarkan"
-siginfo_sub_Vendors: "Kira berdasarkan vendor atau sumber tandatangan"
-siginfo_xkey: "Dikenali sebagai "%s"."
+Signature information: !lazy
+ key_CVE: "Tandatangan yang berurusan dengan CVE (Kerentanan dan Pendedahan Biasa)."
+ key_Chameleon: "Tandatangan yang berurusan dengan "serangan chameleon"."
+ key_FN: "Tandatangan yang berfungsi dengan nama fail (berbeza dengan kandungan fail)."
+ key_Fake: "Pengesanan ialah varian palsu dan berniat jahat daripada entiti yang tidak berbahaya (perisian, skrip, dll)."
+ key_HEUR: "Tandatangan yang diperoleh daripada data heuristik."
+ key_META: "Tandatangan yang berfungsi dengan metadata fail (berbeza dengan data fail)."
+ key_Other: "Tidak dikenali atau lain-lain."
+ key_Other_Metadata: "Tiada metadata tersedia."
+ key_Suspect: "Pengesanan disyaki, tetapi tidak disahkan (mungkin melibatkan gabungan pelbagai pengecam)."
+ key_Testfile: "Tandatangan untuk fail ujian (iaitu, bukan pengesanan berniat jahat)."
+ key_Total: "Jumlah tandatangan aktif."
+ key_VT: "Tandatangan termasuk atau berdasarkan data daripada Virus Total."
+ key_Werewolf: "Tandatangan yang berurusan dengan "serangan werewolf"."
+ sub_Classes: "Kira berdasarkan kelas fail tandatangan"
+ sub_Files: "Kira berdasarkan fail tandatangan"
+ sub_MalwareTypes: "Kira berdasarkan jenis jangkitan atau perisian hasad"
+ sub_SigTypes: "Kira berdasarkan metadata tandatangan"
+ sub_Targets: "Kira berdasarkan vektor yang disasarkan"
+ sub_Vendors: "Kira berdasarkan vendor atau sumber tandatangan"
+ xkey: "Dikenali sebagai "%s"."
 state_quarantine: "Terdapat %s fail sedang dalam kuarantin."
 tip:
  2FA Sent: "E-mel yang mengandungi kod pengesahan dua-faktor telah dihantar ke alamat e-mel anda. Sila sahkan kod ini di bawah untuk mendapatkan akses kepada bahagian hadapan. Jika anda tidak menerima e-mel ini, cuba log keluar, tunggu selama 10 minit, dan log masuk semula untuk menerima e-mel baharu yang mengandungi kod baharu."
@@ -384,7 +385,7 @@ tip:
  Statistics tracking is currently disabled: "Nota: Penjejakan statistik kini dinyahaktifkan, tetapi boleh diaktifkan melalui halaman konfigurasi."
  Statistics: "Halaman ini menunjukkan beberapa statistik penggunaan asas mengenai pemasangan phpMussel anda."
  Upload Testing: "Halaman ujian muat naik mengandungi borang muat naik fail standard, membolehkan anda menguji sama ada fail biasanya akan disekat oleh phpMussel apabila cuba memuat naiknya."
-warning:
+warning: !lazy
  Cookies: "Nota: phpMussel menggunakan kuki untuk mengesahkan log masuk. Apabila anda log masuk, anda memberikan persetujuan anda untuk kuki dibuat dan disimpan oleh penyemak imbas anda."
  JavaScript required: "Amaran: Sesetengah kefungsian bahagian hadapan memerlukan JavaScript. Untuk memastikan bahawa keseluruhan bahagian hadapan berkelakuan seperti yang diharapkan, mendayakan JavaScript adalah disyorkan."
  Maintenance mode is enabled: "Amaran: Beroperasi dalam mod penyelenggaraan!"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Galician language data (last modified: 2026.03.13).
+# This file: Galician language data (last modified: 2026.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -348,26 +348,27 @@ response:
  Wrong endpoint: "Punto final incorrecto!"
  _No: "Non"
  _Yes: "Si"
-siginfo_key_CVE: "Sinaturas que tratan de CVE (vulnerabilidades e exposicións comúns)."
-siginfo_key_Chameleon: "Sinaturas que tratan de "ataques camaleónicos"."
-siginfo_key_FN: "Sinaturas que traballan con nomes de ficheiros (en oposición ao contido dos ficheiros)."
-siginfo_key_Fake: "As deteccións son variantes falsas e maliciosas de entidades benignos (software, scripts, etc)."
-siginfo_key_HEUR: "Sinaturas derivadas de datos heurísticos."
-siginfo_key_META: "Sinaturas que traballan con metadatos do ficheiro (en oposición aos datos do ficheiro)."
-siginfo_key_Other: "Non identificado ou doutro tipo."
-siginfo_key_Other_Metadata: "Non hai metadatos dispoñibles."
-siginfo_key_Suspect: "Sospeitase de deteccións, pero non confirmadas (pode implicar combinacións de varios identificadores)."
-siginfo_key_Testfile: "Sinaturas para ficheiros de proba (é dicir, non deteccións maliciosas)."
-siginfo_key_Total: "Total de sinaturas activas."
-siginfo_key_VT: "Sinaturas que inclúan ou baseadas en datos de Virus Total."
-siginfo_key_Werewolf: "Sinaturas que tratan dos "ataques dos homes lobo"."
-siginfo_sub_Classes: "Conta por clase de ficheiro de sinatura"
-siginfo_sub_Files: "Conta por ficheiro de sinatura"
-siginfo_sub_MalwareTypes: "Conta por tipo de infección ou malware"
-siginfo_sub_SigTypes: "Conta por metadatos de sinatura"
-siginfo_sub_Targets: "Conta por vector de destino"
-siginfo_sub_Vendors: "Conta por provedor ou fonte de sinatura"
-siginfo_xkey: "Identificado como "%s"."
+Signature information: !lazy
+ key_CVE: "Sinaturas que tratan de CVE (vulnerabilidades e exposicións comúns)."
+ key_Chameleon: "Sinaturas que tratan de "ataques camaleónicos"."
+ key_FN: "Sinaturas que traballan con nomes de ficheiros (en oposición ao contido dos ficheiros)."
+ key_Fake: "As deteccións son variantes falsas e maliciosas de entidades benignos (software, scripts, etc)."
+ key_HEUR: "Sinaturas derivadas de datos heurísticos."
+ key_META: "Sinaturas que traballan con metadatos do ficheiro (en oposición aos datos do ficheiro)."
+ key_Other: "Non identificado ou doutro tipo."
+ key_Other_Metadata: "Non hai metadatos dispoñibles."
+ key_Suspect: "Sospeitase de deteccións, pero non confirmadas (pode implicar combinacións de varios identificadores)."
+ key_Testfile: "Sinaturas para ficheiros de proba (é dicir, non deteccións maliciosas)."
+ key_Total: "Total de sinaturas activas."
+ key_VT: "Sinaturas que inclúan ou baseadas en datos de Virus Total."
+ key_Werewolf: "Sinaturas que tratan dos "ataques dos homes lobo"."
+ sub_Classes: "Conta por clase de ficheiro de sinatura"
+ sub_Files: "Conta por ficheiro de sinatura"
+ sub_MalwareTypes: "Conta por tipo de infección ou malware"
+ sub_SigTypes: "Conta por metadatos de sinatura"
+ sub_Targets: "Conta por vector de destino"
+ sub_Vendors: "Conta por provedor ou fonte de sinatura"
+ xkey: "Identificado como "%s"."
 state_quarantine:
  - "Actualmente hai %s ficheiro en corentena."
  - "Actualmente hai %s ficheiros en corentena."
@@ -386,7 +387,7 @@ tip:
  Statistics tracking is currently disabled: "Nota: O seguimento das estatísticas está actualmente desactivado, pero pódese activar a través da páxina de configuración."
  Statistics: "Esta páxina mostra algunhas estatísticas básicas de uso sobre a súa instalación de phpMussel."
  Upload Testing: "A páxina de proba de carga contén un formulario estándar de carga de ficheiros, que che permite probar se un ficheiro normalmente sería bloqueado por phpMussel ao tentar cargalo."
-warning:
+warning: !lazy
  Cookies: "Nota: phpMussel usa unha cookie para autenticar os inicios de sesión. Ao iniciar sesión, dás o teu consentimento para que o teu navegador cree e almacene unha cookie."
  JavaScript required: "Aviso: Algunhas funcións do front-end requiren JavaScript. Para garantir que todo o front-end se comporta como se espera, recoméndase activar JavaScript."
  Maintenance mode is enabled: "Aviso: O modo de mantemento está activado!"

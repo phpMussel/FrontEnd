@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese language data (last modified: 2026.03.13).
+# This file: Portuguese language data (last modified: 2026.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -466,34 +466,35 @@ response:
  Wrong endpoint: "Ponto final errado!"
  _No: "Não"
  _Yes: "Sim"
-siginfo_key_CVE: "Assinaturas que tratam de CVEs (Vulnerabilidades e Exposições Comuns)."
-siginfo_key_Chameleon: "Assinaturas que tratam de "ataques de camaleão"."
-siginfo_key_FN: "Assinaturas que trabalham com os nomes de arquivos (em oposição ao conteúdo dos arquivos)."
-siginfo_key_Fake:
- pt-BR: "Detecções são falsas, variantes maliciosas de entidades benignas (softwares, scripts, etc)."
- pt-PT: "Deteções são falsas, variantes maliciosas de entidades benignas (softwares, scripts, etc)."
-siginfo_key_HEUR: "Assinaturas derivadas de dados heurísticos."
-siginfo_key_META: "Assinaturas que trabalham com metadados de arquivos (em oposição aos dados dos arquivos)."
-siginfo_key_Other: "Não identificado ou outro."
-siginfo_key_Other_Metadata: "Nenhum metadado disponível."
-siginfo_key_Suspect:
- pt-BR: "Detecções são suspeitas, mas não confirmadas (podem envolver combinações de vários identificadores)."
- pt-PT: "Deteções são suspeitas, mas não confirmadas (podem envolver combinações de vários identificadores)."
-siginfo_key_Testfile:
- pt-BR: "Assinaturas para arquivos de teste (ou seja, não detecções maliciosas)."
- pt-PT: "Assinaturas para arquivos de teste (ou seja, não deteções maliciosas)."
-siginfo_key_Total: "Total de assinaturas ativas."
-siginfo_key_VT: "Assinaturas incluindo ou baseadas em dados do Virus Total."
-siginfo_key_Werewolf: "Assinaturas que tratam de "ataques de lobisomens"."
-siginfo_sub_Classes: "Contar por classe de arquivo de assinatura"
-siginfo_sub_Files: "Contar por arquivo de assinatura"
-siginfo_sub_MalwareTypes:
- pt-BR: "Contar por infecção ou tipo de malware"
- pt-PT: "Contar por infeção ou tipo de malware"
-siginfo_sub_SigTypes: "Contar por metadados de assinatura"
-siginfo_sub_Targets: "Contar por vetor alvejados"
-siginfo_sub_Vendors: "Contar por o fornecedor ou fonte de assinatura"
-siginfo_xkey: "Identificado como "%s"."
+Signature information: !lazy
+ key_CVE: "Assinaturas que tratam de CVEs (Vulnerabilidades e Exposições Comuns)."
+ key_Chameleon: "Assinaturas que tratam de "ataques de camaleão"."
+ key_FN: "Assinaturas que trabalham com os nomes de arquivos (em oposição ao conteúdo dos arquivos)."
+ key_Fake:
+  pt-BR: "Detecções são falsas, variantes maliciosas de entidades benignas (softwares, scripts, etc)."
+  pt-PT: "Deteções são falsas, variantes maliciosas de entidades benignas (softwares, scripts, etc)."
+ key_HEUR: "Assinaturas derivadas de dados heurísticos."
+ key_META: "Assinaturas que trabalham com metadados de arquivos (em oposição aos dados dos arquivos)."
+ key_Other: "Não identificado ou outro."
+ key_Other_Metadata: "Nenhum metadado disponível."
+ key_Suspect:
+  pt-BR: "Detecções são suspeitas, mas não confirmadas (podem envolver combinações de vários identificadores)."
+  pt-PT: "Deteções são suspeitas, mas não confirmadas (podem envolver combinações de vários identificadores)."
+ key_Testfile:
+  pt-BR: "Assinaturas para arquivos de teste (ou seja, não detecções maliciosas)."
+  pt-PT: "Assinaturas para arquivos de teste (ou seja, não deteções maliciosas)."
+ key_Total: "Total de assinaturas ativas."
+ key_VT: "Assinaturas incluindo ou baseadas em dados do Virus Total."
+ key_Werewolf: "Assinaturas que tratam de "ataques de lobisomens"."
+ sub_Classes: "Contar por classe de arquivo de assinatura"
+ sub_Files: "Contar por arquivo de assinatura"
+ sub_MalwareTypes:
+  pt-BR: "Contar por infecção ou tipo de malware"
+  pt-PT: "Contar por infeção ou tipo de malware"
+ sub_SigTypes: "Contar por metadados de assinatura"
+ sub_Targets: "Contar por vetor alvejados"
+ sub_Vendors: "Contar por o fornecedor ou fonte de assinatura"
+ xkey: "Identificado como "%s"."
 state_quarantine:
  - "Atualmente existe %s arquivo em quarentena."
  - "Atualmente existem %s arquivos em quarentena."
@@ -518,7 +519,7 @@ tip:
  Upload Testing:
   pt-BR: "A página de carregamento teste contém um formulário padrão para carregando arquivos, permitindo que você teste se um arquivo seria normalmente bloqueado através phpMussel quando carregando."
   pt-PT: "A página de carregamento teste contém um formulário padrão para carregando arquivos, a permitir que você teste se um arquivo seria normalmente bloqueado através phpMussel quando carregando."
-warning:
+warning: !lazy
  Cookies: "Nota: phpMussel usa um cookie para autenticar logins. Ao efetuar o login, você dá seu consentimento para que um cookie seja criado e armazenado pelo seu navegador."
  JavaScript required: "Atenção: Algumas funcionalidades do front-end requerem JavaScript. Para garantir que todo o front-end se comporte conforme o esperado, é recomendável ativar o JavaScript."
  Maintenance mode is enabled: "Atenção: O modo de manutenção está ativado!"

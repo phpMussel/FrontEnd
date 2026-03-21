@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese language data (last modified: 2026.03.13).
+# This file: Chinese language data (last modified: 2026.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -486,26 +486,27 @@ response:
  Wrong endpoint: {"zh-Hans": "错误的端点！", "zh-Hant": "錯誤的端點！"}
  _No: "不是"
  _Yes: "是"
-siginfo_key_CVE: {"zh-Hans": "处理CVE（常见漏洞和暴露）的签名。", "zh-Hant": "處理CVE（常見漏洞和暴露）的簽名。"}
-siginfo_key_Chameleon: {"zh-Hans": "处理“变色龙攻击”的签名。", "zh-Hant": "處理『變色龍攻擊』的簽名。"}
-siginfo_key_FN: {"zh-Hans": "处理文件名的签名（与文件内容相反）。", "zh-Hant": "處理檔案名稱的簽名（與文件內容相反）。"}
-siginfo_key_Fake: {"zh-Hans": "检测是否则良性实体（软件，脚本，等）的恶意伪造变体。", "zh-Hant": "檢測是否則良性實體（軟件，腳本，等）的惡意偽造變體。"}
-siginfo_key_HEUR: {"zh-Hans": "从启发式数据派生的签名。", "zh-Hant": "從啟發式數據派生的簽名。"}
-siginfo_key_META: {"zh-Hans": "处理文件元数据的签名（与文件数据相反）。", "zh-Hant": "處理文件元數據的簽名（與文件數據相反）。"}
-siginfo_key_Other: "不明或其他。"
-siginfo_key_Other_Metadata: {"zh-Hans": "无可用的元数据。", "zh-Hant": "無可用的元數據。"}
-siginfo_key_Suspect: {"zh-Hans": "检测是可疑的，但未得到证实（可能涉及各种标识符的组合）。", "zh-Hant": "檢測是可疑的，但未得到證實（可能涉及各種標識符的組合）。"}
-siginfo_key_Testfile: {"zh-Hans": "测试文件的签名（即，不是恶意的检测）。", "zh-Hant": "測試文件的簽名（即，不是惡意的檢測）。"}
-siginfo_key_Total: {"zh-Hans": "总活动签名。", "zh-Hant": "總活動簽名。"}
-siginfo_key_VT: {"zh-Hans": "签名包括或基于Virus Total的数据。", "zh-Hant": "簽名包括或基於Virus Total的數據。"}
-siginfo_key_Werewolf: {"zh-Hans": "处理“狼人攻击”的签名。", "zh-Hant": "處理『狼人攻擊』的簽名。"}
-siginfo_sub_Classes: {"zh-Hans": "签名文件类的数量", "zh-Hant": "簽名檔案類的數量"}
-siginfo_sub_Files: {"zh-Hans": "签名文件的数量", "zh-Hant": "簽名檔案的數量"}
-siginfo_sub_MalwareTypes: {"zh-Hans": "感染或恶意软件类型的数量", "zh-Hant": "感染或惡意軟體類型的數量"}
-siginfo_sub_SigTypes: {"zh-Hans": "签名元数据的数量", "zh-Hant": "簽名元數據的數量"}
-siginfo_sub_Targets: {"zh-Hans": "向量目标的数量", "zh-Hant": "向量目標的數量"}
-siginfo_sub_Vendors: {"zh-Hans": "签名供应商或来源的数量", "zh-Hant": "簽名供應商或來源的數量"}
-siginfo_xkey: {"zh-Hans": "标识符是“%s”。", "zh-Hant": "標識符是『%s』。"}
+Signature information: !lazy
+ key_CVE: {"zh-Hans": "处理CVE（常见漏洞和暴露）的签名。", "zh-Hant": "處理CVE（常見漏洞和暴露）的簽名。"}
+ key_Chameleon: {"zh-Hans": "处理“变色龙攻击”的签名。", "zh-Hant": "處理『變色龍攻擊』的簽名。"}
+ key_FN: {"zh-Hans": "处理文件名的签名（与文件内容相反）。", "zh-Hant": "處理檔案名稱的簽名（與文件內容相反）。"}
+ key_Fake: {"zh-Hans": "检测是否则良性实体（软件，脚本，等）的恶意伪造变体。", "zh-Hant": "檢測是否則良性實體（軟件，腳本，等）的惡意偽造變體。"}
+ key_HEUR: {"zh-Hans": "从启发式数据派生的签名。", "zh-Hant": "從啟發式數據派生的簽名。"}
+ key_META: {"zh-Hans": "处理文件元数据的签名（与文件数据相反）。", "zh-Hant": "處理文件元數據的簽名（與文件數據相反）。"}
+ key_Other: "不明或其他。"
+ key_Other_Metadata: {"zh-Hans": "无可用的元数据。", "zh-Hant": "無可用的元數據。"}
+ key_Suspect: {"zh-Hans": "检测是可疑的，但未得到证实（可能涉及各种标识符的组合）。", "zh-Hant": "檢測是可疑的，但未得到證實（可能涉及各種標識符的組合）。"}
+ key_Testfile: {"zh-Hans": "测试文件的签名（即，不是恶意的检测）。", "zh-Hant": "測試文件的簽名（即，不是惡意的檢測）。"}
+ key_Total: {"zh-Hans": "总活动签名。", "zh-Hant": "總活動簽名。"}
+ key_VT: {"zh-Hans": "签名包括或基于Virus Total的数据。", "zh-Hant": "簽名包括或基於Virus Total的數據。"}
+ key_Werewolf: {"zh-Hans": "处理“狼人攻击”的签名。", "zh-Hant": "處理『狼人攻擊』的簽名。"}
+ sub_Classes: {"zh-Hans": "签名文件类的数量", "zh-Hant": "簽名檔案類的數量"}
+ sub_Files: {"zh-Hans": "签名文件的数量", "zh-Hant": "簽名檔案的數量"}
+ sub_MalwareTypes: {"zh-Hans": "感染或恶意软件类型的数量", "zh-Hant": "感染或惡意軟體類型的數量"}
+ sub_SigTypes: {"zh-Hans": "签名元数据的数量", "zh-Hant": "簽名元數據的數量"}
+ sub_Targets: {"zh-Hans": "向量目标的数量", "zh-Hant": "向量目標的數量"}
+ sub_Vendors: {"zh-Hans": "签名供应商或来源的数量", "zh-Hant": "簽名供應商或來源的數量"}
+ xkey: {"zh-Hans": "标识符是“%s”。", "zh-Hant": "標識符是『%s』。"}
 state_quarantine: {"zh-Hans": "目前有%s个文件在隔离区。", "zh-Hant": "目前有%s個文件在隔離區。"}
 tip:
  2FA Sent:
@@ -526,7 +527,7 @@ tip:
  Statistics tracking is currently disabled: {"zh-Hans": "注意：统计跟踪目前已被禁用，但可以通过配置页面启用。", "zh-Hant": "注意：統計跟踪目前已被禁用，但可以通過配置頁面啟用。"}
  Statistics: {"zh-Hans": "此页面显示了有关phpMussel安装的一些基本使用统计信息。", "zh-Hant": "此頁面顯示了有關phpMussel安裝的一些基本使用統計信息。"}
  Upload Testing: {"zh-Hans": "上传测试页面包含标准文件上传表单，​允许您测试是否文件通常会被阻止通过phpMussel当尝试上传他们。", "zh-Hant": "上傳測試頁麵包含標准文件上傳表單，​允許您測試是否文件通常會被阻止通過phpMussel當嘗試上傳他們。"}
-warning:
+warning: !lazy
  Cookies: {"zh-Hans": "注意：phpMussel使用cookie来验证登录。​通过登录，您同意您的浏览器创建和存储cookie。", "zh-Hant": "注意：phpMussel使用cookie來驗證登錄。​通過登錄，您同意您的瀏覽器創建和存儲cookie。"}
  JavaScript required: {"zh-Hans": "警告：一些前端功能需要JavaScript。为确保整个前端按预期运行，建议启用JavaScript。", "zh-Hant": "警告：一些前端功能需要JavaScript。為確保整個前端按預期運行，建議啟用JavaScript。"}
  Maintenance mode is enabled: {"zh-Hans": "警告：维护模式是启用！", "zh-Hant": "警告：維護模式是啟用！"}

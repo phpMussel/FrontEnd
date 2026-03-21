@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2026.03.13).
+# This file: Dutch language data (last modified: 2026.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -348,26 +348,27 @@ response:
  Wrong endpoint: "Verkeerd eindpunt!"
  _No: "Nee"
  _Yes: "Ja"
-siginfo_key_CVE: "Signatures die te maken hebben met CVE's (Algemene Kwetsbaarheden en Blootstellingen)."
-siginfo_key_Chameleon: "Signatures die te maken hebben met "kameleonaanvallen"."
-siginfo_key_FN: "Signatures die werken met bestandsnamen (in tegenstelling tot bestandsinhoud)."
-siginfo_key_Fake: "Detecties zijn namaak, kwaadwillende varianten van anderszins goedaardige entiteiten (software, scripts, enz)."
-siginfo_key_HEUR: "Signatures afgeleid van heuristische gegevens."
-siginfo_key_META: "Signatures die werken met bestandsmetadata (in tegenstelling tot bestandsgegevens)."
-siginfo_key_Other: "Niet geïdentificeerd of anders."
-siginfo_key_Other_Metadata: "Geen metadata beschikbaar."
-siginfo_key_Suspect: "Detecties worden vermoed, maar niet bevestigd (kunnen combinaties van verschillende identificaties betrekken)."
-siginfo_key_Testfile: "Signatures voor testbestanden (d.w.z., geen kwaadwillende detecties)."
-siginfo_key_Total: "Totaal actieve signatures."
-siginfo_key_VT: "Signatures inclusief of gebaseerd op gegevens van Virus Total."
-siginfo_key_Werewolf: "Signatures die te maken hebben met "weerwolfaanvallen"."
-siginfo_sub_Classes: "Tel op signature klasse"
-siginfo_sub_Files: "Tel op signatuurbestand"
-siginfo_sub_MalwareTypes: "Tel op infectie of malwaretype"
-siginfo_sub_SigTypes: "Tel op signature metadata"
-siginfo_sub_Targets: "Tel op gerichte vector"
-siginfo_sub_Vendors: "Tel op signature leverancier of bron"
-siginfo_xkey: "Geïdentificeerd als "%s"."
+Signature information: !lazy
+ key_CVE: "Signatures die te maken hebben met CVE's (Algemene Kwetsbaarheden en Blootstellingen)."
+ key_Chameleon: "Signatures die te maken hebben met "kameleonaanvallen"."
+ key_FN: "Signatures die werken met bestandsnamen (in tegenstelling tot bestandsinhoud)."
+ key_Fake: "Detecties zijn namaak, kwaadwillende varianten van anderszins goedaardige entiteiten (software, scripts, enz)."
+ key_HEUR: "Signatures afgeleid van heuristische gegevens."
+ key_META: "Signatures die werken met bestandsmetadata (in tegenstelling tot bestandsgegevens)."
+ key_Other: "Niet geïdentificeerd of anders."
+ key_Other_Metadata: "Geen metadata beschikbaar."
+ key_Suspect: "Detecties worden vermoed, maar niet bevestigd (kunnen combinaties van verschillende identificaties betrekken)."
+ key_Testfile: "Signatures voor testbestanden (d.w.z., geen kwaadwillende detecties)."
+ key_Total: "Totaal actieve signatures."
+ key_VT: "Signatures inclusief of gebaseerd op gegevens van Virus Total."
+ key_Werewolf: "Signatures die te maken hebben met "weerwolfaanvallen"."
+ sub_Classes: "Tel op signature klasse"
+ sub_Files: "Tel op signatuurbestand"
+ sub_MalwareTypes: "Tel op infectie of malwaretype"
+ sub_SigTypes: "Tel op signature metadata"
+ sub_Targets: "Tel op gerichte vector"
+ sub_Vendors: "Tel op signature leverancier of bron"
+ xkey: "Geïdentificeerd als "%s"."
 state_quarantine:
  - "Er is momenteel %s bestand in quarantaine."
  - "Er zijn momenteel %s bestanden in quarantaine."
@@ -386,7 +387,7 @@ tip:
  Statistics tracking is currently disabled: "Notitie: Statistische tracking is momenteel uitgeschakeld, maar kan via de configuratiepagina worden ingeschakeld."
  Statistics: "Deze pagina bevat een aantal basisgebruiksstatistieken voor uw phpMussel-installatie."
  Upload Testing: "De upload test pagina bevat een standaard file upload formulier, voor het testen of een bestand normaliter geblokkeerd door phpMussel bij een poging om het te uploaden."
-warning:
+warning: !lazy
  Cookies: "Notitie: phpMussel gebruikt een cookie om aanmeldingen te verifiëren. Door in te loggen, geeft u uw toestemming voor het maken en opslaan van een cookie door uw browser."
  JavaScript required: "Waarschuwing: Voor sommige frontend functionaliteit is JavaScript vereist. Om ervoor te zorgen dat de gehele frontend zich naar verwachting gedraagt, wordt het inschakelen van JavaScript aanbevolen."
  Maintenance mode is enabled: "Waarschuwing: De onderhoudsmodus is ingeschakeld!"

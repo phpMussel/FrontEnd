@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2026.03.13).
+# This file: Afrikaans language data (last modified: 2026.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -348,26 +348,27 @@ response:
  Wrong endpoint: "Verkeerde eindpunt!"
  _No: "Nee"
  _Yes: "Ja"
-siginfo_key_CVE: "Handtekeninge wat handel oor CVE's (algemene kwesbaarhede en blootstellings)."
-siginfo_key_Chameleon: "Handtekeninge wat handel oor "verkleurmannetjie-aanvalle"."
-siginfo_key_FN: "Handtekeninge wat met lêername werk (in teenstelling met lêerinhoud)."
-siginfo_key_Fake: "Bespeurings is vals, kwaadwillige variante van andersins goedaardige entiteite (sagteware, skrifte, ens)."
-siginfo_key_HEUR: "Handtekeninge afgelei van heuristiese data."
-siginfo_key_META: "Handtekeninge wat met lêermetadata werk (in teenstelling met lêerdata)."
-siginfo_key_Other: "Ongeïdentifiseerde of ander."
-siginfo_key_Other_Metadata: "Geen metadata beskikbaar nie."
-siginfo_key_Suspect: "Opsporings word vermoed, maar nie bevestig nie (kan kombinasies van verskeie identifiseerders behels)."
-siginfo_key_Testfile: "Handtekeninge vir toetslêers (d.w.s., nie kwaadwillige opsporings nie)."
-siginfo_key_Total: "Totale aktiewe handtekeninge."
-siginfo_key_VT: "Handtekeninge insluitend of gebaseer op data van Virus Total."
-siginfo_key_Werewolf: "Handtekeninge wat handel oor "weerwolf-aanvalle"."
-siginfo_sub_Classes: "Tel volgens handtekeninglêerklas"
-siginfo_sub_Files: "Tel volgens handtekeninglêer"
-siginfo_sub_MalwareTypes: "Tel volgens infeksie of wanware tipe"
-siginfo_sub_SigTypes: "Tel volgens handtekening-metadata"
-siginfo_sub_Targets: "Tel volgens geteikende vektor"
-siginfo_sub_Vendors: "Tel volgens handtekeningverkoper of bron"
-siginfo_xkey: "Geïdentifiseer as "%s"."
+Signature information: !lazy
+ key_CVE: "Handtekeninge wat handel oor CVE's (algemene kwesbaarhede en blootstellings)."
+ key_Chameleon: "Handtekeninge wat handel oor "verkleurmannetjie-aanvalle"."
+ key_FN: "Handtekeninge wat met lêername werk (in teenstelling met lêerinhoud)."
+ key_Fake: "Bespeurings is vals, kwaadwillige variante van andersins goedaardige entiteite (sagteware, skrifte, ens)."
+ key_HEUR: "Handtekeninge afgelei van heuristiese data."
+ key_META: "Handtekeninge wat met lêermetadata werk (in teenstelling met lêerdata)."
+ key_Other: "Ongeïdentifiseerde of ander."
+ key_Other_Metadata: "Geen metadata beskikbaar nie."
+ key_Suspect: "Opsporings word vermoed, maar nie bevestig nie (kan kombinasies van verskeie identifiseerders behels)."
+ key_Testfile: "Handtekeninge vir toetslêers (d.w.s., nie kwaadwillige opsporings nie)."
+ key_Total: "Totale aktiewe handtekeninge."
+ key_VT: "Handtekeninge insluitend of gebaseer op data van Virus Total."
+ key_Werewolf: "Handtekeninge wat handel oor "weerwolf-aanvalle"."
+ sub_Classes: "Tel volgens handtekeninglêerklas"
+ sub_Files: "Tel volgens handtekeninglêer"
+ sub_MalwareTypes: "Tel volgens infeksie of wanware tipe"
+ sub_SigTypes: "Tel volgens handtekening-metadata"
+ sub_Targets: "Tel volgens geteikende vektor"
+ sub_Vendors: "Tel volgens handtekeningverkoper of bron"
+ xkey: "Geïdentifiseer as "%s"."
 state_quarantine:
  - "Daar is tans %s lêer in kwarantyn."
  - "Daar is tans %s lêers in kwarantyn."
@@ -386,7 +387,7 @@ tip:
  Statistics tracking is currently disabled: "Kennis neem: Statistieknasporing is tans gedeaktiveer, maar kan via die konfigurasiebladsy geaktiveer word."
  Statistics: "Hierdie bladsy wys basiese gebruikstatistieke rakende jou phpMussel-installasie."
  Upload Testing: "Die oplaaitoetsingbladsy bevat 'n standaard lêeroplaaivorm, wat jou toelaat om te toets of 'n lêer normaalweg deur phpMussel geblokkeer sal word wanneer jy dit probeer oplaai."
-warning:
+warning: !lazy
  Cookies: "Kennis neem: phpMussel gebruik 'n koekie vir die verifikasie van intekeninge. Deur in te teken, gee jy jou toestemming dat 'n koekie deur jou blaaier geskep en gestoor word."
  JavaScript required: "Waarskuwing: Sommige front-end funksionaliteit vereis JavaScript. Om te verseker dat die hele front-end optree soos verwag, word dit aanbeveel om JavaScript te aktiveer."
  Maintenance mode is enabled: "Waarskuwing: Onderhoudsmodus is geaktiveer!"

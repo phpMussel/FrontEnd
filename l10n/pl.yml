@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2026.03.13).
+# This file: Polish language data (last modified: 2026.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -348,26 +348,27 @@ response:
  Wrong endpoint: "Niewłaściwy punkt końcowy!"
  _No: "Nie"
  _Yes: "Tak"
-siginfo_key_CVE: "Podpisy, które dotyczą CVE (typowe podatności i narażenia)."
-siginfo_key_Chameleon: "Podpisy dotyczące „ataków kameleona”."
-siginfo_key_FN: "Podpisy pracujące z nazwami plików (w przeciwieństwie do zawartości pliku)."
-siginfo_key_Fake: "Wykrywania są fałszywymi, złośliwymi wariantami innych, niegroźnych bytów (oprogramowanie, skrypty, itp)."
-siginfo_key_HEUR: "Podpisy pochodzące z danych heurystycznych."
-siginfo_key_META: "Podpisy pracujące z metadanymi pliku (w przeciwieństwie do danych pliku)."
-siginfo_key_Other: "Niezidentyfikowany lub inny."
-siginfo_key_Other_Metadata: "Brak dostępnych metadanych."
-siginfo_key_Suspect: "Wykryto podejrzenia, ale nie potwierdzono (mogą obejmować kombinacje różnych identyfikatorów)."
-siginfo_key_Testfile: "Podpisy dla plików testowych (niezłośliwe wykrycia)."
-siginfo_key_Total: "Wszystkie aktywne podpisy."
-siginfo_key_VT: "Podpisy, w tym lub na podstawie danych z Virus Total."
-siginfo_key_Werewolf: "Podpisy dotyczące „ataków wilkołaków”."
-siginfo_sub_Classes: "Policz według klasa pliku podpisu"
-siginfo_sub_Files: "Policz według pliku podpisu"
-siginfo_sub_MalwareTypes: "Policz według typu infekcji lub złośliwego oprogramowania"
-siginfo_sub_SigTypes: "Policz według metadanych podpisu"
-siginfo_sub_Targets: "Policz według docelowego wektora"
-siginfo_sub_Vendors: "Policz według dostawcy podpisu lub źródła"
-siginfo_xkey: "Określony jako „%s”."
+Signature information: !lazy
+ key_CVE: "Podpisy, które dotyczą CVE (typowe podatności i narażenia)."
+ key_Chameleon: "Podpisy dotyczące „ataków kameleona”."
+ key_FN: "Podpisy pracujące z nazwami plików (w przeciwieństwie do zawartości pliku)."
+ key_Fake: "Wykrywania są fałszywymi, złośliwymi wariantami innych, niegroźnych bytów (oprogramowanie, skrypty, itp)."
+ key_HEUR: "Podpisy pochodzące z danych heurystycznych."
+ key_META: "Podpisy pracujące z metadanymi pliku (w przeciwieństwie do danych pliku)."
+ key_Other: "Niezidentyfikowany lub inny."
+ key_Other_Metadata: "Brak dostępnych metadanych."
+ key_Suspect: "Wykryto podejrzenia, ale nie potwierdzono (mogą obejmować kombinacje różnych identyfikatorów)."
+ key_Testfile: "Podpisy dla plików testowych (niezłośliwe wykrycia)."
+ key_Total: "Wszystkie aktywne podpisy."
+ key_VT: "Podpisy, w tym lub na podstawie danych z Virus Total."
+ key_Werewolf: "Podpisy dotyczące „ataków wilkołaków”."
+ sub_Classes: "Policz według klasa pliku podpisu"
+ sub_Files: "Policz według pliku podpisu"
+ sub_MalwareTypes: "Policz według typu infekcji lub złośliwego oprogramowania"
+ sub_SigTypes: "Policz według metadanych podpisu"
+ sub_Targets: "Policz według docelowego wektora"
+ sub_Vendors: "Policz według dostawcy podpisu lub źródła"
+ xkey: "Określony jako „%s”."
 state_quarantine:
  - "W kwarantannie znajduje się %s plik."
  - "W kwarantannie znajdują się %s pliki."
@@ -387,7 +388,7 @@ tip:
  Statistics tracking is currently disabled: "Uwaga: Śledzenie statystyk jest obecnie wyłączone, ale można je włączyć na stronie konfiguracji."
  Statistics: "Ta strona pokazuje podstawowe statystyki użytkowania dotyczące instalacji phpMussel."
  Upload Testing: "Strona testowa przesyłania zawiera standardowy formularz przesyłania pliku. Możesz go użyć do przetestowania, czy plik normalnie zostałby zablokowany przez phpMussel."
-warning:
+warning: !lazy
  Cookies: "Uwaga: phpMussel wykorzystuje plik cookie do uwierzytelnienia logowania. Logując się, wyrażasz zgodę na utworzenie i przechowywanie plików cookie przez przeglądarkę."
  JavaScript required: "Ostrzeżenie: Niektóre funkcjonalność wymagają JavaScript. Aby upewnić się, że cały interfejs zachowuje się zgodnie z oczekiwaniami, zalecane jest włączenie JavaScript."
  Maintenance mode is enabled: "Ostrzeżenie: Tryb konserwacji jest włączony!"

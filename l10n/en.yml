@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2026.03.13).
+# This file: English language data (last modified: 2026.03.21).
 ##/
 
 checkbox:
@@ -348,26 +348,27 @@ response:
  Wrong endpoint: "Wrong endpoint!"
  _No: "No"
  _Yes: "Yes"
-siginfo_key_CVE: "Signatures that deal with CVEs (Common Vulnerabilities and Exposures)."
-siginfo_key_Chameleon: "Signatures that deal with "chameleon attacks"."
-siginfo_key_FN: "Signatures working with filenames (as opposed to file contents)."
-siginfo_key_Fake: "Detections are fake, malicious variants of otherwise benign entities (software, scripts, etc)."
-siginfo_key_HEUR: "Signatures derived from heuristic data."
-siginfo_key_META: "Signatures working with file metadata (as opposed to file data)."
-siginfo_key_Other: "Unidentified or other."
-siginfo_key_Other_Metadata: "No metadata available."
-siginfo_key_Suspect: "Detections are suspected, but not confirmed (may involve combinations of various identifiers)."
-siginfo_key_Testfile: "Signatures for test files (i.e., not malicious detections)."
-siginfo_key_Total: "Total active signatures."
-siginfo_key_VT: "Signatures including or based upon data from Virus Total."
-siginfo_key_Werewolf: "Signatures that deal with "werewolf attacks"."
-siginfo_sub_Classes: "Count by signature file class"
-siginfo_sub_Files: "Count by signature file"
-siginfo_sub_MalwareTypes: "Count by infection or malware type"
-siginfo_sub_SigTypes: "Count by signature metadata"
-siginfo_sub_Targets: "Count by targeted vector"
-siginfo_sub_Vendors: "Count by signature vendor or source"
-siginfo_xkey: "Identified as "%s"."
+Signature information: !lazy
+ key_CVE: "Signatures that deal with CVEs (Common Vulnerabilities and Exposures)."
+ key_Chameleon: "Signatures that deal with "chameleon attacks"."
+ key_FN: "Signatures working with filenames (as opposed to file contents)."
+ key_Fake: "Detections are fake, malicious variants of otherwise benign entities (software, scripts, etc)."
+ key_HEUR: "Signatures derived from heuristic data."
+ key_META: "Signatures working with file metadata (as opposed to file data)."
+ key_Other: "Unidentified or other."
+ key_Other_Metadata: "No metadata available."
+ key_Suspect: "Detections are suspected, but not confirmed (may involve combinations of various identifiers)."
+ key_Testfile: "Signatures for test files (i.e., not malicious detections)."
+ key_Total: "Total active signatures."
+ key_VT: "Signatures including or based upon data from Virus Total."
+ key_Werewolf: "Signatures that deal with "werewolf attacks"."
+ sub_Classes: "Count by signature file class"
+ sub_Files: "Count by signature file"
+ sub_MalwareTypes: "Count by infection or malware type"
+ sub_SigTypes: "Count by signature metadata"
+ sub_Targets: "Count by targeted vector"
+ sub_Vendors: "Count by signature vendor or source"
+ xkey: "Identified as "%s"."
 state_quarantine:
  - "There is %s file currently in quarantine."
  - "There are %s files currently in quarantine."
@@ -386,7 +387,7 @@ tip:
  Statistics tracking is currently disabled: "Note: Statistics tracking is currently disabled, but can be enabled via the configuration page."
  Statistics: "This page shows some basic usage statistics regarding your phpMussel installation."
  Upload Testing: "The upload testing page contains a standard file upload form, allowing you to test whether a file would normally be blocked by phpMussel when attempting to upload it."
-warning:
+warning: !lazy
  Cookies: "Note: phpMussel uses a cookie to authenticate logins. By logging in, you give your consent for a cookie to be created and stored by your browser."
  JavaScript required: "Warning: Some front-end functionality requires JavaScript. To ensure that the entire front-end behaves as expected, enabling JavaScript is recommended."
  Maintenance mode is enabled: "Warning: Maintenance mode is enabled!"

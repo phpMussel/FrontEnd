@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2026.03.13).
+# This file: Vietnamese language data (last modified: 2026.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -348,26 +348,27 @@ response:
  Wrong endpoint: "Điểm truy cập không đúng!"
  _No: "Không"
  _Yes: "Vâng"
-siginfo_key_CVE: "Chữ ký để xử lý CVE (lỗ hổng và tiếp xúc thường gặp)."
-siginfo_key_Chameleon: "Chữ ký để xử lý "cuộc tấn công tắc kè hoa"."
-siginfo_key_FN: "Chữ ký để làm việc với tên tập tin (trái ngược với nội dung tập tin)."
-siginfo_key_Fake: "Phát hiện là các biến thể giả mạo, độc hại của các thực thể lành tính khác (phần mềm, tập lệnh, vv)."
-siginfo_key_HEUR: "Chữ ký bắt nguồn từ dữ liệu heuristic."
-siginfo_key_META: "Chữ ký để làm việc với siêu dữ liệu tập tin (trái ngược với dữ liệu tập tin)."
-siginfo_key_Other: "Không xác định hoặc khác."
-siginfo_key_Other_Metadata: "Không có siêu dữ liệu."
-siginfo_key_Suspect: "Phát hiện bị nghi ngờ, nhưng không được xác nhận (có thể liên quan đến việc kết hợp các số nhận dạng khác nhau)."
-siginfo_key_Testfile: "Chữ ký cho các tập tin thử nghiệm (những phát hiện này không độc hại)."
-siginfo_key_Total: "Tổng số chữ ký kích hoạt."
-siginfo_key_VT: "Chữ ký bao gồm hoặc dựa trên dữ liệu từ Virus Total."
-siginfo_key_Werewolf: "Chữ ký để xử lý "cuộc tấn công người sói"."
-siginfo_sub_Classes: "Đếm theo phân loại tập tin chữ ký"
-siginfo_sub_Files: "Đếm theo tập tin chữ ký"
-siginfo_sub_MalwareTypes: "Đếm theo nhiễm trùng hay loại phần mềm độc hại"
-siginfo_sub_SigTypes: "Đếm theo siêu dữ liệu chữ ký"
-siginfo_sub_Targets: "Đếm theo vec-tơ mục tiêu"
-siginfo_sub_Vendors: "Đếm theo nhà cung cấp hay nguồn chữ ký"
-siginfo_xkey: "Được xác định là "%s"."
+Signature information: !lazy
+ key_CVE: "Chữ ký để xử lý CVE (lỗ hổng và tiếp xúc thường gặp)."
+ key_Chameleon: "Chữ ký để xử lý "cuộc tấn công tắc kè hoa"."
+ key_FN: "Chữ ký để làm việc với tên tập tin (trái ngược với nội dung tập tin)."
+ key_Fake: "Phát hiện là các biến thể giả mạo, độc hại của các thực thể lành tính khác (phần mềm, tập lệnh, vv)."
+ key_HEUR: "Chữ ký bắt nguồn từ dữ liệu heuristic."
+ key_META: "Chữ ký để làm việc với siêu dữ liệu tập tin (trái ngược với dữ liệu tập tin)."
+ key_Other: "Không xác định hoặc khác."
+ key_Other_Metadata: "Không có siêu dữ liệu."
+ key_Suspect: "Phát hiện bị nghi ngờ, nhưng không được xác nhận (có thể liên quan đến việc kết hợp các số nhận dạng khác nhau)."
+ key_Testfile: "Chữ ký cho các tập tin thử nghiệm (những phát hiện này không độc hại)."
+ key_Total: "Tổng số chữ ký kích hoạt."
+ key_VT: "Chữ ký bao gồm hoặc dựa trên dữ liệu từ Virus Total."
+ key_Werewolf: "Chữ ký để xử lý "cuộc tấn công người sói"."
+ sub_Classes: "Đếm theo phân loại tập tin chữ ký"
+ sub_Files: "Đếm theo tập tin chữ ký"
+ sub_MalwareTypes: "Đếm theo nhiễm trùng hay loại phần mềm độc hại"
+ sub_SigTypes: "Đếm theo siêu dữ liệu chữ ký"
+ sub_Targets: "Đếm theo vec-tơ mục tiêu"
+ sub_Vendors: "Đếm theo nhà cung cấp hay nguồn chữ ký"
+ xkey: "Được xác định là "%s"."
 state_quarantine: "Kiểm dịch hiện có %s tập tin."
 tip:
  2FA Sent: "Một email chứa mã 2FA đã được gửi đến địa chỉ email của bạn. Vui lòng xác nhận mã này bên dưới để có quyền truy cập vào front-end. Nếu bạn không nhận được email này, thử đăng xuất, đợi 10 phút, và đăng nhập lại để nhận email mới chứa mã mới."
@@ -384,7 +385,7 @@ tip:
  Statistics tracking is currently disabled: "Lưu ý: Giám sát thống kê hiện bị vô hiệu hóa, nhưng có thể được kích hoạt thông qua trang cấu hình."
  Statistics: "Trang này cho thấy một số thống kê của sử dụng cơ bản liên quan đến cài đặt phpMussel của bạn."
  Upload Testing: "Trang kiểm tra tải lên chứa một hình thức tải lên tập tin chuẩn, mà cho phép bạn để kiểm tra liệu một tập tin sẽ thường bị chặn bởi phpMussel khi cố gắng để tải nó lên."
-warning:
+warning: !lazy
  Cookies: "Lưu ý: phpMussel sử dụng một cookie để xác thực đăng nhập. Bằng cách đăng nhập, bạn đồng ý cho cookie được tạo và lưu trữ bởi trình duyệt của bạn."
  JavaScript required: "Cảnh báo: Một số chức năng yêu cầu JavaScript. Để đảm bảo rằng toàn bộ giao diện hoạt động như mong đợi, bạn nên bật JavaScript."
  Maintenance mode is enabled: "Cảnh báo: Đã bật chế độ bảo trì!"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Czech language data (last modified: 2026.03.13).
+# This file: Czech language data (last modified: 2026.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -348,26 +348,27 @@ response:
  Wrong endpoint: "Špatný koncový bod!"
  _No: "Ne"
  _Yes: "Ano"
-siginfo_key_CVE: "Podpisy, které se zabývají CVE (Common Vulnerabilities and Exposures)."
-siginfo_key_Chameleon: "Podpisy, které se zabývají „útoky chameleonů“."
-siginfo_key_FN: "Podpisy pracující s názvy souborů (na rozdíl od obsahu souboru)."
-siginfo_key_Fake: "Detekce jsou falešné, škodlivé varianty jinak neškodných entit (software, skripty, atd)."
-siginfo_key_HEUR: "Podpisy odvozené z heuristických dat."
-siginfo_key_META: "Podpisy pracující s metadaty souboru (na rozdíl od dat souboru)."
-siginfo_key_Other: "Neidentifikovaný nebo jiný."
-siginfo_key_Other_Metadata: "Nejsou k dispozici žádná metadata."
-siginfo_key_Suspect: "Detekce jsou podezřelé, ale nepotvrzené (může zahrnovat kombinace různých identifikátorů)."
-siginfo_key_Testfile: "Podpisy pro testovací soubory (tj., ne škodlivé detekce)."
-siginfo_key_Total: "Celkový počet aktivních podpisů."
-siginfo_key_VT: "Podpisy zahrnující nebo založené na datech z Virus Total."
-siginfo_key_Werewolf: "Podpisy, které se zabývají „útoky vlkodlaků“."
-siginfo_sub_Classes: "Počítání podle třídy souboru podpisů"
-siginfo_sub_Files: "Počítání podle podpisového souboru"
-siginfo_sub_MalwareTypes: "Počítání podle infekce nebo typu malwaru"
-siginfo_sub_SigTypes: "Počítání podle metadat podpisů"
-siginfo_sub_Targets: "Počítání podle cíleného vektoru"
-siginfo_sub_Vendors: "Počítání podle prodejce nebo zdroj podpisů"
-siginfo_xkey: "Identifikováno jako „%s“."
+Signature information: !lazy
+ key_CVE: "Podpisy, které se zabývají CVE (Common Vulnerabilities and Exposures)."
+ key_Chameleon: "Podpisy, které se zabývají „útoky chameleonů“."
+ key_FN: "Podpisy pracující s názvy souborů (na rozdíl od obsahu souboru)."
+ key_Fake: "Detekce jsou falešné, škodlivé varianty jinak neškodných entit (software, skripty, atd)."
+ key_HEUR: "Podpisy odvozené z heuristických dat."
+ key_META: "Podpisy pracující s metadaty souboru (na rozdíl od dat souboru)."
+ key_Other: "Neidentifikovaný nebo jiný."
+ key_Other_Metadata: "Nejsou k dispozici žádná metadata."
+ key_Suspect: "Detekce jsou podezřelé, ale nepotvrzené (může zahrnovat kombinace různých identifikátorů)."
+ key_Testfile: "Podpisy pro testovací soubory (tj., ne škodlivé detekce)."
+ key_Total: "Celkový počet aktivních podpisů."
+ key_VT: "Podpisy zahrnující nebo založené na datech z Virus Total."
+ key_Werewolf: "Podpisy, které se zabývají „útoky vlkodlaků“."
+ sub_Classes: "Počítání podle třídy souboru podpisů"
+ sub_Files: "Počítání podle podpisového souboru"
+ sub_MalwareTypes: "Počítání podle infekce nebo typu malwaru"
+ sub_SigTypes: "Počítání podle metadat podpisů"
+ sub_Targets: "Počítání podle cíleného vektoru"
+ sub_Vendors: "Počítání podle prodejce nebo zdroj podpisů"
+ xkey: "Identifikováno jako „%s“."
 state_quarantine:
  - "Momentálně je v karanténě %s soubor."
  - "Momentálně jsou v karanténě %s soubory."
@@ -387,7 +388,7 @@ tip:
  Statistics tracking is currently disabled: "Poznámka: Sledování statistik je aktuálně deaktivováno, ale lze jej aktivovat prostřednictvím konfigurační stránky."
  Statistics: "Tato stránka zobrazuje některé základní statistiky používání týkající se vaší instalace phpMussel."
  Upload Testing: "Stránka testování nahrání obsahuje standardní formulář pro nahrání souborů, který vám umožňuje otestovat, zda by byl soubor normálně blokován phpMussel při pokusu o jeho nahrání."
-warning:
+warning: !lazy
  Cookies: "Poznámka: phpMussel používá cookie k ověření přihlášení. Přihlášením souhlasíte s tím, aby váš prohlížeč vytvořil a uložil soubor cookie."
  JavaScript required: "Varování: Některé funkčnost v front-endu vyžadují JavaScript. Aby se zajistilo, že se celý front-end bude chovat podle očekávání, doporučujeme povolit JavaScript."
  Maintenance mode is enabled: "Varování: Je aktivován režim údržby!"

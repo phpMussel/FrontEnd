@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Urdu language data (last modified: 2026.03.19).
+# This file: Urdu language data (last modified: 2026.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -347,26 +347,27 @@ response:
  Wrong endpoint: "غلط رسائی پوائنٹ!"
  _No: "نہیں"
  _Yes: "جی ہاں"
-siginfo_key_CVE: "دستخط CVE سے نمٹنے کے."
-siginfo_key_Chameleon: "دستخط جو "chameleon حملوں" سے نمٹنے کے لیے ہے."
-siginfo_key_FN: "دستخط جن فائل نام کے ساتھ کام کرتے ہیں (فائل کا مواد کے بجائے)."
-siginfo_key_Fake: "خطرناک، جعلی مصنوعات کے ورژن کا پتہ لگاتا ہے (سافٹ ویئر، سکرپٹ، وغیرہ)."
-siginfo_key_HEUR: "تجزیاتی اعداد و شمار سے کردہ دستخط."
-siginfo_key_META: "دستخط جن فائل میٹا ڈیٹا کے ساتھ کام کرتے ہیں (فائل کا ڈیٹا کے بجائے)."
-siginfo_key_Other: "نامعلوم یا دوسرا."
-siginfo_key_Other_Metadata: "میٹا ڈیٹا دستیاب نہیں ہے."
-siginfo_key_Suspect: "خطرناک ہوسکتا ہے، لیکن اس کی تصدیق نہیں کی گئی (ایک سے زیادہ شناخت شامل ہوسکتا ہے)."
-siginfo_key_Testfile: "دستخط کی ٹیسٹ فائلیں لیے (یہ خطرناک نہیں ہیں)."
-siginfo_key_Total: "کل فعال دستخط."
-siginfo_key_VT: "Virus Total سے اعداد و شمار پر مبنی ہے یا اس پر مشتمل ہے."
-siginfo_key_Werewolf: "دستخط جو "werewolf حملوں" سے نمٹنے کے لیے ہے."
-siginfo_sub_Classes: "دستخط فائل کی کلاس کی نمبر"
-siginfo_sub_Files: "دستخط فائل کی نمبر"
-siginfo_sub_MalwareTypes: "میلویئر کی قسم کی نمبر"
-siginfo_sub_SigTypes: "میٹا ڈیٹا کی نمبر"
-siginfo_sub_Targets: "ویکٹر ہدف کی نمبر"
-siginfo_sub_Vendors: "ذریعہ کی نمبر"
-siginfo_xkey: ""%s" کے طور پر شناخت."
+Signature information: !lazy
+ key_CVE: "دستخط CVE سے نمٹنے کے."
+ key_Chameleon: "دستخط جو "chameleon حملوں" سے نمٹنے کے لیے ہے."
+ key_FN: "دستخط جن فائل نام کے ساتھ کام کرتے ہیں (فائل کا مواد کے بجائے)."
+ key_Fake: "خطرناک، جعلی مصنوعات کے ورژن کا پتہ لگاتا ہے (سافٹ ویئر، سکرپٹ، وغیرہ)."
+ key_HEUR: "تجزیاتی اعداد و شمار سے کردہ دستخط."
+ key_META: "دستخط جن فائل میٹا ڈیٹا کے ساتھ کام کرتے ہیں (فائل کا ڈیٹا کے بجائے)."
+ key_Other: "نامعلوم یا دوسرا."
+ key_Other_Metadata: "میٹا ڈیٹا دستیاب نہیں ہے."
+ key_Suspect: "خطرناک ہوسکتا ہے، لیکن اس کی تصدیق نہیں کی گئی (ایک سے زیادہ شناخت شامل ہوسکتا ہے)."
+ key_Testfile: "دستخط کی ٹیسٹ فائلیں لیے (یہ خطرناک نہیں ہیں)."
+ key_Total: "کل فعال دستخط."
+ key_VT: "Virus Total سے اعداد و شمار پر مبنی ہے یا اس پر مشتمل ہے."
+ key_Werewolf: "دستخط جو "werewolf حملوں" سے نمٹنے کے لیے ہے."
+ sub_Classes: "دستخط فائل کی کلاس کی نمبر"
+ sub_Files: "دستخط فائل کی نمبر"
+ sub_MalwareTypes: "میلویئر کی قسم کی نمبر"
+ sub_SigTypes: "میٹا ڈیٹا کی نمبر"
+ sub_Targets: "ویکٹر ہدف کی نمبر"
+ sub_Vendors: "ذریعہ کی نمبر"
+ xkey: ""%s" کے طور پر شناخت."
 state_quarantine: "فی الحال قرنطین میں %s فائلیں موجود ہیں."
 tip:
  2FA Sent: "ایک ای میل دو فیکٹر کے توثیق کوڈ پر مشتمل ہے جو آپ کے ای میل پتہ پر بھیج دیا گیا ہے. سامنے کے اختتام تک رسائی حاصل کرنے کے لیے براہ مہربانی ذیل میں اس کوڈ کی تصدیق کریں. اگر آپ نے یہ ای میل موصول نہیں کیا تو، 10 منٹ کے انتظار میں لاگ ان کرنے کی کوشش کریں، اور ایک نیا ای میل کے ساتھ نیا ای میل وصول کرنے کے لیے دوبارہ لاگ ان کریں."
@@ -383,7 +384,7 @@ tip:
  Statistics tracking is currently disabled: "نوٹ: اعداد و شمار کی ٹریکنگ فی الحال غیر فعال ہے، لیکن کنفگریشن کے صفحے کے ذریعہ فعال ہوسکتا ہے."
  Statistics: "یہ صفحہ آپ کے phpMussel کی تنصیب کے لیے کچھ استعمال کے اعداد و شمار ظاہر کرتا ہے."
  Upload Testing: "اسے اپ لوڈ کرنے کی کوشش کریں جب آپ کو ٹیسٹ کرنے کے لیے چاہے ایک فائل عام طور phpMussel کی طرف سے بلاک کیا جائے گا کی اجازت دی اپ لوڈ ٹیسٹ کے صفحے پر ایک معیاری فائل اپ فارم پر مشتمل ہے."
-warning:
+warning: !lazy
  Cookies: "نوٹ: لاگز کی تصدیق کے لیے phpMussel کوکی کا استعمال کرتا ہے. لاگ ان کرکے، آپ کو اپنے براؤزر کی طرف سے تخلیق اور ذخیرہ کرنے کے لیے ایک کوکی کے لیے آپ کی رضامندی دیتے ہیں."
  JavaScript required: "انتباہ: کچھ فرنٹ اینڈ فعالیت کے لیے JavaScript کی ضرورت ہوتی ہے. اس بات کو یقینی بنانے کے لیے کہ پورا فرنٹ اینڈ توقع کے مطابق برتاؤ کرے، جاوا اسکرپٹ کو فعال کرنے کی سفارش کی جاتی ہے."
  Maintenance mode is enabled: "انتباہ: بحالی کا موڈ فعال ہے!"

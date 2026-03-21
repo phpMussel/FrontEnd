@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data (last modified: 2026.03.13).
+# This file: Romanian language data (last modified: 2026.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -348,26 +348,27 @@ response:
  Wrong endpoint: "Punct final greșit!"
  _No: "Nu"
  _Yes: "Da"
-siginfo_key_CVE: "Semnături care se ocupă de CVE (Common Vulnerabilities and Exposures)."
-siginfo_key_Chameleon: "Semnături care tratează „atacuri cameleonice”."
-siginfo_key_FN: "Semnături care lucrează cu nume de fișiere (spre deosebire de conținutul fișierului)."
-siginfo_key_Fake: "Detectările sunt variante false, rău intenționate ale unor entități altfel benigne (software, scripturi, etc)."
-siginfo_key_HEUR: "Semnături derivate din date euristice."
-siginfo_key_META: "Semnături care lucrează cu metadatele fișierelor (spre deosebire de datele fișierului)."
-siginfo_key_Other: "Neidentificat sau altul."
-siginfo_key_Other_Metadata: "Metadatele indisponibile."
-siginfo_key_Suspect: "Detectările sunt suspectate, dar nu sunt confirmate (pot implica combinații de diferiți identificatori)."
-siginfo_key_Testfile: "Semnături pentru fișierele de testare (adică, detectările nu sunt rău intenționate)."
-siginfo_key_Total: "Total semnături active."
-siginfo_key_VT: "Semnături care includ sau se bazează pe date de la Virus Total."
-siginfo_key_Werewolf: "Semnături care tratează „atacuri de vârcolaci”."
-siginfo_sub_Classes: "Numărați după clasa de fișiere de semnătură"
-siginfo_sub_Files: "Numărați după fișier de semnătură"
-siginfo_sub_MalwareTypes: "Numărați după tipul de infecție sau malware"
-siginfo_sub_SigTypes: "Numărați după metadatele semnăturii"
-siginfo_sub_Targets: "Numărați după vectorul vizat"
-siginfo_sub_Vendors: "Numărați după semnătură furnizor sau sursă"
-siginfo_xkey: "Identificat ca „%s”."
+Signature information: !lazy
+ key_CVE: "Semnături care se ocupă de CVE (Common Vulnerabilities and Exposures)."
+ key_Chameleon: "Semnături care tratează „atacuri cameleonice”."
+ key_FN: "Semnături care lucrează cu nume de fișiere (spre deosebire de conținutul fișierului)."
+ key_Fake: "Detectările sunt variante false, rău intenționate ale unor entități altfel benigne (software, scripturi, etc)."
+ key_HEUR: "Semnături derivate din date euristice."
+ key_META: "Semnături care lucrează cu metadatele fișierelor (spre deosebire de datele fișierului)."
+ key_Other: "Neidentificat sau altul."
+ key_Other_Metadata: "Metadatele indisponibile."
+ key_Suspect: "Detectările sunt suspectate, dar nu sunt confirmate (pot implica combinații de diferiți identificatori)."
+ key_Testfile: "Semnături pentru fișierele de testare (adică, detectările nu sunt rău intenționate)."
+ key_Total: "Total semnături active."
+ key_VT: "Semnături care includ sau se bazează pe date de la Virus Total."
+ key_Werewolf: "Semnături care tratează „atacuri de vârcolaci”."
+ sub_Classes: "Numărați după clasa de fișiere de semnătură"
+ sub_Files: "Numărați după fișier de semnătură"
+ sub_MalwareTypes: "Numărați după tipul de infecție sau malware"
+ sub_SigTypes: "Numărați după metadatele semnăturii"
+ sub_Targets: "Numărați după vectorul vizat"
+ sub_Vendors: "Numărați după semnătură furnizor sau sursă"
+ xkey: "Identificat ca „%s”."
 state_quarantine:
  - "Există %s fișier în prezent în carantină."
  - "Există %s fișiere în prezent în carantină."
@@ -387,7 +388,7 @@ tip:
  Statistics tracking is currently disabled: "Notă: Urmărirea statisticilor este în prezent dezactivată, dar poate fi activată prin pagina de configurare."
  Statistics: "Această pagină prezintă câteva statistici de utilizare de bază referitoare la instalarea dvs. phpMussel."
  Upload Testing: "Pagina de testare a încărcării conține un formular standard de încărcare a fișierelor, permițându-vă să testați dacă un fișier ar fi în mod normal blocat de phpMussel atunci când încercați să îl încărcați."
-warning:
+warning: !lazy
  Cookies: "Notă: phpMussel folosește un cookie pentru a autentifica conectarea. Conectându-vă, vă dați acordul ca un cookie să fie creat și stocat de browserul dvs."
  JavaScript required: "Avertizare: Unele funcționalități front-end necesită JavaScript. Pentru a vă asigura că întregul front-end se comportă conform așteptărilor, se recomandă activarea JavaScript."
  Maintenance mode is enabled: "Avertizare: Modul de întreținere este activat!"

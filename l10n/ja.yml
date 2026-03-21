@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2026.03.13).
+# This file: Japanese language data (last modified: 2026.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -348,26 +348,27 @@ response:
  Wrong endpoint: "間違ったエンドポイント！"
  _No: "いいえ"
  _Yes: "はい"
-siginfo_key_CVE: "ＣＶＥを扱うシグネチャ。"
-siginfo_key_Chameleon: "「カメレオンの攻撃」を扱うシグネチャ。"
-siginfo_key_FN: "ファイル名を扱うシグネチャ（ファイルの内容ではなく）。"
-siginfo_key_Fake: "検出は、他に良性のエンティティ（ソフトウェア、スクリプトなど）の偽の、悪意のある変異体です。"
-siginfo_key_HEUR: "ヒューリスティック・データから派生したシグネチャ。"
-siginfo_key_META: "ファイル・メタデータを扱うシグネチャ（ファイル・データではなく）。"
-siginfo_key_Other: "未確認またはその他。"
-siginfo_key_Other_Metadata: "メタデータはありません。"
-siginfo_key_Suspect: "検出は疑わしいが、確認されていない（様々な識別子の組み合わせを含む）。"
-siginfo_key_Testfile: "テスト・ファイルのシグネチャ（これらの検出は悪意のあるものではありません）。"
-siginfo_key_Total: "アクティブなシグネチャの合計。"
-siginfo_key_VT: "Virus Totalからのデータを含む、またはそのデータに基づくシグネチャ。"
-siginfo_key_Werewolf: "「ウェアウルフの攻撃」を扱うシグネチャ。"
-siginfo_sub_Classes: "シグネチャ・ファイル・クラスによるカウント"
-siginfo_sub_Files: "シグネチャ・ファイルによるカウント"
-siginfo_sub_MalwareTypes: "感染またはマルウェアの種類によるカウント"
-siginfo_sub_SigTypes: "シグネチャ・メタデータによるカウント"
-siginfo_sub_Targets: "ターゲット・ベクターによるカウント"
-siginfo_sub_Vendors: "シグネチャ・ベンダーまたはソース別によるカウント"
-siginfo_xkey: "「%s」と識別されます。"
+Signature information: !lazy
+ key_CVE: "ＣＶＥを扱うシグネチャ。"
+ key_Chameleon: "「カメレオンの攻撃」を扱うシグネチャ。"
+ key_FN: "ファイル名を扱うシグネチャ（ファイルの内容ではなく）。"
+ key_Fake: "検出は、他に良性のエンティティ（ソフトウェア、スクリプトなど）の偽の、悪意のある変異体です。"
+ key_HEUR: "ヒューリスティック・データから派生したシグネチャ。"
+ key_META: "ファイル・メタデータを扱うシグネチャ（ファイル・データではなく）。"
+ key_Other: "未確認またはその他。"
+ key_Other_Metadata: "メタデータはありません。"
+ key_Suspect: "検出は疑わしいが、確認されていない（様々な識別子の組み合わせを含む）。"
+ key_Testfile: "テスト・ファイルのシグネチャ（これらの検出は悪意のあるものではありません）。"
+ key_Total: "アクティブなシグネチャの合計。"
+ key_VT: "Virus Totalからのデータを含む、またはそのデータに基づくシグネチャ。"
+ key_Werewolf: "「ウェアウルフの攻撃」を扱うシグネチャ。"
+ sub_Classes: "シグネチャ・ファイル・クラスによるカウント"
+ sub_Files: "シグネチャ・ファイルによるカウント"
+ sub_MalwareTypes: "感染またはマルウェアの種類によるカウント"
+ sub_SigTypes: "シグネチャ・メタデータによるカウント"
+ sub_Targets: "ターゲット・ベクターによるカウント"
+ sub_Vendors: "シグネチャ・ベンダーまたはソース別によるカウント"
+ xkey: "「%s」と識別されます。"
 state_quarantine: "現在、%sつのファイルが検疫されています。"
 tip:
  2FA Sent: "２ＦＡコードを含むＥメールがあなたのＥメール・アドレスに送信されました。​フロントエンドにアクセスするには、このコードを確認してください。​このＥメールを受信しなかった場合は、新しいコードを含む新しいＥメールを受け取るために、ログアウトして、１０分待ってからもう一度ログインしてください。"
@@ -384,7 +385,7 @@ tip:
  Statistics tracking is currently disabled: "注意：統計トラッキングは現在オフラインですが、コンフィギュレーション・ページで有効にすることができます。"
  Statistics: "このページには、phpMusselのインストールに関する基本的な使用状況の統計情報が表示されます。"
  Upload Testing: "アップロード・テスト・ページ、標準的なファイルアップロードフォームを含んでいます、ファイルが通常ブロックされるかどうかをテストすることができます。"
-warning:
+warning: !lazy
  Cookies: "注意：phpMusselは、クッキーを使用してログインを認証します。​ログインすると、ブラウザでクッキーを作成して保存することに同意したことになります。"
  JavaScript required: "警告：一部のフロントエンド機能性にはJavaScriptが必要です。フロントエンドの全体が期待どおりに動作するようにするには、JavaScriptを有効にすることをお勧めします。"
  Maintenance mode is enabled: "警告：メンテナンス・モードが有効になっています！"

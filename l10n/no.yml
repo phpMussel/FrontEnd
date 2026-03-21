@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2026.03.13).
+# This file: Norwegian language data (last modified: 2026.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -348,26 +348,27 @@ response:
  Wrong endpoint: "Feil sluttpunkt!"
  _No: "Nei"
  _Yes: "Ja"
-siginfo_key_CVE: "Signaturer som omhandler CVE-er (vanlige sikkerhetsproblemer og eksponeringer)."
-siginfo_key_Chameleon: "Signaturer som omhandler «kameleonangrep»."
-siginfo_key_FN: "Signaturer som arbeider med filnavn (i motsetning til fildata)."
-siginfo_key_Fake: "Oppdagelser er falske, skadelige varianter av ellers godartede enheter (programvare, skript osv)."
-siginfo_key_HEUR: "Signaturer hentet fra heuristiske data."
-siginfo_key_META: "Signaturer som arbeider med filmetadata (i motsetning til fildata)."
-siginfo_key_Other: "Uidentifisert eller annet."
-siginfo_key_Other_Metadata: "Ingen metadata tilgjengelig."
-siginfo_key_Suspect: "Det er mistanke om påvisninger, men ikke bekreftet (kan innebære kombinasjoner av forskjellige identifikatorer)."
-siginfo_key_Testfile: "Signaturer for testfiler (dvs., ikke skadelige deteksjoner)."
-siginfo_key_Total: "Totalt aktive signaturer."
-siginfo_key_VT: "Signaturer inkludert eller basert på data fra Virus Total."
-siginfo_key_Werewolf: "Signaturer som omhandler «varulvangrep»."
-siginfo_sub_Classes: "Telle etter signaturklasse"
-siginfo_sub_Files: "Telle etter signaturfil"
-siginfo_sub_MalwareTypes: "Telle etter infeksjon eller malware-type"
-siginfo_sub_SigTypes: "Telle etter signaturmetadata"
-siginfo_sub_Targets: "Telle etter målrettet vektor"
-siginfo_sub_Vendors: "Telle etter signaturleverandør eller kilde"
-siginfo_xkey: "Identifisert som «%s»."
+Signature information: !lazy
+ key_CVE: "Signaturer som omhandler CVE-er (vanlige sikkerhetsproblemer og eksponeringer)."
+ key_Chameleon: "Signaturer som omhandler «kameleonangrep»."
+ key_FN: "Signaturer som arbeider med filnavn (i motsetning til fildata)."
+ key_Fake: "Oppdagelser er falske, skadelige varianter av ellers godartede enheter (programvare, skript osv)."
+ key_HEUR: "Signaturer hentet fra heuristiske data."
+ key_META: "Signaturer som arbeider med filmetadata (i motsetning til fildata)."
+ key_Other: "Uidentifisert eller annet."
+ key_Other_Metadata: "Ingen metadata tilgjengelig."
+ key_Suspect: "Det er mistanke om påvisninger, men ikke bekreftet (kan innebære kombinasjoner av forskjellige identifikatorer)."
+ key_Testfile: "Signaturer for testfiler (dvs., ikke skadelige deteksjoner)."
+ key_Total: "Totalt aktive signaturer."
+ key_VT: "Signaturer inkludert eller basert på data fra Virus Total."
+ key_Werewolf: "Signaturer som omhandler «varulvangrep»."
+ sub_Classes: "Telle etter signaturklasse"
+ sub_Files: "Telle etter signaturfil"
+ sub_MalwareTypes: "Telle etter infeksjon eller malware-type"
+ sub_SigTypes: "Telle etter signaturmetadata"
+ sub_Targets: "Telle etter målrettet vektor"
+ sub_Vendors: "Telle etter signaturleverandør eller kilde"
+ xkey: "Identifisert som «%s»."
 state_quarantine:
  - "Det er %s fil for øyeblikket i karantene."
  - "Det er %s filer for øyeblikket i karantene."
@@ -386,7 +387,7 @@ tip:
  Statistics tracking is currently disabled: "Merk: Statistikksporing er for øyeblikket deaktivert, men kan aktiveres via konfigurasjonssiden."
  Statistics: "Denne siden viser noen grunnleggende bruksstatistikk angående phpMussel-installasjonen."
  Upload Testing: "Opplastings-testsiden inneholder et standard skjema for opplasting av filer, slik at du kan teste om en fil normalt vil bli blokkert av phpMussel når du prøver å laste den opp."
-warning:
+warning: !lazy
  Cookies: "Merk: phpMussel bruker en informasjonskapsel for å godkjenne innlogginger. Ved å logge inn, gir du ditt samtykke til at en informasjonskapsel skal opprettes og lagres av nettleseren din."
  JavaScript required: "Advarsel: Noen frontend-funksjonalitet krever JavaScript. For å sikre at hele grensesnittet oppfører seg som forventet, anbefales det å aktivere JavaScript."
  Maintenance mode is enabled: "Advarsel: Vedlikeholdsmodus er aktivert!"

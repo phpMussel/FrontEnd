@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2026.03.13).
+# This file: Turkish language data (last modified: 2026.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -348,26 +348,27 @@ response:
  Wrong endpoint: "Yanlış bitiş noktası!"
  _No: "Hayır"
  _Yes: "Evet"
-siginfo_key_CVE: "CVE'lerle (Ortak Güvenlik Açıkları ve Etkilenmeler) ilgilenen imzalar."
-siginfo_key_Chameleon: ""Bukalemun saldırıları" ile ilgilenen imzalar."
-siginfo_key_FN: "Dosya isimleriyle çalışan imzalar (dosya içeriğinin aksine)."
-siginfo_key_Fake: "Algılamalar, başka türlü iyi niyetli varlıkların (yazılım, komut dosyaları, vb) sahte, zararlı varyantlarıdır."
-siginfo_key_HEUR: "Sezgisel verilerden elde edilen imzalar."
-siginfo_key_META: "Dosya meta verileriyle çalışan imzalar (dosya verilerinin aksine)."
-siginfo_key_Other: "Tanımlanamayan veya başka."
-siginfo_key_Other_Metadata: "Kullanılabilir meta veri yok."
-siginfo_key_Suspect: "Algılamalar şüpheli, ancak onaylanmadı (çeşitli tanımlayıcıların kombinasyonlarını içerebilir)."
-siginfo_key_Testfile: "Test dosyaları için imzalar (bu algılamalar zararlı değildir)."
-siginfo_key_Total: "Toplam aktif imzalar."
-siginfo_key_VT: "Virus Total'ından gelen verileri içeren veya bunlara dayanan imzalar."
-siginfo_key_Werewolf: ""Werewolf saldırıları" ile ilgilenen imzalar."
-siginfo_sub_Classes: "İmza dosya sınıfına göre sayın"
-siginfo_sub_Files: "İmza dosyasına göre sayın"
-siginfo_sub_MalwareTypes: "Enfeksiyon veya kötü amaçlı yazılım türüne göre sayın"
-siginfo_sub_SigTypes: "İmza meta verilerine göre sayın"
-siginfo_sub_Targets: "Hedeflenen vektöre göre sayın"
-siginfo_sub_Vendors: "İmza satıcısına veya kaynağa göre sayın"
-siginfo_xkey: ""%s" olarak tanımlandı."
+Signature information: !lazy
+ key_CVE: "CVE'lerle (Ortak Güvenlik Açıkları ve Etkilenmeler) ilgilenen imzalar."
+ key_Chameleon: ""Bukalemun saldırıları" ile ilgilenen imzalar."
+ key_FN: "Dosya isimleriyle çalışan imzalar (dosya içeriğinin aksine)."
+ key_Fake: "Algılamalar, başka türlü iyi niyetli varlıkların (yazılım, komut dosyaları, vb) sahte, zararlı varyantlarıdır."
+ key_HEUR: "Sezgisel verilerden elde edilen imzalar."
+ key_META: "Dosya meta verileriyle çalışan imzalar (dosya verilerinin aksine)."
+ key_Other: "Tanımlanamayan veya başka."
+ key_Other_Metadata: "Kullanılabilir meta veri yok."
+ key_Suspect: "Algılamalar şüpheli, ancak onaylanmadı (çeşitli tanımlayıcıların kombinasyonlarını içerebilir)."
+ key_Testfile: "Test dosyaları için imzalar (bu algılamalar zararlı değildir)."
+ key_Total: "Toplam aktif imzalar."
+ key_VT: "Virus Total'ından gelen verileri içeren veya bunlara dayanan imzalar."
+ key_Werewolf: ""Werewolf saldırıları" ile ilgilenen imzalar."
+ sub_Classes: "İmza dosya sınıfına göre sayın"
+ sub_Files: "İmza dosyasına göre sayın"
+ sub_MalwareTypes: "Enfeksiyon veya kötü amaçlı yazılım türüne göre sayın"
+ sub_SigTypes: "İmza meta verilerine göre sayın"
+ sub_Targets: "Hedeflenen vektöre göre sayın"
+ sub_Vendors: "İmza satıcısına veya kaynağa göre sayın"
+ xkey: ""%s" olarak tanımlandı."
 state_quarantine:
  - "Şu anda karantina içinde %s dosya var."
  - "Şu anda karantina içinde %s dosyalar var."
@@ -386,7 +387,7 @@ tip:
  Statistics tracking is currently disabled: "Not: İstatistik izleme şu anda devre dışı, ancak yapılandırma sayfası aracılığıyla etkinleştirilebilir."
  Statistics: "Bu sayfada, phpMussel kurulumunuzla ilgili bazı temel kullanım istatistikleri gösterilmektedir."
  Upload Testing: "Yükleme sınama sayfası, bir dosyanın yüklenmeye çalışılırken normalde phpMussel tarafından engelleneceğini test etmenize izin veren standart bir dosya yükleme formu içerir."
-warning:
+warning: !lazy
  Cookies: "Not: phpMussel, oturum açma kimlik doğrulamasında çerez kullanır. Oturum açarak, tarayıcınız tarafından oluşturulacak ve saklanacak bir çerez için onayınızı verirsiniz."
  JavaScript required: "Uyarı: Bazı ön uç işlevsellikleri JavaScript gerektirir. Tüm ön ucun beklendiği gibi davrandığından emin olmak için JavaScript'in etkinleştirilmesi önerilir."
  Maintenance mode is enabled: "Uyarı: Bakım modu etkin!"

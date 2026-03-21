@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2026.03.13).
+# This file: Arabic language data (last modified: 2026.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -348,26 +348,27 @@ response:
  Wrong endpoint: "نقطة نهاية خاطئة!"
  _No: "لا"
  _Yes: "نعم"
-siginfo_key_CVE: "التوقيعات التي تتعامل مع CVE (نقاط الضعف والتعرض الشائعة)."
-siginfo_key_Chameleon: "التوقيعات التي تتعامل مع "هجمات الحرباء"."
-siginfo_key_FN: "التوقيعات تعمل مع أسماء الملفات (على عكس محتويات الملف)."
-siginfo_key_Fake: "عمليات الكشف هي أشكال مزيفة وخبيثة للكيانات الحميدة الأخرى (البرامج، والنصوص، وما إلى ذلك)."
-siginfo_key_HEUR: "التوقيعات مشتقة من بيانات ارشادية."
-siginfo_key_META: "التوقيعات العاملة مع بيانات التعريف للملف (على عكس بيانات الملف)."
-siginfo_key_Other: "غير معروف أو غيره."
-siginfo_key_Other_Metadata: "لا توجد بيانات وصفية متاحة."
-siginfo_key_Suspect: "اكتشافات في الاشتباه، ولكن لم يتم التأكد (قد تنطوي على مجموعات من مختلف المعرفات)."
-siginfo_key_Testfile: "التوقيعات لملفات الاختبار (لا خبيثة)."
-siginfo_key_Total: "مجموع التوقيعات النشطة."
-siginfo_key_VT: "التوقيعات بما في ذلك أو استناداً إلى البيانات من Virus Total."
-siginfo_key_Werewolf: "التوقيعات التي تتعامل مع "هجمات بالذئب"."
-siginfo_sub_Classes: "العد حسب فئة ملف التوقيع"
-siginfo_sub_Files: "العد من خلال ملف التوقيع"
-siginfo_sub_MalwareTypes: "العد عن طريق العدوى أو نوع البرامج الضارة"
-siginfo_sub_SigTypes: "العد من خلال بيانات التعريف التوقيع"
-siginfo_sub_Targets: "العد من قبل ناقلات المستهدفة"
-siginfo_sub_Vendors: "العد من قبل البائع التوقيع أو المصدر"
-siginfo_xkey: "تم تعريفه بـ "%s"."
+Signature information: !lazy
+ key_CVE: "التوقيعات التي تتعامل مع CVE (نقاط الضعف والتعرض الشائعة)."
+ key_Chameleon: "التوقيعات التي تتعامل مع "هجمات الحرباء"."
+ key_FN: "التوقيعات تعمل مع أسماء الملفات (على عكس محتويات الملف)."
+ key_Fake: "عمليات الكشف هي أشكال مزيفة وخبيثة للكيانات الحميدة الأخرى (البرامج، والنصوص، وما إلى ذلك)."
+ key_HEUR: "التوقيعات مشتقة من بيانات ارشادية."
+ key_META: "التوقيعات العاملة مع بيانات التعريف للملف (على عكس بيانات الملف)."
+ key_Other: "غير معروف أو غيره."
+ key_Other_Metadata: "لا توجد بيانات وصفية متاحة."
+ key_Suspect: "اكتشافات في الاشتباه، ولكن لم يتم التأكد (قد تنطوي على مجموعات من مختلف المعرفات)."
+ key_Testfile: "التوقيعات لملفات الاختبار (لا خبيثة)."
+ key_Total: "مجموع التوقيعات النشطة."
+ key_VT: "التوقيعات بما في ذلك أو استناداً إلى البيانات من Virus Total."
+ key_Werewolf: "التوقيعات التي تتعامل مع "هجمات بالذئب"."
+ sub_Classes: "العد حسب فئة ملف التوقيع"
+ sub_Files: "العد من خلال ملف التوقيع"
+ sub_MalwareTypes: "العد عن طريق العدوى أو نوع البرامج الضارة"
+ sub_SigTypes: "العد من خلال بيانات التعريف التوقيع"
+ sub_Targets: "العد من قبل ناقلات المستهدفة"
+ sub_Vendors: "العد من قبل البائع التوقيع أو المصدر"
+ xkey: "تم تعريفه بـ "%s"."
 state_quarantine:
  - "هناك ملف %s موجود حاليا في وحدة العزل."
  - "هناك ملفات %s موجود حاليا في وحدة العزل."
@@ -386,7 +387,7 @@ tip:
  Statistics tracking is currently disabled: "ملاحظة: يتم تعطيل تتبع الإحصاءات حاليا، ولكن يمكن تمكينه عبر صفحة التكوين."
  Statistics: "تعرض هذه الصفحة بعض إحصاءات الاستخدام الأساسية المتعلقة بتثبيت phpMussel."
  Upload Testing: "الصفحة تحميل اختبار يحتوي على شكل تحميل الملفات القياسية، مما يسمح لك لاختبار ما إذا كان عادة يكون قد تم حظره ملف بواسطة phpMussel عند محاولة تحميله."
-warning:
+warning: !lazy
  Cookies: "الملاحظة: يستخدم phpMussel ملف تعريف ارتباط لمصادقة تسجيلات الدخول. من خلال تسجيل الدخول، فإنك تعطي موافقتك على إنشاء ملف تعريف ارتباط وتخزينه بواسطة المتصفح."
  JavaScript required: "تحذير: تتطلب بعض وظائف الواجهة الأمامية JavaScript. لضمان عمل الواجهة الأمامية بالكامل كما هو متوقع، يوصى بتمكين JavaScript."
  Maintenance mode is enabled: "تحذير: تم تمكين وضع الصيانة!"

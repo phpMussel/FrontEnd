@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data (last modified: 2026.03.13).
+# This file: Hebrew language data (last modified: 2026.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -348,26 +348,27 @@ response:
  Wrong endpoint: "נקודת קצה שגויה!"
  _No: "לא"
  _Yes: "כן"
-siginfo_key_CVE: "חתימות העוסקות ב-CVE (Common Vulnerabilities and Exposures)."
-siginfo_key_Chameleon: "חתימות העוסקות ב"תקיפות זיקית"."
-siginfo_key_FN: "חתימות שעובדות עם שמות קבצים (בניגוד לתוכן הקובץ)."
-siginfo_key_Fake: "גרסאות מזויפות וזדוניות של ישויות טובות אחרת (תוכנה, סקריפטים, וכו')."
-siginfo_key_HEUR: "חתימות הנגזרות מנתונים היוריסטים."
-siginfo_key_META: "חתימות שעובדות עם מטא נתונים של קבצים (בניגוד לנתוני קבצים)."
-siginfo_key_Other: "לא מזוהה או אחר."
-siginfo_key_Other_Metadata: "אין מטא נתונים זמינים."
-siginfo_key_Suspect: "גילויים חשודים אך לא מאומתים (עשויים לכלול שילובים של מזהים שונים)."
-siginfo_key_Testfile: "חתימות עבור קבצי בדיקה (כלומר, לא זיהויים זדוניים)."
-siginfo_key_Total: "סך כל החתימות הפעילות."
-siginfo_key_VT: "חתימות כולל או מבוסס על נתונים מ-Virus Total."
-siginfo_key_Werewolf: "חתימות העוסקות ב"התקפות אנשי זאב"."
-siginfo_sub_Classes: "ספירה לפי מחלקת קובץ חתימה"
-siginfo_sub_Files: "ספירה לפי קובץ חתימה"
-siginfo_sub_MalwareTypes: "ספירה לפי סוג זיהום או תוכנה זדונית"
-siginfo_sub_SigTypes: "ספירה לפי מטא נתונים של חתימה"
-siginfo_sub_Targets: "ספירה לפי וקטור ממוקד"
-siginfo_sub_Vendors: "ספירה לפי ספק חתימה או מקור"
-siginfo_xkey: "מזוהה כ"%s"."
+Signature information: !lazy
+ key_CVE: "חתימות העוסקות ב-CVE (Common Vulnerabilities and Exposures)."
+ key_Chameleon: "חתימות העוסקות ב"תקיפות זיקית"."
+ key_FN: "חתימות שעובדות עם שמות קבצים (בניגוד לתוכן הקובץ)."
+ key_Fake: "גרסאות מזויפות וזדוניות של ישויות טובות אחרת (תוכנה, סקריפטים, וכו')."
+ key_HEUR: "חתימות הנגזרות מנתונים היוריסטים."
+ key_META: "חתימות שעובדות עם מטא נתונים של קבצים (בניגוד לנתוני קבצים)."
+ key_Other: "לא מזוהה או אחר."
+ key_Other_Metadata: "אין מטא נתונים זמינים."
+ key_Suspect: "גילויים חשודים אך לא מאומתים (עשויים לכלול שילובים של מזהים שונים)."
+ key_Testfile: "חתימות עבור קבצי בדיקה (כלומר, לא זיהויים זדוניים)."
+ key_Total: "סך כל החתימות הפעילות."
+ key_VT: "חתימות כולל או מבוסס על נתונים מ-Virus Total."
+ key_Werewolf: "חתימות העוסקות ב"התקפות אנשי זאב"."
+ sub_Classes: "ספירה לפי מחלקת קובץ חתימה"
+ sub_Files: "ספירה לפי קובץ חתימה"
+ sub_MalwareTypes: "ספירה לפי סוג זיהום או תוכנה זדונית"
+ sub_SigTypes: "ספירה לפי מטא נתונים של חתימה"
+ sub_Targets: "ספירה לפי וקטור ממוקד"
+ sub_Vendors: "ספירה לפי ספק חתימה או מקור"
+ xkey: "מזוהה כ"%s"."
 state_quarantine:
  - "יש כרגע %s קובץ בהסגר."
  - "יש כרגע %s קבצים בהסגר."
@@ -386,7 +387,7 @@ tip:
  Statistics tracking is currently disabled: "הערה: מעקב סטטיסטיקה מושבת כעת, אך ניתן להפעילו דרך דף התצורה."
  Statistics: "דף זה מציג כמה סטטיסטיקות שימוש בסיסיות לגבי התקנת phpMussel שלך."
  Upload Testing: "דף בדיקת ההעלאה מכיל טופס סטנדרטי להעלאת קבצים, המאפשר לך לבדוק אם קובץ בדרך כלל נחסם על ידי phpMussel בעת ניסיון להעלות אותו."
-warning:
+warning: !lazy
  Cookies: "הערה: phpMussel משתמש קוקי כדי לאמת כניסות. על ידי התחברות, אתה נותן את הסכמתך לקוקי תיווצר ויישמר על ידי הדפדפן שלך."
  JavaScript required: "אזהרה: חלק מפונקציונליות הקצה הקדמי דורשת JavaScript. כדי להבטיח שכל הקצה הקדמי יתנהג כמצופה, מומלץ להפעיל JavaScript."
  Maintenance mode is enabled: "אזהרה: מצב תחזוקה מופעל!"

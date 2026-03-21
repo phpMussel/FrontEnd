@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bosnian language data (last modified: 2026.03.13).
+# This file: Bosnian language data (last modified: 2026.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -348,26 +348,27 @@ response:
  Wrong endpoint: "Pogrešna krajnja tačka!"
  _No: "Ne"
  _Yes: "Da"
-siginfo_key_CVE: "Potpisi koji se odnose na CVE (uobičajene ranjivosti i izloženosti)."
-siginfo_key_Chameleon: "Potpisi koji se bave "napadima kameleona"."
-siginfo_key_FN: "Potpisi koji rade s imenima datoteka (za razliku od sadržaja datoteka)."
-siginfo_key_Fake: "Lažne, zlonamjerne varijante inače benignih entiteta (softver, skripte, itd)."
-siginfo_key_HEUR: "Potpisi izvedeni iz heurističkih podataka."
-siginfo_key_META: "Potpisi koji rade s metapodacima datoteke (za razliku od podataka datoteke)."
-siginfo_key_Other: "Neidentifikovani ili drugi."
-siginfo_key_Other_Metadata: "Nema dostupnih metapodataka."
-siginfo_key_Suspect: "Sumnja se, ali nije potvrđeno (može uključivati ​​kombinacije različitih identifikatora)."
-siginfo_key_Testfile: "Potpisi za probne datoteke (tj., ne otkrivanja zlonamjernih)."
-siginfo_key_Total: "Ukupno aktivnih potpisa."
-siginfo_key_VT: "Potpisi uključujući ili zasnovane na podacima iz Virus Total."
-siginfo_key_Werewolf: "Potpisi koji se bave "napadima vukodlaka"."
-siginfo_sub_Classes: "Brojanje prema klasi datoteke potpisa"
-siginfo_sub_Files: "Brojanje prema datoteku potpisa"
-siginfo_sub_MalwareTypes: "Brojanje prema vrsti infekcije ili zlonamjernog softvera"
-siginfo_sub_SigTypes: "Brojanje prema metapodacima potpisa"
-siginfo_sub_Targets: "Brojanje prema ciljanom vektoru"
-siginfo_sub_Vendors: "Brojanje prema dobavljaču potpisa ili izvoru"
-siginfo_xkey: "Identificiran kao "%s"."
+Signature information: !lazy
+ key_CVE: "Potpisi koji se odnose na CVE (uobičajene ranjivosti i izloženosti)."
+ key_Chameleon: "Potpisi koji se bave "napadima kameleona"."
+ key_FN: "Potpisi koji rade s imenima datoteka (za razliku od sadržaja datoteka)."
+ key_Fake: "Lažne, zlonamjerne varijante inače benignih entiteta (softver, skripte, itd)."
+ key_HEUR: "Potpisi izvedeni iz heurističkih podataka."
+ key_META: "Potpisi koji rade s metapodacima datoteke (za razliku od podataka datoteke)."
+ key_Other: "Neidentifikovani ili drugi."
+ key_Other_Metadata: "Nema dostupnih metapodataka."
+ key_Suspect: "Sumnja se, ali nije potvrđeno (može uključivati ​​kombinacije različitih identifikatora)."
+ key_Testfile: "Potpisi za probne datoteke (tj., ne otkrivanja zlonamjernih)."
+ key_Total: "Ukupno aktivnih potpisa."
+ key_VT: "Potpisi uključujući ili zasnovane na podacima iz Virus Total."
+ key_Werewolf: "Potpisi koji se bave "napadima vukodlaka"."
+ sub_Classes: "Brojanje prema klasi datoteke potpisa"
+ sub_Files: "Brojanje prema datoteku potpisa"
+ sub_MalwareTypes: "Brojanje prema vrsti infekcije ili zlonamjernog softvera"
+ sub_SigTypes: "Brojanje prema metapodacima potpisa"
+ sub_Targets: "Brojanje prema ciljanom vektoru"
+ sub_Vendors: "Brojanje prema dobavljaču potpisa ili izvoru"
+ xkey: "Identificiran kao "%s"."
 state_quarantine:
  - "Trenutno je %s datoteka u karantinu."
  - "Trenutno su %s datoteke u karantinu."
@@ -387,7 +388,7 @@ tip:
  Statistics tracking is currently disabled: "Bilješka: Praćenje statistike je trenutno onemogućeno, ali se može omogućiti putem konfiguracijske stranice."
  Statistics: "Ova stranica prikazuje neke osnovne statistike upotrebe u vezi sa vašom instalacijom phpMussel-a."
  Upload Testing: "Stranica za testiranje prijenosa sadrži standardni obrazac za prijenos datoteka, koji vam omogućava da testirate da li bi phpMussel normalno blokirao datoteku kada pokušaju prijenosa."
-warning:
+warning: !lazy
  Cookies: "Bilješka: phpMussel koristi kolačić za provjeru autentičnosti prijava. Prijavom dajete pristanak da vaš pretraživač kreira i pohrani kolačić."
  JavaScript required: "Upozorenje: Neke front-end funkcionalnosti zahtijevaju JavaScript. Kako biste osigurali da se cijeli front-end ponaša kako se očekuje, preporučuje se omogućavanje JavaScripta."
  Maintenance mode is enabled: "Upozorenje: Režim održavanja je omogućen!"

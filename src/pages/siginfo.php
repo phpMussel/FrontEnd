@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The signature information page (last modified: 2026.03.18).
+ * This file: The signature information page (last modified: 2026.03.21).
  */
 
 namespace phpMussel\FrontEnd;
@@ -127,7 +127,7 @@ if (!$this->Loader->loadShorthandData()) {
 
     /** Process totals. */
     foreach ($Subs as $Sub) {
-        $Label = $this->Loader->L10N->getString('siginfo_sub_' . $Sub) ?: $Sub;
+        $Label = $this->Loader->L10N->getString('Signature information.sub_' . $Sub) ?: $Sub;
         $Class = 'sigtype_' . \strtolower($Sub);
         $FE['SigInfoMenuOptions'] .= "\n          <option value=\"" . $Class . '">' . $Label . '</option>';
         $FE['InfoRows'] .= '      <div class="center h2f s flexstretch ' . $Class . '" style="display:none">' . $Label . "</div>\n      <div class=\"duo flexstretch " . $Class . "_grid\" style=\"display:none\">\n";
@@ -138,11 +138,11 @@ if (!$this->Loader->loadShorthandData()) {
             }
             $Total = $this->NumberFormatter->format($Total);
             $Label = $this->Loader->L10N->getString(
-                ($Key === 'Other' && $Sub === 'SigTypes') ? 'siginfo_key_Other_Metadata' : 'siginfo_key_' . $Key
+                ($Key === 'Other' && $Sub === 'SigTypes') ? 'Signature information.key_Other_Metadata' : 'Signature information.key_' . $Key
             );
             if ($Key !== 'Total' && $Key !== 'Other') {
                 if (!$Label) {
-                    $Label = \sprintf($this->Loader->L10N->getString('siginfo_xkey'), $Key);
+                    $Label = \sprintf($this->Loader->L10N->getString('Signature information.xkey'), $Key);
                 }
                 $CellClass = 'h1';
             } else {
