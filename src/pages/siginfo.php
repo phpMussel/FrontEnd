@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The signature information page (last modified: 2026.03.21).
+ * This file: The signature information page (last modified: 2026.03.24).
  */
 
 namespace phpMussel\FrontEnd;
@@ -75,7 +75,7 @@ if (!$this->Loader->loadShorthandData()) {
     $Subs = ['Classes', 'Files', 'Vendors', 'SigTypes', 'Targets', 'MalwareTypes'];
 
     /** The currently active signature files. */
-    $Active = \array_unique(array_filter(\explode(',', $this->Loader->Configuration['signatures']['active']), function ($Item) {
+    $Active = \array_unique(\array_filter(\explode(',', $this->Loader->Configuration['signatures']['active']), function ($Item) {
         return !empty($Item);
     }));
 

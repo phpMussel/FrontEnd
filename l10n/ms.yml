@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2026.03.21).
+# This file: Malay language data (last modified: 2026.03.22).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -264,7 +264,7 @@ label:
  Logs access only: "Akses kepada log sahaja"
  No log file selected: "Tiada fail log dipilih."
  No log files available: "Tiada fail log tersedia."
- Normal: "Semulajadi"
+ Normal: "Semula jadi"
  Objects flagged: "Objek dibenderakan"
  Objects scanned: "Objek diimbas"
  Operating system used: "Sistem operasi digunakan:"

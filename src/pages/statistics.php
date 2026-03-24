@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The statistics page (last modified: 2026.03.18).
+ * This file: The statistics page (last modified: 2026.03.24).
  */
 
 namespace phpMussel\FrontEnd;
@@ -71,7 +71,7 @@ if (empty($this->Loader->Configuration['signatures']['active'])) {
     $FE['Other-Active'] = $this->NumberFormatter->format(0);
     $FE['Class-Active'] = 'txtRd';
 } else {
-    $FE['Other-Active'] = \count(\array_unique(array_filter(\explode(',', $this->Loader->Configuration['signatures']['active']), function ($Item) {
+    $FE['Other-Active'] = \count(\array_unique(\array_filter(\explode(',', $this->Loader->Configuration['signatures']['active']), function ($Item) {
         return !empty($Item);
     })));
     $FE['Other-Active'] = $this->NumberFormatter->format($FE['Other-Active']);
