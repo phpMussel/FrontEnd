@@ -188,3 +188,4 @@ input[type=hidden],script{display:none}
 .smicon.export{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:export.svg}{/Base64Encode})}
 .smicontxt{padding:0 1px 0 1px}
 .fixComCatBtnVert{position:relative;top:3px}
+input.clpbrdbtn{padding-{FE_Align}:21px;background-position:top 1px {FE_Align} 4px;background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:clipboard.svg}{/Base64Encode})}
