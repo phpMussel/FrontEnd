@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The logs page (last modified: 2026.03.18).
+ * This file: The logs page (last modified: 2026.04.15).
  */
 
 namespace phpMussel\FrontEnd;
@@ -33,7 +33,7 @@ if (
 ) {
     header('Content-Type: application/octet-stream');
     header('Content-Transfer-Encoding: Binary');
-    header('Content-disposition: attachment; filename="' . basename($this->QueryVariables['logfile']) . '"');
+    header('Content-disposition: attachment; filename="' . \basename($this->QueryVariables['logfile']) . '"');
     echo $this->Loader->readFile($this->Vault . $this->QueryVariables['logfile']);
     return;
 }

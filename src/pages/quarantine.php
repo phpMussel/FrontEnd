@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The quarantine page (last modified: 2026.03.18).
+ * This file: The quarantine page (last modified: 2026.04.15).
  */
 
 namespace phpMussel\FrontEnd;
@@ -35,12 +35,12 @@ $FE['JS'] .= "function qOpt(e){b=document.getElementById(e+'-S'),'delete-file'==
 if (
     !empty($_POST['qfu']) &&
     !empty($_POST['do']) &&
-    !is_dir($this->Loader->QuarantinePath . $_POST['qfu']) &&
+    !\is_dir($this->Loader->QuarantinePath . $_POST['qfu']) &&
     \is_readable($this->Loader->QuarantinePath . $_POST['qfu'])
 ) {
     if ($_POST['do'] === 'delete-file') {
         $FE['state_msg'] .= '<code>' . $_POST['qfu'] . '</code> ' . $this->Loader->L10N->getString(
-            unlink($this->Loader->QuarantinePath . $_POST['qfu']) ? 'response.File successfully deleted' : 'response.Failed to delete'
+            \unlink($this->Loader->QuarantinePath . $_POST['qfu']) ? 'response.File successfully deleted' : 'response.Failed to delete'
         ) . '<br />';
     } elseif ($_POST['do'] === 'download-file' || $_POST['do'] === 'restore-file') {
         if (empty($_POST['qkey'])) {
@@ -55,7 +55,7 @@ if (
                 if ($_POST['do'] === 'download-file') {
                     header('Content-Type: application/octet-stream');
                     header('Content-Transfer-Encoding: Binary');
-                    header('Content-disposition: attachment; filename="' . basename($_POST['qfu']) . '.restored"');
+                    header('Content-disposition: attachment; filename="' . \basename($_POST['qfu']) . '.restored"');
                     echo $Restored;
                     return;
                 }
