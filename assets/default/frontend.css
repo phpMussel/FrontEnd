@@ -49,7 +49,7 @@ a:link,a:visited,.pseudolink{color:#238}
 a:hover,.pseudolink:hover{color:#46f}
 a:active,a:focus,.pseudolink:active,.pseudolink:focus,.txtRd{color:red}
 .spanner{text-align:{FE_Align_Reverse}}
-.headbox,.footbox,.cat,.exp,nav,.s,.txtGn,.txtOe,.txtRd,.spanner,a,input,input[type=file]::file-selector-button,select,textarea,.vrte,.vrto{font-weight:700}
+.headbox,.footbox,.cat,.exp,nav,.s,.txtGn,.txtOe,.txtRd,.spanner,a,input,input[type=file]::file-selector-button,select,textarea,.vrte,.vrto,dt{font-weight:700}
 .ci,.co,.center{margin:auto}
 .ci,.co,.ng1:not(.quad .ng1,.duo .ng1,.col .ng1,nav .ng1),.ng2:not(.quad .ng2,.duo .ng2,.col .ng2,nav .ng2){width:calc(100% - 32px)}
 .ci{background-color:#fff;border-style:solid;border-width:1px;border-color:#aaa;text-align:{FE_Align};border-top-{FE_Align_Reverse}-radius:24px;padding:12px}
@@ -140,6 +140,7 @@ input[type=button].reset:hover,input[type=button].reset:active{color:#f88}
 .navicon.cache{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:cache.svg}{/Base64Encode})}
 .navicon.configuration{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:configuration.svg}{/Base64Encode})}
 .navicon.documentation{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:documentation.svg}{/Base64Encode})}
+.navicon.glossary{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:glossary.svg}{/Base64Encode})}
 .navicon.home{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:home.svg}{/Base64Encode})}
 .navicon.link{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:link.svg}{/Base64Encode})}
 .navicon.logs{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:logs.svg}{/Base64Encode})}
@@ -185,7 +186,7 @@ input[type=hidden],script{display:none}
 .smicon{display:inline-block;background-repeat:no-repeat;position:relative;top:1px;width:12px;height:12px}
 .smicon.red{filter:invert(12%) sepia(86%) saturate(7400%) hue-rotate(2deg) brightness(109%) contrast(114%)}
 .smicon.delete{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:delete.svg}{/Base64Encode})}
-.smicon.export{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:export.svg}{/Base64Encode})}
+.smicon.duplicate{background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:duplicate.svg}{/Base64Encode})}
 .smicontxt{padding:0 1px 0 1px}
 .fixComCatBtnVert{position:relative;top:3px}
 input.clpbrdbtn{padding-{FE_Align}:21px;background-position:top 1px {FE_Align} 4px;background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:clipboard.svg}{/Base64Encode})}

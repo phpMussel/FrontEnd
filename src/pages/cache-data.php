@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The cache data page (last modified: 2026.03.22).
+ * This file: The cache data page (last modified: 2026.04.19).
  */
 
 namespace phpMussel\FrontEnd;
@@ -124,7 +124,7 @@ if ($FE['ASYNC']) {
                 ["'", '"'],
                 ["\'", '\x22'],
                 \sprintf($Action, \sprintf($Duplicate, $KeyLabel))
-            ) . '\')&&cdp(\'' . $SourceKey . '\',\'' . $Key . '\')"><code><span class="smicon export" title="' . $DuplicateTo . '"></span><span class="s smicontxt">' . $DuplicateTo . '</span></code></span>';
+            ) . '\')&&cdp(\'' . $SourceKey . '\',\'' . $Key . '\')"><code><span class="smicon duplicate" title="' . $DuplicateTo . '"></span><span class="s smicontxt">' . $DuplicateTo . '</span></code></span>';
         }
 
         /** Process all cache items. */
