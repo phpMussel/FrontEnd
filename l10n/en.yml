@@ -7,9 +7,23 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2026.03.21).
+# This file: English language data (last modified: 2026.05.02).
 ##/
 
+Glossary: !lazy
+ Entries:
+  False positive: |
+   In general, when performing a test, when the results of the test are "positive" (i.e., conditions of the test are found to be true), but were expected to be (or should've been) "negative" (i.e., the results of the test are erroneous), it's referred to as a "false positive". <em>Alternatively: "false positive error"; "false alarm".</em>
+   Some related terms are "true positive", "true negative", and "false negative". A "true positive" refers to when the results of the test and the actual state of the condition are both true (or "positive"), and a "true negative" refers to when the results of the test and the actual state of the condition are both false (or "negative"). A "true positive" or a "true negative" is considered to be a "correct inference".
+   The inverse of a "false positive" is a "false negative". When the results of the test are "negative", but were expected to be (or should've been) "positive", the results are referred to as a "false negative".
+   In the context of phpMussel, these terms typically refer to whether phpMussel correctly identifies a file as being safe or harmful. E.g., an entirely harmless file being identified as a threat would be a "false positive", and conversely, a dangerous file (dangerous due to malware, ransomware, being infected by a virus, etc) being identified as safe would be a "false negative".
+   If you encounter false positives, you can report them at phpMussel's issue tracker.
+ Indexes:
+  [False negative, False positive, True negative, True positive]: "false_positive"
+ Refs:
+  False positive:
+   False positives and false negatives - Wikipedia: "https://en.wikipedia.org/wiki/False_positives_and_false_negatives"
+   Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
 checkbox:
  Delete orphaned values: "Delete orphaned values."
 config:
@@ -296,6 +310,7 @@ link:
  Configuration: "Configuration"
  Discussions: "Discussions"
  Documentation: "Documentation"
+ Glossary: "Glossary"
  Home: "Home"
  Log Out: "Log Out"
  Logs: "Logs"
@@ -377,6 +392,7 @@ tip:
  Accounts: "The accounts page allows you to control who can access the phpMussel front-end."
  Cache Data: "Here you can review the contents of the cache."
  Configuration: "The configuration page allows you to modify the configuration for phpMussel from the front-end."
+ Glossary: "The glossary describes some of the terminology used by phpMussel, to help clarify the intended meaning in the context where used."
  Greeting: "Hello, %s."
  Home: "This is the homepage for the phpMussel front-end. Select a link from the navigation menu on the left to continue."
  Logs: "Select a log file from the list below to view the contents of that log file."
