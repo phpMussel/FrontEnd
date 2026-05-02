@@ -232,3 +232,8 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 - [2026.03.13]: Added the ability to duplicate cache data across different cache mechanisms at the front-end cache data page.
 - [2026.03.17]: Various minor performance improvements.
 - [2026.03.25]: Aesthetic patch.
+
+### v3.8.0
+
+#### Bugs fixed.
+- [2026.05.02]: Discovered that I'd included the CIDRAM standard file header instead of the phpMussel front-end standard file header in some of the phpMussel front-end's PHP files. I've no doubt that this occurred due to that I've adopted very similar structures, concepts, design choices, and code-style for both projects, and accordingly, often work on the files for both at the same time whenever working on something applicable to both, and in the course of doing so, likely copy/pasted the headers from a file belonging to the former onto the affected files belonging to the latter without realising it at the time. Naturally, as this mistake isn't desirable, I consider it a bug, though as these file headers are merely comments, with no actual code being affected, said bug is non-functional. In any case, now fixed.

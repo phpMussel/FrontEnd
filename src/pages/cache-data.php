@@ -1,14 +1,14 @@
 <?php
 /**
- * This file is a part of the CIDRAM package.
- * Homepage: https://cidram.github.io/
+ * This file is a part of the phpMussel\FrontEnd package.
+ * Homepage: https://phpmussel.github.io/
  *
- * CIDRAM COPYRIGHT 2016 and beyond by Caleb Mazalevskis (Maikuolan).
+ * PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
  *
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The cache data page (last modified: 2026.04.19).
+ * This file: The cache data page (last modified: 2026.05.02).
  */
 
 namespace phpMussel\FrontEnd;
@@ -79,12 +79,12 @@ if ($FE['ASYNC']) {
     /** Append async globals. */
     $FE['JS'] .=
         "function cdd(d,x){window.cdi=d,window.csrc=x,window.do='delete',$('POST" .
-        "','',['cidram-form-target','cdi','csrc','do'],null,function(o){'__'===d" .
-        "?window.location.reload():'^'===d.substring(0,1)&&(d=d.substr(1)),hidei" .
-        "d(d+'Container'+x)})};function cdp(d,x){window.csrc=d,window.ctrg=x,win" .
-        "dow.do='duplicate',$('POST','',['cidram-form-target','csrc','ctrg','do'" .
-        "],null,function(o){window.location.reload()})}window['cidram-form-targe" .
-        "t']='cache-data';";
+        "','',['phpmussel-form-target','cdi','csrc','do'],null,function(o){'__'=" .
+        "==d?window.location.reload():'^'===d.substring(0,1)&&(d=d.substr(1)),hi" .
+        "deid(d+'Container'+x)})};function cdp(d,x){window.csrc=d,window.ctrg=x," .
+        "window.do='duplicate',$('POST','',['phpmussel-form-target','csrc','ctrg" .
+        "','do'],null,function(o){window.location.reload()})}window['phpmussel-f" .
+        "orm-target']='cache-data';";
 
     /** To be populated by the cache data. */
     $FE['CacheData'] = '';

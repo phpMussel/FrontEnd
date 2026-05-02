@@ -1,14 +1,14 @@
 <?php
 /**
- * This file is a part of the CIDRAM package.
- * Homepage: https://cidram.github.io/
+ * This file is a part of the phpMussel\FrontEnd package.
+ * Homepage: https://phpmussel.github.io/
  *
- * CIDRAM COPYRIGHT 2016 and beyond by Caleb Mazalevskis (Maikuolan).
+ * PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
  *
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The logs page (last modified: 2026.04.15).
+ * This file: The logs page (last modified: 2026.05.02).
  */
 
 namespace phpMussel\FrontEnd;
