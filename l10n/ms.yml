@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2026.03.22).
+# This file: Malay language data (last modified: 2026.05.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,6 +24,22 @@
 # requests, ask. I can help.
 ##/
 
+Glossary: !lazy
+ Entries:
+  Positif palsu: |
+   Secara amnya, semasa menjalankan ujian, apabila keputusan ujian adalah "positif" (iaitu, keadaan ujian didapati benar), tetapi dijangka (atau sepatutnya) "negatif" (iaitu, keputusan ujian adalah salah), ia dirujuk sebagai "positif palsu". <em>Bahasa Inggeris: "false positive". Atau secara alternatif: "ralat positif palsu"; "penggera palsu".</em>
+   Beberapa istilah yang berkaitan ialah "positif benar", "negatif benar", dan "negatif palsu". <em>Bahasa Inggeris: "true positive", "true negative", "false negative".</em> "Positif benar" merujuk kepada apabila keputusan ujian dan keadaan sebenar adalah benar (atau "positif"), dan "negatif benar" merujuk kepada apabila keputusan ujian dan keadaan sebenar adalah palsu (atau "negatif"). "Positif benar" atau "negatif benar" dianggap sebagai "inferens yang betul".
+   Songsangan bagi "positif palsu" ialah "negatif palsu". Apabila keputusan ujian adalah "negatif", tetapi dijangka (atau sepatutnya) "positif", keputusan tersebut dirujuk sebagai "negatif palsu".
+   Dalam konteks phpMussel, istilah-istilah ini biasanya merujuk kepada sama ada phpMussel mengenal pasti fail dengan betul sebagai selamat atau berbahaya. Cth., fail yang sama sekali tidak berbahaya yang dikenal pasti sebagai ancaman akan menjadi "positif palsu", dan sebaliknya, fail berbahaya (berbahaya disebabkan oleh perisian hasad, ransomware, dijangkiti virus, dll) yang dikenal pasti sebagai selamat akan menjadi "negatif palsu". Apabila mengimbas fail, phpMussel membuat penilaian berdasarkan konfigurasinya dan fail tandatangan yang tersedia. Implikasi "positif" untuk pengendali muat naik biasanya ialah muat naik disekat.
+   | | Fail sebenarnya selamat (muat naik TIDAK sepatutnya disekat) | Fail sebenarnya berbahaya (muat naik SEPATUTNYA disekat) |
+   | Fail dikenal pasti sebagai selamat (muat naik TIDAK disekat) | Negatif benar (inferens yang betul) | Pengesanan yang terlepas (atau negatif palsu) |
+   | Fail dikenal pasti sebagai berbahaya (muat naik disekat) | Positif palsu | Positif benar (inferens yang betul) |
+   Jika anda menemui positif palsu, anda boleh melaporkannya di penjejak isu phpMussel.
+ Indexes:
+  [Negatif palsu, Positif palsu, Negatif benar, Positif benar]: "false_positive"
+ Refs:
+  Positif palsu:
+   Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
 checkbox:
  Delete orphaned values: "Padamkan nilai-nilai yang diyatimkan."
 config:
@@ -135,7 +151,7 @@ config:
  virustotal_vt_quota_rate: "Menurut dokumentasi API Virus Total, ia terhad kepada paling banyak 4 permintaan dalam apa jua bentuk dalam mana-mana tempoh masa 1 minit tertentu. Jika anda menjalankan honeyclient, honeypot atau mana-mana automasi lain yang akan menyediakan sumber kepada VirusTotal dan bukan sahaja mendapatkan laporan, anda berhak mendapat kuota kadar permintaan yang lebih tinggi. Secara lalai, phpMussel akan mematuhi batasan ini dengan ketat, tetapi disebabkan kemungkinan kuota kadar ini dinaikkan, kedua-dua arahan ini disediakan sebagai cara untuk anda mengarahkan phpMussel tentang had yang perlu dipatuhi. Melainkan anda telah diarahkan berbuat demikian, anda tidak disyorkan untuk meningkatkan nilai ini, tetapi, jika anda menghadapi masalah yang berkaitan dengan mencapai kuota kadar anda, mengurangkan nilai ini kadangkala <strong><em>MUNGKIN</em></strong> membantu anda menangani masalah ini. Had kadar anda ditentukan sebagai <code>vt_quota_rate</code> permintaan apa-apa sifat dalam mana-mana tempoh masa <code>vt_quota_time</code> minit tertentu."
  virustotal_vt_quota_time: "(Lihat penerangan di atas)."
  virustotal_vt_suspicion_level: "Secara lalai, phpMussel akan mengehadkan fail yang diimbas menggunakan API Virus Total kepada fail yang dianggapnya "mencurigakan". Jika anda mahu, anda boleh melaraskan sekatan ini dengan menukar nilai arahan <code>vt_suspicion_level</code>."
- virustotal_vt_weighting: "Patutkah phpMussel menggunakan hasil pengimbasan menggunakan API Virus Total sebagai pengesanan atau pemberat? Arahan ini wujud, kerana, walaupun mengimbas fail menggunakan berbilang enjin (seperti yang dilakukan oleh Virus Total) seharusnya menghasilkan kadar pengesanan yang meningkat (dan oleh mengakibatkan lebih banyak fail berniat jahat ditangkap), ia juga boleh menghasilkan bilangan positif palsu yang lebih tinggi, dan jadi, dalam beberapa keadaan, hasil imbasan mungkin lebih baik digunakan sebagai skor keyakinan dan bukannya sebagai kesimpulan muktamad. Jika nilai 0 digunakan, hasil pengimbasan menggunakan API Virus Total akan digunakan sebagai pengesanan, dan jadi, jika mana-mana enjin yang digunakan oleh Virus Total benderakan fail yang diimbas sebagai berniat jahat, phpMussel akan menganggap fail sebagai berniat jahat. Jika sebarang nilai lain digunakan, hasil pengimbasan menggunakan API Virus Total akan digunakan sebagai pemberat, dan jadi, bilangan enjin yang digunakan oleh Virus Total yang benderakan fail yang diimbas sebagai berniat jahat akan berfungsi sebagai skor keyakinan (atau pemberat) sama ada fail yang diimbas harus dianggap berniat jahat oleh phpMussel (nilai yang digunakan akan mewakili skor keyakinan minimum atau pemberat yang diperlukan untuk dianggap berniat jahat). Nilai 0 digunakan secara lalai."
+ virustotal_vt_weighting: "Patutkah phpMussel menggunakan hasil pengimbasan menggunakan API Virus Total sebagai pengesanan atau pemberat? Arahan ini wujud, kerana, walaupun mengimbas fail menggunakan berbilang enjin (seperti yang dilakukan oleh Virus Total) sepatutnya menghasilkan kadar pengesanan yang meningkat (dan oleh mengakibatkan lebih banyak fail berniat jahat ditangkap), ia juga boleh menghasilkan bilangan positif palsu yang lebih tinggi, dan jadi, dalam beberapa keadaan, hasil imbasan mungkin lebih baik digunakan sebagai skor keyakinan dan bukannya sebagai kesimpulan muktamad. Jika nilai 0 digunakan, hasil pengimbasan menggunakan API Virus Total akan digunakan sebagai pengesanan, dan jadi, jika mana-mana enjin yang digunakan oleh Virus Total benderakan fail yang diimbas sebagai berniat jahat, phpMussel akan menganggap fail sebagai berniat jahat. Jika sebarang nilai lain digunakan, hasil pengimbasan menggunakan API Virus Total akan digunakan sebagai pemberat, dan jadi, bilangan enjin yang digunakan oleh Virus Total yang benderakan fail yang diimbas sebagai berniat jahat akan berfungsi sebagai skor keyakinan (atau pemberat) sama ada fail yang diimbas harus dianggap berniat jahat oleh phpMussel (nilai yang digunakan akan mewakili skor keyakinan minimum atau pemberat yang diperlukan untuk dianggap berniat jahat). Nilai 0 digunakan secara lalai."
 confirm:
  Action: "Adakah anda pasti mahu "%s"?"
 field:
@@ -296,6 +312,7 @@ link:
  Configuration: "Konfigurasi"
  Discussions: "Perbincangan"
  Documentation: "Dokumentasi"
+ Glossary: "Glosari"
  Home: "Halaman utama"
  Log Out: "Log keluar"
  Logs: "Log"
@@ -375,6 +392,7 @@ tip:
  Accounts: "Halaman akaun membolehkan anda mengawal siapa yang boleh mengakses bahagian hadapan phpMussel."
  Cache Data: "Disini anda boleh menyemak kandungan cache."
  Configuration: "Halaman konfigurasi membolehkan anda mengubah suai konfigurasi untuk phpMussel dari bahagian hadapan."
+ Glossary: "Glosari ini menerangkan beberapa terminologi yang digunakan oleh phpMussel, untuk membantu menjelaskan maksud yang dimaksudkan dalam konteks penggunaannya."
  Greeting: "Salam, %s."
  Home: "Ini ialah halaman utama untuk bahagian hadapan phpMussel. Pilih pautan daripada menu navigasi di sebelah kiri untuk meneruskan."
  Logs: "Pilih fail log daripada senarai di bawah untuk melihat kandungan fail log tersebut."

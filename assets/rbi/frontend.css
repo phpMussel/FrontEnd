@@ -117,7 +117,7 @@ select,input[type=submit],input[type=reset],input[type=button],input[type=file]:
 #pgrad{width:16px;height:16px;display:inline-block;border-radius:16px;filter:blur(2px)}
 .gridHA:not(.gridVA,.gridVB,.gridboxstretch),.gridHB:not(.gridVA,.gridVB,.gridboxstretch){white-space:nowrap}
 .configMatrixLabel,.vrte,.gridboxcheckcell{text-align:center}
-.gridboxitem,.gridboxcheckcell{height:19px}
+.gridboxitem,.gridboxcheckcell{min-height:19px}
 .gridboxstretch{height:100%;white-space:normal}
 .configMatrixLabel{height:auto;line-height:19px;font-weight:700}
 .gridboxcheckcell{margin:0;padding:auto}

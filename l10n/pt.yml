@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese language data (last modified: 2026.03.21).
+# This file: Portuguese language data (last modified: 2026.05.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,6 +24,32 @@
 # requests, ask. I can help.
 ##/
 
+Glossary: !lazy
+ Entries:
+  Falso positivo:
+   pt-BR: |
+    Em geral, ao realizar um teste, quando os resultados são "positivos" (ou seja, as condições do teste são verdadeiras), mas o esperado (ou deveria ter sido) "negativo" (ou seja, os resultados do teste são errôneos), isso é chamado de "falso positivo". <em>Inglês: "false positive". Ou, em alternativa: "erro falso positivo"; "falso alarme".</em>
+    Alguns termos relacionados são "verdadeiro positivo", "verdadeiro negativo", e "falso negativo". <em>Inglês: "true positive", "true negative", "false negative".</em> Um "verdadeiro positivo" ocorre quando os resultados do teste e o estado real da condição são ambos verdadeiros (ou "positivos"), e um "verdadeiro negativo" ocorre quando os resultados do teste e o estado real da condição são ambos falsos (ou "negativos"). Um "verdadeiro positivo" ou um "verdadeiro negativo" é considerado uma "inferência correta".
+    O inverso de um "falso positivo" é um "falso negativo". Quando o resultado do teste é "negativo", mas o esperado (ou deveria ter sido) "positivo", o resultado é chamado de "falso negativo".
+    No contexto do phpMussel, esses termos normalmente se referem à capacidade do phpMussel de identificar corretamente se um arquivo é seguro ou prejudicial. Por exemplo, um arquivo completamente inofensivo ser identificado como uma ameaça seria um "falso positivo" e, inversamente, um arquivo perigoso (perigoso devido a malware, ransomware, infecção por vírus, etc) ser identificado como seguro seria um "falso negativo". Ao analisar um arquivo, o phpMussel emite um parecer com base em sua configuração e nos arquivos de assinatura disponíveis. A implicação de um resultado "positivo" para o gestor de carregamentos é normalmente o bloqueio do carregamento.
+    | | O arquivo é seguro (o carregamento NÃO deve ser bloqueado) | O arquivo é perigoso (o carregamento DEVE ser bloqueado) |
+    | O arquivo foi identificado como seguro (o carregamento NÃO está bloqueado) | Verdadeiro negativo (inferência correta) | Detecção perdida (ou falso negativo) |
+    | O arquivo foi identificado como perigoso (o carregamento ESTÁ bloqueado) | Falso positivo | Verdadeiro positivo (inferência correta) |
+    Se você encontrar falsos positivos, você poderá relatá-lo no sistema de rastreamento de problemas do phpMussel.
+   pt-PT: |
+    Em geral, ao realizar um teste, quando os resultados são "positivos" (ou seja, as condições do teste são verdadeiras), mas o esperado (ou deveria ter sido) "negativo" (ou seja, os resultados do teste são erróneos), isto é designado por "falso positivo". <em>Inglês: "false positive". Ou, em alternativa: "erro falso positivo"; "falso alarme".</em>
+    Alguns termos relacionados são "verdadeiro positivo", "verdadeiro negativo", e "falso negativo". <em>Inglês: "true positive", "true negative", "false negative".</em> Um "verdadeiro positivo" ocorre quando os resultados do teste e o estado real da condição são ambos verdadeiros (ou "positivos"), e um "verdadeiro negativo" ocorre quando os resultados do teste e o estado real da condição são ambos falsos (ou "negativos"). Um "verdadeiro positivo" ou um "verdadeiro negativo" é considerado uma "inferência correta".
+    O inverso de um "falso positivo" é um "falso negativo". Quando o resultado do teste é "negativo", mas o esperado (ou deveria ter sido) "positivo", o resultado é designado por "falso negativo".
+    No contexto do phpMussel, estes termos referem-se normalmente à capacidade do phpMussel de identificar corretamente se um arquivo é seguro ou prejudicial. Por exemplo, um arquivo completamente inofensivo ser identificado como uma ameaça seria um "falso positivo" e, inversamente, um arquivo perigoso (perigoso devido a malware, ransomware, infeção por vírus, etc) ser identificado como seguro seria um "falso negativo". Ao analisar um arquivo, o phpMussel emite um parecer com base na sua configuração e nos arquivos de assinatura disponíveis. A implicação de um resultado "positivo" para o gestor de carregamentos é normalmente o bloqueio do carregamento.
+    | | O arquivo é seguro (o carregamento NÃO deve ser bloqueado) | O arquivo é perigoso (o carregamento DEVE ser bloqueado) |
+    | O arquivo foi identificado como seguro (o carregamento NÃO está bloqueado) | Verdadeiro negativo (inferência correta) | Deteção perdida (ou falso negativo) |
+    | O arquivo foi identificado como perigoso (o carregamento ESTÁ bloqueado) | Falso positivo | Verdadeiro positivo (inferência correta) |
+    Se encontrar falsos positivos, pode comunicá-lo no sistema de rastreio de problemas do phpMussel.
+ Indexes:
+  [Falso negativo, Falso positivo, Verdadeiro negativo, Verdadeiro positivo]: "false_positive"
+ Refs:
+  Falso positivo:
+   Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
 checkbox:
  Delete orphaned values: "Deletar valores órfãos."
 config:
@@ -43,7 +69,7 @@ config:
  core_hide_version: "Ocultar informações da versão dos logs e da saída da página? True = Sim; False = Não [Padrão]."
  core_ipaddr:
   pt-BR: "Onde encontrar o IP endereço das solicitações? (Útil por serviços como o Cloudflare). Padrão = REMOTE_ADDR. ATENÇÃO: Não mude isso a menos que você saiba o que está fazendo!"
-  pt-PT: "Onde encontrar o IP endereço das solicitações? (Útil por serviços como o Cloudflare). Padrão = REMOTE_ADDR. ATENÇÃO: Não mude isso a menos que você saiba o que está a fazer!"
+  pt-PT: "Onde encontrar o IP endereço das solicitações? (Útil por serviços como o Cloudflare). Padrão = REMOTE_ADDR. ATENÇÃO: Não mude isso a menos que saiba o que está a fazer!"
  core_lang: "Especificar o padrão da linguagem por phpMussel."
  core_lang_override: "Localizar de acordo com HTTP_ACCEPT_LANGUAGE sempre que possível? True = Sim [Padrão]; False = Não."
  core_log_rotation_action: "A rotação de log limita o número de arquivos de log que devem existir a qualquer momento. Quando novos arquivos de log são criados, se o número total de arquivos de log exceder o limite especificado, a ação especificada será executada. Você pode especificar a ação desejada aqui."
@@ -79,10 +105,10 @@ config:
   pt-PT: "Permitir pontos iniciais e finais nos nomes dos arquivos? Por vezes, isto pode ser utilizado para ocultar arquivos, ou enganar alguns sistemas para permitir a passagem de diretórios. False = Não permitir [Padrão]. True = Permitir."
  files_archive_file_extensions:
   pt-BR: "Reconhecidos arquivos extensões (formato é CSV; só deve adicionar ou remover quando problemas ocorrem; desnecessariamente removendo pode causar falso-positivos para aparecer por compactados arquivos, enquanto desnecessariamente adicionando será essencialmente whitelist o que você está adicionando contra ataque específica detecção; modificar com cautela; Também notar que este não tem efeito em qual compactados arquivos podem e não podem ser analisados no escopo de conteúdo). A lista, como é padrão, é do formatos utilizados mais comumente através da maioria dos sistemas e CMS, mas intencionalmente não é necessariamente abrangente."
-  pt-PT: "Reconhecidos arquivos extensões (formato é CSV; só deve adicionar ou remover quando problemas ocorrem; desnecessariamente removendo pode causar falso-positivos para aparecer por compactados arquivos, enquanto desnecessariamente adicionando será essencialmente whitelist o que você está adicionando contra ataque específica deteção; modificar com cautela; Também notar que este não tem efeito em qual compactados arquivos podem e não podem ser analisados no escopo de conteúdo). A lista, como é padrão, é do formatos utilizados mais comumente através da maioria dos sistemas e CMS, mas intencionalmente não é necessariamente abrangente."
+  pt-PT: "Reconhecidos arquivos extensões (formato é CSV; só deve adicionar ou remover quando problemas ocorrem; desnecessariamente removendo pode causar falso-positivos para aparecer por compactados arquivos, enquanto desnecessariamente adicionando será essencialmente whitelist o que está adicionando contra ataque específica deteção; modificar com cautela; Também notar que este não tem efeito em qual compactados arquivos podem e não podem ser analisados no escopo de conteúdo). A lista, como é padrão, é do formatos utilizados mais comumente através da maioria dos sistemas e CMS, mas intencionalmente não é necessariamente abrangente."
  files_block_control_characters:
-  pt-BR: "Bloquear todos os arquivos que contenham quaisquer caracteres de controle, exceto linha quebras? Se você está <strong><em>APENAS</em></strong> carregando simple texto, então você pode ativar essa opção para fornecer alguma adicional proteção para seu sistema. Mas, se você carregar qualquer coisa que não seja de texto simples, ativando isso pode resultas em falso positivos. False = Não bloquear [Padrão]; True = Bloquear."
-  pt-PT: "Bloquear todos os arquivos que contenham quaisquer caracteres de controle, exceto linha quebras? Se você está <strong><em>APENAS</em></strong> carregando simple texto, então você pode ativar essa opção para fornecer alguma adicional proteção para o seu sistema. Mas, se você carregar qualquer coisa que não seja de texto simples, ativando isso pode resultas em falso positivos. False = Não bloquear [Padrão]; True = Bloquear."
+  pt-BR: "Bloquear todos os arquivos que contenham quaisquer caracteres de controle, exceto linha quebras? Se você está <strong><em>APENAS</em></strong> carregando simple texto, então você pode ativar essa opção para fornecer alguma adicional proteção para seu sistema. Mas, se você carregar qualquer coisa que não seja de texto simples, ativando isso pode resultar em falso positivos. False = Não bloquear [Padrão]; True = Bloquear."
+  pt-PT: "Bloquear todos os arquivos que contenham quaisquer caracteres de controle, exceto linha quebras? Se está <strong><em>APENAS</em></strong> carregando simple texto, então pode ativar esta opção para fornecer alguma proteção adicional para o seu sistema. Mas, se carregar qualquer coisa que não seja de texto simples, activando isso pode resultar em falsos positivos. False = Não bloquear [Padrão]; True = Bloquear."
  files_block_encrypted_archives: "Detectar e bloquear compactados arquivos criptografados? Porque phpMussel não é capaz de analisar o conteúdo de arquivos criptografados, é possível que a criptografia de arquivo pode ser empregado por um atacante como meio de tentar contornar phpMussel, analisadores antivírus e outras dessas protecções. Instruindo phpMussel para bloquear quaisquer arquivos que ele descobrir a ser criptografada poderia ajudar a reduzir o risco associado a essas tais possibilidades. False = Não; True = Sim [Padrão]."
  files_block_macros:
   pt-BR: "Tente bloquear todos os arquivos que contenham macros? Alguns tipos de documentos e planilhas podem conter macros executáveis, fornecendo assim um perigoso vetor potencial de malware. False = Não bloquear [Padrão]; True = Bloquear."
@@ -108,7 +134,9 @@ config:
   pt-BR: "O limite de entropia para assinaturas que usam dados normalizados (o padrão é 7.7). Neste contexto, entropia é definida como a entropia de Shannon do conteúdo do arquivo que está sendo escaneado. Quando tanto o limite de entropia quanto o limite de tamanho do arquivo de entropia forem excedidos, para reduzir o risco de falsos positivos, algumas assinaturas que usam dados normalizados serão ignoradas."
   pt-PT: "O limite de entropia para assinaturas que usam dados normalizados (o padrão é 7.7). Neste contexto, entropia é definida como a entropia de Shannon do conteúdo do arquivo que está a ser escaneado. Quando tanto o limite de entropia como o limite de tamanho do arquivo de entropia forem ultrapassados, para reduzir o risco de falsos positivos, algumas assinaturas que utilizam dados normalizados serão ignoradas."
  files_filesize_archives: "Herdar o arquivo tamanho blacklist/whitelist para o conteúdo de compactados arquivos? False = Não (greylist tudo); True = Sim [Padrão]."
- files_filesize_limit: "Arquivo tamanho limit. Em KB. 65536 = 64MB [Padrão] 0 = Não limite (sempre greylisted), qualquer (positivo) numérico valor aceite. Isso pode ser útil quando sua PHP configuração limita a quantidade de memória que um processo pode ocupar ou se sua PHP configuração limita o arquivo tamanho de carregamentos."
+ files_filesize_limit:
+  pt-BR: "Arquivo tamanho limit. Em KB. 65536 = 64MB [Padrão] 0 = Não limite (sempre greylisted), qualquer (positivo) numérico valor aceite. Isso pode ser útil quando sua PHP configuração limita a quantidade de memória que um processo pode ocupar ou se sua PHP configuração limita o arquivo tamanho de carregamentos."
+  pt-PT: "Arquivo tamanho limit. Em KB. 65536 = 64MB [Padrão] 0 = Não limite (sempre greylisted), qualquer (positivo) numérico valor aceite. Isto pode ser útil quando a sua configuração PHP limita a quantidade de memória que um processo pode ocupar ou se a sua configuração PHP limita o tamanho dos carregamentos do arquivo."
  files_filesize_response: "Que fazer com arquivos que excedam o limite de arquivo tamanho (se existir). False = Whitelist; True = Blacklist [Padrão]."
  files_filetype_archives: "Herdar o arquivo tipo blacklist/whitelist para o conteúdo de compactados arquivos? False = Não (greylist tudo) [Padrão]; True = Sim."
  files_filetype_blacklist: "Blacklist:"
@@ -118,13 +146,15 @@ config:
  files_max_recursion: "Máxima recursão profundidade limite por compactados arquivos. Padrão = 3."
  files_only_allow_images: "Quando definido como true, todos os arquivos encontrados pelo scanner que não são imagens serão sinalizados imediatamente, sem serem analisados. Isso pode ajudar a reduzir o tempo necessário para concluir uma análise em alguns casos. Defina como false por padrão."
  files_scannable_threshold:
-  pt-BR: "Opcional limitação para o comprimento dos dados brutos para que phpMussel é permitido a ler e analisar (em caso de existirem quaisquer notável problemas de desempenho enquanto analisando). Padrão = 32MB. Zero ou nulo valor desativa o limitação. Em geral, esse valor não deve ser menor que o médio arquivo tamanho de carregamentos que você quer e espera para receber no seu servidor ou website, não deve ser mais que o filesize_limit directivo, e não deve ser menor que aproximadamente um quinto do total permissível memória alocação concedido para PHP através do "php.ini" configuração arquivo. Esta directiva existe para tentar impedir phpMussel de usando demais memória (que seria impedir-lo de ser capaz de analisando arquivos acima de um certo tamanho com sucesso)."
-  pt-PT: "Opcional limitação para o comprimento dos dados brutos para que phpMussel é permitido a ler e analisar (em caso de existirem quaisquer notável problemas de desempenho enquanto analisa). Padrão = 32MB. Zero ou nulo valor desativa o limitação. Em geral, esse valor não deve ser menor que o médio arquivo tamanho de carregamentos que você quer e espera para receber no seu servidor ou website, não deve ser mais que o filesize_limit directivo, e não deve ser menor que aproximadamente um quinto do total permissível memória alocação concedido para PHP através do "php.ini" configuração arquivo. Esta directiva existe para tentar impedir phpMussel de usar demasiada memória (que seria impedir-lo de ser capaz de analisar arquivos acima de um certo tamanho com sucesso)."
+  pt-BR: "Opcional limitação para o comprimento dos dados brutos para que phpMussel é permitido a ler e analisar (em caso de existirem quaisquer notável problemas de desempenho enquanto analisando). Padrão = 32MB. Zero ou nulo valor desativa o limitação. Em geral, esse valor não deve ser menor que o tamanho médio dos carregamentos que você quer e espera para receber no seu servidor ou website, não deve ser mais que o filesize_limit directivo, e não deve ser menor que aproximadamente um quinto do total permissível memória alocação concedido para PHP através do "php.ini" configuração arquivo. Esta directiva existe para tentar impedir phpMussel de usando demais memória (que seria impedir-lo de ser capaz de analisando arquivos acima de um certo tamanho com sucesso)."
+  pt-PT: "Opcional limitação para o comprimento dos dados brutos para que phpMussel é permitido a ler e analisar (em caso de existirem quaisquer notável problemas de desempenho enquanto analisa). Padrão = 32MB. Zero ou nulo valor desativa o limitação. Em geral, esse valor não deve ser menor que o tamanho médio dos carregamentos que quer e espera para receber no seu servidor ou website, não deve ser mais que o filesize_limit directivo, e não deve ser menor que aproximadamente um quinto do total permissível memória alocação concedido para PHP através do "php.ini" configuração arquivo. Esta directiva existe para tentar impedir phpMussel de usar demasiada memória (que seria impedir-lo de ser capaz de analisar arquivos acima de um certo tamanho com sucesso)."
  frontend: "Configuração para o front-end."
  frontend_custom_footer:
   pt-BR: "Inserido como HTML no final de todas as páginas do front-end. Isso pode ser útil caso você queira incluir um aviso legal, link de contato, informações comerciais, ou similares em todas essas páginas."
-  pt-PT: "Inserido como HTML no final de todas as páginas do front-end. Isto pode ser útil caso você queira incluir um aviso legal, link de contacto, informações comerciais, ou similares em todas essas páginas."
- frontend_custom_header: "Inserido como HTML no início de todas as páginas do front-end. Isso pode ser útil caso você queira incluir um logotipo de site, cabeçalho personalizado, scripts, ou similares em todas essas páginas."
+  pt-PT: "Inserido como HTML no final de todas as páginas do front-end. Isto pode ser útil no caso de querer incluir um aviso legal, link de contacto, informações comerciais, ou similares em todas estas páginas."
+ frontend_custom_header:
+  pt-BR: "Inserido como HTML no início de todas as páginas do front-end. Isso pode ser útil caso você queira incluir um logotipo de site, cabeçalho personalizado, scripts, ou similares em todas essas páginas."
+  pt-PT: "Inserido como HTML no início de todas as páginas do front-end. Isto pode ser útil no caso de querer incluir um logótipo de site, cabeçalho personalizado, scripts, ou similares em todas estas páginas."
  frontend_default_algo: "Define qual algoritmo usar para todas as futuras senhas e sessões."
  frontend_frontend_log:
   pt-BR: "Arquivo para registrar tentativas de login ao front-end. Especifique o nome de um arquivo, ou deixe em branco para desabilitar."
@@ -392,9 +422,9 @@ label:
  Upload hash: "Hash do carregamento:"
  Upload origin: "Origem do carregamento:"
  Upload size: "Tamanho do carregamento:"
- Uploads blocked: "Uploads bloqueados"
- Uploads quarantined: "Uploads em quarentena"
- Uploads scanned: "Uploads analisados"
+ Uploads blocked: "Carregamentos bloqueados"
+ Uploads quarantined: "Carregamentos em quarentena"
+ Uploads scanned: "Carregamentos analisados"
  Your IP address: {"pt-BR": "Seu endereço IP:", "pt-PT": "O seu endereço IP:"}
  Your user agent: {"pt-BR": "Seu agente de usuário:", "pt-PT": "O seu agente de utilizador:"}
  phpMussel version used: "Versão do phpMussel usada:"
@@ -404,6 +434,7 @@ link:
  Configuration: "Configuração"
  Discussions: "Discussões"
  Documentation: "Documentação"
+ Glossary: "Glossário"
  Home: "Página principal"
  Log Out: "Sair"
  Logs: "Arquivos de log"
@@ -411,7 +442,7 @@ link:
  Signature Information: "Informações de assinaturas"
  Statistics: "Estatisticas"
  Text formatting: "Formatação de texto: <a href="%1$sfalse">Simples</a> – <a href="%1$strue">Chique</a>"
- Upload Testing: "Carregamento teste"
+ Upload Testing: "Teste de carregamentos"
 msg_subject_2fa: "Autenticação de dois fatores"
 msg_template_2fa:
  pt-BR: |
@@ -502,9 +533,14 @@ tip:
  2FA Sent: "Um e-mail contendo um código de autenticação de dois fatores foi enviado para o seu endereço de e-mail. Por favor, confirme este código abaixo para obter acesso ao front-end. Se você não recebeu este e-mail, tente fazer logout, aguarde 10 minutos, e faça login novamente para receber um novo e-mail contendo um novo código."
  Accounts:
   pt-BR: "A página de contas permite que você controle quem pode acessar o phpMussel front-end."
-  pt-PT: "A página de contas permite que você controle quem pode aceder ao phpMussel front-end."
- Cache Data: "Aqui você pode rever o conteúdo do cache."
+  pt-PT: "A página de contas permite que controle quem pode aceder ao phpMussel front-end."
+ Cache Data:
+  pt-BR: "Aqui você pode rever o conteúdo do cache."
+  pt-PT: "Aqui pode rever o conteúdo da cache."
  Configuration: "A página de configuração permite que você modifique a configuração do phpMussel a partir do front-end."
+ Glossary:
+  pt-BR: "O glossário descreve alguns dos termos usados pelo phpMussel, para ajudar a esclarecer o significado pretendido no contexto em que são usados."
+  pt-PT: "O glossário descreve alguns dos termos utilizados pelo phpMussel, para ajudar a esclarecer o significado pretendido no contexto em que são utilizados."
  Greeting: "Olá, %s."
  Home: "Esta é a página principal do phpMussel front-end. Selecione um link no menu de navegação à esquerda para continuar."
  Logs: "Selecionar um arquivo de log da lista abaixo para visualizar o conteúdo desse arquivo de log."
@@ -517,8 +553,8 @@ tip:
  Statistics tracking is currently disabled: "Nota: O monitoramento de estatísticas está desativado atualmente, mas pode ser ativado através da página de configuração."
  Statistics: "Esta página mostra algumas estatísticas de uso básicas relativas à instalação do phpMussel."
  Upload Testing:
-  pt-BR: "A página de carregamento teste contém um formulário padrão para carregando arquivos, permitindo que você teste se um arquivo seria normalmente bloqueado através phpMussel quando carregando."
-  pt-PT: "A página de carregamento teste contém um formulário padrão para carregando arquivos, a permitir que você teste se um arquivo seria normalmente bloqueado através phpMussel quando carregando."
+  pt-BR: "A página de teste de carregamentos contém um formulário padrão para carregando arquivos, permitindo que você teste se um arquivo seria normalmente bloqueado através phpMussel quando carregando."
+  pt-PT: "A página de teste de carregamentos contém um formulário padrão para carregando arquivos, a permitir que teste se um arquivo seria normalmente bloqueado através phpMussel quando carregando."
 warning: !lazy
  Cookies: "Nota: phpMussel usa um cookie para autenticar logins. Ao efetuar o login, você dá seu consentimento para que um cookie seja criado e armazenado pelo seu navegador."
  JavaScript required: "Atenção: Algumas funcionalidades do front-end requerem JavaScript. Para garantir que todo o front-end se comporte conforme o esperado, é recomendável ativar o JavaScript."
@@ -526,7 +562,7 @@ warning: !lazy
  No signature files are active: "Atenção: Nenhum arquivo de assinaturas está ativo!"
  Proceeding will log out all users:
   pt-BR: "Atenção: Todos os usuários serão saíram se você continuar."
-  pt-PT: "Atenção: Todos os utilizadores serão saíram se você continuar."
+  pt-PT: "Atenção: Todos os utilizadores serão saíram se continuar."
  This account is not using a valid password:
   pt-BR: "Atenção: Esta conta não está usando uma senha válida!"
   pt-PT: "Atenção: Esta conta não usa uma senha válida!"

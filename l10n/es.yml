@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2026.03.21).
+# This file: Spanish language data (last modified: 2026.05.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,6 +24,23 @@
 # requests, ask. I can help.
 ##/
 
+Glossary: !lazy
+ Entries:
+  Falso positivo: |
+   En general, al realizar una prueba, cuando el resultado es "positivo" (es decir, se cumplen las condiciones de la prueba), pero se esperaba (o debería haber sido) "negativo" (es decir, el resultado es erróneo), se habla de un "falso positivo". <em>Inglés: "false positive". O alternativamente: "error de falso positivo"; "falsa alarma".</em>
+   Algunos términos relacionados son "verdadero positivo", "verdadero negativo", y "falso negativo". <em>Inglés: "true positive", "true negative", "false negative".</em> Un "verdadero positivo" se refiere a cuando los resultados de la prueba y el estado real de la condición son ambos verdaderos (o "positivos"), y un "verdadero negativo" se refiere a cuando los resultados de la prueba y el estado real de la condición son ambos falsos (o "negativos"). Un "verdadero positivo" o un "verdadero negativo" se considera una "inferencia correcta".
+   El inverso de un "falso positivo" es un "falso negativo". Cuando el resultado de la prueba es "negativo", pero se esperaba que fuera (o debería haber sido) "positivo", se habla de un "falso negativo".
+   En el contexto de phpMussel, estos términos suelen referirse a si phpMussel identifica correctamente si un archivo es seguro o dañino. Por ejemplo, un archivo totalmente inofensivo sea identificado como una amenaza sería un "falso positivo", y a la inversa, un archivo peligroso (peligroso debido a malware, ransomware, infección por un virus, etc) sea identificado como seguro sería un "falso negativo". Al escanear un archivo, phpMussel emite un juicio basado en su configuración y en los archivos de firma disponibles. La implicación de un resultado "positivo" para el gestor de subidas suele ser que la subida se bloquea.
+   | | El archivo es seguro (la subida NO debería bloquearse) | El archivo es peligroso (la subida DEBERÍA bloquearse) |
+   | El archivo se identifica como seguro (la subida NO está bloqueada) | Verdadero negativo (inferencia correcta) | Detección fallida (o falso negativo) |
+   | El archivo se identifica como peligroso (la subida ESTÁ bloqueada) | Falso positivo | Verdadero positivo (inferencia correcta) |
+   Si encuentra falsos positivos, puede informar del mismo en el sistema de seguimiento de incidencias de phpMussel.
+ Indexes:
+  [Falso negativo, Falso positivo, Verdadero negativo, Verdadero positivo]: "false_positive"
+ Refs:
+  Falso positivo:
+   Falso positivo y falso negativo - Wikipedia, la enciclopedia libre: "https://es.wikipedia.org/wiki/Falso_positivo_y_falso_negativo"
+   Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
 checkbox:
  Delete orphaned values: "Eliminar valores huérfanos."
 config:
@@ -296,6 +313,7 @@ link:
  Configuration: "Configuración"
  Discussions: "Discusiones"
  Documentation: "Documentación"
+ Glossary: "Glosario"
  Home: "Página principal"
  Log Out: "Cerrar sesión"
  Logs: "Archivos de registro"
@@ -377,6 +395,7 @@ tip:
  Accounts: "La página de cuentas permite controlar controlar quién puede acceder al phpMussel front-end."
  Cache Data: "Aquí puede revisar el contenido de la caché."
  Configuration: "La página de configuración permite modificar la configuración para phpMussel desde el front-end."
+ Glossary: "El glosario describe parte de la terminología utilizada por phpMussel, para ayudar a aclarar el significado previsto en el contexto en el que se utiliza."
  Greeting: "Hola, %s."
  Home: "Esta es la página principal para el front-end de phpMussel. Seleccione un enlace en el menú de navegación de la izquierda para continuar."
  Logs: "Seleccionar un archivo de registro de la lista siguiente para ver el contenido de ese archivo de registro."

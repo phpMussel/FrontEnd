@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2026.03.21).
+# This file: Turkish language data (last modified: 2026.05.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,6 +24,23 @@
 # requests, ask. I can help.
 ##/
 
+Glossary: !lazy
+ Entries:
+  Yanlış pozitif: |
+   Bir test yapılırken, test sonuçları "pozitif" (yani test koşullarının doğru olduğu) iken, ama beklenen sonuç "negatif" (yani test sonuçları hatalı) ise, buna "yanlış pozitif" denir. <em>İngilizce: "false positive". Veya alternatif olarak: "yanlış pozitif hata"; "yanlış alarm".</em>
+   "Gerçek pozitif", "gerçek negatif", ve "yanlış negatif" gibi bazı ilgili terimler bulunmaktadır. <em>İngilizce: "true positive", "true negative", "false negative".</em> "Gerçek pozitif", test sonuçlarının ve durumun gerçek halinin her ikisinin de doğru (veya "pozitif") olması anlamına gelir. "Gerçek negatif", test sonuçlarının ve durumun gerçek halinin her ikisinin de yanlış (veya "negatif") olması anlamına gelir. "Gerçek pozitif" veya "gerçek negatif", "doğru çıkarım" olarak kabul edilir.
+   "Yanlış pozitif"in tersi "yanlış negatif"tir. Test sonuçları "negatif" çıktığında, ancak "pozitif" olması bekleniyorsa (veya olması gerekiyorsa), bu "yanlış negatif"tir.
+   phpMussel bağlamında, bu terimler genellikle phpMussel'ın bir dosyayı güvenli veya zararlı olarak doğru tanımlayıp tanımlamadığını ifade eder. Örneğin, tamamen zararsız bir dosyanın tehdit olarak tanımlanması "yanlış pozitif" olurken, bunun tersine, tehlikeli bir dosyanın (kötü amaçlı yazılım, fidye yazılımı, virüs bulaşması, vb. nedenlerle tehlikeli) güvenli olarak tanımlanması "yanlış negatif" olur. phpMussel bir dosyayı tararken, yapılandırmasına ve mevcut imza dosyalarına dayanarak bir değerlendirme yapar. Yükleme işleyicisi için "pozitif" bir sonuç genellikle yüklemenin engellenmesi anlamına gelir.
+   | | Dosya aslında güvenli (yükleme engellenmemeli) | Dosya aslında tehlikeli (yükleme engellenmeli) |
+   | Dosya güvenli olarak tanımlandı (yükleme engellenmedi) | Gerçek negatif (doğru çıkarım) | Gözden kaçan tespit (veya yanlış negatif) |
+   | Dosya tehlikeli olarak tanımlandı (yükleme engellendi) | Yanlış pozitif | Gerçek pozitif (doğru çıkarım) |
+   Yanlış pozitif karşılaşırsanız, sorunu phpMussel'ın sorun takip sistemine bildirebilirsiniz.
+ Indexes:
+  [Yanlış negatif, Yanlış pozitif, Gerçek negatif, Gerçek pozitif]: "false_positive"
+ Refs:
+  Yanlış pozitif:
+   Yanlış pozitif ve yanlış negatif - Vikipedi: "https://tr.wikipedia.org/wiki/Yanl%C4%B1%C5%9F_pozitif_ve_yanl%C4%B1%C5%9F_negatif"
+   Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
 checkbox:
  Delete orphaned values: "Artık değerleri silin."
 config:
@@ -296,6 +313,7 @@ link:
  Configuration: "Yapılandırma"
  Discussions: "Tartışmalar"
  Documentation: "Belgeler"
+ Glossary: "Sözlük"
  Home: "Ana sayfa"
  Log Out: "Çıkış"
  Logs: "Kayıtlar"
@@ -377,6 +395,7 @@ tip:
  Accounts: "Hesaplar sayfası, phpMussel ön ucuna kimin erişebileceğini kontrol etmenizi mümkün kılar."
  Cache Data: "Burada önbellek içeriğini inceleyebilirsiniz."
  Configuration: "Yapılandırma sayfası, phpMussel için yapılandırmayı ön uçtan değiştirmenizi mümkün kılar."
+ Glossary: "Bu sözlük, phpMussel tarafından kullanılan bazı terimleri açıklayarak, kullanıldıkları bağlamda amaçlanan anlamı netleştirmeye yardımcı olur."
  Greeting: "Merhaba, %s."
  Home: "Bu, phpMussel ön uçunun ana sayfasıdır. Devam etmek için soldaki gezinme menüsünden bir bağlantı seçin."
  Logs: "Bu günlük dosyasının içeriğini görüntülemek için aşağıdaki listeden bir günlük dosyası seçin."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2026.03.21).
+# This file: Vietnamese language data (last modified: 2026.05.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,6 +24,22 @@
 # requests, ask. I can help.
 ##/
 
+Glossary: !lazy
+ Entries:
+  Sai tích cực: |
+   Khi thực hiện một xét nghiệm, nếu kết quả xét nghiệm là "dương tính" (nghĩa là các điều kiện xét nghiệm được xác nhận là đúng), nhưng kết quả dự kiến (hay đáng lẽ phải là) "âm tính" (nghĩa là kết quả xét nghiệm sai), thì đó được gọi là "sai tích cực". <em>Tiếng Anh: "false positive". Hay cách khác: "lỗi sai tích cực"; "dương tính giả"; "lỗi dương tính giả"; "báo động giả". Đối với các xét nghiệm y tế, "dương tính giả" cách diễn đạt phổ biến hơn, trong khi đối với lĩnh vực CNTT, "sai tích cực" cách diễn đạt phổ biến hơn, nhưng về cơ bản là tương đương nhau.</em>
+   Một số thuật ngữ liên quan là "đúng tích cực" (hay "dương tính thật"), "đúng tiêu cực" (hay "âm tính thật"), và "sai tiêu cực" (hay "âm tính giả"). <em>Tiếng Anh: "true positive", "true negative", "false negative".</em> "Đúng tích cực" là khi cả kết quả xét nghiệm và tình trạng thực tế đều đúng (hay "dương tính"), và "đúng tiêu cực" là khi cả kết quả xét nghiệm và tình trạng thực tế đều sai (hay "âm tính"). Một "đúng tích cực" hay "đúng tiêu cực" được coi là một "suy luận chính xác".
+   Ngược lại với "sai tích cực" là "sai tiêu cực". Khi kết quả xét nghiệm là "âm tính", nhưng kết quả dự kiến (hay đáng lẽ phải) là "dương tính", thì đó được gọi là "sai tiêu cực".
+   Trong ngữ cảnh của phpMussel, các thuật ngữ này thường đề cập đến việc phpMussel xác định chính xác một tập tin là an toàn hay có hại. Ví dụ, một tập tin hoàn toàn vô hại bị nhận diện là mối đe dọa sẽ là "sai tích cực", và ngược lại, một tập tin nguy hiểm (nguy hiểm do phần mềm độc hại, mã độc tống tiền, bị nhiễm virus, vv) bị nhận diện là an toàn sẽ là "sai tiêu cực". Khi quét một tập tin, phpMussel đưa ra đánh giá dựa trên cấu hình của nó và các tập tin chữ ký có sẵn. Thông thường, "tích cực" đối với trình xử lý tải lên đồng nghĩa với việc quá trình tải lên bị chặn.
+   | | Tập tin thực sự an toàn (việc tải lên KHÔNG nên bị chặn) | Tập tin thực sự nguy hiểm (việc tải lên NÊN bị chặn) |
+   | Tập tin được xác định là an toàn (việc tải lên KHÔNG bị chặn) | Đúng tiêu cực (suy luận chính xác) | Bỏ sót phát hiện (hay sai tiêu cực) |
+   | Tập tin được xác định là nguy hiểm (việc tải lên BỊ chặn) | Sai tích cực | Đúng tích cực (suy luận chính xác) |
+   Nếu bạn gặp phải sai tích cực, bạn có thể báo cáo chúng trên hệ thống theo dõi lỗi của phpMussel.
+ Indexes:
+  [Sai tiêu cực, Sai tích cực, Đúng tiêu cực, Đúng tích cực]: "false_positive"
+ Refs:
+  Sai tích cực:
+   Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
 checkbox:
  Delete orphaned values: "Xóa các giá trị mồ côi."
 config:
@@ -296,6 +312,7 @@ link:
  Configuration: "Cấu hình"
  Discussions: "Thảo luận"
  Documentation: "Tài liệu"
+ Glossary: "Bảng thuật ngữ"
  Home: "Trang chủ"
  Log Out: "Đăng xuất"
  Logs: "Bản ghi"
@@ -375,6 +392,7 @@ tip:
  Accounts: "Trang tài khoản cho phép bạn kiểm soát những người có thể truy cập các front-end phpMussel."
  Cache Data: "Ở đây bạn có thể xem lại nội dung của bộ nhớ cache."
  Configuration: "Trang cấu hình cho phép bạn chỉnh sửa các cấu hình phpMussel từ các front-end."
+ Glossary: "Bảng thuật ngữ mô tả một số thuật ngữ được sử dụng bởi phpMussel, nhằm làm rõ ý nghĩa dự định trong ngữ cảnh sử dụng."
  Greeting: "Xin chào, %s."
  Home: "Đây là trang chủ cho các front-end phpMussel. Chọn một liên kết từ thực đơn bên trái để tiếp tục."
  Logs: "Chọn một bản ghi từ danh sách dưới đây để xem nội dung của bản ghi này."

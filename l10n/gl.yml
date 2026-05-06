@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Galician language data (last modified: 2026.03.21).
+# This file: Galician language data (last modified: 2026.05.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,6 +24,22 @@
 # requests, ask. I can help.
 ##/
 
+Glossary: !lazy
+ Entries:
+  Falso positivo: |
+   En xeral, ao realizar unha proba, cando os resultados son "positivos" (é dicir, se se verifica que as condicións da proba son certas), pero se esperaba (ou debería ter sido) "negativos" (é dicir, se os resultados da proba son erróneos), os resultados denomínanse "falsos positivos". <em>Inglés: "false positive". Ou alternativamente: "erro falso positivo"; "falsa alarma".</em>
+   Algúns termos relacionados son "verdadeiro positivo", "verdadeiro negativo", e "falso negativo". <em>Inglés: "true positive", "true negative", "false negative".</em> Un "verdadeiro positivo" refírese a cando os resultados da proba e o estado real da condición son ambos verdadeiros (ou "positivos"), e un "verdadeiro negativo" refírese a cando os resultados da proba e o estado real da condición son ambos falsos (ou "negativos"). Un "verdadeiro positivo" ou un "verdadeiro negativo" considérase unha "inferencia correcta".
+   O inverso dun "falso positivo" é un "falso negativo". Cando os resultados son "negativos", pero se esperaba (ou debería ter sido) "positivos", os resultados denomínanse "falsos negativos".
+   No contexto de phpMussel, estes termos refírense normalmente a se phpMussel identifica correctamente un ficheiro como seguro ou prexudicial. Por exemplo, un ficheiro totalmente inofensivo que se identifique como unha ameaza sería un "falso positivo" e, pola contra, un ficheiro perigoso (perigoso debido a software malicioso, ransomware, infección por un virus, etc) que se identifique como seguro sería un "falso negativo". Ao escanear un ficheiro, phpMussel emite unha avaliación baseada na súa configuración e nos ficheiros de sinatura dispoñibles. A implicación dun "positivo" para o xestor de subida adoita ser que a subida está bloqueada.
+   | | O ficheiro é realmente seguro (a subida NON debería estar bloqueada) | O ficheiro é realmente perigoso (a subida DEBERÍA estar bloqueada) |
+   | O ficheiro está identificado como seguro (a subida NON está bloqueada) | Verdadeiro negativo (inferencia correcta) | Detección fallida (ou falso negativo) |
+   | O ficheiro está identificado como perigoso (a subida ESTÁ bloqueada) | Falso positivo | Verdadeiro positivo (inferencia correcta) |
+   Se atopas falsos positivos, podes informalos no rastreador de problemas de phpMussel.
+ Indexes:
+  [Falso negativo, Falso positivo, Verdadeiro negativo, Verdadeiro positivo]: "false_positive"
+ Refs:
+  Falso positivo:
+   Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
 checkbox:
  Delete orphaned values: "Eliminar valores orfos."
 config:
@@ -296,6 +312,7 @@ link:
  Configuration: "Configuración"
  Discussions: "Discusións"
  Documentation: "Documentación"
+ Glossary: "Glosario"
  Home: "Páxina de inicio"
  Log Out: "Pechar sesión"
  Logs: "Rexistros"
@@ -324,15 +341,15 @@ response:
  An account with that username already exists: "Xa existe unha conta con ese nome de usuario!"
  Configuration successfully updated: "Configuración actualizouse con éxito."
  Corrupted file: "Ficheiro danado!"
- Failed to create: "Fallou a creación!"
- Failed to delete: "Fallou a eliminación!"
+ Failed to create: "Fallo de creación!"
+ Failed to delete: "Fallo de eliminación!"
  Failed to restore: "Fallou a restauración"
  Failed to update configuration: "Fallou a actualización da configuración!"
- Failed to update: "Fallou a actualización!"
+ Failed to update: "Fallo de actualización!"
  Failed: "Fallou"
  File successfully deleted: "O ficheiro eliminouse con éxito!"
  File successfully restored: "O ficheiro restaurouse con éxito!"
- Incorrect 2FA code entered: "Introduciuse un código 2FA incorrecto. Fallou a autenticación."
+ Incorrect 2FA code entered: "Introduciuse un código 2FA incorrecto. Fallo de autenticación!"
  Incorrect quarantine key: "Chave de corentena incorrecta!"
  Invalid password: "Fallou o inicio de sesión! Contrasinal non é válido!"
  Maximum number of login attempts exceeded: "Superouse o número máximo de intentos de inicio de sesión; Acceso denegado."
@@ -377,6 +394,7 @@ tip:
  Accounts: "A páxina de contas permítelle controlar quen pode acceder ao front-end de phpMussel."
  Cache Data: "Aquí podes revisar o contido da caché."
  Configuration: "A páxina de configuración permítelle modificar a configuración de phpMussel desde o front-end."
+ Glossary: "O glosario describe parte da terminoloxía empregada por phpMussel, para axudar a clarificar o significado pretendido no contexto onde se emprega."
  Greeting: "Ola, %s."
  Home: "Esta é a páxina de inicio do front-end de phpMussel. Selecciona unha ligazón no menú de navegación da esquerda para continuar."
  Logs: "Seleccione un ficheiro de rexistro da lista a continuación para ver o contido dese ficheiro de rexistro."

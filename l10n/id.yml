@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2026.03.21).
+# This file: Indonesian language data (last modified: 2026.05.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,6 +24,23 @@
 # requests, ask. I can help.
 ##/
 
+Glossary: !lazy
+ Entries:
+  Positif palsu: |
+   Secara umum, ketika melakukan pengujian, jika hasil pengujian "positif" (yaitu, kondisi pengujian terbukti benar), tetapi diharapkan (atau seharusnya) "negatif" (yaitu, hasil pengujian salah), hal itu disebut sebagai "positif palsu". <em>Bahasa inggris: "false positive". Atau alternatifnya: "kesalahan positif palsu"; "alarm palsu".</em>
+   Beberapa istilah terkait adalah "positif benar", "negatif benar", dan "negatif palsu". <em>Bahasa inggris: "true positive", "true negative", "false negative".</em> "Positif benar" merujuk pada kondisi dimana hasil pengujian dan kondisi sebenarnya sama-sama benar (atau "positif"), sedangkan "negatif benar" merujuk pada kondisi dimana hasil pengujian dan kondisi sebenarnya sama-sama salah (atau "negatif"). "Positif benar" atau "negatif benar" dianggap sebagai "inferensi benar".
+   Kebalikan dari "positif palsu" adalah "negatif palsu". Ketika hasil pengujian "negatif", padahal seharusnya "positif", hasil tersebut disebut sebagai "negatif palsu".
+   Dalam konteks phpMussel, istilah-istilah ini biasanya merujuk pada apakah phpMussel secara tepat mengidentifikasi suatu file sebagai aman atau berbahaya. Misalnya, sebuah file yang sama sekali tidak berbahaya yang diidentifikasi sebagai ancaman akan menjadi "positif palsu", dan sebaliknya, sebuah file berbahaya (berbahaya karena malware, ransomware, terinfeksi virus, dll) yang diidentifikasi sebagai aman akan menjadi "negatif palsu". Saat memindai sebuah file, phpMussel membuat penilaian berdasarkan konfigurasi dan file tanda tangan yang tersedia. Implikasi dari hasil "positif" bagi pengelola unggahan biasanya adalah unggahan tersebut diblokir.
+   | | File sebenarnya aman (unggahan TIDAK seharusnya diblokir) | File sebenarnya berbahaya (unggahan SEHARUSNYA diblokir) |
+   | File diidentifikasi sebagai aman (unggahan TIDAK diblokir) | Negatif benar (inferensi benar) | Deteksi yang terlewatkan (atau negatif palsu) |
+   | File diidentifikasi sebagai berbahaya (unggahan diblokir) | Positif palsu | Positif benar (inferensi benar) |
+   Jika Anda menemukan positif palsu, Anda dapat melaporkannya di pelacak masalah phpMussel.
+ Indexes:
+  [Negatif palsu, Positif palsu, Negatif benar, Positif benar]: "false_positive"
+ Refs:
+  Positif palsu:
+   Positif palsu dan negatif palsu - Wikipedia bahasa Indonesia, ensiklopedia bebas: "https://id.wikipedia.org/wiki/Positif_palsu_dan_negatif_palsu"
+   Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
 checkbox:
  Delete orphaned values: "Menghapus nilai-nilai yang diyatimkan."
 config:
@@ -296,6 +313,7 @@ link:
  Configuration: "Konfigurasi"
  Discussions: "Diskusi"
  Documentation: "Dokumentasi"
+ Glossary: "Glosarium"
  Home: "Halaman utama"
  Log Out: "Keluar"
  Logs: "Log"
@@ -375,6 +393,7 @@ tip:
  Accounts: "Halaman akun memungkinkan Anda untuk mengontrol siapa dapat mengakses bagian depan phpMussel."
  Cache Data: "Disini Anda bisa meninjau isi cache."
  Configuration: "Halaman konfigurasi memungkinkan Anda untuk memodifikasi konfigurasi untuk phpMussel dari bagian depan."
+ Glossary: "Glosarium ini menjelaskan beberapa terminologi yang digunakan oleh phpMussel, untuk membantu memperjelas makna yang dimaksud dalam konteks penggunaannya."
  Greeting: "Salam, %s."
  Home: "Ini adalah halaman utama untuk phpMussel bagian depan. Pilih link dari menu navigasi di sisi kiri untuk melanjutkan."
  Logs: "Pilih log dari daftar dibawah untuk melihat isi log."

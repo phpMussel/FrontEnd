@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data (last modified: 2026.03.21).
+# This file: Romanian language data (last modified: 2026.05.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,6 +24,22 @@
 # requests, ask. I can help.
 ##/
 
+Glossary: !lazy
+ Entries:
+  Fals pozitiv: |
+   În general, atunci când se efectuează un test, atunci când rezultatele testului sunt „pozitive” (adică, condițiile testului sunt considerate a fi adevărate), dar se aștepta (sau ar fi trebuit să fie) „negative” (adică, rezultatele testului sunt eronate), acesta este denumit „fals pozitiv”. <em>Engleză: „false positive”. Sau, alternativ: „eroare fals pozitivă”; „alarmă falsă”.</em>
+   Unii termeni înrudiți sunt „adevărat pozitiv”, „adevărat negativ”, și „fals negativ”. <em>Engleză: „true positive”, „true negative”, „false negative”.</em> Un „adevărat pozitiv” se referă la momentul în care rezultatele testului și starea reală sunt ambele adevărate (sau „pozitive”), iar un „adevărat negativ” se referă la momentul în care rezultatele testului și starea reală sunt ambele false (sau „negative”). Un „adevărat pozitiv” sau un „adevărat negativ” este considerat a fi o „inferență corectă”.
+   Inversul unui „fals pozitiv” este un „fals negativ”. Când rezultatele testului sunt „negative”, dar se aștepta (sau ar fi trebuit să fie) „pozitive”, rezultatele sunt denumite „fals negative”.
+   În contextul phpMussel, acești termeni se referă de obicei la dacă phpMussel identifică corect un fișier ca fiind sigur sau dăunător. De exemplu, un fișier complet inofensiv identificat ca o amenințare ar fi un „fals pozitiv”, iar invers, un fișier periculos (periculos din cauza programelor malware, ransomware, infectat cu un virus, etc) identificat ca sigur ar fi un „fals negativ”. Când scanează un fișier, phpMussel își formulează o judecată bazată pe configurația sa și pe fișierele de semnătură disponibile. Implicația unui rezultat „pozitiv” pentru gestionarea încărcării este de obicei blocarea încărcării.
+   | | Fișierul este de fapt sigur (încărcarea NU ar trebui blocată) | Fișierul este de fapt periculos (încărcarea AR TREBUI blocată) |
+   | Fișierul este identificat ca sigur (încărcarea NU este blocată) | Adevărat negativ (inferență corectă) | Detecție ratată (sau fals negativ) |
+   | Fișierul este identificat ca periculos (încărcarea ESTE blocată) | Fals pozitiv | Adevărat pozitiv (inferență corectă) |
+   Dacă întâmpinați rezultate fals pozitive, o puteți raporta în sistemul de urmărire a problemelor phpMussel.
+ Indexes:
+  [Fals negativ, Fals pozitiv, Adevărat negativ, Adevărat pozitiv]: "false_positive"
+ Refs:
+  Fals pozitiv:
+   Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
 checkbox:
  Delete orphaned values: "Ștergeți valorile orfane."
 config:
@@ -296,6 +312,7 @@ link:
  Configuration: "Configurare"
  Discussions: "Discuții"
  Documentation: "Documentație"
+ Glossary: "Glosar"
  Home: "Pagina principala"
  Log Out: "Deconectați"
  Logs: "Jurnalele"
@@ -378,6 +395,7 @@ tip:
  Accounts: "Pagina de conturi vă permite să controlați cine poate accesa front-end-ul phpMussel."
  Cache Data: "Aici puteți revizui conținutul cache-ului."
  Configuration: "Pagina de configurare vă permite să modificați configurația pentru phpMussel din front-end."
+ Glossary: "Glosarul descrie o parte din terminologia utilizată de phpMussel, pentru a ajuta la clarificarea sensului intenționat în contextul în care este utilizată."
  Greeting: "Buna ziua, %s."
  Home: "Aceasta este pagina principala pentru front-end-ul phpMussel. Selectați un link din meniul de navigare din stânga pentru a continua."
  Logs: "Selectați un fișier jurnal din lista de mai jos pentru a vedea conținutul acelui fișier jurnal."

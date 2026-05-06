@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2026.03.21).
+# This file: Afrikaans language data (last modified: 2026.05.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,6 +24,23 @@
 # requests, ask. I can help.
 ##/
 
+Glossary: !lazy
+ Entries:
+  Vals positief: |
+   Oor die algemeen, wanneer 'n toets uitgevoer word, wanneer die resultate van die toets "positief" is (d.w.s., die voorwaardes van die toets word as waar bevind), maar verwag is om "negatief" te wees (d.w.s., die resultate van die toets is foutief), word dit 'n "vals positief" genoem. <em>Engels: "false positive". Of alternatiewelik: "vals positiewe fout"; "vals alarm".</em>
+   Sommige verwante terme is "ware positief", "ware negatief", en "vals negatief". <em>Engels: "true positive", "true negative", "false negative".</em> "Waar positief" verwys na wanneer die resultate van die toets en die werklike toestand van die toestand beide waar (of "positief") is, en "waar negatief" verwys na wanneer die resultate van die toets en die werklike toestand van die toestand beide vals (of "negatief") is; 'n "ware positief" of 'n "ware negatief" word as 'n "korrekte inferensie" beskou.
+   Die omgekeerde van 'n "vals positief" is 'n "vals negatief". Wanneer die resultate van die toets "negatief" is, maar verwag is om "positief" te wees (of moes gewees het), word die resultate "vals negatief" genoem.
+   In die konteks van phpMussel verwys hierdie terme tipies na of phpMussel 'n lêer korrek as veilig of skadelik identifiseer. Bv., 'n heeltemal onskadelike lêer wat as 'n bedreiging geïdentifiseer word sal 'n "vals positief" wees, en omgekeerd, 'n gevaarlike lêer (gevaarlik as gevolg van wanware, ransomware, besmetting deur 'n virus, ens) wat as veilig geïdentifiseer word sal 'n "vals negatief" wees. Wanneer 'n lêer geskandeer word, vorm phpMussel 'n oordeel gebaseer op die konfigurasie en beskikbare handtekeninglêers. Die implikasie van 'n "positief" vir die oplaaihanteerder is tipies dat die oplaai geblokkeer word.
+   | | Die lêer is eintlik veilig (die oplaai moet NIE geblokkeer word nie) | Die lêer is eintlik gevaarlik (die oplaai MOET geblokkeer word) |
+   | Die lêer word as veilig geïdentifiseer (die oplaai is NIE geblokkeer nie) | Ware negatief (korrekte inferensie) | Gemiste opsporing (of vals negatief) |
+   | Die lêer word as gevaarlik geïdentifiseer (die oplaai IS geblokkeer) | Vals positief | Ware positief (korrekte inferensie) |
+   As jy vals positiewe teëkom, kan jy hulle by phpMussel se probleemopsporingsprogram rapporteer.
+ Indexes:
+  [Vals negatief, Vals positief, Ware negatief, Ware positief]: "false_positive"
+ Refs:
+  Vals positief:
+   Vals positief en vals negatief - Wikipedia: "https://af.wikipedia.org/wiki/Vals_positief_en_vals_negatief"
+   Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
 checkbox:
  Delete orphaned values: "Vee onverbonde waardes uit."
 config:
@@ -296,6 +313,7 @@ link:
  Configuration: "Konfigurasie"
  Discussions: "Besprekings"
  Documentation: "Dokumentasie"
+ Glossary: "Woordelys"
  Home: "Tuis"
  Log Out: "Teken uit"
  Logs: "Logs"
@@ -377,6 +395,7 @@ tip:
  Accounts: "Jy kan vanaf die rekeninge-bladsy beheer wie toegang tot die phpMussel front-end het."
  Cache Data: "Hier kan jy die inhoud van die kas hersien."
  Configuration: "Die konfigurasiebladsy laat jou toe om die konfigurasie vir phpMussel vanaf die front-end te verander."
+ Glossary: "Die woordelys beskryf sommige van die terminologie wat deur phpMussel gebruik word, om die bedoelde betekenis in die konteks waar dit gebruik word te help verduidelik."
  Greeting: "Hallo, %s."
  Home: "Dit is die tuisblad vir phpMussel se front-end. Kies 'n skakel uit die navigasiekieslys aan die linkerkant om voort te gaan."
  Logs: "Kies 'n loglêer uit die lys hieronder om die inhoud van daardie loglêer te sien."

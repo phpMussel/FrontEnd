@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bosnian language data (last modified: 2026.03.21).
+# This file: Bosnian language data (last modified: 2026.05.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,6 +24,23 @@
 # requests, ask. I can help.
 ##/
 
+Glossary: !lazy
+ Entries:
+  Lažno pozitivan: |
+   Općenito, prilikom izvođenja testa, kada su rezultati testa "pozitivni" (tj., uslovi testa se ispostave tačnim), ali se očekivalo (ili je trebalo da budu) "negativni" (tj., rezultati testa su pogrešni), to se naziva "lažno pozitivnim". <em>Engleski: "false positive". Alternativno: "lažno pozitivna greška"; "lažni alarm".</em>
+   Neki povezani termini su "istinski pozitivan", "istinski negativan", i "lažno negativan". <em>Engleski: "true positive", "true negative", "false negative".</em> "Istinski pozitivan" se odnosi na situaciju kada su i rezultati testa i stvarno stanje uvjeta istiniti (ili "pozitivni"), a "istinski negativan" se odnosi na situaciju kada su i rezultati testa i stvarno stanje uvjeta lažni (ili "negativni"). "Istinski pozitivan" ili "istinski negativan" zaključak se smatra "tačnim zaključkom".
+   Inverz "lažno pozitivnog" je "lažno negativan". Kada su rezultati testa "negativni", ali se očekivalo da budu (ili je trebalo da budu) "pozitivni", takvi rezultati se nazivaju "lažno negativni".
+   U kontekstu phpMussel-a, ovi termini se obično odnose na to da li phpMussel ispravno identifikuje datoteku kao sigurnu ili štetnu. Npr., potpuno bezopasna datoteka koja se identificira kao prijetnja bila bi "lažno pozitivna", i obrnuto, opasna datoteka (opasna zbog zlonamjernog softvera, ransomwarea, zaraze virusom, itd) koja se identificira kao sigurna bila bi "lažno negativna". Prilikom skeniranja datoteke, phpMussel donosi odluku na osnovu njene konfiguracije i dostupnih datoteka potpisa. Implikacija "pozitivnog" za program za obradu otpremanja je obično blokiranje otpremanja.
+   | | Datoteka je zapravo sigurna (otpremanje NE trebalo bi biti blokirano) | Datoteka je zapravo opasna (otpremanje TREBALO BI biti blokirano) |
+   | Datoteka je identificirana kao sigurna (otpremanje NIJE blokirano) | Istinski negativan (tačnim zaključkom) | Propuštena detekcija (ili lažno negativan) |
+   | Datoteka je identificirana kao opasna (otpremanje JESTE blokirano) | Lažno pozitivan | Istinski pozitivan (tačnim zaključkom) |
+   Ako naiđete na lažno pozitivne, možete ga prijaviti na phpMussel-ovom sistemu za praćenje problema.
+ Indexes:
+  [Lažno negativan, Lažno pozitivan, Istinski negativan, Istinski pozitivan]: "false_positive"
+ Refs:
+  Lažno pozitivan:
+   Lažna pozitivnost i lažna negativnost - Wikipedia: "https://bs.wikipedia.org/wiki/La%C5%BEna_pozitivnost_i_la%C5%BEna_negativnost"
+   Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
 checkbox:
  Delete orphaned values: "Izbrišite izgubljene vrijednosti."
 config:
@@ -65,7 +82,7 @@ config:
  files_chameleon_to_img: "Potražite slike čija su zaglavlja netačna (Podržano: BMP, DIB, PNG, GIF, JPEG, JPG, XCF, PSD, PDD, WEBP). False/Lažno = Onemogućeno; True/Istinito = Omogućeno."
  files_chameleon_to_pdf: "Potražite PDF datoteke čija su zaglavlja netačna. False/Lažno = Onemogućeno; True/Istinito = Omogućeno."
  files_check_archives: "Pokušati provjeriti sadržaj arhive? False/Lažno = Ne provjeravajte; True/Istinito = Provjerite [Zadano]. Podržano: Zip (zahtijeva libzip), Tar, Rar (zahtijeva rar ekstenziju)."
- files_corrupted_exe: "Oštećeni datoteke i greške raščlanjivanje. False/Lažno = Zanemari; True/Istinito = Blokiraj [Zadano]. Otkriti i blokirati potencijalno oštećene PE (Portable Executable) datoteke? Često (ali ne uvijek), kada su određeni aspekti PE datoteke oštećeni ili se ne mogu pravilno raščlaniti, to može ukazivati ​​na virusnu infekciju. Ako je programer virusa svjestan kako antivirusni program analizira PE datoteke, može pokušati posebno to spriječiti, kako bi omogućio da njihov virus ostane neotkriven."
+ files_corrupted_exe: "Oštećeni datoteke i greške raščlanjivanje. False/Lažno = Zanemari; True/Istinito = Blokiraj [Zadano]. Otkriti i blokirati potencijalno oštećene PE (Portable Executable) datoteke? Često (ali ne uvijek), kada su određeni aspekti PE datoteke oštećeni ili se ne mogu pravilno raščlaniti, to može ukazivati na virusnu infekciju. Ako je programer virusa svjestan kako antivirusni program analizira PE datoteke, može pokušati posebno to spriječiti, kako bi omogućio da njihov virus ostane neotkriven."
  files_decode_threshold: "Maksimalna dužina neobrađenih podataka na kojoj treba detektovati komande za dekodiranje (u slučaju da postoje primetni problemi sa performansama tokom skeniranja). Zadano = 512KB. Nula uklanja svako takvo ograničenje na osnovu veličine datoteke."
  files_entropy_filesize_limit: "Ograničenje veličine datoteke entropije za potpise koji koriste normalizirane podatke (zadana vrijednost je 256KB). Kada se prekorači i granica entropije i ograničenje veličine datoteke entropije, kako bi se smanjio rizik od lažnih pozitivnih rezultata, neki potpisi koji koriste normalizirane podatke će biti zanemareni."
  files_entropy_limit: "Ograničenje entropije za potpise koji koriste normalizirane podatke (zadana vrijednost je 7.7). U ovom kontekstu, entropija je definirana kao šenonova entropija sadržaja datoteke koja se skenira. Kada se prekorači i ograničenje entropije i ograničenje veličine datoteke entropije, kako bi se smanjio rizik od lažnih pozitivnih rezultata, neki potpisi koji koriste normalizirane podatke će biti zanemareni."
@@ -296,6 +313,7 @@ link:
  Configuration: "Konfiguracija"
  Discussions: "Diskusije"
  Documentation: "Dokumentacija"
+ Glossary: "Glosar"
  Home: "Početna stranica"
  Log Out: "Odjavite se"
  Logs: "Dnevnici"
@@ -357,7 +375,7 @@ Signature information: !lazy
  key_META: "Potpisi koji rade s metapodacima datoteke (za razliku od podataka datoteke)."
  key_Other: "Neidentifikovani ili drugi."
  key_Other_Metadata: "Nema dostupnih metapodataka."
- key_Suspect: "Sumnja se, ali nije potvrđeno (može uključivati ​​kombinacije različitih identifikatora)."
+ key_Suspect: "Sumnja se, ali nije potvrđeno (može uključivati kombinacije različitih identifikatora)."
  key_Testfile: "Potpisi za probne datoteke (tj., ne otkrivanja zlonamjernih)."
  key_Total: "Ukupno aktivnih potpisa."
  key_VT: "Potpisi uključujući ili zasnovane na podacima iz Virus Total."
@@ -378,6 +396,7 @@ tip:
  Accounts: "Stranica računa vam omogućava da kontrolišete ko može da pristupi phpMussel front-endu."
  Cache Data: "Ovdje možete pregledati sadržaj keša."
  Configuration: "Stranica za konfiguraciju vam omogućava da modificirate konfiguraciju za phpMussel sa front-enda."
+ Glossary: "Glosar opisuje neke od termina koje koristi phpMussel, kako bi se razjasnilo namjeravano značenje u kontekstu gdje se koristi."
  Greeting: "Zdravo, %s."
  Home: "Ovo je početna stranica za phpMussel front-end. Odaberite vezu iz navigacijskog menija na lijevoj strani da nastavite."
  Logs: "Izaberite datoteku evidencije sa liste ispod da vidite sadržaj te datoteke evidencije."

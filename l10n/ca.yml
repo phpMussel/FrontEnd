@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Catalan language data (last modified: 2026.03.21).
+# This file: Catalan language data (last modified: 2026.05.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,6 +24,23 @@
 # requests, ask. I can help.
 ##/
 
+Glossary: !lazy
+ Entries:
+  Fals positiu: |
+   En general, quan es realitza una prova, quan els resultats de la prova són "positius" (és a dir, es considera que les condicions de la prova són certes), però s'esperava (o hauria d'haver estat) "negatius" (és a dir, els resultats de la prova són erronis), es parla d'un "fals positiu". <em>Anglès: "false positive". O alternativament: "error fals positiu"; "falsa alarma".</em>
+   Alguns termes relacionats són "veritable positiu", "veritable negatiu", i "fals negatiu". <em>Anglès: "true positive", "true negative", "false negative".</em> Un "veritable positiu" es refereix a quan els resultats de la prova i l'estat real de la condició són tots dos veritables (o "positius"), i un "veritable negatiu" es refereix a quan els resultats de la prova i l'estat real de la condició són tots dos falsos (o "negatius"). Un "veritable positiu" o un "veritable negatiu" es considera una "inferència correcta".
+   L'invers d'un "fals positiu" és un "fals negatiu". Quan els resultats de la prova són "negatius", però s'esperava (o haurien d'haver estat) "positius", els resultats es denominen "falsos negatius".
+   En el context de phpMussel, aquests termes normalment es refereixen a si phpMussel identifica correctament un fitxer com a segur o perjudicial. Per exemple, un fitxer completament inofensiu que s'identifiqui com una amenaça seria un "fals positiu", i a l'inrevés, un fitxer perillós (perillós a causa de programari maliciós, ransomware, infectat per un virus, etc) que s'identifiqui com a segur seria un "fals negatiu". Quan escaneja un fitxer, phpMussel jutja basant-se en la seva configuració i els fitxers de signatura disponibles. La implicació d'un "positiu" per al gestor de càrrega sol ser que la càrrega estigui bloquejada.
+   | | El fitxer és realment segur (la càrrega NO s'hauria de bloquejar) | El fitxer és realment perillós (la càrrega S'HAURIA de bloquejar) |
+   | El fitxer s'ha identificat com a segur (la càrrega NO està bloquejada) | Veritable negatiu (inferència correcta) | Detecció perduda (o fals negatiu) |
+   | El fitxer s'ha identificat com a perillós (la càrrega ESTÀ bloquejada) | Fals positiu | Veritable positiu (inferència correcta) |
+   Si trobeu falsos positius, podeu informar-ne al rastrejador d'incidències de phpMussel.
+ Indexes:
+  [Fals negatiu, Fals positiu, Veritable negatiu, Veritable positiu]: "false_positive"
+ Refs:
+  Fals positiu:
+   "Falsos positius i falsos negatius - Viquipèdia, l'enciclopèdia lliure": "https://ca.wikipedia.org/wiki/Falsos_positius_i_falsos_negatius"
+   Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
 checkbox:
  Delete orphaned values: "Suprimeix els valors orfes."
 config:
@@ -296,6 +313,7 @@ link:
  Configuration: "Configuració"
  Discussions: "Debats"
  Documentation: "Documentació"
+ Glossary: "Glossari"
  Home: "Pàgina d'inici"
  Log Out: "Tancar sessió"
  Logs: "Registres"
@@ -377,6 +395,7 @@ tip:
  Accounts: "La pàgina de comptes us permet controlar qui pot accedir al front-end de phpMussel."
  Cache Data: "Aquí podeu revisar el contingut de la memòria cau."
  Configuration: "La pàgina de configuració us permet modificar la configuració de phpMussel des del front-end."
+ Glossary: "El glossari descriu part de la terminologia utilitzada per phpMussel, per ajudar a aclarir el significat previst en el context on s'utilitza."
  Greeting: "Hola, %s."
  Home: "Aquesta és la pàgina d'inici del front-end de phpMussel. Seleccioneu un enllaç al menú de navegació de l'esquerra per continuar."
  Logs: "Seleccioneu un fitxer de registre de la llista següent per veure el contingut d'aquest fitxer de registre."

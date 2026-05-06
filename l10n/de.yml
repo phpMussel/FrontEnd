@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data (last modified: 2026.03.21).
+# This file: German language data (last modified: 2026.05.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,6 +24,23 @@
 # requests, ask. I can help.
 ##/
 
+Glossary: !lazy
+ Entries:
+  Falsch-Positiv: |
+   Wenn ein Test durchgeführt wird, wenn das Testergebnis „positiv“ ist, obwohl „negativ“ erwartet wurde (oder hätte sein sollen), spricht man von einem „Falsch-Positiv“. <em>Englisch: „false positive“. Or alternatively: „false positive error“; „false alarm“.</em>
+   Verwandte Begriffe sind „Richtig-Positiv“, „Richtig-Negativ“, und „Falsch-Negativ“. <em>Englisch: „true positive“, „true negative“, „false negative“.</em> Wenn sowohl das tatsächliche als auch das erwartete Testergebnis „positiv“ sind, spricht man von einem „Richtig-Positiv“. Wenn sowohl das tatsächliche als auch das erwartete Testergebnis „negativ“ sind, spricht man von einem „Richtig-Negativ“. Ein „Richtig-Positiv“ oder ein „Richtig-Negativ“ wird als „korrekte Schlussfolgerung“ betrachtet.
+   Das Gegenteil eines „Falsch-Positiv“ ist ein „Falsch-Negativ“. Wenn das Testergebnis „negativ“ ist, obwohl „positiv“ erwartet wurde (oder hätte sein sollen), spricht man von einem „Falsch-Negativ“.
+   Im Kontext von phpMussel beziehen sich diese Begriffe typischerweise darauf, ob phpMussel eine Datei korrekt als sicher oder schädlich einstuft. Eine völlig harmlose Datei, die fälschlicherweise als Bedrohung identifiziert wird, ist ein „Falsch-Positiv“. Umgekehrt wird eine gefährliche Datei (z.B., aufgrund von Malware, Ransomware, Virusinfektion, u.s.w.), die fälschlicherweise als sicher eingestuft wird, ist ein „Falsch-Negativ“. Beim Scannen einer Datei trifft phpMussel eine Entscheidung auf Grundlage seiner Konfiguration und der verfügbaren Signaturdateien. Die Folgen eines „positiven“ Ergebnisses für den Upload-Handler ist typischerweise dass der Upload blockiert wird.
+   | | Die Datei ist sicher (der Upload sollte NICHT blockiert werden) | Die Datei ist gefährlich (der Upload SOLLTE blockiert werden) |
+   | Die Datei wurde als sicher eingestuft (der Upload wird NICHT blockiert) | Richtig-Negativ (korrekte Schlussfolgerung) | Verpasste Erkennung (oder Falsch-Negativ) |
+   | Die Datei wurde als gefährlich eingestuft (der Upload WIRD blockiert) | Falsch-Positiv | Richtig-Positiv (korrekte Schlussfolgerung) |
+   Sollten Sie auf Falscher-Positiver stoßen, können Sie es im Issue-Tracker von phpMussel melden.
+ Indexes:
+  [Falsch-Negativ, Falsch-Positiv, Richtig-Negativ, Richtig-Positiv]: "false_positive"
+ Refs:
+  Falsch-Positiv:
+   falsch-positiv – Wiktionary: "https://de.wiktionary.org/wiki/falsch-positiv"
+   Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
 checkbox:
  Delete orphaned values: "Löschen verwaiste Werte."
 config:
@@ -296,6 +313,7 @@ link:
  Configuration: "Konfiguration"
  Discussions: "Diskussionen"
  Documentation: "Dokumentation"
+ Glossary: "Glossar"
  Home: "Startseite"
  Log Out: "Ausloggen"
  Logs: "Protokolldateien"
@@ -377,6 +395,7 @@ tip:
  Accounts: "Das Kontenseite macht es möglich zu kontrollieren, wer kann Zugriff auf der phpMussel Frontend haben."
  Cache Data: "Hier können Sie den Inhalt des Cache überprüfen."
  Configuration: "Das Konfigurationsseite macht es möglich zu ändern das Konfiguration für phpMussel von der Frontend."
+ Glossary: "Das Glossar beschreibt einige der von phpMussel verwendeten Begriffe, um die beabsichtigte Bedeutung im jeweiligen Kontext zu verdeutlichen."
  Greeting: "Hallo, %s."
  Home: "Dies ist die Homepage der phpMussel Frontend. Wählen Sie einen Link aus dem Navigationsmenü auf der linken um fortzufahren."
  Logs: "Wählen Sie eine Protokolldatei aus der folgenden Liste um den Inhalt dieser Protokolldatei anzuzeigen."

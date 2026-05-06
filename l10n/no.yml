@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2026.03.21).
+# This file: Norwegian language data (last modified: 2026.05.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,6 +24,22 @@
 # requests, ask. I can help.
 ##/
 
+Glossary: !lazy
+ Entries:
+  Falsk positiv: |
+   Generelt sett, når en test utføres og resultatene av testen er «positive» (dvs., at testens betingelser er sanne), men forventet å være (eller burde ha vært) «negative» (dvs., at testens resultater er feilaktige), blir det referert til som en «falsk positiv». <em>Engelsk: «false positive». Eller alternativt: «falsk positiv feil»; «falsk alarm».</em>
+   Noen relaterte begreper er «sann positiv», «sann negativ», og «falsk negativ». <em>Engelsk: «true positive», «true negative», «false negative».</em> En «sann positiv» refererer til når både testens resultater og den faktiske tilstanden er sanne (eller «positive»), og en «sann negativ» refererer til når både testens resultater og den faktiske tilstanden er falske (eller «negative»). En «sann positiv» eller en «sann negativ» anses å være en «korrekt slutning».
+   Det motsatte av en «falsk positiv» er en «falsk negativ». Når resultatene av testen er «negative», men forventet å være (eller burde ha vært) «positive», blir det referert til som en «falskt negative».
+   I sammenheng med phpMussel refererer disse begrepene vanligvis til hvorvidt phpMussel korrekt identifiserer en fil som trygg eller skadelig. For eksempel, en helt ufarlig fil som identifiseres som en trussel være en «falsk positiv», og omvendt, en farlig fil (farlig på grunn av skadelig programvare, ransomware, virusinfeksjon, osv) som identifiseres som trygg være en «falsk negativ». Når en fil skannes, danner phpMussel en vurdering basert på konfigurasjonen og tilgjengelige signaturfiler. Implikasjonen av en «positiv» verdi for opplastingsbehandleren er vanligvis at opplastingen blokkeres.
+   | | Filen er faktisk trygg (opplastingen bør IKKE blokkeres) | Filen er faktisk farlig (opplastingen BØR blokkeres) |
+   | Filen er identifisert som trygg (opplastingen er IKKE blokkert) | Sann negativ (korrekt slutning) | Misset deteksjon (eller falsk negativ) |
+   | Filen er identifisert som farlig (opplastingen ER blokkert) | Falsk positiv | Sann positiv (korrekt slutning) |
+   Hvis du støter på falske positiver, du kan rapportere dem på phpMussels problemsporing.
+ Indexes:
+  [Falsk negative, Falsk positiv, Sann negativ, Sann positiv]: "false_positive"
+ Refs:
+  Falsk positiv:
+   Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
 checkbox:
  Delete orphaned values: "Slett foreldreløse verdier."
 config:
@@ -296,6 +312,7 @@ link:
  Configuration: "Konfigurasjon"
  Discussions: "Diskusjoner"
  Documentation: "Dokumentasjon"
+ Glossary: "Ordliste"
  Home: "Hjem"
  Log Out: "Logg ut"
  Logs: "Logger"
@@ -377,6 +394,7 @@ tip:
  Accounts: "Du kan kontrollere hvem som kan få tilgang til phpMussel-frontenden ved hjelp av kontosiden."
  Cache Data: "Her kan du se innholdet i cachen."
  Configuration: "Konfigurasjonssiden lar deg endre konfigurasjonen for phpMussel fra frontenden."
+ Glossary: "Ordlisten beskriver noe av terminologien som brukes av phpMussel, for å bidra til å tydeliggjøre den tiltenkte betydningen i konteksten der den brukes."
  Greeting: "Hallo, %s."
  Home: "Dette er hjemmesiden for frontenden av phpMussel. Velg en lenke fra navigasjonsmenyen til venstre for å fortsette."
  Logs: "Velg en loggfil fra listen nedenfor for å se innholdet i den loggfilen."

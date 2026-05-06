@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2026.03.21).
+# This file: French language data (last modified: 2026.05.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,8 +24,35 @@
 # requests, ask. I can help.
 ##/
 
+Glossary: !lazy
+ Entries:
+  Faux positif:
+   fr-FR: |
+    En général, lors d'un test, lorsque les résultats sont « positifs » (c'est-à-dire que les conditions du test sont vérifiées), mais qu'ils étaient attendus (ou auraient dû être) « négatifs » (c'est-à-dire que les résultats du test sont erronés), on parle de « faux positif ». <em>Anglais : « false positive ». Ou encore : « erreur de faux positif » ; « fausse alarme ».</em>
+    Les termes « vrai positif », « vrai négatif », et « faux négatif » sont liés. <em>Anglais : « true positive », « true negative », « false negative ».</em> Un « vrai positif » désigne une situation où les résultats du test et l'état réel sont tous deux vrais (ou « positifs »), et un « vrai négatif » désigne une situation où les résultats du test et l'état réel sont tous deux faux (ou « négatifs »). Un « vrai positif » ou un « vrai négatif » est considéré comme une « inférence correcte ».
+    L'inverse d'un « faux positif » est un « faux négatif ». Lorsque les résultats du test sont « négatifs », alors qu'ils étaient attendus (ou auraient dû être) « positifs », on parle de « faux négatif ».
+    Dans le contexte de phpMussel, ces termes font généralement référence à la capacité de phpMussel à identifier correctement un fichier comme étant sûr ou dangereux. Par exemple, un fichier totalement inoffensif identifié comme une menace constituerait un « faux positif », et inversement, un fichier dangereux (dangereux en raison d'un logiciel malveillant, d'un rançongiciel, d'une infection par un virus, etc) identifié comme sûr constituerait un « faux négatif ». Lors de l'analyse d'un fichier, phpMussel établit un jugement en fonction de sa configuration et des fichiers de signature disponibles. Pour le gestionnaire de téléchargement, un résultat « positif » signifie généralement que le téléchargement est bloqué.
+    | | Le fichier est sûr (le téléchargement ne devrait PAS être bloqué) | Le fichier est dangereux (le téléchargement DEVRAIT être bloqué) |
+    | Le fichier est identifié comme sûr (le téléchargement n'est PAS bloqué) | Vrai négatif (inférence correcte) | Détection manquée (ou faux négatif) |
+    | Le fichier est identifié comme dangereux (le téléchargement EST bloqué) | Faux positif | Vrai positif (inférence correcte) |
+    Si vous rencontrez des faux positifs, vous pouvez le signaler sur le système de suivi des problèmes de phpMussel.
+   fr-CA: |
+    En général, lors d'un test, lorsque les résultats sont « positifs » (c'est-à-dire que les conditions du test sont vérifiées), mais qu'ils étaient attendus (ou auraient dû être) « négatifs » (c'est-à-dire que les résultats du test sont erronés), on parle de « faux positif ». <em>Anglais : « false positive ». Ou encore : « erreur de faux positif » ; « fausse alarme ».</em>
+    Les termes « vrai positif », « vrai négatif », et « faux négatif » sont liés. <em>Anglais : « true positive », « true negative », « false negative ».</em> Un « vrai positif » désigne une situation où les résultats du test et l'état réel sont tous deux vrais (ou « positifs »), et un « vrai négatif » désigne une situation où les résultats du test et l'état réel sont tous deux faux (ou « négatifs »). Un « vrai positif » ou un « vrai négatif » est considéré comme une « inférence correcte ».
+    L'inverse d'un « faux positif » est un « faux négatif ». Lorsque les résultats du test sont « négatifs », alors qu'ils étaient attendus (ou auraient dû être) « positifs », on parle de « faux négatif ».
+    Dans le contexte de phpMussel, ces termes font généralement référence à la capacité de phpMussel à identifier correctement un fichier comme étant sûr ou dangereux. Par exemple, un fichier totalement inoffensif identifié comme une menace constituerait un « faux positif », et inversement, un fichier dangereux (dangereux en raison d'un logiciel malveillant, d'un rançongiciel, d'une infection par un virus, etc) identifié comme sûr constituerait un « faux négatif ». Lors de l'analyse d'un fichier, phpMussel établit un jugement en fonction de sa configuration et des fichiers de signature disponibles. Pour le gestionnaire de téléversement, un résultat « positif » signifie généralement que le téléversement est bloqué.
+    | | Le fichier est sûr (le téléversement ne devrait PAS être bloqué) | Le fichier est dangereux (le téléversement DEVRAIT être bloqué) |
+    | Le fichier est identifié comme sûr (le téléversement n'est PAS bloqué) | Vrai négatif (inférence correcte) | Détection manquée (ou faux négatif) |
+    | Le fichier est identifié comme dangereux (le téléversement EST bloqué) | Faux positif | Vrai positif (inférence correcte) |
+    Si vous rencontrez des faux positifs, vous pouvez le signaler sur le système de suivi des problèmes de phpMussel.
+ Indexes:
+  [Faux négatif, Faux positif, Vrai négatif, Vrai positif]: "false_positive"
+ Refs:
+  Faux positif:
+   faux positif — Wiktionnaire, le dictionnaire libre: "https://fr.wiktionary.org/wiki/faux_positif"
+   Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
 checkbox:
- Delete orphaned values: "Supprimer les valeurs orphelines."
+ Delete orphaned values: "Supprimez les valeurs orphelines."
 config:
  core: "Configuration générale (toute configuration de base n'appartenant pas à d'autres catégories)."
  core_default_timeout: "Délai d'attente par défaut à utiliser pour les requêtes externes\_? Défaut = 12 secondes."
@@ -152,13 +179,13 @@ confirm:
  Action: "Êtes-vous sûr de vouloir «\_%s\_»\_?"
 field:
  2FA code: "Code 2FA"
- Clear all: "Annuler tout"
+ Clear all: "Annulez tout"
  Confirm: "Confirmer"
- Create new account: "Créer un nouveau compte"
- Delete account: "Supprimer le compte"
- Delete all: "Supprimer tout"
+ Create new account: "Créez un nouveau compte"
+ Delete account: "Supprimez ce compte"
+ Delete all: "Supprime tout"
  Delete: "Supprimer"
- Download: "Télécharger"
+ Download: {"fr-FR": "Téléchargez", "fr-CA": "Téléversez"}
  False (False): "False (Faux)"
  File: "Fichier"
  Latest version: "Dernière version"
@@ -310,6 +337,7 @@ link:
  Configuration: "Configuration"
  Discussions: "Discussions"
  Documentation: "Documentation"
+ Glossary: "Glossaire"
  Home: "Page d'accueil"
  Log Out: "Déconnecter"
  Logs: "Fichiers journaux"
@@ -399,6 +427,7 @@ tip:
  Accounts: "La page des comptes vous permet de contrôler qui peut accéder l'accès frontal de phpMussel."
  Cache Data: "Ici vous pouvez revoir le contenu du cache."
  Configuration: "La page de configuration vous permet de modifier la configuration pour phpMussel à l'accès frontal."
+ Glossary: "Le glossaire décrit certains termes utilisés par le phpMussel, afin de clarifier le sens voulu dans le contexte où ils sont utilisés."
  Greeting: {"fr-FR": "Bonjour, %s.", "fr-CA": "Salut, %s."}
  Home: "C'est la page d'accueil de l'accès frontal de phpMussel. Sélectionnez un lien dans le menu de navigation à gauche pour continuer."
  Logs: "Sélectionnez un fichier journal dans la liste ci-dessous pour afficher le contenu de ce fichier journal."

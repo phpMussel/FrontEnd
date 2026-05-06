@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2026.03.21).
+# This file: Latvian language data (last modified: 2026.05.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,6 +24,22 @@
 # requests, ask. I can help.
 ##/
 
+Glossary: !lazy
+ Entries:
+  Viltus pozitīvs: |
+   Veicot testu, ja testa rezultāti ir "pozitīvi" (t.i., testa nosacījumi ir atzīti par patiesiem), bet bija paredzams, ka tie būs "negatīvi" (t.i., testa rezultāti ir kļūdaini), tas ir "viltus pozitīvs". <em>Angļu valodā: "false positive". Vai arī: "viltus pozitīva kļūda"; "viltus trauksme".</em>
+   Daži saistīti termini ir "patiesi pozitīvs", "patiesi negatīvs", un "viltus negatīvs". <em>Angļu valodā: "true positive", "true negative", "false negative".</em> "Patiesi pozitīvs" ir tad, kad gan testa rezultāti, gan faktiskais nosacījuma stāvoklis ir patiesi (jeb "pozitīvs"), un "patiesi negatīvs" ir tad, kad gan testa rezultāti, gan faktiskais nosacījuma stāvoklis ir aplami (jeb "negatīvi"). "Patiesi pozitīvs" vai "patiesi negatīvs" tiek uzskatīts par "pareizu secinājumu".
+   "Viltus pozitīvs" apgrieztais ir "viltus negatīvs". Ja testa rezultāti ir "negatīvi", bet bija gaidāmi "pozitīvi", tas ir "viltus negatīvs".
+   phpMussel kontekstā šie termini parasti attiecas uz to, vai phpMussel pareizi identificē failu kā drošu vai kaitīgu. Piemēram, pilnīgi nekaitīga faila identificēšana kā apdraudējums būtu "viltus pozitīvs", un otrādi, bīstama faila (bīstama ļaunprogrammatūras, izspiedējvīrusa, vīrusa, utt. dēļ) identificēšana kā droša būtu "viltus negatīvs". Skenējot failu, phpMussel pieņem lēmumu, pamatojoties uz tā konfigurāciju un pieejamajiem paraksta failiem. "Pozitīva" ietekme uz augšupielādes apstrādātāju parasti nozīmē, ka augšupielāde tiek bloķēta.
+   | | Fails faktiski ir drošs (augšupielādei NEVAJADZĒTU bloķētai) | Fails faktiski ir bīstams (augšupielādei VAJADZĒTU būt bloķētai) |
+   | Fails ir identificēts kā drošs (augšupielāde NAV bloķēta) | Patiesi negatīvs (pareizu secinājumu) | Nepamanīta noteikšana (vai viltus negatīvs) |
+   | Fails ir identificēts kā bīstams (augšupielāde IR bloķēta) | Viltus pozitīvs | Patiesi pozitīvs (pareizu secinājumu) |
+   Ja rodas kļūdaini pozitīvi rezultāti, varat ziņot par to phpMussel problēmu izsekotājā.
+ Indexes:
+  [Viltus negatīvs, Viltus pozitīvs, Patiesi negatīvs, Patiesi pozitīvs]: "false_positive"
+ Refs:
+  Viltus pozitīvs:
+   Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
 checkbox:
  Delete orphaned values: "Dzēst bezsaimnieka vērtības."
 config:
@@ -296,6 +312,7 @@ link:
  Configuration: "Konfigurācija"
  Discussions: "Diskusijas"
  Documentation: "Dokumentācija"
+ Glossary: "Glosārijs"
  Home: "Mājas"
  Log Out: "Izlogoties"
  Logs: "Logfaili"
@@ -377,6 +394,7 @@ tip:
  Accounts: "Kontu lapa ļauj jums kontrolēt, kurš var ielogoties phpMussel."
  Cache Data: "Šeit jūs varat pārskatīt kešatmiņas saturu."
  Configuration: "Konfigurācijas lapa ļauj mainīt phpMussel konfigurāciju."
+ Glossary: "Glosārijā ir aprakstīta daļa phpMussel izmantotās terminoloģijas, lai palīdzētu precizēt paredzēto nozīmi attiecīgajā kontekstā."
  Greeting: "Sveiki, %s."
  Home: "Šī ir jūsu phpMussel instalācijas mājas lapa. Lai turpinātu, navigācijas izvēlnē kreisajā pusē atlasiet saiti."
  Logs: "Zemāk redzamajā sarakstā atlasiet logfailu, lai skatītu šī faila saturu."

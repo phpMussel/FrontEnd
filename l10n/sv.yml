@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2026.03.21).
+# This file: Swedish language data (last modified: 2026.05.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,6 +24,22 @@
 # requests, ask. I can help.
 ##/
 
+Glossary: !lazy
+ Entries:
+  Falskt positiv: |
+   I allmänhet, när ett test utförs och testresultaten är "positiva" (dvs., testförhållandena visar sig vara sanna), men förväntades vara (eller borde ha varit) "negativa" (dvs., testresultaten är felaktiga), det kallas ett "falskt positivt". <em>Engelska: "false positive". Eller alternativt: "falskt positivt fel"; "falskt alarm".</em>
+   Några relaterade termer är "sant positiv", "sant negativ", och "falskt negativ". <em>Engelska: "true positive", "true negative", "false negative".</em> Ett "sant positivt" avser när både testresultaten och det faktiska tillståndet är sanna (eller "positiva"), och ett "sant negativt" avser när både testresultaten och det faktiska tillståndet är falska (eller "negativa"). En "sant positiv" eller en "sant negativ" anses vara en "korrekt slutsats".
+   Motsatsen till ett "falskt positivt" är ett "falskt negativt". När testresultaten är "negativa", men förväntades vara (eller borde ha varit) "positiva", det kallas ett "falskt negativt".
+   I samband med phpMussel syftar dessa termer vanligtvis till huruvida phpMussel korrekt identifierar en fil som säker eller skadlig. T.ex., en helt ofarlig fil som identifieras som ett hot skulle vara ett "falskt positivt", och omvänt, en farlig fil (farlig på grund av skadlig kod, ransomware, infekterad av ett virus, osv) som identifieras som säker skulle vara ett "falskt negativt". När en fil skannar gör phpMussel en bedömning baserat på dess konfiguration och tillgängliga signaturfiler. Implikationen av ett "positivt" värde för uppladdningshanteraren är vanligtvis att uppladdningen blockeras.
+   | | Filen är faktiskt säker (uppladdningen bör INTE blockeras) | Filen är faktiskt farlig (uppladdningen BÖR blockeras) |
+   | Filen är identifierad som säker (uppladdningen är INTE blockerad) | Sant negativ (korrekt slutsats) | Missad upptäckt (eller falskt negativ) |
+   | Filen är identifierad som farlig (uppladdningen ÄR blockerad) | Falskt positiv | Sant positiv (korrekt slutsats) |
+   Om du stöter på falska positiva, du kan rapportera dem via phpMussels problemspårare.
+ Indexes:
+  [Falskt negativ, Falskt positiv, Sant negativ, Sant positiv]: "false_positive"
+ Refs:
+  Falskt positiv:
+   Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
 checkbox:
  Delete orphaned values: "Ta bort föräldralösa värden."
 config:
@@ -296,6 +312,7 @@ link:
  Configuration: "Konfiguration"
  Discussions: "Diskussioner"
  Documentation: "Dokumentation"
+ Glossary: "Ordlista"
  Home: "Hem"
  Log Out: "Logga ut"
  Logs: "Loggfiler"
@@ -330,8 +347,8 @@ response:
  Failed to update configuration: "Det gick inte att uppdatera konfigurationen!"
  Failed to update: "Misslyckades med att uppdatera!"
  Failed: "Misslyckades"
- File successfully deleted: "Fil har raderats framgångsrikt!"
- File successfully restored: "Fil har restaurerats framgångsrikt!"
+ File successfully deleted: "Filen har raderats framgångsrikt!"
+ File successfully restored: "Filen har restaurerats framgångsrikt!"
  Incorrect 2FA code entered: "Felaktig 2FA-kod inmatad. Autentisering misslyckades."
  Incorrect quarantine key: "Felaktig karantännyckel!"
  Invalid password: "Inloggningsfel! Felaktigt lösenord!"
@@ -377,6 +394,7 @@ tip:
  Accounts: "Du kan styra vem som har tillgång till phpMussel front-end på kontosidan."
  Cache Data: "Här kan du granska innehållet i cacheminnet."
  Configuration: "Du kan ändra konfigurationen för phpMussel från front-enden konfigurationssida."
+ Glossary: "Ordlistan beskriver en del av den terminologi som används av phpMussel, för att förtydliga den avsedda betydelsen i det sammanhang där den används."
  Greeting: "Hallå, %s."
  Home: "Detta är hemsidan för phpMussel front-end. Välj en länk från navigeringsmenyn till vänster för att fortsätta."
  Logs: "Välj en loggfil från listan nedan för att se innehållet i den loggfilen."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2026.03.21).
+# This file: Italian language data (last modified: 2026.05.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,6 +24,23 @@
 # requests, ask. I can help.
 ##/
 
+Glossary: !lazy
+ Entries:
+  Falso positivo: |
+   In generale, quando si esegue un test e i risultati sono "positivi" (ovvero, le condizioni del test risultano vere), ma ci si aspettava che fossero (o avrebbero dovuto essere) "negativi" (ovvero, i risultati del test sono errati), si parla di "falso positivo". <em>Inglese: "false positive". Oppure, in alternativa: "errore falso positivo"; "falso allarme".</em>
+   Alcuni termini correlati sono "vero positivo", "vero negativo", e "falso negativo". <em>Inglese: "true positive", "true negative", "false negative".</em> Un "vero positivo" si verifica quando i risultati del test e lo stato effettivo della condizione sono entrambi veri (o "positivi"), mentre un "vero negativo" si verifica quando i risultati del test e lo stato effettivo della condizione sono entrambi falsi (o "negativi"). Un "vero positivo" o un "vero negativo" è considerato un'"inferenza corretta".
+   L'opposto di un "falso positivo" è un "falso negativo". Quando i risultati del test sono "negativi", ma ci si aspettava che fossero (o avrebbero dovuto essere) "positivi", si parla di "falso negativo".
+   Nel contesto di phpMussel, questi termini si riferiscono in genere alla capacità di phpMussel di identificare correttamente un file come sicuro o dannoso. Ad esempio, un file completamente innocuo identificato come una minaccia sarebbe un "falso positivo", e viceversa, un file pericoloso (pericoloso a causa di malware, ransomware, infezione da virus, ecc) identificato come sicuro sarebbe un "falso negativo". Durante la scansione di un file, phpMussel formula un giudizio basandosi sulla sua configurazione e sui file di firma disponibili. Un risultato "positivo" per il gestore del caricamento implica in genere il blocco del caricamento.
+   | | Il file è effettivamente sicuro (il caricamento NON dovrebbe essere bloccato) | Il file è effettivamente pericoloso (il caricamento DOVREBBE essere bloccato) |
+   | Il file è stato identificato come sicuro (il caricamento NON è bloccato) | Vero negativo (inferenza corretta) | Mancata rilevazione (o falso negativo) |
+   | Il file è stato identificato come pericoloso (il caricamento È bloccato) | Falso positivo | Vero positivo (inferenza corretta) |
+   Se riscontri falsi positivi, è possibile segnalarlo tramite il sistema di segnalazione dei problemi di phpMussel.
+ Indexes:
+  [Falso negativo, Falso positivo, Vero negativo, Vero positivo]: "false_positive"
+ Refs:
+  Falso positivo:
+   Falso positivo e falso negativo - Wikipedia: "https://it.wikipedia.org/wiki/Falso_positivo_e_falso_negativo"
+   Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
 checkbox:
  Delete orphaned values: "Elimina i valori orfani."
 config:
@@ -296,6 +313,7 @@ link:
  Configuration: "Configurazione"
  Discussions: "Discussioni"
  Documentation: "Documentazione"
+ Glossary: "Glossario"
  Home: "Pagina principale"
  Log Out: "Disconnettersi"
  Logs: "File di log"
@@ -375,6 +393,7 @@ tip:
  Accounts: "La pagina di conti permette di controllare chi può accedere il front-end di phpMussel."
  Cache Data: "Qui puoi rivedere il contenuto della cache."
  Configuration: "La pagina di configurazione permette di modificare la configurazione per phpMussel dal front-end."
+ Glossary: "Il glossario descrive parte della terminologia utilizzata da phpMussel, al fine di chiarire il significato previsto nel contesto in cui viene utilizzata."
  Greeting: "Salve, %s."
  Home: "Questa è la pagina principale per il front-end di phpMussel. Selezionare un collegamento dal menu di navigazione a sinistra per continuare."
  Logs: "Selezionare un file di log dall'elenco sottostante per visualizzare il contenuto di tale file di log."
