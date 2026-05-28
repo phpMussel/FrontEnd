@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2026.03.18).
+ * This file: Front-end handler (last modified: 2026.05.28).
  */
 
 namespace phpMussel\FrontEnd;
@@ -29,6 +29,26 @@ class FrontEnd
      * @var array The path for front-end pages.
      */
     public $PagesPath = '';
+
+    /**
+     * @var int Minimum salt length for generateSalt().
+     */
+    public const GENERATE_SALT_MIN_LEN = 32;
+
+    /**
+     * @var int Maximum salt length for generateSalt().
+     */
+    public const GENERATE_SALT_MAX_LEN = 72;
+
+    /**
+     * @var int Earliest permitted byte for generateSalt().
+     */
+    public const GENERATE_SALT_MIN_CHR = 1;
+
+    /**
+     * @var int Latest permitted byte for generateSalt().
+     */
+    public const GENERATE_SALT_MAX_CHR = 255;
 
     /**
      * @var \phpMussel\Core\Loader The instantiated loader object.
@@ -55,26 +75,6 @@ class FrontEnd
      * @var string The path to the front-end L10N files.
      */
     private $L10NPath = __DIR__ . \DIRECTORY_SEPARATOR . '..' . \DIRECTORY_SEPARATOR . 'l10n' . \DIRECTORY_SEPARATOR;
-
-    /**
-     * @var int Minimum length for generateSalt.
-     */
-    private $SaltMinLen = 32;
-
-    /**
-     * @var int Maximum length for generateSalt.
-     */
-    private $SaltMaxLen = 72;
-
-    /**
-     * @var int Minimum characters to use for generateSalt.
-     */
-    private $SaltMinChar = 1;
-
-    /**
-     * @var int Maximum characters to use for generateSalt.
-     */
-    private $SaltMaxChar = 255;
 
     /**
      * @var int Minimum integer to use for twoFactorNumber.
@@ -233,7 +233,7 @@ class FrontEnd
             ($Failed2FA = (int)$this->Loader->Cache->getEntry('Failed2FA' . $this->Loader->IPAddr)) &&
             ($Failed2FA >= $this->Loader->Configuration['frontend']['max_login_attempts'])
         )) {
-            header('Content-Type: text/plain');
+            \header('Content-Type: text/plain');
             echo '[phpMussel] ' . $this->Loader->L10N->getString('response.Maximum number of login attempts exceeded');
             return;
         }
@@ -415,15 +415,15 @@ class FrontEnd
             $FavIconData = $this->Loader->getFavicon();
             $OldETag = $_SERVER['HTTP_IF_NONE_MATCH'] ?? '';
             $NewETag = \hash('sha256', $FavIconData) . '-' . \strlen($FavIconData);
-            header('ETag: "' . $NewETag . '"');
-            header('Expires: ' . \gmdate('D, d M Y H:i:s T', $this->Loader->Time + 2592000));
+            \header('ETag: "' . $NewETag . '"');
+            \header('Expires: ' . \gmdate('D, d M Y H:i:s T', $this->Loader->Time + 2592000));
             if (\preg_match('~(?:^|, )(?:"' . $NewETag . '"|' . $NewETag . ')(?:$|, )~', $OldETag)) {
-                header('HTTP/1.0 304 Not Modified');
-                header('HTTP/1.1 304 Not Modified');
-                header('Status: 304 Not Modified');
+                \header('HTTP/1.0 304 Not Modified');
+                \header('HTTP/1.1 304 Not Modified');
+                \header('Status: 304 Not Modified');
                 die;
             }
-            header('Content-Type: image/png');
+            \header('Content-Type: image/png');
             echo $FavIconData;
             die;
         }
@@ -454,7 +454,7 @@ class FrontEnd
                             $TryUser = $_POST['username'];
                             $SessionKey = \hash('sha256', $this->generateSalt());
                             $Cookie = $_POST['username'] . $SessionKey;
-                            setcookie('PHPMUSSEL-ADMIN', $Cookie, $this->Loader->Time + $this->SessionTTL, '/', $this->HostnameOverride ?: $this->Host, false, true);
+                            \setcookie('PHPMUSSEL-ADMIN', $Cookie, $this->Loader->Time + $this->SessionTTL, '/', $this->HostnameOverride ?: $this->Host, false, true);
                             $this->ThisSession = $TryUser . ',' . \password_hash($SessionKey, $this->DefaultAlgo);
 
                             /** Prepare 2FA email. */
@@ -575,9 +575,9 @@ class FrontEnd
 
         /** The user is attempting an asynchronous request without adequate permissions. */
         if ($FE['ASYNC'] && $this->Permissions !== 1) {
-            header('HTTP/1.0 403 Forbidden');
-            header('HTTP/1.1 403 Forbidden');
-            header('Status: 403 Forbidden');
+            \header('HTTP/1.0 403 Forbidden');
+            \header('HTTP/1.1 403 Forbidden');
+            \header('Status: 403 Forbidden');
             echo $this->Loader->L10N->getString('response.Permissions not adequate to perform asynchronous requests');
             return;
         }
@@ -591,7 +591,7 @@ class FrontEnd
                 $this->ThisSession = '';
                 $this->User = '';
                 $this->Permissions = 0;
-                setcookie('PHPMUSSEL-ADMIN', '', -1, '/', $this->HostnameOverride ?: $this->Host, false, true);
+                \setcookie('PHPMUSSEL-ADMIN', '', -1, '/', $this->HostnameOverride ?: $this->Host, false, true);
                 $this->frontendLogger($this->Loader->IPAddr, $SessionUser, $this->Loader->L10N->getString('label.Logged out'));
             }
 
@@ -1464,24 +1464,24 @@ class FrontEnd
     {
         $Salt = '';
         try {
-            $Length = \random_int($this->SaltMinLen, $this->SaltMaxLen);
+            $Length = \random_int(self::GENERATE_SALT_MIN_LEN, self::GENERATE_SALT_MAX_LEN);
         } catch (\Exception $e) {
-            $Length = \rand($this->SaltMinLen, $this->SaltMaxLen);
+            $Length = \rand(self::GENERATE_SALT_MIN_LEN, self::GENERATE_SALT_MAX_LEN);
         }
         try {
-            $Salt = random_bytes($Length);
+            $Salt = \random_bytes($Length);
         } catch (\Exception $e) {
             $Salt = '';
         }
         if (!\strlen($Salt)) {
             try {
                 for ($Index = 0; $Index < $Length; $Index++) {
-                    $Salt .= \chr(\random_int($this->SaltMinChr, $this->SaltMaxChr));
+                    $Salt .= \chr(\random_int(self::GENERATE_SALT_MIN_CHR, self::GENERATE_SALT_MAX_CHR));
                 }
             } catch (\Exception $e) {
                 $Salt = '';
                 for ($Index = 0; $Index < $Length; $Index++) {
-                    $Salt .= \chr(\rand($this->SaltMinChr, $this->SaltMaxChr));
+                    $Salt .= \chr(\rand(self::GENERATE_SALT_MIN_CHR, self::GENERATE_SALT_MAX_CHR));
                 }
             }
         }
@@ -1560,31 +1560,31 @@ class FrontEnd
                     }
                     $OldETag = $_SERVER['HTTP_IF_NONE_MATCH'] ?? '';
                     $NewETag = \hash('sha256', $AssetData) . '-' . \strlen($AssetData);
-                    header('Last-Modified: ' . \gmdate('D, d M Y H:i:s T', \filemtime($ThisAsset)));
-                    header('ETag: "' . $NewETag . '"');
-                    header('Expires: ' . \gmdate('D, d M Y H:i:s T', $this->Loader->Time + 15552000));
+                    \header('Last-Modified: ' . \gmdate('D, d M Y H:i:s T', \filemtime($ThisAsset)));
+                    \header('ETag: "' . $NewETag . '"');
+                    \header('Expires: ' . \gmdate('D, d M Y H:i:s T', $this->Loader->Time + 15552000));
                     if (\preg_match('~(?:^|, )(?:"' . $NewETag . '"|' . $NewETag . ')(?:$|, )~', $OldETag)) {
-                        header('HTTP/1.0 304 Not Modified');
-                        header('HTTP/1.1 304 Not Modified');
-                        header('Status: 304 Not Modified');
+                        \header('HTTP/1.0 304 Not Modified');
+                        \header('HTTP/1.1 304 Not Modified');
+                        \header('Status: 304 Not Modified');
                         die;
                     }
-                    header($MimeType);
+                    \header($MimeType);
                     if ($NoSniff) {
-                        header('X-Content-Type-Options: nosniff');
+                        \header('X-Content-Type-Options: nosniff');
                     }
                     echo $AssetData;
                     die;
                 }
             }
-            header('HTTP/1.0 404 Not Found');
-            header('HTTP/1.1 404 Not Found');
-            header('Status: 404 Not Found');
+            \header('HTTP/1.0 404 Not Found');
+            \header('HTTP/1.1 404 Not Found');
+            \header('Status: 404 Not Found');
             die;
         }
-        header('HTTP/1.0 403 Forbidden');
-        header('HTTP/1.1 403 Forbidden');
-        header('Status: 403 Forbidden');
+        \header('HTTP/1.0 403 Forbidden');
+        \header('HTTP/1.1 403 Forbidden');
+        \header('Status: 403 Forbidden');
         die;
     }
 

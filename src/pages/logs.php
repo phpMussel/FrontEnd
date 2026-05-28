@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The logs page (last modified: 2026.05.02).
+ * This file: The logs page (last modified: 2026.05.28).
  */
 
 namespace phpMussel\FrontEnd;
@@ -31,9 +31,9 @@ if (
     isset($this->QueryVariables['text-mode'], $this->QueryVariables['logfile'], $FE['LogFiles']['Files'][$this->QueryVariables['logfile']]) &&
     $this->QueryVariables['text-mode'] === 'download'
 ) {
-    header('Content-Type: application/octet-stream');
-    header('Content-Transfer-Encoding: Binary');
-    header('Content-disposition: attachment; filename="' . \basename($this->QueryVariables['logfile']) . '"');
+    \header('Content-Type: application/octet-stream');
+    \header('Content-Transfer-Encoding: Binary');
+    \header('Content-disposition: attachment; filename="' . \basename($this->QueryVariables['logfile']) . '"');
     echo $this->Loader->readFile($this->Vault . $this->QueryVariables['logfile']);
     return;
 }

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Gujarati language data (last modified: 2026.05.24).
+# This file: Gujarati language data (last modified: 2026.05.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -103,7 +103,7 @@ config:
  frontend_frontend_log: "ફ્રન્ટ-એન્ડ લૉગિન પ્રયાસોને લૉગ કરવા માટેની ફાઇલ. ફાઇલનામનો ઉલ્લેખ કરો, અથવા અક્ષમ કરવા માટે ખાલી છોડી દો."
  frontend_magnification: "ફોન્ટ મેગ્નિફિકેશન. ડિફૉલ્ટ = 1."
  frontend_max_login_attempts: "ફ્રન્ટ-એન્ડ લૉગિન પ્રયાસોની મહત્તમ સંખ્યા. ડિફૉલ્ટ = 5."
- frontend_numbers: "તમે કેવી રીતે નંબરો પ્રદર્શિત કરવાનું પસંદ કરો છો? તમારા માટે સૌથી સાચું લાગે તે ઉદાહરણ પસંદ કરો."
+ frontend_numbers: "તમે કેવી રીતે સંખ્યાઓ પ્રદર્શિત કરવાનું પસંદ કરો છો? તમારા માટે સૌથી સાચું લાગે તે ઉદાહરણ પસંદ કરો."
  frontend_theme: "ફ્રન્ટ-એન્ડ માટે વાપરવાની થીમ."
  frontend_theme_mode: "ફ્રન્ટ-એન્ડ માટે વાપરવાની થીમ માટે મોડ."
  legal: "કાનૂની જરૂરિયાતો માટે રૂપરેખાંકન."

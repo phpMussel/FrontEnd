@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The quarantine page (last modified: 2026.05.02).
+ * This file: The quarantine page (last modified: 2026.05.28).
  */
 
 namespace phpMussel\FrontEnd;
@@ -53,9 +53,9 @@ if (
             if (empty($this->InstanceCache['RestoreStatus'])) {
                 /** Download the file. */
                 if ($_POST['do'] === 'download-file') {
-                    header('Content-Type: application/octet-stream');
-                    header('Content-Transfer-Encoding: Binary');
-                    header('Content-disposition: attachment; filename="' . \basename($_POST['qfu']) . '.restored"');
+                    \header('Content-Type: application/octet-stream');
+                    \header('Content-Transfer-Encoding: Binary');
+                    \header('Content-disposition: attachment; filename="' . \basename($_POST['qfu']) . '.restored"');
                     echo $Restored;
                     return;
                 }
