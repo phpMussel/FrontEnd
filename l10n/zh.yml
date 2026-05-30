@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese language data (last modified: 2026.05.06).
+# This file: Chinese language data (last modified: 2026.05.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -45,8 +45,18 @@ Glossary: !lazy
     | 檔案被識別為安全（未阻止上傳） | 真陰性（正確的推斷） | 漏檢（或假陰性） |
     | 檔案被識別為危險（已阻止上傳） | 假陽性 | 真陽性（正確的推斷） |
     如果遇到假陽性，您可以向phpMussel的問題追蹤器報告該問題。
+  签名/簽名:
+   zh-Hans: |
+    在phpMussel的上下文中，签名（英文为“signature”）指的是用于识别恶意文件、已知攻击向量、和其他此类威胁的数据（类似于数字指纹）。
+    该数据通常以校验和、哈希值、或中和的、十六进制编码的文件或攻击向量片段的形式出现，并附有标签，有时还会附有其他元数据来描述和说明其上下文。
+    签名通常存储在签名文件中。 phpMussel需要这些签名文件才能检测病毒、木马、和其他各种威胁。
+   zh-Hant: |
+    在phpMussel的上下文中，簽名（英文為「signature」）指的是用於識別惡意檔案、已知攻擊向量、和其他此類威脅的數據（類似於數位指紋）。
+    該數據通常以校驗和、雜湊值、或中和的、十六進位編碼的檔案或攻擊向量片段的形式出現，並附有標籤，有時還會附有其他元數據來描述和說明其上下文。
+    簽名通常儲存在簽名檔案中。 phpMussel需要這些簽名檔案才能偵測病毒、木馬、和其他各種威脅。
  Indexes:
   [假阴性/假陰性, 假阳性/假陽性, 真阴性/真陰性, 真阳性/真陽性]: "false_positive"
+  签名/簽名: "signature"
  Refs:
   False positive:
    偽陽性和偽陰性 - 维基百科，自由的百科全书: "https://zh.wikipedia.org/wiki/%E5%81%BD%E9%99%BD%E6%80%A7%E5%92%8C%E5%81%BD%E9%99%B0%E6%80%A7"
@@ -140,10 +150,10 @@ config:
   zh-Hant: "在原始數據中解碼命令的長度限制（如果有任何引人注目性能問題當掃描）。 標準 = 512KB。 零或空值將關閉門檻（去除任何這樣的限基於檔案大小）。"
  files_entropy_filesize_limit:
   zh-Hans: "使用规范化数据的签名的熵文件大小限制（默认为256KB）。 当熵限制和熵文件大小限制都超出时，为了降低假阳性的风险，一些使用标准化数据的签名将被忽略。"
-  zh-Hant: "使用規範化資料的簽名的熵檔案大小限制（默認為256KB）。 當熵限制和熵檔案大小限制都超出時，為了降低假陽性的風險，一些使用標準化資料的簽章將被忽略。"
+  zh-Hant: "使用規範化數據的簽名的熵檔案大小限制（默認為256KB）。 當熵限制和熵檔案大小限制都超出時，為了降低假陽性的風險，一些使用標準化數據的簽名將被忽略。"
  files_entropy_limit:
   zh-Hans: "使用规范化数据的签名的熵限制（默认为7.7）。 在此上下文中，熵被定义为被扫描文件内容的香农熵。 当熵限制和熵文件大小限制都超出时，为了降低假阳性的风险，一些使用标准化数据的签名将被忽略。"
-  zh-Hant: "使用規範化資料的簽章的熵極限（默認為7.7）。 在此上下文中，熵被定義為被掃描檔案內容的香農熵。 當熵限制和熵檔案大小限制都超出時，為了降低假陽性的風險，一些使用標準化資料的簽章將被忽略。"
+  zh-Hant: "使用規範化數據的簽名的熵極限（默認為7.7）。 在此上下文中，熵被定義為被掃描檔案內容的香農熵。 當熵限制和熵檔案大小限制都超出時，為了降低假陽性的風險，一些使用標準化數據的簽名將被忽略。"
  files_filesize_archives:
   zh-Hans: "继承文件大小黑名单/白名单在存档内容吗？ False（假）=不继承（刚灰名单一切）；True（真）=继承【默认】。"
   zh-Hant: "繼承檔案大小黑名單/白名單在存檔內容嗎？ False（假）=不繼承（剛灰名單一切）；True（真）=繼承【默認】。"
@@ -218,7 +228,7 @@ config:
  supplementary_cache_options_prefix:
   zh-Hans: "该值将附加到所有缓存条目的键的开头。 标准 = “phpMussel_”。 当同一服务器上存在多个安装时，这对于将它们的缓存彼此分开非常有用。"
   zh-Hant: "該值將附加到所有緩存條目的鍵的開頭。 標準 = 『phpMussel_』。 當同一服務器上存在多個安裝時，這對於將它們的緩存彼此分開非常有用。"
- supplementary_cache_options_redis_database_number: {"zh-Hans": "Redis 数据库编号。 标准 = “0”。 注意：不能在 Redis Cluster 中使用 0 以外的值。", "zh-Hant": "Redis 資料庫編號。 標準 = 『0』。 注意：不能在 Redis Cluster 中使用 0 以外的值。"}
+ supplementary_cache_options_redis_database_number: {"zh-Hans": "Redis 数据库编号。 标准 = “0”。 注意：不能在 Redis Cluster 中使用 0 以外的值。", "zh-Hant": "Redis 數據庫編號。 標準 = 『0』。 注意：不能在 Redis Cluster 中使用 0 以外的值。"}
  supplementary_cache_options_redis_host: {"zh-Hans": "Redis 主机值。 标准 = localhost。", "zh-Hant": "Redis 主機值。 標準 = localhost。"}
  supplementary_cache_options_redis_port: {"zh-Hans": "Redis 端口值。 标准 = “6379”。", "zh-Hant": "Redis 端口值。 標準 = 『6379』。"}
  supplementary_cache_options_redis_timeout: {"zh-Hans": "Redis 超时值。 标准 = “2.5”。", "zh-Hant": "Redis 超時值。 標準 = 『2.5』。"}
@@ -377,7 +387,7 @@ Some useful links:
         <li><span class="comCat" role="region" aria-controls="menuTRP" aria-expanded="false">phpMussel的工具、資源、等等。</span>
           <ul class="comSub" id="menuTRP">
             <li>{{Links.phpMussel.Issues}} – phpMussel問題頁面（支持、協助、等等）。</li>
-            <li>{{Links.phpMussel.SigTool}} – 使用ClamAV簽名資料庫創建phpMussel簽名檔案。</li>
+            <li>{{Links.phpMussel.SigTool}} – 使用ClamAV簽名數據庫創建phpMussel簽名檔案。</li>
             <li>{{Links.OSChina}} – phpMussel頁面託管在開源中國社區。</li>
             <li>{{Links.phpMussel.Extras}} – 各種附加功能。</li>
           </ul>
@@ -398,7 +408,7 @@ Some useful links:
         </li>
         <li><span class="comCat" role="region" aria-controls="menuOUTRS" aria-expanded="false">其他有用的工具、資源、服務、等等</span>
           <ul class="comSub" id="menuOUTRS">
-            <li>{{Links.PhishTank}} – 網絡釣魚資料庫。由phpMussel URL掃描器使用。</li>
+            <li>{{Links.PhishTank}} – 網絡釣魚數據庫。由phpMussel URL掃描器使用。</li>
             <li>{{Links.VirusTotal}} – VirusTotal是一項免費服務，用於分析可疑文件和URL。</li>
             <li>{{Links.Hybrid Analysis}} – Hybrid Analysis是由{{Links.Payload Security}}提供的免費惡意軟體分析服務。</li>
             <li>{{Links.Malwarebytes}} – 電腦反惡意軟體專家。</li>

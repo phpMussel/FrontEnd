@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2026.05.05).
+# This file: Malay language data (last modified: 2026.05.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -35,8 +35,13 @@ Glossary: !lazy
    | Fail dikenal pasti sebagai selamat (muat naik TIDAK disekat) | Negatif benar (inferens yang betul) | Pengesanan yang terlepas (atau negatif palsu) |
    | Fail dikenal pasti sebagai berbahaya (muat naik disekat) | Positif palsu | Positif benar (inferens yang betul) |
    Jika anda menemui positif palsu, anda boleh melaporkannya di penjejak isu phpMussel.
+  Tandatangan: |
+   Dalam konteks phpMussel, tandatangan ("signature" dalam bahasa Inggeris) merujuk kepada data yang berfungsi untuk mengenal pasti fail berniat jahat, vektor serangan yang diketahui, dan ancaman lain yang serupa (seperti sejenis cap jari digital).
+   Data ini biasanya berbentuk checksum, hash, atau segmen fail atau vektor serangan yang dineutralkan dan dikodkan heksadesimal untuk dikenal pasti, dengan label dan kadangkala metadata lain yang dilampirkan untuk menerangkan dan mengkontekstualisasikannya.
+   Tandatangan biasanya disimpan bersama dalam fail tandatangan. Fail tandatangan diperlukan agar phpMussel dapat mengesan virus, trojan, dan pelbagai ancaman lain.
  Indexes:
   [Negatif palsu, Positif palsu, Negatif benar, Positif benar]: "false_positive"
+  Tandatangan: "signature"
  Refs:
   Positif palsu:
    Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"

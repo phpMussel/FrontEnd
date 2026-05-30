@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Croatian language data (last modified: 2026.05.05).
+# This file: Croatian language data (last modified: 2026.05.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -35,8 +35,13 @@ Glossary: !lazy
    | Datoteka je identificirana kao sigurna (prijenos NIJE blokiran) | Istinski negativan (ispravnim zaključkom) | Propušteno otkrivanje (ili lažno negativan) |
    | Datoteka je identificirana kao opasna (prijenos JE blokiran) | Lažno pozitivan | Istinski pozitivan (ispravnim zaključkom) |
    Ako naiđete na lažno pozitivne, možete ga prijaviti na phpMussel-ovom sustavu za praćenje problema.
+  Potpis: |
+   U kontekstu phpMussel-a, potpis ("signature" na engleskom) odnosi se na podatke koji služe za identifikaciju zlonamjernih datoteka, poznatih vektora napada, i drugih takvih prijetnji (poput svojevrsnog digitalnog otiska prsta).
+   Ti podaci obično imaju oblik kontrolnog zbroja, hash-a, ili neutraliziranog, heksadecimalno kodiranog segmenta datoteka ili vektora napada koji se identificiraju, s oznakom i ponekad drugim metapodacima pridruženim za njihov opis i kontekstualizaciju.
+   Potpisi se obično pohranjuju zajedno u datoteke potpisa. Ove datoteke potpisa potrebne su phpMusselu kako bi mogao otkriti viruse, trojance, i razne druge prijetnje.
  Indexes:
   [Lažno negativan, Lažno pozitivan, Istinski negativan, Istinski pozitivan]: "false_positive"
+  Potpis: "signature"
  Refs:
   Lažno pozitivan:
    Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"

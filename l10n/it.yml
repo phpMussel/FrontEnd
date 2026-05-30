@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2026.05.05).
+# This file: Italian language data (last modified: 2026.05.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -35,8 +35,13 @@ Glossary: !lazy
    | Il file è stato identificato come sicuro (il caricamento NON è bloccato) | Vero negativo (inferenza corretta) | Mancata rilevazione (o falso negativo) |
    | Il file è stato identificato come pericoloso (il caricamento È bloccato) | Falso positivo | Vero positivo (inferenza corretta) |
    Se riscontri falsi positivi, è possibile segnalarlo tramite il sistema di segnalazione dei problemi di phpMussel.
+  Firma: |
+   Nel contesto di phpMussel, una firma ("signature" in inglese) si riferisce a dati che servono a identificare file dannosi, vettori di attacco noti, e altre minacce simili (come una sorta di impronta digitale).
+   Questi dati assumono in genere la forma di un checksum, un hash, o un segmento neutralizzato e codificato in esadecimale dei file o dei vettori di attacco da identificare, con un'etichetta e talvolta altri metadati allegati per descriverli e contestualizzarli.
+   Le firme vengono generalmente memorizzate insieme in file di firma. Questi file di firma sono necessari a phpMussel per poter rilevare virus, trojan, e varie altre minacce.
  Indexes:
   [Falso negativo, Falso positivo, Vero negativo, Vero positivo]: "false_positive"
+  Firma: "signature"
  Refs:
   Falso positivo:
    Falso positivo e falso negativo - Wikipedia: "https://it.wikipedia.org/wiki/Falso_positivo_e_falso_negativo"

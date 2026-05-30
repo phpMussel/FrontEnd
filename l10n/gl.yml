@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Galician language data (last modified: 2026.05.05).
+# This file: Galician language data (last modified: 2026.05.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -35,8 +35,13 @@ Glossary: !lazy
    | O ficheiro está identificado como seguro (a subida NON está bloqueada) | Verdadeiro negativo (inferencia correcta) | Detección fallida (ou falso negativo) |
    | O ficheiro está identificado como perigoso (a subida ESTÁ bloqueada) | Falso positivo | Verdadeiro positivo (inferencia correcta) |
    Se atopas falsos positivos, podes informalos no rastreador de problemas de phpMussel.
+  Sinatura: |
+   No contexto de phpMussel, unha sinatura ("signature" en inglés) refírese a datos que serven para identificar ficheiros maliciosos, vectores de ataque coñecidos, e outras ameazas semellantes (como unha especie de pegada dixital).
+   Estes datos adoitan adoptar a forma dunha suma de comprobación, un hash, ou un segmento neutralizado e codificado en hexadecimal dos ficheiros ou vectores de ataque que se van identificar, cunha etiqueta e ás veces outros metadatos adxuntos para describilos e contextualizalos.
+   As sinaturas adoitan almacenarse xuntas en ficheiros de sinatura. Estes ficheiros de sinatura son necesarios para que phpMussel poida detectar virus, troianos, e outras ameazas.
  Indexes:
   [Falso negativo, Falso positivo, Verdadeiro negativo, Verdadeiro positivo]: "false_positive"
+  Sinatura: "signature"
  Refs:
   Falso positivo:
    Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"

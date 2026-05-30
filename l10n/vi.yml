@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2026.05.05).
+# This file: Vietnamese language data (last modified: 2026.05.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -35,8 +35,13 @@ Glossary: !lazy
    | Tập tin được xác định là an toàn (việc tải lên KHÔNG bị chặn) | Đúng tiêu cực (suy luận chính xác) | Bỏ sót phát hiện (hay sai tiêu cực) |
    | Tập tin được xác định là nguy hiểm (việc tải lên BỊ chặn) | Sai tích cực | Đúng tích cực (suy luận chính xác) |
    Nếu bạn gặp phải sai tích cực, bạn có thể báo cáo chúng trên hệ thống theo dõi lỗi của phpMussel.
+  Chữ ký: |
+   Trong ngữ cảnh của phpMussel, chữ ký ("signature" trong tiếng Anh) đề cập đến dữ liệu dùng để xác định các tập tin độc hại, các vectơ tấn công đã biết, và các mối đe dọa tương tự khác (giống như một loại dấu vân tay kỹ thuật số).
+   Dữ liệu này thường có dạng mã kiểm tra, mã băm, hoặc một đoạn mã hóa thập lục phân đã được trung hòa của các tập tin hoặc vectơ tấn công cần được xác định, kèm theo nhãn và đôi khi là các siêu dữ liệu khác để mô tả và làm rõ ngữ cảnh.
+   Các chữ ký thường được lưu trữ cùng nhau trong các tập tin chữ ký. Các tập tin chữ ký này cần thiết để phpMussel có thể phát hiện virus, trojan, và nhiều mối đe dọa khác.
  Indexes:
   [Sai tiêu cực, Sai tích cực, Đúng tiêu cực, Đúng tích cực]: "false_positive"
+  Chữ ký: "signature"
  Refs:
   Sai tích cực:
    Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"

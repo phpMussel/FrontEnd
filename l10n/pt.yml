@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese language data (last modified: 2026.05.05).
+# This file: Portuguese language data (last modified: 2026.05.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -45,8 +45,18 @@ Glossary: !lazy
     | O arquivo foi identificado como seguro (o carregamento NÃO está bloqueado) | Verdadeiro negativo (inferência correta) | Deteção perdida (ou falso negativo) |
     | O arquivo foi identificado como perigoso (o carregamento ESTÁ bloqueado) | Falso positivo | Verdadeiro positivo (inferência correta) |
     Se encontrar falsos positivos, pode comunicá-lo no sistema de rastreio de problemas do phpMussel.
+  Assinatura:
+   pt-BR: |
+    No contexto do phpMussel, uma assinatura ("signature" em inglês) refere-se a dados que servem para identificar arquivos maliciosos, vetores de ataque conhecidos, e outras ameaças semelhantes (como uma espécie de impressão digital).
+    Esses dados geralmente assumem a forma de um checksum, um hash, ou um segmento neutralizado e codificado em hexadecimal dos arquivos ou vetores de ataque a serem identificados, com um rótulo e, às vezes, outros metadados anexados para descrevê-los e contextualizá-los.
+    As assinaturas são geralmente armazenadas juntas em arquivos de assinatura. Esses arquivos de assinatura são necessários para que o phpMussel consiga detectar vírus, trojans, e várias outras ameaças.
+   pt-PT: |
+    No contexto do phpMussel, uma assinatura ("signature" em inglês) refere-se a dados que servem para identificar arquivos maliciosos, vetores de ataque conhecidos, e outras ameaças semelhantes (como uma espécie de impressão digital).
+    Estes dados assumem geralmente a forma de um checksum, um hash, ou um segmento neutralizado e codificado em hexadecimal dos arquivos ou vetores de ataque a identificar, com um rótulo e, por vezes, outros metadados anexados para os descrever e contextualizar.
+    As assinaturas são geralmente armazenadas juntas em arquivos de assinatura. Estes arquivos de assinatura são necessários para que o phpMussel consiga detectar vírus, trojans, e várias outras ameaças.
  Indexes:
   [Falso negativo, Falso positivo, Verdadeiro negativo, Verdadeiro positivo]: "false_positive"
+  Assinatura: "signature"
  Refs:
   Falso positivo:
    Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"

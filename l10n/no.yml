@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2026.05.05).
+# This file: Norwegian language data (last modified: 2026.05.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -35,8 +35,13 @@ Glossary: !lazy
    | Filen er identifisert som trygg (opplastingen er IKKE blokkert) | Sann negativ (korrekt slutning) | Misset deteksjon (eller falsk negativ) |
    | Filen er identifisert som farlig (opplastingen ER blokkert) | Falsk positiv | Sann positiv (korrekt slutning) |
    Hvis du støter på falske positiver, du kan rapportere dem på phpMussels problemsporing.
+  Signatur: |
+   I sammenheng med phpMussel refererer en signatur til data som tjener til å identifisere ondsinnede filer, kjente angrepsvektorer, og andre slike trusler (som et slags digitalt fingeravtrykk).
+   Disse dataene har vanligvis form av en sjekksum, en hash, eller et nøytralisert, heksadesimalkodet segment av filene eller angrepsvektorene som skal identifiseres, med en etikett og noen ganger andre metadata knyttet til for å beskrive og kontekstualisere dem.
+   Signaturer lagres vanligvis sammen i signaturfiler. Disse signaturfilene er nødvendige for at phpMussel skal kunne oppdage virus, trojanere, og diverse andre trusler.
  Indexes:
   [Falsk negative, Falsk positiv, Sann negativ, Sann positiv]: "false_positive"
+  Signatur: "signature"
  Refs:
   Falsk positiv:
    Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"

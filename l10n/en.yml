@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2026.05.04).
+# This file: English language data (last modified: 2026.05.29).
 ##/
 
 Glossary: !lazy
@@ -21,8 +21,13 @@ Glossary: !lazy
    | The file is identified as safe (the upload is NOT blocked) | True negative (correct inference) | Missed detection (or false negative) |
    | The file is identified as dangerous (the upload IS blocked) | False positive | True positive (correct inference) |
    If you encounter false positives, you can report them at phpMussel's issue tracker.
+  Signature: |
+   In the context of phpMussel, a signature refers to data that serves to identify malicious files, known attack vectors, and other such threats (like a kind of digital fingerprint).
+   This data typically takes the form of a checksum, a hash, or a neutralised, hexadecimal-encoded segment of the files or attack vectors to be identified, with a label and sometimes other metadata attached to describe and contextualise it.
+   Signatures are typically stored together in signature files. These signature files are needed for phpMussel to be able to detect viruses, trojans, and various other threats.
  Indexes:
   [False negative, False positive, True negative, True positive]: "false_positive"
+  Signature: "signature"
  Refs:
   False positive:
    False positives and false negatives - Wikipedia: "https://en.wikipedia.org/wiki/False_positives_and_false_negatives"

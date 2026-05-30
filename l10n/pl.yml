@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2026.05.05).
+# This file: Polish language data (last modified: 2026.05.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -30,13 +30,18 @@ Glossary: !lazy
    Ogólnie rzecz biorąc, gdy podczas przeprowadzania testu wyniki są „pozytywne” (tj., warunki testu okazały się prawdziwe), ale oczekiwano (lub oczekiwano że będą) „negatywne” (tj., wyniki testu są błędne), wówczas taki wynik określa się jako „fałszywie pozytywny”. <em>Angielski: „false positive”. Lub inaczej: „błąd fałszywie dodatni”; „fałszywy alarm”.</em>
    Niektóre powiązane terminy to „prawdziwie pozytywny”, „prawdziwie negatywny”, i „fałszywie negatywny”. <em>Angielski: „true positive”, „true negative”, „false negative”.</em> „Prawdziwie pozytywny” odnosi się do sytuacji, gdy wyniki testu i rzeczywisty stan warunku są prawdziwe (lub „pozytywne”), a „prawdziwie negatywny” odnosi się do sytuacji, gdy wyniki testu i rzeczywisty stan warunku są fałszywe (lub „negatywne”). „Prawdziwie pozytywny” lub „prawdziwie negatywny” wynik jest uważany za „poprawny wniosek”.
    Odwrotnością „fałszywie pozytywny” jest „fałszywie negatywny”. Gdy wyniki testu są „negatywne”, ale oczekiwano (lub powinno być) „pozytywne”, to jest „fałszywie negatywny”.
-   W kontekście phpMussel, terminy te odnoszą się zazwyczaj do tego, czy phpMussel prawidłowo identyfikuje plik jako bezpieczny lub szkodliwy. Np., całkowicie nieszkodliwy plik zidentyfikowany jako zagrożenie byłby „fałszywie pozytywny”, a odwrotnie, niebezpieczny plik (niebezpieczny z powodu złośliwego oprogramowania, oprogramowania wymuszającego okup, zainfekowany wirusem, itp) zidentyfikowany jako bezpieczny byłby „fałszywie negatywny”. Podczas skanowania pliku, phpMussel ocenia go na podstawie jego konfiguracji i dostępnych plików sygnatur. Zazwyczaj „pozytywne” rozpatrzenie sprawy przez program obsługujący przesyłanie oznacza zablokowanie przesyłania.
+   W kontekście phpMussel, terminy te odnoszą się zazwyczaj do tego, czy phpMussel prawidłowo identyfikuje plik jako bezpieczny lub szkodliwy. Np., całkowicie nieszkodliwy plik zidentyfikowany jako zagrożenie byłby „fałszywie pozytywny”, a odwrotnie, niebezpieczny plik (niebezpieczny z powodu złośliwego oprogramowania, oprogramowania wymuszającego okup, zainfekowany wirusem, itp) zidentyfikowany jako bezpieczny byłby „fałszywie negatywny”. Podczas skanowania pliku, phpMussel ocenia go na podstawie jego konfiguracji i dostępnych plików podpis. Zazwyczaj „pozytywne” rozpatrzenie sprawy przez program obsługujący przesyłanie oznacza zablokowanie przesyłania.
    | | Plik jest rzeczywiście bezpieczny (przesyłanie NIE powinno być blokowane) | Plik jest rzeczywiście niebezpieczny (przesyłanie POWINNO być blokowane) |
    | Plik został zidentyfikowany jako bezpieczny (przesyłanie NIE jest blokowane) | Prawdziwie negatywny (poprawny wniosek) | Pominięte wykrycie (lub fałszywie negatywny) |
    | Plik został zidentyfikowany jako niebezpieczny (przesyłanie JEST blokowane) | Fałszywie pozytywny | Prawdziwie pozytywny (poprawny wniosek) |
    Jeśli napotkasz fałszywe pozytywne, możesz zgłosić go za pośrednictwem systemu śledzenia problemów phpMussel.
+  Podpis: |
+   W kontekście phpMussel podpis („signature” po angielsku) odnosi się do danych służących do identyfikacji złośliwych plików, znanych wektorów ataków, i innych podobnych zagrożeń (coś w rodzaju cyfrowego odcisku palca).
+   Dane te przybierają zazwyczaj formę sumy kontrolnej, skrótu, lub zneutralizowanego, zakodowanego szesnastkowo segmentu plików lub wektorów ataku, które mają zostać zidentyfikowane, z etykietą, a czasem innymi metadanymi dołączonymi w celu ich opisu i kontekstualizacji.
+   Podpisy są zazwyczaj przechowywane razem w plikach podpis. Pliki te są niezbędne, aby phpMussel mógł wykrywać wirusy, trojany, i inne zagrożenia.
  Indexes:
   [Fałszywie negatywny, Fałszywie pozytywny, Prawdziwie negatywny, Prawdziwie pozytywny]: "false_positive"
+  Podpis: "signature"
  Refs:
   Fałszywie pozytywny:
    Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
@@ -115,7 +120,7 @@ config:
  quarantine_quarantine_max_filesize: "Maksymalny dozwolony rozmiar pliku dla plików podlegających kwarantannie. Pliki większe niż określona wartość NIE zostaną poddane kwarantannie. Ta dyrektywa jest ważna, ponieważ utrudnia potencjalnym atakującym zalanie kwarantanny niechcianymi danymi, potencjalnie powodując niekontrolowane wykorzystanie danych w twojej usłudze hostingowej. Domyślna = 2MB."
  quarantine_quarantine_max_usage: "Maksymalne użycie pamięci dozwolone dla kwarantanny. Jeśli łączna pamięć użyta przez kwarantannę osiągnie tę wartość, najstarsze pliki poddane kwarantannie zostaną usunięte, dopóki łączna pamięć nie osiągnie tej wartości. Ta dyrektywa jest ważna, ponieważ utrudnia potencjalnym atakującym zalanie kwarantanny niechcianymi danymi, potencjalnie powodując niekontrolowane wykorzystanie danych w twojej usłudze hostingowej. Domyślna = 64MB."
  signatures: "Konfiguracja podpisów, plików podpisów, itp."
- signatures_active: "Lista aktywnych plików sygnatur, oddzielonych przecinkami. Uwaga: Pliki sygnatur należy najpierw zainstalować, zanim będzie można je aktywować. Aby pliki testowe działały poprawnie, pliki sygnatur muszą zostać zainstalowane i aktywowane."
+ signatures_active: "Lista aktywnych plików podpis, oddzielonych przecinkami. Uwaga: Pliki podpis należy najpierw zainstalować, zanim będzie można je aktywować. Aby pliki testowe działały poprawnie, pliki podpisów muszą zostać zainstalowane i aktywowane."
  signatures_detect_adware: "Czy phpMussel powinien przetwarzać podpisy wykrywania adware? False (Fałszywy) = Nie; True (Prawdziwe) = Tak [Domyślna]."
  signatures_detect_deface: "Czy phpMussel powinien przetwarzać podpisy wykrywania zniekształcenie strony internetowej? False (Fałszywy) = Nie; True (Prawdziwe) = Tak [Domyślna]."
  signatures_detect_encryption: "Czy phpMussel powinien wykrywać i blokować zaszyfrowane pliki? False (Fałszywy) = Nie; True (Prawdziwe) = Tak [Domyślna]."
@@ -186,7 +191,7 @@ field:
  log_rotation_delete: "Usuń najstarsze pliki dziennika, dopóki limit nie zostanie przekroczony."
  vt_suspicion_level_all: "Skanuj wszystkie pliki."
  vt_suspicion_level_executable: "Skanuj pliki z wagą heurystyczną, pliki wykonywalne, i pliki potencjalnie zawierające dane wykonywalne.\nPrzykłady plików wykonywalnych, i plików potencjalnie zawierających dane wykonywalne, obejmują pliki Windows PE, pliki Linux ELF, pliki Mach-O, pliki DOCX, pliki ZIP, itp."
- vt_suspicion_level_heuristic_only: "Skanuj tylko pliki z wagą heurystyczną.\nSkanowane będą tylko pliki z wagą heurystyczną. Waga heurystyczna może wynikać z sygnatur przeznaczonych do wychwytywania typowych odcisków palców związanych z potencjalną infekcją, które niekoniecznie gwarantują infekcję. Wyszukiwanie w takich przypadkach może posłużyć do uzyskania drugiej opinii w przypadku wyników, które uzasadniają podejrzenia, ale poza tym nie dają żadnej pewności."
+ vt_suspicion_level_heuristic_only: "Skanuj tylko pliki z wagą heurystyczną.\nSkanowane będą tylko pliki z wagą heurystyczną. Waga heurystyczna może wynikać z podpis przeznaczonych do wychwytywania typowych odcisków palców związanych z potencjalną infekcją, które niekoniecznie gwarantują infekcję. Wyszukiwanie w takich przypadkach może posłużyć do uzyskania drugiej opinii w przypadku wyników, które uzasadniają podejrzenia, ale poza tym nie dają żadnej pewności."
 hints_logging_datetime: "Przydatna wskazówka: Do nazw plików dziennika można dołączać informacje o dacie/godzinie, używając symboli zastępczych w formacie godziny. Dostępne symbole zastępcze formatu czasu są wyświetlane przy {{Links.ConfigRef.time_format}}."
 hints_pdo_dsn:
  FAQ.: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.en.md\#user-content-HOW_TO_USE_PDO" hreflang="en-AU">Co to jest „PDO DSN”? Jak mogę używać PDO z phpMussel?</a></em>"

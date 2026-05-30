@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2026.05.05).
+# This file: Indonesian language data (last modified: 2026.05.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -35,8 +35,13 @@ Glossary: !lazy
    | File diidentifikasi sebagai aman (unggahan TIDAK diblokir) | Negatif benar (inferensi benar) | Deteksi yang terlewatkan (atau negatif palsu) |
    | File diidentifikasi sebagai berbahaya (unggahan diblokir) | Positif palsu | Positif benar (inferensi benar) |
    Jika Anda menemukan positif palsu, Anda dapat melaporkannya di pelacak masalah phpMussel.
+  Tanda tangan: |
+   Dalam konteks phpMussel, tanda tangan ("signature" dalam bahasa Inggris) merujuk pada data yang berfungsi untuk mengidentifikasi file berbahaya, vektor serangan yang dikenal, dan ancaman lainnya (seperti semacam sidik jari digital).
+   Data ini biasanya berupa checksum, hash, atau segmen yang dinetralkan dan dikodekan dalam heksadesimal dari file atau vektor serangan yang akan diidentifikasi, dengan label dan terkadang metadata lain yang dilampirkan untuk mendeskripsikan dan mengonteksualisasikannya.
+   Tanda tangan biasanya disimpan bersama dalam file tanda tangan. File tanda tangan diperlukan agar phpMussel dapat mendeteksi virus, trojan, dan berbagai ancaman lainnya.
  Indexes:
   [Negatif palsu, Positif palsu, Negatif benar, Positif benar]: "false_positive"
+  Tanda tangan: "signature"
  Refs:
   Positif palsu:
    Positif palsu dan negatif palsu - Wikipedia bahasa Indonesia, ensiklopedia bebas: "https://id.wikipedia.org/wiki/Positif_palsu_dan_negatif_palsu"

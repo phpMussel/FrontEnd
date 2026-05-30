@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2026.05.05).
+# This file: Afrikaans language data (last modified: 2026.05.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -35,8 +35,13 @@ Glossary: !lazy
    | Die lêer word as veilig geïdentifiseer (die oplaai is NIE geblokkeer nie) | Ware negatief (korrekte inferensie) | Gemiste opsporing (of vals negatief) |
    | Die lêer word as gevaarlik geïdentifiseer (die oplaai IS geblokkeer) | Vals positief | Ware positief (korrekte inferensie) |
    As jy vals positiewe teëkom, kan jy hulle by phpMussel se probleemopsporingsprogram rapporteer.
+  Handtekening: |
+   In die konteks van phpMussel verwys 'n handtekening ("signature" in Engels) na data wat dien om kwaadwillige lêers, bekende aanvalsvektore, en ander sulke bedreigings te identifiseer (soos 'n soort digitale vingerafdruk).
+   Hierdie data neem tipies die vorm aan van 'n kontrolesom, 'n hash, of 'n geneutraliseerde, heksadesimaal-geënkodeerde segment van die lêers of aanvalsvektore wat geïdentifiseer moet word, met 'n etiket en soms ander metadata aangeheg om dit te beskryf en te kontekstualiseer.
+   Handtekeninge word tipies saam in handtekeninglêers gestoor. Hierdie handtekeninglêers is nodig vir phpMussel om virusse, trojane, en verskeie ander bedreigings op te spoor.
  Indexes:
   [Vals negatief, Vals positief, Ware negatief, Ware positief]: "false_positive"
+  Handtekening: "signature"
  Refs:
   Vals positief:
    Vals positief en vals negatief - Wikipedia: "https://af.wikipedia.org/wiki/Vals_positief_en_vals_negatief"

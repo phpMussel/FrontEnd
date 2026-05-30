@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data (last modified: 2026.05.05).
+# This file: German language data (last modified: 2026.05.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -35,8 +35,13 @@ Glossary: !lazy
    | Die Datei wurde als sicher eingestuft (der Upload wird NICHT blockiert) | Richtig-Negativ (korrekte Schlussfolgerung) | Verpasste Erkennung (oder Falsch-Negativ) |
    | Die Datei wurde als gefährlich eingestuft (der Upload WIRD blockiert) | Falsch-Positiv | Richtig-Positiv (korrekte Schlussfolgerung) |
    Sollten Sie auf Falscher-Positiver stoßen, können Sie es im Issue-Tracker von phpMussel melden.
+  Signatur: |
+   Im Kontext von phpMussel bezeichnet der Begriff „Signatur“ auf Daten die dazu dienen, schädliche Dateien, bekannte Angriffsvektoren, und andere derartige Bedrohungen zu identifizieren (wie eine Art digitaler Fingerabdruck).
+   Diese Daten liegen typischerweise in Form einer Prüfsumme, eines Hashwerts, oder eines neutralisierten, hexadezimal codierten Segments der zu identifizierenden Dateien oder Angriffsvektoren vor, wobei eine Bezeichnung und manchmal weitere Metadaten zur Beschreibung und Kontextualisierung hinzugefügt werden.
+   Signaturen werden üblicherweise in Signaturdateien gespeichert. Diese Signaturdateien sind notwendig damit phpMussel Viren, Trojaner, und verschiedene andere Bedrohungen erkennen kann.
  Indexes:
   [Falsch-Negativ, Falsch-Positiv, Richtig-Negativ, Richtig-Positiv]: "false_positive"
+  Signatur: "signature"
  Refs:
   Falsch-Positiv:
    falsch-positiv – Wiktionary: "https://de.wiktionary.org/wiki/falsch-positiv"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Catalan language data (last modified: 2026.05.05).
+# This file: Catalan language data (last modified: 2026.05.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -35,8 +35,13 @@ Glossary: !lazy
    | El fitxer s'ha identificat com a segur (la càrrega NO està bloquejada) | Veritable negatiu (inferència correcta) | Detecció perduda (o fals negatiu) |
    | El fitxer s'ha identificat com a perillós (la càrrega ESTÀ bloquejada) | Fals positiu | Veritable positiu (inferència correcta) |
    Si trobeu falsos positius, podeu informar-ne al rastrejador d'incidències de phpMussel.
+  Signatura: |
+   En el context de phpMussel, una signatura ("signature" en anglès) fa referència a dades que serveixen per identificar fitxers maliciosos, vectors d'atac coneguts, i altres amenaces similars (com una mena d'empremta digital).
+   Aquestes dades solen prendre la forma d'una suma de verificació, un hash, o un segment neutralitzat i codificat en hexadecimal dels fitxers o vectors d'atac que s'han d'identificar, amb una etiqueta i de vegades altres metadades adjuntes per descriure-les i contextualitzar-les.
+   Les signatures normalment s'emmagatzemen juntes en fitxers de signatures. Aquests fitxers de signatures són necessaris perquè phpMussel pugui detectar virus, troians, i altres amenaces.
  Indexes:
   [Fals negatiu, Fals positiu, Veritable negatiu, Veritable positiu]: "false_positive"
+  Signatura: "signature"
  Refs:
   Fals positiu:
    "Falsos positius i falsos negatius - Viquipèdia, l'enciclopèdia lliure": "https://ca.wikipedia.org/wiki/Falsos_positius_i_falsos_negatius"

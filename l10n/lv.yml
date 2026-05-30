@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2026.05.05).
+# This file: Latvian language data (last modified: 2026.05.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -35,8 +35,13 @@ Glossary: !lazy
    | Fails ir identificēts kā drošs (augšupielāde NAV bloķēta) | Patiesi negatīvs (pareizu secinājumu) | Nepamanīta noteikšana (vai viltus negatīvs) |
    | Fails ir identificēts kā bīstams (augšupielāde IR bloķēta) | Viltus pozitīvs | Patiesi pozitīvs (pareizu secinājumu) |
    Ja rodas kļūdaini pozitīvi rezultāti, varat ziņot par to phpMussel problēmu izsekotājā.
+  Paraksts: |
+   phpMussel kontekstā paraksts ("signature" angļu valodā) attiecas uz datiem, kas kalpo ļaunprātīgu failu, zināmu uzbrukumu vektoru, un citu līdzīgu draudu identificēšanai (kā sava veida digitāls pirkstu nospiedums).
+   Šie dati parasti ir kontrolsummas, jaucējkoda, vai neitralizēta, heksadecimāli kodēta identificējamo failu vai uzbrukuma vektoru segmenta veidā, kam pievienota etiķete un dažreiz citi metadati, lai to aprakstītu un kontekstualizētu.
+   Paraksti parasti tiek glabāti kopā parakstu failos. Šie parakstu faili ir nepieciešami, lai phpMussel varētu atklāt vīrusus, trojas zirgus, un dažādus citus draudus.
  Indexes:
   [Viltus negatīvs, Viltus pozitīvs, Patiesi negatīvs, Patiesi pozitīvs]: "false_positive"
+  Paraksts: "signature"
  Refs:
   Viltus pozitīvs:
    Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"

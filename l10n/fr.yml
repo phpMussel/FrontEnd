@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2026.05.05).
+# This file: French language data (last modified: 2026.05.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -45,8 +45,13 @@ Glossary: !lazy
     | Le fichier est identifié comme sûr (le téléversement n'est PAS bloqué) | Vrai négatif (inférence correcte) | Détection manquée (ou faux négatif) |
     | Le fichier est identifié comme dangereux (le téléversement EST bloqué) | Faux positif | Vrai positif (inférence correcte) |
     Si vous rencontrez des faux positifs, vous pouvez le signaler sur le système de suivi des problèmes de phpMussel.
+  Signature: |
+   Dans le contexte de phpMussel, une signature désigne des données servant à identifier les fichiers malveillants, les vecteurs d'attaque connus, et autres menaces de ce type (comme une sorte d'empreinte numérique).
+   Ces données prennent généralement la forme d'une somme de contrôle, d'un hachage, ou d'un segment neutralisé et encodé en hexadécimal des fichiers ou des vecteurs d'attaque à identifier, avec une étiquette et parfois d'autres métadonnées jointes pour le décrire et le contextualiser.
+   Signatures are typically stored together in signature files. These signature files are needed for phpMussel to be able to detect viruses, trojans, and various other threats.
  Indexes:
   [Faux négatif, Faux positif, Vrai négatif, Vrai positif]: "false_positive"
+  Signature: "signature"
  Refs:
   Faux positif:
    faux positif — Wiktionnaire, le dictionnaire libre: "https://fr.wiktionary.org/wiki/faux_positif"

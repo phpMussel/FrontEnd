@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data (last modified: 2026.05.05).
+# This file: Romanian language data (last modified: 2026.05.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -35,8 +35,13 @@ Glossary: !lazy
    | Fișierul este identificat ca sigur (încărcarea NU este blocată) | Adevărat negativ (inferență corectă) | Detecție ratată (sau fals negativ) |
    | Fișierul este identificat ca periculos (încărcarea ESTE blocată) | Fals pozitiv | Adevărat pozitiv (inferență corectă) |
    Dacă întâmpinați rezultate fals pozitive, o puteți raporta în sistemul de urmărire a problemelor phpMussel.
+  Semnătură: |
+   În contextul phpMussel, o semnătură („signature” în engleză) se referă la date care servesc la identificarea fișierelor malițioase, a vectorilor de atac cunoscuți, și a altor astfel de amenințări (cum ar fi un fel de amprentă digitală).
+   Aceste date iau de obicei forma unei sume de control, a unui hash, sau a unui segment neutralizat, codificat hexazecimal, al fișierelor sau vectorilor de atac care urmează să fie identificați, cu o etichetă și uneori alte metadate atașate pentru a le descrie și contextualiza.
+   Semnăturile sunt de obicei stocate împreună în fișiere de semnătură. Aceste fișiere de semnătură sunt necesare pentru ca phpMussel să poată detecta viruși, troieni, și diverse alte amenințări.
  Indexes:
   [Fals negativ, Fals pozitiv, Adevărat negativ, Adevărat pozitiv]: "false_positive"
+  Semnătură: "signature"
  Refs:
   Fals pozitiv:
    Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"

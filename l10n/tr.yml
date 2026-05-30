@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2026.05.05).
+# This file: Turkish language data (last modified: 2026.05.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -35,8 +35,13 @@ Glossary: !lazy
    | Dosya güvenli olarak tanımlandı (yükleme engellenmedi) | Gerçek negatif (doğru çıkarım) | Gözden kaçan tespit (veya yanlış negatif) |
    | Dosya tehlikeli olarak tanımlandı (yükleme engellendi) | Yanlış pozitif | Gerçek pozitif (doğru çıkarım) |
    Yanlış pozitif karşılaşırsanız, sorunu phpMussel'ın sorun takip sistemine bildirebilirsiniz.
+  İmza: |
+   phpMussel bağlamında, imza (İngilizce'de "signature") kötü amaçlı dosyaları, bilinen saldırı vektörlerini, ve diğer tehditleri tanımlamaya yarayan verileri ifade eder (bir tür dijital parmak izi gibi).
+   Bu veriler tipik olarak, tanımlanacak dosyaların veya saldırı vektörlerinin bir sağlama toplamı, bir karma değeri, veya etkisiz hale getirilmiş, onaltılık kodlanmış bir bölümü şeklinde olup, bunları tanımlamak ve bağlamlandırmak için bir etiket ve bazen diğer meta veriler de eklenir.
+   İmzalar genellikle imza dosyalarında birlikte saklanır. Bu imza dosyaları, phpMussel'in virüsleri, truva atlarını, ve çeşitli diğer tehditleri tespit edebilmesi için gereklidir.
  Indexes:
   [Yanlış negatif, Yanlış pozitif, Gerçek negatif, Gerçek pozitif]: "false_positive"
+  İmza: "signature"
  Refs:
   Yanlış pozitif:
    Yanlış pozitif ve yanlış negatif - Vikipedi: "https://tr.wikipedia.org/wiki/Yanl%C4%B1%C5%9F_pozitif_ve_yanl%C4%B1%C5%9F_negatif"

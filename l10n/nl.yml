@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2026.05.05).
+# This file: Dutch language data (last modified: 2026.05.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -35,8 +35,13 @@ Glossary: !lazy
    | Het bestand wordt als veilig aangemerkt (de upload wordt NIET geblokkeerd) | Echt negatief (correcte conclusie) | Gemiste detectie (of valsnegatief) |
    | Het bestand wordt als gevaarlijk aangemerkt (de upload WORDT geblokkeerd) | Valspositief | Echt positief (correcte conclusie) |
    Als u valspositieven tegenkomt, kunt u het melden via de probleemtracker van phpMussel.
+  Signature: |
+   In de context van phpMussel verwijst een signature naar gegevens die dienen om kwaadwillende bestanden, bekende aanvalsvectoren, en andere dergelijke bedreigingen te identificeren (zoals een soort digitale vingerafdruk).
+   Deze gegevens hebben doorgaans de vorm van een checksum, een hash, of een geneutraliseerd, hexadecimaal gecodeerd segment van de bestanden of aanvalsvectoren die moeten worden geïdentificeerd, met een label en soms andere metadata om het te beschrijven en in context te plaatsen.
+   Signatures worden doorgaans samen opgeslagen in signatuurbestanden. Deze signatuurbestanden zijn nodig zodat phpMussel virussen, trojans, en diverse andere bedreigingen kan detecteren.
  Indexes:
   [Valsnegatief, Valspositief, Echt negatief, Echt positief]: "false_positive"
+  Signature: "signature"
  Refs:
   Valspositief:
    Foutpositief en foutnegatief - Wikipedia: "https://nl.wikipedia.org/wiki/Foutpositief_en_foutnegatief"

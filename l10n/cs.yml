@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Czech language data (last modified: 2026.05.05).
+# This file: Czech language data (last modified: 2026.05.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -35,8 +35,13 @@ Glossary: !lazy
    | Soubor je identifikován jako bezpečný (nahrávání NENÍ blokováno) | Skutečně negativní (správný závěr) | Zmeškaná detekce (nebo falešně negativní) |
    | Soubor je identifikován jako nebezpečný (nahrávání JE blokováno) | Falešně pozitivní | Skutečně pozitivní (správný závěr) |
    Pokud narazíte na falešně pozitivní, můžete jej nahlásit v systému pro sledování problémů phpMussel.
+  Podpis: |
+   V kontextu phpMussel se podpis (v angličtině „signature“) vztahuje na data, která slouží k identifikaci škodlivých souborů, známých útočných vektorů, a dalších podobných hrozeb (jako druh digitálního otisku prstu).
+   Tato data mají obvykle podobu kontrolního součtu, haše, nebo neutralizovaného, ​​hexadecimálně kódovaného segmentu souborů nebo útočných vektorů, které mají být identifikovány, s popiskem a někdy i dalšími metadaty připojenými k jejich popisu a kontextualizaci.
+   Podpisy jsou obvykle uloženy společně v souborech s podpisy. Tyto podpisové soubory jsou potřebné k tomu, aby phpMussel dokázal detekovat viry, trojské koně, a různé další hrozby.
  Indexes:
   [Falešně negativní, Falešně pozitivní, Skutečně negativní, Skutečně pozitivní]: "false_positive"
+  Podpis: "signature"
  Refs:
   Falešně pozitivní:
    Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
