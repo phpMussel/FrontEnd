@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2026.05.06).
+# This file: Japanese language data (last modified: 2026.05.31).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -35,8 +35,13 @@ Glossary: !lazy
    | ファイルは安全と判断されました（アップロードはブロックされません） | 真陰性（正しい推論） | 検出漏れ（または、偽陰性） |
    | ファイルは危険と判断されました（アップロードはブロックされます） | 偽陽性 | 真陽性（正しい推論） |
    偽陽性が発生した場合は、phpMusselの課題追跡システムに問題を報告してください。
+  シグネチャ: |
+   phpMusselの文脈では、シグネチャ（英語では「signature」）とは、悪意のあるファイル、既知の攻撃ベクトル、その他の脅威を識別するために使用されるデータを指します（一種のデジタル指紋のようなもの）。
+   このデータは通常、識別対象となるファイルまたは攻撃ベクトルのチェックサム、ハッシュ、または中立化された１６進数エンコードされたセグメントの形式をとり、ラベルや場合によってはその他のメタデータが付加されて、その内容を説明および文脈化します。
+   シグネチャは通常、シグネチャ・ファイルにまとめて保存されます。 これらのシグネチャ・ファイルは、phpMusselがウイルス、トロイの木馬、その他様々な脅威を検出するために必要です。
  Indexes:
   [偽陰性, 偽陽性, 真陰性, 真陽性]: "false_positive"
+  シグネチャ: "signature"
  Refs:
   偽陽性:
    Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2026.05.13).
+# This file: Korean language data (last modified: 2026.05.31).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -35,8 +35,13 @@ Glossary: !lazy
    | 해당 파일은 안전한 것으로 확인되었습니다 (업로드를 차단하지 않습니다) | 진실 음성 (정확한 추론) | 탐지 실패 (또는 거짓 음성) |
    | 해당 파일은 위험한 것으로 확인되었습니다 (업로드를 차단합니다) | 거짓 양성 | 진실 양성 (정확한 추론) |
    거짓 양성이 발생하는 경우, phpMussel의 문제 추적 시스템에 문제를 보고할 수 있습니다.
+  서명: |
+   phpMussel의 맥락에서, 서명은 (영어에서 "signature") 악성 파일, 알려진 공격 벡터, 및 기타 위협을 식별하는 데 사용되는 데이터를 의미합니다 (일종의 디지털 지문과 같음).
+   이 데이터는 일반적으로 식별 대상 파일이나 공격 벡터의 체크섬, 해시, 또는 중화된 16진수 인코딩 세그먼트 형태로 제공되며, 레이블과 경우에 따라 이를 설명하고 맥락화하는 기타 메타데이터가 첨부됩니다.
+   서명은 일반적으로 서명 파일에 함께 저장됩니다. phpMussel이 바이러스, 트로이 목마, 및 기타 다양한 위협을 탐지하려면 이러한 시그니처 파일이 필요합니다.
  Indexes:
   [거짓 음성, 거짓 양성, 진실 음성, 진실 양성]: "false_positive"
+  서명: "signature"
  Refs:
   거짓 양성:
    거짓 양성과 거짓 음성 - 위키백과, 우리 모두의 백과사전: "https://ko.wikipedia.org/wiki/%EA%B1%B0%EC%A7%93_%EC%96%91%EC%84%B1%EA%B3%BC_%EA%B1%B0%EC%A7%93_%EC%9D%8C%EC%84%B1"
