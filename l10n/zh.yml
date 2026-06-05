@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese language data (last modified: 2026.05.29).
+# This file: Chinese language data (last modified: 2026.06.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -51,7 +51,7 @@ Glossary: !lazy
     该数据通常以校验和、哈希值、或中和的、十六进制编码的文件或攻击向量片段的形式出现，并附有标签，有时还会附有其他元数据来描述和说明其上下文。
     签名通常存储在签名文件中。 phpMussel需要这些签名文件才能检测病毒、木马、和其他各种威胁。
    zh-Hant: |
-    在phpMussel的上下文中，簽名（英文為「signature」）指的是用於識別惡意檔案、已知攻擊向量、和其他此類威脅的數據（類似於數位指紋）。
+    在phpMussel的上下文中，簽名（英文為『signature』）指的是用於識別惡意檔案、已知攻擊向量、和其他此類威脅的數據（類似於數位指紋）。
     該數據通常以校驗和、雜湊值、或中和的、十六進位編碼的檔案或攻擊向量片段的形式出現，並附有標籤，有時還會附有其他元數據來描述和說明其上下文。
     簽名通常儲存在簽名檔案中。 phpMussel需要這些簽名檔案才能偵測病毒、木馬、和其他各種威脅。
  Indexes:

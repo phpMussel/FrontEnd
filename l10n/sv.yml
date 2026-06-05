@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2026.05.29).
+# This file: Swedish language data (last modified: 2026.06.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -36,7 +36,7 @@ Glossary: !lazy
    | Filen är identifierad som farlig (uppladdningen ÄR blockerad) | Falskt positiv | Sant positiv (korrekt slutsats) |
    Om du stöter på falska positiva, du kan rapportera dem via phpMussels problemspårare.
   Signatur: |
-   I phpMussel-sammanhang hänvisar en signatur till data som tjänar till att identifiera skadliga filer, kända attackvektorer, och andra sådana hot (som ett slags digitalt fingeravtryck).
+   I phpMussel-sammanhang avser en signatur till data som tjänar till att identifiera skadliga filer, kända attackvektorer, och andra sådana hot (som ett slags digitalt fingeravtryck).
    Denna data har vanligtvis formen av en kontrollsumma, en hash, eller ett neutraliserat, hexadecimalt kodat segment av de filer eller attackvektorer som ska identifieras, med en etikett och ibland andra metadata bifogade för att beskriva och kontextualisera den.
    Signaturer lagras vanligtvis tillsammans i signaturfiler. Dessa signaturfiler behövs för att phpMussel ska kunna upptäcka virus, trojaner, och diverse andra hot.
  Indexes:
