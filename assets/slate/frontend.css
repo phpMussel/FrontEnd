@@ -193,3 +193,4 @@ input[type=hidden],script{display:none}
 .smicontxt{padding:0 1px 0 1px}
 .fixComCatBtnVert{position:relative;top:3px}
 input.clpbrdbtn{padding-{FE_Align}:21px;background-position:top 1px {FE_Align} 4px;background-image:url(data:image/svg+xml;base64,{Base64Encode}{Asset:clipboard.svg}{/Base64Encode})}
+input[type=checkbox],input[type=checkbox]:active,input[type=checkbox]:hover,input[type=radio],input[type=radio]:active,input[type=radio]:hover{width:13px;height:13px;padding:0}
