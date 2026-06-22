@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The quarantine page (last modified: 2026.05.28).
+ * This file: The quarantine page (last modified: 2026.06.22).
  */
 
 namespace phpMussel\FrontEnd;
@@ -86,7 +86,11 @@ if (
 $QuarantineRow = $this->Loader->readFile($this->getAssetPath('_quarantine_row.html'));
 
 /** Fetch quarantine data array. */
-$FilesInQuarantine = $this->quarantineRecursiveList();
+try {
+    $FilesInQuarantine = $this->quarantineRecursiveList();
+} catch (\UnexpectedValueException | \Exception $Exception) {
+    $FilesInQuarantine = [];
+}
 
 /** Number of files in quarantine. */
 $FilesInQuarantineCount = \count($FilesInQuarantine);
