@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese language data (last modified: 2026.05.29).
+# This file: Portuguese language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -567,6 +567,7 @@ tip:
   pt-PT: "A página de teste de carregamentos contém um formulário padrão para carregando arquivos, a permitir que teste se um arquivo seria normalmente bloqueado através phpMussel quando carregando."
 warning: !lazy
  Cookies: "Nota: phpMussel usa um cookie para autenticar logins. Ao efetuar o login, você dá seu consentimento para que um cookie seja criado e armazenado pelo seu navegador."
+ Extremely common passwords should be avoided: "Atenção: Senhas extremamente comuns devem ser evitadas."
  JavaScript required: "Atenção: Algumas funcionalidades do front-end requerem JavaScript. Para garantir que todo o front-end se comporte conforme o esperado, é recomendável ativar o JavaScript."
  Maintenance mode is enabled: "Atenção: O modo de manutenção está ativado!"
  No signature files are active: "Atenção: Nenhum arquivo de assinaturas está ativo!"

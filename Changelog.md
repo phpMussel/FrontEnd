@@ -227,7 +227,7 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 
 #### Other changes.
 - [2026.01.14]: Added aria expanded and controls attributes to some of the clickable menus at the front-end.
-- [2026.02.26]: The cache data page can now manage flatfile caching and APCU caching alongside whatever else is enabled at the same time (sometimes useful for when switching between different caching mechanisms but needing to manage entries from both mechanisms or others at the same time). Replaced the delete emoji at the cache data page with an SVG. Slightly modernised the structure of the cache data page.
+- [2026.02.26]: The cache data page can now manage flatfile caching and APCu caching alongside whatever else is enabled at the same time (sometimes useful for when switching between different caching mechanisms but needing to manage entries from both mechanisms or others at the same time). Replaced the delete emoji at the cache data page with an SVG. Slightly modernised the structure of the cache data page.
 - [2026.02.28]: Refactored some of the L10N data.
 - [2026.03.13]: Added the ability to duplicate cache data across different cache mechanisms at the front-end cache data page.
 - [2026.03.17]: Various minor performance improvements.
@@ -239,6 +239,9 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 - [2026.05.02]: Discovered that I'd included the CIDRAM standard file header instead of the phpMussel front-end standard file header in some of the phpMussel front-end's PHP files. I've no doubt that this occurred due to that I've adopted very similar structures, concepts, design choices, and code-style for both projects, and accordingly, often work on the files for both at the same time whenever working on something applicable to both, and in the course of doing so, likely copy/pasted the headers from a file belonging to the former onto the affected files belonging to the latter without realising it at the time. Naturally, as this mistake isn't desirable, I consider it a bug, though as these file headers are merely comments, with no actual code being affected, said bug is non-functional. In any case, now fixed.
 - [2026.06.07]: After updating Edge to the latest version today, the size and position of checkbox and radio fields at the front-end would glitch out whenever passing over and losing mouse focus on them for some reason. Added some hard width and height values specifically for these input types to the CSS to counteract the problem.
 - [2026.06.22]: Some methods which instantiate RecursiveIteratorIterator objects which instantiate RecursiveDirectoryIterator objects could trigger fatal errors due to uncaught UnexpectedValueException exceptions, thus causing execution to end prematurely, when supplied paths to directories which contain subdirectories for which PHP doesn't have sufficient permissions to read; To prevent this in the future, the affected calls have been guarded with try/catch blocks, and where try/catch blocks aren't practical, guarded by appropriate checks.
+
+#### Security.
+- [2026.08.30]: The default password usage warning now shows not only at the accounts page, but across the entire front-end when logged into an affected account in the hopes of more strongly encouraging any users which haven't yet set a proper password to do so. Furthermore, when any password field at the accounts page contains more than 1 but less than 8 characters, or when its content matches an entry from a predefined "list of the most common passwords", a warning will now be displayed that "extremely common passwords should be avoided".
 
 #### Other changes.
 - [2026.05.02]: Added a glossary page to the front-end.

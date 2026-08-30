@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2026.05.29).
+# This file: Afrikaans language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -413,6 +413,7 @@ tip:
  Upload Testing: "Die oplaaitoetsingbladsy bevat 'n standaard lêeroplaaivorm, wat jou toelaat om te toets of 'n lêer normaalweg deur phpMussel geblokkeer sal word wanneer jy dit probeer oplaai."
 warning: !lazy
  Cookies: "Kennis neem: phpMussel gebruik 'n koekie vir die verifikasie van intekeninge. Deur in te teken, gee jy jou toestemming dat 'n koekie deur jou blaaier geskep en gestoor word."
+ Extremely common passwords should be avoided: "Waarskuwing: Uiters algemene wagwoorde moet vermy word."
  JavaScript required: "Waarskuwing: Sommige front-end funksionaliteit vereis JavaScript. Om te verseker dat die hele front-end optree soos verwag, word dit aanbeveel om JavaScript te aktiveer."
  Maintenance mode is enabled: "Waarskuwing: Onderhoudsmodus is geaktiveer!"
  No signature files are active: "Waarskuwing: Geen handtekeninglêers is aktief nie!"

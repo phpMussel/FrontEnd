@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2026.05.29).
+# This file: Polish language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -413,6 +413,7 @@ tip:
  Upload Testing: "Strona testowa przesyłania zawiera standardowy formularz przesyłania pliku. Możesz go użyć do przetestowania, czy plik normalnie zostałby zablokowany przez phpMussel."
 warning: !lazy
  Cookies: "Uwaga: phpMussel wykorzystuje plik cookie do uwierzytelnienia logowania. Logując się, wyrażasz zgodę na utworzenie i przechowywanie plików cookie przez przeglądarkę."
+ Extremely common passwords should be avoided: "Ostrzeżenie: Należy unikać niezwykle powszechnych haseł."
  JavaScript required: "Ostrzeżenie: Niektóre funkcjonalność wymagają JavaScript. Aby upewnić się, że cały interfejs zachowuje się zgodnie z oczekiwaniami, zalecane jest włączenie JavaScript."
  Maintenance mode is enabled: "Ostrzeżenie: Tryb konserwacji jest włączony!"
  No signature files are active: "Ostrzeżenie: Żadne pliki podpis nie są aktywne!"

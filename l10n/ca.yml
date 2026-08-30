@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Catalan language data (last modified: 2026.05.29).
+# This file: Catalan language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -413,6 +413,7 @@ tip:
  Upload Testing: "La pàgina de prova de càrrega conté un formulari estàndard de càrrega de fitxers, que us permet comprovar si un fitxer normalment seria bloquejat per phpMussel quan intenteu carregar-lo."
 warning: !lazy
  Cookies: "Nota: phpMussel utilitza una cookie per autenticar els inicis de sessió. En iniciar sessió, doneu el vostre consentiment perquè el vostre navegador creï i emmagatzemi una cookie."
+ Extremely common passwords should be avoided: "Avís: S'hauria evitar les contrasenyes extremadament comunes."
  JavaScript required: "Avís: Algunes funcionalitats del front-end requereixen JavaScript. Per assegurar-vos que tot el front-end es comporta com s'esperava, es recomana activar JavaScript."
  Maintenance mode is enabled: "Avís: El mode de manteniment està activat!"
  No signature files are active: "Avís: No hi ha cap fitxer de signatura actiu!"

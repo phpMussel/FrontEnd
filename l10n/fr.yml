@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2026.05.29).
+# This file: French language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -447,6 +447,7 @@ tip:
   fr-CA: "La page pour tester les téléversements contient un formulaire pour le téléversement de fichiers standard, vous permettant de tester si un fichier serait normalement bloqué par phpMussel lorsque vous essayez de le téléverser."
 warning: !lazy
  Cookies: "Remarque\_: phpMussel utilise un cookie pour authentifier les connexions. En vous connectant, vous donnez votre consentement pour qu'un cookie soit créé et stocké par votre navigateur."
+ Extremely common passwords should be avoided: "Attention\_: Il convient d'éviter les mots de passe couramment utilisés."
  JavaScript required: "Attention\_: Certaines fonctionnalités nécessitent JavaScript. Pour garantir que l'ensemble de l'interface se comporte comme prévu, il est recommandé d'activer JavaScript."
  Maintenance mode is enabled: "Avertissement\_: Le mode de maintenance est activé\_!"
  No signature files are active: "Attention\_: Il n'y a pas fichiers du signatures actifs."

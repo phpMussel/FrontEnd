@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Serbian language data (last modified: 2026.06.04).
+# This file: Serbian language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -413,6 +413,7 @@ tip:
  Upload Testing: "Страница за тестирање отпремања садржи стандардни образац за отпремање датотека, који вам омогућава да тестирате да ли би пхпМуссел обично блокирао датотеку када покушавате да је отпремите."
 warning: !lazy
  Cookies: "Белешка: пхпМуссел користи колачић за аутентификацију пријављивања. Пријављивањем, дајете сагласност да ваш претраживач креира и чува колачић."
+ Extremely common passwords should be avoided: "Упозорење: Треба избегавати изузетно уобичајене лозинке."
  JavaScript required: "Упозорење: Неке фронт-енд функционалности захтевају ЈаваСцрипт. Да бисте осигурали да се цео фронт-енд понаша како се очекује, препоручује се омогућавање ЈаваСцрипт-а."
  Maintenance mode is enabled: "Упозорење: Режим одржавања је омогућен!"
  No signature files are active: "Упозорење: Ниједан датотеке потписа није активан!"

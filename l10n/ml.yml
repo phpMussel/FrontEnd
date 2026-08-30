@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malayalam language data (last modified: 2026.05.29).
+# This file: Malayalam language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -412,6 +412,7 @@ tip:
  Upload Testing: "അപ്‌ലോഡ് ടെസ്റ്റിംഗ് പേജിൽ ഒരു സ്റ്റാൻഡേർഡ് ഫയൽ അപ്‌ലോഡ് ഫോം അടങ്ങിയിരിക്കുന്നു, ഒരു ഫയൽ അപ്‌ലോഡ് ചെയ്യാൻ ശ്രമിക്കുമ്പോൾ സാധാരണയായി phpMussel അത് തടയുമോ എന്ന് പരിശോധിക്കാൻ ഇത് നിങ്ങളെ അനുവദിക്കുന്നു."
 warning: !lazy
  Cookies: "കുറിപ്പ്: ലോഗിനുകൾ പ്രാമാണീകരിക്കുന്നതിന് phpMussel ഒരു കുക്കി ഉപയോഗിക്കുന്നു. ലോഗിൻ ചെയ്യുന്നതിലൂടെ, നിങ്ങളുടെ ബ്രൗസർ ഒരു കുക്കി സൃഷ്ടിക്കുന്നതിനും സംഭരിക്കുന്നതിനും നിങ്ങൾ സമ്മതം നൽകുന്നു."
+ Extremely common passwords should be avoided: "മുന്നറിയിപ്പ്: വളരെ സാധാരണമായ പാസ്‌വേഡുകൾ ഒഴിവാക്കണം."
  JavaScript required: "മുന്നറിയിപ്പ്: ചില ഫ്രണ്ട്-എൻഡ് ഫംഗ്ഷണാലിറ്റികൾക്ക് ജാവാസ്ക്രിപ്റ്റ് ആവശ്യമാണ്. മുഴുവൻ ഫ്രണ്ട്-എൻഡും പ്രതീക്ഷിച്ചതുപോലെ പ്രവർത്തിക്കുന്നുവെന്ന് ഉറപ്പാക്കാൻ, JavaScript പ്രവർത്തനക്ഷമമാക്കാൻ ശുപാർശ ചെയ്യുന്നു."
  Maintenance mode is enabled: "മുന്നറിയിപ്പ്: മെയിന്റനൻസ് മോഡ് പ്രവർത്തനക്ഷമമാക്കി!"
  No signature files are active: "മുന്നറിയിപ്പ്: ഒപ്പ് ഫയലുകളൊന്നും സജീവമല്ല!"

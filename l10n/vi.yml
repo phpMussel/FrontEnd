@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2026.05.29).
+# This file: Vietnamese language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -410,6 +410,7 @@ tip:
  Upload Testing: "Trang kiểm tra tải lên chứa một hình thức tải lên tập tin chuẩn, mà cho phép bạn để kiểm tra liệu một tập tin sẽ thường bị chặn bởi phpMussel khi cố gắng để tải nó lên."
 warning: !lazy
  Cookies: "Lưu ý: phpMussel sử dụng một cookie để xác thực đăng nhập. Bằng cách đăng nhập, bạn đồng ý cho cookie được tạo và lưu trữ bởi trình duyệt của bạn."
+ Extremely common passwords should be avoided: "Cảnh báo: Nên tránh sử dụng những mật khẩu quá phổ biến."
  JavaScript required: "Cảnh báo: Một số chức năng yêu cầu JavaScript. Để đảm bảo rằng toàn bộ giao diện hoạt động như mong đợi, bạn nên bật JavaScript."
  Maintenance mode is enabled: "Cảnh báo: Đã bật chế độ bảo trì!"
  No signature files are active: "Cảnh báo: Không có tập tin chữ ký nào đang hoạt động!"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese language data (last modified: 2026.06.04).
+# This file: Chinese language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -587,8 +587,15 @@ tip:
  Statistics: {"zh-Hans": "此页面显示了有关phpMussel安装的一些基本使用统计信息。", "zh-Hant": "此頁面顯示了有關phpMussel安裝的一些基本使用統計信息。"}
  Upload Testing: {"zh-Hans": "上传测试页面包含标准文件上传表单，允许您测试是否文件通常会被阻止通过phpMussel当尝试上传他们。", "zh-Hant": "上傳測試頁麵包含標准文件上傳表單，允許您測試是否文件通常會被阻止通過phpMussel當嘗試上傳他們。"}
 warning: !lazy
- Cookies: {"zh-Hans": "注意：phpMussel使用cookie来验证登录。 通过登录，您同意您的浏览器创建和存储cookie。", "zh-Hant": "注意：phpMussel使用cookie來驗證登錄。 通過登錄，您同意您的瀏覽器創建和存儲cookie。"}
- JavaScript required: {"zh-Hans": "警告：一些前端功能需要JavaScript。为确保整个前端按预期运行，建议启用JavaScript。", "zh-Hant": "警告：一些前端功能需要JavaScript。為確保整個前端按預期運行，建議啟用JavaScript。"}
+ Cookies:
+  zh-Hans: "注意：phpMussel使用cookie来验证登录。 通过登录，您同意您的浏览器创建和存储cookie。"
+  zh-Hant: "注意：phpMussel使用cookie來驗證登錄。 通過登錄，您同意您的瀏覽器創建和存儲cookie。"
+ Extremely common passwords should be avoided:
+  zh-Hans: "警告：应避免使用过于常见的密码。"
+  zh-Hant: "警告：應避免使用過於常見的密碼。"
+ JavaScript required:
+  zh-Hans: "警告：一些前端功能需要JavaScript。为确保整个前端按预期运行，建议启用JavaScript。"
+  zh-Hant: "警告：一些前端功能需要JavaScript。為確保整個前端按預期運行，建議啟用JavaScript。"
  Maintenance mode is enabled: {"zh-Hans": "警告：维护模式是启用！", "zh-Hant": "警告：維護模式是啟用！"}
  No signature files are active: {"zh-Hans": "警告：没有签名文件是活动的！", "zh-Hant": "警告：沒有簽名檔案是活動的！"}
  Proceeding will log out all users: {"zh-Hans": "警告：如果继续，所有用户都将被登出。", "zh-Hant": "警告：如果繼續，所有用戶都將被登出。"}

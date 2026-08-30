@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2026.05.29).
+# This file: Malay language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -410,6 +410,7 @@ tip:
  Upload Testing: "Halaman ujian muat naik mengandungi borang muat naik fail standard, membolehkan anda menguji sama ada fail biasanya akan disekat oleh phpMussel apabila cuba memuat naiknya."
 warning: !lazy
  Cookies: "Nota: phpMussel menggunakan kuki untuk mengesahkan log masuk. Apabila anda log masuk, anda memberikan persetujuan anda untuk kuki dibuat dan disimpan oleh penyemak imbas anda."
+ Extremely common passwords should be avoided: "Amaran: Kata laluan yang terlalu lazim harus dielakkan."
  JavaScript required: "Amaran: Sesetengah kefungsian bahagian hadapan memerlukan JavaScript. Untuk memastikan bahawa keseluruhan bahagian hadapan berkelakuan seperti yang diharapkan, mendayakan JavaScript adalah disyorkan."
  Maintenance mode is enabled: "Amaran: Beroperasi dalam mod penyelenggaraan!"
  No signature files are active: "Amaran: Tiada fail tandatangan yang aktif!"

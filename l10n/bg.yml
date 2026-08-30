@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bulgarian language data (last modified: 2026.05.29).
+# This file: Bulgarian language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -412,6 +412,7 @@ tip:
  Upload Testing: "Страницата за тестване на качване съдържа стандартен формуляр за качване на файл, който ви позволява да тествате дали даден файл нормално би бил блокиран от phpMussel, когато се опитвате да го качите."
 warning: !lazy
  Cookies: "Забележка: phpMussel използва бисквитка за удостоверяване на влизанията. С влизането си вие давате съгласието си бисквитка да бъде създадена и съхранявана от вашия браузър."
+ Extremely common passwords should be avoided: "Внимание: Изключително често срещани пароли трябва да се избягват."
  JavaScript required: "Внимание: Някои функционалност на фронтенд изискват JavaScript. За да сте сигурни че целият фронтендта се държи според очакванията, се препоръчва активирането на JavaScript."
  Maintenance mode is enabled: "Внимание: Режимът на поддръжка е активиран!"
  No signature files are active: "Внимание: Няма активни файлове за сигнатур!"

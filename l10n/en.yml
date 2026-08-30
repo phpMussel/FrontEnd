@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2026.05.29).
+# This file: English language data (last modified: 2026.08.30).
 ##/
 
 Glossary: !lazy
@@ -413,6 +413,7 @@ tip:
  Upload Testing: "The upload testing page contains a standard file upload form, allowing you to test whether a file would normally be blocked by phpMussel when attempting to upload it."
 warning: !lazy
  Cookies: "Note: phpMussel uses a cookie to authenticate logins. By logging in, you give your consent for a cookie to be created and stored by your browser."
+ Extremely common passwords should be avoided: "Warning: Extremely common passwords should be avoided."
  JavaScript required: "Warning: Some front-end functionality requires JavaScript. To ensure that the entire front-end behaves as expected, enabling JavaScript is recommended."
  Maintenance mode is enabled: "Warning: Maintenance mode is enabled!"
  No signature files are active: "Warning: No signature files are active!"

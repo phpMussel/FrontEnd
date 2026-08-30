@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Tamil language data (last modified: 2026.05.29).
+# This file: Tamil language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -412,6 +412,7 @@ tip:
  Upload Testing: "பதிவேற்ற சோதனை பக்கத்தில் ஒரு நிலையான கோப்பு பதிவேற்ற படிவம் உள்ளது. ஒரு கோப்பை பதிவேற்ற முயற்சிக்கும்போது பொதுவாக phpMussel ஆல் தடுக்கப்படுமா என்பதை சோதிக்க இது உங்களை அனுமதிக்கிறது."
 warning: !lazy
  Cookies: "குறிப்பு: உள்நுழைவுகளை அங்கீகரிக்க phpMussel ஒரு குக்கீயைப் பயன்படுத்துகிறது. உள்நுழைவதன் மூலம், உங்கள் உலாவியால் குக்கீ உருவாக்கப்பட்டு சேமிக்க உங்கள் ஒப்புதல் அளிக்கிறீர்கள்."
+ Extremely common passwords should be avoided: "எச்சரிக்கை: மிகவும் பொதுவான கடவுச்சொற்களைத் தவிர்க்க வேண்டும்."
  JavaScript required: "எச்சரிக்கை: சில முன்-முனை செயல்பாடுகளுக்கு JavaScript தேவைப்படுகிறது. முழு இடைமுகமும் எதிர்பார்த்தபடி செயல்படுவதை உறுதிசெய்ய, JavaScript ஐ இயக்குவது பரிந்துரைக்கப்படுகிறது."
  Maintenance mode is enabled: "எச்சரிக்கை: பராமரிப்பு முறை இயக்கப்பட்டது!"
  No signature files are active: "எச்சரிக்கை: கையொப்பக் கோப்புகள் எதுவும் செயலில் இல்லை!"

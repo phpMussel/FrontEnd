@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data (last modified: 2026.05.29).
+# This file: Romanian language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -413,6 +413,7 @@ tip:
  Upload Testing: "Pagina de testare a încărcării conține un formular standard de încărcare a fișierelor, permițându-vă să testați dacă un fișier ar fi în mod normal blocat de phpMussel atunci când încercați să îl încărcați."
 warning: !lazy
  Cookies: "Notă: phpMussel folosește un cookie pentru a autentifica conectarea. Conectându-vă, vă dați acordul ca un cookie să fie creat și stocat de browserul dvs."
+ Extremely common passwords should be avoided: "Avertizare: Parolele extrem de comune ar trebui evitate."
  JavaScript required: "Avertizare: Unele funcționalități front-end necesită JavaScript. Pentru a vă asigura că întregul front-end se comportă conform așteptărilor, se recomandă activarea JavaScript."
  Maintenance mode is enabled: "Avertizare: Modul de întreținere este activat!"
  No signature files are active: "Avertizare: Nu există fișiere de semnătură active!"

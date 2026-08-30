@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bosnian language data (last modified: 2026.05.29).
+# This file: Bosnian language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -414,6 +414,7 @@ tip:
  Upload Testing: "Stranica za testiranje prijenosa sadrži standardni obrazac za prijenos datoteka, koji vam omogućava da testirate da li bi phpMussel normalno blokirao datoteku kada pokušaju prijenosa."
 warning: !lazy
  Cookies: "Bilješka: phpMussel koristi kolačić za provjeru autentičnosti prijava. Prijavom dajete pristanak da vaš pretraživač kreira i pohrani kolačić."
+ Extremely common passwords should be avoided: "Upozorenje: Treba izbjegavati izuzetno uobičajene lozinke."
  JavaScript required: "Upozorenje: Neke front-end funkcionalnosti zahtijevaju JavaScript. Kako biste osigurali da se cijeli front-end ponaša kako se očekuje, preporučuje se omogućavanje JavaScripta."
  Maintenance mode is enabled: "Upozorenje: Režim održavanja je omogućen!"
  No signature files are active: "Upozorenje: Nijedan datoteka potpisa nije omogućen!"

@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The accounts page (last modified: 2026.05.02).
+ * This file: The accounts page (last modified: 2026.08.30).
  */
 
 namespace phpMussel\FrontEnd;
@@ -72,25 +72,12 @@ if (!$FE['ASYNC']) {
     /** Page initial prepwork. */
     $this->initialPrepwork($FE, $this->Loader->L10N->getString('link.Accounts'), $this->Loader->L10N->getString('tip.Accounts'));
 
-    /** Append async globals. */
-    $FE['JS'] .= \sprintf(
-        'window[%3$s]=\'accounts\';function acc(e,d,i,t){var o=function(e){%4$se)' .
-        '},a=function(){%4$s\'%1$s\')};window.username=%2$s(e).value,window.passw' .
-        'ord=%2$s(d).value,window.do=%2$s(t).value,\'delete-account\'==window.do&' .
-        '&$(\'POST\',\'\',[%3$s,\'username\',\'password\',\'do\'],a,function(e){%' .
-        '4$se),document.getElementById(\'q1\'+i).classList.add(\'fmDelete\'),docu' .
-        'ment.getElementById(\'q2\'+i).classList.add(\'fmDelete\'),document.getEl' .
-        'ementById(\'q3\'+i).classList.add(\'fmDelete\'),document.getElementById(' .
-        '\'q4\'+i).classList.add(\'fmDelete\')},o),\'update-password\'==window.do' .
-        '&&$(\'POST\',\'\',[%3$s,\'username\',\'password\',\'do\'],a,o,o)}' . "\n",
-        $this->Loader->L10N->getString('label.Loading_'),
-        'document.getElementById',
-        "'phpmussel-form-target'",
-        "w('stateMsg',"
-    );
+    /** Append JavaScript specific to the accounts page. */
+    $FE['JS'] .= $this->Loader->parse(['Loading' => $this->Loader->L10N->getString('label.Loading_')], $this->Loader->readFile($this->getAssetPath('accounts.js')));
 
     $AccountsRow = $this->Loader->readFile($this->getAssetPath('_accounts_row.html'));
     $FE['Accounts'] = '';
+    $FE['PassInOnListWarn'] = \str_replace('\'', '\\\'', $this->Loader->L10N->getString('warning.Extremely common passwords should be avoided'));
 
     $LI = ['Possible' => []];
     foreach ($this->Loader->Cache->getAllEntries() as $LI['KeyName'] => $LI['KeyData']) {
@@ -116,6 +103,7 @@ if (!$FE['ASYNC']) {
             'AccPermissions' => (int)($CatValues['permissions'] ?? ''),
             'AccWarnings' => ''
         ];
+        $RowInfo['AccPasswordLen'] = \strlen($RowInfo['AccPassword']);
         if ($RowInfo['AccPermissions'] === 1) {
             $RowInfo['AccPermissions'] = $this->Loader->L10N->getString('label.Complete access');
         } elseif ($RowInfo['AccPermissions'] === 2) {
@@ -127,20 +115,12 @@ if (!$FE['ASYNC']) {
         /** Account password warnings. */
         if ($RowInfo['AccPassword'] === $this->DefaultPassword) {
             $RowInfo['AccWarnings'] .= '<br /><div class="txtRd">' . $this->Loader->L10N->getString('warning.Using the default password') . '</div>';
-        } elseif ((
-            \strlen($RowInfo['AccPassword']) !== 60 &&
-            \strlen($RowInfo['AccPassword']) !== 96 &&
-            \strlen($RowInfo['AccPassword']) !== 97
-        ) || (
-            \strlen($RowInfo['AccPassword']) === 60 &&
-            !\preg_match('/^\$2.\$\d\d\$/', $RowInfo['AccPassword'])
-        ) || (
-            \strlen($RowInfo['AccPassword']) === 96 &&
-            !\preg_match('/^\$argon2i\$/', $RowInfo['AccPassword'])
-        ) || (
-            \strlen($RowInfo['AccPassword']) === 97 &&
-            !\preg_match('/^\$argon2id\$/', $RowInfo['AccPassword'])
-        )) {
+        } elseif (
+            ($RowInfo['AccPasswordLen'] !== 60 && $RowInfo['AccPasswordLen'] !== 96 && $RowInfo['AccPasswordLen'] !== 97) ||
+            ($RowInfo['AccPasswordLen'] === 60 && !\preg_match('/^\$2.\$\d\d\$/', $RowInfo['AccPassword'])) ||
+            ($RowInfo['AccPasswordLen'] === 96 && !\preg_match('/^\$argon2i\$/', $RowInfo['AccPassword'])) ||
+            ($RowInfo['AccPasswordLen'] === 97 && !\preg_match('/^\$argon2id\$/', $RowInfo['AccPassword']))
+        ) {
             $RowInfo['AccWarnings'] .= '<br /><div class="txtRd">' . $this->Loader->L10N->getString('warning.This account is not using a valid password') . '</div>';
         }
 

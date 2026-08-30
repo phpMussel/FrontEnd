@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2026.05.29).
+# This file: Latvian language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -412,6 +412,7 @@ tip:
  Upload Testing: "Augšupielādes testa lapā ir standarta failu augšupielādes forma. Varat to izmantot, lai pārbaudītu, vai phpMussel parasti bloķē failu."
 warning: !lazy
  Cookies: "Piezīme: phpMussel izmanto sīkfailu, lai autentificētu ielogošanās informāciju. Ielogoties, jūs dodat piekrišanu sīkdatnes izveidošanai un saglabāšanai jūsu pārlūkprogrammā."
+ Extremely common passwords should be avoided: "Brīdinājums: Jāizvairās no pārāk bieži lietotajām parolēm."
  JavaScript required: "Brīdinājums: Dažām funkcionalitātēm ir nepieciešams JavaScript. Ieteicams iespējot JavaScript, lai nodrošinātu, ka visa interfeiss darbojas, kā paredzēts."
  Maintenance mode is enabled: "Brīdinājums: Apkopes režīms ir iespējots!"
  No signature files are active: "Brīdinājums: Neviens paraksta fails nav aktīvs!"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Marathi language data (last modified: 2026.06.04).
+# This file: Marathi language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -412,6 +412,7 @@ tip:
  Upload Testing: "अपलोड चाचणी पृष्ठावर एक मानक फाइल अपलोड फॉर्म असतो, जो तुम्हाला फाइल अपलोड करण्याचा प्रयत्न करताना phpMussel द्वारे सामान्यतः अवरोधित केली जाते की नाही हे तपासण्याची परवानगी देतो."
 warning: !lazy
  Cookies: "टीप: लॉगिन प्रमाणित करण्यासाठी phpMussel कुकी वापरते. लॉग इन करून, तुम्ही तुमच्या ब्राउझरद्वारे कुकी तयार करण्यासाठी आणि संग्रहित करण्यासाठी तुमची संमती देता."
+ Extremely common passwords should be avoided: "चेतावणी: अत्यंत प्रचलित पासवर्ड वापरणे टाळावे."
  JavaScript required: "चेतावणी: काही फ्रंट-एंड फंक्शनॅलिटीसाठी जावास्क्रिप्टची आवश्यकता असते. संपूर्ण फ्रंट-एंड अपेक्षेप्रमाणे वागेल याची खात्री करण्यासाठी, जावास्क्रिप्ट सक्षम करण्याची शिफारस केली जाते."
  Maintenance mode is enabled: "चेतावणी: देखभाल मोड सक्षम आहे!"
  No signature files are active: "चेतावणी: कोणत्याही स्वाक्षरी फायली सक्रिय नाहीत!"

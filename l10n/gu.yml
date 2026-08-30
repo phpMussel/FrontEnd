@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Gujarati language data (last modified: 2026.05.31).
+# This file: Gujarati language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -412,6 +412,7 @@ tip:
  Upload Testing: "અપલોડ પરીક્ષણ પૃષ્ઠમાં પ્રમાણભૂત ફાઇલ અપલોડ ફોર્મ છે, જે તમને ચકાસવાની મંજૂરી આપે છે કે ફાઇલને અપલોડ કરવાનો પ્રયાસ કરતી વખતે phpMussel દ્વારા સામાન્ય રીતે અવરોધિત કરવામાં આવશે કે કેમ."
 warning: !lazy
  Cookies: "નૉૅધ: phpMussel લૉગિનને પ્રમાણિત કરવા માટે કૂકીનો ઉપયોગ કરે છે. લૉગ ઇન કરીને, તમે તમારા બ્રાઉઝર દ્વારા કૂકી બનાવવા અને સંગ્રહિત કરવા માટે તમારી સંમતિ આપો છો."
+ Extremely common passwords should be avoided: "ચેતવણી: ખૂબ જ સામાન્ય પાસવર્ડ ટાળવા જોઈએ."
  JavaScript required: "ચેતવણી: ફ્રન્ટ-એન્ડના કેટલાક ભાગોને JavaScriptની જરૂર છે. સમગ્ર ફ્રન્ટ-એન્ડ અપેક્ષા મુજબ વર્તે તેની ખાતરી કરવા માટે, JavaScript ને સક્ષમ કરવાની ભલામણ કરવામાં આવે છે."
  Maintenance mode is enabled: "ચેતવણી: જાળવણી મોડ સક્ષમ છે!"
  No signature files are active: "ચેતવણી: કોઈ સિગ્નેચર ફાઇલો સક્રિય નથી!"

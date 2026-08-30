@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2026.05.28).
+ * This file: Front-end handler (last modified: 2026.08.30).
  */
 
 namespace phpMussel\FrontEnd;
@@ -354,12 +354,6 @@ class FrontEnd
         if (empty($this->Loader->Configuration['signatures']['active'])) {
             $FE['Warnings'][] = $this->Loader->L10N->getString('warning.No signature files are active');
         }
-
-        /** Prepare warnings. */
-        $FE['Warnings'] = \count($FE['Warnings']) ? "\n<div class=\"center\"><div class=\"warning\">" . \implode(
-            "</div>\n<div class=\"warning\">",
-            $FE['Warnings']
-        ) . '</div></div><hr />' : '';
 
         /** Menu toggle JavaScript, needed by some front-end pages. */
         $MenuToggle =
@@ -1195,6 +1189,17 @@ class FrontEnd
                 }
             }
         }
+
+        /** Prepare warnings. */
+        if (isset($FE['Warnings']) && \is_array($FE['Warnings'])) {
+            /** Default password warning. */
+            if ($this->User !== '' && isset($this->Loader->Configuration['user.' . $this->User]['password']) && $this->Loader->Configuration['user.' . $this->User]['password'] === $this->DefaultPassword) {
+                $FE['Warnings'][] = $this->Loader->L10N->getString('warning.Using the default password');
+            }
+
+            $FE['Warnings'] = \count($FE['Warnings']) ? "\n<div class=\"center\"><div class=\"warning\">" . \implode("</div>\n<div class=\"warning\">", $FE['Warnings']) . '</div></div><hr />' : '';
+        }
+
         return $this->embedAssets($this->Loader->parse($FE, $Template, true));
     }
 

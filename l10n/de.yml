@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data (last modified: 2026.05.29).
+# This file: German language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -413,6 +413,7 @@ tip:
  Upload Testing: "Das Upload-Testseite enthält ein Standard-Datei-Upload-Formular, das macht es möglich zu prüfen ob eine Datei normalerweise gestoppt von phpMussel werden soll, wenn Sie versuchen es hochzuladen."
 warning: !lazy
  Cookies: "Hinweis: phpMussel verwendet einen Cookie zum Authentifizieren von Logins. Mit der Einloggen, Sie sich damit einverstanden, dass ein Cookie von Ihrem Browser erstellt und gespeichert wird."
+ Extremely common passwords should be avoided: "Warnung: Extrem häufige Passwörter sollten vermieden werden."
  JavaScript required: "Warnung: Einige Front-End-Funktionalität erfordern JavaScript. Um sicherzustellen dass sich das gesamte Front-End wie erwartet verhält, wird die Aktivierung von JavaScript empfohlen."
  Maintenance mode is enabled: "Warnung: Wartungsmodus ist aktiviert!"
  No signature files are active: "Warnung: Keine Signaturdateien sind aktiv!"

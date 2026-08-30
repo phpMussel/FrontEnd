@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Thai language data (last modified: 2026.05.29).
+# This file: Thai language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -411,6 +411,7 @@ tip:
  Upload Testing: "หน้าทดสอบการอัปโหลดมีแบบฟอร์มอัปโหลดไฟล์มาตรฐาน ช่วยให้คุณสามารถทดสอบถ้าไฟล์ปกติจะถูกบล็อคโดย phpMussel เมื่อพยายามอัปโหลด."
 warning: !lazy
  Cookies: "บันทึก: phpMussel ใช้คุกกี้เพื่อตรวจสอบการเข้าสู่ระบบ. เมื่อคุณลงชื่อเข้าใช้คุณยินยอมให้คุกกี้สร้างขึ้นและจัดเก็บโดยเบราเซอร์ของคุณ."
+ Extremely common passwords should be avoided: "คำเตือน: ควรหลีกเลี่ยงการใช้รหัสผ่านที่ใช้กันทั่วไปมากเกินไป."
  JavaScript required: "คำเตือน: ฟังก์ชันฟรอนต์เอนด์บางอย่างต้องใช้ JavaScript. ขอแนะนำให้เปิดใช้งาน JavaScript เพื่อให้แน่ใจว่าฟังก์ชันทั้งหมดทำงานตามที่คาดไว้."
  Maintenance mode is enabled: "คำเตือน: เปิดใช้งานโหมดการบำรุงรักษา!"
  No signature files are active: "คำเตือน: ไม่มีไฟล์ลายเซ็นที่ใช้งานอยู่!"

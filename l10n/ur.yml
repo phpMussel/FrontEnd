@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Urdu language data (last modified: 2026.05.31).
+# This file: Urdu language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -409,6 +409,7 @@ tip:
  Upload Testing: "اسے اپ لوڈ کرنے کی کوشش کریں جب آپ کو ٹیسٹ کرنے کے لیے چاہے ایک فائل عام طور phpMussel کی طرف سے بلاک کیا جائے گا کی اجازت دی اپ لوڈ ٹیسٹ کے صفحے پر ایک معیاری فائل اپ فارم پر مشتمل ہے."
 warning: !lazy
  Cookies: "نوٹ: لاگز کی تصدیق کے لیے phpMussel کوکی کا استعمال کرتا ہے. لاگ ان کرکے، آپ کو اپنے براؤزر کی طرف سے تخلیق اور ذخیرہ کرنے کے لیے ایک کوکی کے لیے آپ کی رضامندی دیتے ہیں."
+ Extremely common passwords should be avoided: "انتباہ: انتہائی عام پاس ورڈز سے پرہیز کرنا چاہیے."
  JavaScript required: "انتباہ: کچھ فرنٹ اینڈ فعالیت کے لیے JavaScript کی ضرورت ہوتی ہے. اس بات کو یقینی بنانے کے لیے کہ پورا فرنٹ اینڈ توقع کے مطابق برتاؤ کرے، جاوا اسکرپٹ کو فعال کرنے کی سفارش کی جاتی ہے."
  Maintenance mode is enabled: "انتباہ: بحالی کا موڈ فعال ہے!"
  No signature files are active: "انتباہ: کوئی دستخط فائلیں فعال نہیں ہیں!"

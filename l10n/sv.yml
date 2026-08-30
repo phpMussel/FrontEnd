@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2026.06.04).
+# This file: Swedish language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -412,6 +412,7 @@ tip:
  Upload Testing: "Uppladdningssidan innehåller ett standardformulär för uppladdning av filer, så att du kan testa om en fil normalt skulle blockeras av phpMussel när du försöker ladda upp den."
 warning: !lazy
  Cookies: "Notera: phpMussel använder en cookie för att autentisera inloggningar. Genom att logga in, ger du ditt samtycke till att en cookie ska skapas och lagras av din webbläsare."
+ Extremely common passwords should be avoided: "Varning: Extremt vanliga lösenord bör undvikas."
  JavaScript required: "Varning: Vissa frontend-funktionalitet kräver JavaScript. För att säkerställa att hela gränssnittet beter sig som förväntat, rekommenderas att aktivera JavaScript."
  Maintenance mode is enabled: "Varning: Underhållsläget är aktiverat!"
  No signature files are active: "Varning: Inga signaturfiler är aktiva!"

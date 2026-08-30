@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2026.05.29).
+# This file: Turkish language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -413,6 +413,7 @@ tip:
  Upload Testing: "Yükleme sınama sayfası, bir dosyanın yüklenmeye çalışılırken normalde phpMussel tarafından engelleneceğini test etmenize izin veren standart bir dosya yükleme formu içerir."
 warning: !lazy
  Cookies: "Not: phpMussel, oturum açma kimlik doğrulamasında çerez kullanır. Oturum açarak, tarayıcınız tarafından oluşturulacak ve saklanacak bir çerez için onayınızı verirsiniz."
+ Extremely common passwords should be avoided: "Uyarı: Çok sık kullanılan şifrelerden kaçınılmalıdır."
  JavaScript required: "Uyarı: Bazı ön uç işlevsellikleri JavaScript gerektirir. Tüm ön ucun beklendiği gibi davrandığından emin olmak için JavaScript'in etkinleştirilmesi önerilir."
  Maintenance mode is enabled: "Uyarı: Bakım modu etkin!"
  No signature files are active: "Uyarı: Hiçbir imza dosyası aktif değil!"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Russian language data (last modified: 2026.06.04).
+# This file: Russian language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -413,6 +413,7 @@ tip:
  Upload Testing: "Тестовая загрузка страница содержит стандартную форму для загрузки файла, позволяя вам проверить нормально ли будет заблокирован файл от phpMussel когда попытке загрузить его."
 warning: !lazy
  Cookies: "Заметка: phpMussel использует cookie для аутентификации логинов. Войдя в систему, Вы даете свое согласие на создание и сохранение файла cookie вашим браузером."
+ Extremely common passwords should be avoided: "Предупреждение: Следует избегать крайне распространенных паролей."
  JavaScript required: "Предупреждение: Некоторых функциональность требуется JavaScript. Чтобы весь интерфейс работал должным образом, рекомендуется включить JavaScript."
  Maintenance mode is enabled: "Предупреждение: Включен режим обслуживания!"
  No signature files are active: "Предупреждение: Активные файлы сигнатуры не активны!"

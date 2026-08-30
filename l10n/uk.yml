@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Ukrainian language data (last modified: 2026.05.29).
+# This file: Ukrainian language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -414,6 +414,7 @@ tip:
  Upload Testing: "Сторінка тестування завантаження містить стандартну форму завантаження файлу, яка дає змогу перевірити, чи зазвичай phpMussel блокує цей файл під час його завантаження."
 warning: !lazy
  Cookies: "Зауважте: phpMussel використовує файли cookie для автентифікації входу. Увійшовши в систему, ви даєте свою згоду на створення та збереження файлів cookie вашим браузером."
+ Extremely common passwords should be avoided: "Попередження: Слід уникати надто поширених паролів."
  JavaScript required: "Попередження: Деяких фронтенд функціональність потрібен JavaScript. Щоб переконатися, що весь фронтенд працює належним чином, рекомендується ввімкнути JavaScript."
  Maintenance mode is enabled: "Попередження: Увімкнено режим обслуговування!"
  No signature files are active: "Попередження: Немає активних файлів сигнатури!"

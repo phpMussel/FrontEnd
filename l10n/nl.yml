@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2026.05.29).
+# This file: Dutch language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -413,6 +413,7 @@ tip:
  Upload Testing: "De upload test pagina bevat een standaard file upload formulier, voor het testen of een bestand normaliter geblokkeerd door phpMussel bij een poging om het te uploaden."
 warning: !lazy
  Cookies: "Notitie: phpMussel gebruikt een cookie om aanmeldingen te verifiëren. Door in te loggen, geeft u uw toestemming voor het maken en opslaan van een cookie door uw browser."
+ Extremely common passwords should be avoided: "Waarschuwing: Vermijd het gebruik van extreem veelvoorkomende wachtwoorden."
  JavaScript required: "Waarschuwing: Voor sommige frontend functionaliteit is JavaScript vereist. Om ervoor te zorgen dat de gehele frontend zich naar verwachting gedraagt, wordt het inschakelen van JavaScript aanbevolen."
  Maintenance mode is enabled: "Waarschuwing: De onderhoudsmodus is ingeschakeld!"
  No signature files are active: "Waarschuwing: Geen signatuurbestanden zijn actief!"

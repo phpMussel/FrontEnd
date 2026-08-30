@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Galician language data (last modified: 2026.05.29).
+# This file: Galician language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -412,6 +412,7 @@ tip:
  Upload Testing: "A páxina de proba de carga contén un formulario estándar de carga de ficheiros, que che permite probar se un ficheiro normalmente sería bloqueado por phpMussel ao tentar cargalo."
 warning: !lazy
  Cookies: "Nota: phpMussel usa unha cookie para autenticar os inicios de sesión. Ao iniciar sesión, dás o teu consentimento para que o teu navegador cree e almacene unha cookie."
+ Extremely common passwords should be avoided: "Aviso: Débense evitar os contrasinais extremadamente comúns."
  JavaScript required: "Aviso: Algunhas funcións do front-end requiren JavaScript. Para garantir que todo o front-end se comporta como se espera, recoméndase activar JavaScript."
  Maintenance mode is enabled: "Aviso: O modo de mantemento está activado!"
  No signature files are active: "Aviso: Non hai ficheiros de sinatura activos."

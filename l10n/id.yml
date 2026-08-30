@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2026.05.29).
+# This file: Indonesian language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -411,6 +411,7 @@ tip:
  Upload Testing: "Halaman pengujian pengunggahan berisi form upload file standar, memungkinkan Anda untuk mengetes apakah file biasanya akan diblokir oleh phpMussel ketika mencoba untuk menguploadnya."
 warning: !lazy
  Cookies: "Catat: phpMussel menggunakan cookie untuk mengotentikasi semua login. Saat kamu masuk, Anda memberikan izin agar cookie dibuat dan disimpan oleh browser Anda."
+ Extremely common passwords should be avoided: "Peringatan: Kata sandi yang sangat umum sebaiknya dihindari."
  JavaScript required: "Peringatan: Beberapa fungsionalitas memerlukan JavaScript. Untuk memastikan bahwa seluruh antarmuka berperilaku seperti yang diharapkan, disarankan untuk mengaktifkan JavaScript."
  Maintenance mode is enabled: "Peringatan: Modus perawatan diaktifkan!"
  No signature files are active: "Peringatan: Tidak ada file tanda tangan yang aktif!"

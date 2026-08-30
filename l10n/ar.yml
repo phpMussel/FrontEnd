@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2026.05.29).
+# This file: Arabic language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -413,6 +413,7 @@ tip:
  Upload Testing: "الصفحة تحميل اختبار يحتوي على شكل تحميل الملفات القياسية، مما يسمح لك لاختبار ما إذا كان عادة يكون قد تم حظره ملف بواسطة phpMussel عند محاولة تحميله."
 warning: !lazy
  Cookies: "الملاحظة: يستخدم phpMussel ملف تعريف ارتباط لمصادقة تسجيلات الدخول. من خلال تسجيل الدخول، فإنك تعطي موافقتك على إنشاء ملف تعريف ارتباط وتخزينه بواسطة المتصفح."
+ Extremely common passwords should be avoided: "تحذير: ينبغي تجنب استخدام كلمات المرور الشائعة للغاية."
  JavaScript required: "تحذير: تتطلب بعض وظائف الواجهة الأمامية JavaScript. لضمان عمل الواجهة الأمامية بالكامل كما هو متوقع، يوصى بتمكين JavaScript."
  Maintenance mode is enabled: "تحذير: تم تمكين وضع الصيانة!"
  No signature files are active: "تحذير: لا ملفات التوقيع نشطة!"

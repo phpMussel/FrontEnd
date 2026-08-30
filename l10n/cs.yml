@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Czech language data (last modified: 2026.05.29).
+# This file: Czech language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -413,6 +413,7 @@ tip:
  Upload Testing: "Stránka testování nahrání obsahuje standardní formulář pro nahrání souborů, který vám umožňuje otestovat, zda by byl soubor normálně blokován phpMussel při pokusu o jeho nahrání."
 warning: !lazy
  Cookies: "Poznámka: phpMussel používá cookie k ověření přihlášení. Přihlášením souhlasíte s tím, aby váš prohlížeč vytvořil a uložil soubor cookie."
+ Extremely common passwords should be avoided: "Varování: Extrémně běžným heslům je třeba se vyhnout."
  JavaScript required: "Varování: Některé funkčnost v front-endu vyžadují JavaScript. Aby se zajistilo, že se celý front-end bude chovat podle očekávání, doporučujeme povolit JavaScript."
  Maintenance mode is enabled: "Varování: Je aktivován režim údržby!"
  No signature files are active: "Varování: Nejsou aktivní žádné soubory podpisů!"

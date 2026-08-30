@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hindi language data (last modified: 2026.05.31).
+# This file: Hindi language data (last modified: 2026.08.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -413,6 +413,7 @@ tip:
  Upload Testing: "अपलोड परीक्षण पृष्ठ में एक मानक फाइल अपलोड फॉर्म है। यह आपको यह जांचने में सक्षम बनाता है कि फाइल को सामान्य रूप से इसे अपलोड करने का प्रयास करते समय phpMussel द्वारा अवरुद्ध किया जाएगा या नहीं।"
 warning: !lazy
  Cookies: "नोट: phpMussel लॉगिन प्रमाणित करने के लिए कुकी का उपयोग करता है। लॉगिन करके, आप अपने ब्राउज़र द्वारा बनाई गई और संग्रहीत की जाने वाली कुकी के लिए आपकी सहमति देते हैं।"
+ Extremely common passwords should be avoided: "चेतावनी: बहुत आम पासवर्ड से बचना चाहिए।"
  JavaScript required: "चेतावनी: कुछ फ्रंट-एंड कार्यक्षमता के लिए जावास्क्रिप्ट की आवश्यकता होती है। यह सुनिश्चित करने के लिए कि पूरा फ्रंट-एंड अपेक्षित व्यवहार करता है, जावास्क्रिप्ट को सक्षम करने की अनुशंसा की जाती है।"
  Maintenance mode is enabled: "चेतावनी: रखरखाव मोड सक्षम है!"
  No signature files are active: "चेतावनी: कोई हस्ताक्षर फाइलें सक्रिय नहीं हैं!"
