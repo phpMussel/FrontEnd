@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2026.08.30).
+# This file: Korean language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -293,6 +293,7 @@ label:
  Other: "다른"
  PHP version used: "사용된 PHP 버전:"
  Page request completed in %s seconds: "페이지 요청이 %s 초 후에 완료되었습니다."
+ Password strength: "비밀번호 강도: "
  Please log in to continue: "계속하려면 로그인하십시오."
  SAPI used: "사용된 SAPI:"
  Scan events: "스캔 이벤트"
@@ -312,6 +313,10 @@ label:
  Your IP address: "당신의 IP 주소:"
  Your user agent: "당신의 사용자 에이전트:"
  phpMussel version used: "사용된 phpMussel 버전:"
+ risk:
+  High: "높은"
+  Low: "낮은"
+  Medium: "중간"
 link:
  Accounts: "계정"
  Cache Data: "데이터 캐쉬"

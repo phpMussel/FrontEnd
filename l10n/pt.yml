@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese language data (last modified: 2026.08.30).
+# This file: Portuguese language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -419,6 +419,7 @@ label:
  Other: "Outros"
  PHP version used: "Versão do PHP usada:"
  Page request completed in %s seconds: "Solicitação de página concluída em %s segundos."
+ Password strength: "Força da senha: "
  Please log in to continue: "Por favor faça o login para continuar."
  SAPI used: "SAPI usada:"
  Scan events: "Eventos de análise"
@@ -438,6 +439,10 @@ label:
  Your IP address: {"pt-BR": "Seu endereço IP:", "pt-PT": "O seu endereço IP:"}
  Your user agent: {"pt-BR": "Seu agente de usuário:", "pt-PT": "O seu agente de utilizador:"}
  phpMussel version used: "Versão do phpMussel usada:"
+ risk:
+  High: "Alto"
+  Low: "Baixo"
+  Medium: "Médio"
 link:
  Accounts: "Contas"
  Cache Data: "Dados de cache"

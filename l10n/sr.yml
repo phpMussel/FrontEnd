@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Serbian language data (last modified: 2026.08.30).
+# This file: Serbian language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -292,6 +292,7 @@ label:
  Other: "Остало"
  PHP version used: "Коришћена ПХП верзија:"
  Page request completed in %s seconds: "Захтев за страницу је завршен за %s секунде."
+ Password strength: "Јачина лозинке: "
  Please log in to continue: "Пријавите се да бисте наставили."
  SAPI used: "САПИ користи:"
  Scan events: "Број скенирања"
@@ -311,6 +312,10 @@ label:
  Your IP address: "Ваша ИП адреса:"
  Your user agent: "Ваш кориснички агент:"
  phpMussel version used: "Коришћена верзија пхпМуссел:"
+ risk:
+  High: "Висок"
+  Low: "Низак"
+  Medium: "Средњи"
 link:
  Accounts: "Рачуни"
  Cache Data: "Кеш података"

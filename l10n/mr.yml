@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Marathi language data (last modified: 2026.08.30).
+# This file: Marathi language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -292,6 +292,7 @@ label:
  Other: "इतर"
  PHP version used: "वापरलेली PHP आवृत्ती:"
  Page request completed in %s seconds: "पृष्ठ विनंती %s सेकंदात पूर्ण झाली."
+ Password strength: "पासवर्डची ताकद: "
  Please log in to continue: "पुढे जाण्यासाठी कृपया लॉग इन करा."
  SAPI used: "SAPI वापरले:"
  Scan events: "स्कॅनची संख्या"
@@ -311,6 +312,10 @@ label:
  Your IP address: "तुमचा IP पत्ता:"
  Your user agent: "तुमचा वापरकर्ता एजंट:"
  phpMussel version used: "वापरलेली phpMussel आवृत्ती:"
+ risk:
+  High: "जास्त"
+  Low: "कमी"
+  Medium: "मध्यम"
 link:
  Accounts: "खाती"
  Cache Data: "कॅशे डेटा"

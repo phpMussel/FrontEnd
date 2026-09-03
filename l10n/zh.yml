@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese language data (last modified: 2026.08.30).
+# This file: Chinese language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -458,6 +458,7 @@ label:
  Other: "其他"
  PHP version used: "目前使用PHP版本："
  Page request completed in %s seconds: {"zh-Hans": "页面请求在%s秒内完成。", "zh-Hant": "頁面請求在%s秒內完成。"}
+ Password strength: {"zh-Hans": "密码强度：", "zh-Hant": "密碼強度："}
  Please log in to continue: {"zh-Hans": "请登录以继续。", "zh-Hant": "請登錄以繼續。"}
  SAPI used: "目前使用SAPI："
  Scan events: {"zh-Hans": "扫描事件", "zh-Hant": "掃描事件"}
@@ -477,6 +478,10 @@ label:
  Your IP address: {"zh-Hans": "您的IP地址：", "zh-Hant": "您的IP位址："}
  Your user agent: {"zh-Hans": "您的用户代理：", "zh-Hant": "您的用戶代理："}
  phpMussel version used: "目前使用phpMussel版本："
+ risk:
+  High: "高"
+  Low: "低"
+  Medium: "中等"
 link:
  Accounts: {"zh-Hans": "帐户", "zh-Hant": "帳戶"}
  Cache Data: {"zh-Hans": "缓存数据", "zh-Hant": "緩存數據"}

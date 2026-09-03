@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bulgarian language data (last modified: 2026.08.30).
+# This file: Bulgarian language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -292,6 +292,7 @@ label:
  Other: "Други"
  PHP version used: "Използвана версия на PHP:"
  Page request completed in %s seconds: "Заявката за страница е изпълнена за %s секунди."
+ Password strength: "Силата на паролата: "
  Please log in to continue: "Моля, влезте, за да продължите."
  SAPI used: "Използван SAPI:"
  Scan events: "Сканиране на събития"
@@ -311,6 +312,10 @@ label:
  Your IP address: "Вашият IP адрес:"
  Your user agent: "Вашият потребителски агент:"
  phpMussel version used: "Използвана версия на phpMussel:"
+ risk:
+  High: "Висок"
+  Low: "Малък"
+  Medium: "Среден"
 link:
  Accounts: "Акаунти"
  Cache Data: "Кеширане на данни"

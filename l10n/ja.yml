@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2026.08.30).
+# This file: Japanese language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -292,6 +292,7 @@ label:
  Other: "その他"
  PHP version used: "使用されたＰＨＰバージョン："
  Page request completed in %s seconds: "ページ・リクエストは%s秒後に完了しました。"
+ Password strength: "パスワードの強度："
  Please log in to continue: "継続するには、ログインしてください。"
  SAPI used: "使用されたＳＡＰＩ："
  Scan events: "スキャンイベント"
@@ -311,6 +312,10 @@ label:
  Your IP address: "あなたのＩＰアドレス："
  Your user agent: "あなたのユーザー・エージェント："
  phpMussel version used: "使用されたphpMusselバージョン："
+ risk:
+  High: "高い"
+  Low: "低い"
+  Medium: "中程度"
 link:
  Accounts: "アカウント"
  Cache Data: "キャッシュ・データ"

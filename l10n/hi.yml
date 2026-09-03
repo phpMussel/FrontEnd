@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hindi language data (last modified: 2026.08.30).
+# This file: Hindi language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -293,6 +293,7 @@ label:
  Other: "अन्य"
  PHP version used: "PHP संस्करण का इस्तेमाल किया:"
  Page request completed in %s seconds: "पृष्ठ अनुरोध %s सेकंड में पूरा हुआ।"
+ Password strength: "पासवर्ड की मजबूती: "
  Please log in to continue: "जारी रखने के लिए कृपया लॉग इन करें।"
  SAPI used: "SAPI का इस्तेमाल किया:"
  Scan events: "स्कैन घटनाओं"
@@ -312,6 +313,10 @@ label:
  Your IP address: "आपका IP पता:"
  Your user agent: "आपका उपयोगकर्ता एजेंट:"
  phpMussel version used: "phpMussel संस्करण का इस्तेमाल किया:"
+ risk:
+  High: "भारी"
+  Low: "कम"
+  Medium: "मध्यम"
 link:
  Accounts: "खातों"
  Cache Data: "कैश डेटा"

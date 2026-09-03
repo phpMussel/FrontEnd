@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2026.08.30).
+# This file: Dutch language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -293,6 +293,7 @@ label:
  Other: "Anders"
  PHP version used: "PHP versie gebruikt:"
  Page request completed in %s seconds: "Paginaverzoek voltooid in %s seconden."
+ Password strength: "Wachtwoordsterkte: "
  Please log in to continue: "Inloggen om verder te gaan."
  SAPI used: "SAPI gebruikt:"
  Scan events: "Scan gebeurtenissen"
@@ -312,6 +313,10 @@ label:
  Your IP address: "Uw IP-adres:"
  Your user agent: "Uw gebruikersagent:"
  phpMussel version used: "phpMussel versie gebruikt:"
+ risk:
+  High: "Hoog"
+  Low: "Laag"
+  Medium: "Middelgroot"
 link:
  Accounts: "Accounts"
  Cache Data: "Cachegegevens"

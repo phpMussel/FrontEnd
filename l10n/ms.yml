@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2026.08.30).
+# This file: Malay language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -292,6 +292,7 @@ label:
  Other: "Lain"
  PHP version used: "Versi PHP digunakan:"
  Page request completed in %s seconds: "Permintaan halaman selesai dalam masa %s saat."
+ Password strength: "Kekuatan kata laluan: "
  Please log in to continue: "Sila log masuk untuk meneruskan."
  SAPI used: "SAPI digunakan:"
  Scan events: "Imbas acara"
@@ -311,6 +312,10 @@ label:
  Your IP address: "Alamat IP anda:"
  Your user agent: "Ejen pengguna anda:"
  phpMussel version used: "Versi phpMussel digunakan:"
+ risk:
+  High: "Tinggi"
+  Low: "Rendah"
+  Medium: "Sederhana"
 link:
  Accounts: "Akaun"
  Cache Data: "Data cache"

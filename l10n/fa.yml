@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Farsi language data (last modified: 2026.08.30).
+# This file: Farsi language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -293,6 +293,7 @@ label:
  Other: "دیگر"
  PHP version used: "نسخه PHP استفاده شده:"
  Page request completed in %s seconds: "درخواست صفحه در %s ثانیه تکمیل شد."
+ Password strength: "قدرت رمز عبور: "
  Please log in to continue: "لطفا برای ادامه وارد شوید."
  SAPI used: "SAPI مورد استفاده:"
  Scan events: "اسکن رویدادها"
@@ -312,6 +313,10 @@ label:
  Your IP address: "آدرس IP شما:"
  Your user agent: "عامل کاربری شما:"
  phpMussel version used: "نسخه phpMussel استفاده شده:"
+ risk:
+  High: "بالا"
+  Low: "کم"
+  Medium: "متوسط"
 link:
  Accounts: "حساب ها"
  Cache Data: "داده های کش"

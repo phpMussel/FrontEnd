@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Catalan language data (last modified: 2026.08.30).
+# This file: Catalan language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -293,6 +293,7 @@ label:
  Other: "Altres"
  PHP version used: "Versió PHP utilitzada:"
  Page request completed in %s seconds: "La sol·licitud de pàgina s'ha completat en %s segons."
+ Password strength: "Força de la contrasenya: "
  Please log in to continue: "Inicieu sessió per continuar."
  SAPI used: "SAPI utilitzat:"
  Scan events: "Esdeveniments d'escaneig"
@@ -312,6 +313,10 @@ label:
  Your IP address: "La vostra adreça IP:"
  Your user agent: "El vostre agent d'usuari:"
  phpMussel version used: "Versió de phpMussel utilitzada:"
+ risk:
+  High: "Alt"
+  Low: "Baix"
+  Medium: "Mitjà"
 link:
  Accounts: "Comptes"
  Cache Data: "Dades de la memòria cau"

@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The accounts page (last modified: 2026.08.30).
+ * This file: The accounts page (last modified: 2026.09.03).
  */
 
 namespace phpMussel\FrontEnd;
@@ -73,11 +73,16 @@ if (!$FE['ASYNC']) {
     $this->initialPrepwork($FE, $this->Loader->L10N->getString('link.Accounts'), $this->Loader->L10N->getString('tip.Accounts'));
 
     /** Append JavaScript specific to the accounts page. */
-    $FE['JS'] .= $this->Loader->parse(['Loading' => $this->Loader->L10N->getString('label.Loading_')], $this->Loader->readFile($this->getAssetPath('accounts.js')));
+    $FE['JS'] .= $this->Loader->parse([
+        'Loading' => $this->Loader->L10N->getString('label.Loading_'),
+        'PasswordStrengthLow' => $this->Loader->L10N->getString('label.Password strength') . $this->Loader->L10N->getString('label.risk.Low'),
+        'PasswordStrengthMedium' => $this->Loader->L10N->getString('label.Password strength') . $this->Loader->L10N->getString('label.risk.Medium'),
+        'PasswordStrengthHigh' => $this->Loader->L10N->getString('label.Password strength') . $this->Loader->L10N->getString('label.risk.High')
+    ], $this->Loader->readFile($this->getAssetPath('accounts.js')));
 
     $AccountsRow = $this->Loader->readFile($this->getAssetPath('_accounts_row.html'));
     $FE['Accounts'] = '';
-    $FE['PassInOnListWarn'] = \str_replace('\'', '\\\'', $this->Loader->L10N->getString('warning.Extremely common passwords should be avoided'));
+    $FE['PassInOnListWarn'] = '<br \>' . \str_replace('\'', '\\\'', $this->Loader->L10N->getString('warning.Extremely common passwords should be avoided'));
 
     $LI = ['Possible' => []];
     foreach ($this->Loader->Cache->getAllEntries() as $LI['KeyName'] => $LI['KeyData']) {

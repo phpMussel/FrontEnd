@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bangla language data (last modified: 2026.08.30).
+# This file: Bangla language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -293,6 +293,7 @@ label:
  Other: "অন্যান্য"
  PHP version used: "PHP সংস্করণ ব্যবহৃত:"
  Page request completed in %s seconds: "পৃষ্ঠা অনুরোধ সম্পন্ন %s সেকেন্ড।"
+ Password strength: "পাসওয়ার্ডের শক্তি: "
  Please log in to continue: "চালিয়ে যেতে দয়া করে লগ ইন করুন।"
  SAPI used: "SAPI ব্যবহৃত:"
  Scan events: "স্ক্যান ঘটনা"
@@ -312,6 +313,10 @@ label:
  Your IP address: "আপনার আইপি ঠিকানা:"
  Your user agent: "আপনার ব্যবহারকারী এজেন্ট:"
  phpMussel version used: "phpMussel সংস্করণ ব্যবহৃত:"
+ risk:
+  High: "উচ্চ"
+  Low: "কম"
+  Medium: "মধ্যম"
 link:
  Accounts: "অ্যাকাউন্ট"
  Cache Data: "ক্যাশ ডেটা"

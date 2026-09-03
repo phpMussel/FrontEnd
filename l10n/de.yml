@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data (last modified: 2026.08.30).
+# This file: German language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -293,6 +293,7 @@ label:
  Other: "Andere"
  PHP version used: "PHP-Version verwendet:"
  Page request completed in %s seconds: "Seite-Anfrage in %s Sekunden abgeschlossen."
+ Password strength: "Passwortstärke: "
  Please log in to continue: "Bitte einloggen zum Fortfahren."
  SAPI used: "SAPI verwendet:"
  Scan events: "Scan-Veranstaltungen"
@@ -312,6 +313,10 @@ label:
  Your IP address: "Deine IP-Adresse:"
  Your user agent: "Dein User-Agent:"
  phpMussel version used: "phpMussel-Version verwendet:"
+ risk:
+  High: "Hohes"
+  Low: "Niedriges"
+  Medium: "Mittleres"
 link:
  Accounts: "Konten"
  Cache Data: "Datencache"

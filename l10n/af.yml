@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2026.08.30).
+# This file: Afrikaans language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -293,6 +293,7 @@ label:
  Other: "Ander"
  PHP version used: "PHP weergawe gebruik:"
  Page request completed in %s seconds: "Bladsyversoek voltooi in %s sekondes."
+ Password strength: "Wagwoordsterkte: "
  Please log in to continue: "Teken asseblief in om voort te gaan."
  SAPI used: "SAPI gebruik:"
  Scan events: "Skandeer gebeure"
@@ -312,6 +313,10 @@ label:
  Your IP address: "Jou IP-adres:"
  Your user agent: "Jou gebruikersagent:"
  phpMussel version used: "phpMussel weergawe gebruik:"
+ risk:
+  High: "Hoë"
+  Low: "Lae"
+  Medium: "Medium"
 link:
  Accounts: "Rekeninge"
  Cache Data: "Kas data"

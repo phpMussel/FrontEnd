@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data (last modified: 2026.08.30).
+# This file: Romanian language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -292,6 +292,7 @@ label:
  Other: "Alte"
  PHP version used: "Versiunea PHP folosită:"
  Page request completed in %s seconds: "Solicitarea paginii a fost finalizată în %s secunde."
+ Password strength: "Puterea parolei: "
  Please log in to continue: "Vă rugăm să vă conectați pentru a continua."
  SAPI used: "SAPI folosit:"
  Scan events: "Evenimentele de scanare"
@@ -311,6 +312,10 @@ label:
  Your IP address: "Adresa dvs. IP:"
  Your user agent: "Agentul dvs. utilizator:"
  phpMussel version used: "Versiunea phpMussel folosită:"
+ risk:
+  High: "Mare"
+  Low: "Mic"
+  Medium: "Mediu"
 link:
  Accounts: "Conturi"
  Cache Data: "Datele din cache"

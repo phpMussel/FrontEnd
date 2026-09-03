@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Tamil language data (last modified: 2026.08.30).
+# This file: Tamil language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -292,6 +292,7 @@ label:
  Other: "மற்ற"
  PHP version used: "பயன்படுத்தப்படும் PHP பதிப்பு:"
  Page request completed in %s seconds: "பக்க கோரிக்கை %s வினாடிகளில் முடிந்தது."
+ Password strength: "கடவுச்சொல்லின் வலிமை: "
  Please log in to continue: "தொடர உள்நுழைக."
  SAPI used: "SAPI பயன்படுத்தப்பட்டது:"
  Scan events: "நிகழ்வுகளை ஸ்கேன் செய்யுங்கள்"
@@ -311,6 +312,10 @@ label:
  Your IP address: "உங்கள் IP முகவரி:"
  Your user agent: "உங்கள் பயனர் முகவர்:"
  phpMussel version used: "பயன்படுத்தப்படும் phpMussel பதிப்பு:"
+ risk:
+  High: "குறிப்பிடத்தக்க"
+  Low: "குறைந்த"
+  Medium: "நடுத்தர"
 link:
  Accounts: "கணக்குகள்"
  Cache Data: "தற்காலிக சேமிப்பின் தரவு"

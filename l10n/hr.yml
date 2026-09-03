@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Croatian language data (last modified: 2026.08.30).
+# This file: Croatian language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -292,6 +292,7 @@ label:
  Other: "Ostalo"
  PHP version used: "PHP verzija koja se koristi:"
  Page request completed in %s seconds: "Zahtjev za stranicu dovršen za %s sekunde."
+ Password strength: "Snaga lozinke: "
  Please log in to continue: "Molimo prijavite se za nastavak."
  SAPI used: "SAPI koristi:"
  Scan events: "Broj skeniranja"
@@ -311,6 +312,10 @@ label:
  Your IP address: "Vaša IP adresa:"
  Your user agent: "Vaš korisnički agent:"
  phpMussel version used: "Korištena verzija phpMussel:"
+ risk:
+  High: "Visok"
+  Low: "Nizak"
+  Medium: "Srednji"
 link:
  Accounts: "Računi"
  Cache Data: "Podataka iz predmemorije"

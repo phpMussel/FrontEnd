@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Ukrainian language data (last modified: 2026.08.30).
+# This file: Ukrainian language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -293,6 +293,7 @@ label:
  Other: "Інший"
  PHP version used: "Використана версія PHP:"
  Page request completed in %s seconds: "Запит на сторінку виконано за %s секунди."
+ Password strength: "Надійність пароля: "
  Please log in to continue: "Увійдіть щоб продовжити."
  SAPI used: "Використана SAPI:"
  Scan events: "Сканувати події"
@@ -312,6 +313,10 @@ label:
  Your IP address: "Ваша IP-адреса:"
  Your user agent: "Ваш користувацький агент:"
  phpMussel version used: "Використана версія phpMussel:"
+ risk:
+  High: "Високий"
+  Low: "Низький"
+  Medium: "Середній"
 link:
  Accounts: "Облікові записи"
  Cache Data: "Кешувати дані"

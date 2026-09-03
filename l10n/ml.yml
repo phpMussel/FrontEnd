@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malayalam language data (last modified: 2026.08.30).
+# This file: Malayalam language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -292,6 +292,7 @@ label:
  Other: "മറ്റുള്ളവ"
  PHP version used: "ഉപയോഗിച്ച PHP പതിപ്പ്:"
  Page request completed in %s seconds: "പേജ് അഭ്യർത്ഥന %s സെക്കൻഡിനുള്ളിൽ പൂർത്തിയായി."
+ Password strength: "പാസ്‌വേഡ് ശക്തി: "
  Please log in to continue: "തുടരാൻ ദയവായി ലോഗിൻ ചെയ്യുക."
  SAPI used: "ഉപയോഗിച്ച SAPI:"
  Scan events: "സ്കാനുകളുടെ എണ്ണം"
@@ -311,6 +312,10 @@ label:
  Your IP address: "നിങ്ങളുടെ IP വിലാസം:"
  Your user agent: "നിങ്ങളുടെ ഉപയോക്തൃ ഏജന്റ്:"
  phpMussel version used: "ഉപയോഗിച്ച phpMussel പതിപ്പ്:"
+ risk:
+  High: "ഉയർന്ന"
+  Low: "കുറഞ്ഞ"
+  Medium: "ഇടത്തരം"
 link:
  Accounts: "അക്കൗണ്ടുകൾ"
  Cache Data: "കാഷെ ഡാറ്റ"

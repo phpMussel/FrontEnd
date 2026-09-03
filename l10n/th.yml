@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Thai language data (last modified: 2026.08.30).
+# This file: Thai language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -293,6 +293,7 @@ label:
  Other: "อื่น ๆ"
  PHP version used: "รุ่น PHP ในการใช้งาน:"
  Page request completed in %s seconds: "คำขอหน้าเสร็จสิ้นภายใน %s วินาที."
+ Password strength: "ความแข็งแกร่งของรหัสผ่าน: "
  Please log in to continue: "เข้าสู่ระบบเพื่อดำเนินการต่อ."
  SAPI used: "SAPI ในการใช้งาน:"
  Scan events: "สแกนเหตุการณ์"
@@ -312,6 +313,10 @@ label:
  Your IP address: "ที่อยู่ IP ของคุณ:"
  Your user agent: "ตัวแทนผู้ใช้ของคุณ:"
  phpMussel version used: "รุ่น phpMussel ในการใช้งาน:"
+ risk:
+  High: "สูง"
+  Low: "ต่ำ"
+  Medium: "ปานกลาง"
 link:
  Accounts: "บัญชี"
  Cache Data: "ข้อมูลแคช"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Gujarati language data (last modified: 2026.08.30).
+# This file: Gujarati language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -292,6 +292,7 @@ label:
  Other: "અન્ય"
  PHP version used: "વપરાયેલ PHP સંસ્કરણ:"
  Page request completed in %s seconds: "પૃષ્ઠ વિનંતી %s સેકન્ડમાં પૂર્ણ થઈ."
+ Password strength: "પાસવર્ડ મજબૂતાઈ: "
  Please log in to continue: "ચાલુ રાખવા માટે કૃપા કરીને લૉગ ઇન કરો."
  SAPI used: "SAPI વપરાયેલ:"
  Scan events: "સ્કેન ઘટનાઓ"
@@ -311,6 +312,10 @@ label:
  Your IP address: "તમારો IP સરનામું:"
  Your user agent: "તમારો વપરાશકર્તા એજન્ટ:"
  phpMussel version used: "phpMussel સંસ્કરણ વપરાયેલ:"
+ risk:
+  High: "ઉચ્ચ"
+  Low: "ઓછું"
+  Medium: "મધ્યમ"
 link:
  Accounts: "એકાઉન્ટ્સ"
  Cache Data: "કેશ ડેટા"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2026.08.30).
+# This file: English language data (last modified: 2026.09.03).
 ##/
 
 Glossary: !lazy
@@ -293,6 +293,7 @@ label:
  Other: "Other"
  PHP version used: "PHP version used:"
  Page request completed in %s seconds: "Page request completed in %s seconds."
+ Password strength: "Password strength: "
  Please log in to continue: "Please log in to continue."
  SAPI used: "SAPI used:"
  Scan events: "Scan events"
@@ -312,6 +313,10 @@ label:
  Your IP address: "Your IP address:"
  Your user agent: "Your user agent:"
  phpMussel version used: "phpMussel version used:"
+ risk:
+  High: "High"
+  Low: "Low"
+  Medium: "Medium"
 link:
  Accounts: "Accounts"
  Cache Data: "Cache Data"

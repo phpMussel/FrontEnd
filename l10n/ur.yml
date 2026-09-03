@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Urdu language data (last modified: 2026.08.30).
+# This file: Urdu language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -291,6 +291,7 @@ label:
  Other: "دیگر"
  PHP version used: "PHP ورژن استعمال کیا:"
  Page request completed in %s seconds: "%s سیکنڈ میں مکمل ہونے والی درخواست کی درخواست."
+ Password strength: "پاس ورڈ کی طاقت: "
  Please log in to continue: "جاری رکھنے کے لیے لاگ ان کریں."
  SAPI used: "SAPI استعمال کیا:"
  Scan events: "واقعات اسکین کریں"
@@ -310,6 +311,10 @@ label:
  Your IP address: "آپ کا IP پتہ:"
  Your user agent: "آپ کا صارف ایجنٹ:"
  phpMussel version used: "phpMussel ورژن استعمال کیا:"
+ risk:
+  High: "اعلی"
+  Low: "کم"
+  Medium: "درمیانہ"
 link:
  Accounts: "اکاؤنٹس"
  Cache Data: "کیش ڈیٹا"

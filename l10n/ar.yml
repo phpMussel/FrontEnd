@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2026.08.30).
+# This file: Arabic language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -293,6 +293,7 @@ label:
  Other: "آخر"
  PHP version used: "النسخة PHP المستخدمة:"
  Page request completed in %s seconds: "اكتمل طلب الصفحة خلال %s ثوان."
+ Password strength: "قوة كلمة المرور: "
  Please log in to continue: "الرجاء تسجيل الدخول للمتابعة."
  SAPI used: "SAPI المستخدمة:"
  Scan events: "مسح الأحداث"
@@ -312,6 +313,10 @@ label:
  Your IP address: "عنوان IP الخاص بك:"
  Your user agent: "وكيل المستخدم الخاص بك:"
  phpMussel version used: "النسخة phpMussel المستخدمة:"
+ risk:
+  High: "عالية"
+  Low: "قليل"
+  Medium: "متوسطة"
 link:
  Accounts: "حسابات"
  Cache Data: "بيانات ذاكرة التخزين المؤقت"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2026.08.30).
+# This file: Norwegian language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -292,6 +292,7 @@ label:
  Other: "Annen"
  PHP version used: "PHP versjon brukt:"
  Page request completed in %s seconds: "Sideforespørsel avsluttet om %s sekunder."
+ Password strength: "Passordstyrke: "
  Please log in to continue: "Vennligst logg inn for å fortsette."
  SAPI used: "SAPI brukt:"
  Scan events: "Skann hendelser"
@@ -311,6 +312,10 @@ label:
  Your IP address: "Din IP-adresse:"
  Your user agent: "Din brukeragent:"
  phpMussel version used: "phpMussel versjon brukt:"
+ risk:
+  High: "Høy"
+  Low: "Lav"
+  Medium: "Medium"
 link:
  Accounts: "Kontoer"
  Cache Data: "Cache data"

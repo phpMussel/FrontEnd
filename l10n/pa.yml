@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Punjabi language data (last modified: 2026.08.30).
+# This file: Punjabi language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -292,6 +292,7 @@ label:
  Other: "ਹੋਰ"
  PHP version used: "PHP ਸੰਸਕਰਣ ਵਰਤਿਆ ਗਿਆ:"
  Page request completed in %s seconds: "ਪੰਨਾ ਬੇਨਤੀ %s ਸਕਿੰਟਾਂ ਵਿੱਚ ਪੂਰੀ ਹੋਈ।"
+ Password strength: "ਪਾਸਵਰਡ ਦੀ ਤਾਕਤ: "
  Please log in to continue: "ਜਾਰੀ ਰੱਖਣ ਲਈ ਕਿਰਪਾ ਕਰਕੇ ਲੌਗ ਇਨ ਕਰੋ।"
  SAPI used: "ਕਿਹੜਾ SAPI ਵਰਤੋਂ ਵਿੱਚ ਹੈ:"
  Scan events: "ਸਕੈਨ ਇਵੈਂਟਾਂ ਦੀ ਗਿਣਤੀ"
@@ -311,6 +312,10 @@ label:
  Your IP address: "ਤੁਹਾਡਾ IP ਪਤਾ:"
  Your user agent: "ਤੁਹਾਡਾ ਉਪਭੋਗਤਾ ਏਜੰਟ:"
  phpMussel version used: "phpMussel ਸੰਸਕਰਣ ਵਰਤਿਆ ਗਿਆ:"
+ risk:
+  High: "ਉੱਚ"
+  Low: "ਘੱਟ"
+  Medium: "ਮੱਧਮ"
 link:
  Accounts: "ਖਾਤੇ"
  Cache Data: "ਕੈਸ਼ ਡੇਟਾ"

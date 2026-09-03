@@ -241,7 +241,12 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 - [2026.06.22]: Some methods which instantiate RecursiveIteratorIterator objects which instantiate RecursiveDirectoryIterator objects could trigger fatal errors due to uncaught UnexpectedValueException exceptions, thus causing execution to end prematurely, when supplied paths to directories which contain subdirectories for which PHP doesn't have sufficient permissions to read; To prevent this in the future, the affected calls have been guarded with try/catch blocks, and where try/catch blocks aren't practical, guarded by appropriate checks.
 
 #### Security.
-- [2026.08.30]: The default password usage warning now shows not only at the accounts page, but across the entire front-end when logged into an affected account in the hopes of more strongly encouraging any users which haven't yet set a proper password to do so. Furthermore, when any password field at the accounts page contains more than 1 but less than 8 characters, or when its content matches an entry from a predefined "list of the most common passwords", a warning will now be displayed that "extremely common passwords should be avoided".
+- [2026.08.30]: The default password usage warning now shows not only at the accounts page, but across the entire front-end when logged into an affected account in the hopes of more strongly encouraging any users which haven't yet set a proper password to do so. Furthermore, when any password field at the accounts page contains more than 0 but less than 8 characters, or when its content matches an entry from a predefined "list of the most common passwords", a warning will now be displayed that "extremely common passwords should be avoided".
 
 #### Other changes.
 - [2026.05.02]: Added a glossary page to the front-end.
+
+### v3.8.1
+
+#### Security.
+- [2026.09.03]: Password fields at the front-end accounts page now include a basic strenth check.

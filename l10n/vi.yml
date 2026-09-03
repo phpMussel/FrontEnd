@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2026.08.30).
+# This file: Vietnamese language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -292,6 +292,7 @@ label:
  Other: "Khác"
  PHP version used: "Phiên bản PHP đang được dùng:"
  Page request completed in %s seconds: "Yêu cầu trang hoàn thành trong %s giây."
+ Password strength: "Độ mạnh của mật khẩu: "
  Please log in to continue: "Vui lòng đăng nhập để tiếp tục."
  SAPI used: "SAPI đang được dùng:"
  Scan events: "Sự kiện quét"
@@ -311,6 +312,10 @@ label:
  Your IP address: "Địa chỉ IP của bạn:"
  Your user agent: "Đại lý người dùng của bạn:"
  phpMussel version used: "Phiên bản phpMussel đang được dùng:"
+ risk:
+  High: "Cao"
+  Low: "Thấp"
+  Medium: "Trung bình"
 link:
  Accounts: "Tài khoản"
  Cache Data: "Dữ liệu cache"

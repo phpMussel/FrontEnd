@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Czech language data (last modified: 2026.08.30).
+# This file: Czech language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -292,6 +292,7 @@ label:
  Other: "Jiná"
  PHP version used: "Použitá verze PHP:"
  Page request completed in %s seconds: "Žádost o stránku dokončena za %s sekundy."
+ Password strength: "Síla hesla: "
  Please log in to continue: "Pro pokračování se prosím přihlašte."
  SAPI used: "Použité SAPI:"
  Scan events: "Skenování událostí"
@@ -311,6 +312,10 @@ label:
  Your IP address: "Vaše IP adresa:"
  Your user agent: "Váš user agent:"
  phpMussel version used: "Použitá verze phpMussel:"
+ risk:
+  High: "Vysoké"
+  Low: "Nízké"
+  Medium: "Střední"
 link:
  Accounts: "Účty"
  Cache Data: "Data mezipaměti"

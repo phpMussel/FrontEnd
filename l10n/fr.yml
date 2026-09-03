@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2026.08.30).
+# This file: French language data (last modified: 2026.09.03).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -317,6 +317,7 @@ label:
  Page request completed in %s seconds:
   - "Requête de page complétée en %s seconde."
   - "Requête de page complétée en %s secondes."
+ Password strength: "Force du mot de passe\_: "
  Please log in to continue: "Merci de vous connecter pour continuer."
  SAPI used: "SAPI utilisée\_:"
  Scan events: "événements d'analyse"
@@ -336,6 +337,10 @@ label:
  Your IP address: "Votre adresse IP\_:"
  Your user agent: "Votre agent utilisateur\_:"
  phpMussel version used: "Version phpMussel utilisée\_:"
+ risk:
+  High: "Élevé"
+  Low: "Faible"
+  Medium: "Moyen"
 link:
  Accounts: "Comptes"
  Cache Data: "Données de cache"
