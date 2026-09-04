@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2026.09.03).
+# This file: Japanese language data (last modified: 2026.09.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -252,8 +252,8 @@ Some useful links: |+
          <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – ＰＨＰ学習リソースとディスカッション。</li>
            <li>{{Links.MDN.Homepage}} – 開発者による、開発者のためのリソース。 HTML、CSS、JavaScript、アクセシビリティ、などについて学習するための素晴らしいリソースです。</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">脆弱性チャート</a> – さまざまなパッケージの安全で安全でないバージョンを一覧表示する（ＰＨＰ、ＨＨＶＭ、ｐｈｐＭｙＡｄｍｉｎ、Ｐｙｔｈｏｎ、等）。</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">互換性チャート</a> – さまざまなパッケージの互換性情報を一覧表示します（CIDRAM、phpMussel、等）。</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">脆弱性チャート</a> – さまざまなパッケージの安全で安全でないバージョンを一覧表示する（ＰＨＰ、ＨＨＶＭ、ｐｈｐＭｙＡｄｍｉｎ、Ｐｙｔｈｏｎ、等）。</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">互換性チャート</a> – さまざまなパッケージの互換性情報を一覧表示します（CIDRAM、phpMussel、等）。</li>
          </ul>
        </li>
      </ul>
@@ -294,6 +294,7 @@ label:
  Page request completed in %s seconds: "ページ・リクエストは%s秒後に完了しました。"
  Password strength: "パスワードの強度："
  Please log in to continue: "継続するには、ログインしてください。"
+ Required: "必須："
  SAPI used: "使用されたＳＡＰＩ："
  Scan events: "スキャンイベント"
  See also: "参照してください："

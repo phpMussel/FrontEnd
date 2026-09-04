@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2026.09.03).
+# This file: Indonesian language data (last modified: 2026.09.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -253,8 +253,8 @@ Some useful links: |+
          <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – Sumber belajar dan diskusi PHP.</li>
            <li>{{Links.MDN.Homepage}} – Sumber daya untuk pengembang, oleh pengembang. Sumber daya yang luar biasa untuk mempelajari tentang HTML, CSS, JavaScript, aksesibilitas, dan banyak lagi.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Tabel Kerentanan</a> – Mencantumkan berbagai versi dari paket-paket yang aman dan tidak aman (HHVM, PHP, phpMyAdmin, Python, dsb).</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Tabel Kompatibilitas</a> – Mencantumkan informasi kompatibilitas untuk berbagai paket (CIDRAM, phpMussel, dsb).</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Tabel Kerentanan</a> – Mencantumkan berbagai versi dari paket-paket yang aman dan tidak aman (HHVM, PHP, phpMyAdmin, Python, dsb).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Tabel Kompatibilitas</a> – Mencantumkan informasi kompatibilitas untuk berbagai paket (CIDRAM, phpMussel, dsb).</li>
          </ul>
        </li>
      </ul>
@@ -295,6 +295,7 @@ label:
  Page request completed in %s seconds: "Permintaan halaman selesai dalam %s detik."
  Password strength: "Kekuatan kata sandi: "
  Please log in to continue: "Silakan masuk untuk melanjutkan."
+ Required: "Diperlukan:"
  SAPI used: "SAPI digunakan:"
  Scan events: "Pindai acara"
  See also: "Lihat juga:"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Catalan language data (last modified: 2026.09.03).
+# This file: Catalan language data (last modified: 2026.09.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -253,8 +253,8 @@ Some useful links: |+
          <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – Recursos d'aprenentatge i discussió de PHP.</li>
            <li>{{Links.MDN.Homepage}} – Recursos per a desenvolupadors, per desenvolupadors. Un recurs fantàstic per aprendre sobre HTML, CSS, JavaScript, accessibilitat, i molt més.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Taules de vulnerabilitats</a> – Llista les versions segures/insegures de diversos paquets (HHVM, PHP, phpMyAdmin, Python, etc).</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Taules de compatibilitat</a> – Llista la informació de compatibilitat per a diversos paquets (CIDRAM, phpMussel, etc).</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Taules de vulnerabilitats</a> – Llista les versions segures/insegures de diversos paquets (HHVM, PHP, phpMyAdmin, Python, etc).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Taules de compatibilitat</a> – Llista la informació de compatibilitat per a diversos paquets (CIDRAM, phpMussel, etc).</li>
          </ul>
        </li>
      </ul>
@@ -295,6 +295,7 @@ label:
  Page request completed in %s seconds: "La sol·licitud de pàgina s'ha completat en %s segons."
  Password strength: "Força de la contrasenya: "
  Please log in to continue: "Inicieu sessió per continuar."
+ Required: "Requisits:"
  SAPI used: "SAPI utilitzat:"
  Scan events: "Esdeveniments d'escaneig"
  See also: "Vegeu també:"

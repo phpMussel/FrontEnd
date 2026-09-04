@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Farsi language data (last modified: 2026.09.03).
+# This file: Farsi language data (last modified: 2026.09.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -253,8 +253,8 @@ Some useful links: |+
          <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – منابع آموزشی و بحث برای PHP.</li>
            <li>{{Links.MDN.Homepage}} – منابع برای توسعه دهندگان، توسط توسعه دهندگان. یک منبع فوق العاده برای یادگیری در مورد HTML، CSS، جاوا اسکریپت، دسترسی، و بیشتر.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">نمودارهای آسیب پذیری</a> – نسخه های ایمن/ناایمن بسته های مختلف را فهرست می‌کند (HHVM ,PHP ,phpMyAdmin ,Python و غیره).</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">نمودارهای سازگاری</a> – اطلاعات سازگاری را برای بسته های مختلف فهرست می‌کند (CIDRAM ,phpMussel و غیره).</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">نمودارهای آسیب پذیری</a> – نسخه های ایمن/ناایمن بسته های مختلف را فهرست می‌کند (HHVM ,PHP ,phpMyAdmin ,Python و غیره).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">نمودارهای سازگاری</a> – اطلاعات سازگاری را برای بسته های مختلف فهرست می‌کند (CIDRAM ,phpMussel و غیره).</li>
          </ul>
        </li>
      </ul>
@@ -295,6 +295,7 @@ label:
  Page request completed in %s seconds: "درخواست صفحه در %s ثانیه تکمیل شد."
  Password strength: "قدرت رمز عبور: "
  Please log in to continue: "لطفا برای ادامه وارد شوید."
+ Required: "مورد نیاز:"
  SAPI used: "SAPI مورد استفاده:"
  Scan events: "اسکن رویدادها"
  See also: "همچنین ببینید:"

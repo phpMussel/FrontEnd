@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Punjabi language data (last modified: 2026.09.03).
+# This file: Punjabi language data (last modified: 2026.09.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -252,8 +252,8 @@ Some useful links: |+
          <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – PHP ਸਿੱਖਣ ਦੇ ਸਰੋਤ ਅਤੇ ਚਰਚਾ।</li>
            <li>{{Links.MDN.Homepage}} – ਡਿਵੈਲਪਰਾਂ ਦੁਆਰਾ, ਡਿਵੈਲਪਰਾਂ ਲਈ ਸਰੋਤ। HTML, CSS, JavaScript, ਪਹੁੰਚਯੋਗਤਾ, ਅਤੇ ਹੋਰ ਬਹੁਤ ਕੁਝ ਬਾਰੇ ਸਿੱਖਣ ਲਈ ਇੱਕ ਸ਼ਾਨਦਾਰ ਸਰੋਤ।</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">ਕਮਜ਼ੋਰੀ ਚਾਰਟ</a> – ਵੱਖ-ਵੱਖ ਪੈਕੇਜਾਂ ਦੇ ਸੁਰੱਖਿਅਤ/ਅਸੁਰੱਖਿਅਤ ਸੰਸਕਰਣਾਂ ਨੂੰ ਸੂਚੀਬੱਧ ਕਰਦਾ ਹੈ (HHVM, PHP, phpMyAdmin, Python, ਆਦਿ)।</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">ਅਨੁਕੂਲਤਾ ਚਾਰਟ</a> – ਵੱਖ-ਵੱਖ ਪੈਕੇਜਾਂ ਲਈ ਅਨੁਕੂਲਤਾ ਜਾਣਕਾਰੀ ਨੂੰ ਸੂਚੀਬੱਧ ਕਰਦਾ ਹੈ (CIDRAM, phpMussel, ਆਦਿ)।</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">ਕਮਜ਼ੋਰੀ ਚਾਰਟ</a> – ਵੱਖ-ਵੱਖ ਪੈਕੇਜਾਂ ਦੇ ਸੁਰੱਖਿਅਤ/ਅਸੁਰੱਖਿਅਤ ਸੰਸਕਰਣਾਂ ਨੂੰ ਸੂਚੀਬੱਧ ਕਰਦਾ ਹੈ (HHVM, PHP, phpMyAdmin, Python, ਆਦਿ)।</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">ਅਨੁਕੂਲਤਾ ਚਾਰਟ</a> – ਵੱਖ-ਵੱਖ ਪੈਕੇਜਾਂ ਲਈ ਅਨੁਕੂਲਤਾ ਜਾਣਕਾਰੀ ਨੂੰ ਸੂਚੀਬੱਧ ਕਰਦਾ ਹੈ (CIDRAM, phpMussel, ਆਦਿ)।</li>
          </ul>
        </li>
      </ul>
@@ -294,6 +294,7 @@ label:
  Page request completed in %s seconds: "ਪੰਨਾ ਬੇਨਤੀ %s ਸਕਿੰਟਾਂ ਵਿੱਚ ਪੂਰੀ ਹੋਈ।"
  Password strength: "ਪਾਸਵਰਡ ਦੀ ਤਾਕਤ: "
  Please log in to continue: "ਜਾਰੀ ਰੱਖਣ ਲਈ ਕਿਰਪਾ ਕਰਕੇ ਲੌਗ ਇਨ ਕਰੋ।"
+ Required: "ਲੋੜੀਂਦਾ:"
  SAPI used: "ਕਿਹੜਾ SAPI ਵਰਤੋਂ ਵਿੱਚ ਹੈ:"
  Scan events: "ਸਕੈਨ ਇਵੈਂਟਾਂ ਦੀ ਗਿਣਤੀ"
  See also: "ਇਹ ਵੀ ਵੇਖੋ:"

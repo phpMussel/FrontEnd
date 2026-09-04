@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese language data (last modified: 2026.09.03).
+# This file: Chinese language data (last modified: 2026.09.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -376,8 +376,8 @@ Some useful links:
           <ul class="comSub" id="menuILR">
             <li>{{Links.PHP.Earth.Website}} – PHP学习资源和讨论。</li>
             <li>{{Links.MDN.Homepage}} – 由开发人员，为开发人员提供的资源。这是学习HTML、CSS、JavaScript、可访问性、等内容的绝佳资源。</li>
-            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">脆弱性图表</a> – 列出各种软件包的安全/不安全版本（HHVM、PHP、phpMyAdmin、Python、等等）。</li>
-            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">兼容性图表</a> – 列出各种软件包的兼容性信息（CIDRAM、phpMussel、等等）。</li>
+            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">脆弱性图表</a> – 列出各种软件包的安全/不安全版本（HHVM、PHP、phpMyAdmin、Python、等等）。</li>
+            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">兼容性图表</a> – 列出各种软件包的兼容性信息（CIDRAM、phpMussel、等等）。</li>
           </ul>
         </li>
       </ul>
@@ -418,8 +418,8 @@ Some useful links:
           <ul class="comSub" id="menuILR">
             <li>{{Links.PHP.Earth.Website}} – PHP學習資源和討論。</li>
             <li>{{Links.MDN.Homepage}} – 由開發人員，為開發人員提供的資源。這是學習HTML、CSS、JavaScript、輔助功能、等知識的絕佳資源。</li>
-            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">脆弱性圖表</a> – 列出各種軟件包的安全/不安全版本（HHVM、PHP、phpMyAdmin、Python、等等）。</li>
-            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">兼容性圖表</a> – 列出各種軟件包的兼容性信息（CIDRAM、phpMussel、等等）。</li>
+            <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">脆弱性圖表</a> – 列出各種軟件包的安全/不安全版本（HHVM、PHP、phpMyAdmin、Python、等等）。</li>
+            <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">兼容性圖表</a> – 列出各種軟件包的兼容性信息（CIDRAM、phpMussel、等等）。</li>
           </ul>
         </li>
       </ul>
@@ -460,6 +460,7 @@ label:
  Page request completed in %s seconds: {"zh-Hans": "页面请求在%s秒内完成。", "zh-Hant": "頁面請求在%s秒內完成。"}
  Password strength: {"zh-Hans": "密码强度：", "zh-Hant": "密碼強度："}
  Please log in to continue: {"zh-Hans": "请登录以继续。", "zh-Hant": "請登錄以繼續。"}
+ Required: "必需的："
  SAPI used: "目前使用SAPI："
  Scan events: {"zh-Hans": "扫描事件", "zh-Hant": "掃描事件"}
  See also: "也可以看看："

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Galician language data (last modified: 2026.09.03).
+# This file: Galician language data (last modified: 2026.09.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -252,8 +252,8 @@ Some useful links: |+
          <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – Recursos de aprendizaxe e discusión de PHP.</li>
            <li>{{Links.MDN.Homepage}} – Recursos para desenvolvedores, por desenvolvedores. Un recurso fantástico para aprender sobre HTML, CSS, JavaScript, accesibilidade, e moito máis.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Táboas de vulnerabilidade</a> – Lista versións seguras e non seguras de varios paquetes (HHVM, PHP, phpMyAdmin, Python, etc).</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Táboas de compatibilidade</a> – Lista información de compatibilidade para varios paquetes (CIDRAM, phpMussel, etc).</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Táboas de vulnerabilidade</a> – Lista versións seguras e non seguras de varios paquetes (HHVM, PHP, phpMyAdmin, Python, etc).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Táboas de compatibilidade</a> – Lista información de compatibilidade para varios paquetes (CIDRAM, phpMussel, etc).</li>
          </ul>
        </li>
      </ul>
@@ -294,6 +294,7 @@ label:
  Page request completed in %s seconds: "Solicitude de páxina completada en %s segundos."
  Password strength: "Fortaleza do contrasinal: "
  Please log in to continue: "Inicia sesión para continuar."
+ Required: "Requisito:"
  SAPI used: "SAPI utilizado:"
  Scan events: "Eventos de exploración"
  See also: "Ver tamén:"

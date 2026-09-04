@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bulgarian language data (last modified: 2026.09.03).
+# This file: Bulgarian language data (last modified: 2026.09.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -252,8 +252,8 @@ Some useful links: |+
          <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – PHP учебни ресурси и дискусия.</li>
            <li>{{Links.MDN.Homepage}} – Ресурси за разработчици, по разработчици. Фантастичен ресурс за изучаване на HTML, CSS, JavaScript, достъпност, и др.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Диаграми на уязвимости</a> – Изброява безопасни/небезопасни версии на различни пакети (HHVM, PHP, phpMyAdmin, Python, и т.н).</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Диаграми за съвместимост</a> – Изброява информация за съвместимост за различни пакети (CIDRAM, phpMussel, и т.н).</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Диаграми на уязвимости</a> – Изброява безопасни/небезопасни версии на различни пакети (HHVM, PHP, phpMyAdmin, Python, и т.н).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Диаграми за съвместимост</a> – Изброява информация за съвместимост за различни пакети (CIDRAM, phpMussel, и т.н).</li>
          </ul>
        </li>
      </ul>
@@ -294,6 +294,7 @@ label:
  Page request completed in %s seconds: "Заявката за страница е изпълнена за %s секунди."
  Password strength: "Силата на паролата: "
  Please log in to continue: "Моля, влезте, за да продължите."
+ Required: "Изисква се:"
  SAPI used: "Използван SAPI:"
  Scan events: "Сканиране на събития"
  See also: "Вижте също:"

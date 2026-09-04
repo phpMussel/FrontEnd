@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2026.09.03).
+# This file: Italian language data (last modified: 2026.09.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -253,8 +253,8 @@ Some useful links: |+
          <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – Risorse di apprendimento e discussione per PHP.</li>
            <li>{{Links.MDN.Homepage}} – Risorse per sviluppatori, da parte degli sviluppatori. Una risorsa fantastica per conoscere HTML, CSS, JavaScript, accessibilità, e altro ancora.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Mappe di Vulnerabilità</a> – Elenca le versioni sicure e non sicure di varie pacchetti (HHVM, PHP, phpMyAdmin, Python, ecc).</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Mappe di Compatibilità</a> – Elenca le informazioni sulla compatibilità per vari pacchetti (CIDRAM, phpMussel, ecc).</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Mappe di Vulnerabilità</a> – Elenca le versioni sicure e non sicure di varie pacchetti (HHVM, PHP, phpMyAdmin, Python, ecc).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Mappe di Compatibilità</a> – Elenca le informazioni sulla compatibilità per vari pacchetti (CIDRAM, phpMussel, ecc).</li>
          </ul>
        </li>
      </ul>
@@ -295,6 +295,7 @@ label:
  Page request completed in %s seconds: "Richiesta di pagina completata in %s secondi."
  Password strength: "Complessità della password: "
  Please log in to continue: "Per favore accedi per continuare."
+ Required: "Necessario:"
  SAPI used: "SAPI utilizzata:"
  Scan events: "Scansioni eventi"
  See also: "Guarda anche:"

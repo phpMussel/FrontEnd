@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2026.09.03).
+# This file: Afrikaans language data (last modified: 2026.09.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -253,8 +253,8 @@ Some useful links: |+
          <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – PHP leerhulpbronne en bespreking.</li>
            <li>{{Links.MDN.Homepage}} – Hulpbronne vir ontwikkelaars, deur ontwikkelaars. Fantastiese hulpbron om te leer oor HTML, CSS, JavaScript, toeganklikheid, en meer.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Kwesbaarheidskaarte</a> – Lys veilige/onveilige weergawes van verskeie pakkette (HHVM, PHP, phpMyAdmin, Python, ens).</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Verenigbaarheidskaarte</a> – Lys versoenbaarheidsinligting vir verskeie pakkette (CIDRAM, phpMussel, ens).</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Kwesbaarheidskaarte</a> – Lys veilige/onveilige weergawes van verskeie pakkette (HHVM, PHP, phpMyAdmin, Python, ens).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Verenigbaarheidskaarte</a> – Lys versoenbaarheidsinligting vir verskeie pakkette (CIDRAM, phpMussel, ens).</li>
          </ul>
        </li>
      </ul>
@@ -295,6 +295,7 @@ label:
  Page request completed in %s seconds: "Bladsyversoek voltooi in %s sekondes."
  Password strength: "Wagwoordsterkte: "
  Please log in to continue: "Teken asseblief in om voort te gaan."
+ Required: "Vereis:"
  SAPI used: "SAPI gebruik:"
  Scan events: "Skandeer gebeure"
  See also: "Sien ook:"

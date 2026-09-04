@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bosnian language data (last modified: 2026.09.03).
+# This file: Bosnian language data (last modified: 2026.09.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -253,8 +253,8 @@ Some useful links: |+
          <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – PHP resursi za učenje i diskusija.</li>
            <li>{{Links.MDN.Homepage}} – Resursi za programere, od programera. Fantastičan resurs za učenje o HTML-u, CSS-u, JavaScriptu, pristupačnosti, i još mnogo čemu.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Grafikoni ranjivosti</a> – Navodi sigurne/nesigurne verzije različitih paketa (HHVM, PHP, phpMyAdmin, Python, itd).</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Grafikoni kompatibilnosti</a> – Navodi informacije o kompatibilnosti za različite pakete (CIDRAM, phpMussel, itd).</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Grafikoni ranjivosti</a> – Navodi sigurne/nesigurne verzije različitih paketa (HHVM, PHP, phpMyAdmin, Python, itd).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Grafikoni kompatibilnosti</a> – Navodi informacije o kompatibilnosti za različite pakete (CIDRAM, phpMussel, itd).</li>
          </ul>
        </li>
      </ul>
@@ -295,6 +295,7 @@ label:
  Page request completed in %s seconds: "Zahtjev za stranicu dovršen za %s sekunde."
  Password strength: "Jačina lozinke: "
  Please log in to continue: "Molimo prijavite se da nastavite."
+ Required: "Potrebno:"
  SAPI used: "SAPI koristi:"
  Scan events: "Broj skeniranja"
  See also: "Vidi također:"

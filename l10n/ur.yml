@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Urdu language data (last modified: 2026.09.03).
+# This file: Urdu language data (last modified: 2026.09.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -251,8 +251,8 @@ Some useful links: |+
          <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – PHP سیکھنے کے وسائل اور بحث.</li>
            <li>{{Links.MDN.Homepage}} – ڈویلپرز کے لیے وسائل، ڈویلپرز کے ذریعے. HTML، CSS، JavaScript، ایکسیسبیلٹی، اور مزید کے بارے میں سیکھنے کا ایک لاجواب وسیلہ.</li>
-           <li><a dir="ltr" href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Vulnerability Charts</a> – مختلف پیکجوں کے محفوظ اور غیر محفوظ ورژن لیتے ہیں (HHVM ,PHP ,phpMyAdmin ,Python، وغیرہ).</li>
-           <li><a dir="ltr" href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Compatibility Charts</a> – مختلف پیکجوں کے لیے مطابقت کی معلومات فہرست (CIDRAM، phpMussel، وغیرہ).</li>
+           <li><a dir="ltr" href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Vulnerability Charts</a> – مختلف پیکجوں کے محفوظ اور غیر محفوظ ورژن لیتے ہیں (HHVM ,PHP ,phpMyAdmin ,Python، وغیرہ).</li>
+           <li><a dir="ltr" href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Compatibility Charts</a> – مختلف پیکجوں کے لیے مطابقت کی معلومات فہرست (CIDRAM، phpMussel، وغیرہ).</li>
          </ul>
        </li>
      </ul>
@@ -293,6 +293,7 @@ label:
  Page request completed in %s seconds: "%s سیکنڈ میں مکمل ہونے والی درخواست کی درخواست."
  Password strength: "پاس ورڈ کی طاقت: "
  Please log in to continue: "جاری رکھنے کے لیے لاگ ان کریں."
+ Required: "مطلوبہ:"
  SAPI used: "SAPI استعمال کیا:"
  Scan events: "واقعات اسکین کریں"
  See also: "بھی دیکھو:"

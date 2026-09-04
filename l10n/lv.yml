@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2026.09.03).
+# This file: Latvian language data (last modified: 2026.09.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -252,8 +252,8 @@ Some useful links: |+
          <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – PHP mācību resursi un diskusija.</li>
            <li>{{Links.MDN.Homepage}} – Izstrādātāju resursi izstrādātājiem. Lielisks resurss, lai uzzinātu par HTML, CSS, JavaScript, pieejamību, un daudz ko citu.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Ievainojamības Diagrammas</a> – Saraksta dažādu programmatūras pakotņu drošas/nedrošas versijas (HHVM, PHP, phpMyAdmin, Python, utt).</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Saderības Diagrammas</a> – Saraksta informācija par saderību par dažādām programmatūras pakotnēm (CIDRAM, phpMussel, utt).</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Ievainojamības Diagrammas</a> – Saraksta dažādu programmatūras pakotņu drošas/nedrošas versijas (HHVM, PHP, phpMyAdmin, Python, utt).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Saderības Diagrammas</a> – Saraksta informācija par saderību par dažādām programmatūras pakotnēm (CIDRAM, phpMussel, utt).</li>
          </ul>
        </li>
      </ul>
@@ -294,6 +294,7 @@ label:
  Page request completed in %s seconds: "Lapas pieprasījums ir pabeigts %s sekundēs."
  Password strength: "Paroles stiprums: "
  Please log in to continue: "Lūdzu, ielogoties, lai turpinātu."
+ Required: "Nepieciešams:"
  SAPI used: "Izmantotā SAPI:"
  Scan events: "Skenēšanas notikumu skaits"
  See also: "Skatīt arī:"

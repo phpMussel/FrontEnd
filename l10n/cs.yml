@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Czech language data (last modified: 2026.09.03).
+# This file: Czech language data (last modified: 2026.09.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -252,8 +252,8 @@ Some useful links: |+
          <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – PHP učební zdroje a diskuze.</li>
            <li>{{Links.MDN.Homepage}} – Zdroje pro vývojáře, od vývojářů. Fantastický zdroj informací o HTML, CSS, JavaScriptu, přístupnosti, a dalších.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Tabulky zranitelnosti</a> – Vypisuje bezpečné/nebezpečné verze různých balíčků (HHVM, PHP, phpMyAdmin, Python, atd).</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Tabulky kompatibility</a> – Vypisuje informace o kompatibilitě pro různé balíčky (CIDRAM, phpMussel, atd).</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Tabulky zranitelnosti</a> – Vypisuje bezpečné/nebezpečné verze různých balíčků (HHVM, PHP, phpMyAdmin, Python, atd).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Tabulky kompatibility</a> – Vypisuje informace o kompatibilitě pro různé balíčky (CIDRAM, phpMussel, atd).</li>
          </ul>
        </li>
      </ul>
@@ -294,6 +294,7 @@ label:
  Page request completed in %s seconds: "Žádost o stránku dokončena za %s sekundy."
  Password strength: "Síla hesla: "
  Please log in to continue: "Pro pokračování se prosím přihlašte."
+ Required: "Požadovaný:"
  SAPI used: "Použité SAPI:"
  Scan events: "Skenování událostí"
  See also: "Viz také:"

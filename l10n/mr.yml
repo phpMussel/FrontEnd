@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Marathi language data (last modified: 2026.09.03).
+# This file: Marathi language data (last modified: 2026.09.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -252,8 +252,8 @@ Some useful links: |+
          <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – PHP शिकण्याचे स्रोत आणि चर्चा.</li>
            <li>{{Links.MDN.Homepage}} – विकासकांसाठी संसाधने, विकासकांकडून. HTML, CSS, JavaScript, प्रवेशयोग्यता, आणि बरेच काही शिकण्यासाठी एक उत्तम संसाधन.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Vulnerability Charts</a> – विविध पॅकेजेसच्या  (HHVM, PHP, phpMyAdmin, Python, इ) सुरक्षित/असुरक्षित आवृत्त्यांची यादी करते.</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Compatibility Charts</a> – विविध पॅकेजेससाठी (CIDRAM, phpMussel, इ) सुसंगतता माहिती सूचीबद्ध करते.</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Vulnerability Charts</a> – विविध पॅकेजेसच्या  (HHVM, PHP, phpMyAdmin, Python, इ) सुरक्षित/असुरक्षित आवृत्त्यांची यादी करते.</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Compatibility Charts</a> – विविध पॅकेजेससाठी (CIDRAM, phpMussel, इ) सुसंगतता माहिती सूचीबद्ध करते.</li>
          </ul>
        </li>
      </ul>
@@ -294,6 +294,7 @@ label:
  Page request completed in %s seconds: "पृष्ठ विनंती %s सेकंदात पूर्ण झाली."
  Password strength: "पासवर्डची ताकद: "
  Please log in to continue: "पुढे जाण्यासाठी कृपया लॉग इन करा."
+ Required: "आवश्यक:"
  SAPI used: "SAPI वापरले:"
  Scan events: "स्कॅनची संख्या"
  See also: "हे देखील पहा:"

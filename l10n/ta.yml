@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Tamil language data (last modified: 2026.09.03).
+# This file: Tamil language data (last modified: 2026.09.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -252,8 +252,8 @@ Some useful links: |+
          <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – PHP கற்றல் வளங்கள் மற்றும் விவாதம்.</li>
            <li>{{Links.MDN.Homepage}} – டெவலப்பர்களுக்கான வளங்கள், டெவலப்பர்களால். HTML, CSS, JavaScript, அணுகல்தன்மை, மற்றும் பலவற்றைப் பற்றி அறிந்து கொள்வதற்கான அருமையான வளம்.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">பாதிப்பு விளக்கப்படங்கள்</a> – பல்வேறு தொகுப்புகளுக்கான பாதுகாப்பான/பாதுகாப்பற்ற பதிப்புகளை பட்டியலிடுகிறது (HHVM, PHP, phpMyAdmin, Python, போன்றவை).</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">பொருந்தக்கூடிய விளக்கப்படங்கள்</a> – பல்வேறு தொகுப்புகளுக்கான பொருந்தக்கூடிய தகவலை பட்டியலிடுகிறது (CIDRAM, phpMussel, போன்றவை).</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">பாதிப்பு விளக்கப்படங்கள்</a> – பல்வேறு தொகுப்புகளுக்கான பாதுகாப்பான/பாதுகாப்பற்ற பதிப்புகளை பட்டியலிடுகிறது (HHVM, PHP, phpMyAdmin, Python, போன்றவை).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">பொருந்தக்கூடிய விளக்கப்படங்கள்</a> – பல்வேறு தொகுப்புகளுக்கான பொருந்தக்கூடிய தகவலை பட்டியலிடுகிறது (CIDRAM, phpMussel, போன்றவை).</li>
          </ul>
        </li>
      </ul>
@@ -294,6 +294,7 @@ label:
  Page request completed in %s seconds: "பக்க கோரிக்கை %s வினாடிகளில் முடிந்தது."
  Password strength: "கடவுச்சொல்லின் வலிமை: "
  Please log in to continue: "தொடர உள்நுழைக."
+ Required: "தேவை:"
  SAPI used: "SAPI பயன்படுத்தப்பட்டது:"
  Scan events: "நிகழ்வுகளை ஸ்கேன் செய்யுங்கள்"
  See also: "மேலும் காண்க:"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Ukrainian language data (last modified: 2026.09.03).
+# This file: Ukrainian language data (last modified: 2026.09.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -253,8 +253,8 @@ Some useful links: |+
          <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – Навчальні ресурси та обговорення для PHP.</li>
            <li>{{Links.MDN.Homepage}} – Ресурси для розробників, за розробниками. Чудовий ресурс для вивчення HTML, CSS, JavaScript, доступність, тощо.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Таблиці Вразливостей</a> – Перераховує безпечні/небезпечні версії різних пакетів (HHVM, PHP, phpMyAdmin, Python, тощо).</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Таблиці Сумісності</a> – Перераховує інформацію про сумісність для різних пакетів (CIDRAM, phpMussel, тощо).</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Таблиці Вразливостей</a> – Перераховує безпечні/небезпечні версії різних пакетів (HHVM, PHP, phpMyAdmin, Python, тощо).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Таблиці Сумісності</a> – Перераховує інформацію про сумісність для різних пакетів (CIDRAM, phpMussel, тощо).</li>
          </ul>
        </li>
      </ul>
@@ -295,6 +295,7 @@ label:
  Page request completed in %s seconds: "Запит на сторінку виконано за %s секунди."
  Password strength: "Надійність пароля: "
  Please log in to continue: "Увійдіть щоб продовжити."
+ Required: "Необхідно:"
  SAPI used: "Використана SAPI:"
  Scan events: "Сканувати події"
  See also: "Дивіться також:"

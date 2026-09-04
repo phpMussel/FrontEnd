@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2026.08.30).
+ * This file: Front-end handler (last modified: 2026.09.04).
  */
 
 namespace phpMussel\FrontEnd;
@@ -113,12 +113,19 @@ class FrontEnd
     private $HostnameOverride = '';
 
     /**
+     * @var int The current user state.
+     * -1 = Attempted to log in, but login failed (e.g., due to bad credentials).
+     *  0 = Not logged in.
+     *  1 = Logged in.
+     *  2 = Logged in, but awaiting two-factor authentication.
+     */
+    private $UserState = 0;
+
+    /**
      * @var int User permissions.
-     *      -1 = Attempted to log in; Login failed (i.e., bad credentials).
-     *       0 = Not logged in.
-     *       1 = Logged in; Complete access.
-     *       2 = Logged in; Logs access only.
-     *       3 = Logged in; Awaiting two-factor authentication.
+     *  0 = Not logged in, or awaiting two-factor authentication.
+     *  1 = Complete access.
+     *  2 = Logs access only.
      */
     private $Permissions = 0;
 
@@ -424,7 +431,7 @@ class FrontEnd
 
         /** Attempt to log the user in. */
         if ($FE['FormTarget'] === 'login') {
-            $this->Permissions = -1;
+            $this->UserState = -1;
             if (!empty($_POST['username']) && empty($_POST['password'])) {
                 $FE['state_msg'] = $this->Loader->L10N->getString('response.Password field empty');
             } elseif (empty($_POST['username']) && !empty($_POST['password'])) {
@@ -477,9 +484,9 @@ class FrontEnd
                                     ''
                                 ];
                                 $this->Loader->Events->fireEvent('sendMail', '', ...$EventData);
-                                $this->Permissions = 3;
+                                $this->UserState = 2;
                             } else {
-                                $this->Permissions = 1;
+                                $this->UserState = 1;
                             }
                             $this->Loader->Cache->setEntry($Cookie, $this->ThisSession, $this->SessionTTL);
                         }
@@ -493,19 +500,17 @@ class FrontEnd
                 }
             }
 
-            if ($this->Permissions < 0) {
-                if ($FE['state_msg']) {
-                    $LoginAttempts++;
-                    $TimeToAdd = ($LoginAttempts > 4) ? ($LoginAttempts - 4) * 86400 : 86400;
-                    $this->Loader->Cache->setEntry('LoginAttempts' . $this->Loader->IPAddr, $LoginAttempts, $TimeToAdd ?: 86400);
-                    $LoggerMessage = $FE['state_msg'];
-                }
-            } elseif ($this->Permissions === 3) {
-                $this->User = $TryUser;
-                $LoggerMessage = $this->Loader->L10N->getString('label.Logged in, 2FA pending');
+            if ($FE['state_msg']) {
+                $LoginAttempts++;
+                $TimeToAdd = ($LoginAttempts > 4) ? ($LoginAttempts - 4) * 86400 : 86400;
+                $this->Loader->Cache->setEntry('LoginAttempts' . $this->Loader->IPAddr, $LoginAttempts, $TimeToAdd ?: 86400);
+                $LoggerMessage = $FE['state_msg'];
             } else {
                 $this->User = $TryUser;
-                $LoggerMessage = $this->Loader->L10N->getString('label.Logged in');
+                $LoggerMessage = $this->L10N->getString((
+                    !empty($this->Loader->InstanceCache['enable_two_factor']) &&
+                    $this->UserState === 2
+                ) ? 'label.Logged in, 2FA pending' : 'label.Logged in');
             }
 
             /** Safer for the front-end logger. */
@@ -514,7 +519,7 @@ class FrontEnd
             /** Handle front-end logging. */
             $this->frontendLogger($this->Loader->IPAddr, $TryUser, $LoggerMessage ?? '');
         } elseif (!empty($_COOKIE['PHPMUSSEL-ADMIN'])) {
-            $this->Permissions = -1;
+            $this->UserState = -1;
             if (
                 ($TrySession = $this->Loader->Cache->getEntry($_COOKIE['PHPMUSSEL-ADMIN'])) &&
                 ($SessionDel = \strpos($TrySession, ',')) !== false
@@ -527,10 +532,7 @@ class FrontEnd
                 $SessionKey = \substr($_COOKIE['PHPMUSSEL-ADMIN'], $SessionUserLen);
                 $CookieUser = \substr($_COOKIE['PHPMUSSEL-ADMIN'], 0, $SessionUserLen);
                 $ConfigUserPath = 'user.' . $CookieUser;
-                if ($CookieUser === $SessionUser && \password_verify($SessionKey, $SessionHash) && isset(
-                    $this->Loader->Configuration[$ConfigUserPath],
-                    $this->Loader->Configuration[$ConfigUserPath]['permissions']
-                )) {
+                if ($CookieUser === $SessionUser && \password_verify($SessionKey, $SessionHash) && isset($this->Loader->Configuration[$ConfigUserPath]['permissions'])) {
                     $this->Permissions = (int)$this->Loader->Configuration[$ConfigUserPath]['permissions'];
                     $this->User = $SessionUser;
 
@@ -538,29 +540,26 @@ class FrontEnd
                     if (!empty($this->Loader->InstanceCache['enable_two_factor']) && \preg_match('~^.+@.+$~', $SessionUser)) {
                         $TwoFactorState = $this->Loader->Cache->getEntry('TwoFactorState:' . $_COOKIE['PHPMUSSEL-ADMIN']);
                         $Try = (int)\substr($TwoFactorState, 0, 1);
-                        if ($Try === 0 && $FE['FormTarget'] === '2fa' && !empty($_POST['2fa'])) {
+                        $this->UserState = ((int)$Try === 1) ? 1 : 2;
+                        if ($this->UserState === 2 && $FE['FormTarget'] === '2fa' && !empty($_POST['2fa'])) {
                             /** User has submitted a 2FA code. Attempt to verify it. */
                             if (\password_verify($_POST['2fa'], \substr($TwoFactorState, 1))) {
                                 $this->Loader->Cache->setEntry('TwoFactorState:' . $_COOKIE['PHPMUSSEL-ADMIN'], '1', $this->SessionTTL);
-                                $Try = 1;
+                                $this->UserState = 1;
                                 $this->Loader->Cache->deleteEntry('Failed2FA' . $this->Loader->IPAddr);
-                                if ($this->Loader->Configuration['frontend']['frontend_log']) {
-                                    $this->frontendLogger($this->Loader->IPAddr, $SessionUser, $this->Loader->L10N->getString('response.Successfully authenticated'));
-                                }
+                                $this->frontendLogger($this->Loader->IPAddr, $SessionUser, $this->Loader->L10N->getString('response.Successfully authenticated'));
                             } else {
                                 $Failed2FA++;
                                 $TimeToAdd = ($Failed2FA > 4) ? ($Failed2FA - 4) * 86400 : 86400;
                                 $this->Loader->Cache->setEntry('Failed2FA' . $this->Loader->IPAddr, $Failed2FA, $TimeToAdd ?: 86400);
-                                if ($this->Loader->Configuration['frontend']['frontend_log']) {
-                                    $this->frontendLogger($this->Loader->IPAddr, $SessionUser, $this->Loader->L10N->getString('response.Incorrect 2FA code entered'));
-                                }
+                                $this->frontendLogger($this->Loader->IPAddr, $SessionUser, $this->Loader->L10N->getString('response.Incorrect 2FA code entered'));
                                 $FE['state_msg'] = $this->Loader->L10N->getString('response.Incorrect 2FA code entered');
                             }
                         }
 
                         /** Revert permissions if not authenticated. */
-                        if ($Try !== 1) {
-                            $this->Permissions = 3;
+                        if ($this->UserState !== 1) {
+                            $this->Permissions = 0;
                         }
                     }
                 }
@@ -650,10 +649,10 @@ class FrontEnd
             $FE['info_php'] = \PHP_VERSION;
 
             /** SAPI used. */
-            $FE['info_sapi'] = php_sapi_name();
+            $FE['info_sapi'] = \php_sapi_name();
 
             /** Operating system used. */
-            $FE['info_os'] = php_uname();
+            $FE['info_os'] = \php_uname();
 
             /** Provide the option to log out (omit home link). */
             $FE['bNav'] = $FE['LogoutButton'];
@@ -1174,6 +1173,17 @@ class FrontEnd
             $Labels[] = 'Logged Out';
             $Segments[] = 'Logged In';
         }
+        $Can = $this->flagIntToArray(['Complete access' => false, 'Logs access only' => false, 'Statistics' => false, 'IP testing' => false, 'Range tools' => false, 'Glossary' => false], $this->Permissions);
+        if ($Can['Complete access']) {
+            $Can = ['Logs access only' => true, 'Statistics' => true, 'IP testing' => true, 'Range tools' => true, 'Glossary' => true];
+        }
+        foreach ($Can as $Key => $Value) {
+            if ($Value) {
+                $Labels[] = $Key;
+            } else {
+                $Segments[] = $Key;
+            }
+        }
         foreach ($Labels as $Label) {
             $Template = \str_replace(['<!-- ' . $Label . ' Begin -->', '<!-- ' . $Label . ' End -->'], '', $Template);
         }
@@ -1228,8 +1238,8 @@ class FrontEnd
     {
         /** Guard. */
         if (
-            !$this->Loader->Configuration['frontend']['frontend_log'] ||
-            !($File = $this->Loader->buildPath($this->Loader->Configuration['frontend']['frontend_log']))
+            $this->Loader->Configuration['frontend']['frontend_log'] === '' ||
+            ($File = $this->Loader->buildPath($this->Loader->Configuration['frontend']['frontend_log'])) === ''
         ) {
             return;
         }
@@ -1618,5 +1628,41 @@ class FrontEnd
             }
         }
         return $In;
+    }
+
+    /**
+     * Populate an array of flags by an integer.
+     *
+     * @param array $Arr The array to map over.
+     * @param int $Flags An integer representing the flags.
+     * @return array The mapped array.
+     */
+    private function flagIntToArray(array $Arr = [], int $Flags = 0): array
+    {
+        $AsBin = \decbin($Flags);
+        foreach ($Arr as &$Entry) {
+            if ($AsBin === '') {
+                $Entry = false;
+                continue;
+            }
+            $Entry = (bool)\substr($AsBin, -1);
+            $AsBin = \substr($AsBin, 0, -1);
+        }
+        return $Arr;
+    }
+
+    /**
+     * Generate an integer from an array of flags.
+     *
+     * @param array $Arr The array to generate from.
+     * @return int The generated integer.
+     */
+    private function flagArrayToInt(array $Arr = []): int
+    {
+        $Flags = '';
+        foreach ($Arr as $Entry) {
+            $Flags = ($Entry ? '1' : '0') . $Flags;
+        }
+        return \bindec($Flags);
     }
 }

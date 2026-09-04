@@ -7,35 +7,35 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: YAML references file (last modified: 2025.09.16).
+# This file: YAML references file (last modified: 2026.09.04).
 ##/
 
 Links:
- ClamavNet: "<a href="https://www.clamav.net/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external">ClamavNet</a>"
+ ClamavNet: "<a href="https://www.clamav.net/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external" target="_blank">ClamavNet</a>"
  ConfigRef:
   time_format: "<a onclick="javascript:toggleconfigNav('coreRow','coreShowLink')" href="\#config_core_time_format"><code dir="ltr">core➡time_format</code></a>"
   time_format_rtl: "<a onclick="javascript:toggleconfigNav('coreRow','coreShowLink')" href="\#config_core_time_format"><code dir="ltr">time_format⬅core</code></a>"
  Documentation: "https://phpmussel.github.io/\#documentation"
- Hybrid Analysis: "<a href="https://www.hybrid-analysis.com/" dir="ltr" hreflang="en" rel="noopener noreferrer external">Hybrid Analysis</a>"
- Malware Expert: "<a href="https://malware.expert/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external">Malware.Expert</a>"
- MalwareTips: "<a href="https://malwaretips.com/" dir="ltr" hreflang="en" rel="noopener noreferrer external">MalwareTips</a>"
- Malwarebytes: "<a href="https://www.malwarebytes.com/" dir="ltr" hreflang="en" rel="noopener noreferrer external">Malwarebytes</a>"
- OSChina: "<a href="https://www.oschina.net/p/phpMussel" dir="ltr" hreflang="zh-CN" rel="noopener noreferrer external">phpMussel＠开源中国社区</a>"
- Payload Security: "<a href="https://www.payload-security.com/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external">Payload Security</a>"
- PhishTank: "<a href="https://www.phishtank.com/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external">PhishTank</a>"
+ Hybrid Analysis: "<a href="https://www.hybrid-analysis.com/" dir="ltr" hreflang="en" rel="noopener noreferrer external" target="_blank">Hybrid Analysis</a>"
+ Malware Expert: "<a href="https://malware.expert/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external" target="_blank">Malware.Expert</a>"
+ MalwareTips: "<a href="https://malwaretips.com/" dir="ltr" hreflang="en" rel="noopener noreferrer external" target="_blank">MalwareTips</a>"
+ Malwarebytes: "<a href="https://www.malwarebytes.com/" dir="ltr" hreflang="en" rel="noopener noreferrer external" target="_blank">Malwarebytes</a>"
+ OSChina: "<a href="https://www.oschina.net/p/phpMussel" dir="ltr" hreflang="zh-CN" rel="noopener noreferrer external" target="_blank">phpMussel＠开源中国社区</a>"
+ Payload Security: "<a href="https://www.payload-security.com/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external" target="_blank">Payload Security</a>"
+ PhishTank: "<a href="https://www.phishtank.com/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external" target="_blank">PhishTank</a>"
  MDN:
-  Homepage: "<a href="https://developer.mozilla.org/en-US/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external">MDN Web Docs</a>"
- MIT: "<a href="https://opensource.org/licenses/MIT" dir="ltr" hreflang="en-US" rel="noopener noreferrer external">MIT</a>"
+  Homepage: "<a href="https://developer.mozilla.org/en-US/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external" target="_blank">MDN Web Docs</a>"
+ MIT: "<a href="https://opensource.org/licenses/MIT" dir="ltr" hreflang="en-US" rel="noopener noreferrer external" target="_blank">MIT</a>"
  PHP:
   Earth:
-   Facebook: "<a href="https://www.facebook.com/groups/2204685680/" dir="ltr" rel="noopener noreferrer external">PHP.earth@Facebook</a>"
-   Website: "<a href="https://php.earth/" dir="ltr" hreflang="en" rel="noopener noreferrer external">PHP.earth</a>"
+   Facebook: "<a href="https://www.facebook.com/groups/2204685680/" dir="ltr" rel="noopener noreferrer external" target="_blank">PHP.earth@Facebook</a>"
+   Website: "<a href="https://php.earth/" dir="ltr" hreflang="en" rel="noopener noreferrer external" target="_blank">PHP.earth</a>"
  phpMussel:
   Docs Base Path: "https://github.com/phpMussel/Docs/blob/master/"
-  Extras: "<a href="https://github.com/phpMussel/extras" dir="ltr" hreflang="en" rel="noopener noreferrer external">phpMussel/extras</a>"
-  Issues: "<a href="https://github.com/phpMussel/phpMussel/issues" dir="ltr" hreflang="en" rel="noopener noreferrer external">phpMussel/phpMussel/issues</a>"
-  SigTool: "<a href="https://github.com/phpMussel/SigTool" dir="ltr" hreflang="en" rel="noopener noreferrer external">phpMussel/SigTool</a>"
- Sanesecurity: "<a href="https://sanesecurity.com/usage/signatures/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external">Sanesecurity</a>"
- SecuriteInfo: "<a href="https://www.securiteinfo.com/" dir="ltr" hreflang="fr-FR" rel="noopener noreferrer external">SecuriteInfo.com</a>"
- VirusTotal: "<a href="https://www.virustotal.com/" dir="ltr" rel="noopener noreferrer external">VirusTotal</a>"
+  Extras: "<a href="https://github.com/phpMussel/extras" dir="ltr" hreflang="en" rel="noopener noreferrer external" target="_blank">phpMussel/extras</a>"
+  Issues: "<a href="https://github.com/phpMussel/phpMussel/issues" dir="ltr" hreflang="en" rel="noopener noreferrer external" target="_blank">phpMussel/phpMussel/issues</a>"
+  SigTool: "<a href="https://github.com/phpMussel/SigTool" dir="ltr" hreflang="en" rel="noopener noreferrer external" target="_blank">phpMussel/SigTool</a>"
+ Sanesecurity: "<a href="https://sanesecurity.com/usage/signatures/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external" target="_blank">Sanesecurity</a>"
+ SecuriteInfo: "<a href="https://www.securiteinfo.com/" dir="ltr" hreflang="fr-FR" rel="noopener noreferrer external" target="_blank">SecuriteInfo.com</a>"
+ VirusTotal: "<a href="https://www.virustotal.com/" dir="ltr" rel="noopener noreferrer external" target="_blank">VirusTotal</a>"
  Website: "<a href="https://phpmussel.github.io/" hreflang="en-US" rel="noopener external"><span class="navicon link"></span>phpmussel.github.io</a>"

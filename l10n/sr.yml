@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Serbian language data (last modified: 2026.09.03).
+# This file: Serbian language data (last modified: 2026.09.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -252,8 +252,8 @@ Some useful links: |+
          <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – PHP ресурси за учење и дискусија.</li>
            <li>{{Links.MDN.Homepage}} – Ресурси за програмере, од програмера. Фантастичан ресурс за учење о HTML-у, CSS-у, JavaScript-у, приступачности, и још много чему.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Графикони рањивости</a> – Наводи безбедне/небезбедне верзије различитих пакета (HHVM, PHP, phpMyAdmin, Python, итд).</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Графикони компатибилности</a> – Наводи информације о компатибилности за различите пакете (ЦИДРАМ, пхпМуссел, итд).</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Графикони рањивости</a> – Наводи безбедне/небезбедне верзије различитих пакета (HHVM, PHP, phpMyAdmin, Python, итд).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Графикони компатибилности</a> – Наводи информације о компатибилности за различите пакете (ЦИДРАМ, пхпМуссел, итд).</li>
          </ul>
        </li>
      </ul>
@@ -294,6 +294,7 @@ label:
  Page request completed in %s seconds: "Захтев за страницу је завршен за %s секунде."
  Password strength: "Јачина лозинке: "
  Please log in to continue: "Пријавите се да бисте наставили."
+ Required: "Потребно"
  SAPI used: "САПИ користи:"
  Scan events: "Број скенирања"
  See also: "Погледајте такође:"

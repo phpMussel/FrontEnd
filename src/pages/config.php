@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The configuration page (last modified: 2026.05.23).
+ * This file: The configuration page (last modified: 2026.09.04).
  */
 
 namespace phpMussel\FrontEnd;
@@ -523,9 +523,33 @@ foreach ($this->Loader->ConfigurationDefaults as $CatKey => $CatValue) {
         }
         $ThisDir['FieldOut'] .= $ThisDir['Preview'];
 
+        /** Provide hints, useful for users to better understand the directive at hand. */
+        if (isset($DirValue['hints'])) {
+            $Try = '';
+            if (\is_string($DirValue['hints']) && \strpos($DirValue['hints'], '.') !== false) {
+                $Try = $this->Loader->L10N->getString($DirValue['hints']);
+            }
+            if ($Try !== '') {
+                $ThisDir['FieldOut'] .= "        <br /><br />\n        " . $Try;
+            } else {
+                $ThisDir['Hints'] = $this->Loader->L10N->arrayFromL10nToArray($DirValue['hints']);
+                foreach ($ThisDir['Hints'] as $ThisDir['HintKey'] => $ThisDir['HintValue']) {
+                    if (\is_int($ThisDir['HintKey'])) {
+                        $ThisDir['FieldOut'] .= "        <br /><br />\n        " . $ThisDir['HintValue'];
+                        continue;
+                    }
+                    $ThisDir['FieldOut'] .= \sprintf(
+                        "<br /><br />\n        <span class=\"s\">%s</span> %s",
+                        $ThisDir['HintKey'],
+                        $ThisDir['HintValue']
+                    );
+                }
+            }
+        }
+
         /** Check extension and class requirements. */
         if (!empty($DirValue['required'])) {
-            $ThisDir['FieldOut'] .= '<small>';
+            $ThisDir['FieldOut'] .= '<br /><br /><small><span class="s">' . $this->Loader->L10N->getString('label.Required') . '</span>';
             foreach ($DirValue['required'] as $DirValue['Requirement'] => $DirValue['Friendly']) {
                 if (isset($ReqsLookupCache[$DirValue['Requirement']])) {
                     $ThisDir['FieldOut'] .= $ReqsLookupCache[$DirValue['Requirement']];
@@ -552,30 +576,6 @@ foreach ($this->Loader->ConfigurationDefaults as $CatKey => $CatValue) {
                 $ThisDir['FieldOut'] .= $ReqsLookupCache[$DirValue['Requirement']];
             }
             $ThisDir['FieldOut'] .= '</small>';
-        }
-
-        /** Provide hints, useful for users to better understand the directive at hand. */
-        if (isset($DirValue['hints'])) {
-            $Try = '';
-            if (\is_string($DirValue['hints']) && \strpos($DirValue['hints'], '.') !== false) {
-                $Try = $this->Loader->L10N->getString($DirValue['hints']);
-            }
-            if ($Try !== '') {
-                $ThisDir['FieldOut'] .= "        <br /><br />\n        " . $Try;
-            } else {
-                $ThisDir['Hints'] = $this->Loader->L10N->arrayFromL10nToArray($DirValue['hints']);
-                foreach ($ThisDir['Hints'] as $ThisDir['HintKey'] => $ThisDir['HintValue']) {
-                    if (\is_int($ThisDir['HintKey'])) {
-                        $ThisDir['FieldOut'] .= "        <br /><br />\n        " . $ThisDir['HintValue'];
-                        continue;
-                    }
-                    $ThisDir['FieldOut'] .= \sprintf(
-                        "<br /><br />\n        <span class=\"s\">%s</span> %s",
-                        $ThisDir['HintKey'],
-                        $ThisDir['HintValue']
-                    );
-                }
-            }
         }
 
         /** Provide additional information, useful for users to better understand the directive at hand. */

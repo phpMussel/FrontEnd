@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data (last modified: 2026.09.03).
+# This file: Romanian language data (last modified: 2026.09.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -252,8 +252,8 @@ Some useful links: |+
          <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – Resurse de învățare și discuții PHP.</li>
            <li>{{Links.MDN.Homepage}} – Resurse pentru dezvoltatori, de către dezvoltatori. O resursă fantastică pentru a afla despre HTML, CSS, JavaScript, accesibilitate, și multe altele.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Diagrame de vulnerabilitate</a> – Listează versiunile sigure/nesigure ale diferitelor pachete (HHVM, PHP, phpMyAdmin, Python, etc).</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">Diagrame de compatibilitate</a> – Listează informații de compatibilitate pentru diverse pachete (CIDRAM, phpMussel, etc).</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Diagrame de vulnerabilitate</a> – Listează versiunile sigure/nesigure ale diferitelor pachete (HHVM, PHP, phpMyAdmin, Python, etc).</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">Diagrame de compatibilitate</a> – Listează informații de compatibilitate pentru diverse pachete (CIDRAM, phpMussel, etc).</li>
          </ul>
        </li>
      </ul>
@@ -294,6 +294,7 @@ label:
  Page request completed in %s seconds: "Solicitarea paginii a fost finalizată în %s secunde."
  Password strength: "Puterea parolei: "
  Please log in to continue: "Vă rugăm să vă conectați pentru a continua."
+ Required: "Necesar:"
  SAPI used: "SAPI folosit:"
  Scan events: "Evenimentele de scanare"
  See also: "Vezi si:"

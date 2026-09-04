@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data (last modified: 2026.09.03).
+# This file: Hebrew language data (last modified: 2026.09.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -253,8 +253,8 @@ Some useful links: |+
          <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – משאבי למידה ודיון ב-PHP.</li>
            <li>{{Links.MDN.Homepage}} – משאבים למפתחים, לפי מפתחים. משאב פנטסטי ללמידה על HTML, CSS, JavaScript, נגישות, ועוד.</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">תרשימי פגיעות</a> – מפרטת גרסאות בטוחות ולא בטוחות של חבילות שונות (HHVM ,PHP ,phpMyAdmin ,Python, וכו').</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">תרשימי תאימות</a> – מפרטת מידע תאימות עבור חבילות שונות (CIDRAM ,phpMussel, וכו').</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">תרשימי פגיעות</a> – מפרטת גרסאות בטוחות ולא בטוחות של חבילות שונות (HHVM ,PHP ,phpMyAdmin ,Python, וכו').</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">תרשימי תאימות</a> – מפרטת מידע תאימות עבור חבילות שונות (CIDRAM ,phpMussel, וכו').</li>
          </ul>
        </li>
      </ul>
@@ -295,6 +295,7 @@ label:
  Page request completed in %s seconds: "בקשת הדף הושלמה תוך %s שניות."
  Password strength: "חוזק הסיסמה: "
  Please log in to continue: "אנא התחבר על מנת להמשיך."
+ Required: "נדרש:"
  SAPI used: "SAPI בשימוש:"
  Scan events: "סריקת אירועים"
  See also: "ראה גם:"
