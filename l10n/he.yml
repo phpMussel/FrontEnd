@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data (last modified: 2026.09.04).
+# This file: Hebrew language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -283,7 +283,6 @@ label:
  Logged in: "מחובר."
  Logged out: "התנתק."
  Login: "התחברות"
- Logs access only: "גישה ליומנים בלבד"
  No log file selected: "לא נבחר קובץ יומן."
  No log files available: "אין קבצי יומן זמינים."
  Normal: "נורמלי"
@@ -293,6 +292,7 @@ label:
  Other: "אחר"
  PHP version used: "גרסת PHP בשימוש:"
  Page request completed in %s seconds: "בקשת הדף הושלמה תוך %s שניות."
+ Partial access: "גישה חלקית"
  Password strength: "חוזק הסיסמה: "
  Please log in to continue: "אנא התחבר על מנת להמשיך."
  Required: "נדרש:"
@@ -374,7 +374,6 @@ response:
  That account doesn_t exist: "החשבון הזה לא קיים."
  Username doesn_t exist: "כישלון התחברות! שם משתמש לא קיים!"
  Username field empty: "שדה שם משתמש ריק!"
- Wrong endpoint: "נקודת קצה שגויה!"
  _No: "לא"
  _Yes: "כן"
 Signature information: !lazy

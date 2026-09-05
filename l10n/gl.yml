@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Galician language data (last modified: 2026.09.04).
+# This file: Galician language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -282,7 +282,6 @@ label:
  Logged in: "Iniciado sesión."
  Logged out: "Pechou sesión."
  Login: "Inicio de sesión"
- Logs access only: "Só acceso aos rexistros"
  No log file selected: "Non se seleccionou ningún ficheiro de rexistro."
  No log files available: "Non hai ficheiros de rexistro dispoñibles."
  Normal: "Normal"
@@ -292,6 +291,7 @@ label:
  Other: "Outra"
  PHP version used: "Versión PHP utilizada:"
  Page request completed in %s seconds: "Solicitude de páxina completada en %s segundos."
+ Partial access: "Acceso parcial"
  Password strength: "Fortaleza do contrasinal: "
  Please log in to continue: "Inicia sesión para continuar."
  Required: "Requisito:"
@@ -373,7 +373,6 @@ response:
  That account doesn_t exist: "Esa conta non existe."
  Username doesn_t exist: "Fallou o inicio de sesión! O nome de usuario non existe!"
  Username field empty: "O campo do nome de usuario está baleiro!"
- Wrong endpoint: "Punto final incorrecto!"
  _No: "Non"
  _Yes: "Si"
 Signature information: !lazy

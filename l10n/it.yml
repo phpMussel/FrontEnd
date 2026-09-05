@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2026.09.04).
+# This file: Italian language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -283,7 +283,6 @@ label:
  Logged in: "Connesso."
  Logged out: "Disconnesso."
  Login: "Accedi"
- Logs access only: "Accesso solo per i log"
  No log file selected: "Nessun file di log selezionato."
  No log files available: "Nessun file di log disponibili."
  Normal: "Normale"
@@ -293,6 +292,7 @@ label:
  Other: "Altro"
  PHP version used: "Versione PHP utilizzata:"
  Page request completed in %s seconds: "Richiesta di pagina completata in %s secondi."
+ Partial access: "Accesso parziale"
  Password strength: "Complessità della password: "
  Please log in to continue: "Per favore accedi per continuare."
  Required: "Necessario:"
@@ -374,7 +374,6 @@ response:
  That account doesn_t exist: "Questo account non esiste."
  Username doesn_t exist: "Accedi non riuscito! Nome utente non esiste!"
  Username field empty: "L'input nome utente era vuoto!"
- Wrong endpoint: "Punto finale errato!"
  _No: "No"
  _Yes: "Sì"
 Signature information: !lazy

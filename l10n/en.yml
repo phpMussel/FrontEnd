@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2026.09.04).
+# This file: English language data (last modified: 2026.09.05).
 ##/
 
 Glossary: !lazy
@@ -283,7 +283,6 @@ label:
  Logged in: "Logged in."
  Logged out: "Logged out."
  Login: "Login"
- Logs access only: "Logs access only"
  No log file selected: "No log file selected."
  No log files available: "No log files available."
  Normal: "Normal"
@@ -293,6 +292,7 @@ label:
  Other: "Other"
  PHP version used: "PHP version used:"
  Page request completed in %s seconds: "Page request completed in %s seconds."
+ Partial access: "Partial access"
  Password strength: "Password strength: "
  Please log in to continue: "Please log in to continue."
  Required: "Required:"
@@ -374,7 +374,6 @@ response:
  That account doesn_t exist: "That account doesn't exist."
  Username doesn_t exist: "Login failure! Username doesn't exist!"
  Username field empty: "Username field empty!"
- Wrong endpoint: "Wrong endpoint!"
  _No: "No"
  _Yes: "Yes"
 Signature information: !lazy

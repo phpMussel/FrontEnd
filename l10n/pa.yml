@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Punjabi language data (last modified: 2026.09.04).
+# This file: Punjabi language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -282,7 +282,6 @@ label:
  Logged in: "ਲੌਗ ਇਨ ਕੀਤਾ।"
  Logged out: "ਲੌਗ ਆਊਟ ਕੀਤਾ।"
  Login: "ਲੌਗਇਨ"
- Logs access only: "ਸਿਰਫ ਲੌਗ ਐਕਸੈਸ"
  No log file selected: "ਕੋਈ ਲੌਗ ਫਾਈਲ ਨਹੀਂ ਚੁਣੀ ਗਈ।"
  No log files available: "ਕੋਈ ਲੌਗ ਫਾਈਲਾਂ ਉਪਲਬਧ ਨਹੀਂ ਹਨ।"
  Normal: "ਕੁਦਰਤੀ"
@@ -292,6 +291,7 @@ label:
  Other: "ਹੋਰ"
  PHP version used: "PHP ਸੰਸਕਰਣ ਵਰਤਿਆ ਗਿਆ:"
  Page request completed in %s seconds: "ਪੰਨਾ ਬੇਨਤੀ %s ਸਕਿੰਟਾਂ ਵਿੱਚ ਪੂਰੀ ਹੋਈ।"
+ Partial access: "ਅੰਸ਼ਕ ਪਹੁੰਚ"
  Password strength: "ਪਾਸਵਰਡ ਦੀ ਤਾਕਤ: "
  Please log in to continue: "ਜਾਰੀ ਰੱਖਣ ਲਈ ਕਿਰਪਾ ਕਰਕੇ ਲੌਗ ਇਨ ਕਰੋ।"
  Required: "ਲੋੜੀਂਦਾ:"
@@ -373,7 +373,6 @@ response:
  That account doesn_t exist: "ਉਹ ਖਾਤਾ ਮੌਜੂਦ ਨਹੀਂ ਹੈ।"
  Username doesn_t exist: "ਲੌਗਇਨ ਅਸਫਲਤਾ! ਉਪਭੋਗਤਾ ਨਾਮ ਮੌਜੂਦ ਨਹੀਂ ਹੈ!"
  Username field empty: "ਉਪਭੋਗਤਾ ਨਾਮ ਖੇਤਰ ਖਾਲੀ ਹੈ!"
- Wrong endpoint: "ਗਲਤ ਅੰਤ ਬਿੰਦੂ!"
  _No: "ਨਹੀਂ"
  _Yes: "ਹਾਂ"
 Signature information: !lazy

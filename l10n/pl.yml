@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2026.09.04).
+# This file: Polish language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -282,7 +282,6 @@ label:
  Logged in: "Zalogowany."
  Logged out: "Wylogowano."
  Login: "Zaloguj sie"
- Logs access only: "Dostęp tylko do dzienników"
  No log file selected: "Nie wybrano pliku dziennika."
  No log files available: "Brak dostępnych plików dziennika."
  Normal: "Normalna"
@@ -292,6 +291,7 @@ label:
  Other: "Inny"
  PHP version used: "Użyta wersja PHP:"
  Page request completed in %s seconds: "Żądanie strony zakończone w %s sekundy."
+ Partial access: "Częściowy dostęp"
  Password strength: "Siła hasła: "
  Please log in to continue: "Proszę się zalogować, aby kontynuować."
  Required: "Wymagany:"
@@ -373,7 +373,6 @@ response:
  That account doesn_t exist: "To konto nie istnieje."
  Username doesn_t exist: "Logowanie nieudane! Nazwa użytkownika nie istnieje!"
  Username field empty: "Pole nazwy użytkownika jest puste!"
- Wrong endpoint: "Niewłaściwy punkt końcowy!"
  _No: "Nie"
  _Yes: "Tak"
 Signature information: !lazy

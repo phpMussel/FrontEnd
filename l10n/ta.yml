@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Tamil language data (last modified: 2026.09.04).
+# This file: Tamil language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -282,7 +282,6 @@ label:
  Logged in: "உள்நுழைந்துள்ளீர்கள்."
  Logged out: "வெளியேறிவிட்டீர்கள்."
  Login: "உள்நுழைய"
- Logs access only: "பதிவுகள் அணுகல் மட்டுமே"
  No log file selected: "பதிவு கோப்பு எதுவும் தேர்ந்தெடுக்கப்படவில்லை."
  No log files available: "பதிவு கோப்புகள் எதுவும் கிடைக்கவில்லை."
  Normal: "இயல்பானது"
@@ -292,6 +291,7 @@ label:
  Other: "மற்ற"
  PHP version used: "பயன்படுத்தப்படும் PHP பதிப்பு:"
  Page request completed in %s seconds: "பக்க கோரிக்கை %s வினாடிகளில் முடிந்தது."
+ Partial access: "பகுதி அணுகல்"
  Password strength: "கடவுச்சொல்லின் வலிமை: "
  Please log in to continue: "தொடர உள்நுழைக."
  Required: "தேவை:"
@@ -373,7 +373,6 @@ response:
  That account doesn_t exist: "அந்த கணக்கு இல்லை."
  Username doesn_t exist: "உள்நுழைவு தோல்வி! தவறான பயனர்பெயர்!"
  Username field empty: "பயனர்பெயர் புலம் காலியாக உள்ளது!"
- Wrong endpoint: "தவறான முடிவுப்புள்ளி!"
  _No: "இல்லை"
  _Yes: "ஆம்"
 Signature information: !lazy

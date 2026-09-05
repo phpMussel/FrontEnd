@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Czech language data (last modified: 2026.09.04).
+# This file: Czech language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -282,7 +282,6 @@ label:
  Logged in: "Přihlášen."
  Logged out: "Odhlášen."
  Login: "Přihlašovací"
- Logs access only: "Pouze protokoluje přístup"
  No log file selected: "Nebyl vybrán žádný soubor protokolu."
  No log files available: "Nejsou k dispozici žádné soubory protokolu."
  Normal: "Normální"
@@ -292,6 +291,7 @@ label:
  Other: "Jiná"
  PHP version used: "Použitá verze PHP:"
  Page request completed in %s seconds: "Žádost o stránku dokončena za %s sekundy."
+ Partial access: "Částečný přístup"
  Password strength: "Síla hesla: "
  Please log in to continue: "Pro pokračování se prosím přihlašte."
  Required: "Požadovaný:"
@@ -373,7 +373,6 @@ response:
  That account doesn_t exist: "Ten účet neexistuje."
  Username doesn_t exist: "Přihlášení se nezdařilo! Uživatelské jméno neexistuje!"
  Username field empty: "Pole uživatelského jména prázdné!"
- Wrong endpoint: "Špatný koncový bod!"
  _No: "Ne"
  _Yes: "Ano"
 Signature information: !lazy

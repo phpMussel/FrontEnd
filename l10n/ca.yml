@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Catalan language data (last modified: 2026.09.04).
+# This file: Catalan language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -283,7 +283,6 @@ label:
  Logged in: "Connectat."
  Logged out: "Desconnectat."
  Login: "Inici de sessió"
- Logs access only: "Només accés als registres"
  No log file selected: "No s'ha seleccionat cap fitxer de registre."
  No log files available: "No hi ha fitxers de registre disponibles."
  Normal: "Normal"
@@ -293,6 +292,7 @@ label:
  Other: "Altres"
  PHP version used: "Versió PHP utilitzada:"
  Page request completed in %s seconds: "La sol·licitud de pàgina s'ha completat en %s segons."
+ Partial access: "Accés parcial"
  Password strength: "Força de la contrasenya: "
  Please log in to continue: "Inicieu sessió per continuar."
  Required: "Requisits:"
@@ -374,7 +374,6 @@ response:
  That account doesn_t exist: "Aquest compte no existeix."
  Username doesn_t exist: "L'inici de sessió ha fallat! El nom d'usuari no existeix!"
  Username field empty: "El camp del nom d'usuari està buit!"
- Wrong endpoint: "Punt final incorrecte!"
  _No: "No"
  _Yes: "Sí"
 Signature information: !lazy

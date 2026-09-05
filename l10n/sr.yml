@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Serbian language data (last modified: 2026.09.04).
+# This file: Serbian language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -282,7 +282,6 @@ label:
  Logged in: "Пријављен/а."
  Logged out: "Одјављен/а."
  Login: "Пријава"
- Logs access only: "Приступ само до датотека дневника"
  No log file selected: "Није изабрана датотека дневника."
  No log files available: "Нема доступних датотека дневника."
  Normal: "Нормално"
@@ -292,6 +291,7 @@ label:
  Other: "Остало"
  PHP version used: "Коришћена ПХП верзија:"
  Page request completed in %s seconds: "Захтев за страницу је завршен за %s секунде."
+ Partial access: "Делимичан приступ"
  Password strength: "Јачина лозинке: "
  Please log in to continue: "Пријавите се да бисте наставили."
  Required: "Потребно"
@@ -373,7 +373,6 @@ response:
  That account doesn_t exist: "Тај рачун не постоји."
  Username doesn_t exist: "Пријава није успела! Корисничко име не постоји!"
  Username field empty: "Поље корисничког имена је празно!"
- Wrong endpoint: "Погрешна крајња тачка!"
  _No: "Не"
  _Yes: "Да"
 Signature information: !lazy

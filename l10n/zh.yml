@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese language data (last modified: 2026.09.04).
+# This file: Chinese language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -448,7 +448,6 @@ label:
  Logged in: {"zh-Hans": "已登录。", "zh-Hant": "已登錄。"}
  Logged out: "已登出。"
  Login: {"zh-Hans": "登录", "zh-Hant": "登錄"}
- Logs access only: {"zh-Hans": "仅日志访问", "zh-Hant": "僅日誌訪問"}
  No log file selected: {"zh-Hans": "没有选择的日志。", "zh-Hant": "沒有選擇的日誌。"}
  No log files available: {"zh-Hans": "没有日志可用。", "zh-Hant": "沒有日誌可用。"}
  Normal: "普通的"
@@ -458,6 +457,7 @@ label:
  Other: "其他"
  PHP version used: "目前使用PHP版本："
  Page request completed in %s seconds: {"zh-Hans": "页面请求在%s秒内完成。", "zh-Hant": "頁面請求在%s秒內完成。"}
+ Partial access: {"zh-Hans": "部分访问", "zh-Hant": "部分訪問"}
  Password strength: {"zh-Hans": "密码强度：", "zh-Hant": "密碼強度："}
  Please log in to continue: {"zh-Hans": "请登录以继续。", "zh-Hant": "請登錄以繼續。"}
  Required: "必需的："
@@ -545,7 +545,6 @@ response:
  That account doesn_t exist: {"zh-Hans": "那个帐户不存在。", "zh-Hant": "那個帳戶不存在。"}
  Username doesn_t exist: {"zh-Hans": "登录失败！ 用户名不存在！", "zh-Hant": "登錄失敗！ 使用者名稱不存在！"}
  Username field empty: {"zh-Hans": "用户名输入是空的！", "zh-Hant": "使用者名稱輸入是空的！"}
- Wrong endpoint: {"zh-Hans": "错误的端点！", "zh-Hant": "錯誤的端點！"}
  _No: "不是"
  _Yes: "是"
 Signature information: !lazy

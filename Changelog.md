@@ -250,6 +250,7 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 
 #### Security.
 - [2026.09.03]: Password fields at the front-end accounts page now include a basic strength check.
+- [2026.09.05]: Reworked the permissions system so as to be somewhat more granular than before. Previously, an account could either have full access, or access to only the logs page. Accounts can now be defined as having complete access, access only to the logs page, to the statistics page, to the signature information page, to the upload testing page, to the glossary, or to a specified combination of one or more of those. My recommendation to avoid publicly sharing front-end login endpoints and to avoid granting any more access than is absolutely necessary to anyone remains unchanged, but in theory, these changes should nonetheless be helpful, e.g., if, for some reason, somebody truly needed to share access to some combination of those aforementioned pages to a third-party because said third-party is absolutely unable to just install their own copy at their own server, however unlikely that may be, it's at least possible to do that now without also granting complete access to everything else.
 
 #### Other changes.
 - [2026.09.04]: At the front-end configuration page, where some configuration directives require specific extensions to be installed in order to work correctly, it has been made a little more clear.

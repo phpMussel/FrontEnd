@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data (last modified: 2026.09.04).
+# This file: Romanian language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -282,7 +282,6 @@ label:
  Logged in: "Conectat."
  Logged out: "Deconectat."
  Login: "Conectare"
- Logs access only: "Acces doar la jurnalele"
  No log file selected: "Niciun fișier jurnal selectat."
  No log files available: "Niciun fișier jurnal disponibile."
  Normal: "Normal"
@@ -292,6 +291,7 @@ label:
  Other: "Alte"
  PHP version used: "Versiunea PHP folosită:"
  Page request completed in %s seconds: "Solicitarea paginii a fost finalizată în %s secunde."
+ Partial access: "Acces parțial"
  Password strength: "Puterea parolei: "
  Please log in to continue: "Vă rugăm să vă conectați pentru a continua."
  Required: "Necesar:"
@@ -373,7 +373,6 @@ response:
  That account doesn_t exist: "Acest cont nu există."
  Username doesn_t exist: "Conectare a eșuat! Numele de utilizator nu există!"
  Username field empty: "Câmpul nume de utilizator este gol!"
- Wrong endpoint: "Punct final greșit!"
  _No: "Nu"
  _Yes: "Da"
 Signature information: !lazy

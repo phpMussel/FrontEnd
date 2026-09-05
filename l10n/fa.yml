@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Farsi language data (last modified: 2026.09.04).
+# This file: Farsi language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -283,7 +283,6 @@ label:
  Logged in: "وارد شده."
  Logged out: "از سیستم خارج شد."
  Login: "ورود به سیستم"
- Logs access only: "فقط به گزارش‌ها دسترسی دارد"
  No log file selected: "هیچ فایل گزارشی انتخاب نشده است."
  No log files available: "هیچ فایل گزارشی در دسترس نیست."
  Normal: "Normal"
@@ -293,6 +292,7 @@ label:
  Other: "دیگر"
  PHP version used: "نسخه PHP استفاده شده:"
  Page request completed in %s seconds: "درخواست صفحه در %s ثانیه تکمیل شد."
+ Partial access: "دسترسی جزئی"
  Password strength: "قدرت رمز عبور: "
  Please log in to continue: "لطفا برای ادامه وارد شوید."
  Required: "مورد نیاز:"
@@ -374,7 +374,6 @@ response:
  That account doesn_t exist: "آن حساب وجود ندارد."
  Username doesn_t exist: "ورود ناموفق! نام کاربری وجود ندارد!"
  Username field empty: "فیلد نام کاربری خالی است!"
- Wrong endpoint: "نقطه پایانی اشتباه!"
  _No: "خیر"
  _Yes: "آره"
 Signature information: !lazy

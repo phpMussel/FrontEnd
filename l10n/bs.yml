@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bosnian language data (last modified: 2026.09.04).
+# This file: Bosnian language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -283,7 +283,6 @@ label:
  Logged in: "Prijavljen/a."
  Logged out: "Odjavljen/a."
  Login: "Prijava"
- Logs access only: "Pristup samo do datoteka dnevnika"
  No log file selected: "Nije odabrana datoteka dnevnika."
  No log files available: "Nema dostupnih datoteka dnevnika."
  Normal: "Normalno"
@@ -293,6 +292,7 @@ label:
  Other: "Ostalo"
  PHP version used: "Korištena verzija PHP-a:"
  Page request completed in %s seconds: "Zahtjev za stranicu dovršen za %s sekunde."
+ Partial access: "Djelomičan pristup"
  Password strength: "Jačina lozinke: "
  Please log in to continue: "Molimo prijavite se da nastavite."
  Required: "Potrebno:"
@@ -374,7 +374,6 @@ response:
  That account doesn_t exist: "Taj račun ne postoji."
  Username doesn_t exist: "Prijava nije uspjela! Korisničko ime ne postoji!"
  Username field empty: "Polje korisničkog imena prazno!"
- Wrong endpoint: "Pogrešna krajnja tačka!"
  _No: "Ne"
  _Yes: "Da"
 Signature information: !lazy

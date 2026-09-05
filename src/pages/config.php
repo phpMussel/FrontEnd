@@ -8,12 +8,12 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The configuration page (last modified: 2026.09.04).
+ * This file: The configuration page (last modified: 2026.09.05).
  */
 
 namespace phpMussel\FrontEnd;
 
-if (!isset($Page) || $Page !== 'config' || $this->Permissions !== 1) {
+if (!isset($Page) || $Page !== 'config' || empty($this->PermissionsMap['Complete access'])) {
     die;
 }
 

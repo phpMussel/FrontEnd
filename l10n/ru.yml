@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Russian language data (last modified: 2026.09.04).
+# This file: Russian language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -282,7 +282,6 @@ label:
  Logged in: "Вошли в систему."
  Logged out: "Вышел из системы."
  Login: "Войти"
- Logs access only: "Доступ только к лог-файлы"
  No log file selected: "Не лог-файлы Выбранный."
  No log files available: "Не лог-файлы доступны."
  Normal: "Нормальный"
@@ -292,6 +291,7 @@ label:
  Other: "Другие"
  PHP version used: "Используемая версия PHP:"
  Page request completed in %s seconds: "Запрос страницы завершен через %s секунд."
+ Partial access: "Частичный доступ"
  Password strength: "Надежность пароля: "
  Please log in to continue: "Пожалуйста войдите чтобы продолжить."
  Required: "Необходимый:"
@@ -373,7 +373,6 @@ response:
  That account doesn_t exist: "Эта аккаунт не существует."
  Username doesn_t exist: "Войти провал! Имя пользователя не существует!"
  Username field empty: "Имя пользователя пусто!"
- Wrong endpoint: "Неправильная конечная точка!"
  _No: "Нет"
  _Yes: "Да"
 Signature information: !lazy

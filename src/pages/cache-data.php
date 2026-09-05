@@ -8,12 +8,12 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The cache data page (last modified: 2026.05.02).
+ * This file: The cache data page (last modified: 2026.09.05).
  */
 
 namespace phpMussel\FrontEnd;
 
-if (!isset($Page) || $Page !== 'cache-data' || $this->Permissions !== 1) {
+if (!isset($Page) || $Page !== 'cache-data' || empty($this->PermissionsMap['Complete access'])) {
     die;
 }
 

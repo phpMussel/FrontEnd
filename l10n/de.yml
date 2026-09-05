@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data (last modified: 2026.09.04).
+# This file: German language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -283,7 +283,6 @@ label:
  Logged in: "Eingeloggt."
  Logged out: "Ausgeloggt."
  Login: "Einloggen"
- Logs access only: "Zugriff nur auf Protokolldateien"
  No log file selected: "Keine Protokolldatei ausgewählt."
  No log files available: "Keine Protokolldateien vorhanden."
  Normal: "Normal"
@@ -293,6 +292,7 @@ label:
  Other: "Andere"
  PHP version used: "PHP-Version verwendet:"
  Page request completed in %s seconds: "Seite-Anfrage in %s Sekunden abgeschlossen."
+ Partial access: "Teilweiser Zugriff"
  Password strength: "Passwortstärke: "
  Please log in to continue: "Bitte einloggen zum Fortfahren."
  Required: "Erforderlich:"
@@ -374,7 +374,6 @@ response:
  That account doesn_t exist: "Dieses Konto existiert nicht."
  Username doesn_t exist: "Einloggen-Fehler! Benutzername existiert nicht!"
  Username field empty: "Benutzername-Feld leer!"
- Wrong endpoint: "Falscher Endpunkt!"
  _No: "Nein"
  _Yes: "Ja"
 Signature information: !lazy

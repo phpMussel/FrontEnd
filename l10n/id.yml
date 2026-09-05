@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2026.09.04).
+# This file: Indonesian language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -283,7 +283,6 @@ label:
  Logged in: "Dimasuk."
  Logged out: "Dikeluar."
  Login: "Masuk"
- Logs access only: "Akses ke log hanya"
  No log file selected: "Tidak ada file log dipilih."
  No log files available: "Tidak ada file log tersedia."
  Normal: "Normal"
@@ -293,6 +292,7 @@ label:
  Other: "Lain"
  PHP version used: "Versi PHP digunakan:"
  Page request completed in %s seconds: "Permintaan halaman selesai dalam %s detik."
+ Partial access: "Akses sebagian"
  Password strength: "Kekuatan kata sandi: "
  Please log in to continue: "Silakan masuk untuk melanjutkan."
  Required: "Diperlukan:"
@@ -374,7 +374,6 @@ response:
  That account doesn_t exist: "Akun ini tidak ada."
  Username doesn_t exist: "Kegagalan masuk! Nama pengguna tidak ada!"
  Username field empty: "Nama pengguna yang kosong!"
- Wrong endpoint: "Jalur akses salah!"
  _No: "Tidak"
  _Yes: "Ya"
 Signature information: !lazy

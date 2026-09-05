@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2026.09.04).
+# This file: Vietnamese language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -282,7 +282,6 @@ label:
  Logged in: "Đã đăng nhập."
  Logged out: "Đã đăng xuất."
  Login: "Đăng nhập"
- Logs access only: "Bản ghi truy cập chỉ"
  No log file selected: "Không có bản ghi được chọn."
  No log files available: "Không có bản ghi có sẵn."
  Normal: "Bình thường"
@@ -292,6 +291,7 @@ label:
  Other: "Khác"
  PHP version used: "Phiên bản PHP đang được dùng:"
  Page request completed in %s seconds: "Yêu cầu trang hoàn thành trong %s giây."
+ Partial access: "Truy cập một phần"
  Password strength: "Độ mạnh của mật khẩu: "
  Please log in to continue: "Vui lòng đăng nhập để tiếp tục."
  Required: "Cần:"
@@ -373,7 +373,6 @@ response:
  That account doesn_t exist: "Tài khoản này không tồn tại."
  Username doesn_t exist: "Thất bại đăng nhập! Tên người dùng không tồn tại!"
  Username field empty: "Tên người dùng là trống!"
- Wrong endpoint: "Điểm truy cập không đúng!"
  _No: "Không"
  _Yes: "Vâng"
 Signature information: !lazy

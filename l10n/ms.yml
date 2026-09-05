@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2026.09.04).
+# This file: Malay language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -282,7 +282,6 @@ label:
  Logged in: "Dimasukkan."
  Logged out: "Dikeluarkan."
  Login: "Masuk"
- Logs access only: "Akses kepada log sahaja"
  No log file selected: "Tiada fail log dipilih."
  No log files available: "Tiada fail log tersedia."
  Normal: "Semula jadi"
@@ -292,6 +291,7 @@ label:
  Other: "Lain"
  PHP version used: "Versi PHP digunakan:"
  Page request completed in %s seconds: "Permintaan halaman selesai dalam masa %s saat."
+ Partial access: "Akses separa"
  Password strength: "Kekuatan kata laluan: "
  Please log in to continue: "Sila log masuk untuk meneruskan."
  Required: "Diperlukan:"
@@ -373,7 +373,6 @@ response:
  That account doesn_t exist: "Akaun ini tidak wujud."
  Username doesn_t exist: "Kegagalan masuk! Nama pengguna tidak wujud!"
  Username field empty: "Medan nama pengguna kosong!"
- Wrong endpoint: "Titik akhir salah!"
  _No: "Tidak"
  _Yes: "Ya"
 Signature information: !lazy

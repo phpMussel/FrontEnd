@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2026.09.04).
+# This file: French language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -305,7 +305,6 @@ label:
  Logged in: "Connecté."
  Logged out: "Déconnecté."
  Login: "Connexion"
- Logs access only: "Accès aux fichiers journaux seulement"
  No log file selected: "Aucun fichier journal sélectionné."
  No log files available: "Aucun fichiers journaux disponibles."
  Normal: "Normale"
@@ -317,6 +316,7 @@ label:
  Page request completed in %s seconds:
   - "Requête de page complétée en %s seconde."
   - "Requête de page complétée en %s secondes."
+ Partial access: "Accès partiel"
  Password strength: "Force du mot de passe\_: "
  Please log in to continue: "Merci de vous connecter pour continuer."
  Required: "Requis\_:"
@@ -404,7 +404,6 @@ response:
  That account doesn_t exist: "Ce compte n'existe pas."
  Username doesn_t exist: "Erreur de connexion\_! Nom d'utilisateur n'existe pas\_!"
  Username field empty: "Nom d'utilisateur entrée était vide\_!"
- Wrong endpoint: "Mauvais point final\_!"
  _No: "Non"
  _Yes: "Oui"
 Signature information: !lazy

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bangla language data (last modified: 2026.09.04).
+# This file: Bangla language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -283,7 +283,6 @@ label:
  Logged in: "লগ ইন হয়।"
  Logged out: "লগ আউট হয়।"
  Login: "লগ ইন"
- Logs access only: "লগ অ্যাক্সেস শুধুমাত্র"
  No log file selected: "কোনও লগ ফাইল নির্বাচিত নেই।"
  No log files available: "কোন লগ ফাইল উপলব্ধ।"
  Normal: "স্বাভাবিক"
@@ -293,6 +292,7 @@ label:
  Other: "অন্যান্য"
  PHP version used: "PHP সংস্করণ ব্যবহৃত:"
  Page request completed in %s seconds: "পৃষ্ঠা অনুরোধ সম্পন্ন %s সেকেন্ড।"
+ Partial access: "আংশিক অ্যাক্সেস"
  Password strength: "পাসওয়ার্ডের শক্তি: "
  Please log in to continue: "চালিয়ে যেতে দয়া করে লগ ইন করুন।"
  Required: "প্রয়োজনীয়:"
@@ -374,7 +374,6 @@ response:
  That account doesn_t exist: "সেই অ্যাকাউন্টটি বিদ্যমান নেই।"
  Username doesn_t exist: "লগইন ব্যর্থতা! ব্যবহারকারীর নাম অস্তিত্বহীন!"
  Username field empty: "ব্যবহারকারীর নাম ক্ষেত্র খালি!"
- Wrong endpoint: "ভুল শেষপ্রান্ত!"
  _No: "না"
  _Yes: "হাঁ"
 Signature information: !lazy
@@ -401,7 +400,7 @@ Signature information: !lazy
 state_quarantine: "বর্তমানে সংগ্রাহক মধ্যে %s ফাইল আছে।"
 tip:
  2FA Sent: "একটি দুই-ফ্যাক্টর প্রমাণীকরণ কোড ধারণকারী একটি ইমেইল আপনার ইমেইল ঠিকানা পাঠানো হয়েছে। ফ্রন্ট-এন্ড পৌঁছানোর জন্য দয়া করে নীচের এই কোডটি নিশ্চিত করুন। যদি আপনি এই ইমেইলটি না পান, তবে 10 মিনিটের জন্য অপেক্ষা করে লগ আউট করে চেষ্টা করুন এবং নতুন কোড সহ একটি নতুন ইমেইল পাওয়ার জন্য আবার লগ ইন করুন।"
- Accounts: "আপনি এই পৃষ্ঠাতে অ্যাকাউন্টগুলি তৈরি করতে, মুছে ফেলতে এবং সংশোধন করতে পারেন (phpMussel ফ্রন্ট-এন্ড কে প্রবেশাধিকার করতে পারে তা নির্ধারণ করে)।"
+ Accounts: "আপনি এই পৃষ্ঠাতে অ্যাকাউন্টগুলি তৈরি করতে, মুছে ফেলতে এবং সংশোধন করতে পারেন (phpMussel ফ্রন্ট-এন্ড কে অ্যাক্সেস করতে পারে তা নির্ধারণ করে)।"
  Cache Data: "এখানে আপনি ক্যাশের বিষয়বস্তু পর্যালোচনা করতে পারেন।"
  Configuration: "আপনি এই পৃষ্ঠা থেকে phpMussel কনফিগারেশন পরিবর্তন করতে।"
  Glossary: "এই শব্দকোষে phpMussel কর্তৃক ব্যবহৃত কিছু পরিভাষা বর্ণনা করা হয়েছে, যা ব্যবহৃত প্রেক্ষাপটে সেগুলোর উদ্দিষ্ট অর্থ স্পষ্ট করতে সাহায্য করে।"

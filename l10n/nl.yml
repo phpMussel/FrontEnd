@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2026.09.04).
+# This file: Dutch language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -283,7 +283,6 @@ label:
  Logged in: "Ingelogd."
  Logged out: "Uitgelogd."
  Login: "Inloggen"
- Logs access only: "Logbestanden toegang alleen"
  No log file selected: "Geen logbestand geselecteerd."
  No log files available: "Geen logbestanden beschikbaar."
  Normal: "Normaal"
@@ -293,6 +292,7 @@ label:
  Other: "Anders"
  PHP version used: "PHP versie gebruikt:"
  Page request completed in %s seconds: "Paginaverzoek voltooid in %s seconden."
+ Partial access: "Gedeeltelijke toegang"
  Password strength: "Wachtwoordsterkte: "
  Please log in to continue: "Inloggen om verder te gaan."
  Required: "Vereist:"
@@ -374,7 +374,6 @@ response:
  That account doesn_t exist: "Die account bestaat niet."
  Username doesn_t exist: "Inloggen mislukt! Gebruikersnaam bestaat niet!"
  Username field empty: "Gebruikersnaam veld leeg!"
- Wrong endpoint: "Verkeerd eindpunt!"
  _No: "Nee"
  _Yes: "Ja"
 Signature information: !lazy

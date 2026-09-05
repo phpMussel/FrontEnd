@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2026.09.04).
+# This file: Japanese language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -282,7 +282,6 @@ label:
  Logged in: "ログインしました。"
  Logged out: "ログアウトしました。"
  Login: "ログイン"
- Logs access only: "ログのみにアクセス"
  No log file selected: "ログが選択されていません。"
  No log files available: "いいえログが利用可能。"
  Normal: "普通"
@@ -292,6 +291,7 @@ label:
  Other: "その他"
  PHP version used: "使用されたＰＨＰバージョン："
  Page request completed in %s seconds: "ページ・リクエストは%s秒後に完了しました。"
+ Partial access: "部分的なアクセス"
  Password strength: "パスワードの強度："
  Please log in to continue: "継続するには、ログインしてください。"
  Required: "必須："
@@ -373,7 +373,6 @@ response:
  That account doesn_t exist: "そのアカウントは存在しません。"
  Username doesn_t exist: "ログイン失敗！ ユーザー名は存在しません！"
  Username field empty: "ユーザー名入力は空です！"
- Wrong endpoint: "間違ったエンドポイント！"
  _No: "いいえ"
  _Yes: "はい"
 Signature information: !lazy

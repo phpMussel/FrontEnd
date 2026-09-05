@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malayalam language data (last modified: 2026.09.04).
+# This file: Malayalam language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -282,7 +282,6 @@ label:
  Logged in: "ലോഗ് ഇൻ ചെയ്തു."
  Logged out: "ലോഗ് ഔട്ട് ചെയ്തു."
  Login: "ലോഗിൻ"
- Logs access only: "ലോഗുകൾ ആക്‌സസ് മാത്രം"
  No log file selected: "ഒരു ലോഗ് ഫയലും തിരഞ്ഞെടുത്തിട്ടില്ല."
  No log files available: "ലോഗ് ഫയലുകളൊന്നും ലഭ്യമല്ല."
  Normal: "സാധാരണ"
@@ -292,6 +291,7 @@ label:
  Other: "മറ്റുള്ളവ"
  PHP version used: "ഉപയോഗിച്ച PHP പതിപ്പ്:"
  Page request completed in %s seconds: "പേജ് അഭ്യർത്ഥന %s സെക്കൻഡിനുള്ളിൽ പൂർത്തിയായി."
+ Partial access: "ഭാഗിക പ്രവേശനം"
  Password strength: "പാസ്‌വേഡ് ശക്തി: "
  Please log in to continue: "തുടരാൻ ദയവായി ലോഗിൻ ചെയ്യുക."
  Required: "ആവശ്യമാണ്:"
@@ -373,7 +373,6 @@ response:
  That account doesn_t exist: "ആ അക്കൗണ്ട് നിലവിലില്ല."
  Username doesn_t exist: "ലോഗിൻ പരാജയം! ഉപയോക്തൃനാമം നിലവിലില്ല!"
  Username field empty: "ഉപയോക്തൃനാമ ഫീൽഡ് ശൂന്യമാണ്!"
- Wrong endpoint: "തെറ്റായ എൻഡ്‌പോയിന്റ്!"
  _No: "ഇല്ല"
  _Yes: "അതെ"
 Signature information: !lazy

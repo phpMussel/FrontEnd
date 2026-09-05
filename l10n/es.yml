@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2026.09.04).
+# This file: Spanish language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -283,7 +283,6 @@ label:
  Logged in: "Conectado."
  Logged out: "Desconectado."
  Login: "Login"
- Logs access only: "Acceso de registros solamente"
  No log file selected: "Ningún archivo de registro seleccionado."
  No log files available: "Ningún archivos de registro disponibles."
  Normal: "Normal"
@@ -293,6 +292,7 @@ label:
  Other: "Otro"
  PHP version used: "Versión PHP utilizada:"
  Page request completed in %s seconds: "Solicitud de página completada en %s segundos."
+ Partial access: "Acceso parcial"
  Password strength: "Seguridad de la contraseña: "
  Please log in to continue: "Por favor iniciar sesión para continuar."
  Required: "Requerido:"
@@ -374,7 +374,6 @@ response:
  That account doesn_t exist: "Esa cuenta no existe."
  Username doesn_t exist: "¡Error al iniciar sesión – El usuario no existe!"
  Username field empty: "¡La entrada de usuario estaba vacío!"
- Wrong endpoint: "¡Punto final equivocado!"
  _No: "No"
  _Yes: "Sí"
 Signature information: !lazy

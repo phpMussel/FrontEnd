@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Marathi language data (last modified: 2026.09.04).
+# This file: Marathi language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -282,7 +282,6 @@ label:
  Logged in: "लॉग इन केले."
  Logged out: "लॉग आउट केले."
  Login: "लॉगिन"
- Logs access only: "फक्त नोंदीमध्ये प्रवेश"
  No log file selected: "कोणतीही नोंदी फाइल निवडलेली नाही."
  No log files available: "कोणत्याही नोंदी फायली उपलब्ध नाहीत."
  Normal: "नैसर्गिक"
@@ -292,6 +291,7 @@ label:
  Other: "इतर"
  PHP version used: "वापरलेली PHP आवृत्ती:"
  Page request completed in %s seconds: "पृष्ठ विनंती %s सेकंदात पूर्ण झाली."
+ Partial access: "आंशिक प्रवेश"
  Password strength: "पासवर्डची ताकद: "
  Please log in to continue: "पुढे जाण्यासाठी कृपया लॉग इन करा."
  Required: "आवश्यक:"
@@ -373,7 +373,6 @@ response:
  That account doesn_t exist: "ते खाते अस्तित्वात नाही."
  Username doesn_t exist: "लॉगिन अयशस्वी! वापरकर्तानाव अस्तित्वात नाही!"
  Username field empty: "वापरकर्तानाव क्षेत्र रिक्त आहे!"
- Wrong endpoint: "चुकीचा शेवटचा मुद्दा!"
  _No: "नाही"
  _Yes: "हो"
 Signature information: !lazy

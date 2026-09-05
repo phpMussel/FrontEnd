@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bulgarian language data (last modified: 2026.09.04).
+# This file: Bulgarian language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -282,7 +282,6 @@ label:
  Logged in: "Вписан."
  Logged out: "Излязъл."
  Login: "Вход"
- Logs access only: "Само достъп до регистрационни файлове"
  No log file selected: "Няма избран регистрационен файл."
  No log files available: "Няма налични регистрационни файлове."
  Normal: "Нормално"
@@ -292,6 +291,7 @@ label:
  Other: "Други"
  PHP version used: "Използвана версия на PHP:"
  Page request completed in %s seconds: "Заявката за страница е изпълнена за %s секунди."
+ Partial access: "Частичен достъп"
  Password strength: "Силата на паролата: "
  Please log in to continue: "Моля, влезте, за да продължите."
  Required: "Изисква се:"
@@ -373,7 +373,6 @@ response:
  That account doesn_t exist: "Този акаунт не съществува."
  Username doesn_t exist: "Грешка при влизане! Потребителското име не съществува!"
  Username field empty: "Полето за потребителско име е празно!"
- Wrong endpoint: "Грешна крайна точка!"
  _No: "Не"
  _Yes: "Да"
 Signature information: !lazy

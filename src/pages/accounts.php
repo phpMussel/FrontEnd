@@ -8,22 +8,32 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The accounts page (last modified: 2026.09.03).
+ * This file: The accounts page (last modified: 2026.09.05).
  */
 
 namespace phpMussel\FrontEnd;
 
-if (!isset($Page) || $Page !== 'accounts' || $this->Permissions !== 1) {
+if (!isset($Page) || $Page !== 'accounts' || empty($this->PermissionsMap['Complete access'])) {
     die;
 }
 
 /** A form has been submitted. */
 if ($FE['FormTarget'] === 'accounts' && !empty($_POST['do'])) {
     /** Create a new account. */
-    if ($_POST['do'] === 'create-account' && !empty($_POST['username']) && !empty($_POST['password']) && !empty($_POST['permissions'])) {
+    if ($_POST['do'] === 'create-account' && !empty($_POST['username']) && !empty($_POST['password']) && isset($_POST['permissions'])) {
         $TryPath = 'user.' . $_POST['username'];
         $TryPass = \password_hash($_POST['password'], $this->DefaultAlgo);
         $TryPermissions = (int)$_POST['permissions'];
+        if ($TryPermissions === 0) {
+            $TryPermissions = $this->flagArrayToInt([
+                '0',
+                isset($_POST['permLogs']) && $_POST['permLogs'] === 'on' ? '1' : '0',
+                isset($_POST['permStatistics']) && $_POST['permStatistics'] === 'on' ? '1' : '0',
+                isset($_POST['permSigInfo']) && $_POST['permSigInfo'] === 'on' ? '1' : '0',
+                isset($_POST['permUploadTesting']) && $_POST['permUploadTesting'] === 'on' ? '1' : '0',
+                isset($_POST['permGlossary']) && $_POST['permGlossary'] === 'on' ? '1' : '0'
+            ]);
+        }
         if (isset($this->Loader->Configuration[$TryPath])) {
             $FE['state_msg'] = $this->Loader->L10N->getString('response.An account with that username already exists');
         } else {
@@ -98,6 +108,7 @@ if (!$FE['ASYNC']) {
     }
     $LI = $LI['Possible'];
 
+    /** Iterate all accounts for display. */
     foreach ($this->Loader->Configuration as $CatKey => $CatValues) {
         if (\substr($CatKey, 0, 5) !== 'user.' || !\is_array($CatValues)) {
             continue;
@@ -111,10 +122,26 @@ if (!$FE['ASYNC']) {
         $RowInfo['AccPasswordLen'] = \strlen($RowInfo['AccPassword']);
         if ($RowInfo['AccPermissions'] === 1) {
             $RowInfo['AccPermissions'] = $this->Loader->L10N->getString('label.Complete access');
-        } elseif ($RowInfo['AccPermissions'] === 2) {
-            $RowInfo['AccPermissions'] = $this->Loader->L10N->getString('label.Logs access only');
         } else {
-            $RowInfo['AccPermissions'] = $this->Loader->L10N->getString('response.Error');
+            $RowInfo['AccPermissions'] = $this->flagIntToArray([
+                $this->Loader->L10N->getString('label.Complete access') => false,
+                $this->Loader->L10N->getString('link.Logs') => false,
+                $this->Loader->L10N->getString('link.Statistics') . ' (+' . $this->Loader->L10N->getString('field.Clear all') . ')' => false,
+                $this->Loader->L10N->getString('link.Signature Information') => false,
+                $this->Loader->L10N->getString('link.Upload Testing') => false,
+                $this->Loader->L10N->getString('link.Glossary') => false
+            ], $RowInfo['AccPermissions']);
+            if ($RowInfo['AccPermissions']['Complete access']) {
+                $RowInfo['AccPermissions'] = $this->Loader->L10N->getString('label.Complete access');
+            } else {
+                $RowInfo['AccPermissionsArr'] = [$this->Loader->L10N->getString('link.Home')];
+                foreach ($RowInfo['AccPermissions'] as $RowInfo['Key'] => $RowInfo['Value']) {
+                    if ($RowInfo['Value']) {
+                        $RowInfo['AccPermissionsArr'][] = $RowInfo['Key'];
+                    }
+                }
+                $RowInfo['AccPermissions'] = \implode('<br />', $RowInfo['AccPermissionsArr']);
+            }
         }
 
         /** Account password warnings. */

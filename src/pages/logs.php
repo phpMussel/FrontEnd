@@ -8,12 +8,12 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The logs page (last modified: 2026.05.28).
+ * This file: The logs page (last modified: 2026.09.05).
  */
 
 namespace phpMussel\FrontEnd;
 
-if (!isset($Page) || $Page !== 'logs' || ($this->Permissions !== 1 && $this->Permissions !== 2)) {
+if (!isset($Page) || $Page !== 'logs' || empty($this->PermissionsMap['Logs'])) {
     die;
 }
 

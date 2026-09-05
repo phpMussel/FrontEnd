@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Thai language data (last modified: 2026.09.04).
+# This file: Thai language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -283,7 +283,6 @@ label:
  Logged in: "เข้าสู่ระบบ."
  Logged out: "ออกจากระบบ."
  Login: "เข้าสู่ระบบ"
- Logs access only: "เข้าถึงบันทึกเท่านั้น"
  No log file selected: "ไม่มีไฟล์บันทึกเลือก."
  No log files available: "ไม่มีไฟล์บันทึกใช้ได้."
  Normal: "ปกติ"
@@ -293,6 +292,7 @@ label:
  Other: "อื่น ๆ"
  PHP version used: "รุ่น PHP ในการใช้งาน:"
  Page request completed in %s seconds: "คำขอหน้าเสร็จสิ้นภายใน %s วินาที."
+ Partial access: "การเข้าถึงบางส่วน"
  Password strength: "ความแข็งแกร่งของรหัสผ่าน: "
  Please log in to continue: "เข้าสู่ระบบเพื่อดำเนินการต่อ."
  Required: "ที่จำเป็น:"
@@ -374,7 +374,6 @@ response:
  That account doesn_t exist: "บัญชีไม่มีอยู่จริง."
  Username doesn_t exist: "ความล้มเหลวในการเข้าสู่ระบบ! ชื่อผู้ใช้ไม่มีอยู่จริง!"
  Username field empty: "ชื่อผู้ใช้ฟิลด์ว่างเปล่า!"
- Wrong endpoint: "จุดเชื่อมต่อ ไม่ถูกต้อง!"
  _No: "ไม่ได้"
  _Yes: "ใช่แล้ว"
 Signature information: !lazy

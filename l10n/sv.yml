@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2026.09.04).
+# This file: Swedish language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -282,7 +282,6 @@ label:
  Logged in: "Inloggad."
  Logged out: "Utloggad."
  Login: "Inloggning"
- Logs access only: "Kan bara komma åt loggfilerna"
  No log file selected: "Ingen loggfil vald."
  No log files available: "Inga loggfiler finns tillgängliga."
  Normal: "Normal"
@@ -292,6 +291,7 @@ label:
  Other: "Andra"
  PHP version used: "PHP-version som används:"
  Page request completed in %s seconds: "Sidförfrågan färdigställd om %s sekunder."
+ Partial access: "Delvis tillgång"
  Password strength: "Lösenordsstyrka: "
  Please log in to continue: "Snälla logga in för att fortsätta."
  Required: "Nödvändig:"
@@ -373,7 +373,6 @@ response:
  That account doesn_t exist: "Det kontot existerar inte."
  Username doesn_t exist: "Inloggningsfel! Användarnamnet existerar inte!"
  Username field empty: "Användarnamn fältet tomt!"
- Wrong endpoint: "Felaktig slutpunkt!"
  _No: "Nej"
  _Yes: "Ja"
 Signature information: !lazy

@@ -8,12 +8,12 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Glossary for phpMussel (last modified: 2026.05.31).
+ * This file: Glossary for phpMussel (last modified: 2026.09.05).
  */
 
 namespace phpMussel\FrontEnd;
 
-if (!isset($Page) || $Page !== 'glossary' || ($this->Permissions !== 1 && $this->Permissions !== 2)) {
+if (!isset($Page) || $Page !== 'glossary' || empty($this->PermissionsMap['Glossary'])) {
     die;
 }
 

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2026.09.04).
+# This file: Korean language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -283,7 +283,6 @@ label:
  Logged in: "로그인 했습니다."
  Logged out: "로그 아웃했습니다."
  Login: "로그인"
- Logs access only: "로그에만 액세스"
  No log file selected: "로그가 선택되어 있지 않습니다."
  No log files available: "아니 로그를 사용할 수 있습니다."
  Normal: "정상"
@@ -293,6 +292,7 @@ label:
  Other: "다른"
  PHP version used: "사용된 PHP 버전:"
  Page request completed in %s seconds: "페이지 요청이 %s 초 후에 완료되었습니다."
+ Partial access: "부분 액세스"
  Password strength: "비밀번호 강도: "
  Please log in to continue: "계속하려면 로그인하십시오."
  Required: "필수 사항:"
@@ -374,7 +374,6 @@ response:
  That account doesn_t exist: "계정이 존재하지 않습니다."
  Username doesn_t exist: "로그인 실패! 사용자 이름은 존재하지 않습니다!"
  Username field empty: "사용자 이름 입력이 비어 있습니다!"
- Wrong endpoint: "잘못된 끝점!"
  _No: "아니오"
  _Yes: "예"
 Signature information: !lazy

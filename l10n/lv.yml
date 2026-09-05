@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2026.09.04).
+# This file: Latvian language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -282,7 +282,6 @@ label:
  Logged in: "Ielogojies."
  Logged out: "Izlogojies."
  Login: "Ielogošanās"
- Logs access only: "Tikai piekļuvei logfailiem"
  No log file selected: "Nav atlasīts logfails."
  No log files available: "Neviens logfails nav pieejams."
  Normal: "Normāls"
@@ -292,6 +291,7 @@ label:
  Other: "Cits"
  PHP version used: "Izmantotā PHP versija:"
  Page request completed in %s seconds: "Lapas pieprasījums ir pabeigts %s sekundēs."
+ Partial access: "Daļēja piekļuve"
  Password strength: "Paroles stiprums: "
  Please log in to continue: "Lūdzu, ielogoties, lai turpinātu."
  Required: "Nepieciešams:"
@@ -373,7 +373,6 @@ response:
  That account doesn_t exist: "Šis konts nepastāv."
  Username doesn_t exist: "Ielogošanās neizdevās! Lietotājvārds neeksistē!"
  Username field empty: "Lietotājvārda lauks ir tukšs!"
- Wrong endpoint: "Nepareizs galapunkts!"
  _No: "Nē"
  _Yes: "Jā"
 Signature information: !lazy

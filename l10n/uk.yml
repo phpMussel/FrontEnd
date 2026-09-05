@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Ukrainian language data (last modified: 2026.09.04).
+# This file: Ukrainian language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -283,7 +283,6 @@ label:
  Logged in: "Увійшов в систему."
  Logged out: "Вийшов із системи."
  Login: "Входу"
- Logs access only: "Лише доступ до журналів"
  No log file selected: "Файл журналу не вибрано."
  No log files available: "Немає доступних файлів журналу."
  Normal: "Природний"
@@ -293,6 +292,7 @@ label:
  Other: "Інший"
  PHP version used: "Використана версія PHP:"
  Page request completed in %s seconds: "Запит на сторінку виконано за %s секунди."
+ Partial access: "Частковий доступ"
  Password strength: "Надійність пароля: "
  Please log in to continue: "Увійдіть щоб продовжити."
  Required: "Необхідно:"
@@ -374,7 +374,6 @@ response:
  That account doesn_t exist: "Такого облікового запису не існує."
  Username doesn_t exist: "Помилка входу! Ім'я користувача не існує!"
  Username field empty: "Поле імені користувача порожнє!"
- Wrong endpoint: "Неправильна кінцева точка!"
  _No: "Ні"
  _Yes: "Так"
 Signature information: !lazy

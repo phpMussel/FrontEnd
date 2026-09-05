@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2026.09.04).
+ * This file: Front-end handler (last modified: 2026.09.05).
  */
 
 namespace phpMussel\FrontEnd;
@@ -77,26 +77,6 @@ class FrontEnd
     private $L10NPath = __DIR__ . \DIRECTORY_SEPARATOR . '..' . \DIRECTORY_SEPARATOR . 'l10n' . \DIRECTORY_SEPARATOR;
 
     /**
-     * @var int Minimum integer to use for twoFactorNumber.
-     */
-    private $TwoFactorMinInt = 10000000;
-
-    /**
-     * @var int Maximum integer to use for twoFactorNumber.
-     */
-    private $TwoFactorMaxInt = 99999999;
-
-    /**
-     * @var int How many seconds until a session expires.
-     */
-    private $SessionTTL = 604800;
-
-    /**
-     * @var int How many seconds until a two-factor authentication codes expire.
-     */
-    private $TwoFactorTTL = 600;
-
-    /**
      * @var string|int The default hash algorithm to use (int for PHP < 7.4;
      *      string for PHP >= 7.4).
      */
@@ -130,6 +110,11 @@ class FrontEnd
     private $Permissions = 0;
 
     /**
+     * @var array User permissions map.
+     */
+    private $PermissionsMap = [];
+
+    /**
      * @var string Will be populated by the current session data.
      */
     private $ThisSession = '';
@@ -143,6 +128,26 @@ class FrontEnd
      * @var string The currently logged in user.
      */
     private $User = '';
+
+    /**
+     * @var int Lowest possible two-factor authentication code.
+     */
+    private const TWO_FACTOR_MIN_INT = 10000000;
+
+    /**
+     * @var int Highest possible two-factor authentication code.
+     */
+    private const TWO_FACTOR_MAX_INT = 99999999;
+
+    /**
+     * @var int How many seconds until a session expires.
+     */
+    private const SESSION_TTL = 604800;
+
+    /**
+     * @var int How many seconds until a two-factor authentication codes expire.
+     */
+    private const TWO_FACTOR_TTL = 600;
 
     /**
      * Construct the front-end instance.
@@ -439,7 +444,6 @@ class FrontEnd
             } elseif (!empty($_POST['username']) && !empty($_POST['password'])) {
                 $ConfigUserPath = 'user.' . $_POST['username'];
                 if (isset(
-                    $this->Loader->Configuration[$ConfigUserPath],
                     $this->Loader->Configuration[$ConfigUserPath]['password'],
                     $this->Loader->Configuration[$ConfigUserPath]['permissions']
                 ) &&
@@ -448,48 +452,44 @@ class FrontEnd
                 ) {
                     if (\password_verify($_POST['password'], $this->Loader->Configuration[$ConfigUserPath]['password'])) {
                         $this->Loader->Cache->deleteEntry('LoginAttempts' . $this->Loader->IPAddr);
-                        $Permissions = (int)$this->Loader->Configuration[$ConfigUserPath]['permissions'];
-                        if ($Permissions !== 1 && $Permissions !== 2) {
-                            $FE['state_msg'] = $this->Loader->L10N->getString('response.Wrong endpoint');
-                        } else {
-                            $TryUser = $_POST['username'];
-                            $SessionKey = \hash('sha256', $this->generateSalt());
-                            $Cookie = $_POST['username'] . $SessionKey;
-                            \setcookie('PHPMUSSEL-ADMIN', $Cookie, $this->Loader->Time + $this->SessionTTL, '/', $this->HostnameOverride ?: $this->Host, false, true);
-                            $this->ThisSession = $TryUser . ',' . \password_hash($SessionKey, $this->DefaultAlgo);
+                        $this->Permissions = (int)$this->Loader->Configuration[$ConfigUserPath]['permissions'];
+                        $TryUser = $_POST['username'];
+                        $SessionKey = \hash('sha256', $this->generateSalt());
+                        $Cookie = $_POST['username'] . $SessionKey;
+                        \setcookie('PHPMUSSEL-ADMIN', $Cookie, $this->Loader->Time + self::SESSION_TTL, '/', $this->HostnameOverride ?: $this->Host, false, true);
+                        $this->ThisSession = $TryUser . ',' . \password_hash($SessionKey, $this->DefaultAlgo);
 
-                            /** Prepare 2FA email. */
-                            if (
-                                !empty($this->Loader->InstanceCache['enable_two_factor']) &&
-                                \preg_match('~^.+@.+$~', $TryUser) &&
-                                ($TwoFactorMessage = $this->Loader->L10N->getString('msg_template_2fa')) &&
-                                ($TwoFactorSubject = $this->Loader->L10N->getString('msg_subject_2fa'))
-                            ) {
-                                $TwoFactorState = ['Number' => $this->twoFactorNumber()];
-                                $TwoFactorState['Hash'] = \password_hash($TwoFactorState['Number'], $this->DefaultAlgo);
-                                $this->Loader->Cache->setEntry('TwoFactorState:' . $Cookie, '0' . $TwoFactorState['Hash'], $this->TwoFactorTTL);
-                                $TwoFactorState['Template'] = \sprintf($TwoFactorMessage, $TryUser, $TwoFactorState['Number']);
-                                if (\preg_match('~^[^<>]+<[^<>]+>$~', $TryUser)) {
-                                    $TwoFactorState['Name'] = \trim(\preg_replace('~^([^<>]+)<[^<>]+>$~', '\1', $TryUser));
-                                    $TwoFactorState['Address'] = \trim(\preg_replace('~^[^<>]+<([^<>]+)>$~', '\1', $TryUser));
-                                } else {
-                                    $TwoFactorState['Name'] = \trim($TryUser);
-                                    $TwoFactorState['Address'] = $TwoFactorState['Name'];
-                                }
-                                $EventData = [
-                                    [['Name' => $TwoFactorState['Name'], 'Address' => $TwoFactorState['Address']]],
-                                    $TwoFactorSubject,
-                                    $TwoFactorState['Template'],
-                                    \strip_tags($TwoFactorState['Template']),
-                                    ''
-                                ];
-                                $this->Loader->Events->fireEvent('sendMail', '', ...$EventData);
-                                $this->UserState = 2;
+                        /** Prepare 2FA email. */
+                        if (
+                            !empty($this->Loader->InstanceCache['enable_two_factor']) &&
+                            \preg_match('~^.+@.+$~', $TryUser) &&
+                            ($TwoFactorMessage = $this->Loader->L10N->getString('msg_template_2fa')) &&
+                            ($TwoFactorSubject = $this->Loader->L10N->getString('msg_subject_2fa'))
+                        ) {
+                            $TwoFactorState = ['Number' => $this->twoFactorNumber()];
+                            $TwoFactorState['Hash'] = \password_hash($TwoFactorState['Number'], $this->DefaultAlgo);
+                            $this->Loader->Cache->setEntry('TwoFactorState:' . $Cookie, '0' . $TwoFactorState['Hash'], self::TWO_FACTOR_TTL);
+                            $TwoFactorState['Template'] = \sprintf($TwoFactorMessage, $TryUser, $TwoFactorState['Number']);
+                            if (\preg_match('~^[^<>]+<[^<>]+>$~', $TryUser)) {
+                                $TwoFactorState['Name'] = \trim(\preg_replace('~^([^<>]+)<[^<>]+>$~', '\1', $TryUser));
+                                $TwoFactorState['Address'] = \trim(\preg_replace('~^[^<>]+<([^<>]+)>$~', '\1', $TryUser));
                             } else {
-                                $this->UserState = 1;
+                                $TwoFactorState['Name'] = \trim($TryUser);
+                                $TwoFactorState['Address'] = $TwoFactorState['Name'];
                             }
-                            $this->Loader->Cache->setEntry($Cookie, $this->ThisSession, $this->SessionTTL);
+                            $EventData = [
+                                [['Name' => $TwoFactorState['Name'], 'Address' => $TwoFactorState['Address']]],
+                                $TwoFactorSubject,
+                                $TwoFactorState['Template'],
+                                \strip_tags($TwoFactorState['Template']),
+                                ''
+                            ];
+                            $this->Loader->Events->fireEvent('sendMail', '', ...$EventData);
+                            $this->UserState = 2;
+                        } else {
+                            $this->UserState = 1;
                         }
+                        $this->Loader->Cache->setEntry($Cookie, $this->ThisSession, self::SESSION_TTL);
                     } else {
                         $TryUser = $_POST['username'];
                         $FE['state_msg'] = $this->Loader->L10N->getString('response.Invalid password');
@@ -507,10 +507,7 @@ class FrontEnd
                 $LoggerMessage = $FE['state_msg'];
             } else {
                 $this->User = $TryUser;
-                $LoggerMessage = $this->L10N->getString((
-                    !empty($this->Loader->InstanceCache['enable_two_factor']) &&
-                    $this->UserState === 2
-                ) ? 'label.Logged in, 2FA pending' : 'label.Logged in');
+                $LoggerMessage = $this->Loader->L10N->getString(!empty($this->Loader->InstanceCache['enable_two_factor']) && $this->UserState === 2 ? 'label.Logged in, 2FA pending' : 'label.Logged in');
             }
 
             /** Safer for the front-end logger. */
@@ -544,30 +541,40 @@ class FrontEnd
                         if ($this->UserState === 2 && $FE['FormTarget'] === '2fa' && !empty($_POST['2fa'])) {
                             /** User has submitted a 2FA code. Attempt to verify it. */
                             if (\password_verify($_POST['2fa'], \substr($TwoFactorState, 1))) {
-                                $this->Loader->Cache->setEntry('TwoFactorState:' . $_COOKIE['PHPMUSSEL-ADMIN'], '1', $this->SessionTTL);
+                                $this->Loader->Cache->setEntry('TwoFactorState:' . $_COOKIE['PHPMUSSEL-ADMIN'], '1', self::SESSION_TTL);
                                 $this->UserState = 1;
-                                $this->Loader->Cache->deleteEntry('Failed2FA' . $this->Loader->IPAddr);
-                                $this->frontendLogger($this->Loader->IPAddr, $SessionUser, $this->Loader->L10N->getString('response.Successfully authenticated'));
-                            } else {
-                                $Failed2FA++;
-                                $TimeToAdd = ($Failed2FA > 4) ? ($Failed2FA - 4) * 86400 : 86400;
-                                $this->Loader->Cache->setEntry('Failed2FA' . $this->Loader->IPAddr, $Failed2FA, $TimeToAdd ?: 86400);
-                                $this->frontendLogger($this->Loader->IPAddr, $SessionUser, $this->Loader->L10N->getString('response.Incorrect 2FA code entered'));
-                                $FE['state_msg'] = $this->Loader->L10N->getString('response.Incorrect 2FA code entered');
                             }
                         }
+                    } else {
+                        $this->UserState = 1;
+                    }
 
-                        /** Revert permissions if not authenticated. */
-                        if ($this->UserState !== 1) {
-                            $this->Permissions = 0;
-                        }
+                    /** Revert permissions if not authenticated. */
+                    if ($this->UserState !== 1) {
+                        $this->Permissions = 0;
                     }
                 }
             }
+
+            /** In case of 2FA form submission. */
+            if ($FE['FormTarget'] === '2fa' && !empty($_POST['2fa'])) {
+                if ($this->UserState === 2) {
+                    $Failed2FA++;
+                    $this->Loader->Cache->setEntry('Failed2FA' . $this->Loader->IPAddr, $Failed2FA, ($Failed2FA > 4) ? ($Failed2FA - 4) * 86400 : 86400);
+                    $this->frontendLogger($this->Loader->IPAddr, $SessionUser, $this->Loader->L10N->getString('response.Incorrect 2FA code entered'));
+                    $FE['state_msg'] = '<div class="txtRd">' . $this->Loader->L10N->getString('response.Incorrect 2FA code entered') . '<br /><br /></div>';
+                } else {
+                    $this->Loader->Cache->deleteEntry('Failed2FA' . $this->Loader->IPAddr);
+                    $this->frontendLogger($this->Loader->IPAddr, $SessionUser, $this->Loader->L10N->getString('response.Successfully authenticated'));
+                }
+            }
+
+            /** Cleanup. */
+            unset($TimeToAdd, $Failed2FA, $Try, $TwoFactorState, $ConfigUserPath, $CookieUser, $SessionKey, $SessionUserLen, $SessionUser, $SessionHash, $SessionDel, $TrySession);
         }
 
         /** The user is attempting an asynchronous request without adequate permissions. */
-        if ($FE['ASYNC'] && $this->Permissions !== 1) {
+        if ($FE['ASYNC'] && $this->UserState !== 1) {
             \header('HTTP/1.0 403 Forbidden');
             \header('HTTP/1.1 403 Forbidden');
             \header('Status: 403 Forbidden');
@@ -576,39 +583,41 @@ class FrontEnd
         }
 
         /** Executed only for users that are logged in or awaiting two-factor authentication. */
-        if ($this->Permissions > 0) {
+        if ($this->UserState === 1 || $this->UserState === 2) {
             /** Log the user out. */
             if ($Page === 'logout') {
                 $this->Loader->Cache->deleteEntry($_COOKIE['PHPMUSSEL-ADMIN']);
                 $this->Loader->Cache->deleteEntry('TwoFactorState:' . $_COOKIE['PHPMUSSEL-ADMIN']);
                 $this->ThisSession = '';
-                $this->User = '';
+                $this->UserState = 0;
                 $this->Permissions = 0;
                 \setcookie('PHPMUSSEL-ADMIN', '', -1, '/', $this->HostnameOverride ?: $this->Host, false, true);
-                $this->frontendLogger($this->Loader->IPAddr, $SessionUser, $this->Loader->L10N->getString('label.Logged out'));
+                $this->frontendLogger($this->Loader->IPAddr, $this->User, $this->Loader->L10N->getString('label.Logged out'));
+                $this->User = '';
             }
 
-            if ($this->Permissions === 1) {
-                /** If the user has complete access. */
-                $FE['nav'] = $this->Loader->parse($FE, $this->Loader->readFile($this->getAssetPath('_nav_complete_access.html')), true);
-            } elseif ($this->Permissions === 2) {
-                /** If the user has logs access only. */
-                $FE['nav'] = $this->Loader->parse($FE, $this->Loader->readFile($this->getAssetPath('_nav_logs_access_only.html')), true);
-            } else {
-                /** No valid navigation state. */
-                $FE['nav'] = '';
-            }
+            /** Page navigation menu. */
+            $FE['nav'] = $this->Permissions > 0 ? $this->Loader->parse($FE, $this->Loader->readFile($this->getAssetPath('_nav.html')), true) : '';
+        }
+
+        /** Map permissions flags from permissions integer. */
+        $this->PermissionsMap = $this->flagIntToArray(['Complete access' => false, 'Logs' => false, 'Statistics' => false, 'Signature Information' => false, 'Upload Testing' => false, 'Glossary' => false], $this->Permissions);
+        if ($this->PermissionsMap['Complete access']) {
+            $this->PermissionsMap['Logs'] = true;
+            $this->PermissionsMap['Statistics'] = true;
+            $this->PermissionsMap['Signature Information'] = true;
+            $this->PermissionsMap['Upload Testing'] = true;
+            $this->PermissionsMap['Glossary'] = true;
         }
 
         /** The user hasn't logged in, or hasn't authenticated yet. */
-        if ($this->Permissions < 1 || $this->Permissions === 3) {
-            /** Page initial prepwork. */
-            $this->initialPrepwork($FE, $this->Loader->L10N->getString('label.Login'), '', false);
-
+        if ($this->UserState !== 1) {
             /** Hide warnings from non-logged in users. */
             $FE['Warnings'] = '';
 
-            if ($this->Permissions === 3) {
+            if ($this->UserState === 2) {
+                $this->initialPrepwork($FE, $this->Loader->L10N->getString('label.Login'));
+
                 /** Provide the option to log out (omit home link). */
                 $FE['bNav'] = $FE['LogoutButton'];
 
@@ -618,6 +627,8 @@ class FrontEnd
                 /** Show them the two-factor authentication page. */
                 $FE['FE_Content'] = $this->Loader->parse($FE, $this->Loader->readFile($this->getAssetPath('_2fa.html')), true);
             } else {
+                $this->initialPrepwork($FE, $this->Loader->L10N->getString('label.Login'), '', false);
+
                 /** Omit the log out and home links. */
                 $FE['bNav'] = '';
 
@@ -1163,21 +1174,17 @@ class FrontEnd
         if ($FE['JS']) {
             $FE['JS'] = "\n<script type=\"text/javascript\">" . $FE['JS'] . '</script>';
         }
-        $Template = $FE['Template'];
+        $Template = \str_replace('{FE_Content}', $FE['FE_Content'], $FE['Template']);
         $Labels = [];
         $Segments = [];
-        if ($this->Permissions === 1 || $this->Permissions === 2 || $this->Permissions === 3) {
+        if ($this->UserState === 1 || $this->UserState === 2) {
             $Labels[] = 'Logged In';
             $Segments[] = 'Logged Out';
         } else {
             $Labels[] = 'Logged Out';
             $Segments[] = 'Logged In';
         }
-        $Can = $this->flagIntToArray(['Complete access' => false, 'Logs access only' => false, 'Statistics' => false, 'IP testing' => false, 'Range tools' => false, 'Glossary' => false], $this->Permissions);
-        if ($Can['Complete access']) {
-            $Can = ['Logs access only' => true, 'Statistics' => true, 'IP testing' => true, 'Range tools' => true, 'Glossary' => true];
-        }
-        foreach ($Can as $Key => $Value) {
+        foreach ($this->PermissionsMap as $Key => $Value) {
             if ($Value) {
                 $Labels[] = $Key;
             } else {
@@ -1263,9 +1270,9 @@ class FrontEnd
     private function twoFactorNumber(): int
     {
         try {
-            $Key = \random_int($this->TwoFactorMinInt, $this->TwoFactorMaxInt);
+            $Key = \random_int(self::TWO_FACTOR_MIN_INT, self::TWO_FACTOR_MAX_INT);
         } catch (\Exception $e) {
-            $Key = \rand($this->TwoFactorMinInt, $this->TwoFactorMaxInt);
+            $Key = \rand(self::TWO_FACTOR_MIN_INT, self::TWO_FACTOR_MAX_INT);
         }
         return $Key;
     }

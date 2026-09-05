@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2026.09.04).
+# This file: Turkish language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -283,7 +283,6 @@ label:
  Logged in: "Giriş yapıldı."
  Logged out: "Çıkış yapıldı."
  Login: "Giriş"
- Logs access only: "Sadece girişleri kaydeder"
  No log file selected: "Hiçbir günlük dosyası seçilmedi."
  No log files available: "Günlük dosyası yok."
  Normal: "Normal"
@@ -293,6 +292,7 @@ label:
  Other: "Diğer"
  PHP version used: "Kullanılan PHP sürümü:"
  Page request completed in %s seconds: "Sayfa isteği %s saniye içinde tamamlandı."
+ Partial access: "Kısmi erişim"
  Password strength: "Parola gücü: "
  Please log in to continue: "Devam etmek için lütfen giriş yapınız."
  Required: "Gerekli:"
@@ -374,7 +374,6 @@ response:
  That account doesn_t exist: "Bu hesap mevcut değil."
  Username doesn_t exist: "Giriş başarısız! Kullanıcı adı yok!"
  Username field empty: "Kullanıcı adı alanı boş!"
- Wrong endpoint: "Yanlış bitiş noktası!"
  _No: "Hayır"
  _Yes: "Evet"
 Signature information: !lazy

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2026.09.04).
+# This file: Norwegian language data (last modified: 2026.09.05).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -282,7 +282,6 @@ label:
  Logged in: "Logget inn."
  Logged out: "Logget ut."
  Login: "Innloggingssiden"
- Logs access only: "Bare logger tilgang"
  No log file selected: "Ingen loggfil valgt."
  No log files available: "Ingen loggfiler tilgjengelig."
  Normal: "Normal"
@@ -292,6 +291,7 @@ label:
  Other: "Annen"
  PHP version used: "PHP versjon brukt:"
  Page request completed in %s seconds: "Sideforespørsel avsluttet om %s sekunder."
+ Partial access: "Delvis tilgang"
  Password strength: "Passordstyrke: "
  Please log in to continue: "Vennligst logg inn for å fortsette."
  Required: "Nødvendig:"
@@ -373,7 +373,6 @@ response:
  That account doesn_t exist: "Den kontoen eksisterer ikke."
  Username doesn_t exist: "Innlogging mislyktes! Brukernavnet eksisterer ikke!"
  Username field empty: "Brukernavn-felt tomt!"
- Wrong endpoint: "Feil sluttpunkt!"
  _No: "Nei"
  _Yes: "Ja"
 Signature information: !lazy
