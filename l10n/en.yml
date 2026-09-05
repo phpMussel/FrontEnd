@@ -372,6 +372,7 @@ response:
  Statistics cleared: "Statistics cleared."
  Successfully authenticated: "Successfully authenticated."
  That account doesn_t exist: "That account doesn't exist."
+ Unable to send two-factor authentication code because an email event handler isn_t available: "Unable to send two-factor authentication code because an email event handler isn't available!"
  Username doesn_t exist: "Login failure! Username doesn't exist!"
  Username field empty: "Username field empty!"
  _No: "No"

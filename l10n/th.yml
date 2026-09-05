@@ -372,6 +372,7 @@ response:
  Statistics cleared: "สถิติลบแล้ว."
  Successfully authenticated: "การตรวจสอบสิทธิ์ทำสำเร็จแล้ว."
  That account doesn_t exist: "บัญชีไม่มีอยู่จริง."
+ Unable to send two-factor authentication code because an email event handler isn_t available: "ไม่สามารถส่งรหัสยืนยันตัวตนสองขั้นตอนได้ เนื่องจากไม่มีตัวจัดการเหตุการณ์อีเมล!"
  Username doesn_t exist: "ความล้มเหลวในการเข้าสู่ระบบ! ชื่อผู้ใช้ไม่มีอยู่จริง!"
  Username field empty: "ชื่อผู้ใช้ฟิลด์ว่างเปล่า!"
  _No: "ไม่ได้"

@@ -371,6 +371,7 @@ response:
  Statistics cleared: "Statistiky vymazány."
  Successfully authenticated: "Autentizace byla úspěšná."
  That account doesn_t exist: "Ten účet neexistuje."
+ Unable to send two-factor authentication code because an email event handler isn_t available: "Nelze odeslat kód pro dvoufaktorové ověřování, protože obslužná rutina události e-mailu není k dispozici!"
  Username doesn_t exist: "Přihlášení se nezdařilo! Uživatelské jméno neexistuje!"
  Username field empty: "Pole uživatelského jména prázdné!"
  _No: "Ne"

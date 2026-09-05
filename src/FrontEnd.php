@@ -466,26 +466,31 @@ class FrontEnd
                             ($TwoFactorMessage = $this->Loader->L10N->getString('msg_template_2fa')) &&
                             ($TwoFactorSubject = $this->Loader->L10N->getString('msg_subject_2fa'))
                         ) {
-                            $TwoFactorState = ['Number' => $this->twoFactorNumber()];
-                            $TwoFactorState['Hash'] = \password_hash($TwoFactorState['Number'], $this->DefaultAlgo);
-                            $this->Loader->Cache->setEntry('TwoFactorState:' . $Cookie, '0' . $TwoFactorState['Hash'], self::TWO_FACTOR_TTL);
-                            $TwoFactorState['Template'] = \sprintf($TwoFactorMessage, $TryUser, $TwoFactorState['Number']);
-                            if (\preg_match('~^[^<>]+<[^<>]+>$~', $TryUser)) {
-                                $TwoFactorState['Name'] = \trim(\preg_replace('~^([^<>]+)<[^<>]+>$~', '\1', $TryUser));
-                                $TwoFactorState['Address'] = \trim(\preg_replace('~^[^<>]+<([^<>]+)>$~', '\1', $TryUser));
+                            if ($this->Loader->Events->assigned('sendEmail')) {
+                                $TwoFactorState = ['Number' => $this->twoFactorNumber()];
+                                $TwoFactorState['Hash'] = \password_hash($TwoFactorState['Number'], $this->DefaultAlgo);
+                                $this->Loader->Cache->setEntry('TwoFactorState:' . $Cookie, '0' . $TwoFactorState['Hash'], self::TWO_FACTOR_TTL);
+                                $TwoFactorState['Template'] = \sprintf($TwoFactorMessage, $TryUser, $TwoFactorState['Number']);
+                                if (\preg_match('~^[^<>]+<[^<>]+>$~', $TryUser)) {
+                                    $TwoFactorState['Name'] = \trim(\preg_replace('~^([^<>]+)<[^<>]+>$~', '\1', $TryUser));
+                                    $TwoFactorState['Address'] = \trim(\preg_replace('~^[^<>]+<([^<>]+)>$~', '\1', $TryUser));
+                                } else {
+                                    $TwoFactorState['Name'] = \trim($TryUser);
+                                    $TwoFactorState['Address'] = $TwoFactorState['Name'];
+                                }
+                                $EventData = [
+                                    [['Name' => $TwoFactorState['Name'], 'Address' => $TwoFactorState['Address']]],
+                                    $TwoFactorSubject,
+                                    $TwoFactorState['Template'],
+                                    \strip_tags($TwoFactorState['Template']),
+                                    ''
+                                ];
+                                $this->Loader->Events->fireEvent('sendMail', '', ...$EventData);
+                                unset($EventData);
+                                $this->UserState = 2;
                             } else {
-                                $TwoFactorState['Name'] = \trim($TryUser);
-                                $TwoFactorState['Address'] = $TwoFactorState['Name'];
+                                $FE['state_msg'] = $this->Loader->L10N->getString('response.Unable to send two-factor authentication code because an email event handler isn_t available');
                             }
-                            $EventData = [
-                                [['Name' => $TwoFactorState['Name'], 'Address' => $TwoFactorState['Address']]],
-                                $TwoFactorSubject,
-                                $TwoFactorState['Template'],
-                                \strip_tags($TwoFactorState['Template']),
-                                ''
-                            ];
-                            $this->Loader->Events->fireEvent('sendMail', '', ...$EventData);
-                            $this->UserState = 2;
                         } else {
                             $this->UserState = 1;
                         }

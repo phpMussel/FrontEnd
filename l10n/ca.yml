@@ -372,6 +372,7 @@ response:
  Statistics cleared: "Estadístiques esborrades."
  Successfully authenticated: "Autenticat amb èxit."
  That account doesn_t exist: "Aquest compte no existeix."
+ Unable to send two-factor authentication code because an email event handler isn_t available: "No es pot enviar el codi d'autenticació de dos factors perquè no hi ha disponible un controlador d'esdeveniments de correu electrònic!"
  Username doesn_t exist: "L'inici de sessió ha fallat! El nom d'usuari no existeix!"
  Username field empty: "El camp del nom d'usuari està buit!"
  _No: "No"

@@ -371,6 +371,7 @@ response:
  Statistics cleared: "Статистика очищена."
  Successfully authenticated: "Успешный аутентификации."
  That account doesn_t exist: "Эта аккаунт не существует."
+ Unable to send two-factor authentication code because an email event handler isn_t available: "Не удается отправить код двухфакторной аутентификации, поскольку обработчик событий электронной почты недоступен!"
  Username doesn_t exist: "Войти провал! Имя пользователя не существует!"
  Username field empty: "Имя пользователя пусто!"
  _No: "Нет"

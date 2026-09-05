@@ -402,6 +402,9 @@ response:
  Statistics cleared: "Statistiques annulées."
  Successfully authenticated: "Authentifié avec succès."
  That account doesn_t exist: "Ce compte n'existe pas."
+ Unable to send two-factor authentication code because an email event handler isn_t available:
+  fr-FR: "Impossible d'envoyer le code d'authentification à deux facteurs car aucun gestionnaire d'événements d'e-mail n'est disponible\_!"
+  fr-CA: "Impossible d'envoyer le code d'authentification à deux facteurs car aucun gestionnaire d'événements de courriel n'est disponible\_!"
  Username doesn_t exist: "Erreur de connexion\_! Nom d'utilisateur n'existe pas\_!"
  Username field empty: "Nom d'utilisateur entrée était vide\_!"
  _No: "Non"

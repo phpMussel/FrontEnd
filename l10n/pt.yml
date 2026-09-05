@@ -504,6 +504,7 @@ response:
  Statistics cleared: "Estatísticas apagadas."
  Successfully authenticated: "Autenticado com sucesso."
  That account doesn_t exist: "Essa conta não existe."
+ Unable to send two-factor authentication code because an email event handler isn_t available: "Não foi possível enviar o código de autenticação de dois fatores porque um manipulador de eventos de e-mail não está disponível!"
  Username doesn_t exist:
   pt-BR: "Falha no login! Esse usuário não existe!"
   pt-PT: "Falha no login! Esse utilizador não existe!"

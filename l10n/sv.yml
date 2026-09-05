@@ -371,6 +371,7 @@ response:
  Statistics cleared: "Statistik rensas."
  Successfully authenticated: "Succesfullt autentiserad."
  That account doesn_t exist: "Det kontot existerar inte."
+ Unable to send two-factor authentication code because an email event handler isn_t available: "Det gick inte att skicka tvåfaktorsautentiseringskod eftersom en e-posthändelsehanterare inte är tillgänglig!"
  Username doesn_t exist: "Inloggningsfel! Användarnamnet existerar inte!"
  Username field empty: "Användarnamn fältet tomt!"
  _No: "Nej"

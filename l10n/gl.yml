@@ -371,6 +371,7 @@ response:
  Statistics cleared: "Borráronse as estatísticas."
  Successfully authenticated: "Autenticouse con éxito."
  That account doesn_t exist: "Esa conta non existe."
+ Unable to send two-factor authentication code because an email event handler isn_t available: "Non se pode enviar o código de autenticación de dous factores porque non hai dispoñible un xestor de eventos de correo electrónico!"
  Username doesn_t exist: "Fallou o inicio de sesión! O nome de usuario non existe!"
  Username field empty: "O campo do nome de usuario está baleiro!"
  _No: "Non"

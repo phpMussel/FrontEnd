@@ -371,6 +371,7 @@ response:
  Statistics cleared: "ਅੰਕੜੇ ਨੂੰ ਸਾਫ਼ ਕੀਤੇ ਗਏ।"
  Successfully authenticated: "ਸਫਲਤਾਪੂਰਵਕ ਪ੍ਰਮਾਣੀਕਰਨ ਕੀਤਾ ਗਿਆ।"
  That account doesn_t exist: "ਉਹ ਖਾਤਾ ਮੌਜੂਦ ਨਹੀਂ ਹੈ।"
+ Unable to send two-factor authentication code because an email event handler isn_t available: "ਈਮੇਲ ਇਵੈਂਟ ਹੈਂਡਲਰ ਉਪਲਬਧ ਨਾ ਹੋਣ ਕਰਕੇ ਦੋ-ਕਾਰਕ ਪ੍ਰਮਾਣੀਕਰਨ ਕੋਡ ਨਹੀਂ ਭੇਜਿਆ ਜਾ ਸਕਿਆ!"
  Username doesn_t exist: "ਲੌਗਇਨ ਅਸਫਲਤਾ! ਉਪਭੋਗਤਾ ਨਾਮ ਮੌਜੂਦ ਨਹੀਂ ਹੈ!"
  Username field empty: "ਉਪਭੋਗਤਾ ਨਾਮ ਖੇਤਰ ਖਾਲੀ ਹੈ!"
  _No: "ਨਹੀਂ"

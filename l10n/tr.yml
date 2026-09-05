@@ -372,6 +372,7 @@ response:
  Statistics cleared: "İstatistikler temizlendi."
  Successfully authenticated: "Başarıyla doğrulandı."
  That account doesn_t exist: "Bu hesap mevcut değil."
+ Unable to send two-factor authentication code because an email event handler isn_t available: "E-posta olay işleyicisi mevcut olmadığı için iki faktörlü kimlik doğrulama kodu gönderilemiyor!"
  Username doesn_t exist: "Giriş başarısız! Kullanıcı adı yok!"
  Username field empty: "Kullanıcı adı alanı boş!"
  _No: "Hayır"

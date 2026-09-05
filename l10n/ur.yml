@@ -370,6 +370,7 @@ response:
  Statistics cleared: "اعداد و شمار صاف ہو گئے."
  Successfully authenticated: "کامیابی سے تصدیق کی."
  That account doesn_t exist: "اس اکاؤنٹ کا کوئی وجود نہیں."
+ Unable to send two-factor authentication code because an email event handler isn_t available: "دو فیکٹر تصدیقی کوڈ بھیجنے سے قاصر کیونکہ ای میل ایونٹ ہینڈلر دستیاب نہیں ہے!"
  Username doesn_t exist: "لاگ ان ناکامی! صارف کا نام موجود نہیں ہے!"
  Username field empty: "صارف کا نام فیلڈ کو خالی!"
  _No: "نہیں"

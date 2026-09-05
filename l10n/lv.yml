@@ -371,6 +371,7 @@ response:
  Statistics cleared: "Statistika ir notīrīta."
  Successfully authenticated: "Autentifikācija izdevās."
  That account doesn_t exist: "Šis konts nepastāv."
+ Unable to send two-factor authentication code because an email event handler isn_t available: "Nevar nosūtīt divfaktoru autentifikācijas kodu, jo e-pasta notikumu apstrādātājs nav pieejams!"
  Username doesn_t exist: "Ielogošanās neizdevās! Lietotājvārds neeksistē!"
  Username field empty: "Lietotājvārda lauks ir tukšs!"
  _No: "Nē"
@@ -400,7 +401,7 @@ state_quarantine:
  - "Šobrīd karantīnā ir %s fails."
  - "Šobrīd karantīnā ir %s faili."
 tip:
- 2FA Sent: "Uz jūsu e-pasta adresi ir nosūtīts e-pasts ar divu faktoru autentifikācijas kodu. Lūdzu, apstipriniet šo kodu zemāk, lai ielogotos. Ja nesaņēmāt šo e-pastu, mēģiniet izlogoties, nogaidiet 10 minūtes, un ielogoties vēlreiz, lai saņemtu jaunu e-pastu ar jaunu kodu."
+ 2FA Sent: "Uz jūsu e-pasta adresi ir nosūtīts e-pasts ar divfaktoru autentifikācijas kodu. Lūdzu, apstipriniet šo kodu zemāk, lai ielogotos. Ja nesaņēmāt šo e-pastu, mēģiniet izlogoties, nogaidiet 10 minūtes, un ielogoties vēlreiz, lai saņemtu jaunu e-pastu ar jaunu kodu."
  Accounts: "Kontu lapa ļauj jums kontrolēt, kurš var ielogoties phpMussel."
  Cache Data: "Šeit jūs varat pārskatīt kešatmiņas saturu."
  Configuration: "Konfigurācijas lapa ļauj mainīt phpMussel konfigurāciju."

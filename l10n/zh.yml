@@ -543,6 +543,9 @@ response:
  Statistics cleared: {"zh-Hans": "统计删除成功了。", "zh-Hant": "統計刪除成功了。"}
  Successfully authenticated: {"zh-Hans": "验证成功了。", "zh-Hant": "驗證成功了。"}
  That account doesn_t exist: {"zh-Hans": "那个帐户不存在。", "zh-Hant": "那個帳戶不存在。"}
+ Unable to send two-factor authentication code because an email event handler isn_t available:
+  zh-Hans: "由于没有可用的电子邮件事件处理程序，因此无法发送双因素身份验证代码！"
+  zh-Hant: "由於沒有可用的電子郵件事件處理程序，因此無法傳送雙重認證代碼！"
  Username doesn_t exist: {"zh-Hans": "登录失败！ 用户名不存在！", "zh-Hant": "登錄失敗！ 使用者名稱不存在！"}
  Username field empty: {"zh-Hans": "用户名输入是空的！", "zh-Hant": "使用者名稱輸入是空的！"}
  _No: "不是"

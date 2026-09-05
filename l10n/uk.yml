@@ -372,6 +372,7 @@ response:
  Statistics cleared: "Статистика очищена."
  Successfully authenticated: "Успішно автентифіковано."
  That account doesn_t exist: "Такого облікового запису не існує."
+ Unable to send two-factor authentication code because an email event handler isn_t available: "Не вдалося надіслати код двофакторної автентифікації, оскільки обробник подій електронної пошти недоступний!"
  Username doesn_t exist: "Помилка входу! Ім'я користувача не існує!"
  Username field empty: "Поле імені користувача порожнє!"
  _No: "Ні"

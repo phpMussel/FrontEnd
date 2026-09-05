@@ -372,6 +372,7 @@ response:
  Statistics cleared: "تم مسح الإحصاءات."
  Successfully authenticated: "تمت المصادقة بنجاح."
  That account doesn_t exist: "حساب غير موجود."
+ Unable to send two-factor authentication code because an email event handler isn_t available: "تعذر إرسال رمز المصادقة الثنائية لأن معالج أحداث البريد الإلكتروني غير متوفر!"
  Username doesn_t exist: "فشل تسجيل الدخول! اسم المستخدم غير موجود!"
  Username field empty: "اسم المستخدم حقل فارغ!"
  _No: "لا"

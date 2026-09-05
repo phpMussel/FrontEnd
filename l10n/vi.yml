@@ -371,6 +371,7 @@ response:
  Statistics cleared: "Thống kê đã được xóa."
  Successfully authenticated: "Đã xác thực thành công."
  That account doesn_t exist: "Tài khoản này không tồn tại."
+ Unable to send two-factor authentication code because an email event handler isn_t available: "Không thể gửi mã xác thực hai yếu tố vì trình xử lý sự kiện email không khả dụng!"
  Username doesn_t exist: "Thất bại đăng nhập! Tên người dùng không tồn tại!"
  Username field empty: "Tên người dùng là trống!"
  _No: "Không"

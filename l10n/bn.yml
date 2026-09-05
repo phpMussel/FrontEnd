@@ -372,6 +372,7 @@ response:
  Statistics cleared: "পরিসংখ্যান পরিস্কার।"
  Successfully authenticated: "সফলভাবে প্রমাণিত।"
  That account doesn_t exist: "সেই অ্যাকাউন্টটি বিদ্যমান নেই।"
+ Unable to send two-factor authentication code because an email event handler isn_t available: "দুই-ফ্যাক্টর প্রমাণীকরণ কোড পাঠানো সম্ভব হচ্ছে না কারণ একটি ইমেল ইভেন্ট হ্যান্ডলার উপলব্ধ নেই!"
  Username doesn_t exist: "লগইন ব্যর্থতা! ব্যবহারকারীর নাম অস্তিত্বহীন!"
  Username field empty: "ব্যবহারকারীর নাম ক্ষেত্র খালি!"
  _No: "না"

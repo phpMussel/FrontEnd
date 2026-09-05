@@ -372,6 +372,7 @@ response:
  Statistics cleared: "통계가 삭제되었습니다."
  Successfully authenticated: "성공적으로 인증되었습니다."
  That account doesn_t exist: "계정이 존재하지 않습니다."
+ Unable to send two-factor authentication code because an email event handler isn_t available: "이메일 이벤트 처리기를 사용할 수 없어서 2단계 인증 코드를 보낼 수 없습니다!"
  Username doesn_t exist: "로그인 실패! 사용자 이름은 존재하지 않습니다!"
  Username field empty: "사용자 이름 입력이 비어 있습니다!"
  _No: "아니오"

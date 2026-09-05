@@ -372,6 +372,7 @@ response:
  Statistics cleared: "הסטטיסטיקה נמחקה."
  Successfully authenticated: "הצלחת האימות."
  That account doesn_t exist: "החשבון הזה לא קיים."
+ Unable to send two-factor authentication code because an email event handler isn_t available: "לא ניתן לשלוח קוד אימות דו-גורמי מכיוון שאין מטפל אירועי אימייל זמין!"
  Username doesn_t exist: "כישלון התחברות! שם משתמש לא קיים!"
  Username field empty: "שדה שם משתמש ריק!"
  _No: "לא"

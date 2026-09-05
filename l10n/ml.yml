@@ -335,7 +335,7 @@ link:
 msg_subject_2fa: "രണ്ട്-ഘടക പ്രാമാണീകരണം"
 msg_template_2fa: |
  <center><p>ഹലോ, %s.<br /><br />
- phpMussel ഫ്രണ്ട്-എൻഡിലേക്ക് ലോഗിൻ ചെയ്യുന്നതിനുള്ള നിങ്ങളുടെ ടു-ഫാക്ടർ ഓതന്റിക്കേഷൻ കോഡ്:</p>
+ phpMussel ഫ്രണ്ട്-എൻഡിലേക്ക് ലോഗിൻ ചെയ്യുന്നതിനുള്ള നിങ്ങളുടെ രണ്ട്-ഘടക പ്രാമാണീകരണ കോഡ്:</p>
  <h1>%s</h1>
  <p>ഈ കോഡ് 10 മിനിറ്റിനുള്ളിൽ കാലഹരണപ്പെടും.</p></center>
 previewer:
@@ -371,6 +371,7 @@ response:
  Statistics cleared: "സ്ഥിതിവിവരക്കണക്കുകൾ മായ്ച്ചു."
  Successfully authenticated: "വിജയകരമായി പ്രാമാണീകരിച്ചു."
  That account doesn_t exist: "ആ അക്കൗണ്ട് നിലവിലില്ല."
+ Unable to send two-factor authentication code because an email event handler isn_t available: "ഇമെയിൽ ഇവന്റ് ഹാൻഡ്‌ലർ ലഭ്യമല്ലാത്തതിനാൽ രണ്ട്-ഘടക പ്രാമാണീകരണ കോഡ് അയയ്ക്കാൻ കഴിയുന്നില്ല!"
  Username doesn_t exist: "ലോഗിൻ പരാജയം! ഉപയോക്തൃനാമം നിലവിലില്ല!"
  Username field empty: "ഉപയോക്തൃനാമ ഫീൽഡ് ശൂന്യമാണ്!"
  _No: "ഇല്ല"

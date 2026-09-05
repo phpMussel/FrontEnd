@@ -371,6 +371,7 @@ response:
  Statistics cleared: "આંકડા સાફ."
  Successfully authenticated: "સફળતાપૂર્વક પ્રમાણિત."
  That account doesn_t exist: "તે એકાઉન્ટ અસ્તિત્વમાં નથી."
+ Unable to send two-factor authentication code because an email event handler isn_t available: "ઇમેઇલ ઘટના હેન્ડલર ઉપલબ્ધ ન હોવાથી બે-પરિબળ પ્રમાણીકરણ કોડ મોકલી શકાતો નથી!"
  Username doesn_t exist: "લૉગિન નિષ્ફળતા! વપરાશકર્તાનામ અસ્તિત્વમાં નથી!"
  Username field empty: "વપરાશકર્તાનામ ક્ષેત્ર ખાલી છે!"
  _No: "ના"

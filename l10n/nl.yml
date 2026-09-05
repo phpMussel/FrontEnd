@@ -372,6 +372,7 @@ response:
  Statistics cleared: "Statistieken geannuleerd."
  Successfully authenticated: "Succesvol geverifieerd"
  That account doesn_t exist: "Die account bestaat niet."
+ Unable to send two-factor authentication code because an email event handler isn_t available: "Het is niet mogelijk om de tweefactorauthenticatie code te verzenden omdat er geen eventhandler voor e-mail beschikbaar is!"
  Username doesn_t exist: "Inloggen mislukt! Gebruikersnaam bestaat niet!"
  Username field empty: "Gebruikersnaam veld leeg!"
  _No: "Nee"

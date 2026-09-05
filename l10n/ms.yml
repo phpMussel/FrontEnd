@@ -371,6 +371,7 @@ response:
  Statistics cleared: "Statistik dikosongkan."
  Successfully authenticated: "Berjaya disahkan."
  That account doesn_t exist: "Akaun ini tidak wujud."
+ Unable to send two-factor authentication code because an email event handler isn_t available: "Tidak dapat menghantar kod pengesahan dua-faktor kerana pengendali peristiwa e-mel tidak tersedia!"
  Username doesn_t exist: "Kegagalan masuk! Nama pengguna tidak wujud!"
  Username field empty: "Medan nama pengguna kosong!"
  _No: "Tidak"

@@ -372,6 +372,7 @@ response:
  Statistics cleared: "Statistiek uitgevee."
  Successfully authenticated: "Suksesvol geverifieer."
  That account doesn_t exist: "Daardie rekening bestaan nie."
+ Unable to send two-factor authentication code because an email event handler isn_t available: "Kan nie tweefaktor-verifikasiekode stuur nie, want 'n e-posgebeurtenishanterer is nie beskikbaar nie!"
  Username doesn_t exist: "Intekening misluk! Gebruikersnaam bestaan nie!"
  Username field empty: "Gebruikersnaam veld leeg!"
  _No: "Nee"

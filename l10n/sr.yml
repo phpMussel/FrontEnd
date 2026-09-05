@@ -371,6 +371,7 @@ response:
  Statistics cleared: "Статистика је обрисана."
  Successfully authenticated: "Аутентификација је успела."
  That account doesn_t exist: "Тај рачун не постоји."
+ Unable to send two-factor authentication code because an email event handler isn_t available: "Није могуће послати код за двофакторску аутентификацију јер програм за обраду догађаја е-поште није доступан!"
  Username doesn_t exist: "Пријава није успела! Корисничко име не постоји!"
  Username field empty: "Поље корисничког имена је празно!"
  _No: "Не"

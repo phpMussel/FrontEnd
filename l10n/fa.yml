@@ -372,6 +372,7 @@ response:
  Statistics cleared: "آمار حذف شد."
  Successfully authenticated: "با موفقیت احراز هویت شد."
  That account doesn_t exist: "آن حساب وجود ندارد."
+ Unable to send two-factor authentication code because an email event handler isn_t available: "ارسال کد احراز هویت دو مرحله‌ای امکان‌پذیر نیست زیرا کنترل‌کننده رویداد ایمیل در دسترس نیست!"
  Username doesn_t exist: "ورود ناموفق! نام کاربری وجود ندارد!"
  Username field empty: "فیلد نام کاربری خالی است!"
  _No: "خیر"

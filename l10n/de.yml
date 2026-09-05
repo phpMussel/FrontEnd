@@ -372,6 +372,7 @@ response:
  Statistics cleared: "Statistiken gelöscht."
  Successfully authenticated: "Erfolgreich authentifiziert."
  That account doesn_t exist: "Dieses Konto existiert nicht."
+ Unable to send two-factor authentication code because an email event handler isn_t available: "Der Zwei-Faktor-Authentifizierungscode konnte nicht gesendet werden da kein E-Mail-Ereignishandler verfügbar ist!"
  Username doesn_t exist: "Einloggen-Fehler! Benutzername existiert nicht!"
  Username field empty: "Benutzername-Feld leer!"
  _No: "Nein"
