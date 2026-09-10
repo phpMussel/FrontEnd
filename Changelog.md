@@ -257,3 +257,4 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 
 #### Other changes.
 - [2026.09.04]: At the front-end configuration page, where some configuration directives require specific extensions to be installed in order to work correctly, it has been made a little more clear.
+- [2026.09.10]: Very slightly adjusted the spacing between some fields at the configuration page.
