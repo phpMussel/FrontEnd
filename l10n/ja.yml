@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2026.09.05).
+# This file: Japanese language data (last modified: 2026.09.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -46,7 +46,7 @@ Glossary: !lazy
   偽陽性:
    Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
 checkbox:
- Delete orphaned values: "孤立した値を削除します。"
+ Delete orphaned values: "孤立した値を削除。"
 config:
  core: "全般的な設定（他のカテゴリに属さないの設定）。"
  core_default_timeout: "外部リクエストに使用するデフォルトのタイムアウト？ Default/デフォルルト = １２秒。"
@@ -55,14 +55,14 @@ config:
  core_error_log: "検出された致命的でないエラーを記録するためのファイル。 ファイル名指定するか、無効にしたい場合は空白のままにして下さい。"
  core_hide_version: "ログとページ出力からバージョン情報を隠すか？ True = はい。 False = いいえ（Default/デフォルルト）。"
  core_ipaddr: "接続リクエストのＩＰアドレスをどこで見つけるべきかについて（Cloudflareなどのサービスに役立ちます）。 Default/デフォルルト = REMOTE_ADDR。 注意：あなたが何をしているのか、分からない限り、これを変更しないでください。"
- core_lang: "phpMusselのデフォルト言語を設定します。"
+ core_lang: "phpMusselのデフォルト言語を設定。"
  core_lang_override: "可能な限り「HTTP_ACCEPT_LANGUAGE」に従ってローカライズしますか？ True = はい（Default/デフォルルト）。 False = いいえ。"
  core_log_rotation_action: "ログ・ローテーションは、一度に存在する必要があるログ・ファイルの数を制限します。 新しいログ・ファイルが作成されると、ログ・ファイルの総数が指定された制限を超えると、指定されたアクションが実行されます。 ここで希望のアクションを指定できます。"
  core_log_rotation_limit: "ログ・ローテーションは、一度に存在する必要があるログ・ファイルの数を制限します。 新しいログ・ファイルが作成されると、ログ・ファイルの総数が指定された制限を超えると、指定されたアクションが実行されます。 ここで希望の制限を指定することができます。 値「0」は、ログ・ローテーションを無効にします。"
  core_maintenance_mode: "メンテナンス・モードを有効にしますか？ True = はい。 False = いいえ（Default/デフォルルト）。 フロントエンド以外のすべてを無効にします。 ＣＭＳ、フレームワークなどを更新するときに便利です。"
  core_outbound_request_log: "アウトバウンド・リクエストの結果を記録するためのファイル。 ファイル名指定するか、無効にしたい場合は空白のままにして下さい。"
- core_request_proxy: "送信リクエストをプロキシ経由で送信したい場合は、ここでそのプロキシを指定します。 そうでない場合は、空白のままにします。"
- core_request_proxyauth: "プロキシ経由で送信リクエストを送信する場合、そのプロキシでユーザー名とパスワードが必要な場合は、ここでユーザー名とパスワードを指定します（例えば、<code>user:pass</code>）。 そうでない場合は、空白のままにします。"
+ core_request_proxy: "送信リクエストをプロキシ経由で送信したい場合は、ここでそのプロキシを指定します。 そうでない場合は、空白のままに。"
+ core_request_proxyauth: "プロキシ経由で送信リクエストを送信する場合、そのプロキシでユーザー名とパスワードが必要な場合は、ここでユーザー名とパスワードを指定します（例えば、<code>user:pass</code>）。 そうでない場合は、空白のままに。"
  core_scan_cache_expiry: "phpMusselはスキャニング結果をどれくらいの期間キャッシュすべきか？​秒単位で、デフォルトは２１，６００秒（６時間）となっています。 ０にするとキャッシュ無効になります。"
  core_scan_log: "全スキャニング結果を記録するファイルのファイル名。 ファイル名指定するか、無効にしたい場合は空白のままにして下さい。"
  core_scan_log_serialized: "全スキャニング結果を記録するファイルのファイル名（シリアル化形式を利用）。 ファイル名指定するか、無効にしたい場合は空白のままにして下さい。"
@@ -73,7 +73,7 @@ config:
  core_truncate: "ログ・ファイルが一定のサイズに達したら切り詰めますか？​値は、ログ・ファイルが切り捨てられる前に大きくなる可能性があるＢ/ＫＢ/ＭＢ/ＧＢ/ＴＢ単位の最大サイズです。 デフォルト値の０ＫＢは切り捨てを無効にします （ログ・ファイルは無期限に拡張できます）。 注：個々のログ・ファイルに適用されます。 ログ・ファイルのサイズは一括して考慮されません。"
  experimental: "不安定/実験的！"
  files: "スキャン時にファイルを処理する方法の詳細。"
- files_allow_leading_trailing_dots: "ファイル名に先頭と末尾のドットを使用できますか？​これは、ファイルを隠すためや、ディレクトリ・トラバーサルを許可するようにシステムを騙すために使用されることがあります。 False（偽）=許可しない（Default/デフォルト）。True（真）=許可します。"
+ files_allow_leading_trailing_dots: "ファイル名に先頭と末尾のドットを使用できますか？​これは、ファイルを隠すためや、ディレクトリ・トラバーサルを許可するようにシステムを騙すために使用されることがあります。 False（偽）=許可しない（Default/デフォルト）。True（真）=許可。"
  files_archive_file_extensions: "認識可能なアーカイブファイルエクステンションです（フォーマットはCSV；問題があった場合にのみ追加あるいは取り除くべきです。 不用意に取り除くと偽陽性の原因となる可能性があります。 反対に不用意に追加すると、アタックースペシフィック検出から追加したものをホワイトリスト化してしまいます。 充分に注意に上、変更して下さい。 なお、コンテントレベルにおいてアーカイブを分析することが出来るか否かには影響しません）。 デフォルトでは最も一般なフォーマットをリストしていますが、意図的に包括的にはしていません。"
  files_block_control_characters: "制御文字を含んだファイルをブロックするか否か（改行以外）？​もし、テキストのみをアップロードするなら、このオプションを有効にして、さらにプロテクションを強化できます。 テキスト以外もアップロード対象であれば、有効にすると偽陽性の原因になりえます。 False（偽） = ブロックしない（Default/デフォルト）；​True（真） = ブロックする。"
  files_block_encrypted_archives: "暗号化されたアーカイブを検出しブロックするか否か？​phpMusselは暗号化されたアーカイブをスキャンすることはできないので、アーカイブの暗号化によってphpMussel、アンチウィルススキャナー等をかいくぐろうとする攻撃者がいるかもしれません。 暗号化されたアーカイブをブロックすることにより、このようなリスクを回避することができます。 False（偽） = いいえ；​True（真） = はい（Default/デフォルト）。"
@@ -172,7 +172,7 @@ field:
  File: "ファイル"
  Latest version: "最新バージョン"
  Log In: "ログイン"
- More fields: "フィールドを追加します"
+ More fields: "フィールドを追加"
  OK: "ＯＫ"
  Options: "オプション"
  Password: "パスワード"
@@ -180,18 +180,18 @@ field:
  Quarantine key: "検疫キー"
  Reset: "リセット"
  Restore: "復元"
- Set new password: "新しいパスワードを設定します"
+ Set new password: "新しいパスワードを設定"
  True (True): "True （真）"
  Update signature files: "シグネチャ・ファイルをアップデートする"
  Update: "アップデート"
- Use system default timezone: "システムのデフォルトタイムゾーンを使用します。"
+ Use system default timezone: "システムのデフォルト・タイムゾーンを使用。"
  Username: "ユーザー名"
  Your version: "お使いのバージョン"
- log_rotation_archive: "最初にアーカイブしてから、最も古いログ・ファイルを削除して、制限を超過しないようにします。"
- log_rotation_delete: "最も古いログ・ファイルを削除して、制限を超過しないようにします。"
- vt_suspicion_level_all: "すべてのファイルをスキャンします。"
- vt_suspicion_level_executable: "ヒューリスティックな重みを持つファイル、実行可能ファイル、および実行可能データを含む可能性のファイルをスキャンします。\n実行可能ファイル、および実行可能データを含む可能性のファイルの例には、Windows PEファイル、Linux ELFファイル、Mach-Oファイル、DOCXファイル、ZIPファイル、などが含まれます。"
- vt_suspicion_level_heuristic_only: "ヒューリスティックな重みを持つファイルのみをスキャンします。\nファイルは、ヒューリスティックな重みが発生する場合にのみスキャンされます。 ューリスティックな重みは、感染を示唆しているが感染を保証していない指紋をキャッチするためのシグネチャから発生する可能性があります。 疑いを正当化するが確実性を提供しない結果については、ルックアップはセカンド・オピニオンを提供するのに役立ちます。"
+ log_rotation_archive: "最初にアーカイブしてから、最も古いログ・ファイルを削除、制限を超えないように。"
+ log_rotation_delete: "最も古いログ・ファイルを削除、制限を超えないように。"
+ vt_suspicion_level_all: "すべてのファイルをスキャン。"
+ vt_suspicion_level_executable: "ヒューリスティックな重みを持つファイル、実行可能ファイル、および実行可能データを含む可能性のファイルをスキャン。\n実行可能ファイル、および実行可能データを含む可能性のファイルの例には、Windows PEファイル、Linux ELFファイル、Mach-Oファイル、DOCXファイル、ZIPファイル、などが含まれます。"
+ vt_suspicion_level_heuristic_only: "ヒューリスティックな重みを持つファイルのみをスキャン。\nファイルは、ヒューリスティックな重みが発生する場合にのみスキャンされます。 ューリスティックな重みは、感染を示唆しているが感染を保証していない指紋をキャッチするためのシグネチャから発生する可能性があります。 疑いを正当化するが確実性を提供しない結果については、ルックアップはセカンド・オピニオンを提供するのに役立ちます。"
 hints_logging_datetime: "役に立つヒント:時刻形式のプレースホルダーを使用して、ログ・ファイルの名前に日付/時刻情報を添付できます。 使用可能な時刻形式のプレースホルダーが{{Links.ConfigRef.time_format}}に表示されます。"
 hints_pdo_dsn:
  ＦＡＱ。: "<em><a href="{{Links.phpMussel.Docs Base Path}}readme.ja.md\#user-content-HOW_TO_USE_PDO" hreflang="ja-JP">「PDO DSN」とは何ですか？​phpMusselでPDOを使用するにはどうすればよいですか？</a></em>"
@@ -215,14 +215,14 @@ hints_time_format: |
  <code class="s">{t:z}</code> – タイムゾーン（コロン付き） – 例えば、+08:00。
 hints_xlists:
  これがどのように機能する。: "システムが特定タイプのファイルのみアップロードを許可する、あるいは拒絶する場合は、ファイルタイプを適切にホワイトリスト、ブラックリスト、グレーリストにて分類しておくと、ファイルタイプによって弾かれるファイルはスキャンをスキップできるため、スピードアップに繋がります。 フォーマットはＣＳＶ（カンマ区切り）です。"
- プロセスの論理的順序。: "ファイルタイプがホワイトリストに記載されていれば、スキャンせず、ブロックせず、ブラックリストおよびグレイリストに対してチェックを行いません。 ファイルタイプがブラックリストに記載されていれば、スキャンすることなく、直ちににブロックし、グレーリストに対してチェックを行いません。 グレーリストが空、あるいはグレーリストが空でなくかつそのファイルタイプがあれば、通常通りスキャンしブロックするか否かを判断します。 グレーリストが空でなくかつそのファイルタイプが含まれていなければ、ブラックリストと同様の扱いをすることになり、スキャンなしにブロックします。"
+ プロセスの論理的順序。: "ファイルタイプがホワイトリストに記載されていれば、スキャンせず、ブロックせず、ブラックリストおよびグレイリストに対してチェックを行いません。 ファイルタイプがブラックリストに記載されていれば、スキャンすることなく、直ちににブロックし、グレーリストに対してチェックを行いません。 グレーリストが空、あるいはグレーリストが空でなくかつそのファイルタイプがあれば、通常通りスキャンしブロックするか否かを判断。 グレーリストが空でなくかつそのファイルタイプが含まれていなければ、ブラックリストと同様の扱いをすることになり、スキャンなしにブロックします。"
 Some useful links: |+
  役に立つリンク：<br />
      <ul class="pieul">
        <li><span class="comCat" role="region" aria-controls="menuTRP" aria-expanded="false">phpMussel用のツール、リソース、など。</span>
          <ul class="comSub" id="menuTRP">
            <li>{{Links.phpMussel.Issues}} – phpMusselの問題ページ（サポート、援助、など）。</li>
-           <li>{{Links.phpMussel.SigTool}} – ClamAVシグネチャ・データベースを使用してphpMusselシグネチャ・ファイルを作成します。</li>
+           <li>{{Links.phpMussel.SigTool}} – ClamAVシグネチャ・データベースを使用してphpMusselシグネチャ・ファイルを作成。</li>
            <li>{{Links.phpMussel.Extras}} – その他エキストラ。</li>
          </ul>
        </li>
@@ -231,7 +231,7 @@ Some useful links: |+
            <li>{{Links.ClamavNet}} – ClamAVホームページ（ClamAV®は、トロイの木馬、ウイルス、マルウェア、とその他の脅威を検出するための、オープンソースのウイルス対策エンジンです）。</li>
            <li>{{Links.SecuriteInfo}} – ClamAVの補足的なシグネチャを提供する、コンピュータセキュリティ会社。</li>
            <li>{{Links.Sanesecurity}} – ClamAVの補足的なシグネチャを提供する、コンピュータセキュリティ会社。</li>
-           <li>{{Links.Malware Expert}} – ClamAV用の補足シグネチャとModSecurity用の補足規則を提供します。</li>
+           <li>{{Links.Malware Expert}} – ClamAV用の補足シグネチャとModSecurity用の補足規則を提供。</li>
          </ul>
        </li>
        <li><span class="comCat" role="region" aria-controls="menuGFC" aria-expanded="false">グループ、フォーラム、コミュニティ、など。</span>
@@ -252,8 +252,8 @@ Some useful links: |+
          <ul class="comSub" id="menuILR">
            <li>{{Links.PHP.Earth.Website}} – ＰＨＰ学習リソースとディスカッション。</li>
            <li>{{Links.MDN.Homepage}} – 開発者による、開発者のためのリソース。 HTML、CSS、JavaScript、アクセシビリティ、などについて学習するための素晴らしいリソースです。</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">脆弱性チャート</a> – さまざまなパッケージの安全で安全でないバージョンを一覧表示する（ＰＨＰ、ＨＨＶＭ、ｐｈｐＭｙＡｄｍｉｎ、Ｐｙｔｈｏｎ、等）。</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">互換性チャート</a> – さまざまなパッケージの互換性情報を一覧表示します（CIDRAM、phpMussel、等）。</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">脆弱性チャート</a> – さまざまなパッケージの安全で安全でないバージョンを一覧表示（ＰＨＰ、ＨＨＶＭ、ｐｈｐＭｙＡｄｍｉｎ、Ｐｙｔｈｏｎ、等）。</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external" target="_blank">互換性チャート</a> – さまざまなパッケージの互換性情報を一覧表示（CIDRAM、phpMussel、等）。</li>
          </ul>
        </li>
      </ul>
@@ -268,7 +268,7 @@ label:
  Complete access: "完全なアクセス"
  Copy to clipboard: "クリップボードにコピー"
  Default: "デフォルト"
- Duplicate to %s: "%sに複製します"
+ Duplicate to %s: "%sに複製"
  Expires: "有効期限："
  Extension: "エクステンション"
  External: "外部"
@@ -405,8 +405,8 @@ tip:
  Configuration: "コンフィグレーション・ページは、フロントエンドからphpMusselの設定を変更することができます。"
  Glossary: "用語集では、phpMusselで使用される用語の一部を説明し、使用されている文脈における意図された意味を明確にするのに役立ちます。"
  Greeting: "こんにちは、%s。"
- Home: "これはphpMusselフロントエンドのホームページです。 続行するには、左側のナビゲーションメニューからリンクを選択します。"
- Logs: "そのログの内容を表示するために、次のリストからログを選択します。"
+ Home: "これはphpMusselフロントエンドのホームページです。 続行するには、左側のナビゲーションメニューからリンクを選択。"
+ Logs: "そのログの内容を表示するために、次のリストからログを選択。"
  Quarantine is currently disabled: "注意：検疫は現在無効になっていますが、コンフィギュレーション・ページで有効にすることができます。"
  Quarantine: "管理を容易にするために、現在検疫されているすべてのファイルがこのページにリストされています。"
  See the documentation: "コンフィギュレーション・ディレクティブの詳細については、<a href="{{Links.phpMussel.Docs Base Path}}readme.ja.md\#user-content-SECTION5" hreflang="ja-JP" rel="noopener external"><span class="navicon documentation"></span>ドキュメント</a>を参照してください。"

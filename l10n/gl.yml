@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Galician language data (last modified: 2026.09.05).
+# This file: Galician language data (last modified: 2026.09.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -82,8 +82,8 @@ config:
  files_chameleon_from_exe: "Busca cabeceiras executables en ficheiros que non son nin executables nin arquivos recoñecidos e executables cuxas cabeceiras son incorrectas. False/Falso = Desactivado; True/Verdadeiro = Activado."
  files_chameleon_from_php: "Busca cabeceiras PHP en ficheiros que non son nin ficheiros PHP nin arquivos recoñecidos. False/Falso = Desactivado; True/Verdadeiro = Activado."
  files_chameleon_to_archive: "Detecta cabeceiras incorrectas en arquivos e ficheiros comprimidos. Soportado: BZ/BZIP2, GZ/GZIP, LZF, RAR, ZIP. False/Falso = Desactivado; True/Verdadeiro = Activado."
- files_chameleon_to_doc: "Busca documentos ofimáticos cuxos encabezados sexan incorrectos (Soportado: DOC, DOT, PPS, PPT, XLA, XLS, WIZ). False/Falso = Desactivado; True/Verdadeiro = Activado."
- files_chameleon_to_img: "Busca imaxes cuxos encabezados sexan incorrectos (Soportado: BMP, DIB, PNG, GIF, JPEG, JPG, XCF, PSD, PDD, WEBP). False/Falso = Desactivado; True/Verdadeiro = Activado."
+ files_chameleon_to_doc: "Busca documentos ofimáticos cuxas cabeceiras son incorrectas (Soportado: DOC, DOT, PPS, PPT, XLA, XLS, WIZ). False/Falso = Desactivado; True/Verdadeiro = Activado."
+ files_chameleon_to_img: "Busca imaxes cuxas cabeceiras son incorrectas (Soportado: BMP, DIB, PNG, GIF, JPEG, JPG, XCF, PSD, PDD, WEBP). False/Falso = Desactivado; True/Verdadeiro = Activado."
  files_chameleon_to_pdf: "Busca ficheiros PDF cuxas cabeceiras son incorrectas. False/Falso = Desactivado; True/Verdadeiro = Activado."
  files_check_archives: "Comprobar o contido dos arquivos? False/Falso = Non comprobe; True/Verdadeiro = Comprobe [Predeterminado]. Soportado: Zip (require libzip), Tar, Rar (require a extensión rar)."
  files_corrupted_exe: "Ficheiros danados e erros de análise. False/Falso = Ignorar; True/Verdadeiro = Bloquear [Predeterminado]. Detectar e bloquear ficheiros PE (Executable Portátil) potencialmente danados? Moitas veces (pero non sempre), cando certos aspectos dun ficheiro PE están corrompidos ou non se poden analizar correctamente, pode ser indicativo dunha infección viral. Os procesos utilizados pola maioría dos programas antivirus para detectar virus en ficheiros PE requiren analizar eses ficheiros de determinadas formas, que, se o programador dun virus é consciente, tratará especificamente de previr, para que o seu virus non se detecte."
@@ -103,7 +103,7 @@ config:
  files_scannable_threshold: "Limiar ata a lonxitude dos datos en bruto que phpMussel pode ler e escanear (no caso de que exista algún problema de rendemento notable durante a exploración). Predeterminado = 32MB. Cero ou nulo desactiva o limiar. Xeralmente, este valor non debe ser inferior ao tamaño medio dos ficheiros cargados que queres e esperas recibir no teu servidor ou sitio web, non debe ser superior á directiva filesize_limit e non debe ser máis que aproximadamente un quinto da asignación total de memoria permitida concedida a PHP a través do ficheiro de configuración "php.ini". Esta directiva existe para intentar evitar que phpMussel use demasiada memoria (iso evitaría que poida escanear con éxito ficheiros por encima dun determinado tamaño de ficheiro)."
  frontend: "Configuración para o front-end."
  frontend_custom_footer: "Inseriuse como HTML na parte inferior de todas as páxinas do front-end. Isto pode ser útil no caso de que queiras incluír un aviso legal, ligazón de contacto, información comercial, ou similares en todas esas páxinas."
- frontend_custom_header: "Inseriuse como HTML ao comezo de todas as páxinas do front-end. Isto pode ser útil no caso de que queiras incluír un logotipo do sitio web, un encabezado personalizado, guións, ou similares en todas esas páxinas."
+ frontend_custom_header: "Inseriuse como HTML ao comezo de todas as páxinas do front-end. Isto pode ser útil no caso de que queiras incluír un logotipo do sitio web, unha cabeceira personalizada, guións, ou similares en todas esas páxinas."
  frontend_default_algo: "Define que algoritmo usar para todos os contrasinais e sesións futuras."
  frontend_frontend_log: "Ficheiro para rexistrar todos os intentos de iniciar sesión na front-end. Especifique un nome de ficheiro, ou déixeo en branco para desactivalo."
  frontend_magnification: "Ampliación da fonte. Predeterminado = 1."

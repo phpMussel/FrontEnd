@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese language data (last modified: 2026.09.05).
+# This file: Chinese language data (last modified: 2026.09.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -221,7 +221,7 @@ config:
  supplementary_cache_options_enable_pdo: {"zh-Hans": "指定是否尝试使用PDO进行缓存。 标准 = False。", "zh-Hant": "指定是否嘗試使用PDO進行緩存。 標準 = False。"}
  supplementary_cache_options_enable_redis: {"zh-Hans": "指定是否尝试使用Redis进行缓存。 标准 = False。", "zh-Hant": "指定是否嘗試使用Redis進行緩存。 標準 = False。"}
  supplementary_cache_options_memcached_host: {"zh-Hans": "Memcached 主机值。 标准 = localhost。", "zh-Hant": "Memcached 主機值。 標準 = localhost。"}
- supplementary_cache_options_memcached_port: {"zh-Hans": "Memcached 端口值。 标准 = “11211”。", "zh-Hant": "Memcached 端口值。 標準 = 『11211』。"}
+ supplementary_cache_options_memcached_port: {"zh-Hans": "Memcached 端口值。 标准 = “11211”。", "zh-Hant": "Memcached 連接埠值。 標準 = 『11211』。"}
  supplementary_cache_options_pdo_dsn: {"zh-Hans": "PDO DSN值。 标准 = “mysql:dbname=phpmussel;host=localhost;port=3306”。", "zh-Hant": "PDO DSN值。 標準 = 『mysql:dbname=phpmussel;host=localhost;port=3306』。"}
  supplementary_cache_options_pdo_password: {"zh-Hans": "PDO 密码。", "zh-Hant": "PDO 密碼。"}
  supplementary_cache_options_pdo_username: {"zh-Hans": "PDO 用户名。", "zh-Hant": "PDO 使用者名稱。"}
@@ -230,7 +230,7 @@ config:
   zh-Hant: "該值將附加到所有緩存條目的鍵的開頭。 標準 = 『phpMussel_』。 當同一服務器上存在多個安裝時，這對於將它們的緩存彼此分開非常有用。"
  supplementary_cache_options_redis_database_number: {"zh-Hans": "Redis 数据库编号。 标准 = “0”。 注意：不能在 Redis Cluster 中使用 0 以外的值。", "zh-Hant": "Redis 數據庫編號。 標準 = 『0』。 注意：不能在 Redis Cluster 中使用 0 以外的值。"}
  supplementary_cache_options_redis_host: {"zh-Hans": "Redis 主机值。 标准 = localhost。", "zh-Hant": "Redis 主機值。 標準 = localhost。"}
- supplementary_cache_options_redis_port: {"zh-Hans": "Redis 端口值。 标准 = “6379”。", "zh-Hant": "Redis 端口值。 標準 = 『6379』。"}
+ supplementary_cache_options_redis_port: {"zh-Hans": "Redis 端口值。 标准 = “6379”。", "zh-Hant": "Redis 連接埠值。 標準 = 『6379』。"}
  supplementary_cache_options_redis_timeout: {"zh-Hans": "Redis 超时值。 标准 = “2.5”。", "zh-Hant": "Redis 超時值。 標準 = 『2.5』。"}
  urlscanner: {"zh-Hans": "URL扫描程序的配置。", "zh-Hant": "URL掃描程序的配置。"}
  urlscanner_cache_time: {"zh-Hans": "多长时间（以秒为单位）应API结果被缓存？ 标准是3600秒（1小时）。", "zh-Hant": "多長時間（以秒為單位）應API結果被緩存？ 標準是3600秒（1小時）。"}
