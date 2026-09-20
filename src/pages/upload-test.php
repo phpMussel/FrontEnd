@@ -8,12 +8,12 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The upload testing page (last modified: 2026.09.05).
+ * This file: The upload testing page (last modified: 2026.09.21).
  */
 
 namespace phpMussel\FrontEnd;
 
-if (!isset($Page) || $Page !== 'upload-test' || empty($this->PermissionsMap['Complete access'])) {
+if (!isset($Page) || $Page !== 'upload-test' || empty($this->PermissionsMap['Upload Testing'])) {
     die;
 }
 
