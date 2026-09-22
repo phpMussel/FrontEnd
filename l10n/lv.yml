@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2026.09.05).
+# This file: Latvian language data (last modified: 2026.09.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -137,15 +137,15 @@ config:
  supplementary_cache_options_enable_pdo: "Norāda, vai kešatmiņā mēģināt izmantot PDO. Noklusējuma = False."
  supplementary_cache_options_enable_redis: "Norāda, vai kešatmiņā mēģināt izmantot Redis. Noklusējuma = False."
  supplementary_cache_options_memcached_host: "Memcached resursdatora vērtību. Noklusējuma = localhost."
- supplementary_cache_options_memcached_port: "Memcached porta vērtību. Noklusējuma = "11211"."
- supplementary_cache_options_pdo_dsn: "PDO DSN vērtību. Noklusējuma = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+ supplementary_cache_options_memcached_port: "Memcached porta vērtību. Noklusējuma = “11211”."
+ supplementary_cache_options_pdo_dsn: "PDO DSN vērtību. Noklusējuma = “mysql:dbname=phpmussel;host=localhost;port=3306”."
  supplementary_cache_options_pdo_password: "PDO parole."
  supplementary_cache_options_pdo_username: "PDO lietotājvārds."
- supplementary_cache_options_prefix: "Šeit norādītā vērtība tiks pievienota visām kešatmiņas ievades atslēgām. Noklusējuma = "phpMussel_". Ja vienā serverī ir vairākas instalācijas, tas var būt noderīgi, lai saglabātu to kešatmiņas atsevišķi vienu no otras."
+ supplementary_cache_options_prefix: "Šeit norādītā vērtība tiks pievienota visām kešatmiņas ievades atslēgām. Noklusējuma = “phpMussel_”. Ja vienā serverī ir vairākas instalācijas, tas var būt noderīgi, lai saglabātu to kešatmiņas atsevišķi vienu no otras."
  supplementary_cache_options_redis_database_number: "Redis datu bāzes numurs. Noklusējuma = 0. Piezīme: Izmantojot Redis Cluster, kā vērtību var izmantot tikai 0."
  supplementary_cache_options_redis_host: "Redis resursdatora vērtību. Noklusējuma = localhost."
- supplementary_cache_options_redis_port: "Redis porta vērtību. Noklusējuma = "6379"."
- supplementary_cache_options_redis_timeout: "Redis taimauta vērtību. Noklusējuma = "2.5"."
+ supplementary_cache_options_redis_port: "Redis porta vērtību. Noklusējuma = “6379”."
+ supplementary_cache_options_redis_timeout: "Redis taimauta vērtību. Noklusējuma = “2.5”."
  urlscanner: "URL skeneru konfigurācija."
  urlscanner_cache_time: "Cik ilgi (sekundēs) ir jāglabā kešatmiņā API meklēšanas rezultāti? Noklusējums ir 3600 sekundes (1 stunda)."
  urlscanner_google_api_key: "Ļauj uzmeklēšanu Google Droša Pārlūkošana API, kad ir definēta nepieciešamā API atslēga."
@@ -158,7 +158,7 @@ config:
  virustotal_vt_suspicion_level: "Pēc noklusējuma phpMussel ierobežos, kurus failus tas skenē, izmantojot Virus Total API, līdz tiem failiem, kurus tā uzskata par "aizdomīgiem". Jūs varat pēc izvēles pielāgot šo ierobežojumu, mainot <code>vt_suspicion_level</code> direktīvas vērtību."
  virustotal_vt_weighting: "Vai phpMussel vajadzētu interpretēt rezultātus no Virus Total API kā atklājumu skaits vai kā atklājumu svars? Faila skenēšanai, izmantojot vairākus dzinējus (tāpat kā Virus Total), jāpalielina atklāšanas biežums (un tāpēc vajadzētu noķert lielāku skaitu ļaunprātīgu failu), bet tas var izraisīt arī lielāku nepatiesu pozitīvu skaits, un tāpēc dažos gadījumos, skenēšanas rezultātus var labāk izmantot kā ticamības rādītāju, pretstatā galīgu secinājumu (tas ir iemesls, kāpēc šī direktīva pastāv). Ja tiek izmantota vērtība 0, skenēšanas rezultāti no Virus Total API tiks interpretēti kā atklājumu skaits, un tāpēc, ja kāds no Virus Total izmantotajiem dzinējiem atzīmē skenējamo failu kā ļaunprātīgu, phpMussel uzskatīs failu par ļaunprātīgu. Ja tiek izmantota kāda cita vērtība, skenēšanas rezultāti no Virus Total API tiks interpretēti kā atklājumu svars, un tāpēc, Virus Total izmantoto dzinēju skaits, kas atzīmē skenēto failu kā ļaunprātīgu, kalpos kā ticamības rādītājs (vai atklāšanas svērums) tam, vai phpMussel skenētajiem failiem ir jāuzskata par ļaunprātīgu (izmantotā vērtība atspoguļos minimālo ticamības rādītāju vai svaru, kas vajadzīgs, lai to uzskatītu par ļaunprātīgu). Pēc noklusējuma tiek izmantota vērtība 0."
 confirm:
- Action: "Vai tiešām vēlaties "%s"?"
+ Action: "Vai tiešām vēlaties “%s”?"
 field:
  2FA code: "2FA kods"
  Clear all: "Notīriet visus"
@@ -263,7 +263,7 @@ label:
  %s is not available: "%s nav pieejams."
  Active configuration file: "Aktīvs konfigurācijas fails:"
  Active signature files: "Aktīvie paraksta faili"
- Branch latest stable: "Jaunākā stabilā (uz šīs "branch"):"
+ Branch latest stable: "Jaunākā stabilā (uz šīs “branch”):"
  Client information: "Informācija par klientu:"
  Complete access: "Pilnīga piekļuve"
  Copy to clipboard: "Kopēt starpliktuvē"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bangla language data (last modified: 2026.09.05).
+# This file: Bangla language data (last modified: 2026.09.22).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -220,14 +220,14 @@ hints_xlists:
 Some useful links: |+
  কিছু দরকারী লিঙ্ক:<br />
      <ul class="pieul">
-       <li><span class="comCat" role="region" aria-controls="menuTRP" aria-expanded="false">phpMussel জন্য সরঞ্জাম, সম্পদ, ইত্যাদি।</span>
+       <li><span class="comCat" role="region" aria-controls="menuTRP" aria-expanded="false">phpMussel জন্য টুলস, সম্পদ, ইত্যাদি।</span>
          <ul class="comSub" id="menuTRP">
            <li>{{Links.phpMussel.Issues}} – phpMussel সমর্থন পৃষ্ঠা (সহায়তা, সহায়তা, ইত্যাদির জন্য)।</li>
            <li>{{Links.phpMussel.SigTool}} – ClamAV স্বাক্ষর ডাটাবেস ব্যবহার করে phpMussel স্বাক্ষর ফাইল তৈরি করে।</li>
            <li>{{Links.phpMussel.Extras}} – বিভিন্ন অতিরিক্ত।</li>
          </ul>
        </li>
-       <li><span class="comCat" role="region" aria-controls="menuTRClamAV" aria-expanded="false">ClamAV জন্য সরঞ্জাম, সম্পদ, ইত্যাদি।</span>
+       <li><span class="comCat" role="region" aria-controls="menuTRClamAV" aria-expanded="false">ClamAV জন্য টুলস, সম্পদ, ইত্যাদি।</span>
          <ul class="comSub" id="menuTRClamAV">
            <li>{{Links.ClamavNet}} – ClamAV হোমপেজে (ClamAV® ট্রোজান, ভাইরাস, ম্যালওয়্যার এবং অন্যান্য দূষিত হুমকি সনাক্ত করার জন্য একটি ওপেন সোর্স অ্যান্টিভাইরাস ইঞ্জিন।)।</li>
            <li>{{Links.SecuriteInfo}} – কম্পিউটার নিরাপত্তা কোম্পানি ClamAV জন্য অনুপূরক স্বাক্ষর প্রস্তাব করে।</li>
@@ -241,7 +241,7 @@ Some useful links: |+
            <li>{{Links.MalwareTips}} – ম্যালওয়ার উপর দৃষ্টি নিবদ্ধ করা দরকারী আলোচনা ফোরাম।</li>
          </ul>
        </li>
-       <li><span class="comCat" role="region" aria-controls="menuOUTRS" aria-expanded="false">অন্যান্য দরকারী সরঞ্জাম, সম্পদ, সেবা, ইত্যাদি।</span>
+       <li><span class="comCat" role="region" aria-controls="menuOUTRS" aria-expanded="false">অন্যান্য দরকারী টুলস, সম্পদ, সেবা, ইত্যাদি।</span>
          <ul class="comSub" id="menuOUTRS">
            <li>{{Links.PhishTank}} – phpMussel URL স্ক্যানার দ্বারা ব্যবহৃত ফিশিং ডেটাবেস।</li>
            <li>{{Links.VirusTotal}} – VirusTotal সন্দেহজনক ফাইল এবং URLগুলি বিশ্লেষণ করার জন্য একটি বিনামূল্যে পরিষেবা।</li>
@@ -372,7 +372,7 @@ response:
  Statistics cleared: "পরিসংখ্যান পরিস্কার।"
  Successfully authenticated: "সফলভাবে প্রমাণিত।"
  That account doesn_t exist: "সেই অ্যাকাউন্টটি বিদ্যমান নেই।"
- Unable to send two-factor authentication code because an email event handler isn_t available: "দুই-ফ্যাক্টর প্রমাণীকরণ কোড পাঠানো সম্ভব হচ্ছে না কারণ একটি ইমেল ইভেন্ট হ্যান্ডলার উপলব্ধ নেই!"
+ Unable to send two-factor authentication code because an email event handler isn_t available: "দুই-ফ্যাক্টর প্রমাণীকরণ কোড পাঠানো সম্ভব হচ্ছে না কারণ একটি ইমেইল ইভেন্ট হ্যান্ডলার উপলব্ধ নেই!"
  Username doesn_t exist: "লগইন ব্যর্থতা! ব্যবহারকারীর নাম অস্তিত্বহীন!"
  Username field empty: "ব্যবহারকারীর নাম ক্ষেত্র খালি!"
  _No: "না"
