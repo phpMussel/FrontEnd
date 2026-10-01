@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data (last modified: 2026.09.05).
+# This file: Hebrew language data (last modified: 2026.10.02).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -45,7 +45,7 @@ Glossary: !lazy
  Refs:
   חיובי כוזב:
    חיובי כוזב ושלילי כוזב – ויקיפדיה: "https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%95%D7%91%D7%99_%D7%9B%D7%95%D7%96%D7%91_%D7%95%D7%A9%D7%9C%D7%99%D7%9C%D7%99_%D7%9B%D7%95%D7%96%D7%91"
-   Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
+   Issues · phpMussel/phpMussel: *IssuesURL
 checkbox:
  Delete orphaned values: "מחק ערכים יתומים."
 config:

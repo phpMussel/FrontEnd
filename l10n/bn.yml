@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bangla language data (last modified: 2026.09.22).
+# This file: Bangla language data (last modified: 2026.10.02).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -45,7 +45,7 @@ Glossary: !lazy
  Refs:
   মিথ্যা ইতিবাচক:
    মিথ্যা ইতিবাচক ফলাফল ও মিথ্যা নেতিবাচক ফলাফল - উইকিপিডিয়া: "https://bn.wikipedia.org/wiki/%E0%A6%AE%E0%A6%BF%E0%A6%A5%E0%A7%8D%E0%A6%AF%E0%A6%BE_%E0%A6%87%E0%A6%A4%E0%A6%BF%E0%A6%AC%E0%A6%BE%E0%A6%9A%E0%A6%95_%E0%A6%AB%E0%A6%B2%E0%A6%BE%E0%A6%AB%E0%A6%B2_%E0%A6%93_%E0%A6%AE%E0%A6%BF%E0%A6%A5%E0%A7%8D%E0%A6%AF%E0%A6%BE_%E0%A6%A8%E0%A7%87%E0%A6%A4%E0%A6%BF%E0%A6%AC%E0%A6%BE%E0%A6%9A%E0%A6%95_%E0%A6%AB%E0%A6%B2%E0%A6%BE%E0%A6%AB%E0%A6%B2"
-   Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
+   Issues · phpMussel/phpMussel: *IssuesURL
 checkbox:
  Delete orphaned values: "অনাথ মান মুছুন।"
 config:

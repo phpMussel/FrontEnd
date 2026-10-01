@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2026.09.05).
+# This file: English language data (last modified: 2026.10.02).
 ##/
 
 Glossary: !lazy
@@ -31,7 +31,7 @@ Glossary: !lazy
  Refs:
   False positive:
    False positives and false negatives - Wikipedia: "https://en.wikipedia.org/wiki/False_positives_and_false_negatives"
-   Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
+   Issues · phpMussel/phpMussel: *IssuesURL
 checkbox:
  Delete orphaned values: "Delete orphaned values."
 config:

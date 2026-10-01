@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hindi language data (last modified: 2026.09.05).
+# This file: Hindi language data (last modified: 2026.10.02).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -45,7 +45,7 @@ Glossary: !lazy
  Refs:
   गलत सकारात्मक:
    गलत सकारात्मक और झूठी नकारात्मक - विकिपीडिया: "https://hi.wikipedia.org/wiki/%E0%A4%9D%E0%A5%82%E0%A4%A0%E0%A5%80_%E0%A4%B8%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%94%E0%A4%B0_%E0%A4%9D%E0%A5%82%E0%A4%A0%E0%A5%80_%E0%A4%A8%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95"
-   Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
+   Issues · phpMussel/phpMussel: *IssuesURL
 checkbox:
  Delete orphaned values: "अनाथ मान हटाएं।"
 config:

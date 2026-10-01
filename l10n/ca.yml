@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Catalan language data (last modified: 2026.09.05).
+# This file: Catalan language data (last modified: 2026.10.02).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -45,7 +45,7 @@ Glossary: !lazy
  Refs:
   Fals positiu:
    "Falsos positius i falsos negatius - Viquipèdia, l'enciclopèdia lliure": "https://ca.wikipedia.org/wiki/Falsos_positius_i_falsos_negatius"
-   Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
+   Issues · phpMussel/phpMussel: *IssuesURL
 checkbox:
  Delete orphaned values: "Suprimeix els valors orfes."
 config:

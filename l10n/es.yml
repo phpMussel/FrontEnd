@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2026.09.18).
+# This file: Spanish language data (last modified: 2026.10.02).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -45,7 +45,7 @@ Glossary: !lazy
  Refs:
   Falso positivo:
    Falso positivo y falso negativo - Wikipedia, la enciclopedia libre: "https://es.wikipedia.org/wiki/Falso_positivo_y_falso_negativo"
-   Issues · phpMussel/phpMussel: "https://github.com/phpMussel/phpMussel/issues"
+   Issues · phpMussel/phpMussel: *IssuesURL
 checkbox:
  Delete orphaned values: "Eliminar valores huérfanos."
 config:

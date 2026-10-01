@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: YAML references file (last modified: 2026.09.04).
+# This file: YAML references file (last modified: 2026.10.02).
 ##/
 
 Links:
@@ -34,6 +34,7 @@ Links:
   Docs Base Path: "https://github.com/phpMussel/Docs/blob/master/"
   Extras: "<a href="https://github.com/phpMussel/extras" dir="ltr" hreflang="en" rel="noopener noreferrer external" target="_blank">phpMussel/extras</a>"
   Issues: "<a href="https://github.com/phpMussel/phpMussel/issues" dir="ltr" hreflang="en" rel="noopener noreferrer external" target="_blank">phpMussel/phpMussel/issues</a>"
+  Issues URL: &IssuesURL "https://github.com/phpMussel/phpMussel/issues"
   SigTool: "<a href="https://github.com/phpMussel/SigTool" dir="ltr" hreflang="en" rel="noopener noreferrer external" target="_blank">phpMussel/SigTool</a>"
  Sanesecurity: "<a href="https://sanesecurity.com/usage/signatures/" dir="ltr" hreflang="en-US" rel="noopener noreferrer external" target="_blank">Sanesecurity</a>"
  SecuriteInfo: "<a href="https://www.securiteinfo.com/" dir="ltr" hreflang="fr-FR" rel="noopener noreferrer external" target="_blank">SecuriteInfo.com</a>"
