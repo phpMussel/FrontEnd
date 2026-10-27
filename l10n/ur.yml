@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Urdu language data (last modified: 2026.10.02).
+# This file: Urdu language data (last modified: 2026.10.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -137,15 +137,15 @@ config:
  supplementary_cache_options_enable_pdo: "اس کی وضاحت کرتا ہے کہ کیش کے لیے PDO استعمال کرنا چاہے. پہلے سے طے شدہ = False (جھوٹی)."
  supplementary_cache_options_enable_redis: "اس کی وضاحت کرتا ہے کہ کیش کے لیے Redis استعمال کرنا چاہے. پہلے سے طے شدہ = False (جھوٹی)."
  supplementary_cache_options_memcached_host: "Memcached کے میزبان نام. پہلے سے طے شدہ = localhost."
- supplementary_cache_options_memcached_port: "Memcached کے لیے بندرگاہ. پہلے سے طے شدہ = "11211"."
- supplementary_cache_options_pdo_dsn: "PDO کے لیے DSN. پہلے سے طے شدہ = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+ supplementary_cache_options_memcached_port: "Memcached کے لیے بندرگاہ. پہلے سے طے شدہ = \"11211\"."
+ supplementary_cache_options_pdo_dsn: "PDO کے لیے DSN. پہلے سے طے شدہ = \"mysql:dbname=phpmussel;host=localhost;port=3306\"."
  supplementary_cache_options_pdo_password: "PDO کے لیے پاس ورڈ."
  supplementary_cache_options_pdo_username: "PDO کے لیے صارف نام."
- supplementary_cache_options_prefix: "یہاں بیان کردہ قدر کو تمام کیش انٹری کیز کے ساتھ پہلے سے جوڑا جائے گا. پہلے سے طے شدہ = "phpMussel_". جب ایک ہی سرور پر متعدد تنصیبات موجود ہوں، تو یہ ان کے کیچز کو ایک دوسرے سے الگ رکھنے کے لیے مفید ہو سکتا ہے."
+ supplementary_cache_options_prefix: "یہاں بیان کردہ قدر کو تمام کیش انٹری کیز کے ساتھ پہلے سے جوڑا جائے گا. پہلے سے طے شدہ = \"phpMussel_\". جب ایک ہی سرور پر متعدد تنصیبات موجود ہوں، تو یہ ان کے کیچز کو ایک دوسرے سے الگ رکھنے کے لیے مفید ہو سکتا ہے."
  supplementary_cache_options_redis_database_number: "Redis ڈیٹا بیس نمبر. پہلے سے طے شدہ = 0. نوٹ: Redis Cluster کے ساتھ 0 کے علاوہ دیگر اقدار استعمال نہیں کر سکتے."
  supplementary_cache_options_redis_host: "Redis کے میزبان نام. پہلے سے طے شدہ = localhost."
- supplementary_cache_options_redis_port: "Redis کے لیے بندرگاہ. پہلے سے طے شدہ = "6379"."
- supplementary_cache_options_redis_timeout: "Redis کے لیے ٹائم آؤٹ. پہلے سے طے شدہ = "2.5"."
+ supplementary_cache_options_redis_port: "Redis کے لیے بندرگاہ. پہلے سے طے شدہ = \"6379\"."
+ supplementary_cache_options_redis_timeout: "Redis کے لیے ٹائم آؤٹ. پہلے سے طے شدہ = \"2.5\"."
  urlscanner: "URL سکینر کی کنفگریشنات."
  urlscanner_cache_time: "کب تک (سیکنڈوں میں) API لک اپ کے نتائج کے لیے محفوظ ہو جائے چاہیے؟ پہلے سے طے شدہ 3600 سیکنڈ ہے (1 گھنٹہ)."
  urlscanner_google_api_key: "ضروری API کلید وضاحت کی گئی ہے جب گوگل محفوظ براؤزنگ API کو API لک اپ کو فعال کرتا ہے."
@@ -158,7 +158,7 @@ config:
  virustotal_vt_suspicion_level: "بطور ڈیفالٹ، phpMussel جس فائلوں کی یہ "مشکوک" سمجھتی ہے کہ ان فائلوں کو وائرس کل API کا استعمال کرتے ہوئے کو سکین کرتا ہے کو محدود کریں گے. آپ اختیاری <code dir=\"ltr\">vt_suspicion_level</code> کے ہدایت کی قدر میں تبدیلی کرتے ہوئے اس پابندی کو ایڈجسٹ کر سکتے ہیں."
  virustotal_vt_weighting: "phpMussel detections کر کے طور پر یا پتہ لگانے weighting کے طور وائرس کل API کا استعمال کرتے ہوئے سکیننگ کے نتائج کو درخواست دینی چاہیے؟ (اور بدنیتی پر مبنی فائلوں کی ایک بڑی تعداد پکڑے جانے لہذا میں) ایک سے زیادہ کے انجن کو استعمال کرتے ہوئے (جیسا وائرس کل کرتا ہے) ایک فائل کو سکین ایک اضافہ کا پتہ لگانے کی شرح کے نتیجے چاہیے، اگرچہ، یہ بھی جھوٹے کی زیادہ تعداد کے نتیجے کر سکتے ہیں، کیونکہ یہ ہدایت موجود ہے، مثبت ہے، اور اس وجہ سے، کچھ حالات میں، سکیننگ کے نتائج بہتر ایک حتمی نتیجے پر اس اعتماد کا سکور کے طور پر کی بجائے استعمال کیا جا سکتا ہے. 0 کی قدر استعمال کیا جاتا ہے تو، وائرس کل API کا استعمال کرتے ہوئے سکیننگ کے نتائج کسی بھی انجن وائرس کل پرچم فائل کو بدنیتی پر مبنی ہونے کے طور پر سکین کیا جا رہا ہے کی طرف سے استعمال کیا جاتا ہے تو، detections کر کے طور پر لاگو کیا جائے گا، اور اس وجہ سے، phpMussel بدنیتی پر مبنی ہونے کے لیے فائل پر غور کریں گے. کسی دوسرے کی قدر استعمال کیا جاتا ہے تو، وائرس کل API کا استعمال کرتے ہوئے سکیننگ کے نتائج کا پتہ لگانے weighting کے طور پر لاگو کیا جائے گا، اور اس وجہ سے، فائل پرچم کہ وائرس کل کی طرف سے استعمال کے انجن کی تعداد سکین کیا جا رہا ہے درنساوناپورن ہونے (ایک اعتماد سکور کے طور پر کام کرے گا کے طور پر یا پتہ لگانے weighting کے) کے لیے ہے یا نہیں کی فائل کو سکین کیا جا رہا phpMussel طرف بدنیتی پر مبنی سمجھا جانا چاہیے (استعمال کیا کم از کم اعتماد کی نمائندگی کریں گے ویلیو سکور یا کنفگریشن میں کی ضرورت وزن بدنیتی پر مبنی سمجھا جائے). 0 کی قدر سے طے شدہ کی طرف سے استعمال کیا جاتا ہے."
 confirm:
- Action: "کیا آپ واقعی "%s" کرنا چاہتے ہیں؟"
+ Action: "کیا آپ واقعی \"%s"\ کرنا چاہتے ہیں؟"
 field:
  2FA code: "2FA کوڈ"
  Clear all: "تمام کو صاف کریں"
@@ -395,7 +395,7 @@ Signature information: !lazy
  sub_SigTypes: "میٹا ڈیٹا کی نمبر"
  sub_Targets: "ویکٹر ہدف کی نمبر"
  sub_Vendors: "ذریعہ کی نمبر"
- xkey: ""%s" کے طور پر شناخت."
+ xkey: "\"%s"\ کے طور پر شناخت."
 state_quarantine: "فی الحال قرنطین میں %s فائلیں موجود ہیں."
 tip:
  2FA Sent: "ایک ای میل دو فیکٹر کے توثیق کوڈ پر مشتمل ہے جو آپ کے ای میل پتہ پر بھیج دیا گیا ہے. سامنے کے اختتام تک رسائی حاصل کرنے کے لیے براہ مہربانی ذیل میں اس کوڈ کی تصدیق کریں. اگر آپ نے یہ ای میل موصول نہیں کیا تو، 10 منٹ کے انتظار میں لاگ ان کرنے کی کوشش کریں، اور ایک نیا ای میل کے ساتھ نیا ای میل وصول کرنے کے لیے دوبارہ لاگ ان کریں."

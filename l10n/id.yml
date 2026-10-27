@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2026.10.02).
+# This file: Indonesian language data (last modified: 2026.10.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -138,15 +138,15 @@ config:
  supplementary_cache_options_enable_pdo: "Menentukan apakah akan mencoba menggunakan PDO untuk cache. Default = False."
  supplementary_cache_options_enable_redis: "Menentukan apakah akan mencoba menggunakan Redis untuk cache. Default = False."
  supplementary_cache_options_memcached_host: "Nilai host Memcached. Default = localhost."
- supplementary_cache_options_memcached_port: "Nilai port Memcached. Default = "11211"."
- supplementary_cache_options_pdo_dsn: "Nilai DSN PDO. Default = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+ supplementary_cache_options_memcached_port: "Nilai port Memcached. Default = \"11211\"."
+ supplementary_cache_options_pdo_dsn: "Nilai DSN PDO. Default = \"mysql:dbname=phpmussel;host=localhost;port=3306\"."
  supplementary_cache_options_pdo_password: "Kata sandi PDO."
  supplementary_cache_options_pdo_username: "Nama pengguna PDO."
- supplementary_cache_options_prefix: "Nilai yang ditentukan disini akan ditambahkan ke awal kunci untuk semua entri di cache. Default = "phpMussel_". Ketika beberapa instalasi ada di server, ini dapat berguna untuk menjaga cache mereka terpisah."
+ supplementary_cache_options_prefix: "Nilai yang ditentukan disini akan ditambahkan ke awal kunci untuk semua entri di cache. Default = \"phpMussel_\". Ketika beberapa instalasi ada di server, ini dapat berguna untuk menjaga cache mereka terpisah."
  supplementary_cache_options_redis_database_number: "Nomor basis data Redis. Default = 0. Catat: Tidak dapat menggunakan nilai selain 0 dengan Redis Cluster."
  supplementary_cache_options_redis_host: "Nilai host Redis. Default = localhost."
- supplementary_cache_options_redis_port: "Nilai port Redis. Default = "6379"."
- supplementary_cache_options_redis_timeout: "Nilai batas waktu Redis. Default = "2.5"."
+ supplementary_cache_options_redis_port: "Nilai port Redis. Default = \"6379\"."
+ supplementary_cache_options_redis_timeout: "Nilai batas waktu Redis. Default = \"2.5\"."
  urlscanner: "Konfigurasi untuk pemindai URL."
  urlscanner_cache_time: "Berapa lama (dalam detik) harus hasil API untuk disimpan dalam cache? Default adalah 3600 detik (1 jam)."
  urlscanner_google_api_key: "Memungkinkan pemeriksaan API ke Google Safe Browsing API ketika kunci API diperlukan didefinisikan."
@@ -159,7 +159,7 @@ config:
  virustotal_vt_suspicion_level: "Secara default, phpMussel akan membatasi file dipindai menggunakan API Virus Total untuk file-file yang dianggap "mencurigakan". Anda dapat menyesuaikan pembatasan ini dengan mengubah nilai direktif <code>vt_suspicion_level</code>."
  virustotal_vt_weighting: "Apakah Anda ingin phpMussel menerapkan hasil pemindaian menggunakan API Virus Total sebagai deteksi atau deteksi pembobotan? Direktif ini ada, karena, meskipun memindai file menggunakan mesin-mesin kelipatan (sebagai Virus Total melakukannya) harus menghasilkan tingkat deteksi meningkat (dan demikian lebih banyak file berbahaya tertangkap), juga dapat menghasilkan jumlah yang lebih banyak dari positif palsu, dan demikian, dalam kondisi beberapa, hasil pemindaian dapat digunakan lebih efektif sebagai nilai keyakinan daripada daripada sebagai kesimpulan definitif. Jika nilai 0 digunakan, hasil pemindaian menggunakan API Virus Total akan diaplikasikan sebagai pendeteksian, dan demikian, jika mesin-mesin digunakan oleh Virus Total menandai file dipindai sebagai berbahaya, phpMussel akan menganggap file yang berbahaya. Jika nilai lain yang digunakan, hasil pemindaian menggunakan API Virus Total akan diaplikasikan sebagai deteksi pembobotan, dan demikian, jumlah mesin digunakan oleh Virus Total menandai file dipindai sebagai berbahaya akan berfungsi sebagai nilai keyakinan (atau deteksi pembobotan) untuk jika file dipindai harus dianggap berbahaya oleh phpMussel (nilai digunakan akan mewakili nilai keyakinan minimum atau pembobotan minimum diperlukan untuk dianggap berbahaya). Nilai 0 digunakan secara default."
 confirm:
- Action: "Anda yakin ingin "%s"?"
+ Action: "Anda yakin ingin \"%s"\?"
 field:
  2FA code: "Kode 2FA"
  Clear all: "Cabut semua"
@@ -397,7 +397,7 @@ Signature information: !lazy
  sub_SigTypes: "Hitung berdasarkan metadata tanda tangan"
  sub_Targets: "Hitung berdasarkan vektor ditargetkan"
  sub_Vendors: "Hitung berdasarkan vendor atau sumber tanda tangan"
- xkey: "Diidentifikasi sebagai "%s"."
+ xkey: "Diidentifikasi sebagai \"%s"\."
 state_quarantine: "Ada %s file yang saat ini di karantina."
 tip:
  2FA Sent: "Email yang berisi kode autentikasi dua-faktor telah dikirim ke alamat email Anda. Silakan mengkonfirmasikan kode ini dibawah untuk mendapatkan akses ke bagian depan. Jika Anda tidak menerima email ini, coba keluar, tunggu 10 menit, dan masuk lagi untuk menerima email baru yang berisi kode baru."

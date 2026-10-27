@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bosnian language data (last modified: 2026.10.02).
+# This file: Bosnian language data (last modified: 2026.10.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -138,15 +138,15 @@ config:
  supplementary_cache_options_enable_pdo: "Određuje hoće li pokušati koristiti PDO za keširanje. Zadano = False."
  supplementary_cache_options_enable_redis: "Određuje hoće li pokušati koristiti Redis za keširanje. Zadano = False."
  supplementary_cache_options_memcached_host: "Memcached vrijednost hosta. Zadano = localhost."
- supplementary_cache_options_memcached_port: "Memcached vrijednost porta. Zadano = "11211"."
- supplementary_cache_options_pdo_dsn: "Memcached vrijednost DSN-a. Zadano = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+ supplementary_cache_options_memcached_port: "Memcached vrijednost porta. Zadano = \"11211\"."
+ supplementary_cache_options_pdo_dsn: "Memcached vrijednost DSN-a. Zadano = \"mysql:dbname=phpmussel;host=localhost;port=3306\"."
  supplementary_cache_options_pdo_password: "PDO lozinka."
  supplementary_cache_options_pdo_username: "PDO korisničko ime."
- supplementary_cache_options_prefix: "Ovdje navedena vrijednost će biti dodata svim ključevima za unos u keš memoriju. Zadano = "phpMussel_". Kada postoji više instalacija na istom serveru, ovo može biti korisno za držanje njihovih kešova odvojenih jedan od drugog."
+ supplementary_cache_options_prefix: "Ovdje navedena vrijednost će biti dodata svim ključevima za unos u keš memoriju. Zadano = \"phpMussel_\". Kada postoji više instalacija na istom serveru, ovo može biti korisno za držanje njihovih kešova odvojenih jedan od drugog."
  supplementary_cache_options_redis_database_number: "Redis broj baze podataka. Zadano = 0. Bilješka: Ne mogu koristiti druge vrijednosti osim 0 s Redis klasterom."
  supplementary_cache_options_redis_host: "Redis vrijednost hosta. Zadano = localhost."
- supplementary_cache_options_redis_port: "Redis vrijednost porta. Zadano = "6379"."
- supplementary_cache_options_redis_timeout: "Redis vrijednost vremenskog ograničenja. Zadano = "2.5"."
+ supplementary_cache_options_redis_port: "Redis vrijednost porta. Zadano = \"6379\"."
+ supplementary_cache_options_redis_timeout: "Redis vrijednost vremenskog ograničenja. Zadano = \"2.5\"."
  urlscanner: "Konfiguracija za skener URL-ova."
  urlscanner_cache_time: "Koliko dugo (u sekundama) treba keširati rezultate API pretraga? Zadana vrijednost je 3600 sekundi (1 sat)."
  urlscanner_google_api_key: "Omogućava API pretrage za Google Safe Browsing API kada je definisan potreban API ključ."
@@ -159,7 +159,7 @@ config:
  virustotal_vt_suspicion_level: "Standardno, phpMussel će ograničiti koje datoteke skenira pomoću Virus Total API-ja na one datoteke koje smatra "sumnjivim". Ovo ograničenje možete opcionalno prilagoditi promjenom vrijednosti direktive <code>vt_suspicion_level</code>."
  virustotal_vt_weighting: "phpMussel treba da primijeni rezultate skeniranja Virus Total API-ja kao detekcije ili kao težinu detekcije? Ova direktiva postoji jer, iako bi skeniranje datoteke pomoću više motora (kao što to radi Virus Total) trebalo rezultirati povećanom stopom detekcije (a samim tim i većim brojem uhvaćenih zlonamjernih datoteka), ono također može rezultirati većim brojem lažno pozitivnih, i stoga je u nekim okolnostima možda bolje koristiti rezultate skeniranja kao ocjenu pouzdanosti nego kao definitivan zaključak. Ako se koristi vrijednost 0, rezultati skeniranja Virus Total API-ja će se primijeniti kao detekcije, i stoga, ako bilo koji motor koji koristi Virus Total označi datoteku koja se skenira kao zlonamjernu, phpMussel će smatrati datoteku zlonamjernom. Ako se koristi bilo koja druga vrijednost, rezultati skeniranja Virus Total API-ja bit će primijenjeni kao težina detekcije, i stoga će broj motora koje koristi Virus Total, a koji označavaju datoteku koja se skenira kao zlonamjernu, poslužiti kao ocjena pouzdanosti (ili težina detekcije) za provjeru da li phpMussel treba smatrati datoteku koja se skenira zlonamjernom (korištena vrijednost će predstavljati minimalni rezultat pouzdanosti ili težinu potrebnu da bi se smatralo zlonamjernim). Vrijednost 0 se koristi kao standard."
 confirm:
- Action: "Jeste li sigurni da želite "%s"?"
+ Action: "Jeste li sigurni da želite \"%s"\?"
 field:
  2FA code: "2FA kod"
  Clear all: "Obriši sve"
@@ -397,7 +397,7 @@ Signature information: !lazy
  sub_SigTypes: "Brojanje prema metapodacima potpisa"
  sub_Targets: "Brojanje prema ciljanom vektoru"
  sub_Vendors: "Brojanje prema dobavljaču potpisa ili izvoru"
- xkey: "Identificiran kao "%s"."
+ xkey: "Identificiran kao \"%s"\."
 state_quarantine:
  - "Trenutno je %s datoteka u karantinu."
  - "Trenutno su %s datoteke u karantinu."

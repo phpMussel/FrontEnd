@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Gujarati language data (last modified: 2026.10.02).
+# This file: Gujarati language data (last modified: 2026.10.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -137,15 +137,15 @@ config:
  supplementary_cache_options_enable_pdo: "કેશીંગ માટે APCu નો ઉપયોગ કરવાનો પ્રયાસ કરવો કે કેમ. ડિફૉલ્ટ = False."
  supplementary_cache_options_enable_redis: "કેશીંગ માટે Redis નો ઉપયોગ કરવાનો પ્રયાસ કરવો કે કેમ. ડિફૉલ્ટ = False."
  supplementary_cache_options_memcached_host: "Memcached હોસ્ટ મૂલ્ય. ડિફૉલ્ટ = localhost."
- supplementary_cache_options_memcached_port: "Memcached પોર્ટ મૂલ્ય. ડિફૉલ્ટ = "11211"."
- supplementary_cache_options_pdo_dsn: "PDO DSN મૂલ્ય. ડિફૉલ્ટ = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+ supplementary_cache_options_memcached_port: "Memcached પોર્ટ મૂલ્ય. ડિફૉલ્ટ = \"11211\"."
+ supplementary_cache_options_pdo_dsn: "PDO DSN મૂલ્ય. ડિફૉલ્ટ = \"mysql:dbname=phpmussel;host=localhost;port=3306\"."
  supplementary_cache_options_pdo_password: "PDO પાસવર્ડ."
  supplementary_cache_options_pdo_username: "PDO વપરાશકર્તા નામ."
- supplementary_cache_options_prefix: "અહીં ઉલ્લેખિત મૂલ્ય બધી કેશ એન્ટ્રી કીમાં આગળ મૂકવામાં આવશે. ડિફૉલ્ટ = "phpMussel_". જ્યારે એક જ સર્વર પર બહુવિધ સ્થાપનો અસ્તિત્વ ધરાવે છે, ત્યારે આ તેમના કેશને એકબીજાથી અલગ રાખવા માટે ઉપયોગી થઈ શકે છે."
+ supplementary_cache_options_prefix: "અહીં ઉલ્લેખિત મૂલ્ય બધી કેશ એન્ટ્રી કીમાં આગળ મૂકવામાં આવશે. ડિફૉલ્ટ = \"phpMussel_\". જ્યારે એક જ સર્વર પર બહુવિધ સ્થાપનો અસ્તિત્વ ધરાવે છે, ત્યારે આ તેમના કેશને એકબીજાથી અલગ રાખવા માટે ઉપયોગી થઈ શકે છે."
  supplementary_cache_options_redis_database_number: "Redis ડેટાબેઝ નંબર. ડિફૉલ્ટ = 0. નૉૅધ: Redis ક્લસ્ટર સાથે 0 કરતાં અન્ય મૂલ્યોનો ઉપયોગ કરી શકાતો નથી."
  supplementary_cache_options_redis_host: "Redis હોસ્ટ મૂલ્ય. ડિફૉલ્ટ = localhost."
- supplementary_cache_options_redis_port: "Redis પોર્ટ મૂલ્ય. ડિફૉલ્ટ = "6379"."
- supplementary_cache_options_redis_timeout: "Redis સમય સમાપ્તિ મૂલ્ય. ડિફૉલ્ટ = "2.5"."
+ supplementary_cache_options_redis_port: "Redis પોર્ટ મૂલ્ય. ડિફૉલ્ટ = \"6379\"."
+ supplementary_cache_options_redis_timeout: "Redis સમય સમાપ્તિ મૂલ્ય. ડિફૉલ્ટ = \"2.5\"."
  urlscanner: "URL સ્કેનર માટે રૂપરેખાંકન."
  urlscanner_cache_time: "API લુકઅપના પરિણામો કેટલા સમય સુધી (સેકન્ડમાં) કેશ કરવા જોઈએ? ડિફૉલ્ટ 3600 સેકન્ડ (1 કલાક) છે."
  urlscanner_google_api_key: "જ્યારે જરૂરી API કી વ્યાખ્યાયિત કરવામાં આવે ત્યારે Google Safe Browsing API પર API લુકઅપને સક્ષમ કરે છે."
@@ -158,7 +158,7 @@ config:
  virustotal_vt_suspicion_level: "ડિફૉલ્ટ તરીકે, phpMussel જે ફાઇલોને તે "શંકાસ્પદ" માને છે તે ફાઇલોને Virus Total API નો ઉપયોગ કરીને સ્કેન કરે છે તે પ્રતિબંધિત કરશે. તમે <code>vt_suspicion_level</code> નિર્દેશની કિંમત બદલીને વૈકલ્પિક રીતે આ પ્રતિબંધને સમાયોજિત કરી શકો છો."
  virustotal_vt_weighting: "શું phpMussel એ Virus Total API નો ઉપયોગ કરીને ડિટેક્શન તરીકે અથવા ડિટેક્શન વેઇટીંગ તરીકે સ્કેનિંગના પરિણામો લાગુ કરવા જોઈએ? આ નિર્દેશ અસ્તિત્વમાં છે, કારણ કે બહુવિધ એન્જિનનો ઉપયોગ કરીને (જેમ કે Virus Total કરે છે) ફાઇલને સ્કેન કરવાથી ડિટેક્શન રેટમાં વધારો થવો જોઈએ (અને તેથી વધુ સંખ્યામાં દૂષિત ફાઇલો પકડાય છે), પરંતુ તે વધુ સંખ્યામાં ખોટા હકારાત્મકમાં પરિણમી શકે છે, અને તેથી, અમુક સંજોગોમાં, સ્કેનનાં પરિણામોનો ઉપયોગ ચોક્કસ નિષ્કર્ષ તરીકે કરવાને બદલે આત્મવિશ્વાસના સ્કોર તરીકે કરવો વધુ સારું રહેશે. જો 0 નું મૂલ્ય વપરાય છે, તો Virus Total API નો ઉપયોગ કરીને સ્કેનિંગના પરિણામો ડિટેક્શનો તરીકે લાગુ કરવામાં આવશે., અને તેથી, જો Virus Total દ્વારા ઉપયોગમાં લેવાતું કોઈપણ એન્જિન દૂષિત હોવા તરીકે સ્કેન કરવામાં આવેલી ફાઇલને ફ્લેગ કરે છે, તો phpMussel ફાઇલને દૂષિત ગણશે. જો કોઈ અન્ય મૂલ્યનો ઉપયોગ કરવામાં આવે છે, તો Virus Total API નો ઉપયોગ કરીને સ્કેનિંગના પરિણામો ડિટેક્શન વેઇટીંગ તરીકે લાગુ કરવામાં આવશે, અને તેથી, Virus Total દ્વારા ઉપયોગમાં લેવાતા એન્જિનોની સંખ્યા કે જે સ્કેન કરવામાં આવી રહેલી ફાઇલને દૂષિત તરીકે ફ્લેગ કરે છે તે phpMussel દ્વારા સ્કેન કરવામાં આવી રહેલી ફાઇલને દૂષિત ગણવી જોઈએ કે નહીં તે માટે કોન્ફિડન્સ સ્કોર (અથવા ડિટેક્શન વેઇટિંગ) તરીકે કામ કરશે (વપરાયેલ મૂલ્ય દૂષિત ગણવા માટે જરૂરી ન્યૂનતમ આત્મવિશ્વાસ સ્કોર અથવા વજનનું પ્રતિનિધિત્વ કરશે). 0 નું મૂલ્ય ડિફૉલ્ટ તરીકે વપરાય છે."
 confirm:
- Action: "શું તમે ખરેખર "%s" કરવા માંગો છો?"
+ Action: "શું તમે ખરેખર \"%s"\ કરવા માંગો છો?"
 field:
  2FA code: "2FA કોડ"
  Clear all: "બધું સાફ કરો"
@@ -396,7 +396,7 @@ Signature information: !lazy
  sub_SigTypes: "સિગ્નેચર મેટાડેટા દ્વારા ગણતરી કરો"
  sub_Targets: "લક્ષિત વેક્ટર દ્વારા ગણતરી કરો"
  sub_Vendors: "સિગ્નેચર વિક્રેતા અથવા સ્ત્રોત દ્વારા ગણતરી કરો"
- xkey: ""%s" તરીકે ઓળખાય છે."
+ xkey: "\"%s"\ તરીકે ઓળખાય છે."
 state_quarantine:
  - "હાલમાં %s ફાઇલ ક્વોરેન્ટાઇનમાં છે."
  - "હાલમાં %s ફાઇલો ક્વોરેન્ટાઇનમાં છે."

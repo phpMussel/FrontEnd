@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese language data (last modified: 2026.10.02).
+# This file: Portuguese language data (last modified: 2026.10.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -210,21 +210,21 @@ config:
  supplementary_cache_options_enable_pdo: "Especifica se deve tentar usar o PDO para armazenamento em cache. Padrão = False."
  supplementary_cache_options_enable_redis: "Especifica se deve tentar usar o Redis para armazenamento em cache. Padrão = False."
  supplementary_cache_options_memcached_host: "Valor da host do Memcached. Padrão = localhost."
- supplementary_cache_options_memcached_port: "Valor da porta do Memcached. Padrão = "11211"."
- supplementary_cache_options_pdo_dsn: "Valor DSN do PDO. Padrão = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+ supplementary_cache_options_memcached_port: "Valor da porta do Memcached. Padrão = \"11211\"."
+ supplementary_cache_options_pdo_dsn: "Valor DSN do PDO. Padrão = \"mysql:dbname=phpmussel;host=localhost;port=3306\"."
  supplementary_cache_options_pdo_password: "A senha do PDO."
  supplementary_cache_options_pdo_username:
   pt-BR: "O nome de usuário do PDO."
   pt-PT: "O nome de utilizador do PDO."
  supplementary_cache_options_prefix:
-  pt-BR: "O valor especificado aqui será adicionado ao começo das chaves para todas as entradas de cache. Padrão = "phpMussel_". Quando existem várias instalações no mesmo servidor, isso pode ser útil para manter seus caches separados uns dos outros."
-  pt-PT: "O valor especificado aqui será adicionado ao começo das chaves para todas as entradas de cache. Padrão = "phpMussel_". Quando existem várias instalações no mesmo servidor, isto pode ser útil para manter os seus caches separados uns dos outros."
+  pt-BR: "O valor especificado aqui será adicionado ao começo das chaves para todas as entradas de cache. Padrão = \"phpMussel_\". Quando existem várias instalações no mesmo servidor, isso pode ser útil para manter seus caches separados uns dos outros."
+  pt-PT: "O valor especificado aqui será adicionado ao começo das chaves para todas as entradas de cache. Padrão = \"phpMussel_\". Quando existem várias instalações no mesmo servidor, isto pode ser útil para manter os seus caches separados uns dos outros."
  supplementary_cache_options_redis_database_number:
   pt-BR: "Número do banco de dados Redis. Padrão = 0. Nota: Não é possível usar valores diferentes de 0 com Redis Cluster."
   pt-PT: "Número da base de dados Redis. Padrão = 0. Nota: Não é possível utilizar valores diferentes de 0 com o Redis Cluster."
  supplementary_cache_options_redis_host: "Valor da host do Redis. Padrão = localhost."
- supplementary_cache_options_redis_port: "Valor da porta do Redis. Padrão = "6379"."
- supplementary_cache_options_redis_timeout: "Valor de tempo limite do Redis. Padrão = "2.5"."
+ supplementary_cache_options_redis_port: "Valor da porta do Redis. Padrão = \"6379\"."
+ supplementary_cache_options_redis_timeout: "Valor de tempo limite do Redis. Padrão = \"2.5\"."
  urlscanner: "Configuração para o analisador de URL."
  urlscanner_cache_time: "Quanto tempo (em segundos) devem os resultados da API ser armazenados em cache? Padrão é 3600 segundos (1 hora)."
  urlscanner_google_api_key: "Permite o uso do Google Safe Browsing API quando a API chave necessária está definida."
@@ -239,7 +239,7 @@ config:
   pt-BR: "Deve phpMussel aplicar os resultados de analisando usando o Virus Total API como detecções ou como detecção ponderação? Esta directiva existe, porque, embora verificando um arquivo usando múltiplos mecanismos (como Virus Total faz) deve resultar em um aumento da taxa de detecção (e por conseguinte em um maior número de arquivos maliciosos detectados), isto também pode resultar em um aumento número de falsos positivos, e por conseguinte, em algumas circunstâncias, os resultados de análise pode ser melhor utilizado como uma pontuação de confiança e não como uma conclusão definitiva. Se um valor de 0 é usado, os resultados de análise usando o Virus Total API será aplicado como detecções, e por conseguinte, Se qualquer mecanismo usado pelo Virus Total marca o arquivo que está sendo analisado como sendo malicioso, phpMussel considerará o arquivo a ser malicioso. Se qualquer outro valor é usado, os resultados de análise usando o Virus Total API será aplicado como detecção ponderação, e por conseguinte, o número de mecanismos utilizados pela Virus Total que marcar o arquivo que está sendo analisado como sendo malicioso servirá como uma pontuação de confiança (ou ponderação de detecção) para se ou não o arquivo que está sendo analisado deve ser considerado malicioso por phpMussel (o valor utilizado representará o mínima pontuação de confiança ou peso requerido a fim de ser considerado malicioso). Um valor de 0 é usado por padrão."
   pt-PT: "Deve phpMussel aplicar os resultados de analisando utilizando o Virus Total API como deteções ou como deteção ponderação? Esta directiva existe, porque, embora verificando um arquivo utilizando múltiplos mecanismos (como Virus Total faz) deve resultar num aumento da taxa de deteção (e por conseguinte em um maior número de arquivos maliciosos detectados), isto também pode resultar em um aumento número de falsos positivos, e por conseguinte, em algumas circunstâncias, os resultados de análise pode ser melhor utilizado como uma pontuação de confiança e não como uma conclusão definitiva. Se um valor de 0 é usado, os resultados de análise usando o Virus Total API será aplicado como deteções, e por conseguinte, Se qualquer mecanismo usado pelo Virus Total marca o arquivo que está a ser analisado como sendo malicioso, phpMussel considerará o arquivo a ser malicioso. Se qualquer outro valor é usado, os resultados de análise usando o Virus Total API será aplicado como deteção ponderação, e por conseguinte, o número de mecanismos utilizados pela Virus Total que marcar o arquivo que está sendo analisado como sendo malicioso servirá como uma pontuação de confiança (ou ponderação de deteção) para se ou não o arquivo que está sendo analisado deve ser considerado malicioso por phpMussel (o valor utilizado representará o mínima pontuação de confiança ou peso requerido a fim de ser considerado malicioso). Um valor de 0 é usado por padrão."
 confirm:
- Action: "Você tem certeza de que deseja "%s"?"
+ Action: "Você tem certeza de que deseja \"%s"\?"
 field:
  2FA code: "Código 2FA"
  Clear all: "Cancelar tudo"
@@ -543,7 +543,7 @@ Signature information: !lazy
  sub_SigTypes: "Contar por metadados de assinatura"
  sub_Targets: "Contar por vetor alvejados"
  sub_Vendors: "Contar por o fornecedor ou fonte de assinatura"
- xkey: "Identificado como "%s"."
+ xkey: "Identificado como \"%s"\."
 state_quarantine:
  - "Atualmente existe %s arquivo em quarentena."
  - "Atualmente existem %s arquivos em quarentena."

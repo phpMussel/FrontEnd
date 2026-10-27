@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malayalam language data (last modified: 2026.10.02).
+# This file: Malayalam language data (last modified: 2026.10.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -137,15 +137,15 @@ config:
  supplementary_cache_options_enable_pdo: "കാഷിംഗിനായി PDO ഉപയോഗിക്കാൻ ശ്രമിക്കണോ എന്ന് വ്യക്തമാക്കുന്നു. സ്ഥിരസ്ഥിതി = False."
  supplementary_cache_options_enable_redis: "കാഷിംഗിനായി Redis ഉപയോഗിക്കാൻ ശ്രമിക്കണോ എന്ന് വ്യക്തമാക്കുന്നു. സ്ഥിരസ്ഥിതി = False."
  supplementary_cache_options_memcached_host: "Memcached ഹോസ്റ്റ് മൂല്യം. സ്ഥിരസ്ഥിതി = localhost."
- supplementary_cache_options_memcached_port: "Memcached പോർട്ട് മൂല്യം. സ്ഥിരസ്ഥിതി = "11211"."
- supplementary_cache_options_pdo_dsn: "PDO DSN മൂല്യം. സ്ഥിരസ്ഥിതി = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+ supplementary_cache_options_memcached_port: "Memcached പോർട്ട് മൂല്യം. സ്ഥിരസ്ഥിതി = \"11211\"."
+ supplementary_cache_options_pdo_dsn: "PDO DSN മൂല്യം. സ്ഥിരസ്ഥിതി = \"mysql:dbname=phpmussel;host=localhost;port=3306\"."
  supplementary_cache_options_pdo_password: "PDO പാസ്‌വേഡ്."
  supplementary_cache_options_pdo_username: "PDO ഉപയോക്തൃനാമം."
- supplementary_cache_options_prefix: "ഇവിടെ വ്യക്തമാക്കിയിരിക്കുന്ന മൂല്യം എല്ലാ കാഷെ എൻട്രി കീകൾക്കും മുമ്പായി ചേർക്കപ്പെടും. സ്ഥിരസ്ഥിതി = "phpMussel_". ഒരേ സെർവറിൽ ഒന്നിലധികം ഇൻസ്റ്റാളേഷനുകൾ നിലവിലുണ്ടെങ്കിൽ, അവയുടെ കാഷെകൾ പരസ്പരം വേർതിരിച്ച് സൂക്ഷിക്കുന്നതിന് ഇത് ഉപയോഗപ്രദമാകും."
+ supplementary_cache_options_prefix: "ഇവിടെ വ്യക്തമാക്കിയിരിക്കുന്ന മൂല്യം എല്ലാ കാഷെ എൻട്രി കീകൾക്കും മുമ്പായി ചേർക്കപ്പെടും. സ്ഥിരസ്ഥിതി = \"phpMussel_\". ഒരേ സെർവറിൽ ഒന്നിലധികം ഇൻസ്റ്റാളേഷനുകൾ നിലവിലുണ്ടെങ്കിൽ, അവയുടെ കാഷെകൾ പരസ്പരം വേർതിരിച്ച് സൂക്ഷിക്കുന്നതിന് ഇത് ഉപയോഗപ്രദമാകും."
  supplementary_cache_options_redis_database_number: "Redis ഡാറ്റാബേസ് നമ്പർ. സ്ഥിരസ്ഥിതി = 0. കുറിപ്പ്: Redis Cluster-ൽ 0 ഒഴികെയുള്ള മൂല്യങ്ങൾ ഉപയോഗിക്കാൻ കഴിയില്ല."
  supplementary_cache_options_redis_host: "Redis ഹോസ്റ്റ് മൂല്യം. സ്ഥിരസ്ഥിതി = localhost."
- supplementary_cache_options_redis_port: "Redis പോർട്ട് മൂല്യം. സ്ഥിരസ്ഥിതി = "6379"."
- supplementary_cache_options_redis_timeout: "Redis കാലഹരണപ്പെടൽ മൂല്യം. സ്ഥിരസ്ഥിതി = "2.5"."
+ supplementary_cache_options_redis_port: "Redis പോർട്ട് മൂല്യം. സ്ഥിരസ്ഥിതി = \"6379\"."
+ supplementary_cache_options_redis_timeout: "Redis കാലഹരണപ്പെടൽ മൂല്യം. സ്ഥിരസ്ഥിതി = \"2.5\"."
  urlscanner: "URL സ്കാനറിനായുള്ള കോൺഫിഗറേഷൻ."
  urlscanner_cache_time: "API ലുക്കപ്പുകളുടെ ഫലങ്ങൾ എത്ര സമയത്തേക്ക് (സെക്കൻഡുകളിൽ) കാഷെ ചെയ്യണം? സ്ഥിരസ്ഥിതി 3600 സെക്കൻഡ് (1 മണിക്കൂർ) ആണ്."
  urlscanner_google_api_key: "ആവശ്യമായ API കീ നിർവചിക്കുമ്പോൾ Google സുരക്ഷിത ബ്രൗസിംഗ് API-യിലേക്കുള്ള API ലുക്കപ്പുകൾ പ്രാപ്തമാക്കുന്നു."
@@ -158,7 +158,7 @@ config:
  virustotal_vt_suspicion_level: "ഡിഫോൾട്ടായി, phpMussel സംശയാസ്പദമായി കരുതുന്ന ഫയലുകൾ മാത്രമേ Virus Total API ഉപയോഗിച്ച് സ്കാൻ ചെയ്യുകയുള്ളൂ. <code>vt_suspicion_level</code> നിർദ്ദേശത്തിന്റെ മൂല്യം മാറ്റിക്കൊണ്ട് നിങ്ങൾക്ക് ഈ നിയന്ത്രണം ഓപ്ഷണലായി ക്രമീകരിക്കാൻ കഴിയും."
  virustotal_vt_weighting: "Virus Total API സ്കാൻ ഫലങ്ങൾ കണ്ടെത്തലുകൾ ആയിട്ടാണോ അതോ ഭാരം ആയിട്ടാണോ ഉപയോഗിക്കേണ്ടത്? ഒന്നിലധികം എഞ്ചിനുകൾ ഉപയോഗിച്ച് ഒരു ഫയൽ സ്കാൻ ചെയ്യുന്നത് (Virus Total ചെയ്യുന്നതുപോലെ) കണ്ടെത്തൽ നിരക്ക് വർദ്ധിപ്പിക്കുന്നതിലേക്ക് നയിക്കണം (അതിനാൽ കൂടുതൽ ക്ഷുദ്ര ഫയലുകൾ പിടിക്കപ്പെടുന്നതിനും കാരണമാകുന്നു), പക്ഷേ ഇത് കൂടുതൽ തെറ്റായ പോസിറ്റീവുകൾക്കും കാരണമാകും, അതിനാൽ, ചില സാഹചര്യങ്ങളിൽ, സ്കാൻ ഫലങ്ങൾ ഒരു അന്തിമ നിഗമനമായി ഉപയോഗിക്കുന്നതിനുപകരം ഒരു ആത്മവിശ്വാസ സ്കോറായി ഉപയോഗിക്കുന്നതാണ് നല്ലത്. 0 എന്ന മൂല്യം ഉപയോഗിച്ചാൽ, Virus Total API സ്കാൻ ഫലങ്ങൾ കണ്ടെത്തലുകളായി പ്രയോഗിക്കും, അതിനാൽ, Virus Total ഉപയോഗിക്കുന്ന ഏതെങ്കിലും എഞ്ചിൻ സ്കാൻ ചെയ്യുന്ന ഫയലിനെ ക്ഷുദ്രകരമായി ഫ്ലാഗ് ചെയ്താൽ, phpMussel ഫയലിനെ ക്ഷുദ്രകരമായി കണക്കാക്കും. മറ്റേതെങ്കിലും മൂല്യം ഉപയോഗിക്കുകയാണെങ്കിൽ, Virus Total API സ്കാൻ ഫലങ്ങൾ ഭാരമായി പ്രയോഗിക്കും, അതിനാൽ, ഫയലിനെ ക്ഷുദ്രകരമായി ഫ്ലാഗ് ചെയ്യുന്ന Virus Total ഉപയോഗിക്കുന്ന എഞ്ചിനുകളുടെ എണ്ണം phpMussel സ്കാൻ ചെയ്യുന്ന ഫയലിനെ ക്ഷുദ്രകരമായി കണക്കാക്കണമോ എന്നതിനുള്ള ആത്മവിശ്വാസ സ്കോറായി വർത്തിക്കും (ഉപയോഗിക്കുന്ന മൂല്യം, ക്ഷുദ്രകരമായി കണക്കാക്കുന്നതിന് ആവശ്യമായ ഏറ്റവും കുറഞ്ഞ ആത്മവിശ്വാസ സ്‌കോറിനെയോ ഭാരത്തെയോ പ്രതിനിധീകരിക്കും). സ്ഥിരസ്ഥിതിയായി 0 എന്ന മൂല്യം ഉപയോഗിക്കുന്നു."
 confirm:
- Action: ""%s" ചെയ്യണമെന്ന് നിങ്ങൾക്ക് ഉറപ്പാണോ?"
+ Action: "\"%s"\ ചെയ്യണമെന്ന് നിങ്ങൾക്ക് ഉറപ്പാണോ?"
 field:
  2FA code: "2FA കോഡ്"
  Clear all: "എല്ലാം മായ്‌ക്കുക"
@@ -396,7 +396,7 @@ Signature information: !lazy
  sub_SigTypes: "ഒപ്പ് മെറ്റാഡാറ്റ അനുസരിച്ച് കണക്കാക്കിയത്"
  sub_Targets: "ലക്ഷ്യമിട്ട വെക്റ്റർ അനുസരിച്ച് കണക്കാക്കിയത്"
  sub_Vendors: "ഒപ്പ് വിൽപ്പനക്കാരൻ അല്ലെങ്കിൽ ഉറവിടം അനുസരിച്ച് കണക്കാക്കിയത്"
- xkey: ""%s" ആയി തിരിച്ചറിഞ്ഞു."
+ xkey: "\"%s"\ ആയി തിരിച്ചറിഞ്ഞു."
 state_quarantine:
  - "%s ഫയൽ നിലവിൽ ക്വാറന്റൈനിലാണ്."
  - "%s ഫയലുകൾ നിലവിൽ ക്വാറന്റൈനിലാണ്."

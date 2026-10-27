@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2026.10.02).
+# This file: Korean language data (last modified: 2026.10.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -138,15 +138,15 @@ config:
  supplementary_cache_options_enable_pdo: "캐싱에 PDO를 사용할지 여부를 지정합니다. Default (기본값) = False."
  supplementary_cache_options_enable_redis: "캐싱에 Redis를 사용할지 여부를 지정합니다. Default (기본값) = False."
  supplementary_cache_options_memcached_host: "Memcached 호스트 값. Default (기본값) = localhost."
- supplementary_cache_options_memcached_port: "Memcached 포트 값. Default (기본값) = "11211"."
- supplementary_cache_options_pdo_dsn: "PDO DSN 값. Default (기본값) = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+ supplementary_cache_options_memcached_port: "Memcached 포트 값. Default (기본값) = \"11211\"."
+ supplementary_cache_options_pdo_dsn: "PDO DSN 값. Default (기본값) = \"mysql:dbname=phpmussel;host=localhost;port=3306\"."
  supplementary_cache_options_pdo_password: "PDO 암호."
  supplementary_cache_options_pdo_username: "PDO 사용자 이름."
- supplementary_cache_options_prefix: "여기에 지정된 값은 모든 캐시 항목 키 앞에 추가됩니다. Default (기본값) = "phpMussel_". 동일한 서버에 여러 설치가 있는 경우, 캐시를 서로 분리하여 유지하는 데 유용할 수 있습니다."
+ supplementary_cache_options_prefix: "여기에 지정된 값은 모든 캐시 항목 키 앞에 추가됩니다. Default (기본값) = \"phpMussel_\". 동일한 서버에 여러 설치가 있는 경우, 캐시를 서로 분리하여 유지하는 데 유용할 수 있습니다."
  supplementary_cache_options_redis_database_number: "Redis 데이터베이스 번호입니다. Default (기본값) = 0. 참고: Redis 클러스터에서는 0 이외의 값을 사용할 수 없습니다."
  supplementary_cache_options_redis_host: "Redis 호스트 값. Default (기본값) = localhost."
- supplementary_cache_options_redis_port: "Redis 포트 값. Default (기본값) = "6379"."
- supplementary_cache_options_redis_timeout: "Redis 시간 초과 값. Default (기본값) = "2.5"."
+ supplementary_cache_options_redis_port: "Redis 포트 값. Default (기본값) = \"6379\"."
+ supplementary_cache_options_redis_timeout: "Redis 시간 초과 값. Default (기본값) = \"2.5\"."
  urlscanner: "URL 스캐너 설정."
  urlscanner_cache_time: "API 조회의 결과를 얼마나 캐시할지 (초 단위)? 기본값은 3600 초 (한 시간)."
  urlscanner_google_api_key: "필요한 API 키가 정의되면, API는 Google Safe Browsing API 조회가 활성화됩니다."
@@ -159,7 +159,7 @@ config:
  virustotal_vt_suspicion_level: "기본 설정은 phpMussel이 Virus Total API를 사용하여 스캔 파일 (疑がわし 주물)에 제한이 있습니다. <code>vt_suspicion_level</code> 지시문을 편집 할 더, 이 제한을 변경할 수 있습니다."
  virustotal_vt_weighting: "phpMussel이 Virus Total API를 사용한 스캐닝 결과를 감지으로 대우하거나, 검색 가중치로 취급 할 것인가? 여러 엔진 (Virus Total처럼)을 사용한 스캐닝은 검색 속도 향상 (더 많은 악성 코드가 감지)을 가져다 한편 오진의 증가도 발생하므로이 지시어가 존재합니다. 따라서 스캐닝 결과는 결정적인 판단이 아니라 신뢰 점수로 사용하는 것이 적절한 경우도 있습니다. 값이 0이면 Virus Total API를 사용한 검색은 검색으로 처리되어 Virus Total 엔진이 악성 코드 및 플래그가 지정된 파일은 phpMussel도 악성 코드로 판단합니다. 다른 값의 경우 결과는 검출 가중되고, 스캔 된 파일이 악성 코드 여부 phpMussel가 결정하는 신뢰 점수 (또는 감지 가중치)입니다 (값은 악성이라고 판단하기위한 최소 신뢰 점수 또는 가중치). 기본값은 0입니다."
 confirm:
- Action: ""%s"하시겠습니까?"
+ Action: "\"%s"\하시겠습니까?"
 field:
  2FA code: "2FA 코드"
  Clear all: "모두 취소"
@@ -397,7 +397,7 @@ Signature information: !lazy
  sub_SigTypes: "서명 메타 데이터로 계산"
  sub_Targets: "타겟 벡터로 계산"
  sub_Vendors: "서명 공급 업체 또는 출처 별 계산"
- xkey: ""%s"로 식별됩니다."
+ xkey: "\"%s"\로 식별됩니다."
 state_quarantine: "현재 %s 개의 파일이 격리 보관소에 있습니다."
 tip:
  2FA Sent: "2FA 코드가 포함 된 이메일이 귀하의 이메일 주소로 발송되었습니다. 프런트 엔드에 액세스하려면 아래 코드를 확인하십시오. 이 이메일을받지 못한 경우 로그 아웃을 시도하고 10 분을 기다린 후 다시 로그인하여 새 코드가 포함 된 새 이메일을 수신 할 수 있습니다."

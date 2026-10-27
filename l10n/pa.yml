@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Punjabi language data (last modified: 2026.10.02).
+# This file: Punjabi language data (last modified: 2026.10.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -138,14 +138,14 @@ config:
  supplementary_cache_options_enable_redis: "ਨਿਰਧਾਰਿਤ ਕਰਦਾ ਹੈ ਕਿ ਕੈਚਿੰਗ ਲਈ Redis ਦੀ ਵਰਤੋਂ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਨੀ ਹੈ ਜਾਂ ਨਹੀਂ। ਡਿਫਾਲਟ = False."
  supplementary_cache_options_memcached_host: "Memcached ਹੋਸਟ ਮੁੱਲ। ਡਿਫਾਲਟ = localhost."
  supplementary_cache_options_memcached_port: "Memcached ਪੋਰਟ ਮੁੱਲ। ਡਿਫਾਲਟ = 11211."
- supplementary_cache_options_pdo_dsn: "PDO DSN ਮੁੱਲ। ਡਿਫਾਲਟ = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+ supplementary_cache_options_pdo_dsn: "PDO DSN ਮੁੱਲ। ਡਿਫਾਲਟ = \"mysql:dbname=phpmussel;host=localhost;port=3306\"."
  supplementary_cache_options_pdo_password: "PDO ਪਾਸਵਰਡ।"
  supplementary_cache_options_pdo_username: "PDO ਉਪਭੋਗਤਾ ਨਾਮ।"
- supplementary_cache_options_prefix: "ਇੱਥੇ ਦਰਸਾਏ ਗਏ ਮੁੱਲ ਨੂੰ ਸਾਰੀਆਂ ਕੈਸ਼ ਐਂਟਰੀ ਕੁੰਜੀਆਂ ਲਈ ਅੱਗੇ ਰੱਖਿਆ ਜਾਵੇਗਾ। ਡਿਫਾਲਟ = "phpMussel_". ਜਦੋਂ ਇੱਕੋ ਸਰਵਰ 'ਤੇ ਕਈ ਇੰਸਟਾਲੇਸ਼ਨ ਮੌਜੂਦ ਹੁੰਦੀ ਹੈ, ਤਾਂ ਇਹ ਉਹਨਾਂ ਦੇ ਕੈਚਾਂ ਨੂੰ ਇੱਕ ਦੂਜੇ ਤੋਂ ਵੱਖ ਰੱਖਣ ਲਈ ਲਾਭਦਾਇਕ ਹੋ ਸਕਦਾ ਹੈ।"
+ supplementary_cache_options_prefix: "ਇੱਥੇ ਦਰਸਾਏ ਗਏ ਮੁੱਲ ਨੂੰ ਸਾਰੀਆਂ ਕੈਸ਼ ਐਂਟਰੀ ਕੁੰਜੀਆਂ ਲਈ ਅੱਗੇ ਰੱਖਿਆ ਜਾਵੇਗਾ। ਡਿਫਾਲਟ = \"phpMussel_\". ਜਦੋਂ ਇੱਕੋ ਸਰਵਰ 'ਤੇ ਕਈ ਇੰਸਟਾਲੇਸ਼ਨ ਮੌਜੂਦ ਹੁੰਦੀ ਹੈ, ਤਾਂ ਇਹ ਉਹਨਾਂ ਦੇ ਕੈਚਾਂ ਨੂੰ ਇੱਕ ਦੂਜੇ ਤੋਂ ਵੱਖ ਰੱਖਣ ਲਈ ਲਾਭਦਾਇਕ ਹੋ ਸਕਦਾ ਹੈ।"
  supplementary_cache_options_redis_database_number: "Redis ਡਾਟਾਬੇਸ ਨੰਬਰ। ਡਿਫਾਲਟ = 0. ਨੋਟ: Redis Cluster ਨਾਲ 0 ਤੋਂ ਇਲਾਵਾ ਹੋਰ ਮੁੱਲਾਂ ਦੀ ਵਰਤੋਂ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕਦੀ।"
  supplementary_cache_options_redis_host: "Redis ਹੋਸਟ ਮੁੱਲ। ਡਿਫਾਲਟ = localhost."
  supplementary_cache_options_redis_port: "Redis ਪੋਰਟ ਮੁੱਲ। ਡਿਫਾਲਟ = 6379."
- supplementary_cache_options_redis_timeout: "Redis ਸਮਾਂ ਸਮਾਪਤ ਮੁੱਲ। ਡਿਫਾਲਟ = "2.5"."
+ supplementary_cache_options_redis_timeout: "Redis ਸਮਾਂ ਸਮਾਪਤ ਮੁੱਲ। ਡਿਫਾਲਟ = \"2.5\"."
  urlscanner: "URL ਸਕੈਨਰ ਲਈ ਕੌਂਫਿਗਰੇਸ਼ਨ।"
  urlscanner_cache_time: "API ਲੁੱਕਅਪ ਦੇ ਨਤੀਜੇ ਕਿੰਨੇ ਸਮੇਂ ਲਈ (ਸਕਿੰਟਾਂ ਵਿੱਚ) ਕੈਸ਼ ਕੀਤੇ ਜਾਣੇ ਚਾਹੀਦੇ ਹਨ? ਡਿਫੌਲਟ 3600 ਸਕਿੰਟ (1 ਘੰਟਾ) ਹੈ।"
  urlscanner_google_api_key: "ਜਦੋਂ ਲੋੜੀਂਦੀ API ਕੁੰਜੀ ਪਰਿਭਾਸ਼ਿਤ ਕੀਤੀ ਜਾਂਦੀ ਹੈ ਤਾਂ Google ਸੁਰੱਖਿਅਤ ਬ੍ਰਾਊਜ਼ਿੰਗ API ਲਈ API ਖੋਜਾਂ ਨੂੰ ਸਮਰੱਥ ਬਣਾਉਂਦਾ ਹੈ।"
@@ -158,7 +158,7 @@ config:
  virustotal_vt_suspicion_level: "ਡਿਫਾਲਟ ਦੇ ਤੌਰ ਤੇ, phpMussel ਸਿਰਫ ਉਹਨਾਂ ਫਾਈਲਾਂ ਨੂੰ ਸਕੈਨ ਕਰਨ ਲਈ Virus Total API ਦੀ ਵਰਤੋਂ ਕਰੇਗਾ ਜਿਨ੍ਹਾਂ ਨੂੰ ਇਹ ਸ਼ੱਕੀ ਸਮਝਦਾ ਹੈ। <code>vt_suspicion_level</code> ਡਾਇਰੈਕਟਿਵ ਦੇ ਮੁੱਲ ਨੂੰ ਬਦਲ ਕੇ, ਕਿਹੜੀਆਂ ਅਜਿਹੀਆਂ ਫਾਈਲਾਂ ਪ੍ਰਭਾਵਿਤ ਹੁੰਦੀਆਂ ਹਨ ਨੂੰ ਐਡਜਸਟ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
  virustotal_vt_weighting: "ਕੀ phpMussel ਨੂੰ Virus Total API ਸਕੈਨ ਨਤੀਜਿਆਂ ਨੂੰ ਖੋਜਾਂ ਜਾਂ ਵਜ਼ਨ ਵਜੋਂ ਲਾਗੂ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ? ਮਲਟੀਪਲ ਇੰਜਣਾਂ (ਜਿਵੇਂ ਕਿ Virus Total ਕਰਦਾ ਹੈ) ਨਾਲ ਇੱਕ ਫਾਈਲ ਨੂੰ ਸਕੈਨ ਕਰਨ ਦੇ ਨਤੀਜੇ ਵਜੋਂ ਖੋਜ ਦਰ ਵਿੱਚ ਵਾਧਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ (ਅਤੇ ਇਸਲਈ ਵੱਡੀ ਗਿਣਤੀ ਵਿੱਚ ਖਤਰਨਾਕ ਫਾਈਲਾਂ ਫੜੀਆਂ ਜਾਂਦੀਆਂ ਹਨ), ਪਰ ਇਸਦੇ ਨਤੀਜੇ ਵਜੋਂ ਝੂਠੇ ਸਕਾਰਾਤਮਕ ਵੀ ਹੋ ਸਕਦੇ ਹਨ। ਇਸ ਲਈ, ਕੁਝ ਸਥਿਤੀਆਂ ਵਿੱਚ, ਨਿਸ਼ਚਤ ਸਿੱਟੇ ਕੱਢਣ ਦੀ ਬਜਾਏ ਸਕੈਨ ਨਤੀਜਿਆਂ ਨੂੰ ਇੱਕ ਭਰੋਸੇ ਦੇ ਸਕੋਰ ਵਜੋਂ ਵਰਤਣਾ ਬਿਹਤਰ ਹੋ ਸਕਦਾ ਹੈ। ਇਸ ਨੂੰ ਸੰਬੋਧਿਤ ਕਰਨ ਲਈ ਇਹ ਕੌਂਫਿਗਰੇਸ਼ਨ ਨਿਰਦੇਸ਼ ਮੌਜੂਦ ਹੈ। ਜੇਕਰ 0 ਦਾ ਮੁੱਲ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ, ਤਾਂ Virus Total API ਸਕੈਨ ਨਤੀਜੇ ਖੋਜਾਂ ਵਜੋਂ ਲਾਗੂ ਕੀਤੇ ਜਾਣਗੇ, ਅਤੇ ਇਸਲਈ, ਜੇਕਰ Virus Total ਦੁਆਰਾ ਵਰਤਿਆ ਗਿਆ ਕੋਈ ਇੰਜਣ ਸਕੈਨ ਕੀਤੀ ਜਾ ਰਹੀ ਫਾਈਲ ਨੂੰ ਖਤਰਨਾਕ ਹੋਣ ਦੇ ਰੂਪ ਵਿੱਚ ਫਲੈਗ ਕਰਦਾ ਹੈ, ਤਾਂ phpMussel ਫਾਈਲ ਨੂੰ ਖਤਰਨਾਕ ਮੰਨੇਗਾ। ਜੇਕਰ ਕੋਈ ਹੋਰ ਮੁੱਲ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ, ਤਾਂ Virus Total API ਸਕੈਨ ਨਤੀਜੇ ਭਾਰ ਵਜੋਂ ਲਾਗੂ ਕੀਤੇ ਜਾਣਗੇ, ਅਤੇ ਇਸਲਈ, Virus Total ਦੁਆਰਾ ਵਰਤੇ ਗਏ ਇੰਜਣਾਂ ਦੀ ਗਿਣਤੀ ਜੋ ਸਕੈਨ ਕੀਤੀ ਜਾ ਰਹੀ ਫਾਈਲ ਨੂੰ ਖਤਰਨਾਕ ਹੋਣ ਦੇ ਰੂਪ ਵਿੱਚ ਫਲੈਗ ਕਰਦੀ ਹੈ, ਇੱਕ ਭਰੋਸੇ ਦੇ ਸਕੋਰ (ਜਾਂ ਭਾਰ) ਵਜੋਂ ਕੰਮ ਕਰੇਗੀ ਕਿ ਕੀ ਸਕੈਨ ਕੀਤੀ ਜਾ ਰਹੀ ਫਾਈਲ ਨੂੰ phpMussel ਦੁਆਰਾ ਖਤਰਨਾਕ ਮੰਨਿਆ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ ਜਾਂ ਨਹੀਂ (ਵਰਤਿਆ ਗਿਆ ਮੁੱਲ ਖਤਰਨਾਕ ਮੰਨੇ ਜਾਣ ਲਈ ਲੋੜੀਂਦੇ ਘੱਟੋ-ਘੱਟ ਭਰੋਸੇ ਦੇ ਸਕੋਰ ਜਾਂ ਭਾਰ ਨੂੰ ਦਰਸਾਉਂਦਾ ਹੈ)। 0 ਦਾ ਮੁੱਲ ਡਿਫਾਲਟ ਦੇ ਤੌਰ ਤੇ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ।"
 confirm:
- Action: "ਕੀ ਤੁਸੀਂ ਯਕੀਨੀ ਤੌਰ 'ਤੇ "%s" ਚਾਹੁੰਦੇ ਹੋ?"
+ Action: "ਕੀ ਤੁਸੀਂ ਯਕੀਨੀ ਤੌਰ 'ਤੇ \"%s"\ ਚਾਹੁੰਦੇ ਹੋ?"
 field:
  2FA code: "2FA ਕੋਡ"
  Clear all: "ਸਭ ਦੀ ਸਾਫ ਕਰੋ"
@@ -396,7 +396,7 @@ Signature information: !lazy
  sub_SigTypes: "ਦਸਤਖਤ ਮੈਟਾਡੇਟਾ ਦੁਆਰਾ ਗਿਣੋ"
  sub_Targets: "ਨਿਸ਼ਾਨਾ ਵੈਕਟਰ ਦੁਆਰਾ ਗਿਣੋ"
  sub_Vendors: "ਦਸਤਖਤ ਵਿਕਰੇਤਾ ਜਾਂ ਸਰੋਤ ਦੁਆਰਾ ਗਿਣੋ"
- xkey: ""%s" ਵਜੋਂ ਪਛਾਣ ਕੀਤੀ ਗਈ।"
+ xkey: "\"%s"\ ਵਜੋਂ ਪਛਾਣ ਕੀਤੀ ਗਈ।"
 state_quarantine:
  - "ਇਸ ਵੇਲੇ %s ਫਾਈਲ ਕੁਆਰੰਟੀਨ ਵਿੱਚ ਹੈ।"
  - "ਇਸ ਵੇਲੇ %s ਫਾਈਲਾਂ ਕੁਆਰੰਟੀਨ ਵਿੱਚ ਹਨ।"

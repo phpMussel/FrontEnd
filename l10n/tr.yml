@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2026.10.02).
+# This file: Turkish language data (last modified: 2026.10.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -62,7 +62,7 @@ config:
  core_log_rotation_limit: "Log rotasyonu, herhangi bir zamanda bulunması gereken günlük dosyalarının sayısını sınırlar. Yeni log dosyaları oluşturulduğunda, toplam log dosya sayısı belirtilen sınırı aşarsa, belirtilen eylem gerçekleştirilecektir. İstenen sınırı burada belirtebilirsiniz. 0 değeri, log rotasyonunu devre dışı bırakır."
  core_maintenance_mode: "Bakım modunu etkinleştirilsin mi? Doğru/True = Evet; Yanlış/False = Hayır [Varsayılan]. Ön uç haricindeki her şeyi devre dışı bırakır. Bazen CMS'nizi, çerçeveleri, vb. güncellenirken yararlıdır."
  core_outbound_request_log: "Giden isteklerin sonuçlarını günlüğe kaydetmek için bir dosya. Dosya adı belirtin veya devre dışı bırakmak için boş bırakın."
- core_request_proxy: "Giden isteklerin bir vekil sunucu üzerinden gönderilmesini istiyorsanız, Burada vekil sunucu belirtin. Değilse, burayı boş bırakın."
+ core_request_proxy: "Giden isteklerin bir vekil sunucu üzerinden gönderilmesini istiyorsanız, burada vekil sunucu belirtin. Değilse, burayı boş bırakın."
  core_request_proxyauth: "Giden istekleri bir vekil sunucu üzerinden gönderiyorsanız ve bu vekil sunucu bir kullanıcı adı ve parola gerektiriyorsa, burada bu kullanıcı adını ve parolayı belirtin (örneğin, <code>user:pass</code>). Değilse, burayı boş bırakın."
  core_scan_cache_expiry: "phpMussel tarama sonuçlarını ne kadar süreyle önbelleğe almalı? Değer, tarama sonuçlarının önbellekleneceği saniye sayısıdır. Varsayılan 21600 saniyedir (6 saat); 0 değeri, tarama sonuçlarını önbelleğe almayı devre dışı bırakır."
  core_scan_log: "Tüm tarama sonuçlarını günlüğe kaydetmek için dosyanın adı. Dosya adı belirtin veya devre dışı bırakmak için boş bırakın."
@@ -138,15 +138,15 @@ config:
  supplementary_cache_options_enable_pdo: "Önbelleğe almak için PDO kullanmaya çalışılıp kullanılmayacağını belirtir. Varsayılan = False."
  supplementary_cache_options_enable_redis: "Önbelleğe almak için Redis kullanmaya çalışılıp kullanılmayacağını belirtir. Varsayılan = False."
  supplementary_cache_options_memcached_host: "Memcached ana bilgisayar değeri. Varsayılan = localhost."
- supplementary_cache_options_memcached_port: "Memcached port değeri. Varsayılan = "11211"."
- supplementary_cache_options_pdo_dsn: "PDO DSN değeri. Varsayılan = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+ supplementary_cache_options_memcached_port: "Memcached port değeri. Varsayılan = \"11211\"."
+ supplementary_cache_options_pdo_dsn: "PDO DSN değeri. Varsayılan = \"mysql:dbname=phpmussel;host=localhost;port=3306\"."
  supplementary_cache_options_pdo_password: "PDO parola."
  supplementary_cache_options_pdo_username: "PDO kullanıcı adı."
- supplementary_cache_options_prefix: "Burada belirtilen değer, tüm önbellek giriş anahtarlarının önüne eklenecektir. Varsayılan = "phpMussel_". Aynı sunucuda birden fazla kurulum olduğunda, bu onların önbelleklerini birbirinden ayrı tutmak için faydalı olabilir."
+ supplementary_cache_options_prefix: "Burada belirtilen değer, tüm önbellek giriş anahtarlarının önüne eklenecektir. Varsayılan = \"phpMussel_\". Aynı sunucuda birden fazla kurulum olduğunda, bu onların önbelleklerini birbirinden ayrı tutmak için faydalı olabilir."
  supplementary_cache_options_redis_database_number: "Redis veritabanı numarası. Varsayılan = 0. Not: Redis Cluster'da 0'dan farklı değerler kullanılamaz."
  supplementary_cache_options_redis_host: "Redis ana bilgisayar değeri. Varsayılan = localhost."
- supplementary_cache_options_redis_port: "Redis port değeri. Varsayılan = "6379"."
- supplementary_cache_options_redis_timeout: "Redis zaman aşımı değeri. Varsayılan = "2.5"."
+ supplementary_cache_options_redis_port: "Redis port değeri. Varsayılan = \"6379\"."
+ supplementary_cache_options_redis_timeout: "Redis zaman aşımı değeri. Varsayılan = \"2.5\"."
  urlscanner: "URL tarayıcı için yapılandırma."
  urlscanner_cache_time: "API aramalarının sonuçları ne kadar süreyle (saniye olarak) önbelleğe alınır? Varsayılan değer 3600 saniyedir (1 saat)."
  urlscanner_google_api_key: "Gerekli API anahtarı tanımlandığında Google Güvenli Tarama API'sı için API aramalarını etkinleştirir."
@@ -159,7 +159,7 @@ config:
  virustotal_vt_suspicion_level: "Varsayılan olarak, phpMussel, "şüpheli" olarak gördüğü dosyalara Virus Total API'sını kullanarak taradığı dosyaları sınırlar. Bu sınırlamayı, <code>vt_suspicion_level</code> yönergesinin değerini değiştirerek ayarlayabilirsiniz."
  virustotal_vt_weighting: "Virus Total API tarama sonuçları algılar mı yoksa algılama ağırlığı olarak mı uygulanmalıdır? Bir dosyayı birden çok motor kullanarak tarama yapmak (Virus Total'in yaptığı gibi) artan algılama hızıyla sonuçlanmalıdır (ve dolayısıyla daha çok sayıda kötü amaçlı dosyanın yakalanmasıyla), ancak daha fazla yanlış pozitif sayıya neden olabilir, ve bu nedenle, bazı durumlarda, tarama sonuçları kesin bir sonuç olmaktan çok bir güven puanı olarak daha iyi kullanılabilir; Bu nedenle bu direktifin mevcut olması. 0 değeri kullanılırsa, Virus Total API tarama sonuçları algılar olarak uygulanır, ve bu nedenle eğer herhangi bir motor zararlı olarak dosyaya bayrak atarsa, phpMussel dosyayı kötü amaçlı olarak değerlendirir. Başka herhangi bir değer kullanılırsa, Virus Total API tarama sonuçları algılama ağırlığı olarak uygulanır, ve bu nedenle, dosyayı kötü amaçlı olarak işaretleyen motor sayısı bir güven puanı görevi görür (kullanılan değer dosyanın kötü amaçlı olarak değerlendirilebilmesi için gereken minimum güven puanı temsil edecektir). Varsayılan olarak 0 değeri kullanılır."
 confirm:
- Action: ""%s" istediğinizden emin misiniz?"
+ Action: "\"%s"\ istediğinizden emin misiniz?"
 field:
  2FA code: "2FA kodu"
  Clear all: "Hepsini temizle"
@@ -397,7 +397,7 @@ Signature information: !lazy
  sub_SigTypes: "İmza meta verilerine göre sayın"
  sub_Targets: "Hedeflenen vektöre göre sayın"
  sub_Vendors: "İmza satıcısına veya kaynağa göre sayın"
- xkey: ""%s" olarak tanımlandı."
+ xkey: "\"%s"\ olarak tanımlandı."
 state_quarantine:
  - "Şu anda karantina içinde %s dosya var."
  - "Şu anda karantina içinde %s dosyalar var."

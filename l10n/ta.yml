@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Tamil language data (last modified: 2026.10.02).
+# This file: Tamil language data (last modified: 2026.10.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -137,15 +137,15 @@ config:
  supplementary_cache_options_enable_pdo: "தற்காலிக சேமிப்புக்கான PDO ஐப் பயன்படுத்த முயற்சிக்கலாமா என்பதைக் குறிப்பிடுகிறது. இயல்புநிலை = False (தவறான)."
  supplementary_cache_options_enable_redis: "தற்காலிக சேமிப்புக்கான Redis ஐப் பயன்படுத்த முயற்சிக்கலாமா என்பதைக் குறிப்பிடுகிறது. இயல்புநிலை = False (தவறான)."
  supplementary_cache_options_memcached_host: "Memcachedக்கான ஹோஸ்ட் மதிப்பு. இயல்புநிலை = localhost."
- supplementary_cache_options_memcached_port: "Memcachedக்கான போர்ட் மதிப்பு. இயல்புநிலை = "11211"."
- supplementary_cache_options_pdo_dsn: "PDO DSN மதிப்பு. இயல்புநிலை = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+ supplementary_cache_options_memcached_port: "Memcachedக்கான போர்ட் மதிப்பு. இயல்புநிலை = \"11211\"."
+ supplementary_cache_options_pdo_dsn: "PDO DSN மதிப்பு. இயல்புநிலை = \"mysql:dbname=phpmussel;host=localhost;port=3306\"."
  supplementary_cache_options_pdo_password: "PDO கடவுச்சொல்."
  supplementary_cache_options_pdo_username: "PDO பயனர்பெயர்."
- supplementary_cache_options_prefix: "இங்கு குறிப்பிடப்பட்டுள்ள மதிப்பு அனைத்து கேச் நுழைவு விசைகளுக்கும் முன்கூட்டியதாக இருக்கும். இயல்புநிலை = "phpMussel_". ஒரே சர்வரில் பல நிறுவல்கள் இருக்கும்போது, அவற்றின் தற்காலிக சேமிப்புகளை ஒருவருக்கொருவர் தனித்தனியாக வைத்திருக்க இது பயனுள்ளதாக இருக்கும்."
+ supplementary_cache_options_prefix: "இங்கு குறிப்பிடப்பட்டுள்ள மதிப்பு அனைத்து கேச் நுழைவு விசைகளுக்கும் முன்கூட்டியதாக இருக்கும். இயல்புநிலை = \"phpMussel_\". ஒரே சர்வரில் பல நிறுவல்கள் இருக்கும்போது, அவற்றின் தற்காலிக சேமிப்புகளை ஒருவருக்கொருவர் தனித்தனியாக வைத்திருக்க இது பயனுள்ளதாக இருக்கும்."
  supplementary_cache_options_redis_database_number: "Redis தரவுத்தள எண். இயல்புநிலை = 0. குறிப்பு: Redis Cluster உடன் 0 ஐத் தவிர வேறு மதிப்புகளைப் பயன்படுத்த முடியாது."
  supplementary_cache_options_redis_host: "Redisக்கான ஹோஸ்ட் மதிப்பு. இயல்புநிலை = localhost."
  supplementary_cache_options_redis_port: "Redisக்கான போர்ட் மதிப்பு. இயல்புநிலை = 6379."
- supplementary_cache_options_redis_timeout: "Redisக்கான காலாவதியான மதிப்பு. இயல்புநிலை = "2.5"."
+ supplementary_cache_options_redis_timeout: "Redisக்கான காலாவதியான மதிப்பு. இயல்புநிலை = \"2.5\"."
  urlscanner: "URL ஸ்கேனருக்கான உள்ளமைவு."
  urlscanner_cache_time: "API ஐ தேடல்களின் முடிவுகள் எத்தனை வினாடிகளுக்கு தற்காலிகமாக சேமிக்கப்பட வேண்டும்? இயல்புநிலை 3600 வினாடிகள் (1 மணிநேரம்)."
  urlscanner_google_api_key: "தேவையான API விசை வரையறுக்கப்படும்போது, Google Safe Browsing API க்கு API தேடல்களை இயக்குகிறது."
@@ -158,7 +158,7 @@ config:
  virustotal_vt_suspicion_level: "இயல்பாக, phpMussel "சந்தேகத்திற்குரியது" என்று கருதும் கோப்புகளை மட்டுமே ஸ்கேன் செய்ய Virus Total API ஐப் பயன்படுத்தும். இந்த மதிப்பை இங்கே மாற்றுவதன் மூலம் இந்த கட்டுப்பாட்டை நீங்கள் விரும்பினால் சரிசெய்யலாம்."
  virustotal_vt_weighting: "Virus Total API ஐப் பயன்படுத்தி ஸ்கேனிங்கின் முடிவுகளை phpMussel கண்டறிதல் அல்லது எடை எனப் பயன்படுத்த வேண்டுமா? இந்த உத்தரவுக்கான காரணம்: பல என்ஜின்களைப் பயன்படுத்தி ஒரு கோப்பை ஸ்கேன் செய்வது (Virus Total செய்வது போல) அதிகரித்த கண்டறிதல் வீதம் (ஆகவே அதிக எண்ணிக்கையிலான தீங்கிழைக்கும் கோப்புகளில் பிடிபட்டுள்ளது) ஆக இருக்க வேண்டும், ஆனால் இது அதிக எண்ணிக்கையிலான தவறான நேர்மறைகளையும் ஏற்படுத்தும், மற்றும் எனவே, சில சூழ்நிலைகளில், ஸ்கேன் முடிவுகள் உறுதியான எதையும் விட நம்பிக்கை மதிப்பெண்ணாக சிறப்பாகப் பயன்படுத்தப்படலாம். 0 இன் மதிப்பு பயன்படுத்தப்பட்டால், Virus Total API முடிவுகள் கண்டறிதல்களாக பயன்படுத்தப்படும், எனவே ஒன்று அல்லது அதற்கு மேற்பட்ட என்ஜின்கள் அடையாளம் காணும் இடங்களில் எந்த கோப்பையும் தீங்கிழைக்கும் என்று அடையாளம் காண்பது. வேறு எந்த மதிப்பும் பயன்படுத்தப்பட்டால், Virus Total API முடிவுகள் எடையாக பயன்படுத்தப்படும், எனவே கோப்பை தீங்கிழைக்கும் என அடையாளம் காணும் இயந்திரங்களின் எண்ணிக்கையைப் பயன்படுத்தி நம்பிக்கை மதிப்பெண்ணாகப் பயன்படுத்தப்படுகிறது (கோப்பு தீங்கிழைக்கிறதா என்பதை அளவிட பயன்படுத்தப்படும் நம்பிக்கை மதிப்பெண்). 0 இன் மதிப்பு இயல்பாக பயன்படுத்தப்படுகிறது."
 confirm:
- Action: "நீங்கள் நிச்சயமாக "%s" விரும்புகிறீர்களா?"
+ Action: "நீங்கள் நிச்சயமாக \"%s"\ விரும்புகிறீர்களா?"
 field:
  2FA code: "2FA குறியீடு"
  Clear all: "அனைத்தையும் அழி"
@@ -396,7 +396,7 @@ Signature information: !lazy
  sub_SigTypes: "கையொப்ப மெட்டாடேட்டா மூலம் எண்ணவும்"
  sub_Targets: "இலக்கு திசையன் மூலம் எண்ணவும்"
  sub_Vendors: "கையொப்ப விற்பனையாளர் அல்லது மூலத்தால் எண்ணுங்கள்"
- xkey: ""%s" என அடையாளம் காணப்பட்டுள்ளது."
+ xkey: "\"%s"\ என அடையாளம் காணப்பட்டுள்ளது."
 state_quarantine:
  - "தனிமைப்படுத்தலில் %s கோப்பு உள்ளது."
  - "தனிமைப்படுத்தலில் %s கோப்புகள் உள்ளன."

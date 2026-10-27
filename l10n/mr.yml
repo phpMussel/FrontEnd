@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Marathi language data (last modified: 2026.10.02).
+# This file: Marathi language data (last modified: 2026.10.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -137,15 +137,15 @@ config:
  supplementary_cache_options_enable_pdo: "कॅशिंगसाठी PDO वापरून पहायचे की नाही ते निर्दिष्ट करते. डीफॉल्ट = False."
  supplementary_cache_options_enable_redis: "कॅशिंगसाठी Redis वापरून पहायचे की नाही ते निर्दिष्ट करते. डीफॉल्ट = False."
  supplementary_cache_options_memcached_host: "Memcached साठी होस्ट मूल्य. डीफॉल्ट = localhost."
- supplementary_cache_options_memcached_port: "Memcached साठी पोर्ट मूल्य. डीफॉल्ट = "11211"."
- supplementary_cache_options_pdo_dsn: "PDO साठी DSN मूल्य. डीफॉल्ट = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+ supplementary_cache_options_memcached_port: "Memcached साठी पोर्ट मूल्य. डीफॉल्ट = \"11211\"."
+ supplementary_cache_options_pdo_dsn: "PDO साठी DSN मूल्य. डीफॉल्ट = \"mysql:dbname=phpmussel;host=localhost;port=3306\"."
  supplementary_cache_options_pdo_password: "PDO पासवर्ड."
  supplementary_cache_options_pdo_username: "PDO वापरकर्तानाव."
- supplementary_cache_options_prefix: "येथे निर्दिष्ट केलेले मूल्य सर्व कॅशे एंट्री कीजमध्ये प्रीपेंड केले जाईल. डीफॉल्ट = "phpMussel_". जेव्हा एकाच सर्व्हरवर अनेक इंस्टॉलेशन्स असतात, तेव्हा त्यांचे कॅशे एकमेकांपासून वेगळे ठेवण्यासाठी हे उपयुक्त ठरू शकते."
+ supplementary_cache_options_prefix: "येथे निर्दिष्ट केलेले मूल्य सर्व कॅशे एंट्री कीजमध्ये प्रीपेंड केले जाईल. डीफॉल्ट = \"phpMussel_\". जेव्हा एकाच सर्व्हरवर अनेक इंस्टॉलेशन्स असतात, तेव्हा त्यांचे कॅशे एकमेकांपासून वेगळे ठेवण्यासाठी हे उपयुक्त ठरू शकते."
  supplementary_cache_options_redis_database_number: "Redis साठी डेटाबेस क्रमांक. डीफॉल्ट = 0. टीप: Redis Cluster सह 0 व्यतिरिक्त इतर मूल्ये वापरू शकत नाही."
  supplementary_cache_options_redis_host: "Redis साठी होस्ट मूल्य. डीफॉल्ट = localhost."
- supplementary_cache_options_redis_port: "Redis साठी पोर्ट मूल्य. डीफॉल्ट = "6379"."
- supplementary_cache_options_redis_timeout: "Redis साठी टाइमआउट मूल्य. डीफॉल्ट = "2.5"."
+ supplementary_cache_options_redis_port: "Redis साठी पोर्ट मूल्य. डीफॉल्ट = \"6379\"."
+ supplementary_cache_options_redis_timeout: "Redis साठी टाइमआउट मूल्य. डीफॉल्ट = \"2.5\"."
  urlscanner: "URL स्कॅनरसाठी कॉन्फिगरेशन."
  urlscanner_cache_time: "API लुकअपचे निकाल किती काळ (सेकंदात) कॅशे करावेत? डीफॉल्ट ३६०० सेकंद (१ तास) आहे."
  urlscanner_google_api_key: "आवश्यक API की परिभाषित केल्यावर Google सुरक्षित ब्राउझिंग API वर API लुकअप सक्षम करते."
@@ -158,7 +158,7 @@ config:
  virustotal_vt_suspicion_level: "डिफॉल्टनुसार, फक्त phpMussel ज्या फायलींना "संशयास्पद" मानते त्या Virus Total API वापरून स्कॅन केल्या जातील. तुम्ही <code>vt_suspicion_level</code> निर्देशाचे मूल्य बदलून हे निर्बंध वैकल्पिकरित्या समायोजित करू शकता."
  virustotal_vt_weighting: "Virus Total API स्कॅन निकाल phpMussel द्वारे डिटेक्शन म्हणून लागू करावेत की डिटेक्शन वजन म्हणून? हे निर्देश अस्तित्वात आहेत, कारण, जरी अनेक इंजिन वापरून फाइल स्कॅन केल्याने (जसे Virus Total करते) वाढत्या संख्येने शोधले जाऊ शकतात (आणि त्यामुळे जास्त प्रमाणात दुर्भावनापूर्ण फायली पकडल्या जाऊ शकतात), त्यामुळे खोट्या सकारात्मक मिळण्याची संख्या देखील वाढू शकते, आणि म्हणूनच, काही परिस्थितींमध्ये, स्कॅनचे निकाल निश्चित निष्कर्ष म्हणून वापरण्याऐवजी आत्मविश्वास स्कोअर म्हणून वापरणे चांगले असू शकते. जर 0 चे मूल्य वापरले असेल, तर Virus Total API स्कॅन निकाल डिटेक्शन म्हणून लागू केले जातील, आणि म्हणूनच, जर Virus Total-ने वापरलेले कोणतेही इंजिन स्कॅन केलेल्या फाइलला दुर्भावनापूर्ण म्हणून ध्वजांकित करते, तर phpMussel ती फाइल दुर्भावनापूर्ण मानेल. जर इतर कोणतेही मूल्य वापरले असेल, तर Virus Total API स्कॅन निकाल डिटेक्शन वजन म्हणून लागू केले जातील, आणि म्हणूनच, स्कॅन केल्या जाणाऱ्या फाइलला दुर्भावनापूर्ण म्हणून ध्वजांकित करणाऱ्या Virus Total द्वारे वापरल्या जाणाऱ्या इंजिनची संख्या phpMussel द्वारे स्कॅन केल्या जाणाऱ्या फाइलला दुर्भावनापूर्ण मानले पाहिजे की नाही याचा आत्मविश्वास स्कोअर म्हणून काम करेल (वापरलेले मूल्य दुर्भावनापूर्ण मानले जाण्यासाठी आवश्यक असलेले किमान आत्मविश्वास स्कोअर किंवा वजन दर्शवेल). डीफॉल्टनुसार 0 चे मूल्य वापरले जाते."
 confirm:
- Action: "तुम्हाला खात्री आहे की तुम्हाला "%s" करायचे आहे?"
+ Action: "तुम्हाला खात्री आहे की तुम्हाला \"%s"\ करायचे आहे?"
 field:
  2FA code: "द्वि-घटक कोड"
  Clear all: "सर्व साफ करा"
@@ -396,7 +396,7 @@ Signature information: !lazy
  sub_SigTypes: "स्वाक्षरी मेटाडेटा नुसार गणना करा"
  sub_Targets: "लक्ष्यित वेक्टरनुसार गणना करा"
  sub_Vendors: "स्वाक्षरी विक्रेत्यानुसार किंवा स्त्रोतानुसार गणना करा"
- xkey: ""%s" म्हणून ओळखले."
+ xkey: "\"%s"\ म्हणून ओळखले."
 state_quarantine:
  - "सध्या %s फाइल क्वारंटाइनमध्ये आहे."
  - "सध्या %s फाइल क्वारंटाइनमध्ये आहेत."

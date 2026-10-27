@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2026.10.02).
+# This file: Arabic language data (last modified: 2026.10.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -138,15 +138,15 @@ config:
  supplementary_cache_options_enable_pdo: "يحدد هذا ما إذا كنت تريد استخدام PDO للتخزين المؤقت. افتراضي = False (زائفة)."
  supplementary_cache_options_enable_redis: "يحدد هذا ما إذا كنت تريد استخدام Redis للتخزين المؤقت. افتراضي = False (زائفة)."
  supplementary_cache_options_memcached_host: "قيمة المضيف Memcached. افتراضي = localhost."
- supplementary_cache_options_memcached_port: "قيمة منفذ Memcached. افتراضي = "11211"."
- supplementary_cache_options_pdo_dsn: "قيمة PDO DSN. افتراضي = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+ supplementary_cache_options_memcached_port: "قيمة منفذ Memcached. افتراضي = \"11211\"."
+ supplementary_cache_options_pdo_dsn: "قيمة PDO DSN. افتراضي = \"mysql:dbname=phpmussel;host=localhost;port=3306\"."
  supplementary_cache_options_pdo_password: "PDO كلمه السر."
  supplementary_cache_options_pdo_username: "PDO اسم المستخدم."
- supplementary_cache_options_prefix: "سيتم إضافة القيمة المحددة هنا إلى جميع مفاتيح إدخال ذاكرة التخزين المؤقت. افتراضي = "phpMussel_". عند وجود عدة عمليات تثبيت على نفس الخادم، يمكن أن يكون ذلك مفيدًا للحفاظ على ذاكرة التخزين المؤقت منفصلة عن بعضها البعض."
+ supplementary_cache_options_prefix: "سيتم إضافة القيمة المحددة هنا إلى جميع مفاتيح إدخال ذاكرة التخزين المؤقت. افتراضي = \"phpMussel_\". عند وجود عدة عمليات تثبيت على نفس الخادم، يمكن أن يكون ذلك مفيدًا للحفاظ على ذاكرة التخزين المؤقت منفصلة عن بعضها البعض."
  supplementary_cache_options_redis_database_number: "رقم قاعدة بيانات Redis. افتراضي = 0. ملاحظة: لا يمكن استخدام قيم غير 0 مع Redis Cluster."
  supplementary_cache_options_redis_host: "قيمة المضيف Redis. افتراضي = localhost."
- supplementary_cache_options_redis_port: "قيمة منفذ Redis. افتراضي = "6379"."
- supplementary_cache_options_redis_timeout: "Redis قيمة المهلة. افتراضي = "2.5"."
+ supplementary_cache_options_redis_port: "قيمة منفذ Redis. افتراضي = \"6379\"."
+ supplementary_cache_options_redis_timeout: "Redis قيمة المهلة. افتراضي = \"2.5\"."
  urlscanner: "التكوين من الماسح الضوئي URL."
  urlscanner_cache_time: "متى (بالثواني) يجب التوصل إلى نتائج عمليات بحث API؟ الافتراضي هو 3600 ثانية (1 ساعة)."
  urlscanner_google_api_key: "العدد الأقصى المسموح به من عمليات بحث واجهة برمجة التطبيقات لأداء في تكرار المسح الفردية."
@@ -159,7 +159,7 @@ config:
  virustotal_vt_suspicion_level: "افتراضيا، سوف يقوم phpMussel بتقييد الملفات التي تقوم بمسح باستخدام الفيروسات API الكلي لتلك الملفات التي تعتبرها "المشبوهة". يمكنك ضبط اختياريا هذا التقييد عن طريق تغيير قيمة التوجيه "vt_suspicion_level"."
  virustotal_vt_weighting: "هل phpMussel يطبق نتائج المسح باستخدام الفيروسات مجموع API كما المكتشفة أو الممكن كشفها؟ يوجد هذا التوجيه لأنه على الرغم من أن مسح ملف باستخدام محركات متعددة (كما فايروس توتال لا) ينبغي أن يؤدي في معدل اكتشاف زيادة (وبالتالي في عدد أكبر من الملفات الخبيثة الوقوع)، فإنه يمكن أن يؤدي أيضا إلى ارتفاع عدد كاذبة الإيجابيات، وبالتالي، في بعض الظروف، فإن نتائج المسح يمكن الاستفادة بشكل أفضل كما على درجة الثقة بدلا من أن تكون نتيجة محددة. إذا تم استخدام قيمة 0، سيتم تطبيق نتائج المسح باستخدام الفيروسات مجموع API كما المكتشفة و بالتالي إذا أي محرك تستخدم من قبل الفيروسات مجموع أعلام الملف تم مسحها ضوئيا بأنها خبيثة، وphpMussel النظر في الملف إلى تكون ضارة. إذا تم استخدام أي قيمة أخرى، سيتم تطبيق نتائج المسح باستخدام الفيروسات مجموع API كما الترجيح الكشف و بالتالي فإن عدد من المحركات المستخدمة من قبل الفيروسات إجمالي هذا العلم الملف تم مسحها ضوئيا بأنها خبيثة سيكون بمثابة نتيجة الثقة (أو الترجيح الكشف) عن ما إذا كان ملف تم مسحها ضوئيا ينبغي النظر الخبيثة التي كتبها phpMussel (القيمة المستخدمة سيمثل الحد الأدنى من الثقة يسجل أو الوزن المطلوب من أجل أن تعتبر ضارة). يتم استخدام قيمة 0 افتراضيا."
 confirm:
- Action: "هل أنت متأكد أنك تريد "%s"؟"
+ Action: "هل أنت متأكد أنك تريد \"%s"\؟"
 field:
  2FA code: "كود 2FA"
  Clear all: "امسح الكل"
@@ -397,7 +397,7 @@ Signature information: !lazy
  sub_SigTypes: "العد من خلال بيانات التعريف التوقيع"
  sub_Targets: "العد من قبل ناقلات المستهدفة"
  sub_Vendors: "العد من قبل البائع التوقيع أو المصدر"
- xkey: "تم تعريفه بـ "%s"."
+ xkey: "تم تعريفه بـ \"%s"\."
 state_quarantine:
  - "هناك ملف %s موجود حاليا في وحدة العزل."
  - "هناك ملفات %s موجود حاليا في وحدة العزل."

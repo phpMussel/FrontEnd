@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2026.10.02).
+# This file: Latvian language data (last modified: 2026.10.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -396,7 +396,7 @@ Signature information: !lazy
  sub_SigTypes: "Skaita pēc paraksta metadatiem"
  sub_Targets: "Skaita pēc mērķa vektora"
  sub_Vendors: "Skaita pēc paraksta pārdevēja vai avota"
- xkey: "Identificēts kā "%s"."
+ xkey: "Identificēts kā \"%s"\."
 state_quarantine:
  - "Šobrīd karantīnā ir %s fails."
  - "Šobrīd karantīnā ir %s faili."

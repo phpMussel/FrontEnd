@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Catalan language data (last modified: 2026.10.02).
+# This file: Catalan language data (last modified: 2026.10.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -138,15 +138,15 @@ config:
  supplementary_cache_options_enable_pdo: "Especifica si s'ha de provar d'utilitzar PDO per gestionar la memòria cau. Predeterminat = False."
  supplementary_cache_options_enable_redis: "Especifica si s'ha de provar d'utilitzar la memòria cau de Redis. Predeterminat = False."
  supplementary_cache_options_memcached_host: "Valor de l'amfitrió de Memcached. Predeterminat = localhost."
- supplementary_cache_options_memcached_port: "Valor del port de Memcached. Predeterminat = "11211"."
- supplementary_cache_options_pdo_dsn: "Valor DSN PDO. Predeterminat = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+ supplementary_cache_options_memcached_port: "Valor del port de Memcached. Predeterminat = \"11211\"."
+ supplementary_cache_options_pdo_dsn: "Valor DSN PDO. Predeterminat = \"mysql:dbname=phpmussel;host=localhost;port=3306\"."
  supplementary_cache_options_pdo_password: "Contrasenya PDO."
  supplementary_cache_options_pdo_username: "Nom d'usuari PDO."
- supplementary_cache_options_prefix: "El valor especificat aquí s'afegirà davant de totes les claus d'entrada de la memòria cau. Predeterminat = "phpMussel_". Quan hi ha diverses instal·lacions al mateix servidor, això pot ser útil per mantenir les seves memòries cau separades les unes de les altres."
+ supplementary_cache_options_prefix: "El valor especificat aquí s'afegirà davant de totes les claus d'entrada de la memòria cau. Predeterminat = \"phpMussel_\". Quan hi ha diverses instal·lacions al mateix servidor, això pot ser útil per mantenir les seves memòries cau separades les unes de les altres."
  supplementary_cache_options_redis_database_number: "Número de base de dades Redis. Predeterminat = 0. Nota: No es poden utilitzar valors diferents de 0 amb Redis Cluster."
  supplementary_cache_options_redis_host: "Valor de l'amfitrió de Redis. Predeterminat = localhost."
- supplementary_cache_options_redis_port: "Valor del port de Redis. Predeterminat = "6379"."
- supplementary_cache_options_redis_timeout: "Valor de temps d'espera de Redis. Predeterminat = "2.5"."
+ supplementary_cache_options_redis_port: "Valor del port de Redis. Predeterminat = \"6379\"."
+ supplementary_cache_options_redis_timeout: "Valor de temps d'espera de Redis. Predeterminat = \"2.5\"."
  urlscanner: "Configuració de l'escàner d'URL."
  urlscanner_cache_time: "Quant de temps (en segons) s'han d'emmagatzemar a la memòria cau els resultats de les cerques d'API? El valor predeterminat és de 3600 segons (1 hora)."
  urlscanner_google_api_key: "Activa les cerques d'API a l'API de navegació segura de Google quan es defineix la clau d'API necessària."
@@ -159,7 +159,7 @@ config:
  virustotal_vt_suspicion_level: "phpMussel restringirà els fitxers que escaneja mitjançant l'API de Virus Total als fitxers que consideri "sospitats". Opcionalment, podeu ajustar aquesta restricció canviant el valor de la directiva <code>vt_suspicion_level</code>."
  virustotal_vt_weighting: "Ha d'aplicar phpMussel els resultats de l'escaneig mitjançant l'API Virus Total com a deteccions o com a ponderació de detecció? Aquesta directiva existeix perquè, tot i que escanejar un fitxer amb diversos motors (com ho fa Virus Total) hauria de comportar un augment de la taxa de detecció (i, per tant, en un nombre més gran de fitxers maliciosos capturats), també pot donar lloc a un major nombre de falsos positius, i per tant, en algunes circumstàncies, pot ser millor utilitzar els resultats de l'escaneig com a puntuació de confiança en lloc de com a conclusió definitiva. Si s'utilitza un valor de 0, els resultats de l'escaneig mitjançant l'API Virus Total s'aplicaran com a deteccions, i per tant, si algun motor utilitzat per Virus Total marca el fitxer que s'escaneja com a maliciós, phpMussel considerarà que el fitxer és maliciós. Si s'utilitza qualsevol altre valor, els resultats de l'escaneig mitjançant l'API Virus Total s'aplicaran com a ponderació de detecció, i per tant, el nombre de motors utilitzats per Virus Total que marquen el fitxer que s'escaneja com a maliciós servirà com a puntuació de confiança (o ponderació de detecció) per saber si el fitxer que s'escaneja ha de ser considerat maliciós per phpMussel (el valor utilitzat representarà la puntuació o el pes de confiança mínima requerida per ser considerat maliciós). El valor predeterminat és 0."
 confirm:
- Action: "Esteu segur que voleu "%s"?"
+ Action: "Esteu segur que voleu \"%s"\?"
 field:
  2FA code: "Codi 2FA"
  Clear all: "Esborra-ho tot"
@@ -397,7 +397,7 @@ Signature information: !lazy
  sub_SigTypes: "Comptar per metadades de signatura"
  sub_Targets: "Comptar per vector objectiu"
  sub_Vendors: "Comptar per proveïdor o font de signatura"
- xkey: "Identificat com a "%s"."
+ xkey: "Identificat com a \"%s"\."
 state_quarantine:
  - "Actualment hi ha %s fitxer en quarantena."
  - "Actualment hi ha %s fitxers en quarantena."

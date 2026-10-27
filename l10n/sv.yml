@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2026.10.02).
+# This file: Swedish language data (last modified: 2026.10.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -137,15 +137,15 @@ config:
  supplementary_cache_options_enable_pdo: "Detta anger om ska använda PDO för caching. Standard = False."
  supplementary_cache_options_enable_redis: "Detta anger om ska använda Redis för caching. Standard = False."
  supplementary_cache_options_memcached_host: "Memcached värdvärde. Standard = localhost."
- supplementary_cache_options_memcached_port: "Memcached portvärde. Standard = "11211"."
- supplementary_cache_options_pdo_dsn: "PDO DSN-värde. Standard = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+ supplementary_cache_options_memcached_port: "Memcached portvärde. Standard = \"11211\"."
+ supplementary_cache_options_pdo_dsn: "PDO DSN-värde. Standard = \"mysql:dbname=phpmussel;host=localhost;port=3306\"."
  supplementary_cache_options_pdo_password: "PDO lösenord."
  supplementary_cache_options_pdo_username: "PDO användarnamn."
- supplementary_cache_options_prefix: "Värdet som anges här kommer att läggas till i början av nycklarna för alla cacheposter. Standard = "phpMussel_". När flera installationer finns på samma server, detta kan vara användbart för att hålla sina cachar åtskilda från varandra."
+ supplementary_cache_options_prefix: "Värdet som anges här kommer att läggas till i början av nycklarna för alla cacheposter. Standard = \"phpMussel_\". När flera installationer finns på samma server, detta kan vara användbart för att hålla sina cachar åtskilda från varandra."
  supplementary_cache_options_redis_database_number: "Redis databasnummer. Standard = 0. Notera: Kan inte använda andra värden än 0 med Redis Cluster."
  supplementary_cache_options_redis_host: "Redis värdvärde. Standard = localhost."
- supplementary_cache_options_redis_port: "Redis portvärde. Standard = "6379"."
- supplementary_cache_options_redis_timeout: "Redis timeout-värde. Standard = "2.5"."
+ supplementary_cache_options_redis_port: "Redis portvärde. Standard = \"6379\"."
+ supplementary_cache_options_redis_timeout: "Redis timeout-värde. Standard = \"2.5\"."
  urlscanner: "Konfiguration för URL-skannern."
  urlscanner_cache_time: "Hur länge (i sekunder) ska resultaten av API-sökningar cachas för? Standard är 3600 sekunder (1 timme)."
  urlscanner_google_api_key: "Aktiverar API-sökningar till Googles Safe Browsing API när den nödvändiga API-nyckeln är definierad."
@@ -158,7 +158,7 @@ config:
  virustotal_vt_suspicion_level: "Som standard kommer phpMussel att begränsa vilka filer den skannar med Virus Total API till de filer som den anser "misstänkta". Du kan valfritt justera denna begränsning genom att ändra värdet på <code>vt_suspicion_level</code> direktivet."
  virustotal_vt_weighting: "Ska phpMussel tillämpa resultaten av skanning med Virus Total API som detekteringar eller som detektionsviktning? Skanning av en fil med flera motorer (som hur Virus Total gör det) bör resultera i en ökad upptäcktsfrekvens (och därför att ett högre antal skadliga filer fångas), men det kan också resultera i ett högre antal falska positiver, och därför kan resultaten av skanning under vissa omständigheter bättre utnyttjas som ett konfidensresultat snarare än som en definitiv slutsats (och detta direktiv existerar som sådan för att ge dig det valet). Om ett värde på 0 används kommer resultaten av skanning med Virus Total API att tillämpas som detekteringar (vilket betyder att om några motorer som stöds av Virus Total flaggar filen som skannas, kommer phpMussel att anse filen som skadlig). Om något annat värde används kommer resultaten av skanning med Virus Total API att tillämpas som detekteringsviktning (vilket betyder att resultaten från Virus Total API kommer att tjäna som ett konfidensresultat för huruvida phpMussel ska betrakta filen som skannas som skadlig eller inte, i vilket fall representerar det använda värdet det minsta konfidensresultat som krävs för att filen ska anses vara skadlig). Ett värde på 0 används som standard."
 confirm:
- Action: "Är du säker på att du vill "%s"?"
+ Action: "Är du säker på att du vill \"%s"\?"
 field:
  2FA code: "2FA-kod"
  Clear all: "Rensa alla"
@@ -396,7 +396,7 @@ Signature information: !lazy
  sub_SigTypes: "Räkna efter signaturmetadata"
  sub_Targets: "Räkna efter målinriktad vektor"
  sub_Vendors: "Räkna efter signaturförsäljare eller källa"
- xkey: "Identifierad som "%s"."
+ xkey: "Identifierad som \"%s"\."
 state_quarantine:
  - "Det finns %s fil för närvarande i karantän."
  - "Det finns %s filer för närvarande i karantän."

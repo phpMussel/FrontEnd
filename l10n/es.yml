@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2026.10.02).
+# This file: Spanish language data (last modified: 2026.10.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -138,15 +138,15 @@ config:
  supplementary_cache_options_enable_pdo: "Especifica si se intenta utilizar PDO para el almacenamiento en caché. Predefinido = False."
  supplementary_cache_options_enable_redis: "Especifica si se intenta utilizar Redis para el almacenamiento en caché. Predefinido = False."
  supplementary_cache_options_memcached_host: "Valor del host de Memcached. Predefinido = localhost."
- supplementary_cache_options_memcached_port: "Valor del puerto de Memcached. Predefinido = "11211"."
- supplementary_cache_options_pdo_dsn: "Valor del DSN de PDO. Predefinido = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+ supplementary_cache_options_memcached_port: "Valor del puerto de Memcached. Predefinido = \"11211\"."
+ supplementary_cache_options_pdo_dsn: "Valor del DSN de PDO. Predefinido = \"mysql:dbname=phpmussel;host=localhost;port=3306\"."
  supplementary_cache_options_pdo_password: "Contraseña de PDO."
  supplementary_cache_options_pdo_username: "Nombre del usuario de PDO."
- supplementary_cache_options_prefix: "El valor especificado aquí se antepondrá a las claves de todas las entradas de la caché. Predefinido = "phpMussel_". Cuando existen varias instalaciones en el mismo servidor, esto puede ser útil para mantener sus cachés separados entre sí."
+ supplementary_cache_options_prefix: "El valor especificado aquí se antepondrá a las claves de todas las entradas de la caché. Predefinido = \"phpMussel_\". Cuando existen varias instalaciones en el mismo servidor, esto puede ser útil para mantener sus cachés separados entre sí."
  supplementary_cache_options_redis_database_number: "Número de base de datos de Redis. Predefinido = 0. Nota: No se pueden utilizar valores distintos de 0 con Redis Cluster."
  supplementary_cache_options_redis_host: "Valor del host de Redis. Predefinido = localhost."
- supplementary_cache_options_redis_port: "Valor del puerto de Redis. Predefinido = "6379"."
- supplementary_cache_options_redis_timeout: "Valor del tiempo de espera de Redis. Predefinido = "2.5"."
+ supplementary_cache_options_redis_port: "Valor del puerto de Redis. Predefinido = \"6379\"."
+ supplementary_cache_options_redis_timeout: "Valor del tiempo de espera de Redis. Predefinido = \"2.5\"."
  urlscanner: "Configuración para el escáner de URL."
  urlscanner_cache_time: "Por cuánto tiempo (en segundos) debe los resultados de las API búsquedas ser almacenan en caché? Predefinido es 3600 segundos (1 horas)."
  urlscanner_google_api_key: "Permite API búsquedas al Google Safe Browsing API cuando la necesario API clave es define."
@@ -159,7 +159,7 @@ config:
  virustotal_vt_suspicion_level: "Por predefinido, phpMussel restringirá qué archivos se escaneado usando el Virus Total API a esos archivos que se considera "sospechosa". Opcionalmente, usted puede ajustar esta restricción por manera de cambiando el valor de la <code>vt_suspicion_level</code> directiva."
  virustotal_vt_weighting: "¿Debería phpMussel aplicar los resultados del escaneo utilizando el Virus Total API como detecciones o como detección peso? Esta directiva existe, por razón de que, aunque escanear un archivo usando múltiples motores (como Virus Total hacer) debería resultar en un aumento detección cuenta (y por lo tanto en un mayor número de maliciosos archivos ser atrapado), esta también puede resultar en un mayor número de falsos positivos, y por lo tanto, en algunas circunstancias, los resultados del escanear pueden ser mejor utilizados como una puntuación de confianza y no como una definitiva conclusión. Si un valor de 0 es utiliza, los resultados del escaneo utilizando el Virus Total API se aplicará como detecciones, y por lo tanto, si cualquier motor utilizado por Virus Total marca el archivo está escaneando como malicioso, phpMussel considerará el archivo a ser malicioso. Si cualquier otro valor es utiliza, los resultados del escaneo utilizando el Virus Total API se aplicará como detección peso, y por lo tanto, el número de motores utilizados por Virus Total que marca el archivo está escaneando como malicioso servirá como una puntuación de confianza (o detección peso) para si el archivo que ser escanear debe ser considerado malicioso por phpMussel (el valor utilizado representará el mínima puntuación de confianza o peso requerido con el fin de ser considerado malicioso). Un valor de 0 es utilizado por predefinido."
 confirm:
- Action: "¿Estás seguro de que quieres "%s"?"
+ Action: "¿Estás seguro de que quieres \"%s"\?"
 field:
  2FA code: "Código 2FA"
  Clear all: "Anular todo"
@@ -397,7 +397,7 @@ Signature information: !lazy
  sub_SigTypes: "Cuenta por metadatos de firma"
  sub_Targets: "Cuenta por vector objetivo"
  sub_Vendors: "Cuenta por proveedor o fuente de firma"
- xkey: "Identificado como "%s"."
+ xkey: "Identificado como \"%s"\."
 state_quarantine:
  - "Hay %s archivo actualmente en cuarentena."
  - "Hay %s archivos actualmente en cuarentena."

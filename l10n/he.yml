@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data (last modified: 2026.10.02).
+# This file: Hebrew language data (last modified: 2026.10.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -138,15 +138,15 @@ config:
  supplementary_cache_options_enable_pdo: "מציין אם לנסות להשתמש ב-PDO לשמירה במטמון. סטנדרטי = False."
  supplementary_cache_options_enable_redis: "מציין אם לנסות להשתמש ב-Redis לשמירה במטמון. סטנדרטי = False."
  supplementary_cache_options_memcached_host: "ערך מארח Memcached. סטנדרטי = localhost."
- supplementary_cache_options_memcached_port: "ערך יציאת Memcached. סטנדרטי = "11211"."
- supplementary_cache_options_pdo_dsn: "ערך PDO DSN. סטנדרטי = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+ supplementary_cache_options_memcached_port: "ערך יציאת Memcached. סטנדרטי = \"11211\"."
+ supplementary_cache_options_pdo_dsn: "ערך PDO DSN. סטנדרטי = \"mysql:dbname=phpmussel;host=localhost;port=3306\"."
  supplementary_cache_options_pdo_password: "סיסמת PDO."
  supplementary_cache_options_pdo_username: "שם משתמש PDO."
- supplementary_cache_options_prefix: "הערך שצוין כאן יופיע לפני כל מפתחות הזנת המטמון. סטנדרטי = "phpMussel_". כאשר קיימות התקנות מרובות באותו שרת, זה יכול להיות שימושי לשמירת המטמונים שלהם נפרדים זה מזה."
+ supplementary_cache_options_prefix: "הערך שצוין כאן יופיע לפני כל מפתחות הזנת המטמון. סטנדרטי = \"phpMussel_\". כאשר קיימות התקנות מרובות באותו שרת, זה יכול להיות שימושי לשמירת המטמונים שלהם נפרדים זה מזה."
  supplementary_cache_options_redis_database_number: "מספר מסד הנתונים של Redis. סטנדרטי = 0. הערה: לא ניתן להשתמש בערכים אחרים מאשר 0 עם Redis Cluster."
  supplementary_cache_options_redis_host: "ערך מארח Redis. סטנדרטי = localhost."
- supplementary_cache_options_redis_port: "ערך יציאת Redis. סטנדרטי = "6379"."
- supplementary_cache_options_redis_timeout: "ערך הזמן הקצוב של Redis. סטנדרטי = "2.5"."
+ supplementary_cache_options_redis_port: "ערך יציאת Redis. סטנדרטי = \"6379\"."
+ supplementary_cache_options_redis_timeout: "ערך הזמן הקצוב של Redis. סטנדרטי = \"2.5\"."
  urlscanner: "תצורה עבור הסורק ה-URL."
  urlscanner_cache_time: "כמה זמן (בשניות) צריך לשמור את התוצאות של חיפושי API? התקן הוא 3600 שניות (1 שעה)."
  urlscanner_google_api_key: "מאפשר חיפושי ל-API לגלישה בטוחה של Google כאשר מפתח ה-API הדרוש מוגדר."
@@ -159,7 +159,7 @@ config:
  virustotal_vt_suspicion_level: "כסטנדרט, phpMussel יגביל את הקבצים שהיא סורקת באמצעות ה-Virus Total API לאותם קבצים שהיא מחשיבה כ"חשודים". אתה יכול לחלופין להתאים הגבלה זו על ידי שינוי הערך של <code>vt_suspicion_level</code>."
  virustotal_vt_weighting: "האם על phpMussel ליישם את תוצאות הסריקה באמצעות ה-Virus Total API כזיהוי או כשקלול? הנחיה זו קיימת, מכיוון שלמרות שסריקת קובץ באמצעות מנועים מרובים (כפי שעושה Virus Total) אמורה לגרום לשיעור זיהוי מוגבר (ולכן למספר גבוה יותר של קבצים זדוניים שנתפסים), היא יכולה גם לגרום למספר גבוה יותר של חיוביות כוזבות, ולפיכך, בנסיבות מסוימות, תוצאות הסריקה עשויות להיות מנוצלות טוב יותר כציון ביטחון ולא כמסקנה סופית. אם נעשה שימוש בערך של 0, תוצאות הסריקה באמצעות ה-Virus Total API יחולו כזיהויים, ולכן, אם מנוע כלשהו בשימוש על ידי Virus Total מסמן את הקובץ הנסרק כזדוני, phpMussel יחשב את הקובץ כזדוני. אם נעשה שימוש בכל ערך אחר, תוצאות הסריקה באמצעות ה-Virus Total API יוחלו כשקלול, ולפיכך, מספר המנועים בשימוש על ידי Virus Total המסמנים את הקובץ הנסרק כזדוני ישמש ציון ביטחון (או שקלול) לשאלה האם הקובץ הנסרק צריך להיחשב כזדוני על ידי phpMussel (הערך בו נעשה שימוש ייצג את ציון הביטחון המינימלי או המשקל הנדרש על מנת להיחשב כזדוני). ערך של 0 משמש כסטנדרט."
 confirm:
- Action: "האם אתה בטוח שברצונך "%s"?"
+ Action: "האם אתה בטוח שברצונך \"%s"\?"
 field:
  2FA code: "קוד 2FA"
  Clear all: "נקה הכל"
@@ -397,7 +397,7 @@ Signature information: !lazy
  sub_SigTypes: "ספירה לפי מטא נתונים של חתימה"
  sub_Targets: "ספירה לפי וקטור ממוקד"
  sub_Vendors: "ספירה לפי ספק חתימה או מקור"
- xkey: "מזוהה כ"%s"."
+ xkey: "מזוהה כ\"%s"\."
 state_quarantine:
  - "יש כרגע %s קובץ בהסגר."
  - "יש כרגע %s קבצים בהסגר."

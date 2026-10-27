@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2026.10.02).
+# This file: Afrikaans language data (last modified: 2026.10.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -138,15 +138,15 @@ config:
  supplementary_cache_options_enable_pdo: "Spesifiseer of om PDO vir kas te probeer gebruik. Verstek = False."
  supplementary_cache_options_enable_redis: "Spesifiseer of om Redis vir kas te probeer gebruik. Verstek = False."
  supplementary_cache_options_memcached_host: "Memcached gasheerwaarde. Verstek = localhost."
- supplementary_cache_options_memcached_port: "Memcached poortwaarde. Verstek = "11211"."
- supplementary_cache_options_pdo_dsn: "PDO DSN-waarde. Verstek = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+ supplementary_cache_options_memcached_port: "Memcached poortwaarde. Verstek = \"11211\"."
+ supplementary_cache_options_pdo_dsn: "PDO DSN-waarde. Verstek = \"mysql:dbname=phpmussel;host=localhost;port=3306\"."
  supplementary_cache_options_pdo_password: "PDO wagwoord."
  supplementary_cache_options_pdo_username: "PDO gebruikersnaam."
- supplementary_cache_options_prefix: "Die waarde wat hier gespesifiseer word, sal by alle kasinvoersleutels aangebring word. Verstek = "phpMussel_". Wanneer daar verskeie installasies by dieselfde bediener bestaan, kan dit nuttig wees om hul kas apart van mekaar te hou."
+ supplementary_cache_options_prefix: "Die waarde wat hier gespesifiseer word, sal by alle kasinvoersleutels aangebring word. Verstek = \"phpMussel_\". Wanneer daar verskeie installasies by dieselfde bediener bestaan, kan dit nuttig wees om hul kas apart van mekaar te hou."
  supplementary_cache_options_redis_database_number: "Redis databasisnommer. Verstek = 0. Kennis neem: Kan nie ander waardes as 0 met Redis Cluster gebruik nie."
  supplementary_cache_options_redis_host: "Redis gasheerwaarde. Verstek = localhost."
- supplementary_cache_options_redis_port: "Redis poortwaarde. Verstek = "6379"."
- supplementary_cache_options_redis_timeout: "Redis time-out waarde. Verstek = "2.5"."
+ supplementary_cache_options_redis_port: "Redis poortwaarde. Verstek = \"6379\"."
+ supplementary_cache_options_redis_timeout: "Redis time-out waarde. Verstek = \"2.5\"."
  urlscanner: "Konfigurasie vir die URL-skandeerder."
  urlscanner_cache_time: "Hoe lank (in sekondes) moet die resultate van API-soektogte gekas word? Verstek is 3600 sekondes (1 uur)."
  urlscanner_google_api_key: "Aktiveer API-soektogte na die Google Safe Browsing API wanneer die nodige API-sleutel gedefinieer is."
@@ -159,7 +159,7 @@ config:
  virustotal_vt_suspicion_level: "By verstek sal phpMussel die lêers wat dit skandeer met die Virus Total API beperk tot daardie lêers wat dit as "verdag" beskou. Jy kan hierdie beperking opsioneel aanpas deur die waarde van die <code>vt_suspicion_level</code>-opsie te verander."
  virustotal_vt_weighting: "Moet phpMussel die resultate van skandering met die Virus Total API as opsporings of as opsporingsgewig toepas? Hierdie opsie bestaan, want alhoewel die skandering van 'n lêer met veelvuldige enjins (soos Virus Total doen) 'n verhoogde opsporingsyfer tot gevolg moet hê (en dus 'n groter aantal kwaadwillige lêers wat gevang word), kan dit ook lei tot 'n groter aantal vals positiewe, en daarom, in sommige omstandighede, kan dit beter wees om die resultate van die skandering as 'n vertrouenstelling eerder as 'n definitiewe gevolgtrekking te gebruik. As 'n waarde van 0 gebruik word, sal die resultate van skandering met die Virus Total API as bespeurings toegepas word, en daarom, as enige enjin wat deur Virus Total gebruik word die lêer wat geskandeer word as kwaadwillig vlag, sal phpMussel die lêer as kwaadwillig beskou. As enige ander waarde gebruik word, sal die resultate van skandering met die Virus Total API toegepas word as opsporingsgewig, en daarom sal die aantal enjins wat deur Virus Total gebruik word wat die lêer wat geskandeer word as kwaadwillig vlag, dien as 'n vertrouenstelling (of opsporingsgewig) vir of die lêer wat geskandeer word, deur phpMussel as kwaadwillig beskou moet word of nie (die waarde wat gebruik word, sal die minimum vertrouenstelling of gewig verteenwoordig wat vereis word om as kwaadwillig beskou te word). 0 word by verstek gebruik."
 confirm:
- Action: "Is jy seker jy wil "%s"?"
+ Action: "Is jy seker jy wil \"%s"\?"
 field:
  2FA code: "2FA kode"
  Clear all: "Vee dit alles uit"
@@ -397,7 +397,7 @@ Signature information: !lazy
  sub_SigTypes: "Tel volgens handtekening-metadata"
  sub_Targets: "Tel volgens geteikende vektor"
  sub_Vendors: "Tel volgens handtekeningverkoper of bron"
- xkey: "Geïdentifiseer as "%s"."
+ xkey: "Geïdentifiseer as \"%s"\."
 state_quarantine:
  - "Daar is tans %s lêer in kwarantyn."
  - "Daar is tans %s lêers in kwarantyn."

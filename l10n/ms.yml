@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2026.10.02).
+# This file: Malay language data (last modified: 2026.10.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -137,15 +137,15 @@ config:
  supplementary_cache_options_enable_pdo: "Menentukan sama ada hendak mencuba menggunakan PDO untuk caching. Lalai = False."
  supplementary_cache_options_enable_redis: "Menentukan sama ada hendak mencuba menggunakan Redis untuk caching. Lalai = False."
  supplementary_cache_options_memcached_host: "Nilai hos Memcached. Lalai = localhost."
- supplementary_cache_options_memcached_port: "Nilai port Memcached. Lalai = "11211"."
- supplementary_cache_options_pdo_dsn: "Nilai DSN PDO. Lalai = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+ supplementary_cache_options_memcached_port: "Nilai port Memcached. Lalai = \"11211\"."
+ supplementary_cache_options_pdo_dsn: "Nilai DSN PDO. Lalai = \"mysql:dbname=phpmussel;host=localhost;port=3306\"."
  supplementary_cache_options_pdo_password: "Kata laluan PDO."
  supplementary_cache_options_pdo_username: "Nama pengguna PDO."
- supplementary_cache_options_prefix: "Nilai yang dinyatakan disini akan ditambahkan pada permulaan kunci untuk semua entri dalam cache. Lalai = "phpMussel_". Apabila berbilang pemasangan wujud pada pelayan yang sama, ini boleh berguna untuk memastikan cache mereka berasingan antara satu sama lain."
+ supplementary_cache_options_prefix: "Nilai yang dinyatakan disini akan ditambahkan pada permulaan kunci untuk semua entri dalam cache. Lalai = \"phpMussel_\". Apabila berbilang pemasangan wujud pada pelayan yang sama, ini boleh berguna untuk memastikan cache mereka berasingan antara satu sama lain."
  supplementary_cache_options_redis_database_number: "Nombor pangkalan data Redis. Lalai = 0. Nota: Tidak boleh menggunakan nilai selain 0 dengan Redis Cluster."
  supplementary_cache_options_redis_host: "Nilai hos Redis. Lalai = localhost."
- supplementary_cache_options_redis_port: "Nilai port Redis. Lalai = "6379"."
- supplementary_cache_options_redis_timeout: "Nilai tamat masa Redis. Lalai = "2.5"."
+ supplementary_cache_options_redis_port: "Nilai port Redis. Lalai = \"6379\"."
+ supplementary_cache_options_redis_timeout: "Nilai tamat masa Redis. Lalai = \"2.5\"."
  urlscanner: "Konfigurasi untuk pengimbas URL."
  urlscanner_cache_time: "Berapa lama (dalam saat) hasil carian API harus dicache? Lalai ialah 3600 saat (1 jam)."
  urlscanner_google_api_key: "Mendayakan carian ke API Google Safe Browsing apabila kunci API yang diperlukan ditentukan."
@@ -158,7 +158,7 @@ config:
  virustotal_vt_suspicion_level: "Secara lalai, phpMussel akan mengehadkan fail yang diimbas menggunakan API Virus Total kepada fail yang dianggapnya "mencurigakan". Jika anda mahu, anda boleh melaraskan sekatan ini dengan menukar nilai arahan <code>vt_suspicion_level</code>."
  virustotal_vt_weighting: "Patutkah phpMussel menggunakan hasil pengimbasan menggunakan API Virus Total sebagai pengesanan atau pemberat? Arahan ini wujud, kerana, walaupun mengimbas fail menggunakan berbilang enjin (seperti yang dilakukan oleh Virus Total) sepatutnya menghasilkan kadar pengesanan yang meningkat (dan oleh mengakibatkan lebih banyak fail berniat jahat ditangkap), ia juga boleh menghasilkan bilangan positif palsu yang lebih tinggi, dan jadi, dalam beberapa keadaan, hasil imbasan mungkin lebih baik digunakan sebagai skor keyakinan dan bukannya sebagai kesimpulan muktamad. Jika nilai 0 digunakan, hasil pengimbasan menggunakan API Virus Total akan digunakan sebagai pengesanan, dan jadi, jika mana-mana enjin yang digunakan oleh Virus Total benderakan fail yang diimbas sebagai berniat jahat, phpMussel akan menganggap fail sebagai berniat jahat. Jika sebarang nilai lain digunakan, hasil pengimbasan menggunakan API Virus Total akan digunakan sebagai pemberat, dan jadi, bilangan enjin yang digunakan oleh Virus Total yang benderakan fail yang diimbas sebagai berniat jahat akan berfungsi sebagai skor keyakinan (atau pemberat) sama ada fail yang diimbas harus dianggap berniat jahat oleh phpMussel (nilai yang digunakan akan mewakili skor keyakinan minimum atau pemberat yang diperlukan untuk dianggap berniat jahat). Nilai 0 digunakan secara lalai."
 confirm:
- Action: "Adakah anda pasti mahu "%s"?"
+ Action: "Adakah anda pasti mahu \"%s"\?"
 field:
  2FA code: "Kod 2FA"
  Clear all: "Kosongkan semua"
@@ -396,7 +396,7 @@ Signature information: !lazy
  sub_SigTypes: "Kira berdasarkan metadata tandatangan"
  sub_Targets: "Kira berdasarkan vektor yang disasarkan"
  sub_Vendors: "Kira berdasarkan vendor atau sumber tandatangan"
- xkey: "Dikenali sebagai "%s"."
+ xkey: "Dikenali sebagai \"%s"\."
 state_quarantine: "Terdapat %s fail sedang dalam kuarantin."
 tip:
  2FA Sent: "E-mel yang mengandungi kod pengesahan dua-faktor telah dihantar ke alamat e-mel anda. Sila sahkan kod ini di bawah untuk mendapatkan akses kepada bahagian hadapan. Jika anda tidak menerima e-mel ini, cuba log keluar, tunggu selama 10 minit, dan log masuk semula untuk menerima e-mel baharu yang mengandungi kod baharu."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2026.10.02).
+# This file: Dutch language data (last modified: 2026.10.27).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -138,15 +138,15 @@ config:
  supplementary_cache_options_enable_pdo: "Dit geeft aan of PDO moet worden gebruikt voor caching. Standaard = False."
  supplementary_cache_options_enable_redis: "Dit geeft aan of Redis moet worden gebruikt voor caching. Standaard = False."
  supplementary_cache_options_memcached_host: "Memcached hostwaarde. Standaard = localhost."
- supplementary_cache_options_memcached_port: "Memcached poortwaarde. Standaard = "11211"."
- supplementary_cache_options_pdo_dsn: "PDO DSN-waarde. Standaard = "mysql:dbname=phpmussel;host=localhost;port=3306"."
+ supplementary_cache_options_memcached_port: "Memcached poortwaarde. Standaard = \"11211\"."
+ supplementary_cache_options_pdo_dsn: "PDO DSN-waarde. Standaard = \"mysql:dbname=phpmussel;host=localhost;port=3306\"."
  supplementary_cache_options_pdo_password: "PDO wachtwoord."
  supplementary_cache_options_pdo_username: "PDO gebruikersnaam."
- supplementary_cache_options_prefix: "De hier opgegeven waarde wordt toegevoegd aan alle cache-invoersleutels. Standaard = "phpMussel_". Als er meerdere installaties op dezelfde server staan, dit kan handig zijn om hun caches gescheiden van elkaar te houden."
+ supplementary_cache_options_prefix: "De hier opgegeven waarde wordt toegevoegd aan alle cache-invoersleutels. Standaard = \"phpMussel_\". Als er meerdere installaties op dezelfde server staan, dit kan handig zijn om hun caches gescheiden van elkaar te houden."
  supplementary_cache_options_redis_database_number: "Redis-databasenummer. Standaard = 0. Opmerking: Kan geen andere waarden dan 0 gebruiken met Redis Cluster."
  supplementary_cache_options_redis_host: "Redis hostwaarde. Standaard = localhost."
- supplementary_cache_options_redis_port: "Redis poortwaarde. Standaard = "6379"."
- supplementary_cache_options_redis_timeout: "Redis timeoutwaarde. Standaard = "2.5"."
+ supplementary_cache_options_redis_port: "Redis poortwaarde. Standaard = \"6379\"."
+ supplementary_cache_options_redis_timeout: "Redis timeoutwaarde. Standaard = \"2.5\"."
  urlscanner: "Configuratie voor de URL-scanner."
  urlscanner_cache_time: "Hoe lang (in seconden) moeten de resultaten van de API verzoeken worden gecached voor? Standaard is 3600 seconden (1 uur)."
  urlscanner_google_api_key: "Inschakelt gebruik van de Google Safe Browsing API wanneer de noodzakelijke API sleutel wordt gedefinieerd."
@@ -159,7 +159,7 @@ config:
  virustotal_vt_suspicion_level: "Normaal, phpMussel zal beperken welke bestanden scant met behulp van de Virus Total API om het bestanden die zijn beschouwd "achterdochtig". Optioneel, u kan dit beperking aan te passen door de waarde van het <code>vt_suspicion_level</code> richtlijn."
  virustotal_vt_weighting: "Moeten phpMussel de resultaten van het scannen met behulp van de Virus Total API toe te passen als detecties of detectie weging? Dit richtlijn bestaat, omdat, hoewel het scannen van een bestand met behulp van meerdere motoren (als Virus Total doet) moet leiden tot een verhoogde aantal van detecties (en dus in een hoger aantal van kwaadaardige bestanden worden gedetecteerd), het kan ook leiden tot een hoger aantal van valspositieven, en daarom, in sommige gevallen, de resultaten van de scan kan beter worden benut als betrouwbaarheidsscore eerder dan als een definitieve conclusie. Als een waarde van 0 wordt gebruikt, de resultaten van het scannen met behulp van de Virus Total API zal worden toegepast als detecties, en zo, als een motor gebruikt door Virus Total vlaggen het bestand wordt gescand als kwaadaardige, phpMussel zal het bestand overwegen kwaadaardig te zijn. Als een andere waarde wordt gebruikt, de resultaten van het scannen met behulp van de Virus Total API zal worden toegepast als detectie weging, en zo, het aantal van motoren gebruikt door Virus Total dat vlag het bestand wordt gescand als kwaadaardige zal dienen als een betrouwbaarheidsscore (of detectie weging) voor of het bestand dat wordt gescand moet worden beschouwd als kwaadaardige door phpMussel (de waarde die wordt gebruikt zal vertegenwoordigen de minimale betrouwbaarheidsscore of weging vereist om kwaadaardige te worden beschouwd). Een waarde van 0 wordt standaard gebruikt."
 confirm:
- Action: "Weet u zeker dat u wilt "%s"?"
+ Action: "Weet u zeker dat u wilt \"%s"\?"
 field:
  2FA code: "2FA-code"
  Clear all: "Annuleer alles"
@@ -397,7 +397,7 @@ Signature information: !lazy
  sub_SigTypes: "Tel op signature metadata"
  sub_Targets: "Tel op gerichte vector"
  sub_Vendors: "Tel op signature leverancier of bron"
- xkey: "Geïdentificeerd als "%s"."
+ xkey: "Geïdentificeerd als \"%s"\."
 state_quarantine:
  - "Er is momenteel %s bestand in quarantaine."
  - "Er zijn momenteel %s bestanden in quarantaine."
