@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Catalan language data (last modified: 2026.10.27).
+# This file: Catalan language data (last modified: 2026.11.13).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -159,7 +159,7 @@ config:
  virustotal_vt_suspicion_level: "phpMussel restringirà els fitxers que escaneja mitjançant l'API de Virus Total als fitxers que consideri "sospitats". Opcionalment, podeu ajustar aquesta restricció canviant el valor de la directiva <code>vt_suspicion_level</code>."
  virustotal_vt_weighting: "Ha d'aplicar phpMussel els resultats de l'escaneig mitjançant l'API Virus Total com a deteccions o com a ponderació de detecció? Aquesta directiva existeix perquè, tot i que escanejar un fitxer amb diversos motors (com ho fa Virus Total) hauria de comportar un augment de la taxa de detecció (i, per tant, en un nombre més gran de fitxers maliciosos capturats), també pot donar lloc a un major nombre de falsos positius, i per tant, en algunes circumstàncies, pot ser millor utilitzar els resultats de l'escaneig com a puntuació de confiança en lloc de com a conclusió definitiva. Si s'utilitza un valor de 0, els resultats de l'escaneig mitjançant l'API Virus Total s'aplicaran com a deteccions, i per tant, si algun motor utilitzat per Virus Total marca el fitxer que s'escaneja com a maliciós, phpMussel considerarà que el fitxer és maliciós. Si s'utilitza qualsevol altre valor, els resultats de l'escaneig mitjançant l'API Virus Total s'aplicaran com a ponderació de detecció, i per tant, el nombre de motors utilitzats per Virus Total que marquen el fitxer que s'escaneja com a maliciós servirà com a puntuació de confiança (o ponderació de detecció) per saber si el fitxer que s'escaneja ha de ser considerat maliciós per phpMussel (el valor utilitzat representarà la puntuació o el pes de confiança mínima requerida per ser considerat maliciós). El valor predeterminat és 0."
 confirm:
- Action: "Esteu segur que voleu \"%s"\?"
+ Action: "Esteu segur que voleu \"%s\"?"
 field:
  2FA code: "Codi 2FA"
  Clear all: "Esborra-ho tot"
@@ -397,7 +397,7 @@ Signature information: !lazy
  sub_SigTypes: "Comptar per metadades de signatura"
  sub_Targets: "Comptar per vector objectiu"
  sub_Vendors: "Comptar per proveïdor o font de signatura"
- xkey: "Identificat com a \"%s"\."
+ xkey: "Identificat com a \"%s\"."
 state_quarantine:
  - "Actualment hi ha %s fitxer en quarantena."
  - "Actualment hi ha %s fitxers en quarantena."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bosnian language data (last modified: 2026.10.27).
+# This file: Bosnian language data (last modified: 2026.11.13).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -159,7 +159,7 @@ config:
  virustotal_vt_suspicion_level: "Standardno, phpMussel će ograničiti koje datoteke skenira pomoću Virus Total API-ja na one datoteke koje smatra "sumnjivim". Ovo ograničenje možete opcionalno prilagoditi promjenom vrijednosti direktive <code>vt_suspicion_level</code>."
  virustotal_vt_weighting: "phpMussel treba da primijeni rezultate skeniranja Virus Total API-ja kao detekcije ili kao težinu detekcije? Ova direktiva postoji jer, iako bi skeniranje datoteke pomoću više motora (kao što to radi Virus Total) trebalo rezultirati povećanom stopom detekcije (a samim tim i većim brojem uhvaćenih zlonamjernih datoteka), ono također može rezultirati većim brojem lažno pozitivnih, i stoga je u nekim okolnostima možda bolje koristiti rezultate skeniranja kao ocjenu pouzdanosti nego kao definitivan zaključak. Ako se koristi vrijednost 0, rezultati skeniranja Virus Total API-ja će se primijeniti kao detekcije, i stoga, ako bilo koji motor koji koristi Virus Total označi datoteku koja se skenira kao zlonamjernu, phpMussel će smatrati datoteku zlonamjernom. Ako se koristi bilo koja druga vrijednost, rezultati skeniranja Virus Total API-ja bit će primijenjeni kao težina detekcije, i stoga će broj motora koje koristi Virus Total, a koji označavaju datoteku koja se skenira kao zlonamjernu, poslužiti kao ocjena pouzdanosti (ili težina detekcije) za provjeru da li phpMussel treba smatrati datoteku koja se skenira zlonamjernom (korištena vrijednost će predstavljati minimalni rezultat pouzdanosti ili težinu potrebnu da bi se smatralo zlonamjernim). Vrijednost 0 se koristi kao standard."
 confirm:
- Action: "Jeste li sigurni da želite \"%s"\?"
+ Action: "Jeste li sigurni da želite \"%s\"?"
 field:
  2FA code: "2FA kod"
  Clear all: "Obriši sve"
@@ -397,7 +397,7 @@ Signature information: !lazy
  sub_SigTypes: "Brojanje prema metapodacima potpisa"
  sub_Targets: "Brojanje prema ciljanom vektoru"
  sub_Vendors: "Brojanje prema dobavljaču potpisa ili izvoru"
- xkey: "Identificiran kao \"%s"\."
+ xkey: "Identificiran kao \"%s\"."
 state_quarantine:
  - "Trenutno je %s datoteka u karantinu."
  - "Trenutno su %s datoteke u karantinu."

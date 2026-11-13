@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2026.10.27).
+# This file: Afrikaans language data (last modified: 2026.11.13).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -159,7 +159,7 @@ config:
  virustotal_vt_suspicion_level: "By verstek sal phpMussel die lêers wat dit skandeer met die Virus Total API beperk tot daardie lêers wat dit as "verdag" beskou. Jy kan hierdie beperking opsioneel aanpas deur die waarde van die <code>vt_suspicion_level</code>-opsie te verander."
  virustotal_vt_weighting: "Moet phpMussel die resultate van skandering met die Virus Total API as opsporings of as opsporingsgewig toepas? Hierdie opsie bestaan, want alhoewel die skandering van 'n lêer met veelvuldige enjins (soos Virus Total doen) 'n verhoogde opsporingsyfer tot gevolg moet hê (en dus 'n groter aantal kwaadwillige lêers wat gevang word), kan dit ook lei tot 'n groter aantal vals positiewe, en daarom, in sommige omstandighede, kan dit beter wees om die resultate van die skandering as 'n vertrouenstelling eerder as 'n definitiewe gevolgtrekking te gebruik. As 'n waarde van 0 gebruik word, sal die resultate van skandering met die Virus Total API as bespeurings toegepas word, en daarom, as enige enjin wat deur Virus Total gebruik word die lêer wat geskandeer word as kwaadwillig vlag, sal phpMussel die lêer as kwaadwillig beskou. As enige ander waarde gebruik word, sal die resultate van skandering met die Virus Total API toegepas word as opsporingsgewig, en daarom sal die aantal enjins wat deur Virus Total gebruik word wat die lêer wat geskandeer word as kwaadwillig vlag, dien as 'n vertrouenstelling (of opsporingsgewig) vir of die lêer wat geskandeer word, deur phpMussel as kwaadwillig beskou moet word of nie (die waarde wat gebruik word, sal die minimum vertrouenstelling of gewig verteenwoordig wat vereis word om as kwaadwillig beskou te word). 0 word by verstek gebruik."
 confirm:
- Action: "Is jy seker jy wil \"%s"\?"
+ Action: "Is jy seker jy wil \"%s\"?"
 field:
  2FA code: "2FA kode"
  Clear all: "Vee dit alles uit"
@@ -397,7 +397,7 @@ Signature information: !lazy
  sub_SigTypes: "Tel volgens handtekening-metadata"
  sub_Targets: "Tel volgens geteikende vektor"
  sub_Vendors: "Tel volgens handtekeningverkoper of bron"
- xkey: "Geïdentifiseer as \"%s"\."
+ xkey: "Geïdentifiseer as \"%s\"."
 state_quarantine:
  - "Daar is tans %s lêer in kwarantyn."
  - "Daar is tans %s lêers in kwarantyn."

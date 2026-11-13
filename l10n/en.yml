@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2026.10.27).
+# This file: English language data (last modified: 2026.11.13).
 ##/
 
 Glossary: !lazy
@@ -159,7 +159,7 @@ config:
  virustotal_vt_suspicion_level: "By default, phpMussel will restrict which files it scans using the Virus Total API to those files that it considers "suspicious". You can optionally adjust this restriction by changing the value of the <code>vt_suspicion_level</code> directive."
  virustotal_vt_weighting: "Should phpMussel apply the results of scanning using the Virus Total API as detections or as detection weighting? This directive exists, because, although scanning a file using multiple engines (as Virus Total does) should result in an increased detection rate (and therefore in a higher number of malicious files being caught), it can also result in a higher number of false positives, and therefore, in some circumstances, it may be better to use the results of the scan as a confidence score rather than as a definitive conclusion. If a value of 0 is used, the results of scanning using the Virus Total API will be applied as detections, and therefore, if any engine used by Virus Total flags the file being scanned as being malicious, phpMussel will consider the file to be malicious. If any other value is used, the results of scanning using the Virus Total API will be applied as detection weighting, and therefore, the number of engines used by Virus Total that flag the file being scanned as being malicious will serve as a confidence score (or detection weighting) for whether or not the file being scanned should be considered malicious by phpMussel (the value used will represent the minimum confidence score or weight required in order to be considered malicious). A value of 0 is used by default."
 confirm:
- Action: "Are you sure you want to \"%s"\?"
+ Action: "Are you sure you want to \"%s\"?"
 field:
  2FA code: "2FA code"
  Clear all: "Clear all"
@@ -397,7 +397,7 @@ Signature information: !lazy
  sub_SigTypes: "Count by signature metadata"
  sub_Targets: "Count by targeted vector"
  sub_Vendors: "Count by signature vendor or source"
- xkey: "Identified as \"%s"\."
+ xkey: "Identified as \"%s\"."
 state_quarantine:
  - "There is %s file currently in quarantine."
  - "There are %s files currently in quarantine."

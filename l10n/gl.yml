@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Galician language data (last modified: 2026.10.27).
+# This file: Galician language data (last modified: 2026.11.13).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -158,7 +158,7 @@ config:
  virustotal_vt_suspicion_level: "phpMussel restrinxirá os ficheiros que analiza mediante a API de Virus Total aos ficheiros que considere "sospeitosos". Opcionalmente, pode axustar esta restrición cambiando o valor da directiva <code>vt_suspicion_level</code>."
  virustotal_vt_weighting: "Debería phpMussel aplicar os resultados da exploración usando a API de Virus Total como deteccións ou como ponderación de detección? Esta directiva existe porque, aínda que escanear un ficheiro usando varios motores (como fai Virus Total) debería producir un aumento da taxa de detección (e, polo tanto, nun maior número de ficheiros maliciosos capturados), tamén pode producir un maior número de falsos positivos, e polo tanto, nalgunhas circunstancias, pode ser mellor utilizar os resultados da exploración como unha puntuación de confianza en lugar de como unha conclusión definitiva. Se se utiliza un valor de 0, os resultados da exploración mediante a API de Virus Total aplicaranse como deteccións, e polo tanto, se algún motor usado por Virus Total marca o ficheiro que se está a analizar como malicioso, phpMussel considerará que o ficheiro é malicioso. Se se utiliza algún outro valor, os resultados da exploración mediante a API de Virus Total aplicaranse como ponderación de detección, e polo tanto, o número de motores utilizados por Virus Total que marcan o ficheiro que se está a analizar como malicioso servirá como puntuación de confianza (ou ponderación de detección) para saber se o ficheiro que se está a analizar debe ser considerado malicioso por phpMussel (o valor utilizado representará a puntuación ou o peso mínimo de confianza esixido para ser considerado malicioso). O valor predeterminado é 0."
 confirm:
- Action: "Estás seguro de que queres \"%s"\?"
+ Action: "Estás seguro de que queres \"%s\"?"
 field:
  2FA code: "Código 2FA"
  Clear all: "Borrar todo"
@@ -396,7 +396,7 @@ Signature information: !lazy
  sub_SigTypes: "Conta por metadatos de sinatura"
  sub_Targets: "Conta por vector de destino"
  sub_Vendors: "Conta por provedor ou fonte de sinatura"
- xkey: "Identificado como \"%s"\."
+ xkey: "Identificado como \"%s\"."
 state_quarantine:
  - "Actualmente hai %s ficheiro en corentena."
  - "Actualmente hai %s ficheiros en corentena."
